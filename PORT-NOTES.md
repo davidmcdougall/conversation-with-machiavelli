@@ -43,6 +43,20 @@ left behind, as was root-level `TRANSLATION_PROTOCOL.md`.
 3. **FG-CONS.1.12 is still `review_pending`.** SCOPE §4: closing that review is
    the first move.
 
+## Git
+
+Initialised, with the port as commit `2dae623` and `_to_delete/` ignored in
+`9b1ff0e`.
+
+One wrinkle worth recording, because it will recur: git creates lock files and
+then deletes them, and the sandbox a Cowork session reaches this folder through
+cannot delete anything. Every git *write* issued from such a session therefore
+leaves a stale `.git/*.lock` that blocks the next one. The cleanup was done
+from Terminal on 2026-09-18 and the object store verifies clean
+(`git fsck` silent, no stale locks).
+
+**Run git in this repository from Terminal, not from a Cowork session.**
+
 ## Provenance of the port
 
 Predecessor repository `Machiavelli : Guicciardini Corpus`, at commit `51a8e67e12d229d3894bada8b095377c3891c665`
