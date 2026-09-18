@@ -1,0 +1,10 @@
+source_unit_id: FG-CONS.1.12
+status: accepted
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-012
+responds_to: NM-DISC.1.12
+rights: "Canestrini PD body only; Palmarocchi page-image readings used as consultative collation evidence under DEC-010"
+adjudication: "Canestrini governs; all detected lexical, supplied-letter, orthographic, and systematic editorial differences are recorded."
+class_t_review_required: true

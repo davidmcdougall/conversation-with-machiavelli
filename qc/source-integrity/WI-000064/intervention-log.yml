@@ -1,0 +1,32 @@
+work_item: WI-000064
+unit_id: NM-LEG-BORG.1502-10-07
+events:
+  - id: WI-000064-I001
+    action: fixed_sample
+    evidence: "PDF pp. 275-278 / printed pp. 268-271 fixed in the claim commit before OCR inspection"
+    minutes: 4
+  - id: WI-000064-I002
+    action: acquire_page_mapped_ocr
+    evidence: "Archive.org DjVu XML and scandata downloaded and SHA-256 pinned"
+    minutes: 5
+  - id: WI-000064-I003
+    action: map_ocr_to_scan_pages
+    evidence: "DjVu objects 275-278 matched printed pp. 268-271 and bounded PDF pages"
+    minutes: 5
+  - id: WI-000064-I004
+    action: visual_feature_transcription
+    evidence: "nineteen high-risk readings checked across four rendered pages; no canonical reading changed"
+    minutes: 16
+  - id: WI-000064-I005
+    action: structure_and_voice_audit
+    evidence: "preceding commission, apparatus, running matter, following dispatch, reported-letter and voice boundaries classified"
+    minutes: 8
+  - id: WI-000064-I006
+    action: reproducibility_and_reporting
+    evidence: "fixture assertions, deterministic metrics, findings and handoff"
+    minutes: 8
+totals:
+  human_minutes: 46
+  pages: 4
+  minutes_per_page: 11.5
+note: "Minutes are contemporaneous task-log increments, not an estimate of future production cost. Download wait time is excluded."

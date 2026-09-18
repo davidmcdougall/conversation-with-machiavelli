@@ -1,0 +1,40 @@
+findings:
+  - id: SOURCE-NM-DISC-I12-001
+    passage_id: NM-DISC.1.12
+    stage_detected: source_acquisition
+    probable_origin: OCR_and_layout
+    systemic_or_isolated: systemic
+    confidence: high
+    witness_id: WIT-NM-DISC-1824-IA
+    locator: source PDF zero-based pages 81-86
+    class: chapter_boundary_and_OCR_risk
+    observation: Chapter XII begins and ends within shared scan pages; OCR collapses spacing and may confuse glyphs.
+    action: Establish body zones from page images and log both adjacent-chapter exclusions; never adopt OCR silently.
+    status: open
+  - id: SOURCE-NM-DISC-I12-002
+    passage_id: NM-DISC.1.12
+    stage_detected: source_acquisition
+    probable_origin: early_print_typography_and_OCR
+    systemic_or_isolated: systemic
+    confidence: high
+    witness_id: WIT-NM-DISC-1554-IA
+    locator: source PDF zero-based pages 81-85
+    class: OCR_corruption_risk
+    observation: The derivative OCR heavily confuses long-s and other sixteenth-century glyphs; the scan remains legible and recoverable.
+    action: Transcribe from page images and use OCR only for navigation; surface every disagreement against the 1824 edition.
+    status: open
+  - id: SOURCE-NM-DISC-I12-003
+    passage_id: NM-DISC.1.12.05
+    stage_detected: source_acquisition
+    probable_origin: edition_or_recension
+    systemic_or_isolated: isolated
+    confidence: high
+    witness_id: WIT-NM-DISC-1824-IA; WIT-NM-DISC-1554-IA
+    locator: "1824 printed p. 65; 1554 chapter XII third page"
+    class: substantive_witness_disagreement
+    observation: "1824 gives a two-charge argument introduced by voglio contro ad essa discorrere... due potentissime and the bad example of the Roman court; 1554 instead gives forse si potria dire il contrario and a qualification about those who adulterate holy Catholic orders, then resumes with the division-of-Italy charge."
+    action: "David ratified the Class T reviewer's adjudication on 2026-07-17: the coherent 1824 two-charge reading governs; the 1554 recension difference remains fully recorded in D006."
+    status: resolved
+    resolved_by: "David McDougall"
+    resolved_at: 2026-07-17
+    resolution: "Accept the 1824 two-charge reading as canonical while retaining the 1554 variant as substantive recension evidence."

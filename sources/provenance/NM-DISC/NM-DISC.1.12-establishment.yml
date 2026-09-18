@@ -1,0 +1,10 @@
+source_unit_id: NM-DISC.1.12
+status: accepted
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-012
+rights: "PD page-image body text only under DEC-010"
+adjudication: "1824 governs; every substantive or systematic witness difference is recorded in the disagreement table."
+consulted_layers: []
+class_t_review_required: true

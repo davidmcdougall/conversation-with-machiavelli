@@ -1,0 +1,25 @@
+source_unit_id: FG-CONS.1.12
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-I12-D001
+    locator: FG-CONS.1.12.03
+    class: supplied_letters
+    witness_1857: "non [ar]ebbe patito"
+    witness_1933: "non arebbe patito"
+    established: witness_1857
+    rationale: "Canestrini's supplied letters remain visibly bracketed under DEC-009."
+  - id: FG-CONS-I12-D002
+    locator: FG-CONS.1.12.03
+    class: orthographic
+    witness_1857: "in varii tempi"
+    witness_1933: "in vari tempi"
+    established: witness_1857
+    rationale: "Canestrini spelling retained."
+  - id: FG-CONS-I12-D003
+    locator: FG-CONS.1.12.01-FG-CONS.1.12.03
+    class: systematic_editorial_profile
+    witness_1857: "Canestrini capitalization, punctuation, word division, and supplied-letter notation"
+    witness_1933: "Palmarocchi capitalization, punctuation, and spelling profile"
+    established: witness_1857
+    rationale: "No hybridization; Canestrini governs throughout and Palmarocchi remains independent collation evidence only."

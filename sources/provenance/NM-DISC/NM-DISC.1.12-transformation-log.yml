@@ -1,0 +1,58 @@
+source_unit_id: NM-DISC.1.12
+events:
+  - event_id: NM-DISC-I12-T001
+    output_passage_id: NM-DISC.1.12.01-NM-DISC.1.12.07
+    witness_id: WIT-NM-DISC-1824-IA
+    witness_locator: "extract pages 1-6 / printed pp. 62-67"
+    operation: structural_exclusion
+    before: "running heads, page numbers, signatures, chapter XI tail, chapter XIII opening"
+    after: ""
+    rule_id: DEC009-A1-layout-v1
+    rationale: "Grouped deterministic running/layout matter and adjacent chapter zones are not chapter XII body."
+    evidence: ["1824 page images"]
+    certainty: high
+    responsible_agent: "Codex (source_acquisition)"
+    performed_at: 2026-07-17
+    reversible: true
+  - event_id: NM-DISC-I12-T002
+    output_passage_id: NM-DISC.1.12.01-NM-DISC.1.12.07
+    witness_id: WIT-NM-DISC-1824-IA
+    witness_locator: "extract pages 1-5 / printed pp. 62-66"
+    operation: linewrap_join
+    before: "page-image typographic lineation"
+    after: "continuous paragraphs with page milestones retained in provenance"
+    rule_id: DEC009-linewrap-v1
+    rationale: "Remove non-lexical lineation only."
+    evidence: ["1824 page images"]
+    certainty: high
+    responsible_agent: "Codex (source_acquisition)"
+    performed_at: 2026-07-17
+    reversible: true
+  - event_id: NM-DISC-I12-T003
+    output_passage_id: NM-DISC.1.12.01-NM-DISC.1.12.07
+    witness_id: WIT-NM-DISC-1824-IA
+    witness_locator: "extract pages 1-5 / printed pp. 62-66"
+    operation: dehyphenation
+    before: "words divided only at printed line ends"
+    after: "single lexical words"
+    rule_id: DEC009-dehyphenation-v1
+    rationale: "Every join was checked against the page image and the independent 1554 witness."
+    evidence: ["1824 page images", "1554 page images"]
+    certainty: high
+    responsible_agent: "Codex (source_acquisition)"
+    performed_at: 2026-07-17
+    reversible: true
+  - event_id: NM-DISC-I12-T004
+    output_passage_id: NM-DISC.1.12.03
+    witness_id: WIT-NM-DISC-1824-IA
+    witness_locator: "extract page 3 / printed p. 64"
+    operation: language_annotation
+    before: "vis venire Romam?"
+    after: "vis venire Romam?"
+    rule_id: DEC009-language-latin-v1
+    rationale: "Embedded Latin is preserved and identified without changing body text."
+    evidence: ["1824 page image"]
+    certainty: high
+    responsible_agent: "Codex (source_acquisition)"
+    performed_at: 2026-07-17
+    reversible: true

@@ -1,0 +1,49 @@
+findings:
+  - id: SOURCE-FG-CONS-I12-001
+    passage_id: FG-CONS.1.12
+    stage_detected: source_acquisition
+    probable_origin: editorial_layer_and_licensing
+    systemic_or_isolated: systemic
+    confidence: high
+    witness_id: WIT-FG-CONS-1933-PALMAROCCHI
+    locator: scan pages 28-29
+    class: clean_inbound_and_boundary_risk
+    observation: The scan pages are PD-marked, but the Wikisource transcription is share-alike and Palmarocchi editorial expression is not assumed clean for corpus reproduction; the unit also begins at section s2 of a shared page.
+    action: Consult readings and page images for collation only; derive corpus expression from clean PD layers and log structural boundaries.
+    resolution: "Corpus and normalized bodies derive only from Canestrini's PD body. Palmarocchi page images were used to verify readings; no Wikisource transcription or Palmarocchi editorial expression was copied."
+    resolved_by: "Codex (source_acquisition)"
+    resolved_at: 2026-07-17
+    review_status: pending_class_T_review
+    status: resolved
+  - id: SOURCE-FG-CONS-I12-002
+    passage_id: FG-CONS.1.12
+    stage_detected: source_acquisition
+    probable_origin: editorial_layout_and_OCR
+    systemic_or_isolated: systemic
+    confidence: high
+    witness_id: WIT-FG-CONS-1857-CANESTRINI
+    locator: source PDF zero-based pages 65-68 / printed pp. 27-30
+    class: apparatus_contamination_risk
+    observation: Canestrini footnotes and OCR noise share the page zone with body text; the heading begins mid-page and chapter XIV begins on the final extracted page.
+    action: Establish structural zones from page images, individually exclude notes, and use OCR only for navigation.
+    resolution: "Canestrini body zones were established visually; T001 excludes running/adjacent material, T002 excludes footnote 1, and T003 excludes the bounded notes and continuation across printed pp. 28-30."
+    resolved_by: "Codex (source_acquisition)"
+    resolved_at: 2026-07-17
+    review_status: pending_class_T_review
+    status: resolved
+  - id: SOURCE-FG-CONS-I12-003
+    passage_id: FG-CONS.1.12.03
+    stage_detected: source_acquisition
+    probable_origin: editorial_supply
+    systemic_or_isolated: isolated
+    confidence: high
+    witness_id: WIT-FG-CONS-1857-CANESTRINI; WIT-FG-CONS-1933-PALMAROCCHI
+    locator: "Canestrini printed p. 28; Palmarocchi scan p. 23"
+    class: supplied_letters
+    observation: "Canestrini prints non [ar]ebbe with supplied letters bracketed; Palmarocchi prints non arebbe without brackets."
+    action: "Preserve Canestrini's [ar] supply visibly in the governing body and record Palmarocchi's unbracketed form as D001."
+    resolution: "Canonical review draft reads non [ar]ebbe; no silent expansion was made."
+    resolved_by: "Codex (source_acquisition)"
+    resolved_at: 2026-07-17
+    review_status: pending_class_T_review
+    status: resolved

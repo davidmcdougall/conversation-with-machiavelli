@@ -1,0 +1,53 @@
+source_unit_id: NM-DISC.1.12
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-I12-D001
+    locator: heading
+    class: wording
+    witness_1824: "come la Italia per esserne mancata mediante la Chiesa Romana, è rovinata"
+    witness_1554: "come la Italia, per esserne ella mancata, mediante la Chiesa Romana è rovinata"
+    established: witness_1824
+    rationale: "1824 governs punctuation and wording; 1554 variant remains recorded."
+  - id: NM-DISC-I12-D002
+    locator: paragraph 1, oracle
+    class: lexical
+    witness_1824: "l'oracolo di Delo"
+    witness_1554: "l'oracolo di Delfo"
+    established: witness_1824
+    rationale: "Both are intelligible; governing witness retained without silent harmonization."
+  - id: NM-DISC-I12-D003
+    locator: paragraph 2, miracles
+    class: lexical
+    witness_1824: "gli augumentano"
+    witness_1554: "gli aumentano"
+    established: witness_1824
+    rationale: "Historical spelling of governing witness retained."
+  - id: NM-DISC-I12-D004
+    locator: paragraph 3, Veii
+    class: latin_and_wording
+    witness_1824: "vis venire Romam?"
+    witness_1554: "Vis venire Romam"
+    established: witness_1824
+    rationale: "1824 question punctuation retained; Latin span annotated."
+  - id: NM-DISC-I12-D005
+    locator: paragraph 4, decline
+    class: lexical
+    witness_1824: "declinazione"
+    witness_1554: "declinatione"
+    established: witness_1824
+    rationale: "Governing-witness orthography retained."
+  - id: NM-DISC-I12-D006
+    locator: paragraph 5, two charges against Rome
+    class: substantive_recension_difference
+    witness_1824: "voglio contro ad essa discorrere... due potentissime... La prima è, che per gli esempj rei di quella Corte..."
+    witness_1554: "forse si potria dire il contrario, havendo rispetto però a quelli, che in essa Chiesa Romana non osservano... Et oltre a questo è, che la Chiesa ha tenuto..."
+    established: witness_1824
+    rationale: "The editions transmit different argument structures. David ratified the Class T reviewer's adjudication on 2026-07-17: the complete, coherent two-charge structure of the governing 1824 witness is canonical; 1554 remains recorded here as a substantive recension variant."
+  - id: NM-DISC-I12-D007
+    locator: paragraphs 1-7
+    class: systematic_orthographic_profile
+    witness_1824: "u/v and i/j usage, capitalization, et/ed/e, and nineteenth-century punctuation"
+    witness_1554: "sixteenth-century u/v and long-s typography, et/& forms, word division, capitalization, punctuation"
+    established: witness_1824
+    rationale: "No modernization or hybridization; 1824 profile governs throughout and 1554 remains a comparison witness."

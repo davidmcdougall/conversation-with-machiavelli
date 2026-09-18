@@ -1,0 +1,256 @@
+{
+  "attachment_voice": {
+    "attachments": 0,
+    "boundary_failure": "unsegmented OCR continues into separately numbered dispatch II",
+    "reported_letters_are_not_attachments": true,
+    "selected_voice": "Machiavelli first-person official report"
+  },
+  "checks": [
+    {
+      "category": "glyph_substitution",
+      "evidence_class": "opening_formula",
+      "observed_ocr": "Magnifici et Excetni Domini",
+      "pass": false,
+      "pdf_page": 275,
+      "reference": "Magnifici et Excelsi Domini"
+    },
+    {
+      "category": "glyph_substitution",
+      "evidence_class": "opening_formula",
+      "observed_ocr": "Domini mei singuiarissimi",
+      "pass": false,
+      "pdf_page": 275,
+      "reference": "Domini mei singularissimi"
+    },
+    {
+      "category": "pass",
+      "evidence_class": "florentine_hour",
+      "observed_ocr": "ore 18",
+      "pass": true,
+      "pdf_page": 275,
+      "reference": "ore 18"
+    },
+    {
+      "category": "glyph_substitution",
+      "evidence_class": "lexical",
+      "observed_ocr": "cavalcliereccio",
+      "pass": false,
+      "pdf_page": 275,
+      "reference": "cavalchereccio"
+    },
+    {
+      "category": "glyph_substitution",
+      "evidence_class": "lexical",
+      "observed_ocr": "adel*enti",
+      "pass": false,
+      "pdf_page": 275,
+      "reference": "aderenti"
+    },
+    {
+      "category": "glyph_substitution",
+      "evidence_class": "running_matter",
+      "observed_ocr": "AL DUCA VALEKTrrCO",
+      "pass": false,
+      "pdf_page": 276,
+      "reference": "AL DUCA VALENTINO"
+    },
+    {
+      "category": "glyph_substitution",
+      "evidence_class": "lexical",
+      "observed_ocr": "conitesccndere",
+      "pass": false,
+      "pdf_page": 276,
+      "reference": "condiscendere"
+    },
+    {
+      "category": "diacritic_error",
+      "evidence_class": "entity",
+      "observed_ocr": "Cittìi",
+      "pass": false,
+      "pdf_page": 276,
+      "reference": "Città"
+    },
+    {
+      "category": "glyph_substitution",
+      "evidence_class": "running_matter",
+      "observed_ocr": "HACBt AVELLI. VOL. 11. 17*",
+      "pass": false,
+      "pdf_page": 276,
+      "reference": "MACHIAVELLI. VOL. II. 17*"
+    },
+    {
+      "category": "glyph_substitution",
+      "evidence_class": "running_matter",
+      "observed_ocr": "LCGAZIO!IE",
+      "pass": false,
+      "pdf_page": 277,
+      "reference": "LEGAZIONE"
+    },
+    {
+      "category": "glyph_substitution",
+      "evidence_class": "date_formula",
+      "observed_ocr": "iHe 7 oclobrU, 1502",
+      "pass": false,
+      "pdf_page": 277,
+      "reference": "Die 7 octobris, 1502"
+    },
+    {
+      "category": "pass",
+      "evidence_class": "abbreviation",
+      "observed_ocr": "E. V. D.",
+      "pass": true,
+      "pdf_page": 277,
+      "reference": "E. V. D."
+    },
+    {
+      "category": "glyph_substitution",
+      "evidence_class": "signature_entity",
+      "observed_ocr": "Nicolacs Macbuveclus, ìmolae",
+      "pass": false,
+      "pdf_page": 277,
+      "reference": "Nicolaus Machiavellus, Imolae"
+    },
+    {
+      "category": "glyph_substitution",
+      "evidence_class": "florentine_hour",
+      "observed_ocr": "ore 1G",
+      "pass": false,
+      "pdf_page": 277,
+      "reference": "ore 16"
+    },
+    {
+      "category": "glyph_substitution",
+      "evidence_class": "running_matter",
+      "observed_ocr": "AL mCX VALEKTI50",
+      "pass": false,
+      "pdf_page": 278,
+      "reference": "AL DUCA VALENTINO"
+    },
+    {
+      "category": "glyph_substitution",
+      "evidence_class": "latin_formula",
+      "observed_ocr": "Jlerum",
+      "pass": false,
+      "pdf_page": 278,
+      "reference": "Iterum"
+    },
+    {
+      "category": "glyph_substitution",
+      "evidence_class": "date_formula",
+      "observed_ocr": "DU^octobtit, 1.S02",
+      "pass": false,
+      "pdf_page": 278,
+      "reference": "Die 8 octobris, 1502"
+    },
+    {
+      "category": "glyph_substitution",
+      "evidence_class": "lexical",
+      "observed_ocr": "doe ducati",
+      "pass": false,
+      "pdf_page": 278,
+      "reference": "due ducati"
+    },
+    {
+      "category": "punctuation_diacritic",
+      "evidence_class": "date_reference",
+      "observed_ocr": "d) 9",
+      "pass": false,
+      "pdf_page": 278,
+      "reference": "dì 9"
+    }
+  ],
+  "date_style": {
+    "clock_evidence": [
+      "ore 18",
+      "ore 16",
+      "arrival before dawn on dì 9"
+    ],
+    "florentine_new_year_conversion_required": false,
+    "literal_dates": [
+      "Die 7 octobris, 1502",
+      "Die 8 octobris, 1502"
+    ],
+    "ocr_failures": [
+      "Die 7 octobris, 1502",
+      "ore 16",
+      "Die 8 octobris, 1502",
+      "dì 9"
+    ],
+    "reason": "October dates are unaffected by Florentine New Year conversion"
+  },
+  "evidence_risk_taxonomy": {
+    "date_formula": 2,
+    "date_reference": 1,
+    "entity": 1,
+    "florentine_hour": 1,
+    "latin_formula": 1,
+    "lexical": 4,
+    "opening_formula": 2,
+    "running_matter": 4,
+    "signature_entity": 1
+  },
+  "failure_taxonomy": {
+    "diacritic_error": 1,
+    "glyph_substitution": 15,
+    "punctuation_diacritic": 1
+  },
+  "false_clean_page_rate": 1.0,
+  "false_clean_pages": 4,
+  "feature_checks": 19,
+  "feature_disagreement_rate": 0.894737,
+  "feature_failures": 17,
+  "independence": {
+    "independent_witness_coverage": 0,
+    "passigli_relation": "same_typesetting_distinct_issue",
+    "s2_support": false
+  },
+  "input_ocr_sha256": "0b2988a3b2c70ba4e86f52508e31c04461b5976d2de024dba35f8a5231dd74f1",
+  "pages_with_ocr": 4,
+  "sample_pages": [
+    275,
+    276,
+    277,
+    278
+  ],
+  "structural_contamination_events": 6,
+  "structural_events": [
+    {
+      "class": "preceding",
+      "observed": "commission tail precedes dispatch I",
+      "page": 275,
+      "would_contaminate": true
+    },
+    {
+      "class": "apparatus",
+      "observed": "editorial footnote follows body line",
+      "page": 275,
+      "would_contaminate": true
+    },
+    {
+      "class": "running",
+      "observed": "running head and signature mark enter OCR",
+      "page": 276,
+      "would_contaminate": true
+    },
+    {
+      "class": "running",
+      "observed": "running head and page number enter OCR",
+      "page": 277,
+      "would_contaminate": true
+    },
+    {
+      "class": "following",
+      "observed": "dispatch II follows selected dispatch",
+      "page": 278,
+      "would_contaminate": true
+    },
+    {
+      "class": "apparatus",
+      "observed": "editorial Agapito footnote enters OCR",
+      "page": 278,
+      "would_contaminate": true
+    }
+  ],
+  "unit_id": "NM-LEG-BORG.1502-10-07",
+  "work_item": "WI-000064"
+}

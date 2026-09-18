@@ -1,0 +1,19 @@
+work_item: WI-000064
+unit_id: NM-LEG-BORG.1502-10-07
+fixed_at: 2026-07-19T16:00:38+01:00
+fixed_before_processing: true
+governing_witness: WIT-NM-LEG-BORG-1850-OLIVA
+sample:
+  source_pdf_pages: [275, 276, 277, 278]
+  printed_pages: [268, 269, 270, 271]
+  djvu_object_zero_based_indices: [274, 275, 276, 277]
+  boundary: "commission tail before dispatch I through the opening of dispatch II"
+inputs:
+  bounded_scan_sha256: f7516b5a22da2233ad9f7a637e2df0b93234607bca5a995f5b7bb2689d1b5384
+  archive_ocr_url: https://archive.org/download/operecompletedi01machgoog/operecompletedi01machgoog_djvu.xml
+  archive_ocr_sha256: 0b2988a3b2c70ba4e86f52508e31c04461b5976d2de024dba35f8a5231dd74f1
+  archive_page_map_url: https://archive.org/download/operecompletedi01machgoog/operecompletedi01machgoog_scandata.xml
+  archive_page_map_sha256: e341d1076c8ee0a7a5568a58830e284290c8527d0d8d23427c4e2694688b9a31
+independence:
+  passigli_issue_rank: same_typesetting_distinct_issue
+  consequence: "issue-to-issue agreement is not independent witness agreement"

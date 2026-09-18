@@ -1,0 +1,31 @@
+witness_id: WIT-NM-DISC-1554-IA
+work_id: NM-DISC
+source_unit_id: NM-DISC.1.12
+type: independent_historical_edition_scan_extract
+edition: {title: "Discorsi di Nicolo Machiavelli fiorentino, sopra la prima deca di Tito Livio", publisher: "Domenico Giglio", publication_place: Venice, publication_year: 1554, colophon_year: 1553}
+files:
+  - path: sources/witnesses/NM-DISC/WIT-NM-DISC-1554-IA/NM-DISC-I12-pages.pdf
+    role: immutable_bounded_scan_extract
+    sha256: 2ff2edfde64d61b789102fcc510a31b3cc21c814fea0d72b8c488e541f309572
+  - path: sources/witnesses/NM-DISC/WIT-NM-DISC-1554-IA/internet-archive-metadata.json
+    role: acquisition_and_rights_metadata
+    sha256: ee3c07bbe533e3bde57bcb48240f2485b5382c6066203907d3aeaefb52250dd5
+chapter_locator: {source_pdf_zero_based_pages: [81, 82, 83, 84, 85], note: "chapter begins mid first extracted page and ends before chapter XIII on final page"}
+acquisition:
+  acquired_at: 2026-07-17
+  acquired_by: "Codex (source_acquisition)"
+  archive_identifier: discorsidinicolo00mach
+  source_pdf_url: https://archive.org/download/discorsidinicolo00mach/discorsidinicolo00mach.pdf
+  source_pdf_sha256: 5705a93a26933e36d75d1260589399da23e3362689b3b80b60582a3a57a5692d
+  contributing_library: Boston Public Library
+  derivation: "pypdf bounded extraction of zero-based pages 81-85; reversible against recorded full-file hash"
+rights_assessment:
+  underlying_work: public_domain_by_age
+  edition: public_domain_by_age
+  scan_layer: public_domain_historical_scan
+  archive_statement: "No copyright page found"
+  corpus_reuse: reproducible_in_corpus
+  evidence: [https://archive.org/details/discorsidinicolo00mach]
+independence: {rank: independent_historical_edition, relative_to: WIT-NM-DISC-1824-IA, note: "sixteenth-century Venetian print, not a scan or transcription derivative of the 1824 edition"}
+integrity_candidate: S1
+unresolved_source_findings: [SOURCE-NM-DISC-I12-002]
