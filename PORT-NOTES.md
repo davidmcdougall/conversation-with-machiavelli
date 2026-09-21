@@ -36,12 +36,15 @@ left behind, as was root-level `TRANSLATION_PROTOCOL.md`.
 
 ## Outstanding
 
-1. **`DEC-009` and `DEC-010` are carried unedited.** SCOPE §6 calls for both
-   rewritten to one page each; DEC-009 is currently 14,070 bytes.
+1. ~~**`DEC-009` and `DEC-010` are carried unedited.**~~ **DEC-009 done
+   2026-09-21** — rewritten to one page (14,070 → 3,892 bytes) as three
+   normalisation classes; the deferred questions N01–N03 are ruled in
+   `decisions.md` as D33, D34 and D36. **DEC-010 still carried unedited.**
 2. **`sources/handoffs/` unchecked.** SCOPE §6 asks for one pass over its 18
    records for acquisition detail recorded nowhere else, before archiving.
-3. **FG-CONS.1.12 is still `review_pending`.** SCOPE §4: closing that review is
-   the first move.
+3. ~~FG-CONS.1.12 is still `review_pending`.~~ **Done 2026-09-18.** Both I.12
+   units went through the dual cold pass and are now established at S2; see
+   `sources/coldpass/`.
 
 ## Git
 

@@ -1,0 +1,97 @@
+# Glossary
+
+Fixed equivalents. A term enters the moment it appears twice. Rulings are
+defended in one line; contested ones are marked **[open]** and are David's.
+
+The two profiles in `translation-drafts/` are watchlists, not glossaries — they
+deliberately propose no renderings. This file is where a ruling actually gets
+made, and it inherits their warnings about collapse.
+
+## Ruled in SCOPE §3 — the *currere* family
+
+| Italian | English | Note |
+|---|---|---|
+| `discorrere` | to discourse | NM .05 `voglio contro ad essa discorrere` |
+| `occorrere` | to occur | NM .05 `quelle ragioni che mi occorrono` |
+| `concorrere` | to concur | FG `io non concorro facilmente` = *I do not readily concur* |
+
+Three *currere* compounds survive intact into English. Most translators sever
+them. Holding all three is the point of the policy, and the reason Guicciardini's
+last sentence answers Machiavelli's first move.
+
+| `considerare` | to consider | Outside the family. Traditionally derived from *con-* + *sidus*. Flag as "traditionally derived from"; the etymology is repeated everywhere and secure nowhere. |
+
+## Political forms — never collapsed into "state"
+
+| Italian | English | Note |
+|---|---|---|
+| `republica` / `Repubblica` | republic | Never "state". Both authors set it against `regno` and `monarchia` as distinct forms. |
+| `regno` | kingdom | FG's whole distinction in .03 turns on kingdom ≠ republic. |
+| `monarchia` | monarchy | FG uses it for unified rule over Italy, not a constitutional label. |
+| `principe` | prince | |
+| `stato` / `Stati` | state | Only NM .04 `gli Stati e le Repubbliche cristiane`, where it is paired with republics and so cannot mean them. Modern nation-state must not be imported. **[open]** |
+| `imperio` | rule | NM `tenuto Imperio temporale` = held temporal rule; FG `lo imperio d'Italia`. "Empire" imports too much. **[open]** |
+| `dominio` | dominion | NM `il dominio delle cose temporali`; FG `dominio temporale`, `in uno dominio solo`. |
+| `provincia` | province | Both authors, repeatedly, of Italy itself. Not a modern administrative unit — the territory-and-people of a country. Kept as the cognate because the facing text shows the reader what it is doing. |
+
+## Religion
+
+| Italian | English | Note |
+|---|---|---|
+| `Religione` / `religione` | religion | **Settled 2026-09-18 on the page image.** The witness prints `religione` lower case at .04 and `Religione` capitalised everywhere else in the unit. The source has been corrected. English cannot carry the shift, so it takes a note: Machiavelli drops the capital exactly where he says those nearest the Church have least of it. |
+| `culto Divino` | divine worship | |
+| `cerimonie` | ceremonies | |
+| `divozione` | devotion | |
+| `credulità` | credulity | Not "superstition" — NM pairs it with `opinione` as something princes cultivate. |
+| `opinione` | opinion | D02. Never "belief": that is the stock English phrase, not what the Italian says. |
+| `reo` / `cattivo` / `tristo` | evil / bad / wicked | D03. Three words, three words. `cattivi` holds the `ogni bene` opposition. |
+| `nascere` | to arise | D04. |
+| `potente` / `potenza` | powerful / power; `un potente` = a powerful one | D06. |
+| `cagione` | cause | |
+| `Capo` | head | `Capo della Religione` (.04) → `sotto un Capo` (.07). The echo is real. |
+| `facilmente` | readily | Reserved: it carries FG's hinge `non concorro facilmente`. Not spent on `più pronta`. |
+| `ordine` / `ordini` | order / orders | NM `qualche principale ordine suo`, `ogni ordine buono`, `ordini militari`. One English word across institutional, moral and military uses, as in the Italian. |
+
+## Judgment and capacity
+
+| Italian | English | Note |
+|---|---|---|
+| `virtù` | *virtù*, italic, untranslated | NM .06 `né di tal virtù`: capacity, not moral virtue, and not simply power since it is distinguished from `potente` in the same clause. Facing-page editions can afford the loan-word; a note carries the rest. **[open]** |
+| `prudente` / `prudenti` | prudent | Practical judgment, argued locally by NM. Not caution. |
+| `conoscitori` | knowing in | `conoscitori delle cose naturali` = knowing in natural things. Not "experts". |
+| `credo` (FG) | I believe | |
+| `non so già` (FG) | I do not know | Suspension, not modesty. |
+| `reputo` (FG) | I reckon | Judgment. Distinct from `credo`. **[open]** |
+
+## Outcome vocabulary
+
+| Italian | English | Note |
+|---|---|---|
+| `felicità` / `infelicità` | happiness / unhappiness | Civic, not private. FG applies them to provinces. |
+| `calamità` | calamity | |
+| `rovina` | ruin | Both authors. |
+| `mantenere` | to maintain / to keep | `mantenere incorrotte` repeats in NM .01 — the repetition is preserved. |
+| `obbligo` | debt | NM .05 and .07, ironic: what Italians owe the Church. "Obligation" flattens the irony. **[open]** |
+| `accrescere` | to augment | Must match `favorire` in the .02 → .03 echo. See problematic.md. |
+| `favorire` | to favour | |
+| `disordine` / `disordini` | disorder | Set against `ordine`. |
+| `libertà` | liberty | FG `ha appetito la libertà`. Not modern liberal freedom. |
+| `facultà` | capacity | FG .02 `non avevano facultà di pervenire`. Not "faculty". |
+
+## Added from FG-CONS.1.12 (2026-09-18)
+
+| Italian | English | Note |
+|---|---|---|
+| `però` | therefore | D22. Consecutive, never "however". The likeliest recurring error in the corpus. |
+| `milita` | has no force | D23. |
+| `al rincontro` | on the other side | D24. Adversative. Distinct from `dall'altra parte` / `da altro` ("on the other hand"). |
+| `complessione` | complexion | D25. Humoral. |
+| `vituperio` | disgrace | D26. Paired with `obbrobrio` → opprobrium; the doublet stays a doublet. |
+| `facilmente` / `facile` | readily / easy | D27. Ruled as a family. |
+| `participare` | to impart | D28. Transitive. |
+| `credito` | credit | Twice across the pair (NM .02, FG .01); the second answers the first. |
+| `capo` | head | Third occurrence, and cross-author: FG `farsi capo` answers NM `sotto un Capo` and `Capo della Religione`. |
+| `grandezza` | greatness | Twice in FG .01–.02, argumentatively: the Church's greatness denies the cities theirs. |
+| `causa` (FG) / `cagione` (NM) | cause | Two Italian words, one English word. Recorded so it does not read as an oversight. |
+| `forze` | forces / force | `non ha avuto tante forze` → forces; `ingegno e forze` → force. Same root held. |
+| `se bene` / `benché` | although / albeit | D31. Ruled as a pair, distinctly. |

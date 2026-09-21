@@ -7,4 +7,41 @@ relationship_pointer: FG-CONS-DR-012
 rights: "PD page-image body text only under DEC-010"
 adjudication: "1824 governs; every substantive or systematic witness difference is recorded in the disagreement table."
 consulted_layers: []
-class_t_review_required: true
+second_pass: sources/coldpass/NM-DISC.1.12-passB.md
+second_pass_performed: 2026-09-18
+second_pass_result: >
+  Independent cold transcription from the witness page images by a reader with
+  no access to this text. No word, clause or sense disagreement. Divergences
+  were orthographic and punctuational only, governed by DEC-009 and recorded in
+  sources/coldpass/COLLATION-2026-09-18.md.
+status_note: established 2026-09-18
+
+corrections:
+  - id: NM-DISC-I12-C001
+    applied: 2026-09-18
+    locator: paragraph .04
+    was: "hanno meno Religione"
+    now: "hanno meno religione"
+    evidence: >
+      1824 witness, printed p. 64, final line. Lower case is unambiguous at the
+      page, and the same page prints Religione capitalised four times
+      (ripieni di Religione; nelle Religioni; La quale Religione; Capo della
+      Religione nostra). Pass A regularised the single exception away; the cold
+      pass caught it and David adjudicated on the page image.
+    class: capitalisation
+  - id: NM-DISC-I12-C002
+    applied: 2026-09-18
+    locator: paragraph .02
+    was: "nelle Religioni eziandio false"
+    now: "nelle Religioni, eziandio false"
+    evidence: "1824 witness, printed p. 64. The comma is printed."
+    class: punctuation
+open:
+  - id: NM-DISC-I12-O-ACCENT
+    question: >
+      The witness prints grave throughout (Nè, perchè, benchè); the established
+      text carries acute Né in four places while keeping grave perchè. Pass A is
+      internally inconsistent. This is a DEC-009 normalisation ruling, not a
+      reading. Ruled 2026-09-21 as D33: modern acute on closed final e
+      throughout, applied mechanically. DEC-009 Class A.
+    instances: 4

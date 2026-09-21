@@ -7,4 +7,29 @@ relationship_pointer: FG-CONS-DR-012
 responds_to: NM-DISC.1.12
 rights: "Canestrini PD body only; Palmarocchi page-image readings used as consultative collation evidence under DEC-010"
 adjudication: "Canestrini governs; all detected lexical, supplied-letter, orthographic, and systematic editorial differences are recorded."
-class_t_review_required: true
+second_pass: sources/coldpass/FG-CONS.1.12-passB.md
+second_pass_performed: 2026-09-18
+second_pass_result: >
+  Independent cold transcription from the witness page images by a reader with
+  no access to this text. No word, clause or sense disagreement. Divergences
+  were orthographic and punctuational only, governed by DEC-009 and recorded in
+  sources/coldpass/COLLATION-2026-09-18.md.
+status_note: established 2026-09-18
+
+corrections:
+  - id: FG-CONS-I12-C001
+    applied: 2026-09-18
+    locator: heading
+    was: "(no rubric recorded)"
+    now: "Di quanta importanza sia tenere conto della religione, e come la Italia, per esserne mancata mediante la Chiesa romana, è rovinata"
+    evidence: >
+      Canestrini 1857, printed p. 27: a centred heading CONSIDERAZIONE SUL
+      CAPITOLO XII followed by a two-line rubric in smaller type. Recorded by
+      the independent cold reader. Canestrini's wording differs from the 1824
+      Discorsi rubric (lower-case religione, comma after la Italia, lower-case
+      romana), so it is his setting of the chapter title over the reply, not a
+      reprint of the 1824 text.
+    class: heading_apparatus
+    note: >
+      Pass A omitted the rubric. Its absence caused a downstream error: the
+      first English draft imported the Machiavelli rubric instead, unattributed.

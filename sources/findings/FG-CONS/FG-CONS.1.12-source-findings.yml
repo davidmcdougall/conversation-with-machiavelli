@@ -13,7 +13,7 @@ findings:
     resolution: "Corpus and normalized bodies derive only from Canestrini's PD body. Palmarocchi page images were used to verify readings; no Wikisource transcription or Palmarocchi editorial expression was copied."
     resolved_by: "Codex (source_acquisition)"
     resolved_at: 2026-07-17
-    review_status: pending_class_T_review
+    review_status: closed_by_cold_pass_2026-09-18
     status: resolved
   - id: SOURCE-FG-CONS-I12-002
     passage_id: FG-CONS.1.12
@@ -29,7 +29,7 @@ findings:
     resolution: "Canestrini body zones were established visually; T001 excludes running/adjacent material, T002 excludes footnote 1, and T003 excludes the bounded notes and continuation across printed pp. 28-30."
     resolved_by: "Codex (source_acquisition)"
     resolved_at: 2026-07-17
-    review_status: pending_class_T_review
+    review_status: closed_by_cold_pass_2026-09-18
     status: resolved
   - id: SOURCE-FG-CONS-I12-003
     passage_id: FG-CONS.1.12.03
@@ -45,5 +45,5 @@ findings:
     resolution: "Canonical review draft reads non [ar]ebbe; no silent expansion was made."
     resolved_by: "Codex (source_acquisition)"
     resolved_at: 2026-07-17
-    review_status: pending_class_T_review
+    review_status: closed_by_cold_pass_2026-09-18
     status: resolved

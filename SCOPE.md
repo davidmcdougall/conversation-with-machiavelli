@@ -77,7 +77,7 @@ exist. See §7.
 | 9 | NM-DISC.1.9 | FG-CONS.1.9 | FG-CONS-DR-009 | — | — | — | — | — |
 | 10 | NM-DISC.1.10 | FG-CONS.1.10 | FG-CONS-DR-010 | — | — | — | — | — |
 | 11 | NM-DISC.1.11 | FG-CONS.1.11 | FG-CONS-DR-011 | — | — | — | — | — |
-| 12 | NM-DISC.1.12 | FG-CONS.1.12 | FG-CONS-DR-012 | S2 established | S2 review-pending | — | — | — |
+| 12 | NM-DISC.1.12 | FG-CONS.1.12 | FG-CONS-DR-012 | S2 established | S2 established | — | — | — |
 | 13 | NM-DISC.1.14 | FG-CONS.1.14 | FG-CONS-DR-013 | — | — | — | — | — |
 | 14 | NM-DISC.1.16 | FG-CONS.1.16 | FG-CONS-DR-014 | — | — | — | — | — |
 | 15 | NM-DISC.1.23 | FG-CONS.1.23 | FG-CONS-DR-015 | — | — | — | — | — |
@@ -157,6 +157,27 @@ traditional derivation, *con-* + *sidus*, the augur's word for observing the
 constellation whole before acting. Flag it as "traditionally derived from" —
 the etymology is widely repeated but not secure.
 
+### Paragraphing policy
+
+**Paragraph divisions in this edition are editorial.** Both I.12 witnesses print
+their unit as one unbroken block — established by measuring the left edge of
+every line on every page, with no indent anywhere after the opening — and there
+is no reason to expect the remaining 76 units to differ. The divisions in
+`corpus/` are ours. They exist because a thousand unbroken words is punishing on
+a screen, which is a good enough reason for a reading edition and not a good
+enough reason to leave them undeclared.
+
+They are load-bearing as well as cosmetic: `FG-CONS.1.12.01` and its siblings
+are the unit addresses, the collation tables' locators point at them, and the
+site's navigation is built on them. So they are declared here, marked
+`paragraph_divisions: editorial` in each unit's front-matter, and stated in the
+source note at the foot of each chapter. What is never done is to let the
+apparatus imply a witness supports them.
+
+The same applies to the chapter rubrics. Machiavelli's three-line italic rubric
+is heading apparatus, not body text, and is carried in a `rubric` field rather
+than inside the first paragraph.
+
 ---
 
 ## 4. Current state — the honest gap
@@ -165,7 +186,7 @@ the etymology is widely repeated but not secure.
 |---|---|---|---|
 | Link records | **39** | 0 | 39 |
 | NM source established | 1 | 38 | 39 |
-| FG source established | 0 (1 review-pending) | 38 | 39 |
+| FG source established | 1 | 38 | 39 |
 | Collated | 2 units | 76 | 78 |
 | Translated | **0** | 78 | 78 |
 | Annotated | **0** | 78 | 78 |
@@ -188,11 +209,12 @@ headings on porting, or record plainly that the pairing is attested in both.
 have never run once. Every estimate below stage 3 is unvalidated until one
 unit goes end to end.
 
-**The middle is not signed off either.** `corpus/FG-CONS/FG-CONS.1.12.md`
-carries `status: review_pending` and `integrity_class: S2-review-pending`. The
-I.12 pair is proven through collation, not through establishment. Closing that
-one review is the cheapest available move in the project, and it converts the
-only worked pair from a maybe into a fact. Do it before anything else.
+**The middle was signed off on 2026-09-18.** Both I.12 units sat at
+`review_pending` on a Class T review that §7 abolishes, and neither had ever had
+the dual cold pass §7 keeps. The pass was run (`sources/coldpass/`), the two
+readers agreed on every word, clause and sense across 1,419 words, and both
+units are now `status: established`, `integrity_class: S2`, version 0.2.0. One
+pair is through stage 3 for real. Nothing is through stage 4.
 
 ### Acquisition is smaller than it looks
 
@@ -363,16 +385,61 @@ fit, and write the file itself new.
 **One human check:** reread a published unit cold three months later. Time is
 a better reviewer than a second model pass.
 
-**One inherited rule**, kept because it is genuinely load-bearing: no
-image-derived reading enters the text on a single model pass. A silent
-transcription error propagates into the published text and nothing downstream
-catches it. Dual cold pass; disagreement escalates to David, never reruns.
+**One inherited rule**, kept because it is genuinely load-bearing, and scoped
+on 2026-09-18 to what it can actually catch: no image-derived reading enters the
+text on a single model pass. A silent transcription error propagates into the
+published text and nothing downstream catches it. Dual cold pass; disagreement
+escalates to David, never reruns.
+
+**The pass tests words, clauses and sense. Nothing else.** Does the second
+reader drop anything, add anything, or read a word in a way that changes the
+meaning? Those are the errors no later stage catches, because the translator
+will faithfully render whatever is put in front of them.
+
+Everything below that level is normalisation, not reading: accents, apostrophes
+and elisions, capitalisation, punctuation, euphonic *d*, word division, space
+after an elided apostrophe. Those are settled once in DEC-009 and applied
+mechanically, and a divergence in them is not a finding. This edition does not
+claim to be a text of record (§1) and does not adjudicate against the critical
+tradition (§8); auditing orthographic fidelity to a nineteenth-century
+compositor would be auditing a layer it has already disclaimed. Collation
+reports name the normalisation classes in one line each and do not enumerate
+instances.
 
 This rule is empirical, not a preference. `qc/source-integrity/` holds the
 stress runs that produced it (WI-000062–64: sample manifests, metrics,
 intervention logs, an independent rerun). The pilot document and one run's
 results port with it, so the rule arrives carrying its evidence rather than as
 an assertion.
+
+**What makes a pass cold.** The second reader must not have seen the first
+reader's output. This is the whole content of the rule and it is easy to violate
+by accident, because the obvious way to check a transcription — open it and read
+along against the page — destroys exactly the independence being tested. An
+assistant that has the established text in its context cannot perform the second
+pass, however careful it is.
+
+**So the second pass always goes to a separate agent, by default, for this and
+every review of the same kind.** It is given the page images in a directory
+containing nothing else, and instructed not to open any other file, not to
+search, and not to use the scan's OCR layer for any reading. Parallel readers get
+separate scratch directories. Adjudication is a third role: the collator sees
+both passes and neither page, and escalates disagreements rather than settling
+them.
+
+First run, 2026-09-18, on the I.12 pair — see `sources/coldpass/`. Across 1,419
+words the two passes disagreed about no word, no clause and no sense. Every
+divergence was orthographic or punctuational. The one reading carrying any
+semantic weight, Canestrini's bracketed supply in `non [ar]ebbe patito`,
+resolves on sense and on Palmarocchi's unbracketed `arebbe`: the second reader
+missed thin brackets on a bitonal scan. The transcription was sound and the pass
+said so.
+
+That is the result to reason from, not the raw count. Run unscoped it produced
+44 divergences, none of which would have changed an English word. Scoped as
+above it is cheap, and a run that comes back empty is worth having. Revisit at
+unit ten whether a clean witness can be sampled rather than fully
+double-passed.
 
 Everything else is deleted — Class T review of governance documents,
 bounded-amendment rechecks, the E1–E7 gate, the freeze tag. **The edition is
