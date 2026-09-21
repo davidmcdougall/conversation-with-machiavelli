@@ -13,6 +13,8 @@ rubric_en: "Of how much importance it is to take account of religion, and how It
 rubric_source: Canestrini 1857, printed p. 27 — his own setting of the chapter title over the reply, not the 1824 Discorsi rubric
 translated: 2026-09-18
 open_for_david: 2 — see decisions.md O06, O07
+title: "Religion, and the ruin of Italy"
+standfirst: "Machiavelli argues that a state must keep its religion uncorrupted, and that the Roman Church has ruined Italy twice over — by its example, and by keeping the peninsula divided. Guicciardini, reading him some fifteen years later, goes further than Machiavelli on the first charge, grants the premise of the second, and then declines to draw his conclusion."
 ---
 
 # Consideration on chapter XII
