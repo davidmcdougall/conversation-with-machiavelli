@@ -15,6 +15,17 @@ second_pass_result: >
   were orthographic and punctuational only, governed by DEC-009 and recorded in
   sources/coldpass/COLLATION-2026-09-18.md.
 status_note: established 2026-09-18
+disputed: true
+disputed_on: 2026-09-21
+disputed_by: FG-CONS-I12-F001
+disputed_note: >
+  The status and integrity_class above are left as written rather than
+  silently downgraded, but neither is supported. See
+  sources/findings/FG-CONS/FG-CONS.1.12-witness-contamination.yml: the text is
+  established from Palmarocchi 1933, not from the governing witness named in
+  this record, and the second_pass_result line - "divergences were orthographic
+  and punctuational only" - is the misclassification that hid it. Awaiting
+  David's decision on re-establishment.
 
 corrections:
   - id: FG-CONS-I12-C001

@@ -1,0 +1,118 @@
+source_unit_id: FG-CONS.1.12
+finding_id: FG-CONS-I12-F001
+raised: 2026-09-21
+raised_by: DEC-009 rewrite, class (b) page check
+severity: blocking
+class: witness_contamination
+
+summary: >
+  The text in corpus/FG-CONS/FG-CONS.1.12.md is not a transcription of its
+  declared governing witness. Every divergence between pass A and pass B that
+  the 2026-09-18 collation classified as "pass A's undeclared editorial
+  conventions" is a reading of Palmarocchi 1933, the comparison witness, which
+  DEC-010 and SCOPE §4 admit as collation evidence only.
+
+evidence:
+  method: >
+    Canestrini 1857 pp. 27-30 (sources/witnesses/.../FG-CONS-I12-pages.pdf) and
+    Palmarocchi 1933 pp. 22-23 (scan-page-28.jpg, scan-page-29.jpg) rendered at
+    native resolution and read at 10x-16x.
+  table:
+    - locus: "non [ar]ebbe patito"
+      canestrini_1857: "non ebbe patito"
+      palmarocchi_1933: "non [ar]ebbe patito"
+      corpus_has: "non [ar]ebbe patito"
+      note: >
+        Decisive. The square brackets are PRINTED ON THE PALMAROCCHI PAGE.
+        Canestrini prints plain "ebbe", no brackets, no "ar". The comparison
+        record FG-CONS-I12-D001 states witness_1857 as "non [ar]ebbe patito"
+        and rationalises the brackets as "Canestrini's supplied letters"; both
+        are false. This was the collation's B1, "the important one".
+    - locus: "e' vituperii / e' frutti / e' sudditi / e' quali"
+      canestrini_1857: "e vituperii / e frutti / e sudditi / e quali"
+      palmarocchi_1933: "e' vituperi / e' frutti / e' sudditi / e' quali"
+      corpus_has: "apostrophe, all four"
+    - locus: "libertà ed imperio"
+      canestrini_1857: "libertà e imperio"
+      palmarocchi_1933: "libertá ed imperio"
+      corpus_has: "ed imperio"
+    - locus: "consuetudine ed inclinazione"
+      canestrini_1857: "consuetudine e inclinazione"
+      palmarocchi_1933: "ed"
+      corpus_has: "ed inclinazione"
+    - locus: "de' barbari"
+      canestrini_1857: "de Barbari (capital B, no apostrophe)"
+      palmarocchi_1933: "de' barbari (lower case)"
+      corpus_has: "de' barbari"
+    - locus: "de' romani"
+      canestrini_1857: "de' Romani (capital R)"
+      palmarocchi_1933: "de' romani"
+      corpus_has: "de' romani"
+    - locus: "soggiogarono"
+      canestrini_1857: "soggiogorono"
+      palmarocchi_1933: "soggiogarono"
+      corpus_has: "soggiogarono"
+    - locus: "violenzia"
+      canestrini_1857: "violenza"
+      palmarocchi_1933: "violénzia"
+      corpus_has: "violenzia"
+    - locus: "eziandio"
+      canestrini_1857: "eziamdio"
+      palmarocchi_1933: "eziandio"
+      corpus_has: "eziandio"
+    - locus: "chè io reputo"
+      canestrini_1857: "chè io reputo (accented; che unaccented two words later)"
+      palmarocchi_1933: "che io reputo"
+      corpus_has: "che io reputo"
+      note: >
+        A reading, not an accent convention. Canestrini distinguishes causal
+        ché from complementiser che in the same clause. Pass B read the accent;
+        pass A did not. The collation recorded it nowhere.
+    - locus: "punctuation weight, 7 loci"
+      canestrini_1857: "comma at monarchia, Italia, altrimenti, republica, sudditi, Chiesa; no comma after tutta"
+      palmarocchi_1933: "semicolon at all six; comma after tutta"
+      corpus_has: "Palmarocchi pointing throughout"
+      note: >
+        Not scan loss. Canestrini's semicolons print unambiguously on the same
+        scan at the same type size - "de' Romani;" and "violenza;" on p. 30 -
+        so the commas at the other loci are commas.
+    - locus: "né / accents"
+      canestrini_1857: "nè, perchè, benchè (grave throughout)"
+      palmarocchi_1933: "né, perché, benchè (mixed, mostly acute)"
+      corpus_has: "acute throughout"
+  counter_evidence: >
+    One divergence is NOT contamination. At "sotto uno re ⟨gap⟩ pure" both
+    readers independently found an anomalously wide blank with no ink in
+    Canestrini. Palmarocchi prints a semicolon there. Pass A's semicolon is
+    therefore a correct restoration of a point Canestrini's impression dropped,
+    and is the one place where consulting the comparison witness did the job
+    collation is for. This was open item O09; it is now closed on evidence.
+
+assessment: >
+  Pass A (2026-07-17, single agent) transcribed or was contaminated by
+  Palmarocchi and the unit was labelled Canestrini. The 2026-09-18 dual cold
+  pass detected the whole of it - pass B's Canestrini transcription differs from
+  pass A at exactly these points - but the collation classified the differences
+  as orthographic convention and routed them to DEC-009 instead of raising a
+  witness question. SCOPE §7's rule worked; the triage after it did not.
+
+  NM-DISC.1.12 shows no comparable pattern: both passes read the 1824 alike on
+  euphonic d and on grave perchè, and its 15 divergences do not track the 1554.
+  This finding is specific to FG-CONS.1.12.
+
+consequences:
+  - "corpus/FG-CONS/FG-CONS.1.12.md is not established from its governing witness."
+  - "integrity_class S2 is not supported; S2 requires witness independence."
+  - "sources/comparisons/FG-CONS/FG-CONS.1.12-witness-disagreements.yml records a false witness_1857 reading at D001."
+  - "DEC-010 breach: Palmarocchi's editorial expression is consultation-only, CC BY-SA/GFDL, and is reproduced in a corpus file licensed for reuse."
+  - "The published English at translations/FG-CONS.1.12.md was drafted against this text and inherits any affected reading."
+
+recommendation: >
+  Do not patch. Re-establish the unit from Canestrini - pass B is already a
+  clean cold transcription of it - then run a second independent Canestrini
+  pass against that, and rebuild the collation so Palmarocchi readings appear
+  only as variant notes. Re-check the D001 counterfactual in translation:
+  Canestrini's "non ebbe patito" and Palmarocchi's "non [ar]ebbe patito" are
+  not the same claim.
+
+disposition: open - escalated to David 2026-09-21, no corpus file changed

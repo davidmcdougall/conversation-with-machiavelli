@@ -45,7 +45,7 @@ This log becomes the translator's preface.
 | D33 | Accent direction — `Né`/`Nè`, `perché`/`perchè` | modern acute on closed final *e*; grave where modern Italian sets grave | **N01, ruled 2026-09-21. DEC-009 Class A.** Orthographic: no Italian word pair is distinguished by accent *direction* on the same vowel, so the parse cannot move. Both witnesses print grave (dual-attested: pass B reads `Perchè`, `nè` in the 1824 too), but this edition disclaimed being a text of record, and grave on `perchè` is period costume, which register.md refuses (D11). The question as filed described only NM-DISC, which is grave except four acute `Né`; FG-CONS.1.12 is acute throughout against a grave witness. The rule corrects both. |
 | D34 | Space after an elided apostrophe | apocope spaced, elision solid | **N02, ruled 2026-09-21. DEC-009 Class A.** `de' Romani`, `a' suoi`, `e' quali` / `l'ha`, `d'Italia`, `all'altre`. Justification variance is a red herring — the spaced apocope is the modern convention whatever the line does, and p. 30 prints it spaced anyway. Two cases, one rule, no page. |
 | D35 | The apostrophe on the Florentine plural article (`e'` / `e`) | supplied throughout, including where the witness omits it | **Ruled 2026-09-21. DEC-009 Class A.** Filed as a reading (collation B4) and reclassified: Canestrini prints bare `e` at `e vituperii`, `e frutti`, `e sudditi`, `e quali` — confirmed at magnification on pp. 27, 29, 30 — but the syntax fixes the parse regardless (`di tutti e vituperii` cannot be the conjunction). So the apostrophe establishes nothing; it *signals* what the syntax already determined, which is what a reading edition owes a modern reader. Pass A's four unrecorded supplies are retrospectively correct, and now declared. |
-| D36 | Euphonic *d* | modern usage — `ed`/`ad`/`od` before the same vowel only; never page-checked | **N03, ruled 2026-09-21. DEC-009 Class A.** Filed as "needs one look at the Canestrini page"; the look was taken and does not settle the rule. p. 30 prints `consuetudine e inclinazione` bare, so pass A supplied in all three places — but a per-instance page rule is unaffordable across 78 units on a scan where a missing `d` and a dropped `d` are indistinguishable, and it buys nothing a reader can use. `ed` is a sandhi variant of the same conjunction, not a different word; setting it by rule establishes no reading. |
+| D36 | Euphonic *d* | follow the governing witness where legible; supply nothing; where the readers split and the page is doubtful, the form without *d* stands | **N03, ruled 2026-09-21, revised the same day. DEC-009 Class B.** First ruled as "modern usage, applied mechanically". Applying it exposed the error: NM-DISC.1.12 carries eleven `ed`/`ad` forms that BOTH passes read identically off the 1824 page, nine of them before an unlike vowel — including `favorirle ed accrescerle`, which is D09 and which problematic.md calls the demonstration. A mechanical modern rule would have stripped nine legible, dual-attested printed letters, in flat contradiction of Class B. Following the witness gives the right answer in every case: Canestrini prints bare `e` at `libertà e imperio` and `consuetudine e inclinazione` (pp. 28, 30), the 1824 prints `ed`. The three FG splits were never a euphonic-*d* question at all — see FG-CONS-I12-F001. |
 | D37 | Punctuation weight — semicolon vs comma (collation §A4) | the witness as printed; neither lightened nor strengthened | **Ruled 2026-09-21. DEC-009 Class B.** Not previously deferred, settled or opened — it fell through. It is also the only one of the collation's four "systematic conventions" that is potentially substantive: where the stops fall decides which clause `nondimeno` answers, which is what D31 already turns on. Checked on the page, and the collation's guess is wrong. p. 29 prints clean commas at `a tutti e sudditi,` and `non ci era la Chiesa, anzi` with no upper dot; p. 30 prints unmistakable semicolons at `de' Romani;` and `violenza;` at the same type size on the same scan. The scan is not losing dots — **pass A pointed the text more heavily than Canestrini does.** See the open item below for the corpus consequence. |
 
 ## Closed
@@ -56,17 +56,52 @@ ruled above as D33, D34 and D36; the rules themselves live in
 2026-09-21. Two further questions surfaced during that pass and are ruled as
 D35 and D37.
 
-## Open — raised by the DEC-009 page check, 2026-09-21
+## Blocking — FG-CONS.1.12 is established from the wrong witness
 
-The rulings above are doctrine. These are their consequences for text already
-established, and for readings the page check turned up in passing. **No corpus
-file was changed.** Each needs David's word.
+**FG-CONS-I12-F001**, raised 2026-09-21. Full evidence in
+`sources/findings/FG-CONS/FG-CONS.1.12-witness-contamination.yml`.
+**No corpus file was changed.**
 
-| # | Question | Note |
+The class (b) page check for D37 went to Canestrini pp. 27–30 and then to
+Palmarocchi pp. 22–23 for comparison. Every divergence between pass A and pass
+B that the 2026-09-18 collation filed as "pass A's undeclared editorial
+conventions" is a **Palmarocchi 1933 reading** — the comparison witness, which
+DEC-010 admits as collation evidence only.
+
+The decisive locus is the one the collation itself called "the important one".
+Pass A reads `non [ar]ebbe patito` and the comparison record rationalises the
+brackets as Canestrini's supplied letters. **The brackets are printed on the
+Palmarocchi page.** Canestrini prints plain `ebbe`. The same pattern holds at
+`e'` ×4, `ed imperio`, `ed inclinazione`, `de' barbari`, `de' romani`,
+`soggiogarono`, `violenzia`, `eziandio`, acute accents throughout, and the
+seven points of pointing — Canestrini against pass A in every one, Palmarocchi
+with pass A in every one.
+
+So the corpus unit is a transcription of Palmarocchi wearing Canestrini's
+label. `integrity_class: S2` is not supported, and Palmarocchi's editorial
+expression is CC BY-SA/GFDL and consultation-only, so this is a rights problem
+as well as a textual one.
+
+**The cold pass caught all of it.** Pass B's Canestrini transcription differs
+from pass A at precisely these points. SCOPE §7's rule worked; the triage after
+it did not — 29 real witness divergences were classified as orthography and
+routed to DEC-009, which is how they reached me today as a normalisation
+question.
+
+| # | Item | Status |
 |---|---|---|
-| O08 | FG-CONS.1.12 punctuation | Under D37 the established text is wrong in roughly seven places, all in the same direction: pass A sets a semicolon where Canestrini prints a comma — at `monarchia;`, `Italia;`, `altrimenti;`, `republica;`, `sudditi;`, `Chiesa;`, and a comma after `tutta` that the page does not print. Two of these (`sudditi`, `Chiesa`) were confirmed at magnification; the rest follow from the same evidence. One reversed case at `de' romani, e' quali` where the page prints a semicolon. Correcting them takes FG-CONS.1.12 to v0.2.2. |
-| O09 | `re ␣␣ pure` | The one mark the Canestrini page cannot settle: an anomalously wide gap after `sotto uno re` with no ink at 18×, independently found by both passes. Pass A prints a semicolon. Under D37 clause 12 this escalates rather than being ruled, because `pure` is adversative and opens a new movement, so the weight of the stop is load-bearing. Palmarocchi 1933 is the comparison witness and would settle it in one look. |
-| O10 | Readings confirmed against pass B, not yet applied | The p. 30 check incidentally confirms pass B on four contested readings: `soggiogorono` not `soggiogarono` (B3 — pass A silently corrected the compositor, which DEC-009 does not permit); `violenza` not `violenzia` (B5); `de' Romani` and `de' Barbari` capitalised (B6); and `piu` unaccented at `che è piu secondo` (B7 — but this one is now Class A and is silently corrected to `più`, so it is no longer a finding). These are Class B corrections to an established S2 text and should move together with O08. |
+| O08 | FG-CONS.1.12 punctuation | Superseded by F001. Not seven corrections — the pointing is Palmarocchi's throughout. |
+| O09 | `re ␣␣ pure` | **Closed on evidence.** Palmarocchi p. 23 prints `sotto uno re; pure`. Canestrini's impression dropped the point; both readers independently found the gap. Pass A's semicolon is a correct restoration and the one place where consulting the comparison witness did the job collation exists for. |
+| O10 | Readings confirmed against pass B | Superseded by F001. All confirmed against Canestrini, and all are Palmarocchi readings in pass A. |
+| O11 | `chè io reputo` | **New, and recorded nowhere before.** Canestrini p. 28 prints `chè io reputo che`, accenting the causal conjunction and leaving the complementiser bare two words later. Pass A has `che`, flattening a distinction the compositor made deliberately. A reading, not an accent convention — D33 governs direction, not presence, and `che` is a word. |
+
+**Recommendation.** Do not patch. Re-establish from Canestrini — pass B is
+already a clean cold transcription of it — then run a second independent
+Canestrini pass against that, and rebuild the collation so Palmarocchi appears
+only as variant notes. The English at `translations/FG-CONS.1.12.md` was
+drafted against the contaminated text; `non ebbe patito` and `non [ar]ebbe
+patito` are not the same claim, and that one sits inside Guicciardini's
+counterfactual.
 
 ## Open — David's call
 

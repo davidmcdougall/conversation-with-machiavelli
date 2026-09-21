@@ -5,10 +5,17 @@ records:
   - id: FG-CONS-I12-D001
     locator: FG-CONS.1.12.03
     class: supplied_letters
-    witness_1857: "non [ar]ebbe patito"
-    witness_1933: "non arebbe patito"
-    established: witness_1857
-    rationale: "Canestrini's supplied letters remain visibly bracketed under DEC-009."
+    witness_1857: "non ebbe patito"
+    witness_1933: "non [ar]ebbe patito"
+    established: DISPUTED
+    rationale: >
+      CORRECTED 2026-09-21 (FG-CONS-I12-F001). The previous record stated
+      witness_1857 as "non [ar]ebbe patito" and explained the brackets as
+      Canestrini's supplied letters. Both are false: the brackets are printed
+      on the PALMAROCCHI page (p. 23) and Canestrini (p. 28) prints plain
+      "ebbe". The established text carries the Palmarocchi reading. Sense
+      differs - "did not suffer" against the counterfactual "would not have
+      suffered" - so this is not orthographic.
   - id: FG-CONS-I12-D002
     locator: FG-CONS.1.12.03
     class: orthographic
