@@ -1,0 +1,53 @@
+source_unit_id: FG-CONS.1.12
+finding_id: FG-CONS-I12-F002
+raised: 2026-09-21
+raised_by: dual cold pass B/C, COLLATION-2026-09-21
+severity: open - blocks S2
+class: word_level_disagreement
+locator: FG-CONS.1.12.01
+
+question: "vituperii or viluperii"
+
+pass_B: "vituperii"
+pass_C: "viluperii"
+palmarocchi_1933: "vitupèri"
+
+evidence:
+  pass_C_method: >
+    Magnified to 2400x and compared the third letter against both t of "tutti",
+    four words earlier on the same line. Reports that in this fount a t has a
+    short ascender barely above x-height, a visible crossbar and a curled foot,
+    and that the letter in question is a plain full-height vertical with none
+    of the three. Transcribed as a compositor's error, printed.
+  pass_B_method: >
+    Read "vituperii" and did not flag the locus as doubtful.
+  scan_limit: >
+    The Canestrini scan is 685 px wide with a body x-height of about 5 px.
+    Magnification past roughly 1600% enlarges pixels rather than detail, so a
+    broken or over-inked t and an l are near the resolution floor.
+
+assessment: >
+  "viluperii" is not a word. "vituperii" is, and is what the sense requires -
+  the Roman court as an exemplar of all the world's disgraces, which is the
+  reading D26 already turns on and which sits in the unit's most quotable line.
+  So the choice is between a genuine foul sort transcribed faithfully and a
+  misread letter. Neither pass is obviously wrong: pass C gave a method and a
+  control, which is the stronger report; pass B gave the lexically real word.
+  Palmarocchi's "vitupèri" is a third form and is not evidence for Canestrini.
+
+  Note that the sense is not in doubt either way. Whichever letter the
+  compositor set, the word is vituperium. The translation is unaffected; only
+  the diplomatic form of the established Italian is.
+
+disposition: >
+  Open. Carried in the body as angle-bracketed uncertainty per the project's
+  transcription convention, and the unit is held at review_pending / S1 rather
+  than established, because S2 requires witness independence with no open
+  word-level disagreement. Escalated to David; not rerun, not resolved.
+
+recommendation: >
+  A third reading will not settle it at this resolution - the scan is the
+  binding constraint, not the reader. Either accept "vituperii" and record
+  pass C's observation as a note on the witness, or acquire a better
+  impression of Canestrini p. 27. The first is cheap and defensible for a
+  reading edition; the second is the only thing that would actually answer it.

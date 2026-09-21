@@ -1,46 +1,99 @@
 source_unit_id: FG-CONS.1.12
-status: accepted
+status: review_pending
+version: "0.3.0"
 governing_witness: WIT-FG-CONS-1857-CANESTRINI
 collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
-integrity_class: S2
+integrity_class: S1
+integrity_note: >
+  Not S2. S2 requires witness independence with no open word-level
+  disagreement; FG-CONS-I12-F002 is open.
 relationship_pointer: FG-CONS-DR-012
 responds_to: NM-DISC.1.12
 rights: "Canestrini PD body only; Palmarocchi page-image readings used as consultative collation evidence under DEC-010"
-adjudication: "Canestrini governs; all detected lexical, supplied-letter, orthographic, and systematic editorial differences are recorded."
-second_pass: sources/coldpass/FG-CONS.1.12-passB.md
-second_pass_performed: 2026-09-18
-second_pass_result: >
-  Independent cold transcription from the witness page images by a reader with
-  no access to this text. No word, clause or sense disagreement. Divergences
-  were orthographic and punctuational only, governed by DEC-009 and recorded in
-  sources/coldpass/COLLATION-2026-09-18.md.
-status_note: established 2026-09-18
-disputed: true
-disputed_on: 2026-09-21
-disputed_by: FG-CONS-I12-F001
-disputed_note: >
-  The status and integrity_class above are left as written rather than
-  silently downgraded, but neither is supported. See
-  sources/findings/FG-CONS/FG-CONS.1.12-witness-contamination.yml: the text is
-  established from Palmarocchi 1933, not from the governing witness named in
-  this record, and the second_pass_result line - "divergences were orthographic
-  and punctuational only" - is the misclassification that hid it. Awaiting
-  David's decision on re-establishment.
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38). Palmarocchi appears as variant notes only."
 
-corrections:
-  - id: FG-CONS-I12-C001
-    applied: 2026-09-18
-    locator: heading
-    was: "(no rubric recorded)"
-    now: "Di quanta importanza sia tenere conto della religione, e come la Italia, per esserne mancata mediante la Chiesa romana, è rovinata"
-    evidence: >
-      Canestrini 1857, printed p. 27: a centred heading CONSIDERAZIONE SUL
-      CAPITOLO XII followed by a two-line rubric in smaller type. Recorded by
-      the independent cold reader. Canestrini's wording differs from the 1824
-      Discorsi rubric (lower-case religione, comma after la Italia, lower-case
-      romana), so it is his setting of the chapter title over the reply, not a
-      reprint of the 1824 text.
-    class: heading_apparatus
+history:
+  - version: "0.2.1"
+    status: withdrawn
+    withdrawn_on: 2026-09-21
+    reason: >
+      FG-CONS-I12-F001. Established from Palmarocchi 1933, the comparison
+      witness, and labelled Canestrini. Claimed S2 without witness
+      independence, and reproduced Palmarocchi's editorial expression in a
+      corpus file licensed for reuse, in breach of DEC-010. The 2026-09-18
+      dual pass detected all twenty-nine loci; the collation classified them
+      as orthographic convention.
+  - version: "0.3.0"
+    status: review_pending
+    established_on: 2026-09-21
+    reason: Re-established from Canestrini on two independent cold passes.
+
+passes:
+  - id: B
+    performed: 2026-09-18
+    file: sources/coldpass/FG-CONS.1.12-passB.md
+  - id: C
+    performed: 2026-09-21
+    file: sources/coldpass/FG-CONS.1.12-passC.md
     note: >
-      Pass A omitted the rubric. Its absence caused a downstream error: the
-      first English draft imported the Machiavelli rubric instead, unattributed.
+      Run because pass A was withdrawn and SCOPE §7 forbids an image-derived
+      reading entering the text on a single pass.
+
+collation: sources/coldpass/COLLATION-2026-09-21.md
+collation_result: >
+  17 divergences in 421 words. One is a reading (F002, open). Two are
+  sentence-final stops displaced by note references (supplied, declared, O12).
+  Two are apostrophes absent on the page and supplied by rule (D35, D39).
+  Thirteen are whitespace before punctuation or after an elided apostrophe,
+  collapsed under DEC-009 Class A. Both passes agree on the identity of every
+  punctuation mark, which settles D37.
+witness_independence_check: >
+  SCOPE §7 2a. Pass C agrees with Palmarocchi at no locus where F001 found pass
+  A siding with it. Both surviving passes read the governing witness.
+
+interventions:
+  - id: FG-CONS-I12-C002
+    operation: editorial_supply
+    locator: FG-CONS.1.12.01
+    locus: "del mondo"
+    before: "del mondo ⁽¹⁾ E anche"
+    after: "del mondo. E anche"
+    rationale: >
+      Canestrini sets the note reference in the slot where the full stop
+      belongs. This edition does not carry his note references in the body, so
+      removing one without restoring the stop would create an artefact of the
+      edition's own making rather than reproduce one of the witness's. Declared,
+      not silent. See O12.
+    review_status: open
+  - id: FG-CONS-I12-C003
+    operation: editorial_supply
+    locator: FG-CONS.1.12.02
+    locus: "cittadini proprii"
+    before: "cittadini proprii ⁽¹⁾ E se bene"
+    after: "cittadini proprii. E se bene"
+    rationale: Same as C002.
+    review_status: open
+  - id: FG-CONS-I12-C004
+    operation: witness_correction
+    locator: FG-CONS.1.12.03
+    locus: "sotto uno re ␣␣ pure"
+    before: "sotto uno re  pure"
+    after: "sotto uno re; pure"
+    evidence: >
+      Both passes independently found a gap of about two word-spaces with no
+      ink, pass C measuring it against the word spaces either side. Palmarocchi
+      1933 p. 23 prints "sotto uno re; pure". A dropped sort recovered from the
+      comparison witness, not a variant adopted - the distinction D38 turns on.
+    review_status: accepted
+    closes: O09
+
+not_supplied:
+  - locus: "inclinazione sua"
+    note: >
+      No terminal stop. Both passes agree none is printed. DEC-009 Class B
+      clause 10, and problematic.md requires the unit to end mid-thought. The
+      asymmetry with C002/C003 is principled: those restore a break the note
+      reference displaced; this would close a period the author left open.
+      Settles O07.
+
+unresolved_source_findings: [FG-CONS-I12-F002]

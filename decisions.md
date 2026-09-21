@@ -48,6 +48,7 @@ This log becomes the translator's preface.
 | D36 | Euphonic *d* | follow the governing witness where legible; supply nothing; where the readers split and the page is doubtful, the form without *d* stands | **N03, ruled 2026-09-21, revised the same day. DEC-009 Class B.** First ruled as "modern usage, applied mechanically". Applying it exposed the error: NM-DISC.1.12 carries eleven `ed`/`ad` forms that BOTH passes read identically off the 1824 page, nine of them before an unlike vowel — including `favorirle ed accrescerle`, which is D09 and which problematic.md calls the demonstration. A mechanical modern rule would have stripped nine legible, dual-attested printed letters, in flat contradiction of Class B. Following the witness gives the right answer in every case: Canestrini prints bare `e` at `libertà e imperio` and `consuetudine e inclinazione` (pp. 28, 30), the 1824 prints `ed`. The three FG splits were never a euphonic-*d* question at all — see FG-CONS-I12-F001. |
 | D37 | Punctuation weight — semicolon vs comma (collation §A4) | the witness as printed; neither lightened nor strengthened | **Ruled 2026-09-21. DEC-009 Class B.** Not previously deferred, settled or opened — it fell through. It is also the only one of the collation's four "systematic conventions" that is potentially substantive: where the stops fall decides which clause `nondimeno` answers, which is what D31 already turns on. Checked on the page, and the collation's guess is wrong. p. 29 prints clean commas at `a tutti e sudditi,` and `non ci era la Chiesa, anzi` with no upper dot; p. 30 prints unmistakable semicolons at `de' Romani;` and `violenza;` at the same type size on the same scan. The scan is not losing dots — **pass A pointed the text more heavily than Canestrini does.** See the open item below for the corpus consequence. |
 | D38 | The governing witness gives the worse reading | establish the governing witness; the better reading goes in the variant note | **David, 2026-09-21, pending future info.** Ruled on `non ebbe patito` (Canestrini) against `non [ar]ebbe patito` (Palmarocchi) and generalised, because it will recur across 78 units. Palmarocchi's counterfactual is what Guicciardini's argument wants — calamities which under a single dominion it *would not have suffered* — and Canestrini's plain indicative reads weaker and slightly incoherent. Adopting it anyway would make the edition an adjudicator of the critical text, which SCOPE §1 and §8 disclaim, and would do it silently at the one locus where the apparatus already got the attribution wrong. So: Canestrini governs even when he is worse, and the reader is shown the alternative. **Revisit condition:** a cleaner Canestrini impression, or a third public-domain witness. Not Bausi 2001 or the manuscripts — those stay out of scope. |
+| D39 | An apostrophe the page drops | supplied, where the same form carries one elsewhere in the unit | **Ruled 2026-09-21.** Extends D35 from the plural article to elision. Pass C reports no apostrophe at `al nome d Italia` while `d' Italia` and `d'Italia` print with one twice later in the same unit; that is a dropped sort, not a practice. Supplying changes no parse and no sense, and the alternative is a text that looks like a typing error to every reader. Class A, applied silently. |
 
 ## Closed
 
@@ -57,7 +58,7 @@ ruled above as D33, D34 and D36; the rules themselves live in
 2026-09-21. Two further questions surfaced during that pass and are ruled as
 D35 and D37.
 
-## Blocking — FG-CONS.1.12 is established from the wrong witness
+## Resolved — FG-CONS.1.12 was established from the wrong witness
 
 **FG-CONS-I12-F001**, raised 2026-09-21. Full evidence in
 `sources/findings/FG-CONS/FG-CONS.1.12-witness-contamination.yml`.
@@ -96,6 +97,15 @@ question.
 | O10 | Readings confirmed against pass B | Superseded by F001. All confirmed against Canestrini, and all are Palmarocchi readings in pass A. |
 | O11 | `chè io reputo` | **New, and recorded nowhere before.** Canestrini p. 28 prints `chè io reputo che`, accenting the causal conjunction and leaving the complementiser bare two words later. Pass A has `che`, flattening a distinction the compositor made deliberately. A reading, not an accent convention — D33 governs direction, not presence, and `che` is a word. |
 
+**Resolved 2026-09-21. The unit has been re-established.** Pass C — a second
+independent cold Canestrini reader — was run, collated mechanically against
+pass B, and agrees with Palmarocchi at no locus. 17 divergences in 421 words,
+of which one is a reading. `corpus/FG-CONS/FG-CONS.1.12.md` is now v0.3.0,
+established from Canestrini, at `status: review_pending` / **S1 — not S2**,
+because F002 is open. See `sources/coldpass/COLLATION-2026-09-21.md`. O08 and
+O10 are closed by re-establishment; O07 and O09 are settled in the provenance
+record.
+
 **D001 resolved, 2026-09-21.** David ruled `ebbe` — see D38. The ruling is
 recorded rather than applied: patching one locus in a text that is Palmarocchi
 throughout would produce a hybrid neither witness supports. It takes effect at
@@ -117,3 +127,10 @@ counterfactual.
 | O07 | The terminal full stop | **Settled on the page 2026-09-21, pending David's word.** Canestrini p. 30 prints `inclinazione sua` followed by the footnote marker and nothing else — no full stop, confirmed. problematic.md is right and the established text's period is an unrecorded editorial supply. Under DEC-009 Class B clause 10 a terminal stop is never supplied, so the recommendation is to drop it and let the unit end mid-thought as the witness does. |
 
 *O01–O05 settled 2026-09-18. N01–N03 ruled 2026-09-21 as D33, D34, D36.*
+
+## Open — after re-establishment, 2026-09-21
+
+| # | Question | Note |
+|---|---|---|
+| F002 | `vituperii` or `viluperii` | The one word the two Canestrini passes split on, and it sits in the unit's most quotable line. Pass C magnified to 2400× and compared the third letter against both `t` of `tutti` on the same line — no crossbar, no curled foot, a plain vertical — and transcribed `viluperii` as a printed compositor's error. Pass B read `vituperii` and did not flag it. `viluperii` is not a word; `vituperii` is, and is what D26 turns on. **The sense is not in doubt either way** — whichever sort the compositor set, the word is *vituperium*, so the English is unaffected and only the diplomatic form is. A third reader will not settle it: at 685 px page width and a 5 px x-height, the scan is the binding constraint, not the reader. Recommendation: accept `vituperii`, record pass C's observation as a witness note, and stop — or acquire a better impression of p. 27, which is the only thing that would actually answer it. |
+| O12 | The stop displaced by a note reference | Canestrini sets his superscript note reference in the slot where a sentence-final stop belongs, at `del mondo` and at `cittadini proprii`. This edition does not carry his note references in the body. Stripping them without restoring the stop would manufacture an artefact of our own rather than reproduce one of the witness's, so both are supplied and declared (C002, C003). The terminal stop at `inclinazione sua` is **not** supplied, because that one would close a period the author left open — which settles O07. The asymmetry is deliberate and is the thing to check. If it recurs across 78 units it should become a DEC-009 clause rather than a per-unit supply. |

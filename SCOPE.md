@@ -406,6 +406,26 @@ compositor would be auditing a layer it has already disclaimed. Collation
 reports name the normalisation classes in one line each and do not enumerate
 instances.
 
+**But check the comparison witness before you classify anything as
+normalisation.** This is the one rule that sits above the class system, and it
+exists because on 2026-09-21 the class system swallowed a witness failure whole.
+FG-CONS.1.12's first pass agreed with Palmarocchi 1933 — the comparison
+witness — at twenty-nine loci where it disagreed with Canestrini: bracketed
+supplies, apostrophes, euphonic *d*, capitalisation, spelling, accents, seven
+points of pointing. The dual pass detected every one. The collation then filed
+them as "pass A's undeclared editorial conventions" and routed them to DEC-009,
+where they sat for three days looking like an orthography question.
+
+**A pass that agrees systematically with a witness that does not govern is not
+exhibiting a convention. It is reading the wrong book.** So, before any
+divergence is called normalisation: take the set of loci where the two passes
+disagree and check it against the comparison witness. If the first pass lands
+with the non-governing witness more often than chance, stop, and raise a
+provenance finding rather than a normalisation question. The check costs one
+pass over a list you already have. Not doing it cost an entire established
+unit, its integrity class, and a DEC-010 licence breach, on the first pair the
+project ever finished.
+
 This rule is empirical, not a preference. `qc/source-integrity/` holds the
 stress runs that produced it (WI-000062–64: sample manifests, metrics,
 intervention logs, an independent rerun). The pilot document and one run's
