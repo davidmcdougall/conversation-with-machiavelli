@@ -1,0 +1,25 @@
+witness_id: WIT-FG-CONS-1933-PALMAROCCHI
+work_id: FG-CONS
+source_unit_id: FG-CONS.1.3
+relationship_id: FG-CONS-DR-003
+type: page_image_extract_with_consultation_transcription
+edition: {title: "Scritti politici e ricordi", editor: "Roberto Palmarocchi", publisher: Laterza, publication_place: Bari, publication_year: 1933}
+files:
+  - {path: sources/witnesses/FG-CONS/WIT-FG-CONS-1933-PALMAROCCHI/scan-page-14.jpg, role: immutable_rendered_scan_page, sha256: 53f433a2c88d0c58a3ee19c9234b73ac2c4babc712f3db1903737317404a10b2}
+  - {path: sources/witnesses/FG-CONS/WIT-FG-CONS-1933-PALMAROCCHI/scan-page-15.jpg, role: immutable_rendered_scan_page, sha256: 9b2ab50176e16c2bec524a0e73f31275b374ea644dd29c734c6501343ac39fb4}
+  - {path: sources/witnesses/FG-CONS/WIT-FG-CONS-1933-PALMAROCCHI/commons-metadata.json, role: acquisition_and_rights_metadata, sha256: 4d2dfed936acec3946438a0fb863f15a6c103468768726e825a65afd30ce2b09}
+unit_locator: {scan_pages: [14, 15], boundary: "acquisition stage only; exact section boundaries not re-verified against Wikisource transclusion for this unit"}
+acquisition:
+  acquired_at: 2026-09-20
+  acquired_by: "Claude (Cowork acquisition pass)"
+  scan_file_url: "https://commons.wikimedia.org/wiki/File:Guicciardini,_Francesco_%E2%80%93_Scritti_politici_e_ricordi,_1933_%E2%80%93_BEIC_1844634.djvu"
+rights_assessment:
+  underlying_work: public_domain_by_age
+  scan_layer: reproducible_in_corpus_public_domain_mark_on_commons
+  wikisource_transcription_layer: consultable_only_CC_BY_SA_and_GFDL_under_DEC_010
+  palmarocchi_editorial_text: consultable_only_pending_work_specific_clean_inbound_confirmation
+  corpus_reuse: "scan evidence reproducible; readings consultable for collation; do not copy transcription or editorial expression"
+  evidence: [sources/witnesses/FG-CONS/WIT-FG-CONS-1933-PALMAROCCHI/commons-metadata.json]
+independence: {rank: independent_historical_edition, relative_to: WIT-FG-CONS-1857-CANESTRINI}
+integrity_candidate: S1
+unresolved_source_findings: []

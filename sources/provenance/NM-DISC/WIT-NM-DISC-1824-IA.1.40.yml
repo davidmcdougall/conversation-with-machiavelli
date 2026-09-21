@@ -1,0 +1,30 @@
+witness_id: WIT-NM-DISC-1824-IA
+work_id: NM-DISC
+source_unit_id: NM-DISC.1.40
+type: independent_historical_edition_scan_extract
+edition: {title: "Discorsi sopra la prima deca di Tito Livio", publication_year: 1824, volume: 1}
+files:
+  - path: sources/witnesses/NM-DISC/WIT-NM-DISC-1824-IA/NM-DISC-I40-pages.pdf
+    role: immutable_bounded_scan_extract
+    sha256: 428cf86b5cdddbd780ef4bf6ee3674c8d77a6c69f8d28b00448e2561f837a140
+  - path: sources/witnesses/NM-DISC/WIT-NM-DISC-1824-IA/internet-archive-metadata.json
+    role: acquisition_and_rights_metadata
+    sha256: 72e6ce0d1ff5d7f521d6576cd11a8c435819037cda0d18efb9a91950002b2ba6
+chapter_locator: {source_pdf_zero_based_pages: [161, 162, 163, 164, 165, 166, 167, 168, 169], volume: 1, note: "extraction range runs from this chapter's Wikisource-aligned start through the next chapter's start; acquisition stage only, boundaries not yet hand-verified beyond the Wikisource transclusion alignment"}
+acquisition:
+  acquired_at: 2026-09-20
+  acquired_by: "Claude (Cowork acquisition pass)"
+  archive_identifier: discorsisopralap01mach
+  source_pdf_url: https://archive.org/download/discorsisopralap01mach/discorsisopralap01mach.pdf
+  source_pdf_sha256: 50889fcac2bb0968d6f7fc6fd6d7a475628e44bffd93f349fee5d8a4d93a23af
+  derivation: "pypdf bounded extraction of zero-based pages 161-169; reversible against recorded full-file hash"
+rights_assessment:
+  underlying_work: public_domain_by_age
+  edition: public_domain_by_age
+  scan_layer: public_domain_historical_scan
+  archive_statement: no_copyright_page_found
+  corpus_reuse: reproducible_in_corpus
+  evidence: [https://archive.org/details/discorsisopralap01mach]
+independence: {rank: independent_historical_edition, relative_to: WIT-NM-DISC-1554-IA}
+integrity_candidate: S1
+unresolved_source_findings: []

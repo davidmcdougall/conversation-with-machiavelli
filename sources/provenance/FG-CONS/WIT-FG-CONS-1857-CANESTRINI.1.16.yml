@@ -1,0 +1,26 @@
+witness_id: WIT-FG-CONS-1857-CANESTRINI
+work_id: FG-CONS
+source_unit_id: FG-CONS.1.16
+relationship_id: FG-CONS-DR-014
+type: independent_first_edition_scan_extract
+edition: {title: "Opere inedite di Francesco Guicciardini", volume: 1, editor: "Giuseppe Canestrini", publisher: "Barbera, Bianchi e Comp.", publication_place: Florence, publication_year: 1857}
+files:
+  - {path: sources/witnesses/FG-CONS/WIT-FG-CONS-1857-CANESTRINI/FG-CONS-I16-pages.pdf, role: immutable_bounded_scan_extract, sha256: 174f47326046fdcc6b932047f0eeeaafdf12372aa242f73209b0628581dfd6da}
+  - {path: sources/witnesses/FG-CONS/WIT-FG-CONS-1857-CANESTRINI/internet-archive-metadata.json, role: acquisition_and_rights_metadata, sha256: 1fbe40b0184809adf28c739ce9a13c15199223f5c0b1067dbcbc8bb0b062d2e2}
+unit_locator: {source_pdf_zero_based_pages: [69, 70, 71, 72, 73], boundary: "extraction runs from this response's heading through the start of the next surviving response's page; acquisition stage only"}
+acquisition:
+  acquired_at: 2026-09-20
+  acquired_by: "Claude (Cowork acquisition pass)"
+  archive_identifier: bub_gb_F_YZsP2XjO8C
+  source_pdf_url: https://archive.org/download/bub_gb_F_YZsP2XjO8C/bub_gb_F_YZsP2XjO8C.pdf
+  source_pdf_sha256: b24854e6836cba61877d36cde31c78646f1375f05218a32709de3106effbbd43
+  derivation: "pypdf bounded extraction of zero-based pages 69-73; reversible against recorded full-file hash"
+rights_assessment:
+  underlying_work: public_domain_by_age
+  edition: public_domain_by_age
+  scan_layer: public_domain_mark_1_0_in_archive_metadata
+  corpus_reuse: reproducible_in_corpus
+  evidence: [https://archive.org/details/bub_gb_F_YZsP2XjO8C]
+independence: {rank: independent_historical_edition, relative_to: WIT-FG-CONS-1933-PALMAROCCHI, note: "first edition, independently typeset seventy-six years before Palmarocchi"}
+integrity_candidate: S1
+unresolved_source_findings: []

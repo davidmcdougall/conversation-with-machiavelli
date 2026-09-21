@@ -1,0 +1,26 @@
+witness_id: WIT-FG-CONS-1933-PALMAROCCHI
+work_id: FG-CONS
+source_unit_id: FG-CONS.2.12
+relationship_id: FG-CONS-DR-031
+type: page_image_extract_with_consultation_transcription
+edition: {title: "Scritti politici e ricordi", editor: "Roberto Palmarocchi", publisher: Laterza, publication_place: Bari, publication_year: 1933}
+files:
+  - {path: sources/witnesses/FG-CONS/WIT-FG-CONS-1933-PALMAROCCHI/scan-page-57.jpg, role: immutable_rendered_scan_page, sha256: 5ff788e723655216c9e6d37ea5558021a5c9a09b3f46b2b447e981c1aaa4156f}
+  - {path: sources/witnesses/FG-CONS/WIT-FG-CONS-1933-PALMAROCCHI/scan-page-58.jpg, role: immutable_rendered_scan_page, sha256: 25af11b4ec528729e475fb90f6fafac7ad77ffc02f742ccdb41e1475c9c94353}
+  - {path: sources/witnesses/FG-CONS/WIT-FG-CONS-1933-PALMAROCCHI/scan-page-59.jpg, role: immutable_rendered_scan_page, sha256: 0d5ad2d08cbe76301901043e24f98465be48d0c7453fd01da4d9fbb9191253a4}
+  - {path: sources/witnesses/FG-CONS/WIT-FG-CONS-1933-PALMAROCCHI/commons-metadata.json, role: acquisition_and_rights_metadata, sha256: 4d2dfed936acec3946438a0fb863f15a6c103468768726e825a65afd30ce2b09}
+unit_locator: {scan_pages: [57, 58, 59], boundary: "acquisition stage only; exact section boundaries not re-verified against Wikisource transclusion for this unit"}
+acquisition:
+  acquired_at: 2026-09-20
+  acquired_by: "Claude (Cowork acquisition pass)"
+  scan_file_url: "https://commons.wikimedia.org/wiki/File:Guicciardini,_Francesco_%E2%80%93_Scritti_politici_e_ricordi,_1933_%E2%80%93_BEIC_1844634.djvu"
+rights_assessment:
+  underlying_work: public_domain_by_age
+  scan_layer: reproducible_in_corpus_public_domain_mark_on_commons
+  wikisource_transcription_layer: consultable_only_CC_BY_SA_and_GFDL_under_DEC_010
+  palmarocchi_editorial_text: consultable_only_pending_work_specific_clean_inbound_confirmation
+  corpus_reuse: "scan evidence reproducible; readings consultable for collation; do not copy transcription or editorial expression"
+  evidence: [sources/witnesses/FG-CONS/WIT-FG-CONS-1933-PALMAROCCHI/commons-metadata.json]
+independence: {rank: independent_historical_edition, relative_to: WIT-FG-CONS-1857-CANESTRINI}
+integrity_candidate: S1
+unresolved_source_findings: []

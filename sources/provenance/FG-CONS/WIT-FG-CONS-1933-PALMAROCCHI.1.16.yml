@@ -1,0 +1,28 @@
+witness_id: WIT-FG-CONS-1933-PALMAROCCHI
+work_id: FG-CONS
+source_unit_id: FG-CONS.1.16
+relationship_id: FG-CONS-DR-014
+type: page_image_extract_with_consultation_transcription
+edition: {title: "Scritti politici e ricordi", editor: "Roberto Palmarocchi", publisher: Laterza, publication_place: Bari, publication_year: 1933}
+files:
+  - {path: sources/witnesses/FG-CONS/WIT-FG-CONS-1933-PALMAROCCHI/scan-page-30.jpg, role: immutable_rendered_scan_page, sha256: e4d512513bcbe834222426b8e36be9af0be07e92586d954474e9f3a45bae626b}
+  - {path: sources/witnesses/FG-CONS/WIT-FG-CONS-1933-PALMAROCCHI/scan-page-31.jpg, role: immutable_rendered_scan_page, sha256: 9d22477acd9a03349c6ece32b90b18af2dea7a35478f44a8b3b4bed3d41a1fa5}
+  - {path: sources/witnesses/FG-CONS/WIT-FG-CONS-1933-PALMAROCCHI/scan-page-32.jpg, role: immutable_rendered_scan_page, sha256: 78c997172c5664b68b4e2a94423892de6a5ef5db77998d1c0f12cb9cfcbe4824}
+  - {path: sources/witnesses/FG-CONS/WIT-FG-CONS-1933-PALMAROCCHI/scan-page-33.jpg, role: immutable_rendered_scan_page, sha256: ffddbe42598941f17b60739a01a99f3e06bed7e91ce9af3cca2ac5dfa1281f49}
+  - {path: sources/witnesses/FG-CONS/WIT-FG-CONS-1933-PALMAROCCHI/scan-page-34.jpg, role: immutable_rendered_scan_page, sha256: 86bb7099503e1aed51ac0325f669403fbaca9553d2516acdac90f862d07b72b1}
+  - {path: sources/witnesses/FG-CONS/WIT-FG-CONS-1933-PALMAROCCHI/commons-metadata.json, role: acquisition_and_rights_metadata, sha256: 4d2dfed936acec3946438a0fb863f15a6c103468768726e825a65afd30ce2b09}
+unit_locator: {scan_pages: [30, 31, 32, 33, 34], boundary: "acquisition stage only; exact section boundaries not re-verified against Wikisource transclusion for this unit"}
+acquisition:
+  acquired_at: 2026-09-20
+  acquired_by: "Claude (Cowork acquisition pass)"
+  scan_file_url: "https://commons.wikimedia.org/wiki/File:Guicciardini,_Francesco_%E2%80%93_Scritti_politici_e_ricordi,_1933_%E2%80%93_BEIC_1844634.djvu"
+rights_assessment:
+  underlying_work: public_domain_by_age
+  scan_layer: reproducible_in_corpus_public_domain_mark_on_commons
+  wikisource_transcription_layer: consultable_only_CC_BY_SA_and_GFDL_under_DEC_010
+  palmarocchi_editorial_text: consultable_only_pending_work_specific_clean_inbound_confirmation
+  corpus_reuse: "scan evidence reproducible; readings consultable for collation; do not copy transcription or editorial expression"
+  evidence: [sources/witnesses/FG-CONS/WIT-FG-CONS-1933-PALMAROCCHI/commons-metadata.json]
+independence: {rank: independent_historical_edition, relative_to: WIT-FG-CONS-1857-CANESTRINI}
+integrity_candidate: S1
+unresolved_source_findings: []
