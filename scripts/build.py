@@ -21,6 +21,7 @@ Nothing here is hand-typed from the texts or about a specific pair:
   - source and variant apparatus come from sources/provenance/ and
     sources/comparisons/ (AGENTS.md rule 4: witness decisions become source
     notes, collation notes become variant notes)
+  - commentary under each paragraph comes from annotations/<unit>.md (stage 5)
   - a pair's position ("Pair N of 39") comes from links/pairing-map.md
   - the edition version comes from SCOPE.md
 The only per-work constants kept in this script are bibliographic facts true
@@ -247,14 +248,60 @@ def emphasized(text, notes_raw):
     return out
 
 
-def rows_html(it_paras, en_paras, notes_raw):
+XREF = re.compile(r'\[\[((?:NM-DISC|FG-CONS)\.[0-9a-z]+\.[0-9a-z]+\.\d+)\]\]')
+
+
+def xref_label(target):
+    who = "Machiavelli" if target.startswith("NM-DISC") else "Guicciardini"
+    return f"{who} .{target.rsplit('.', 1)[1]}"
+
+
+def parse_annotations(unit_id):
+    """Stage 5. annotations/<unit>.md holds one '## <paragraph id>' section per
+    paragraph; each note is a '**Label.** text' block. [[UNIT.ID]] is a
+    cross-reference to a paragraph on the same pair page. Returns
+    {paragraph_id: [(label_html, text_html), ...]} and every target cited."""
+    path = ROOT / f"annotations/{unit_id}.md"
+    if not path.exists():
+        return {}, set()
+    text = path.read_text(encoding="utf-8")
+    text = re.sub(r'^---\n.*?\n---\n', '', text, count=1, flags=re.S)
+    out, targets = {}, set()
+    for sec in re.split(r'^## ', text, flags=re.M)[1:]:
+        pid, _, body = sec.partition("\n")
+        pid = pid.strip()
+        notes = []
+        for block in re.split(r'\n\s*\n', body.strip()):
+            block = " ".join(block.split())
+            if not block:
+                continue
+            targets.update(XREF.findall(block))
+            m = re.match(r'^\*\*(.+?)\*\*\s*(.*)$', block)
+            label, t = (m.group(1).rstrip("."), m.group(2)) if m else ("Note", block)
+            t = notes_esc(t)
+            t = XREF.sub(lambda x: f'<a class="xref" href="#{x.group(1)}">{xref_label(x.group(1))}</a>', t)
+            notes.append((notes_esc(label), t))
+        out[pid] = notes
+    return out, targets
+
+
+def annot_html(notes):
+    if not notes:
+        return ""
+    body = "\n".join(f'<p><span class="lem">{l}.</span> {t}</p>' for l, t in notes)
+    return (f'\n        <details class="annot"><summary>Commentary · {len(notes)}</summary>\n'
+            f'          {body}\n        </details>')
+
+
+def rows_html(it_paras, en_paras, notes_raw, annots=None):
+    annots = annots or {}
     out = []
     for i in para_order(it_paras):
         out.append(
             f'''      <div class="pair" id="{i}">
         <div class="gutter"><a class="uid" href="#{i}">{i.split(".", 1)[1]}</a></div>
         <div class="col it" lang="it">{emphasized(it_paras[i], notes_raw)}</div>
-        <div class="col en" lang="en">{emphasized(en_paras[i], notes_raw)}</div>
+        <div class="col en" lang="en">{emphasized(en_paras[i], notes_raw)}</div>{annot_html(annots.get(i))}
       </div>''')
     return "\n".join(out)
 
@@ -463,6 +510,16 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
   scroll-margin-top: 20px;
 }
 .pair:target { background: var(--paper-sunk); }
+.annot { grid-column: 2 / -1; margin-top: 14px; font-family: var(--sans); font-size: 13.5px;
+  line-height: 1.55; color: var(--ink-muted); }
+.annot summary { cursor: pointer; font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); list-style: none; }
+.annot summary::-webkit-details-marker { display: none; }
+.annot summary::before { content: "+ "; }
+.annot[open] summary::before { content: "− "; }
+.annot p { margin: 8px 0 0; max-width: 72ch; }
+.annot .xref { color: inherit; text-decoration: underline; text-decoration-color: var(--rule);
+  text-underline-offset: 2px; white-space: nowrap; }
 .gutter { padding-top: 4px; }
 .uid {
   font-family: var(--mono); font-size: 10.5px; color: var(--ink-faint);
@@ -530,6 +587,7 @@ a { color: inherit; }
   .colheads { display: none; }
   .pair { grid-template-columns: 1fr; gap: 0; padding-block: 20px; }
   .gutter { padding-top: 0; margin-bottom: 8px; }
+  .annot { grid-column: 1; }
   .col.it { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px dotted var(--rule); }
   .col.it::before, .col.en::before {
     display: block; font-family: var(--sans); font-size: 10px; font-weight: 600;
@@ -625,6 +683,15 @@ def build_pair(pair, published):
     assert set(nm_it) == set(nm_en), f"{nm_id}: Italian and English paragraph ids do not align"
     assert set(fg_it) == set(fg_en), f"{fg_id}: Italian and English paragraph ids do not align"
 
+    nm_ann, nm_targets = parse_annotations(nm_id)
+    fg_ann, fg_targets = parse_annotations(fg_id)
+    on_page = set(nm_it) | set(fg_it)
+    for uid, ann in ((nm_id, nm_ann), (fg_id, fg_ann)):
+        stray = set(ann) - on_page
+        assert not stray, f"annotations/{uid}.md: sections for paragraphs not in the unit: {sorted(stray)}"
+    dead = (nm_targets | fg_targets) - on_page
+    assert not dead, f"annotation cross-references to paragraphs not on this page: {sorted(dead)}"
+
     nm_entries, _ = parse_notes(nm_notes_raw)
     fg_entries, fg_rubric_note = parse_notes(fg_notes_raw)
 
@@ -673,7 +740,7 @@ def build_pair(pair, published):
     <p class="rubric">{html.escape(nm_en_m.get("rubric_en", ""))}</p>
 
     <div class="colheads"><div></div><div>Italian · {WORKS['NM-DISC']['edition_year']}</div><div>English</div></div>
-{rows_html(nm_it, nm_en, nm_notes_raw)}
+{rows_html(nm_it, nm_en, nm_notes_raw, nm_ann)}
 
     <div class="apparatus">
       <div>
@@ -701,7 +768,7 @@ def build_pair(pair, published):
       {fg_rubric_note_html}</p>
 
     <div class="colheads"><div></div><div>Italian · {WORKS['FG-CONS']['edition_year']}</div><div>English</div></div>
-{rows_html(fg_it, fg_en, fg_notes_raw)}
+{rows_html(fg_it, fg_en, fg_notes_raw, fg_ann)}
 
     <div class="apparatus">
       <div>

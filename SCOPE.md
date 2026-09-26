@@ -188,8 +188,8 @@ than inside the first paragraph.
 | NM source established | 1 | 38 | 39 |
 | FG source established | 1 | 38 | 39 |
 | Collated | 2 units | 76 | 78 |
-| Translated | **0** | 78 | 78 |
-| Annotated | **0** | 78 | 78 |
+| Translated (draft, cold-reviewed) | 2 | 76 | 78 |
+| Annotated (cold-reviewed) | 2 | 76 | 78 |
 | Published | **0** | 78 | 78 |
 
 **Read the top row first.** The relationship layer — all 39 pairs, mapped
@@ -205,16 +205,20 @@ The map's evidence also cites the Palmarocchi/Wikisource headings — the witnes
 this project demotes to collation-only. Restate it against Canestrini's
 headings on porting, or record plainly that the pairing is attested in both.
 
-**Read the bottom three second.** Zero English words exist. Stages 4, 5 and 6
-have never run once. Every estimate below stage 3 is unvalidated until one
-unit goes end to end.
+**Read the bottom three second.** As of 2026-09-25 the I.12 pair has cold-reviewed
+English drafts and cold-reviewed commentary (`annotations/`); stage 6 has never
+run. Every estimate below
+stage 3 is unvalidated until one unit goes end to end.
 
 **The middle was signed off on 2026-09-18.** Both I.12 units sat at
 `review_pending` on a Class T review that §7 abolishes, and neither had ever had
 the dual cold pass §7 keeps. The pass was run (`sources/coldpass/`), the two
 readers agreed on every word, clause and sense across 1,419 words, and both
-units are now `status: established`, `integrity_class: S2`, version 0.2.0. One
-pair is through stage 3 for real. Nothing is through stage 4.
+units were marked `status: established`, `integrity_class: S2`, version 0.2.0.
+That was wrong for FG-CONS.1.12, which turned out to be Palmarocchi under
+Canestrini's label (FG-CONS-I12-F001). It was re-established from Canestrini on
+2026-09-21 and closed at v0.3.1 / S2 on 2026-09-25 (D42). One pair is through
+stage 4. Nothing is through stage 5.
 
 ### Acquisition is smaller than it looks
 

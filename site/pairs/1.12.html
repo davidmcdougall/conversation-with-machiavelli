@@ -1,1 +1,470 @@
-[Removed from history: this version contained Palmarocchi 1933's text of FG-CONS.1.12 under the wrong witness label. See sources/findings FG-CONS-I12-F001 and LICENSE §5.]
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Machiavelli argues that a state must keep its religion uncorrupted, and that the Roman Church has ruined Italy twice over — by its example, and by keeping the peninsula divided. Guicciardini, reading him more than a decade later, goes further than Machiavelli on the first charge, grants the premise of the second, and then declines to draw his conclusion.">
+<style>*{box-sizing:border-box}body{margin:0;font:14px system-ui}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>A Conversation with Machiavelli — Religion, and the ruin of Italy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root {
+  --paper:      #EDEEEC;
+  --paper-sunk: #E4E6E3;
+  --ink:        #1B1E1C;
+  --ink-muted:  #5C625E;
+  --ink-faint:  #868C87;
+  --rule:       #C9CDC8;
+  --rule-faint: #DCDFDB;
+  --nm:         #3A5A6B;
+  --fg:         #6E5A3C;
+  --serif: "EB Garamond", "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  --sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --mono:  "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:      #161917;
+    --paper-sunk: #1D211E;
+    --ink:        #E3E6E1;
+    --ink-muted:  #A0A6A0;
+    --ink-faint:  #767C77;
+    --rule:       #343934;
+    --rule-faint: #262B27;
+    --nm:         #8FB4C6;
+    --fg:         #C4A97C;
+  }
+}
+:root[data-theme="dark"] {
+  --paper:      #161917;
+  --paper-sunk: #1D211E;
+  --ink:        #E3E6E1;
+  --ink-muted:  #A0A6A0;
+  --ink-faint:  #767C77;
+  --rule:       #343934;
+  --rule-faint: #262B27;
+  --nm:         #8FB4C6;
+  --fg:         #C4A97C;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 1160px; margin: 0 auto; padding-inline: 20px; padding-block: 0 0; }
+
+/* ---- masthead ---- */
+.masthead { padding-block: 56px 32px; border-bottom: 1px solid var(--rule); }
+.eyebrow {
+  font-family: var(--sans); font-size: 11px; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint);
+  margin: 0 0 18px;
+}
+h1 {
+  font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 5vw, 44px);
+  line-height: 1.12; margin: 0 0 14px; text-wrap: balance; letter-spacing: -0.01em;
+}
+h1 .sub { display: block; font-style: italic; color: var(--ink-muted); font-size: .52em; margin-top: 12px; letter-spacing: 0; }
+.standfirst {
+  font-family: var(--sans); font-size: 14.5px; line-height: 1.6;
+  color: var(--ink-muted); max-width: 62ch; margin: 0;
+}
+
+/* ---- the pairing device ---- */
+.pairing {
+  display: flex; align-items: stretch; gap: 0; margin: 30px 0 0;
+  border: 1px solid var(--rule); border-radius: 2px; overflow: hidden;
+  font-family: var(--sans); background: var(--paper-sunk);
+}
+.pairing > div { flex: 1 1 0; padding: 13px 16px; min-width: 0; }
+.pairing .who { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
+.pairing .nm-side .who { color: var(--nm); }
+.pairing .fg-side .who { color: var(--fg); }
+.pairing .what { font-size: 13.5px; color: var(--ink-muted); }
+.pairing .arrow {
+  flex: 0 0 auto; display: flex; align-items: center; justify-content: center;
+  padding-inline: 14px; color: var(--ink-faint); font-size: 15px;
+  border-inline: 1px solid var(--rule);
+}
+
+/* ---- pair-to-pair navigation ---- */
+.pairnav {
+  display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+  margin-top: 18px; font-family: var(--sans); font-size: 12.5px;
+  color: var(--ink-muted);
+}
+.pairnav a { text-decoration: none; color: var(--ink-muted); }
+.pairnav a:hover, .pairnav a:focus { color: var(--ink); text-decoration: underline; }
+
+/* ---- work sections ---- */
+.work { padding-block: 52px 0; }
+.work-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
+.work-head .tag {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .04em;
+  padding: 3px 7px; border-radius: 2px; color: var(--paper);
+}
+.work.nm .tag { background: var(--nm); }
+.work.fg .tag { background: var(--fg); }
+h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; letter-spacing: -0.005em; }
+.rubric {
+  font-style: italic; color: var(--ink-muted); max-width: 70ch;
+  margin: 10px 0 0; font-size: 16.5px; line-height: 1.5;
+}
+.rubric-note {
+  font-family: var(--sans); font-style: normal; font-size: 12px;
+  color: var(--ink-faint); margin-top: 7px;
+}
+.colheads {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  margin-top: 30px; padding-bottom: 7px; border-bottom: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint);
+}
+
+/* ---- the facing pair ---- */
+.pair {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  padding-block: 22px; border-bottom: 1px solid var(--rule-faint);
+  scroll-margin-top: 20px;
+}
+.pair:target { background: var(--paper-sunk); }
+.annot { grid-column: 2 / -1; margin-top: 14px; font-family: var(--sans); font-size: 13.5px;
+  line-height: 1.55; color: var(--ink-muted); }
+.annot summary { cursor: pointer; font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); list-style: none; }
+.annot summary::-webkit-details-marker { display: none; }
+.annot summary::before { content: "+ "; }
+.annot[open] summary::before { content: "− "; }
+.annot p { margin: 8px 0 0; max-width: 72ch; }
+.annot .xref { color: inherit; text-decoration: underline; text-decoration-color: var(--rule);
+  text-underline-offset: 2px; white-space: nowrap; }
+.gutter { padding-top: 4px; }
+.uid {
+  font-family: var(--mono); font-size: 10.5px; color: var(--ink-faint);
+  text-decoration: none; letter-spacing: -0.02em;
+}
+.uid:hover, .uid:focus { color: var(--ink); text-decoration: underline; }
+.col { min-width: 0; }
+.col.it { hyphens: auto; }
+.col.en { }
+.supplied { color: var(--ink-muted); }
+
+/* ---- apparatus ---- */
+.apparatus {
+  margin-top: 34px; padding-top: 22px; border-top: 2px solid var(--rule);
+  font-family: var(--sans); font-size: 13.5px; line-height: 1.58;
+  color: var(--ink-muted);
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 26px 34px;
+}
+.apparatus h3 {
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); margin: 0 0 9px;
+}
+.apparatus p { margin: 0 0 9px; }
+.apparatus p:last-child { margin-bottom: 0; }
+.apparatus .lem { font-family: var(--serif); font-size: 15px; color: var(--ink); font-style: italic; }
+.sig { font-family: var(--mono); font-size: 12px; color: var(--ink); }
+
+/* ---- colophon ---- */
+.colophon {
+  margin-top: 60px; padding-block: 28px 60px; border-top: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 13px; line-height: 1.6; color: var(--ink-muted);
+}
+.colophon .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 34px; }
+.colophon h3 {
+  font-size: 10.5px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--ink-faint); margin: 0 0 8px;
+}
+.colophon p { margin: 0 0 8px; }
+.colophon ul { margin: 0; padding-left: 16px; }
+.colophon li { margin-bottom: 5px; }
+.state {
+  margin-top: 26px; padding: 14px 16px; background: var(--paper-sunk);
+  border-left: 2px solid var(--ink-faint); border-radius: 0 2px 2px 0;
+  font-size: 12.5px;
+}
+.state strong { color: var(--ink); font-weight: 600; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--nm); outline-offset: 2px; }
+
+/* ---- contents / index page ---- */
+.toc { margin-top: 30px; }
+.toc-row {
+  display: grid; grid-template-columns: 40px 1fr 1fr; gap: 0 20px;
+  padding-block: 14px; border-bottom: 1px solid var(--rule-faint);
+  font-family: var(--sans); align-items: baseline;
+}
+.toc-row .n { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
+.toc-row a { text-decoration: none; color: var(--ink); font-family: var(--serif); font-size: 16px; }
+.toc-row a:hover, .toc-row a:focus { text-decoration: underline; }
+.toc-row .unpublished { color: var(--ink-faint); font-style: italic; font-size: 14px; }
+.toc-row .ids { color: var(--ink-faint); font-size: 11.5px; font-family: var(--mono); }
+
+@media (max-width: 760px) {
+  body { font-size: 16.5px; }
+  .colheads { display: none; }
+  .pair { grid-template-columns: 1fr; gap: 0; padding-block: 20px; }
+  .gutter { padding-top: 0; margin-bottom: 8px; }
+  .annot { grid-column: 1; }
+  .col.it { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px dotted var(--rule); }
+  .col.it::before, .col.en::before {
+    display: block; font-family: var(--sans); font-size: 10px; font-weight: 600;
+    letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px;
+  }
+  .col.it::before { content: "Italian"; }
+  .col.en::before { content: "English"; }
+  .pairing { flex-direction: column; }
+  .pairing .arrow { border-inline: 0; border-block: 1px solid var(--rule); padding-block: 6px; }
+  .toc-row { grid-template-columns: 1fr; gap: 4px; }
+}
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow">A Conversation with Machiavelli · Pair 12 of 39</p>
+    <h1>Religion, and the ruin of Italy
+      <span class="sub">Discourses I.12, and Guicciardini&#x27;s reply</span></h1>
+    <p class="standfirst">Machiavelli argues that a state must keep its religion uncorrupted, and that the Roman Church has ruined Italy twice over — by its example, and by keeping the peninsula divided. Guicciardini, reading him more than a decade later, goes further than Machiavelli on the first charge, grants the premise of the second, and then declines to draw his conclusion.</p>
+
+    <div class="pairing">
+      <div class="nm-side">
+        <div class="who">Niccolò Machiavelli</div>
+        <div class="what">Discorsi sopra la prima Deca di Tito Livio · written c. 1513–19, printed 1531</div>
+      </div>
+      <div class="arrow" aria-hidden="true">answered by</div>
+      <div class="fg-side">
+        <div class="who">Francesco Guicciardini</div>
+        <div class="what">Considerazioni intorno ai Discorsi del Machiavelli · written 1529–30, printed 1857</div>
+      </div>
+    </div>
+    <nav class="pairnav"><span></span><a href="../index.html">All 39 pairs</a><span></span></nav>
+  </header>
+
+  <section class="work nm">
+    <div class="work-head">
+      <span class="tag">NM-DISC.1.12</span>
+      <h2>Capitolo XII</h2>
+    </div>
+    <p class="rubric">Di quanta importanza sia tenere conto della Religione, e come la Italia per esserne mancata mediante la Chiesa Romana, è rovinata.</p>
+    <p class="rubric">Of how much importance it is to take account of religion, and how Italy, for having been wanting in it through the Roman Church, is ruined.</p>
+
+    <div class="colheads"><div></div><div>Italian · 1824</div><div>English</div></div>
+      <div class="pair" id="NM-DISC.1.12.01">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.12.01">1.12.01</a></div>
+        <div class="col it" lang="it">Quelli Principi, o quelle Repubbliche le quali si vogliono mantenere incorrotte, hanno sopra ogni altra cosa a mantenere incorrotte le cerimonie della Religione, e tenerle sempre nella loro venerazione. Perchè nissuno maggiore indizio si puote avere della rovina d&#x27;una Provincia, che vedere dispregiato il culto Divino. Questo è facile a intendere, conosciuto che si è, in su che sia fondata la Religione dove l&#x27;uomo è nato. Perchè ogni Religione ha il fondamento della vita sua in su qualche principale ordine suo. La vita della Religione Gentile era fondata sopra i responsi degli oracoli, e sopra la Setta degli Arioli e degli Aruspici; tutte le altre loro cerimonie, sacrifizj, riti, dipendevano da questi. Perchè loro facilmente credevano che quello Dio, che ti poteva predire il tuo futuro bene, o il tuo futuro male, te lo potesse ancora concedere. Di qui nascevano i tempj, di qui i sacrifizj, di qui le supplicazioni, ed ogni altra cerimonia in venerarli; perchè l&#x27;oracolo di Delo, il tempio di Giove Ammone, ed altri celebri oracoli tenevano il Mondo in ammirazione, e devoto. Come costoro cominciarono dipoi a parlare a modo de&#x27; Potenti, e questa falsità si fu scoperta ne&#x27; Popoli, divennero gli uomini increduli, ed atti a perturbare ogni ordine buono.</div>
+        <div class="col en" lang="en">Those princes, or those republics, that wish to keep themselves uncorrupted have above all else to keep uncorrupted the ceremonies of religion, and to hold them always in their veneration. For no greater sign can be had of the ruin of a province than to see the divine worship despised. This is easy to understand, once one knows upon what is founded the religion in which the man is born. For every religion has the foundation of its life upon some principal order of its own. The life of the gentile religion was founded upon the responses of the oracles and upon the sect of the diviners and the haruspices; all their other ceremonies, sacrifices, rites, depended on these. For they readily believed that the god who could foretell your future good, or your future ill, could also grant it to you. From this arose the temples, from this the sacrifices, from this the supplications, and every other ceremony in venerating them; for the oracle of Delos, the temple of Jupiter Ammon, and other celebrated oracles kept the world in admiration, and devout. When these afterwards began to speak in the manner of the powerful, and this falsity was discovered among the peoples, men became unbelieving, and apt to disturb every good order.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The chapter&#x27;s premise, and it is functional before it is pious: a religion lives by &quot;some principal order of its own&quot;, and the proof is what happened when that order failed. The pagan system hung on the oracles; once they were seen to speak for the powerful, belief went, and with it the disposition to keep &quot;every good order&quot;. The same test is applied to the Christian religion <a class="xref" href="#NM-DISC.1.12.04">Machiavelli .04</a> and underlies the first charge against the Roman court <a class="xref" href="#NM-DISC.1.12.05">Machiavelli .05</a>.</p>
+<p><span class="lem">History.</span> The charge that the oracles spoke for the powerful is ancient. Cicero reports Demosthenes&#x27; complaint that the Pythia — the oracle of Delphi — &quot;philippized&quot;, prophesying to suit Philip of Macedon (<i lang="it">De divinatione</i> II.118). The governing witness names Delos here, the 1554 printing Delphi; see the translator&#x27;s notes.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.12.02">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.12.02">1.12.02</a></div>
+        <div class="col it" lang="it">Debbono adunque i Principi d&#x27;una Repubblica e d&#x27;un Regno i fondamenti della Religione che loro tengono, mantenerli; e fatto questo, sarà loro facil cosa a mantenere la loro Repubblica religiosa, e per conseguente buona ed unita. E debbono tutte le cose che nascono in favore di quella, come che le giudicassero false, favorirle ed accrescerle; e tanto più lo debbono fare, quanto più prudenti sono, e quanto più conoscitori delle cose naturali. E perchè questo modo è stato osservato dagli uomini savj, ne è nata la opinione dei miracoli, che si celebrano nelle Religioni, eziandio false; perchè i prudenti gli augumentano, da qualunque principio essi nascono; e l&#x27;autorità loro dà poi a quelli fede appresso a qualunque.</div>
+        <div class="col en" lang="en">The princes, then, of a republic and of a kingdom ought to maintain the foundations of the religion they hold; and this done, it will be an easy thing for them to maintain their republic religious, and in consequence good and united. And all the things that arise in favour of it, even though they should judge them false, they ought to favour and augment; and so much the more ought they to do it, the more prudent they are, and the more knowing in natural things. And because this way has been observed by wise men, there has arisen from it the opinion of miracles, which are celebrated in religions, even false ones; for the prudent augment them, from whatever beginning they arise; and their authority then gives those credit with anyone.</div>
+        <details class="annot"><summary>Commentary · 1</summary>
+          <p><span class="lem">Argument.</span> The prescription: princes should favour and augment whatever arises in religion&#x27;s favour &quot;even though they should judge them false&quot;, and the more so the more prudent and the more &quot;knowing in natural things&quot; they are. Understanding nature is a reason to sponsor miracles, not to expose them. Machiavelli states it without apology, and calls those who practise it wise.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.12.03">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.12.03">1.12.03</a></div>
+        <div class="col it" lang="it">Di questi miracoli ne furono a Roma assai, e tra gli altri fu, che saccheggiando i soldati romani la città de&#x27; Vejenti, alcuni di loro entrarono nel tempio di Giunone, ed accostandosi alla immagine di quella, e dicendole: vis venire Romam? parve ad alcuno vedere che la accennasse, ad alcuno altro ch&#x27;ella dicesse di sì. Perchè sendo quelli uomini ripieni di Religione, il che dimostra T. Livio, perchè nell&#x27;entrare nel tempio vi entrarono senza tumulto, tutti devoti e pieni di riverenza, parve loro udire quella risposta che alla domanda loro per avventura si avevano presupposta; la quale opinione e credulità, da Camillo e dagli altri Principi della città fu al tutto favorita e accresciuta.</div>
+        <div class="col en" lang="en">Of these miracles there were many at Rome, and among the others there was, that while the Roman soldiers were sacking the city of the Veientes, some of them entered the temple of Juno, and drawing near to her image and saying to it, <i lang="la">vis venire Romam?</i> it seemed to some that they saw her nod, and to some others that she said yes. For those men being filled with religion — which Livy shows, because in entering the temple they entered without tumult, all devout and full of reverence — it seemed to them that they heard the answer which they had perhaps presupposed to their question; which opinion and credulity, by Camillus and the other princes of the city, was wholly favoured and augmented.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">History.</span> Veii, Rome&#x27;s Etruscan neighbour, fell to Camillus, traditionally in 396 BC. Livy tells the story of Juno&#x27;s image (V.22): young men chosen to carry the goddess to Rome entered her temple with reverence, and when one asked — whether moved by the god or in youthful jest — <i lang="it">visne Romam ire, Iuno?</i>, the others cried that she had nodded; a voice saying she was willing was, he adds, a later addition to the tale. Machiavelli&#x27;s Latin is not Livy&#x27;s, and he gives the scene to soldiers in the act of sacking. The reverence he keeps, because it is his evidence.</p>
+<p><span class="lem">Argument.</span> The explanation is psychological: men full of religion hear the answer they had &quot;perhaps presupposed&quot;. Camillus and the princes did not invent the miracle; they did to it what <a class="xref" href="#NM-DISC.1.12.02">Machiavelli .02</a> prescribes, in the same words — favoured and augmented it.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.12.04">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.12.04">1.12.04</a></div>
+        <div class="col it" lang="it">La quale Religione se ne&#x27; Principi della Repubblica cristiana si fusse mantenuta secondo che dal Datore d&#x27;essa ne fu ordinato, sarebbero gli Stati e le Repubbliche cristiane più unite e più felici assai ch&#x27;elle non sono. Né si può fare altra maggiore coniettura della declinazione di essa, quanto è vedere come quelli Popoli che sono più propinqui alla Chiesa romana, Capo della Religione nostra, hanno meno religione. E chi considerasse i fondamenti suoi, e vedesse l&#x27;uso presente quanto è diverso da quelli, giudicherebbe essere propinquo senza dubbio, o la rovina o il flagello.</div>
+        <div class="col en" lang="en">Which religion, if it had been maintained among the princes of the Christian republic according as it was ordained by its Giver, the Christian states and republics would be more united and far more happy than they are. Nor can one make any greater conjecture of its decline than to see how those peoples who are nearer to the Roman Church, head of our religion, have less religion. And whoever should consider its foundations, and see how far the present use differs from them, would judge to be near, without doubt, either the ruin or the scourge.</div>
+        <details class="annot"><summary>Commentary · 4</summary>
+          <p><span class="lem">Term.</span> &quot;The Christian republic&quot; is Christendom — the <i lang="it">respublica Christiana</i> of medieval usage — not a state; &quot;the Christian states and republics&quot; in the same sentence are its members. The Giver is presumably Christ.</p>
+<p><span class="lem">Argument.</span> The turn. The rule of <a class="xref" href="#NM-DISC.1.12.01">Machiavelli .01</a> is applied to Christianity: measure the present use against the foundations, and the result is a correlation — the nearer a people is to the Roman Church, the less religion it has.</p>
+<p><span class="lem">Term.</span> &quot;The scourge&quot; (<i lang="it">il flagello</i>) echoes the Florentine prophetic preaching of the 1490s, Savonarola&#x27;s above all, which announced a scourge coming upon Italy before the Church&#x27;s renewal.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini answers none of this; see <a class="xref" href="#FG-CONS.1.12.01">Guicciardini .01</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.12.05">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.12.05">1.12.05</a></div>
+        <div class="col it" lang="it">E perchè sono alcuni d&#x27;opinione, che il ben essere delle cose d&#x27;Italia dipende dalla Chiesa di Roma, voglio contro ad essa discorrere quelle ragioni che mi occorrono, e ne allegherò due potentissime, le quali secondo me non hanno repugnanza. La prima è, che per gli esempj rei di quella Corte, questa Provincia ha perduto ogni divozione ed ogni Religione: il che si tira dietro infiniti inconvenienti e infiniti disordini; perchè così, come dove è Religione si presuppone ogni bene, così dove ella manca, si presuppone il contrario. Abbiamo adunque con la Chiesa e coi Preti noi Italiani questo primo obbligo, d&#x27;essere diventati senza Religione e cattivi; ma ne abbiamo ancora un maggiore, il quale è cagione della rovina nostra. Questo è che la Chiesa ha tenuto e tiene questa nostra Provincia divisa.</div>
+        <div class="col en" lang="en">And because there are some of the opinion that the well-being of Italian affairs depends on the Church of Rome, I wish to discourse against it those reasons which occur to me, and I shall allege two most powerful ones, which in my view have no repugnance. The first is that, through the evil examples of that court, this province has lost all devotion and all religion: which drags behind it infinite inconveniences and infinite disorders; for just as where there is religion every good is presupposed, so where it is lacking the contrary is presupposed. We Italians have, then, this first debt to the Church and to the priests: that we have become without religion and bad; but we have a greater one still, which is the cause of our ruin. This is that the Church has kept and keeps this province of ours divided.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> Two charges, numbered and of different kinds. The first is moral: the court&#x27;s example has destroyed devotion, and without religion &quot;the contrary&quot; of every good is presupposed. The second, &quot;greater still&quot;, is political: the Church has kept Italy divided. The debt Italians owe the Church is ironic both times.</p>
+<p><span class="lem">Term.</span> &quot;I wish to discourse … those reasons which occur to me&quot;: <i lang="it">discorrere</i> and <i lang="it">occorrere</i>, two compounds of <i lang="it">currere</i>, to run. Guicciardini&#x27;s reply turns on a third, <i lang="it">concorrere</i> <a class="xref" href="#FG-CONS.1.12.03">Guicciardini .03</a>. Whether he meant the echo cannot be shown; the words share a root, and this edition keeps all three in English so that the reader can hear it.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.12.06">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.12.06">1.12.06</a></div>
+        <div class="col it" lang="it">E veramente alcuna Provincia non fu mai unita o felice, se la non viene tutta alla ubbidienza d&#x27;una Repubblica o d&#x27;un Principe, come è avvenuto alla Francia ed alla Spagna. E la cagione che la Italia non sia in quel medesimo termine, né abbia anch&#x27;ella o una Repubblica, o un Principe che la governi, è solamente la Chiesa; perchè avendovi abitato e tenuto Imperio temporale, non è stata sì potente, né di tal virtù che l&#x27;abbia potuto occupare il restante d&#x27;Italia, e farsene Principe. E non è stata dall&#x27;altra parte sì debile, che, per paura di non perdere il dominio delle cose temporali, la non abbia potuto convocare un potente che la difenda contro a quello, che in Italia fusse diventato troppo potente; come si è veduto anticamente per assai esperienze, quando mediante Carlo Magno la ne cacciò i Lombardi, ch&#x27;erano già quasi Re di tutta Italia; e quando ne&#x27; tempi nostri ella tolse la potenza a&#x27; Viniziani con l&#x27;ajuto di Francia, dipoi ne cacciò i Francesi con l&#x27;ajuto de&#x27; Svizzeri.</div>
+        <div class="col en" lang="en">And truly no province was ever united or happy unless it comes wholly under the obedience of one republic or one prince, as has happened to France and to Spain. And the cause that Italy is not in that same condition, nor has it too either a republic or a prince to govern it, is only the Church; for having dwelt there and held temporal rule, it has not been so powerful, nor of such <i lang="it">virtù</i>, as to have been able to occupy the rest of Italy and make itself prince of it. And on the other hand it has not been so weak that, for fear of losing the dominion of temporal things, it could not summon a powerful one to defend it against whoever in Italy had become too powerful; as has been seen anciently in many experiences, when by means of Charlemagne it drove the Lombards out of it, who were already almost kings of all Italy; and when in our times it took the power from the Venetians with the help of France, afterwards drove the French out of it with the help of the Swiss.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> The mechanism of the second charge, in two halves that must be read together: the Church was not powerful enough, nor of enough <i lang="it">virtù</i>, to unify Italy itself, and not so weak that it could not summon &quot;a powerful one&quot; to defend it against anyone in Italy who had grown too powerful. The claim that no province was ever &quot;united or happy&quot; except under one republic or one prince is the premise Guicciardini takes apart <a class="xref" href="#FG-CONS.1.12.02">Guicciardini .02</a>.</p>
+<p><span class="lem">History.</span> Charlemagne, at the call of Pope Adrian I, conquered the Lombard kingdom in 773–74. In Machiavelli&#x27;s own time the League of Cambrai (December 1508), which Julius II joined in 1509, broke Venetian power on the mainland at Agnadello; in 1512 the French were driven out of Lombardy with Swiss arms.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini restates the mechanism and grants it <a class="xref" href="#FG-CONS.1.12.01">Guicciardini .01</a>, with two shifts: the Church&#x27;s strength becomes the credit religion gave it, its weakness the lack of arms of its own; and it summons foreign princes against whoever would oppress Italy, not to defend itself.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.12.07">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.12.07">1.12.07</a></div>
+        <div class="col it" lang="it">Non essendo dunque stata la Chiesa potente da potere occupare l&#x27;Italia, né avendo permesso che un altro la occupi, è stata cagione che la non è potuta venire sotto un Capo, ma è stata sotto più Principi e Signori; da&#x27; quali è nata tanta disunione e tanta debolezza, che la si è condotta ad essere stata preda, non solamente dei Barbari potenti, ma di qualunque l&#x27;assalta. Di che noi altri Italiani abbiamo obbligo con la Chiesa, e non con altri. E chi ne volesse per esperienza certa vedere più pronta la verità, bisognerebbe che fusse di tanta potenza, che mandasse ad abitare la Corte romana, con l&#x27;autorità che l&#x27;ha in Italia, in le terre de&#x27; Svizzeri, i quali oggi sono quelli Popoli che vivono, e quanto alla Religione e quanto agli ordini militari, secondo gli antichi; e vedrebbe che in poco tempo farebbero più disordine in quella Provincia i costumi tristi di quella Corte, che qualunque altro accidente che in qualunque tempo vi potesse surgere.</div>
+        <div class="col en" lang="en">The Church, then, not having been powerful enough to occupy Italy, nor having permitted another to occupy it, has been the cause that it has not been able to come under one head, but has been under many princes and lords; from which has arisen so much disunion and so much weakness that it has been brought to have been prey, not only of powerful barbarians, but of whoever assails it. For which we other Italians have debt with the Church, and with no other. And whoever wished to see the truth of this more ready by certain experience would need to be of such power as to send the Roman court, with the authority it has in Italy, to dwell in the lands of the Swiss, who today are those peoples who live, both as to religion and as to military orders, according to the ancients; and he would see that in a short time more disorder would be made in that province by the wicked customs of that court than by any other accident that could at any time arise there.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The experiment that cannot be run, proposed anyway: move the Roman court to Switzerland, and its customs would disorder that province faster than any other accident could. The Swiss are chosen because they alone, today, live &quot;according to the ancients&quot; in religion and in military orders.</p>
+<p><span class="lem">Cross-reference.</span> &quot;Prey … of powerful barbarians&quot; is answered in effect: the barbarian inundations came more under Roman rule than otherwise <a class="xref" href="#FG-CONS.1.12.03">Guicciardini .03</a>.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from the 1824 edition (<span class="sig">WIT-NM-DISC-1824-IA</span>), page-image-backed, which governs. Collated against the 1554 Giglio printing, Venice (<span class="sig">WIT-NM-DISC-1554-IA</span>), which is comparison evidence only.</p>
+<p>Paragraph divisions are editorial. The witness prints the chapter as one unbroken block.</p>
+<p><span class="lem">hanno meno Religione</span> → <span class="lem">hanno meno religione</span> (paragraph .04). 1824 witness, printed p. 64, final line. Lower case is unambiguous at the page, and the same page prints Religione capitalised four times (ripieni di Religione; nelle Religioni; La quale Religione; Capo della Religione nostra). Pass A regularised the single exception away; the cold pass caught it and David adjudicated on the page image.</p>
+<p><span class="lem">nelle Religioni eziandio false</span> → <span class="lem">nelle Religioni, eziandio false</span> (paragraph .02). 1824 witness, printed p. 64. The comma is printed.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem">come la Italia per esserne mancata mediante la Chiesa Romana, è rovinata</span> — 1824. The 1554 witness reads <i lang="it">come la Italia, per esserne ella mancata, mediante la Chiesa Romana è rovinata</i>. 1824 governs punctuation and wording; 1554 variant remains recorded.</p>
+<p><span class="lem">l&#x27;oracolo di Delo</span> — 1824. The 1554 witness reads <i lang="it">l&#x27;oracolo di Delfo</i>. Both are intelligible; governing witness retained without silent harmonization.</p>
+<p><span class="lem">gli augumentano</span> — 1824. The 1554 witness reads <i lang="it">gli aumentano</i>. Historical spelling of governing witness retained.</p>
+<p><span class="lem">vis venire Romam?</span> — 1824. The 1554 witness reads <i lang="it">Vis venire Romam</i>. 1824 question punctuation retained; Latin span annotated.</p>
+<p><span class="lem">declinazione</span> — 1824. The 1554 witness reads <i lang="it">declinatione</i>. Governing-witness orthography retained.</p>
+<p><span class="lem">voglio contro ad essa discorrere... due potentissime... La prima è, che per gli esempj rei di quella Corte...</span> — 1824. The 1554 witness reads <i lang="it">forse si potria dire il contrario, havendo rispetto però a quelli, che in essa Chiesa Romana non osservano... Et oltre a questo è, che la Chiesa ha tenuto...</i>. The editions transmit different argument structures. David ratified the Class T reviewer&#x27;s adjudication on 2026-07-17: the complete, coherent two-charge structure of the governing 1824 witness is canonical; 1554 remains recorded here as a substantive recension variant.</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem">.04, <i lang="it">hanno meno religione</i>.</span> The witness capitalises <i lang="it">Religione</i> throughout this chapter — four times on the same page — and drops the capital at exactly this phrase, where Machiavelli says that those nearest the Roman Church have least religion. English cannot carry the distinction. Whether the compositor meant it or not, the page prints it. (Source v0.2.1; the reading was recovered by the dual cold pass and adjudicated on the page image, 2026-09-18.)</p>
+<p><span class="lem">.01, <i lang="it">l&#x27;oracolo di Delo</i>.</span> The governing 1824 witness reads <i lang="it">Delos</i>; the 1554 Giglio comparison witness reads <i lang="it">Delfo</i>, Delphi. Recorded as NM-DISC-I12-D002.</p>
+<p><span class="lem">.03, <i lang="it">vis venire Romam?</i>.</span> — &quot;Do you wish to come to Rome?&quot; Left in Latin, as the witness prints it, in italic.</p>
+<p><span class="lem">.06, <i lang="it">virtù</i>.</span> Left untranslated. Machiavelli sets it beside <i lang="it">potente</i> in the same clause — the Church was neither powerful enough nor of such <i lang="it">virtù</i> — so it cannot be simply power, and it is plainly not moral virtue.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work fg">
+    <div class="work-head">
+      <span class="tag">FG-CONS.1.12</span>
+      <h2>Considerazione sul capitolo XII</h2>
+    </div>
+    <p class="rubric">Di quanta importanza sia tenere conto della religione, e come la Italia, per esserne mancata mediante la Chiesa romana, è rovinata</p>
+    <p class="rubric">Of how much importance it is to take account of religion, and how Italy, for having been wanting in it through the Roman Church, is ruined
+      <span class="rubric-note">Canestrini prints a rubric over the Considerazione, in his own wording — lower-case <i lang="it">religione</i>, a comma after <i lang="it">la Italia</i>, lower-case <i lang="it">romana</i> — rather than reprinting the 1824 <i lang="it">Discorsi</i> heading. The established text omitted it until 2026-09-18 (FG-CONS-I12-C001).</span></p>
+
+    <div class="colheads"><div></div><div>Italian · 1857</div><div>English</div></div>
+      <div class="pair" id="FG-CONS.1.12.01">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.12.01">1.12.01</a></div>
+        <div class="col it" lang="it">Non si può dire tanto male della corte romana che non meriti se ne dica più, perché è una infamia, uno esemplo di tutti e&#x27; vituperii e obbrobrii del mondo. E anche credo sia vero che la grandezza della Chiesa, cioè la autorità che gli ha data la religione, sia stata causa che Italia non sia caduta in una monarchia, perché da uno canto ha avuto tanto credito che ha potuto farsi capo, e convocare quando è bisognato principi esterni contro a chi era per opprimere Italia, da altro, essendo spogliata di armi proprie, non ha avuto tante forze che abbia potuto stabilire dominio temporale altro che quello che volontariamente gli è stato dato da altri.</div>
+        <div class="col en" lang="en">One cannot speak so much ill of the Roman court that it does not deserve that more be said, for it is an infamy, an example of all the disgraces and opprobriums of the world. And I believe too that it is true that the greatness of the Church, that is the authority which religion has given it, has been the cause that Italy has not fallen into a monarchy; for on the one hand it has had such credit that it has been able to make itself head, and to summon, when it has been needed, external princes against whoever was about to oppress Italy; on the other, being stripped of arms of its own, it has not had such forces as to have been able to establish temporal dominion other than what has voluntarily been given it by others.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> Guicciardini passes over Machiavelli&#x27;s whole theory of religion <a class="xref" href="#NM-DISC.1.12.01">Machiavelli .01</a>–<a class="xref" href="#NM-DISC.1.12.04">Machiavelli .04</a> in silence and begins with the court. There he goes further than Machiavelli: nothing said against it can be enough. Then, with <i lang="it">credo</i> — assent — he grants the causal claim of the second charge and restates its mechanism, with two shifts <a class="xref" href="#NM-DISC.1.12.06">Machiavelli .06</a>.</p>
+<p><span class="lem">History.</span> He had spent a decade in the service of the Medici popes: governor of Modena and Reggio under Leo X, then president of the Romagna and lieutenant-general of the papal army under Clement VII. In the <i lang="it">Ricordi</i> (C 28) he voices the same loathing in his own person, and adds what this page leaves out: no one dislikes the ambition, avarice and softness of priests more than he, but his standing with several popes obliged him, for his own interest, to love their greatness — and but for that he would have loved Martin Luther as himself.</p>
+        </details>
+      </div>
+      <div class="pair" id="FG-CONS.1.12.02">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.12.02">1.12.02</a></div>
+        <div class="col it" lang="it">Ma non so già se il non venire in una monarchia sia stata felicità o infelicità di questa provincia, perché se sotto una republica questo poteva essere glorioso al nome d&#x27;Italia e felicità a quella città che dominassi, era all&#x27;altre tutte calamità, perché oppresse dalla ombra di quella non avevano facultà di pervenire a grandezza alcuna, essendo il costume delle republiche non participare e&#x27; frutti della sua libertà e imperio a altri che a&#x27; suoi cittadini proprii.</div>
+        <div class="col en" lang="en">But I do not know whether the not coming into a monarchy has been the happiness or the unhappiness of this province, for if under a republic this could have been glorious to the name of Italy and happiness to that city that should dominate, it would have been calamity to all the others, for, oppressed by the shadow of that one, they would have had no capacity of attaining to any greatness, it being the custom of republics not to impart the fruits of its liberty and rule to any others than its own citizens.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> <i lang="it">Non so già</i> — doubt, pressed. Machiavelli wrote &quot;one republic or one prince&quot; as if they were the same remedy <a class="xref" href="#NM-DISC.1.12.06">Machiavelli .06</a>. Guicciardini splits them. Had a single republic ruled Italy, it would have been glory to the name of Italy and happiness to the ruling city, and calamity to every other, because republics do not share the fruits of their liberty with their subjects. The paragraph is contrary to fact: no republic had ruled Italy since Rome.</p>
+<p><span class="lem">Term.</span> <i lang="it">Felicità</i> and <i lang="it">infelicità</i> are civic conditions, of a city or of a province, not private states of mind.</p>
+        </details>
+      </div>
+      <div class="pair" id="FG-CONS.1.12.03">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.12.03">1.12.03</a></div>
+        <div class="col it" lang="it">E se bene la Italia divisa in molti dominii abbia in varii tempi patito molte calamità che forse in uno dominio solo non ebbe patito, benché le inundazioni de&#x27; Barbari furono più a tempo dello imperio romano che altrimenti, nondimeno in tutti questi tempi ha avuto al rincontro tante città floride che non arebbe avuto sotto una republica, ché io reputo che una monarchia gli sarebbe stata più infelice che felice. Questa ragione non milita in uno regno, il quale è più comune a tutti e&#x27; sudditi, e però veggiamo la Francia e molte altre provincie viversi felici sotto uno re; pure, o sia per qualche fato d&#x27;Italia, o per la complessione degli uomini temperata in modo che hanno ingegno e forze, non è mai questa provincia stata facile a ridursi sotto uno imperio, eziamdio quando non ci era la Chiesa, anzi, sempre naturalmente ha appetito la libertà, né credo ci sia memoria di altro imperio che l&#x27;abbia posseduta tutta che de&#x27; Romani; e&#x27; quali la soggiogorono con grande virtù e grande violenza; e come si spense la republica e mancò la virtù degli imperadori, perderono facilmente lo imperio d&#x27;Italia. Però se la Chiesa romana si è opposta alle monarchie, io non concorro facilmente essere stata infelicità di questa provincia, poi che l&#x27;ha conservata in quello modo di vivere che è più secondo la antiquissima consuetudine e inclinazione sua</div>
+        <div class="col en" lang="en">And although Italy, divided into many dominions, has at various times suffered many calamities which perhaps in a single dominion it had not suffered, albeit the inundations of the barbarians were rather in the time of the Roman rule than otherwise, nonetheless in all these times it has had, on the other side, so many flourishing cities as it would not have had under a republic, for I reckon that a monarchy would have been more unhappy for it than happy. This reason has no force in a kingdom, which is more common to all the subjects; and therefore we see France and many other provinces live happy under one king; yet, whether by some fate of Italy, or by the complexion of the men tempered in such a way that they have wit and force, this province has never been easy to reduce under one rule, even when the Church was not there; on the contrary, it has always by nature desired liberty, nor do I believe there is memory of any other rule that has possessed it whole, than that of the Romans; who subjugated it with great <i lang="it">virtù</i> and great violence; and as the republic was extinguished and the <i lang="it">virtù</i> of the emperors failed, they readily lost the rule of Italy. Therefore if the Roman Church has opposed itself to monarchies, I do not readily concur that this has been the unhappiness of this province, since it has preserved it in that way of living which is more according to its most ancient usage and inclination</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> The counterweights, in order. Division brought calamities, but the barbarian invasions came more under Roman rule than since — compare Machiavelli&#x27;s &quot;prey … of powerful barbarians&quot; <a class="xref" href="#NM-DISC.1.12.07">Machiavelli .07</a>. Division also brought flourishing cities that a single ruling republic would not have allowed. A kingdom is different — &quot;more common to all the subjects&quot; — which grants Machiavelli&#x27;s France <a class="xref" href="#NM-DISC.1.12.06">Machiavelli .06</a> and denies it to Italy for reasons older than the Church: fate, the complexion of the people, a natural appetite for liberty. No power but Rome, he believes, ever held all of Italy, and Rome held it by <i lang="it">virtù</i> and violence together; compare the <i lang="it">virtù</i> Machiavelli says the Church lacked <a class="xref" href="#NM-DISC.1.12.06">Machiavelli .06</a>.</p>
+<p><span class="lem">Term.</span> <i lang="it">Complessione</i> is humoral: the temperament of a people as a mixture of qualities, &quot;tempered&quot; so that they have wit and force.</p>
+<p><span class="lem">Argument.</span> The close. If the Church opposed monarchy, Guicciardini does &quot;not readily concur&quot; that this was Italy&#x27;s unhappiness, since it kept Italy in the way of living most in keeping with its most ancient usage and inclination. He declines Machiavelli&#x27;s conclusion; his own is hedged. For <i lang="it">concorrere</i> against Machiavelli&#x27;s <i lang="it">discorrere</i> and <i lang="it">occorrere</i>, see <a class="xref" href="#NM-DISC.1.12.05">Machiavelli .05</a>.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from Canestrini 1857, <i>Opere inedite</i> vol. 1, pp. 1–65 (<span class="sig">WIT-FG-CONS-1857-CANESTRINI</span>) — the <i>editio princeps</i>, which governs. Collated against Palmarocchi 1933 (<span class="sig">WIT-FG-CONS-1933-PALMAROCCHI</span>), page images only, consultation evidence under the project's licensing rule.</p>
+<p>Paragraph divisions are editorial. The witness prints the chapter as one unbroken block.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem">non ebbe patito</span> — 1857. The 1933 witness reads <i lang="it">non [ar]ebbe patito</i>. Canestrini prints the plain indicative, &quot;did not suffer&quot;; Palmarocchi prints the counterfactual, &quot;would not have suffered&quot;, which is the reading the argument seems to want. This edition follows its governing witness even where the comparison witness reads better, and records the alternative here.</p>
+<p><span class="lem">ché io reputo che</span> — 1857. The 1933 witness reads <i lang="it">che io reputo che</i>. Canestrini accents the first &quot;che&quot;, making it causal: &quot;for I reckon that&quot;. Without the accent it can be read as consecutive, &quot;so that&quot;. Decisions.md D43.</p>
+<p><span class="lem">in varii tempi</span> — 1857. The 1933 witness reads <i lang="it">in vari tempi</i>. Canestrini spelling retained.</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem"><i lang="it">virtù</i>, twice.</span> Left untranslated, as in the facing chapter. Guicciardini uses it of the Romans&#x27; conquering capacity and then of what failed in the emperors — neither moral virtue nor simply force, and the same word must carry both.</p>
+<p><span class="lem"><i lang="it">facilmente</i>, twice, sixteen words apart.</span> <i lang="it">perderono facilmente</i> and <i lang="it">non concorro facilmente</i>. The English holds one word for both — &quot;readily&quot; — because the repetition is Guicciardini&#x27;s and the hinge sits inside it.</p>
+<p><span class="lem"><i lang="it">milita</i>.</span> Guicciardini&#x27;s <i lang="it">non milita</i> is the Latinate argumentative sense: the reason has no force, does not apply. Modern English &quot;militate&quot; survives almost only in &quot;militate against&quot;, which pulls the opposite way, so the cognate is not kept here.</p>
+<p><span class="lem"><i lang="it">imperio</i> and <i lang="it">imperadori</i>.</span> One Italian root, two unrelated English words: &quot;rule&quot; and &quot;emperors&quot;. The rhyme in <i lang="it">mancò la virtù degli imperadori ... perderono ... lo imperio d&#x27;Italia</i> cannot be carried over.</p>
+<p><span class="lem"><i lang="it">poteva ... era ... non avevano</i>.</span> Guicciardini&#x27;s hypothesis in .02 is in the imperfect indicative throughout, the ordinary Italian idiom for a condition contrary to fact. The English is counterfactual throughout: a single republic ruling Italy, as none had since Rome, and what it would have done to the other cities (decisions.md D47).</p>
+<p><span class="lem"><i lang="it">non ebbe patito</i>.</span> Canestrini prints the plain indicative: calamities which under a single dominion Italy <i lang="it">had not</i> suffered — a claim about what the one Roman dominion spared it, which the <i lang="it">benché</i> clause then qualifies. Palmarocchi 1933 reads <i lang="it">non [ar]ebbe patito</i>, the counterfactual <i lang="it">would not have suffered</i>, and it is the reading Guicciardini&#x27;s argument seems to want. This edition follows its governing witness even where the comparison witness reads better, and shows the alternative here (decisions.md D38). An earlier draft of this English was made from Palmarocchi&#x27;s text under Canestrini&#x27;s name and had the counterfactual.</p>
+<p><span class="lem"><i lang="it">ché io reputo che</i>.</span> Canestrini accents the first <i lang="it">che</i> and leaves the second bare: a causal conjunction and then a complementiser. The English carries both — &quot;for I reckon that&quot; — where the earlier draft, following a text without the accent, had &quot;so that&quot;.</p>
+<p><span class="lem"><i lang="it">consuetudine</i> and <i lang="it">costume</i>.</span> Two words: &quot;usage&quot; here, &quot;custom&quot; at <i lang="it">il costume delle republiche</i> in the paragraph before. Kept apart because Guicciardini keeps them apart, and because <i lang="it">consuetudine</i> sits among his non-deterministic causes — fate, complexion, inclination, long usage — which are not to be modernised into national character (decisions.md D41).</p>
+<p><span class="lem"><i lang="it">vituperii</i>.</span> The two independent readers of Canestrini p. 27 divided on the third letter. One read <i lang="it">vituperii</i>; the other, at high magnification, saw a plain vertical without the crossbar and foot of this fount&#x27;s <i lang="it">t</i> and read a foul sort, <i lang="it">viluperii</i>. At the scan&#x27;s resolution the question cannot be settled. The edition prints the word, <i lang="it">vituperii</i>; the sense is the same either way.</p>
+<p><span class="lem">The close.</span> The witness prints no full stop after <i lang="it">inclinazione sua</i>, and neither text here supplies one. The period ends as the page ends it. Two other sentence-final stops in this unit, displaced in the witness by Canestrini&#x27;s note references, are supplied and declared (decisions.md D40).</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="colophon">
+    <div class="row">
+      <div>
+        <h3>What this is</h3>
+        <p>A free, openly licensed, bilingual edition of Guicciardini's 39 <i>Considerazioni</i> and the
+          <i>Discorsi</i> chapters they answer — 78 text units, Italian and English facing, every reading
+          traceable to a named public-domain witness.</p>
+        <p>It is a reading edition with a transparent apparatus, not a text of record. It does not adjudicate
+          the critical text against Bausi 2001 or the manuscript tradition, and does not claim to.</p>
+      </div>
+      <div>
+        <h3>On the title</h3>
+        <p>Machiavelli had been dead two years when Guicciardini wrote; the <i>Discorsi</i> were unpublished,
+          and the <i>Considerazioni</i> stayed unprinted until 1857. Machiavelli never answers.</p>
+        <p>“Conversation” is a quotation, not a description. It invokes Machiavelli's letter to Vettori of
+          10 December 1513, where he changes into court dress at evening, enters the antique courts of ancient
+          men, and reports that <i>they, in their humanity, answer me</i>. Guicciardini does to Machiavelli
+          what Machiavelli did to Livy — and is denied the reply Machiavelli claimed.</p>
+      </div>
+      <div>
+        <h3>Method</h3>
+        <p>No image-derived reading enters the text on a single reading. Each unit is transcribed twice,
+          independently, by readers who have not seen each other's work; disagreements are adjudicated against
+          the page images and recorded.</p>
+        <p>Existing English translations of the <i>Considerazioni</i> — Grayson (1965), Atkinson &amp; Sices
+          (2002) — are never used as translation inputs.</p>
+      </div>
+      <div>
+        <h3>Licence</h3>
+        <p>The established Italian text and the apparatus data are dedicated to the public domain under
+          <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>. They are Machiavelli's and
+          Guicciardini's sentences, and this edition adds no condition to them.</p>
+        <p>The English translation, the notes and the editorial apparatus are licensed
+          <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: reuse them anywhere, including
+          commercially, with attribution to David McDougall and this edition. The build tooling is MIT.</p>
+        <p>The witness scans are other people's digitisations, included as evidence under their own terms; no
+          grant is made over them, and no page image of Palmarocchi 1933 is reproduced here. Full terms,
+          layer by layer, are in the <span class="sig">LICENSE</span> file in the repository.</p>
+      </div>
+    </div>
+
+    <div class="state">
+      <p><strong>Version 0.3 · 12 of 39 pairs published.</strong>
+        This edition is versioned, not frozen. Open for David: Machiavelli side — 1 — O14 (accrescere/augumentare in .02); O01-O05 settled 2026-09-18 (decisions.md D16-D21).</p>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

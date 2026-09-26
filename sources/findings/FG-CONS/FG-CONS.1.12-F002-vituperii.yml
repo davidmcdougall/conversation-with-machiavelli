@@ -2,7 +2,7 @@ source_unit_id: FG-CONS.1.12
 finding_id: FG-CONS-I12-F002
 raised: 2026-09-21
 raised_by: dual cold pass B/C, COLLATION-2026-09-21
-severity: open - blocks S2
+severity: closed
 class: word_level_disagreement
 locator: FG-CONS.1.12.01
 
@@ -40,10 +40,11 @@ assessment: >
   the diplomatic form of the established Italian is.
 
 disposition: >
-  Open. Carried in the body as angle-bracketed uncertainty per the project's
-  transcription convention, and the unit is held at review_pending / S1 rather
-  than established, because S2 requires witness independence with no open
-  word-level disagreement. Escalated to David; not rerun, not resolved.
+  Closed by David, 2026-09-25 (decisions.md D42). "vituperii" is printed in the
+  established text without uncertainty brackets. Pass C's observation is kept
+  as a witness note in the unit's front-matter. Revisit only if a better
+  impression of Canestrini p. 27 is acquired.
+closed: 2026-09-25
 
 recommendation: >
   A third reading will not settle it at this resolution - the scan is the

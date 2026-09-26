@@ -95,3 +95,12 @@ last sentence answers Machiavelli's first move.
 | `causa` (FG) / `cagione` (NM) | cause | Two Italian words, one English word. Recorded so it does not read as an oversight. |
 | `forze` | forces / force | `non ha avuto tante forze` → forces; `ingegno e forze` → force. Same root held. |
 | `se bene` / `benché` | although / albeit | D31. Ruled as a pair, distinctly. |
+
+## Added 2026-09-25
+
+| Italian | English | Note |
+|---|---|---|
+| `consuetudine` | usage | D41. FG .03 `antiquissima consuetudine`. One of Guicciardini's non-deterministic causes; not "custom", which is `costume`. |
+| `costume` / `costumi` | custom / customs | D41. FG .02 `il costume delle republiche`; NM .07 `costumi tristi`. |
+| `uso` | use | D41. NM .04 `l'uso presente`. Moved from "usage" so that `consuetudine` can have it. |
+| `essere per` + infinitive | to be about to | D45. FG .01 `chi era per opprimere Italia`. Not "be for", which reads as "be in favour of". |

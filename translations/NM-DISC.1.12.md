@@ -1,7 +1,7 @@
 ---
 work_id: NM-DISC
 source_unit_id: NM-DISC.1.12
-version: "0.2.1-draft"
+version: "0.2.2-draft"  # 2026-09-25: `uso` → "use" per D41
 status: draft_cold_reviewed
 source_text: corpus/NM-DISC/NM-DISC.1.12.md
 established_source_version: "0.2.1"
@@ -10,7 +10,7 @@ cold_review: 2026-09-18, reviewer with no access to the drafting work
 paragraph_divisions: editorial  # inherited from the source unit; see SCOPE §3
 rubric_en: "Of how much importance it is to take account of religion, and how Italy, for having been wanting in it through the Roman Church, is ruined."
 translated: 2026-09-18
-open_for_david: none — O01-O05 settled 2026-09-18 (decisions.md D16-D21)
+open_for_david: 1 — O14 (accrescere/augumentare in .02); O01-O05 settled 2026-09-18 (decisions.md D16-D21)
 ---
 
 # Discourses I.12
@@ -69,7 +69,7 @@ republic according as it was ordained by its Giver, the Christian states and
 republics would be more united and far more happy than they are. Nor can one make
 any greater conjecture of its decline than to see how those peoples who are
 nearer to the Roman Church, head of our religion, have less religion. And whoever
-should consider its foundations, and see how far the present usage differs from
+should consider its foundations, and see how far the present use differs from
 them, would judge to be near, without doubt, either the ruin or the scourge.
 
 ## NM-DISC.1.12.05

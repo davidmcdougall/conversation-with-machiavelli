@@ -12,20 +12,26 @@ records:
     established_by: "David McDougall, D38"
     publish_as_variant_note: true
     rationale: >
-      CORRECTED 2026-09-21 (FG-CONS-I12-F001). The previous record stated
-      witness_1857 as "non [ar]ebbe patito" and explained the brackets as
-      Canestrini's supplied letters. Both are false: the brackets are printed
-      on the PALMAROCCHI page (p. 23) and Canestrini (p. 28) prints plain
-      "ebbe". The established text carries the Palmarocchi reading. Sense
-      differs - "did not suffer" against the counterfactual "would not have
-      suffered" - so this is not orthographic.
-
-      RESOLVED 2026-09-21 (D38). Canestrini governs even where his reading is
-      the weaker one; Palmarocchi's counterfactual is published as a variant
-      note, not adopted. Takes effect when the unit is re-established - the
-      current corpus text carries the Palmarocchi reading and is not patched
-      in isolation. Revisit on a cleaner Canestrini impression or a third
-      public-domain witness.
+      Canestrini prints the plain indicative, "did not suffer"; Palmarocchi
+      prints the counterfactual, "would not have suffered", which is the
+      reading the argument seems to want. This edition follows its governing
+      witness even where the comparison witness reads better, and records the
+      alternative here.
+    history: >
+      Until 2026-09-21 the established text carried Palmarocchi's reading
+      under Canestrini's name (FG-CONS-I12-F001; decisions.md D38, D44).
+  - id: FG-CONS-I12-D004
+    locator: FG-CONS.1.12.03
+    class: reading
+    witness_1857: "ché io reputo che"
+    witness_1933: "che io reputo che"
+    established: witness_1857
+    established_on: 2026-09-25
+    publish_as_variant_note: true
+    rationale: >
+      Canestrini accents the first "che", making it causal: "for I reckon
+      that". Without the accent it can be read as consecutive, "so that".
+      Decisions.md D43.
   - id: FG-CONS-I12-D002
     locator: FG-CONS.1.12.03
     class: orthographic

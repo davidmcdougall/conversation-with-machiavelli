@@ -1,15 +1,15 @@
 ---
 work_id: FG-CONS
 source_unit_id: FG-CONS.1.12
-version: "0.3.0"
-status: review_pending
-integrity_class: S1
+version: "0.3.1"
+status: established
+integrity_class: S2
 integrity_note: >
-  Not S2. S2 requires witness independence with no open word-level
-  disagreement; FG-CONS-I12-F002 is open at `vituperii`/`viluperii`. The
-  previous file claimed S2 on a text established from the wrong witness
-  (FG-CONS-I12-F001); this one claims less and is established from the right
-  one.
+  Two independent cold passes of Canestrini (B, C) with no open word-level
+  disagreement. The one split, `vituperii`/`viluperii` (FG-CONS-I12-F002), was
+  closed by David on 2026-09-25 in favour of `vituperii`; pass C's reading of a
+  foul sort is kept as a witness note. Supersedes v0.2.1, which was established
+  from the wrong witness (FG-CONS-I12-F001).
 paragraph_divisions: editorial  # witness prints one block; see SCOPE §3
 governing_witness: WIT-FG-CONS-1857-CANESTRINI
 established_from: [sources/coldpass/FG-CONS.1.12-passB.md, sources/coldpass/FG-CONS.1.12-passC.md]
@@ -19,8 +19,15 @@ relationship_pointer: FG-CONS-DR-012
 responds_to: NM-DISC.1.12
 supersedes_version: "0.2.1"
 supersedes_reason: FG-CONS-I12-F001 — v0.2.1 transcribed Palmarocchi 1933
-unresolved_source_findings: [FG-CONS-I12-F002]
-editorial_supplies: 2  # two sentence-final stops displaced by note references; see O12
+unresolved_source_findings: []
+witness_notes:
+  - locus: FG-CONS.1.12.01 `vituperii`
+    note: >
+      Pass C read the third letter as a plain vertical without the crossbar
+      and curled foot of this fount's t, i.e. a foul sort printing
+      `viluperii`. Pass B read `vituperii`. The scan (685 px, ~5 px x-height)
+      cannot settle it. Printed as `vituperii`; see F002, decisions.md D42.
+editorial_supplies: 2  # two sentence-final stops displaced by note references; see decisions.md D40
 witness_corrections: 1  # dropped point at `re; pure`, Palmarocchi p. 23
 rubric: "Di quanta importanza sia tenere conto della religione, e come la Italia, per esserne mancata mediante la Chiesa romana, è rovinata"  # Canestrini's wording; heading apparatus, not body. See SCOPE §3.
 rubric_note: >
@@ -33,7 +40,7 @@ rubric_note: >
 
 ## FG-CONS.1.12.01
 
-Non si può dire tanto male della corte romana che non meriti se ne dica più, perché è una infamia, uno esemplo di tutti e' ⟨vituperii⟩ e obbrobrii del mondo. E anche credo sia vero che la grandezza della Chiesa, cioè la autorità che gli ha data la religione, sia stata causa che Italia non sia caduta in una monarchia, perché da uno canto ha avuto tanto credito che ha potuto farsi capo, e convocare quando è bisognato principi esterni contro a chi era per opprimere Italia, da altro, essendo spogliata di armi proprie, non ha avuto tante forze che abbia potuto stabilire dominio temporale altro che quello che volontariamente gli è stato dato da altri.
+Non si può dire tanto male della corte romana che non meriti se ne dica più, perché è una infamia, uno esemplo di tutti e' vituperii e obbrobrii del mondo. E anche credo sia vero che la grandezza della Chiesa, cioè la autorità che gli ha data la religione, sia stata causa che Italia non sia caduta in una monarchia, perché da uno canto ha avuto tanto credito che ha potuto farsi capo, e convocare quando è bisognato principi esterni contro a chi era per opprimere Italia, da altro, essendo spogliata di armi proprie, non ha avuto tante forze che abbia potuto stabilire dominio temporale altro che quello che volontariamente gli è stato dato da altri.
 
 ## FG-CONS.1.12.02
 
