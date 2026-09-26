@@ -17,10 +17,11 @@ acquisition:
   scan_file_url: "https://commons.wikimedia.org/wiki/File:Guicciardini,_Francesco_%E2%80%93_Scritti_politici_e_ricordi,_1933_%E2%80%93_BEIC_1844634.djvu"
 rights_assessment:
   underlying_work: public_domain_by_age
-  scan_layer: reproducible_in_corpus_public_domain_mark_on_commons
+  scan_layer: consultable_not_republishable
+  rights_note: "Commons PD tag keys on Guicciardini (d.1540), not the 1933 editorial layer. Palmarocchi d.1956: in copyright in Italy to 31 Dec 2026, in the US (URAA) to 31 Dec 2028. Images consulted only; no Palmarocchi expression copied or published."
   wikisource_transcription_layer: consultable_only_CC_BY_SA_and_GFDL_under_DEC_010
   palmarocchi_editorial_text: consultable_only_pending_work_specific_clean_inbound_confirmation
-  corpus_reuse: "scan evidence reproducible; readings consultable for collation; do not copy transcription or editorial expression"
+  corpus_reuse: "scan images consulted, not republished; readings consultable for collation; do not copy transcription or editorial expression"
   evidence: [sources/witnesses/FG-CONS/WIT-FG-CONS-1933-PALMAROCCHI/commons-metadata.json]
 independence: {rank: independent_historical_edition, relative_to: WIT-FG-CONS-1857-CANESTRINI}
 integrity_candidate: S1
