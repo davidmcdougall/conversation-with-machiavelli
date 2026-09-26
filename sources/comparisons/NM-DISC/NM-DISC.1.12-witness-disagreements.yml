@@ -43,7 +43,7 @@ records:
     witness_1824: "voglio contro ad essa discorrere... due potentissime... La prima è, che per gli esempj rei di quella Corte..."
     witness_1554: "forse si potria dire il contrario, havendo rispetto però a quelli, che in essa Chiesa Romana non osservano... Et oltre a questo è, che la Chiesa ha tenuto..."
     established: witness_1824
-    rationale: "The editions transmit different argument structures. David ratified the Class T reviewer's adjudication on 2026-07-17: the complete, coherent two-charge structure of the governing 1824 witness is canonical; 1554 remains recorded here as a substantive recension variant."
+    rationale: "The two editions transmit different argument structures. This edition follows the governing 1824 witness, which brings two charges against the Roman Church; the 1554 reading is recorded here as a substantive variant."
   - id: NM-DISC-I12-D007
     locator: paragraphs 1-7
     class: systematic_orthographic_profile
