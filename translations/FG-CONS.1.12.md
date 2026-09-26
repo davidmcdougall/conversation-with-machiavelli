@@ -72,8 +72,7 @@ of living which is more according to its most ancient usage and inclination
 
 **The rubric.** Canestrini prints a rubric over the Considerazione, in his own
 wording — lower-case `religione`, a comma after `la Italia`, lower-case
-`romana` — rather than reprinting the 1824 *Discorsi* heading. The established
-text omitted it until 2026-09-18 (FG-CONS-I12-C001).
+`romana` — rather than reprinting the 1824 *Discorsi* heading.
 
 **`virtù`, twice.** Left untranslated, as in the facing chapter. Guicciardini
 uses it of the Romans' conquering capacity and then of what failed in the
@@ -97,7 +96,7 @@ perderono ... lo imperio d'Italia` cannot be carried over.
 imperfect indicative throughout, the ordinary Italian idiom for a condition
 contrary to fact. The English is counterfactual throughout: a single republic
 ruling Italy, as none had since Rome, and what it would have done to the other
-cities (decisions.md D47).
+cities.
 
 **`non ebbe patito`.** Canestrini prints the plain indicative: calamities
 which under a single dominion Italy *had not* suffered — a claim about what the
@@ -105,7 +104,7 @@ one Roman dominion spared it, which the `benché` clause then qualifies.
 Palmarocchi 1933 reads `non [ar]ebbe patito`, the counterfactual *would not have
 suffered*, and it is the reading Guicciardini's argument seems to want. This
 edition follows its governing witness even where the comparison witness reads
-better, and shows the alternative here (decisions.md D38). An earlier draft of
+better, and shows the alternative here. An earlier draft of
 this English was made from Palmarocchi's text under Canestrini's name and had
 the counterfactual.
 
@@ -118,7 +117,7 @@ accent, had "so that".
 `il costume delle republiche` in the paragraph before. Kept apart because
 Guicciardini keeps them apart, and because `consuetudine` sits among his
 non-deterministic causes — fate, complexion, inclination, long usage — which
-are not to be modernised into national character (decisions.md D41).
+are not to be modernised into national character.
 
 **`vituperii`.** The two independent readers of Canestrini p. 27 divided on the
 third letter. One read `vituperii`; the other, at high magnification, saw a
@@ -129,4 +128,4 @@ The edition prints the word, `vituperii`; the sense is the same either way.
 **The close.** The witness prints no full stop after `inclinazione sua`, and
 neither text here supplies one. The period ends as the page ends it. Two other
 sentence-final stops in this unit, displaced in the witness by Canestrini's note
-references, are supplied and declared (decisions.md D40).
+references, are supplied and declared.

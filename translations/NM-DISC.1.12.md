@@ -130,7 +130,7 @@ meant it or not, the page prints it. (Source v0.2.1; the reading was recovered
 by the dual cold pass and adjudicated on the page image, 2026-09-18.)
 
 **.01, `l'oracolo di Delo`.** The governing 1824 witness reads *Delos*; the 1554
-Giglio comparison witness reads *Delfo*, Delphi. Recorded as NM-DISC-I12-D002.
+Giglio comparison witness reads *Delfo*, Delphi.
 
 **.03, `vis venire Romam?`** — "Do you wish to come to Rome?" Left in Latin, as
 the witness prints it, in italic.
