@@ -1,0 +1,40 @@
+source_unit_id: NM-DISC.1.14
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+coverage: "1554 collated from the rubric through `perdette` in .04; the rest of the chapter is on a leaf not yet extracted."
+records:
+  - id: NM-DISC-I14-D001
+    locator: NM-DISC.1.14.01
+    class: lexical
+    witness_1824: "E fra gli altri aruspizj"
+    witness_1554: "Et tra gli altri auspici"
+    established: witness_1824
+    rationale: "The 1824 text names haruspicy, the reading of entrails, where the 1554 has auspices, the reading of birds. The chickens that follow are auspices in either case."
+  - id: NM-DISC-I14-D002
+    locator: NM-DISC.1.14.02
+    class: lexical
+    witness_1824: "tanto attentamente"
+    witness_1554: "tanto attamente"
+    established: witness_1824
+    rationale: "1824: so carefully. 1554: so aptly. Either way the Romans dressed up the decision so that it did not look like contempt of religion."
+  - id: NM-DISC-I14-D003
+    locator: NM-DISC.1.14.03
+    class: lexical
+    witness_1824: "che costituissero i Pollarj"
+    witness_1554: "che ponessero i Pollarj"
+    established: witness_1824
+    rationale: "Same sense: the keepers of the chickens were to be stationed in the front line."
+  - id: NM-DISC-I14-D004
+    locator: NM-DISC.1.14.04
+    class: lexical
+    witness_1824: "nella prima guerra Punica, che volendo azzuffarsi con l'esercito Cartaginese"
+    witness_1554: "nella prima guerra Carthaginese, che uolendo azzuffarsi con l'essercito de nemici"
+    established: witness_1824
+    rationale: "The 1554 calls the war Carthaginian and the army simply the enemy's. Same war, same battle."
+  - id: NM-DISC-I14-D005
+    locator: NM-DISC.1.14.01-04
+    class: systematic_orthographic_profile
+    witness_1824: "j for final ii, nineteenth-century accents and pointing"
+    witness_1554: "sixteenth-century u/v, long s, et/&, ij endings, looser pointing"
+    established: witness_1824
+    rationale: "1824 profile governs throughout."

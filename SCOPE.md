@@ -185,12 +185,12 @@ than inside the first paragraph.
 | Stage | Done | Remaining | Of |
 |---|---|---|---|
 | Link records | **39** | 0 | 39 |
-| NM source established | 1 | 38 | 39 |
-| FG source established | 1 | 38 | 39 |
-| Collated | 2 units | 76 | 78 |
-| Translated (draft, cold-reviewed) | 2 | 76 | 78 |
-| Annotated (cold-reviewed) | 2 | 76 | 78 |
-| Published | 2 | 76 | 78 |
+| NM source established | 2 | 37 | 39 |
+| FG source established | 2 | 37 | 39 |
+| Collated | 4 units | 74 | 78 |
+| Translated (draft, cold-reviewed) | 4 | 74 | 78 |
+| Annotated (cold-reviewed) | 4 | 74 | 78 |
+| Published | 4 | 74 | 78 |
 
 **Read the top row first.** The relationship layer — all 39 pairs, mapped
 against the chapter headings — is complete, and it is a real asset. Be precise
@@ -290,6 +290,14 @@ date, which is the point of a closed corpus.
 
 Treat these as fiction until one pair has gone end to end. The first will take
 a day and will correct every row.
+
+**Actuals.** Minutes of wall-clock time per stage, measured by the session
+clock; David's own time is the rulings, counted separately.
+
+| Pair | Establish | Cold pass | Translate | Review | Annotate | Build & check | Total | David |
+|---|---|---|---|---|---|---|---|---|
+| Estimate | 30 (transcribe) + 20 (collate) | — | 60–90 | — | 30 | amortised | 150–180 | — |
+| I.14 (603 + 66 words) | 9 | 2 | 2 | 6 | 3 | 2 | 24 | 1 ruling (D48) |
 
 ---
 

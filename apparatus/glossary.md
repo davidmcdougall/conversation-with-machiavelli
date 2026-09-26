@@ -104,3 +104,23 @@ last sentence answers Machiavelli's first move.
 | `costume` / `costumi` | custom / customs | D41. FG .02 `il costume delle republiche`; NM .07 `costumi tristi`. |
 | `uso` | use | D41. NM .04 `l'uso presente`. Moved from "usage" so that `consuetudine` can have it. |
 | `essere per` + infinitive | to be about to | D45. FG .01 `chi era per opprimere Italia`. Not "be for", which reads as "be in favour of". |
+
+## Added from the I.14 pair (2026-09-26)
+
+| Italian | English | Note |
+|---|---|---|
+| `auspizj` / `auspicii` | auspices | Both authors. The signs from birds, here the sacred chickens. |
+| `augurj` / `augurii`; `augurio` | auguries; augury | Kept apart from auspices. |
+| `aruspizj`; `aruspicare` | haruspicies; to haruspicate | Machiavelli's loose word for the chicken-auspices; kept, not corrected. |
+| `Pollarj` / `Pullarii`; `Pollario` | *pullarii*; *pullarius* | D51. |
+| `giornata`; `fare la giornata` | battle; to give battle | D49. |
+| `zuffa` / `azzuffarsi` | engagement / to engage | D49. |
+| `combattere` | to fight | D49. |
+| `riferire` / `referire`; `relazione` | to report; report | D56. Cross-author. |
+| `ufficio` / `officio` | office | D56. |
+| `attendere a` | to attend to | D56. |
+| `dispregio` / `dispregiare` | contempt / to despise | NM I.12 "the divine worship despised"; I.14 "in contempt of religion". |
+| `prudentemente` / `temerariamente` | prudently / rashly | NM I.14 .04 closes on the pair; the rubric's `temerariamente` matches. |
+| `astutamente` | craftily | D52. |
+| `esterni` (noun) | foreigners | D55. |
+

@@ -58,6 +58,16 @@ This log becomes the translator's preface.
 | D46 | Hosting | GitHub Pages, public repo, serving `site/` | **David 2026-09-25. Deferred to stage 6.** David creates the empty repo; remote, push and Pages config follow. `build.py` to use relative links so a project-path URL and a later custom domain both work. |
 | D47 | FG .02 `se ... poteva essere ... era ... non avevano` | could have been ... would have been calamity ... would have had no capacity | **O13, David 2026-09-25.** Imperfect indicative in a contrary-to-fact condition is the ordinary *imperfetto ipotetico*. The earlier English was counterfactual in the *if*-clause and plain past in the result, which stated as history what a ruling republic that never came to be would have done. Not D38: the word is agreed; only its idiom was in question. |
 
+| D48 | FG-CONS.1.14 `di chi ora lo officio` | `ora` established as printed; Palmarocchi's `era` in the variant note; English "whose office it now [was]" | **David, 2026-09-26.** Both cold readers read `ora` and both marked it uncertain (x-height ~5 px). The sense needs `era`. D38 applies: the governing witness governs even where it reads worse. The bracketed verb is a supply from sense and is declared in the note as the word `era` gives. Revisit with a better Canestrini impression. |
+| D49 | `giornata` / `zuffa` / `azzuffarsi` / `combattere` (NM I.14) | battle / engagement / engage / fight | Cold review 2026-09-26. The draft collapsed three into "fight". `giornata` keeps "battle" (`fare la giornata` = give battle). |
+| D50 | `il Principe de' Pollarj` | the prince of the *pullarii* | Glossary `principe` = prince held; the Latin *princeps* sense is carried in a note rather than by switching to "chief". |
+| D51 | `Pollarj` (NM) / `Pullarii` (FG) | *pullarii*, italic, both authors | One Roman office; the Latin name is what both Italians keep. Note explains the sacred chickens. |
+| D52 | FG `astutamente` | craftily | Cold review judgement call, taken. Modern "astutely" praises; the question is whether the captains worked a religion they did not believe. Cognate dropped because it no longer does the work. |
+| D53 | Words the English supplies | in square brackets, in both authors | NM .03 `rispose` → "[the consul] answered" (the running subject is the nephew); FG .01 "[was]". One convention across the facing units. |
+| D54 | FG `né mi repugna lo esemplo di Papirio, il quale` | "nor is repugnant to me the example of Papirius, who" | Cold review must-fix: "the example of Papirius repugnant to me, who" hung the relative on "me". The inversion keeps `il quale` next to Papirius. "Repugnant" in its older sense (contrary), noted; it answers NM I.12 "which in my view have no repugnance". |
+| D55 | NM `esterni` | foreigners | "Outsiders" carries a modern social sense. Not "external ones": FG I.12 `principi esterni` → "external princes" is adjectival. |
+| D56 | NM `riferire` / FG `referire`, `relazione`; `ufficio` / `officio`; `attendere a` | report / reported, report; office; attend to | Cross-author echoes held: Guicciardini's reply meets Machiavelli's narrative in the same English words. |
+
 ## Closed
 
 The **Deferred to the DEC-009 rewrite** table is closed. N01, N02 and N03 are

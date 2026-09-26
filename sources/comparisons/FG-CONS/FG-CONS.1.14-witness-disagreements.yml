@@ -1,0 +1,31 @@
+source_unit_id: FG-CONS.1.14
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-I14-D001
+    locator: FG-CONS.1.14.01
+    class: reading
+    witness_1857: "di chi ora lo officio"
+    witness_1933: "di chi era lo officio"
+    established: witness_1857
+    established_on: 2026-09-26
+    publish_as_variant_note: true
+    rationale: >
+      Canestrini's page, at the resolution of the only scan available, prints
+      "ora", now, which leaves the clause without a verb; the 1933 edition
+      reads "era", whose office it was, which is what the sense needs. This
+      edition follows its governing witness and records the alternative here.
+  - id: FG-CONS-I14-D002
+    locator: FG-CONS.1.14.01
+    class: lexical
+    witness_1857: "il quale"
+    witness_1933: "el quale"
+    established: witness_1857
+    rationale: "The 1933 edition has the Florentine form of the article. No difference in sense."
+  - id: FG-CONS-I14-D003
+    locator: FG-CONS.1.14.01
+    class: systematic_orthographic_profile
+    witness_1857: "Canestrini's spelling and pointing"
+    witness_1933: "Palmarocchi's modernised accents and pointing"
+    established: witness_1857
+    rationale: "Canestrini governs throughout."

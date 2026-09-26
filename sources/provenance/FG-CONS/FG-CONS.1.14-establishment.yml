@@ -1,0 +1,27 @@
+source_unit_id: FG-CONS.1.14
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-013
+responds_to: NM-DISC.1.14
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied"
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38). Palmarocchi appears as variant notes only."
+passes:
+  - {id: A, performed: 2026-09-26, file: sources/coldpass/FG-CONS.1.14-passA.md}
+  - {id: B, performed: 2026-09-26, file: sources/coldpass/FG-CONS.1.14-passB.md, note: "subagent; page images only, separate directory"}
+collation: sources/coldpass/COLLATION-2026-09-26-I14.md
+collation_result: >
+  66 words. No word, clause or sense disagreement; no punctuation
+  disagreement. One locus doubtful in both passes at scan resolution (`ora`),
+  ruled D48.
+witness_independence_check: >
+  SCOPE §7. Both passes read Canestrini against Palmarocchi at every locus
+  where the witnesses differ (`il quale`/`el quale`, `ora`/`era`, `da
+  Pullarii`/`da' Pullari`, the bare article `e`, the comma after `il quale`).
+boundaries: "printed p. 30 entire; the next unit on p. 31 is on chapter XVI"
+interventions: []
+not_supplied:
+  - locus: rubric, "lo punivano"
+    note: "No terminal stop printed (DEC-009 clause 10)."

@@ -1,0 +1,24 @@
+source_unit_id: NM-DISC.1.14
+status: accepted
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-013
+rights: "PD page-image body text only"
+adjudication: "1824 governs; substantive 1554 differences are recorded in the disagreement table."
+passes:
+  - {id: A, performed: 2026-09-26, file: sources/coldpass/NM-DISC.1.14-passA.md}
+  - {id: B, performed: 2026-09-26, file: sources/coldpass/NM-DISC.1.14-passB.md, note: "subagent; page images only, separate directory"}
+collation: sources/coldpass/COLLATION-2026-09-26-I14.md
+collation_result: >
+  603 words. No word, clause or sense disagreement; no punctuation
+  disagreement. Pass B marked four uncertainties (three faint points, one ink
+  blemish over parendogli); pass A read all four the same way.
+boundaries: "printed pp. 70-72; chapter XV begins p. 73"
+collation_coverage_1554: >
+  The held 1554 extract for this unit (zero-based pages 84-87) ends with
+  chapter XIII. Chapter XIV begins on leaf 27r, zero-based page 88, which is
+  held only inside the I.16 extract (86-89). Collated through `perdette`
+  (leaf 27v, last line); the chapter's last ~90 words fall on page 90, which
+  no held extract contains.
+corrections: []
