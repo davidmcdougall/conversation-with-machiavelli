@@ -2,3 +2,6 @@
 __pycache__/
 
 _to_delete/
+
+# Palmarocchi 1933 scans: consulted locally, not republished (SCOPE §4)
+sources/witnesses/FG-CONS/WIT-FG-CONS-1933-PALMAROCCHI/*.jpg
