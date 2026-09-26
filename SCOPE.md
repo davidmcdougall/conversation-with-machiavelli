@@ -190,7 +190,7 @@ than inside the first paragraph.
 | Collated | 2 units | 76 | 78 |
 | Translated (draft, cold-reviewed) | 2 | 76 | 78 |
 | Annotated (cold-reviewed) | 2 | 76 | 78 |
-| Published | **0** | 78 | 78 |
+| Published | 2 | 76 | 78 |
 
 **Read the top row first.** The relationship layer — all 39 pairs, mapped
 against the chapter headings — is complete, and it is a real asset. Be precise
@@ -205,10 +205,11 @@ The map's evidence also cites the Palmarocchi/Wikisource headings — the witnes
 this project demotes to collation-only. Restate it against Canestrini's
 headings on porting, or record plainly that the pairing is attested in both.
 
-**Read the bottom three second.** As of 2026-09-25 the I.12 pair has cold-reviewed
-English drafts and cold-reviewed commentary (`annotations/`); stage 6 has never
-run. Every estimate below
-stage 3 is unvalidated until one unit goes end to end.
+**Read the bottom three second.** The I.12 pair went end to end on 2026-09-26:
+cold-reviewed English, cold-reviewed commentary (`annotations/`), and published
+at https://davidmcdougall.github.io/conversation-with-machiavelli/ from
+`site/` by `.github/workflows/pages.yml`. Every estimate below stage 3 is still
+one data point.
 
 **The middle was signed off on 2026-09-18.** Both I.12 units sat at
 `review_pending` on a Class T review that §7 abolishes, and neither had ever had
@@ -218,7 +219,7 @@ units were marked `status: established`, `integrity_class: S2`, version 0.2.0.
 That was wrong for FG-CONS.1.12, which turned out to be Palmarocchi under
 Canestrini's label (FG-CONS-I12-F001). It was re-established from Canestrini on
 2026-09-21 and closed at v0.3.1 / S2 on 2026-09-25 (D42). One pair is through
-stage 4. Nothing is through stage 5.
+stage 6.
 
 ### Acquisition is smaller than it looks
 
