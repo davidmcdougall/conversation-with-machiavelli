@@ -67,8 +67,9 @@ WORKS = {
             "Established from Canestrini 1857, <i>Opere inedite</i> vol. 1, pp. 1–65 "
             '(<span class="sig">WIT-FG-CONS-1857-CANESTRINI</span>) — the <i>editio princeps</i>, '
             "which governs. Collated against Palmarocchi 1933 "
-            '(<span class="sig">WIT-FG-CONS-1933-PALMAROCCHI</span>), page images only, '
-            "consultation evidence under the project's licensing rule."
+            '(<span class="sig">WIT-FG-CONS-1933-PALMAROCCHI</span>): page images and the '
+            "Wikisource transcription consulted as collation evidence, not reproduced "
+            "(LICENSE §5)."
         ),
         edition_year="1857",
     ),
@@ -373,9 +374,10 @@ def open_items_note(nm_meta, fg_meta):
         v = meta.get("open_for_david", "none")
         if not v.lower().startswith("none"):
             items.append(f"{label} — {v}")
+    # Internal detail (who, item codes) stays in the front-matter; the page says only whether any remain.
     if not items:
         return "No open questions on this pair."
-    return "Open for David: " + "; ".join(items) + "."
+    return "Some translation questions on this pair are still open."
 
 
 # ---------------------------------------------------------------------------
@@ -788,7 +790,7 @@ def build_pair(pair, published):
 
 {COLOPHON.format(state=f"""
     <div class="state">
-      <p><strong>Version {edition_version()} · {row['n'] if row else '?'} of {len(rows)} pairs published.</strong>
+      <p><strong>Version {edition_version()} · {len(published)} of {len(rows)} pairs published.</strong>
         This edition is versioned, not frozen. {open_items_note(nm_en_m, fg_en_m)}</p>
     </div>""")}
 
