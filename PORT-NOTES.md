@@ -48,17 +48,18 @@ left behind, as was root-level `TRANSLATION_PROTOCOL.md`.
 
 ## Git
 
-Initialised, with the port as commit `2dae623` and `_to_delete/` ignored in
-`9b1ff0e`.
+Initialised 2026-09-18 with the port as its first commit. History was
+rewritten twice on 2026-09-26, before the first push, to remove the Palmarocchi
+1933 scan images and the pre-F001 Palmarocchi text of FG-CONS.1.12. Commit
+hashes cited anywhere before that date no longer resolve.
 
-One wrinkle worth recording, because it will recur: git creates lock files and
-then deletes them, and the sandbox a Cowork session reaches this folder through
-cannot delete anything. Every git *write* issued from such a session therefore
-leaves a stale `.git/*.lock` that blocks the next one. The cleanup was done
-from Terminal on 2026-09-18 and the object store verifies clean
-(`git fsck` silent, no stale locks).
+Git creates lock files and then deletes them. A Cowork session can only delete
+in this folder once it has been granted delete permission; without it, every
+git write leaves a stale `.git/*.lock` that blocks the next. Grant the
+permission at the start of the session, or run git from Terminal.
 
-**Run git in this repository from Terminal, not from a Cowork session.**
+Published from `master` to GitHub Pages by `.github/workflows/pages.yml`,
+which serves `site/`.
 
 ## Provenance of the port
 
