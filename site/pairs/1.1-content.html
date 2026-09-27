@@ -1,0 +1,457 @@
+<title>A Conversation with Machiavelli — How cities begin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root {
+  --paper:      #EDEEEC;
+  --paper-sunk: #E4E6E3;
+  --ink:        #1B1E1C;
+  --ink-muted:  #5C625E;
+  --ink-faint:  #868C87;
+  --rule:       #C9CDC8;
+  --rule-faint: #DCDFDB;
+  --nm:         #3A5A6B;
+  --fg:         #6E5A3C;
+  --serif: "EB Garamond", "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  --sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --mono:  "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:      #161917;
+    --paper-sunk: #1D211E;
+    --ink:        #E3E6E1;
+    --ink-muted:  #A0A6A0;
+    --ink-faint:  #767C77;
+    --rule:       #343934;
+    --rule-faint: #262B27;
+    --nm:         #8FB4C6;
+    --fg:         #C4A97C;
+  }
+}
+:root[data-theme="dark"] {
+  --paper:      #161917;
+  --paper-sunk: #1D211E;
+  --ink:        #E3E6E1;
+  --ink-muted:  #A0A6A0;
+  --ink-faint:  #767C77;
+  --rule:       #343934;
+  --rule-faint: #262B27;
+  --nm:         #8FB4C6;
+  --fg:         #C4A97C;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 1160px; margin: 0 auto; padding-inline: 20px; padding-block: 0 0; }
+
+/* ---- masthead ---- */
+.masthead { padding-block: 56px 32px; border-bottom: 1px solid var(--rule); }
+.eyebrow {
+  font-family: var(--sans); font-size: 11px; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint);
+  margin: 0 0 18px;
+}
+h1 {
+  font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 5vw, 44px);
+  line-height: 1.12; margin: 0 0 14px; text-wrap: balance; letter-spacing: -0.01em;
+}
+h1 .sub { display: block; font-style: italic; color: var(--ink-muted); font-size: .52em; margin-top: 12px; letter-spacing: 0; }
+.standfirst {
+  font-family: var(--sans); font-size: 14.5px; line-height: 1.6;
+  color: var(--ink-muted); max-width: 62ch; margin: 0;
+}
+
+/* ---- the pairing device ---- */
+.pairing {
+  display: flex; align-items: stretch; gap: 0; margin: 30px 0 0;
+  border: 1px solid var(--rule); border-radius: 2px; overflow: hidden;
+  font-family: var(--sans); background: var(--paper-sunk);
+}
+.pairing > div { flex: 1 1 0; padding: 13px 16px; min-width: 0; }
+.pairing .who { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
+.pairing .nm-side .who { color: var(--nm); }
+.pairing .fg-side .who { color: var(--fg); }
+.pairing .what { font-size: 13.5px; color: var(--ink-muted); }
+.pairing .arrow {
+  flex: 0 0 auto; display: flex; align-items: center; justify-content: center;
+  padding-inline: 14px; color: var(--ink-faint); font-size: 15px;
+  border-inline: 1px solid var(--rule);
+}
+
+/* ---- pair-to-pair navigation ---- */
+.pairnav {
+  display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+  margin-top: 18px; font-family: var(--sans); font-size: 12.5px;
+  color: var(--ink-muted);
+}
+.pairnav a { text-decoration: none; color: var(--ink-muted); }
+.pairnav a:hover, .pairnav a:focus { color: var(--ink); text-decoration: underline; }
+
+/* ---- work sections ---- */
+.work { padding-block: 52px 0; }
+.work-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
+.work-head .tag {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .04em;
+  padding: 3px 7px; border-radius: 2px; color: var(--paper);
+}
+.work.nm .tag { background: var(--nm); }
+.work.fg .tag { background: var(--fg); }
+h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; letter-spacing: -0.005em; }
+.rubric {
+  font-style: italic; color: var(--ink-muted); max-width: 70ch;
+  margin: 10px 0 0; font-size: 16.5px; line-height: 1.5;
+}
+.rubric-note {
+  font-family: var(--sans); font-style: normal; font-size: 12px;
+  color: var(--ink-faint); margin-top: 7px;
+}
+.colheads {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  margin-top: 30px; padding-bottom: 7px; border-bottom: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint);
+}
+
+/* ---- the facing pair ---- */
+.pair {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  padding-block: 22px; border-bottom: 1px solid var(--rule-faint);
+  scroll-margin-top: 20px;
+}
+.pair:target { background: var(--paper-sunk); }
+.annot { grid-column: 2 / -1; margin-top: 14px; font-family: var(--sans); font-size: 13.5px;
+  line-height: 1.55; color: var(--ink-muted); }
+.annot summary { cursor: pointer; font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); list-style: none; }
+.annot summary::-webkit-details-marker { display: none; }
+.annot summary::before { content: "+ "; }
+.annot[open] summary::before { content: "− "; }
+.annot p { margin: 8px 0 0; max-width: 72ch; }
+.annot .xref { color: inherit; text-decoration: underline; text-decoration-color: var(--rule);
+  text-underline-offset: 2px; white-space: nowrap; }
+.gutter { padding-top: 4px; }
+.uid {
+  font-family: var(--mono); font-size: 10.5px; color: var(--ink-faint);
+  text-decoration: none; letter-spacing: -0.02em;
+}
+.uid:hover, .uid:focus { color: var(--ink); text-decoration: underline; }
+.col { min-width: 0; }
+.col.it { hyphens: auto; }
+.col.en { }
+.supplied { color: var(--ink-muted); }
+
+/* ---- apparatus ---- */
+.apparatus {
+  margin-top: 34px; padding-top: 22px; border-top: 2px solid var(--rule);
+  font-family: var(--sans); font-size: 13.5px; line-height: 1.58;
+  color: var(--ink-muted);
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 26px 34px;
+}
+.apparatus h3 {
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); margin: 0 0 9px;
+}
+.apparatus p { margin: 0 0 9px; }
+.apparatus p:last-child { margin-bottom: 0; }
+.apparatus .lem { font-family: var(--serif); font-size: 15px; color: var(--ink); font-style: italic; }
+.sig { font-family: var(--mono); font-size: 12px; color: var(--ink); }
+
+/* ---- colophon ---- */
+.colophon {
+  margin-top: 60px; padding-block: 28px 60px; border-top: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 13px; line-height: 1.6; color: var(--ink-muted);
+}
+.colophon .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 34px; }
+.colophon h3 {
+  font-size: 10.5px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--ink-faint); margin: 0 0 8px;
+}
+.colophon p { margin: 0 0 8px; }
+.colophon ul { margin: 0; padding-left: 16px; }
+.colophon li { margin-bottom: 5px; }
+.state {
+  margin-top: 26px; padding: 14px 16px; background: var(--paper-sunk);
+  border-left: 2px solid var(--ink-faint); border-radius: 0 2px 2px 0;
+  font-size: 12.5px;
+}
+.state strong { color: var(--ink); font-weight: 600; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--nm); outline-offset: 2px; }
+
+/* ---- contents / index page ---- */
+.toc { margin-top: 30px; }
+.toc-row {
+  display: grid; grid-template-columns: 40px 1fr 1fr; gap: 0 20px;
+  padding-block: 14px; border-bottom: 1px solid var(--rule-faint);
+  font-family: var(--sans); align-items: baseline;
+}
+.toc-row .n { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
+.toc-row a { text-decoration: none; color: var(--ink); font-family: var(--serif); font-size: 16px; }
+.toc-row a:hover, .toc-row a:focus { text-decoration: underline; }
+.toc-row .unpublished { color: var(--ink-faint); font-style: italic; font-size: 14px; }
+.toc-row .ids { color: var(--ink-faint); font-size: 11.5px; font-family: var(--mono); }
+
+@media (max-width: 760px) {
+  body { font-size: 16.5px; }
+  .colheads { display: none; }
+  .pair { grid-template-columns: 1fr; gap: 0; padding-block: 20px; }
+  .gutter { padding-top: 0; margin-bottom: 8px; }
+  .annot { grid-column: 1; }
+  .col.it { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px dotted var(--rule); }
+  .col.it::before, .col.en::before {
+    display: block; font-family: var(--sans); font-size: 10px; font-weight: 600;
+    letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px;
+  }
+  .col.it::before { content: "Italian"; }
+  .col.en::before { content: "English"; }
+  .pairing { flex-direction: column; }
+  .pairing .arrow { border-inline: 0; border-block: 1px solid var(--rule); padding-block: 6px; }
+  .toc-row { grid-template-columns: 1fr; gap: 4px; }
+}
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow">A Conversation with Machiavelli · Pair 1 of 39</p>
+    <h1>How cities begin
+      <span class="sub">Discourses I.1, and Guicciardini&#x27;s reply</span></h1>
+    <p class="standfirst">Machiavelli sorts cities by who built them, natives or strangers, free or dependent, and finds in Rome&#x27;s free beginning, and in the necessities its laws imposed, the reason its virtù lasted. Guicciardini accepts the distinction, places Rome in it on other grounds, sharpens what Machiavelli says of colonies, and ends on a harder claim: that where a city can be peopled at all, necessity makes it virtuous more surely than good laws.</p>
+
+    <div class="pairing">
+      <div class="nm-side">
+        <div class="who">Niccolò Machiavelli</div>
+        <div class="what">Discorsi sopra la prima Deca di Tito Livio · written c. 1513–19, printed 1531</div>
+      </div>
+      <div class="arrow" aria-hidden="true">answered by</div>
+      <div class="fg-side">
+        <div class="who">Francesco Guicciardini</div>
+        <div class="what">Considerazioni intorno ai Discorsi del Machiavelli · written 1529–30, printed 1857</div>
+      </div>
+    </div>
+    <nav class="pairnav"><span></span><a href="../index.html">All 39 pairs</a><a href="1.12.html">Pair 1.12 →</a></nav>
+  </header>
+
+  <section class="work nm">
+    <div class="work-head">
+      <span class="tag">NM-DISC.1.1</span>
+      <h2>Capitolo I</h2>
+    </div>
+    <p class="rubric">Quali siano stati universalmente i principj di qualunque città, e quale fusse quello di Roma.</p>
+    <p class="rubric">What have universally been the beginnings of any city whatever, and what was that of Rome.</p>
+
+    <div class="colheads"><div></div><div>Italian · 1824</div><div>English</div></div>
+      <div class="pair" id="NM-DISC.1.1.01">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.1.01">1.1.01</a></div>
+        <div class="col it" lang="it">Coloro che leggeranno qual principio fusse quello della città di Roma, e da quali legislatori, e come ordinato, non si maraviglieranno che tanta virtù si sia per più secoli mantenuta in quella città; e che dipoi ne sia nato quello Imperio, al quale quella Repubblica aggiunse.</div>
+        <div class="col en" lang="en">Those who read what the beginning of the city of Rome was, and by what legislators, and how ordered, will not marvel that so much <i lang="it">virtù</i> was maintained for several centuries in that city; and that there then arose from it that rule to which that republic attained.</div>
+        <details class="annot"><summary>Commentary · 1</summary>
+          <p><span class="lem">Argument.</span> The book opens on Rome&#x27;s beginning and on what came of it: the <i lang="it">virtù</i> that lasted and the rule the republic won. The claim underneath the chapter is that the beginning explains the rest.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.1.02">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.1.02">1.1.02</a></div>
+        <div class="col it" lang="it">E volendo discorrere prima il nascimento suo, dico: che tutte le città sono edificate o dagli uomini natii del luogo dove le si edificano, o dai forestieri.</div>
+        <div class="col en" lang="en">And wishing first to discourse of its birth, I say: that all cities are built either by men native to the place where they are built, or by strangers.</div>
+        <details class="annot"><summary>Commentary · 1</summary>
+          <p><span class="lem">Argument.</span> The first distinction: cities are built by natives or by strangers. Guicciardini accepts it, and works on both halves: where Rome falls <a class="xref" href="#FG-CONS.1.1.01">Guicciardini .01</a>, and what colonies are <a class="xref" href="#FG-CONS.1.1.02">Guicciardini .02</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.1.03">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.1.03">1.1.03</a></div>
+        <div class="col it" lang="it">Il primo caso occorre, quando agli abitatori dispersi in molte e piccole parti non par vivere sicuri, non potendo ciascuna per sé, e per il sito e per il piccolo numero resistere all&#x27;impeto di chi le assaltasse, e ad unirsi per loro difensione, venendo il nemico, non sono a tempo; o quando fussero, converrebbe loro lasciare abbandonati molti de&#x27; loro ridotti, e così verrebbero ad esser subita preda dei loro nemici; talmente che per fuggire questi pericoli, mossi o da loro medesimi, o da alcuno che sia infra di loro di maggiore autorità, si ristringono ad abitar insieme in luogo eletto da loro, più comodo a vivere, e più facile a difendere. Di queste infra molte altre sono state Atene e Vinegia. La prima, sotto l&#x27;autorità di Teseo, fu per simili cagioni dagli abitatori dispersi edificata. L&#x27;altra, sendosi molti popoli ridotti in certe isolette, ch&#x27;erano nella punta del mare Adriatico, per fuggire quelle guerre che ogni dì per lo avvenimento di nuovi Barbari, dopo la declinazione dello Imperio romano, nascevano in Italia, cominciarono infra loro, senz&#x27;altro Principe particolare che gli ordinasse, a vivere sotto quelle leggi che parvero loro più atte a mantenerli. Il che successe loro felicemente per il lungo ozio, che il sito dette loro, non avendo quel mare uscita, e non avendo quelli Popoli che affliggevano Italia, navigj da poterli infestare; talché ogni picciolo principio li poté far venire a quella grandezza nella quale sono.</div>
+        <div class="col en" lang="en">The first case occurs when it does not seem to the inhabitants, dispersed in many and small parts, that they live secure, each part being unable by itself, both through its site and through its small number, to resist the onrush of whoever should assault them, and, the enemy coming, they are not in time to unite for their defence; or if they were, they would have to leave many of their retreats abandoned, and so would come to be the sudden prey of their enemies; so that, to flee these dangers, moved either by themselves or by someone among them of greater authority, they draw together to live together in a place chosen by them, more convenient to live in and easier to defend. Of these, among many others, have been Athens and Venice. The first, under the authority of Theseus, was built for similar causes by the dispersed inhabitants. The other, many peoples having withdrawn into certain little islands that were at the head of the Adriatic sea, to flee those wars which every day, through the coming of new barbarians after the decline of the Roman rule, arose in Italy, began among themselves, without any other particular prince to order them, to live under those laws that seemed to them most apt to maintain them. Which succeeded for them happily through the long idleness that the site gave them, that sea having no outlet, and those peoples who afflicted Italy not having ships able to infest them; so that any small beginning could bring them to that greatness in which they are.</div>
+        <details class="annot"><summary>Commentary · 1</summary>
+          <p><span class="lem">History.</span> Theseus was credited with the synoecism of Athens, drawing the villages of Attica into one city. Venice was held to have begun with refugees from the mainland settling the lagoon islands during the barbarian invasions of the fifth and sixth centuries.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.1.04">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.1.04">1.1.04</a></div>
+        <div class="col it" lang="it">Il secondo caso, quando da genti forestiere è edificata una città, nasce o da uomini liberi, o che dipendono da altri, come sono le colonie mandate o da una Repubblica, o da un Principe per isgravare le loro terre d&#x27;abitatori, o per difesa di quel paese, che di nuovo acquistato, vogliono sicuramente e senza spesa mantenersi; delle quali città il Popolo romano ne edificò assai, e per tutto l&#x27;Imperio suo: ovvero le sono edificate da un Principe, non per abitarvi, ma per sua gloria, come la città di Alessandria da Alessandro. E per non avere queste cittadi la loro origine libera, rade volte occorre che le facciano progressi grandi, e possinsi intra i capi de&#x27; Regni numerare. Simile a queste fu l&#x27;edificazione di Firenze, perché o edificata da&#x27; soldati di Silla, o a caso dagli abitatori dei monti di Fiesole (i quali confidatisi in quella lunga pace che sotto Ottaviano nacque nel Mondo, si ridussero ad abitare nel piano sopra Arno) si edificò sotto l&#x27;Imperio romano, né potette ne&#x27; principj suoi fare altri augumenti, che quelli che per cortesia del Principe le erano concessi.</div>
+        <div class="col en" lang="en">The second case, when a city is built by foreign peoples, arises from men either free or dependent on others, as are the colonies sent either by a republic or by a prince to relieve their lands of inhabitants, or for the defence of that country which, newly acquired, they wish to maintain securely and without expense; of which cities the Roman people built many, and throughout its rule: or else they are built by a prince, not to live in, but for his glory, as the city of Alexandria by Alexander. And through these cities not having their origin free, it rarely occurs that they make great progress and can be numbered among the heads of kingdoms. Similar to these was the building of Florence, for, whether built by the soldiers of Sulla or by chance by the inhabitants of the mountains of Fiesole (who, trusting in that long peace which arose in the world under Octavian, withdrew to live in the plain upon the Arno), it was built under the Roman rule, nor could it in its beginnings make other augmentations than those that were granted it by the courtesy of the prince.</div>
+        <details class="annot"><summary>Commentary · 1</summary>
+          <p><span class="lem">Argument.</span> Cities built by strangers who are not free, colonies and princes&#x27; foundations, rarely grow great. Florence is the example Machiavelli&#x27;s readers would feel: a city born dependent, under Rome. Guicciardini replies that dependence at the start decides less than this <a class="xref" href="#FG-CONS.1.1.02">Guicciardini .02</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.1.05">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.1.05">1.1.05</a></div>
+        <div class="col it" lang="it">Sono liberi gli edificatori delle cittadi, quando alcuni popoli o sotto un Principe, o da per sé, sono costretti o per morbo, o per fame, o per guerra ad abbandonare il paese patrio, e cercarsi nuova sede; questi tali, o egli abitano le cittadi che e&#x27; trovano ne&#x27; paesi ch&#x27;egli acquistano, come fece Moisè, o ne edificano di nuove, come fece Enea. In questo caso è dove si conosce la virtù dello edificatore, e la fortuna dello edificato; la quale è più o meno maravigliosa, secondo che più o meno è virtuoso colui che n&#x27;è stato principio. La virtù del quale si conosce in duoi modi; il primo è nella elezione del sito, l&#x27;altro nella ordinazione delle leggi.</div>
+        <div class="col en" lang="en">The builders of cities are free when some peoples, either under a prince or by themselves, are constrained, either by disease, or by famine, or by war, to abandon their native country and seek themselves a new seat; these, either they inhabit the cities that they find in the countries they acquire, as Moses did, or they build new ones, as Aeneas did. In this case is where the <i lang="it">virtù</i> of the builder and the fortune of the thing built are known; which is more or less marvellous according as he who has been its beginning is more or less virtuous. The <i lang="it">virtù</i> of whom is known in two ways; the first is in the choice of the site, the other in the ordering of the laws.</div>
+        <details class="annot"><summary>Commentary · 1</summary>
+          <p><span class="lem">Argument.</span> Free builders: peoples driven out by disease, famine or war, like Moses and Aeneas. Here the builder&#x27;s <i lang="it">virtù</i> shows, in two things, the choice of site and the ordering of laws. This chapter takes the site; the laws are deferred to later chapters (&quot;as will be said below&quot;).</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.1.06">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.1.06">1.1.06</a></div>
+        <div class="col it" lang="it">E perché gli uomini operano o per necessità o per elezione, e perché si vede quivi esser maggiore virtù, dove la elezione ha meno autorità, è da considerare se sarebbe meglio eleggere per la edificazione delle cittadi, luoghi sterili, acciocché gli uomini costretti ad industriarsi, meno occupati dall&#x27;ozio, vivessero più uniti, avendo per la povertà del sito minore cagione di discordie; come intervenne in Raugia, e in molte altre cittadi in simili luoghi edificate; la quale elezione sarebbe senza dubbio più savia e più utile, quando gli uomini fussero contenti a vivere del loro, e non volessero cercare di comandare altrui. Pertanto non potendo gli uomini assicurarsi se non con la potenza, è necessario fuggire questa sterilità del paese, e porsi in luoghi fertilissimi, dove potendo per la ubertà del sito ampliare, possano e difendersi da chi li assaltasse, e opprimere qualunque alla grandezza loro si opponesse. E quanto a quell&#x27;ozio che gli arrecasse il sito, si debbe ordinare che a quelle necessitadi le leggi li costringano, che &#x27;l sito non li costringesse; e imitare quelli che sono stati savi, ed hanno abitato in paesi amenissimi e fertilissimi, e atti a produrre uomini oziosi, ed inabili ad ogni virtuoso esercizio; che per ovviare a quelli danni, i quali l&#x27;amenità del paese mediante l&#x27;ozio arebbero causati, hanno posto una necessità di esercizio a quelli che avevano a essere soldati; di qualità che per tale ordine vi sono diventati migliori soldati, che in quelli paesi, i quali naturalmente sono stati aspri e sterili; intra i quali fu il regno degli Egizj, che non ostante che il paese sia amenissimo, tanto potette quella necessità ordinata dalle leggi, che vi nacquero uomini eccellentissimi; e se i nomi loro non fussero dalla antichità spenti, si vedrebbe come meriterebbero più laude che Alessandro Magno, e molti altri, de&#x27; quali ancora è la memoria fresca. E chi avesse considerato il Regno del Soldano, e l&#x27;ordine de&#x27; Mammalucchi, e di quella loro milizia, avanti che da Salì, Gran Turco, fusse stata spenta, arebbe veduto in quello molti esercizj circa i soldati, e arebbe in fatto conosciuto quanto essi temevano quell&#x27;ozio, a che la benignità del paese li poteva condurre, se non v&#x27;avessero con leggi fortissime ovviato.</div>
+        <div class="col en" lang="en">And because men act either by necessity or by choice, and because one sees greater <i lang="it">virtù</i> to be there where choice has less authority, it is to be considered whether it would be better to choose sterile places for the building of cities, so that men, constrained to be industrious, less occupied by idleness, might live more united, having through the poverty of the site less cause of discords; as happened in Ragusa, and in many other cities built in similar places; which choice would without doubt be wiser and more useful if men were content to live on what is theirs, and did not wish to seek to command others. Therefore, men not being able to secure themselves except with power, it is necessary to flee this sterility of country, and to place oneself in most fertile places, where, being able through the abundance of the site to expand, they can both defend themselves from whoever should assault them, and oppress whoever should oppose their greatness. And as to that idleness which the site might bring them, one must order that the laws constrain them to those necessities to which the site would not constrain them; and imitate those who have been wise, and have lived in most pleasant and most fertile countries, and apt to produce idle men, and unfit for every virtuous exercise; who, to obviate those harms which the pleasantness of the country would have caused through idleness, have imposed a necessity of exercise on those who were to be soldiers; in such a way that through such an order better soldiers have come to be there than in those countries which by nature have been harsh and sterile; among whom was the kingdom of the Egyptians, where, notwithstanding that the country is most pleasant, that necessity ordered by the laws could do so much that most excellent men arose there; and if their names were not extinguished by antiquity, one would see how they would merit more praise than Alexander the Great and many others of whom the memory is still fresh. And whoever had considered the kingdom of the Sultan, and the order of the Mamluks and of that soldiery of theirs, before it was extinguished by Selim, the Grand Turk, would have seen in it many exercises for the soldiers, and would have known in fact how much they feared that idleness to which the benignity of the country could lead them, had they not obviated it with most strong laws.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The central turn. Men act by necessity or by choice, and <i lang="it">virtù</i> is greater where choice counts for less; so a sterile site, which forces men to work, would seem best. But men want to command others, and security needs power, so a fertile site is necessary, and the laws must supply the necessity the site does not. Guicciardini also prefers a fertile site, but because it draws people; and where Machiavelli lets the laws supply necessity, Guicciardini ranks necessity above the laws <a class="xref" href="#FG-CONS.1.1.03">Guicciardini .03</a>.</p>
+<p><span class="lem">History.</span> The Mamluks were a soldiery of purchased slaves who ruled Egypt from 1250, and Syria from 1260, until the Ottoman conquest of 1516–17 under Selim I.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.1.07">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.1.07">1.1.07</a></div>
+        <div class="col it" lang="it">Dico adunque, essere più prudente elezione porsi in luogo fertile, quando quella fertilità con le leggi infra debiti termini si ristringe. Ad Alessandro Magno, volendo edificare una città per sua gloria, venne Dinocrate architetto, e gli mostrò com&#x27;ei la poteva fare sopra il monte Atho, il qual luogo, oltre all&#x27;essere forte, potrebbe ridursi in modo, che a quella città si darebbe forma umana, il che sarebbe cosa maravigliosa e rara, e degna della sua grandezza; e domandandolo Alessandro di quello che quelli abitatori viverebbono, rispose non ci aver pensato; di che quello si rise, e lasciato star quel monte, edificò Alessandria, dove gli abitatori avessero a star volentieri per la grassezza del paese, e per la comodità del Mare e del Nilo.</div>
+        <div class="col en" lang="en">I say therefore that it is a more prudent choice to place oneself in a fertile place, when that fertility is restricted with the laws within due bounds. To Alexander the Great, wishing to build a city for his glory, came Dinocrates the architect, and showed him how he could make it upon Mount Athos, which place, besides being strong, could be brought into such a shape that that city would be given a human form, which would be a thing marvellous and rare, and worthy of his greatness; and Alexander asking him what those inhabitants would live on, he answered that he had not thought of it; at which <span class="supplied">[Alexander]</span> laughed, and, leaving that mountain alone, built Alexandria, where the inhabitants were to stay willingly for the fatness of the country and for the convenience of the sea and of the Nile.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">History.</span> Vitruvius (<i lang="it">De architectura</i> 2, preface) tells of Dinocrates proposing to carve Mount Athos into the figure of a man holding a city in one hand; there Alexander objects that the city could only be fed from overseas. The architect who &quot;had not thought of it&quot;, and Alexander&#x27;s laugh, are Machiavelli&#x27;s.</p>
+<p><span class="lem">Cross-reference.</span> Alexandria appears twice: in .04 as a prince&#x27;s foundation, not free and so unlikely to grow great, and here as the model of a well-chosen site.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.1.08">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.1.08">1.1.08</a></div>
+        <div class="col it" lang="it">Chi esaminerà adunque la edificazione di Roma, se si prenderà Enea per suo primo progenitore, sarà di quelle cittadi edificate dai forestieri; se Romolo, di quelle edificate dagli uomini natii del luogo; ed in qualunque modo, la vedrà avere principio libero, senza dipendere da alcuno; vedrà ancora (come di sotto si dirà) a quante necessitadi le leggi fatte da Romolo, da Numa, e dagli altri la costringessero; talmente che la fertilità del sito, la comodità del Mare, le spesse vittorie, la grandezza dello Imperio, non la poterono per molti secoli corrompere, e la mantennero piena di tante virtù, di quante mai fusse alcun&#x27;altra Repubblica ornata. E perché le cose operate da lei, e che sono da T. Livio celebrate, sono seguìte o per pubblico o per privato consiglio, o dentro o fuori della città, io comincerò a discorrere sopra quelle cose occorse dentro e per consiglio pubblico, le quali degne di maggior annotazione giudicherò, aggiungendovi tutto quello che da loro dipendesse; con i quali Discorsi questo primo libro, ovvero questa prima parte si terminerà.</div>
+        <div class="col en" lang="en">Whoever therefore examines the building of Rome, if Aeneas is taken for its first progenitor, it will be of those cities built by strangers; if Romulus, of those built by men native to the place; and in whatever way, he will see it to have a free beginning, without depending on anyone; he will see also (as will be said below) to how many necessities the laws made by Romulus, by Numa and by the others constrained it; so that the fertility of the site, the convenience of the sea, the frequent victories, the greatness of its rule, could not for many centuries corrupt it, and they maintained it full of as many <i lang="it">virtù</i> as ever any other republic was adorned with. And because the things done by it, and which are celebrated by Livy, came about either by public or by private counsel, either inside or outside the city, I will begin to discourse upon those things that occurred inside and by public counsel which I shall judge worthy of greater note, adding to them all that might depend on them; with which Discourses this first book, or this first part, will be concluded.</div>
+        <details class="annot"><summary>Commentary · 1</summary>
+          <p><span class="lem">Argument.</span> Rome fits either case, built by strangers if Aeneas is its progenitor, by natives if Romulus, and on either account its beginning was free. Guicciardini refuses the Aeneas option and keeps Rome among cities built by natives, as on Machiavelli&#x27;s Romulus reading, but for a different reason: it was built without necessity, as a colony of Alba <a class="xref" href="#FG-CONS.1.1.01">Guicciardini .01</a>. The last sentence announces the plan of Book I: things done inside the city by public counsel.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from the 1824 edition (<span class="sig">WIT-NM-DISC-1824-IA</span>), page-image-backed, which governs. Collated against the 1554 Giglio printing, Venice (<span class="sig">WIT-NM-DISC-1554-IA</span>), which is comparison evidence only.</p>
+<p>Paragraph divisions are editorial. The witness prints the chapter as one unbroken block.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p>No collation record for this pair yet.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem"><i lang="it">discorrere</i>, <i lang="it">occorrere</i>.</span> The book&#x27;s first chapter uses both verbs of its method: Machiavelli will &quot;discourse&quot; of Rome&#x27;s birth, the first case &quot;occurs&quot;, it &quot;rarely occurs&quot; that dependent cities grow, and he will discourse on &quot;those things that occurred&quot;. The English keeps the words, because Guicciardini&#x27;s reply takes up the first and adds a third, <i lang="it">concorrere</i>.</p>
+<p><span class="lem"><i lang="it">virtù</i> and <i lang="it">virtuoso</i>.</span> <i lang="it">Virtù</i> is left untranslated: the capacity of a founder or a people, not moral goodness. Its adjective, <i lang="it">virtuoso</i>, has to be &quot;virtuous&quot; in English, and means the same: the builder who has more or less <i lang="it">virtù</i>, the &quot;virtuous exercise&quot; that idleness unfits men for.</p>
+<p><span class="lem"><i lang="it">imperio</i>.</span> &quot;Rule&quot;, here as elsewhere in this edition: <i lang="it">quello Imperio</i>, the command over others that Rome&#x27;s republic came to, and its rule over its colonies. At .03 and .04 <i lang="it">lo Imperio romano</i> is what English readers call the Roman Empire; the English keeps &quot;rule&quot; so that one Italian word stays one English word across the book.</p>
+<p><span class="lem"><i lang="it">capi de&#x27; Regni</i>.</span> &quot;Heads of kingdoms&quot;: chief cities, capitals.</p>
+<p><span class="lem"><i lang="it">forestieri</i>.</span> &quot;Strangers&quot;, as the builders of a city who come from elsewhere; &quot;foreign&quot; for the adjective (<i lang="it">genti forestiere</i>).</p>
+<p><span class="lem"><i lang="it">Raugia</i>.</span> , Ragusa, now Dubrovnik. *<i lang="it"><i lang="it">Salì, Gran Turco</i></i>*: Selim I, Ottoman sultan, who destroyed the Mamluk sultanate of Egypt in 1516–17.</p>
+<p><span class="lem">The sources.</span> Dinocrates and Mount Athos are in Vitruvius, <i lang="it">De architectura</i> 2, preface. Florence had two founding stories, Sulla&#x27;s veterans or the people of Fiesole coming down to the plain, and Machiavelli declines to choose between them; either way the city was not born free.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work fg">
+    <div class="work-head">
+      <span class="tag">FG-CONS.1.1</span>
+      <h2>Considerazione sul capitolo I</h2>
+    </div>
+    <p class="rubric">Quali siano stati universalmente i principii di qualunque città, e quale fosse quello di Roma</p>
+    <p class="rubric">What have universally been the beginnings of any city whatever, and what was that of Rome
+      <span class="rubric-note">Canestrini sets Machiavelli&#x27;s chapter title over the reply, in his own spelling and without a full stop.</span></p>
+
+    <div class="colheads"><div></div><div>Italian · 1857</div><div>English</div></div>
+      <div class="pair" id="FG-CONS.1.1.01">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.1.01">1.1.01</a></div>
+        <div class="col it" lang="it">Nel primo Discorso è vera la distinzione che tutte le città sono edificate o da forestieri o da uomini nativi del luogo, e in questo secondo membro cade Vinegia e Atene, cadeci ancora Roma, ma diversamente da Atene e da Vinegia, perché queste furono edificate dagli incoli per necessità di avere o uno ricetto sicuro o uno reggimento comune, ma Roma, sanza alcuna di queste necessità, fu più presto edificata come colonia di Alba, cioè da uomini o Albani o sudditi allo imperio di Alba, per amore di quelli luoghi dove erano nutriti, o per ambizione di reggersi per sé stessi, né può Roma per rispetto di Enea applicarsi al membro de&#x27; forestieri, perché è un cercare le origini troppo da lontano, le quali non s&#x27;hanno a referire a&#x27; primi antecessori di chi ha edificato.</div>
+        <div class="col en" lang="en">In the first Discourse the distinction is true that all cities are built either by strangers or by men native to the place, and in this second member fall Venice and Athens, Rome falls there too, but differently from Athens and from Venice, for these were built by the dwellers from necessity of having either a secure refuge or a common government, but Rome, without any of these necessities, was rather built as a colony of Alba, that is by men either Albans or subjects of the rule of Alba, for love of those places where they had been nurtured, or from ambition to govern themselves by themselves; nor can Rome, in respect of Aeneas, be assigned to the member of the strangers, for it is a seeking of origins too far off, which are not to be referred to the first ancestors of whoever has built.</div>
+        <details class="annot"><summary>Commentary · 1</summary>
+          <p><span class="lem">Argument.</span> He accepts the distinction — &quot;is true&quot; — and then places Rome in it on his own grounds. Athens and Venice were built by their dwellers out of necessity; Rome was built without necessity, as a colony of Alba, by men who loved the place or wanted to govern themselves <a class="xref" href="#NM-DISC.1.1.03">Machiavelli .03</a>. Machiavelli&#x27;s Aeneas option <a class="xref" href="#NM-DISC.1.1.08">Machiavelli .08</a> he dismisses as looking for origins too far back.</p>
+        </details>
+      </div>
+      <div class="pair" id="FG-CONS.1.1.02">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.1.02">1.1.02</a></div>
+        <div class="col it" lang="it">Quanto al membro delle città edificate da&#x27; forestieri, non è vero semplicemente che le colonie mandate per sgravare o paesi di abitatori dependino sempre da altri, perché molte nazioni, come furono e&#x27; Galli, e&#x27; Cimbri e simili, mandorono per la detta causa parte de&#x27; popoli loro a cercarsi nuove sedi, le quali acquistate non avevano dependenza o recognizione alcuna da luoghi patrii, e però era più vera e più piena distinzione, che o le città edificate da forestieri sono edificate con tale sorte che hanno a reggersi da per sé, né dependere in cosa alcuna etiam dagli autori della origine sua, o sono edificate in modo che hanno a ricognoscere quelli per principi, e in queste seconde è vero che da principio non possono fare progresso grande, ma in progresso di tempi possono nascere molti accidenti che le liberino da quella subiezione, o allora può accadere che piglino augumento notabile. E di questa spezie è stata Firenze, e tutte la colonie de&#x27; Romani, che dopo la declinazione di Roma molte di loro sono diventate magnifiche e potenti città, e forse chi discorressi a una a una, non troverebbe manco di queste salite in potenza notabile che di quelle che hanno avuto il principio libero, perché sono cresciute o no secondo il sito, la instituzione e fortuna che hanno avuta. È vero che ordinariamente queste tali hanno tardato più a cominciare a crescere, avendo il principio subietto a altri, ma se intratanto per la bontà del sito o per la buona instituzione o altra causa hanno avuto occasione d&#x27;ingrossare di ricchezze e di popolo, hanno poi avuto facilità di diventare potenti.</div>
+        <div class="col en" lang="en">As to the member of cities built by strangers, it is not simply true that the colonies sent to relieve <span class="supplied">[the]</span> countries of inhabitants always depend on others, for many nations, as were the Gauls, the Cimbri and the like, sent for the said cause part of their peoples to seek themselves new seats, which, once acquired, had no dependence on or recognition of their native places, and therefore a truer and fuller distinction would have been that either the cities built by strangers are built in such a condition that they are to govern themselves by themselves, nor depend in anything even on the authors of their origin, or they are built in such a way that they are to recognise those as princes, and in these second ones it is true that from the beginning they cannot make great progress, but in progress of time many accidents can arise that free them from that subjection, or then it can happen that they take notable augmentation. And of this species has been Florence, and all the colonies of the Romans, that after the decline of Rome many of them have become magnificent and powerful cities, and perhaps whoever discoursed of them one by one would find no fewer of these risen to notable power than of those that have had a free beginning, for they have grown or not according to the site, the institution and fortune they have had. It is true that ordinarily these have been slower to begin to grow, having their beginning subject to others, but if meanwhile, through the goodness of the site or through good institution or other cause, they have had occasion to swell with riches and with people, they have then had facility to become powerful.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> A correction to what Machiavelli says of cities built by strangers <a class="xref" href="#NM-DISC.1.1.04">Machiavelli .04</a>. Colonies sent out to relieve a country do not always depend on those who sent them: the Gauls and Cimbri sent colonies that owed nothing to home. The truer distinction would be between colonies built to govern themselves and colonies built to acknowledge a lord, and even the second can grow great when accidents free them. He grants that such cities are slower to begin, but thinks, &quot;perhaps&quot;, that as many of them have risen to power as of those born free. Florence, which Machiavelli set among the cities born dependent, is his example.</p>
+<p><span class="lem">History.</span> Livy (5.34) has the Gauls send out a surplus population under Bellovesus and Segovesus to seek new lands; the Cimbri were a whole people on the move rather than a colony sent out.</p>
+        </details>
+      </div>
+      <div class="pair" id="FG-CONS.1.1.03">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.1.03">1.1.03</a></div>
+        <div class="col it" lang="it">Il principale fondamento della potenza e ricchezze della città è avere grosso popolo, e male può ingrossare di popolo una città che sia posta in luogo sterile, se già non ha l&#x27;aria molto generativa, come Firenze, o la opportunità del mare, come Vinegia, e però è meglio porsi in paese fartile, perché più facilmente vi concorrono gli abitatori, ma quando fussi possibile fermare abitatori assai in uno sito, io non dico al tutto sterile, ma non grasso, non è dubio che più conferirebbe a farlo virtuoso la necessità del provedersi che le buone leggi, perché quelle si possono variare dalla volontà degli uomini, ma la necessità è una legge e uno stimulo continuo. E questa indirizzò bene Roma, la quale, se bene posta in paese fertile, tanto per non avere contado e essere cinta di popoli potenti, fu forzata allargarsi con la virtù delle armi e con la concordia, e questo si discorre non in una città che voglia vivere alla filosofica, ma in quelle che vogliono governarsi secondo il comune uso del mondo come è necessario fare, altrimenti sarebbono, essendo deboli, oppresse e conculcate da&#x27; vicini</div>
+        <div class="col en" lang="en">The principal foundation of the power and riches of the city is to have a large people, and a city placed in a sterile place can ill swell with people, unless it has a very generative air, like Florence, or the opportunity of the sea, like Venice, and therefore it is better to place oneself in fertile country, for the inhabitants concur there more readily, but if it were possible to fix many inhabitants in a site, I do not say altogether sterile, but not fat, there is no doubt that the necessity of providing for oneself would do more to make it virtuous than good laws, for those can be varied by the will of men, but necessity is a law and a continual stimulus. And this directed Rome well, which, although placed in fertile country, all the same, through not having a countryside and being ringed by powerful peoples, was forced to enlarge itself with the <i lang="it">virtù</i> of arms and with concord, and this is discoursed not of a city that wishes to live in the philosophical manner, but of those that wish to govern themselves according to the common use of the world, as is necessary to do, otherwise they would be, being weak, oppressed and trampled by their neighbours</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> A large people is the foundation of power, so a fertile site is better, because inhabitants &quot;concur&quot; there — flock there, in the verb&#x27;s first sense of running together. But if a site not fat could be peopled, the necessity of providing for oneself would make men more virtuous than good laws, because laws can be changed at will and necessity cannot. Machiavelli had made the laws supply the necessity a fertile site lacks <a class="xref" href="#NM-DISC.1.1.06">Machiavelli .06</a>; Guicciardini ranks necessity above them.</p>
+<p><span class="lem">Argument.</span> Rome, fertile but without a countryside and ringed by strong peoples, was forced outward by exactly that necessity. The close limits the whole argument to cities that live by &quot;the common use of the world&quot;, not to a city that would live &quot;in the philosophical manner&quot;. It turns back on Machiavelli his own argument that the weak are oppressed <a class="xref" href="#NM-DISC.1.1.06">Machiavelli .06</a>.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from Canestrini 1857, <i>Opere inedite</i> vol. 1, pp. 1–65 (<span class="sig">WIT-FG-CONS-1857-CANESTRINI</span>) — the <i>editio princeps</i>, which governs. Collated against Palmarocchi 1933 (<span class="sig">WIT-FG-CONS-1933-PALMAROCCHI</span>): page images and the Wikisource transcription consulted as collation evidence, not reproduced (LICENSE §5).</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem">o allora può accadere</span> — 1857. The 1933 witness reads <i lang="it">ed allora può accadere</i>. Canestrini prints <i lang="it">o</i>, or; the 1933 edition reads <i lang="it">ed</i>, and then. The sense wants <i lang="it">and then</i>. This edition follows its governing witness and records the alternative.</p>
+<p><span class="lem">sgravare o paesi di abitatori</span> — 1857. The 1933 witness reads <i lang="it">sgravare e&#x27; paesi di abitatori</i>. The 1933 edition has the plural article, <i lang="it">the countries</i>. Canestrini&#x27;s <i lang="it">o</i> reads as <i lang="it">or</i>, which leaves the colonies relieving <i lang="it">or countries</i> of inhabitants; probably the same article misprinted.</p>
+<p><span class="lem">tutte la colonie</span> — 1857. The 1933 witness reads <i lang="it">tutte le colonie</i>. A misprinted article in Canestrini; the sense is the same.</p>
+<p><span class="lem">tanto per non avere contado</span> — 1857. The 1933 witness reads <i lang="it">tamen per non avere contado</i>. The 1933 edition reads the Latin <i lang="it">tamen</i>, nevertheless, answering <i lang="it">se bene</i>. Canestrini&#x27;s <i lang="it">tanto</i> appears to carry the same concession (<i lang="it">all the same</i>), and the English reads it so.</p>
+<p><span class="lem">in paese fartile</span> — 1857. The 1933 witness reads <i lang="it">in paese fertile</i>. Canestrini&#x27;s compositor; the same page prints <i lang="it">fertile</i> six lines later.</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem">The two editions.</span> This edition prints the text of the first edition of the <i lang="it">Considerazioni</i>, Giuseppe Canestrini&#x27;s (Florence, 1857), and compares it with Roberto Palmarocchi&#x27;s of 1933. Where they differ, the variants list gives Palmarocchi&#x27;s reading.</p>
+<p><span class="lem">The paragraphs.</span> Canestrini prints this reply in three paragraphs, and they are kept. The edition&#x27;s paragraphs are otherwise editorial.</p>
+<p><span class="lem"><i lang="it">concorrono</i>.</span> &quot;The inhabitants concur there more readily&quot;: <i lang="it">concorrere</i> in its first sense, to run together, of people flocking to a fertile place. It is the verb Guicciardini uses elsewhere for assent — &quot;I do not readily concur&quot; — and the English keeps it here, with <i lang="it">facilmente</i> as &quot;readily&quot;, so that the word&#x27;s two senses stay one word.</p>
+<p><span class="lem"><i lang="it">discorressi</i>, <i lang="it">si discorre</i>.</span> Guicciardini answers in Machiavelli&#x27;s own verb: whoever &quot;discoursed&quot; of the colonies one by one; &quot;this is discoursed&quot; of cities that live as the world does.</p>
+<p><span class="lem">Alba.</span> Alba Longa, the Latin city from which, in the legend, Romulus and Remus came.</p>
+<p><span class="lem"><i lang="it">sgravare o paesi</i>.</span> Canestrini prints <i lang="it">o</i>, which as it stands means &quot;or&quot;: &quot;to relieve or countries of inhabitants&quot;. Palmarocchi reads <i lang="it">e&#x27;</i>, the plural article. The English takes Canestrini&#x27;s <i lang="it">o</i> for the article and supplies &quot;the&quot; in brackets: here it follows the other reading.</p>
+<p><span class="lem"><i lang="it">o allora</i>.</span> Canestrini&#x27;s &quot;or then&quot;; Palmarocchi has &quot;and then&quot;, which the sense prefers. The English follows Canestrini.</p>
+<p><span class="lem"><i lang="it">tanto per non avere contado</i>.</span> &quot;All the same, through not having a countryside&quot;: <i lang="it">tanto</i> appears to carry the concession that <i lang="it">se bene</i> opened. Palmarocchi reads the Latin <i lang="it">tamen</i>, nevertheless, to the same effect.</p>
+<p><span class="lem"><i lang="it">virtuoso</i> and <i lang="it">virtù</i>.</span> As in the facing chapter: <i lang="it">virtù</i> is capacity, and &quot;virtuous&quot; is its adjective.</p>
+<p><span class="lem"><i lang="it">contado</i>.</span> The countryside a city rules and feeds on. Guicciardini says Rome had none, and was hemmed in by powerful neighbours.</p>
+<p><span class="lem">The close.</span> The reply ends without a full stop in Canestrini&#x27;s printing, and the English ends without one.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="colophon">
+    <div class="row">
+      <div>
+        <h3>What this is</h3>
+        <p>A free, openly licensed, bilingual edition of Guicciardini's 39 <i>Considerazioni</i> and the
+          <i>Discorsi</i> chapters they answer — 78 text units, Italian and English facing, every reading
+          traceable to a named public-domain witness.</p>
+        <p>It is a reading edition with a transparent apparatus, not a text of record. It does not adjudicate
+          the critical text against Bausi 2001 or the manuscript tradition, and does not claim to.</p>
+      </div>
+      <div>
+        <h3>On the title</h3>
+        <p>Machiavelli had been dead two years when Guicciardini wrote; the <i>Discorsi</i> were unpublished,
+          and the <i>Considerazioni</i> stayed unprinted until 1857. Machiavelli never answers.</p>
+        <p>“Conversation” is a quotation, not a description. It invokes Machiavelli's letter to Vettori of
+          10 December 1513, where he changes into court dress at evening, enters the antique courts of ancient
+          men, and reports that <i>they, in their humanity, answer me</i>. Guicciardini does to Machiavelli
+          what Machiavelli did to Livy — and is denied the reply Machiavelli claimed.</p>
+      </div>
+      <div>
+        <h3>Method</h3>
+        <p>No image-derived reading enters the text on a single reading. Each unit is transcribed twice,
+          independently, by readers who have not seen each other's work; disagreements are adjudicated against
+          the page images and recorded.</p>
+        <p>Existing English translations of the <i>Considerazioni</i> — Grayson (1965), Atkinson &amp; Sices
+          (2002) — are never used as translation inputs.</p>
+      </div>
+      <div>
+        <h3>Licence</h3>
+        <p>The established Italian text and the apparatus data are dedicated to the public domain under
+          <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>. They are Machiavelli's and
+          Guicciardini's sentences, and this edition adds no condition to them.</p>
+        <p>The English translation, the notes and the editorial apparatus are licensed
+          <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: reuse them anywhere, including
+          commercially, with attribution to David McDougall and this edition. The build tooling is MIT.</p>
+        <p>The witness scans are other people's digitisations, included as evidence under their own terms; no
+          grant is made over them, and no page image of Palmarocchi 1933 is reproduced here. Full terms,
+          layer by layer, are in the <span class="sig">LICENSE</span> file in the repository.</p>
+      </div>
+    </div>
+
+    <div class="state">
+      <p><strong>Version 0.3 · 3 of 39 pairs published.</strong>
+        This edition is versioned, not frozen. Some translation questions on this pair are still open.</p>
+    </div>
+  </footer>
+
+</div>

@@ -23,3 +23,18 @@ the original.
 | `Corte romana` | Roman court | FG opens on it; NM .07 uses it. Same institution, same English. |
 | `Francia`, `Spagna`, `Italia` | France, Spain, Italy | |
 | `vis venire Romam?` | left in Latin, italic | NM .03. Translated in a note, not in the text. |
+| `Teseo` | Theseus | NM I.1 |
+| `Vinegia` | Venice | Both authors |
+| `Atene` | Athens | Both authors |
+| `Raugia` | Ragusa | NM I.1; a note gives Dubrovnik |
+| `Silla` | Sulla | NM I.1 |
+| `Ottaviano` | Octavian | NM I.1 |
+| `Moisè` | Moses | NM I.1 |
+| `Enea` | Aeneas | Both authors |
+| `Mammalucchi` | Mamluks | NM I.1 |
+| `Salì, Gran Turco` | Selim, the Grand Turk | NM I.1; Selim I |
+| `Dinocrate` | Dinocrates | NM I.1 |
+| `monte Atho` | Mount Athos | NM I.1 |
+| `Alba` | Alba | FG I.1; Alba Longa, noted |
+| `Galli`, `Cimbri` | Gauls, Cimbri | FG I.1 |
+

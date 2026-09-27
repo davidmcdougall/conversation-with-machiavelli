@@ -1,0 +1,48 @@
+source_unit_id: FG-CONS.1.1
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-001
+responds_to: NM-DISC.1.1
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. Canestrini's own footnotes are editorial and are not carried."
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38). Palmarocchi appears as variant notes only."
+passes:
+  - {id: A, performed: 2026-09-27, file: sources/coldpass/FG-CONS.1.1-passA.md}
+  - {id: B, performed: 2026-09-27, file: sources/coldpass/FG-CONS.1.1-passB.md, note: "subagent; page images only, separate directory"}
+collation: sources/coldpass/COLLATION-2026-09-27-I1.md
+collation_result: >
+  597 words. No word or clause disagreement. Both passes mark the same
+  doubtful letters (`nè`, `o allora`, `tutte la colonie`, `fartile`, `lè`) and
+  read them identically. The only divergences are four stops pass B marks as
+  expected but not visible and pass A records as gaps.
+witness_independence_check: >
+  SCOPE §7. At every locus where Canestrini and Palmarocchi differ (`o
+  allora`/`ed allora`, `la colonie`/`le colonie`, `fartile`/`fertile`,
+  `tanto per`/`tamen per`, `o paesi`/`e' paesi`, `nazioni`/`nazione`) both
+  passes read Canestrini.
+boundaries: "printed pp. 3-5; three printed paragraphs, first-line indents at `Quanto al membro` and `Il principale fondamento`"
+interventions:
+  - id: FG-CONS-I1-C001
+    operation: witness_correction
+    locator: FG-CONS.1.1.01
+    locus: "chi ha edificato"
+    after: "chi ha edificato."
+    evidence: "No stop visible at the end of Canestrini's first printed paragraph; Palmarocchi 1933 p. 3 prints one. The scan loses line-final points throughout."
+  - id: FG-CONS-I1-C002
+    operation: witness_correction
+    locator: FG-CONS.1.1.02
+    locus: "hanno avuta È vero"
+    after: "hanno avuta. È vero"
+    evidence: "Both passes find a gap before a capital; Palmarocchi 1933 p. 4 prints the stop. As C004 in I.12."
+  - id: FG-CONS-I1-C003
+    operation: witness_correction
+    locator: FG-CONS.1.1.03
+    locus: "stimulo continuo E questa"
+    after: "stimulo continuo. E questa"
+    evidence: "As C002; Palmarocchi 1933 p. 4."
+not_supplied:
+  - locus: "da' vicini"
+    note: "No terminal stop visible; none supplied (DEC-009 clause 10). Palmarocchi prints one."
+normalisation_notes: "Class A: `lè buone` → `le buone` (a stray mark over a word that takes no accent); `de Romani` → `de' Romani`; `a primi` → `a' primi`; `e Galli, e Cimbri` → `e' Galli, e' Cimbri` (D35); `virtu` → `virtù`; `fortùna` → `fortuna`. Canestrini's footnote references and footnotes are his, not Guicciardini's, and are not carried."

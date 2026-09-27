@@ -1,0 +1,20 @@
+source_unit_id: NM-DISC.1.1
+status: accepted
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-001
+rights: "PD page-image body text only"
+passes:
+  - {id: A, performed: 2026-09-27, file: sources/coldpass/NM-DISC.1.1-passA.md}
+  - {id: B, performed: 2026-09-27, file: sources/coldpass/NM-DISC.1.1-passB.md, note: "subagent; page images only, separate directory"}
+collation: sources/coldpass/COLLATION-2026-09-27-I1.md
+collation_result: "1,291 words. No word, clause, sense or punctuation disagreement. Pass B marked five doubtful letters, all read the same way by pass A."
+boundaries: "printed pp. 10-15; follows the close of the Book I proem, followed by chapter II on p. 15"
+collation_coverage_1554: >
+  None. The held 1554 extract for this unit (zero-based pp. 58-63) is ff.
+  12r-14v and contains the second half of I.6 and most of I.7. On that
+  anchor (f.12r = p. 58, two PDF pages a leaf) I.1 lies near pp. 36-40, which
+  no held extract contains. Every 1554 extract for I.1-I.11 sits in the same
+  window and is misplaced. Comparison collation pending re-acquisition.
+corrections: []

@@ -124,3 +124,18 @@ last sentence answers Machiavelli's first move.
 | `astutamente` | craftily | D52. |
 | `esterni` (noun) | foreigners | D55. |
 
+## Added from the I.1 pair (2026-09-27)
+
+| Italian | English | Note |
+|---|---|---|
+| `edificare` / `edificazione` / `edificatore` | build / building / builder | Both authors, throughout. Not "found", "founder". |
+| `principio` | beginning | NM I.1 throughout; FG `principio libero` → a free beginning. `principe` stays "prince". |
+| `elezione` / `eleggere` | choice / choose | Not "election". |
+| `ozio` | idleness | Good for Venice (NM I.1 .03), a vice in .06; one word lets both show. |
+| `forestieri` | strangers | D57. |
+| `comodo` / `comodità` | convenient / convenience | D59. |
+| `avere a` + inf. | be to | D61. |
+| `reggere` / `reggimento` / `governare` | govern / government / govern | D64, recorded collapse. |
+| `virtuoso` | virtuous | The adjective of *virtù*; noted where it occurs. |
+| `ristringersi` | draw together | D58. |
+

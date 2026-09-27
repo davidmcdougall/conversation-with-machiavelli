@@ -68,6 +68,18 @@ This log becomes the translator's preface.
 | D55 | NM `esterni` | foreigners | "Outsiders" carries a modern social sense. Not "external ones": FG I.12 `principi esterni` → "external princes" is adjectival. |
 | D56 | NM `riferire` / FG `referire`, `relazione`; `ufficio` / `officio`; `attendere a` | report / reported, report; office; attend to | Cross-author echoes held: Guicciardini's reply meets Machiavelli's narrative in the same English words. |
 
+| D57 | NM I.1 `forestieri` / FG `forestieri`; `genti forestiere` | strangers; foreign (adjective) | Keeps `forestieri` apart from `esterni` → foreigners (D55). |
+| D58 | NM I.1 `ristringersi ad abitare` / `si ristringe` | draw together / is restricted | Cold review must-fix: "restrict themselves to living together" said the opposite. The echo is let go. |
+| D59 | `comodo`, `comodità` | convenient, convenience | Cold review: "commodity" now means goods. Kept apart from FG `opportunità` → opportunity. |
+| D60 | `milizia` (the Mamluks) | soldiery | "Militia" is a citizen force; the Mamluks were purchased professional soldiers. |
+| D61 | `avere a` + infinitive, destinative | "be to" (were to stay; are to govern themselves) | Cold review: "would have to stay willingly" contradicted itself. As `avevano a essere soldati` → "were to be soldiers". |
+| D62 | FG `era più vera e più piena distinzione` | a truer and fuller distinction would have been | Imperfect as counterfactual: Guicciardini proposes the refinement, he does not report it. |
+| D63 | FG `vi concorrono gli abitatori` | the inhabitants concur there | D01 held in the verb's first sense (run together, flock); noted in the translation and the commentary. |
+| D64 | `reggere`, `reggimento`, `governare` | govern, government, govern | Recorded collapse: "rule" is `imperio`'s, "regiment" is a false friend. As `causa`/`cagione`. |
+| D65 | FG punctuation | Canestrini's commas kept; semicolons only where English breaks | Cold review: eight added semicolons had set Guicciardini's comma-chained reply to Machiavelli's rhythm. |
+| D66 | FG I.1 printed paragraphs | kept, `paragraph_divisions: witness` | Canestrini prints three indented paragraphs. The first unit where the witness supplies them. |
+| D67 | FG I.1 stops at `edificato`, `avuta`, `continuo` | supplied as witness corrections on Palmarocchi's evidence; none at the closing `vicini` | As C004 in I.12, and DEC-009 clause 10. |
+
 ## Closed
 
 The **Deferred to the DEC-009 rewrite** table is closed. N01, N02 and N03 are
@@ -142,5 +154,8 @@ counterfactual.
 | # | Question | Note |
 |---|---|---|
 | O14 | NM .02 `accrescere` and `augumentare` both → "augment" | Found by the commentary review, 2026-09-25. `favorirle ed accrescerle` ("favour and augment") and, two sentences later, `i prudenti gli augumentano` ("the prudent augment them") — two Italian verbs, one English word, the collapse the glossary exists to prevent. D09 fixed `accrescere` = augment for the .02 → .03 echo, so this re-opens a settled ruling. **Recommendation:** `augumentare` keeps "augment" (it is the cognate); `accrescere` becomes "increase" in both places — "favour and increase" in .02, "favoured and increased" in .03. The echo D09 protects survives intact; only the word changes. |
+
+| O15 | FG I.1 .02 `sgravare o paesi di abitatori` | Canestrini prints `o` ("or"), which leaves the clause without sense; Palmarocchi reads `e'`, the article. Both cold readers read `o`. **Recommendation:** keep `o` in the Italian (D38) and let the English read "to relieve [the] countries of inhabitants", with a note saying the English follows the other reading here. That is what is published now; the alternative is "to relieve or countries of inhabitants", which is Canestrini's text and no English. |
+| O16 | FG I.1 .03 `tanto per non avere contado` | Palmarocchi reads `tamen`, nevertheless. The English renders Canestrini's `tanto` as "all the same", taking it as concessive after `se bene`; the cold reviewer notes that this is unsourced and in effect gives `tamen`'s sense. **Recommendation:** keep "all the same" with the softened note ("appears to carry"); the alternative is "so much, through not having a countryside", which is literal and obscure. |
 
 *O01–O05 settled 2026-09-18. N01–N03 ruled 2026-09-21 as D33, D34, D36. O06, O07, O12, F002 ruled 2026-09-25 as D40–D42; O11 closed by D43. O13 ruled 2026-09-25 as D47.*

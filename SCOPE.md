@@ -185,12 +185,12 @@ than inside the first paragraph.
 | Stage | Done | Remaining | Of |
 |---|---|---|---|
 | Link records | **39** | 0 | 39 |
-| NM source established | 2 | 37 | 39 |
-| FG source established | 2 | 37 | 39 |
-| Collated | 4 units | 74 | 78 |
-| Translated (draft, cold-reviewed) | 4 | 74 | 78 |
-| Annotated (cold-reviewed) | 4 | 74 | 78 |
-| Published | 4 | 74 | 78 |
+| NM source established | 3 | 36 | 39 |
+| FG source established | 3 | 36 | 39 |
+| Collated | 5 units | 73 | 78 |
+| Translated (draft, cold-reviewed) | 6 | 72 | 78 |
+| Annotated (cold-reviewed) | 6 | 72 | 78 |
+| Published | 6 | 72 | 78 |
 
 **Read the top row first.** The relationship layer — all 39 pairs, mapped
 against the chapter headings — is complete, and it is a real asset. Be precise
@@ -298,6 +298,7 @@ clock; David's own time is the rulings, counted separately.
 |---|---|---|---|---|---|---|---|---|
 | Estimate | 30 (transcribe) + 20 (collate) | — | 60–90 | — | 30 | amortised | 150–180 | — |
 | I.14 (603 + 66 words) | 9 | 2 | 2 | 6 | 3 | 2 | 24 | 1 ruling (D48) |
+| I.1 (1,291 + 597 words) | 7 | 2 | 2 | 9 | 4 | 3 | 27 | 2 open items (O15, O16); NM not collated against 1554 |
 
 ---
 

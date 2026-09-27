@@ -1,0 +1,49 @@
+source_unit_id: FG-CONS.1.1
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-I1-D001
+    locator: FG-CONS.1.1.02
+    class: reading
+    witness_1857: "o allora può accadere"
+    witness_1933: "ed allora può accadere"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "Canestrini prints `o`, or; the 1933 edition reads `ed`, and then. The sense wants `and then`. This edition follows its governing witness and records the alternative."
+  - id: FG-CONS-I1-D002
+    locator: FG-CONS.1.1.02
+    class: reading
+    witness_1857: "sgravare o paesi di abitatori"
+    witness_1933: "sgravare e' paesi di abitatori"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "The 1933 edition has the plural article, `the countries`. Canestrini's `o` reads as `or`, which leaves the colonies relieving `or countries` of inhabitants; probably the same article misprinted."
+  - id: FG-CONS-I1-D003
+    locator: FG-CONS.1.1.02
+    class: reading
+    witness_1857: "tutte la colonie"
+    witness_1933: "tutte le colonie"
+    established: witness_1857
+    rationale: "A misprinted article in Canestrini; the sense is the same."
+  - id: FG-CONS-I1-D004
+    locator: FG-CONS.1.1.03
+    class: reading
+    witness_1857: "tanto per non avere contado"
+    witness_1933: "tamen per non avere contado"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "The 1933 edition reads the Latin `tamen`, nevertheless, answering `se bene`. Canestrini's `tanto` appears to carry the same concession (`all the same`), and the English reads it so."
+  - id: FG-CONS-I1-D005
+    locator: FG-CONS.1.1.03
+    class: lexical
+    witness_1857: "in paese fartile"
+    witness_1933: "in paese fertile"
+    established: witness_1857
+    rationale: "Canestrini's compositor; the same page prints `fertile` six lines later."
+  - id: FG-CONS-I1-D006
+    locator: FG-CONS.1.1.01-03
+    class: systematic_orthographic_profile
+    witness_1857: "Canestrini's spelling and pointing: `nazioni`, `sedi`, `origini`, `il`, `popolo`"
+    witness_1933: "Palmarocchi's older forms and heavier pointing: `nazione`, `sede`, `origine`, `el`, `populo`"
+    established: witness_1857
+    rationale: "Canestrini governs throughout."
