@@ -1,10 +1,10 @@
 ---
 work_id: FG-CONS
 source_unit_id: FG-CONS.1.14
-version: "0.1.0-draft"
+version: "0.2.0-draft"
 status: draft_cold_reviewed
 source_text: corpus/FG-CONS/FG-CONS.1.14.md
-established_source_version: "0.1.0"
+established_source_version: "0.2.0"
 responds_to: NM-DISC.1.14
 register: apparatus/register.md
 cold_review: 2026-09-26, subagent with no access to the drafting work
@@ -29,7 +29,7 @@ I do not hold it for certain that the captains of the armies used the authority
 of the auspices and of the auguries craftily, but I believe that, especially in
 the first times, their minds were occupied by this religion; nor is repugnant to
 me the example of Papirius, who, having had the report from the *pullarii*
-whose office it now [was], did not have to attend to what was reported to him by
+whose office it was, did not have to attend to what was reported to him by
 third persons.
 
 ---
@@ -39,10 +39,10 @@ third persons.
 **The rubric.** Canestrini sets Machiavelli's chapter title over the reply, in
 his own spelling, with lower-case `religione` and no full stop.
 
-**`di chi ora lo officio`.** The bracketed "was" is supplied. Canestrini's
-`ora`, "now", leaves the clause without a verb; "was" is the word the 1933
-edition's `era` would give (see Variants), so the English leans towards that
-reading while keeping Canestrini's "now".
+**`di chi [e]ra lo officio`.** Canestrini's page, in the only scan of it
+available, prints `ora`, "now", which leaves the clause without a verb. The
+Italian here is emended from Palmarocchi's 1933 edition, `era`, "whose office
+it was", and the bracket marks the emended letter.
 
 **`astutamente`.** "Craftily", not "astutely", which in modern English praises.
 Guicciardini's question is whether the captains worked a religion they did not

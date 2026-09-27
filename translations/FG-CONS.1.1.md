@@ -1,10 +1,10 @@
 ---
 work_id: FG-CONS
 source_unit_id: FG-CONS.1.1
-version: "0.1.0-draft"
+version: "0.2.0-draft"
 status: draft_cold_reviewed
 source_text: corpus/FG-CONS/FG-CONS.1.1.md
-established_source_version: "0.1.0"
+established_source_version: "0.2.0"
 responds_to: NM-DISC.1.1
 register: apparatus/register.md
 cold_review: 2026-09-27, subagent with no access to the drafting work
@@ -12,7 +12,7 @@ paragraph_divisions: witness  # Canestrini prints three paragraphs
 rubric_en: "What have universally been the beginnings of any city whatever, and what was that of Rome"
 rubric_source: Canestrini 1857, printed p. 3 — his setting of the chapter title over the reply, without a terminal stop
 translated: 2026-09-27
-open_for_david: 2 — O15, O16
+open_for_david: 1 — O16
 title: "How cities begin"
 standfirst: "Machiavelli sorts cities by who built them, natives or strangers, free or dependent, and finds in Rome's free beginning, and in the necessities its laws imposed, the reason its virtù lasted. Guicciardini accepts the distinction, places Rome in it on other grounds, sharpens what Machiavelli says of colonies, and ends on a harder claim: that where a city can be peopled at all, necessity makes it virtuous more surely than good laws."
 ---
@@ -39,7 +39,7 @@ ancestors of whoever has built.
 ## FG-CONS.1.1.02
 
 As to the member of cities built by strangers, it is not simply true that the
-colonies sent to relieve [the] countries of inhabitants always depend on others,
+colonies sent to relieve the countries of inhabitants always depend on others,
 for many nations, as were the Gauls, the Cimbri and the like, sent for the said
 cause part of their peoples to seek themselves new seats, which, once acquired,
 had no dependence on or recognition of their native places, and therefore a truer and fuller distinction would have been that either the cities built by strangers
@@ -101,10 +101,12 @@ cities that live as the world does.
 **Alba.** Alba Longa, the Latin city from which, in the legend, Romulus and
 Remus came.
 
-**`sgravare o paesi`.** Canestrini prints `o`, which as it stands means "or":
-"to relieve or countries of inhabitants". Palmarocchi reads `e'`, the plural
-article. The English takes Canestrini's `o` for the article and supplies "the"
-in brackets: here it follows the other reading.
+**Emendations.** Three words in Canestrini's printing are errors rather than
+readings, and the Italian here corrects them from Palmarocchi, with the
+corrected letters in brackets: `o paesi`, "or countries", to `[e'] paesi`, "the
+countries"; `la colonie`, an article that does not agree, to `l[e] colonie`;
+`fartile`, not a word, to `f[e]rtile`. Readings that make sense, even weaker
+sense, are left as Canestrini prints them.
 
 **`o allora`.** Canestrini's "or then"; Palmarocchi has "and then", which the
 sense prefers. The English follows Canestrini.

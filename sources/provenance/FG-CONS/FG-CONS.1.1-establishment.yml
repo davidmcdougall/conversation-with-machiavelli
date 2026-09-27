@@ -46,3 +46,7 @@ not_supplied:
   - locus: "da' vicini"
     note: "No terminal stop visible; none supplied (DEC-009 clause 10). Palmarocchi prints one."
 normalisation_notes: "Class A: `lè buone` → `le buone` (a stray mark over a word that takes no accent); `de Romani` → `de' Romani`; `a primi` → `a' primi`; `e Galli, e Cimbri` → `e' Galli, e' Cimbri` (D35); `virtu` → `virtù`; `fortùna` → `fortuna`. Canestrini's footnote references and footnotes are his, not Guicciardini's, and are not carried."
+emendations:
+  - {id: FG-CONS-I1-E001, operation: emendation, rule: D68, locator: FG-CONS.1.1.02, printed: "sgravare o paesi", established: "sgravare [e'] paesi", source: WIT-FG-CONS-1933-PALMAROCCHI, note: "closes O15"}
+  - {id: FG-CONS-I1-E002, operation: emendation, rule: D68, locator: FG-CONS.1.1.02, printed: "tutte la colonie", established: "tutte l[e] colonie", source: WIT-FG-CONS-1933-PALMAROCCHI}
+  - {id: FG-CONS-I1-E003, operation: emendation, rule: D68, locator: FG-CONS.1.1.03, printed: "in paese fartile", established: "in paese f[e]rtile", source: WIT-FG-CONS-1933-PALMAROCCHI}

@@ -7,14 +7,15 @@ records:
     class: reading
     witness_1857: "di chi ora lo officio"
     witness_1933: "di chi era lo officio"
-    established: witness_1857
-    established_on: 2026-09-26
+    established: witness_1933
+    established_on: 2026-09-27
+    emendation: D68
     publish_as_variant_note: true
     rationale: >
       Canestrini's page, at the resolution of the only scan available, prints
-      "ora", now, which leaves the clause without a verb; the 1933 edition
-      reads "era", whose office it was, which is what the sense needs. This
-      edition follows its governing witness and records the alternative here.
+      "ora", now, which leaves the clause without a verb. This edition emends
+      from the 1933 edition's "era", whose office it was, and brackets the
+      emended letter.
   - id: FG-CONS-I14-D002
     locator: FG-CONS.1.14.01
     class: lexical

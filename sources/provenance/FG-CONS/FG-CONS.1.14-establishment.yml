@@ -25,3 +25,12 @@ interventions: []
 not_supplied:
   - locus: rubric, "lo punivano"
     note: "No terminal stop printed (DEC-009 clause 10)."
+emendations:
+  - id: FG-CONS-I14-E001
+    operation: emendation
+    rule: D68
+    locator: FG-CONS.1.14.01
+    printed: "di chi ora lo officio"
+    established: "di chi [e]ra lo officio"
+    source: WIT-FG-CONS-1933-PALMAROCCHI
+    note: "The printed reading leaves the clause without a verb. Supersedes D48 (2026-09-26). Version 0.2.0."

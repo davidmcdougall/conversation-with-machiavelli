@@ -15,16 +15,18 @@ records:
     class: reading
     witness_1857: "sgravare o paesi di abitatori"
     witness_1933: "sgravare e' paesi di abitatori"
-    established: witness_1857
+    established: witness_1933
+    emendation: D68
     publish_as_variant_note: true
-    rationale: "The 1933 edition has the plural article, `the countries`. Canestrini's `o` reads as `or`, which leaves the colonies relieving `or countries` of inhabitants; probably the same article misprinted."
+    rationale: "Canestrini prints `o`, or, which leaves the colonies relieving `or countries` of inhabitants. Emended from the 1933 edition's plural article, bracketed in the text."
   - id: FG-CONS-I1-D003
     locator: FG-CONS.1.1.02
     class: reading
     witness_1857: "tutte la colonie"
     witness_1933: "tutte le colonie"
-    established: witness_1857
-    rationale: "A misprinted article in Canestrini; the sense is the same."
+    established: witness_1933
+    emendation: D68
+    rationale: "Canestrini's article does not agree with its noun. Emended from the 1933 edition."
   - id: FG-CONS-I1-D004
     locator: FG-CONS.1.1.03
     class: reading
@@ -38,8 +40,9 @@ records:
     class: lexical
     witness_1857: "in paese fartile"
     witness_1933: "in paese fertile"
-    established: witness_1857
-    rationale: "Canestrini's compositor; the same page prints `fertile` six lines later."
+    established: witness_1933
+    emendation: D68
+    rationale: "Not a word; the same page of Canestrini prints `fertile` six lines later. Emended from the 1933 edition."
   - id: FG-CONS-I1-D006
     locator: FG-CONS.1.1.01-03
     class: systematic_orthographic_profile

@@ -52,6 +52,11 @@ Transcribe what is there. Do not regularise, lighten or strengthen.
 7. **Spelling and word forms**, including what look like compositor's errors —
    `soggiogorono`, `violenza`, `eziamdio`. The edition does not correct its
    witness.
+   **Amended 2026-09-27 (D68):** except where the form is an error — not a
+   word, a broken agreement, a clause left without sense. Those are emended
+   from the comparison witness, bracketed in the Italian, and the printed
+   form is given in the variant note. A weaker reading that construes is
+   still transcribed as printed (D38).
 8. **Capitalisation**, including exceptions to the page's own habit. The
    exception is often the reading (D20).
 9. **Punctuation.** As printed. Canestrini points more lightly than a modern
