@@ -20,6 +20,11 @@ Machiavelli's chapter and Guicciardini's reply on one screen.
 It **is not** a text of record. It does not adjudicate the critical text
 against Bausi 2001 or the manuscript tradition, and does not claim to. Where
 our witnesses differ from modern critical consensus, we say so in a note.
+Where a governing witness prints an error — a non-word, a broken agreement, a
+clause left without sense — the Italian is emended from the comparison witness,
+bracketed, and the printed form given in a variant note (D68). That corrects a
+compositor, not the critical text; a weaker reading that still construes is
+kept as printed (D38).
 
 **On the title.** Machiavelli had been dead two years when Guicciardini wrote;
 the *Discorsi* were unpublished; the *Considerazioni* stayed unprinted until
