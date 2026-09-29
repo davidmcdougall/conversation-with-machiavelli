@@ -1,7 +1,7 @@
 ---
 work_id: NM-DISC
 source_unit_id: NM-DISC.1.12
-version: "0.2.2-draft"  # 2026-09-25: `uso` → "use" per D41
+version: "0.2.3-draft"  # 2026-09-28: `accrescere` → "increase" per D69; 2026-09-25: `uso` → "use" per D41
 status: draft_cold_reviewed
 source_text: corpus/NM-DISC/NM-DISC.1.12.md
 established_source_version: "0.2.1"
@@ -10,7 +10,7 @@ cold_review: 2026-09-18, reviewer with no access to the drafting work
 paragraph_divisions: editorial  # inherited from the source unit; see SCOPE §3
 rubric_en: "Of how much importance it is to take account of religion, and how Italy, for having been wanting in it through the Roman Church, is ruined."
 translated: 2026-09-18
-open_for_david: 1 — O14 (accrescere/augumentare in .02); O01-O05 settled 2026-09-18 (decisions.md D16-D21)
+open_for_david: 0 — O14 ruled 2026-09-28 as D69; O01-O05 settled 2026-09-18 (decisions.md D16-D21)
 ---
 
 # Discourses I.12
@@ -43,7 +43,7 @@ The princes, then, of a republic and of a kingdom ought to maintain the
 foundations of the religion they hold; and this done, it will be an easy thing
 for them to maintain their republic religious, and in consequence good and
 united. And all the things that arise in favour of it, even though they should
-judge them false, they ought to favour and augment; and so much the more ought
+judge them false, they ought to favour and increase; and so much the more ought
 they to do it, the more prudent they are, and the more knowing in natural things.
 And because this way has been observed by wise men, there has arisen from it the
 opinion of miracles, which are celebrated in religions, even false ones; for the
@@ -60,7 +60,7 @@ that she said yes. For those men being filled with religion — which Livy shows
 because in entering the temple they entered without tumult, all devout and full
 of reverence — it seemed to them that they heard the answer which they had
 perhaps presupposed to their question; which opinion and credulity, by Camillus
-and the other princes of the city, was wholly favoured and augmented.
+and the other princes of the city, was wholly favoured and increased.
 
 ## NM-DISC.1.12.04
 

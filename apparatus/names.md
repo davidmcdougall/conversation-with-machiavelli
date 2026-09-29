@@ -37,4 +37,13 @@ the original.
 | `monte Atho` | Mount Athos | NM I.1 |
 | `Alba` | Alba | FG I.1; Alba Longa, noted |
 | `Galli`, `Cimbri` | Gauls, Cimbri | FG I.1 |
-
+| `Licurgo` | Lycurgus | NM I.2 |
+| `Sparta`, `Spartani` | Sparta, Spartans | NM I.2 |
+| `Lacedemonii` | Lacedaemonians | FG I.2; kept apart from NM's Spartans |
+| `Solone` | Solon | NM I.2 |
+| `Pisistrato` | Pisistratus | NM I.2 |
+| `Romolo` | Romulus | NM I.2 |
+| `Arezzo`, `Prato`, `Firenze` | Arezzo, Prato, Florence | NM I.2; `nel II`, `nel XII` → [15]02, [15]12 |
+| `Servio Tullio` | Servius Tullius | FG I.2 |
+| `Tarquinio Superbo` | Tarquinius Superbus | FG I.2 |
+| `Viniziani`, `viniziano` | Venetians, Venetian | FG I.2 |

@@ -190,12 +190,12 @@ than inside the first paragraph.
 | Stage | Done | Remaining | Of |
 |---|---|---|---|
 | Link records | **39** | 0 | 39 |
-| NM source established | 3 | 36 | 39 |
-| FG source established | 3 | 36 | 39 |
-| Collated | 5 units | 73 | 78 |
-| Translated (draft, cold-reviewed) | 6 | 72 | 78 |
-| Annotated (cold-reviewed) | 6 | 72 | 78 |
-| Published | 6 | 72 | 78 |
+| NM source established | 4 | 35 | 39 |
+| FG source established | 4 | 35 | 39 |
+| Collated | 6 units | 72 | 78 |
+| Translated (draft, cold-reviewed) | 8 | 70 | 78 |
+| Annotated (cold-reviewed) | 8 | 70 | 78 |
+| Published | 8 | 70 | 78 |
 
 **Read the top row first.** The relationship layer — all 39 pairs, mapped
 against the chapter headings — is complete, and it is a real asset. Be precise

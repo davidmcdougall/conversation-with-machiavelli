@@ -15,7 +15,7 @@ This log becomes the translator's preface.
 | D06 | `un potente` | a powerful one | Not "a power", which reads as an abstract state-actor and breaks the `potente` chain running through .06. |
 | D07 | `più propinqui` / `meno` | nearer / less | Comparatives, not superlatives. The claim is a correlation — the nearer, the less — not a statement about the extreme case. |
 | D08 | `o la rovina o il flagello` | either the ruin or the scourge | Draft supplied possessives ("its ruin"). The Italian does not say whose, and .05's turn to Italy depends on that staying open. |
-| D09 | `favorirle ed accrescerle` → `favorita e accresciuta` | favour and augment, both times, and .03 keeps the Italian's clause-final position | The echo is the demonstration: Rome did what the chapter recommends. |
+| D09 | `favorirle ed accrescerle` → `favorita e accresciuta` | favour and augment (**word revised by D69**: increase), both times, and .03 keeps the Italian's clause-final position | The echo is the demonstration: Rome did what the chapter recommends. |
 | D10 | `ne cacciò` (2×) | drove ... out of it | The locative clitic was dropped twice. Italy-as-territory is the chapter's subject. |
 | D11 | `la Italia` | it, not she | The draft had Italy as "she" and the Church as "it", inconsistently, inside one sentence. Gendered Italy is the hallmark of the older English tradition; register.md refuses costume. |
 | D12 | asyndeton (`cerimonie, sacrifizj, riti`; `dipoi ne cacciò`) | not supplied with "and" | The draft normalised two bare Italian lists into English series. |
@@ -81,6 +81,20 @@ This log becomes the translator's preface.
 | D67 | FG I.1 stops at `edificato`, `avuta`, `continuo` | supplied as witness corrections on Palmarocchi's evidence; none at the closing `vicini` | As C004 in I.12, and DEC-009 clause 10. |
 
 | D68 | The governing witness is in error (revises D38) | emend from the comparison witness, mark the emendation in the Italian, give the governing reading in a note | **David, 2026-09-27.** D38 stands for readings that are weaker but construable: they are kept, and the better reading goes in the variant note. It no longer covers errors. An error is a reading that is not Italian, or cannot be construed: a non-word, a broken agreement, a clause with no verb. Those are emended from the comparison witness, as C004 already did for a dropped stop. The emended letters are bracketed in the Italian; the English follows the emended text without brackets; the variant note gives what the governing witness prints. Borderline cases (readable, but only just) come to David, like cold-pass disagreements. Applied 2026-09-27: FG I.14 `ora` → `[e]ra` (supersedes D48); FG I.1 `o paesi` → `[e'] paesi` (closes O15), `la colonie` → `l[e] colonie`, `fartile` → `f[e]rtile`. Not emended, because they construe: I.12 `non ebbe patito`, I.1 `o allora`, I.1 `tanto per` (O16). DEC-009 clause 7 amended to match. |
+
+| D69 | NM I.12 `accrescere` / `augumentare` | increase / augment | **O14, David 2026-09-28.** Two verbs, two words. `augumentare` keeps the cognate; `accrescere` → "increase" at both ends of the D09 echo ("favour and increase" .02, "favoured and increased" .03), so the echo survives with the word changed. Revises D09's word, not its principle. |
+| D70 | FG I.1 `tanto per non avere contado` | "all the same, through not having a countryside", with the note saying `tanto` *appears to* carry the concession | **O16, David 2026-09-28.** Canestrini's `tanto` construes, so D68 does not emend; Palmarocchi's `tamen` stays in the note. The literal alternative is obscure. |
+| D71 | FG I.2 .03 `la ruina ___ città` | `delle` | **David, 2026-09-28.** Cold-pass split: A `della`, B `⟨dello⟩`. The scan drops the crossbar of e throughout (B reads `lo cose` for `le cose` on the same page); the letter is a barless e. The 1933 edition prints `delle`. English: "the ruin of the cities". |
+| D72 | FG I.2 .05 `s arà la mistizia` | `s'arà`, apostrophe supplied | **David, 2026-09-28.** Cold-pass split: A `sarà`, B `s'arà`. The printed space is where the apostrophe of *si avrà* fell out, as D39; the 1933 edition prints `s'ará`. English: "one will have the mixture". |
+| D73 | FG I.2 .01 `o dove può consistere la fallacia` | `o`, as printed; the 1933 `e dove` in the variant note | Common doubt, not a split: pass A e\|o, pass B `o`; no crossbar at magnification. Construes, so D38. |
+| D74 | `adunque` | then | Harmonised 2026-09-28. NM I.12 had "then" (3×), NM I.1 "therefore" (2×); I.1 moved to "then" (v0.1.1) so that "therefore" belongs to `però` (D22). |
+| D75 | FG `bisogna` | it is needful | Cold review 2026-09-28, must-fix: "one must" cannot govern the `che` + subjunctive chain of FG I.2 .04–.05. Applied to NM I.2 `che bisogni farlo` too. |
+| D76 | NM I.2 `Principato`, `Ottimati`, `Popolare` | principate, optimates, popular | The Italian names the one, the best, the people; "aristocracy" and "democracy" are the Greek names the chapter does not use. FG's `principi, ottimati e popolo` → princes, optimates and people. |
+| D77 | NM I.2 `la virtù ed il vizio` | *virtù* and vice | *Virtù* stays in Italian, here in its moral sense against vice; noted. |
+| D78 | `potestà` / `potenza` | power / power | Recorded collapse (NM I.2 once each; FG I.2 `potestà` only). "Authority" is `autorità`'s; "might" misstates an office. |
+| D79 | NM I.2 `nel II`, `nel XII` | in [15]02, in [15]12 | The print's roman numerals are year abbreviations; the century is supplied in brackets (D53). |
+| D80 | Cold-review fixes, NM I.2 | reflexives kept (`si governano` "govern themselves", `si rassettino` "set themselves right"); gerunds `biasimando`, `onorando` kept parallel to `veggendo`; `nissuno rimedio può farvi` with the orderer as subject; `i quali` held on the conspirators with "[and] who"; `avere a` → "be to" (D61) | Reviewer 2026-09-28. Considered and not taken: "on the other part" for `dall'altra parte` (D24 holds). |
+| D81 | Cold-review fixes, FG I.2 | prescriptive subjunctives kept as "should partake", "is to represent"; `quando sia così` a condition, not a given; `che se ne fussi escluso` "than if ... were excluded from it"; commas, not semicolons, through the .04 chain (D65); `chi gli è commesso` "him to whom it is committed" | Reviewer 2026-09-28. |
 
 ## Closed
 
@@ -155,9 +169,6 @@ counterfactual.
 
 | # | Question | Note |
 |---|---|---|
-| O14 | NM .02 `accrescere` and `augumentare` both → "augment" | Found by the commentary review, 2026-09-25. `favorirle ed accrescerle` ("favour and augment") and, two sentences later, `i prudenti gli augumentano` ("the prudent augment them") — two Italian verbs, one English word, the collapse the glossary exists to prevent. D09 fixed `accrescere` = augment for the .02 → .03 echo, so this re-opens a settled ruling. **Recommendation:** `augumentare` keeps "augment" (it is the cognate); `accrescere` becomes "increase" in both places — "favour and increase" in .02, "favoured and increased" in .03. The echo D09 protects survives intact; only the word changes. |
+| — | None open. | |
 
-| O15 | FG I.1 .02 `sgravare o paesi di abitatori` | **Closed by D68, 2026-09-27:** emended to `[e'] paesi`. |
-| O16 | FG I.1 .03 `tanto per non avere contado` | Palmarocchi reads `tamen`, nevertheless. The English renders Canestrini's `tanto` as "all the same", taking it as concessive after `se bene`; the cold reviewer notes that this is unsourced and in effect gives `tamen`'s sense. **Recommendation:** keep "all the same" with the softened note ("appears to carry"); the alternative is "so much, through not having a countryside", which is literal and obscure. |
-
-*O01–O05 settled 2026-09-18. N01–N03 ruled 2026-09-21 as D33, D34, D36. O06, O07, O12, F002 ruled 2026-09-25 as D40–D42; O11 closed by D43. O13 ruled 2026-09-25 as D47.*
+*O01–O05 settled 2026-09-18. N01–N03 ruled 2026-09-21 as D33, D34, D36. O06, O07, O12, F002 ruled 2026-09-25 as D40–D42; O11 closed by D43. O13 ruled 2026-09-25 as D47. O15 closed by D68. O14 and O16 ruled 2026-09-28 as D69, D70.*

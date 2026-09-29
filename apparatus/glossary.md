@@ -72,7 +72,8 @@ last sentence answers Machiavelli's first move.
 | `rovina` | ruin | Both authors. |
 | `mantenere` | to maintain / to keep | `mantenere incorrotte` repeats in NM .01 — the repetition is preserved. |
 | `obbligo` | debt | NM .05 and .07, ironic: what Italians owe the Church. "Obligation" flattens the irony. **[open]** |
-| `accrescere` | to augment | Must match `favorire` in the .02 → .03 echo. See problematic.md. |
+| `accrescere` | to increase | Must match `favorire` in the .02 → .03 echo. See problematic.md. D69. |
+| `augumentare`, `augumento` | to augment, augmentation | The cognate; kept apart from `accrescere` (D69). |
 | `favorire` | to favour | |
 | `disordine` / `disordini` | disorder | Set against `ordine`. |
 | `libertà` | liberty | FG `ha appetito la libertà`. Not modern liberal freedom. |
@@ -139,3 +140,36 @@ last sentence answers Machiavelli's first move.
 | `virtuoso` | virtuous | The adjective of *virtù*; noted where it occurs. |
 | `ristringersi` | draw together | D58. |
 
+
+## Added from the I.2 pair (2026-09-28)
+
+| Italian | English | Note |
+|---|---|---|
+| `specie` / `spezie` | species | Both authors; FG I.1 already "species". |
+| `Principato`, `Ottimati`, `Popolare` | principate, optimates, popular | NM's three good states; their corruptions tyrannical, "state of few", licentious. FG names the holders: princes, optimates, people. |
+| `Stato` (of a form) | state | NM I.2 throughout: "one of the three states", "a state of few", "the popular state". Still **[open]** as a term. |
+| `Governo` / `governare` | government / govern | D64 held. `si governano` → "govern themselves". |
+| `ordinatore` | orderer | With `ordine`, `ordinare`, `riordinare`, `disordinare`: order, order, reorder, disorder. |
+| `accidente` | accident | Both authors. |
+| `modo` / `modi` | way / ways | NM I.12 "this way"; I.2 "all the said ways". `in modo che` → "in such a way that". `via` → path. |
+| `adunque` | then | D74. NM I.12, I.1 (harmonised), I.2; FG I.2 `Volendo adunque`. Keeps "therefore" for `però`. |
+| `bisogna` | it is needful | D75. Governs FG's chains of `che` + subjunctive; `è necessario` stays "it is necessary". |
+| `nondimeno` / `nientedimeno` | nonetheless / nevertheless | D45 for `nondimeno`. |
+| `benché` / `se bene` / `avvegnaché` / `ancora che` / `nonostante che` | albeit / although / though / even though / notwithstanding that | D31 extended. The concessive set; "though" and "even though" are the pair most likely to drift. |
+| `sortire` | to be allotted | NM I.2 twice. |
+| `grado` | degree | NM I.2: a degree of unhappiness, from degree to degree, hold their degree. |
+| `propinquo` | near | NM I.12 and I.2. |
+| `simile` / `similitudine` | like, similar / likeness | NM I.2. |
+| `rispetto` (`avere rispetto a`, `a rispetto di`) | respect (to have respect to, in respect of) | NM I.2. |
+| `pessimo` | very bad | The elative of `cattivo` (bad, D03). |
+| `male` (noun) | ill | FG I.2 is built on `bene`/`male`: good/ill. Keeps `male` apart from `cattivo` (bad) and `reo` (evil). `buono` as a noun is also "good": recorded collapse. |
+| `potestà` / `potenza` | power / power | Recorded collapse, as `causa`/`cagione`. `potere` as a verbal noun → "being able". |
+| `partecipare di` | to partake of | NM I.2 "one that should partake of all"; FG I.2 throughout, and `abili a partecipare de' magistrati`. Not D28 (`participare`, impart), which is transitive and FG I.12. |
+| `eleggere` / `elezione` | choose / choice | Held from I.1, including the election of kings and magistrates. |
+| `arbitrio` / `voluntà` | discretion / will | NM "at their own discretion"; FG "at the discretion of several", "the will of one alone". |
+| `riputare` | to reckon | The verb of FG's `reputo`, "I reckon". |
+| `temporale` | temporary (of tenure) / temporal (of rule) | FG I.2 "temporary"; NM I.12 `Imperio temporale`, "temporal". |
+| `civiltà` | civility | NM I.2: civil life under laws. |
+| `referire` | report | D56 held in FG I.2. |
+| `concioni` | harangues | FG I.2. |
+| `mero e misto imperio` | mere and mixed rule | FG I.2; the jurists' *merum et mixtum imperium*. |

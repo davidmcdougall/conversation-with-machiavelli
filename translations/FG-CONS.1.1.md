@@ -12,7 +12,7 @@ paragraph_divisions: witness  # Canestrini prints three paragraphs
 rubric_en: "What have universally been the beginnings of any city whatever, and what was that of Rome"
 rubric_source: Canestrini 1857, printed p. 3 — his setting of the chapter title over the reply, without a terminal stop
 translated: 2026-09-27
-open_for_david: 1 — O16
+open_for_david: 0 — O16 ruled 2026-09-28 as D70
 title: "How cities begin"
 standfirst: "Machiavelli sorts cities by who built them, natives or strangers, free or dependent, and finds in Rome's free beginning, and in the necessities its laws imposed, the reason its virtù lasted. Guicciardini accepts the distinction, places Rome in it on other grounds, sharpens what Machiavelli says of colonies, and ends on a harder claim: that where a city can be peopled at all, necessity makes it virtuous more surely than good laws."
 ---

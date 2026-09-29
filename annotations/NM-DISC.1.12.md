@@ -14,13 +14,13 @@ format: one "## <paragraph id>" section per paragraph; each note a "**Label.**" 
 
 ## NM-DISC.1.12.02
 
-**Argument.** The prescription: princes should favour and augment whatever arises in religion's favour "even though they should judge them false", and the more so the more prudent and the more "knowing in natural things" they are. Understanding nature is a reason to sponsor miracles, not to expose them. Machiavelli states it without apology, and calls those who practise it wise.
+**Argument.** The prescription: princes should favour and increase whatever arises in religion's favour "even though they should judge them false", and the more so the more prudent and the more "knowing in natural things" they are. Understanding nature is a reason to sponsor miracles, not to expose them. Machiavelli states it without apology, and calls those who practise it wise.
 
 ## NM-DISC.1.12.03
 
 **History.** Veii, Rome's Etruscan neighbour, fell to Camillus, traditionally in 396 BC. Livy tells the story of Juno's image (V.22): young men chosen to carry the goddess to Rome entered her temple with reverence, and when one asked — whether moved by the god or in youthful jest — *visne Romam ire, Iuno?*, the others cried that she had nodded; a voice saying she was willing was, he adds, a later addition to the tale. Machiavelli's Latin is not Livy's, and he gives the scene to soldiers in the act of sacking. The reverence he keeps, because it is his evidence.
 
-**Argument.** The explanation is psychological: men full of religion hear the answer they had "perhaps presupposed". Camillus and the princes did not invent the miracle; they did to it what [[NM-DISC.1.12.02]] prescribes, in the same words — favoured and augmented it.
+**Argument.** The explanation is psychological: men full of religion hear the answer they had "perhaps presupposed". Camillus and the princes did not invent the miracle; they did to it what [[NM-DISC.1.12.02]] prescribes, in the same words — favoured and increased it.
 
 ## NM-DISC.1.12.04
 

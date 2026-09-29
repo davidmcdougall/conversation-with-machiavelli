@@ -1,7 +1,7 @@
 ---
 work_id: NM-DISC
 source_unit_id: NM-DISC.1.1
-version: "0.1.0-draft"
+version: "0.1.1-draft"  # 2026-09-28: `adunque` → "then" per D74
 status: draft_cold_reviewed
 source_text: corpus/NM-DISC/NM-DISC.1.1.md
 established_source_version: "0.1.0"
@@ -114,7 +114,7 @@ lead them, had they not obviated it with most strong laws.
 
 ## NM-DISC.1.1.07
 
-I say therefore that it is a more prudent choice to place oneself in a fertile
+I say then that it is a more prudent choice to place oneself in a fertile
 place, when that fertility is restricted with the laws within due bounds. To
 Alexander the Great, wishing to build a city for his glory, came Dinocrates the
 architect, and showed him how he could make it upon Mount Athos, which place,
@@ -126,7 +126,7 @@ the Nile.
 
 ## NM-DISC.1.1.08
 
-Whoever therefore examines the building of Rome, if Aeneas is taken for its first
+Whoever then examines the building of Rome, if Aeneas is taken for its first
 progenitor, it will be of those cities built by strangers; if Romulus, of those
 built by men native to the place; and in whatever way, he will see it to have a
 free beginning, without depending on anyone; he will see also (as will be said

@@ -7,13 +7,13 @@ chunk.
 
 **The argument is a single chain, and the conclusion is an indictment reached by
 it, not asserted.** Religion must be kept uncorrupted → because every religion
-rests on some principal order of its own → which the prudent maintain and augment
+rests on some principal order of its own → which the prudent maintain and increase
 *however false they judge it* → the Roman Church has not done this → therefore two
 charges. Any rendering that lets the Church attack float free of the instrumental
 argument about religion has lost the chapter.
 
 **The instrumental irony must survive.** Machiavelli advises princes to favour and
-augment what they privately judge false, and then condemns the Church for
+increase what they privately judge false, and then condemns the Church for
 corruption. He does not flag the tension. Neither does the translation.
 
 **The two charges are numbered and must stay numbered.** `due potentissime` — the
@@ -48,6 +48,22 @@ whole terminology policy exists to protect that answer.
 
 **He never resolves it.** The unit ends mid-thought, with no full stop in the
 witness. The English does not supply a conclusion the Italian withholds.
+
+## Machiavelli, NM-DISC.1.2
+
+**The cycle is an argument, not a catalogue.** Six forms, each sliding into its
+neighbour, and at every step the cause is inheritance; the mixed state is the
+conclusion drawn from it, and Rome reaches it by accident, not by a founder.
+Splitting the long periods of .04–.06 into a list of stages loses the causes
+that join them.
+
+## Guicciardini, FG-CONS.1.2
+
+**He grants the conclusion and changes the subject.** Not disagreement: the
+mixture is conceded in the first sentence, and the reply becomes a design. The
+design runs through chains of `bisogna ... che` + subjunctive (.04, .05), and
+every link must stay attached to its governor. Venice, not Rome, is his model;
+the Romans' annual consuls and patrician optimates count against them.
 
 ## The pair
 

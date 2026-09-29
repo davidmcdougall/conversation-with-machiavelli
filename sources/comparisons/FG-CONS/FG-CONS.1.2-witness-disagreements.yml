@@ -1,0 +1,89 @@
+source_unit_id: FG-CONS.1.2
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+- id: FG-CONS-I2-D001
+  locator: FG-CONS.1.2.01
+  class: reading
+  witness_1857: E non è dubio
+  witness_1933: E' non è dubio
+  established: witness_1857
+  publish_as_variant_note: true
+  rationale: 'Palmarocchi prints the impersonal pronoun `E''`, "It is not doubtful". Canestrini''s bare
+    `E` reads as the conjunction, so the reply opens as if continuing a conversation: "And there is no
+    doubt". The English follows Canestrini.'
+- id: FG-CONS-I2-D002
+  locator: FG-CONS.1.2.01
+  class: reading
+  witness_1857: delle tre spezie, principi, ottimati e popolo
+  witness_1933: delle tre spezie, principe, ottimati e popolo
+  established: witness_1857
+  publish_as_variant_note: true
+  rationale: Canestrini names the first species by its holders, princes; the 1933 edition by the office,
+    prince.
+- id: FG-CONS-I2-D003
+  locator: FG-CONS.1.2.01
+  class: reading
+  witness_1857: a che bisogna avvertire, o dove può consistere la fallacia
+  witness_1933: a che bisogna avvertire, e dove può consistere la fallacia
+  established: witness_1857
+  publish_as_variant_note: true
+  rationale: Canestrini's `o` makes sense (the point to take heed of, or where the fallacy can lie), so
+    it stands; Palmarocchi's `e` joins the two clauses instead of offering the second as a restatement.
+- id: FG-CONS-I2-D004
+  locator: FG-CONS.1.2.03
+  class: reading
+  witness_1857: sono utili a loro e che opprimono il popolo
+  witness_1933: sono utile a loro e deprimono el populo
+  established: witness_1857
+  publish_as_variant_note: true
+  rationale: In Canestrini the optimates favour things that oppress the people; in the 1933 edition they
+    favour what is useful to themselves and put the people down. Two verbs, and a different construction.
+- id: FG-CONS-I2-D006
+  locator: FG-CONS.1.2.04
+  class: reading
+  witness_1857: Bisogna attrarre di questa spezie di governo
+  witness_1933: Bisogna, a trarre di questa spezie di governo
+  established: witness_1857
+  publish_as_variant_note: true
+  rationale: 'Canestrini: it is needful to draw from this species what good one can, and to flee the ill.
+    Palmarocchi: to draw what good one can, it is needful that the optimates not always be the same lines.
+    Either way the rules that follow depend on `Bisogna`. The English follows Canestrini.'
+- id: FG-CONS-I2-D007
+  locator: FG-CONS.1.2.04
+  class: reading
+  witness_1857: nobili o ricchi
+  witness_1933: nobili e ricchi
+  established: witness_1857
+  publish_as_variant_note: true
+  rationale: Canestrini's senate is drawn from men prudent, noble or rich; Palmarocchi's from men prudent,
+    noble and rich. The scan of Canestrini often loses the crossbar of e, so his `o` is less certain than
+    most readings.
+- id: FG-CONS-I2-D008
+  locator: FG-CONS.1.2.05
+  class: reading
+  witness_1857: ingannato dagli uomini ambiziosi
+  witness_1933: ingannato agli uomini ambiziosi
+  established: witness_1857
+  publish_as_variant_note: false
+  rationale: The same sense, deceived by; Palmarocchi's `a` is the older construction.
+- id: FG-CONS-I2-D009
+  locator: FG-CONS.1.2.05
+  class: reading
+  witness_1857: s'arà la mistizia
+  witness_1933: s'ará la mistura
+  established: witness_1857
+  publish_as_variant_note: true
+  rationale: 'Canestrini prints `s arà`, with a space where the apostrophe of `s''arà` (si avrà, one will
+    have) fell out; the apostrophe is supplied. The noun differs: Canestrini''s `mistizia`, Palmarocchi''s
+    `mistura`. Both are the mixture.'
+- id: FG-CONS-I2-D010
+  locator: FG-CONS.1.2.01-05
+  class: systematic_orthographic_profile
+  witness_1857: Canestrini's `il`, `popolo`/`populo` both, `acciocché`, `repubbliche` in the rubric, lighter
+    pointing with dropped stops
+  witness_1933: Palmarocchi's `el`, `populo`/`popolo`, `acciò che`, `republiche`, heavier pointing, plural
+    `-e` endings (`importante`, `sedizione`)
+  established: witness_1857
+  rationale: Canestrini governs throughout. Where his printing drops a full stop that Palmarocchi prints,
+    the stop is supplied.
