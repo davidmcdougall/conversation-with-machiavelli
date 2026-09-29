@@ -173,3 +173,24 @@ last sentence answers Machiavelli's first move.
 | `referire` | report | D56 held in FG I.2. |
 | `concioni` | harangues | FG I.2. |
 | `mero e misto imperio` | mere and mixed rule | FG I.2; the jurists' *merum et mixtum imperium*. |
+
+
+## Added from the I.3 pair (2026-09-29)
+
+| Italian | English | Note |
+|---|---|---|
+| `presupporre` | presuppose | NM I.3; FG answers it. A working assumption, not a belief. |
+| `operare` | work | D83. NM I.3 twice, FG I.3 quoting. `fare bene` → do good. |
+| `animo` | spirit | NM I.2 "greatness of spirit"; I.3 "the malignity of their spirit", "of popular spirit". |
+| `occasione` | occasion | NM I.3 "free occasion"; FG I.3 "the occasions that can divert from the good". |
+| `licenza` | licence | NM I.2, I.3; FG I.2, I.3. |
+| `insolenza` | insolence | NM I.2, I.3. |
+| `malignità` | malignity | NM I.2, I.3. |
+| `mezzi` / `in mezzo` | intermediaries / in the middle | D84. |
+| `convenire` (impersonal) | to be fitting | D85. Apart from `bisogna` and `è necessario`. |
+| `magistrato` | magistracy / magistrate | D93. The office / the man. |
+| `assolutamente` | absolutely | FG I.3 twice; the second answers the first. |
+| `plebe` / `Plebe` | plebs | NM I.2, I.3; FG I.3. `plebei` → plebeians. |
+| `Nobili` / `Nobiltà` | nobles / nobility | NM I.3; FG I.3 `nobiltà`, `nobili`. |
+| `premii` / `pene` | rewards / penalties | FG I.3. |
+| `pericolo` / `periculo` | danger | NM I.2, I.3; FG I.2, I.3. |

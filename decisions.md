@@ -96,6 +96,22 @@ This log becomes the translator's preface.
 | D80 | Cold-review fixes, NM I.2 | reflexives kept (`si governano` "govern themselves", `si rassettino` "set themselves right"); gerunds `biasimando`, `onorando` kept parallel to `veggendo`; `nissuno rimedio può farvi` with the orderer as subject; `i quali` held on the conspirators with "[and] who"; `avere a` → "be to" (D61) | Reviewer 2026-09-28. Considered and not taken: "on the other part" for `dall'altra parte` (D24 holds). |
 | D81 | Cold-review fixes, FG I.2 | prescriptive subjunctives kept as "should partake", "is to represent"; `quando sia così` a condition, not a given; `che se ne fussi escluso` "than if ... were excluded from it"; commas, not semicolons, through the .04 chain (D65); `chi gli è commesso` "him to whom it is committed" | Reviewer 2026-09-28. |
 
+| D82 | NM I.3 `cattivi`, `presupporre` | bad; presuppose | D03 held across the pair: the chapter's premise and Guicciardini's four answers use one word. `Presupporre` is a founder's working assumption, not a belief. |
+| D83 | NM I.3 `operare` / FG `operano` | work (`opera bene` → works well) | Guicciardini quotes Machiavelli's `non operano mai nulla bene` without `nulla`; one English verb lets the quotation show. `fare bene` stays "do good". |
+| D84 | NM I.3 `mezzi` / FG `in mezzo` | intermediaries / in the middle | Cold review. A role against a place: Guicciardini restates the role as a position and denies it. The draft had "midway" for both, which hid the restatement. |
+| D85 | NM I.3 `convenne` | it was fitting | Cold review. No supplied subject; kept apart from `bisogna` (needful) and `è necessario` (necessary). "Behoved" read as costume. |
+| D86 | NM I.3 `de' quali temendo la Nobiltà` | "and the nobility, fearing them," | Cold review: "whom the nobility fearing ... it bore itself" was not English. Exposition, not a landing, so D19 allows plain order. |
+| D87 | NM I.3 `mancati i Tarquinj` | once the Tarquins were lacking | Keeps the `manca` → `mancati` echo with the good usage; perfective. |
+| D88 | NM I.3 `a freno`; `ovviare`; `scandali` | reined in; forestall; scandals (noted) | The bridle image kept; "obviate" has moved to removing a need; `scandali` in the older sense of public disturbance, with a note. |
+| D89 | FG I.3 `con la quale furono creati` | "with which [the tribunes] were created" | Cold review must-fix: `creati` is masculine; the English "they" had attached to the authorities. |
+| D90 | FG I.3 `anzi rare volte` | but rather at rare times | Cold review: "indeed rarely" could be read under "cannot". |
+| D91 | FG I.3 `si poteva consultare e trattare e' comodi suoi` | "with whom its conveniences could be consulted and treated" | Impersonal `si`; `comodi` object of both verbs. |
+| D92 | FG I.3 `intese` | understood | Cold review, taken: sits with `interpretazione` in the same period. "Intended" moved the point to the founders' intent. |
+| D93 | FG I.3 `magistrato` | magistracy (office) / magistrate (man) | As FG I.2. `particulare` → particular, the older sense of one's own. |
+| D94 | FG I.3 pointing of the four ways | Canestrini's commas before `il secondo`, `il terzo`; semicolon before `il quarto` | D65 held; the draft had regularised to semicolons. |
+| D95 | FG I.3 `voluttà` | voluptuousness | Cold review proposed "pleasure"; not taken. Ambition and avarice are dispositions, and the list stays a list of vices. |
+| D96 | FG I.3 title | "Too absolutely" | Cold review: "Whether all men are bad" framed a yes/no quarrel; the objection is to the claim's absoluteness. Standfirst corrected: the wise order against the occasions for ill, not against a bad few. |
+
 ## Closed
 
 The **Deferred to the DEC-009 rewrite** table is closed. N01, N02 and N03 are
@@ -169,6 +185,8 @@ counterfactual.
 
 | # | Question | Note |
 |---|---|---|
-| — | None open. | |
+| O17 | FG I.3 .01 `etiam avendo ___ di fare male`: `facoltà` (pass A) or `facultà` (pass B, 1933)? | **Recommend `facultà`.** Same word, same English ("capacity"). The scan breaks u into n-shapes throughout, and the same unit prints `facultà del fare male` clearly on p. 11. Carried provisionally. |
+| O18 | FG I.3 .02 `lo eleggere ___ tribuni`: printed shape `a`; pass B `e'`; 1933 `e'` | **Recommend `e'`.** The scan prints `ara` for `era` twice in the same paragraph; the unit prints `e tribuni` two sentences later; `eleggere` takes a direct object throughout. English "choosing the tribunes" either way. Carried provisionally. |
+| O19 | FG I.3 .01 opening `E posto troppo assolutamente`: emend to `[È]` under D68? | **Recommend emending.** As printed, the first period has no finite verb. Canestrini accents `È vero` and `È adunque` in the same reply, so this is not the house habit of unaccented capitals. Borderline because a reader can hear an elliptical copula after "And". Carried provisionally as `[È]`; the English reads "It is laid down too absolutely". If you rule against, the English becomes "And [it is] laid down too absolutely" and nothing else moves. |
 
 *O01–O05 settled 2026-09-18. N01–N03 ruled 2026-09-21 as D33, D34, D36. O06, O07, O12, F002 ruled 2026-09-25 as D40–D42; O11 closed by D43. O13 ruled 2026-09-25 as D47. O15 closed by D68. O14 and O16 ruled 2026-09-28 as D69, D70.*

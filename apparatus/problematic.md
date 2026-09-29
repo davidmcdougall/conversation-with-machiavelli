@@ -65,6 +65,24 @@ design runs through chains of `bisogna ... che` + subjunctive (.04, .05), and
 every link must stay attached to its governor. Venice, not Rome, is his model;
 the Romans' annual consuls and patrician optimates count against them.
 
+## Machiavelli, NM-DISC.1.3
+
+**The premise is a founder's working assumption, and the chapter proves it by
+consequence.** `presupporre` is to take as given for the purpose of ordering.
+Then the proof: the nobles hid their venom while the Tarquins lived, and
+spat it once they were dead. Then the maxim, and then the tribunes, reached by
+three consecutive `però`. The tribunes follow from the premise; an English
+that lets the maxim or the Roman story stand alone has lost the chain.
+
+## Guicciardini, FG-CONS.1.3
+
+**He limits the premise and keeps the rule.** `troppo assolutamente`: the
+claim is too absolute, not false. He grants that one must order against those
+who would do ill, and denies only that all men are to be presupposed so. Then
+he turns to the tribunes and takes away the middle place Machiavelli gives
+them. A translation that makes him an optimist answering a pessimist, or makes
+the second paragraph a separate topic, has lost the reply.
+
 ## The pair
 
 Machiavelli argues towards a demonstration. Guicciardini declines to be

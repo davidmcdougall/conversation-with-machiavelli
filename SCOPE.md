@@ -304,6 +304,7 @@ clock; David's own time is the rulings, counted separately.
 | Estimate | 30 (transcribe) + 20 (collate) | — | 60–90 | — | 30 | amortised | 150–180 | — |
 | I.14 (603 + 66 words) | 9 | 2 | 2 | 6 | 3 | 2 | 24 | 1 ruling (D48) |
 | I.1 (1,291 + 597 words) | 7 | 2 | 2 | 9 | 4 | 3 | 27 | 2 open items (O15, O16); NM not collated against 1554 |
+| I.3 (387 + 441 words) | 6 | 2 | 3 | 5 | 3 | 2 | ~25 (stages approximate) | 3 open items (O17–O19); NM not collated against 1554 |
 
 ---
 

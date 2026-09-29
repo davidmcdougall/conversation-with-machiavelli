@@ -47,3 +47,4 @@ the original.
 | `Servio Tullio` | Servius Tullius | FG I.2 |
 | `Tarquinio Superbo` | Tarquinius Superbus | FG I.2 |
 | `Viniziani`, `viniziano` | Venetians, Venetian | FG I.2 |
+| `Tarquinj` | Tarquins | NM I.3; the house of Tarquinius Superbus |
