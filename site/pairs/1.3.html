@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Machiavelli lays it down that whoever orders a republic must presuppose all men bad, and proves it on the Roman nobles, humane while the Tarquins lived and venomous once they were dead; the tribunes were the new order that did what fear of the kings had done. Guicciardini finds the premise laid down too absolutely: men are inclined by nature to the good, but their nature is fragile, and the wise order against the occasions for ill. He grants Machiavelli&#x27;s cause for the tribunes, then argues that their powers came later and tempered only the nobles.">
+<style>*{box-sizing:border-box}body{margin:0;font:14px system-ui}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>A Conversation with Machiavelli — Too absolutely</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root {
+  --paper:      #EDEEEC;
+  --paper-sunk: #E4E6E3;
+  --ink:        #1B1E1C;
+  --ink-muted:  #5C625E;
+  --ink-faint:  #868C87;
+  --rule:       #C9CDC8;
+  --rule-faint: #DCDFDB;
+  --nm:         #3A5A6B;
+  --fg:         #6E5A3C;
+  --serif: "EB Garamond", "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  --sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --mono:  "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:      #161917;
+    --paper-sunk: #1D211E;
+    --ink:        #E3E6E1;
+    --ink-muted:  #A0A6A0;
+    --ink-faint:  #767C77;
+    --rule:       #343934;
+    --rule-faint: #262B27;
+    --nm:         #8FB4C6;
+    --fg:         #C4A97C;
+  }
+}
+:root[data-theme="dark"] {
+  --paper:      #161917;
+  --paper-sunk: #1D211E;
+  --ink:        #E3E6E1;
+  --ink-muted:  #A0A6A0;
+  --ink-faint:  #767C77;
+  --rule:       #343934;
+  --rule-faint: #262B27;
+  --nm:         #8FB4C6;
+  --fg:         #C4A97C;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 1160px; margin: 0 auto; padding-inline: 20px; padding-block: 0 0; }
+
+/* ---- masthead ---- */
+.masthead { padding-block: 56px 32px; border-bottom: 1px solid var(--rule); }
+.eyebrow {
+  font-family: var(--sans); font-size: 11px; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint);
+  margin: 0 0 18px;
+}
+h1 {
+  font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 5vw, 44px);
+  line-height: 1.12; margin: 0 0 14px; text-wrap: balance; letter-spacing: -0.01em;
+}
+h1 .sub { display: block; font-style: italic; color: var(--ink-muted); font-size: .52em; margin-top: 12px; letter-spacing: 0; }
+.standfirst {
+  font-family: var(--sans); font-size: 14.5px; line-height: 1.6;
+  color: var(--ink-muted); max-width: 62ch; margin: 0;
+}
+
+/* ---- the pairing device ---- */
+.pairing {
+  display: flex; align-items: stretch; gap: 0; margin: 30px 0 0;
+  border: 1px solid var(--rule); border-radius: 2px; overflow: hidden;
+  font-family: var(--sans); background: var(--paper-sunk);
+}
+.pairing > div { flex: 1 1 0; padding: 13px 16px; min-width: 0; }
+.pairing .who { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
+.pairing .nm-side .who { color: var(--nm); }
+.pairing .fg-side .who { color: var(--fg); }
+.pairing .what { font-size: 13.5px; color: var(--ink-muted); }
+.pairing .arrow {
+  flex: 0 0 auto; display: flex; align-items: center; justify-content: center;
+  padding-inline: 14px; color: var(--ink-faint); font-size: 15px;
+  border-inline: 1px solid var(--rule);
+}
+
+/* ---- pair-to-pair navigation ---- */
+.pairnav {
+  display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+  margin-top: 18px; font-family: var(--sans); font-size: 12.5px;
+  color: var(--ink-muted);
+}
+.pairnav a { text-decoration: none; color: var(--ink-muted); }
+.pairnav a:hover, .pairnav a:focus { color: var(--ink); text-decoration: underline; }
+
+/* ---- work sections ---- */
+.work { padding-block: 52px 0; }
+.work-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
+.work-head .tag {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .04em;
+  padding: 3px 7px; border-radius: 2px; color: var(--paper);
+}
+.work.nm .tag { background: var(--nm); }
+.work.fg .tag { background: var(--fg); }
+h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; letter-spacing: -0.005em; }
+.rubric {
+  font-style: italic; color: var(--ink-muted); max-width: 70ch;
+  margin: 10px 0 0; font-size: 16.5px; line-height: 1.5;
+}
+.rubric-note {
+  font-family: var(--sans); font-style: normal; font-size: 12px;
+  color: var(--ink-faint); margin-top: 7px;
+}
+.colheads {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  margin-top: 30px; padding-bottom: 7px; border-bottom: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint);
+}
+
+/* ---- the facing pair ---- */
+.pair {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  padding-block: 22px; border-bottom: 1px solid var(--rule-faint);
+  scroll-margin-top: 20px;
+}
+.pair:target { background: var(--paper-sunk); }
+.annot { grid-column: 2 / -1; margin-top: 14px; font-family: var(--sans); font-size: 13.5px;
+  line-height: 1.55; color: var(--ink-muted); }
+.annot summary { cursor: pointer; font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); list-style: none; }
+.annot summary::-webkit-details-marker { display: none; }
+.annot summary::before { content: "+ "; }
+.annot[open] summary::before { content: "− "; }
+.annot p { margin: 8px 0 0; max-width: 72ch; }
+.annot .xref { color: inherit; text-decoration: underline; text-decoration-color: var(--rule);
+  text-underline-offset: 2px; white-space: nowrap; }
+.gutter { padding-top: 4px; }
+.uid {
+  font-family: var(--mono); font-size: 10.5px; color: var(--ink-faint);
+  text-decoration: none; letter-spacing: -0.02em;
+}
+.uid:hover, .uid:focus { color: var(--ink); text-decoration: underline; }
+.col { min-width: 0; }
+.col.it { hyphens: auto; }
+.col.en { }
+.supplied { color: var(--ink-muted); }
+
+/* ---- apparatus ---- */
+.apparatus {
+  margin-top: 34px; padding-top: 22px; border-top: 2px solid var(--rule);
+  font-family: var(--sans); font-size: 13.5px; line-height: 1.58;
+  color: var(--ink-muted);
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 26px 34px;
+}
+.apparatus h3 {
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); margin: 0 0 9px;
+}
+.apparatus p { margin: 0 0 9px; }
+.apparatus p:last-child { margin-bottom: 0; }
+.apparatus .lem { font-family: var(--serif); font-size: 15px; color: var(--ink); font-style: italic; }
+.sig { font-family: var(--mono); font-size: 12px; color: var(--ink); }
+
+/* ---- colophon ---- */
+.colophon {
+  margin-top: 60px; padding-block: 28px 60px; border-top: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 13px; line-height: 1.6; color: var(--ink-muted);
+}
+.colophon .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 34px; }
+.colophon h3 {
+  font-size: 10.5px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--ink-faint); margin: 0 0 8px;
+}
+.colophon p { margin: 0 0 8px; }
+.colophon ul { margin: 0; padding-left: 16px; }
+.colophon li { margin-bottom: 5px; }
+.state {
+  margin-top: 26px; padding: 14px 16px; background: var(--paper-sunk);
+  border-left: 2px solid var(--ink-faint); border-radius: 0 2px 2px 0;
+  font-size: 12.5px;
+}
+.state strong { color: var(--ink); font-weight: 600; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--nm); outline-offset: 2px; }
+
+/* ---- contents / index page ---- */
+.toc { margin-top: 30px; }
+.toc-row {
+  display: grid; grid-template-columns: 40px 1fr 1fr; gap: 0 20px;
+  padding-block: 14px; border-bottom: 1px solid var(--rule-faint);
+  font-family: var(--sans); align-items: baseline;
+}
+.toc-row .n { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
+.toc-row a { text-decoration: none; color: var(--ink); font-family: var(--serif); font-size: 16px; }
+.toc-row a:hover, .toc-row a:focus { text-decoration: underline; }
+.toc-row .unpublished { color: var(--ink-faint); font-style: italic; font-size: 14px; }
+.toc-row .ids { color: var(--ink-faint); font-size: 11.5px; font-family: var(--mono); }
+
+@media (max-width: 760px) {
+  body { font-size: 16.5px; }
+  .colheads { display: none; }
+  .pair { grid-template-columns: 1fr; gap: 0; padding-block: 20px; }
+  .gutter { padding-top: 0; margin-bottom: 8px; }
+  .annot { grid-column: 1; }
+  .col.it { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px dotted var(--rule); }
+  .col.it::before, .col.en::before {
+    display: block; font-family: var(--sans); font-size: 10px; font-weight: 600;
+    letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px;
+  }
+  .col.it::before { content: "Italian"; }
+  .col.en::before { content: "English"; }
+  .pairing { flex-direction: column; }
+  .pairing .arrow { border-inline: 0; border-block: 1px solid var(--rule); padding-block: 6px; }
+  .toc-row { grid-template-columns: 1fr; gap: 4px; }
+}
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow">A Conversation with Machiavelli · Pair 3 of 39</p>
+    <h1>Too absolutely
+      <span class="sub">Discourses I.3, and Guicciardini&#x27;s reply</span></h1>
+    <p class="standfirst">Machiavelli lays it down that whoever orders a republic must presuppose all men bad, and proves it on the Roman nobles, humane while the Tarquins lived and venomous once they were dead; the tribunes were the new order that did what fear of the kings had done. Guicciardini finds the premise laid down too absolutely: men are inclined by nature to the good, but their nature is fragile, and the wise order against the occasions for ill. He grants Machiavelli&#x27;s cause for the tribunes, then argues that their powers came later and tempered only the nobles.</p>
+
+    <div class="pairing">
+      <div class="nm-side">
+        <div class="who">Niccolò Machiavelli</div>
+        <div class="what">Discorsi sopra la prima Deca di Tito Livio · written c. 1513–19, printed 1531</div>
+      </div>
+      <div class="arrow" aria-hidden="true">answered by</div>
+      <div class="fg-side">
+        <div class="who">Francesco Guicciardini</div>
+        <div class="what">Considerazioni intorno ai Discorsi del Machiavelli · written 1529–30, printed 1857</div>
+      </div>
+    </div>
+    <nav class="pairnav"><a href="1.2.html">← Pair 1.2</a><a href="../index.html">All 39 pairs</a><a href="1.12.html">Pair 1.12 →</a></nav>
+  </header>
+
+  <section class="work nm">
+    <div class="work-head">
+      <span class="tag">NM-DISC.1.3</span>
+      <h2>Capitolo III</h2>
+    </div>
+    <p class="rubric">Quali accidenti facessero creare in Roma i Tribuni della plebe, il che fece la Repubblica più perfetta.</p>
+    <p class="rubric">What accidents made the tribunes of the plebs be created in Rome, which made the republic more perfect.</p>
+
+    <div class="colheads"><div></div><div>Italian · 1824</div><div>English</div></div>
+      <div class="pair" id="NM-DISC.1.3.01">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.3.01">1.3.01</a></div>
+        <div class="col it" lang="it">Come dimostrano tutti coloro che ragionano del vivere civile, e come ne è piena di esempj ogni Istoria, è necessario a chi dispone una Repubblica, ed ordina leggi in quella, presupporre tutti gli uomini essere cattivi, e che gli abbiano sempre ad usare la malignità dell&#x27;animo loro, qualunque volta ne abbiano libera occasione; e quando alcuna malignità sta occulta un tempo, procede da una occulta cagione, che, per non si essere veduta esperienza del contrario, non si conosce; ma la fa poi scuoprire il tempo, il quale dicono essere padre di ogni verità.</div>
+        <div class="col en" lang="en">As all those demonstrate who reason of civil living, and as every history is full of examples of it, it is necessary for whoever disposes a republic, and orders laws in it, to presuppose all men to be bad, and that they are always to use the malignity of their spirit whenever they have free occasion for it; and when some malignity stays hidden for a time, it proceeds from a hidden cause, which, through no experience of the contrary having been seen, is not known; but it is afterwards uncovered by time, which they say is the father of every truth.</div>
+        <details class="annot"><summary>Commentary · 1</summary>
+          <p><span class="lem">Argument.</span> The founder&#x27;s premise: whoever orders a republic must presuppose all men bad, ready to use their malignity whenever they are free to. Malignity that does not show is not absent; it waits on a cause not yet seen, and time uncovers it. The claim is about what a lawgiver must assume, and the rest of the chapter proves it on a case.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.3.02">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.3.02">1.3.02</a></div>
+        <div class="col it" lang="it">Pareva che fusse in Roma intra la Plebe ed il Senato, cacciati i Tarquinj, una unione grandissima, e che i Nobili avessero deposta quella loro superbia, e fussero diventati di animo popolare, e sopportabili da qualunque ancora che infimo. Stette nascoso questo inganno, né se ne vide la cagione, infino che i Tarquinj vissono; de&#x27; quali temendo la Nobiltà, e avendo paura che la Plebe mal trattata non si accostasse loro, si portava umanamente con quella; ma come prima furono morti i Tarquinj, e che a&#x27; Nobili fu la paura fuggita, cominciarono a sputare contro alla Plebe quel veleno che si avevano tenuto nel petto, ed in tutt&#x27;i modi che potevano l&#x27;offendevano: la qual cosa fa testimonianza a quello che di sopra ho detto, che gli uomini non operano mai nulla bene, se non per necessità; ma dove la elezione abbonda, e che vi si può usare licenza, si riempie subito ogni cosa di confusione e di disordine.</div>
+        <div class="col en" lang="en">It seemed that there was in Rome between the plebs and the senate, the Tarquins having been driven out, a very great union, and that the nobles had laid down that pride of theirs, and had become of popular spirit, and bearable by anyone, even though the lowest. This deceit stayed hidden, nor was the cause of it seen, as long as the Tarquins lived; and the nobility, fearing them, and having fear that the plebs, ill treated, might draw near to them, bore itself humanely toward it; but as soon as the Tarquins were dead, and fear had fled from the nobles, they began to spit against the plebs that venom which they had held in their breast, and in all the ways they could they offended it: which thing bears witness to what I have said above, that men never work anything well except through necessity; but where choice abounds, and where licence can be used, everything is at once filled with confusion and disorder.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The case. After the kings were driven out, plebs and senate seemed united and the nobles seemed tamed. It was a deceit, kept up only while the Tarquins lived and the nobles feared the plebs would go over to them. Once the Tarquins were dead the nobles turned on the plebs. That proves the premise, and also the claim from I.1: men do good only by necessity, and where choice abounds everything fills with disorder (I.1).</p>
+<p><span class="lem">History.</span> In the tradition Tarquinius Superbus was expelled in 509 BC and died in exile at Cumae in 495 BC. Livy (2.21) puts the nobles&#x27; turn on the plebs in the year of his death.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.3.03">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.3.03">1.3.03</a></div>
+        <div class="col it" lang="it">Però si dice, che la fame e la povertà fanno gli uomini industriosi, e le leggi gli fanno buoni. E dove una cosa per sé medesima senza la legge opera bene, non è necessaria la legge; ma quando quella buona consuetudine manca, è subito la legge necessaria. Però mancati i Tarquinj, che con la paura di loro tenevano la Nobiltà a freno, convenne pensare a uno nuovo ordine, che facesse quel medesimo effetto che facevano i Tarquinj quando erano vivi. E però dopo molte confusioni, romori e pericoli di scandali, che nacquero intra la Plebe e la Nobiltà, si venne per sicurtà della Plebe alla creazione dei Tribuni; e quelli ordinarono con tante preeminenze e tanta riputazione, che potessero essere sempre di poi mezzi tra la Plebe e il Senato, e ovviare alla insolenza de&#x27; Nobili.</div>
+        <div class="col en" lang="en">Therefore it is said that hunger and poverty make men industrious, and the laws make them good. And where a thing of itself works well without the law, the law is not necessary; but when that good usage is lacking, the law is at once necessary. Therefore, once the Tarquins were lacking, who with the fear of them held the nobility reined in, it was fitting to think of a new order, which should make that same effect that the Tarquins made when they were alive. And therefore, after many confusions, uproars and dangers of scandals, which arose between the plebs and the nobility, one came, for the security of the plebs, to the creation of the tribunes; and these they ordered with so many preeminences and so much reputation that they could always thereafter be intermediaries between the plebs and the senate, and forestall the insolence of the nobles.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> From the case to the rule: hunger and poverty make men industrious, the laws make them good; where good usage holds a law is not needed, where it fails a law is. The Tarquins had done a law&#x27;s work by making the nobles afraid. With them gone, Rome needed an order that would do the same, and after years of strife it found the tribunes. Machiavelli puts them between plebs and senate; Guicciardini&#x27;s reply denies them that place <a class="xref" href="#FG-CONS.1.3.02">Guicciardini .02</a>.</p>
+<p><span class="lem">History.</span> The first tribunes of the plebs were created after the plebs&#x27; secession to the Sacred Mount, in the tradition 494 BC (Livy 2.32–33). The chapter&#x27;s title promises the accidents that made them; the next chapter argues that the disunion they institutionalised made Rome free and powerful.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from the 1824 edition (<span class="sig">WIT-NM-DISC-1824-IA</span>), page-image-backed, which governs. Collated against the 1554 Giglio printing, Venice (<span class="sig">WIT-NM-DISC-1554-IA</span>), which is comparison evidence only.</p>
+<p>Paragraph divisions are editorial. The witness prints the chapter as one unbroken block.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p>No collation record for this pair yet.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem"><i lang="it">cattivi</i>.</span> &quot;Bad&quot;, as everywhere in this edition (D03): the chapter&#x27;s premise is that all men are to be presupposed <i lang="it">cattivi</i>, and Guicciardini&#x27;s reply turns on the same word four times. <i lang="it">Malignità</i> is &quot;malignity&quot;, as in I.2.</p>
+<p><span class="lem"><i lang="it">presupporre</i>.</span> &quot;To presuppose&quot;: to take as given for the purpose of ordering, not to believe. Guicciardini&#x27;s first sentence makes the difference the whole question.</p>
+<p><span class="lem"><i lang="it">vivere civile</i>.</span> &quot;Civil living&quot;: the infinitive as a noun, as <i lang="it">vivere libero</i> in I.2. Guicciardini answers with <i lang="it">vivere umano</i>, &quot;human living&quot;.</p>
+<p><span class="lem"><i lang="it">gli abbiano sempre ad usare</i>.</span> &quot;That they are always to use&quot;: <i lang="it">avere a</i> with the infinitive, as elsewhere (D61). The clause stays under <i lang="it">presupporre</i>: it is what the founder must assume.</p>
+<p><span class="lem"><i lang="it">occulta</i>, <i lang="it">nascoso</i>.</span> Both &quot;hidden&quot;: the .01 claim, that malignity stays hidden for a time, comes true in .02, where the nobles&#x27; deceit &quot;stayed hidden&quot;. Two Italian words, one English word, recorded.</p>
+<p><span class="lem"><i lang="it">quella loro superbia</i>.</span> &quot;That pride of theirs&quot;: <i lang="it">superbia</i> is the name of the last king, Tarquinius Superbus, the Proud. The nobles had put off the king&#x27;s vice only while the king could return.</p>
+<p><span class="lem"><i lang="it">di sopra ho detto</i>.</span> &quot;What I have said above&quot;: I.1, where men act &quot;either by necessity or by choice&quot;, and choice breeds idleness.</p>
+<p><span class="lem"><i lang="it">l&#x27;offendevano</i>.</span> &quot;Offended it&quot; in the older sense: harmed, injured, as in I.2 (<i lang="it">offendere quelli governatori</i>). Not giving umbrage.</p>
+<p><span class="lem"><i lang="it">il tempo</i>.</span> The subject is held back in the Italian until the sentence&#x27;s end, where time arrives with its proverb attached. The English delays it with a passive (D18).</p>
+<p><span class="lem"><i lang="it">operano mai nulla bene</i>.</span> &quot;Never work anything well&quot;: <i lang="it">operare</i> is &quot;to work&quot; in this chapter, and <i lang="it">una cosa ... opera bene</i> in .03 is &quot;a thing ... works well&quot;. Guicciardini quotes the claim without <i lang="it">nulla</i>: &quot;men never work well except through necessity&quot;.</p>
+<p><span class="lem"><i lang="it">elezione</i>.</span> &quot;Choice&quot;, as in I.1 and I.2: here the condition of having alternatives, set against necessity. It is the same word as the election of magistrates.</p>
+<p><span class="lem"><i lang="it">però</i>.</span> &quot;Therefore&quot;, three times in .03 (D22). The chapter moves from the nobles&#x27; example to the proverb and then to the tribunes by consequence, not by contrast.</p>
+<p><span class="lem"><i lang="it">consuetudine</i>.</span> &quot;Usage&quot; (D41): where good usage holds, no law is needed.</p>
+<p><span class="lem"><i lang="it">mancare</i>.</span> &quot;Lacking&quot; twice, of the good usage and of the Tarquins, which the Italian joins with one verb: when the kings were gone, the fear that had done a law&#x27;s work went with them. <i lang="it">Mancati</i> also carries &quot;dead&quot;.</p>
+<p><span class="lem"><i lang="it">a freno</i>.</span> &quot;Reined in&quot;: <i lang="it">freno</i> is the bit and bridle.</p>
+<p><span class="lem"><i lang="it">convenne</i>.</span> &quot;It was fitting&quot;: the impersonal of fitness, with no subject named. Kept apart from <i lang="it">bisogna</i>, &quot;it is needful&quot;, and <i lang="it">è necessario</i>, &quot;it is necessary&quot;.</p>
+<p><span class="lem"><i lang="it">scandali</i>.</span> &quot;Scandals&quot; in the older sense: public disturbances, occasions of strife. Not moral disgrace.</p>
+<p><span class="lem"><i lang="it">e quelli ordinarono</i>.</span> The Italian names no subject; <i lang="it">quelli</i>, &quot;these&quot;, is the tribunes, as object, and the English supplies &quot;they&quot; as the Romans who ordered them. A reader can take <i lang="it">quelli</i> as the subject (&quot;and those [the Romans] ordered [them]&quot;); the sense is the same.</p>
+<p><span class="lem"><i lang="it">mezzi</i>.</span> &quot;Intermediaries&quot;: a role, not a place. Guicciardini restates it as <i lang="it">in mezzo</i>, &quot;in the middle&quot;, and denies it: the tribunes tempered the nobles, not the plebs. Canestrini&#x27;s note to the reply quotes this clause.</p>
+<p><span class="lem"><i lang="it">ovviare</i>.</span> &quot;Forestall&quot;: to meet a thing in the way and prevent it. The modern &quot;obviate&quot; has moved to removing a need.</p>
+<p><span class="lem">The Tarquins.</span> Tarquinius Superbus and his house, expelled in the tradition in 509 BC. The first tribunes of the plebs followed the plebs&#x27; secession to the Sacred Mount, in the tradition 494 BC.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work fg">
+    <div class="work-head">
+      <span class="tag">FG-CONS.1.3</span>
+      <h2>Considerazione sul capitolo III</h2>
+    </div>
+    <p class="rubric">Quali accidenti facessero creare in Roma i tribuni della plebe; il che fece la repubblica più perfetta</p>
+    <p class="rubric">What accidents made the tribunes of the plebs be created in Rome; which made the republic more perfect
+      <span class="rubric-note">Canestrini sets Machiavelli&#x27;s chapter title over the reply, with a semicolon where the 1824 <i lang="it">Discorsi</i> has a comma, and without a full stop.</span></p>
+
+    <div class="colheads"><div></div><div>Italian · 1857</div><div>English</div></div>
+      <div class="pair" id="FG-CONS.1.3.01">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.3.01">1.3.01</a></div>
+        <div class="col it" lang="it"><span class="supplied">[È]</span> posto troppo assolutamente che gli uomini non operano mai bene se non per necessità, e che chi ordina una republica gli debbe presupporre tutti cattivi, perché molti sono che, etiam avendo facultà di fare male, fanno bene, e tutti gli uomini non sono cattivi. È vero che e nello ordinare una republica, e in ogni altra faccenda, si debbe ordinare le cose in modo, che chi volessi fare male non possa, non perché sempre tutti gli uomini siano cattivi, ma per provedere a quelli che fussino cattivi; e s&#x27;ha a considerare in questa materia, che gli uomini tutti sono per natura inclinati al bene, e a tutti, <i lang="la">data paritate terminorum</i>, piace più il bene che &#x27;l male, e se alcuno ha altra inclinazione, è tanto contro allo ordinario degli altri, e contro a quello primo obietto che ci porge la natura, che più presto si debbe chiamare mostro che uomo. È adunque ognuno naturalmente inclinato al bene, ma perché la natura nostra è fragile, e nel vivere umano si riscontra a ogni passo nelle occasioni che possono divertire dal bene, come è la voluttà, la ambizione, la avarizia, e&#x27; savii prevedendo questo periculo, dove hanno potuto tòrre agli uomini la facultà del fare male, l&#x27;hanno fatto, e dove non si è potuto fare assolutamente, perché non si può fare sempre, anzi rare volte, aggiunsono altro remedio, cioè allettare gli uomini al bene co&#x27; premii, e spaventargli dal fare male con le pene.</div>
+        <div class="col en" lang="en">It is laid down too absolutely that men never work well except through necessity, and that whoever orders a republic must presuppose them all bad, for there are many who, even having the capacity to do ill, do good, and all men are not bad. It is true that both in ordering a republic and in every other business one must order things in such a way that whoever should wish to do ill cannot, not because all men are always bad, but to provide against those who should be bad; and one is to consider in this matter that men, all of them, are by nature inclined to the good, and to all, <i lang="la">data paritate terminorum</i>, the good is more pleasing than the ill, and if anyone has another inclination, it is so much against what is ordinary in the others, and against that first object which nature holds out to us, that he must rather be called a monster than a man. Everyone, then, is naturally inclined to the good, but because our nature is fragile, and in human living one meets at every step with the occasions that can divert from the good, such as voluptuousness, ambition, avarice, the wise, foreseeing this danger, where they have been able to take from men the capacity of doing ill, have done it, and where it has not been possible to do it absolutely, because it cannot be done always, but rather at rare times, they added another remedy, that is, to entice men to the good with rewards, and to frighten them from doing ill with penalties.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> He objects to the premise&#x27;s reach, not its use. The rule stands: order things so that whoever would do ill cannot <a class="xref" href="#NM-DISC.1.3.01">Machiavelli .01</a>. What he denies is that the rule rests on all men being bad. Men are inclined by nature to the good, and a man inclined otherwise is a monster; but nature is fragile and occasions of ill are everywhere, so the wise remove the capacity for ill where they can and, where they cannot, add rewards and penalties.</p>
+<p><span class="lem">Argument.</span> Machiavelli&#x27;s &quot;hunger and poverty make men industrious, and the laws make them good&quot; <a class="xref" href="#NM-DISC.1.3.03">Machiavelli .03</a> becomes, in Guicciardini, laws that restrain and rewards that entice. Both ascribe the good to ordering; they differ over what the ordering works on.</p>
+        </details>
+      </div>
+      <div class="pair" id="FG-CONS.1.3.02">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.3.02">1.3.02</a></div>
+        <div class="col it" lang="it">La causa dello eleggere e&#x27; tribuni fu quella che si dice nel Discorso, cioè per fare una difesa alla plebe contro alla nobiltà, cioè e&#x27; patrizii, il quale effetto risultava in quattro modi: il primo, che avendo la plebe uno magistrato particulare veniva a avere uno capo publico, col quale si poteva consultare e trattare e&#x27; comodi suoi, e a chi avendo la plebe ricorso, non era disprezzata come corpo che non avessi capo, il secondo, per la autorità dello intercedere, che era tale, che non si poteva in Roma fare alcuna deliberazione publica contro alla voluntà pure di uno solo de&#x27; tribuni, il terzo, col potere mettere innanzi al populo nuove leggi; il quarto, col chiamare al giudicio del populo quelli cittadini che paressi a ciascuno di loro. — Le quali autorità non furono intese da principio della loro creazione, ma in processo di tempo o usurpate o ampliate con la interpretazione della legge con la quale furono creati: le quali autorità non facevano quello che dice il Discorso, cioè che e&#x27; tribuni fussino uno magistrato in mezzo tra &#x27;l senato e la plebe, perché bene erano temperamento della potenza de&#x27; nobili, ma non, e converso, della licenza della plebe.</div>
+        <div class="col en" lang="en">The cause of choosing the tribunes was that which is said in the Discourse, that is, to make a defence for the plebs against the nobility, that is, the patricians, which effect resulted in four ways: the first, that the plebs, having a particular magistracy, came to have a public head, with whom its conveniences could be consulted and treated, and, having recourse to whom, the plebs was not despised as a body that had no head, the second, through the authority of interceding, which was such that no public deliberation could be made in Rome against the will of even one alone of the tribunes, the third, through being able to put new laws before the people; the fourth, through calling to the judgment of the people those citizens that should seem <span class="supplied">[fit]</span> to each of them. — Which authorities were not understood from the beginning of their creation, but in process of time either usurped or enlarged by interpretation of the law with which <span class="supplied">[the tribunes]</span> were created: which authorities did not do what the Discourse says, that is, that the tribunes should be a magistracy in the middle between the senate and the plebs, for they were indeed a tempering of the power of the nobles, but not, <i lang="la">e converso</i>, of the licence of the plebs.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> He grants the cause Machiavelli gives for the tribunes, a defence of the plebs against the patricians, and lists four ways it worked: a public head for the plebs, the veto, the power to propose laws, and the power to summon citizens to trial before the people. Then he takes the tribunes out of the middle. Their powers were not in their first institution; they grew by usurpation and by interpretation; and they checked the nobles without checking the plebs. Machiavelli had promised that the disunion of plebs and senate made Rome perfect (I.2); here Guicciardini finds that its instrument worked on one side only.</p>
+<p><span class="lem">History.</span> The tribunes&#x27; veto (<i lang="it">intercessio</i>) could block the acts of magistrates and decrees of the senate; their right to convene the plebs and propose measures produced the plebiscites, binding on all citizens after the <i lang="it">lex Hortensia</i> of 287 BC; and they prosecuted magistrates and citizens before the people&#x27;s assemblies.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from Canestrini 1857, <i>Opere inedite</i> vol. 1, pp. 1–65 (<span class="sig">WIT-FG-CONS-1857-CANESTRINI</span>) — the <i>editio princeps</i>, which governs. Collated against Palmarocchi 1933 (<span class="sig">WIT-FG-CONS-1933-PALMAROCCHI</span>): page images and the Wikisource transcription consulted as collation evidence, not reproduced (LICENSE §5).</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem"></span> — [È] posto (provisional, O19). The 1857 witness reads <i lang="it">E posto troppo assolutamente</i>. The 1933 witness reads <i lang="it">È posto troppo assolutamente</i>. Canestrini prints <i lang="it">E</i>, the conjunction, and the opening period then has no finite verb. The 1933 edition&#x27;s <i lang="it">È posto</i>, &quot;it is laid down&quot;, gives Guicciardini&#x27;s opening judgment, and the text is emended from it.</p>
+<p><span class="lem"></span> — di loro. — Le quali. The 1857 witness reads <i lang="it">di loro — Le quali</i>. The 1933 witness reads <i lang="it">di loro. Le quali</i>. Canestrini marks the turn with a dash; the stop before it is supplied from the 1933 edition (C002).</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem">The two editions.</span> This edition prints the text of the first edition of the <i lang="it">Considerazioni</i>, Giuseppe Canestrini&#x27;s (Florence, 1857), and compares it with Roberto Palmarocchi&#x27;s of 1933. Where they differ, the variants list gives Palmarocchi&#x27;s reading.</p>
+<p><span class="lem">The paragraphs.</span> Canestrini prints this reply in two paragraphs, and they are kept: one against the premise, one against the tribunes.</p>
+<p><span class="lem"><i lang="it">[È] posto</i>.</span> Canestrini prints <i lang="it">E posto</i>, &quot;And laid down&quot;, which leaves the opening period without a verb. The 1933 edition&#x27;s <i lang="it">È posto</i>, &quot;It is laid down&quot;, is taken, and the letter is bracketed in the Italian. Printers of the time often set a capital È without its accent, but not Canestrini here: <i lang="it">È vero</i> and <i lang="it">È adunque</i> in the same reply carry it.</p>
+<p><span class="lem"><i lang="it">troppo assolutamente</i>.</span> &quot;Too absolutely&quot;: Guicciardini does not deny the premise; he denies it without limit. The reply is built on the difference between &quot;all men are bad&quot; and &quot;one must order against those who should be bad&quot;.</p>
+<p><span class="lem"><i lang="it">cattivi</i>.</span> &quot;Bad&quot;, four times, Machiavelli&#x27;s word (D03). <i lang="it">Tutti gli uomini non sono cattivi</i> is kept as &quot;all men are not bad&quot;: the Italian places the negation where the English does, and a reader can hear either &quot;no man is bad&quot; or &quot;not all men are bad&quot;. Guicciardini means the second.</p>
+<p><span class="lem"><i lang="it">assolutamente</i>.</span> &quot;Absolutely&quot;, twice: the premise is laid down &quot;too absolutely&quot;, and the wise, where they could not remove the capacity for ill &quot;absolutely&quot;, added rewards and penalties. The second answers the first.</p>
+<p><span class="lem"><i lang="it">gli uomini non operano mai bene</i>.</span> &quot;Men never work well&quot;: his quotation of Machiavelli, without Machiavelli&#x27;s <i lang="it">nulla</i>, &quot;anything&quot;.</p>
+<p><span class="lem"><i lang="it">bene</i> and <i lang="it">male</i>.</span> &quot;Good&quot; and &quot;ill&quot;, as in I.2: <i lang="it">fare male</i> &quot;to do ill&quot;, <i lang="it">fanno bene</i> &quot;do good&quot;, <i lang="it">piace più il bene che &#x27;l male</i> &quot;the good is more pleasing than the ill&quot;. <i lang="it">Cattivo</i> stays &quot;bad&quot;.</p>
+<p><span class="lem"><i lang="it">etiam</i>.</span> Latin, &quot;even&quot;, in the middle of the Italian; Canestrini prints it in roman type.</p>
+<p><span class="lem"><i lang="it">facultà</i>.</span> &quot;Capacity&quot;, as in I.12. Canestrini&#x27;s scan leaves the first occurrence in doubt between <i lang="it">facoltà</i> and <i lang="it">facultà</i>; the second is clear. Either way it is the same word.</p>
+<p><span class="lem"><i lang="it">data paritate terminorum</i>.</span> Latin: &quot;equal terms being given&quot;, other things being equal. A schoolman&#x27;s qualification inside the claim that the good pleases more.</p>
+<p><span class="lem"><i lang="it">obietto</i>.</span> &quot;Object&quot;: what nature puts before us to aim at.</p>
+<p><span class="lem"><i lang="it">vivere umano</i>.</span> &quot;Human living&quot;, against Machiavelli&#x27;s <i lang="it">vivere civile</i>, &quot;civil living&quot;.</p>
+<p><span class="lem"><i lang="it">e&#x27; savii</i>.</span> &quot;The wise&quot;: the lawgivers, whose two remedies are to remove the capacity for ill where they can, and where they cannot, rewards and penalties.</p>
+<p><span class="lem"><i lang="it">eleggere</i>.</span> &quot;Choosing&quot;, as in I.1 and I.2: the edition&#x27;s word for <i lang="it">eleggere</i> and <i lang="it">elezione</i> in both authors.</p>
+<p><span class="lem"><i lang="it">comodi</i>.</span> &quot;Conveniences&quot; (D59): the plebs&#x27; interests and advantages.</p>
+<p><span class="lem"><i lang="it">uno magistrato particulare</i>.</span> &quot;A particular magistracy&quot;: one of the plebs&#x27; own. <i lang="it">Magistrato</i> is &quot;magistracy&quot; for the office and &quot;magistrate&quot; for the man, as in I.2.</p>
+<p><span class="lem"><i lang="it">lo intercedere</i>.</span> &quot;Interceding&quot;: the tribune&#x27;s veto, <i lang="it">intercessio</i>, by which one tribune could stop almost any act of a magistrate or the senate.</p>
+<p><span class="lem"><i lang="it">che paressi a ciascuno di loro</i>.</span> &quot;That should seem [fit] to each of them&quot;: any tribune could summon a citizen to trial before the people.</p>
+<p><span class="lem"><i lang="it">intese</i>.</span> &quot;Understood&quot;: the powers were not read into the tribunes&#x27; first institution, but came later, by usurpation or by widening the interpretation of the law. <i lang="it">Creati</i> is masculine: it is the tribunes who were created by that law, and the English supplies them in brackets.</p>
+<p><span class="lem"><i lang="it">in mezzo tra &#x27;l senato e la plebe</i>.</span> &quot;In the middle between the senate and the plebs&quot;: Guicciardini restates Machiavelli&#x27;s <i lang="it">mezzi</i>, &quot;intermediaries&quot;, as a place, and reverses the order of the two bodies. Canestrini&#x27;s note quotes Machiavelli&#x27;s clause. The tribunes were no middle: they tempered one side.</p>
+<p><span class="lem"><i lang="it">temperamento</i>.</span> &quot;A tempering&quot;: the tribunes moderated the nobles&#x27; power, as I.12&#x27;s <i lang="it">complessione temperata</i> is a tempered complexion.</p>
+<p><span class="lem"><i lang="it">e converso</i>.</span> Latin, &quot;conversely&quot;.</p>
+<p><span class="lem">The close.</span> Canestrini prints a full stop after <i lang="it">plebe</i>, and the English ends with one.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="colophon">
+    <div class="row">
+      <div>
+        <h3>What this is</h3>
+        <p>A free, openly licensed, bilingual edition of Guicciardini's 39 <i>Considerazioni</i> and the
+          <i>Discorsi</i> chapters they answer — 78 text units, Italian and English facing, every reading
+          traceable to a named public-domain witness.</p>
+        <p>It is a reading edition with a transparent apparatus, not a text of record. It does not adjudicate
+          the critical text against Bausi 2001 or the manuscript tradition, and does not claim to.</p>
+      </div>
+      <div>
+        <h3>On the title</h3>
+        <p>Machiavelli had been dead two years when Guicciardini wrote; the <i>Discorsi</i> were unpublished,
+          and the <i>Considerazioni</i> stayed unprinted until 1857. Machiavelli never answers.</p>
+        <p>“Conversation” is a quotation, not a description. It invokes Machiavelli's letter to Vettori of
+          10 December 1513, where he changes into court dress at evening, enters the antique courts of ancient
+          men, and reports that <i>they, in their humanity, answer me</i>. Guicciardini does to Machiavelli
+          what Machiavelli did to Livy — and is denied the reply Machiavelli claimed.</p>
+      </div>
+      <div>
+        <h3>Method</h3>
+        <p>No image-derived reading enters the text on a single reading. Each unit is transcribed twice,
+          independently, by readers who have not seen each other's work; disagreements are adjudicated against
+          the page images and recorded.</p>
+        <p>Existing English translations of the <i>Considerazioni</i> — Grayson (1965), Atkinson &amp; Sices
+          (2002) — are never used as translation inputs.</p>
+      </div>
+      <div>
+        <h3>Licence</h3>
+        <p>The established Italian text and the apparatus data are dedicated to the public domain under
+          <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>. They are Machiavelli's and
+          Guicciardini's sentences, and this edition adds no condition to them.</p>
+        <p>The English translation, the notes and the editorial apparatus are licensed
+          <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: reuse them anywhere, including
+          commercially, with attribution to David McDougall and this edition. The build tooling is MIT.</p>
+        <p>The witness scans are other people's digitisations, included as evidence under their own terms; no
+          grant is made over them, and no page image of Palmarocchi 1933 is reproduced here. Full terms,
+          layer by layer, are in the <span class="sig">LICENSE</span> file in the repository.</p>
+      </div>
+    </div>
+
+    <div class="state">
+      <p><strong>Version 0.3 · 5 of 39 pairs published.</strong>
+        This edition is versioned, not frozen. Some translation questions on this pair are still open.</p>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
