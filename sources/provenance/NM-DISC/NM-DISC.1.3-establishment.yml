@@ -1,0 +1,23 @@
+source_unit_id: NM-DISC.1.3
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA  # pending: held extract is the wrong chapter
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-003
+passes:
+  - {id: A, performed: 2026-09-29, file: sources/coldpass/NM-DISC.1.3-passA.md}
+  - {id: B, performed: 2026-09-29, file: sources/coldpass/NM-DISC.1.3-passB.md, note: "subagent; page images only, separate directory"}
+collation: sources/coldpass/COLLATION-2026-09-29-I3.md
+collation_result: "387 words. No token difference after Class A."
+boundaries: "printed pp. 24-25; one block; CAPITOLO IV begins p. 26"
+interventions: []
+not_carried:
+  - locus: "quella loro. superbia"
+    note: "A point-like mark mid-clause, no capital following; both passes independently mark it as a probable blemish."
+comparison_collation: >
+  Pending. The 1554 extract held for this unit (zero-based pp. 64-66 of
+  discorsidinicolo00mach) is chapter VII, on accusations and Piero
+  Soderini. The early-chapter 1554 locator is wrong by several chapters and
+  needs re-extraction, as for I.1 and I.2.
+normalisation_notes: "Class A only: accents (`nè` → `né`, `sè` → `sé`), elision spacing (`dell' animo`, `l' offendevano`, `tutt' i`)."

@@ -1,0 +1,29 @@
+source_unit_id: FG-CONS.1.3
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+- id: FG-CONS-I3-D001
+  locator: FG-CONS.1.3.01
+  class: emendation
+  witness_1857: E posto troppo assolutamente
+  witness_1933: È posto troppo assolutamente
+  established: "[È] posto (provisional, O19)"
+  publish_as_variant_note: true
+  rationale: 'Canestrini prints `E`, the conjunction, and the opening period then has no finite verb.
+    The 1933 edition''s `È posto`, "it is laid down", gives Guicciardini''s opening judgment, and the
+    text is emended from it.'
+- id: FG-CONS-I3-D002
+  locator: FG-CONS.1.3.02
+  class: punctuation
+  witness_1857: "di loro — Le quali"
+  witness_1933: "di loro. Le quali"
+  established: "di loro. — Le quali"
+  publish_as_variant_note: false
+  rationale: Canestrini marks the turn with a dash; the stop before it is supplied from the 1933 edition (C002).
+- id: FG-CONS-I3-D003
+  locator: FG-CONS.1.3.01-02
+  class: systematic_orthographic_profile
+  witness_1857: "Canestrini's `il`, `populo`, `periculo`, `remedio`, `premii`, `comodi`, `potenza`, `licenza`, `mostro`, `adunque`"
+  witness_1933: "Palmarocchi's `el`, `popolo`, `pericolo`, `rimedio`, `premi`, `commodi`, `potenzia`, `licenzia`, `monstro`, `adunche`, heavier pointing"
+  established: witness_1857
+  rationale: Canestrini governs throughout. No other difference of word or sense.

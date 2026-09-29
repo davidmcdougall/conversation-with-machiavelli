@@ -1,0 +1,41 @@
+source_unit_id: FG-CONS.1.3
+status: accepted_pending_rulings  # O17, O18, O19
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S1
+relationship_pointer: FG-CONS-DR-003
+responds_to: NM-DISC.1.3
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. Canestrini's own footnotes are editorial and are not carried."
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38); errors are emended from Palmarocchi and bracketed (D68)."
+passes:
+  - {id: A, performed: 2026-09-29, file: sources/coldpass/FG-CONS.1.3-passA.md}
+  - {id: B, performed: 2026-09-29, file: sources/coldpass/FG-CONS.1.3-passB.md, note: "subagent; page images only, separate directory"}
+collation: sources/coldpass/COLLATION-2026-09-29-I3.md
+collation_result: >
+  441 words. No clause or sense disagreement. Two word-level splits on
+  scan-damaged letters (facoltà/facultà, a/e' tribuni) escalated as O17, O18.
+  One stop split at a note reference, closed by D40.
+witness_independence_check: >
+  SCOPE §7. At the three split loci pass A sides with Palmarocchi at none,
+  pass B at all three. Recorded, not a provenance finding: B had Canestrini
+  images only, and each locus is a damaged letter a reader must choose from
+  sense. See the collation.
+boundaries: "printed pp. 10-12; two printed paragraphs, first-line indent at `La causa dello eleggere`"
+interventions:
+  - id: FG-CONS-I3-C001
+    operation: witness_correction
+    locator: FG-CONS.1.3.01
+    locus: "non sono cattivi È vero"
+    after: "non sono cattivi. È vero"
+    evidence: "Canestrini's note reference stands at the stop; pass B sees a faint point, pass A none. D40. Palmarocchi 1933 p. 8 prints the stop."
+  - id: FG-CONS-I3-C002
+    operation: witness_correction
+    locator: FG-CONS.1.3.02
+    locus: "di loro — Le quali"
+    after: "di loro. — Le quali"
+    evidence: "Sentence break with capital; neither pass sees a point before Canestrini's dash. Palmarocchi 1933 p. 9 prints the stop (and no dash). D67. The dash is Canestrini's and is kept."
+emendations:
+  - {id: FG-CONS-I3-E001, operation: emendation, rule: D68, status: provisional_pending_O19, locator: FG-CONS.1.3.01, printed: "E posto troppo assolutamente", established: "[È] posto troppo assolutamente", source: WIT-FG-CONS-1933-PALMAROCCHI, note: "As printed the opening period has no finite verb."}
+not_supplied: []
+normalisation_notes: "Class A: accents; `e savii`, `e patrizii`, `e comodi`, `e tribuni` → `e'` (D35); `tra'l` → `tra 'l`. Canestrini's two footnotes are his, not Guicciardini's, and are not carried."
