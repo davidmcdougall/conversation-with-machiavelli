@@ -1,0 +1,22 @@
+source_unit_id: NM-DISC.1.4
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA  # pending: held extract is the wrong chapter
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-004
+passes:
+  - {id: A, performed: 2026-09-29, file: sources/coldpass/NM-DISC.1.4-passA.md}
+  - {id: B, performed: 2026-09-29, file: sources/coldpass/NM-DISC.1.4-passB.md, note: "subagent; page images only, separate directory"}
+collation: sources/coldpass/COLLATION-2026-09-29-I4.md
+collation_result: "617 words. One token difference after Class A, a stray point both passes call a blemish."
+boundaries: "printed pp. 26-28; one block; CAPITOLO V begins p. 29"
+interventions: []
+not_carried:
+  - locus: "cose, .o e' non"
+    note: "A point-like mark set low before `o`, after the comma; mid-clause, no capital following. Both passes call it a blemish."
+comparison_collation: >
+  Pending. The 1554 extract held for this unit (zero-based pp. 65-67) is the
+  close of chapter VII (accusations, Arruns of Chiusi), one leaf on from I.3. The early-chapter 1554
+  locator is wrong and needs re-extraction, as for I.1-I.3.
+normalisation_notes: "Class A only: accents (`perchè` → `perché`, `nè` → `né`, `benchè` → `benché`), elision spacing (`da'Tarquinj` → `da' Tarquinj`, `l' ambizione`, `d' avere`, `s' ingannano` solid). `seguìto` kept: the accent distinguishes it from `seguito`."

@@ -1,0 +1,43 @@
+source_unit_id: FG-CONS.1.4
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+- id: FG-CONS-I4-D001
+  locator: FG-CONS.1.4.01
+  class: reading
+  witness_1857: "nuova leggi, as the letter prints"
+  witness_1933: nuove legge
+  established: nuove
+  publish_as_variant_note: true
+  rationale: "The printed letter is a-shaped on a scan that loses the bar of e throughout (`plabe`, `aletti` in the same reply), and `nuova leggi` does not agree. Read as `nuove`, with the 1933 edition."
+- id: FG-CONS-I4-D002
+  locator: FG-CONS.1.4.02
+  class: reading
+  witness_1857: al quale ancora speravano
+  witness_1933: al quale ancora loro speravano
+  established: witness_1857
+  publish_as_variant_note: true
+  rationale: "The 1933 edition supplies the subject; same sense."
+- id: FG-CONS-I4-D003
+  locator: FG-CONS.1.4.03
+  class: reading
+  witness_1857: quanto a quelli ordini
+  witness_1933: dico quanto a quelli ordini
+  established: witness_1857
+  publish_as_variant_note: true
+  rationale: "The 1933 edition has `dico`, making the second `quanto` a restatement."
+- id: FG-CONS-I4-D004
+  locator: FG-CONS.1.4.02
+  class: reading
+  witness_1857: "tra' patrizii e e' plebei"
+  witness_1933: tra patrizi e plebei
+  established: witness_1857
+  publish_as_variant_note: false
+  rationale: "Canestrini doubles the article; no difference of sense."
+- id: FG-CONS-I4-D005
+  locator: FG-CONS.1.4.01-03
+  class: systematic_orthographic_profile
+  witness_1857: "Canestrini's `il`, `adunque`, `comodi`, `potenza`, `periculo`, `esperienza`, `armi`, `arti`, `disunioni`, `ragioni`, heavier pointing at `magistrato:` and `governo;`"
+  witness_1933: "Palmarocchi's `el`, `adunche`, `commodi`, `potenzia`, `pericolo`, `esperienzia`, `arme`, `arte`, `disunione` (pl.), `ragione` (pl.), commas"
+  established: witness_1857
+  rationale: Canestrini governs throughout.
