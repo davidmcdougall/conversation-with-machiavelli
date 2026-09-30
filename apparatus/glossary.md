@@ -194,3 +194,25 @@ last sentence answers Machiavelli's first move.
 | `Nobili` / `Nobiltà` | nobles / nobility | NM I.3; FG I.3 `nobiltà`, `nobili`. |
 | `premii` / `pene` | rewards / penalties | FG I.3. |
 | `pericolo` / `periculo` | danger | NM I.2, I.3; FG I.2, I.3. |
+
+
+## Added from the I.4 pair (2026-09-29)
+
+| Italian | English | Note |
+|---|---|---|
+| `tumulto`, `tumultuario`, `tumultuariamente` | tumult, tumultuary, tumultuously | NM I.4 throughout; one root kept. |
+| `rade volte` / `rare volte`; `radissime` | seldom; very seldom | D97. NM I.4 ×3, FG I.4. FG I.3 `anzi rare volte` keeps "at rare times" (D90). |
+| `pertanto` | on that account | D98. Apart from `però` (therefore) and `adunque` (then). |
+| `dannare` | condemn | D99. `condannare in danari` → fine. |
+| `umore` / `umori` | humour / humours | NM I.4: the two humours of every republic. |
+| `laude`, `laudare`, `laudabile` | praise, praise, laudable | NM I.4 `somma laude`; FG I.4 `laudare` ×3, `laudabili`. |
+| `nocivo`; `nocumento`, `nuocere` | harmful; harm, do harm | D106. NM `nocivi`; FG `nocumento`, `noceva`. |
+| `danno`, `dannoso` | damage, damaging | D106. FG I.4. |
+| `rimedio` / `remedio` | remedy | NM I.4 (harangues), FG I.3, I.4. The word echoes across the pair; the thing does not. |
+| `difetto` / `difetti` | defect / defects | NM I.4 .01, FG I.4 .03: Guicciardini's close answers Machiavelli's opening. |
+| `milizia` | soldiery | D60 extended: NM I.4 "fortune and soldiery", "good soldiery". |
+| `massime` | above all | NM I.4, FG I.4. |
+| `cedere` | yield | NM I.4 `cedono`, FG I.4 `cedessino`. |
+| `infermo` / `infermità` | sick man / sickness | FG I.4; one root. |
+| `ordinazione` | ordering | D109. With `ordine`, `ordinare`, `ordinatore`. |
+| `esemplo` / `esempio` | example | NM I.4 `esempj`; FG I.4 `per esemplo` → for an example. |

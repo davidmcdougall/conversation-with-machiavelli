@@ -48,3 +48,7 @@ the original.
 | `Tarquinio Superbo` | Tarquinius Superbus | FG I.2 |
 | `Viniziani`, `viniziano` | Venetians, Venetian | FG I.2 |
 | `Tarquinj` | Tarquins | NM I.3; the house of Tarquinius Superbus |
+| `Gracchi` | Gracchi | NM I.4; Tiberius and Gaius Gracchus |
+| `Tullio` | Tully | NM I.4; Cicero, named by his nomen, as Machiavelli names him. Noted (D103) |
+| `Servio Tullio` | Servius Tullius | FG I.4 as FG I.2 |
+| `Appio Claudio` | Appius Claudius | FG I.4; Attus Clausus, noted |

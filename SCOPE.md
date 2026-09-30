@@ -305,6 +305,7 @@ clock; David's own time is the rulings, counted separately.
 | I.14 (603 + 66 words) | 9 | 2 | 2 | 6 | 3 | 2 | 24 | 1 ruling (D48) |
 | I.1 (1,291 + 597 words) | 7 | 2 | 2 | 9 | 4 | 3 | 27 | 2 open items (O15, O16); NM not collated against 1554 |
 | I.3 (387 + 441 words) | 6 | 2 | 3 | 5 | 3 | 2 | ~25 (stages approximate) | 3 open items (O17–O19); NM not collated against 1554 |
+| I.4 (617 + 647 words) | 12 | 3 | 8 | 12 | 6 | 3 | ~45 (stages approximate) | 1 open item (O20); NM not collated against 1554; one FG cold reader discarded for a 200 ppi render |
 
 ---
 

@@ -83,6 +83,34 @@ he turns to the tribunes and takes away the middle place Machiavelli gives
 them. A translation that makes him an optimist answering a pessimist, or makes
 the second paragraph a separate topic, has lost the reply.
 
+## Machiavelli, NM-DISC.1.4
+
+**A defence against an opinion, built as a chain.** The tumults kept Rome
+free → because laws for liberty arise from the disunion of the two humours →
+and cost almost no blood → and good examples come from education, education
+from laws, laws from the tumults. The chain `nascono ... dalla ... dalle ...
+da quelli tumulti` must stay a chain, each link's verb carried by the first.
+The objection (`E se alcuno dicesse`) is quoted and answered inside one
+period; it must not be broken off as a separate voice.
+
+**The concession is to fortune, not to *virtù*.** He grants that fortune and
+soldiery made the rule, and turns it: good soldiery presupposes good order.
+Guicciardini's last sentence gives the opinion back its point.
+
+## Guicciardini, FG-CONS.1.4
+
+**He moves the cause back one step.** Machiavelli says the disunion made Rome
+free; Guicciardini says the disunion had a cause, the shutting of the plebs
+out of the honours, which a better founding would not have had. The
+counterfactual period of .01 (`se ... non nascevano ... non arebbe ... né
+sarebbe`) states what would have been, not what was, and must stay
+counterfactual. The simile of the sick man is its landing: the remedy was
+good, the sickness was not.
+
+**He ends by conceding what Machiavelli refused.** Military discipline and its
+*virtù* sustained the other defects — the "many" of NM .01, whose opinion
+Machiavelli set out to answer. The echo is `virtù` and `difetti` in both.
+
 ## The pair
 
 Machiavelli argues towards a demonstration. Guicciardini declines to be

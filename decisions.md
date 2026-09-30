@@ -112,6 +112,21 @@ This log becomes the translator's preface.
 | D95 | FG I.3 `voluttà` | voluptuousness | Cold review proposed "pleasure"; not taken. Ambition and avarice are dispositions, and the list stays a list of vices. |
 | D96 | FG I.3 title | "Too absolutely" | Cold review: "Whether all men are bad" framed a yes/no quarrel; the objection is to the claim's absoluteness. Standfirst corrected: the wise order against the occasions for ill, not against a bad few. |
 
+| D97 | NM I.4 `rade volte` ×3, `radissime`; FG I.4 `rare volte` | seldom; very seldom | Cold review: "at rare times" read as costume for an ordinary adverb. FG I.3 `anzi rare volte` keeps "at rare times": D90 chose it so the phrase could not fall under "cannot". |
+| D98 | NM I.4 `pertanto` | on that account | Cold review: "therefore" is `però`'s (D22) and "then" `adunque`'s (D74). |
+| D99 | NM I.4 `dannano` ×2 / `condannò in danari` | condemn / fined | Keeps "condemn" for the tumults' critics; "condemned in money" was a calque. |
+| D100 | NM I.4 `che dicono, Roma essere stata` | "who say that Rome was" | Cold review: the Latin accusative with infinitive does not survive into English; exposition, so D19. |
+| D101 | NM I.4 `suspizione d'avere a essere oppressi` | suspicion of having to be oppressed | Cold review must-fix: the draft's "about to" is `essere per`'s (D45). D61's "be to" cannot take the passive twice ("being to be"); recorded as the one exception. |
+| D102 | NM I.4 `che surga qualche uomo da bene, che orando dimostri` | "that some good man rise who, by oration, may demonstrate" | Cold review: both verbs subjunctive, so neither is stated as fact. `Orando` is the verb of `concioni` (harangues). |
+| D103 | NM I.4 `Tullio` | Tully, noted as Cicero | Machiavelli's name for him; established older English. Note gives *On Friendship* 25.95. |
+| D104 | NM I.4 `inordinata`, `inconsideratamente`, `efferati` | unordered, inconsiderately, savage | `inordinata` in the `ordine` family; `inconsideratamente` answers `considerino`. |
+| D105 | FG I.4 `comunicati gli onori, era comunicata la potenza` | "the honours communicated, the power was communicated" | Cold review judgement, kept: an entailment stated as a rule (to share honours is to share power), not a link in the counterfactual chain. D47 governs `non nascevano` in the same period. |
+| D106 | FG I.4 `nocumento`, `noceva` / `danno`, `dannose`; NM `nocivi` | harm, did harm / damage, damaging; harmful | Two roots, two English words; the `nuocere` family crosses the pair. |
+| D107 | FG I.4 `girandole` | whirligigs, noted | Literal, and keeps the derision a neutral "contrivances" lost (cold review). Canestrini and the 1933 edition both print it. |
+| D108 | Cold-review fixes, FG I.4 | `me ne passerò con brevità` "pass through it with brevity" (not "pass over", which omits); no supplied "of this"; `negli ultimi tempi` "the latter times"; `che non si doveva` "than was due"; `ancora speravano` "yet hoped"; `per esemplo` "for an example"; the simile without added commas | Reviewer 2026-09-29. |
+| D109 | FG I.4 `ordinazione`; `il non levare ... le cause` | ordering; "the not removing ... of the causes" | `ordine` family. The nominal infinitive kept, set against `il rimedio`. |
+| D110 | Pointing whose weight neither cold reader can make out (FG I.4) | where both readers see a mark, the 1933 edition breaks the tie; where it prints none, the lighter reading stands (D65) | First applied at seven FG I.4 loci; see the I.4 collation. A mark both readers read alike is kept even against the 1933 edition (`magistrato:`, `governo;`). |
+
 ## Closed
 
 The **Deferred to the DEC-009 rewrite** table is closed. N01, N02 and N03 are
@@ -188,5 +203,6 @@ counterfactual.
 | O17 | FG I.3 .01 `etiam avendo ___ di fare male`: `facoltà` (pass A) or `facultà` (pass B, 1933)? | **Recommend `facultà`.** Same word, same English ("capacity"). The scan breaks u into n-shapes throughout, and the same unit prints `facultà del fare male` clearly on p. 11. Carried provisionally. |
 | O18 | FG I.3 .02 `lo eleggere ___ tribuni`: printed shape `a`; pass B `e'`; 1933 `e'` | **Recommend `e'`.** The scan prints `ara` for `era` twice in the same paragraph; the unit prints `e tribuni` two sentences later; `eleggere` takes a direct object throughout. English "choosing the tribunes" either way. Carried provisionally. |
 | O19 | FG I.3 .01 opening `E posto troppo assolutamente`: emend to `[È]` under D68? | **Recommend emending.** As printed, the first period has no finite verb. Canestrini accents `È vero` and `È adunque` in the same reply, so this is not the house habit of unaccented capitals. Borderline because a reader can hear an elliptical copula after "And". Carried provisionally as `[È]`; the English reads "It is laid down too absolutely". If you rule against, the English becomes "And [it is] laid down too absolutely" and nothing else moves. |
+| O20 | FG I.4 .01 `di proporre ___ leggi`: printed shape `nuova`; pass A `nuove`, pass B `nuova` (as printed); 1933 `nuove` | **Recommend `nuove`**, read as a damaged e: the scan prints barless e as a throughout (`plabe`, `aletti`, `avvartito` in this reply; `ara` in I.3), and `nuova leggi` does not agree. If you read the sort as a real a, D68 emends it to `nuov[e]`. English "new laws" either way. Carried provisionally. |
 
 *O01–O05 settled 2026-09-18. N01–N03 ruled 2026-09-21 as D33, D34, D36. O06, O07, O12, F002 ruled 2026-09-25 as D40–D42; O11 closed by D43. O13 ruled 2026-09-25 as D47. O15 closed by D68. O14 and O16 ruled 2026-09-28 as D69, D70.*
