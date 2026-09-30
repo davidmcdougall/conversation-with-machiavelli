@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Machiavelli defends Rome&#x27;s tumults: they cost little blood, every law made for liberty arose from the disunion of people and great, and the tumults gave Rome its tribunes. Guicciardini traces the disunion to a cause Rome could have avoided, the shutting of the plebs out of the honours. The remedy was good; the sickness need not have been, and praising the disunions is praising the sickness for the goodness of the remedy. What carried Rome, he grants, was its military discipline.">
+<style>*{box-sizing:border-box}body{margin:0;font:14px system-ui}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>A Conversation with Machiavelli — Praising the sickness</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root {
+  --paper:      #EDEEEC;
+  --paper-sunk: #E4E6E3;
+  --ink:        #1B1E1C;
+  --ink-muted:  #5C625E;
+  --ink-faint:  #868C87;
+  --rule:       #C9CDC8;
+  --rule-faint: #DCDFDB;
+  --nm:         #3A5A6B;
+  --fg:         #6E5A3C;
+  --serif: "EB Garamond", "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  --sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --mono:  "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:      #161917;
+    --paper-sunk: #1D211E;
+    --ink:        #E3E6E1;
+    --ink-muted:  #A0A6A0;
+    --ink-faint:  #767C77;
+    --rule:       #343934;
+    --rule-faint: #262B27;
+    --nm:         #8FB4C6;
+    --fg:         #C4A97C;
+  }
+}
+:root[data-theme="dark"] {
+  --paper:      #161917;
+  --paper-sunk: #1D211E;
+  --ink:        #E3E6E1;
+  --ink-muted:  #A0A6A0;
+  --ink-faint:  #767C77;
+  --rule:       #343934;
+  --rule-faint: #262B27;
+  --nm:         #8FB4C6;
+  --fg:         #C4A97C;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 1160px; margin: 0 auto; padding-inline: 20px; padding-block: 0 0; }
+
+/* ---- masthead ---- */
+.masthead { padding-block: 56px 32px; border-bottom: 1px solid var(--rule); }
+.eyebrow {
+  font-family: var(--sans); font-size: 11px; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint);
+  margin: 0 0 18px;
+}
+h1 {
+  font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 5vw, 44px);
+  line-height: 1.12; margin: 0 0 14px; text-wrap: balance; letter-spacing: -0.01em;
+}
+h1 .sub { display: block; font-style: italic; color: var(--ink-muted); font-size: .52em; margin-top: 12px; letter-spacing: 0; }
+.standfirst {
+  font-family: var(--sans); font-size: 14.5px; line-height: 1.6;
+  color: var(--ink-muted); max-width: 62ch; margin: 0;
+}
+
+/* ---- the pairing device ---- */
+.pairing {
+  display: flex; align-items: stretch; gap: 0; margin: 30px 0 0;
+  border: 1px solid var(--rule); border-radius: 2px; overflow: hidden;
+  font-family: var(--sans); background: var(--paper-sunk);
+}
+.pairing > div { flex: 1 1 0; padding: 13px 16px; min-width: 0; }
+.pairing .who { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
+.pairing .nm-side .who { color: var(--nm); }
+.pairing .fg-side .who { color: var(--fg); }
+.pairing .what { font-size: 13.5px; color: var(--ink-muted); }
+.pairing .arrow {
+  flex: 0 0 auto; display: flex; align-items: center; justify-content: center;
+  padding-inline: 14px; color: var(--ink-faint); font-size: 15px;
+  border-inline: 1px solid var(--rule);
+}
+
+/* ---- pair-to-pair navigation ---- */
+.pairnav {
+  display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+  margin-top: 18px; font-family: var(--sans); font-size: 12.5px;
+  color: var(--ink-muted);
+}
+.pairnav a { text-decoration: none; color: var(--ink-muted); }
+.pairnav a:hover, .pairnav a:focus { color: var(--ink); text-decoration: underline; }
+
+/* ---- work sections ---- */
+.work { padding-block: 52px 0; }
+.work-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
+.work-head .tag {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .04em;
+  padding: 3px 7px; border-radius: 2px; color: var(--paper);
+}
+.work.nm .tag { background: var(--nm); }
+.work.fg .tag { background: var(--fg); }
+h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; letter-spacing: -0.005em; }
+.rubric {
+  font-style: italic; color: var(--ink-muted); max-width: 70ch;
+  margin: 10px 0 0; font-size: 16.5px; line-height: 1.5;
+}
+.rubric-note {
+  font-family: var(--sans); font-style: normal; font-size: 12px;
+  color: var(--ink-faint); margin-top: 7px;
+}
+.colheads {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  margin-top: 30px; padding-bottom: 7px; border-bottom: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint);
+}
+
+/* ---- the facing pair ---- */
+.pair {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  padding-block: 22px; border-bottom: 1px solid var(--rule-faint);
+  scroll-margin-top: 20px;
+}
+.pair:target { background: var(--paper-sunk); }
+.annot { grid-column: 2 / -1; margin-top: 14px; font-family: var(--sans); font-size: 13.5px;
+  line-height: 1.55; color: var(--ink-muted); }
+.annot summary { cursor: pointer; font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); list-style: none; }
+.annot summary::-webkit-details-marker { display: none; }
+.annot summary::before { content: "+ "; }
+.annot[open] summary::before { content: "− "; }
+.annot p { margin: 8px 0 0; max-width: 72ch; }
+.annot .xref { color: inherit; text-decoration: underline; text-decoration-color: var(--rule);
+  text-underline-offset: 2px; white-space: nowrap; }
+.gutter { padding-top: 4px; }
+.uid {
+  font-family: var(--mono); font-size: 10.5px; color: var(--ink-faint);
+  text-decoration: none; letter-spacing: -0.02em;
+}
+.uid:hover, .uid:focus { color: var(--ink); text-decoration: underline; }
+.col { min-width: 0; }
+.col.it { hyphens: auto; }
+.col.en { }
+.supplied { color: var(--ink-muted); }
+
+/* ---- apparatus ---- */
+.apparatus {
+  margin-top: 34px; padding-top: 22px; border-top: 2px solid var(--rule);
+  font-family: var(--sans); font-size: 13.5px; line-height: 1.58;
+  color: var(--ink-muted);
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 26px 34px;
+}
+.apparatus h3 {
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); margin: 0 0 9px;
+}
+.apparatus p { margin: 0 0 9px; }
+.apparatus p:last-child { margin-bottom: 0; }
+.apparatus .lem { font-family: var(--serif); font-size: 15px; color: var(--ink); font-style: italic; }
+.sig { font-family: var(--mono); font-size: 12px; color: var(--ink); }
+
+/* ---- colophon ---- */
+.colophon {
+  margin-top: 60px; padding-block: 28px 60px; border-top: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 13px; line-height: 1.6; color: var(--ink-muted);
+}
+.colophon .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 34px; }
+.colophon h3 {
+  font-size: 10.5px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--ink-faint); margin: 0 0 8px;
+}
+.colophon p { margin: 0 0 8px; }
+.colophon ul { margin: 0; padding-left: 16px; }
+.colophon li { margin-bottom: 5px; }
+.state {
+  margin-top: 26px; padding: 14px 16px; background: var(--paper-sunk);
+  border-left: 2px solid var(--ink-faint); border-radius: 0 2px 2px 0;
+  font-size: 12.5px;
+}
+.state strong { color: var(--ink); font-weight: 600; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--nm); outline-offset: 2px; }
+
+/* ---- contents / index page ---- */
+.toc { margin-top: 30px; }
+.toc-row {
+  display: grid; grid-template-columns: 40px 1fr 1fr; gap: 0 20px;
+  padding-block: 14px; border-bottom: 1px solid var(--rule-faint);
+  font-family: var(--sans); align-items: baseline;
+}
+.toc-row .n { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
+.toc-row a { text-decoration: none; color: var(--ink); font-family: var(--serif); font-size: 16px; }
+.toc-row a:hover, .toc-row a:focus { text-decoration: underline; }
+.toc-row .unpublished { color: var(--ink-faint); font-style: italic; font-size: 14px; }
+.toc-row .ids { color: var(--ink-faint); font-size: 11.5px; font-family: var(--mono); }
+
+@media (max-width: 760px) {
+  body { font-size: 16.5px; }
+  .colheads { display: none; }
+  .pair { grid-template-columns: 1fr; gap: 0; padding-block: 20px; }
+  .gutter { padding-top: 0; margin-bottom: 8px; }
+  .annot { grid-column: 1; }
+  .col.it { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px dotted var(--rule); }
+  .col.it::before, .col.en::before {
+    display: block; font-family: var(--sans); font-size: 10px; font-weight: 600;
+    letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px;
+  }
+  .col.it::before { content: "Italian"; }
+  .col.en::before { content: "English"; }
+  .pairing { flex-direction: column; }
+  .pairing .arrow { border-inline: 0; border-block: 1px solid var(--rule); padding-block: 6px; }
+  .toc-row { grid-template-columns: 1fr; gap: 4px; }
+}
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow">A Conversation with Machiavelli · Pair 4 of 39</p>
+    <h1>Praising the sickness
+      <span class="sub">Discourses I.4, and Guicciardini&#x27;s reply</span></h1>
+    <p class="standfirst">Machiavelli defends Rome&#x27;s tumults: they cost little blood, every law made for liberty arose from the disunion of people and great, and the tumults gave Rome its tribunes. Guicciardini traces the disunion to a cause Rome could have avoided, the shutting of the plebs out of the honours. The remedy was good; the sickness need not have been, and praising the disunions is praising the sickness for the goodness of the remedy. What carried Rome, he grants, was its military discipline.</p>
+
+    <div class="pairing">
+      <div class="nm-side">
+        <div class="who">Niccolò Machiavelli</div>
+        <div class="what">Discorsi sopra la prima Deca di Tito Livio · written c. 1513–19, printed 1531</div>
+      </div>
+      <div class="arrow" aria-hidden="true">answered by</div>
+      <div class="fg-side">
+        <div class="who">Francesco Guicciardini</div>
+        <div class="what">Considerazioni intorno ai Discorsi del Machiavelli · written 1529–30, printed 1857</div>
+      </div>
+    </div>
+    <nav class="pairnav"><a href="1.3.html">← Pair 1.3</a><a href="../index.html">All 39 pairs</a><a href="1.12.html">Pair 1.12 →</a></nav>
+  </header>
+
+  <section class="work nm">
+    <div class="work-head">
+      <span class="tag">NM-DISC.1.4</span>
+      <h2>Capitolo IV</h2>
+    </div>
+    <p class="rubric">Che la disunione della Plebe e del Senato romano fece libera e potente quella Repubblica.</p>
+    <p class="rubric">That the disunion of the plebs and of the Roman senate made that republic free and powerful.</p>
+
+    <div class="colheads"><div></div><div>Italian · 1824</div><div>English</div></div>
+      <div class="pair" id="NM-DISC.1.4.01">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.4.01">1.4.01</a></div>
+        <div class="col it" lang="it">Io non voglio mancare di discorrere sopra questi tumulti che furono in Roma dalla morte dei Tarquinj alla creazione de&#x27; Tribuni; e di poi alcune altre cose contro la opinione di molti, che dicono, Roma essere stata una Repubblica tumultuaria, e piena di tanta confusione, che se la buona fortuna e la virtù militare non avesse supplito a&#x27; loro difetti, sarebbe stata inferiore ad ogni altra Repubblica. Io non posso negare, che la fortuna e la milizia non fussero cagioni dell&#x27;Imperio romano; ma e&#x27; mi pare bene che costoro non si avveggano, che dove è buona milizia conviene che sia buono ordine, e rade volte anco occorre, che non vi sia buona fortuna.</div>
+        <div class="col en" lang="en">I do not wish to fail to discourse upon these tumults that there were in Rome from the death of the Tarquins to the creation of the tribunes; and afterwards upon some other things against the opinion of many, who say that Rome was a tumultuary republic, and full of so much confusion that, if good fortune and military <i lang="it">virtù</i> had not supplied their defects, it would have been inferior to every other republic. I cannot deny that fortune and soldiery were causes of the Roman rule; but it indeed seems to me that these men do not perceive that where there is good soldiery it is fitting that there be good order, and seldom also does it occur that there is not good fortune.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The chapter answers an opinion: that Rome was tumultuary and confused, and that fortune and military <i lang="it">virtù</i> made up for its defects. Machiavelli grants fortune and soldiery a part in Rome&#x27;s rule and then turns the concession: good soldiery presupposes good order, and where there is good order good fortune seldom fails. Guicciardini ends his reply by granting the opinion its military half <a class="xref" href="#FG-CONS.1.4.03">Guicciardini .03</a>.</p>
+<p><span class="lem">History.</span> The span first announced, from the death of the Tarquins to the creation of the tribunes, is short: some fifteen years in the tradition (509–494 BC). In .02 the argument widens to the whole period from the Tarquins to the Gracchi.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.4.02">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.4.02">1.4.02</a></div>
+        <div class="col it" lang="it">Ma vegniamo agli altri particolari di quella città. Io dico, che coloro che dannano i tumulti tra i Nobili e la Plebe, mi pare che biasimino quelle cose che furono prima cagione di tenere libera Roma, e che considerino più a&#x27; romori ed alle grida che di tali tumulti nascevano, che a&#x27; buoni effetti che quelli partorivano; e che non considerino, come e&#x27; sono in ogni Repubblica duoi umori diversi, quello del Popolo, e quello de&#x27; Grandi; e come tutte le leggi che si fanno in favore della libertà, nascono dalla disunione loro, come facilmente si può vedere essere seguìto in Roma; perché da&#x27; Tarquinj ai Gracchi, che furono più di trecento anni, i tumulti di Roma rade volte partorivano esilio, e radissime sangue. Né si possono pertanto giudicare questi tumulti nocivi, né una Repubblica divisa, che in tanto tempo per le sue differenze non mandò in esilio più che otto o dieci cittadini, e ne ammazzò pochissimi, e non molti ancora condannò in danari.</div>
+        <div class="col en" lang="en">But let us come to the other particulars of that city. I say that those who condemn the tumults between the nobles and the plebs, it seems to me that they blame those things that were the first cause of keeping Rome free, and that they consider more the uproars and the cries that arose from such tumults than the good effects that they brought forth; and that they do not consider how there are in every republic two diverse humours, that of the people and that of the great; and how all the laws that are made in favour of liberty arise from their disunion, as can readily be seen to have come about in Rome; for from the Tarquins to the Gracchi, which was more than three hundred years, the tumults of Rome seldom brought forth exile, and very seldom blood. Nor on that account can these tumults be judged harmful, nor a republic divided, which in so much time, through its differences, sent into exile no more than eight or ten citizens, and killed very few of them, and fined not many either.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The claim. Every republic holds two humours, the people&#x27;s and the great&#x27;s, and the laws made for liberty arise from their disunion. Those who condemn the tumults are counting the noise and not the effects. The evidence is how little the tumults cost: in more than three hundred years, eight or ten citizens exiled, very few killed, not many fined.</p>
+<p><span class="lem">History.</span> From the expulsion of the Tarquins (509 BC in the tradition) to the tribunate of Tiberius Gracchus, killed in 133 BC. The count is Machiavelli&#x27;s own, and a low one: Livy&#x27;s early books also record the exile of Coriolanus and Camillus and the deaths of Spurius Cassius, Spurius Maelius and Marcus Manlius.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.4.03">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.4.03">1.4.03</a></div>
+        <div class="col it" lang="it">Né si può chiamare in alcun modo con ragione una Repubblica inordinata, dove siano tanti esempj di virtù, perché li buoni esempj nascono dalla buona educazione, la buona educazione dalle buone leggi, e le buone leggi da quelli tumulti, che molti inconsideratamente dannano; perché chi esaminerà bene il fine di essi, non troverà che egli abbiano partorito alcuno esilio o violenza in disfavore del comune bene, ma leggi ed ordini in benefizio della pubblica libertà.</div>
+        <div class="col en" lang="en">Nor can a republic be called unordered in any way with reason where there are so many examples of <i lang="it">virtù</i>, for good examples arise from good education, good education from good laws, and good laws from those tumults that many inconsiderately condemn; for whoever examines well their end will not find that they have brought forth any exile or violence to the disfavour of the common good, but laws and orders for the benefit of public liberty.</div>
+        <details class="annot"><summary>Commentary · 1</summary>
+          <p><span class="lem">Argument.</span> A chain, each link arising from the next: good examples from good education, good education from good laws, good laws from the tumults. The end of the tumults, examined, was laws and orders for liberty, not exile or violence against the common good.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.4.04">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.4.04">1.4.04</a></div>
+        <div class="col it" lang="it">E se alcuno dicesse: i modi erano straordinarj, e quasi efferati, vedere il Popolo insieme gridare contra il Senato, il Senato contra il Popolo, correre tumultuariamente per le strade, serrare le botteghe, partirsi tutta la Plebe di Roma, le quali tutte cose spaventano, non che altro, chi legge; dico come ogni città debbe avere i suoi modi, con i quali il Popolo possa sfogare l&#x27;ambizione sua, e massime quelle cittadi, che nelle cose importanti si vogliono valere del Popolo; tra le quali la città di Roma aveva questo modo, che quando quel Popolo voleva ottenere una legge, o e&#x27; faceva alcuna delle predette cose, o e&#x27; non voleva dare il nome per andare alla guerra, tanto che a placarlo bisognava in qualche parte soddisfargli. E i desiderj de&#x27; Popoli liberi, rade volte sono perniziosi alla libertà, perché e&#x27; nascono o da essere oppressi, o da suspizione d&#x27;avere a essere oppressi. E quando queste opinioni fussero false, e&#x27; vi è il rimedio delle concioni, che surga qualche uomo da bene, che orando dimostri loro, come e&#x27; s&#x27;ingannano; e li popoli, come dice Tullio, benché siano ignoranti, sono capaci della verità, e facilmente cedono, quando da uomo degno di fede è detto loro il vero.</div>
+        <div class="col en" lang="en">And if anyone should say: the ways were extraordinary, and almost savage, to see the people together crying out against the senate, the senate against the people, running tumultuously through the streets, shutting the shops, the whole plebs of Rome departing, all which things frighten, to say nothing of others, whoever reads; I say that every city must have its ways with which the people can vent its ambition, and above all those cities that wish to avail themselves of the people in important things; among which the city of Rome had this way, that when that people wished to obtain a law, either it did some of the aforesaid things, or it would not give its name to go to war, so that to placate it it was needful in some part to satisfy them. And the desires of free peoples are seldom pernicious to liberty, for they arise either from being oppressed or from suspicion of having to be oppressed. And if these opinions were false, there is the remedy of harangues, that some good man rise who, by oration, may demonstrate to them how they deceive themselves; and peoples, as Tully says, albeit they are ignorant, are capable of the truth, and readily yield when what is true is told them by a man worthy of faith.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> The objection is put in the reader&#x27;s mouth — the shouting, the shut shops, the plebs leaving the city — and answered inside the same period: every city, and above all one that means to use its people in great things, must give them ways to vent their ambition. Rome&#x27;s were the tumults just described, or refusing to enrol for war, until the people were in part satisfied. The desires of free peoples are seldom pernicious to liberty, since they arise from oppression or the fear of it; and where they are mistaken, a good man speaking to them can set them right.</p>
+<p><span class="lem">History.</span> The secessions of the plebs: to the Sacred Mount in 494 BC, which produced the tribunes, and again in 449 and 287 BC. Refusal of the military levy was the plebs&#x27; repeated lever in the early republic (Livy, book 2).</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini&#x27;s reply takes up the word <i lang="it">rimedio</i> for its own simile <a class="xref" href="#FG-CONS.1.4.02">Guicciardini .02</a> — the word, not the thing: Machiavelli&#x27;s remedy is the harangue, Guicciardini&#x27;s the concessions that answered the seditions.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.4.05">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.4.05">1.4.05</a></div>
+        <div class="col it" lang="it">Debbesi adunque più parcamente biasimare il Governo romano, e considerare che tanti buoni effetti, quanti uscivano di quella Repubblica, non erano causati se non da ottime cagioni. E se i tumulti furono cagione della creazione de&#x27; Tribuni, meritano somma laude; perché oltre al dare la parte sua all&#x27;amministrazione popolare, furono constituiti per guardia della Libertà romana, come nel seguente capitolo si mostrerà.</div>
+        <div class="col en" lang="en">One must, then, blame the Roman government more sparingly, and consider that so many good effects as came out of that republic were not caused except by very good causes. And if the tumults were the cause of the creation of the tribunes, they merit the highest praise; for, besides giving the popular administration its part, they were constituted as guard of Roman liberty, as will be shown in the following chapter.</div>
+        <details class="annot"><summary>Commentary · 1</summary>
+          <p><span class="lem">Argument.</span> The verdict: Rome&#x27;s government should be blamed more sparingly, since good effects need good causes; and if the tumults produced the tribunes, they deserve the highest praise, for the tribunes were the guard of Roman liberty. Guicciardini answers the praise of the tribunes in his first paragraph <a class="xref" href="#FG-CONS.1.4.01">Guicciardini .01</a>. The next chapter asks where that guard is better placed.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from the 1824 edition (<span class="sig">WIT-NM-DISC-1824-IA</span>), page-image-backed, which governs. Collated against the 1554 Giglio printing, Venice (<span class="sig">WIT-NM-DISC-1554-IA</span>), which is comparison evidence only.</p>
+<p>Paragraph divisions are editorial. The witness prints the chapter as one unbroken block.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p>No collation record for this pair yet.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem"><i lang="it">discorrere</i>.</span> &quot;To discourse&quot; (D01): Machiavelli&#x27;s opening verb, and Guicciardini&#x27;s in his last paragraph, where he declines to discourse on the rest of the Roman orders.</p>
+<p><span class="lem"><i lang="it">tumulti</i>, <i lang="it">tumultuaria</i>, <i lang="it">tumultuariamente</i>.</span> &quot;Tumults&quot;, &quot;tumultuary&quot;, &quot;tumultuously&quot;: one root through the chapter, kept, because the chapter is a defence of the word.</p>
+<p><span class="lem"><i lang="it">che dicono, Roma essere stata</i>.</span> The Italian has the Latin construction, the accusative with the infinitive; the English says &quot;who say that Rome was&quot;, since the Latin order does not survive into English (D19).</p>
+<p><span class="lem"><i lang="it">la virtù militare</i>.</span> &quot;Military <i lang="it">virtù</i>&quot;: the capacity that, on the many&#x27;s opinion, made up for Rome&#x27;s disorders. Guicciardini gives the opinion back at the end of his reply: the <i lang="it">virtù</i> of its military discipline &quot;sustained all the other defects&quot;.</p>
+<p><span class="lem"><i lang="it">a&#x27; loro difetti</i>.</span> &quot;Their defects&quot;: the Italian does not say whose, the Romans&#x27; or the republic&#x27;s.</p>
+<p><span class="lem"><i lang="it">milizia</i>.</span> &quot;Soldiery&quot;, as in I.1 (D60): the armed force and its order, not a citizen militia.</p>
+<p><span class="lem"><i lang="it">Imperio</i>.</span> &quot;Rule&quot; (glossary): the dominion Rome acquired, not the later empire.</p>
+<p><span class="lem"><i lang="it">conviene</i>.</span> &quot;It is fitting&quot; (D85): where the soldiery is good, the order must be good too.</p>
+<p><span class="lem"><i lang="it">occorre</i>.</span> &quot;It occurs&quot; (D01): the verb of Machiavelli&#x27;s <i lang="it">ragioni che mi occorrono</i> in I.12.</p>
+<p><span class="lem"><i lang="it">rade volte</i>, <i lang="it">radissime</i>.</span> &quot;Seldom&quot;, &quot;very seldom&quot;.</p>
+<p><span class="lem"><i lang="it">Io dico, che coloro ..., mi pare che biasimino</i>.</span> The sentence changes construction after its subject: &quot;those who condemn ..., it seems to me that they blame&quot;. Kept.</p>
+<p><span class="lem"><i lang="it">dannano</i>.</span> &quot;Condemn&quot;, twice. The fining of citizens, <i lang="it">condannò in danari</i>, is &quot;fined&quot;, so that &quot;condemn&quot; stays with the tumults&#x27; critics.</p>
+<p><span class="lem"><i lang="it">duoi umori diversi</i>.</span> &quot;Two diverse humours&quot;: the physician&#x27;s word for the dispositions of a body, here the body politic. <i lang="it">Popolo</i> and <i lang="it">Grandi</i> are &quot;the people&quot; and &quot;the great&quot;.</p>
+<p><span class="lem"><i lang="it">seguìto</i>.</span> &quot;Come about&quot;: the accent marks the participle of <i lang="it">seguire</i>, &quot;to follow&quot;, in its sense of taking place.</p>
+<p><span class="lem"><i lang="it">pertanto</i>.</span> &quot;On that account&quot;: kept apart from <i lang="it">però</i>, &quot;therefore&quot; (D22), and <i lang="it">adunque</i>, &quot;then&quot; (D74).</p>
+<p><span class="lem"><i lang="it">inordinata</i>.</span> &quot;Unordered&quot;: the negative of <i lang="it">ordine</i>, order, as <i lang="it">disordine</i> is disorder.</p>
+<p><span class="lem"><i lang="it">inconsideratamente</i>.</span> &quot;Inconsiderately&quot;: the critics do not consider (<i lang="it">considerino</i>) what the tumults bring forth.</p>
+<p><span class="lem"><i lang="it">efferati</i>.</span> &quot;Savage&quot;: wild, made fierce.</p>
+<p><span class="lem"><i lang="it">partirsi tutta la Plebe di Roma</i>.</span> The secessions of the plebs, when it left the city in a body.</p>
+<p><span class="lem"><i lang="it">non che altro, chi legge</i>.</span> &quot;To say nothing of others, whoever reads&quot;: the scenes frighten even a reader of them.</p>
+<p><span class="lem"><i lang="it">dare il nome</i>.</span> &quot;Give its name&quot;: enrol for military service. Refusing it was the plebs&#x27; strike.</p>
+<p><span class="lem"><i lang="it">a placarlo ... soddisfargli</i>.</span> &quot;To placate it ... to satisfy them&quot;: the Italian moves from the people as one body to its members, and so does the English.</p>
+<p><span class="lem"><i lang="it">d&#x27;avere a essere oppressi</i>.</span> &quot;Of having to be oppressed&quot;: the fear of a future oppression. <i lang="it">Avere a</i> is &quot;be to&quot; elsewhere (D61); here the English cannot take it twice over.</p>
+<p><span class="lem"><i lang="it">concioni</i>.</span> &quot;Harangues&quot;, as in FG I.2: speeches to the assembled people. <i lang="it">Orando</i>, &quot;by oration&quot;, is their verb.</p>
+<p><span class="lem"><i lang="it">uomo da bene</i>.</span> &quot;Good man&quot;: a man of standing and integrity.</p>
+<p><span class="lem">Tully.</span> Marcus Tullius Cicero, whom Machiavelli calls by his nomen, as older English did. The thought is in Cicero&#x27;s <i lang="it">On Friendship</i> (25.95): the assembly, made up of the most ignorant, can yet tell a demagogue from a serious man.</p>
+<p><span class="lem"><i lang="it">ottime</i>.</span> &quot;Very good&quot;: the elative of <i lang="it">buono</i>, as <i lang="it">pessimo</i> is &quot;very bad&quot;.</p>
+<p><span class="lem"><i lang="it">meritano somma laude</i>.</span> The subject runs on from the tumults, though what was constituted for the guard of liberty were the tribunes. The Italian is as elliptical as the English.</p>
+<p><span class="lem"><i lang="it">per guardia della Libertà romana</i>.</span> &quot;As guard of Roman liberty&quot;: the tribunes as the keepers of liberty, the subject of the next chapter, which asks where that guard is more securely placed.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work fg">
+    <div class="work-head">
+      <span class="tag">FG-CONS.1.4</span>
+      <h2>Considerazione sul capitolo IV</h2>
+    </div>
+    <p class="rubric">Che la disunione della plebe e del senato romano fece libera e potente quella repubblica</p>
+    <p class="rubric">That the disunion of the plebs and of the Roman senate made that republic free and powerful
+      <span class="rubric-note">Canestrini sets Machiavelli&#x27;s chapter title over the reply, without the capitals of the 1824 <i lang="it">Discorsi</i> and without a full stop.</span></p>
+
+    <div class="colheads"><div></div><div>Italian · 1857</div><div>English</div></div>
+      <div class="pair" id="FG-CONS.1.4.01">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.4.01">1.4.01</a></div>
+        <div class="col it" lang="it">Io ho altra volta scritto più largamente, però ora me ne passerò con brevità; ma dico in conclusione che la causa delle disunioni di Roma tra patrizii e plebei fu dallo essere divisi gli ordini della città, cioè che una parte fussino patrizii, l&#x27;altra plebei, e che tutti e&#x27; magistrati fussino de&#x27; patrizii, esclusa la plebe, e tolta a&#x27; plebei ogni speranza di potergli conseguire. Ché se da principio o non fussi stata questa distinzione tra patrizii e plebei, o se almanco si fussi data la metà degli onori alla plebe come si fece poi, non nascevano quelle divisioni, le quali non possono essere laudabili, né si può negare che non fussino dannose, se bene forse in qualche altra republica manco virtuosa arebbono fatto più nocumento; non arebbe la plebe desiderato la creazione de&#x27; tribuni, né sarebbe stato necessario quello magistrato: perché comunicati gli onori, era comunicata la potenza, né più periculo arebbe portato la libertà da&#x27; patrizii che da&#x27; plebei. Ed è certo che comunicati che furono gli onori, quello magistrato fu forse di più danno che di utile, e almanco negli ultimi tempi fu instrumento e colore a chi volle turbare la republica, e massime non si può a giudicio mio laudare in loro né la autorità di proporre nuove leggi, né di intercedere.</div>
+        <div class="col en" lang="en">I have at another time written more largely, therefore I shall now pass through it with brevity; but I say in conclusion that the cause of the disunions of Rome between patricians and plebeians was from the orders of the city being divided, that is, that one part were patricians, the other plebeians, and that all the magistracies were the patricians&#x27;, the plebs excluded, and every hope taken from the plebeians of being able to attain them. For if from the beginning either this distinction between patricians and plebeians had not been, or if at least half of the honours had been given to the plebs, as was done afterwards, those divisions would not have arisen, which cannot be laudable, nor can it be denied that they were damaging, although perhaps in some other republic less virtuous they would have done more harm; the plebs would not have desired the creation of the tribunes, nor would that magistracy have been necessary: for, the honours communicated, the power was communicated, nor would liberty have run more danger from the patricians than from the plebeians. And it is certain that, once the honours had been communicated, that magistracy was perhaps of more damage than of use, and at least in the latter times was instrument and colour to whoever wished to disturb the republic, and above all one cannot, in my judgment, praise in them either the authority of proposing new laws or of interceding.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> He moves the cause back a step. Machiavelli found liberty in the disunion <a class="xref" href="#NM-DISC.1.4.02">Machiavelli .02</a>; Guicciardini asks where the disunion came from, and finds it in a founding choice: the city was divided into patricians and plebeians and the plebs shut out of every magistracy. Had there been no such distinction, or had half the honours been given to the plebs from the start, as was done later, the divisions would not have arisen. They were damaging — though in a less virtuous republic they would have done more harm — and without them the plebs would not have wanted tribunes, and liberty would have run no more danger from one order than the other. Once the honours were shared, the tribunate was perhaps more harmful than useful, and at least in the latter times the instrument and pretext of those who would disturb the republic; its two great powers, proposing laws and the veto, he cannot praise.</p>
+<p><span class="lem">History.</span> Half the honours &quot;as was done afterwards&quot;: the Licinian-Sextian laws of 367 BC opened the consulship to plebeians, and other magistracies followed. The fuller treatment he says he wrote &quot;at another time&quot; is his earlier political writing; the translator&#x27;s note names the <i lang="it">Dialogo del reggimento di Firenze</i>.</p>
+<p><span class="lem">Cross-reference.</span> In I.3 he had already denied the tribunes the place Machiavelli gave them as intermediaries between plebs and senate.</p>
+        </details>
+      </div>
+      <div class="pair" id="FG-CONS.1.4.02">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.4.02">1.4.02</a></div>
+        <div class="col it" lang="it">Non fu adunque la disunione tra la plebe e il senato che facessi Roma libera e potente, perché meglio sarebbe stato se non vi fussino state le cagioni della disunione, né furono utili queste sedizioni, ma bene manco dannose che non sono state in molte altre città, e molto utile alla grandezza sua che e&#x27; patrizii più presto cedessino alla voluntà della plebe, che entrassino in pensare modo di non avere bisogno della plebe, ma laudare le disunioni è come laudare in uno infermo la infermità, per la bontà del remedio che gli è stato applicato. Questo disordine fu dalla origine di Roma, perché nel principio suo vi fu la distinzione tra&#x27; patrizii e e&#x27; plebei; ma sotto e&#x27; re non noceva, perché essendo la autorità ne&#x27; re, non poteva il senato per sé medesimo opprimere la plebe; e quello che non faceva il senato di pensare a&#x27; comodi, lo facevano e&#x27; re, etiam qualche volta più ambiziosamente che non si doveva, come si legge di Servio Tullio, e usavano ancora di eleggere talvolta de&#x27; plebei ne&#x27; patrizii, che faceva che gli altri tolleravano più facilmente quello grado al quale ancora speravano potere pervenire. Le quali ragioni tutte cessarono quando e&#x27; re furono cacciati, perché e&#x27; patrizii diventorono padroni della città e arbitri di ogni cosa, non aveva la plebe a chi fuggire, né chi pensassi a&#x27; comodi suoi, né e&#x27; capi della plebe più speranza di essere eletti ne&#x27; patrizii, perché da loro erano fastiditi come ignobili, e più presto eletti e&#x27; forestieri, come fu Appio Claudio. Né fu avvertito questo disordine nel cacciare e&#x27; re, pensando più gli uomini al male presente che era quello de&#x27; re, e perché chi non ha perizia grande delle cose publiche non le cognosce se non per esperienza; però rare volte, o forse non mai, è accaduto che una republica abbia avuto da principio la sua ordinazione perfetta. Fu adunque utile il rimedio che si pose alle sedizioni, ma non già utile il non levare da principio le cause che poi le feciono nascere.</div>
+        <div class="col en" lang="en">It was not, then, the disunion between the plebs and the senate that made Rome free and powerful, for it would have been better if the causes of the disunion had not been there, nor were these seditions useful, but indeed less damaging than they have been in many other cities, and it was very useful to its greatness that the patricians should rather yield to the will of the plebs than enter into thinking of a way of not having need of the plebs, but to praise the disunions is like praising in a sick man the sickness, for the goodness of the remedy that has been applied to him. This disorder was from the origin of Rome, for in its beginning there was the distinction between the patricians and the plebeians; but under the kings it did no harm, for, the authority being in the kings, the senate could not by itself oppress the plebs; and what the senate did not do, of thinking of the conveniences, the kings did, even at times more ambitiously than was due, as one reads of Servius Tullius, and they were accustomed also to choose at times some of the plebeians into the patricians, which made the others tolerate more readily that degree which they yet hoped to be able to reach. All which reasons ceased when the kings were driven out, for the patricians became masters of the city and arbiters of everything, the plebs had no one to flee to, nor anyone who should think of its conveniences, nor the heads of the plebs any more hope of being chosen into the patricians, for by them they were disdained as ignoble, and strangers were rather chosen, as was Appius Claudius. Nor was this disorder noticed in driving out the kings, men thinking more of the present ill, which was that of the kings, and because whoever has not great skill in public things does not know them except by experience; therefore seldom, or perhaps never, has it happened that a republic has had its ordering perfect from the beginning. Useful, then, was the remedy that was put to the seditions, but not indeed useful the not removing from the beginning of the causes that afterwards made them arise.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The denial is explicit, and it turns the chapter&#x27;s title back on it: it was not the disunion that made Rome free and powerful <a class="xref" href="#NM-DISC.1.4.02">Machiavelli .02</a>. He concedes what can be conceded — Rome&#x27;s seditions did less damage than other cities&#x27;, and the patricians did well to yield rather than find a way to do without the plebs — and then gives the reply its image: to praise the disunions is to praise a sick man&#x27;s sickness for the goodness of the remedy. The disorder was there from Rome&#x27;s beginning, but the kings held it harmless; it broke out when they were expelled, and no one noticed it then: men were thinking of the present ill, and those without great skill in public things learn them only by experience. So a republic has seldom, or perhaps never, had its ordering perfect from the beginning. The remedy was useful; failing to remove the causes was not.</p>
+<p><span class="lem">History.</span> Servius Tullius, sixth king, was remembered as the plebs&#x27; friend and the author of the census classes. Under the kings, plebeian families were at times enrolled among the patricians. After the expulsion, in the tradition 504 BC, the Sabine Attus Clausus — Appius Claudius — was received into the patriciate with his clients (Livy 2.16): Guicciardini&#x27;s instance of a stranger preferred over the plebs&#x27; own leaders.</p>
+        </details>
+      </div>
+      <div class="pair" id="FG-CONS.1.4.03">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.4.03">1.4.03</a></div>
+        <div class="col it" lang="it">Quanto alle altre parti del governo romano, quanto a quelli ordini che risguardano la forma del governo della republica, non voglio ora discorrere particularmente; ma non credo fussino tali che, chi avessi a ordinare una republica, gli dovessi pigliare per esemplo. Fu eccellentissima la disciplina militare, e la virtù sua sostenne tutti gli altri difetti del governo; e&#x27; quali importano manco in una città che si regge in sulle armi, che in quelle che si governano con la industria, con le girandole e con le arti della pace.</div>
+        <div class="col en" lang="en">As to the other parts of the Roman government, as to those orders that regard the form of the government of the republic, I do not wish now to discourse particularly; but I do not believe they were such that whoever were to order a republic ought to take them for an example. Most excellent was the military discipline, and its <i lang="it">virtù</i> sustained all the other defects of the government; which matter less in a city that governs itself upon arms than in those that govern themselves with industry, with whirligigs and with the arts of peace.</div>
+        <details class="annot"><summary>Commentary · 1</summary>
+          <p><span class="lem">Argument.</span> He will not discourse now on the rest of Rome&#x27;s orders, using Machiavelli&#x27;s verb from the chapter&#x27;s first line <a class="xref" href="#NM-DISC.1.4.01">Machiavelli .01</a>, and says only that he does not believe they were fit for a founder to copy. Then the concession that closes the reply: Rome&#x27;s military discipline was excellent, and its <i lang="it">virtù</i> sustained all the government&#x27;s other defects. That is the military half of the opinion Machiavelli set out to answer; of fortune Guicciardini says nothing. He adds the condition under which it holds: defects of government matter less in a city that governs itself by arms than in cities that live by industry, whirligigs and the arts of peace — which, from a Florentine, may be read as a glance at Florence; the text does not name it.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from Canestrini 1857, <i>Opere inedite</i> vol. 1, pp. 1–65 (<span class="sig">WIT-FG-CONS-1857-CANESTRINI</span>) — the <i>editio princeps</i>, which governs. Collated against Palmarocchi 1933 (<span class="sig">WIT-FG-CONS-1933-PALMAROCCHI</span>): page images and the Wikisource transcription consulted as collation evidence, not reproduced (LICENSE §5).</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem"></span> — nuove. The 1857 witness reads <i lang="it">nuova leggi, as the letter prints</i>. The 1933 witness reads <i lang="it">nuove legge</i>. The printed letter is a-shaped on a scan that loses the bar of e throughout (<i lang="it">plabe</i>, <i lang="it">aletti</i> in the same reply), and <i lang="it">nuova leggi</i> does not agree. Read as <i lang="it">nuove</i>, with the 1933 edition.</p>
+<p><span class="lem">al quale ancora speravano</span> — 1857. The 1933 witness reads <i lang="it">al quale ancora loro speravano</i>. The 1933 edition supplies the subject; same sense.</p>
+<p><span class="lem">quanto a quelli ordini</span> — 1857. The 1933 witness reads <i lang="it">dico quanto a quelli ordini</i>. The 1933 edition has <i lang="it">dico</i>, making the second <i lang="it">quanto</i> a restatement.</p>
+<p><span class="lem">tra&#x27; patrizii e e&#x27; plebei</span> — 1857. The 1933 witness reads <i lang="it">tra patrizi e plebei</i>. Canestrini doubles the article; no difference of sense.</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem">The paragraphs.</span> Canestrini prints this reply in three paragraphs, and they are kept: the cause of the disunion, its remedy, and the rest of the Roman orders.</p>
+<p><span class="lem"><i lang="it">altra volta scritto più largamente</i>.</span> &quot;At another time written more largely&quot;: Canestrini&#x27;s note refers to other writings he was to publish in the volumes that followed; Guicciardini had weighed the Roman orders at length in the <i lang="it">Dialogo del reggimento di Firenze</i>.</p>
+<p><span class="lem"><i lang="it">però</i>.</span> &quot;Therefore&quot;, twice (D22): he writes briefly because he has written at length before; and because experience is the only teacher of public things, a republic has seldom been ordered perfectly from the start.</p>
+<p><span class="lem"><i lang="it">nuove leggi</i>.</span> Canestrini&#x27;s letter prints like an a, as barless e does throughout this scan. Read as <i lang="it">nuove</i>, as the 1933 edition prints it.</p>
+<p><span class="lem"><i lang="it">ordini</i>.</span> &quot;Orders&quot;, of the ranks of the city: patricians and plebeians. The same word is the orders of government in .03.</p>
+<p><span class="lem"><i lang="it">patrizii</i>, <i lang="it">plebei</i>, <i lang="it">plebe</i>.</span> &quot;Patricians&quot;, &quot;plebeians&quot;, &quot;the plebs&quot;. Guicciardini names the two ranks where Machiavelli says nobles and plebs.</p>
+<p><span class="lem"><i lang="it">Ché se ... non nascevano</i>.</span> The imperfect in the result of a contrary-to-fact condition is counterfactual (D47): &quot;would not have arisen&quot;. The period then runs on through <i lang="it">non arebbe</i> and <i lang="it">né sarebbe</i>, what the plebs would not have desired and the magistracy would not have been.</p>
+<p><span class="lem"><i lang="it">comunicati gli onori, era comunicata la potenza</i>.</span> &quot;The honours communicated, the power was communicated&quot;: an entailment, stated as a rule — to share the honours is to share the power. Kept as a plain past, not drawn into the counterfactual.</p>
+<p><span class="lem"><i lang="it">manco virtuosa</i>.</span> &quot;Less virtuous&quot;: the adjective of <i lang="it">virtù</i>. A republic with less of it would have suffered more from the same divisions.</p>
+<p><span class="lem"><i lang="it">nocumento</i>, <i lang="it">noceva</i>.</span> &quot;Harm&quot;, &quot;did harm&quot;. <i lang="it">Danno</i> and <i lang="it">dannose</i> are &quot;damage&quot; and &quot;damaging&quot;; the tumults&#x27; <i lang="it">nocivi</i> in Machiavelli are &quot;harmful&quot;.</p>
+<p><span class="lem"><i lang="it">è certo ... forse</i>.</span> &quot;It is certain that ... perhaps&quot;: the certainty is that the tribunate was perhaps more damaging than useful. Kept as printed.</p>
+<p><span class="lem"><i lang="it">instrumento e colore</i>.</span> &quot;Instrument and colour&quot;: the tribunate as the tool and the pretext of those who would disturb the republic.</p>
+<p><span class="lem"><i lang="it">massime</i>.</span> &quot;Above all&quot;, as in Machiavelli&#x27;s <i lang="it">e massime quelle cittadi</i>.</p>
+<p><span class="lem"><i lang="it">lo intercedere</i>.</span> &quot;Interceding&quot;: the tribune&#x27;s veto, as in I.3.</p>
+<p><span class="lem"><i lang="it">laudare le disunioni ... la infermità</i>.</span> The simile&#x27;s last word is the sickness, and the English keeps it last. <i lang="it">Infermo</i> and <i lang="it">infermità</i> are &quot;sick man&quot; and &quot;sickness&quot;, one root. The <i lang="it">remedio</i> is Machiavelli&#x27;s word for the harangues (<i lang="it">il rimedio delle concioni</i>).</p>
+<p><span class="lem"><i lang="it">sotto e&#x27; re non noceva</i>.</span> &quot;Under the kings it did no harm&quot;: the kings held the authority, so the senate could not oppress the plebs, and the kings saw to the plebs&#x27; conveniences (<i lang="it">comodi</i>, D59).</p>
+<p><span class="lem">Servius Tullius.</span> The sixth king, remembered as a friend of the plebs and the author of the census; <i lang="it">più ambiziosamente che non si doveva</i>, &quot;more ambitiously than was due&quot;, is Guicciardini&#x27;s judgment on his courting of it.</p>
+<p><span class="lem"><i lang="it">eleggere ... ne&#x27; patrizii</i>.</span> &quot;Choose ... into the patricians&quot;: the kings&#x27; enrolment of plebeian families among the patricians. <i lang="it">Eleggere</i> is &quot;choose&quot;, as throughout (I.1).</p>
+<p><span class="lem"><i lang="it">ancora</i>.</span> &quot;Yet&quot;, in <i lang="it">al quale ancora speravano</i>: the plebeians bore the patrician rank more readily because they might yet reach it. The 1933 edition adds the subject, <i lang="it">loro</i>.</p>
+<p><span class="lem"><i lang="it">fastiditi</i>.</span> &quot;Disdained&quot;: held in loathing, as ignoble.</p>
+<p><span class="lem"><i lang="it">forestieri</i>.</span> &quot;Strangers&quot; (D57).</p>
+<p><span class="lem">Appius Claudius.</span> The Sabine Attus Clausus, received with his clients into the patriciate in the first years of the republic, in the tradition 504 BC; ancestor of the Claudii.</p>
+<p><span class="lem"><i lang="it">il male presente</i>.</span> &quot;The present ill&quot;: the kings. <i lang="it">Male</i> is &quot;ill&quot; (FG I.2).</p>
+<p><span class="lem"><i lang="it">perizia</i>.</span> &quot;Skill&quot;: the expertness of the practised.</p>
+<p><span class="lem"><i lang="it">ordinazione</i>.</span> &quot;Ordering&quot;: with <i lang="it">ordine</i>, <i lang="it">ordinare</i>, <i lang="it">ordinatore</i>.</p>
+<p><span class="lem"><i lang="it">il non levare da principio le cause</i>.</span> &quot;The not removing from the beginning of the causes&quot;: the infinitive as a noun, kept, set against <i lang="it">il rimedio</i> as the thing that was not useful.</p>
+<p><span class="lem"><i lang="it">non voglio ora discorrere</i>.</span> &quot;I do not wish now to discourse&quot;: he uses Machiavelli&#x27;s verb, from the first line of the chapter, to decline the discussion (D01).</p>
+<p><span class="lem"><i lang="it">non credo</i>.</span> &quot;I do not believe&quot;: his act of assent withheld (<i lang="it">credo</i>, glossary).</p>
+<p><span class="lem"><i lang="it">per esemplo</i>.</span> &quot;For an example&quot;: as a model to copy.</p>
+<p><span class="lem"><i lang="it">la virtù sua ... tutti gli altri difetti</i>.</span> The military discipline&#x27;s <i lang="it">virtù</i> &quot;sustained all the other defects&quot;: the opinion of the many that Machiavelli set out to answer, that military <i lang="it">virtù</i> supplied Rome&#x27;s defects, is where Guicciardini ends.</p>
+<p><span class="lem"><i lang="it">si regge</i>, <i lang="it">si governano</i>.</span> Both &quot;govern themselves&quot; (D64).</p>
+<p><span class="lem"><i lang="it">girandole</i>.</span> &quot;Whirligigs&quot;: the spinning wheels of a firework, and figuratively shifts and schemes. It is set between <i lang="it">industria</i>, &quot;industry&quot;, in the older sense of ingenious application, and &quot;the arts of peace&quot;; the word is not a neutral one.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="colophon">
+    <div class="row">
+      <div>
+        <h3>What this is</h3>
+        <p>A free, openly licensed, bilingual edition of Guicciardini's 39 <i>Considerazioni</i> and the
+          <i>Discorsi</i> chapters they answer — 78 text units, Italian and English facing, every reading
+          traceable to a named public-domain witness.</p>
+        <p>It is a reading edition with a transparent apparatus, not a text of record. It does not adjudicate
+          the critical text against Bausi 2001 or the manuscript tradition, and does not claim to.</p>
+      </div>
+      <div>
+        <h3>On the title</h3>
+        <p>Machiavelli had been dead two years when Guicciardini wrote; the <i>Discorsi</i> were unpublished,
+          and the <i>Considerazioni</i> stayed unprinted until 1857. Machiavelli never answers.</p>
+        <p>“Conversation” is a quotation, not a description. It invokes Machiavelli's letter to Vettori of
+          10 December 1513, where he changes into court dress at evening, enters the antique courts of ancient
+          men, and reports that <i>they, in their humanity, answer me</i>. Guicciardini does to Machiavelli
+          what Machiavelli did to Livy — and is denied the reply Machiavelli claimed.</p>
+      </div>
+      <div>
+        <h3>Method</h3>
+        <p>No image-derived reading enters the text on a single reading. Each unit is transcribed twice,
+          independently, by readers who have not seen each other's work; disagreements are adjudicated against
+          the page images and recorded.</p>
+        <p>Existing English translations of the <i>Considerazioni</i> — Grayson (1965), Atkinson &amp; Sices
+          (2002) — are never used as translation inputs.</p>
+      </div>
+      <div>
+        <h3>Licence</h3>
+        <p>The established Italian text and the apparatus data are dedicated to the public domain under
+          <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>. They are Machiavelli's and
+          Guicciardini's sentences, and this edition adds no condition to them.</p>
+        <p>The English translation, the notes and the editorial apparatus are licensed
+          <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: reuse them anywhere, including
+          commercially, with attribution to David McDougall and this edition. The build tooling is MIT.</p>
+        <p>The witness scans are other people's digitisations, included as evidence under their own terms; no
+          grant is made over them, and no page image of Palmarocchi 1933 is reproduced here. Full terms,
+          layer by layer, are in the <span class="sig">LICENSE</span> file in the repository.</p>
+      </div>
+    </div>
+
+    <div class="state">
+      <p><strong>Version 0.3 · 6 of 39 pairs published.</strong>
+        This edition is versioned, not frozen. Some translation questions on this pair are still open.</p>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
