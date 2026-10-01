@@ -1,7 +1,7 @@
 ---
 work_id: FG-CONS
 source_unit_id: FG-CONS.1.2
-version: "0.1.0-draft"
+version: "0.1.1-draft"  # 2026-10-01: `mero e misto imperio` → "mere and mixed *imperium*" per D125
 status: draft_cold_reviewed
 source_text: corpus/FG-CONS/FG-CONS.1.2.md
 established_source_version: "0.1.0"
@@ -104,7 +104,7 @@ enter it, and although some unfit man will enter it, it is a lesser
 inconvenience than if some sufficient one were excluded from it, that they have
 not absolute power over all the public things, so that they do not arrogate too
 much authority to themselves, especially of creating magistrates, specially
-those that have mere and mixed rule, or that are magistrates of utility, nor of
+those that have mere and mixed *imperium*, or that are magistrates of utility, nor of
 making law without the consent of the people, so that they cannot either alter
 the form of the government, or bring the orders of the city to the benefit of
 the powerful and the diminution of the lesser, but that to them belong the
@@ -209,10 +209,14 @@ the mixed government in .02 and of Machiavelli's mixed state ("one that should
 partake of all"). `Partecipi tutto il bene` in .02 is transitive but means to
 share in, not to impart, as `participare` does in I.12.
 
-**`mero e misto imperio`.** "Mere and mixed rule", the jurists' *merum et
-mixtum imperium*: *merum*, criminal jurisdiction with the power of the sword;
-*mixtum*, jurisdiction joined to a lesser power of coercion. `Imperio` is
-"rule" here as elsewhere in this edition.
+**`mero e misto imperio`.** "Mere and mixed *imperium*": the jurists'
+*merum et mixtum imperium*, from Roman law (Ulpian, *Digest* 2.1.3), kept in
+Latin as a term of art, as English writers on Italian law keep it. *Merum*,
+"pure", is the power of the sword, criminal jurisdiction to death or exile;
+*mixtum* is civil jurisdiction joined to a lesser power of coercion. Together,
+full criminal and civil jurisdiction: the senate is not to appoint those who
+judge and punish. Elsewhere `imperio` is "empire", "rule" or "command" by sense
+(D124).
 
 **`magistrati di utilità`.** "Magistrates of utility": Canestrini's note glosses
 them as the offices that apportioned taxes and administered the public revenues

@@ -30,7 +30,7 @@ last sentence answers Machiavelli's first move.
 | `monarchia` | monarchy | FG uses it for unified rule over Italy, not a constitutional label. |
 | `principe` | prince | |
 | `stato` / `Stati` | state | Only NM .04 `gli Stati e le Repubbliche cristiane`, where it is paired with republics and so cannot mean them. Modern nation-state must not be imported. **[open]** |
-| `imperio` | empire / rule / command | **D124, 2026-10-01.** Three senses, three words. *Empire*, lower case: dominion over other peoples (NM I.1 `Imperio romano`, I.4, I.5 `fare uno Imperio`; FG I.12 `libertà e imperio`, `imperio romano`, `imperio d'Italia`). *Rule*: sovereignty in general (NM I.2 the kings' `Imperio`, I.12 `Imperio temporale`; FG I.1 `imperio di Alba`; FG I.12 `sotto uno imperio`, `altro imperio`, D30). *Command*: a magistrate's *imperium* (NM I.5 `gradi dell'Imperio`). FG I.2 `mero e misto imperio` pending. |
+| `imperio` | empire / rule / command | **D124, 2026-10-01.** Three senses, three words. *Empire*, lower case: dominion over other peoples (NM I.1 `Imperio romano`, I.4, I.5 `fare uno Imperio`; FG I.12 `libertà e imperio`, `imperio romano`, `imperio d'Italia`). *Rule*: sovereignty in general (NM I.2 the kings' `Imperio`, I.12 `Imperio temporale`; FG I.1 `imperio di Alba`; FG I.12 `sotto uno imperio`, `altro imperio`, D30). *Command*: a magistrate's *imperium* (NM I.5 `gradi dell'Imperio`). FG I.2 `mero e misto imperio` → mere and mixed *imperium* (D125). |
 | `dominio` | dominion | NM `il dominio delle cose temporali`; FG `dominio temporale`, `in uno dominio solo`. |
 | `provincia` | province | Both authors, repeatedly, of Italy itself. Not a modern administrative unit — the territory-and-people of a country. Kept as the cognate because the facing text shows the reader what it is doing. |
 
@@ -172,7 +172,7 @@ last sentence answers Machiavelli's first move.
 | `civiltà` | civility | NM I.2: civil life under laws. |
 | `referire` | report | D56 held in FG I.2. |
 | `concioni` | harangues | FG I.2. |
-| `mero e misto imperio` | mere and mixed rule | FG I.2; the jurists' *merum et mixtum imperium*. |
+| `mero e misto imperio` | mere and mixed *imperium* | D125. FG I.2; the jurists' *merum et mixtum imperium*, full criminal and civil jurisdiction. Latin kept as a term of art. |
 
 
 ## Added from the I.3 pair (2026-09-29)
