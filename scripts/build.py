@@ -204,9 +204,28 @@ def notes_esc(s):
     """Escape and lightly render markdown used in notes/apparatus prose:
     `code` for an Italian/Latin term, *emphasis* for a loan-word."""
     s = html.escape(s)
-    s = re.sub(r'`([^`]+)`', r'<i lang="it">\1</i>', s)
-    s = re.sub(r'\*([^*]+)\*', r'<i lang="it">\1</i>', s)
+    s = re.sub(r'`([^`]+)`', lambda m: f'<i lang="{term_lang(m.group(1))}">{m.group(1)}</i>', s)
+    s = re.sub(r'\*([^*]+)\*', lambda m: f'<i lang="{term_lang(m.group(1))}">{m.group(1)}</i>', s)
     return s
+
+
+_LATIN = None
+
+
+def latin_terms():
+    """apparatus/latin.md: the Latin words and phrases the edition italicises."""
+    global _LATIN
+    if _LATIN is None:
+        p = ROOT / "apparatus/latin.md"
+        text = p.read_text(encoding="utf-8") if p.exists() else ""
+        _LATIN = {html.unescape(m.group(1)).strip().lower()
+                  for m in re.finditer(r'^\|\s*`([^`]+)`\s*\|', text, re.M)}
+    return _LATIN
+
+
+def term_lang(phrase):
+    """'la' for a term listed in apparatus/latin.md, otherwise 'it'."""
+    return "la" if html.unescape(phrase).strip().lower() in latin_terms() else "it"
 
 
 def parse_notes(notes_raw):
@@ -231,16 +250,11 @@ def parse_notes(notes_raw):
 def emphasized(text, notes_raw):
     """Escape paragraph text and render markdown *emphasis* as italic,
     marking a span as Latin (rather than the Italian/loan-word default)
-    when the pair's own notes call it out as Latin. Also marks up any
+    when it is listed in apparatus/latin.md. Also marks up any
     [bracketed] supplied-letter notation."""
     def repl(m):
         phrase = m.group(1)
-        lang = "it"
-        marker = f"`{phrase}`"
-        idx = notes_raw.find(marker)
-        if idx != -1 and "latin" in notes_raw[idx: idx + 200].lower():
-            lang = "la"
-        return f'<i lang="{lang}">{html.escape(phrase)}</i>'
+        return f'<i lang="{term_lang(phrase)}">{html.escape(phrase)}</i>'
 
     out = re.sub(r'\*([^*]+)\*', lambda m: "\x00" + m.group(1) + "\x00", text)
     out = html.escape(out).replace("\x00", "\x01")
