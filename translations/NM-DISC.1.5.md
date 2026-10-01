@@ -10,7 +10,7 @@ cold_review: 2026-10-01, subagent with no access to the drafting work
 paragraph_divisions: editorial  # inherited from the source unit; see SCOPE §3
 rubric_en: "Where the guard of liberty is more securely set, whether in the people or in the great; and which have greater cause to make tumult, whoever wishes to acquire or whoever wishes to maintain."
 translated: 2026-10-01
-open_for_david: O21
+open_for_david: none
 ---
 
 # Discourses I.5
@@ -58,8 +58,7 @@ in a republic, and apt to reduce the nobility to some desperation that in time
 may produce bad effects. And they give as example that same Rome, which, through
 the tribunes of the plebs having this authority in their hands, it was not
 enough for them to have one plebeian consul, but they wished to have both. From
-this they wished for the censorship, the praetor, and all the other degrees of the rule
-of the city; nor was this enough for them, but, led by the same fury, they
+this they wished for the censorship, the praetor, and all the other degrees of command of the city; nor was this enough for them, but, led by the same fury, they
 began afterwards in time to adore those men whom they saw apt to beat the
 nobility; whence arose the power of Marius, and the ruin of Rome.
 
@@ -196,8 +195,9 @@ consuls first held office together in 172 BC.
 sequence, from this point on. The 1554 edition's `da questo` favours the
 second.
 
-**`gradi dell'Imperio`.** "Degrees of the rule": the magistracies, the steps
-of command. `Imperio` is "rule" (glossary).
+**`gradi dell'Imperio`.** "Degrees of command": the magistracies, the steps of
+the Roman *imperium*, the power to command that consuls and praetors held
+(D124).
 
 **`adorare`.** "Adore": the word is Machiavelli's, and it is strong.
 `Battere` is plain "beat".
@@ -205,11 +205,8 @@ of command. `Imperio` is "rule" (glossary).
 **Marius.** Gaius Marius, seven times consul, raised to power by the plebs
 against the nobility; his civil war with Sulla ended in Sulla's dictatorship.
 
-**`fare uno Imperio`.** "Make an empire": to win rule over others, as Rome did.
-Elsewhere `imperio` is "rule" (glossary), as in "the degrees of the rule of the
-city" above; in this idiom "make a rule" would read as laying down a
-regulation, at the sentence that gives the chapter's verdict. Guicciardini
-restates it as a republic "that acquires".
+**`fare uno Imperio`.** "Make an empire": to win dominion over others, as Rome
+did. Guicciardini restates it as a republic "that acquires" (D124).
 
 **`come nel seguente capitolo si dirà`.** I.6 asks whether Rome could have
 been ordered without the enmity between people and senate.

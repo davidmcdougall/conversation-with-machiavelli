@@ -8,7 +8,7 @@ format: as annotations/NM-DISC.1.12.md
 
 ## NM-DISC.1.1.01
 
-**Argument.** The book opens on Rome's beginning and on what came of it: the *virtù* that lasted and the rule the republic won. The claim underneath the chapter is that the beginning explains the rest.
+**Argument.** The book opens on Rome's beginning and on what came of it: the *virtù* that lasted and the empire the republic won. The claim underneath the chapter is that the beginning explains the rest.
 
 ## NM-DISC.1.1.02
 

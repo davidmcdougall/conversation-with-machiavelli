@@ -1,7 +1,7 @@
 ---
 work_id: NM-DISC
 source_unit_id: NM-DISC.1.1
-version: "0.1.1-draft"  # 2026-09-28: `adunque` → "then" per D74
+version: "0.1.2-draft"  # 2026-10-01: `imperio` → "empire" per D124; 2026-09-28: `adunque` → "then" per D74
 status: draft_cold_reviewed
 source_text: corpus/NM-DISC/NM-DISC.1.1.md
 established_source_version: "0.1.0"
@@ -23,7 +23,7 @@ that of Rome.*
 Those who read what the beginning of the city of Rome was, and by what
 legislators, and how ordered, will not marvel that so much *virtù* was
 maintained for several centuries in that city; and that there then arose from it
-that rule to which that republic attained.
+that empire to which that republic attained.
 
 ## NM-DISC.1.1.02
 
@@ -45,7 +45,7 @@ many others, have been Athens and Venice. The first, under the authority of
 Theseus, was built for similar causes by the dispersed inhabitants. The other,
 many peoples having withdrawn into certain little islands that were at the head
 of the Adriatic sea, to flee those wars which every day, through the coming of
-new barbarians after the decline of the Roman rule, arose in Italy, began among
+new barbarians after the decline of the Roman empire, arose in Italy, began among
 themselves, without any other particular prince to order them, to live under
 those laws that seemed to them most apt to maintain them. Which succeeded for
 them happily through the long idleness that the site gave them, that sea having
@@ -59,7 +59,7 @@ The second case, when a city is built by foreign peoples, arises from men either
 free or dependent on others, as are the colonies sent either by a republic or by
 a prince to relieve their lands of inhabitants, or for the defence of that
 country which, newly acquired, they wish to maintain securely and without
-expense; of which cities the Roman people built many, and throughout its rule:
+expense; of which cities the Roman people built many, and throughout its empire:
 or else they are built by a prince, not to live in, but for his glory, as the
 city of Alexandria by Alexander. And through these cities not having their origin
 free, it rarely occurs that they make great progress and can be numbered among
@@ -67,7 +67,7 @@ the heads of kingdoms. Similar to these was the building of Florence, for,
 whether built by the soldiers of Sulla or by chance by the inhabitants of the
 mountains of Fiesole (who, trusting in that long peace which arose in the world
 under Octavian, withdrew to live in the plain upon the Arno), it was built under
-the Roman rule, nor could it in its beginnings make other augmentations than
+the Roman empire, nor could it in its beginnings make other augmentations than
 those that were granted it by the courtesy of the prince.
 
 ## NM-DISC.1.1.05
@@ -131,7 +131,7 @@ progenitor, it will be of those cities built by strangers; if Romulus, of those
 built by men native to the place; and in whatever way, he will see it to have a
 free beginning, without depending on anyone; he will see also (as will be said
 below) to how many necessities the laws made by Romulus, by Numa and by the
-others constrained it; so that the fertility of the site, the convenience of the sea, the frequent victories, the greatness of its rule, could not for many
+others constrained it; so that the fertility of the site, the convenience of the sea, the frequent victories, the greatness of its empire, could not for many
 centuries corrupt it, and they maintained it full of as many *virtù* as ever
 any other republic was adorned with. And because the things done by it, and
 which are celebrated by Livy, came about either by public or by private counsel,
@@ -154,11 +154,11 @@ founder or a people, not moral goodness. Its adjective, `virtuoso`, has to be
 "virtuous" in English, and means the same: the builder who has more or less
 *virtù*, the "virtuous exercise" that idleness unfits men for.
 
-**`imperio`.** "Rule", here as elsewhere in this edition: `quello Imperio`,
-the command over others that Rome's republic came to, and its rule over its
-colonies. At .03 and .04 `lo Imperio romano` is what English readers call the
-Roman Empire; the English keeps "rule" so that one Italian word stays one
-English word across the book.
+**`imperio`.** "Empire", lower case: `quello Imperio`, the dominion over
+others that Rome's republic came to, and `lo Imperio romano` at .03 and .04.
+The word is the republic's as much as the emperors'. Where `imperio` is rule in
+general it is "rule", and where it is a magistrate's power it is "command"
+(D124).
 
 **`capi de' Regni`.** "Heads of kingdoms": chief cities, capitals.
 

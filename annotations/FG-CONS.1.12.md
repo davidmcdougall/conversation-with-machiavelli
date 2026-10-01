@@ -20,7 +20,7 @@ format: as annotations/NM-DISC.1.12.md
 
 ## FG-CONS.1.12.03
 
-**Argument.** The counterweights, in order. Division brought calamities, but the barbarian invasions came more under Roman rule than since — compare Machiavelli's "prey … of powerful barbarians" [[NM-DISC.1.12.07]]. Division also brought flourishing cities that a single ruling republic would not have allowed. A kingdom is different — "more common to all the subjects" — which grants Machiavelli's France [[NM-DISC.1.12.06]] and denies it to Italy for reasons older than the Church: fate, the complexion of the people, a natural appetite for liberty. No power but Rome, he believes, ever held all of Italy, and Rome held it by *virtù* and violence together; compare the *virtù* Machiavelli says the Church lacked [[NM-DISC.1.12.06]].
+**Argument.** The counterweights, in order. Division brought calamities, but the barbarian invasions came more under the Roman empire than since — compare Machiavelli's "prey … of powerful barbarians" [[NM-DISC.1.12.07]]. Division also brought flourishing cities that a single ruling republic would not have allowed. A kingdom is different — "more common to all the subjects" — which grants Machiavelli's France [[NM-DISC.1.12.06]] and denies it to Italy for reasons older than the Church: fate, the complexion of the people, a natural appetite for liberty. No power but Rome, he believes, ever held all of Italy, and Rome held it by *virtù* and violence together; compare the *virtù* Machiavelli says the Church lacked [[NM-DISC.1.12.06]].
 
 **Term.** *Complessione* is humoral: the temperament of a people as a mixture of qualities, "tempered" so that they have wit and force.
 

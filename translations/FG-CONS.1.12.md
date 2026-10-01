@@ -1,7 +1,7 @@
 ---
 work_id: FG-CONS
 source_unit_id: FG-CONS.1.12
-version: "0.3.0-draft"
+version: "0.3.1-draft"  # 2026-10-01: `imperio` → "empire" ×3 per D124
 status: draft_cold_reviewed
 source_text: corpus/FG-CONS/FG-CONS.1.12.md
 established_source_version: "0.3.1"
@@ -43,13 +43,13 @@ been glorious to the name of Italy and happiness to that city that should
 dominate, it would have been calamity to all the others, for, oppressed by the
 shadow of that one, they would have had no capacity of attaining to any
 greatness, it being the custom of republics not to impart the fruits of its
-liberty and rule to any others than its own citizens.
+liberty and empire to any others than its own citizens.
 
 ## FG-CONS.1.12.03
 
 And although Italy, divided into many dominions, has at various times suffered
 many calamities which perhaps in a single dominion it had not suffered, albeit
-the inundations of the barbarians were rather in the time of the Roman rule than
+the inundations of the barbarians were rather in the time of the Roman empire than
 otherwise, nonetheless in all these times it has had, on the other side, so many
 flourishing cities as it would not have had under a republic, for I reckon that
 a monarchy would have been more unhappy for it than happy. This reason has no
@@ -61,7 +61,7 @@ rule, even when the Church was not there; on the contrary, it has always by
 nature desired liberty, nor do I believe there is memory of any other rule that
 has possessed it whole, than that of the Romans; who subjugated it with great
 *virtù* and great violence; and as the republic was extinguished and the *virtù*
-of the emperors failed, they readily lost the rule of Italy. Therefore if the
+of the emperors failed, they readily lost the empire of Italy. Therefore if the
 Roman Church has opposed itself to monarchies, I do not readily concur that this
 has been the unhappiness of this province, since it has preserved it in that way
 of living which is more according to its most ancient usage and inclination
@@ -88,9 +88,11 @@ the reason has no force, does not apply. Modern English "militate" survives
 almost only in "militate against", which pulls the opposite way, so the cognate
 is not kept here.
 
-**`imperio` and `imperadori`.** One Italian root, two unrelated English words:
-"rule" and "emperors". The rhyme in `mancò la virtù degli imperadori ...
-perderono ... lo imperio d'Italia` cannot be carried over.
+**`imperio` and `imperadori`.** "Empire" and "emperors": the rhyme in `mancò
+la virtù degli imperadori ... perderono ... lo imperio d'Italia` carries over.
+`Sotto uno imperio` and `altro imperio` stay "one rule" and "any other rule"
+(D30): there the word is rule over Italy as such, set against the many states
+it was divided into (D124).
 
 **`poteva ... era ... non avevano`.** Guicciardini's hypothesis in .02 is in the
 imperfect indicative throughout, the ordinary Italian idiom for a condition

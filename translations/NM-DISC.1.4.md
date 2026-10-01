@@ -1,7 +1,7 @@
 ---
 work_id: NM-DISC
 source_unit_id: NM-DISC.1.4
-version: "0.1.0-draft"
+version: "0.1.1-draft"  # 2026-10-01: `Imperio romano` → "Roman empire" per D124
 status: draft_cold_reviewed
 source_text: corpus/NM-DISC/NM-DISC.1.4.md
 established_source_version: "0.1.0"
@@ -26,7 +26,7 @@ upon some other things against the opinion of many, who say that Rome was a
 tumultuary republic, and full of so much confusion that, if good fortune and
 military *virtù* had not supplied their defects, it would have been inferior to
 every other republic. I cannot deny that fortune and soldiery were causes of
-the Roman rule; but it indeed seems to me that these men do not perceive that
+the Roman empire; but it indeed seems to me that these men do not perceive that
 where there is good soldiery it is fitting that there be good order, and
 seldom also does it occur that there is not good fortune.
 
@@ -111,8 +111,8 @@ Romans' or the republic's.
 **`milizia`.** "Soldiery", as in I.1 (D60): the armed force and its order,
 not a citizen militia.
 
-**`Imperio`.** "Rule" (glossary): the dominion Rome acquired, not the later
-empire.
+**`Imperio`.** "Empire", lower case (D124): the dominion Rome acquired, the
+republic's as much as the emperors'.
 
 **`conviene`.** "It is fitting" (D85): where the soldiery is good, the order
 must be good too.

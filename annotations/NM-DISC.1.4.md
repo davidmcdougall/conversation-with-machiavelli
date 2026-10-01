@@ -7,7 +7,7 @@ format: as annotations/NM-DISC.1.12.md
 
 ## NM-DISC.1.4.01
 
-**Argument.** The chapter answers an opinion: that Rome was tumultuary and confused, and that fortune and military *virtù* made up for its defects. Machiavelli grants fortune and soldiery a part in Rome's rule and then turns the concession: good soldiery presupposes good order, and where there is good order good fortune seldom fails. Guicciardini ends his reply by granting the opinion its military half [[FG-CONS.1.4.03]].
+**Argument.** The chapter answers an opinion: that Rome was tumultuary and confused, and that fortune and military *virtù* made up for its defects. Machiavelli grants fortune and soldiery a part in Rome's empire and then turns the concession: good soldiery presupposes good order, and where there is good order good fortune seldom fails. Guicciardini ends his reply by granting the opinion its military half [[FG-CONS.1.4.03]].
 
 **History.** The span first announced, from the death of the Tarquins to the creation of the tribunes, is short: some fifteen years in the tradition (509–494 BC). In .02 the argument widens to the whole period from the Tarquins to the Gracchi.
 

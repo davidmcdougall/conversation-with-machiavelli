@@ -50,4 +50,4 @@ format: one "## <paragraph id>" section per paragraph; each note a "**Label.**" 
 
 **Argument.** The experiment that cannot be run, proposed anyway: move the Roman court to Switzerland, and its customs would disorder that province faster than any other accident could. The Swiss are chosen because they alone, today, live "according to the ancients" in religion and in military orders.
 
-**Cross-reference.** "Prey … of powerful barbarians" is answered in effect: the barbarian inundations came more under Roman rule than otherwise [[FG-CONS.1.12.03]].
+**Cross-reference.** "Prey … of powerful barbarians" is answered in effect: the barbarian inundations came more in the time of the Roman empire than otherwise [[FG-CONS.1.12.03]].
