@@ -111,6 +111,38 @@ good, the sickness was not.
 *virtù* sustained the other defects — the "many" of NM .01, whose opinion
 Machiavelli set out to answer. The echo is `virtù` and `difetti` in both.
 
+## Machiavelli, NM-DISC.1.5
+
+**Two questions, answered in order, and the first is left open.** Where the
+guard of liberty is better set: the case for Rome (the people want only not to
+be dominated), the case for Sparta and Venice (the great are content, the plebs
+quietened), and the verdict that it depends on whether a republic means to make
+a rule or to maintain itself. Then the second question, through the case of
+Menennius: those who possess cause more tumult than those who would acquire,
+because the fear of losing breeds the same appetite. The English must not turn
+the first verdict into a preference for Rome; Machiavelli says only that a
+republic that would expand must do as Rome did.
+
+**The opponents speak in their own period.** The Spartan and Venetian case
+(.03) is reported speech — `dice, che` — down to the ruin of Rome. It is not
+Machiavelli's judgment, and an English that lets the "two good works" or the
+fury of the plebs float free of `dice` has made it his.
+
+## Guicciardini, FG-CONS.1.5
+
+**He does not understand the question, and the reply is a distinction.** Who
+governs is one question, who holds a particular charge of liberty another. Rome
+answers the second, and only partly: consuls and dictators guarded liberty as
+much as the tribunes did. His own answer is that in a mixed government the guard
+belongs to all, each order the guard of the other. The English must keep
+`altro è a dire ..., altro è dire` as one opposition.
+
+**The forced choice is conditional and future.** `Ma quando fussi necessitato
+... crederò`: he does not prefer the nobles; he would believe them the lesser
+error if he had to choose. Then he refuses Machiavelli's distinction outright:
+the government of the plebs serves neither for acquiring nor for conserving,
+and Rome was mixed, not plebeian.
+
 ## The pair
 
 Machiavelli argues towards a demonstration. Guicciardini declines to be

@@ -216,3 +216,24 @@ last sentence answers Machiavelli's first move.
 | `infermo` / `infermità` | sick man / sickness | FG I.4; one root. |
 | `ordinazione` | ordering | D109. With `ordine`, `ordinare`, `ordinatore`. |
 | `esemplo` / `esempio` | example | NM I.4 `esempj`; FG I.4 `per esemplo` → for an example. |
+
+
+## Added from the I.5 pair (2026-10-01)
+
+| Italian | English | Note |
+|---|---|---|
+| `guardia` | guard | NM I.4 .05, I.5 throughout; FG I.5. The charge of keeping liberty, and those who keep it. `preposti a guardia` → appointed to the guard; `mettere in guardia` → put on guard over. |
+| `collocare` / `mettere` / `porre` | place / put / set | D115. NM I.5 rubric `si ponga` → is set; FG `il porre la guardia` → the setting of the guard. |
+| `appetito` / `desiderio` / `volontà` / `voglia` | appetite / desire / will / longing | D117. FG `voluntà` → will (I.4). `volere` → wish. |
+| `desiderare` | desire | NM I.5. |
+| `Grandi` / `Popolani` / `Ignobili` | the great / commoners / the ignoble | D118. `Popolo` stays "people", `Plebe` "plebs". |
+| `acquistare` / `mantenere` / `conservare` | acquire / maintain / conserve | NM I.5; FG I.5 restates `mantenersi` as `conservi`, kept apart. |
+| `nocivo` | harmful | D106 held in NM I.5 (`nociva`, `nocivi`). |
+| `occupare` | occupy | NM I.12, I.5. |
+| `qualità` | quality | NM I.2, I.5; FG I.5. |
+| `straordinario` | extraordinary | NM I.4, I.5. `modi` ways, `vie` paths. |
+| `opprimere` | oppress | FG I.5 four times, including `fu oppressa`, put down. |
+| `essere per` (fitness) | be for | D116. FG I.5 `non è né per acquistare, né per conservare`. D45's "be about to" stays for the prospective use. |
+| `sentenza` | sentence | FG I.5: an opinion pronounced. Apart from `opinione` (D02) and `giudicio`. |
+| `simile` | like | FG I.5 `uno governo simile` → a like government. |
+

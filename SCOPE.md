@@ -306,6 +306,7 @@ clock; David's own time is the rulings, counted separately.
 | I.1 (1,291 + 597 words) | 7 | 2 | 2 | 9 | 4 | 3 | 27 | 2 open items (O15, O16); NM not collated against 1554 |
 | I.3 (387 + 441 words) | 6 | 2 | 3 | 5 | 3 | 2 | ~25 (stages approximate) | 3 open items (O17–O19); NM not collated against 1554 |
 | I.4 (617 + 647 words) | 12 | 3 | 8 | 12 | 6 | 3 | ~45 (stages approximate) | 1 open item (O20); NM not collated against 1554; one FG cold reader discarded for a 200 ppi render |
+| I.5 (827 + 490 words) | 15 | 3 | 8 | 12 | 8 | 3 | ~50 (stages approximate) | 1 open item (O21); first NM comparison collation against 1554 (third cold reader for Giglio), commentary cold-reviewed |
 
 ---
 

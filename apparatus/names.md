@@ -52,3 +52,12 @@ the original.
 | `Tullio` | Tully | NM I.4; Cicero, named by his nomen, as Machiavelli names him. Noted (D103) |
 | `Servio Tullio` | Servius Tullius | FG I.4 as FG I.2 |
 | `Appio Claudio` | Appius Claudius | FG I.4; Attus Clausus, noted |
+| `Lacedemoni` | Lacedaemonians | NM I.5; as FG I.2 |
+| `Mario` | Marius | NM I.5 |
+| `Marco Menennio` | Marcus Menennius | NM I.5; Livy's Gaius Maenius, noted (D119) |
+| `Marco Fulvio` | Marcus Fulvius | NM I.5; Livy's Marcus Folius; 1554 `Follio` (D119) |
+| `Capova` | Capua | NM I.5 |
+| `Spurio Melio` | Spurius Maelius | FG I.5 |
+| `Manlio Capitolino` | Manlius Capitolinus | FG I.5 |
+| `Catilina` | Catiline | FG I.5 |
+
