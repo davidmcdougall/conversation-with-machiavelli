@@ -4,7 +4,7 @@ source_unit_id: FG-CONS.1.4
 version: "0.1.0-draft"
 status: draft_cold_reviewed
 source_text: corpus/FG-CONS/FG-CONS.1.4.md
-established_source_version: "0.1.0"
+established_source_version: "0.1.1"
 responds_to: NM-DISC.1.4
 register: apparatus/register.md
 cold_review: 2026-09-29, subagent with no access to the drafting work
@@ -12,7 +12,7 @@ paragraph_divisions: witness  # Canestrini prints three paragraphs
 rubric_en: "That the disunion of the plebs and of the Roman senate made that republic free and powerful"
 rubric_source: Canestrini 1857, printed p. 12 — his setting of the chapter title over the reply, without a terminal stop
 translated: 2026-09-29
-open_for_david: [O20]
+open_for_david: none
 title: "Praising the sickness"
 standfirst: "Machiavelli defends Rome's tumults: they cost little blood, every law made for liberty arose from the disunion of people and great, and the tumults gave Rome its tribunes. Guicciardini traces the disunion to a cause Rome could have avoided, the shutting of the plebs out of the honours. The remedy was good; the sickness need not have been, and praising the disunions is praising the sickness for the goodness of the remedy. What carried Rome, he grants, was its military discipline."
 ---

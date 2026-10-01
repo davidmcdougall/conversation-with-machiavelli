@@ -1,14 +1,14 @@
 ---
 work_id: FG-CONS
 source_unit_id: FG-CONS.1.4
-version: "0.1.0"
+version: "0.1.1"
 status: established
-integrity_class: S1  # S2 once O20 is ruled
+integrity_class: S2
 integrity_note: >
   Two independent cold passes of Canestrini (A, B), collated mechanically:
   647 words. No clause or sense disagreement. One word-level split on a scan
-  that loses the bar of e — `nuove`/`nuova` leggi (.01) — escalated as O20;
-  the text carries the recommended reading provisionally. Seven splits of
+  that loses the bar of e — `nuove`/`nuova` leggi (.01) — escalated as O20 and
+  ruled `nuove` (D111). Seven splits of
   pointing weight (comma, semicolon, colon, absent stop) resolved by the
   rule stated in the collation.
 paragraph_divisions: witness  # Canestrini prints three indented paragraphs; kept as printed
@@ -17,7 +17,7 @@ established_from: [sources/coldpass/FG-CONS.1.4-passA.md, sources/coldpass/FG-CO
 collation: sources/coldpass/COLLATION-2026-09-29-I4.md
 relationship_pointer: FG-CONS-DR-004
 responds_to: NM-DISC.1.4
-unresolved_source_findings: [O20]
+unresolved_source_findings: []
 witness_corrections: 2  # `esperienza;` (mark illegible, weight from 1933); terminal stop after `nascere` (.02), D67
 editorial_supplies: 0
 emendations: 0

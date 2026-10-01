@@ -1,9 +1,9 @@
 source_unit_id: FG-CONS.1.4
-status: accepted_pending_rulings  # O20
-version: "0.1.0"
+status: accepted
+version: "0.1.1"
 governing_witness: WIT-FG-CONS-1857-CANESTRINI
 collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
-integrity_class: S1
+integrity_class: S2
 relationship_pointer: FG-CONS-DR-004
 responds_to: NM-DISC.1.4
 rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. Canestrini's own footnotes are editorial and are not carried."
@@ -32,7 +32,7 @@ interventions:
     after: "le feciono nascere."
     evidence: "End of a printed paragraph; pass A sees no stop, pass B a faint one. Palmarocchi 1933 p. 11 prints the stop. D67."
 emendations: []
-provisional_readings:
-  - {locus: "di proporre nuove leggi", locator: FG-CONS.1.4.01, open_item: O20, printed_shape: "nuova", note: "a-shaped letter on a scan that prints barless e as a throughout; 1933 `nuove`."}
+ruled_readings:
+  - {locus: "di proporre nuove leggi", locator: FG-CONS.1.4.01, ruling: "D111 (O20, David 2026-10-01)", printed_shape: "nuova", note: "a-shaped letter on a scan that prints barless e as a throughout; 1933 `nuove`."}
 not_supplied: []
 normalisation_notes: "Class A: accents; plural article `e` → `e'` (D35); `ne re` → `ne' re` (D39); `da plebei` → `da' plebei`. Canestrini's two footnotes are his, not Guicciardini's, and are not carried."
