@@ -127,6 +127,9 @@ This log becomes the translator's preface.
 | D109 | FG I.4 `ordinazione`; `il non levare ... le cause` | ordering; "the not removing ... of the causes" | `ordine` family. The nominal infinitive kept, set against `il rimedio`. |
 | D110 | Pointing whose weight neither cold reader can make out (FG I.4) | where both readers see a mark, the 1933 edition breaks the tie; where it prints none, the lighter reading stands (D65) | **Confirmed by David, 2026-10-01.** First applied at seven FG I.4 loci; see the I.4 collation. A mark both readers read alike is kept even against the 1933 edition (`magistrato:`, `governo;`). |
 | D111 | FG I.4 .01 `di proporre ___ leggi` | `nuove` | **O20, David 2026-10-01.** The printed a-shape is a barless e, as throughout the scan (`plabe`, `aletti`, `avvartito`); `nuova leggi` does not agree; the 1933 edition reads `nuove`. A reading, not an emendation. FG-CONS.1.4 moves to S2. |
+| D112 | FG I.3 .01 `etiam avendo ___ di fare male` | `facultà` | **O17, David 2026-10-01.** The scan breaks u into n-shapes throughout; the same reply prints `facultà del fare male` clearly on p. 11; the 1933 edition agrees. English "capacity" either way. |
+| D113 | FG I.3 .02 `lo eleggere ___ tribuni` | `e'` | **O18, David 2026-10-01.** The printed a-shape is a barless e (`ara` for `era` twice in the paragraph); the reply prints `e tribuni` two sentences later; `eleggere` takes a direct object. A reading, not an emendation. |
+| D114 | FG I.3 .01 opening `E posto troppo assolutamente` | emended to `[È] posto` under D68; Canestrini's `E` in the variant note | **O19, David 2026-10-01.** As printed the opening period has no finite verb; Canestrini accents `È vero` and `È adunque` in the same reply; the 1933 edition prints `È posto`. English "It is laid down too absolutely". FG-CONS.1.3 moves to S2. |
 
 ## Closed
 
@@ -201,8 +204,5 @@ counterfactual.
 
 | # | Question | Note |
 |---|---|---|
-| O17 | FG I.3 .01 `etiam avendo ___ di fare male`: `facoltà` (pass A) or `facultà` (pass B, 1933)? | **Recommend `facultà`.** Same word, same English ("capacity"). The scan breaks u into n-shapes throughout, and the same unit prints `facultà del fare male` clearly on p. 11. Carried provisionally. |
-| O18 | FG I.3 .02 `lo eleggere ___ tribuni`: printed shape `a`; pass B `e'`; 1933 `e'` | **Recommend `e'`.** The scan prints `ara` for `era` twice in the same paragraph; the unit prints `e tribuni` two sentences later; `eleggere` takes a direct object throughout. English "choosing the tribunes" either way. Carried provisionally. |
-| O19 | FG I.3 .01 opening `E posto troppo assolutamente`: emend to `[È]` under D68? | **Recommend emending.** As printed, the first period has no finite verb. Canestrini accents `È vero` and `È adunque` in the same reply, so this is not the house habit of unaccented capitals. Borderline because a reader can hear an elliptical copula after "And". Carried provisionally as `[È]`; the English reads "It is laid down too absolutely". If you rule against, the English becomes "And [it is] laid down too absolutely" and nothing else moves. |
 
-*O01–O05 settled 2026-09-18. N01–N03 ruled 2026-09-21 as D33, D34, D36. O06, O07, O12, F002 ruled 2026-09-25 as D40–D42; O11 closed by D43. O13 ruled 2026-09-25 as D47. O15 closed by D68. O14 and O16 ruled 2026-09-28 as D69, D70. O20 ruled 2026-10-01 as D111.*
+*O01–O05 settled 2026-09-18. N01–N03 ruled 2026-09-21 as D33, D34, D36. O06, O07, O12, F002 ruled 2026-09-25 as D40–D42; O11 closed by D43. O13 ruled 2026-09-25 as D47. O15 closed by D68. O14 and O16 ruled 2026-09-28 as D69, D70. O20 ruled 2026-10-01 as D111. O17–O19 ruled 2026-10-01 as D112–D114.*

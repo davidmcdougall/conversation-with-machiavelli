@@ -1,16 +1,16 @@
 ---
 work_id: FG-CONS
 source_unit_id: FG-CONS.1.3
-version: "0.1.0"
+version: "0.1.1"
 status: established
-integrity_class: S1  # S2 once O17-O19 are ruled
+integrity_class: S2
 integrity_note: >
   Two independent cold passes of Canestrini (A, B), collated mechanically:
   441 words. No clause or sense disagreement. Two word-level splits on a scan
   that loses the bar of e and the bowl of u (`facoltà`/`facultà`,
-  `a`/`e'` tribuni) are escalated as O17, O18; the text carries the
-  recommended readings provisionally. The opening `E posto` is
-  carried provisionally as the emendation `[È] posto` (O19, D68 borderline). One stop split (after `cattivi`, at a
+  `a`/`e'` tribuni) were escalated as O17, O18 and
+  ruled `facultà`, `e'` (D112, D113). The opening `E posto` is
+  emended to `[È] posto` (O19, D114). One stop split (after `cattivi`, at a
   note reference) is closed by D40 either way.
 paragraph_divisions: witness  # Canestrini prints two indented paragraphs; kept as printed
 governing_witness: WIT-FG-CONS-1857-CANESTRINI
@@ -18,10 +18,10 @@ established_from: [sources/coldpass/FG-CONS.1.3-passA.md, sources/coldpass/FG-CO
 collation: sources/coldpass/COLLATION-2026-09-29-I3.md
 relationship_pointer: FG-CONS-DR-003
 responds_to: NM-DISC.1.3
-unresolved_source_findings: [O17, O18, O19]
+unresolved_source_findings: []
 witness_corrections: 2  # stop after `cattivi` (displaced by note ref, D40); stop after `di loro` before Canestrini's dash (D67)
 editorial_supplies: 0
-emendations: 1  # `[È] posto`, provisional pending O19
+emendations: 1  # `[È] posto`, D114
 rubric: "Quali accidenti facessero creare in Roma i tribuni della plebe; il che fece la repubblica più perfetta"  # Canestrini's setting; heading apparatus. No terminal stop printed.
 ---
 

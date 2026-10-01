@@ -4,7 +4,7 @@ source_unit_id: FG-CONS.1.3
 version: "0.1.0-draft"
 status: draft_cold_reviewed
 source_text: corpus/FG-CONS/FG-CONS.1.3.md
-established_source_version: "0.1.0"
+established_source_version: "0.1.1"
 responds_to: NM-DISC.1.3
 register: apparatus/register.md
 cold_review: 2026-09-29, subagent with no access to the drafting work
@@ -12,7 +12,7 @@ paragraph_divisions: witness  # Canestrini prints two paragraphs
 rubric_en: "What accidents made the tribunes of the plebs be created in Rome; which made the republic more perfect"
 rubric_source: Canestrini 1857, printed p. 10 — his setting of the chapter title over the reply, without a terminal stop
 translated: 2026-09-29
-open_for_david: [O17, O18, O19]
+open_for_david: none
 title: "Too absolutely"
 standfirst: "Machiavelli lays it down that whoever orders a republic must presuppose all men bad, and proves it on the Roman nobles, humane while the Tarquins lived and venomous once they were dead; the tribunes were the new order that did what fear of the kings had done. Guicciardini finds the premise laid down too absolutely: men are inclined by nature to the good, but their nature is fragile, and the wise order against the occasions for ill. He grants Machiavelli's cause for the tribunes, then argues that their powers came later and tempered only the nobles."
 ---
