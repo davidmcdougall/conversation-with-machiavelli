@@ -1,0 +1,497 @@
+<title>A Conversation with Machiavelli — That the guard belong to all</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root {
+  --paper:      #EDEEEC;
+  --paper-sunk: #E4E6E3;
+  --ink:        #1B1E1C;
+  --ink-muted:  #5C625E;
+  --ink-faint:  #868C87;
+  --rule:       #C9CDC8;
+  --rule-faint: #DCDFDB;
+  --nm:         #3A5A6B;
+  --fg:         #6E5A3C;
+  --serif: "EB Garamond", "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  --sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --mono:  "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:      #161917;
+    --paper-sunk: #1D211E;
+    --ink:        #E3E6E1;
+    --ink-muted:  #A0A6A0;
+    --ink-faint:  #767C77;
+    --rule:       #343934;
+    --rule-faint: #262B27;
+    --nm:         #8FB4C6;
+    --fg:         #C4A97C;
+  }
+}
+:root[data-theme="dark"] {
+  --paper:      #161917;
+  --paper-sunk: #1D211E;
+  --ink:        #E3E6E1;
+  --ink-muted:  #A0A6A0;
+  --ink-faint:  #767C77;
+  --rule:       #343934;
+  --rule-faint: #262B27;
+  --nm:         #8FB4C6;
+  --fg:         #C4A97C;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 1160px; margin: 0 auto; padding-inline: 20px; padding-block: 0 0; }
+
+/* ---- masthead ---- */
+.masthead { padding-block: 56px 32px; border-bottom: 1px solid var(--rule); }
+.eyebrow {
+  font-family: var(--sans); font-size: 11px; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint);
+  margin: 0 0 18px;
+}
+h1 {
+  font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 5vw, 44px);
+  line-height: 1.12; margin: 0 0 14px; text-wrap: balance; letter-spacing: -0.01em;
+}
+h1 .sub { display: block; font-style: italic; color: var(--ink-muted); font-size: .52em; margin-top: 12px; letter-spacing: 0; }
+.standfirst {
+  font-family: var(--sans); font-size: 14.5px; line-height: 1.6;
+  color: var(--ink-muted); max-width: 62ch; margin: 0;
+}
+
+/* ---- the pairing device ---- */
+.pairing {
+  display: flex; align-items: stretch; gap: 0; margin: 30px 0 0;
+  border: 1px solid var(--rule); border-radius: 2px; overflow: hidden;
+  font-family: var(--sans); background: var(--paper-sunk);
+}
+.pairing > div { flex: 1 1 0; padding: 13px 16px; min-width: 0; }
+.pairing .who { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
+.pairing .nm-side .who { color: var(--nm); }
+.pairing .fg-side .who { color: var(--fg); }
+.pairing .what { font-size: 13.5px; color: var(--ink-muted); }
+.pairing .arrow {
+  flex: 0 0 auto; display: flex; align-items: center; justify-content: center;
+  padding-inline: 14px; color: var(--ink-faint); font-size: 15px;
+  border-inline: 1px solid var(--rule);
+}
+
+/* ---- pair-to-pair navigation ---- */
+.pairnav {
+  display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+  margin-top: 18px; font-family: var(--sans); font-size: 12.5px;
+  color: var(--ink-muted);
+}
+.pairnav a { text-decoration: none; color: var(--ink-muted); }
+.pairnav a:hover, .pairnav a:focus { color: var(--ink); text-decoration: underline; }
+
+/* ---- work sections ---- */
+.work { padding-block: 52px 0; }
+.work-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
+.work-head .tag {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .04em;
+  padding: 3px 7px; border-radius: 2px; color: var(--paper);
+}
+.work.nm .tag { background: var(--nm); }
+.work.fg .tag { background: var(--fg); }
+h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; letter-spacing: -0.005em; }
+.rubric {
+  font-style: italic; color: var(--ink-muted); max-width: 70ch;
+  margin: 10px 0 0; font-size: 16.5px; line-height: 1.5;
+}
+.rubric-note {
+  font-family: var(--sans); font-style: normal; font-size: 12px;
+  color: var(--ink-faint); margin-top: 7px;
+}
+.colheads {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  margin-top: 30px; padding-bottom: 7px; border-bottom: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint);
+}
+
+/* ---- the facing pair ---- */
+.pair {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  padding-block: 22px; border-bottom: 1px solid var(--rule-faint);
+  scroll-margin-top: 20px;
+}
+.pair:target { background: var(--paper-sunk); }
+.annot { grid-column: 2 / -1; margin-top: 14px; font-family: var(--sans); font-size: 13.5px;
+  line-height: 1.55; color: var(--ink-muted); }
+.annot summary { cursor: pointer; font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); list-style: none; }
+.annot summary::-webkit-details-marker { display: none; }
+.annot summary::before { content: "+ "; }
+.annot[open] summary::before { content: "− "; }
+.annot p { margin: 8px 0 0; max-width: 72ch; }
+.annot .xref { color: inherit; text-decoration: underline; text-decoration-color: var(--rule);
+  text-underline-offset: 2px; white-space: nowrap; }
+.gutter { padding-top: 4px; }
+.uid {
+  font-family: var(--mono); font-size: 10.5px; color: var(--ink-faint);
+  text-decoration: none; letter-spacing: -0.02em;
+}
+.uid:hover, .uid:focus { color: var(--ink); text-decoration: underline; }
+.col { min-width: 0; }
+.col.it { hyphens: auto; }
+.col.en { }
+.supplied { color: var(--ink-muted); }
+
+/* ---- apparatus ---- */
+.apparatus {
+  margin-top: 34px; padding-top: 22px; border-top: 2px solid var(--rule);
+  font-family: var(--sans); font-size: 13.5px; line-height: 1.58;
+  color: var(--ink-muted);
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 26px 34px;
+}
+.apparatus h3 {
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); margin: 0 0 9px;
+}
+.apparatus p { margin: 0 0 9px; }
+.apparatus p:last-child { margin-bottom: 0; }
+.apparatus .lem { font-family: var(--serif); font-size: 15px; color: var(--ink); font-style: italic; }
+.sig { font-family: var(--mono); font-size: 12px; color: var(--ink); }
+
+/* ---- colophon ---- */
+.colophon {
+  margin-top: 60px; padding-block: 28px 60px; border-top: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 13px; line-height: 1.6; color: var(--ink-muted);
+}
+.colophon .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 34px; }
+.colophon h3 {
+  font-size: 10.5px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--ink-faint); margin: 0 0 8px;
+}
+.colophon p { margin: 0 0 8px; }
+.colophon ul { margin: 0; padding-left: 16px; }
+.colophon li { margin-bottom: 5px; }
+.state {
+  margin-top: 26px; padding: 14px 16px; background: var(--paper-sunk);
+  border-left: 2px solid var(--ink-faint); border-radius: 0 2px 2px 0;
+  font-size: 12.5px;
+}
+.state strong { color: var(--ink); font-weight: 600; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--nm); outline-offset: 2px; }
+
+/* ---- contents / index page ---- */
+.toc { margin-top: 30px; }
+.toc-row {
+  display: grid; grid-template-columns: 40px 1fr 1fr; gap: 0 20px;
+  padding-block: 14px; border-bottom: 1px solid var(--rule-faint);
+  font-family: var(--sans); align-items: baseline;
+}
+.toc-row .n { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
+.toc-row a { text-decoration: none; color: var(--ink); font-family: var(--serif); font-size: 16px; }
+.toc-row a:hover, .toc-row a:focus { text-decoration: underline; }
+.toc-row .unpublished { color: var(--ink-faint); font-style: italic; font-size: 14px; }
+.toc-row .ids { color: var(--ink-faint); font-size: 11.5px; font-family: var(--mono); }
+
+@media (max-width: 760px) {
+  body { font-size: 16.5px; }
+  .colheads { display: none; }
+  .pair { grid-template-columns: 1fr; gap: 0; padding-block: 20px; }
+  .gutter { padding-top: 0; margin-bottom: 8px; }
+  .annot { grid-column: 1; }
+  .col.it { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px dotted var(--rule); }
+  .col.it::before, .col.en::before {
+    display: block; font-family: var(--sans); font-size: 10px; font-weight: 600;
+    letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px;
+  }
+  .col.it::before { content: "Italian"; }
+  .col.en::before { content: "English"; }
+  .pairing { flex-direction: column; }
+  .pairing .arrow { border-inline: 0; border-block: 1px solid var(--rule); padding-block: 6px; }
+  .toc-row { grid-template-columns: 1fr; gap: 4px; }
+}
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow">A Conversation with Machiavelli · Pair 5 of 39</p>
+    <h1>That the guard belong to all
+      <span class="sub">Discourses I.5, and Guicciardini&#x27;s reply</span></h1>
+    <p class="standfirst">Machiavelli asks whether liberty is better guarded by the nobles, as at Sparta and Venice, or by the plebs, as at Rome, and answers that it depends on whether a republic means to make an empire or only to maintain itself. Guicciardini says he does not understand the question. Who governs is one thing; who holds a particular charge of liberty is another; and at Rome the guard of liberty was no less with the patricians than with the plebeians: consuls and dictators had charge of it, and the tribunes were created only to defend the plebs. In a mixed government he would have the guard belong to all, each order the guard of the other. Forced to choose, he would believe the nobles the lesser error, and he will not use Machiavelli&#x27;s distinction: the government of the plebs is neither for acquiring nor for conserving.</p>
+
+    <div class="pairing">
+      <div class="nm-side">
+        <div class="who">Niccolò Machiavelli</div>
+        <div class="what">Discorsi sopra la prima Deca di Tito Livio · written c. 1513–19, printed 1531</div>
+      </div>
+      <div class="arrow" aria-hidden="true">answered by</div>
+      <div class="fg-side">
+        <div class="who">Francesco Guicciardini</div>
+        <div class="what">Considerazioni intorno ai Discorsi del Machiavelli · written 1529–30, printed 1857</div>
+      </div>
+    </div>
+    <nav class="pairnav"><a href="1.4.html">← Pair 1.4</a><a href="../index.html">All 39 pairs</a><a href="1.12.html">Pair 1.12 →</a></nav>
+  </header>
+
+  <section class="work nm">
+    <div class="work-head">
+      <span class="tag">NM-DISC.1.5</span>
+      <h2>Capitolo V</h2>
+    </div>
+    <p class="rubric">Dove più sicuramente si ponga la guardia della libertà, o nel Popolo, o ne&#x27; Grandi; e quali hanno maggiore cagione di tumultuare, o chi vuole acquistare, o chi vuole mantenere.</p>
+    <p class="rubric">Where the guard of liberty is more securely set, whether in the people or in the great; and which have greater cause to make tumult, whoever wishes to acquire or whoever wishes to maintain.</p>
+
+    <div class="colheads"><div></div><div>Italian · 1824</div><div>English</div></div>
+      <div class="pair" id="NM-DISC.1.5.01">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.5.01">1.5.01</a></div>
+        <div class="col it" lang="it">Quelli che prudentemente hanno costituita una Repubblica, intra le più necessarie cose ordinate da loro, è stato costituire una guardia alla libertà; e secondo che questa è bene collocata, dura più o meno quel vivere libero. E perché in ogni Repubblica sono uomini grandi e popolari, si è dubitato nelle mani de&#x27; quali sia meglio collocata detta guardia. E appresso i Lacedemoni, e ne&#x27; nostri tempi appresso de&#x27; Viniziani, la è stata messa nelle mani de&#x27; Nobili; ma appresso de&#x27; Romani fu messa nelle mani della Plebe. Pertanto è necessario esaminare, quale di queste Repubbliche avesse migliore elezione.</div>
+        <div class="col en" lang="en">Those who have prudently constituted a republic, among the most necessary things ordered by them has been to constitute a guard for liberty; and according as this is well placed, that free living lasts more or less. And because in every republic there are great men and popular men, it has been doubted in whose hands the said guard is better placed. And among the Lacedaemonians, and in our times among the Venetians, it has been put in the hands of the nobles; but among the Romans it was put in the hands of the plebs. On that account it is necessary to examine which of these republics made the better choice.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The question I.4 left behind. The tumults gave Rome its tribunes, and the tribunes were the guard of its liberty (I.4 .05); now Machiavelli asks where such a guard is better placed. Every republic has great men and popular men — the two humours of I.4 (I.4 .02) — and founders have chosen both ways: Sparta and Venice gave the guard to the nobles, Rome to the plebs. Guicciardini&#x27;s reply begins by saying he does not understand the question <a class="xref" href="#FG-CONS.1.5.01">Guicciardini .01</a>.</p>
+<p><span class="lem">History.</span> Sparta and Venice, whose Great Council became hereditary with the closing (<i lang="it">Serrata</i>) of 1297, were the standing examples of the aristocratic republic; Rome&#x27;s tribunate was the example of the other kind. Machiavelli names no Spartan institution.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.5.02">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.5.02">1.5.02</a></div>
+        <div class="col it" lang="it">E se si andasse dietro alle ragioni, ci è che dire da ogni parte; ma se si esaminasse il fine loro, si piglierebbe la parte dei Nobili, per aver avuta la libertà di Sparta e di Vinegia più lunga vita che quella di Roma. E venendo alle ragioni dico, pigliando prima la parte de&#x27; Romani, come e&#x27; si debbe mettere in guardia coloro d&#x27;una cosa, che hanno meno appetito di usurparla. E senza dubbio se si considera il fine de&#x27; Nobili e degl&#x27;Ignobili, si vedrà in quelli desiderio grande di dominare, ed in questi solo desiderio di non essere dominati, e per conseguente maggiore volontà di vivere liberi, potendo meno sperare d&#x27;usurparla che non possono li Grandi; talché essendo i Popolani preposti a guardia d&#x27;una libertà, è ragionevole ne abbiano più cura, e non la potendo occupare loro, non permettano che altri l&#x27;occupi.</div>
+        <div class="col en" lang="en">And if one went by the reasons, there is something to say on every side; but if one examined their end, one would take the part of the nobles, for the liberty of Sparta and of Venice having had a longer life than that of Rome. And, coming to the reasons, I say, taking first the part of the Romans, that one must put on guard over a thing those who have less appetite to usurp it. And without doubt, if one considers the end of the nobles and of the ignoble, one will see in those a great desire to dominate, and in these only a desire not to be dominated, and consequently a greater will to live free, being less able to hope to usurp it than the great are; so that, the commoners being appointed to the guard of a liberty, it is reasonable that they should have more care of it, and, not being able to occupy it themselves, should not permit others to occupy it.</div>
+        <details class="annot"><summary>Commentary · 1</summary>
+          <p><span class="lem">Argument.</span> Two ways of judging. By the reasons there is something to say on every side; by the end, one would take the nobles&#x27; part, since Sparta&#x27;s and Venice&#x27;s liberty lasted longer than Rome&#x27;s. Machiavelli then gives Rome&#x27;s reasons first: put on guard over a thing those with the least appetite to usurp it. The great desire to dominate; the people desire only not to be dominated, so it is reasonable that they should care more for liberty and, unable to occupy it themselves, not let others occupy it.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.5.03">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.5.03">1.5.03</a></div>
+        <div class="col it" lang="it">Dall&#x27;altra parte, chi difende l&#x27;ordine Spartano e Veneto dice, che coloro che mettono la guardia in mano de&#x27; potenti, fanno due opere buone; l&#x27;una, che satisfanno più all&#x27;ambizione di coloro ch&#x27;avendo più parte nella Repubblica, per avere questo bastone in mano, hanno cagione di contentarsi più; l&#x27;altra, che lievano una qualità di autorità dagli animi inquieti della Plebe, che è cagione d&#x27;infinite dissensioni e scandali in una Repubblica, e atta a ridurre la Nobiltà a qualche disperazione, che col tempo faccia cattivi effetti. E ne danno per esempio la medesima Roma, che per avere i Tribuni della Plebe questa autorità nelle mani, non bastò loro avere un Console plebeo, che li vollono avere ambedue. Da questa e&#x27; vollono la Censura, il Pretore, e tutti gli altri gradi dell&#x27;Imperio della città; né bastò loro questo, che menati dal medesimo furore, cominciarono poi col tempo a adorare quelli uomini che vedevano atti a battere la Nobiltà; donde nacque la potenza di Mario, e la rovina di Roma.</div>
+        <div class="col en" lang="en">On the other hand, whoever defends the Spartan and Venetian order says that those who put the guard in the hands of the powerful do two good works: the one, that they satisfy more the ambition of those who, having more part in the republic, through having this staff in hand have cause to be more content; the other, that they take away a quality of authority from the restless spirits of the plebs, which is the cause of infinite dissensions and scandals in a republic, and apt to reduce the nobility to some desperation that in time may produce bad effects. And they give as example that same Rome, which, through the tribunes of the plebs having this authority in their hands, it was not enough for them to have one plebeian consul, but they wished to have both. From this they wished for the censorship, the praetor, and all the other degrees of the rule of the city; nor was this enough for them, but, led by the same fury, they began afterwards in time to adore those men whom they saw apt to beat the nobility; whence arose the power of Marius, and the ruin of Rome.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The other side, in its defenders&#x27; voice: giving the guard to the powerful does two good works. It satisfies the ambition of the great, and it takes from the restless plebs an authority that breeds dissension and is apt to drive the nobility to a desperation that in time does harm. Their example is Rome itself: armed with the tribunes, the plebs wanted one consulship, then both, then every degree of command, and in time began to adore whoever could beat the nobility — whence the power of Marius and the ruin of Rome.</p>
+<p><span class="lem">History.</span> The Licinian-Sextian laws of 367 BC required, as Livy reports, that one consul be plebeian; the first, Lucius Sextius, held office in 366. Plebeians reached the censorship in 351 and the praetorship in 337. Both consulships were open by law from 342, but two plebeians first held them together in 172 BC. The defenders&#x27; order — one consul, both, then the censorship and praetorship — is rhetorical, not chronological. Marius, consul seven times between 107 and 86 BC, was the popular leader whose rivalry with Sulla ended in civil war.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.5.04">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.5.04">1.5.04</a></div>
+        <div class="col it" lang="it">E veramente chi discorresse bene l&#x27;una cosa e l&#x27;altra, potrebbe stare dubbio, quale da lui fusse eletto per guardia di tale libertà, non sapendo quale qualità d&#x27;uomini sia più nociva in una Repubblica, o quella che desidera acquistare quello che non ha, o quella che desidera mantenere l&#x27;onore già acquistato. Ed in fine chi sottilmente esaminerà tutto, ne farà questa conclusione: o tu ragioni di una Repubblica, che voglia fare uno Imperio, come Roma, o d&#x27;una che le basti mantenersi. Nel primo caso, gli è necessario fare ogni cosa come Roma; nel secondo può imitare Vinegia e Sparta, per quelle cagioni, e come nel seguente capitolo si dirà.</div>
+        <div class="col en" lang="en">And truly, whoever discoursed well on the one thing and the other might stay in doubt which should be chosen by him as guard of such liberty, not knowing which quality of men is more harmful in a republic, either that which desires to acquire what it has not, or that which desires to maintain the honour already acquired. And in the end, whoever examines everything subtly will make of it this conclusion: either you are reasoning of a republic that wishes to make an empire, like Rome, or of one for which it is enough to maintain itself. In the first case it is necessary for it to do everything like Rome; in the second it can imitate Venice and Sparta, for those causes, and as will be said in the following chapter.</div>
+        <details class="annot"><summary>Commentary · 1</summary>
+          <p><span class="lem">Argument.</span> The verdict on the first question is conditional. Weighed well, the reasons might leave one in doubt, since it is unclear which quality of men is more harmful, those who desire what they lack or those who desire to keep what they have. So the answer depends on the republic: one that means to make an empire must do everything like Rome; one content to maintain itself can imitate Venice and Sparta. The next chapter takes this up. Guicciardini refuses the distinction <a class="xref" href="#FG-CONS.1.5.02">Guicciardini .02</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.5.05">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.5.05">1.5.05</a></div>
+        <div class="col it" lang="it">Ma per tornare a discorrere quali uomini siano in una Repubblica più nocivi, o quelli che desiderano d&#x27;acquistare, o quelli che temono di perdere lo acquistato, dico, che sendo fatto Marco Menennio Dittatore, e Marco Fulvio Maestro dei cavalli, tutti duoi plebei, per ricercare certe congiure che s&#x27;erano fatte in Capova contro a Roma, fu dato ancora loro autorità dal Popolo di potere ricercare chi in Roma per ambizione e modi straordinarj s&#x27;ingegnasse di venire al Consolato, ed agli altri onori della città. E parendo alla Nobiltà, che tale autorità fusse data al Dittatore contro a lei, sparsero per Roma, che non i Nobili erano quelli che cercavano gli onori per ambizione e modi straordinarj, ma gl&#x27;Ignobili, i quali non confidatisi nel sangue e nella virtù loro, cercavano per vie straordinarie venire a quelli gradi; e particolarmente accusavano il Dittatore. E tanto fu potente questa accusa, che Menennio fatta una concione, e dolutosi delle calunnie dategli da&#x27; Nobili, depose la Dittatura, e sottomisesi al giudizio che di lui fusse fatto dal Popolo; e dipoi agitata la causa sua ne fu assoluto, dove si disputò assai quale sia più ambizioso, o quel che vuole mantenere, o quel che vuole acquistare; perché facilmente l&#x27;uno e l&#x27;altro appetito può essere cagione di tumulti grandissimi. Pur nondimeno il più delle volte sono causati da chi possiede, perché la paura del perdere genera in loro le medesime voglie che sono in quelli che desiderano acquistare; perché non pare agli uomini possedere sicuramente quello che l&#x27;uomo ha, se non si acquista di nuovo dell&#x27;altro. E di più vi è che possedendo molto, possono con maggior potenza e maggior moto fare alterazione. Ed ancora vi è di più, che li loro scorretti e ambiziosi portamenti accendono ne&#x27; petti di chi non possiede voglia di possedere, o per vendicarsi contro di loro spogliandoli, o per potere ancora loro entrare in quella ricchezza, e in quelli onori che veggono essere male usati dagli altri.</div>
+        <div class="col en" lang="en">But to return to discoursing which men are more harmful in a republic, either those who desire to acquire or those who fear to lose what has been acquired, I say that, Marcus Menennius having been made dictator, and Marcus Fulvius master of the horse, both plebeians, to search out certain conspiracies that had been made in Capua against Rome, authority was also given them by the people to be able to search out who in Rome, through ambition and extraordinary ways, was contriving to come to the consulate and to the other honours of the city. And, it seeming to the nobility that such authority had been given to the dictator against it, they spread it through Rome that it was not the nobles who sought the honours through ambition and extraordinary ways, but the ignoble, who, not trusting in their blood and their <i lang="it">virtù</i>, sought by extraordinary paths to come to those degrees; and in particular they accused the dictator. And so powerful was this accusation that Menennius, having made a harangue and complained of the calumnies given him by the nobles, laid down the dictatorship and submitted himself to the judgment that should be made of him by the people; and afterwards, his cause argued, he was absolved of it, where it was much disputed which is more ambitious, either he who wishes to maintain or he who wishes to acquire; for readily the one and the other appetite can be the cause of very great tumults. Yet nonetheless most often they are caused by those who possess, for the fear of losing begets in them the same longings that are in those who desire to acquire; for it does not seem to men that they possess securely what a man has unless he acquires something more anew. And moreover there is this, that, possessing much, they can make alteration with greater power and greater motion. And still more there is this, that their unruly and ambitious comportment kindles in the breasts of those who do not possess a longing to possess, either to avenge themselves against them by despoiling them, or to be able themselves also to enter into that wealth, and into those honours that they see ill used by the others.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> The second question, through a Roman case. A plebeian dictator, given power to investigate those who sought office by ambition and extraordinary ways, was charged by the nobles with being such a man himself; he resigned, submitted to the people&#x27;s judgment, and was acquitted. The dispute it raised was who is more ambitious, the man who would keep or the man who would acquire. Machiavelli grants that either appetite readily causes very great tumults, and then holds that most often they are caused by those who possess: the fear of losing breeds the same longings as wanting; possessing much, they can make alteration with greater power; and their unruly, ambitious conduct kindles in those who do not possess a longing to possess, either to avenge themselves by despoiling them or to enter into the wealth and honours they see ill used. In the Roman case, those who possess are the nobles.</p>
+<p><span class="lem">History.</span> Livy 9.26: in 314 BC the dictator Gaius Maenius and his master of the horse Marcus Folius, both plebeians, were appointed to investigate conspiracies at Capua, and the inquiry turned on the Roman nobility, who charged the dictator himself. Maenius resigned and was acquitted. Machiavelli&#x27;s names are Marco Menennio and Marco Fulvio; the 1554 edition prints <i lang="it">Follio</i>.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini does not take up this second question; his reply ends with the first <a class="xref" href="#FG-CONS.1.5.02">Guicciardini .02</a>.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from the 1824 edition (<span class="sig">WIT-NM-DISC-1824-IA</span>), page-image-backed, which governs. Collated against the 1554 Giglio printing, Venice (<span class="sig">WIT-NM-DISC-1554-IA</span>), which is comparison evidence only.</p>
+<p>Paragraph divisions are editorial. The witness prints the chapter as one unbroken block.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem">che hanno meno appetito di usurparla ... in quelli desiderio grande di dominare</span> — 1824. The 1554 witness reads <i lang="it">che hanno meno desiderio di usurparla ... in quelli cupidigia grande di dominare</i>. Giglio gives the great <i lang="it">cupidigia</i> (cupidity) where the 1824 text gives them <i lang="it">desiderio</i>, and the guard&#x27;s want of usurping is <i lang="it">desiderio</i> rather than <i lang="it">appetito</i>.</p>
+<p><span class="lem">satisfanno più all&#x27;ambizione di coloro ch&#x27;avendo più parte nella Repubblica</span> — 1824. The 1554 witness reads <i lang="it">sodisfano piu all&#x27;ambitione loro, che hauendo piu parte nelle Republiche</i>. Same sense: the ambition satisfied is that of the great themselves.</p>
+<p><span class="lem">Da questa e&#x27; vollono</span> — 1824. The 1554 witness reads <i lang="it">da questo è uollono</i>. Giglio&#x27;s neuter favours &#x27;from this point on&#x27;; the 1824 feminine can also look back to the tribunes&#x27; authority.</p>
+<p><span class="lem">o d&#x27;una che le basti mantenersi</span> — 1824. The 1554 witness reads <i lang="it">o d&#x27;una, a cui basti mantenersi</i>. Same sense.</p>
+<p><span class="lem">Marco Fulvio</span> — 1824. The 1554 witness reads <i lang="it">Marco Follio</i>. Livy (9.26) names the master of the horse Marcus Folius; Giglio is nearer him. The governing witness is kept.</p>
+<p><span class="lem">dove si disputò assai quale sia più ambizioso ... perché facilmente l&#x27;uno e l&#x27;altro appetito</span> — 1824. The 1554 witness reads <i lang="it">doue si disputò, quale sia piu ambitioso ... perche l&#x27;uno, &amp; l&#x27;altro appetito</i>. Giglio has neither <i lang="it">assai</i> nor <i lang="it">facilmente</i>.</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem"><i lang="it">Quelli che ... hanno costituita ..., ... è stato costituire</i>.</span> The period begins with its agents and changes construction: &quot;Those who have prudently constituted a republic, among the most necessary things ordered by them has been to constitute a guard&quot;. The Italian does not repair it, and neither does the English. <i lang="it">Costituire</i> is &quot;constitute&quot;, both times, as in I.4.</p>
+<p><span class="lem"><i lang="it">guardia</i>.</span> &quot;Guard&quot;: the charge of keeping liberty, and those who keep it. I.4 ended on the tribunes as &quot;guard of Roman liberty&quot;; this chapter asks where that guard belongs. <i lang="it">Mettere in guardia</i> is &quot;put on guard over&quot;.</p>
+<p><span class="lem"><i lang="it">collocata</i>, <i lang="it">messa</i>, <i lang="it">si ponga</i>.</span> &quot;Placed&quot;, &quot;put&quot;, &quot;set&quot;: three verbs, three words.</p>
+<p><span class="lem"><i lang="it">quel vivere libero</i>.</span> &quot;That free living&quot;: the infinitive as a noun, as in I.2.</p>
+<p><span class="lem"><i lang="it">uomini grandi e popolari</i>.</span> &quot;Great men and popular men&quot;: the two humours of I.4, named by their men. Through the chapter they are also <i lang="it">Nobili</i> and <i lang="it">Ignobili</i>, &quot;nobles&quot; and &quot;the ignoble&quot;, and <i lang="it">Grandi</i> and <i lang="it">Popolani</i>, &quot;the great&quot; and &quot;the commoners&quot;; the plebs (<i lang="it">Plebe</i>) is the Roman name.</p>
+<p><span class="lem"><i lang="it">Pertanto</i>.</span> &quot;On that account&quot; (D98).</p>
+<p><span class="lem"><i lang="it">elezione</i>.</span> &quot;Choice&quot;, as throughout (I.1).</p>
+<p><span class="lem"><i lang="it">per aver avuta ... più lunga vita</i>.</span> &quot;For the liberty of Sparta and of Venice having had a longer life&quot;: the end, longevity, is the nobles&#x27; argument.</p>
+<p><span class="lem"><i lang="it">appetito</i>, <i lang="it">desiderio</i>, <i lang="it">volontà</i>, <i lang="it">voglie</i>.</span> &quot;Appetite&quot;, &quot;desire&quot;, &quot;will&quot;, &quot;longings&quot;: four words, four words. The chapter&#x27;s second question turns on which appetite is more dangerous.</p>
+<p><span class="lem"><i lang="it">e&#x27; si debbe</i>.</span> &quot;One must&quot;: <i lang="it">debbe</i>, as in I.4 (<i lang="it">ogni città debbe avere i suoi modi</i>, &quot;every city must have its ways&quot;). <i lang="it">È necessario</i> is &quot;it is necessary&quot;.</p>
+<p><span class="lem"><i lang="it">usurparla</i>.</span> &quot;To usurp it&quot;: the liberty, to make it one&#x27;s own.</p>
+<p><span class="lem"><i lang="it">occupare</i>.</span> &quot;Occupy&quot;, as in I.12: to seize and hold.</p>
+<p><span class="lem"><i lang="it">preposti a guardia d&#x27;una libertà</i>.</span> &quot;Appointed to the guard of a liberty&quot;: made its guard. The indefinite article is the Italian&#x27;s.</p>
+<p><span class="lem"><i lang="it">l&#x27;ordine Spartano e Veneto</i>.</span> &quot;The Spartan and Venetian order&quot;: <i lang="it">Veneto</i>, the adjective, beside <i lang="it">Viniziani</i> for the Venetians themselves.</p>
+<p><span class="lem"><i lang="it">opere buone</i>.</span> &quot;Good works&quot;: ordinary Italian for useful deeds; the English keeps the phrase.</p>
+<p><span class="lem"><i lang="it">questo bastone</i>.</span> &quot;This staff&quot;: the baton of command, the guard of liberty as a token of authority.</p>
+<p><span class="lem"><i lang="it">una qualità di autorità</i>.</span> &quot;A quality of authority&quot;: a kind and measure of it. <i lang="it">Qualità</i> is &quot;quality&quot; through the chapter: &quot;which quality of men&quot; in .04.</p>
+<p><span class="lem"><i lang="it">scandali</i>.</span> &quot;Scandals&quot;, in the older sense of public disturbance (D88).</p>
+<p><span class="lem"><i lang="it">che è cagione d&#x27;infinite dissensioni</i>.</span> &quot;Which is the cause of infinite dissensions&quot;: the authority, or the plebs holding it. The Italian does not decide, and neither does the English.</p>
+<p><span class="lem"><i lang="it">cattivi effetti</i>.</span> &quot;Bad effects&quot; (D03).</p>
+<p><span class="lem"><i lang="it">la medesima Roma, che per avere ... non bastò loro</i>.</span> &quot;That same Rome, which, through the tribunes ... having this authority, it was not enough for them&quot;: the relative <i lang="it">che</i> is left without a verb of its own, and the English keeps the loose construction. <i lang="it">Per avere</i> is causal, as in <i lang="it">per avere questo bastone</i>: the tribunes&#x27; authority is why the plebs wanted more.</p>
+<p><span class="lem"><i lang="it">che li vollono avere ambedue</i>.</span> &quot;But they wished to have both&quot;: <i lang="it">non bastò ... che</i> is &quot;it was not enough ... but&quot;, twice in .03. <i lang="it">Volere</i> is &quot;wish&quot; through the chapter. Two plebeian consuls first held office together in 172 BC.</p>
+<p><span class="lem"><i lang="it">Da questa</i>.</span> &quot;From this&quot;: either from the tribunes&#x27; authority or, in sequence, from this point on. The 1554 edition&#x27;s <i lang="it">da questo</i> favours the second.</p>
+<p><span class="lem"><i lang="it">gradi dell&#x27;Imperio</i>.</span> &quot;Degrees of the rule&quot;: the magistracies, the steps of command. <i lang="it">Imperio</i> is &quot;rule&quot; (glossary).</p>
+<p><span class="lem"><i lang="it">adorare</i>.</span> &quot;Adore&quot;: the word is Machiavelli&#x27;s, and it is strong. <i lang="it">Battere</i> is plain &quot;beat&quot;.</p>
+<p><span class="lem">Marius.</span> Gaius Marius, seven times consul, raised to power by the plebs against the nobility; his civil war with Sulla ended in Sulla&#x27;s dictatorship.</p>
+<p><span class="lem"><i lang="it">fare uno Imperio</i>.</span> &quot;Make an empire&quot;: to win rule over others, as Rome did. Elsewhere <i lang="it">imperio</i> is &quot;rule&quot; (glossary), as in &quot;the degrees of the rule of the city&quot; above; in this idiom &quot;make a rule&quot; would read as laying down a regulation, at the sentence that gives the chapter&#x27;s verdict. Guicciardini restates it as a republic &quot;that acquires&quot;.</p>
+<p><span class="lem"><i lang="it">come nel seguente capitolo si dirà</i>.</span> I.6 asks whether Rome could have been ordered without the enmity between people and senate.</p>
+<p><span class="lem">Marcus Menennius, Marcus Fulvius.</span> Machiavelli&#x27;s names. In Livy (9.26, 314 BC) the dictator is Gaius Maenius and his master of the horse Marcus Folius; the 1554 edition prints <i lang="it">Follio</i>. The names are kept as Machiavelli gives them; the facing Italian shows the form.</p>
+<p><span class="lem"><i lang="it">Capova</i>.</span> Capua.</p>
+<p><span class="lem"><i lang="it">straordinarj</i>, <i lang="it">straordinarie</i>.</span> &quot;Extraordinary&quot;: outside the ordinary orders. <i lang="it">Modi</i> are &quot;ways&quot;, <i lang="it">vie</i> &quot;paths&quot;.</p>
+<p><span class="lem"><i lang="it">virtù</i>.</span> Left in Italian (D16): what the ignoble, on the nobles&#x27; charge, could not trust in.</p>
+<p><span class="lem"><i lang="it">concione</i>.</span> &quot;Harangue&quot;, as in I.4.</p>
+<p><span class="lem"><i lang="it">agitata la causa sua</i>.</span> &quot;His cause argued&quot;: the case heard and debated.</p>
+<p><span class="lem"><i lang="it">ne farà questa conclusione</i>.</span> &quot;Will make of it this conclusion&quot;: <i lang="it">fare</i> is &quot;make&quot; or &quot;do&quot; through the chapter.</p>
+<p><span class="lem"><i lang="it">facilmente</i>.</span> &quot;Readily&quot;, the glossary&#x27;s word, kept for it: either appetite readily causes tumults. The 1554 edition omits it, and <i lang="it">assai</i> before it.</p>
+<p><span class="lem"><i lang="it">Pur nondimeno</i>.</span> &quot;Yet nonetheless&quot;: two adversatives, both kept.</p>
+<p><span class="lem"><i lang="it">di nuovo dell&#x27;altro</i>.</span> &quot;Something more anew&quot;: a man does not feel secure in what he has unless he adds to it.</p>
+<p><span class="lem"><i lang="it">maggior moto</i>.</span> &quot;Greater motion&quot;: the means to set things moving. The 1554 edition has <i lang="it">maggiore mouimento</i>.</p>
+<p><span class="lem"><i lang="it">scorretti</i>.</span> &quot;Unruly&quot;: uncorrected, ungoverned.</p>
+<p><span class="lem"><i lang="it">portamenti</i>.</span> &quot;Comportment&quot;: their bearing and conduct.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work fg">
+    <div class="work-head">
+      <span class="tag">FG-CONS.1.5</span>
+      <h2>Considerazione sul capitolo V</h2>
+    </div>
+    <p class="rubric">Dove più securamente si ponga la guardia della libertà, o nel popolo o ne&#x27; grandi, e quali hanno maggiore cagione di tumultuare, o chi vuole acquistare, o chi vuole mantenere</p>
+    <p class="rubric">Where the guard of liberty is more securely set, whether in the people or in the great, and which have greater cause to make tumult, whoever wishes to acquire, or whoever wishes to maintain
+      <span class="rubric-note">Canestrini sets Machiavelli&#x27;s chapter title over the reply, without the 1824 <i lang="it">Discorsi</i>&#x27;s capitals, with <i lang="it">securamente</i> for <i lang="it">sicuramente</i>, with a comma for the 1824 semicolon after <i lang="it">grandi</i> and none after <i lang="it">popolo</i>, and without a full stop. The English follows his punctuation.</span></p>
+
+    <div class="colheads"><div></div><div>Italian · 1857</div><div>English</div></div>
+      <div class="pair" id="FG-CONS.1.5.01">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.5.01">1.5.01</a></div>
+        <div class="col it" lang="it">Io non intendo il titulo della quistione, cioè, che voglia dire il porre la guardia della libertà o nel populo o ne&#x27; grandi, perché altro è a dire in chi ha a essere il governo, o ne&#x27; grandi o nella plebe, e a questo serve lo esemplo di Vinegia, perché è in modo ne&#x27; nobili che la plebe tutta ne è esclusa, altro è dire, participando ognuno del governo, una autorità particulare per difesa della libertà in chi ha a essere, o in magistrato d&#x27;uomini plebei o di uomini nobili; e a questo può servire lo esemplo di Roma, dove participando e e&#x27; nobili e la plebe, il magistrato de&#x27; tribuni, che pareva che avessi guardia particulare della libertà, fu ne&#x27; plebei. Benché, per dir meglio, in Roma la guardia della libertà non fu manco ne&#x27; patrizii che ne&#x27; plebei, perché e e&#x27; consuli e e&#x27; dittatori n&#x27;avevano cura e autorità di difendere la libertà, come si vede e in Spurio Melio e in Manlio Capitolino, de&#x27; quali, per insidiare alla libertà, fu l&#x27;uno ammazzato, l&#x27;altro messo in prigione da&#x27; dittatori; e negli ultimi tempi la sedizione de&#x27; Gracchi, e la conjurazione di Catilina fu oppressa da&#x27; consuli. La autorità ancora dello accusare era promiscua così a&#x27; patrizii come a&#x27; plebei, e così potevano chiamare uno in giudicio gli altri magistrati come e&#x27; tribuni, i quali non furono creati per difendere la libertà contro a chi volesse opprimere tutta la republica, ma solo per difesa della plebe contro a chi la voleva opprimere, e se bene e&#x27; tribuni chiamavano più spesso in giudicio e&#x27; cittadini, lo facevano perché, essendo magistrato plebeio, avevano più credito con la plebe, e pareva in uno certo modo che questo fussi proprio lo ufficio loro. Ma quanto al titulo della quistione, io loderò sempre più che tutti gli altri governi uno governo misto come di sopra, e in uno governo simile vorrò che la guardia della libertà contro a chi volessi opprimere la republica appartenga a tutti, fuggendo sempre quanto si possa la distinzione tra nobili e plebei, e per necessità uno governo misto è temperato in modo, che in favore della libertà l&#x27;uno ordine è guardia dell&#x27;altro.</div>
+        <div class="col en" lang="en">I do not understand the title of the question, that is, what it means, the setting of the guard of liberty either in the people or in the great, for it is one thing to say in whom the government is to be, either in the great or in the plebs, and to this the example of Venice serves, for it is in the nobles in such a way that the whole plebs is excluded from it, it is another thing to say, everyone partaking of the government, in whom a particular authority for the defence of liberty is to be, either in a magistracy of plebeian men or of noble men; and to this the example of Rome can serve, where, both the nobles and the plebs partaking, the magistracy of the tribunes, which seemed to have a particular guard of liberty, was in the plebeians. Albeit, to speak better, in Rome the guard of liberty was not less in the patricians than in the plebeians, for both the consuls and the dictators had care of it and authority to defend liberty, as is seen both in Spurius Maelius and in Manlius Capitolinus, of whom, for laying snares for liberty, the one was killed, the other put in prison by the dictators; and in the latter times the sedition of the Gracchi, and the conspiracy of Catiline, was oppressed by the consuls. The authority of accusing, too, was common alike to the patricians and to the plebeians, and the other magistrates as well as the tribunes could call a man to judgment, <span class="supplied">[the tribunes]</span> who were not created to defend liberty against whoever might wish to oppress the whole republic, but only for the defence of the plebs against whoever wished to oppress it, and although the tribunes more often called the citizens to judgment, they did so because, being a plebeian magistracy, they had more credit with the plebs, and it seemed in a certain way that this was properly their office. But as to the title of the question, I shall always praise, more than all other governments, a mixed government as above, and in a like government I shall wish that the guard of liberty against whoever might wish to oppress the republic belong to all, fleeing always, as far as one can, the distinction between nobles and plebeians, and of necessity a mixed government is tempered in such a way that, in favour of liberty, the one order is guard of the other.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> He does not understand the question, and says why: it is two questions. One is who governs, the great or the plebs, and Venice serves to answer it — the government is in the nobles and the plebs is shut out. The other is who, when everyone shares the government, holds a particular charge of defending liberty; Rome can serve to answer that, since the tribunes, a plebeian magistracy, seemed to hold it <a class="xref" href="#NM-DISC.1.5.01">Machiavelli .01</a>. Then he corrects even that. At Rome the guard of liberty was no less with the patricians: consuls and dictators had charge of it, as against Maelius, Manlius, the Gracchi and Catiline; and the right to accuse belonged to both orders, so that other magistrates, not only the tribunes, could call a man to judgment. The tribunes were made to defend the plebs against its oppressors, not liberty against whoever would oppress the whole republic; if they accused more often, it was because, as a plebeian magistracy, they had more credit with the plebs, and it seemed in a way their proper office. His own answer: in a mixed government he would have the guard belong to all, and of necessity each order is the guard of the other.</p>
+<p><span class="lem">History.</span> Spurius Maelius was killed in 439 BC by Servilius Ahala, master of the horse to the dictator Cincinnatus; Marcus Manlius Capitolinus was imprisoned in 385 BC by the dictator Cornelius Cossus. Tiberius Gracchus was killed in 133 BC by senators led by Scipio Nasica, a private citizen; Gaius in 121 BC under the consul Opimius. Catiline&#x27;s conspiracy was crushed in Rome in 63 BC by the consul Cicero, and Catiline fell at Pistoria early in 62, fighting the army of Cicero&#x27;s colleague Antonius. Guicciardini&#x27;s &quot;by the dictators&quot; is loose for Maelius, and his &quot;by the consuls&quot; fits Gaius Gracchus and Catiline, not Tiberius.</p>
+<p><span class="lem">Cross-reference.</span> &quot;A mixed government as above&quot; points back to his reply to I.2, where he grants the mixed state (.01) and designs its senate (.04). &quot;Fleeing the distinction between nobles and plebeians&quot; takes up I.4, where that distinction was the cause of Rome&#x27;s disunions (.01).</p>
+        </details>
+      </div>
+      <div class="pair" id="FG-CONS.1.5.02">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.5.02">1.5.02</a></div>
+        <div class="col it" lang="it">Ma quando fussi necessitato mettere in una città o uno governo meramente di nobili o uno governo di plebe, crederò sia manco errore farlo di nobili, perché essendovi più prudenza e avendo più qualità, si potrà più sperare si mettino in qualche forma ragionevole, che in una plebe, la quale essendo piena di ignoranza e di confusione e di molte male qualità, non si può sperare se non che precipiti e conquassi ogni cosa. Né procederò con quella distinzione: o tu vuoi fare una republica che acquisti, o una che conservi, perché il governo della plebe non è né per acquistare, né per conservare, e il governo di Roma era misto, non plebeo. E questa conclusione è secondo la sentenza di tutti quelli che hanno scritto delle republiche, che prepongono il governo degli ottimati a quello della moltitudine.</div>
+        <div class="col en" lang="en">But if I were necessitated to put in a city either a government merely of nobles or a government of plebs, I shall believe it less error to make it of nobles, for, there being more prudence in it, and its having more quality, one will be able to hope more that they may put themselves into some reasonable form than in a plebs, which, being full of ignorance and of confusion and of many ill qualities, one cannot hope will do other than precipitate and shatter everything. Nor shall I proceed with that distinction: either you wish to make a republic that acquires, or one that conserves, for the government of the plebs is neither for acquiring nor for conserving, and the government of Rome was mixed, not plebeian. And this conclusion is according to the sentence of all those who have written of republics, who set the government of the optimates before that of the multitude.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The forced choice. If he had to put a city under either nobles alone or plebs alone, he would believe the nobles the lesser error, because, with more prudence and quality among them, there is more hope they will put themselves into some reasonable form; a plebs, full of ignorance and confusion and ill qualities, can be hoped to do nothing but throw everything down. Then he refuses Machiavelli&#x27;s distinction <a class="xref" href="#NM-DISC.1.5.04">Machiavelli .04</a>: between a republic that acquires and one that conserves it does not help, since the government of the plebs is for neither, and Rome&#x27;s government was mixed, not plebeian. He ends by placing himself with &quot;all those who have written of republics&quot;, who set the optimates before the multitude.</p>
+<p><span class="lem">Cross-reference.</span> He restates Machiavelli&#x27;s verdict in the vocabulary of the rubric&#x27;s second question, acquiring and keeping <a class="xref" href="#NM-DISC.1.5.04">Machiavelli .04</a> <a class="xref" href="#NM-DISC.1.5.05">Machiavelli .05</a>, and does not take up that question — which has the greater cause to make tumult — at all.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from Canestrini 1857, <i>Opere inedite</i> vol. 1, pp. 1–65 (<span class="sig">WIT-FG-CONS-1857-CANESTRINI</span>) — the <i>editio princeps</i>, which governs. Collated against Palmarocchi 1933 (<span class="sig">WIT-FG-CONS-1933-PALMAROCCHI</span>): page images and the Wikisource transcription consulted as collation evidence, not reproduced (LICENSE §5).</p>
+<p><span class="lem">fu ne&#x27; plebei Benché</span> → <span class="lem">fu ne&#x27; plebei. Benché</span> (FG-CONS.1.5.01). Canestrini&#x27;s note reference stands where the stop would be, and a capital follows; the 1933 edition prints the stop. D40.</p>
+<p><span class="lem">lo ufficio loro Ma</span> → <span class="lem">lo ufficio loro. Ma</span> (FG-CONS.1.5.01). No stop in the impression; a capital follows; the 1933 edition prints it. D67.</p>
+<p><span class="lem">guardia dell&#x27;altro</span> → <span class="lem">guardia dell&#x27;altro.</span> (FG-CONS.1.5.01). End of a printed paragraph, no stop in the impression; the 1933 edition prints it. D67.</p>
+<p><span class="lem">distinzione . o tu vuoi</span> → <span class="lem">distinzione: o tu vuoi</span> (FG-CONS.1.5.02). Both readers see a single low point and cannot weigh it; lower case follows. The 1933 edition prints a colon. D110.</p>
+<p><span class="lem">non plebeo E questa</span> → <span class="lem">non plebeo. E questa</span> (FG-CONS.1.5.02). No stop in the impression; a capital follows; the 1933 edition prints it. D67.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem">una autorità particulare per difesa della libertà</span> — 1857. The 1933 witness reads <i lang="it">una autorità o cura particulare per difesa della libertà</i>. The 1933 edition adds <i lang="it">o cura</i>, &#x27;or care&#x27;, anticipating <i lang="it">n&#x27;avevano cura</i> below.</p>
+<p><span class="lem">n&#x27;avevano cura</span> — 1857. The 1933 witness reads <i lang="it">v&#x27;avevano cura</i>. <i lang="it">Ne</i>, &#x27;of it&#x27; (of liberty), against the 1933 <i lang="it">vi</i>, &#x27;there&#x27;; same sense.</p>
+<p><span class="lem">come si vede</span> — 1857. The 1933 witness reads <i lang="it">come si vedde</i>. Present against past: &#x27;as is seen&#x27; against &#x27;as was seen&#x27;.</p>
+<p><span class="lem">contro a chi volesse opprimere tutta la republica</span> — 1857. The 1933 witness reads <i lang="it">contro a chi volessi opprimere tutta la republica</i>. Two forms of the same imperfect subjunctive; the 1933 edition prints <i lang="it">volessi</i> both times in the paragraph.</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem">The paragraphs.</span> Canestrini prints this reply in two paragraphs, and they are kept: the question taken apart and answered, then the forced choice.</p>
+<p><span class="lem"><i lang="it">Io non intendo</i>.</span> &quot;I do not understand&quot;: the verb of FG I.3 <i lang="it">intese</i> (D92). He does not say the question is wrong; he says he cannot tell which of two questions it is.</p>
+<p><span class="lem"><i lang="it">il porre la guardia</i>.</span> &quot;The setting of the guard&quot;: he quotes the rubric&#x27;s verb, <i lang="it">si ponga</i>.</p>
+<p><span class="lem"><i lang="it">altro è a dire ..., altro è dire</i>.</span> &quot;It is one thing to say ..., it is another thing to say&quot;: the distinction between who governs and who keeps a particular charge of liberty, held in one period. The second drops the <i lang="it">a</i> of the first; English cannot show it.</p>
+<p><span class="lem"><i lang="it">chi ha a essere</i>.</span> &quot;In whom ... is to be&quot;: <i lang="it">avere a</i> is &quot;be to&quot; (D61).</p>
+<p><span class="lem"><i lang="it">participando</i>.</span> &quot;Partaking&quot;, as <i lang="it">partecipare di</i> in I.2: everyone has a share in the government.</p>
+<p><span class="lem"><i lang="it">particulare</i>.</span> &quot;Particular&quot;: a charge belonging to one magistracy (D93).</p>
+<p><span class="lem"><i lang="it">Benché</i>.</span> &quot;Albeit&quot; (D31), here opening a period: he corrects what he has just said of the tribunes.</p>
+<p><span class="lem"><i lang="it">e e&#x27; consuli e e&#x27; dittatori</i>.</span> &quot;Both the consuls and the dictators&quot;: the first <i lang="it">e</i> is &quot;both&quot;, the second the plural article (D35).</p>
+<p><span class="lem"><i lang="it">n&#x27;avevano cura</i>.</span> &quot;Had care of it&quot;: of liberty. The 1933 edition reads <i lang="it">v&#x27;avevano</i>.</p>
+<p><span class="lem">Spurius Maelius, Manlius Capitolinus.</span> Maelius, a rich plebeian who sold grain cheaply in a famine, was accused of aiming at kingship and killed in 439 BC by Servilius Ahala, master of the horse to the dictator Cincinnatus. Marcus Manlius, who had saved the Capitol from the Gauls, was imprisoned by the dictator Cornelius Cossus in 385 BC, and later condemned and thrown from the Tarpeian rock. Machiavelli names both in other chapters.</p>
+<p><span class="lem"><i lang="it">insidiare alla libertà</i>.</span> &quot;Laying snares for liberty&quot;: plotting against it.</p>
+<p><span class="lem">The Gracchi, Catiline.</span> Tiberius Gracchus was killed in 133 BC by a crowd of senators led by a private man, Scipio Nasica; his brother Gaius in 121 BC under the senate&#x27;s decree, with the consul Opimius acting. Catiline&#x27;s conspiracy was put down in 63 BC by the consul Cicero. Guicciardini&#x27;s &quot;by the consuls&quot; holds best for the last.</p>
+<p><span class="lem"><i lang="it">fu oppressa</i>.</span> &quot;Was oppressed&quot;: put down, crushed, in the older sense of the word. The paragraph has the verb three more times, for whoever would oppress the republic (twice) and for those who would oppress the plebs; the English keeps one verb throughout, as the Italian does.</p>
+<p><span class="lem"><i lang="it">chi volesse ... chi volessi opprimere</i>.</span> &quot;Whoever might wish to oppress&quot;, both times: the tribunes were not made against such a man, and the guard of all is.</p>
+<p><span class="lem"><i lang="it">promiscua</i>.</span> &quot;Common alike&quot;: held by both orders.</p>
+<p><span class="lem"><i lang="it">così potevano chiamare ... gli altri magistrati come e&#x27; tribuni, i quali</i>.</span> <i lang="it">Così ... come</i> is &quot;as well as&quot;. The English repeats &quot;[the tribunes]&quot; so that <i lang="it">i quali</i>, &quot;who&quot;, keeps its antecedent.</p>
+<p><span class="lem"><i lang="it">chiamare ... in giudicio</i>.</span> &quot;Call ... to judgment&quot;: to arraign before the people.</p>
+<p><span class="lem"><i lang="it">plebeio</i>.</span> &quot;Plebeian&quot;: both Canestrini and the 1933 edition print the form in -eio.</p>
+<p><span class="lem"><i lang="it">credito</i>.</span> &quot;Credit&quot;, as in I.12.</p>
+<p><span class="lem"><i lang="it">ufficio</i>.</span> &quot;Office&quot; (D56).</p>
+<p><span class="lem"><i lang="it">loderò ... vorrò</i>.</span> &quot;I shall praise ... I shall wish&quot;: future, as in the Italian. In .02 <i lang="it">crederò</i>, &quot;I shall believe&quot;: the act of assent (<i lang="it">credo</i>) put into the future, for a case he hopes not to meet.</p>
+<p><span class="lem"><i lang="it">governo misto come di sopra</i>.</span> &quot;A mixed government as above&quot;: FG I.2, where he grants the mixture and designs one on the Venetian model.</p>
+<p><span class="lem"><i lang="it">fuggendo</i>.</span> &quot;Fleeing&quot;: avoiding the distinction of orders that, in I.4, he made the cause of Rome&#x27;s disunions.</p>
+<p><span class="lem"><i lang="it">l&#x27;uno ordine è guardia dell&#x27;altro</i>.</span> &quot;The one order is guard of the other&quot;: his answer to the title. No one order keeps liberty; each keeps the other.</p>
+<p><span class="lem"><i lang="it">uno governo simile</i>.</span> &quot;A like government&quot;: <i lang="it">simile</i> is &quot;like&quot; (glossary).</p>
+<p><span class="lem"><i lang="it">essendovi più prudenza</i>.</span> &quot;There being more prudence in it&quot;: in a government of nobles.</p>
+<p><span class="lem"><i lang="it">necessitato</i>.</span> &quot;Necessitated&quot;: compelled, with <i lang="it">per necessità</i>, &quot;of necessity&quot;, at the end of .01.</p>
+<p><span class="lem"><i lang="it">qualità</i>.</span> &quot;Quality&quot;: the nobles have &quot;more quality&quot;, the plebs &quot;many ill qualities&quot;. Machiavelli&#x27;s &quot;which quality of men&quot; (.04) uses the same word.</p>
+<p><span class="lem"><i lang="it">male qualità</i>.</span> &quot;Ill qualities&quot;: <i lang="it">male</i>, adjective or noun, is &quot;ill&quot; in Guicciardini (FG I.2).</p>
+<p><span class="lem"><i lang="it">precipiti e conquassi</i>.</span> &quot;Precipitate and shatter&quot;: throw headlong and break apart.</p>
+<p><span class="lem"><i lang="it">o tu vuoi fare una republica che acquisti, o una che conservi</i>.</span> His restatement of Machiavelli&#x27;s verdict (<i lang="it">o tu ragioni di una Repubblica, che voglia fare uno Imperio, ... o d&#x27;una che le basti mantenersi</i>) in the words of Machiavelli&#x27;s second question: &quot;acquire&quot; is from the rubric and .04–.05, and &quot;maintain&quot; becomes &quot;conserve&quot;. &quot;You are reasoning of&quot; becomes &quot;you wish to make&quot;. The English keeps his words, not Machiavelli&#x27;s.</p>
+<p><span class="lem"><i lang="it">non è né per acquistare, né per conservare</i>.</span> &quot;Is neither for acquiring nor for conserving&quot;: not made for either. <i lang="it">Essere per</i> with an infinitive is &quot;be about to&quot; where it looks forward (D45, <i lang="it">era per opprimere</i>); here it states what a thing is fit for, and &quot;about to&quot; would misread it (D116).</p>
+<p><span class="lem"><i lang="it">la sentenza</i>.</span> &quot;The sentence&quot;: an opinion pronounced, in the older sense. <i lang="it">Opinione</i> is &quot;opinion&quot; (D02) and <i lang="it">giudicio</i> &quot;judgment&quot;; this is the third word.</p>
+<p><span class="lem"><i lang="it">ottimati</i>.</span> &quot;Optimates&quot; (D76).</p>
+<p><span class="lem"><i lang="it">prepongono</i>.</span> &quot;Set ... before&quot;: prefer, placing first.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="colophon">
+    <div class="row">
+      <div>
+        <h3>What this is</h3>
+        <p>A free, openly licensed, bilingual edition of Guicciardini's 39 <i>Considerazioni</i> and the
+          <i>Discorsi</i> chapters they answer — 78 text units, Italian and English facing, every reading
+          traceable to a named public-domain witness.</p>
+        <p>It is a reading edition with a transparent apparatus, not a text of record. It does not adjudicate
+          the critical text against Bausi 2001 or the manuscript tradition, and does not claim to.</p>
+      </div>
+      <div>
+        <h3>On the title</h3>
+        <p>Machiavelli had been dead two years when Guicciardini wrote; the <i>Discorsi</i> were unpublished,
+          and the <i>Considerazioni</i> stayed unprinted until 1857. Machiavelli never answers.</p>
+        <p>“Conversation” is a quotation, not a description. It invokes Machiavelli's letter to Vettori of
+          10 December 1513, where he changes into court dress at evening, enters the antique courts of ancient
+          men, and reports that <i>they, in their humanity, answer me</i>. Guicciardini does to Machiavelli
+          what Machiavelli did to Livy — and is denied the reply Machiavelli claimed.</p>
+      </div>
+      <div>
+        <h3>Method</h3>
+        <p>No image-derived reading enters the text on a single reading. Each unit is transcribed twice,
+          independently, by readers who have not seen each other's work; disagreements are adjudicated against
+          the page images and recorded.</p>
+        <p>Existing English translations of the <i>Considerazioni</i> — Grayson (1965), Atkinson &amp; Sices
+          (2002) — are never used as translation inputs.</p>
+      </div>
+      <div>
+        <h3>Licence</h3>
+        <p>The established Italian text and the apparatus data are dedicated to the public domain under
+          <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>. They are Machiavelli's and
+          Guicciardini's sentences, and this edition adds no condition to them.</p>
+        <p>The English translation, the notes and the editorial apparatus are licensed
+          <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: reuse them anywhere, including
+          commercially, with attribution to David McDougall and this edition. The build tooling is MIT.</p>
+        <p>The witness scans are other people's digitisations, included as evidence under their own terms; no
+          grant is made over them, and no page image of Palmarocchi 1933 is reproduced here. Full terms,
+          layer by layer, are in the <span class="sig">LICENSE</span> file in the repository.</p>
+      </div>
+    </div>
+
+    <div class="state">
+      <p><strong>Version 0.3 · 7 of 39 pairs published.</strong>
+        This edition is versioned, not frozen. Some translation questions on this pair are still open.</p>
+    </div>
+  </footer>
+
+</div>
