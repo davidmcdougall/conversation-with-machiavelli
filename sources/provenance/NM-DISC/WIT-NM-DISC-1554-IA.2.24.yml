@@ -6,19 +6,21 @@ edition: {title: "Discorsi di Nicolo Machiavelli fiorentino, sopra la prima deca
 files:
   - path: sources/witnesses/NM-DISC/WIT-NM-DISC-1554-IA/NM-DISC-II24-pages.pdf
     role: immutable_bounded_scan_extract
-    sha256: 516311188cb263918250bb8edf5ed04432c137f3e51d04b92f011366c6a69716
+    sha256: 69b556b3ce805f43a0f97e32adbbb23dde72c707614730ed2cac198c93fd1e72
   - path: sources/witnesses/NM-DISC/WIT-NM-DISC-1554-IA/internet-archive-metadata.json
     role: acquisition_and_rights_metadata
     sha256: ee3c07bbe533e3bde57bcb48240f2485b5382c6066203907d3aeaefb52250dd5
-chapter_locator: {source_pdf_zero_based_pages: [185, 186, 187, 188, 189, 190, 191, 192], confidence: PROVISIONAL, note: "LOW: Book 2/3 page numbers in the TAVOLA are three digits and this transcription already caught two leading-digit-loss errors during acquisition; range is generously bounded and should be re-verified against the scan before establishment relies on it."}
+chapter_locator: {source_pdf_zero_based_pages: [292, 293, 294, 295, 296, 297, 298, 299, 300], confidence: verified, opening_leaf: "fol. 129r", heading_evidence: "LE FORTEZZE GENERALMENTE SOno molto piu dannose, che utili. Ca. XXIIII.", note: "Located 2026-10-01 from the rendered page images of the full scan, not the OCR layer: the printed heading opens zero-based page 292 (fol. 129r) and the range runs through page 300 (fol. 133r), where the next chapter's heading is printed. Rubric and chapter number checked against WIT-NM-DISC-1824-IA. Replaces the TAVOLA-derived range 185-192 (printed page + 58), which contained none of this chapter; the volume is foliated, see WIT-NM-DISC-1554-IA.yml foliation."}
 acquisition:
   acquired_at: 2026-09-20
   acquired_by: "Claude (Cowork acquisition pass)"
+  relocated_at: 2026-10-01
+  relocated_by: "Claude (Cowork re-extraction pass)"
   archive_identifier: discorsidinicolo00mach
   source_pdf_url: https://archive.org/download/discorsidinicolo00mach/discorsidinicolo00mach.pdf
   source_pdf_sha256: 5705a93a26933e36d75d1260589399da23e3362689b3b80b60582a3a57a5692d
   contributing_library: Boston Public Library
-  derivation: "pypdf bounded extraction of zero-based pages 185-192, derived from manual TAVOLA transcription (see chapter_locator note); reversible against recorded full-file hash"
+  derivation: "pypdf bounded extraction of zero-based pages 292-300, located from the rendered page images (re-extracted 2026-10-01); reversible against recorded full-file hash"
 rights_assessment:
   underlying_work: public_domain_by_age
   edition: public_domain_by_age
@@ -28,4 +30,4 @@ rights_assessment:
   evidence: [https://archive.org/details/discorsidinicolo00mach]
 independence: {rank: independent_historical_edition, relative_to: WIT-NM-DISC-1824-IA, note: "sixteenth-century Venetian print, not a scan or transcription derivative of the 1824 edition"}
 integrity_candidate: S1
-unresolved_source_findings: [ACQUISITION-GIGLIO-PAGE-BOUNDARY-PROVISIONAL]
+unresolved_source_findings: []

@@ -6,19 +6,21 @@ edition: {title: "Discorsi di Nicolo Machiavelli fiorentino, sopra la prima deca
 files:
   - path: sources/witnesses/NM-DISC/WIT-NM-DISC-1554-IA/NM-DISC-II19-pages.pdf
     role: immutable_bounded_scan_extract
-    sha256: ab7dc31d67d2e33354ceba6eaed39f46595ec14ceb07639cefa1b35fc178530b
+    sha256: 1e4f44bc369dfa35aeb605f10b75d55eb6e6c24e607254425bdf79ff531bce18
   - path: sources/witnesses/NM-DISC/WIT-NM-DISC-1554-IA/internet-archive-metadata.json
     role: acquisition_and_rights_metadata
     sha256: ee3c07bbe533e3bde57bcb48240f2485b5382c6066203907d3aeaefb52250dd5
-chapter_locator: {source_pdf_zero_based_pages: [176, 177, 178, 179, 180, 181], confidence: PROVISIONAL, note: "LOW: Book 2/3 page numbers in the TAVOLA are three digits and this transcription already caught two leading-digit-loss errors during acquisition; range is generously bounded and should be re-verified against the scan before establishment relies on it."}
+chapter_locator: {source_pdf_zero_based_pages: [274, 275, 276, 277, 278, 279], confidence: verified, opening_leaf: "fol. 120r", heading_evidence: "CHE GLI ACQVISTI NELLE REP. NON bene ordinate, ... Ca. 19", note: "Located 2026-10-01 from the rendered page images of the full scan, not the OCR layer: the printed heading opens zero-based page 274 (fol. 120r) and the range runs through page 279 (fol. 122v), where the next chapter's heading is printed. Rubric and chapter number checked against WIT-NM-DISC-1824-IA. Replaces the TAVOLA-derived range 176-181 (printed page + 58), which contained none of this chapter; the volume is foliated, see WIT-NM-DISC-1554-IA.yml foliation."}
 acquisition:
   acquired_at: 2026-09-20
   acquired_by: "Claude (Cowork acquisition pass)"
+  relocated_at: 2026-10-01
+  relocated_by: "Claude (Cowork re-extraction pass)"
   archive_identifier: discorsidinicolo00mach
   source_pdf_url: https://archive.org/download/discorsidinicolo00mach/discorsidinicolo00mach.pdf
   source_pdf_sha256: 5705a93a26933e36d75d1260589399da23e3362689b3b80b60582a3a57a5692d
   contributing_library: Boston Public Library
-  derivation: "pypdf bounded extraction of zero-based pages 176-181, derived from manual TAVOLA transcription (see chapter_locator note); reversible against recorded full-file hash"
+  derivation: "pypdf bounded extraction of zero-based pages 274-279, located from the rendered page images (re-extracted 2026-10-01); reversible against recorded full-file hash"
 rights_assessment:
   underlying_work: public_domain_by_age
   edition: public_domain_by_age
@@ -28,4 +30,4 @@ rights_assessment:
   evidence: [https://archive.org/details/discorsidinicolo00mach]
 independence: {rank: independent_historical_edition, relative_to: WIT-NM-DISC-1824-IA, note: "sixteenth-century Venetian print, not a scan or transcription derivative of the 1824 edition"}
 integrity_candidate: S1
-unresolved_source_findings: [ACQUISITION-GIGLIO-PAGE-BOUNDARY-PROVISIONAL]
+unresolved_source_findings: []

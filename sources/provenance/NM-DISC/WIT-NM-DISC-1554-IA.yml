@@ -10,7 +10,12 @@ files:
   - path: sources/witnesses/NM-DISC/WIT-NM-DISC-1554-IA/internet-archive-metadata.json
     role: acquisition_and_rights_metadata
     sha256: ee3c07bbe533e3bde57bcb48240f2485b5382c6066203907d3aeaefb52250dd5
-chapter_locator: {source_pdf_zero_based_pages: [81, 82, 83, 84, 85], note: "chapter begins mid first extracted page and ends before chapter XIII on final page"}
+chapter_locator: {source_pdf_zero_based_pages: [81, 82, 83, 84, 85], confidence: verified, opening_leaf: "fol. 23v", heading_evidence: "DI QVANTA IMPORTANZA sia tenere conto della Religione, ... Cap. XII.", note: "chapter begins mid first extracted page and ends before chapter XIII on final page; re-checked 2026-10-01 against the rendered page images, extract page set unchanged (matched leaf by leaf to the full scan)"}
+foliation:
+  scheme: "Foliated, not paginated. The number in each headline is a folio number and is printed on the recto only; versos carry LIBRO."
+  zero_based_index: "recto of fol. N = 34 + 2N; verso of fol. N = 35 + 2N"
+  checked: "2026-10-01, against headline folio numbers read on the rendered page images from fol. 2r (index 38) to fol. 181r (index 396), and against all 39 chapter openings located in this pass. No drift."
+  superseded_claim: "printed page + 58 = zero-based index, used to place the 2026-09-20 per-unit extracts from the TAVOLA. The TAVOLA numbers are folios. The two rules agree only at fol. 23 (35 + 2x23 = 23 + 58 = 81), which is why the claim checked exact against NM-DISC.1.12 and was wrong for every other unit."
 acquisition:
   acquired_at: 2026-07-17
   acquired_by: "Codex (source_acquisition)"

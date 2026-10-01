@@ -6,19 +6,21 @@ edition: {title: "Discorsi di Nicolo Machiavelli fiorentino, sopra la prima deca
 files:
   - path: sources/witnesses/NM-DISC/WIT-NM-DISC-1554-IA/NM-DISC-I9-pages.pdf
     role: immutable_bounded_scan_extract
-    sha256: aa68d0b0a993ac0826b7a0e75a90153e8c304ad12e28644c8d91b67d06532b3f
+    sha256: 6c1bffb6d5014f3fa5939cead1e212716f2801ab867db4b89132a4bf0b7192b7
   - path: sources/witnesses/NM-DISC/WIT-NM-DISC-1554-IA/internet-archive-metadata.json
     role: acquisition_and_rights_metadata
     sha256: ee3c07bbe533e3bde57bcb48240f2485b5382c6066203907d3aeaefb52250dd5
-chapter_locator: {source_pdf_zero_based_pages: [75, 76, 77], confidence: PROVISIONAL, note: "medium-high: offset anchor (printed page + 58 = pypdf zero-based index) confirmed exact against this project's own established NM-DISC.1.12 ground truth."}
+chapter_locator: {source_pdf_zero_based_pages: [70, 71, 72, 73], confidence: verified, opening_leaf: "fol. 18r", heading_evidence: "COME EGLIE NECESSARIO esser solo a uolere ordinare una Republica di nuouo, ... Cap. IX.", note: "Located 2026-10-01 from the rendered page images of the full scan, not the OCR layer: the printed heading opens zero-based page 70 (fol. 18r) and the range runs through page 73 (fol. 19v), where the next chapter's heading is printed. Rubric and chapter number checked against WIT-NM-DISC-1824-IA. Replaces the TAVOLA-derived range 75-77 (printed page + 58), which contained none of this chapter; the volume is foliated, see WIT-NM-DISC-1554-IA.yml foliation."}
 acquisition:
   acquired_at: 2026-09-20
   acquired_by: "Claude (Cowork acquisition pass)"
+  relocated_at: 2026-10-01
+  relocated_by: "Claude (Cowork re-extraction pass)"
   archive_identifier: discorsidinicolo00mach
   source_pdf_url: https://archive.org/download/discorsidinicolo00mach/discorsidinicolo00mach.pdf
   source_pdf_sha256: 5705a93a26933e36d75d1260589399da23e3362689b3b80b60582a3a57a5692d
   contributing_library: Boston Public Library
-  derivation: "pypdf bounded extraction of zero-based pages 75-77, derived from manual TAVOLA transcription (see chapter_locator note); reversible against recorded full-file hash"
+  derivation: "pypdf bounded extraction of zero-based pages 70-73, located from the rendered page images (re-extracted 2026-10-01); reversible against recorded full-file hash"
 rights_assessment:
   underlying_work: public_domain_by_age
   edition: public_domain_by_age
@@ -28,4 +30,4 @@ rights_assessment:
   evidence: [https://archive.org/details/discorsidinicolo00mach]
 independence: {rank: independent_historical_edition, relative_to: WIT-NM-DISC-1824-IA, note: "sixteenth-century Venetian print, not a scan or transcription derivative of the 1824 edition"}
 integrity_candidate: S1
-unresolved_source_findings: [ACQUISITION-GIGLIO-PAGE-BOUNDARY-PROVISIONAL]
+unresolved_source_findings: []
