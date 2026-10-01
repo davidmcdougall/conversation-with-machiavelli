@@ -1,0 +1,53 @@
+source_unit_id: NM-DISC.1.5
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-I5-D001
+    locator: NM-DISC.1.5.02
+    class: reading
+    witness_1824: "che hanno meno appetito di usurparla ... in quelli desiderio grande di dominare"
+    witness_1554: "che hanno meno desiderio di usurparla ... in quelli cupidigia grande di dominare"
+    established: witness_1824
+    rationale: "Giglio gives the great `cupidigia` (cupidity) where the 1824 text gives them `desiderio`, and the guard's want of usurping is `desiderio` rather than `appetito`."
+  - id: NM-DISC-I5-D002
+    locator: NM-DISC.1.5.03
+    class: reading
+    witness_1824: "satisfanno più all'ambizione di coloro ch'avendo più parte nella Repubblica"
+    witness_1554: "sodisfano piu all'ambitione loro, che hauendo piu parte nelle Republiche"
+    established: witness_1824
+    rationale: "Same sense: the ambition satisfied is that of the great themselves."
+  - id: NM-DISC-I5-D003
+    locator: NM-DISC.1.5.03
+    class: reading
+    witness_1824: "Da questa e' vollono"
+    witness_1554: "da questo è uollono"
+    established: witness_1824
+    rationale: "Giglio's neuter favours 'from this point on'; the 1824 feminine can also look back to the tribunes' authority."
+  - id: NM-DISC-I5-D004
+    locator: NM-DISC.1.5.04
+    class: reading
+    witness_1824: "o d'una che le basti mantenersi"
+    witness_1554: "o d'una, a cui basti mantenersi"
+    established: witness_1824
+    rationale: "Same sense."
+  - id: NM-DISC-I5-D005
+    locator: NM-DISC.1.5.05
+    class: name
+    witness_1824: "Marco Fulvio"
+    witness_1554: "Marco Follio"
+    established: witness_1824
+    rationale: "Livy (9.26) names the master of the horse Marcus Folius; Giglio is nearer him. The governing witness is kept."
+  - id: NM-DISC-I5-D006
+    locator: NM-DISC.1.5.05
+    class: reading
+    witness_1824: "dove si disputò assai quale sia più ambizioso ... perché facilmente l'uno e l'altro appetito"
+    witness_1554: "doue si disputò, quale sia piu ambitioso ... perche l'uno, & l'altro appetito"
+    established: witness_1824
+    rationale: "Giglio has neither `assai` nor `facilmente`."
+  - id: NM-DISC-I5-D007
+    locator: NM-DISC.1.5.01-05
+    class: systematic_rewording
+    witness_1824: "the 1824 wording"
+    witness_1554: "Giglio's synonyms and reorderings: `dato forma a` for `costituita`, `commessa` for `collocata`, `posta` for `messa`, `discordie` for `dissensioni`, `noceuole` and `dannosi` for `nociva` and `nocivi`, `trattata` for `agitata`, `maggiore mouimento` for `maggior moto`, `essi` for `loro`; and the period's orthography (`huomini`, `-tione`, `&`)"
+    established: witness_1824
+    rationale: The 1824 witness governs throughout.

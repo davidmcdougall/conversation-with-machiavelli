@@ -1,0 +1,30 @@
+source_unit_id: FG-CONS.1.5
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-005
+responds_to: NM-DISC.1.5
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. Canestrini's own footnote is editorial and is not carried."
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38); errors are emended from Palmarocchi and bracketed (D68)."
+passes:
+  - {id: A, performed: 2026-10-01, file: sources/coldpass/FG-CONS.1.5-passA.md}
+  - {id: B, performed: 2026-10-01, file: sources/coldpass/FG-CONS.1.5-passB.md, note: "subagent; page images only (native 600 ppi upscaled 2x, plus half-page crops), separate directory"}
+collation: sources/coldpass/COLLATION-2026-10-01-I5.md
+collation_result: >
+  490 words. No word, clause or sense disagreement. Five stops the impression
+  does not show, or shows without weight, supplied from the 1933 edition.
+witness_independence_check: "SCOPE §7. No word splits to test; at the five pointing loci both passes read alike and neither sides with Palmarocchi."
+boundaries: "printed pp. 14-16; two printed paragraphs, first-line indents at `Io non intendo` and `Ma quando fussi`"
+corrections:
+  - {id: FG-CONS-I5-C001, locator: FG-CONS.1.5.01, was: "fu ne' plebei Benché", now: "fu ne' plebei. Benché", evidence: "Canestrini's note reference stands where the stop would be, and a capital follows; the 1933 edition prints the stop. D40."}
+  - {id: FG-CONS-I5-C002, locator: FG-CONS.1.5.01, was: "lo ufficio loro Ma", now: "lo ufficio loro. Ma", evidence: "No stop in the impression; a capital follows; the 1933 edition prints it. D67."}
+  - {id: FG-CONS-I5-C003, locator: FG-CONS.1.5.01, was: "guardia dell'altro", now: "guardia dell'altro.", evidence: "End of a printed paragraph, no stop in the impression; the 1933 edition prints it. D67."}
+  - {id: FG-CONS-I5-C004, locator: FG-CONS.1.5.02, was: "distinzione . o tu vuoi", now: "distinzione: o tu vuoi", evidence: "Both readers see a single low point and cannot weigh it; lower case follows. The 1933 edition prints a colon. D110."}
+  - {id: FG-CONS-I5-C005, locator: FG-CONS.1.5.02, was: "non plebeo E questa", now: "non plebeo. E questa", evidence: "No stop in the impression; a capital follows; the 1933 edition prints it. D67."}
+emendations: []
+ruled_readings: []
+not_supplied:
+  - {locus: "promiscua così", note: "Pass B notes a wide gap; no mark in either pass or in the 1933 edition."}
+normalisation_notes: "Class A: accents; plural article `e` → `e'` (D35); `ne grandi` → `ne' grandi`, `da dittatori` → `da' dittatori` (D39); elision spacing. Canestrini's footnote (on Machiavelli's argument) is his, not Guicciardini's, and is not carried."

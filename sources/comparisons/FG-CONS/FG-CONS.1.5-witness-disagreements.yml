@@ -1,0 +1,39 @@
+source_unit_id: FG-CONS.1.5
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-I5-D001
+    locator: FG-CONS.1.5.01
+    class: reading
+    witness_1857: una autorità particulare per difesa della libertà
+    witness_1933: una autorità o cura particulare per difesa della libertà
+    established: witness_1857
+    rationale: "The 1933 edition adds `o cura`, 'or care', anticipating `n'avevano cura` below."
+  - id: FG-CONS-I5-D002
+    locator: FG-CONS.1.5.01
+    class: reading
+    witness_1857: n'avevano cura
+    witness_1933: v'avevano cura
+    established: witness_1857
+    rationale: "`Ne`, 'of it' (of liberty), against the 1933 `vi`, 'there'; same sense."
+  - id: FG-CONS-I5-D003
+    locator: FG-CONS.1.5.01
+    class: reading
+    witness_1857: come si vede
+    witness_1933: come si vedde
+    established: witness_1857
+    rationale: "Present against past: 'as is seen' against 'as was seen'."
+  - id: FG-CONS-I5-D004
+    locator: FG-CONS.1.5.01
+    class: reading
+    witness_1857: contro a chi volesse opprimere tutta la republica
+    witness_1933: contro a chi volessi opprimere tutta la republica
+    established: witness_1857
+    rationale: "Two forms of the same imperfect subjunctive; the 1933 edition prints `volessi` both times in the paragraph."
+  - id: FG-CONS-I5-D005
+    locator: FG-CONS.1.5.01-02
+    class: systematic_orthographic_profile
+    witness_1857: "Canestrini's `il`, `titulo`, `populo`, `patrizii`, `prudenza`, `ignoranza`, `ufficio`, `conjurazione`, and lighter pointing"
+    witness_1933: "Palmarocchi's `el`, `titolo`, `popolo`, `patrizi`, `prudenzia`, `ignoranzia`, `uficio`, `coniurazione`, and semicolons at `grandi`, `opprimere`, `plebei`, `nobili`, `conservi`"
+    established: witness_1857
+    rationale: Canestrini governs throughout.

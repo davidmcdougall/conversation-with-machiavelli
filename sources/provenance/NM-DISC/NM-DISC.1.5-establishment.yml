@@ -1,0 +1,23 @@
+source_unit_id: NM-DISC.1.5
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-005
+passes:
+  - {id: A, performed: 2026-10-01, file: sources/coldpass/NM-DISC.1.5-passA.md}
+  - {id: B, performed: 2026-10-01, file: sources/coldpass/NM-DISC.1.5-passB.md, note: "subagent; page images only (native 350 ppi plus thirds), separate directory"}
+collation: sources/coldpass/COLLATION-2026-10-01-I5.md
+collation_result: "827 words. One token difference after Class A: the weight of a faint mark after `dominati`, read as a comma by A and leaning comma by B."
+boundaries: "printed pp. 29-32; one block with a drop capital; CAPITOLO VI begins p. 33"
+interventions: []
+comparison_collation: >
+  Done 2026-10-01 against the re-cut 1554 extract (zero-based pp. 53-56,
+  fol. 9v-11r). A cold reader transcribed the Giglio leaves from the page
+  images (sources/coldpass/NM-DISC.1.5-1554.md); the transcript was collated
+  by word against the established text, and every reading published as a
+  variant note was checked on the page image. Giglio rewords throughout;
+  the sense-bearing differences are in
+  sources/comparisons/NM-DISC/NM-DISC.1.5-witness-disagreements.yml.
+normalisation_notes: "Class A only: accents (`perchè` → `perché`, `nè` → `né`, `talchè` → `talché`), elision spacing (`de'Nobili` → `de' Nobili`, `e'si` → `e' si`, `d' una` → `d'una`, `degl' Ignobili` → `degl'Ignobili`, `l' occupi`, `dell' Imperio`, `ch' avendo` solid)."
