@@ -1,0 +1,533 @@
+<title>A Conversation with Machiavelli — Who shall judge</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root {
+  --paper:      #EDEEEC;
+  --paper-sunk: #E4E6E3;
+  --ink:        #1B1E1C;
+  --ink-muted:  #5C625E;
+  --ink-faint:  #868C87;
+  --rule:       #C9CDC8;
+  --rule-faint: #DCDFDB;
+  --nm:         #3A5A6B;
+  --fg:         #6E5A3C;
+  --serif: "EB Garamond", "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  --sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --mono:  "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:      #161917;
+    --paper-sunk: #1D211E;
+    --ink:        #E3E6E1;
+    --ink-muted:  #A0A6A0;
+    --ink-faint:  #767C77;
+    --rule:       #343934;
+    --rule-faint: #262B27;
+    --nm:         #8FB4C6;
+    --fg:         #C4A97C;
+  }
+}
+:root[data-theme="dark"] {
+  --paper:      #161917;
+  --paper-sunk: #1D211E;
+  --ink:        #E3E6E1;
+  --ink-muted:  #A0A6A0;
+  --ink-faint:  #767C77;
+  --rule:       #343934;
+  --rule-faint: #262B27;
+  --nm:         #8FB4C6;
+  --fg:         #C4A97C;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 1160px; margin: 0 auto; padding-inline: 20px; padding-block: 0 0; }
+
+/* ---- masthead ---- */
+.masthead { padding-block: 56px 32px; border-bottom: 1px solid var(--rule); }
+.eyebrow {
+  font-family: var(--sans); font-size: 11px; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint);
+  margin: 0 0 18px;
+}
+h1 {
+  font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 5vw, 44px);
+  line-height: 1.12; margin: 0 0 14px; text-wrap: balance; letter-spacing: -0.01em;
+}
+h1 .sub { display: block; font-style: italic; color: var(--ink-muted); font-size: .52em; margin-top: 12px; letter-spacing: 0; }
+.standfirst {
+  font-family: var(--sans); font-size: 14.5px; line-height: 1.6;
+  color: var(--ink-muted); max-width: 62ch; margin: 0;
+}
+
+/* ---- the pairing device ---- */
+.pairing {
+  display: flex; align-items: stretch; gap: 0; margin: 30px 0 0;
+  border: 1px solid var(--rule); border-radius: 2px; overflow: hidden;
+  font-family: var(--sans); background: var(--paper-sunk);
+}
+.pairing > div { flex: 1 1 0; padding: 13px 16px; min-width: 0; }
+.pairing .who { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
+.pairing .nm-side .who { color: var(--nm); }
+.pairing .fg-side .who { color: var(--fg); }
+.pairing .what { font-size: 13.5px; color: var(--ink-muted); }
+.pairing .arrow {
+  flex: 0 0 auto; display: flex; align-items: center; justify-content: center;
+  padding-inline: 14px; color: var(--ink-faint); font-size: 15px;
+  border-inline: 1px solid var(--rule);
+}
+
+/* ---- pair-to-pair navigation ---- */
+.pairnav {
+  display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+  margin-top: 18px; font-family: var(--sans); font-size: 12.5px;
+  color: var(--ink-muted);
+}
+.pairnav a { text-decoration: none; color: var(--ink-muted); }
+.pairnav a:hover, .pairnav a:focus { color: var(--ink); text-decoration: underline; }
+
+/* ---- work sections ---- */
+.work { padding-block: 52px 0; }
+.work-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
+.work-head .tag {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .04em;
+  padding: 3px 7px; border-radius: 2px; color: var(--paper);
+}
+.work.nm .tag { background: var(--nm); }
+.work.fg .tag { background: var(--fg); }
+h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; letter-spacing: -0.005em; }
+.rubric {
+  font-style: italic; color: var(--ink-muted); max-width: 70ch;
+  margin: 10px 0 0; font-size: 16.5px; line-height: 1.5;
+}
+.rubric-note {
+  font-family: var(--sans); font-style: normal; font-size: 12px;
+  color: var(--ink-faint); margin-top: 7px;
+}
+.colheads {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  margin-top: 30px; padding-bottom: 7px; border-bottom: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint);
+}
+
+/* ---- the facing pair ---- */
+.pair {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  padding-block: 22px; border-bottom: 1px solid var(--rule-faint);
+  scroll-margin-top: 20px;
+}
+.pair:target { background: var(--paper-sunk); }
+.annot { grid-column: 2 / -1; margin-top: 14px; font-family: var(--sans); font-size: 13.5px;
+  line-height: 1.55; color: var(--ink-muted); }
+.annot summary { cursor: pointer; font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); list-style: none; }
+.annot summary::-webkit-details-marker { display: none; }
+.annot summary::before { content: "+ "; }
+.annot[open] summary::before { content: "− "; }
+.annot p { margin: 8px 0 0; max-width: 72ch; }
+.annot .xref { color: inherit; text-decoration: underline; text-decoration-color: var(--rule);
+  text-underline-offset: 2px; white-space: nowrap; }
+.gutter { padding-top: 4px; }
+.uid {
+  font-family: var(--mono); font-size: 10.5px; color: var(--ink-faint);
+  text-decoration: none; letter-spacing: -0.02em;
+}
+.uid:hover, .uid:focus { color: var(--ink); text-decoration: underline; }
+.col { min-width: 0; }
+.col.it { hyphens: auto; }
+.col.en { }
+.supplied { color: var(--ink-muted); }
+
+/* ---- apparatus ---- */
+.apparatus {
+  margin-top: 34px; padding-top: 22px; border-top: 2px solid var(--rule);
+  font-family: var(--sans); font-size: 13.5px; line-height: 1.58;
+  color: var(--ink-muted);
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 26px 34px;
+}
+.apparatus h3 {
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); margin: 0 0 9px;
+}
+.apparatus p { margin: 0 0 9px; }
+.apparatus p:last-child { margin-bottom: 0; }
+.apparatus .lem { font-family: var(--serif); font-size: 15px; color: var(--ink); font-style: italic; }
+.sig { font-family: var(--mono); font-size: 12px; color: var(--ink); }
+
+/* ---- colophon ---- */
+.colophon {
+  margin-top: 60px; padding-block: 28px 60px; border-top: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 13px; line-height: 1.6; color: var(--ink-muted);
+}
+.colophon .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 34px; }
+.colophon h3 {
+  font-size: 10.5px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--ink-faint); margin: 0 0 8px;
+}
+.colophon p { margin: 0 0 8px; }
+.colophon ul { margin: 0; padding-left: 16px; }
+.colophon li { margin-bottom: 5px; }
+.state {
+  margin-top: 26px; padding: 14px 16px; background: var(--paper-sunk);
+  border-left: 2px solid var(--ink-faint); border-radius: 0 2px 2px 0;
+  font-size: 12.5px;
+}
+.state strong { color: var(--ink); font-weight: 600; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--nm); outline-offset: 2px; }
+
+/* ---- contents / index page ---- */
+.toc { margin-top: 30px; }
+.toc-row {
+  display: grid; grid-template-columns: 40px 1fr 1fr; gap: 0 20px;
+  padding-block: 14px; border-bottom: 1px solid var(--rule-faint);
+  font-family: var(--sans); align-items: baseline;
+}
+.toc-row .n { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
+.toc-row a { text-decoration: none; color: var(--ink); font-family: var(--serif); font-size: 16px; }
+.toc-row a:hover, .toc-row a:focus { text-decoration: underline; }
+.toc-row .unpublished { color: var(--ink-faint); font-style: italic; font-size: 14px; }
+.toc-row .ids { color: var(--ink-faint); font-size: 11.5px; font-family: var(--mono); }
+
+@media (max-width: 760px) {
+  body { font-size: 16.5px; }
+  .colheads { display: none; }
+  .pair { grid-template-columns: 1fr; gap: 0; padding-block: 20px; }
+  .gutter { padding-top: 0; margin-bottom: 8px; }
+  .annot { grid-column: 1; }
+  .col.it { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px dotted var(--rule); }
+  .col.it::before, .col.en::before {
+    display: block; font-family: var(--sans); font-size: 10px; font-weight: 600;
+    letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px;
+  }
+  .col.it::before { content: "Italian"; }
+  .col.en::before { content: "English"; }
+  .pairing { flex-direction: column; }
+  .pairing .arrow { border-inline: 0; border-block: 1px solid var(--rule); padding-block: 6px; }
+  .toc-row { grid-template-columns: 1fr; gap: 4px; }
+}
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow">A Conversation with Machiavelli · Pair 7 of 39</p>
+    <h1>Who shall judge
+      <span class="sub">Discourses I.7, and Guicciardini&#x27;s reply</span></h1>
+    <p class="standfirst">Machiavelli praises the authority to accuse citizens before the people or a magistracy: it deters, and it gives the humours of a city an ordinary outlet, as the tribunes&#x27; summons of Coriolanus did, whereas Florence, lacking it, had Valori killed in a riot and Soderini brought down by a Spanish army. Guicciardini grants it is most true, and asks who is to judge. The innocent must not be readily vexed: an unjust condemnation frightens the powerful into discontent, and the man condemned may be an Alcibiades or a Coriolanus. The people is too dangerous a judge, moved by uproars, led into servitude by whoever courts it, and unable to put down its favourites, as the Gracchi and Manlius showed. Nor does the authority sit well in a few citizens: chosen narrowly they become too powerful, broadly too respectful, and the judges must in fact be more than fifty; the Florentine Quarantia would have served, had its faults been moderated. The answer is courts varied with the city&#x27;s orders and humours, or judges mixed, choice, and nearer the mean than either extreme.</p>
+
+    <div class="pairing">
+      <div class="nm-side">
+        <div class="who">Niccolò Machiavelli</div>
+        <div class="what">Discorsi sopra la prima Deca di Tito Livio · written c. 1513–19, printed 1531</div>
+      </div>
+      <div class="arrow" aria-hidden="true">answered by</div>
+      <div class="fg-side">
+        <div class="who">Francesco Guicciardini</div>
+        <div class="what">Considerazioni intorno ai Discorsi del Machiavelli · written 1529–30, printed 1857</div>
+      </div>
+    </div>
+    <nav class="pairnav"><a href="1.6.html">← Pair 1.6</a><a href="../index.html">All 39 pairs</a><a href="1.12.html">Pair 1.12 →</a></nav>
+  </header>
+
+  <section class="work nm">
+    <div class="work-head">
+      <span class="tag">NM-DISC.1.7</span>
+      <h2>Capitolo VII</h2>
+    </div>
+    <p class="rubric">Quanto siano necessarie in una Repubblica l&#x27;accuse per mantenere la libertà.</p>
+    <p class="rubric">How necessary in a republic accusations are for maintaining liberty.</p>
+
+    <div class="colheads"><div></div><div>Italian · 1824</div><div>English</div></div>
+      <div class="pair" id="NM-DISC.1.7.01">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.7.01">1.7.01</a></div>
+        <div class="col it" lang="it">A coloro che in una città son preposti per guardia della sua libertà, non si può dare autorità più utile e necessaria, quanto è quella di potere accusare i cittadini al Popolo, o a qualunque Magistrato o Consiglio, quando che peccassero in alcuna cosa contro allo Stato libero. Questo ordine fa due effetti utilissimi ad una Repubblica. Il primo è che i cittadini per paura di non essere accusati, non tentano cose contro allo Stato, e, tentandole, sono incontinente e senza rispetto oppressi. L&#x27;altro è che si dà via onde sfogare a quelli umori, che crescono nelle cittadi in qualunque modo contro a qualunque cittadino. E quando questi umori non hanno onde sfogarsi ordinariamente, ricorrono a&#x27; modi straordinarj, che fanno rovinare in tutto una Repubblica. E non è cosa che faccia tanto stabile e ferma una Repubblica, quanto ordinare quella in modo, che l&#x27;alterazione di questi umori che l&#x27;agitano, abbia una via da sfogarsi ordinata dalle leggi.</div>
+        <div class="col en" lang="en">To those who in a city are appointed for the guard of its liberty, no more useful and necessary authority can be given than is that of being able to accuse citizens to the people, or to any magistracy or council, when they should sin in any thing against the free state. This order makes two most useful effects for a republic. The first is that the citizens, for fear of being accused, do not attempt things against the state, and, attempting them, are forthwith and without respect oppressed. The other is that a path is given by which to vent those humours which grow in cities, in whatever way, against whatever citizen. And when these humours have not <span class="supplied">[an outlet]</span> by which to vent themselves ordinarily, they have recourse to extraordinary ways, which make a republic ruin altogether. And there is nothing that makes a republic so stable and firm as ordering it in such a way that the alteration of these humours that agitate it has a path to vent itself, ordered by the laws.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The thesis, then its two effects. The authority to accuse citizens before the people, a magistracy or a council is the most useful and necessary a guard of liberty can have. Its first effect: citizens who fear accusation do not move against the state, and those who do are put down at once, without regard to persons. The second effect carries the chapter. Every city breeds humours against some citizen; if they have no ordinary outlet they take an extraordinary one, and that ruins a republic. Nothing makes a republic so stable as an outlet ordered by the laws.</p>
+<p><span class="lem">Cross-reference.</span> I.6 ended by handing this chapter the tribunes&#x27; &quot;authority to accuse&quot; (I.6 .07); I.5 placed the guard of liberty with the people (I.5 .04); the humours are I.4&#x27;s word (I.4 .01), here turned against particular citizens.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.7.02">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.7.02">1.7.02</a></div>
+        <div class="col it" lang="it">Il che si può per molti esempj dimostrare, e massime per quello che adduce T. Livio di Coriolano, dov&#x27;ei dice, che essendo irritata contro alla Plebe la Nobiltà romana, per parerle che la Plebe avesse troppa autorità, mediante la creazione de&#x27; Tribuni che la difendevano, ed essendo Roma, come avviene, venuta in penuria grande di vettovaglie, ed avendo il Senato mandato per grani in Sicilia, Coriolano nimico alla fazione popolare, consigliò com&#x27;egli era venuto il tempo da poter gastigare la Plebe, e torle quella autorità che ella si aveva acquistata, e in pregiudizio della Nobiltà presa, tenendola affamata, e non le distribuendo il frumento; la qual sentenza sendo venuta agli orecchi del Popolo, venne in tanta indegnazione contro a Coriolano, che allo uscire del Senato lo arebbero tumultuariamente morto, se i Tribuni non l&#x27;avessero citato a comparire a difendere la causa sua.</div>
+        <div class="col en" lang="en">Which can be demonstrated by many examples, and above all by that which Livy adduces of Coriolanus, where he says that, the Roman nobility being irritated against the plebs, because it seemed to it that the plebs had too much authority through the creation of the tribunes who defended it, and Rome having, as happens, come into great scarcity of victuals, and the senate having sent to Sicily for grain, Coriolanus, an enemy to the popular faction, counselled that the time had come to be able to chastise the plebs, and take from it that authority which it had acquired, and taken in prejudice of the nobility, <span class="supplied">[by]</span> keeping it famished and not distributing the corn to it; which sentence having come to the ears of the people, it came into such indignation against Coriolanus that at his coming out of the senate they would have killed him tumultuously, if the tribunes had not summoned him to appear to defend his cause.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The first example, from Livy. The nobility resented the tribunes; in a famine, with grain sent for from Sicily, Coriolanus counselled that the time had come to chastise the plebs and strip it of its authority by keeping it hungry. The people would have killed him at the senate door had the tribunes not summoned him to trial. The ordinary way, a summons, stood in for a riot.</p>
+<p><span class="lem">History.</span> Livy 2.34–35. The famine is dated to 491 BC. Coriolanus did not appear; he was condemned in his absence and went over to the Volsci, whom he led against Rome until his mother turned him back (2.39–40). Machiavelli stops at the summons; Guicciardini&#x27;s reply takes up what came after.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.7.03">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.7.03">1.7.03</a></div>
+        <div class="col it" lang="it">Sopra il quale accidente si nota quello che di sopra si è detto, quanto sia utile e necessario che le Repubbliche, con le leggi loro, diano onde sfogarsi all&#x27;ira che concepe l&#x27;universalità contro a un cittadino; perché quando questi modi ordinarj non vi siano, si ricorre agli straordinarj, e senza dubbio questi fanno molto peggiori effetti, che non fanno quelli. Perché se ordinariamente un cittadino è oppresso, ancora che gli fusse fatto torto, ne seguita o poco o nissuno disordine in la Repubblica; perché la esecuzione si fa senza forze private, e senza forze forestiere, che sono quelle che rovinano il vivere libero; ma si fa con forze ed ordini pubblici, che hanno i termini loro particolari, né trascendono a cosa che rovini la Repubblica.</div>
+        <div class="col en" lang="en">Upon which accident is noted that which has been said above, how useful and necessary it is that republics, with their laws, give the anger that the universality conceives against one citizen <span class="supplied">[an outlet]</span> by which to vent itself; for when these ordinary ways are not there, recourse is had to the extraordinary, and without doubt these make much worse effects than those make. For if a citizen is oppressed ordinarily, even though wrong should be done him, there follows either little or no disorder in the republic; for the execution is done without private forces and without foreign forces, which are those that ruin free living; but is done with public forces and orders, which have their particular bounds, nor do they transcend to a thing that ruins the republic.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The rule drawn from it. A citizen oppressed by the orders, even wrongly, makes little or no disorder, because the execution is public, bounded and done by the republic&#x27;s own forces; private or foreign force is what ruins free living. The weight falls on the means of punishment, not the justice of it: a wrong done ordinarily costs the republic little or no disorder.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini answers this sentence directly: an unjust condemnation is &quot;in itself of little importance&quot; but becomes important through the terror it gives and through the man <a class="xref" href="#FG-CONS.1.7.01">Guicciardini .01</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.7.04">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.7.04">1.7.04</a></div>
+        <div class="col it" lang="it">E quanto a corroborare questa opinione con gli esempj, voglio che degli antichi mi basti questo di Coriolano, sopra il quale ciascuno consideri, quanto male saria resultato alla Repubblica romana, se tumultuariamente ei fusse stato morto; perché ne nasceva offesa da privati a privati, la quale offesa genera paura, la paura cerca difesa, per la difesa si procacciano i partigiani, dai partigiani nascono le parti nelle cittadi, e dalle parti la rovina di quelle. Ma sendosi governata la cosa mediante chi n&#x27;aveva autorità, si vennero a tor via tutti quelli mali che ne potevano nascere governandola con autorità privata.</div>
+        <div class="col en" lang="en">And as to corroborating this opinion with examples, I wish that of the ancients this one of Coriolanus may suffice me, upon which let each consider how much ill would have resulted to the Roman republic if he had been killed tumultuously; for there would have arisen from it offence from private men to private men, which offence generates fear, fear seeks defence, for defence the partisans are procured, from the partisans arise the parties in cities, and from the parties the ruin of them. But the thing having been governed through whoever had authority over it, all those ills came to be taken away that could have arisen from it by governing it with private authority.</div>
+        <details class="annot"><summary>Commentary · 1</summary>
+          <p><span class="lem">Argument.</span> What the riot would have made. A killing of a private man by private men breeds offence, offence fear, fear the search for defence, defence partisans, partisans parties, and parties ruin. The chain is the chapter&#x27;s demonstration in small: each step generates the next, and the condition of the first step is the absence of an ordinary way. Because the affair was handled by those who had authority over it, all of that was taken away.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.7.05">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.7.05">1.7.05</a></div>
+        <div class="col it" lang="it">Noi avemo visto ne&#x27; nostri tempi quale novità ha fatto alla Repubblica di Firenze, non potere la moltitudine sfogare l&#x27;animo suo ordinariamente contro a un suo cittadino, come accadde nel tempo di Francesco Valori, ch&#x27;era come Principe della città, il quale essendo giudicato ambizioso da molti, e uomo che volesse con la sua audacia e animosità trascendere il vivere civile, e non essendo nella Repubblica via a potergli resistere, se non con una Setta contraria alla sua, ne nacque che non avendo paura quello, se non di modi straordinarj, si cominciò a fare fautori che lo difendessero; dall&#x27;altra parte quelli che lo oppugnavano, non avendo via ordinaria a reprimerlo, pensarono alle vie straordinarie, intanto che si venne alle armi. E dove, quando per l&#x27;ordinario si fusse potuto opporsegli, sarebbe la sua autorità spenta con suo danno solo; avendosi a spegnere per lo straordinario, seguì con danno non solamente suo, ma di molti altri nobili cittadini.</div>
+        <div class="col en" lang="en">We have seen in our times what novelty it has made to the Republic of Florence, the multitude&#x27;s not being able to vent its spirit ordinarily against one of its citizens, as happened in the time of Francesco Valori, who was as prince of the city, who, being judged ambitious by many, and a man who should wish with his audacity and animosity to transcend civil living, and there being no path in the republic to be able to resist him except with a sect contrary to his, it arose from it that he, not having fear except of extraordinary ways, began to make supporters who should defend him; on the other hand those who assailed him, not having an ordinary path to repress him, thought of the extraordinary paths, so much so that it came to arms. And where, if he could have been opposed by the ordinary, his authority would have been extinguished with damage to him alone; having to be extinguished by the extraordinary, it followed with damage not only to him but to many other noble citizens.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The modern counter-example. Florence had no ordinary way to vent the multitude&#x27;s spirit against Francesco Valori, a citizen who stood as prince of the city; so he gathered supporters, his enemies thought of extraordinary paths, and it came to arms. What an accusation would have extinguished with damage to him alone cost many noble citizens.</p>
+<p><span class="lem">History.</span> Francesco Valori led the party of Savonarola and was gonfaloniere in early 1497. In August 1497 five citizens condemned for conspiring to restore the Medici were refused their appeal to the Great Council and executed, Valori pressing for it. On 8 April 1498, when the crowd attacked San Marco, Valori was killed in the street by kinsmen of the executed men.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.7.06">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.7.06">1.7.06</a></div>
+        <div class="col it" lang="it">Potrebbesi ancora allegare a fortificazione della soprascritta conclusione, l&#x27;accidente seguìto pur in Firenze sopra Pietro Soderini, il quale al tutto seguì per non essere in quella Repubblica alcuno modo di accuse contro alla ambizione de&#x27; potenti cittadini; perché lo accusare un potente a otto giudici in una Repubblica, non basta: bisogna che i giudici siano assai, perché pochi sempre fanno a modo de&#x27; pochi. Tantoché, se tali modi vi fussono stati, o i cittadini lo avrebbono accusato, vivendo egli male, e per tale mezzo, senza far venire l&#x27;esercito spagnuolo, arebbono sfogato l&#x27;animo loro; o non vivendo male, non arebbero avuto ardire operargli contra, per paura di non essere accusati essi, e così sarebbe d&#x27;ogni parte cessato quello appetito che fu cagione di scandalo. Tantoché si può conchiudere questo, che qualunque volta si vede che le forze esterne siano chiamate da una parte d&#x27;uomini che vivono in una città, si può credere nasca dai cattivi ordini di quella, per non essere dentro a quello cerchio ordine da potere senza modi straordinarj sfogare i maligni umori che nascono negli uomini; a che si provvede al tutto, con ordinarvi le accuse agli assai giudici, e dare riputazione a quelle.</div>
+        <div class="col en" lang="en">One could also allege, in fortification of the above-written conclusion, the accident that followed, again in Florence, upon Pietro Soderini, which followed altogether through there not being in that republic any way of accusations against the ambition of powerful citizens; for to accuse a powerful one to eight judges in a republic is not enough: it is needful that the judges be many, for few always do in the way of the few. So that, if such ways had been there, either the citizens would have accused him, <span class="supplied">[if]</span> he was living ill, and by such means, without making the Spanish army come, would have vented their spirit; or, <span class="supplied">[if]</span> he was not living ill, they would not have had the daring to work against him, for fear of being accused themselves, and thus that appetite which was the cause of scandal would have ceased on every side. So that one can conclude this: that whenever one sees that external forces are called in by a party of men who live in a city, one can believe it arises from the bad orders of that <span class="supplied">[city]</span>, through there not being, within that circle, an order able to vent without extraordinary ways the malign humours that arise in men; which is provided for altogether by ordering there accusations to the many judges, and giving reputation to them.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> The second modern case and the conclusion. Piero Soderini fell because Florence had no way to accuse the powerful: eight judges are too few, since the few act in the way of the few. With a proper court the citizens would either have accused him, if he lived ill, or not dared to move against him, if he did not; either way the appetite that caused the scandal would have ceased, and no Spanish army would have been fetched. Hence the general rule: when a party in a city calls in outside forces, one may believe the cause is in the city&#x27;s bad orders, and the remedy is accusations before many judges, given reputation.</p>
+<p><span class="lem">History.</span> Soderini, gonfaloniere for life from 1502, was brought down in August 1512, when the Spanish army of the Holy League, with Medici partisans, sacked Prato and Florence&#x27;s government gave way; he went into exile and the Medici returned. Machiavelli lost his office that autumn. The eight are usually taken to be the Otto di Guardia, the magistracy of criminal justice.</p>
+<p><span class="lem">Cross-reference.</span> &quot;It is needful that the judges be many&quot; is the sentence Guicciardini takes up: &quot;the judges want to be many, that is, more than fifty&quot; <a class="xref" href="#FG-CONS.1.7.02">Guicciardini .02</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.7.07">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.7.07">1.7.07</a></div>
+        <div class="col it" lang="it">Li quali modi furono in Roma sì bene ordinati, che in tante dissensioni della Plebe e del Senato, mai o il Senato o la Plebe, o alcuno particolare cittadino non disegnò valersi di forze esterne; perché avendo il rimedio in casa, non erano necessitati andare per quello fuori. E benché gli esempj soprascritti siano assai sufficienti a provarlo, nondimeno ne voglio addurre un altro, recitato da T. Livio nella sua Istoria, il quale riferisce come sendo stato in Chiusi, città in quelli tempi nobilissima in Toscana, da un Lucumone violata una sorella di Arunte, e non potendo Arunte vendicarsi per la potenza del violatore, se n&#x27;andò a trovare i Francesi, che allora regnavano in quello luogo, che oggi si chiama Lombardia, e quelli confortò a venire con armata mano a Chiusi, mostrando loro come con loro utile lo potevano vendicare della ingiuria ricevuta: che se Arunte avesse veduto potersi vendicare con i modi della città, non arebbe cerco le forze barbare. Ma come queste accuse sono utili in una Repubblica, così sono inutili e dannose le calunnie, come nel capitolo seguente discorreremo.</div>
+        <div class="col en" lang="en">Which ways were so well ordered in Rome that in so many dissensions of the plebs and the senate, never did either the senate or the plebs, or any particular citizen, design to avail himself of external forces; for, having the remedy at home, they were not necessitated to go outside for it. And albeit the above-written examples are quite sufficient to prove it, nonetheless I wish to adduce another, recited by Livy in his History, who reports how, a sister of Arruns having been violated in Chiusi, in those times a most noble city in Tuscany, by a Lucumo, and Arruns not being able to avenge himself because of the power of the violator, he went off to find the French, who then reigned in that place which today is called Lombardy, and urged them to come with armed hand to Chiusi, showing them how with their <span class="supplied">[own]</span> advantage they could avenge him of the injury received: for if Arruns had seen that he could avenge himself by the ways of the city, he would not have sought the barbarian forces. But as these accusations are useful in a republic, so are calumnies useless and damaging, as we shall discourse in the following chapter.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> Rome, Machiavelli says, proves the rule by its silence: in all the dissensions between plebs and senate no one designed to call in outside forces, because the remedy was at home. A last example confirms it by its opposite. Arruns of Clusium, wronged by a powerful man and with no way in his city to avenge it, went to the Gauls in Lombardy and brought them to Clusium. The chapter closes on the accusation&#x27;s evil twin, calumny, the subject of I.8.</p>
+<p><span class="lem">History.</span> Livy 5.33 reports the story as tradition, and adds that the Gauls had crossed the Alps long before; the Gallic war it opens ended in the sack of Rome, 390 BC by the traditional (Varronian) reckoning. In Livy the wrong is to Arruns&#x27; wife, seduced by a Lucumo who had been his ward; Machiavelli makes her a sister. Machiavelli&#x27;s own first example is the exception to his claim about Rome: Coriolanus, condemned after the summons, did bring the Volsci against the city (Livy 2.39–40), and Guicciardini&#x27;s reply turns on it <a class="xref" href="#FG-CONS.1.7.01">Guicciardini .01</a>.</p>
+<p><span class="lem">Cross-reference.</span> I.8, &quot;How much accusations are useful to republics, so much are calumnies pernicious&quot;, follows directly.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from the 1824 edition (<span class="sig">WIT-NM-DISC-1824-IA</span>), page-image-backed, which governs. Collated against the 1554 Giglio printing, Venice (<span class="sig">WIT-NM-DISC-1554-IA</span>), which is comparison evidence only.</p>
+<p>Paragraph divisions are editorial. The witness prints the chapter as one unbroken block.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem">si dà via onde sfogare a quelli umori ... fanno rovinare in tutto una Repubblica ... che l&#x27;agitano</span> — 1824. The 1554 witness reads <i lang="it">si da uia a sfogare quelli humori ... fanno rouinare tutta una Republica ... che la commouono</i>. Same sense: an outlet for the humours; Giglio&#x27;s humours move the republic rather than agitate it.</p>
+<p><span class="lem">torle quella autorità che ella si aveva acquistata, e in pregiudizio della Nobiltà presa</span> — 1824. The 1554 witness reads <i lang="it">torle quella auttorita, che ella si haueua in pregiudicio della nobilità presa</i>. Giglio has no <i lang="it">acquistata, e</i>: the authority only taken, not acquired and taken.</p>
+<p><span class="lem">essendo irritata ... venne in tanta indegnazione contro a Coriolano, che ... lo arebbero tumultuariamente morto</span> — 1824. The 1554 witness reads <i lang="it">essendo adirata ... esso prese tanto disdegno contro a Coriolano, che ... lo harebbe tumultuariamente morto</i>. Giglio keeps the people singular through the verb; the 1824 passes to the plural.</p>
+<p><span class="lem">né trascendono a cosa che rovini la Repubblica</span> — 1824. The 1554 witness reads <i lang="it">ne passano a cosa, che rouini la Republica</i>. Pass for transcend; the 1824 verb returns in .05 (<i lang="it">trascendere il vivere civile</i>), where Giglio has <i lang="it">auanzare</i>.</p>
+<p><span class="lem">corroborare questa opinione ... saria resultato ... per la difesa si procacciano i partigiani, dai partigiani nascono le parti</span> — 1824. The 1554 witness reads <i lang="it">confermare questa oppenione ... saria proceduto ... per la difesa si procacciano i partigiani, nascon le parti</i>. Giglio drops one link of the chain (<i lang="it">dai partigiani</i>); the sequence is the same.</p>
+<p><span class="lem">a fortificazione della soprascritta conclusione ... a modo de&#x27; pochi ... quello appetito ... agli assai giudici</span> — 1824. The 1554 witness reads <i lang="it">a fermezza della soprascritta conchiusione ... a modo di pochissimi ... quell&#x27;ingordigia ... a i molti giudici</i>. Greed for appetite; the very few for the few; the many judges in both.</p>
+<p><span class="lem">per non essere dentro a quello cerchio ordine</span> — 1824. The 1554 witness reads <i lang="it">per non essere dentro a quel cerchio ordine</i>. The hard phrase is in both witnesses; it stands, and the English keeps <i lang="it">cerchio</i> as a circle.</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem"><i lang="it">A coloro che in una città son preposti per guardia della sua libertà</i>.</span> &quot;To those who in a city are appointed for the guard of its liberty&quot;: the guard of I.5, now armed. The chapter is the handing-on I.6 promised: the tribunes&#x27; authority to accuse &quot;as will be discoursed in the following chapter&quot;. Machiavelli does not name the tribunes in this opening sentence; they enter with Coriolanus (.02).</p>
+<p><span class="lem"><i lang="it">quando che peccassero</i>.</span> &quot;When they should sin&quot;: the subjunctive keeps it a possibility.</p>
+<p><span class="lem"><i lang="it">Questo ordine</i>.</span> &quot;This order&quot; (glossary, <i lang="it">ordine</i>).</p>
+<p><span class="lem"><i lang="it">incontinente e senza rispetto</i>.</span> &quot;Forthwith and without respect&quot;: at once, and without regard to who they are (glossary, <i lang="it">rispetto</i>).</p>
+<p><span class="lem"><i lang="it">sfogare</i>, <i lang="it">sfogarsi</i>.</span> &quot;Vent&quot;, &quot;vent themselves&quot;, seven times, the chapter&#x27;s governing verb: the humours are a pressure that will find an outlet, ordinary or extraordinary. <i lang="it">Onde sfogare</i> is &quot;by which to vent&quot;: <i lang="it">onde</i>, &quot;whence&quot;, the outlet; where the Italian has no noun for it, the English supplies &quot;[an outlet]&quot;. At .03 the anger vents itself: <i lang="it">diano onde sfogarsi all&#x27;ira</i>.</p>
+<p><span class="lem"><i lang="it">umori</i>.</span> &quot;Humours&quot;, the word of I.4 and of Guicciardini&#x27;s I.6; here the ill will that gathers against a particular citizen.</p>
+<p><span class="lem"><i lang="it">ordinariamente</i>, <i lang="it">straordinarj</i>.</span> &quot;Ordinarily&quot;, &quot;extraordinary&quot;: by the orders or outside them, as in I.5. <i lang="it">Per l&#x27;ordinario</i>, <i lang="it">per lo straordinario</i> (.05) is &quot;by the ordinary&quot;, &quot;by the extraordinary&quot;.</p>
+<p><span class="lem"><i lang="it">modi</i> / <i lang="it">via</i>, <i lang="it">vie</i>.</span> &quot;Ways&quot; / &quot;path&quot;, &quot;paths&quot; (D131), held throughout: &quot;a path is given by which to vent&quot; (.01), &quot;a path to vent itself&quot;. <i lang="it">Ordinariamente</i> placed after the verb, &quot;oppressed ordinarily&quot; (.03), so that it reads &quot;by the orders&quot; and not &quot;usually&quot;.</p>
+<p><span class="lem"><i lang="it">ordinata dalle leggi</i>.</span> &quot;Ordered by the laws&quot;: the <i lang="it">ordine</i> family held through <i lang="it">ordinare</i>, <i lang="it">ordinarj</i>, <i lang="it">ordinariamente</i>, <i lang="it">ordinati</i>.</p>
+<p><span class="lem"><i lang="it">Coriolano</i>.</span> Gnaeus Marcius Coriolanus. Livy 2.34–35: in the famine of 491 BC he proposed in the senate to withhold the Sicilian grain until the plebs gave up the tribunate; the tribunes summoned him to trial, and he went into exile among the Volsci.</p>
+<p><span class="lem"><i lang="it">la Nobiltà romana</i>, <i lang="it">la Plebe</i>.</span> &quot;The Roman nobility&quot;, &quot;the plebs&quot; (glossary).</p>
+<p><span class="lem"><i lang="it">nimico alla fazione popolare</i>.</span> &quot;An enemy to the popular faction&quot;: <i lang="it">nimico</i>, Machiavelli&#x27;s form of <i lang="it">nemico</i>.</p>
+<p><span class="lem"><i lang="it">gastigare</i>.</span> &quot;Chastise&quot;.</p>
+<p><span class="lem"><i lang="it">in pregiudizio della Nobiltà presa</i>.</span> &quot;Taken in prejudice of the nobility&quot;: to its injury. The 1554 edition has no &quot;acquired, and&quot; (NM-DISC-I7-D002).</p>
+<p><span class="lem"><i lang="it">la qual sentenza</i>.</span> &quot;Which sentence&quot;: an opinion pronounced, as in Guicciardini&#x27;s I.5 (glossary).</p>
+<p><span class="lem"><i lang="it">lo arebbero tumultuariamente morto</i>.</span> &quot;They would have killed him tumultuously&quot;: <i lang="it">morire</i> transitive, &quot;kill&quot;, as in .04; the plural verb after the singular <i lang="it">Popolo</i> is Machiavelli&#x27;s.</p>
+<p><span class="lem"><i lang="it">accidente</i>.</span> &quot;Accident&quot;: an event, as in I.2 (glossary).</p>
+<p><span class="lem"><i lang="it">l&#x27;universalità</i>.</span> &quot;The universality&quot;: the whole body of citizens.</p>
+<p><span class="lem"><i lang="it">forze forestiere</i>.</span> &quot;Foreign forces&quot;: <i lang="it">forestiere</i> as adjective, kept apart from the noun <i lang="it">forestieri</i>, &quot;strangers&quot; (D57). <i lang="it">Forze esterne</i> (.06, .07) is &quot;external forces&quot; (D55).</p>
+<p><span class="lem"><i lang="it">termini</i>.</span> &quot;Bounds&quot;, as in I.6.</p>
+<p><span class="lem"><i lang="it">saria resultato</i>, <i lang="it">ne nasceva</i>, <i lang="it">potevano nascere</i>.</span> &quot;Would have resulted&quot;, &quot;there would have arisen from it&quot;, &quot;could have arisen&quot;: the imperfect in a contrary-to-fact sequence (D130). The chain that follows is general, in the present, as in the Italian.</p>
+<p><span class="lem"><i lang="it">Francesco Valori</i>.</span> Leader of the Piagnoni, Savonarola&#x27;s party, and gonfaloniere in 1497; killed by his enemies in the riot of 8 April 1498, when San Marco was stormed. &quot;As prince of the city&quot;: first among its citizens, without office to make him so.</p>
+<p><span class="lem"><i lang="it">Setta</i>.</span> &quot;Sect&quot;: a faction.</p>
+<p><span class="lem"><i lang="it">fautori</i>.</span> &quot;Supporters&quot;.</p>
+<p><span class="lem"><i lang="it">oppugnavano</i>.</span> &quot;Assailed&quot;.</p>
+<p><span class="lem"><i lang="it">Pietro Soderini</i>.</span> Piero Soderini, gonfaloniere for life from 1502, under whom Machiavelli served; the Spanish army that sacked Prato in August 1512 restored the Medici, and he fled. Machiavelli&#x27;s form is kept. &quot;Again in Florence&quot; is <i lang="it">pur in Firenze</i>.</p>
+<p><span class="lem"><i lang="it">otto giudici</i>.</span> &quot;Eight judges&quot;: probably the Otto di Guardia, Florence&#x27;s magistracy of criminal justice, which heard offences against the state among others.</p>
+<p><span class="lem"><i lang="it">bisogna</i>.</span> &quot;It is needful&quot; (D75).</p>
+<p><span class="lem"><i lang="it">Tantoché</i>.</span> &quot;So that&quot;, twice: consecutive.</p>
+<p><span class="lem"><i lang="it">vivendo egli male</i>.</span> &quot;[If] he was living ill&quot;: the gerund is conditional, and the English supplies the &quot;if&quot;; its pair, <i lang="it">non vivendo male</i>, likewise.</p>
+<p><span class="lem"><i lang="it">quello cerchio ordine</i>.</span> &quot;Within that circle, an order&quot;: both the 1824 and the 1554 editions print <i lang="it">cerchio</i>, and the phrase is hard. The English takes <i lang="it">cerchio</i> as the city&#x27;s circuit, the bounds within which an order should contain its humours, and keeps the noun.</p>
+<p><span class="lem"><i lang="it">agli assai giudici</i>.</span> &quot;To the many judges&quot;: the article points back to &quot;it is needful that the judges be many&quot;. The 1554 edition has <i lang="it">a i molti giudici</i>.</p>
+<p><span class="lem"><i lang="it">una parte d&#x27;uomini</i>.</span> &quot;A party of men&quot;: <i lang="it">parte</i> as <i lang="it">le parti nelle cittadi</i>, &quot;the parties in cities&quot; (.04), the step before ruin.</p>
+<p><span class="lem"><i lang="it">appetito</i>.</span> &quot;Appetite&quot; (D117); the 1554 edition has <i lang="it">ingordigia</i>, greed.</p>
+<p><span class="lem"><i lang="it">disegnò</i>.</span> &quot;Designed&quot;: planned.</p>
+<p><span class="lem"><i lang="it">rimedio</i>.</span> &quot;Remedy&quot; (glossary).</p>
+<p><span class="lem"><i lang="it">Chiusi</i>, <i lang="it">Lucumone</i>, <i lang="it">Arunte</i>.</span> Clusium, an Etruscan city; a Lucumo, an Etruscan magnate (Livy&#x27;s name for the seducer, the ward of Arruns); Arruns. Livy 5.33: Arruns, by the tradition Livy reports, drew the Gauls to Clusium to avenge his wife&#x27;s seduction; Livy doubts only that these were the first Gauls over the Alps. Machiavelli has them already settled in Lombardy, and makes the wronged woman a sister.</p>
+<p><span class="lem"><i lang="it">i Francesi</i>.</span> &quot;The French&quot;: Machiavelli&#x27;s name for the Gauls, kept, as <i lang="it">Lombardia</i> is &quot;Lombardy&quot; for Cisalpine Gaul.</p>
+<p><span class="lem"><i lang="it">armata mano</i>.</span> &quot;Armed hand&quot;: in arms.</p>
+<p><span class="lem"><i lang="it">con loro utile</i>.</span> &quot;With their own advantage&quot;: <i lang="it">utile</i> as noun.</p>
+<p><span class="lem"><i lang="it">cerco</i>.</span> &quot;Sought&quot;: <i lang="it">cercato</i>, the short participle.</p>
+<p><span class="lem"><i lang="it">calunnie</i>.</span> &quot;Calumnies&quot;: the subject of I.8. <i lang="it">Dannose</i> is &quot;damaging&quot; (D106).</p>
+<p><span class="lem"><i lang="it">discorreremo</i>.</span> &quot;We shall discourse&quot;: the chapter closes on the verb of D01, as I.6 did.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work fg">
+    <div class="work-head">
+      <span class="tag">FG-CONS.1.7</span>
+      <h2>Considerazione sul capitolo VII</h2>
+    </div>
+    <p class="rubric">Quanto siano necessarie in una repubblica le accuse per mantenere la libertà</p>
+    <p class="rubric">How necessary in a republic accusations are for maintaining liberty
+      <span class="rubric-note">Canestrini sets Machiavelli&#x27;s chapter title over the reply, with <i lang="it">le accuse</i> for the 1824 <i lang="it">l&#x27;accuse</i>, lower-case <i lang="it">repubblica</i>, and without a full stop.</span></p>
+
+    <div class="colheads"><div></div><div>Italian · 1857</div><div>English</div></div>
+      <div class="pair" id="FG-CONS.1.7.01">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.7.01">1.7.01</a></div>
+        <div class="col it" lang="it"><span class="supplied">[È]</span> verissimo che è molto utile, anzi quasi necessario, che in una città siano modi facili di opprimere per via delle leggi e de&#x27; giudicii e&#x27; cattivi cittadini, e in spezie quelli che machinassino contro allo Stato, ma bisogna anche avvertire che siano ordinati in modo che gli innocenti non siano facilmente vessati o puniti. Perché, oltre a essere ingiusto, è anche pernizioso alla città, perché andando questo pericolo sopra gli uomini nobili e di più qualità, vivendo loro con questo continuo sospetto, diventano di necessità malcontenti, e la mala contentezza de&#x27; più potenti diventa in molti modi pericolosa alla republica, e se bene lo essere condannato uno cittadino a torto è in sé di poca importanza, diventa importante per il terrore che dà agli altri, e anche può essere lui di qualità che faccia danno alla città, come si vede di Alcibiade, e fu per vedersi di Temistocle cacciato ingiustamente da Atene, e lo sentì Roma in Coriolano.</div>
+        <div class="col en" lang="en">It is most true that it is very useful, indeed almost necessary, that in a city there be easy ways of oppressing, by the path of the laws and of the judgments, the bad citizens, and especially those who should machinate against the state, but it is needful also to take heed that they be ordered in such a way that the innocent be not readily vexed or punished. For, besides being unjust, it is also pernicious to the city, for, this danger hanging over the men noble and of more quality, they, living with this continual suspicion, become of necessity malcontent, and the ill content of the more powerful becomes in many ways dangerous to the republic, and although one citizen&#x27;s being condemned wrongly is in itself of little importance, it becomes important through the terror that it gives to the others, and also he can be of a quality to do damage to the city, as is seen of Alcibiades, and was about to be seen of Themistocles, driven unjustly from Athens, and Rome felt it in Coriolanus.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> The strongest assent he has yet given, and then the turn inside the same period. It is most true that it is very useful, indeed almost necessary, for a city to have easy ways to oppress bad citizens by law and judgment, above all those who plot against the state <a class="xref" href="#NM-DISC.1.7.01">Machiavelli .01</a>; but the ways must be ordered so the innocent are not readily vexed. An unjust condemnation is, besides unjust, pernicious, and twice over. It frightens the noble and those of standing, whose discontent is dangerous to the republic; and Machiavelli&#x27;s &quot;little or no disorder&quot; from a wrong done ordinarily <a class="xref" href="#NM-DISC.1.7.03">Machiavelli .03</a> he grants as &quot;of little importance in itself&quot;, then makes important, through the terror it gives and because the man condemned may be one who can do the city damage. Alcibiades did; Themistocles nearly did; Rome felt it in Coriolanus.</p>
+<p><span class="lem">History.</span> Alcibiades, recalled from the Sicilian expedition in 415 BC to stand trial for impiety, fled and was condemned to death in his absence; he went to Sparta and advised it to fortify Decelea and send help to Syracuse. Themistocles, ostracised about 471 and later condemned for treason, fled to Persia, where Artaxerxes gave him cities in Asia Minor; he died at Magnesia before he was used against Greece, of illness or, as some said, by poison (Thucydides 1.138). Coriolanus, condemned in his absence after the summons Machiavelli praises, led the Volsci against Rome (Livy 2.35–40).</p>
+<p><span class="lem">Cross-reference.</span> Coriolanus is Machiavelli&#x27;s own example <a class="xref" href="#NM-DISC.1.7.02">Machiavelli .02</a>, turned: the trial that for Machiavelli saved Rome from a riot made, for Guicciardini, an enemy at the gates.</p>
+        </details>
+      </div>
+      <div class="pair" id="FG-CONS.1.7.02">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.7.02">1.7.02</a></div>
+        <div class="col it" lang="it"><span class="supplied">[È]</span> adunque necessario misurare bene questa parte, e, secondo la opinione mia, troppo pericoloso fare che delle accusazioni sia giudice il populo, il quale non intende né esamina le cose bene, è facile muoversi a&#x27; rumori e calunnie false. Non sta anche bene in pochi cittadini questa autorità, perché, se sono eletti di numero stretto, diventano troppo potenti, se di largo, procedono troppo respettivi, e in fatto e&#x27; giudici vogliono essere assai, cioè più di cinquanta. E certo il modello della Quarantia di Firenze non era male considerato, se si fussino moderate molte cose che erano male disposte. E che non sia bene fare giudice il populo delle accusazioni, oltre alle ragioni dette di sopra, s&#x27;ha a considerare che spesso e&#x27; cittadini che vogliono farsi grandi camminando per via del populo, cioè proponendo cose che piacciono alla moltitudine, la quale considerando la superficie o i titoli, non il fine a che si tenda, è prima condotta alla servitù che si accorga dove sia menata, in modo che è impossibile opprimere questi tali per via del populo: in esemplo ci sono e&#x27; Gracchi, e&#x27; quali autori di leggi sediziose, e tendendo a cammino di tòrre la autorità al senato, non potettono essere oppressi se non contro alla volontà del populo, il simile Manlio Capitolino, contro al quale bisognò creare il dittatore, perché insino non si scoperse la pratica di farsi re, il populo lo seguitò.</div>
+        <div class="col en" lang="en">It is necessary, then, to measure this part well, and, according to my opinion, too dangerous to make judge of the accusations the people, which neither understands nor examines things well, <span class="supplied">[and]</span> is easy to move to uproars and false calumnies. Nor does this authority sit well in few citizens either, for, if they are chosen of a narrow number, they become too powerful, if of a broad one, they proceed too respectful, and in fact the judges want to be many, that is, more than fifty. And certainly the model of the Quarantia of Florence would not have been ill considered, if many things that were disposed ill had been moderated. And that it is not good to make the people judge of the accusations, besides the reasons said above, one is to consider that often the citizens who wish to make themselves great walking by the path of the people, that is, proposing things that please the multitude, which, considering the surface or the titles, not the end to which one tends, is led into servitude before it perceives where it is being taken, in such a way that it is impossible to oppress such men by the path of the people: for an example there are the Gracchi, who, authors of seditious laws, and tending on the road to taking away the authority from the senate, could not be oppressed except against the will of the people, the like <span class="supplied">[with]</span> Manlius Capitolinus, against whom it was needful to create the dictator, for until the practice of making himself king was discovered, the people followed him.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> Who should judge. Not the people: in his opinion too dangerous, since it neither understands nor examines things well and is moved by uproars and false calumnies. Nor a few citizens: chosen narrowly they become too powerful, broadly too respectful of persons; the judges must be many, more than fifty, and the Florentine Quarantia was not a bad model, had its defects been moderated. Then a further reason against the people: men who would make themselves great court it with what pleases, and it is led into servitude before it sees where it is going, so that they cannot be put down by its means. The Gracchi could be suppressed only against its will; Manlius Capitolinus needed a dictator, because the people followed him until his design on the kingship was out.</p>
+<p><span class="lem">History.</span> The Gracchi: Tiberius, tribune in 133 BC, killed by senators in a riot; Gaius, tribune in 123–122, died in 121, hunted down after the senate&#x27;s decree authorised force. Manlius Capitolinus, charged with aiming at kingship, was imprisoned by a dictator named in 385; in 384, accused by tribunes, he was condemned by the people and thrown from the Tarpeian rock (Livy 6.11–20). Once the design was out, the people did condemn him, as Guicciardini&#x27;s <i lang="it">insino</i> allows. The Quarantia, a court for crimes against the state on the Venetian model: by Canestrini&#x27;s note, Soderini sought to introduce it, and the popular government restored in 1527 re-established it. Its name says forty; Guicciardini has just asked for more than fifty, and says only that much in it was ill disposed.</p>
+<p><span class="lem">Cross-reference.</span> Machiavelli allowed accusation &quot;to the people, or to any magistracy or council&quot; <a class="xref" href="#NM-DISC.1.7.01">Machiavelli .01</a> and asked only that the judges be many <a class="xref" href="#NM-DISC.1.7.06">Machiavelli .06</a>; Guicciardini takes that menu and strikes out the people. He objects to the people as judge, not to the tribunes as accusers, and does not name the tribunes; but the people&#x27;s court is where the tribunes brought their accusations, and his reserve runs back through his replies to I.5, where they were not the particular guard of liberty (his I.5 .01), and I.6, where they ended &quot;rather damaging than useful&quot; (his I.6 .01). &quot;More than fifty&quot; puts a number on Machiavelli&#x27;s &quot;it is needful that the judges be many&quot; <a class="xref" href="#NM-DISC.1.7.06">Machiavelli .06</a>; Manlius returns from his reply to I.5.</p>
+        </details>
+      </div>
+      <div class="pair" id="FG-CONS.1.7.03">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.7.03">1.7.03</a></div>
+        <div class="col it" lang="it">Bisogna adunque che la republica sia ordinata in modo, o che le accusazioni abbino diversi giudicii secondo che sono diversi gli ordini e gli umori della città, o che gli uomini preposti a&#x27; giudicii siano mescolati in modo che sia uno temperamento da appropriarsi a ogni spezie di mali, avvertendo che col non lo ristrignere in poco numero, siano uomini più scelti che si possa, e che si accostino più alla mediocrità che a alcuno degli estremi</div>
+        <div class="col en" lang="en">It is needful, then, that the republic be ordered in such a way, either that the accusations have different judgments according as the orders and the humours of the city are different, or that the men appointed to the judgments be mixed in such a way that there be a tempering to be fitted to every species of ills, taking heed that, with not restricting it to a small number, they be men as choice as can be, and that they approach more to the mean than to any of the extremes</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The design, two ways. Either the accusations go to different courts according to the different orders and humours of the city, or the judges are mixed so that one tempering fits every kind of ill; and, the number not being made small, they should be the choicest men available and nearer the mean than either extreme. As in his reply to I.2, he answers a principle with an ordering. He ends, as often, without a stop.</p>
+<p><span class="lem">Cross-reference.</span> The humours are I.4&#x27;s, the dispositions of a city&#x27;s orders; Machiavelli&#x27;s I.7 had used the word for ill will against one citizen <a class="xref" href="#NM-DISC.1.7.01">Machiavelli .01</a>; &quot;a tempering&quot; is the word he used of the tribunes in his reply to I.3, where they tempered the nobles&#x27; power but not the licence of the plebs.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from Canestrini 1857, <i>Opere inedite</i> vol. 1, pp. 1–65 (<span class="sig">WIT-FG-CONS-1857-CANESTRINI</span>) — the <i>editio princeps</i>, which governs. Collated against Palmarocchi 1933 (<span class="sig">WIT-FG-CONS-1933-PALMAROCCHI</span>): page images and the Wikisource transcription consulted as collation evidence, not reproduced (LICENSE §5).</p>
+<p><span class="lem">vessati o puniti Perché</span> → <span class="lem">vessati o puniti. Perché</span> (FG-CONS.1.7.01). No stop in the impression; a capital follows; the 1933 edition prints it. D67.</p>
+<p><span class="lem">e lo sentì Roma in Coriolano</span> → <span class="lem">e lo sentì Roma in Coriolano.</span> (FG-CONS.1.7.01). Paragraph end, not unit end; no stop in the impression; the 1933 edition prints it. D67.</p>
+<p><span class="lem">più di cinquanta E certo</span> → <span class="lem">più di cinquanta. E certo</span> (FG-CONS.1.7.02). As C001. D67.</p>
+<p><span class="lem">male disposte E che</span> → <span class="lem">male disposte. E che</span> (FG-CONS.1.7.02). As C001. D67.</p>
+<p><span class="lem">per via del populo in esemplo</span> → <span class="lem">per via del populo: in esemplo</span> (FG-CONS.1.7.02). No mark in the impression; lower-case <i lang="it">in</i> follows; the 1933 edition prints a colon. D67.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem"></span> — [È] verissimo ... [È] adunque. The 1857 witness reads <i lang="it">E verissimo che ... E adunque necessario</i>. The 1933 witness reads <i lang="it">È verissimo che ... È adunche necessario</i>. Canestrini prints the paragraph openings without the accent, and as printed neither period has a verb. Emended as his I.3 <i lang="it">E posto</i> was (D114, D144).</p>
+<p><span class="lem">procedono troppo respettivi, e in fatto (the e printed o-shaped)</span> — 1857. The 1933 witness reads <i lang="it">procedono troppo respettivi; ed in fatto</i>. The letter prints like o, as e does throughout the page; read as e on sense and on the 1933 edition (D145).</p>
+<p><span class="lem">la superficie o i titoli</span> — 1857. The 1933 witness reads <i lang="it">la superficie ed e&#x27; titoli</i>. &#x27;The surface or the titles&#x27; against &#x27;the surface and the titles&#x27;. Canestrini construes and is kept (D38, D146).</p>
+<p><span class="lem">il quale non intende né esamina le cose bene, è facile muoversi</span> — 1857. The 1933 witness reads <i lang="it">el quale non intende né esamina le cose bene, ed [è] facile muoversi</i>. Palmarocchi supplies <i lang="it">ed</i> and brackets an <i lang="it">è</i> his witness lacked; Canestrini prints <i lang="it">è</i> and no conjunction. The English supplies &#x27;[and]&#x27;.</p>
+<p><span class="lem">come si vede di Alcibiade</span> — 1857. The 1933 witness reads <i lang="it">come si vedde di Alcibiade</i>. Present against past: &#x27;as is seen&#x27; against &#x27;as was seen&#x27;.</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem">The paragraphs.</span> Canestrini prints three, and they are kept.</p>
+<p><span class="lem"><i lang="it">[È] verissimo</i>.</span> &quot;It is most true&quot;: assent, and the strongest so far. The witness prints <i lang="it">E</i> without the accent; as printed the period has no verb, and it is emended as his I.3 <i lang="it">[È] posto</i> was (D114, D144). The same at <i lang="it">[È] adunque</i> (.02). The assent is to the utility of accusations; the reply is about who is to judge them.</p>
+<p><span class="lem"><i lang="it">anzi quasi necessario</i>.</span> &quot;Indeed almost necessary&quot;: <i lang="it">anzi</i> here corrects upward after an affirmative, and neither reverses (D135, &quot;on the contrary&quot;) nor corrects a negative (D90, &quot;but rather&quot;). &quot;Indeed&quot; (D147).</p>
+<p><span class="lem"><i lang="it">modi facili</i>, <i lang="it">facilmente</i>, <i lang="it">è facile</i>.</span> &quot;Easy ways&quot;, &quot;readily&quot;, &quot;is easy&quot;: the family held as D27 rules it. The ways to oppress the bad are to be easy, and the innocent not readily vexed: the reply turns on the two.</p>
+<p><span class="lem"><i lang="it">per via delle leggi e de&#x27; giudicii</i>.</span> &quot;By the path of the laws and of the judgments&quot;: <i lang="it">via</i> is &quot;path&quot; (D131), here and at <i lang="it">per via del populo</i> (.02), where the path is the people&#x27;s favour. <i lang="it">Giudicii</i> are judgments in the sense of courts; <i lang="it">giudici</i> (.02) are the judges.</p>
+<p><span class="lem"><i lang="it">e&#x27; cattivi cittadini</i>.</span> &quot;The bad citizens&quot; (D03). The English keeps them next to <i lang="it">quelli che machinassino</i>, &quot;those who should machinate&quot;, as the Italian does. <i lang="it">In spezie</i> is &quot;especially&quot;, which keeps the root of <i lang="it">spezie</i>, &quot;species&quot; (.03), and leaves &quot;particular&quot; to <i lang="it">particulare</i>.</p>
+<p><span class="lem"><i lang="it">machinassino</i>.</span> &quot;Should machinate&quot;: plot.</p>
+<p><span class="lem"><i lang="it">avvertire</i>, <i lang="it">avvertendo</i>.</span> &quot;Take heed&quot;, &quot;taking heed&quot;: .01 and the last period. The reply opens and closes on the same caution.</p>
+<p><span class="lem"><i lang="it">andando questo pericolo sopra</i>.</span> &quot;This danger hanging over&quot;: bearing on them.</p>
+<p><span class="lem"><i lang="it">uomini nobili e di più qualità</i>.</span> &quot;Men noble and of more quality&quot;: one group, two attributes. <i lang="it">Qualità</i> as in I.5 (glossary). The same word returns of the condemned man, &quot;of a quality to do damage&quot;.</p>
+<p><span class="lem"><i lang="it">malcontenti</i>, <i lang="it">la mala contentezza</i>.</span> &quot;Malcontent&quot;, &quot;the ill content&quot;: one root, kept.</p>
+<p><span class="lem"><i lang="it">lo essere condannato uno cittadino a torto</i>.</span> &quot;One citizen&#x27;s being condemned wrongly&quot;: the nominal infinitive (D109). It answers Machiavelli&#x27;s .03: if a citizen is oppressed ordinarily, &quot;even though wrong should be done him, there follows either little or no disorder&quot;. Guicciardini grants the &quot;little&quot; (<i lang="it">di poca importanza</i>, &quot;of little importance&quot;) and then makes it important, through the terror and through the man.</p>
+<p><span class="lem"><i lang="it">e anche può essere lui</i>.</span> &quot;And also he can be&quot;: <i lang="it">anche</i> adds a second reason; it does not mean &quot;he too&quot;.</p>
+<p><span class="lem"><i lang="it">fu per vedersi di Temistocle</i>.</span> &quot;Was about to be seen of Themistocles&quot;: <i lang="it">essere per</i> prospective (D45). Themistocles, ostracised, fled to the Persian king and was given cities, and died at Magnesia before he was used against Greece, of illness or, as some said, by poison (Thucydides 1.138); Alcibiades, condemned in his absence, went over to Sparta and did Athens great harm.</p>
+<p><span class="lem"><i lang="it">lo sentì Roma in Coriolano</i>.</span> &quot;Rome felt it in Coriolanus&quot;: Machiavelli&#x27;s own example, turned. For Machiavelli the tribunes&#x27; summons saved Rome from a riot; for Guicciardini the condemnation made Coriolanus an enemy, who led the Volsci against the city.</p>
+<p><span class="lem"><i lang="it">questa parte</i>.</span> &quot;This part&quot;: this matter.</p>
+<p><span class="lem"><i lang="it">fare che delle accusazioni sia giudice il populo, il quale</i>.</span> &quot;To make judge of the accusations the people, which&quot;: the Italian order, so that &quot;which&quot; takes the people and not the accusations.</p>
+<p><span class="lem"><i lang="it">muoversi a&#x27; rumori</i>.</span> &quot;To move to uproars&quot;: <i lang="it">rumore</i> in the period sense, public tumult, not hearsay. Canestrini prints <i lang="it">è facile</i> with no conjunction before it; the 1933 edition reads <i lang="it">ed [è] facile</i>, with its own brackets. The English supplies &quot;[and]&quot; (D53).</p>
+<p><span class="lem"><i lang="it">Non sta anche bene</i>.</span> &quot;Nor does ... sit well ... either&quot;: <i lang="it">anche</i> with the negative.</p>
+<p><span class="lem"><i lang="it">eletti</i>.</span> &quot;Chosen&quot; (glossary, <i lang="it">eleggere</i>).</p>
+<p><span class="lem"><i lang="it">procedono troppo respettivi</i>.</span> &quot;Proceed too respectful&quot;: with too much regard to persons, afraid to condemn the powerful. <i lang="it">Rispetto</i> is &quot;respect&quot; (glossary), as in Machiavelli&#x27;s &quot;without respect&quot; (.01).</p>
+<p><span class="lem"><i lang="it">e in fatto</i>.</span> Canestrini&#x27;s letter prints o-shaped, as his e does throughout this page; read <i lang="it">e</i> (D145). The 1933 edition prints <i lang="it">ed</i>.</p>
+<p><span class="lem"><i lang="it">vogliono essere assai</i>.</span> &quot;Want to be many&quot;: <i lang="it">volere</i> of a requirement, not a wish, the one exception to D117&#x27;s &quot;wish&quot; (D148); <i lang="it">vogliono farsi grandi</i>, &quot;wish to make themselves great&quot;, in the same paragraph, is a wish. Machiavelli says the same of Soderini&#x27;s eight: &quot;it is needful that the judges be many&quot; (.06). Guicciardini puts a number on it.</p>
+<p><span class="lem"><i lang="it">la Quarantia</i>.</span> The Forty, a Florentine court for crimes against the state, modelled on the Venetian Quarantie; Soderini tried to introduce it, and the popular government restored in 1527 re-established it. So Canestrini&#x27;s note, which is his and is not carried. He prints <i lang="it">Quarantía</i> with an accent to mark the stress; the accent is normalised away (DEC-009 clause 1).</p>
+<p><span class="lem"><i lang="it">non era male considerato, se si fussino moderate</i>.</span> &quot;Would not have been ill considered, if ... had been moderated&quot;: the imperfect in a contrary-to-fact condition (D47). <i lang="it">Male disposte</i> is &quot;disposed ill&quot;: badly arranged, not hostile.</p>
+<p><span class="lem"><i lang="it">s&#x27;ha a considerare</i>.</span> &quot;One is to consider&quot; (D61).</p>
+<p><span class="lem">The anacoluthon.</span> <i lang="it">che spesso e&#x27; cittadini che vogliono farsi grandi ...</i> never gets its verb: the sentence turns to the multitude and then to <i lang="it">in modo che</i>. The English leaves it unfinished, as he does.</p>
+<p><span class="lem"><i lang="it">la superficie o i titoli</i>.</span> &quot;The surface or the titles&quot;: as printed. The 1933 edition reads <i lang="it">ed e&#x27; titoli</i>, &quot;and the titles&quot; (D146).</p>
+<p><span class="lem"><i lang="it">è prima condotta alla servitù che si accorga dove sia menata</i>.</span> &quot;Is led into servitude before it perceives where it is being taken&quot;.</p>
+<p><span class="lem"><i lang="it">a cammino di tòrre</i>.</span> &quot;On the road to taking away&quot;: <i lang="it">tòrre</i> is <i lang="it">togliere</i>, &quot;take away&quot; (D131).</p>
+<p><span class="lem"><i lang="it">e&#x27; Gracchi</i>.</span> Tiberius and Gaius Gracchus, tribunes in 133 and 123–122 BC, whose agrarian and other laws the senate opposed; both were put down by force, not condemned by the people: hence <i lang="it">contro alla volontà del populo</i>.</p>
+<p><span class="lem"><i lang="it">il simile Manlio Capitolino</i>.</span> &quot;The like [with] Manlius Capitolinus&quot;: <i lang="it">il simile</i> adverbial, as with the Gracchi. Marcus Manlius, saviour of the Capitol, was charged with aiming at kingship; a dictator imprisoned him in 385 BC; in 384, accused by tribunes, he was condemned by the people and thrown from the Tarpeian rock (Livy 6.11–20). Once the design was out, the people did condemn him, as <i lang="it">insino</i> allows. Guicciardini named him in his reply to I.5.</p>
+<p><span class="lem"><i lang="it">la pratica</i>.</span> &quot;The practice&quot;: the scheme.</p>
+<p><span class="lem"><i lang="it">temperamento</i>.</span> &quot;A tempering&quot;, as in his reply to I.3.</p>
+<p><span class="lem"><i lang="it">appropriarsi</i>.</span> &quot;To be fitted&quot;: &quot;appropriated&quot; now means seized.</p>
+<p><span class="lem"><i lang="it">mediocrità</i>.</span> &quot;The mean&quot;: the middle, whether of condition or of disposition. Not &quot;mediocrity&quot;, which in English now disparages.</p>
+<p><span class="lem"><i lang="it">col non lo ristrignere</i>.</span> &quot;With not restricting it&quot;: <i lang="it">col</i> with the infinitive, which leaves the relation open, as the Italian does.</p>
+<p><span class="lem">No full stop.</span> Canestrini prints none after <i lang="it">estremi</i>; the 1933 edition does. The English ends as the Italian does (D40).</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="colophon">
+    <div class="row">
+      <div>
+        <h3>What this is</h3>
+        <p>A free, openly licensed, bilingual edition of Guicciardini's 39 <i>Considerazioni</i> and the
+          <i>Discorsi</i> chapters they answer — 78 text units, Italian and English facing, every reading
+          traceable to a named public-domain witness.</p>
+        <p>It is a reading edition with a transparent apparatus, not a text of record. It does not adjudicate
+          the critical text against Bausi 2001 or the manuscript tradition, and does not claim to.</p>
+      </div>
+      <div>
+        <h3>On the title</h3>
+        <p>Machiavelli had been dead two years when Guicciardini wrote; the <i>Discorsi</i> were unpublished,
+          and the <i>Considerazioni</i> stayed unprinted until 1857. Machiavelli never answers.</p>
+        <p>“Conversation” is a quotation, not a description. It invokes Machiavelli's letter to Vettori of
+          10 December 1513, where he changes into court dress at evening, enters the antique courts of ancient
+          men, and reports that <i>they, in their humanity, answer me</i>. Guicciardini does to Machiavelli
+          what Machiavelli did to Livy — and is denied the reply Machiavelli claimed.</p>
+      </div>
+      <div>
+        <h3>Method</h3>
+        <p>No image-derived reading enters the text on a single reading. Each unit is transcribed twice,
+          independently, by readers who have not seen each other's work; disagreements are adjudicated against
+          the page images and recorded.</p>
+        <p>Existing English translations of the <i>Considerazioni</i> — Grayson (1965), Atkinson &amp; Sices
+          (2002) — are never used as translation inputs.</p>
+      </div>
+      <div>
+        <h3>Licence</h3>
+        <p>The established Italian text and the apparatus data are dedicated to the public domain under
+          <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>. They are Machiavelli's and
+          Guicciardini's sentences, and this edition adds no condition to them.</p>
+        <p>The English translation, the notes and the editorial apparatus are licensed
+          <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: reuse them anywhere, including
+          commercially, with attribution to David McDougall and this edition. The build tooling is MIT.</p>
+        <p>The witness scans are other people's digitisations, included as evidence under their own terms; no
+          grant is made over them, and no page image of Palmarocchi 1933 is reproduced here. Full terms,
+          layer by layer, are in the <span class="sig">LICENSE</span> file in the repository.</p>
+      </div>
+    </div>
+
+    <div class="state">
+      <p><strong>Version 0.3 · 9 of 39 pairs published.</strong>
+        This edition is versioned, not frozen. No open questions on this pair.</p>
+    </div>
+  </footer>
+
+</div>
