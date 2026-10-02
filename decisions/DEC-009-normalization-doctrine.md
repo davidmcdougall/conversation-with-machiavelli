@@ -57,6 +57,12 @@ Transcribe what is there. Do not regularise, lighten or strengthen.
    from the comparison witness, bracketed in the Italian, and the printed
    form is given in the variant note. A weaker reading that construes is
    still transcribed as printed (D38).
+   **Amended 2026-10-02 (D126):** the rule covers a whole word as well as
+   letters. Where the printed word is a real word that cannot be construed in
+   its place, and the comparison witness gives one that can, the whole word
+   is bracketed (`[comunicare]` for `conciare`, FG I.6); the spelling inside
+   the brackets is the governing witness's own where it uses the word
+   elsewhere, not the comparison witness's.
 8. **Capitalisation**, including exceptions to the page's own habit. The
    exception is often the reading (D20).
 9. **Punctuation.** As printed. Canestrini points more lightly than a modern
