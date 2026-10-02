@@ -217,6 +217,42 @@ condemnation did the city damage. The tribunes are not named, but the people
 as judge is the tribunes' court, and the line of his I.5 and I.6 replies
 continues. The unit ends without a stop.
 
+## Machiavelli, NM-DISC.1.8
+
+**A story, a rule drawn from it, and a city that lacked it.** Manlius, envious
+of Camillus, calumniates the senate to the plebs; the senate makes a
+dictator, Manlius is summoned, cannot name the holders of the treasure, and
+is imprisoned. The rule: calumnies are detestable, the remedy is many places
+open to accusation and sharp punishment for calumniators, because a
+calumny needs no proof and an accusation does. Florence lacked the order,
+and its histories are full of calumnies: hatred, division, sects, ruin. The
+chain `odio ... divisione ... Sette ... rovina` (.03) is I.7's chain again and
+must stay one chain. The last sentence turns the calumniator into an accuser,
+and the English keeps the condition (`quando l'accusa si riscontri vera`)
+that decides between reward and penalty.
+
+**The unnamed citizen and the named commissary.** "Some citizen" rose by
+calumnies against the powerful (.03); Giovanni Guicciardini was ruined by
+one (.04). Machiavelli names the second and not the first. The English must
+not name him either.
+
+## Guicciardini, FG-CONS.1.8
+
+**He grants the conclusion and denies the remedy.** `[È] vera conclusione`:
+calumnies are detestable. But they are natural in a free city, Rome with its
+easy accusations had them in plenty, and no order on paper provides against
+every disorder: `però` twice, each a consequence, not a contrast. Then he
+lowers the stakes: false calumnies die of themselves, a grave citizen
+does not turn on the republic, the scandalous are put down. The English must
+keep the concession and the denial in one movement and must not make him
+defend calumny.
+
+**He names Machiavelli's citizen and turns both examples.** The example of
+Cosimo "is a dream": prudence and wealth, not calumnies, made him. Giovanni
+Guicciardini's case was "begged": true, and unjust, but it did not divide
+the city; the city's discords made the case. The causation is reversed, and
+the English must keep it reversed. The unit ends without a stop.
+
 ## The pair
 
 Machiavelli argues towards a demonstration. Guicciardini declines to be

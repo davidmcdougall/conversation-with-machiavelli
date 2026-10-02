@@ -74,3 +74,12 @@ the original.
 | `Alcibiade`, `Temistocle` | Alcibiades, Themistocles | FG I.7 |
 | `Manlio Capitolino` | Manlius Capitolinus | FG I.7, as FG I.5 |
 | `Quarantia` | Quarantia | FG I.7; the Florentine court of forty, noted |
+| `Furio Camillo` | Furius Camillus | NM I.8; Marcus Furius Camillus. `Camillo` as NM I.12 |
+| `Manlio Capitolino` | Manlius Capitolinus | NM I.8, FG I.8, as FG I.5, I.7 |
+| `Padri` | the Fathers | NM I.8; the senators |
+| `Campidoglio` | the Capitol | NM I.8 |
+| `Lucca`, `Lucchesi` | Lucca, the Lucchese | NM I.8 |
+| `messer Giovanni Guicciardini` | messer Giovanni Guicciardini | NM I.8, FG I.8; commissary at Lucca, 1430. `messer` kept |
+| `Capitano` | the Captain | NM I.8; a Florentine magistrate with criminal jurisdiction, noted |
+| `Fabio Massimo` | Fabius Maximus | FG I.8; Quintus Fabius Maximus Cunctator |
+| `Cosimo` | Cosimo | FG I.8; Cosimo de' Medici, noted |

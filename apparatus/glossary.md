@@ -276,3 +276,20 @@ last sentence answers Machiavelli's first move.
 | `rumore` | uproar | D155. Public tumult, not hearsay. |
 | `respettivo` | respectful | D155. With too much regard to persons; with `rispetto`, "respect". |
 | `mediocrità` | the mean | D155. |
+
+
+## Added from the I.8 pair (2026-10-02)
+
+| Italian | English | Note |
+|---|---|---|
+| `calunnia`, `calunniare`, `calunniatore` | calumny, calumniate, calumniator | D159. NM I.8 throughout; FG I.7, I.8. The private charge without proof, against `accusa`. |
+| `accusatore` | accuser | D159. With `accusare`, `accusa` (I.7). |
+| `riscontro`; `riscontrarsi vero` | corroboration; be corroborated true | D160. NM I.8. |
+| `sdegno` | indignation | NM I.7, I.8; FG I.8 `sdegni particulari`, "particular indignations". |
+| `valersi (di)` | avail oneself (of) | D162. NM I.7, I.8. |
+| `concorso` | concourse | D162. The noun of `concorrere` (D01, D63). |
+| `di momento` | of moment | NM I.8 .01; FG I.8 `di più momento`, the reply's close. |
+| `fomentare` | foment | FG I.8 ×3: the uproars, Cosimo's divisions, the discords. |
+| `carico` | charge | FG I.8 `uno carico falso`, `e' carichi dati falsamente`. |
+| `corrompere`, `corrotto` | corrupt, corrupted | NM I.8 (bribed), FG I.8 (Cosimo corrupting the citizens). |
+| `ciascuno` | each | D161. NM I.8 `ciascuno da ciascuno`. |
