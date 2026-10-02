@@ -1,0 +1,32 @@
+source_unit_id: FG-CONS.1.8
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-008
+responds_to: NM-DISC.1.8
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. Canestrini's own footnotes (on Cosimo de' Medici and on Giovanni Guicciardini) are editorial and are not carried."
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38); errors are emended from Palmarocchi and bracketed (D68)."
+passes:
+  - {id: A, performed: 2026-10-02, file: sources/coldpass/FG-CONS.1.8-passA.md}
+  - {id: B, performed: 2026-10-02, file: sources/coldpass/FG-CONS.1.8-passB.md, note: "subagent; page images only (native 600 ppi, 2x upscale, half-page crops at 3x), separate directory"}
+collation: sources/coldpass/COLLATION-2026-10-02-I8.md
+collation_result: >
+  443 words. No word, clause or sense disagreement. One letter both passes
+  mark doubtful (`fomentorono e|a feciono`) escalated and ruled `e` (D156,
+  David 2026-10-02). One verbless opening emended `[È]` (D157, as D114,
+  D144). Three stops supplied from the 1933 edition; no terminal stop (D40).
+witness_independence_check: "SCOPE §7. At the doubtful letter both passes leave the reading open; at `malignità` pass A has the accent the 1933 edition prints and pass B leaves it open. No pattern; neither pass carries a Palmarocchi word-reading."
+boundaries: "printed pp. 20-21; one printed paragraph, first-line indent at `E vera conclusione`; ends above the footnote rule on p. 21; CONSIDERAZIONE SUL CAPITOLO IX begins p. 22"
+corrections:
+  - {id: FG-CONS-I8-C001, locator: FG-CONS.1.8.01, was: "per sé stesse Né lo sdegno", now: "per sé stesse. Né lo sdegno", evidence: "No stop in the impression; a capital follows; the 1933 edition prints it. D67."}
+  - {id: FG-CONS-I8-C002, locator: FG-CONS.1.8.01, was: "accusato falsamente Ma questi", now: "accusato falsamente. Ma questi", evidence: "As C001; the first word of p. 21. D67."}
+  - {id: FG-CONS-I8-C003, locator: FG-CONS.1.8.01, was: "da sé medesime caggiono E lo esemplo", now: "da sé medesime caggiono. E lo esemplo", evidence: "As C001. D67."}
+emendations:
+  - {id: FG-CONS-I8-E001, operation: emendation, rule: D68, status: ruled_D157, locator: FG-CONS.1.8.01, printed: "E vera conclusione che", established: "[È] vera conclusione che", source: WIT-FG-CONS-1857-CANESTRINI, note: "As printed the opening period has no finite verb in its main clause. As D114 (I.3) and D144 (I.7); the 1933 edition prints `È`."}
+ruled_readings:
+  - {id: FG-CONS-I8-R001, rule: D156, locator: FG-CONS.1.8.01, locus: "le discordie dei cittadini fomentorono e feciono di più momento", passes: "A ⟨e|a⟩; B ⟨e|a⟩", note: "The letter prints a-shaped; e loses its crossbar throughout the scan (`falsamento`, p. 21); `a` does not construe; the 1933 edition reads `e`. A reading of damaged type, not an emendation."}
+not_supplied:
+  - {locus: "che per lo ordinario non sarebbe stato", note: "Unit end. No stop in the impression; the 1933 edition prints one. Not supplied (D40)."}
+normalisation_notes: "Class A: accents (`perchè` → `perché`, `nè` → `né`, `Nè` → `Né`, `sè` → `sé`); plural article `e` → `e'` (D35) at `e' carichi`, `e' disordini`, `e' cittadini`, `e' giudicii`; elision solid at `l'ha`; spaces before `?`, `;` and some commas removed. Canestrini's footnotes and note references are his, not Guicciardini's, and are not carried."

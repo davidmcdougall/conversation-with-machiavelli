@@ -1,0 +1,60 @@
+source_unit_id: NM-DISC.1.8
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-I8-D001
+    locator: NM-DISC.1.8.01
+    class: reading
+    witness_1824: "poi ch'egli ebbe liberato Roma dalla oppressione dei Francesi"
+    witness_1554: "poi che egli hebbe libera Roma dallo assedio, & dalla oppressione de Franciosi"
+    established: witness_1824
+    rationale: "Giglio names the siege as well as the oppression."
+  - id: NM-DISC-I8-D002
+    locator: NM-DISC.1.8.01
+    class: reading
+    witness_1824: "quanto all'altre belliche laudi ... lo fece mettere in carcere"
+    witness_1554: "quanto all'altre laudi, della guerra ... lo fece mettere in prigione"
+    established: witness_1824
+    rationale: "The same praises of war, and prison for gaol; no change of sense."
+  - id: NM-DISC-I8-D003
+    locator: NM-DISC.1.8.02
+    class: reading
+    witness_1824: "detestabili le calunnie"
+    witness_1554: "dannose & pessime le calunnie"
+    established: witness_1824
+    rationale: "Giglio judges calumnies by their effects (damaging and very bad); the 1824 text says they are to be detested, the word Guicciardini's reply takes up (`le calunnie sono detestabili`)."
+  - id: NM-DISC-I8-D004
+    locator: NM-DISC.1.8.02
+    class: reading
+    witness_1824: "in modoché ciascuno da ciascuno può esser calunniato ... Usasi più questa calunnia"
+    witness_1554: "in modo che ciascuno puo essere calunniato ... Vsasi questa calunnia"
+    established: witness_1824
+    rationale: "Giglio has neither `da ciascuno` (anyone by anyone) nor the comparative `più`."
+  - id: NM-DISC-I8-D005
+    locator: NM-DISC.1.8.02
+    class: reading
+    witness_1824: "punire acremente ... le calunnie irritano ... e gl'irritati"
+    witness_1554: "punire aspramente ... le calunnie commouono ... & gli commossi"
+    established: witness_1824
+    rationale: "Harshly for sharply; calumnies stir men up rather than irritate them."
+  - id: NM-DISC-I8-D006
+    locator: NM-DISC.1.8.03
+    class: reading
+    witness_1824: "contra a' cittadini potenti, che allo appetito suo si opponevano, facevano assai per quello; perché pigliando la parte del Popolo"
+    witness_1554: "contro a Cittadini potenti, all'appetito suo si opponeuano, et faceuano assai per quello, perche pigliando la parte del gran popolo"
+    established: witness_1824
+    rationale: "Giglio has no relative `che`, so the calumnies themselves oppose his appetite; and `il gran popolo`, the great body of the people."
+  - id: NM-DISC-I8-D007
+    locator: NM-DISC.1.8.04
+    class: reading
+    witness_1824: "comandato da messer Giovanni Guicciardini, Commissario di quello"
+    witness_1554: "commandato da Messer Giouanni Guicciardoni buō commissario di quello"
+    established: witness_1824
+    rationale: "Giglio misprints the name and calls him a good commissary."
+  - id: NM-DISC-I8-D008
+    locator: NM-DISC.1.8.01-05
+    class: systematic_orthographic_profile
+    witness_1824: "the 1824 edition's modernised spelling and pointing"
+    witness_1554: "Giglio's `Mallio`, `Franciosi`, `hauere`, `oppenione`, `Firentino`, `Luca`, `nemici`, `piu tosto`, `contro a loro`, `d'un solo`, abbreviations and pointing"
+    established: witness_1824
+    rationale: The 1824 edition governs throughout.

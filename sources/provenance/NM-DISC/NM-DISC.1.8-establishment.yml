@@ -1,0 +1,23 @@
+source_unit_id: NM-DISC.1.8
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-008
+passes:
+  - {id: A, performed: 2026-10-02, file: sources/coldpass/NM-DISC.1.8-passA.md}
+  - {id: B, performed: 2026-10-02, file: sources/coldpass/NM-DISC.1.8-passB.md, note: "subagent; page images only (native 350 ppi plus thirds), separate directory"}
+collation: sources/coldpass/COLLATION-2026-10-02-I8.md
+collation_result: "965 words. No word, clause or sense disagreement. Thirteen loci pass B marks uncertain on damaged type are read alike by both passes."
+boundaries: "printed pp. 44-48; one block with a drop capital; begins after cap. VII on p. 44; CAPITOLO IX begins p. 49"
+interventions: []
+comparison_collation: >
+  Done 2026-10-02 against the 1554 extract (zero-based pp. 66-69, fol.
+  16r-17v). A cold reader transcribed the Giglio leaves from the page images
+  (sources/coldpass/NM-DISC.1.8-1554.md); the transcript was collated by word
+  against the established text, and every reading published as a variant
+  note was checked on the page image. Giglio rewords throughout; the
+  sense-bearing differences are in
+  sources/comparisons/NM-DISC/NM-DISC.1.8-witness-disagreements.yml.
+normalisation_notes: "Class A only: accents (`perchè` → `perché`, `nè` → `né`, `benchè`/`benche` → `benché`, `Dimodochè` → `Dimodoché`, `talchè`, `Ondechè`, `tantochè`, `modochè`), elision spacing (`ch' egli`, `tutt' i`, `all' altre`, `d' invidia`, `l' altre`, `l' impeto`, `all' incontro`, `l' uno`, `dell' altro`, `n' era`, `d' intenderlo`, `dall' altra`, `d' alcun`, `dell' accusa`, `l' accusa`, `senz' alcuna`, `gl' irritati`, `Dell' uno`, `quell' altro`, `d' onde`, `d' accusare`, `d' uno`, `l' esercito`, `com' egli`); apocope and the pronoun `e'` spaced (`de' Nobili`, `a' suoi`, `a' cittadini`, `da' Lucchesi`, `da' nimici`, `e' riconoscesse`, `e' si sapevano`); spaces before punctuation. `seguìti` keeps the printed accent."

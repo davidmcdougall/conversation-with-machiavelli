@@ -1,0 +1,49 @@
+---
+unit: NM-DISC.1.8
+pass: B
+source: "Machiavelli, Discorsi, 1824 edition, vol. 1 — page images nm1824-1..6.png, read by eye at 350 ppi with part1/2/3 crops"
+boundaries:
+  start: "nm1824-1.png, printed p. 44: heading CAPITOLO VIII follows the end of cap. VII ('...nel capitolo se-/guente discorreremo.', text line 18); rubric is 2 italic lines below it; body begins with drop-cap 'Nonostante' and fills the last 6 lines of the page"
+  end: "nm1824-5.png, printed p. 48, text line 26 (last line on the page): 'Manlio.'; rest of p. 48 blank; CAPITOLO IX heading opens nm1824-6.png, printed p. 49, directly under the running head"
+paragraphing: "One unbroken block: opening line indented with a 2-line-high drop capital N; no further first-line indents on pp. 44-48. No footnotes."
+body_word_count: 997
+word_count_rule: "Whitespace tokens of the body only; elided forms split at the apostrophe count as two words; hyphenations joined; [p. N] markers not counted."
+uncertain_loci: 13
+conventions: "Diplomatic. Spelling, accents (grave/acute as printed; all accents read here are grave), capitals and punctuation as printed. Line-end hyphens joined silently; page breaks marked [p. N], mid-word as ono[p. 45]re. The print sets apostrophes with variable thin spacing; this transcription writes every elision closed up with no following space (ch'egli, a'suoi, da'Lucchesi), except the free-standing pronoun e' which is followed by a space. Running heads and the p. 49 signature line not transcribed. Doubts marked ⟨x⟩ or ⟨a|b⟩ (preferred first)."
+---
+
+# Heading
+
+CAPITOLO VIII
+
+# Rubric
+
+*Quanto le accuse sono utili alle Repubbliche, tanto sono perniziose le calunnie.*
+
+# Body
+
+[p. 44] Nonostante che la virtù di Furio Camillo, poi ch'egli ebbe liberato Roma dalla oppressione dei Francesi, avesse fatto che tutt'i cittadini romani, senza parer loro torsi reputazione o grado, cedevano a quello, nondimeno Manlio Capitolino non poteva sopportare che gli fusse attribuito tanto ono[p. 45]re e tanta gloria; parendogli quanto alla salute di Roma, per avere salvato il Campidoglio, aver meritato quanto Camillo; e quanto all'altre belliche laudi, non essere inferiore a lui. Dimodochè carico d'invidia, non potendo quietarsi per la gloria di quello, e veggendo non potere ⟨seminare⟩ discordia infra i Padri, si volse alla Plebe, seminando varie opinioni sinistre tra quella. E intra l'altre cose che diceva, era come il tesoro, il quale si era adunato insieme per dare ai Francesi, e poi non dato loro, era stato usurpato da privati cittadini; e quando si riavesse si poteva convertirlo in pubblica utilità, alleggerendo la Plebe dai tributi, o da qualche privato debito. Queste parole poterono assai nella Plebe, talchè cominciò avere concorso, e a fare a sua posta tumulti assai nella città: la qual cosa dispiacendo al Senato, e parendogli di momento e pericolosa, creò un Dittatore, perchè e' riconoscesse questo caso, e frenasse l'impeto di Manlio. Ondechè subito il Dittatore lo fece citare, e condussonsi in pubblico all'incontro l'uno dell'altro, il Dittatore in mezzo de'Nobili, e Manlio in mezzo della Plebe. Fu domandato Manlio che dovesse dire, appresso a chi fusse questo tesoro che si diceva, perchè n'era così desideroso il Senato d'intenderlo come la Plebe; a che Manlio non rispondeva particolarmente, ma andando fuggendo, diceva come non era necessario dire loro quello che e' si sapevano, tantochè il Dittatore lo fece mettere in carcere. È da notare per questo [p. 46] testo, quanto siano nelle città libere e in ogni altro modo di vivere, detestabili le calunnie, e come per reprimerle si debbe non perdonare a ⟨ordine⟩ alcuno, che vi faccia a proposito. Nè può essere migliore ordine a torle via, che aprire assai luoghi alle accuse, perchè quanto le accuse giovano alle Repubbliche, tanto le calunnie nuocono: e dall'altra parte è questa differenza, che le calunnie non hanno bisogno di testimoni, nè d'alcun altro particolare riscontro a provarle, in modochè ciascuno da ciascuno può esser calunniato; ma non può già essere accusato, avendo le accuse bisogno di riscontri veri, e di circostanze, che mostrino la verità dell'accusa. Accusansi gli uomini ai Magistrati, ai Popoli, ai Consigli; calunniansi per le piazze, e per le logge. Usasi più questa calunnia, dove si usa meno l'accusa, e dove le città sono meno ordinate a riceverle. Però uno ⟨ordinatore⟩ di una Repubblica debbe ordinare che si possa in quella accusare ogni cittadino, senz'alcuna paura, o ⟨senz'⟩alcun sospetto; e fatto questo e bene osservato, debbe punire acremente i calunniatori; i quali non si possono dolere quando siano puniti, avendo i luoghi aperti a udire le accuse di colui che gli avesse per le logge calunniato. E dove non è bene ordinata questa parte, seguitano sempre disordini grandi; perchè le calunnie irritano, e non gastigano i cittadini; e gl'⟨irritati⟩ pensano di valersi, odiando più presto che temendo le cose che si dicono contro di loro. Questa parte, come è [p. 47] detto, era bene ordinata in Roma, ed è stata sempre male ordinata nella nostra città di Firenze. E come a Roma questo ordine fece molto bene, a Firenze questo disordine fece molto male. E chi legge le Istorie di questa città, vedrà quante calunnie sono state in ogni ⟨tempo⟩ date a'suoi cittadini, che si sono adoperati nelle cose importanti di quella. Dell'uno dicevano, ch'egli aveva rubati danari al Comune; dell'altro, che non aveva vinto una impresa, per essere stato corrotto, e che quell'altro per sua ambizione aveva fatto il tale e tale inconveniente. Del che ne nasceva che da ogni parte ne surgeva odio⟨,|;⟩ d'onde si veniva alla divisione, dalla divisione alle Sette, dalle Sette alla rovina. Che se fusse stato in Firenze ordine d'accusare i cittadini, e punire i calunniatori, non seguivano infiniti scandali che sono seguìti; perchè quelli cittadini, o condannati o assoluti che fussero, non ⟨arebbono⟩ potuto nuocere alla città, e sarebbono ⟨stati⟩ accusati meno assai, che non ne erano calunniati, non si potendo⟨,|;⟩ come ho detto, accusare come calunniare ciascuno. E intra l'altre cose, di che si è valuto alcuno cittadino, per venire alla grandezza sua, sono state queste calunnie, le quali venendo contra a'cittadini potenti, che allo appetito suo si opponevano, facevano assai per quello; perchè pigliando la parte del Popolo, e confermandolo nella mala opinione ch'egli aveva di loro, se lo fece amico. E benchè se ne potesse addurre assai esempj, voglio essere con[p. 48]tento solo d'uno. Era l'esercito ⟨Fiorentino⟩ a campo a Lucca, comandato da messer Giovanni Guicciardini, Commissario di quello. Vollono o i cattivi suoi governi, o la cattiva sua fortuna, che la espugnazione ⟨di⟩ quella città non seguisse. Pur comunque il caso stesse, ne fu incolpato messer Giovanni, dicendo com'egli era stato corrotto da'Lucchesi; la quale calunnia sendo favorita da'nimici suoi, condusse messer Giovanni quasi in ultima disperazione. E ⟨benche⟩ per giustificarsi ei si volesse mettere nelle mani del Capitano, nondimeno non si potette mai giustificare, per non essere modi in quella Repubblica da poterlo fare. Di che ne nacque assai sdegno tra gli amici di messer Giovanni, che erano la maggior parte degli uomini grandi, e infra coloro che desideravano fare novità in Firenze. La qual cosa, e per queste e per altre simili cagioni, tanto crebbe, che ne seguì la rovina di quella Repubblica. Era adunque Manlio Capitolino calunniatore, e non accusatore; e i Romani mostrarono in questo caso appunto, come i calunniatori si debbono punire. Perchè si debbe fargli diventare accusatori, e quando l'accusa si riscontri vera, o premiarli, o non punirli; ma quando la non si riscontri vera, punirli come fu punito Manlio.
+
+# Notes on marks
+
+- p. 44, body l. 1 (page text line ~21): a small stray mark/hook below the C of "Camillo" (looks like a cedilla, Ç); read as Camillo, not counted as an uncertain reading.
+- p. 44, body l. 1: drop capital N, 2 lines high; rubric ends "Repubbliche," (comma) / "calunnie." (stop).
+- p. 45, l. 6: "⟨seminare⟩" — the i carries an odd mark (resembles a long-s/f stroke above the letter); reading seminare not in doubt in sense but the glyph is damaged.
+- p. 45, l. 4: "Dimodochè" — accent on final e reads grave but is faint.
+- p. 45, l. 23: "È" printed with grave accent on capital.
+- p. 46, l. 3: "⟨ordine⟩" at line end — final e damaged/broken (looks like c).
+- p. 46, l. 17: stray dot below "le" in "per le logge" (dot in interline space); ignored.
+- p. 46, l. 18: "⟨ordinatore⟩" — a mark resembling an accent over the a ("ordinàtore"); taken as a stray mark.
+- p. 46, l. 21: "o ⟨senz'⟩alcun" — the s is faint and a circumflex-like mark sits over the e ("sênz'"); read senz'.
+- p. 46, l. 27: "gl'⟨irritati⟩" — a mark over the second a ("irritàti"); taken as stray.
+- p. 47, l. 6: "⟨tempo⟩ date" — a raised dot/speck between "tempo" and "date"; not read as punctuation.
+- p. 47, l. 12: "odio⟨,|;⟩" — the mark after odio is a low comma-like glyph slightly detached; read comma.
+- p. 47, l. 15: "seguìti" — grave accent on the i, clearly printed.
+- p. 47, l. 17: "⟨arebbono⟩" — the first e looks like c ("arcbbono"); read arebbono.
+- p. 47, l. 18: "⟨stati⟩" — the final i appears to carry an accent-like mark ("statí"); taken as damage.
+- p. 47, l. 19: "potendo⟨,|;⟩" — mark after potendo is a comma, set close and slightly low; read comma.
+- p. 48, l. 1: "⟨Fiorentino⟩" — a mark over the second i (like ì); taken as stray.
+- p. 48, l. 5: "⟨di⟩ quella" — extra speck above the i of "di"; reading di not otherwise in doubt.
+- p. 48, l. 10: "E ⟨benche⟩" — no accent visible on final e of benche (elsewhere benchè is accented, e.g. p. 47 l. 25); transcribed as printed without accent, flagged as possibly lost accent.
+- p. 48, l. 10: "disperazione. E" — very tight space after the stop; similarly "d'uno. Era" on l. 1.
+- No footnotes or footnote markers anywhere in the chapter.

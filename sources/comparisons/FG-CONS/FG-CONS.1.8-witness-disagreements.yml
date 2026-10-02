@@ -1,0 +1,54 @@
+source_unit_id: FG-CONS.1.8
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-I8-D001
+    locator: FG-CONS.1.8.01
+    class: emendation
+    witness_1857: "E vera conclusione che"
+    witness_1933: "È vera conclusione che"
+    established: "[È] vera conclusione che"
+    publish_as_variant_note: true
+    rationale: "Canestrini prints the opening without the accent, and as printed the period has no main verb. Emended as his I.3 and I.7 openings were (D114, D144, D157)."
+  - id: FG-CONS-I8-D002
+    locator: FG-CONS.1.8.01
+    class: reading
+    witness_1857: "fomentorono e feciono (the e printed a-shaped)"
+    witness_1933: "fomentorono e feciono"
+    established: witness_1857
+    rationale: "The letter prints like a, as e does where the scan loses its crossbar; read as e on sense and on the 1933 edition (D156)."
+  - id: FG-CONS-I8-D003
+    locator: FG-CONS.1.8.01
+    class: reading
+    witness_1857: "ma tanto naturali in una città libera"
+    witness_1933: "ma tanto naturale in una cittá libera"
+    established: witness_1857
+    rationale: "Plural, agreeing with the calumnies, against a singular that takes the whole clause as its subject. Same sense."
+  - id: FG-CONS-I8-D004
+    locator: FG-CONS.1.8.01
+    class: reading
+    witness_1857: "trasporterà mai uno cittadino grave"
+    witness_1933: "traporterá mai uno cittadino grave"
+    established: witness_1857
+    rationale: "Two spellings of one verb."
+  - id: FG-CONS-I8-D005
+    locator: FG-CONS.1.8.01
+    class: reading
+    witness_1857: "come né anche fanno le calunnie ... è un sogno"
+    witness_1933: "come neanche fanno le calunnie ... è uno sogno"
+    established: witness_1857
+    rationale: "Word division and article form only."
+  - id: FG-CONS-I8-D006
+    locator: FG-CONS.1.8.01
+    class: reading
+    witness_1857: "per essere e' giudicii disordinati ... non nacque la divisione della città"
+    witness_1933: "per essere e' giudici disordinati ... non nacque le divisione della cittá"
+    established: witness_1857
+    rationale: "Courts (`giudicii`, as in his I.7) against judges; and Palmarocchi's archaic plural article. The English follows Canestrini."
+  - id: FG-CONS-I8-D007
+    locator: FG-CONS.1.8.01
+    class: systematic_orthographic_profile
+    witness_1857: "Canestrini's `il`, `e` before vowels, `abondanza`, `prudenza`, `innocenza`, `dei`, `populo`, and lighter pointing"
+    witness_1933: "Palmarocchi's `el`, `ed` before vowels, `abondanzia`, `prudenzia`, `innocenzia`, `de'`, `popolo`, and semicolons at `romori`, `calunniatori`, `regolata`, `opprimono`, `sogno`, `Guicciardini`, `carcere`"
+    established: witness_1857
+    rationale: Canestrini governs throughout.
