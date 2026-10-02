@@ -180,6 +180,43 @@ and then the opposite judgment. And the tribunes, Machiavelli's guard of
 liberty, end as "rather damaging than useful". He does not soften it, and the
 unit ends without a stop.
 
+## Machiavelli, NM-DISC.1.7
+
+**An order, two effects, and a demonstration by its absence.** The authority
+to accuse deters (the first effect) and vents the humours by an ordinary way
+(the second). The proof runs through what happens without it: Coriolanus,
+whom only the tribunes' summons saved from a riot; Valori, killed because
+Florence had no ordinary way; Soderini, brought down with a foreign army;
+Arruns, who fetched the Gauls. The chain `offesa ... paura ... difesa ...
+partigiani ... parti ... rovina` (.04) must stay one chain, each link
+generating the next. The chapter's verb is `sfogare`, "vent": the humours
+will find an outlet, ordinary or extraordinary, and the English keeps the one
+verb.
+
+**The conclusion names the judges.** `bisogna che i giudici siano assai`,
+"it is needful that the judges be many": Machiavelli's answer to Soderini's
+eight. Guicciardini's reply picks it up and puts a number on it.
+
+## Guicciardini, FG-CONS.1.7
+
+**He grants the principle and moves the question to the judge.** `[È]
+verissimo` is the strongest assent he has given, and `ma bisogna anche
+avvertire` is where the reply begins: the innocent must not be readily
+vexed. Then the candidates, each refused for its own reason: the people
+(moved by uproars, led into servitude by those who court it, unable to put
+down its favourites), and a select body of citizens (too powerful if chosen
+narrowly, too respectful if broadly), when the judges must in fact be more
+than fifty. His answer is a design, not a denial,
+as in I.2: courts fitted to the humours, or judges mixed and nearer the mean.
+The English must keep the concession and the turn in one period, and must not
+make him reject accusations.
+
+**He turns Machiavelli's own example.** Coriolanus, for Machiavelli the case
+of an ordinary way that saved Rome, is for Guicciardini a citizen whose
+condemnation did the city damage. The tribunes are not named, but the people
+as judge is the tribunes' court, and the line of his I.5 and I.6 replies
+continues. The unit ends without a stop.
+
 ## The pair
 
 Machiavelli argues towards a demonstration. Guicciardini declines to be

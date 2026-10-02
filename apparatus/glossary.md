@@ -258,3 +258,21 @@ last sentence answers Machiavelli's first move.
 | `maneggiare` | handle | NM I.6. |
 | `sopraddetto` / `detto` | above-said / said | D140. |
 | `lungamente` / `lungo tempo` | long / a long time | D140. |
+
+
+## Added from the I.7 pair (2026-10-02)
+
+| Italian | English | Note |
+|---|---|---|
+| `accusare`, `accusa` / `accuse`, `accusazioni` | accuse, accusation(s) | NM I.7 throughout; FG I.7 `accusazioni`. The public charge before a court, set against `calunnie` (I.8). |
+| `sfogare`, `sfogarsi` | vent, vent themselves | D149. NM I.7 ×7, the chapter's verb; `onde sfogare` "by which to vent", "[an outlet]" supplied where no noun stands. |
+| `ordinariamente` / `per l'ordinario`; `straordinario` | ordinarily (after the verb) / by the ordinary; extraordinary | D151. By the orders or outside them. |
+| `forestiere` (adjective) | foreign | NM I.7 `forze forestiere`. The noun `forestieri` stays "strangers" (D57); `esterne` stays "external" (D55). |
+| `giudici` / `giudicii` | judges / judgments | NM I.7 `otto giudici`, `agli assai giudici`; FG I.7 `e' giudici`, `diversi giudicii`, `preposti a' giudicii`. Judgments in the sense of courts. |
+| `assai` (of number) | many | NM I.7 `siano assai`, `agli assai giudici`; FG I.7 `vogliono essere assai`. Guicciardini answers Machiavelli in the same word. |
+| `calunnie` | calumnies | NM I.7 .07 (the turn to I.8); FG I.7 `calunnie false`. |
+| `anzi` (correcting upward after an affirmative) | indeed | D147. FG I.7 `anzi quasi necessario`. |
+| `volere` (of a requirement) | want | D148. FG I.7 `vogliono essere assai`; the one exception to D117's "wish". |
+| `rumore` | uproar | D155. Public tumult, not hearsay. |
+| `respettivo` | respectful | D155. With too much regard to persons; with `rispetto`, "respect". |
+| `mediocrità` | the mean | D155. |

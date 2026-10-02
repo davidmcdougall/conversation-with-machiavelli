@@ -65,3 +65,12 @@ the original.
 | `Pelopida` | Pelopidas | NM I.6 |
 | `Grecia` | Greece | NM I.6 |
 | `Publio Sestio` | Publius Sextius | FG I.6; Livy's Lucius Sextius, noted. Kept as printed |
+| `Coriolano` | Coriolanus | NM I.7, FG I.7; Gnaeus Marcius Coriolanus |
+| `Francesco Valori` | Francesco Valori | NM I.7 |
+| `Pietro Soderini` | Pietro Soderini | NM I.7; Piero Soderini, noted. Machiavelli's form kept |
+| `Chiusi`, `Lucumone`, `Arunte` | Chiusi, a Lucumo, Arruns | NM I.7; Clusium, noted |
+| `Francesi` | the French | NM I.7; Machiavelli's name for the Gauls, kept and noted |
+| `Lombardia`, `Toscana`, `Sicilia` | Lombardy, Tuscany, Sicily | NM I.7 |
+| `Alcibiade`, `Temistocle` | Alcibiades, Themistocles | FG I.7 |
+| `Manlio Capitolino` | Manlius Capitolinus | FG I.7, as FG I.5 |
+| `Quarantia` | Quarantia | FG I.7; the Florentine court of forty, noted |

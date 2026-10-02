@@ -78,7 +78,7 @@ exist. See §7.
 | 4 | NM-DISC.1.4 | FG-CONS.1.4 | FG-CONS-DR-004 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 5 | NM-DISC.1.5 | FG-CONS.1.5 | FG-CONS-DR-005 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 6 | NM-DISC.1.6 | FG-CONS.1.6 | FG-CONS-DR-006 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
-| 7 | NM-DISC.1.7 | FG-CONS.1.7 | FG-CONS-DR-007 | — | — | — | — | — |
+| 7 | NM-DISC.1.7 | FG-CONS.1.7 | FG-CONS-DR-007 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 8 | NM-DISC.1.8 | FG-CONS.1.8 | FG-CONS-DR-008 | — | — | — | — | — |
 | 9 | NM-DISC.1.9 | FG-CONS.1.9 | FG-CONS-DR-009 | — | — | — | — | — |
 | 10 | NM-DISC.1.10 | FG-CONS.1.10 | FG-CONS-DR-010 | — | — | — | — | — |
@@ -194,12 +194,12 @@ than inside the first paragraph.
 | Stage | Done | Remaining | Of |
 |---|---|---|---|
 | Link records | 39 | 0 | 39 |
-| NM source established | 8 | 31 | 39 |
-| FG source established | 8 | 31 | 39 |
-| Collated against the comparison witness | 12 units | 66 | 78 |
-| Translated (draft, cold-reviewed) | 16 | 62 | 78 |
-| Annotated | 16 | 62 | 78 |
-| Published | 16 | 62 | 78 |
+| NM source established | 9 | 30 | 39 |
+| FG source established | 9 | 30 | 39 |
+| Collated against the comparison witness | 14 units | 64 | 78 |
+| Translated (draft, cold-reviewed) | 18 | 60 | 78 |
+| Annotated | 18 | 60 | 78 |
+| Published | 18 | 60 | 78 |
 <!-- /state:stages -->
 
 The table is written by `scripts/state` from the files. The paragraphs below
@@ -316,6 +316,7 @@ clock; David's own time is the rulings, counted separately.
 | I.4 (617 + 647 words) | 12 | 3 | 8 | 12 | 6 | 3 | ~45 (stages approximate) | 1 open item (O20); NM not collated against 1554; one FG cold reader discarded for a 200 ppi render |
 | I.5 (827 + 490 words) | 15 | 3 | 8 | 12 | 8 | 3 | ~50 (stages approximate) | 1 open item (O21); first NM comparison collation against 1554 (third cold reader for Giglio), commentary cold-reviewed |
 | I.6 (1,641 + 408 words) | 20 | 4 | 10 | 12 | 10 | 4 | ~60 (stages approximate) | 2 rulings (D126, D127), both at establishment; first whole-word emendation; NM collated against 1554; commentary cold-reviewed |
+| I.7 (1,056 + 470 words) | 20 | 4 | 12 | 10 | 10 | 4 | ~60 (stages approximate) | 1 ruling (D145) at establishment; two verbless openings emended by D114's precedent (D144); NM collated against 1554; commentary cold-reviewed; DEC-009 clauses 3, 6, 10 aligned first (D143) |
 
 ---
 
