@@ -143,6 +143,43 @@ error if he had to choose. Then he refuses Machiavelli's distinction outright:
 the government of the plebs serves neither for acquiring nor for conserving,
 and Rome was mixed, not plebeian.
 
+## Machiavelli, NM-DISC.1.6
+
+**A counterfactual answered by a trade-off.** Could Rome have been ordered
+without the enmities? The chapter asks what made Sparta and Venice quiet
+(chance and smallness at Venice, Lycurgus and the exclusion of strangers at
+Sparta), finds that Rome did the opposite of both (armed the plebs, opened the
+city to strangers), and concludes that the cause of the tumults and the cause
+of the expansion were the same: no inconvenience can be cancelled without
+another springing up. The English must keep the chain `per queste cagioni`
+→ `Considerando adunque` → `In modo che` → `Pertanto`; the conclusion is
+reached, not announced.
+
+**The ideal is granted and then withdrawn.** `Crederei bene` and `credo` mark
+his judgment that a small, well-defended, non-expanding republic would be
+"the true political living"; `Ma sendo tutte le cose degli uomini in moto`
+takes it away, and `come io credo` says it cannot be balanced. An English that
+lets the ideal stand as his recommendation, or the withdrawal stand as a
+maxim detached from it, has lost the movement. The enmities are tolerated as
+`uno inconveniente necessario`, not praised.
+
+## Guicciardini, FG-CONS.1.6
+
+**He grants the premise and moves the cause.** `Io credo essere vero`: arming
+the plebs required keeping it content. What made the tumults was not the arms
+but the patricians' refusal to share the government and their injuries. Two
+counterfactuals follow, both stated as what would have been, not what was:
+no distinction of orders, or honours shared from the start; and, more
+modestly (`forse`), a good order against injuries and a way for the principal
+plebeians into the patriciate. The Sextian laws are his evidence that the
+plebs wanted relief, not honours.
+
+**His sharpest non-concurrence so far.** `Non veggo adunque ... anzi lo
+giudico molto facile`: not "I do not readily concur" but "I do not see",
+and then the opposite judgment. And the tribunes, Machiavelli's guard of
+liberty, end as "rather damaging than useful". He does not soften it, and the
+unit ends without a stop.
+
 ## The pair
 
 Machiavelli argues towards a demonstration. Guicciardini declines to be

@@ -237,3 +237,24 @@ last sentence answers Machiavelli's first move.
 | `sentenza` | sentence | FG I.5: an opinion pronounced. Apart from `opinione` (D02) and `giudicio`. |
 | `simile` | like | FG I.5 `uno governo simile` → a like government. |
 
+
+## Added from the I.6 pair (2026-10-02)
+
+| Italian | English | Note |
+|---|---|---|
+| `controversie` / `inimicizie` | controversies / enmities | D128. NM I.6; the rubric's word is `inimicizie`. |
+| `via` / `modo` | path / way | D131, enforcing I.2. `via del mezzo` "middle path", `modo mezzo` "middle way". |
+| `levare via` / `togliere via`, `torre via` | remove / take away | D131. `togliere via` is the I.6 rubric's verb. |
+| `ampliare` / `crescere` | expand / grow | D132. With `accrescere` increase, `augumento` augmentation (D69). |
+| `inconveniente` | inconvenience | D133. The older sense: a drawback that follows. |
+| `vivere politico` | political living | NM I.6, as `vivere libero` "free living". |
+| `Gentiluomini` | gentlemen | D134. The Venetian patriciate. |
+| `comunicare` | communicate | FG I.4, I.6: to share honours or government (D105, D126). |
+| `sedizione` | sedition | FG I.5, I.6. |
+| `ingiuria` | injury | NM I.6, FG I.6. |
+| `possessioni` / `beni` | possessions / goods | D139. |
+| `anzi` (reversing) | on the contrary | D135. `anzi` correcting keeps "but rather" (D90). |
+| `più presto ... che` | rather ... than | D135. |
+| `maneggiare` | handle | NM I.6. |
+| `sopraddetto` / `detto` | above-said / said | D140. |
+| `lungamente` / `lungo tempo` | long / a long time | D140. |

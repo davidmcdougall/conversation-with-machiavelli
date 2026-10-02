@@ -60,4 +60,8 @@ the original.
 | `Spurio Melio` | Spurius Maelius | FG I.5 |
 | `Manlio Capitolino` | Manlius Capitolinus | FG I.5 |
 | `Catilina` | Catiline | FG I.5 |
-
+| `Gentiluomini`, `Popolani` | gentlemen, commoners | NM I.6; the Venetian orders (D134) |
+| `Tebe` | Thebes | NM I.6 |
+| `Pelopida` | Pelopidas | NM I.6 |
+| `Grecia` | Greece | NM I.6 |
+| `Publio Sestio` | Publius Sextius | FG I.6; Livy's Lucius Sextius, noted. Kept as printed |

@@ -1,0 +1,14 @@
+---
+unit: FG-CONS.1.6
+annotated: 2026-10-02
+kinds: argument · history · cross-reference
+format: as annotations/NM-DISC.1.12.md
+---
+
+## FG-CONS.1.6.01
+
+**Argument.** He grants the premise and moves the cause. It is true that a Rome which used its plebs in war, having too few patricians to fight alone, had to keep them content [[NM-DISC.1.6.04]]. But what made the tumults was the patricians' refusal: they neither admitted the plebs to the government nor stopped injuring them, seizing the public land, very harsh in exacting debts, and, one can believe, bending justice in every other matter. Then two counterfactuals. Had there been no distinction of orders at the beginning of liberty, or had the honours been shared from the start, as they were later of necessity, there would have been no such tumults; and they did cease once the government was shared, until the Gracchi, when a corrupt city divided anew, poor against rich, with ennobled plebeians among the rich. And had the patricians, without handing the government over, set some order against the injuries and opened a path into the patriciate for the leading plebeians, perhaps there would have been none either: the Sextian laws show the plebs would have taken relief and left the honours, had not its leaders, who wanted office and had no other way to it, tied the two together. His conclusion is not "I do not readily concur" but "I do not see" that it was impossible; he judges it very easy. And since it could be done, the defects that kept the city in tumult and created the tribunes are not to be praised, and the tribunes, once the city was at peace, were rather damaging than useful.
+
+**History.** The *ager publicus*, land taken in conquest, was largely occupied by the rich; debt bondage (*nexum*) was the plebs' other grievance. Livy (6.35–42) narrates the ten-year agitation of the tribunes Gaius Licinius and Lucius Sextius, which ended in 367 BC with laws on debt, on holdings of public land and on the consulship, one consul to be plebeian. Livy's tribunes refused to let the first two be voted without the third (6.39), which is Guicciardini's "excluded the plebs from hope of being able to obtain the one without the other". He gives Sextius the praenomen Publius. The plebs was admitted to the consulship in 366, to the dictatorship in 356, the censorship in 351, the praetorship in 337, the priestly colleges in 300; the conflict of the orders is usually dated to end with the *lex Hortensia* of 287 BC.
+
+**Cross-reference.** "As is said in the fourth Discourse": Machiavelli's I.4 (I.4 .01), and Guicciardini's own reply to it, where he had already put the cause of the disunion in the plebs' exclusion from the honours (his I.4 .01). The tribunes "rather damaging than useful" answer Machiavelli's closing praise of the tribunician authority [[NM-DISC.1.6.07]], and continue his reply to I.5, where he denied that the tribunes were the particular guard of liberty (his I.5 .01).
