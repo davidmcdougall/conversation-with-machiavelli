@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Machiavelli tells how Manlius Capitolinus, envying Camillus, sowed calumnies among the plebs and was imprisoned, and draws the rule: calumnies are detestable, and the remedy is to open many places to accusation and punish the calumniators; Florence, which had no such order, was ruined by them, as the calumny against Giovanni Guicciardini showed. Guicciardini grants the conclusion and denies the remedy. Calumnies are so natural in a free city that it is difficult and perhaps impossible to remove them: false charges spread in a multitude that believes ill sooner than good, Rome with its easy accusations was full of them, and no way of republic, except on paper, provides against every disorder. But they often die of themselves, a grave citizen calumniated does not turn on the republic, and the scandalous ones are put down. Machiavelli&#x27;s unnamed citizen is Cosimo de&#x27; Medici, and his example is a dream: prudence and excessive wealth, not calumnies, opened Cosimo&#x27;s path. As for Giovanni Guicciardini, the example was begged for want of others: he was calumniated unjustly, but his case did not divide the city; the city&#x27;s discords made his case.">
+<style>*{box-sizing:border-box}body{margin:0;font:14px system-ui}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>A Conversation with Machiavelli — Natural in a free city</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root {
+  --paper:      #EDEEEC;
+  --paper-sunk: #E4E6E3;
+  --ink:        #1B1E1C;
+  --ink-muted:  #5C625E;
+  --ink-faint:  #868C87;
+  --rule:       #C9CDC8;
+  --rule-faint: #DCDFDB;
+  --nm:         #3A5A6B;
+  --fg:         #6E5A3C;
+  --serif: "EB Garamond", "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  --sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --mono:  "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:      #161917;
+    --paper-sunk: #1D211E;
+    --ink:        #E3E6E1;
+    --ink-muted:  #A0A6A0;
+    --ink-faint:  #767C77;
+    --rule:       #343934;
+    --rule-faint: #262B27;
+    --nm:         #8FB4C6;
+    --fg:         #C4A97C;
+  }
+}
+:root[data-theme="dark"] {
+  --paper:      #161917;
+  --paper-sunk: #1D211E;
+  --ink:        #E3E6E1;
+  --ink-muted:  #A0A6A0;
+  --ink-faint:  #767C77;
+  --rule:       #343934;
+  --rule-faint: #262B27;
+  --nm:         #8FB4C6;
+  --fg:         #C4A97C;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 1160px; margin: 0 auto; padding-inline: 20px; padding-block: 0 0; }
+
+/* ---- masthead ---- */
+.masthead { padding-block: 56px 32px; border-bottom: 1px solid var(--rule); }
+.eyebrow {
+  font-family: var(--sans); font-size: 11px; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint);
+  margin: 0 0 18px;
+}
+h1 {
+  font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 5vw, 44px);
+  line-height: 1.12; margin: 0 0 14px; text-wrap: balance; letter-spacing: -0.01em;
+}
+h1 .sub { display: block; font-style: italic; color: var(--ink-muted); font-size: .52em; margin-top: 12px; letter-spacing: 0; }
+.standfirst {
+  font-family: var(--sans); font-size: 14.5px; line-height: 1.6;
+  color: var(--ink-muted); max-width: 62ch; margin: 0;
+}
+
+/* ---- the pairing device ---- */
+.pairing {
+  display: flex; align-items: stretch; gap: 0; margin: 30px 0 0;
+  border: 1px solid var(--rule); border-radius: 2px; overflow: hidden;
+  font-family: var(--sans); background: var(--paper-sunk);
+}
+.pairing > div { flex: 1 1 0; padding: 13px 16px; min-width: 0; }
+.pairing .who { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
+.pairing .nm-side .who { color: var(--nm); }
+.pairing .fg-side .who { color: var(--fg); }
+.pairing .what { font-size: 13.5px; color: var(--ink-muted); }
+.pairing .arrow {
+  flex: 0 0 auto; display: flex; align-items: center; justify-content: center;
+  padding-inline: 14px; color: var(--ink-faint); font-size: 15px;
+  border-inline: 1px solid var(--rule);
+}
+
+/* ---- pair-to-pair navigation ---- */
+.pairnav {
+  display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+  margin-top: 18px; font-family: var(--sans); font-size: 12.5px;
+  color: var(--ink-muted);
+}
+.pairnav a { text-decoration: none; color: var(--ink-muted); }
+.pairnav a:hover, .pairnav a:focus { color: var(--ink); text-decoration: underline; }
+
+/* ---- work sections ---- */
+.work { padding-block: 52px 0; }
+.work-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
+.work-head .tag {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .04em;
+  padding: 3px 7px; border-radius: 2px; color: var(--paper);
+}
+.work.nm .tag { background: var(--nm); }
+.work.fg .tag { background: var(--fg); }
+h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; letter-spacing: -0.005em; }
+.rubric {
+  font-style: italic; color: var(--ink-muted); max-width: 70ch;
+  margin: 10px 0 0; font-size: 16.5px; line-height: 1.5;
+}
+.rubric-note {
+  font-family: var(--sans); font-style: normal; font-size: 12px;
+  color: var(--ink-faint); margin-top: 7px;
+}
+.colheads {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  margin-top: 30px; padding-bottom: 7px; border-bottom: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint);
+}
+
+/* ---- the facing pair ---- */
+.pair {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  padding-block: 22px; border-bottom: 1px solid var(--rule-faint);
+  scroll-margin-top: 20px;
+}
+.pair:target { background: var(--paper-sunk); }
+.annot { grid-column: 2 / -1; margin-top: 14px; font-family: var(--sans); font-size: 13.5px;
+  line-height: 1.55; color: var(--ink-muted); }
+.annot summary { cursor: pointer; font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); list-style: none; }
+.annot summary::-webkit-details-marker { display: none; }
+.annot summary::before { content: "+ "; }
+.annot[open] summary::before { content: "− "; }
+.annot p { margin: 8px 0 0; max-width: 72ch; }
+.annot .xref { color: inherit; text-decoration: underline; text-decoration-color: var(--rule);
+  text-underline-offset: 2px; white-space: nowrap; }
+.gutter { padding-top: 4px; }
+.uid {
+  font-family: var(--mono); font-size: 10.5px; color: var(--ink-faint);
+  text-decoration: none; letter-spacing: -0.02em;
+}
+.uid:hover, .uid:focus { color: var(--ink); text-decoration: underline; }
+.col { min-width: 0; }
+.col.it { hyphens: auto; }
+.col.en { }
+.supplied { color: var(--ink-muted); }
+
+/* ---- apparatus ---- */
+.apparatus {
+  margin-top: 34px; padding-top: 22px; border-top: 2px solid var(--rule);
+  font-family: var(--sans); font-size: 13.5px; line-height: 1.58;
+  color: var(--ink-muted);
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 26px 34px;
+}
+.apparatus h3 {
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); margin: 0 0 9px;
+}
+.apparatus p { margin: 0 0 9px; }
+.apparatus p:last-child { margin-bottom: 0; }
+.apparatus .lem { font-family: var(--serif); font-size: 15px; color: var(--ink); font-style: italic; }
+.sig { font-family: var(--mono); font-size: 12px; color: var(--ink); }
+
+/* ---- colophon ---- */
+.colophon {
+  margin-top: 60px; padding-block: 28px 60px; border-top: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 13px; line-height: 1.6; color: var(--ink-muted);
+}
+.colophon .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 34px; }
+.colophon h3 {
+  font-size: 10.5px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--ink-faint); margin: 0 0 8px;
+}
+.colophon p { margin: 0 0 8px; }
+.colophon ul { margin: 0; padding-left: 16px; }
+.colophon li { margin-bottom: 5px; }
+.state {
+  margin-top: 26px; padding: 14px 16px; background: var(--paper-sunk);
+  border-left: 2px solid var(--ink-faint); border-radius: 0 2px 2px 0;
+  font-size: 12.5px;
+}
+.state strong { color: var(--ink); font-weight: 600; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--nm); outline-offset: 2px; }
+
+/* ---- contents / index page ---- */
+.toc { margin-top: 30px; }
+.toc-row {
+  display: grid; grid-template-columns: 40px 1fr 1fr; gap: 0 20px;
+  padding-block: 14px; border-bottom: 1px solid var(--rule-faint);
+  font-family: var(--sans); align-items: baseline;
+}
+.toc-row .n { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
+.toc-row a { text-decoration: none; color: var(--ink); font-family: var(--serif); font-size: 16px; }
+.toc-row a:hover, .toc-row a:focus { text-decoration: underline; }
+.toc-row .unpublished { color: var(--ink-faint); font-style: italic; font-size: 14px; }
+.toc-row .ids { color: var(--ink-faint); font-size: 11.5px; font-family: var(--mono); }
+
+@media (max-width: 760px) {
+  body { font-size: 16.5px; }
+  .colheads { display: none; }
+  .pair { grid-template-columns: 1fr; gap: 0; padding-block: 20px; }
+  .gutter { padding-top: 0; margin-bottom: 8px; }
+  .annot { grid-column: 1; }
+  .col.it { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px dotted var(--rule); }
+  .col.it::before, .col.en::before {
+    display: block; font-family: var(--sans); font-size: 10px; font-weight: 600;
+    letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px;
+  }
+  .col.it::before { content: "Italian"; }
+  .col.en::before { content: "English"; }
+  .pairing { flex-direction: column; }
+  .pairing .arrow { border-inline: 0; border-block: 1px solid var(--rule); padding-block: 6px; }
+  .toc-row { grid-template-columns: 1fr; gap: 4px; }
+}
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow">A Conversation with Machiavelli · Pair 8 of 39</p>
+    <h1>Natural in a free city
+      <span class="sub">Discourses I.8, and Guicciardini&#x27;s reply</span></h1>
+    <p class="standfirst">Machiavelli tells how Manlius Capitolinus, envying Camillus, sowed calumnies among the plebs and was imprisoned, and draws the rule: calumnies are detestable, and the remedy is to open many places to accusation and punish the calumniators; Florence, which had no such order, was ruined by them, as the calumny against Giovanni Guicciardini showed. Guicciardini grants the conclusion and denies the remedy. Calumnies are so natural in a free city that it is difficult and perhaps impossible to remove them: false charges spread in a multitude that believes ill sooner than good, Rome with its easy accusations was full of them, and no way of republic, except on paper, provides against every disorder. But they often die of themselves, a grave citizen calumniated does not turn on the republic, and the scandalous ones are put down. Machiavelli&#x27;s unnamed citizen is Cosimo de&#x27; Medici, and his example is a dream: prudence and excessive wealth, not calumnies, opened Cosimo&#x27;s path. As for Giovanni Guicciardini, the example was begged for want of others: he was calumniated unjustly, but his case did not divide the city; the city&#x27;s discords made his case.</p>
+
+    <div class="pairing">
+      <div class="nm-side">
+        <div class="who">Niccolò Machiavelli</div>
+        <div class="what">Discorsi sopra la prima Deca di Tito Livio · written c. 1513–19, printed 1531</div>
+      </div>
+      <div class="arrow" aria-hidden="true">answered by</div>
+      <div class="fg-side">
+        <div class="who">Francesco Guicciardini</div>
+        <div class="what">Considerazioni intorno ai Discorsi del Machiavelli · written 1529–30, printed 1857</div>
+      </div>
+    </div>
+    <nav class="pairnav"><a href="1.7.html">← Pair 1.7</a><a href="../index.html">All 39 pairs</a><a href="1.12.html">Pair 1.12 →</a></nav>
+  </header>
+
+  <section class="work nm">
+    <div class="work-head">
+      <span class="tag">NM-DISC.1.8</span>
+      <h2>Capitolo VIII</h2>
+    </div>
+    <p class="rubric">Quanto le accuse sono utili alle Repubbliche, tanto sono perniziose le calunnie.</p>
+    <p class="rubric">As much as accusations are useful to republics, so much are calumnies pernicious.</p>
+
+    <div class="colheads"><div></div><div>Italian · 1824</div><div>English</div></div>
+      <div class="pair" id="NM-DISC.1.8.01">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.8.01">1.8.01</a></div>
+        <div class="col it" lang="it">Nonostante che la virtù di Furio Camillo, poi ch&#x27;egli ebbe liberato Roma dalla oppressione dei Francesi, avesse fatto che tutt&#x27;i cittadini romani, senza parer loro torsi reputazione o grado, cedevano a quello, nondimeno Manlio Capitolino non poteva sopportare che gli fusse attribuito tanto onore e tanta gloria; parendogli quanto alla salute di Roma, per avere salvato il Campidoglio, aver meritato quanto Camillo; e quanto all&#x27;altre belliche laudi, non essere inferiore a lui. Dimodoché carico d&#x27;invidia, non potendo quietarsi per la gloria di quello, e veggendo non potere seminare discordia infra i Padri, si volse alla Plebe, seminando varie opinioni sinistre tra quella. E intra l&#x27;altre cose che diceva, era come il tesoro, il quale si era adunato insieme per dare ai Francesi, e poi non dato loro, era stato usurpato da privati cittadini; e quando si riavesse si poteva convertirlo in pubblica utilità, alleggerendo la Plebe dai tributi, o da qualche privato debito. Queste parole poterono assai nella Plebe, talché cominciò avere concorso, e a fare a sua posta tumulti assai nella città: la qual cosa dispiacendo al Senato, e parendogli di momento e pericolosa, creò un Dittatore, perché e&#x27; riconoscesse questo caso, e frenasse l&#x27;impeto di Manlio. Ondeché subito il Dittatore lo fece citare, e condussonsi in pubblico all&#x27;incontro l&#x27;uno dell&#x27;altro, il Dittatore in mezzo de&#x27; Nobili, e Manlio in mezzo della Plebe. Fu domandato Manlio che dovesse dire, appresso a chi fusse questo tesoro che si diceva, perché n&#x27;era così desideroso il Senato d&#x27;intenderlo come la Plebe; a che Manlio non rispondeva particolarmente, ma andando fuggendo, diceva come non era necessario dire loro quello che e&#x27; si sapevano, tantoché il Dittatore lo fece mettere in carcere.</div>
+        <div class="col en" lang="en">Notwithstanding that the <i lang="it">virtù</i> of Furius Camillus, after he had freed Rome from the oppression of the French, had made all the Roman citizens, without its seeming to them that they took from themselves reputation or degree, yield to that man, nonetheless Manlius Capitolinus could not bear that so much honour and so much glory should be attributed to that man; it seeming to him that, as to the safety of Rome, through having saved the Capitol, he had merited as much as Camillus; and as to the other praises of war, he was not inferior to him. So that, laden with envy, not being able to quiet himself because of the glory of that man, and seeing that he could not sow discord among the Fathers, he turned to the plebs, sowing various sinister opinions among it. And among the other things that he said, was how the treasure which had been gathered together to give to the French, and then not given to them, had been usurped by private citizens; and if it were had back, it could be converted to public utility, lightening the plebs of the tributes, or of some private debt. These words could do much with the plebs, so that he began to have concourse, and to make many tumults at his pleasure in the city: which thing displeasing the senate, and it seeming to it of moment and dangerous, it created a dictator, that he might take cognizance of this case and rein in the impetus of Manlius. Whereupon the dictator at once had him summoned, and they betook themselves in public to meet one another, the dictator in the midst of the nobles, and Manlius in the midst of the plebs. Manlius was asked to say with whom this treasure was that was spoken of, for the senate was as desirous to understand it as the plebs; to which Manlius was not answering particularly, but, going about evading, was saying that it was not necessary to tell them what they themselves knew, so that the dictator had him put in prison.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> The story first. Camillus&#x27; <i lang="it">virtù</i> had made the citizens yield to him without feeling diminished; Manlius, who had saved the Capitol, could not bear it. Unable to sow discord among the Fathers, he turned to the plebs and spread the charge that the gold gathered to ransom Rome from the French had been taken by private citizens, and could be recovered to relieve the plebs of tributes and debts. He gathered a following and made tumults; the senate made a dictator; summoned and asked in public who held the treasure, Manlius would only say that they knew already, and the dictator put him in prison. He would not bring the charge to proof. That is what makes it, in .05, a calumny.</p>
+<p><span class="lem">History.</span> Livy 6.11–16, under 385 BC. The dictator was Aulus Cornelius Cossus, named ostensibly for a war with the Volsci, which he won, and turned on Manlius on his return; the gold was the ransom being weighed for the Gauls when Camillus arrived (5.48–49). Manlius was released (6.17), and in 384 was accused of aiming at kingship, condemned, and thrown from the Tarpeian rock (6.18–20).</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini has named Manlius twice already: as one whom the consuls and dictators put down in defence of liberty (his reply to I.5), and as a favourite the people would not condemn until his design was out (his reply to I.7). Here he takes Machiavelli&#x27;s example and turns it: the scandalous calumny is put down without the order Machiavelli asks for <a class="xref" href="#FG-CONS.1.8.01">Guicciardini .01</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.8.02">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.8.02">1.8.02</a></div>
+        <div class="col it" lang="it">È da notare per questo testo, quanto siano nelle città libere e in ogni altro modo di vivere, detestabili le calunnie, e come per reprimerle si debbe non perdonare a ordine alcuno, che vi faccia a proposito. Né può essere migliore ordine a torle via, che aprire assai luoghi alle accuse, perché quanto le accuse giovano alle Repubbliche, tanto le calunnie nuocono: e dall&#x27;altra parte è questa differenza, che le calunnie non hanno bisogno di testimoni, né d&#x27;alcun altro particolare riscontro a provarle, in modoché ciascuno da ciascuno può esser calunniato; ma non può già essere accusato, avendo le accuse bisogno di riscontri veri, e di circostanze, che mostrino la verità dell&#x27;accusa. Accusansi gli uomini ai Magistrati, ai Popoli, ai Consigli; calunniansi per le piazze, e per le logge. Usasi più questa calunnia, dove si usa meno l&#x27;accusa, e dove le città sono meno ordinate a riceverle. Però uno ordinatore di una Repubblica debbe ordinare che si possa in quella accusare ogni cittadino, senz&#x27;alcuna paura, o senz&#x27;alcun sospetto; e fatto questo e bene osservato, debbe punire acremente i calunniatori; i quali non si possono dolere quando siano puniti, avendo i luoghi aperti a udire le accuse di colui che gli avesse per le logge calunniato. E dove non è bene ordinata questa parte, seguitano sempre disordini grandi; perché le calunnie irritano, e non gastigano i cittadini; e gl&#x27;irritati pensano di valersi, odiando più presto che temendo le cose che si dicono contro di loro.</div>
+        <div class="col en" lang="en">It is to be noted, by this text, how detestable calumnies are, in free cities and in every other way of living, and how, to repress them, one must spare no order that may serve the purpose. Nor can there be a better order to take them away than to open many places to accusations, for as much as accusations benefit republics, so much do calumnies do harm: and on the other hand there is this difference, that calumnies have no need of witnesses, nor of any other particular corroboration to prove them, in such a way that each can be calumniated by each; but cannot, however, be accused, accusations having need of true corroborations, and of circumstances, that show the truth of the accusation. Men are accused to the magistracies, to the peoples, to the councils; they are calumniated about the squares and about the loggias. This calumny is used more where accusation is used less, and where cities are less ordered to receive them. Therefore an orderer of a republic must order that in it any citizen can be accused without any fear or without any suspicion; and, this done and well observed, he must punish the calumniators sharply; who cannot complain when they are punished, having the places open to hear the accusations of him whom he might have calumniated about the loggias. And where this part is not well ordered, great disorders always follow; for calumnies irritate and do not chastise the citizens; and the irritated think of availing themselves, hating rather than fearing the things that are said against them.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The rule. Calumnies are detestable in any form of living, and no order that serves to repress them should be spared. The best is to open many places to accusation: an accusation needs witnesses and corroboration, a calumny needs nothing, so anyone can calumniate anyone, and calumny is used most where accusation is used least. The orderer of a republic should let any citizen be accused without fear, and then punish calumniators sharply; they have no grievance, since the courts were open to them. Where this part is not ordered, calumny irritates without chastising, and the irritated look to their own remedies, hating rather than fearing what is said against them.</p>
+<p><span class="lem">Cross-reference.</span> The courts are I.7&#x27;s — &quot;to the people, or to any magistracy or council&quot; — now in the plural; the irritated who &quot;avail themselves&quot; are I.7&#x27;s citizens who, without an ordinary outlet, turn to extraordinary ways. Guicciardini grants the conclusion in Machiavelli&#x27;s own word, <i lang="it">detestabili</i> <a class="xref" href="#FG-CONS.1.8.01">Guicciardini .01</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.8.03">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.8.03">1.8.03</a></div>
+        <div class="col it" lang="it">Questa parte, come è detto, era bene ordinata in Roma, ed è stata sempre male ordinata nella nostra città di Firenze. E come a Roma questo ordine fece molto bene, a Firenze questo disordine fece molto male. E chi legge le Istorie di questa città, vedrà quante calunnie sono state in ogni tempo date a&#x27; suoi cittadini, che si sono adoperati nelle cose importanti di quella. Dell&#x27;uno dicevano, ch&#x27;egli aveva rubati danari al Comune; dell&#x27;altro, che non aveva vinto una impresa, per essere stato corrotto, e che quell&#x27;altro per sua ambizione aveva fatto il tale e tale inconveniente. Del che ne nasceva che da ogni parte ne surgeva odio, d&#x27;onde si veniva alla divisione, dalla divisione alle Sette, dalle Sette alla rovina. Che se fusse stato in Firenze ordine d&#x27;accusare i cittadini, e punire i calunniatori, non seguivano infiniti scandali che sono seguìti; perché quelli cittadini, o condannati o assoluti che fussero, non arebbono potuto nuocere alla città, e sarebbono stati accusati meno assai, che non ne erano calunniati, non si potendo, come ho detto, accusare come calunniare ciascuno. E intra l&#x27;altre cose, di che si è valuto alcuno cittadino, per venire alla grandezza sua, sono state queste calunnie, le quali venendo contra a&#x27; cittadini potenti, che allo appetito suo si opponevano, facevano assai per quello; perché pigliando la parte del Popolo, e confermandolo nella mala opinione ch&#x27;egli aveva di loro, se lo fece amico.</div>
+        <div class="col en" lang="en">This part, as has been said, was well ordered in Rome, and has always been ill ordered in our city of Florence. And as at Rome this order did much good, at Florence this disorder did much ill. And whoever reads the histories of this city will see how many calumnies have been given in every time to its citizens who have been employed in its important things. Of one they said that he had robbed money from the Commune; of another, that he had not won an enterprise, through having been corrupted; and that that other, through his ambition, had done such and such an inconvenience. From which there arose that from every part hatred rose, whence one came to division, from division to sects, from sects to ruin. For if there had been in Florence an order for accusing the citizens and punishing the calumniators, there would not have followed the infinite scandals that have followed; for those citizens, whether condemned or acquitted, would not have been able to do harm to the city, and they would have been accused much less than they were calumniated, it not being possible, as I have said, to accuse each as one can calumniate each. And among the other things of which some citizen has availed himself to come to his greatness have been these calumnies, which, coming against powerful citizens who were opposing his appetite, did much for him; for, taking the part of the people, and confirming it in the ill opinion that it had of them, he made it his friend.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The part was well ordered in Rome and has always been ill ordered in Florence, whose histories are full of calumnies against citizens in public charge: one robbed the commune, another lost an enterprise for a bribe, a third did this or that from ambition. From them came hatred, division, sects and ruin, the chain of I.7 shortened. An order of accusation would have prevented it, since every citizen, condemned or acquitted, would have been unable to harm the city, and far fewer would have been accused than were calumniated. And among the other means some citizen used to come to greatness were calumnies against the powerful who stood in his way, taking the people&#x27;s side and confirming its ill opinion of them.</p>
+<p><span class="lem">Cross-reference.</span> Machiavelli does not name the citizen. Guicciardini does, and calls the example a dream <a class="xref" href="#FG-CONS.1.8.01">Guicciardini .01</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.8.04">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.8.04">1.8.04</a></div>
+        <div class="col it" lang="it">E benché se ne potesse addurre assai esempj, voglio essere contento solo d&#x27;uno. Era l&#x27;esercito Fiorentino a campo a Lucca, comandato da messer Giovanni Guicciardini, Commissario di quello. Vollono o i cattivi suoi governi, o la cattiva sua fortuna, che la espugnazione di quella città non seguisse. Pur comunque il caso stesse, ne fu incolpato messer Giovanni, dicendo com&#x27;egli era stato corrotto da&#x27; Lucchesi; la quale calunnia sendo favorita da&#x27; nimici suoi, condusse messer Giovanni quasi in ultima disperazione. E benché per giustificarsi ei si volesse mettere nelle mani del Capitano, nondimeno non si potette mai giustificare, per non essere modi in quella Repubblica da poterlo fare. Di che ne nacque assai sdegno tra gli amici di messer Giovanni, che erano la maggior parte degli uomini grandi, e infra coloro che desideravano fare novità in Firenze. La qual cosa, e per queste e per altre simili cagioni, tanto crebbe, che ne seguì la rovina di quella Repubblica.</div>
+        <div class="col en" lang="en">And albeit many examples of it could be adduced, I wish to be content with one alone. The Florentine army was in the field before Lucca, commanded by messer Giovanni Guicciardini, its commissary. Either his bad governing or his bad fortune willed that the taking of that city by storm did not follow. Yet, however the case stood, messer Giovanni was blamed for it, it being said that he had been corrupted by the Lucchese; which calumny, being favoured by his enemies, brought messer Giovanni almost to the last desperation. And albeit, to justify himself, he wished to put himself in the hands of the Captain, nonetheless he could never justify himself, there not being ways in that republic by which to be able to do it. From which there arose much indignation among the friends of messer Giovanni, who were the greater part of the great men, and among those who desired to make novelty in Florence. Which thing, both for these and for other like causes, grew so much that the ruin of that republic followed from it.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> One example. The Florentine army failed before Lucca under the commissary Giovanni Guicciardini; whether by his bad management or bad fortune, he was blamed and said to have been bribed by the Lucchese, and his enemies kept the charge alive. He offered to put himself in the hands of the Captain, and could not clear himself, because the republic had no way of doing it. Indignation arose among his friends, most of the great men, and among those who wanted change, and that, with other such causes, grew until it ruined the republic.</p>
+<p><span class="lem">History.</span> The war against Lucca of 1429–1433, in which Florence failed to take the city, with Milanese help for Lucca. The accusations against Giovanni Guicciardini, commissary in 1430, are told in Machiavelli&#x27;s <i lang="it">Istorie fiorentine</i> (book 4), among the quarrels of the years before the change of regime of 1433–1434. Giovanni was of Francesco Guicciardini&#x27;s own family.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini grants the want of a way to clear himself, which is Machiavelli&#x27;s diagnosis, and affirms the injustice, which Machiavelli left open (&quot;however the case stood&quot;); and he reverses the cause: the city&#x27;s discords made the case, not the case the discords <a class="xref" href="#FG-CONS.1.8.01">Guicciardini .01</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.8.05">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.8.05">1.8.05</a></div>
+        <div class="col it" lang="it">Era adunque Manlio Capitolino calunniatore, e non accusatore; e i Romani mostrarono in questo caso appunto, come i calunniatori si debbono punire. Perché si debbe fargli diventare accusatori, e quando l&#x27;accusa si riscontri vera, o premiarli, o non punirli; ma quando la non si riscontri vera, punirli come fu punito Manlio.</div>
+        <div class="col en" lang="en">Manlius Capitolinus was, then, a calumniator, and not an accuser; and the Romans showed in this very case how calumniators must be punished. For one must make them become accusers, and, when the accusation is corroborated true, either reward them or not punish them; but when it is not corroborated true, punish them as Manlius was punished.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The verdict on Manlius: a calumniator, not an accuser, and the Romans showed how calumniators are to be punished. The remedy turns them into accusers. If the charge is corroborated, reward or at least do not punish them; if not, punish them as Manlius was.</p>
+<p><span class="lem">Cross-reference.</span> The text shows only the prison of .01; in Livy the later death (6.20) was for aiming at kingship, and Machiavelli does not say which punishment he means. The chapter closes I.7&#x27;s pairing of accusation and calumny (I.7 .07), and I.9 turns to the founder alone.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from the 1824 edition (<span class="sig">WIT-NM-DISC-1824-IA</span>), page-image-backed, which governs. Collated against the 1554 Giglio printing, Venice (<span class="sig">WIT-NM-DISC-1554-IA</span>), which is comparison evidence only.</p>
+<p>Paragraph divisions are editorial. The witness prints the chapter as one unbroken block.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem">poi ch&#x27;egli ebbe liberato Roma dalla oppressione dei Francesi</span> — 1824. The 1554 witness reads <i lang="it">poi che egli hebbe libera Roma dallo assedio, &amp; dalla oppressione de Franciosi</i>. Giglio names the siege as well as the oppression.</p>
+<p><span class="lem">quanto all&#x27;altre belliche laudi ... lo fece mettere in carcere</span> — 1824. The 1554 witness reads <i lang="it">quanto all&#x27;altre laudi, della guerra ... lo fece mettere in prigione</i>. The same praises of war, and prison for gaol; no change of sense.</p>
+<p><span class="lem">detestabili le calunnie</span> — 1824. The 1554 witness reads <i lang="it">dannose &amp; pessime le calunnie</i>. Giglio judges calumnies by their effects (damaging and very bad); the 1824 text says they are to be detested, the word Guicciardini&#x27;s reply takes up (<i lang="it">le calunnie sono detestabili</i>).</p>
+<p><span class="lem">in modoché ciascuno da ciascuno può esser calunniato ... Usasi più questa calunnia</span> — 1824. The 1554 witness reads <i lang="it">in modo che ciascuno puo essere calunniato ... Vsasi questa calunnia</i>. Giglio has neither <i lang="it">da ciascuno</i> (anyone by anyone) nor the comparative <i lang="it">più</i>.</p>
+<p><span class="lem">punire acremente ... le calunnie irritano ... e gl&#x27;irritati</span> — 1824. The 1554 witness reads <i lang="it">punire aspramente ... le calunnie commouono ... &amp; gli commossi</i>. Harshly for sharply; calumnies stir men up rather than irritate them.</p>
+<p><span class="lem">contra a&#x27; cittadini potenti, che allo appetito suo si opponevano, facevano assai per quello; perché pigliando la parte del Popolo</span> — 1824. The 1554 witness reads <i lang="it">contro a Cittadini potenti, all&#x27;appetito suo si opponeuano, et faceuano assai per quello, perche pigliando la parte del gran popolo</i>. Giglio has no relative <i lang="it">che</i>, so the calumnies themselves oppose his appetite; and <i lang="it">il gran popolo</i>, the great body of the people.</p>
+<p><span class="lem">comandato da messer Giovanni Guicciardini, Commissario di quello</span> — 1824. The 1554 witness reads <i lang="it">commandato da Messer Giouanni Guicciardoni buō commissario di quello</i>. Giglio misprints the name and calls him a good commissary.</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem"><i lang="it">calunnie</i>, <i lang="it">calunniare</i>, <i lang="it">calunniatori</i>.</span> &quot;Calumnies&quot;, &quot;calumniate&quot;, &quot;calumniators&quot;: the private charge, made without proof and without a court, set against <i lang="it">accuse</i>, <i lang="it">accusare</i>, <i lang="it">accusatori</i>, &quot;accusations&quot;, &quot;accuse&quot;, &quot;accusers&quot;, the public charge before a court. One root each, held.</p>
+<p><span class="lem"><i lang="it">la virtù di Furio Camillo</i>.</span> &quot;The <i lang="it">virtù</i> of Furius Camillus&quot; (D16): the capacity that made the citizens yield to him. Camillus, dictator, recovered Rome after the Gallic sack of about 390 BC (Livy 5.49).</p>
+<p><span class="lem"><i lang="it">dei Francesi</i>.</span> &quot;Of the French&quot;: Machiavelli&#x27;s name for the Gauls, as in I.7. The 1554 edition has him free Rome &quot;from the siege and from the oppression&quot; (NM-DISC-I8-D001).</p>
+<p><span class="lem"><i lang="it">avesse fatto che ... cedevano a quello</i>.</span> &quot;Had made all the Roman citizens ... yield to that man&quot;: the indicative <i lang="it">cedevano</i> states the yielding as fact. <i lang="it">Quello</i> is Camillus throughout the period, &quot;that man&quot;, so that the English &quot;him&quot; cannot be taken for Manlius.</p>
+<p><span class="lem"><i lang="it">torsi reputazione o grado</i>.</span> &quot;Took from themselves reputation or degree&quot;: yielding did not feel like self-deprivation.</p>
+<p><span class="lem"><i lang="it">reputazione o grado</i>.</span> Glossary, <i lang="it">grado</i>, &quot;degree&quot;.</p>
+<p><span class="lem"><i lang="it">Manlio Capitolino</i>.</span> Marcus Manlius Capitolinus, who held the Capitol against the Gauls. Livy 6.11–20, for 385–384 BC: he took up the cause of debtors, accused the senators of keeping back the Gallic gold, and was imprisoned by the dictator Aulus Cornelius Cossus. Guicciardini named him in his replies to I.5 and I.7.</p>
+<p><span class="lem"><i lang="it">belliche laudi</i>.</span> &quot;Praises of war&quot; (glossary, <i lang="it">laude</i>).</p>
+<p><span class="lem"><i lang="it">i Padri</i>.</span> &quot;The Fathers&quot;: the senators, <i lang="it">patres</i>.</p>
+<p><span class="lem"><i lang="it">opinioni sinistre</i>.</span> &quot;Sinister opinions&quot;: <i lang="it">opinione</i> (D02).</p>
+<p><span class="lem"><i lang="it">il tesoro</i>.</span> &quot;The treasure&quot;: the gold collected to ransom Rome from the Gauls, which Camillus&#x27; arrival made unnecessary.</p>
+<p><span class="lem"><i lang="it">dai tributi, o da qualche privato debito</i>.</span> &quot;Of the tributes, or of some private debt&quot;.</p>
+<p><span class="lem"><i lang="it">poterono assai</i>.</span> &quot;Could do much&quot;: <i lang="it">potere</i> absolute, as the people of I.7 &quot;could&quot; (D78 for the noun).</p>
+<p><span class="lem"><i lang="it">tumulti assai</i>.</span> &quot;Many tumults&quot; (glossary, <i lang="it">assai</i> of number).</p>
+<p><span class="lem"><i lang="it">cominciò avere concorso</i>.</span> &quot;He began to have concourse&quot;: a crowd running together to him. <i lang="it">Concorso</i> is <i lang="it">concorrere</i>&#x27;s noun, and the <i lang="la">currere</i> family is held in it (D01, D63).</p>
+<p><span class="lem"><i lang="it">a sua posta</i>.</span> &quot;At his pleasure&quot;.</p>
+<p><span class="lem"><i lang="it">di momento</i>.</span> &quot;Of moment&quot;: of weight. Guicciardini&#x27;s reply ends on the same phrase (<i lang="it">di più momento</i>).</p>
+<p><span class="lem"><i lang="it">perché e&#x27; riconoscesse questo caso</i>.</span> &quot;That he might take cognizance of this case&quot;: examine it as a judge. &quot;Recognise&quot; now means identify.</p>
+<p><span class="lem"><i lang="it">frenasse l&#x27;impeto</i>.</span> &quot;Rein in the impetus&quot;: the bridle, as <i lang="it">a freno</i> (D88).</p>
+<p><span class="lem"><i lang="it">condussonsi ... all&#x27;incontro l&#x27;uno dell&#x27;altro</i>.</span> &quot;They betook themselves ... to meet one another&quot;: <i lang="it">condursi</i>, reflexive.</p>
+<p><span class="lem"><i lang="it">andando fuggendo</i>.</span> &quot;Going about evading&quot;: the progressive <i lang="it">andare</i> with the gerund.</p>
+<p><span class="lem"><i lang="it">non rispondeva ... diceva</i>.</span> &quot;Was not answering ... was saying&quot;: the imperfects are durative; he went on evading until the dictator jailed him.</p>
+<p><span class="lem"><i lang="it">quello che e&#x27; si sapevano</i>.</span> &quot;What they themselves knew&quot;: <i lang="it">si</i> is an ethic dative, not a reflexive object.</p>
+<p><span class="lem"><i lang="it">detestabili</i>.</span> &quot;Detestable&quot;. The 1554 edition reads <i lang="it">dannose &amp; pessime</i>, &quot;damaging and very bad&quot; (NM-DISC-I8-D003). Guicciardini&#x27;s reply opens on the 1824 word: <i lang="it">le calunnie sono detestabili</i>.</p>
+<p><span class="lem"><i lang="it">si debbe non perdonare a ordine alcuno</i>.</span> &quot;One must spare no order&quot;: <i lang="it">perdonare a</i>, to spare, leave unused. <i lang="it">Debbe</i> is &quot;must&quot;, as in I.4 and I.5 (D120).</p>
+<p><span class="lem"><i lang="it">torle via</i>.</span> &quot;Take them away&quot; (D131).</p>
+<p><span class="lem"><i lang="it">giovano</i> / <i lang="it">nuocono</i>.</span> &quot;Benefit&quot; / &quot;do harm&quot; (D106).</p>
+<p><span class="lem"><i lang="it">dall&#x27;altra parte</i>.</span> &quot;On the other hand&quot; (D24).</p>
+<p><span class="lem"><i lang="it">riscontro</i>, <i lang="it">riscontri</i>, <i lang="it">si riscontri vera</i>.</span> &quot;Corroboration&quot;, &quot;corroborations&quot;, &quot;is corroborated true&quot;: a matching of the charge against other evidence. One root, held to the last sentence, where the reward or the penalty turns on it.</p>
+<p><span class="lem"><i lang="it">ciascuno da ciascuno</i>.</span> &quot;Each ... by each&quot;: everyone can be calumniated by everyone, but not everyone accused. <i lang="it">Già</i> is &quot;however&quot;. The same <i lang="it">ciascuno</i> closes .03: &quot;to accuse each as one can calumniate each&quot;. The 1554 edition has neither this nor <i lang="it">più</i> in &quot;is used more&quot; (NM-DISC-I8-D004).</p>
+<p><span class="lem"><i lang="it">ai Magistrati, ai Popoli, ai Consigli</i>.</span> &quot;To the magistracies, to the peoples, to the councils&quot; (D93): I.7&#x27;s three courts, <i lang="it">al Popolo, o a qualunque Magistrato o Consiglio</i>, now in the plural.</p>
+<p><span class="lem"><i lang="it">per le piazze, e per le logge</i>.</span> &quot;About the squares and about the loggias&quot;: the open places where Florentines met and talked.</p>
+<p><span class="lem"><i lang="it">di colui che gli avesse ... calunniato</i>.</span> &quot;Of him whom he might have calumniated&quot;: <i lang="it">gli</i> is the subject (<i lang="it">egli</i>). The sentence slides from the calumniators, plural, to one calumniator, and the English follows it.</p>
+<p><span class="lem"><i lang="it">a riceverle</i>.</span> &quot;To receive them&quot;: the pronoun is plural, though the nearest noun, <i lang="it">l&#x27;accusa</i>, is singular; it takes accusations in general.</p>
+<p><span class="lem"><i lang="it">Però</i>.</span> &quot;Therefore&quot; (D22).</p>
+<p><span class="lem"><i lang="it">uno ordinatore</i>.</span> &quot;An orderer&quot; (glossary).</p>
+<p><span class="lem"><i lang="it">senz&#x27;alcuna paura, o senz&#x27;alcun sospetto</i>.</span> &quot;Without any fear or without any suspicion&quot;: of the accuser, who need fear nothing in accusing.</p>
+<p><span class="lem"><i lang="it">acremente</i>.</span> &quot;Sharply&quot;. The 1554 edition reads <i lang="it">aspramente</i>, &quot;harshly&quot; (NM-DISC-I8-D005).</p>
+<p><span class="lem"><i lang="it">irritano, e non gastigano</i>.</span> &quot;Irritate and do not chastise&quot;: the calumny wounds without punishing. <i lang="it">Gastigare</i> as in I.7.</p>
+<p><span class="lem"><i lang="it">pensano di valersi</i>.</span> &quot;Think of availing themselves&quot;: of their own force, to get their own back. The verb returns of the citizen who &quot;availed himself&quot; of calumnies (.03), and of I.7&#x27;s <i lang="it">valersi di forze esterne</i>.</p>
+<p><span class="lem"><i lang="it">odiando più presto che temendo</i>.</span> &quot;Hating rather than fearing&quot; (D135).</p>
+<p><span class="lem"><i lang="it">le Istorie</i>.</span> &quot;The histories&quot;: the chronicles of Florence. Machiavelli&#x27;s own <i lang="it">Istorie fiorentine</i> were later.</p>
+<p><span class="lem"><i lang="it">non aveva vinto una impresa, per essere stato corrotto</i>.</span> The comma is kept, so that the corruption is the alleged cause of the failure and not a manner of winning.</p>
+<p><span class="lem"><i lang="it">il tale e tale inconveniente</i>.</span> &quot;Such and such an inconvenience&quot;: <i lang="it">fare</i> is &quot;do&quot; here, as &quot;did much good&quot; just before.</p>
+<p><span class="lem"><i lang="it">la mala opinione</i>.</span> &quot;The ill opinion&quot;: <i lang="it">male</i> is &quot;ill&quot; (glossary), and &quot;bad&quot; is kept for <i lang="it">cattivo</i> (D03), which follows in .04.</p>
+<p><span class="lem"><i lang="it">il Comune</i>.</span> &quot;The Commune&quot;: the commonwealth of Florence as owner of public money.</p>
+<p><span class="lem"><i lang="it">inconveniente</i>.</span> &quot;Inconvenience&quot; (D133): a harm done.</p>
+<p><span class="lem"><i lang="it">da ogni parte ne surgeva odio, d&#x27;onde si veniva alla divisione, dalla divisione alle Sette, dalle Sette alla rovina</i>.</span> &quot;From every part hatred rose, whence one came to division, from division to sects, from sects to ruin&quot;: the chain of I.7 .04 (offence, fear, defence, partisans, parties, ruin), shortened. <i lang="it">Setta</i> is &quot;sect&quot;, a faction, as in I.7.</p>
+<p><span class="lem"><i lang="it">non seguivano</i>.</span> &quot;There would not have followed&quot;: the imperfect in a contrary-to-fact condition (D47, D130).</p>
+<p><span class="lem"><i lang="it">o condannati o assoluti</i>.</span> &quot;Whether condemned or acquitted&quot;.</p>
+<p><span class="lem"><i lang="it">si è valuto alcuno cittadino</i>.</span> &quot;Some citizen has availed himself&quot;: unnamed. Guicciardini&#x27;s reply names him.</p>
+<p><span class="lem"><i lang="it">la parte del Popolo</i>.</span> &quot;The part of the people&quot;: its side. The 1554 edition reads <i lang="it">del gran popolo</i> and has no relative <i lang="it">che</i> before <i lang="it">all&#x27;appetito</i> (NM-DISC-I8-D006).</p>
+<p><span class="lem"><i lang="it">se lo fece amico</i>.</span> &quot;He made it his friend&quot;: the people.</p>
+<p><span class="lem"><i lang="it">a campo a Lucca</i>.</span> &quot;In the field before Lucca&quot;: besieging it. The war of 1429–1433, in which Florence failed to take Lucca.</p>
+<p><span class="lem"><i lang="it">messer Giovanni Guicciardini</i>.</span> Florentine commissary with the army before Lucca in 1430, and a member of Guicciardini&#x27;s own family; <i lang="it">messer</i> marks a knight or doctor. The 1554 edition misprints the name and calls him <i lang="it">buon commissario</i> (NM-DISC-I8-D007).</p>
+<p><span class="lem"><i lang="it">ei si volesse mettere</i>.</span> &quot;He wished to put himself&quot;: <i lang="it">volere</i> is &quot;wish&quot; (D117).</p>
+<p><span class="lem"><i lang="it">i cattivi suoi governi</i>.</span> &quot;His bad governing&quot;: the management of the siege. <i lang="it">Governo</i> is &quot;government&quot; (D64); the plural is of acts, not of states, and &quot;his bad governments&quot; would read as regimes (D158).</p>
+<p><span class="lem"><i lang="it">la espugnazione</i>.</span> &quot;The taking by storm&quot;.</p>
+<p><span class="lem"><i lang="it">corrotto da&#x27; Lucchesi</i>.</span> &quot;Corrupted by the Lucchese&quot;: bribed.</p>
+<p><span class="lem"><i lang="it">del Capitano</i>.</span> &quot;The Captain&quot;: presumably one of the foreign magistrates with criminal jurisdiction in Florence, such as the Captain of the People. Guicciardini says he went voluntarily to prison.</p>
+<p><span class="lem"><i lang="it">sdegno</i>.</span> &quot;Indignation&quot;, as I.7.</p>
+<p><span class="lem"><i lang="it">gli uomini grandi</i>.</span> &quot;The great men&quot; (D118).</p>
+<p><span class="lem"><i lang="it">fare novità</i>.</span> &quot;Make novelty&quot;: change the state, as I.7 <i lang="it">quale novità</i>.</p>
+<p><span class="lem"><i lang="it">ne seguì la rovina di quella Repubblica</i>.</span> &quot;The ruin of that republic followed from it&quot;: the quarrels that ended in the change of regime of 1433–1434, which Machiavelli writes as that republic&#x27;s end.</p>
+<p><span class="lem"><i lang="it">in questo caso appunto</i>.</span> &quot;In this very case&quot;: <i lang="it">appunto</i> goes with the case.</p>
+<p><span class="lem"><i lang="it">fargli diventare accusatori</i>.</span> &quot;Make them become accusers&quot;: the remedy is to turn the calumniator into an accuser, so that his charge goes to a court.</p>
+<p><span class="lem"><i lang="it">la non si riscontri vera</i>.</span> &quot;It is not corroborated true&quot;: <i lang="it">la</i> is the accusation.</p>
+<p><span class="lem"><i lang="it">come fu punito Manlio</i>.</span> &quot;As Manlius was punished&quot;: the text has shown only the prison of .01. In 384 BC, accused before the people by tribunes, he was condemned and thrown from the Tarpeian rock (Livy 6.20), but for aiming at kingship, and Machiavelli does not say which punishment he means. Machiavelli calls him calumniator and not accuser: he made the charge in the crowd, and would not bring it to proof.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work fg">
+    <div class="work-head">
+      <span class="tag">FG-CONS.1.8</span>
+      <h2>Considerazione sul capitolo VIII</h2>
+    </div>
+    <p class="rubric">Quanto le accuse sono utili alle repubbliche, tanto sono perniziose le calunnie</p>
+    <p class="rubric">As much as accusations are useful to republics, so much are calumnies pernicious
+      <span class="rubric-note">Canestrini sets Machiavelli&#x27;s chapter title over the reply, with lower-case <i lang="it">repubbliche</i> and without a full stop.</span></p>
+
+    <div class="colheads"><div></div><div>Italian · 1857</div><div>English</div></div>
+      <div class="pair" id="FG-CONS.1.8.01">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.8.01">1.8.01</a></div>
+        <div class="col it" lang="it"><span class="supplied">[È]</span> vera conclusione che le calunnie sono detestabili, ma tanto naturali in una città libera, che è difficile e forse impossibile il levarle; perché quando nasce uno carico falso contro a uno cittadino, che può nascere per malignità di chi ne è autore e anche per errore, come si può provedere che non si allarghi nella moltitudine, la quale è più inclinata a credere il male che il bene? E anche non mancano molti che per odio o per invidia fomentino questi romori, e però a Roma, nella quale la via dello accusare era sì facile e larga, quanti furono e&#x27; carichi dati falsamente a cittadini? In esemplo ci è Fabio Massimo, e molti altri, né si può sempre accusare o punire chi calunnia a torto, né si può altrimenti che per scrittura formare modo di republica che proveda così prontamente a tutti e&#x27; disordini. Però in ogni populo libero fu e sarà sempre abondanza di calunniatori, basta, che le calunnie false col tempo e con la verità si spengono spesso per sé stesse. Né lo sdegno di essere calunniato trasporterà mai uno cittadino grave a fare disordine contro alla republica, e se bene arà sdegno contro a chi pensa che sia stato autore della calunnia, ha anche sdegno, e molto maggiore, contro a chi l&#x27;ha accusato falsamente. Ma questi sdegni particulari non fanno mai disordine importante in una città che per altro sia bene regolata, come né anche fanno le calunnie, le quali quando sono scandalose, come fu quella di Manlio Capitolino che tendeva a sollevare la plebe contro al senato, si opprimono, se non sono scandalose, si lasciano andare, perché da sé medesime caggiono. E lo esemplo di Cosimo figurato nel Discorso suo, sanza nominarlo, è un sogno, perché a lui aperse la via alla grandezza non le calunnie, ma la prudenza, e principalmente la ricchezza eccessiva, con le quali, essendo il governo di Firenze disordinatissimo e pieno per sua natura di sedizione, gli fu facile corrompere e&#x27; cittadini, e fomentando le divisioni della città, camminare, col farsi capo di una parte, alla tirannide. E perché questa materia a provare la conclusione del Discorso è stretta di esempli, fu mendicato quello di messer Giovanni Guicciardini, il quale è vero che fu calunniato ingiustamente, e che per essere e&#x27; giudicii disordinati non ebbe modo per mezzo di quegli giustificare la innocenza sua, ancora che ne facessi ogni opera, insino a rapresentarsi volontariamente in carcere, ma dalla calunnia sua non nacque la divisione della città, né da questo si augumentorono, anzi pel contrario le discordie dei cittadini fomentorono e feciono di più momento questo caso suo, che per lo ordinario non sarebbe stato</div>
+        <div class="col en" lang="en">It is a true conclusion that calumnies are detestable, but so natural in a free city that it is difficult and perhaps impossible to remove them; for when a false charge arises against a citizen, which can arise from the malignity of whoever is its author and also from error, how can one provide that it does not spread in the multitude, which is more inclined to believe the ill than the good? And also there is no lack of many who for hatred or for envy foment these uproars, and therefore at Rome, in which the path of accusing was so easy and broad, how many were the charges given falsely to citizens? For an example there is Fabius Maximus, and many others, nor can one always accuse or punish whoever calumniates wrongly, nor can one, otherwise than in writing, form a way of republic that provides so promptly against all the disorders. Therefore in every free people there was and will always be abundance of calumniators, suffice it, that false calumnies, with time and with the truth, are often extinguished of themselves. Nor will the indignation of being calumniated ever carry a grave citizen away to make disorder against the republic, and although he will have indignation against him who he thinks was the author of the calumny, he has indignation also, and much greater, against him who has accused him falsely. But these particular indignations never make important disorder in a city that is otherwise well regulated, as neither do calumnies, which, when they are scandalous, as was that of Manlius Capitolinus, which tended to raise the plebs against the senate, are oppressed, if they are not scandalous, are let go, for they fall of themselves. And the example of Cosimo, figured in his Discourse without naming him, is a dream, for to him the path to greatness was opened not by calumnies, but by prudence, and principally by excessive wealth, with which, the government of Florence being most disordered and full by its nature of sedition, it was easy for him to corrupt the citizens, and, fomenting the divisions of the city, to walk, by making himself head of a party, to tyranny. And because this matter, for proving the conclusion of the Discourse, is narrow of examples, that of messer Giovanni Guicciardini was begged, of whom it is true that he was calumniated unjustly, and that, through the judgments&#x27; being disordered, he had no way by means of them to justify his innocence, even though he made every effort, as far as presenting himself voluntarily in prison, but from his calumny the division of the city did not arise, nor from this were <span class="supplied">[they]</span> augmented, but rather, on the contrary, the discords of the citizens fomented this case of his and made it of more moment than by the ordinary it would have been</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> He grants the conclusion in Machiavelli&#x27;s word — calumnies are detestable — and doubts they can be removed: difficult, and perhaps impossible. They are natural in a free city: a false charge, born of malice or error, spreads in a multitude readier to believe ill than good, and there are always men to foment it; and therefore even Rome, where accusation was easy and open, was full of false charges, as Fabius Maximus found. The calumniator cannot always be punished, and no way of republic, except on paper, provides so promptly against every disorder. Therefore free peoples will always have calumniators. Then he lowers the stakes. False calumnies often die of themselves; a grave citizen calumniated does not turn on the republic, whatever his anger at the author and, more, at whoever accused him falsely; private resentments make no important disorder in a city otherwise well regulated; the scandalous calumnies, like Manlius&#x27;, are put down, and the rest fall of themselves. Then the two examples. The unnamed citizen is Cosimo de&#x27; Medici, and the example is a dream: prudence and, above all, excessive wealth opened his path, with which, the government of Florence being most disordered and by nature full of sedition, he corrupted citizens and, fomenting division, walked to tyranny as head of a party. And Giovanni Guicciardini&#x27;s case was begged for want of examples: true, he was calumniated unjustly and had no way to clear himself, but the division of the city did not arise from his calumny nor grow by it; the city&#x27;s discords made his case of more moment than it would have been by the ordinary. He ends without a stop.</p>
+<p><span class="lem">History.</span> Fabius Maximus, dictator in 217 BC, was decried at Rome for cowardice, and made suspect of collusion when Hannibal spared his estate; his master of the horse was given equal command (Livy 22.12–26). Cosimo de&#x27; Medici, exiled in 1433, returned in 1434 and governed Florence until his death in 1464 through his wealth, his bank and his party; Guicciardini&#x27;s charge here, corruption and a walk to tyranny, is the conventional one against a rule kept under republican forms. Canestrini&#x27;s note on Cosimo, which is his and is not carried, glosses Machiavelli&#x27;s unnamed citizen the same way. Giovanni Guicciardini was commissary at Lucca in 1430; Canestrini&#x27;s other note says the calumny was favoured by <i lang="it">nobili venduti a Cosimo</i>, &quot;nobles sold to Cosimo&quot;.</p>
+<p><span class="lem">Cross-reference.</span> <i lang="it">Detestabili</i> is Machiavelli&#x27;s <a class="xref" href="#NM-DISC.1.8.02">Machiavelli .02</a>; his rule was to open many places to accusation, and Guicciardini&#x27;s answer is that Rome, which had them, had calumnies anyway. Manlius is the case Machiavelli told <a class="xref" href="#NM-DISC.1.8.01">Machiavelli .01</a>, now the type of the scandalous calumny that is put down. The citizen who used calumnies among other means <a class="xref" href="#NM-DISC.1.8.03">Machiavelli .03</a> becomes Cosimo, whose path was opened not by calumnies but by prudence and money. Machiavelli said many examples could be adduced and gave one <a class="xref" href="#NM-DISC.1.8.04">Machiavelli .04</a>; Guicciardini says the matter is narrow of them, and that one was begged. He grants Giovanni Guicciardini the want of a way to clear himself, which is Machiavelli&#x27;s diagnosis, affirms the injustice, which Machiavelli left open, and refuses the cause; <i lang="it">di più momento</i> turns Machiavelli&#x27;s phrase for Manlius&#x27; tumults (<a class="xref" href="#NM-DISC.1.8.01">Machiavelli .01</a>) on the case itself. His point that Rome&#x27;s easy accusation did not stop false charges keeps the caution of his reply to I.7, where the ways of accusing were to be ordered so that the innocent are not readily vexed.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from Canestrini 1857, <i>Opere inedite</i> vol. 1, pp. 1–65 (<span class="sig">WIT-FG-CONS-1857-CANESTRINI</span>) — the <i>editio princeps</i>, which governs. Collated against Palmarocchi 1933 (<span class="sig">WIT-FG-CONS-1933-PALMAROCCHI</span>): page images and the Wikisource transcription consulted as collation evidence, not reproduced (LICENSE §5).</p>
+<p><span class="lem">per sé stesse Né lo sdegno</span> → <span class="lem">per sé stesse. Né lo sdegno</span> (FG-CONS.1.8.01). No stop in the impression; a capital follows; the 1933 edition prints it. D67.</p>
+<p><span class="lem">accusato falsamente Ma questi</span> → <span class="lem">accusato falsamente. Ma questi</span> (FG-CONS.1.8.01). As C001; the first word of p. 21. D67.</p>
+<p><span class="lem">da sé medesime caggiono E lo esemplo</span> → <span class="lem">da sé medesime caggiono. E lo esemplo</span> (FG-CONS.1.8.01). As C001. D67.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem"></span> — [È] vera conclusione che. The 1857 witness reads <i lang="it">E vera conclusione che</i>. The 1933 witness reads <i lang="it">È vera conclusione che</i>. Canestrini prints the opening without the accent, and as printed the period has no main verb. Emended as his I.3 and I.7 openings were (D114, D144, D157).</p>
+<p><span class="lem">fomentorono e feciono (the e printed a-shaped)</span> — 1857. The 1933 witness reads <i lang="it">fomentorono e feciono</i>. The letter prints like a, as e does where the scan loses its crossbar; read as e on sense and on the 1933 edition (D156).</p>
+<p><span class="lem">ma tanto naturali in una città libera</span> — 1857. The 1933 witness reads <i lang="it">ma tanto naturale in una cittá libera</i>. Plural, agreeing with the calumnies, against a singular that takes the whole clause as its subject. Same sense.</p>
+<p><span class="lem">trasporterà mai uno cittadino grave</span> — 1857. The 1933 witness reads <i lang="it">traporterá mai uno cittadino grave</i>. Two spellings of one verb.</p>
+<p><span class="lem">come né anche fanno le calunnie ... è un sogno</span> — 1857. The 1933 witness reads <i lang="it">come neanche fanno le calunnie ... è uno sogno</i>. Word division and article form only.</p>
+<p><span class="lem">per essere e&#x27; giudicii disordinati ... non nacque la divisione della città</span> — 1857. The 1933 witness reads <i lang="it">per essere e&#x27; giudici disordinati ... non nacque le divisione della cittá</i>. Courts (<i lang="it">giudicii</i>, as in his I.7) against judges; and Palmarocchi&#x27;s archaic plural article. The English follows Canestrini.</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem">The paragraph.</span> Canestrini prints one, and it is kept.</p>
+<p><span class="lem"><i lang="it">[È] vera conclusione</i>.</span> &quot;It is a true conclusion&quot;: assent to Machiavelli&#x27;s <i lang="it">detestabili le calunnie</i> (.02), in his own word. The witness prints <i lang="it">E</i> without the accent; as printed the period has no main verb, and it is emended as his I.3 and I.7 openings were (D114, D144, D157). The assent is to the conclusion; the reply is against the remedy and the examples.</p>
+<p><span class="lem"><i lang="it">tanto naturali in una città libera</i>.</span> &quot;So natural in a free city&quot;: the 1933 edition reads the singular <i lang="it">naturale</i> (FG-CONS-I8-D003).</p>
+<p><span class="lem"><i lang="it">il levarle</i>.</span> &quot;To remove them&quot;: a nominal infinitive in the Italian, which the English does not show. Machiavelli asked for the order &quot;to take them away&quot; (<i lang="it">torle via</i>, .02); Guicciardini doubts it can be done.</p>
+<p><span class="lem"><i lang="it">uno carico falso</i>.</span> &quot;A false charge&quot;: <i lang="it">carico</i>, a burden laid on a man&#x27;s name.</p>
+<p><span class="lem"><i lang="it">malignità</i>.</span> &quot;Malignity&quot; (glossary).</p>
+<p><span class="lem"><i lang="it">provedere</i>.</span> &quot;Provide&quot;: take measures. <i lang="it">Proveda</i> returns of the way of republic that &quot;provides so promptly&quot;.</p>
+<p><span class="lem"><i lang="it">il male che il bene</i>.</span> &quot;The ill than the good&quot; (glossary, <i lang="it">male</i>).</p>
+<p><span class="lem"><i lang="it">romori</i>.</span> &quot;Uproars&quot; (D155): public clamour, here stirred up around a false charge.</p>
+<p><span class="lem"><i lang="it">e però a Roma</i>.</span> &quot;And therefore at Rome&quot; (D22). The consequence is in the argument, not the history: many foment false charges, and so even Rome, with its easy path of accusing, had many.</p>
+<p><span class="lem"><i lang="it">la via dello accusare</i>.</span> &quot;The path of accusing&quot; (D131): Machiavelli&#x27;s open places for accusation (.02) were Rome&#x27;s, and did not stop calumny there.</p>
+<p><span class="lem"><i lang="it">e carichi</i>.</span> &quot;The charges&quot;: the plural article (D35).</p>
+<p><span class="lem"><i lang="it">Fabio Massimo</i>.</span> Quintus Fabius Maximus, the Delayer, whose caution against Hannibal was decried at Rome as cowardice and worse; Hannibal spared his estate to make him suspect, and his command was split with his master of the horse in 217 BC (Livy 22.12–26).</p>
+<p><span class="lem"><i lang="it">a torto</i>.</span> &quot;Wrongly&quot;.</p>
+<p><span class="lem"><i lang="it">altrimenti che per scrittura</i>.</span> &quot;Otherwise than in writing&quot;: only on paper can a republic be framed to provide against every disorder.</p>
+<p><span class="lem"><i lang="it">modo di republica</i>.</span> &quot;Way of republic&quot; (glossary, <i lang="it">modo</i>).</p>
+<p><span class="lem"><i lang="it">Però</i>.</span> &quot;Therefore&quot; (D22), again: the second consequence, that free peoples always have calumniators.</p>
+<p><span class="lem"><i lang="it">basta, che</i>.</span> &quot;Suffice it, that&quot;: it is enough. Canestrini&#x27;s commas are kept; the 1933 edition has <i lang="it">calunniatori; basta che</i>.</p>
+<p><span class="lem"><i lang="it">si spengono ... per sé stesse</i>.</span> &quot;Are extinguished of themselves&quot; (as <i lang="it">spegnere</i>, I.7). The calumnies &quot;fall of themselves&quot; too (<i lang="it">da sé medesime caggiono</i>).</p>
+<p><span class="lem"><i lang="it">trasporterà</i>.</span> &quot;Will carry ... away&quot;: as a passion does. The 1933 edition spells it <i lang="it">traporterá</i> (FG-CONS-I8-D004).</p>
+<p><span class="lem"><i lang="it">uno cittadino grave</i>.</span> &quot;A grave citizen&quot;: of weight and judgment.</p>
+<p><span class="lem"><i lang="it">sdegno</i>, <i lang="it">sdegni particulari</i>.</span> &quot;Indignation&quot;, &quot;particular indignations&quot; (<i lang="it">particulare</i>, D93): private resentments, as against Machiavelli&#x27;s &quot;indignation&quot; of Giovanni&#x27;s friends, which he made a public cause.</p>
+<p><span class="lem"><i lang="it">contro a chi l&#x27;ha accusato falsamente</i>.</span> &quot;Against him who has accused him falsely&quot;: two objects of indignation, the presumed author of the calumny and, much more, whoever accused him falsely. The word is <i lang="it">accusato</i>, not <i lang="it">calunniato</i>; whether the false accuser is the calumniator, or a formal accuser under Machiavelli&#x27;s remedy, the Italian does not say, and the English does not either.</p>
+<p><span class="lem"><i lang="it">regolata</i>.</span> &quot;Regulated&quot;: ordered.</p>
+<p><span class="lem"><i lang="it">come né anche fanno le calunnie</i>.</span> &quot;As neither do calumnies&quot;. The 1933 edition prints <i lang="it">neanche</i> (FG-CONS-I8-D005).</p>
+<p><span class="lem"><i lang="it">si opprimono</i>.</span> &quot;Are oppressed&quot;: put down (glossary, <i lang="it">opprimere</i>). Manlius is Machiavelli&#x27;s example and Guicciardini&#x27;s: the scandalous calumny, put down when the dictator imprisoned Manlius.</p>
+<p><span class="lem"><i lang="it">si lasciano andare</i>.</span> &quot;Are let go&quot;: the sentence runs on by commas, without a conjunction, as the Italian does.</p>
+<p><span class="lem"><i lang="it">lo esemplo di Cosimo figurato nel Discorso suo, sanza nominarlo</i>.</span> &quot;The example of Cosimo, figured in his Discourse without naming him&quot;: Machiavelli&#x27;s &quot;some citizen&quot; who rose by calumnies against the powerful (.03). Guicciardini names him: Cosimo de&#x27; Medici. Canestrini&#x27;s note, which is his and is not carried, says the same.</p>
+<p><span class="lem"><i lang="it">è un sogno</i>.</span> &quot;Is a dream&quot;: the 1933 edition prints <i lang="it">uno sogno</i>.</p>
+<p><span class="lem"><i lang="it">a lui aperse la via alla grandezza non le calunnie, ma la prudenza</i>.</span> &quot;To him the path to greatness was opened not by calumnies, but by prudence&quot;: the subjects come last in the Italian, and the passive keeps them last (D18).</p>
+<p><span class="lem"><i lang="it">con le quali</i>.</span> &quot;With which&quot;: the plural takes both prudence and wealth.</p>
+<p><span class="lem"><i lang="it">prudenza</i>.</span> &quot;Prudence&quot; (glossary): practical judgment, not caution.</p>
+<p><span class="lem"><i lang="it">disordinatissimo</i>.</span> &quot;Most disordered&quot;, in the <i lang="it">ordine</i> family.</p>
+<p><span class="lem"><i lang="it">corrompere e&#x27; cittadini</i>.</span> &quot;To corrupt the citizens&quot;: Machiavelli&#x27;s <i lang="it">corrotto</i> (.03, .04), the charge in the calumnies, is here what Cosimo did.</p>
+<p><span class="lem"><i lang="it">camminare, col farsi capo di una parte, alla tirannide</i>.</span> &quot;To walk, by making himself head of a party, to tyranny&quot;: the Italian puts the means between the verb and its goal, and the English keeps it there. <i lang="it">Capo</i> as in I.12 (glossary).</p>
+<p><span class="lem"><i lang="it">è stretta di esempli</i>.</span> &quot;Is narrow of examples&quot;: short of them. The purpose phrase stays between subject and predicate, as in the Italian. Rome&#x27;s path of accusing was &quot;broad&quot; (<i lang="it">larga</i>); Machiavelli&#x27;s matter is narrow.</p>
+<p><span class="lem"><i lang="it">fu mendicato</i>.</span> &quot;Was begged&quot;: sought for want of better. Giovanni Guicciardini was of his own family.</p>
+<p><span class="lem"><i lang="it">il quale è vero che ..., e che</i>.</span> &quot;Of whom it is true that ..., and that&quot;: one concession governing two facts. He grants Machiavelli both, the unjust calumny and the want of a way to clear himself, which is Machiavelli&#x27;s diagnosis (<i lang="it">per non essere modi in quella Repubblica</i>, .04).</p>
+<p><span class="lem"><i lang="it">per essere e&#x27; giudicii disordinati</i>.</span> &quot;Through the judgments&#x27; being disordered&quot;: the courts (glossary, <i lang="it">giudicii</i>). The 1933 edition reads <i lang="it">giudici</i>, judges (FG-CONS-I8-D006).</p>
+<p><span class="lem"><i lang="it">insino a rapresentarsi volontariamente in carcere</i>.</span> &quot;As far as presenting himself voluntarily in prison&quot;: where Machiavelli has him willing to put himself in the Captain&#x27;s hands.</p>
+<p><span class="lem"><i lang="it">né da questo si augumentorono</i>.</span> &quot;Nor from this were [they] augmented&quot;: <i lang="it">da questo</i> repeats <i lang="it">dalla calunnia sua</i>, &quot;from his calumny&quot;. The verb is plural and has no subject until the next clause names the discords; the English supplies &quot;[they]&quot; (D53). <i lang="it">Augumentare</i>, &quot;augment&quot; (D69).</p>
+<p><span class="lem"><i lang="it">anzi pel contrario</i>.</span> &quot;But rather, on the contrary&quot;: <i lang="it">anzi</i> corrects the negative (D90), and <i lang="it">pel contrario</i> reverses.</p>
+<p><span class="lem"><i lang="it">fomentorono e feciono di più momento questo caso suo</i>.</span> &quot;Fomented this case of his and made it of more moment&quot;: both verbs take <i lang="it">questo caso suo</i>. The <i lang="it">e</i> prints a-shaped in Canestrini; read <i lang="it">e</i> (D156). <i lang="it">Fomentare</i> is the verb of the many who &quot;foment these uproars&quot; and of Cosimo &quot;fomenting the divisions&quot;. <i lang="it">Di momento</i> is Machiavelli&#x27;s phrase for Manlius&#x27; tumults (.01). The causation runs the other way from Machiavelli&#x27;s: the discords made the case, not the case the discords.</p>
+<p><span class="lem"><i lang="it">per lo ordinario</i>.</span> &quot;By the ordinary&quot;, as Machiavelli&#x27;s <i lang="it">per l&#x27;ordinario</i> in I.7 (D151). It can mean &quot;in the ordinary course&quot;, as things would have gone; it can also mean by the ordinary way of the orders, which would make Guicciardini answer Machiavelli&#x27;s argument in Machiavelli&#x27;s phrase. The English keeps the phrase so that both stay open.</p>
+<p><span class="lem">No full stop.</span> Canestrini prints none after <i lang="it">stato</i>; the 1933 edition does. The English ends as the Italian does (D40).</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="colophon">
+    <div class="row">
+      <div>
+        <h3>What this is</h3>
+        <p>A free, openly licensed, bilingual edition of Guicciardini's 39 <i>Considerazioni</i> and the
+          <i>Discorsi</i> chapters they answer — 78 text units, Italian and English facing, every reading
+          traceable to a named public-domain witness.</p>
+        <p>It is a reading edition with a transparent apparatus, not a text of record. It does not adjudicate
+          the critical text against Bausi 2001 or the manuscript tradition, and does not claim to.</p>
+      </div>
+      <div>
+        <h3>On the title</h3>
+        <p>Machiavelli had been dead two years when Guicciardini wrote; the <i>Discorsi</i> were unpublished,
+          and the <i>Considerazioni</i> stayed unprinted until 1857. Machiavelli never answers.</p>
+        <p>“Conversation” is a quotation, not a description. It invokes Machiavelli's letter to Vettori of
+          10 December 1513, where he changes into court dress at evening, enters the antique courts of ancient
+          men, and reports that <i>they, in their humanity, answer me</i>. Guicciardini does to Machiavelli
+          what Machiavelli did to Livy — and is denied the reply Machiavelli claimed.</p>
+      </div>
+      <div>
+        <h3>Method</h3>
+        <p>No image-derived reading enters the text on a single reading. Each unit is transcribed twice,
+          independently, by readers who have not seen each other's work; disagreements are adjudicated against
+          the page images and recorded.</p>
+        <p>Existing English translations of the <i>Considerazioni</i> — Grayson (1965), Atkinson &amp; Sices
+          (2002) — are never used as translation inputs.</p>
+      </div>
+      <div>
+        <h3>Licence</h3>
+        <p>The established Italian text and the apparatus data are dedicated to the public domain under
+          <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>. They are Machiavelli's and
+          Guicciardini's sentences, and this edition adds no condition to them.</p>
+        <p>The English translation, the notes and the editorial apparatus are licensed
+          <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: reuse them anywhere, including
+          commercially, with attribution to David McDougall and this edition. The build tooling is MIT.</p>
+        <p>The witness scans are other people's digitisations, included as evidence under their own terms; no
+          grant is made over them, and no page image of Palmarocchi 1933 is reproduced here. Full terms,
+          layer by layer, are in the <span class="sig">LICENSE</span> file in the repository.</p>
+      </div>
+    </div>
+
+    <div class="state">
+      <p><strong>Version 0.3 · 10 of 39 pairs published.</strong>
+        This edition is versioned, not frozen. No open questions on this pair.</p>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
