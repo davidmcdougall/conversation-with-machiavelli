@@ -919,6 +919,9 @@ def main():
         ap.error('give a pair id (e.g. "1.12"), or --all')
 
     build_index(published)
+    # SCOPE §2 and §4 tables follow the files; refresh them with every build.
+    import subprocess
+    subprocess.run([sys.executable, str(ROOT / "scripts/state"), "--write"], check=True)
 
 
 if __name__ == "__main__":

@@ -69,21 +69,22 @@ closed; it is not a selection we are making. This is the entire project.
 front-matter. If a fact about a unit is not in that unit's file, it does not
 exist. See §7.
 
+<!-- state:pairs -->
 | # | Machiavelli | Guicciardini | Link record | NM source | FG source | EN | ANN | WEB |
 |---|---|---|---|---|---|---|---|---|
-| 1 | NM-DISC.1.1 | FG-CONS.1.1 | FG-CONS-DR-001 | — | — | — | — | — |
-| 2 | NM-DISC.1.2 | FG-CONS.1.2 | FG-CONS-DR-002 | — | — | — | — | — |
-| 3 | NM-DISC.1.3 | FG-CONS.1.3 | FG-CONS-DR-003 | — | — | — | — | — |
-| 4 | NM-DISC.1.4 | FG-CONS.1.4 | FG-CONS-DR-004 | — | — | — | — | — |
-| 5 | NM-DISC.1.5 | FG-CONS.1.5 | FG-CONS-DR-005 | — | — | — | — | — |
-| 6 | NM-DISC.1.6 | FG-CONS.1.6 | FG-CONS-DR-006 | — | — | — | — | — |
+| 1 | NM-DISC.1.1 | FG-CONS.1.1 | FG-CONS-DR-001 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
+| 2 | NM-DISC.1.2 | FG-CONS.1.2 | FG-CONS-DR-002 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
+| 3 | NM-DISC.1.3 | FG-CONS.1.3 | FG-CONS-DR-003 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
+| 4 | NM-DISC.1.4 | FG-CONS.1.4 | FG-CONS-DR-004 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
+| 5 | NM-DISC.1.5 | FG-CONS.1.5 | FG-CONS-DR-005 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
+| 6 | NM-DISC.1.6 | FG-CONS.1.6 | FG-CONS-DR-006 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 7 | NM-DISC.1.7 | FG-CONS.1.7 | FG-CONS-DR-007 | — | — | — | — | — |
 | 8 | NM-DISC.1.8 | FG-CONS.1.8 | FG-CONS-DR-008 | — | — | — | — | — |
 | 9 | NM-DISC.1.9 | FG-CONS.1.9 | FG-CONS-DR-009 | — | — | — | — | — |
 | 10 | NM-DISC.1.10 | FG-CONS.1.10 | FG-CONS-DR-010 | — | — | — | — | — |
 | 11 | NM-DISC.1.11 | FG-CONS.1.11 | FG-CONS-DR-011 | — | — | — | — | — |
-| 12 | NM-DISC.1.12 | FG-CONS.1.12 | FG-CONS-DR-012 | S2 established | S2 established | — | — | — |
-| 13 | NM-DISC.1.14 | FG-CONS.1.14 | FG-CONS-DR-013 | — | — | — | — | — |
+| 12 | NM-DISC.1.12 | FG-CONS.1.12 | FG-CONS-DR-012 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
+| 13 | NM-DISC.1.14 | FG-CONS.1.14 | FG-CONS-DR-013 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 14 | NM-DISC.1.16 | FG-CONS.1.16 | FG-CONS-DR-014 | — | — | — | — | — |
 | 15 | NM-DISC.1.23 | FG-CONS.1.23 | FG-CONS-DR-015 | — | — | — | — | — |
 | 16 | NM-DISC.1.24 | FG-CONS.1.24 | FG-CONS-DR-016 | — | — | — | — | — |
@@ -110,6 +111,8 @@ exist. See §7.
 | 37 | NM-DISC.3.17 | FG-CONS.3.17 | FG-CONS-DR-037 | — | — | — | — | — |
 | 38 | NM-DISC.3.19 | FG-CONS.3.19 | FG-CONS-DR-038 | — | — | — | — | — |
 | 39 | NM-DISC.3.24 | FG-CONS.3.24 | FG-CONS-DR-039 | — | — | — | — | — |
+<!-- /state:pairs -->
+
 **Distribution:** Book I — 28 pairs (ch. 1–12, 14, 16, 23–26, 28–30, 32, 39,
 40, 47, 49, 58, 60) · Book II — 8 (proem, 10, 12–15, 19, 24) · Book III — 3
 (17, 19, 24).
@@ -187,15 +190,20 @@ than inside the first paragraph.
 
 ## 4. Current state — the honest gap
 
+<!-- state:stages -->
 | Stage | Done | Remaining | Of |
 |---|---|---|---|
-| Link records | **39** | 0 | 39 |
-| NM source established | 4 | 35 | 39 |
-| FG source established | 4 | 35 | 39 |
-| Collated | 6 units | 72 | 78 |
-| Translated (draft, cold-reviewed) | 8 | 70 | 78 |
-| Annotated (cold-reviewed) | 8 | 70 | 78 |
-| Published | 8 | 70 | 78 |
+| Link records | 39 | 0 | 39 |
+| NM source established | 8 | 31 | 39 |
+| FG source established | 8 | 31 | 39 |
+| Collated against the comparison witness | 12 units | 66 | 78 |
+| Translated (draft, cold-reviewed) | 16 | 62 | 78 |
+| Annotated | 16 | 62 | 78 |
+| Published | 16 | 62 | 78 |
+<!-- /state:stages -->
+
+The table is written by `scripts/state` from the files. The paragraphs below
+are dated history of how the first pairs got here, not current state.
 
 **Read the top row first.** The relationship layer — all 39 pairs, mapped
 against the chapter headings — is complete, and it is a real asset. Be precise

@@ -1,0 +1,142 @@
+#!/usr/bin/env python3
+"""Derive the project's state from the files, and nothing else.
+
+Usage:
+  scripts/state            print the SCOPE §2 pairs table and the §4 stage table
+  scripts/state --write    rewrite both tables in SCOPE.md, between their markers
+  scripts/state --check    exit 1 if SCOPE.md's tables differ from what the files say
+
+The only derived view in the project (SCOPE §7). Every cell comes from a file:
+  pairs and link records   links/pairing-map.md
+  NM / FG source           corpus/<work>/<unit>.md front-matter (integrity_class, status)
+  collated                 sources/comparisons/<work>/<unit>-witness-disagreements.yml
+  EN                       translations/<unit>.md front-matter (status)
+  ANN                      annotations/<unit>.md
+  WEB                      site/pairs/<pair>.html
+If a fact about a unit is not in that unit's file, it does not exist.
+"""
+import re
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+FM_LINE = re.compile(r'^([A-Za-z_]+):\s*(.*)$')
+MARK = {
+    "pairs": ("<!-- state:pairs -->", "<!-- /state:pairs -->"),
+    "stages": ("<!-- state:stages -->", "<!-- /state:stages -->"),
+}
+EN_LABEL = {"draft_cold_reviewed": "cold-reviewed", "draft": "draft"}
+
+
+def front_matter(path):
+    if not path.exists():
+        return None
+    t = path.read_text(encoding="utf-8")
+    if not t.startswith("---"):
+        return {}
+    fm = t.split("---", 2)[1]
+    meta = {}
+    for line in fm.splitlines():
+        m = FM_LINE.match(line)
+        if m:
+            meta[m.group(1)] = re.sub(r'\s+#.*$', '', m.group(2)).strip().strip('"')
+    return meta
+
+
+def pairing_map():
+    text = (ROOT / "links/pairing-map.md").read_text(encoding="utf-8")
+    return [
+        {"n": int(m[1]), "nm": m[2], "fg": m[3], "link": m[4]}
+        for m in re.finditer(
+            r'^\|\s*(\d+)\s*\|\s*(NM-DISC\.\S+?)\s*\|\s*(FG-CONS\.\S+?)\s*\|\s*(\S+?)\s*\|',
+            text, re.M)
+    ]
+
+
+def unit_state(unit):
+    work = unit.split(".", 1)[0]
+    c = front_matter(ROOT / f"corpus/{work}/{unit}.md")
+    t = front_matter(ROOT / f"translations/{unit}.md")
+    return {
+        "source": f"{c.get('integrity_class', '?')} {c.get('status', '?')}" if c is not None else None,
+        "established": bool(c) and c.get("status") == "established",
+        "collated": (ROOT / f"sources/comparisons/{work}/{unit}-witness-disagreements.yml").exists(),
+        "en": EN_LABEL.get(t.get("status", ""), t.get("status", "?")) if t is not None else None,
+        "en_reviewed": bool(t) and t.get("status") == "draft_cold_reviewed",
+        "ann": (ROOT / f"annotations/{unit}.md").exists(),
+    }
+
+
+def both(a, b, label):
+    if a and b:
+        return label
+    if a or b:
+        return "NM only" if a else "FG only"
+    return "—"
+
+
+def derive():
+    rows, units = [], []
+    for p in pairing_map():
+        pair = p["nm"].split(".", 1)[1]
+        nm, fg = unit_state(p["nm"]), unit_state(p["fg"])
+        web = (ROOT / f"site/pairs/{pair}.html").exists()
+        units += [nm, fg]
+        en = nm["en"] if nm["en"] and nm["en"] == fg["en"] else both(nm["en"], fg["en"], "")
+        rows.append(f"| {p['n']} | {p['nm']} | {p['fg']} | {p['link']} | "
+                    f"{nm['source'] or '—'} | {fg['source'] or '—'} | {en or '—'} | "
+                    f"{both(nm['ann'], fg['ann'], '✓')} | {'✓' if web else '—'} |")
+        p["web"] = web
+    pairs = ["| # | Machiavelli | Guicciardini | Link record | NM source | FG source | EN | ANN | WEB |",
+             "|---|---|---|---|---|---|---|---|---|"] + rows
+
+    pm = pairing_map()
+    n_pairs, n_units = len(pm), 2 * len(pm)
+    nm_units, fg_units = units[0::2], units[1::2]
+    published = sum(2 for r in rows if r.rstrip().endswith("| ✓ |"))
+
+    def line(stage, done, of, unit_word=""):
+        return f"| {stage} | {done}{unit_word} | {of - done} | {of} |"
+
+    stages = [
+        "| Stage | Done | Remaining | Of |", "|---|---|---|---|",
+        line("Link records", n_pairs, n_pairs),
+        line("NM source established", sum(u["established"] for u in nm_units), n_pairs),
+        line("FG source established", sum(u["established"] for u in fg_units), n_pairs),
+        line("Collated against the comparison witness", sum(u["collated"] for u in units), n_units, " units"),
+        line("Translated (draft, cold-reviewed)", sum(u["en_reviewed"] for u in units), n_units),
+        line("Annotated", sum(u["ann"] for u in units), n_units),
+        line("Published", published, n_units),
+    ]
+    return {"pairs": "\n".join(pairs), "stages": "\n".join(stages)}
+
+
+def splice(text, key, body):
+    start, end = MARK[key]
+    pat = re.compile(re.escape(start) + r".*?" + re.escape(end), re.S)
+    if not pat.search(text):
+        sys.exit(f"SCOPE.md has no {start} … {end} markers")
+    return pat.sub(lambda _: f"{start}\n{body}\n{end}", text)
+
+
+def main():
+    out = derive()
+    scope = ROOT / "SCOPE.md"
+    text = scope.read_text(encoding="utf-8")
+    new = splice(splice(text, "pairs", out["pairs"]), "stages", out["stages"])
+    if "--write" in sys.argv:
+        if new != text:
+            scope.write_text(new, encoding="utf-8")
+            print("SCOPE.md: tables rewritten")
+        else:
+            print("SCOPE.md: tables already current")
+    elif "--check" in sys.argv:
+        if new != text:
+            print("SCOPE.md tables are stale; run scripts/state --write")
+            sys.exit(1)
+    else:
+        print(out["pairs"] + "\n\n" + out["stages"])
+
+
+if __name__ == "__main__":
+    main()
