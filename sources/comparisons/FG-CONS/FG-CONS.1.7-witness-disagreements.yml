@@ -1,0 +1,48 @@
+source_unit_id: FG-CONS.1.7
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-I7-D001
+    locator: FG-CONS.1.7.01
+    class: emendation
+    witness_1857: "E verissimo che ... E adunque necessario"
+    witness_1933: "È verissimo che ... È adunche necessario"
+    established: "[È] verissimo ... [È] adunque"
+    publish_as_variant_note: true
+    rationale: "Canestrini prints the paragraph openings without the accent, and as printed neither period has a verb. Emended as his I.3 `E posto` was (D114, D144)."
+  - id: FG-CONS-I7-D002
+    locator: FG-CONS.1.7.02
+    class: reading
+    witness_1857: "procedono troppo respettivi, e in fatto (the e printed o-shaped)"
+    witness_1933: "procedono troppo respettivi; ed in fatto"
+    established: witness_1857
+    rationale: "The letter prints like o, as e does throughout the page; read as e on sense and on the 1933 edition (D145)."
+  - id: FG-CONS-I7-D003
+    locator: FG-CONS.1.7.02
+    class: reading
+    witness_1857: "la superficie o i titoli"
+    witness_1933: "la superficie ed e' titoli"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "'The surface or the titles' against 'the surface and the titles'. Canestrini construes and is kept (D38, D146)."
+  - id: FG-CONS-I7-D004
+    locator: FG-CONS.1.7.02
+    class: reading
+    witness_1857: "il quale non intende né esamina le cose bene, è facile muoversi"
+    witness_1933: "el quale non intende né esamina le cose bene, ed [è] facile muoversi"
+    established: witness_1857
+    rationale: "Palmarocchi supplies `ed` and brackets an `è` his witness lacked; Canestrini prints `è` and no conjunction. The English supplies '[and]'."
+  - id: FG-CONS-I7-D005
+    locator: FG-CONS.1.7.01
+    class: reading
+    witness_1857: come si vede di Alcibiade
+    witness_1933: come si vedde di Alcibiade
+    established: witness_1857
+    rationale: "Present against past: 'as is seen' against 'as was seen'."
+  - id: FG-CONS-I7-D006
+    locator: FG-CONS.1.7.01-03
+    class: systematic_orthographic_profile
+    witness_1857: "Canestrini's `il`, `adunque`, `leggi`, `accusazioni`, `ragioni`, `umori`, `volontà`, `importanza`, and lighter pointing"
+    witness_1933: "Palmarocchi's `el`, `adunche`, `legge`, `accusazione`, `ragione`, `omori`, `voluntà`, `importanzia`, `ed` before vowels, and semicolons at `stato`, `republica`, `altri`, `Atene`, `respettivi`, `moltitudine`, `menata`, `populo`"
+    established: witness_1857
+    rationale: Canestrini governs throughout.

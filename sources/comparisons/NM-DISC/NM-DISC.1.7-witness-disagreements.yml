@@ -1,0 +1,60 @@
+source_unit_id: NM-DISC.1.7
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-I7-D001
+    locator: NM-DISC.1.7.01
+    class: reading
+    witness_1824: "si dà via onde sfogare a quelli umori ... fanno rovinare in tutto una Repubblica ... che l'agitano"
+    witness_1554: "si da uia a sfogare quelli humori ... fanno rouinare tutta una Republica ... che la commouono"
+    established: witness_1824
+    rationale: "Same sense: an outlet for the humours; Giglio's humours move the republic rather than agitate it."
+  - id: NM-DISC-I7-D002
+    locator: NM-DISC.1.7.02
+    class: reading
+    witness_1824: "torle quella autorità che ella si aveva acquistata, e in pregiudizio della Nobiltà presa"
+    witness_1554: "torle quella auttorita, che ella si haueua in pregiudicio della nobilità presa"
+    established: witness_1824
+    rationale: "Giglio has no `acquistata, e`: the authority only taken, not acquired and taken."
+  - id: NM-DISC-I7-D003
+    locator: NM-DISC.1.7.02
+    class: reading
+    witness_1824: "essendo irritata ... venne in tanta indegnazione contro a Coriolano, che ... lo arebbero tumultuariamente morto"
+    witness_1554: "essendo adirata ... esso prese tanto disdegno contro a Coriolano, che ... lo harebbe tumultuariamente morto"
+    established: witness_1824
+    rationale: "Giglio keeps the people singular through the verb; the 1824 passes to the plural."
+  - id: NM-DISC-I7-D004
+    locator: NM-DISC.1.7.03
+    class: reading
+    witness_1824: "né trascendono a cosa che rovini la Repubblica"
+    witness_1554: "ne passano a cosa, che rouini la Republica"
+    established: witness_1824
+    rationale: "Pass for transcend; the 1824 verb returns in .05 (`trascendere il vivere civile`), where Giglio has `auanzare`."
+  - id: NM-DISC-I7-D005
+    locator: NM-DISC.1.7.04
+    class: reading
+    witness_1824: "corroborare questa opinione ... saria resultato ... per la difesa si procacciano i partigiani, dai partigiani nascono le parti"
+    witness_1554: "confermare questa oppenione ... saria proceduto ... per la difesa si procacciano i partigiani, nascon le parti"
+    established: witness_1824
+    rationale: "Giglio drops one link of the chain (`dai partigiani`); the sequence is the same."
+  - id: NM-DISC-I7-D006
+    locator: NM-DISC.1.7.06
+    class: reading
+    witness_1824: "a fortificazione della soprascritta conclusione ... a modo de' pochi ... quello appetito ... agli assai giudici"
+    witness_1554: "a fermezza della soprascritta conchiusione ... a modo di pochissimi ... quell'ingordigia ... a i molti giudici"
+    established: witness_1824
+    rationale: "Greed for appetite; the very few for the few; the many judges in both."
+  - id: NM-DISC-I7-D007
+    locator: NM-DISC.1.7.06
+    class: agreement
+    witness_1824: "per non essere dentro a quello cerchio ordine"
+    witness_1554: "per non essere dentro a quel cerchio ordine"
+    established: witness_1824
+    rationale: "The hard phrase is in both witnesses; it stands, and the English keeps `cerchio` as a circle."
+  - id: NM-DISC-I7-D008
+    locator: NM-DISC.1.7.01-07
+    class: systematic_rewording
+    witness_1824: "the 1824 wording"
+    witness_1554: "Giglio's synonyms (`raconta` for `riferisce`, `Franciosi` for `Francesi`, `fare de fautori`, `essendo` for `sendo`, `contra` for `contro`, `estraordinarij`), `Tito Liuio` for `T. Livio`, and the period's orthography (`huomini`, `-tione`, `&`)"
+    established: witness_1824
+    rationale: The 1824 witness governs throughout.

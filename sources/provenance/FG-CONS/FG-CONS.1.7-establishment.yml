@@ -1,0 +1,37 @@
+source_unit_id: FG-CONS.1.7
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-007
+responds_to: NM-DISC.1.7
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. Canestrini's own footnote (on the Quarantia) is editorial and is not carried."
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38); errors are emended from Palmarocchi and bracketed (D68)."
+passes:
+  - {id: A, performed: 2026-10-02, file: sources/coldpass/FG-CONS.1.7-passA.md}
+  - {id: B, performed: 2026-10-02, file: sources/coldpass/FG-CONS.1.7-passB.md, note: "subagent; page images only (native 600 ppi, 2x upscale, half-page crops at 3x), separate directory"}
+collation: sources/coldpass/COLLATION-2026-10-02-I7.md
+collation_result: >
+  470 words. No clause or sense disagreement. One letter both passes mark
+  doubtful (`e`/`o in fatto`) escalated and ruled `e` (D145, David
+  2026-10-02); one split (`superficie o`/⟨e|o⟩ `i titoli`) kept as printed
+  (D146). Two verbless paragraph openings emended `[È]` (D144, as D114).
+  Five stops supplied from the 1933 edition; no terminal stop (D40).
+witness_independence_check: "SCOPE §7. At the split pass A reads `o` and pass B leaves it open, against the 1933 `ed`; at `a' rumori` pass B agrees with the 1933 edition and pass A leaves it open. No pattern."
+boundaries: "printed pp. 18-20; three printed paragraphs, first-line indents at `E verissimo`, `E adunque`, `Bisogna adunque`"
+corrections:
+  - {id: FG-CONS-I7-C001, locator: FG-CONS.1.7.01, was: "vessati o puniti Perché", now: "vessati o puniti. Perché", evidence: "No stop in the impression; a capital follows; the 1933 edition prints it. D67."}
+  - {id: FG-CONS-I7-C002, locator: FG-CONS.1.7.01, was: "e lo sentì Roma in Coriolano", now: "e lo sentì Roma in Coriolano.", evidence: "Paragraph end, not unit end; no stop in the impression; the 1933 edition prints it. D67."}
+  - {id: FG-CONS-I7-C003, locator: FG-CONS.1.7.02, was: "più di cinquanta E certo", now: "più di cinquanta. E certo", evidence: "As C001. D67."}
+  - {id: FG-CONS-I7-C004, locator: FG-CONS.1.7.02, was: "male disposte E che", now: "male disposte. E che", evidence: "As C001. D67."}
+  - {id: FG-CONS-I7-C005, locator: FG-CONS.1.7.02, was: "per via del populo in esemplo", now: "per via del populo: in esemplo", evidence: "No mark in the impression; lower-case `in` follows; the 1933 edition prints a colon. D67."}
+emendations:
+  - {id: FG-CONS-I7-E001, operation: emendation, rule: D68, status: ruled_D144, locator: FG-CONS.1.7.01, printed: "E verissimo che", established: "[È] verissimo che", source: WIT-FG-CONS-1857-CANESTRINI, note: "As printed the period has no finite verb. As D114 (`[È] posto`, I.3); the 1933 edition prints `È`."}
+  - {id: FG-CONS-I7-E002, operation: emendation, rule: D68, status: ruled_D144, locator: FG-CONS.1.7.02, printed: "E adunque necessario", established: "[È] adunque necessario", source: WIT-FG-CONS-1857-CANESTRINI, note: "As E001."}
+ruled_readings:
+  - {id: FG-CONS-I7-R001, rule: D145, locator: FG-CONS.1.7.02, locus: "procedono troppo respettivi, e in fatto e' giudici", passes: "A ⟨e|o⟩; B ⟨e|o⟩", note: "The letter prints o-shaped, as e does throughout the page; `o` hardly construes; the 1933 edition reads `ed`. A reading of damaged type, not an emendation."}
+  - {id: FG-CONS-I7-R002, rule: D146, locator: FG-CONS.1.7.02, locus: "la superficie o i titoli", passes: "A `o`; B ⟨e|o⟩", note: "Construes; kept as printed, as D73. The 1933 `ed e' titoli` in the variant note."}
+not_supplied:
+  - {locus: "a alcuno degli estremi", note: "Unit end. No stop in the impression; the 1933 edition prints one. Not supplied (D40)."}
+normalisation_notes: "Class A: accents (`perchè` → `perché`, `nè` → `né`, `sè` → `sé`; `Quarantía` → `Quarantia`; `tòrre` as modern); plural article `e` → `e'` (D35) at `e' cattivi`, `e' cittadini`, `e' giudici`, `e' Gracchi`, `e' quali`; apocope spaced at `a' giudicii` (printed tight), elision solid at `s'ha`. Canestrini's footnote is his, not Guicciardini's, and is not carried."

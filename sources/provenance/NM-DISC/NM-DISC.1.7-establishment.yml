@@ -1,0 +1,23 @@
+source_unit_id: NM-DISC.1.7
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-007
+passes:
+  - {id: A, performed: 2026-10-02, file: sources/coldpass/NM-DISC.1.7-passA.md}
+  - {id: B, performed: 2026-10-02, file: sources/coldpass/NM-DISC.1.7-passB.md, note: "subagent; page images only (native 350 ppi plus thirds), separate directory"}
+collation: sources/coldpass/COLLATION-2026-10-02-I7.md
+collation_result: "1,056 words. No word, clause or sense disagreement. Three loci pass B marks uncertain on damaged type are read alike by both passes."
+boundaries: "printed pp. 40-44; one block with a drop capital; CAPITOLO VIII begins p. 44"
+interventions: []
+comparison_collation: >
+  Done 2026-10-02 against the 1554 extract (zero-based pp. 62-66, fol.
+  14r-15v). A cold reader transcribed the Giglio leaves from the page images
+  (sources/coldpass/NM-DISC.1.7-1554.md); the transcript was collated by word
+  against the established text, and every reading published as a variant
+  note was checked on the page image. Giglio rewords throughout; the
+  sense-bearing differences are in
+  sources/comparisons/NM-DISC/NM-DISC.1.7-witness-disagreements.yml.
+normalisation_notes: "Class A only: accents (`perchè` → `perché`, `nè` → `né`, `benchè` → `benché`, `Tantochè` → `Tantoché`), elision spacing (`L' altro` → `L'altro`, `l' alterazione`, `l' agitano`, `dov' ei`, `com' egli`, `l' avessero`, `all' ira`, `l' universalità`, `n' aveva`, `l' animo`, `ch' era`, `dall' altra`, `l' ordinario`, `l' accidente`, `l' esercito`, `d' ogni`, `d' uomini`, `n' andò`), spaces before punctuation. `seguìto` keeps the printed accent."
