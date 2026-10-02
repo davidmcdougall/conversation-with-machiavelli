@@ -35,15 +35,22 @@ Fix by rule. Do not consult the page. Do not log instances.
    apostrophe on the Florentine plural article even where the witness omits it:
    `e' quali`, not `e quali`. It is what tells a modern reader the word is the
    article and not the conjunction.
-3. **Euphonic *d*.** Modern usage — `ed`, `ad`, `od` before the same vowel
-   only. Not read off the page in either direction.
+3. **Euphonic *d*.** The governing witness's form where it is legible —
+   `ed`, `ad`, `od` kept where printed, never supplied where not, whatever
+   the following vowel. Where the cold readers split and the page cannot
+   settle it, the form without *d* stands. A split is never a reading
+   (D36, which this clause follows; it is the one Class A clause read off
+   the page).
 4. **Encoding.** UTF-8, NFC, LF. Long `ſ` → `s`; presentation ligatures to
    their letters.
 5. **Lineation.** Join line wraps. Remove a line-end hyphen where the evidence
    is a single word. Running heads, page numbers, catchwords and signatures are
    not body text.
-6. **Paragraphing.** Editorial, per SCOPE §3, declared in front matter. The
-   witnesses print each unit as one block.
+6. **Paragraphing.** Where the witness prints indented paragraphs, they are
+   kept as printed and declared `paragraph_divisions: witness` (D66;
+   Canestrini does so in most replies). Where it prints the unit as one
+   block (the 1824 *Discorsi* throughout), the divisions are editorial, per
+   SCOPE §3, and declared `paragraph_divisions: editorial`.
 
 ## Class B — taken from the witness as printed
 
@@ -67,8 +74,16 @@ Transcribe what is there. Do not regularise, lighten or strengthen.
    exception is often the reading (D20).
 9. **Punctuation.** As printed. Canestrini points more lightly than a modern
    editor would; that is his text, not an error to repair.
-10. **Terminal stops.** Never supplied. A unit that ends without one ends
-    without one.
+10. **Stops.** A stop the scan does not show — dropped by the impression,
+    displaced by one of Canestrini's note references, or printed too faint
+    to weigh — is supplied from the 1933 edition and declared as a witness
+    correction (D40, D67; D110 for a mark of uncertain weight). No stop is
+    ever supplied at the end of a unit: one that ends without a stop ends
+    without one (D40).
+
+**Amended 2026-10-02.** Clauses 3, 6 and 10 rewritten to the rulings that
+had overtaken them (D36, D66, D40/D67). No ruling changed; the clauses now
+say what the corpus already does.
 
 ## Class C — readings, which normalisation never touches
 
