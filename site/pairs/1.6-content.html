@@ -1,0 +1,512 @@
+<title>A Conversation with Machiavelli — On the contrary, very easy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root {
+  --paper:      #EDEEEC;
+  --paper-sunk: #E4E6E3;
+  --ink:        #1B1E1C;
+  --ink-muted:  #5C625E;
+  --ink-faint:  #868C87;
+  --rule:       #C9CDC8;
+  --rule-faint: #DCDFDB;
+  --nm:         #3A5A6B;
+  --fg:         #6E5A3C;
+  --serif: "EB Garamond", "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  --sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --mono:  "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:      #161917;
+    --paper-sunk: #1D211E;
+    --ink:        #E3E6E1;
+    --ink-muted:  #A0A6A0;
+    --ink-faint:  #767C77;
+    --rule:       #343934;
+    --rule-faint: #262B27;
+    --nm:         #8FB4C6;
+    --fg:         #C4A97C;
+  }
+}
+:root[data-theme="dark"] {
+  --paper:      #161917;
+  --paper-sunk: #1D211E;
+  --ink:        #E3E6E1;
+  --ink-muted:  #A0A6A0;
+  --ink-faint:  #767C77;
+  --rule:       #343934;
+  --rule-faint: #262B27;
+  --nm:         #8FB4C6;
+  --fg:         #C4A97C;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 1160px; margin: 0 auto; padding-inline: 20px; padding-block: 0 0; }
+
+/* ---- masthead ---- */
+.masthead { padding-block: 56px 32px; border-bottom: 1px solid var(--rule); }
+.eyebrow {
+  font-family: var(--sans); font-size: 11px; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint);
+  margin: 0 0 18px;
+}
+h1 {
+  font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 5vw, 44px);
+  line-height: 1.12; margin: 0 0 14px; text-wrap: balance; letter-spacing: -0.01em;
+}
+h1 .sub { display: block; font-style: italic; color: var(--ink-muted); font-size: .52em; margin-top: 12px; letter-spacing: 0; }
+.standfirst {
+  font-family: var(--sans); font-size: 14.5px; line-height: 1.6;
+  color: var(--ink-muted); max-width: 62ch; margin: 0;
+}
+
+/* ---- the pairing device ---- */
+.pairing {
+  display: flex; align-items: stretch; gap: 0; margin: 30px 0 0;
+  border: 1px solid var(--rule); border-radius: 2px; overflow: hidden;
+  font-family: var(--sans); background: var(--paper-sunk);
+}
+.pairing > div { flex: 1 1 0; padding: 13px 16px; min-width: 0; }
+.pairing .who { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
+.pairing .nm-side .who { color: var(--nm); }
+.pairing .fg-side .who { color: var(--fg); }
+.pairing .what { font-size: 13.5px; color: var(--ink-muted); }
+.pairing .arrow {
+  flex: 0 0 auto; display: flex; align-items: center; justify-content: center;
+  padding-inline: 14px; color: var(--ink-faint); font-size: 15px;
+  border-inline: 1px solid var(--rule);
+}
+
+/* ---- pair-to-pair navigation ---- */
+.pairnav {
+  display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+  margin-top: 18px; font-family: var(--sans); font-size: 12.5px;
+  color: var(--ink-muted);
+}
+.pairnav a { text-decoration: none; color: var(--ink-muted); }
+.pairnav a:hover, .pairnav a:focus { color: var(--ink); text-decoration: underline; }
+
+/* ---- work sections ---- */
+.work { padding-block: 52px 0; }
+.work-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
+.work-head .tag {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .04em;
+  padding: 3px 7px; border-radius: 2px; color: var(--paper);
+}
+.work.nm .tag { background: var(--nm); }
+.work.fg .tag { background: var(--fg); }
+h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; letter-spacing: -0.005em; }
+.rubric {
+  font-style: italic; color: var(--ink-muted); max-width: 70ch;
+  margin: 10px 0 0; font-size: 16.5px; line-height: 1.5;
+}
+.rubric-note {
+  font-family: var(--sans); font-style: normal; font-size: 12px;
+  color: var(--ink-faint); margin-top: 7px;
+}
+.colheads {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  margin-top: 30px; padding-bottom: 7px; border-bottom: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint);
+}
+
+/* ---- the facing pair ---- */
+.pair {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  padding-block: 22px; border-bottom: 1px solid var(--rule-faint);
+  scroll-margin-top: 20px;
+}
+.pair:target { background: var(--paper-sunk); }
+.annot { grid-column: 2 / -1; margin-top: 14px; font-family: var(--sans); font-size: 13.5px;
+  line-height: 1.55; color: var(--ink-muted); }
+.annot summary { cursor: pointer; font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); list-style: none; }
+.annot summary::-webkit-details-marker { display: none; }
+.annot summary::before { content: "+ "; }
+.annot[open] summary::before { content: "− "; }
+.annot p { margin: 8px 0 0; max-width: 72ch; }
+.annot .xref { color: inherit; text-decoration: underline; text-decoration-color: var(--rule);
+  text-underline-offset: 2px; white-space: nowrap; }
+.gutter { padding-top: 4px; }
+.uid {
+  font-family: var(--mono); font-size: 10.5px; color: var(--ink-faint);
+  text-decoration: none; letter-spacing: -0.02em;
+}
+.uid:hover, .uid:focus { color: var(--ink); text-decoration: underline; }
+.col { min-width: 0; }
+.col.it { hyphens: auto; }
+.col.en { }
+.supplied { color: var(--ink-muted); }
+
+/* ---- apparatus ---- */
+.apparatus {
+  margin-top: 34px; padding-top: 22px; border-top: 2px solid var(--rule);
+  font-family: var(--sans); font-size: 13.5px; line-height: 1.58;
+  color: var(--ink-muted);
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 26px 34px;
+}
+.apparatus h3 {
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); margin: 0 0 9px;
+}
+.apparatus p { margin: 0 0 9px; }
+.apparatus p:last-child { margin-bottom: 0; }
+.apparatus .lem { font-family: var(--serif); font-size: 15px; color: var(--ink); font-style: italic; }
+.sig { font-family: var(--mono); font-size: 12px; color: var(--ink); }
+
+/* ---- colophon ---- */
+.colophon {
+  margin-top: 60px; padding-block: 28px 60px; border-top: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 13px; line-height: 1.6; color: var(--ink-muted);
+}
+.colophon .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 34px; }
+.colophon h3 {
+  font-size: 10.5px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--ink-faint); margin: 0 0 8px;
+}
+.colophon p { margin: 0 0 8px; }
+.colophon ul { margin: 0; padding-left: 16px; }
+.colophon li { margin-bottom: 5px; }
+.state {
+  margin-top: 26px; padding: 14px 16px; background: var(--paper-sunk);
+  border-left: 2px solid var(--ink-faint); border-radius: 0 2px 2px 0;
+  font-size: 12.5px;
+}
+.state strong { color: var(--ink); font-weight: 600; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--nm); outline-offset: 2px; }
+
+/* ---- contents / index page ---- */
+.toc { margin-top: 30px; }
+.toc-row {
+  display: grid; grid-template-columns: 40px 1fr 1fr; gap: 0 20px;
+  padding-block: 14px; border-bottom: 1px solid var(--rule-faint);
+  font-family: var(--sans); align-items: baseline;
+}
+.toc-row .n { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
+.toc-row a { text-decoration: none; color: var(--ink); font-family: var(--serif); font-size: 16px; }
+.toc-row a:hover, .toc-row a:focus { text-decoration: underline; }
+.toc-row .unpublished { color: var(--ink-faint); font-style: italic; font-size: 14px; }
+.toc-row .ids { color: var(--ink-faint); font-size: 11.5px; font-family: var(--mono); }
+
+@media (max-width: 760px) {
+  body { font-size: 16.5px; }
+  .colheads { display: none; }
+  .pair { grid-template-columns: 1fr; gap: 0; padding-block: 20px; }
+  .gutter { padding-top: 0; margin-bottom: 8px; }
+  .annot { grid-column: 1; }
+  .col.it { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px dotted var(--rule); }
+  .col.it::before, .col.en::before {
+    display: block; font-family: var(--sans); font-size: 10px; font-weight: 600;
+    letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px;
+  }
+  .col.it::before { content: "Italian"; }
+  .col.en::before { content: "English"; }
+  .pairing { flex-direction: column; }
+  .pairing .arrow { border-inline: 0; border-block: 1px solid var(--rule); padding-block: 6px; }
+  .toc-row { grid-template-columns: 1fr; gap: 4px; }
+}
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow">A Conversation with Machiavelli · Pair 6 of 39</p>
+    <h1>On the contrary, very easy
+      <span class="sub">Discourses I.6, and Guicciardini&#x27;s reply</span></h1>
+    <p class="standfirst">Machiavelli asks whether Rome could have been ordered without the enmities between people and senate, and answers that it could not, if it was to be great: an armed and numerous people was the cause of both the tumults and the empire, and the enmities are to be tolerated as a necessary inconvenience. Guicciardini grants that a Rome that used its plebs in war had to keep them content. But the tumults came from the patricians, who would neither share the government nor stop injuring the plebs. Had there been no distinction of orders, or had the honours been shared from the beginning, there would have been no such tumults; had the patricians curbed the injuries and opened a path for the principal plebeians, perhaps none either; and the Sextian laws show the plebs wanted relief, not office. He does not see that it was impossible. He judges it very easy, and the tribunes, once the city was at peace, rather damaging than useful.</p>
+
+    <div class="pairing">
+      <div class="nm-side">
+        <div class="who">Niccolò Machiavelli</div>
+        <div class="what">Discorsi sopra la prima Deca di Tito Livio · written c. 1513–19, printed 1531</div>
+      </div>
+      <div class="arrow" aria-hidden="true">answered by</div>
+      <div class="fg-side">
+        <div class="who">Francesco Guicciardini</div>
+        <div class="what">Considerazioni intorno ai Discorsi del Machiavelli · written 1529–30, printed 1857</div>
+      </div>
+    </div>
+    <nav class="pairnav"><a href="1.5.html">← Pair 1.5</a><a href="../index.html">All 39 pairs</a><a href="1.12.html">Pair 1.12 →</a></nav>
+  </header>
+
+  <section class="work nm">
+    <div class="work-head">
+      <span class="tag">NM-DISC.1.6</span>
+      <h2>Capitolo VI</h2>
+    </div>
+    <p class="rubric">Se in Roma si poteva ordinare uno Stato che togliesse via le inimicizie tra il Popolo e il Senato.</p>
+    <p class="rubric">Whether in Rome a state could be ordered that should take away the enmities between the people and the senate.</p>
+
+    <div class="colheads"><div></div><div>Italian · 1824</div><div>English</div></div>
+      <div class="pair" id="NM-DISC.1.6.01">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.6.01">1.6.01</a></div>
+        <div class="col it" lang="it">Noi abbiamo discorsi di sopra gli effetti che facevano le controversie tra il Popolo ed il Senato. Ora sendo quelle seguìte in fino al tempo de&#x27; Gracchi, dove furono cagione della rovina del vivere libero, potrebbe alcuno desiderare che Roma avesse fatti gli effetti grandi che la fece, senza che in quella fussero tali inimicizie; però mi è parso cosa degna di considerazione, vedere se in Roma si poteva ordinare uno Stato che togliesse via dette controversie. Ed a volere esaminare questo, è necessario ricorrere a quelle Repubbliche, le quali senza tante inimicizie e tumulti sono state lungamente libere, e vedere quale stato era il loro; e se si poteva introdurre in Roma.</div>
+        <div class="col en" lang="en">We have discoursed above of the effects that the controversies between the people and the senate made. Now, these having continued up to the time of the Gracchi, where they were the cause of the ruin of free living, someone might desire that Rome had made the great effects that it made without there being such enmities in it; therefore it has seemed to me a thing worthy of consideration to see whether in Rome a state could be ordered that should take away the said controversies. And if one wishes to examine this, it is necessary to have recourse to those republics which, without so many enmities and tumults, have long been free, and to see what their state was, and whether it could be introduced into Rome.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The question follows from I.4 and I.5. Machiavelli has argued that the controversies between people and senate kept Rome free; now he grants that they ran on to the Gracchi and ruined free living, and asks whether Rome could have had its greatness without them. The method is comparative: find the republics that were long free without such enmities, see what their state was, and ask whether it could have been brought to Rome.</p>
+<p><span class="lem">Cross-reference.</span> &quot;Discoursed above&quot; points to I.4 (I.4 .01), where the tumults are defended, and to I.5, where the guard of liberty is placed in the plebs (I.5 .04).</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.6.02">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.6.02">1.6.02</a></div>
+        <div class="col it" lang="it">In esempio tra li antichi ci è Sparta, tra i moderni Vinegia, state da me di sopra nominate. Sparta fece un Re con un picciolo Senato che la governasse. Vinegia non ha diviso il governo coi nomi, ma sotto una appellazione, tutti quelli che possono avere amministrazione si chiamano Gentiluomini. Il qual modo lo dette il caso più che la prudenza di chi dette loro le leggi; perché sendosi ridotti in su quelli scogli, dove è ora quella città, per le cagioni dette di sopra, molti abitatori, come furono cresciuti in tanto numero, che a volere vivere insieme bisognasse loro far leggi, ordinarono una forma di governo, e convenendo spesso insieme nei Consigli a deliberare della città, quando parve loro essere tanti che fussero a sufficienza ad un vivere politico, chiusono la via a tutti quelli altri che vi venissero ad abitare di nuovo, di potere convenire ne&#x27; loro governi; e col tempo trovandosi in quel luogo assai abitatori fuori del governo, per dare riputazione a quelli che governavano, li chiamarono Gentiluomini, e gli altri Popolani. Potette questo modo nascere e mantenersi senza tumulto, perché quando ei nacque, qualunque allora abitava in Vinegia fu fatto del governo, di modo che nessuno si poteva dolere; quelli che dipoi vi vennero ad abitare, trovando lo Stato fermo e terminato, non avevano cagione né comodità di fare tumulto. La cagione non v&#x27;era, perché non era stato loro tolto cosa alcuna. La comodità non vi era, perché chi reggeva li teneva in freno, e non gli adoperava in cosa dove e&#x27; potessero pigliare autorità. Oltre di questo, quelli che dipoi vennono ad abitar Vinegia, non sono stati molti, e di tanto numero che vi sia disproporzione da chi li governa a loro che sono governati; perché il numero dei Gentiluomini o egli è uguale a loro, o egli è superiore; sicché per queste cagioni Vinegia potette ordinare quello Stato, e mantenerlo unito.</div>
+        <div class="col en" lang="en">For an example, among the ancients there is Sparta, among the moderns Venice, named by me above. Sparta made a king with a small senate that should govern it. Venice has not divided the government by names, but under one appellation all those who can have administration are called gentlemen. Which way chance gave, more than the prudence of whoever gave them the laws; for, many inhabitants having withdrawn onto those rocks where that city is now, for the causes stated above, when they had grown to such a number that, if they wished to live together, it was needful for them to make laws, they ordered a form of government; and, convening often together in the councils to deliberate on the city, when it seemed to them that they were so many as to be sufficient for a political living, they closed the path to all those others who should come to live there anew, of being able to convene in their governments; and, in time, there being found in that place many inhabitants outside the government, to give reputation to those who governed they called them gentlemen, and the others commoners. This way could arise and maintain itself without tumult, because when it arose whoever then lived in Venice was made <span class="supplied">[part]</span> of the government, so that no one could complain; those who afterwards came to live there, finding the state firm and bounded, had neither cause nor convenience to make tumult. The cause was not there, because nothing had been taken from them. The convenience was not there, because whoever governed held them in rein, and did not employ them in anything where they might take authority. Besides this, those who afterwards came to live in Venice have not been many, or of such a number that there should be disproportion between those who govern them and them who are governed; for the number of the gentlemen is either equal to them or greater; so that for these causes Venice could order that state and maintain it united.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> Venice first. Its form was given by chance more than by prudence: the first settlers, once numerous enough to need laws, ordered a government and closed it to later comers, and the names gentlemen and commoners came afterwards. It stayed quiet because no one already there was excluded, and those who came later had neither cause (nothing was taken from them) nor convenience (they were kept from any office that carried authority), and were never many enough to outnumber the governors.</p>
+<p><span class="lem">History.</span> The closing Machiavelli describes is the <i lang="it">Serrata</i> of the Great Council, begun in 1297 and completed by stages into the 1320s, which made membership hereditary in the families admitted; the &quot;gentlemen&quot; are the patricians inscribed in it. It did not admit everyone then living in Venice, as Machiavelli&#x27;s account has it.</p>
+<p><span class="lem">Cross-reference.</span> Venice settled on its rocks &quot;for the causes stated above&quot;: the flight from barbarian invasion in I.1 (I.1 .03).</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.6.03">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.6.03">1.6.03</a></div>
+        <div class="col it" lang="it">Sparta, come ho detto, essendo governata da un Re, e da uno stretto Senato, potette mantenersi così lungo tempo; perché essendo in Sparta pochi abitatori, e avendo tolta la via a chi vi venisse ad abitare, ed avendo prese le leggi di Licurgo con riputazione, le quali osservando, levavano via tutte le cagioni de&#x27; tumulti, poterono vivere uniti lungo tempo, perché Licurgo con le sue leggi fece in Sparta più egualità di sustanze, e meno egualità di grado; perché quivi era una eguale povertà, ed i Plebei erano manco ambiziosi, perché i gradi della città si distendevano in pochi cittadini, ed erano tenuti discosti dalla Plebe, né i Nobili col trattarli male dettero mai loro desiderio d&#x27;averli. Questo nacque da&#x27; Re spartani, i quali essendo collocati in quel Principato, e posti in mezzo di quella Nobiltà, non avevano maggiore rimedio a tenere fermo la loro dignità, che tenere la Plebe difesa da ogni ingiuria; il che faceva che la Plebe non temeva, e non desiderava Imperio; e non avendo Imperio, né temendo, era levata via la gara che la potesse avere con la Nobiltà, e la cagione dei tumulti, e poterono vivere uniti lungo tempo. Ma due cose principali causarono questa unione; l&#x27;una, essere pochi gli abitatori di Sparta, e per questo poterono essere governati da pochi; l&#x27;altra, che non accettando forestieri nella loro Repubblica, non avevano occasione né di corrompersi, né di crescere in tanto, che la fusse insopportabile a quelli pochi che la governavano.</div>
+        <div class="col en" lang="en">Sparta, as I have said, being governed by a king and by a narrow senate, could maintain itself so long a time; because, there being few inhabitants in Sparta, and having taken away the path from whoever might come to live there, and having taken up with reputation the laws of Lycurgus, observing which <span class="supplied">[they]</span> removed all the causes of the tumults, they could live united a long time; for Lycurgus with his laws made in Sparta more equality of substance and less equality of degree; for there was an equal poverty there, and the plebeians were less ambitious, because the degrees of the city were spread among few citizens and were kept at a distance from the plebs; nor did the nobles, by treating them ill, ever give them the desire to have them. This arose from the Spartan kings, who, being placed in that principate and set in the middle of that nobility, had no greater remedy for keeping their dignity firm than to keep the plebs defended from every injury; which made the plebs not fear and not desire rule; and, not having rule nor fearing, the rivalry it might have with the nobility was removed, and the cause of the tumults, and they could live united a long time. But two principal things caused this union: the one, that the inhabitants of Sparta were few, and for this they could be governed by few; the other, that, not accepting strangers into their republic, they had occasion neither to corrupt themselves nor to grow so much that it would be insupportable to those few who governed it.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> Sparta second. A king and a narrow senate held it united because there were few inhabitants, strangers were kept out, and Lycurgus&#x27; laws made Sparta more equal in wealth and less equal in rank, so that the plebs, poor among the poor, did not covet the offices. The kings, set between the nobility and the people, protected the plebs from injury to secure their own dignity, and a plebs that did not fear did not desire rule. Two things, then: few citizens, and no strangers.</p>
+<p><span class="lem">History.</span> The &quot;narrow senate&quot; is the <i lang="it">gerousia</i>, twenty-eight elders with the two kings. Sparta granted citizenship to outsiders almost never; its citizen body shrank over the classical period, which bears on the &quot;weak foundation&quot; Machiavelli finds in it (.05).</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.6.04">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.6.04">1.6.04</a></div>
+        <div class="col it" lang="it">Considerando adunque tutte queste cose, si vede come a&#x27; legislatori di Roma era necessario fare una delle due cose a volere che Roma stesse quieta come le sopraddette Repubbliche, o non adoperare la Plebe in guerra, come i Viniziani; o non aprire la via a&#x27; forestieri, come gli Spartani. E loro fecero l&#x27;una e l&#x27;altra, il che dette alla Plebe forza ed augumento, e infinite occasioni di tumultuare. E se lo Stato romano veniva ad essere più quieto, ne seguiva questo inconveniente, ch&#x27;egli era anco più debile, perché gli si troncava la via di potere venire a quella grandezza dov&#x27;ei pervenne. In modo che volendo Roma levare le cagioni de&#x27; tumulti, levava ancora le cagioni dello ampliare. E in tutte le cose umane si vede questo, chi le esaminerà bene, che non si può mai cancellare uno inconveniente, che non ne surga un altro. Pertanto se tu vuoi fare un Popolo numeroso ed armato, per poter fare un grande Imperio, lo fai di qualità che tu non lo puoi dopo maneggiare a tuo modo; se tu lo mantieni o picciolo o disarmato per potere maneggiarlo, se egli acquista dominio, non lo puoi tenere, o diventa sì vile, che tu sei preda di qualunque ti assalta. E però in ogni nostra deliberazione si debbe considerare dove sono meno inconvenienti, e pigliare quello per migliore partito; perché tutto netto, tutto senza sospetto non si trova mai.</div>
+        <div class="col en" lang="en">Considering, then, all these things, one sees how it was necessary for the legislators of Rome to do one of the two things, if they wished Rome to stay quiet like the above-said republics, either not employ the plebs in war, like the Venetians; or not open the path to strangers, like the Spartans. And they did the one and the other, which gave the plebs force and augmentation, and infinite occasions to make tumult. And if the Roman state had come to be more quiet, this inconvenience would have followed from it, that it would also have been weaker, because the path would have been cut off for it of being able to come to that greatness at which it arrived. In such a way that, Rome wishing to remove the causes of the tumults, it would have removed also the causes of expanding. And in all human things one sees this, whoever will examine them well: that one can never cancel one inconvenience without another springing up from it. On that account, if you wish to make a people numerous and armed, so as to be able to make a great empire, you make it of such a quality that you cannot afterwards handle it in your own way; if you keep it either small or unarmed so as to be able to handle it, if it acquires dominion you cannot hold it, or it becomes so base that you are prey to whoever assails you. And therefore in every deliberation of ours one must consider where there are fewer inconveniences, and take that for the better course; for <span class="supplied">[a thing]</span> wholly clean, wholly without suspicion, is never found.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The conclusion is reached by consequence. To be quiet like these republics Rome had either to keep the plebs out of war, as Venice did, or keep strangers out, as Sparta did; it did neither, and the plebs grew in force and in occasions of tumult. Had Rome been quieter, it would have been weaker, its path to greatness cut. The cause of the tumults and the cause of expansion were the same cause. Then the general rule: no inconvenience is removed without another arising, so a people armed for empire cannot be handled as you please, and a people kept small or unarmed cannot hold what it takes, or grows so base that you are anyone&#x27;s prey. Choose the course with fewer inconveniences; nothing is wholly clean.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini grants the premise that Rome needed its plebs in arms, and reframes it in his opening clause: having armed them, Rome had to keep them content <a class="xref" href="#FG-CONS.1.6.01">Guicciardini .01</a>, and denies the conclusion: the tumults came from the patricians&#x27; refusal to share, not from the arms.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.6.05">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.6.05">1.6.05</a></div>
+        <div class="col it" lang="it">Poteva adunque Roma a similitudine di Sparta fare un Principe a vita, fare un Senato picciolo, ma non poteva come quella, non crescere il numero dei cittadini suoi, volendo fare un grande Imperio; il che faceva che il Re a vita, e il picciolo numero del Senato, quanto alla unione, gli sarebbe giovato poco. Se alcuno volesse pertanto ordinare una Repubblica di nuovo, arebbe a esaminare se volesse ch&#x27;ella ampliasse, come Roma di dominio e di potenza; ovvero ch&#x27;ella stesse dentro a brevi termini. Nel primo caso è necessario ordinarla come Roma, e dare luogo a&#x27; tumulti e alle dissensioni universali il meglio che si può; perché senza gran numero di uomini, e bene armati, non mai una Repubblica potrà crescere, o se la crescerà mantenersi. Nel secondo caso, la puoi ordinare come Sparta o come Vinegia; ma perché l&#x27;ampliare è il veleno di simili Repubbliche, debbe in tutti quelli modi che si può, chi le ordina, proibire loro lo acquistare, perché tali acquisti fondati sopra una Repubblica debole, sono al tutto la rovina sua; come intervenne a Sparta e a Vinegia, delle quali la prima avendosi sottomessa quasi tutta la Grecia, mostrò in su uno minimo accidente il debole fondamento suo; perché seguìta la ribellione di Tebe, causata da Pelopida, ribellandosi l&#x27;altre cittadi, rovinò al tutto quella Repubblica. Similmente Vinegia avendo occupato gran parte d&#x27;Italia, e la maggior parte non con guerra, ma con danari e con industria, come la ebbe a fare prova delle forze sue, perdette in una giornata ogni cosa.</div>
+        <div class="col en" lang="en">Rome, then, could, after the likeness of Sparta, make a prince for life, make a small senate, but it could not, like that one, not grow the number of its citizens, wishing to make a great empire; which made <span class="supplied">[it]</span> that the king for life, and the small number of the senate, as to union, would have availed it little. If anyone, on that account, wished to order a republic anew, he would be to examine whether he wished it to expand, like Rome, in dominion and in power, or else to stay within narrow bounds. In the first case it is necessary to order it like Rome, and to give place to the tumults and to the universal dissensions as best one can; for without a great number of men, and well armed, a republic will never be able to grow, or, if it grows, to maintain itself. In the second case you can order it like Sparta or like Venice; but because expanding is the poison of like republics, whoever orders them must, in all those ways that one can, forbid them acquiring, for such acquisitions, founded upon a weak republic, are altogether its ruin; as befell Sparta and Venice, of which the first, having subjected almost all Greece to itself, showed on a very slight accident its weak foundation; for, the rebellion of Thebes having followed, caused by Pelopidas, the other cities rebelling, that republic went altogether to ruin. Likewise Venice, having occupied a great part of Italy, and the greater part not with war but with money and with industry, when it was to make proof of its forces, lost everything in one battle.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> Rome could have copied Sparta&#x27;s king for life and small senate, but not its small citizen body, and so the copy would have done little for union. Whoever founds a republic must first choose: expansion, and then order it like Rome and accept the tumults; or narrow bounds, and then order it like Sparta or Venice and forbid it to acquire, because acquisitions on a weak foundation ruin it. Sparta and Venice both expanded and both fell at a touch.</p>
+<p><span class="lem">History.</span> Sparta&#x27;s hegemony after the Peloponnesian War broke when Thebes, freed by Pelopidas in 379 BC, defeated it at Leuctra in 371. Venice&#x27;s mainland empire, built through the fifteenth century, collapsed after Agnadello (14 May 1509), when the French army of the League of Cambrai routed its own in a single day; Venice recovered most of its mainland by 1517; Machiavelli calls it &quot;one battle&quot;, as in <i lang="it">Principe</i> 12.</p>
+<p><span class="lem">Cross-reference.</span> The choice between a republic that would &quot;make an empire&quot; and one content to maintain itself restates I.5&#x27;s verdict (I.5 .04), which promised that &quot;the following chapter&quot; would give the causes.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.6.06">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.6.06">1.6.06</a></div>
+        <div class="col it" lang="it">Crederei bene che a fare una Repubblica che durasse lungo tempo, fusse il miglior modo ordinarla dentro come Sparta o come Vinegia, porla in luogo forte, e di tale potenza, che nessuno credesse poterla subito opprimere; e dall&#x27;altra parte non fusse sì grande, che la fusse formidabile a&#x27; vicini; e così potrebbe lungamente godersi il suo Stato. Perché per due cagioni si fa guerra ad una Repubblica: l&#x27;una per diventarne Signore; l&#x27;altra per paura ch&#x27;ella non ti occupi. Queste due cagioni il sopraddetto modo quasi in tutto toglie via; perché se la è difficile ad espugnarsi, come io la presuppongo, sendo bene ordinata alla difesa, rade volte accaderà, o non mai, ch&#x27;uno possa fare disegno d&#x27;acquistarla. Se la si starà intra i termini suoi, e veggasi per esperienza, che in lei non sia ambizione, non occorrerà mai che uno per paura di sé gli faccia guerra: e tanto più sarebbe questo, se e&#x27; fusse in lei constituzione o legge, che le proibisse l&#x27;ampliare. E senza dubbio credo, che potendosi tenere la cosa bilanciata in questo modo, che e&#x27; sarebbe il vero vivere politico, e la vera quiete d&#x27;una città. Ma sendo tutte le cose degli uomini in moto, e non potendo stare salde, conviene che le saglino, o che le scendano; e a molte cose che la ragione non t&#x27;induce, t&#x27;induce la necessità; talmente che avendo ordinata una Repubblica atta a mantenersi non ampliando, e la necessità la conducesse ad ampliare, si verrebbe a torre via i fondamenti suoi, ed a farla rovinare più presto. Così dall&#x27;altra parte quando il cielo le fusse sì benigno, che la non avesse a fare guerra, ne nascerebbe, che l&#x27;ozio la farebbe o effeminata o divisa; le quali due cose insieme, o ciascuna per sé, sarebbono cagione della sua rovina. Pertanto non si potendo, come io credo, bilanciare questa cosa, né mantenere questa via del mezzo a punto, bisogna, nello ordinare la Repubblica, pensare alla parte più onorevole, ed ordinarla in modo, che quando pure la necessità la inducesse ad ampliare, ella potesse quello ch&#x27;ella avesse occupato conservare.</div>
+        <div class="col en" lang="en">I would well believe that, to make a republic that should last a long time, the best way would be to order it within like Sparta or like Venice; to set it in a strong place, and of such power that no one would believe he could oppress it at once; and, on the other hand, that it be not so great that it should be formidable to its neighbours; and so it could long enjoy its state. For war is made on a republic for two causes: the one, to become its lord; the other, for fear that it may occupy you. These two causes the above-said way almost wholly takes away; for if it is difficult to storm, as I presuppose it, being well ordered for defence, it will seldom happen, or never, that anyone can make a design of acquiring it. If it will keep within its bounds, and it be seen by experience that there is no ambition in it, it will never occur that anyone should make war on it for fear for himself; and so much the more would this be so if there were in it a constitution or law that forbade it to expand. And without doubt I believe that, if the thing could be held balanced in this way, that would be the true political living and the true quiet of a city. But, all the things of men being in motion, and not being able to stand firm, it is fitting that they rise or that they descend; and to many things to which reason does not induce you, necessity induces you; so that, having ordered a republic apt to maintain itself <span class="supplied">[by]</span> not expanding, and necessity should lead it to expand, one would come to take away its foundations and to make it go to ruin the sooner. So, on the other hand, when heaven should be so benign to it that it were not to make war, it would arise from this that idleness would make it either effeminate or divided; which two things, together or each by itself, would be the cause of its ruin. On that account, since one cannot, as I believe, balance this thing, nor maintain this middle path exactly, it is needful in ordering the republic to think of the more honourable part, and to order it in such a way that, should necessity after all induce it to expand, it could conserve what it had occupied.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The ideal, granted and withdrawn. He would believe the best lasting republic one ordered within like Sparta or Venice, set in a strong place, strong enough to deter attack and not so great as to frighten its neighbours, war is made on a republic to master it or for fear of it, and such a republic almost wholly removes both motives; the more so if a law forbade it to expand. That would be &quot;the true political living&quot;. But human things move; necessity drives where reason does not; a republic built not to expand, if forced to, loses its foundations, and one left in peace goes soft or divides. Since, as he believes, the balance cannot be held, the founder must choose the more honourable part, and order the republic so that it can keep what necessity makes it take.</p>
+<p><span class="lem">Cross-reference.</span> Idleness that makes a city effeminate or divided is the danger I.1 assigns to fertile sites (I.1 .06).</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.6.07">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.6.07">1.6.07</a></div>
+        <div class="col it" lang="it">E per tornare al primo ragionamento, credo che sia necessario seguire l&#x27;ordine romano, e non quello dell&#x27;altre Repubbliche: perché trovare un modo mezzo fra l&#x27;uno e l&#x27;altro non credo si possa; e quelle inimicizie che intra il Popolo ed il Senato nascessero, tollerarle, pigliandole per uno inconveniente necessario a pervenire alla romana grandezza. Perché oltre all&#x27;altre ragioni allegate, dove si dimostra l&#x27;autorità tribunizia essere stata necessaria per la guardia della libertà, si può facilmente considerare il benefizio che fa nelle Repubbliche l&#x27;autorità dello accusare, la quale era tra gli altri commessa a&#x27; Tribuni, come nel seguente capitolo si discorrerà.</div>
+        <div class="col en" lang="en">And to return to the first reasoning, I believe it is necessary to follow the Roman order and not that of the other republics, for to find a middle way between the one and the other I do not believe can be done; and those enmities that should arise between the people and the senate, to tolerate them, taking them for an inconvenience necessary to arrive at the Roman greatness. For, besides the other reasons alleged, where the tribunician authority is demonstrated to have been necessary for the guard of liberty, one can readily consider the benefit that the authority of accusing does in republics, which was committed to the tribunes among the others, as will be discoursed in the following chapter.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> Back to the question: he believes the Roman order must be followed, since he does not believe a middle way can be found, and tolerate the enmities as the inconvenience necessary to Roman greatness. He adds the tribunes once more: besides guarding liberty, the authority of accusing, which the tribunes among others held, benefits republics; that is the subject of the next chapter.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini answers this sentence with his last: the tribunes, once the city was pacified, &quot;rather damaging than useful&quot; <a class="xref" href="#FG-CONS.1.6.01">Guicciardini .01</a>.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from the 1824 edition (<span class="sig">WIT-NM-DISC-1824-IA</span>), page-image-backed, which governs. Collated against the 1554 Giglio printing, Venice (<span class="sig">WIT-NM-DISC-1554-IA</span>), which is comparison evidence only.</p>
+<p>Paragraph divisions are editorial. The witness prints the chapter as one unbroken block.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem">le controversie tra il Popolo ed il Senato ... dette controversie</span> — 1824. The 1554 witness reads <i lang="it">le contese tra il popolo, &amp; il Senato ... dette contese</i>. Contests for controversies, both times; the rubric&#x27;s <i lang="it">inimicizie</i> stands in both.</p>
+<p><span class="lem">non sono stati molti, e di tanto numero che vi sia disproporzione</span> — 1824. The 1554 witness reads <i lang="it">non sono stati molti, et di tanto numero, che ui sia disproportione</i>. Both witnesses print <i lang="it">e</i>, where the sense wants the negative carried on: &#x27;not many, nor of such a number&#x27;. It construes so, and the English carries the negative (D129).</p>
+<p><span class="lem">il che dette alla Plebe forza ed augumento</span> — 1824. The 1554 witness reads <i lang="it">ilche dette alla Plebe forza, &amp; accrescimento</i>. Giglio&#x27;s <i lang="it">accrescimento</i> is the noun of <i lang="it">accrescere</i> (increase), which D69 keeps apart from the 1824 <i lang="it">augumento</i> (augmentation).</p>
+<p><span class="lem">E loro fecero l&#x27;una e l&#x27;altra ... non lo puoi dopo maneggiare</span> — 1824. The 1554 witness reads <i lang="it">&amp; eglino fecero l&#x27;una &amp; l&#x27;altra ... non lo puoi poi maneggiare</i>. Same sense.</p>
+<p><span class="lem">con danari e con industria ... fusse il miglior modo</span> — 1824. The 1554 witness reads <i lang="it">con danari, &amp; con astutia ... fusse il modo</i>. Giglio&#x27;s Venice conquers by cunning, the 1824 Venice by industry; Giglio has no <i lang="it">miglior</i>.</p>
+<p><span class="lem">se e&#x27; fusse in lei constituzione o legge ... t&#x27;induce la necessità ... a farla rovinare più presto ... quando pure la necessità</span> — 1824. The 1554 witness reads <i lang="it">se e fusse in lei ordine, o legge ... ti astringe la necessita ... a farla rouinar con piu prestezza ... quando la necessita</i>. Order for constitution; necessity constrains rather than induces, so that Giglio loses the 1824 repetition <i lang="it">non t&#x27;induce, t&#x27;induce</i>.</p>
+<p><span class="lem">tollerarle ... l&#x27;autorità tribunizia</span> — 1824. The 1554 witness reads <i lang="it">si deurebbe tollerarle ... l&#x27;auttorita de Tribuni</i>. Giglio supplies the modal the 1824 infinitive leaves to <i lang="it">credo che sia necessario</i>: &#x27;one should tolerate them&#x27;.</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem"><i lang="it">Noi abbiamo discorsi di sopra</i>.</span> &quot;We have discoursed above&quot;: the first of the chapter&#x27;s <i lang="la">currere</i> verbs (D01). It ends on the same verb, <i lang="it">si discorrerà</i>, &quot;will be discoursed&quot;; between them <i lang="it">ricorrere</i>, &quot;have recourse&quot; (.01), and <i lang="it">non occorrerà mai</i>, &quot;it will never occur&quot; (.06). Machiavelli&#x27;s discoursing frames the chapter.</p>
+<p><span class="lem"><i lang="it">controversie</i>, <i lang="it">inimicizie</i>.</span> &quot;Controversies&quot;, &quot;enmities&quot;: two words, two words (D128). The rubric and the conclusion say enmities; the opening and the question say controversies. The 1554 edition has <i lang="it">contese</i> for the first.</p>
+<p><span class="lem"><i lang="it">facevano</i>, <i lang="it">fece</i>.</span> &quot;Made&quot;: <i lang="it">fare</i> is &quot;make&quot; throughout the chapter, of effects as of kings, empires and war, except where its object is a thing done (<i lang="it">fare una delle due cose</i>, &quot;do one of the two things&quot;).</p>
+<p><span class="lem"><i lang="it">però</i>.</span> &quot;Therefore&quot; (D22).</p>
+<p><span class="lem"><i lang="it">se in Roma si poteva ordinare uno Stato</i>.</span> <i lang="it">Stato</i> is &quot;state&quot;, as in I.2: a form of government, not the modern nation-state (glossary, [open]).</p>
+<p><span class="lem"><i lang="it">Gentiluomini</i>, <i lang="it">Popolani</i>.</span> &quot;Gentlemen&quot;, &quot;commoners&quot;: the Venetian names for those within the government and those outside it (D134). <i lang="it">Popolani</i> is &quot;commoners&quot;, as in I.5 (D118).</p>
+<p><span class="lem"><i lang="it">Il qual modo lo dette il caso</i>.</span> &quot;Which way chance gave&quot;: <i lang="it">modo</i> is &quot;way&quot; and <i lang="it">via</i> is &quot;path&quot; throughout (D131). Chance more than prudence ordered Venice; the same contrast as I.2, where Rome reaches its mixed state by accident.</p>
+<p><span class="lem"><i lang="it">sendosi ridotti in su quelli scogli</i>.</span> &quot;Having withdrawn onto those rocks&quot;: the lagoon islands, settled, as I.1 says, by those fleeing the barbarian invasions (&quot;the causes stated above&quot;).</p>
+<p><span class="lem"><i lang="it">un vivere politico</i>.</span> &quot;A political living&quot;: the infinitive as a noun, as <i lang="it">vivere libero</i> is &quot;free living&quot;. In .06 <i lang="it">il vero vivere politico</i> is &quot;the true political living&quot;.</p>
+<p><span class="lem"><i lang="it">chiusono la via ..., di potere convenire ne&#x27; loro governi</i>.</span> &quot;Closed the path ..., of being able to convene in their governments&quot;: the infinitive phrase depends on <i lang="it">la via</i>, displaced to the end. The English keeps it there. <i lang="it">Convenire</i> is &quot;convene&quot; both times.</p>
+<p><span class="lem"><i lang="it">fu fatto del governo</i>.</span> &quot;Was made [part] of the government&quot;: admitted to it (D53).</p>
+<p><span class="lem"><i lang="it">comodità</i>.</span> &quot;Convenience&quot; (D59): the opportunity to make tumult.</p>
+<p><span class="lem"><i lang="it">li teneva in freno</i>.</span> &quot;Held them in rein&quot;: the bridle image, as I.3 <i lang="it">a freno</i>, &quot;reined in&quot; (D88).</p>
+<p><span class="lem"><i lang="it">non sono stati molti, e di tanto numero</i>.</span> &quot;Have not been many, or of such a number&quot;: both witnesses print <i lang="it">e</i>, &quot;and&quot;, where the sense needs the negative carried on. English carries it with &quot;or&quot; (D129).</p>
+<p><span class="lem"><i lang="it">Sparta ..., potette mantenersi così lungo tempo; perché</i>.</span> The period&#x27;s first ground is Sparta&#x27;s few inhabitants and closed door and Lycurgus&#x27; laws, and a second, third and fourth <i lang="it">perché</i> explain the laws and their effect. The English keeps each <i lang="it">perché</i> attached to what it explains.</p>
+<p><span class="lem"><i lang="it">le leggi di Licurgo ..., le quali osservando, levavano via</i>.</span> &quot;Observing which [they] removed&quot;: read with the Spartans as subject, who observe the laws and remove the causes of tumults; the Italian can also make the laws the subject of <i lang="it">levavano</i>. <i lang="it">Levare via</i> is &quot;remove&quot;, kept apart from <i lang="it">togliere via</i> (&quot;take away&quot;), the rubric&#x27;s verb (D131).</p>
+<p><span class="lem"><i lang="it">più egualità di sustanze, e meno egualità di grado</i>.</span> &quot;More equality of substance and less equality of degree&quot;: more equal in wealth, less equal in rank. <i lang="it">Grado</i> is &quot;degree&quot;, as in I.2 and I.5.</p>
+<p><span class="lem"><i lang="it">dettero mai loro desiderio d&#x27;averli</i>.</span> &quot;Ever give them the desire to have them&quot;: the plebeians, the degrees.</p>
+<p><span class="lem"><i lang="it">Imperio</i>.</span> &quot;Rule&quot; (D124): the plebs, defended from injury, did not fear, and did not desire rule. <i lang="it">un grande Imperio</i> in .04–.05 is &quot;a great empire&quot;: dominion over others.</p>
+<p><span class="lem"><i lang="it">forestieri</i>.</span> &quot;Strangers&quot; (D57).</p>
+<p><span class="lem"><i lang="it">a&#x27; legislatori di Roma era necessario fare una delle due cose</i>.</span> &quot;It was necessary for the legislators of Rome to do one of the two things&quot;: the choices are not employing the plebs in war (Venice) and not admitting strangers (Sparta). <i lang="it">E loro fecero l&#x27;una e l&#x27;altra</i>: Rome did both of the things the remedies forbid, armed the plebs and admitted strangers, and so applied neither. The English keeps &quot;the one and the other&quot;.</p>
+<p><span class="lem"><i lang="it">augumento</i>.</span> &quot;Augmentation&quot; (D69). The 1554 edition prints <i lang="it">accrescimento</i>, the noun of <i lang="it">accrescere</i>, &quot;increase&quot;.</p>
+<p><span class="lem"><i lang="it">E se lo Stato romano veniva ad essere più quieto, ne seguiva ...</i>.</span> &quot;If the Roman state had come to be more quiet, this inconvenience would have followed&quot;: the imperfect indicative in a contrary-to-fact condition, as D47. Rome did not become quieter; the sentence says what would have followed if it had. <i lang="it">In modo che ... levava ancora</i> continues the counterfactual (D130).</p>
+<p><span class="lem"><i lang="it">inconveniente</i>.</span> &quot;Inconvenience&quot;, in the older sense: a drawback that follows from a course (D133). Three times in .04, and the chapter&#x27;s last word on the enmities: &quot;an inconvenience necessary to arrive at the Roman greatness&quot;.</p>
+<p><span class="lem"><i lang="it">ampliare</i>, <i lang="it">crescere</i>.</span> &quot;Expand&quot;, &quot;grow&quot;: two verbs, two words (D132). <i lang="it">Non crescere il numero dei cittadini suoi</i> is &quot;not grow the number of its citizens&quot;, the verb used transitively.</p>
+<p><span class="lem"><i lang="it">Pertanto</i>.</span> &quot;On that account&quot; (D98).</p>
+<p><span class="lem"><i lang="it">maneggiare</i>.</span> &quot;Handle&quot;: to manage, as a horse or a weapon.</p>
+<p><span class="lem"><i lang="it">sì vile</i>.</span> &quot;So base&quot;: abject, without spirit.</p>
+<p><span class="lem"><i lang="it">E però in ogni nostra deliberazione si debbe</i>.</span> &quot;And therefore in every deliberation of ours one must&quot;: <i lang="it">però</i> (D22); <i lang="it">debbe</i> &quot;must&quot; (D120).</p>
+<p><span class="lem"><i lang="it">tutto netto, tutto senza sospetto</i>.</span> &quot;[A thing] wholly clean, wholly without suspicion&quot;: the Italian has no noun.</p>
+<p><span class="lem"><i lang="it">il Re a vita, e il picciolo numero del Senato</i>.</span> &quot;The king for life, and the small number of the senate&quot;: Sparta&#x27;s two institutions. Rome could have copied them, but not the small citizen body that let them unite the city, so the copy would have availed little.</p>
+<p><span class="lem"><i lang="it">arebbe a esaminare</i>.</span> &quot;He would be to examine&quot; (D61).</p>
+<p><span class="lem"><i lang="it">il veleno di simili Repubbliche</i>.</span> &quot;The poison of like republics&quot;: <i lang="it">simile</i> is &quot;like&quot; (glossary); <i lang="it">tali acquisti</i> in the same period is &quot;such acquisitions&quot;.</p>
+<p><span class="lem"><i lang="it">la ribellione di Tebe, causata da Pelopida</i>.</span> Thebes, garrisoned by Sparta since 382 BC, was freed by Pelopidas and others in 379; Sparta&#x27;s defeat at Leuctra in 371 followed. Machiavelli compresses the sequence into &quot;a very slight accident&quot;.</p>
+<p><span class="lem"><i lang="it">Vinegia ... perdette in una giornata ogni cosa</i>.</span> &quot;Lost everything in one battle&quot;: Agnadello, 14 May 1509, against the French army of the League of Cambrai. <i lang="it">Giornata</i> is &quot;battle&quot; (D49). <i lang="it">Industria</i> is &quot;industry&quot;, skill and diligence; the 1554 edition prints <i lang="it">astutia</i>, cunning.</p>
+<p><span class="lem"><i lang="it">Crederei bene</i>.</span> &quot;I would well believe&quot;: his judgment, in the conditional, of an ideal he is about to withdraw.</p>
+<p><span class="lem"><i lang="it">subito opprimere</i>.</span> &quot;Oppress it at once&quot;: take it at a stroke.</p>
+<p><span class="lem"><i lang="it">come io la presuppongo</i>.</span> &quot;As I presuppose it&quot;: <i lang="it">presupporre</i> is the founder&#x27;s working assumption (D82).</p>
+<p><span class="lem"><i lang="it">rade volte</i>.</span> &quot;Seldom&quot; (D97).</p>
+<p><span class="lem"><i lang="it">non occorrerà mai</i>.</span> &quot;It will never occur&quot; (D01).</p>
+<p><span class="lem"><i lang="it">per paura di sé</i>.</span> &quot;For fear for himself&quot;: out of fear on his own account.</p>
+<p><span class="lem"><i lang="it">constituzione o legge</i>.</span> &quot;Constitution or law&quot;: a fundamental ordinance. The 1554 edition prints <i lang="it">ordine</i>.</p>
+<p><span class="lem"><i lang="it">conviene che le saglino, o che le scendano</i>.</span> &quot;It is fitting that they rise or that they descend&quot;: <i lang="it">conviene</i>, impersonal, is &quot;it is fitting&quot; (D85).</p>
+<p><span class="lem"><i lang="it">a molte cose che la ragione non t&#x27;induce, t&#x27;induce la necessità</i>.</span> &quot;To many things to which reason does not induce you, necessity induces you&quot;: the verb repeated, as in the Italian. The 1554 edition has <i lang="it">ti astringe</i>, &quot;constrains you&quot;, for the second.</p>
+<p><span class="lem"><i lang="it">avendo ordinata ... e la necessità la conducesse</i>.</span> &quot;Having ordered ..., and necessity should lead it&quot;: the period changes construction midway, from a gerund to a conditional subjunctive. The English keeps the break.</p>
+<p><span class="lem"><i lang="it">quando il cielo le fusse sì benigno</i>.</span> &quot;When heaven should be so benign to it&quot;: <i lang="it">quando</i> with the subjunctive, conditional.</p>
+<p><span class="lem"><i lang="it">l&#x27;ozio</i>.</span> &quot;Idleness&quot;, as in I.1, where it is good for Venice and a vice elsewhere.</p>
+<p><span class="lem"><i lang="it">questa via del mezzo</i> / <i lang="it">un modo mezzo</i>.</span> &quot;This middle path&quot; / &quot;a middle way&quot;: two phrases, kept apart (D131).</p>
+<p><span class="lem"><i lang="it">bisogna</i>.</span> &quot;It is needful&quot; (D75).</p>
+<p><span class="lem"><i lang="it">quelle inimicizie ..., tollerarle</i>.</span> &quot;Those enmities ..., to tolerate them&quot;: the infinitive depends on <i lang="it">credo che sia necessario</i>, and the object is set before it and resumed by the pronoun. The 1554 edition supplies <i lang="it">si deurebbe</i>, &quot;one should&quot;.</p>
+<p><span class="lem"><i lang="it">l&#x27;autorità tribunizia</i>.</span> &quot;The tribunician authority&quot;: the argument of I.4 and I.5, where the tribunes are the guard of liberty.</p>
+<p><span class="lem"><i lang="it">facilmente</i>.</span> &quot;Readily&quot; (glossary).</p>
+<p><span class="lem"><i lang="it">l&#x27;autorità dello accusare</i>.</span> &quot;The authority of accusing&quot;: the subject of I.7.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work fg">
+    <div class="work-head">
+      <span class="tag">FG-CONS.1.6</span>
+      <h2>Considerazione sul capitolo VI</h2>
+    </div>
+    <p class="rubric">Se in Roma si poteva ordinare uno Stato che togliesse via le inimicizie intra il popolo ed il senato</p>
+    <p class="rubric">Whether in Rome a state could be ordered that should take away the enmities between the people and the senate
+      <span class="rubric-note">Canestrini sets Machiavelli&#x27;s chapter title over the reply, with <i lang="it">intra</i> for the 1824 <i lang="it">tra</i>, lower-case <i lang="it">popolo</i> and <i lang="it">senato</i>, <i lang="it">ed il</i> for <i lang="it">e il</i>, and without a full stop.</span></p>
+
+    <div class="colheads"><div></div><div>Italian · 1857</div><div>English</div></div>
+      <div class="pair" id="FG-CONS.1.6.01">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.6.01">1.6.01</a></div>
+        <div class="col it" lang="it">Io credo essere vero che volendo e&#x27; Romani adoperare la plebe alla guerra, come per il piccolo numero de&#x27; patrizii erano necessitati volendo adoperare le armi proprie, che era necessario tenerla contenta, e il non volere fare questo e&#x27; patrizii, fu causa di tanti tumulti e sedizioni, perché né gli volevano ammettere nel governo, né si astenevano da quelle ingiurie che davano causa alla plebe di desiderare di parteciparne, perché occupavano le possessioni publiche, e erano molto rigidi nella esazione de&#x27; debiti, e si può credere che in tutte le altre cose la giustizia fussi ineguale in favore di quella parte che aveva in mano tutta la autorità. Ma dico bene, che se nel principio della libertà non fussi stata, come è detto nel quarto Discorso, la distinzione tra patrizii e la plebe; o, come si fece poi per necessità, si fussi da principio comunicati gli onori, che non sarebbero stati tra loro quelli tumulti e sedizioni, e&#x27; quali cessorono subito che il governo fu comunicato insino al tempo de&#x27; Gracchi, ne&#x27; quali essendo già corrotta la città, nacquono le sedizioni per nuovi umori e cagioni, che non furono più della plebe contro a&#x27; patrizii, ma della gente bassa contro a&#x27; più ricchi e più potenti, nel quale numero si includevano molte famiglie plebee nobilitate già per gli onori. Dico ancora che se e&#x27; patrizii, sanza <span class="supplied">[comunicare]</span> interamente il governo alla plebe, avessino saputo porre qualche buono ordine alle ingiurie, e avessino aperta la via per la quale a certi tempi e&#x27; plebei principali potessino essere stati fatti patrizii, che forse non sarebbono stati quelli tumulti, perché si vede per esperienza che nelle leggi proposte da Publio Sestio, la plebe si contentava di provedere a&#x27; debiti e a&#x27; beni occupati, e degli onori non si curava; se non che e&#x27; plebei principali, e&#x27; quali appetivano il governo, né vi potevano entrare per altra via, esclusono la plebe da speranza di potere conseguire l&#x27;uno sanza l&#x27;altro. Non veggo adunque che a&#x27; Romani fussi impossibile ordinare il governo in modo che tra il senato e la plebe non avessino a essere quelli tumulti e sedizioni, anzi lo giudico molto facile, e poi che si poteva fare, non si possono lodare quelli defetti del governo, e&#x27; quali furono causa che la città stessi piena di tumulti e sedizioni, e di creare e&#x27; tribuni, il quale magistrato, pacificata che fu la città, armato di tante autorità, fu più presto dannoso che utile</div>
+        <div class="col en" lang="en">I believe it to be true that the Romans wishing to employ the plebs in war, as, through the small number of the patricians, they were necessitated, wishing to employ their own arms, that it was necessary to keep it content, and the patricians&#x27; not wishing to do this, was the cause of so many tumults and seditions, for they neither wished to admit them into the government, nor abstained from those injuries that gave the plebs cause to desire to partake of it, for they occupied the public possessions, and were very rigid in the exaction of the debts, and one can believe that in all the other things justice was unequal in favour of that part which had all the authority in hand. But I do say, that if in the beginning of liberty there had not been, as is said in the fourth Discourse, the distinction between patricians and the plebs; or, as was done afterwards by necessity, the honours had been communicated from the beginning, that there would not have been among them those tumults and seditions, which ceased as soon as the government was communicated, up to the time of the Gracchi, in whose <span class="supplied">[time]</span>, the city being already corrupt, the seditions arose through new humours and causes, which were no longer of the plebs against the patricians, but of the low people against the richer and more powerful, in which number were included many plebeian families already ennobled through the honours. I say also that if the patricians, without communicating the government entirely to the plebs, had known how to set some good order to the injuries, and had opened the path by which at certain times the principal plebeians could have been made patricians, that perhaps there would not have been those tumults, for one sees by experience that in the laws proposed by Publius Sextius, the plebs was content to provide for the debts and for the goods occupied, and of the honours it took no care; except that the principal plebeians, who had appetite for the government, nor could enter it by another path, excluded the plebs from hope of being able to obtain the one without the other. I do not see, then, that it was impossible for the Romans to order the government in such a way that between the senate and the plebs there were not to be those tumults and seditions, on the contrary I judge it very easy, and since it could be done, one cannot praise those defects of the government, which were the cause that the city stayed full of tumults and seditions, and of creating the tribunes, which magistracy, once the city was pacified, armed with so many authorities, was rather damaging than useful</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> He grants the premise and moves the cause. It is true that a Rome which used its plebs in war, having too few patricians to fight alone, had to keep them content <a class="xref" href="#NM-DISC.1.6.04">Machiavelli .04</a>. But what made the tumults was the patricians&#x27; refusal: they neither admitted the plebs to the government nor stopped injuring them, seizing the public land, very harsh in exacting debts, and, one can believe, bending justice in every other matter. Then two counterfactuals. Had there been no distinction of orders at the beginning of liberty, or had the honours been shared from the start, as they were later of necessity, there would have been no such tumults; and they did cease once the government was shared, until the Gracchi, when a corrupt city divided anew, poor against rich, with ennobled plebeians among the rich. And had the patricians, without handing the government over, set some order against the injuries and opened a path into the patriciate for the leading plebeians, perhaps there would have been none either: the Sextian laws show the plebs would have taken relief and left the honours, had not its leaders, who wanted office and had no other way to it, tied the two together. His conclusion is not &quot;I do not readily concur&quot; but &quot;I do not see&quot; that it was impossible; he judges it very easy. And since it could be done, the defects that kept the city in tumult and created the tribunes are not to be praised, and the tribunes, once the city was at peace, were rather damaging than useful.</p>
+<p><span class="lem">History.</span> The <i lang="it">ager publicus</i>, land taken in conquest, was largely occupied by the rich; debt bondage (<i lang="it">nexum</i>) was the plebs&#x27; other grievance. Livy (6.35–42) narrates the ten-year agitation of the tribunes Gaius Licinius and Lucius Sextius, which ended in 367 BC with laws on debt, on holdings of public land and on the consulship, one consul to be plebeian. Livy&#x27;s tribunes refused to let the first two be voted without the third (6.39), which is Guicciardini&#x27;s &quot;excluded the plebs from hope of being able to obtain the one without the other&quot;. He gives Sextius the praenomen Publius. The plebs was admitted to the consulship in 366, to the dictatorship in 356, the censorship in 351, the praetorship in 337, the priestly colleges in 300; the conflict of the orders is usually dated to end with the <i lang="la">lex Hortensia</i> of 287 BC.</p>
+<p><span class="lem">Cross-reference.</span> &quot;As is said in the fourth Discourse&quot;: Machiavelli&#x27;s I.4 (I.4 .01), and Guicciardini&#x27;s own reply to it, where he had already put the cause of the disunion in the plebs&#x27; exclusion from the honours (his I.4 .01). The tribunes &quot;rather damaging than useful&quot; answer Machiavelli&#x27;s closing praise of the tribunician authority <a class="xref" href="#NM-DISC.1.6.07">Machiavelli .07</a>, and continue his reply to I.5, where he denied that the tribunes were the particular guard of liberty (his I.5 .01).</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from Canestrini 1857, <i>Opere inedite</i> vol. 1, pp. 1–65 (<span class="sig">WIT-FG-CONS-1857-CANESTRINI</span>) — the <i>editio princeps</i>, which governs. Collated against Palmarocchi 1933 (<span class="sig">WIT-FG-CONS-1933-PALMAROCCHI</span>): page images and the Wikisource transcription consulted as collation evidence, not reproduced (LICENSE §5).</p>
+<p><span class="lem">tutta la autorità Ma dico</span> → <span class="lem">tutta la autorità. Ma dico</span> (FG-CONS.1.6.01). No stop in the impression; a capital follows; the 1933 edition prints it. D67.</p>
+<p><span class="lem">la plebe , o, come</span> → <span class="lem">la plebe; o, come</span> (FG-CONS.1.6.01). A spaced mark both readers see and neither can weigh; the 1933 edition prints a semicolon. D110.</p>
+<p><span class="lem">non si curava , se non che</span> → <span class="lem">non si curava; se non che</span> (FG-CONS.1.6.01). As C002. D110.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem"></span> — sanza [comunicare]. The 1857 witness reads <i lang="it">sanza conciare interamente il governo alla plebe</i>. The 1933 witness reads <i lang="it">sanza communicare interamente el governo alla plebe</i>. Canestrini prints <i lang="it">conciare</i>, &#x27;fitting&#x27; or &#x27;dressing&#x27;, which barely construes. The 1933 <i lang="it">communicare</i> is the verb the reply has already used twice of the honours and the government, and <i lang="it">cōicare</i>, its abbreviation, is easily misread as <i lang="it">conciare</i>. Emended (D126).</p>
+<p><span class="lem">a&#x27; beni occupati, e degli onori (the e damaged, printed round)</span> — 1857. The 1933 witness reads <i lang="it">ed a&#x27; beni occupati, e degli onori</i>. The letter prints like o; read as e on sense and on the 1933 edition (D127).</p>
+<p><span class="lem">si vede per esperienza</span> — 1857. The 1933 witness reads <i lang="it">si vedde per esperienzia</i>. Present against past: &#x27;one sees by experience&#x27; against &#x27;one saw&#x27;.</p>
+<p><span class="lem">il governo fu comunicato insino al tempo de&#x27; Gracchi, ne&#x27; quali</span> — 1857. The 1933 witness reads <i lang="it">el governo fu communicato, insino al tempo de&#x27; Gracchi; ne&#x27; quali</i>. Same sense: the tumults ceased once the government was shared, and stayed ceased until the Gracchi. The 1933 pointing attaches <i lang="it">insino</i> to <i lang="it">cessorono</i> explicitly.</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem">The paragraph.</span> Canestrini prints the reply as one paragraph, and it is kept.</p>
+<p><span class="lem"><i lang="it">Io credo essere vero</i>.</span> &quot;I believe it to be true&quot;: assent (<i lang="it">credo</i>), to the premise only. What follows moves the cause.</p>
+<p><span class="lem"><i lang="it">che volendo e&#x27; Romani ... che era necessario</i>.</span> &quot;That the Romans wishing ..., that it was necessary&quot;: the <i lang="it">che</i> is repeated after the long gerund clause, as Guicciardini repeats it after each of his two counterfactuals. The English keeps all three (D136).</p>
+<p><span class="lem"><i lang="it">necessitati</i>.</span> &quot;Necessitated&quot;, as in I.5: compelled.</p>
+<p><span class="lem"><i lang="it">le armi proprie</i>.</span> &quot;Their own arms&quot;: a citizen soldiery, not hired troops.</p>
+<p><span class="lem"><i lang="it">il non volere fare questo e&#x27; patrizii</i>.</span> &quot;The patricians&#x27; not wishing to do this&quot;: the nominal infinitive with its subject after it, as in I.4 (D109).</p>
+<p><span class="lem"><i lang="it">parteciparne</i>.</span> &quot;Partake of it&quot;: of the government (glossary, <i lang="it">partecipare di</i>).</p>
+<p><span class="lem"><i lang="it">le possessioni publiche</i>.</span> &quot;The public possessions&quot;: the <i lang="it">ager publicus</i>, public land held and worked by the rich. Below, <i lang="it">a&#x27; beni occupati</i> is &quot;the goods occupied&quot;: two words, two words (D139).</p>
+<p><span class="lem"><i lang="it">come è detto nel quarto Discorso</i>.</span> &quot;As is said in the fourth Discourse&quot;: Machiavelli&#x27;s I.4, on the disunion of plebs and senate. <i lang="it">Discorso</i> with a capital is Machiavelli&#x27;s chapter, as in his reply to I.3 (<i lang="it">si dice nel Discorso</i>). His own reply to I.4 put the cause of the disunion where he puts it here, in the shutting of the plebs out of the honours.</p>
+<p><span class="lem"><i lang="it">comunicati gli onori</i>, <i lang="it">il governo fu comunicato</i>, <i lang="it">[comunicare]</i>.</span> &quot;Communicated&quot;, three times: shared. The third is an emendation: Canestrini prints <i lang="it">conciare</i>, the 1933 edition <i lang="it">communicare</i> (D126).</p>
+<p><span class="lem"><i lang="it">insino al tempo de&#x27; Gracchi</i>.</span> &quot;Up to the time of the Gracchi&quot;, as Machiavelli&#x27;s <i lang="it">in fino al tempo de&#x27; Gracchi</i> (.01). The comma before it is the English&#x27;s, so that &quot;up to&quot; attaches to &quot;ceased&quot; (D137).</p>
+<p><span class="lem"><i lang="it">ne&#x27; quali</i>.</span> &quot;In whose [time]&quot;: the plural takes the Gracchi.</p>
+<p><span class="lem"><i lang="it">umori</i>.</span> &quot;Humours&quot;, as in Machiavelli I.4.</p>
+<p><span class="lem"><i lang="it">la gente bassa</i>.</span> &quot;The low people&quot;: the poor, against the rich, among whom were plebeian families ennobled by office.</p>
+<p><span class="lem"><i lang="it">porre qualche buono ordine alle ingiurie</i>.</span> &quot;Set some good order to the injuries&quot;: <i lang="it">porre</i> is &quot;set&quot; (D115).</p>
+<p><span class="lem"><i lang="it">plebei principali</i>.</span> &quot;Principal plebeians&quot;: the leading plebeian families.</p>
+<p><span class="lem"><i lang="it">forse</i>.</span> &quot;Perhaps&quot;: on the second counterfactual only.</p>
+<p><span class="lem"><i lang="it">Publio Sestio</i>.</span> &quot;Publius Sextius&quot;: Livy&#x27;s Lucius Sextius, tribune with Gaius Licinius Stolo, whose laws (367 BC) eased debts, limited holdings of public land and opened the consulship to plebeians. Guicciardini&#x27;s point is Livy&#x27;s (6.39): the plebs would have taken the relief and left the office, and the tribunes would not let the laws be voted apart. The name is kept as printed.</p>
+<p><span class="lem"><i lang="it">appetivano</i>.</span> &quot;Had appetite for&quot;: the verb of <i lang="it">appetito</i> (D117).</p>
+<p><span class="lem"><i lang="it">conseguire l&#x27;uno sanza l&#x27;altro</i>.</span> &quot;Obtain the one without the other&quot;: relief without office.</p>
+<p><span class="lem"><i lang="it">Non veggo adunque</i>.</span> &quot;I do not see, then&quot;: not <i lang="it">non concorro</i>, &quot;I do not concur&quot;, but a flat denial of the impossibility Machiavelli argued.</p>
+<p><span class="lem"><i lang="it">non avessino a essere</i>.</span> &quot;There were not to be&quot; (D61).</p>
+<p><span class="lem"><i lang="it">anzi lo giudico molto facile</i>.</span> &quot;On the contrary I judge it very easy&quot;: <i lang="it">anzi</i> reverses, and the reversal is his judgment (<i lang="it">giudico</i>). Kept apart from <i lang="it">più presto</i>, &quot;rather&quot;, in the last line (D135).</p>
+<p><span class="lem"><i lang="it">defetti</i>.</span> &quot;Defects&quot; (glossary, <i lang="it">difetto</i>): Canestrini&#x27;s spelling.</p>
+<p><span class="lem"><i lang="it">stessi piena</i>.</span> &quot;Stayed full&quot;: <i lang="it">stare</i>.</p>
+<p><span class="lem"><i lang="it">tante autorità</i>.</span> &quot;So many authorities&quot;: the tribunes&#x27; several powers, as in his reply to I.3 (D138).</p>
+<p><span class="lem"><i lang="it">dannoso</i>.</span> &quot;Damaging&quot; (D106).</p>
+<p><span class="lem">No full stop.</span> Canestrini prints none after <i lang="it">utile</i>; the 1933 edition does. The English ends as the Italian does (D40).</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="colophon">
+    <div class="row">
+      <div>
+        <h3>What this is</h3>
+        <p>A free, openly licensed, bilingual edition of Guicciardini's 39 <i>Considerazioni</i> and the
+          <i>Discorsi</i> chapters they answer — 78 text units, Italian and English facing, every reading
+          traceable to a named public-domain witness.</p>
+        <p>It is a reading edition with a transparent apparatus, not a text of record. It does not adjudicate
+          the critical text against Bausi 2001 or the manuscript tradition, and does not claim to.</p>
+      </div>
+      <div>
+        <h3>On the title</h3>
+        <p>Machiavelli had been dead two years when Guicciardini wrote; the <i>Discorsi</i> were unpublished,
+          and the <i>Considerazioni</i> stayed unprinted until 1857. Machiavelli never answers.</p>
+        <p>“Conversation” is a quotation, not a description. It invokes Machiavelli's letter to Vettori of
+          10 December 1513, where he changes into court dress at evening, enters the antique courts of ancient
+          men, and reports that <i>they, in their humanity, answer me</i>. Guicciardini does to Machiavelli
+          what Machiavelli did to Livy — and is denied the reply Machiavelli claimed.</p>
+      </div>
+      <div>
+        <h3>Method</h3>
+        <p>No image-derived reading enters the text on a single reading. Each unit is transcribed twice,
+          independently, by readers who have not seen each other's work; disagreements are adjudicated against
+          the page images and recorded.</p>
+        <p>Existing English translations of the <i>Considerazioni</i> — Grayson (1965), Atkinson &amp; Sices
+          (2002) — are never used as translation inputs.</p>
+      </div>
+      <div>
+        <h3>Licence</h3>
+        <p>The established Italian text and the apparatus data are dedicated to the public domain under
+          <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>. They are Machiavelli's and
+          Guicciardini's sentences, and this edition adds no condition to them.</p>
+        <p>The English translation, the notes and the editorial apparatus are licensed
+          <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: reuse them anywhere, including
+          commercially, with attribution to David McDougall and this edition. The build tooling is MIT.</p>
+        <p>The witness scans are other people's digitisations, included as evidence under their own terms; no
+          grant is made over them, and no page image of Palmarocchi 1933 is reproduced here. Full terms,
+          layer by layer, are in the <span class="sig">LICENSE</span> file in the repository.</p>
+      </div>
+    </div>
+
+    <div class="state">
+      <p><strong>Version 0.3 · 8 of 39 pairs published.</strong>
+        This edition is versioned, not frozen. No open questions on this pair.</p>
+    </div>
+  </footer>
+
+</div>
