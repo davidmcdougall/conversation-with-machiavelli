@@ -1,0 +1,40 @@
+source_unit_id: FG-CONS.1.6
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-I6-D001
+    locator: FG-CONS.1.6.01
+    class: emendation
+    witness_1857: sanza conciare interamente il governo alla plebe
+    witness_1933: sanza communicare interamente el governo alla plebe
+    established: "sanza [comunicare]"
+    publish_as_variant_note: true
+    rationale: "Canestrini prints `conciare`, 'fitting' or 'dressing', which barely construes. The 1933 `communicare` is the verb the reply has already used twice of the honours and the government, and `cōicare`, its abbreviation, is easily misread as `conciare`. Emended (D126)."
+  - id: FG-CONS-I6-D002
+    locator: FG-CONS.1.6.01
+    class: reading
+    witness_1857: "a' beni occupati, e degli onori (the e damaged, printed round)"
+    witness_1933: "ed a' beni occupati, e degli onori"
+    established: witness_1857
+    rationale: "The letter prints like o; read as e on sense and on the 1933 edition (D127)."
+  - id: FG-CONS-I6-D003
+    locator: FG-CONS.1.6.01
+    class: reading
+    witness_1857: si vede per esperienza
+    witness_1933: si vedde per esperienzia
+    established: witness_1857
+    rationale: "Present against past: 'one sees by experience' against 'one saw'."
+  - id: FG-CONS-I6-D004
+    locator: FG-CONS.1.6.01
+    class: punctuation
+    witness_1857: "il governo fu comunicato insino al tempo de' Gracchi, ne' quali"
+    witness_1933: "el governo fu communicato, insino al tempo de' Gracchi; ne' quali"
+    established: witness_1857
+    rationale: "Same sense: the tumults ceased once the government was shared, and stayed ceased until the Gracchi. The 1933 pointing attaches `insino` to `cessorono` explicitly."
+  - id: FG-CONS-I6-D005
+    locator: FG-CONS.1.6.01
+    class: systematic_orthographic_profile
+    witness_1857: "Canestrini's `il`, `patrizii`, `possessioni`, `ineguale`, `leggi`, `adunque`, `sedizioni`, `umori`, `sarebbero`, and lighter pointing"
+    witness_1933: "Palmarocchi's `el`, `patrizi`, `possessione`, `inequale`, `legge`, `adunche`, `sedizione`, `omori`, `sarebbono`, `ed` throughout, and semicolons at `contenta`, `parteciparne`, `Gracchi`, `potenti`, `tumulti`, `facile`, `tribuni`"
+    established: witness_1857
+    rationale: Canestrini governs throughout.

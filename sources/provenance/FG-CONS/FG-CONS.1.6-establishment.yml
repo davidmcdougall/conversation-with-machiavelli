@@ -1,0 +1,32 @@
+source_unit_id: FG-CONS.1.6
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-006
+responds_to: NM-DISC.1.6
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. Canestrini's own footnote is editorial and is not carried."
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38); errors are emended from Palmarocchi and bracketed (D68)."
+passes:
+  - {id: A, performed: 2026-10-02, file: sources/coldpass/FG-CONS.1.6-passA.md}
+  - {id: B, performed: 2026-10-02, file: sources/coldpass/FG-CONS.1.6-passB.md, note: "subagent; page images only (native 600 ppi, 2x upscale, half-page crops at 3x), separate directory"}
+collation: sources/coldpass/COLLATION-2026-10-02-I6.md
+collation_result: >
+  408 words. One word split on a damaged letter (`e`/`o degli onori`),
+  escalated and ruled `e` (D127, David 2026-10-02). One agreed reading,
+  `conciare`, emended to `[comunicare]` (D126, David 2026-10-02). Three
+  stops supplied from the 1933 edition; no terminal stop (D40).
+witness_independence_check: "SCOPE §7. At the word split pass A sides with Palmarocchi and pass B with neither; at the two pointing splits pass B leans to Palmarocchi and pass A does not. No pattern."
+boundaries: "printed pp. 16-18; one printed paragraph, first-line indent at `Io credo`"
+corrections:
+  - {id: FG-CONS-I6-C001, locator: FG-CONS.1.6.01, was: "tutta la autorità Ma dico", now: "tutta la autorità. Ma dico", evidence: "No stop in the impression; a capital follows; the 1933 edition prints it. D67."}
+  - {id: FG-CONS-I6-C002, locator: FG-CONS.1.6.01, was: "la plebe , o, come", now: "la plebe; o, come", evidence: "A spaced mark both readers see and neither can weigh; the 1933 edition prints a semicolon. D110."}
+  - {id: FG-CONS-I6-C003, locator: FG-CONS.1.6.01, was: "non si curava , se non che", now: "non si curava; se non che", evidence: "As C002. D110."}
+emendations:
+  - {id: FG-CONS-I6-E001, operation: emendation, rule: D68, status: ruled_D126, locator: FG-CONS.1.6.01, printed: "sanza conciare interamente il governo", established: "sanza [comunicare] interamente il governo", source: WIT-FG-CONS-1933-PALMAROCCHI, note: "Clearly printed and read by both passes. Barely construes; the abbreviation of comunicare misread; the reply's own `comunicati gli onori`, `il governo fu comunicato`. Canestrini's spelling (one m) is kept; the 1933 edition prints `communicare`."}
+ruled_readings:
+  - {id: FG-CONS-I6-R001, rule: D127, locator: FG-CONS.1.6.01, locus: "a' beni occupati, e degli onori", passes: "A `e`; B ⟨o|e⟩", note: "The printed letter is round and closed; `o` does not construe; the 1933 edition reads `e`. A reading of damaged type, not an emendation."}
+not_supplied:
+  - {locus: "dannoso che utile", note: "Unit end. No stop in the impression; the 1933 edition prints one. Not supplied (D40)."}
+normalisation_notes: "Class A: accents; plural article `e` → `e'` (D35) at `e' Romani`, `e' patrizii` ×2, `e' quali` ×3, `e' plebei` ×2, `e' tribuni`; apostrophe supplied at `de' debiti`, `a' patrizii`, `a' più ricchi`, `a' beni`, `a' Romani` (D39); `stéssi` → `stessi`. Canestrini's footnote (on Machiavelli's conclusion) is his, not Guicciardini's, and is not carried."

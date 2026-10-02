@@ -1,0 +1,23 @@
+source_unit_id: NM-DISC.1.6
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-006
+passes:
+  - {id: A, performed: 2026-10-02, file: sources/coldpass/NM-DISC.1.6-passA.md}
+  - {id: B, performed: 2026-10-02, file: sources/coldpass/NM-DISC.1.6-passB.md, note: "subagent; page images only (native 350 ppi plus thirds), separate directory"}
+collation: sources/coldpass/COLLATION-2026-10-02-I6.md
+collation_result: "1,641 words. No word, clause or sense disagreement. One spelling difference (`beneficio`/`benefizio`), settled on the page: `benefizio` is printed."
+boundaries: "printed pp. 33-39; one block with a drop capital; CAPITOLO VII begins p. 40"
+interventions: []
+comparison_collation: >
+  Done 2026-10-02 against the 1554 extract (zero-based pp. 56-62, fol.
+  11r-14r). A cold reader transcribed the Giglio leaves from the page images
+  (sources/coldpass/NM-DISC.1.6-1554.md); the transcript was collated by word
+  against the established text, and every reading published as a variant
+  note was checked on the page image. Giglio rewords throughout; the
+  sense-bearing differences are in
+  sources/comparisons/NM-DISC/NM-DISC.1.6-witness-disagreements.yml.
+normalisation_notes: "Class A only: accents (`perchè` → `perché`, `nè` → `né`, `sicchè` → `sicché`, `sè` → `sé`, a stray grave on `che` at p. 34), elision spacing (`de'Gracchi` → `de' Gracchi`, `l' una` → `l'una`, `ch' ella` → `ch'ella`, `dall' altra` → `dall'altra`, `t' induce` → `t'induce`). `seguìte`, `seguìta` keep the printed accent."

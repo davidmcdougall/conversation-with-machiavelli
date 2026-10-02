@@ -1,0 +1,60 @@
+source_unit_id: NM-DISC.1.6
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-I6-D001
+    locator: NM-DISC.1.6.01
+    class: reading
+    witness_1824: "le controversie tra il Popolo ed il Senato ... dette controversie"
+    witness_1554: "le contese tra il popolo, & il Senato ... dette contese"
+    established: witness_1824
+    rationale: "Contests for controversies, both times; the rubric's `inimicizie` stands in both."
+  - id: NM-DISC-I6-D002
+    locator: NM-DISC.1.6.02
+    class: reading
+    witness_1824: "non sono stati molti, e di tanto numero che vi sia disproporzione"
+    witness_1554: "non sono stati molti, et di tanto numero, che ui sia disproportione"
+    established: witness_1824
+    rationale: "Both witnesses print `e`, where the sense wants the negative carried on: 'not many, nor of such a number'. It construes so, and the English carries the negative (D129)."
+  - id: NM-DISC-I6-D003
+    locator: NM-DISC.1.6.04
+    class: reading
+    witness_1824: "il che dette alla Plebe forza ed augumento"
+    witness_1554: "ilche dette alla Plebe forza, & accrescimento"
+    established: witness_1824
+    rationale: "Giglio's `accrescimento` is the noun of `accrescere` (increase), which D69 keeps apart from the 1824 `augumento` (augmentation)."
+  - id: NM-DISC-I6-D004
+    locator: NM-DISC.1.6.04
+    class: reading
+    witness_1824: "E loro fecero l'una e l'altra ... non lo puoi dopo maneggiare"
+    witness_1554: "& eglino fecero l'una & l'altra ... non lo puoi poi maneggiare"
+    established: witness_1824
+    rationale: "Same sense."
+  - id: NM-DISC-I6-D005
+    locator: NM-DISC.1.6.05
+    class: reading
+    witness_1824: "con danari e con industria ... fusse il miglior modo"
+    witness_1554: "con danari, & con astutia ... fusse il modo"
+    established: witness_1824
+    rationale: "Giglio's Venice conquers by cunning, the 1824 Venice by industry; Giglio has no `miglior`."
+  - id: NM-DISC-I6-D006
+    locator: NM-DISC.1.6.06
+    class: reading
+    witness_1824: "se e' fusse in lei constituzione o legge ... t'induce la necessità ... a farla rovinare più presto ... quando pure la necessità"
+    witness_1554: "se e fusse in lei ordine, o legge ... ti astringe la necessita ... a farla rouinar con piu prestezza ... quando la necessita"
+    established: witness_1824
+    rationale: "Order for constitution; necessity constrains rather than induces, so that Giglio loses the 1824 repetition `non t'induce, t'induce`."
+  - id: NM-DISC-I6-D007
+    locator: NM-DISC.1.6.07
+    class: reading
+    witness_1824: "tollerarle ... l'autorità tribunizia"
+    witness_1554: "si deurebbe tollerarle ... l'auttorita de Tribuni"
+    established: witness_1824
+    rationale: "Giglio supplies the modal the 1824 infinitive leaves to `credo che sia necessario`: 'one should tolerate them'."
+  - id: NM-DISC-I6-D008
+    locator: NM-DISC.1.6.01-07
+    class: systematic_rewording
+    witness_1824: "the 1824 wording"
+    witness_1554: "Giglio's synonyms and reorderings (`essendo` for `sendo`, `uenissino` for `venissero`, `debole` for `debile`, `anco` for `ancora`, `infra` for `fra`, `poterono in questa guisa uiuere`), `Ligurgo` for `Licurgo`, and the period's orthography (`huomini`, `-tione`, `&`)"
+    established: witness_1824
+    rationale: The 1824 witness governs throughout.
