@@ -1,0 +1,47 @@
+source_unit_id: FG-CONS.1.9
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-I9-D001
+    locator: FG-CONS.1.9.01
+    class: emendation
+    witness_1857: "E adunque questo uno modo di medicina"
+    witness_1933: "È adunche questo uno modo di medicina"
+    established: "[È] adunque questo uno modo di medicina"
+    publish_as_variant_note: true
+    rationale: "Canestrini prints the verb without its accent, and as printed the period has no finite verb. Emended as his I.3, I.7 and I.8 were (D114, D144, D157, D167)."
+  - id: FG-CONS-I9-D002
+    locator: FG-CONS.1.9.01
+    class: reading
+    witness_1857: "lo fa con la violenza e con la fraude, e modi estraordinarii"
+    witness_1933: "lo fa con la violenzia o con la fraude e modi estraordinari"
+    established: witness_1857
+    rationale: "Violence and fraud together, against violence or fraud. Both readers read Canestrini's `e` without doubt; it construes, so D38. The English follows Canestrini."
+  - id: FG-CONS-I9-D003
+    locator: FG-CONS.1.9.01
+    class: reading
+    witness_1857: "constituite le leggi"
+    witness_1933: "constituite le legge"
+    established: witness_1857
+    rationale: "Plural noun in both; Palmarocchi keeps the old plural in -e. Same sense."
+  - id: FG-CONS-I9-D004
+    locator: FG-CONS.1.9.01
+    class: reading
+    witness_1857: "che Romulo spettò ... la vita di Romulo"
+    witness_1933: "che Romolo spettò ... la vita di Romolo"
+    established: witness_1857
+    rationale: "Guicciardini's Latin form of the name in Canestrini, against Machiavelli's Romolo in the 1933 edition. Romulus in English either way."
+  - id: FG-CONS-I9-D005
+    locator: rubric
+    class: reading
+    witness_1857: "o al tutto fuori delli antichi suoi ordini riformarla"
+    witness_1933: "[... o al tutto fuor degli antichi suoi ordini riformarla.]"
+    established: witness_1857
+    rationale: "Each editor sets his own form of Machiavelli's rubric; the 1933 one is bracketed as editorial."
+  - id: FG-CONS-I9-D006
+    locator: FG-CONS.1.9.01
+    class: systematic_orthographic_profile
+    witness_1857: "Canestrini's `il`, `e` before vowels, `-nza`, `periculo`, `voluntà`, `comune`, `ammazzato`, `adunque`, and lighter pointing"
+    witness_1933: "Palmarocchi's `el`, `ed` before vowels, `-nzia`, `pericolo`, `volontá`, `commune`, `amazzato`, `adunche`, and semicolons at `cattiva`, `stabilisca`, `esemplo`, `propria`"
+    established: witness_1857
+    rationale: Canestrini governs throughout.

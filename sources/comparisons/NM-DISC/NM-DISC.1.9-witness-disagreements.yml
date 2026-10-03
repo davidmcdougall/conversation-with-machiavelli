@@ -1,0 +1,67 @@
+source_unit_id: NM-DISC.1.9
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-I9-D001
+    locator: rubric
+    class: reading
+    witness_1824: "di nuovo, o al tutto fuori degli antichi suoi ordini riformarla"
+    witness_1554: "di nuouo al tutto fuori delli antichi suoi ordini riformata"
+    established: witness_1824
+    rationale: "Giglio has no `o`, and a participle (`riformata`) for the infinitive: one founder must order a republic anew, wholly reformed outside its old orders, rather than order it or reform it. Canestrini's rubric over Guicciardini's reply has the `o`."
+  - id: NM-DISC-I9-D002
+    locator: NM-DISC.1.9.01
+    class: reading
+    witness_1824: "che un fondatore d'un vivere civile, quale fu Romolo, abbia prima morto un suo fratello"
+    witness_1554: "che uno formatore di un uiuere ciuile, quale fu Romolo; habbia prima leuato di uita un suo fratello"
+    established: witness_1824
+    rationale: "A former rather than a founder of a civil way of life, and a periphrasis (`taken from life`) for the plain `morto`, killed."
+  - id: NM-DISC-I9-D003
+    locator: NM-DISC.1.9.02
+    class: reading
+    witness_1824: "debbe ingegnarsi d'avere l'autorità solo"
+    witness_1554: "debbe ingegnarsi di hauere l'auttorita solamente"
+    established: witness_1824
+    rationale: "The 1824 `solo` can be read with the orderer (that he alone have the authority) or with the authority (only it); Giglio's adverb `solamente` takes the second. The English keeps the 1824 ambiguity as far as it can, and the note gives Giglio."
+  - id: NM-DISC-I9-D004
+    locator: NM-DISC.1.9.02
+    class: reading
+    witness_1824: "essendo gli uomini più pronti al male ch'al bene"
+    witness_1554: "essendo gli huomini piu chini al male, che al bene"
+    established: witness_1824
+    rationale: "Inclined (bent) towards ill, against readier for it."
+  - id: NM-DISC-I9-D005
+    locator: NM-DISC.1.9.03
+    class: reading
+    witness_1824: "e di ragunare il Senato ... non fu innovato alcun ordine dello antico ... Il che testifica"
+    witness_1554: "et di ragionare il Senato ... non fu introdotto alcun nuouo ordine ... Il che approua"
+    established: witness_1824
+    rationale: "`ragionare` (to discourse with the senate) for `ragunare` (to assemble it), probably a misprint; no new order introduced, against nothing of the old order innovated; `approves` for `testifies`."
+  - id: NM-DISC-I9-D006
+    locator: NM-DISC.1.9.04
+    class: reading
+    witness_1824: "che desiderando Agide ... per esserne in parte deviati"
+    witness_1554: "Che considerando Agide ... per esserne in parte usciti fuori"
+    established: witness_1824
+    rationale: "Agis considering (rather than desiring) to bring the Spartans back; gone out of the bounds rather than deviated from them."
+  - id: NM-DISC-I9-D007
+    locator: NM-DISC.1.9.04
+    class: reading
+    witness_1824: "fece ammazzare tutti gli Efori"
+    witness_1554: "fece uenire tutti gli Ephori"
+    established: witness_1824
+    rationale: "Giglio has Cleomenes summon the ephors, not kill them. The killing is what makes Cleomenes the parallel to Romulus that the chapter draws; the 1824 reading governs and Giglio's goes in the note."
+  - id: NM-DISC-I9-D008
+    locator: NM-DISC.1.9.05
+    class: reading
+    witness_1824: "Considerato adunque tutte queste cose"
+    witness_1554: "Considerate adunque tutte queste cose"
+    established: witness_1824
+    rationale: "The participle agrees with `cose` in Giglio and stands invariable in the 1824 text. Same sense."
+  - id: NM-DISC-I9-D009
+    locator: NM-DISC.1.9.01-05
+    class: systematic_orthographic_profile
+    witness_1824: "the 1824 edition's modernised spelling and pointing"
+    witness_1554: "Giglio's `T. Tatio`, `Ligurgo`, `Ephori`, `Prencipe`, `auttorita`, `oppenione`, `essempi`, `iscusa`, `questa parte` for `queste parti`, `confermatione` for `corroborazione`, `per se medesimo` for `per sè stesso`, abbreviations and pointing"
+    established: witness_1824
+    rationale: The 1824 edition governs throughout.

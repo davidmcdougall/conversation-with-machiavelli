@@ -1,0 +1,23 @@
+source_unit_id: NM-DISC.1.9
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-009
+passes:
+  - {id: A, performed: 2026-10-03, file: sources/coldpass/NM-DISC.1.9-passA.md}
+  - {id: B, performed: 2026-10-03, file: sources/coldpass/NM-DISC.1.9-passB.md, note: "subagent; page images only (native 350 ppi plus thirds), separate directory"}
+collation: sources/coldpass/COLLATION-2026-10-03-I9.md
+collation_result: "882 words. No word, clause or sense disagreement. The one mark both passes leave doubtful (after `ordinato bene`) is read as a comma."
+boundaries: "printed pp. 49-52; one block with a drop capital; CAPITOLO IX under the running head on p. 49; CAPITOLO X begins p. 53"
+interventions: []
+comparison_collation: >
+  Done 2026-10-03 against the 1554 extract (zero-based pp. 70-73, fol.
+  18r-19v). A cold reader transcribed the Giglio leaves from the page images
+  (sources/coldpass/NM-DISC.1.9-1554.md); the transcript was collated by word
+  against the established text, and every reading published as a variant
+  note was checked on the page image. Giglio rewords throughout; the
+  sense-bearing differences are in
+  sources/comparisons/NM-DISC/NM-DISC.1.9-witness-disagreements.yml.
+normalisation_notes: "Class A only: accents (`perchè` → `perché`, `Perchè` → `Perché`, `nè` → `né`, `sè` → `sé`); elision solid (`d'un`, `l'autorità`, `ch'alcuna`, `d'avere`, `d'alcuna`, `l'effetto`, `ch'al`, `d'uno`, `l'hanno`, `l'opinione`, `alcun'altra`, `un'autorità`, `d'imperio`, `ch'egli`, `l'ambizione`, `ch'ebbe`); apocope spaced (`de' Tarquinj`, `da' Romani`, `ne' suoi`, `de' Macedoni`); the opening `E'` kept as printed; spaces before punctuation."
