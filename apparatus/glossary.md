@@ -293,3 +293,21 @@ last sentence answers Machiavelli's first move.
 | `carico` | charge | FG I.8 `uno carico falso`, `e' carichi dati falsamente`. |
 | `corrompere`, `corrotto` | corrupt, corrupted | NM I.8 (bribed), FG I.8 (Cosimo corrupting the citizens). |
 | `ciascuno` | each | D161. NM I.8 `ciascuno da ciascuno`. |
+
+## Added from the I.9 pair (2026-10-04)
+
+| Italian | English | Note |
+|---|---|---|
+| `solo`; `un solo` / `uno solo` | alone; one alone | D172. NM I.9 ×5, the rubric's word; FG I.9 `uno solo`. |
+| `fondatore` | founder | D171. NM I.9 ×2. `edificatore` stays "builder". |
+| `scusa`, `scusare` | excuse | D173. NM I.9 ×4. |
+| `biasimo` | blame | D173. NM I.9 .05, set against `scusa`. |
+| `riprendere`, `reprensione` | reprove, reproof | D173. NM I.9 ×2; FG I.9. |
+| `racconciare` | mend | NM I.9 `per racconciare`; FG I.9 `racconcie`. |
+| `costituire` / `constituire` | constitute | NM I.9 `costituire una Repubblica`; FG I.9 `constituite le leggi`, `constituito uno senato`. |
+| `tirannide` | tyranny | NM I.9 `occupare la tirannide`; FG I.8, I.9. |
+| `vivere civile` | civil living | NM I.9 ×2, as `vivere politico`, `vivere libero`. |
+| `morto` (trans.) / `ammazzare` | killed | D169, recorded collapse. |
+| `corroborazione` | corroboration | D170, recorded collapse with `riscontro` (D160). |
+| `subito` / `incontinenti` | at once / forthwith | D177. NM I.9 `subito ordinato`; FG I.9 both. |
+| `deporre` | lay down | FG I.9 `deporre la autorità`. |

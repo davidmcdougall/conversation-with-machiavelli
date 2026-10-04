@@ -80,7 +80,7 @@ exist. See §7.
 | 6 | NM-DISC.1.6 | FG-CONS.1.6 | FG-CONS-DR-006 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 7 | NM-DISC.1.7 | FG-CONS.1.7 | FG-CONS-DR-007 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 8 | NM-DISC.1.8 | FG-CONS.1.8 | FG-CONS-DR-008 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
-| 9 | NM-DISC.1.9 | FG-CONS.1.9 | FG-CONS-DR-009 | — | — | — | — | — |
+| 9 | NM-DISC.1.9 | FG-CONS.1.9 | FG-CONS-DR-009 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 10 | NM-DISC.1.10 | FG-CONS.1.10 | FG-CONS-DR-010 | — | — | — | — | — |
 | 11 | NM-DISC.1.11 | FG-CONS.1.11 | FG-CONS-DR-011 | — | — | — | — | — |
 | 12 | NM-DISC.1.12 | FG-CONS.1.12 | FG-CONS-DR-012 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
@@ -194,12 +194,12 @@ than inside the first paragraph.
 | Stage | Done | Remaining | Of |
 |---|---|---|---|
 | Link records | 39 | 0 | 39 |
-| NM source established | 10 | 29 | 39 |
-| FG source established | 10 | 29 | 39 |
-| Collated against the comparison witness | 16 units | 62 | 78 |
-| Translated (draft, cold-reviewed) | 20 | 58 | 78 |
-| Annotated | 20 | 58 | 78 |
-| Published | 20 | 58 | 78 |
+| NM source established | 11 | 28 | 39 |
+| FG source established | 11 | 28 | 39 |
+| Collated against the comparison witness | 18 units | 60 | 78 |
+| Translated (draft, cold-reviewed) | 22 | 56 | 78 |
+| Annotated | 22 | 56 | 78 |
+| Published | 22 | 56 | 78 |
 <!-- /state:stages -->
 
 The table is written by `scripts/state` from the files. The paragraphs below
@@ -318,6 +318,7 @@ clock; David's own time is the rulings, counted separately.
 | I.6 (1,641 + 408 words) | 20 | 4 | 10 | 12 | 10 | 4 | ~60 (stages approximate) | 2 rulings (D126, D127), both at establishment; first whole-word emendation; NM collated against 1554; commentary cold-reviewed |
 | I.7 (1,056 + 470 words) | 20 | 4 | 12 | 10 | 10 | 4 | ~60 (stages approximate) | 1 ruling (D145) at establishment; two verbless openings emended by D114's precedent (D144); NM collated against 1554; commentary cold-reviewed; DEC-009 clauses 3, 6, 10 aligned first (D143) |
 | I.8 (965 + 443 words) | 12 | 3 | 6 | 5 | 5 | 3 | ~35 (stages approximate) | 1 ruling (D156) at establishment; one verbless opening emended by D114's precedent (D157); NM collated against 1554; commentary cold-reviewed |
+| I.9 (882 + 334 words) | 15 | 3 | 10 | 8 | 8 | 3 | ~50 (stages approximate) | no rulings; one verbless period emended by D114's precedent (D167), mid-paragraph; NM collated against 1554; commentary cold-reviewed; the establishment commit was made by David (`70f4e64`) |
 
 ---
 

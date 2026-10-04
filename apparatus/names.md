@@ -83,3 +83,12 @@ the original.
 | `Capitano` | the Captain | NM I.8; a Florentine magistrate with criminal jurisdiction, noted |
 | `Fabio Massimo` | Fabius Maximus | FG I.8; Quintus Fabius Maximus Cunctator |
 | `Cosimo` | Cosimo | FG I.8; Cosimo de' Medici, noted |
+| `Romolo` / `Romulo` | Romulus | NM I.9 (as NM I.2); FG I.9 prints `Romulo`, Guicciardini's Latin form, which the 1933 edition gives as `Romolo` |
+| `Remo` | Remus | NM I.9 |
+| `Tito Tazio Sabino`, `Tazio` | Titus Tatius the Sabine, Tatius | NM I.9 |
+| `Tarquinj` | Tarquins | NM I.9, as NM I.3 |
+| `Moisè`, `Licurgo`, `Solone` | Moses, Lycurgus, Solon | NM I.9, as NM I.1, I.2; FG I.9 `Licurgo` |
+| `Agide` | Agis | NM I.9; Agis IV of Sparta |
+| `Cleomene` | Cleomenes | NM I.9; Cleomenes III of Sparta |
+| `Efori` | ephors | NM I.9; lower case, an office. The 1554 edition prints `Ephori` |
+| `Macedoni` | Macedonians | NM I.9 |

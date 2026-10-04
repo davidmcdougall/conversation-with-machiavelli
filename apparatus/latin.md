@@ -27,3 +27,5 @@ first time it is italicised.
 | `De divinatione` | notes (Cicero) |
 | `De natura deorum` | notes (Cicero) |
 | `Periochae` | notes (Livy) |
+| `spectare` | FG I.9 note (D175) |
+| `patres` | NM I.9 commentary |

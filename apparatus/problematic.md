@@ -253,6 +253,55 @@ Guicciardini's case was "begged": true, and unjust, but it did not divide
 the city; the city's discords made the case. The causation is reversed, and
 the English must keep it reversed. The unit ends without a stop.
 
+## Machiavelli, NM-DISC.1.9
+
+**A rule, the case it excuses, and the conditions that limit it.** The
+founder's crime is stated first, as the opinion of "many"; the rule follows
+(a republic or kingdom is ordered well, or reformed anew, only by one); then
+its conditions (the end must be the common good, the effect must excuse the
+deed, the authority must not be left hereditary, and the thing ordered must
+pass into the care of many); then the proof that Romulus met them (the
+senate, the narrow authority he kept, Rome's orders surviving the kings);
+then Agis and Cleomenes. The verdict, "excuse, and not blame", is reached,
+and is no more than excuse. The English must keep the conditions attached to
+the rule, and must not let "it is necessary to be alone" float free as a
+maxim.
+
+**The deed and the effect.** `accusandolo il fatto, l'effetto lo scusi`: the
+chapter's two terms, in I.7's and I.8's verb of accusation. Excuse (`scusa`,
+`scusare`) returns three times, the last in the chapter's last line; blame
+(`biasimo`) and reproof (`riprendere`) are what it is set against.
+
+**Cleomenes is the demonstration, not an ornament.** Agis tried the
+reformation without being alone and was killed; Cleomenes made himself alone
+by killing the ephors and nearly succeeded. The violence is the point of the
+example, and `imperfetto` lands it.
+
+## Guicciardini, FG-CONS.1.9
+
+**He grants the thesis outright and then hedges the founder.** `Non è dubio`
+— the strongest assent yet, in Machiavelli's own `uno solo` — and praise,
+not merely excuse, for the man who reorders a disordered city by violence and
+fraud when there is no other way. Then `Ma`: pray it is never needed, because
+the founder cannot lay down his authority until time establishes the laws,
+and in that time power corrupts. The remedy is a medicine for the hopeless
+case. The English must keep the grant whole before the turn, and must not
+make him an opponent of the thesis.
+
+**Two degrees of founder, and a suspended judgment.** Supremely laudable is
+the one who keeps the authority no longer than the ordering needs (Lycurgus,
+and perhaps no other); of the one who keeps it for life, however good his
+government, `non so quanto sia da essere laudato` — suspension, not denial —
+and yet he is not free of all reproof. The four acts again: assent (`Non è
+dubio`), suspension (`non so`), and a judgment deferred.
+
+**On Romulus he refuses to answer yet.** `non dico ora altro`: he will not
+take Machiavelli's proof (the senate) until the life is considered, and the
+memory he gives — that the senate was suspected of killing Romulus for
+arrogating too much authority — turns Machiavelli's proof against him without
+asserting it. The English must keep `se bene mi ricordo` and `si dubitò` as
+the hedges they are. The unit ends without a stop.
+
 ## The pair
 
 Machiavelli argues towards a demonstration. Guicciardini declines to be
