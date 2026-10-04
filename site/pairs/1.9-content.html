@@ -1,0 +1,530 @@
+<title>A Conversation with Machiavelli — A way of medicine</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root {
+  --paper:      #EDEEEC;
+  --paper-sunk: #E4E6E3;
+  --ink:        #1B1E1C;
+  --ink-muted:  #5C625E;
+  --ink-faint:  #868C87;
+  --rule:       #C9CDC8;
+  --rule-faint: #DCDFDB;
+  --nm:         #3A5A6B;
+  --fg:         #6E5A3C;
+  --serif: "EB Garamond", "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  --sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --mono:  "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:      #161917;
+    --paper-sunk: #1D211E;
+    --ink:        #E3E6E1;
+    --ink-muted:  #A0A6A0;
+    --ink-faint:  #767C77;
+    --rule:       #343934;
+    --rule-faint: #262B27;
+    --nm:         #8FB4C6;
+    --fg:         #C4A97C;
+  }
+}
+:root[data-theme="dark"] {
+  --paper:      #161917;
+  --paper-sunk: #1D211E;
+  --ink:        #E3E6E1;
+  --ink-muted:  #A0A6A0;
+  --ink-faint:  #767C77;
+  --rule:       #343934;
+  --rule-faint: #262B27;
+  --nm:         #8FB4C6;
+  --fg:         #C4A97C;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 1160px; margin: 0 auto; padding-inline: 20px; padding-block: 0 0; }
+
+/* ---- masthead ---- */
+.masthead { padding-block: 56px 32px; border-bottom: 1px solid var(--rule); }
+.eyebrow {
+  font-family: var(--sans); font-size: 11px; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint);
+  margin: 0 0 18px;
+}
+h1 {
+  font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 5vw, 44px);
+  line-height: 1.12; margin: 0 0 14px; text-wrap: balance; letter-spacing: -0.01em;
+}
+h1 .sub { display: block; font-style: italic; color: var(--ink-muted); font-size: .52em; margin-top: 12px; letter-spacing: 0; }
+.standfirst {
+  font-family: var(--sans); font-size: 14.5px; line-height: 1.6;
+  color: var(--ink-muted); max-width: 62ch; margin: 0;
+}
+
+/* ---- the pairing device ---- */
+.pairing {
+  display: flex; align-items: stretch; gap: 0; margin: 30px 0 0;
+  border: 1px solid var(--rule); border-radius: 2px; overflow: hidden;
+  font-family: var(--sans); background: var(--paper-sunk);
+}
+.pairing > div { flex: 1 1 0; padding: 13px 16px; min-width: 0; }
+.pairing .who { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
+.pairing .nm-side .who { color: var(--nm); }
+.pairing .fg-side .who { color: var(--fg); }
+.pairing .what { font-size: 13.5px; color: var(--ink-muted); }
+.pairing .arrow {
+  flex: 0 0 auto; display: flex; align-items: center; justify-content: center;
+  padding-inline: 14px; color: var(--ink-faint); font-size: 15px;
+  border-inline: 1px solid var(--rule);
+}
+
+/* ---- pair-to-pair navigation ---- */
+.pairnav {
+  display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+  margin-top: 18px; font-family: var(--sans); font-size: 12.5px;
+  color: var(--ink-muted);
+}
+.pairnav a { text-decoration: none; color: var(--ink-muted); }
+.pairnav a:hover, .pairnav a:focus { color: var(--ink); text-decoration: underline; }
+
+/* ---- work sections ---- */
+.work { padding-block: 52px 0; }
+.work-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
+.work-head .tag {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .04em;
+  padding: 3px 7px; border-radius: 2px; color: var(--paper);
+}
+.work.nm .tag { background: var(--nm); }
+.work.fg .tag { background: var(--fg); }
+h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; letter-spacing: -0.005em; }
+.rubric {
+  font-style: italic; color: var(--ink-muted); max-width: 70ch;
+  margin: 10px 0 0; font-size: 16.5px; line-height: 1.5;
+}
+.rubric-note {
+  font-family: var(--sans); font-style: normal; font-size: 12px;
+  color: var(--ink-faint); margin-top: 7px;
+}
+.colheads {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  margin-top: 30px; padding-bottom: 7px; border-bottom: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint);
+}
+
+/* ---- the facing pair ---- */
+.pair {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  padding-block: 22px; border-bottom: 1px solid var(--rule-faint);
+  scroll-margin-top: 20px;
+}
+.pair:target { background: var(--paper-sunk); }
+.annot { grid-column: 2 / -1; margin-top: 14px; font-family: var(--sans); font-size: 13.5px;
+  line-height: 1.55; color: var(--ink-muted); }
+.annot summary { cursor: pointer; font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); list-style: none; }
+.annot summary::-webkit-details-marker { display: none; }
+.annot summary::before { content: "+ "; }
+.annot[open] summary::before { content: "− "; }
+.annot p { margin: 8px 0 0; max-width: 72ch; }
+.annot .xref { color: inherit; text-decoration: underline; text-decoration-color: var(--rule);
+  text-underline-offset: 2px; white-space: nowrap; }
+.gutter { padding-top: 4px; }
+.uid {
+  font-family: var(--mono); font-size: 10.5px; color: var(--ink-faint);
+  text-decoration: none; letter-spacing: -0.02em;
+}
+.uid:hover, .uid:focus { color: var(--ink); text-decoration: underline; }
+.col { min-width: 0; }
+.col.it { hyphens: auto; }
+.col.en { }
+.supplied { color: var(--ink-muted); }
+
+/* ---- apparatus ---- */
+.apparatus {
+  margin-top: 34px; padding-top: 22px; border-top: 2px solid var(--rule);
+  font-family: var(--sans); font-size: 13.5px; line-height: 1.58;
+  color: var(--ink-muted);
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 26px 34px;
+}
+.apparatus h3 {
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); margin: 0 0 9px;
+}
+.apparatus p { margin: 0 0 9px; }
+.apparatus p:last-child { margin-bottom: 0; }
+.apparatus .lem { font-family: var(--serif); font-size: 15px; color: var(--ink); font-style: italic; }
+.sig { font-family: var(--mono); font-size: 12px; color: var(--ink); }
+
+/* ---- colophon ---- */
+.colophon {
+  margin-top: 60px; padding-block: 28px 60px; border-top: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 13px; line-height: 1.6; color: var(--ink-muted);
+}
+.colophon .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 34px; }
+.colophon h3 {
+  font-size: 10.5px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--ink-faint); margin: 0 0 8px;
+}
+.colophon p { margin: 0 0 8px; }
+.colophon ul { margin: 0; padding-left: 16px; }
+.colophon li { margin-bottom: 5px; }
+.state {
+  margin-top: 26px; padding: 14px 16px; background: var(--paper-sunk);
+  border-left: 2px solid var(--ink-faint); border-radius: 0 2px 2px 0;
+  font-size: 12.5px;
+}
+.state strong { color: var(--ink); font-weight: 600; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--nm); outline-offset: 2px; }
+
+/* ---- contents / index page ---- */
+.toc { margin-top: 30px; }
+.toc-row {
+  display: grid; grid-template-columns: 40px 1fr 1fr; gap: 0 20px;
+  padding-block: 14px; border-bottom: 1px solid var(--rule-faint);
+  font-family: var(--sans); align-items: baseline;
+}
+.toc-row .n { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
+.toc-row a { text-decoration: none; color: var(--ink); font-family: var(--serif); font-size: 16px; }
+.toc-row a:hover, .toc-row a:focus { text-decoration: underline; }
+.toc-row .unpublished { color: var(--ink-faint); font-style: italic; font-size: 14px; }
+.toc-row .ids { color: var(--ink-faint); font-size: 11.5px; font-family: var(--mono); }
+
+@media (max-width: 760px) {
+  body { font-size: 16.5px; }
+  .colheads { display: none; }
+  .pair { grid-template-columns: 1fr; gap: 0; padding-block: 20px; }
+  .gutter { padding-top: 0; margin-bottom: 8px; }
+  .annot { grid-column: 1; }
+  .col.it { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px dotted var(--rule); }
+  .col.it::before, .col.en::before {
+    display: block; font-family: var(--sans); font-size: 10px; font-weight: 600;
+    letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px;
+  }
+  .col.it::before { content: "Italian"; }
+  .col.en::before { content: "English"; }
+  .pairing { flex-direction: column; }
+  .pairing .arrow { border-inline: 0; border-block: 1px solid var(--rule); padding-block: 6px; }
+  .toc-row { grid-template-columns: 1fr; gap: 4px; }
+}
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow">A Conversation with Machiavelli · Pair 9 of 39</p>
+    <h1>A way of medicine
+      <span class="sub">Discourses I.9, and Guicciardini&#x27;s reply</span></h1>
+    <p class="standfirst">Machiavelli lays down that a republic or kingdom is never, or seldom, ordered well, or reformed wholly anew, except by one; that a prudent orderer must contrive to have the authority alone, and is excused by the effect when it is good; that he must not leave it hereditary; and that Romulus, who killed his brother and consented to his companion&#x27;s death, merits excuse, since he at once ordered a senate and kept only the command of the armies and the assembling of the senate. Guicciardini grants that one alone can order better than many, and that he deserves praise who reorders a disordered city by violence and fraud when there is no other way. But it is to be prayed that republics never need it: men&#x27;s spirits are fallacious, the honest colour can cover a tyranny, and the founder cannot lay down his authority until time has established the laws, so that power may turn a good intention to ill. It is a medicine for the hopeless case, dangerous and of ill example. Supremely laudable is the man who keeps the authority no longer than the ordering needs, as Lycurgus did; of whoever keeps it while he lives, although he governs rightly, he does not know how far he is to be praised, and such a man is not free of all reproof. As for Romulus and his senate, he says nothing yet: if he remembers well, Romulus was suspected to have been killed by the senate for arrogating too much authority, and the life must be considered well.</p>
+
+    <div class="pairing">
+      <div class="nm-side">
+        <div class="who">Niccolò Machiavelli</div>
+        <div class="what">Discorsi sopra la prima Deca di Tito Livio · written c. 1513–19, printed 1531</div>
+      </div>
+      <div class="arrow" aria-hidden="true">answered by</div>
+      <div class="fg-side">
+        <div class="who">Francesco Guicciardini</div>
+        <div class="what">Considerazioni intorno ai Discorsi del Machiavelli · written 1529–30, printed 1857</div>
+      </div>
+    </div>
+    <nav class="pairnav"><a href="1.8.html">← Pair 1.8</a><a href="../index.html">All 39 pairs</a><a href="1.12.html">Pair 1.12 →</a></nav>
+  </header>
+
+  <section class="work nm">
+    <div class="work-head">
+      <span class="tag">NM-DISC.1.9</span>
+      <h2>Capitolo IX</h2>
+    </div>
+    <p class="rubric">Come egli è necessario essere solo a volere ordinare una Repubblica di nuovo, o al tutto fuori degli antichi suoi ordini riformarla.</p>
+    <p class="rubric">How it is necessary to be alone in wishing to order a republic anew, or to reform it wholly outside its ancient orders.</p>
+
+    <div class="colheads"><div></div><div>Italian · 1824</div><div>English</div></div>
+      <div class="pair" id="NM-DISC.1.9.01">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.9.01">1.9.01</a></div>
+        <div class="col it" lang="it">E&#x27; parrà forse ad alcuno che io sia troppo trascorso dentro nella Istoria romana, non avendo fatto alcuna menzione ancora degli ordinatori di quella Repubblica, né di quelli ordini che o alla Religione o alla milizia riguardassero. E però non volendo tenere più sospesi gli animi di coloro, che sopra queste parti volessero intendere alcune cose, dico, come molti per avventura giudicheranno di cattivo esempio, che un fondatore d&#x27;un vivere civile, quale fu Romolo, abbia prima morto un suo fratello, dipoi consentito alla morte di Tito Tazio Sabino, eletto da lui compagno nel regno; giudicando per questo, che i suoi cittadini potessero con l&#x27;autorità del loro Principe, per ambizione e desiderio di comandare, offendere quelli che alla loro autorità si opponessero. La quale opinione sarebbe vera, quando non si considerasse che fine l&#x27;avesse indotto a fare tal omicidio.</div>
+        <div class="col en" lang="en">It will perhaps appear to someone that I have run on too far into the Roman history, not having yet made any mention of the orderers of that republic, nor of those orders that regarded either religion or the soldiery. And therefore, not wishing to hold any longer in suspense the spirits of those who might wish to understand some things about these parts, I say that many, it may be, will judge it of bad example that a founder of a civil living, such as Romulus was, should first have killed a brother of his, then consented to the death of Titus Tatius the Sabine, chosen by him as companion in the kingdom; judging from this that his citizens could, with the authority of their prince, out of ambition and desire to command, offend those who opposed their authority. Which opinion would be true, if one did not consider what end had induced him to do such a homicide.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> A turn in the <i lang="it">Discorsi</i>. Answering the reader who may think he has run on into Roman history without a word about Rome&#x27;s orderers or the orders of its religion and soldiery, Machiavelli comes back to the founder. He states the objection first: many, it may be, will judge it of bad example that Romulus, the founder of a civil living, killed his brother and consented to the death of his companion in the kingdom, judging that his citizens could then, with their prince&#x27;s authority, out of ambition and desire to command, offend whoever opposed them. The opinion would be true if one did not consider the end. The chapter is the consideration of that end.</p>
+<p><span class="lem">History.</span> Remus was killed at the founding (Livy 1.7, which gives two versions); Titus Tatius, king of the Sabines, shared the kingdom with Romulus by treaty after the war over the Sabine women (1.13), so that Machiavelli&#x27;s &quot;chosen by him&quot; is his own, and was killed at Lavinium; Romulus, Livy says, took it less hard than was right (1.14).</p>
+<p><span class="lem">Cross-reference.</span> Religion follows from I.11 (I.12 and I.14 in this edition); the soldiery comes much later in the work. Guicciardini takes up the end and turns it to the man: who can read the founder&#x27;s intention, and what power will do to it <a class="xref" href="#FG-CONS.1.9.01">Guicciardini .01</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.9.02">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.9.02">1.9.02</a></div>
+        <div class="col it" lang="it">E debbesi pigliare questo per una regola generale, che non mai, o di rado, occorre ch&#x27;alcuna Repubblica o Regno sia da principio ordinato bene, o al tutto di nuovo fuori degli ordini vecchi riformato, se non è ordinato da uno; anzi è necessario che un solo sia quello che dia il modo, e dalla cui mente dipenda qualunque simile ordinazione. Però un prudente ordinatore d&#x27;una Repubblica, e che abbia questo animo di volere giovare, non a sè, ma al bene comune, non alla sua propria successione, ma alla comune patria, debbe ingegnarsi d&#x27;avere l&#x27;autorità solo; né mai uno ingegno savio riprenderà alcuno d&#x27;alcuna azione straordinaria, che per ordinare un Regno, o costituire una Repubblica usasse. Conviene bene, che accusandolo il fatto, l&#x27;effetto lo scusi; e quando sia buono, come quello di Romolo, sempre lo scuserà; perché colui che è violento per guastare, non quello che è per racconciare, si debbe riprendere. Debbe bene intanto essere prudente e virtuoso, che quella autorità, che si ha presa, non la lasci ereditaria ad un altro: perché essendo gli uomini più pronti al male ch&#x27;al bene, potrebbe il suo successore usare ambiziosamente quello, che da lui virtuosamente fusse stato usato. Oltre di questo, se uno è atto ad ordinare, non è la cosa ordinata per durare molto, quando la rimanga sopra le spalle d&#x27;uno; ma sì bene quando la rimane alla cura di molti, e che a molti stia il mantenerla. Perché così come molti non sono atti ad ordinare una cosa, per non conoscere il bene di quella, causato dalle diverse opinioni che sono fra loro, così conosciuto che l&#x27;hanno, non si accordano a lasciarlo.</div>
+        <div class="col en" lang="en">And this must be taken for a general rule: that never, or seldom, does it occur that any republic or kingdom is ordered well from the beginning, or reformed wholly anew outside the old orders, if it is not ordered by one; indeed it is necessary that one alone be he who gives the way, and on whose mind any like ordering depends. Therefore a prudent orderer of a republic, and one who has this spirit, of wishing to benefit not himself but the common good, not his own succession but the common fatherland, must contrive to have the authority alone; nor will a wise mind ever reprove anyone for any extraordinary action that he might use to order a kingdom or constitute a republic. It is indeed fitting that, the deed accusing him, the effect excuse him; and when it is good, like that of Romulus, it will always excuse him; for he who is violent to spoil, not he who is so to mend, must be reproved. He must indeed be so far prudent and virtuous that he does not leave that authority which he has taken to himself hereditary to another: for, men being readier for ill than for good, his successor could use ambitiously what by him had been virtuously used. Besides this, if one is apt to order, the thing ordered is not for lasting long should it remain on the shoulders of one; but indeed when it remains in the care of many, and it rests with many to maintain it. For just as many are not apt to order a thing, through not knowing its good, caused by the diverse opinions that are among them, so, once they have known it, they do not agree to leave it.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The rule: a republic or kingdom is never, or seldom, ordered well from the beginning, or reformed wholly anew, unless by one, on whose mind the whole ordering depends. So a prudent orderer whose aim is the common good and the common fatherland, not himself or his succession, must contrive to have the authority alone, and no wise mind will reprove anyone for an extraordinary action used to order a kingdom or constitute a republic. It is fitting that, the deed accusing him, the effect excuse him, and a good effect always will: he who is violent to spoil, not he who is violent to mend, is to be reproved. Then the limits. He must not leave the authority hereditary, because men are readier for ill than good and a successor may use ambitiously what he used virtuously; and the thing ordered lasts only when it remains in the care of many, who cannot order a thing together, since their opinions divide them, but will not agree to give it up once they know its good.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini grants the thesis, in a comparative form: one alone can set better order than many. Machiavelli forbade bequeathing the authority and wanted the thing left to many; Guicciardini praises the founder who lays the authority down, and says he cannot do so at once <a class="xref" href="#FG-CONS.1.9.01">Guicciardini .01</a>. On the many as keepers of what they could not have ordered, compare I.58, still to come.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.9.03">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.9.03">1.9.03</a></div>
+        <div class="col it" lang="it">E che Romolo fusse di quelli che nella morte del fratello e del compagno meritasse scusa, e che quello che fece, fusse per il bene comune, e non per ambizione propria, lo dimostra lo avere quello subito ordinato un Senato, con il quale si consigliasse, e secondo l&#x27;opinione del quale si deliberasse. E chi considera bene l&#x27;autorità che Romolo si riserbò, vedrà non se ne essere riserbata alcun&#x27;altra che comandare agli eserciti quando si era deliberata la guerra, e di ragunare il Senato. Il che si vide poi, quando Roma divenne libera per la cacciata de&#x27; Tarquinj, dove da&#x27; Romani non fu innovato alcun ordine dello antico, se non che in luogo d&#x27;un Re perpetuo, fussero duoi Consoli annuali. Il che testifica tutti gli ordini primi di quella città essere stati più conformi ad uno vivere civile e libero, che ad uno assoluto e tirannico.</div>
+        <div class="col en" lang="en">And that Romulus was among those who in the death of his brother and of his companion merited excuse, and that what he did was for the common good and not for his own ambition, is demonstrated by that man&#x27;s having at once ordered a senate, with which he might take counsel, and according to whose opinion he might deliberate. And whoever considers well the authority that Romulus reserved to himself will see that none other was reserved but to command the armies when war had been deliberated, and to assemble the senate. Which was seen afterwards, when Rome became free through the expulsion of the Tarquins, where no order of the ancient one was innovated by the Romans, except that in place of a perpetual king there were two annual consuls. Which testifies that all the first orders of that city were more conformable to a civil and free living than to an absolute and tyrannical one.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> The proof that Romulus met the conditions. He at once ordered a senate, with which he might take counsel and according to whose opinion he might deliberate, and kept for himself only the command of the armies in a war already deliberated and the right to assemble the senate. The proof of the proof is that when the Tarquins were driven out nothing of the old order was innovated, except that two annual consuls took the place of a perpetual king: Rome&#x27;s first orders were more conformable to a civil and free living than to an absolute and tyrannical one.</p>
+<p><span class="lem">History.</span> The senate of a hundred <i lang="la">patres</i> is Livy 1.8; the expulsion of the Tarquins and the first consuls, traditionally 509 BC, Livy 1.60 and 2.1, where Livy says the change was in the length of the office rather than in its power.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini will not take this proof yet: the life of Romulus must first be read, and, if he remembers well, the senate was suspected of killing him for arrogating too much authority <a class="xref" href="#FG-CONS.1.9.01">Guicciardini .01</a>. In his reply to I.2 he had counted the annual consuls among Rome&#x27;s defects against Venice.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.9.04">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.9.04">1.9.04</a></div>
+        <div class="col it" lang="it">Potrebbesi dare in corroborazione delle cose sopraddette infiniti esempj, come Moisè, Licurgo, Solone, ed altri fondatori di Regni e di Repubbliche, i quali poterono, per aversi attribuito un&#x27;autorità, formare leggi a proposito del bene comune; ma gli voglio lasciare indietro, come cosa nota. Addurronne solamente uno, non sì celebre, ma da considerarsi per coloro che desiderassero essere di buone leggi ordinatori; il quale è, che desiderando Agide Re di Sparta ridurre gli Spartani tra quelli termini, che le leggi di Licurgo gli avessero rinchiusi, parendogli che per esserne in parte deviati, la sua città avesse perduto assai di quella antica virtù, e per conseguente di forze e d&#x27;imperio, fu ne&#x27; suoi primi principj ammazzato dagli Efori spartani, come uomo che volesse occupare la tirannide. Ma succedendo dopo lui nel Regno Cleomene, e nascendogli il medesimo desiderio, per li ricordi e scritti ch&#x27;egli aveva trovati di Agide, dove si vedeva quale era la mente e intenzione sua, conobbe non potere fare questo bene alla sua patria se non diventava solo di autorità; parendogli per l&#x27;ambizione degli uomini non potere fare utile a molti, contro alla voglia di pochi: e presa occasione conveniente, fece ammazzare tutti gli Efori, e qualunque altro gli potesse contrastare; dipoi rinnovò in tutto le leggi di Licurgo. La quale deliberazione era atta a fare resuscitare Sparta, e dare a Cleomene quella riputazione ch&#x27;ebbe Licurgo, se non fusse stato la potenza de&#x27; Macedoni, e la debolezza delle altre Repubbliche greche. Perché essendo dopo tale ordine assaltato dai Macedoni, e trovandosi per sé stesso inferiore di forze, e non avendo a chi rifuggire, fu vinto; e restò quel suo disegno, quantunque giusto e laudabile, imperfetto.</div>
+        <div class="col en" lang="en">Infinite examples could be given in corroboration of the things above-said, such as Moses, Lycurgus, Solon, and other founders of kingdoms and of republics, who were able, through having attributed an authority to themselves, to form laws to the purpose of the common good; but I wish to leave them behind, as a thing known. I will adduce only one, not so celebrated, but to be considered by those who might desire to be orderers of good laws; which is, that Agis, king of Sparta, desiring to bring the Spartans back within those bounds in which the laws of Lycurgus had enclosed them, it seeming to him that through their having in part deviated from them his city had lost much of that ancient <i lang="it">virtù</i>, and in consequence of forces and of empire, was killed in his first beginnings by the Spartan ephors, as a man who wished to occupy the tyranny. But Cleomenes succeeding him in the kingdom, and the same desire arising in him through the records and writings of Agis that he had found, in which could be seen what his mind and intention were, he came to know that he could not do this good to his fatherland unless he became alone in authority; it seeming to him that, because of the ambition of men, he could not do what was useful to many against the longing of few: and, a fitting occasion taken, he had all the ephors killed, and whoever else might oppose him; then he renewed the laws of Lycurgus wholly. Which deliberation was apt to make Sparta rise again, and to give Cleomenes that reputation which Lycurgus had, if it had not been for the power of the Macedonians and the weakness of the other Greek republics. For, being assailed after such an order by the Macedonians, and finding himself by himself inferior in forces, and not having anyone to whom to flee for refuge, he was conquered; and that design of his remained, however just and laudable, imperfect.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> Infinite examples, Moses, Lycurgus, Solon, are left aside as known; one less celebrated is given for those who would order good laws. Agis, wishing to bring Sparta back within Lycurgus&#x27; bounds, was killed by the ephors as a man who wished to occupy the tyranny. Cleomenes, finding Agis&#x27; records and writings and the same desire in himself, came to know that he could do this good to his fatherland only if he became alone in authority, it seeming to him that, because of men&#x27;s ambition, he could not do what was useful to many against the longing of few; he had the ephors and whoever else could oppose him killed, and renewed Lycurgus&#x27; laws. The deliberation was apt to revive Sparta and give Cleomenes the reputation Lycurgus had, but for the power of Macedon and the weakness of the other Greek republics; attacked, inferior in forces, without refuge, he was conquered, and the design, however just and laudable, remained imperfect. Read as a pair, the two kings are the demonstration: the reformer who did not make himself alone was killed, the one who did, by violence, nearly succeeded.</p>
+<p><span class="lem">History.</span> Agis IV (king c. 244–241 BC) proposed a cancellation of debts and a redistribution of land and was executed on the ephors&#x27; order. Cleomenes III (king c. 235–222) killed four of the five ephors (c. 227; Machiavelli&#x27;s &quot;all&quot; is his), abolished the ephorate, cancelled debts and redistributed land, and was defeated by Antigonus Doson of Macedon at Sellasia (c. 222), dying in exile in Egypt. Machiavelli&#x27;s source is probably Plutarch&#x27;s <i lang="it">Agis and Cleomenes</i>, perhaps in a Latin version. The 1554 edition has Cleomenes summon the ephors rather than kill them (NM-DISC-I9-D007).</p>
+<p><span class="lem">Cross-reference.</span> Lycurgus is the founder of I.2 and I.6; Moses returns from I.1, Solon from I.2. Guicciardini makes Lycurgus the founder who laid the authority down, and leaves open whether there is another <a class="xref" href="#FG-CONS.1.9.01">Guicciardini .01</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.9.05">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.9.05">1.9.05</a></div>
+        <div class="col it" lang="it">Considerato adunque tutte queste cose, conchiudo, come a ordinare una Repubblica è necessario essere solo, e Romolo per la morte di Remo e di Tazio meritare scusa, e non biasimo.</div>
+        <div class="col en" lang="en">All these things, then, considered, I conclude that to order a republic it is necessary to be alone, and that Romulus, for the death of Remus and of Tatius, merits excuse, and not blame.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The conclusion, in the rubric&#x27;s words: to order a republic one must be alone, and Romulus, for Remus and Tatius, merits excuse, and not blame. Excuse, and no more than excuse: the verdict claims what the argument proved.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini answers <i lang="it">merita laude</i>, praise, for the man who reorders a disordered city by violence when there is no other way, and then grades the founders and suspends judgment on the one who keeps power for life <a class="xref" href="#FG-CONS.1.9.01">Guicciardini .01</a>. I.10 turns from the founders of republics and kingdoms to the founders of tyrannies.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from the 1824 edition (<span class="sig">WIT-NM-DISC-1824-IA</span>), page-image-backed, which governs. Collated against the 1554 Giglio printing, Venice (<span class="sig">WIT-NM-DISC-1554-IA</span>), which is comparison evidence only.</p>
+<p>Paragraph divisions are editorial. The witness prints the chapter as one unbroken block.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem">di nuovo, o al tutto fuori degli antichi suoi ordini riformarla</span> — 1824. The 1554 witness reads <i lang="it">di nuouo al tutto fuori delli antichi suoi ordini riformata</i>. Giglio has no <i lang="it">o</i>, and a participle (<i lang="it">riformata</i>) for the infinitive: one founder must order a republic anew, wholly reformed outside its old orders, rather than order it or reform it. Canestrini&#x27;s rubric over Guicciardini&#x27;s reply has the <i lang="it">o</i>.</p>
+<p><span class="lem">che un fondatore d&#x27;un vivere civile, quale fu Romolo, abbia prima morto un suo fratello</span> — 1824. The 1554 witness reads <i lang="it">che uno formatore di un uiuere ciuile, quale fu Romolo; habbia prima leuato di uita un suo fratello</i>. A former rather than a founder of a civil way of life, and a periphrasis (<i lang="it">taken from life</i>) for the plain <i lang="it">morto</i>, killed.</p>
+<p><span class="lem">debbe ingegnarsi d&#x27;avere l&#x27;autorità solo</span> — 1824. The 1554 witness reads <i lang="it">debbe ingegnarsi di hauere l&#x27;auttorita solamente</i>. The 1824 <i lang="it">solo</i> can be read with the orderer (that he alone have the authority) or with the authority (only it); Giglio&#x27;s adverb <i lang="it">solamente</i> takes the second. The English keeps the 1824 ambiguity as far as it can, and the note gives Giglio.</p>
+<p><span class="lem">essendo gli uomini più pronti al male ch&#x27;al bene</span> — 1824. The 1554 witness reads <i lang="it">essendo gli huomini piu chini al male, che al bene</i>. Inclined (bent) towards ill, against readier for it.</p>
+<p><span class="lem">e di ragunare il Senato ... non fu innovato alcun ordine dello antico ... Il che testifica</span> — 1824. The 1554 witness reads <i lang="it">et di ragionare il Senato ... non fu introdotto alcun nuouo ordine ... Il che approua</i>. <i lang="it">ragionare</i> (to discourse with the senate) for <i lang="it">ragunare</i> (to assemble it), probably a misprint; no new order introduced, against nothing of the old order innovated; <i lang="it">approves</i> for <i lang="it">testifies</i>.</p>
+<p><span class="lem">che desiderando Agide ... per esserne in parte deviati</span> — 1824. The 1554 witness reads <i lang="it">Che considerando Agide ... per esserne in parte usciti fuori</i>. Agis considering (rather than desiring) to bring the Spartans back; gone out of the bounds rather than deviated from them.</p>
+<p><span class="lem">fece ammazzare tutti gli Efori</span> — 1824. The 1554 witness reads <i lang="it">fece uenire tutti gli Ephori</i>. Giglio has Cleomenes summon the ephors, not kill them. The killing is what makes Cleomenes the parallel to Romulus that the chapter draws; the 1824 reading governs and Giglio&#x27;s goes in the note.</p>
+<p><span class="lem">Considerato adunque tutte queste cose</span> — 1824. The 1554 witness reads <i lang="it">Considerate adunque tutte queste cose</i>. The participle agrees with <i lang="it">cose</i> in Giglio and stands invariable in the 1824 text. Same sense.</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem"><i lang="it">E&#x27; parrà</i>.</span> &quot;It will ... appear&quot;: <i lang="it">E&#x27;</i> is the expletive pronoun (<i lang="it">egli</i>), not the conjunction.</p>
+<p><span class="lem"><i lang="it">troppo trascorso</i>.</span> &quot;Run on too far&quot;: <i lang="it">trascorrere</i>, to run past, the same <i lang="la">currere</i> stem as <i lang="it">discorrere</i>, <i lang="it">occorrere</i>, <i lang="it">concorrere</i> (D01). The <i lang="it">Discorsi</i> have been running ahead through Roman history; the English keeps the running.</p>
+<p><span class="lem"><i lang="it">ordinatori</i>, <i lang="it">ordini</i>, <i lang="it">ordinare</i>, <i lang="it">ordinazione</i>.</span> &quot;Orderers&quot;, &quot;orders&quot;, &quot;order&quot;, &quot;ordering&quot; (glossary): one family, held through the chapter. The founder is an orderer first.</p>
+<p><span class="lem"><i lang="it">alla milizia</i>.</span> &quot;The soldiery&quot; (D60).</p>
+<p><span class="lem"><i lang="it">gli animi</i>.</span> &quot;The spirits&quot; (glossary, <i lang="it">animo</i>).</p>
+<p><span class="lem"><i lang="it">per avventura</i>.</span> &quot;It may be&quot;: kept apart from <i lang="it">forse</i>, &quot;perhaps&quot;, in the first line.</p>
+<p><span class="lem"><i lang="it">di cattivo esempio</i>.</span> &quot;Of bad example&quot; (D03, <i lang="it">cattivo</i> bad). Guicciardini answers with <i lang="it">di malo esemplo</i>, &quot;of ill example&quot;.</p>
+<p><span class="lem"><i lang="it">un fondatore d&#x27;un vivere civile</i>.</span> &quot;A founder of a civil living&quot;: <i lang="it">fondatore</i> is the word, and &quot;founder&quot; is kept for it alone; <i lang="it">edificatore</i> stays &quot;builder&quot; (glossary). <i lang="it">Vivere civile</i>, as <i lang="it">vivere libero</i>, <i lang="it">vivere politico</i>: a way of living under laws. The 1554 edition reads <i lang="it">uno formatore</i> (NM-DISC-I9-D002).</p>
+<p><span class="lem"><i lang="it">abbia prima morto un suo fratello</i>.</span> &quot;Should first have killed a brother of his&quot;: <i lang="it">morto</i> transitive, the plain word. Remus, named only in the last sentence. The 1554 edition has the periphrasis <i lang="it">leuato di uita</i>, &quot;taken from life&quot; (NM-DISC-I9-D002). <i lang="it">Morto</i> and <i lang="it">ammazzare</i> (.04) are both &quot;killed&quot;: recorded collapse (D169).</p>
+<p><span class="lem"><i lang="it">Tito Tazio Sabino</i>.</span> Titus Tatius, king of the Sabines, who after the war over the Sabine women shared the kingdom with Romulus and was killed at Lavinium; Livy (1.14) says Romulus took it less hard than was right. <i lang="it">Eletto</i> is &quot;chosen&quot; (glossary, <i lang="it">eleggere</i>).</p>
+<p><span class="lem"><i lang="it">con l&#x27;autorità del loro Principe</i>.</span> &quot;With the authority of their prince&quot;: <i lang="it">Principe</i>, &quot;prince&quot; (glossary).</p>
+<p><span class="lem"><i lang="it">offendere</i>.</span> &quot;Offend&quot;: injure, as in I.7.</p>
+<p><span class="lem"><i lang="it">che fine l&#x27;avesse indotto</i>.</span> &quot;What end had induced him&quot;: the chapter&#x27;s test is the end, and <i lang="it">l&#x27;effetto</i> in .02.</p>
+<p><span class="lem"><i lang="it">non mai, o di rado</i>.</span> &quot;Never, or seldom&quot; (D97).</p>
+<p><span class="lem"><i lang="it">occorre</i>.</span> &quot;Does it occur&quot; (D01).</p>
+<p><span class="lem"><i lang="it">regola generale</i>.</span> &quot;General rule&quot;. Canestrini quotes this sentence in a note over Guicciardini&#x27;s reply.</p>
+<p><span class="lem"><i lang="it">anzi è necessario</i>.</span> &quot;Indeed it is necessary&quot;: the clause before is formally negative (<i lang="it">non mai, o di rado ... se non</i>), but <i lang="it">anzi</i> raises &quot;seldom&quot; to &quot;necessary&quot;; it does not reverse (D135) or correct into a contrary (D90). D147&#x27;s &quot;indeed&quot;, extended (D168).</p>
+<p><span class="lem"><i lang="it">che dia il modo</i>.</span> &quot;Who gives the way&quot; (glossary, <i lang="it">modo</i>).</p>
+<p><span class="lem"><i lang="it">Però</i>.</span> &quot;Therefore&quot; (D22).</p>
+<p><span class="lem"><i lang="it">giovare</i>.</span> &quot;Benefit&quot;, as I.8&#x27;s <i lang="it">giovano</i>.</p>
+<p><span class="lem"><i lang="it">debbe ingegnarsi d&#x27;avere l&#x27;autorità solo</i>.</span> &quot;Must contrive to have the authority alone&quot;: <i lang="it">solo</i> can go with the orderer (that he alone have it) or with the authority (only it), and the English keeps both open. <i lang="it">Debbe</i> is &quot;must&quot; (D120). The 1554 edition reads <i lang="it">solamente</i>, &quot;only&quot;, and so takes the second (NM-DISC-I9-D003). <i lang="it">Ingegnarsi</i> and <i lang="it">ingegno</i>, two lines apart, share a root English cannot keep.</p>
+<p><span class="lem"><i lang="it">uno ingegno savio</i>.</span> &quot;A wise mind&quot;: <i lang="it">ingegno</i>, wit, a mind of judgment.</p>
+<p><span class="lem"><i lang="it">riprenderà</i>, <i lang="it">si debbe riprendere</i>.</span> &quot;Will reprove&quot;, &quot;must be reproved&quot;. Guicciardini&#x27;s noun is <i lang="it">reprensione</i>, &quot;reproof&quot;.</p>
+<p><span class="lem"><i lang="it">straordinaria</i>.</span> &quot;Extraordinary&quot;: outside the orders (glossary, <i lang="it">straordinario</i>).</p>
+<p><span class="lem"><i lang="it">costituire una Repubblica</i>.</span> &quot;Constitute a republic&quot;. Guicciardini&#x27;s <i lang="it">constituite le leggi</i> and <i lang="it">constituito uno senato</i> are the same verb.</p>
+<p><span class="lem"><i lang="it">Conviene bene</i>.</span> &quot;It is indeed fitting&quot; (D85).</p>
+<p><span class="lem"><i lang="it">accusandolo il fatto, l&#x27;effetto lo scusi</i>.</span> &quot;The deed accusing him, the effect excuse him&quot;: <i lang="it">accusare</i>, the verb of I.7 and I.8. The deed and the effect are the chapter&#x27;s two terms; <i lang="it">scusa</i>, &quot;excuse&quot;, returns in .03 and in the last line.</p>
+<p><span class="lem"><i lang="it">violento per guastare ... per racconciare</i>.</span> &quot;Violent to spoil ... to mend&quot;. Guicciardini takes up <i lang="it">racconciare</i>: republics should not need to be &quot;mended&quot; (<i lang="it">racconcie</i>) by such a path.</p>
+<p><span class="lem"><i lang="it">Debbe bene intanto essere prudente e virtuoso, che</i>.</span> &quot;He must indeed be so far prudent and virtuous that&quot;: <i lang="it">intanto</i> read as <i lang="it">in tanto</i>, the correlative of a consecutive <i lang="it">che</i>, degree and consequence, not time and purpose. <i lang="it">Si ha presa</i>, &quot;has taken to himself&quot;. The left-dislocated <i lang="it">quella autorità ... la</i> is exposition, and goes into English order (D19). <i lang="it">Virtuoso</i> is the adjective of <i lang="it">virtù</i> (glossary).</p>
+<p><span class="lem"><i lang="it">usare ambiziosamente quello, che da lui virtuosamente fusse stato usato</i>.</span> &quot;Use ambitiously what by him had been virtuously used&quot;: the chiasmus is kept.</p>
+<p><span class="lem"><i lang="it">più pronti al male ch&#x27;al bene</i>.</span> &quot;Readier for ill than for good&quot; (glossary, <i lang="it">male</i>). The 1554 edition reads <i lang="it">chini</i>, &quot;inclined&quot; (NM-DISC-I9-D004).</p>
+<p><span class="lem"><i lang="it">non è la cosa ordinata per durare molto</i>.</span> &quot;The thing ordered is not for lasting long&quot;: <i lang="it">essere per</i> of fitness (D116). <i lang="it">Quando la rimanga ... quando la rimane</i>: subjunctive for the case refused, indicative for the case granted; &quot;should it remain ... when it remains&quot;.</p>
+<p><span class="lem"><i lang="it">stia il mantenerla</i>.</span> &quot;It rests with many to maintain it&quot; (glossary, <i lang="it">mantenere</i>).</p>
+<p><span class="lem"><i lang="it">causato dalle diverse opinioni</i>.</span> &quot;Caused by the diverse opinions&quot;: <i lang="it">causato</i> goes, by sense, with the not-knowing rather than with <i lang="it">il bene</i> (both are masculine), and the English is as open as the Italian.</p>
+<p><span class="lem"><i lang="it">lo dimostra lo avere quello subito ordinato un Senato</i>.</span> &quot;Is demonstrated by that man&#x27;s having at once ordered a senate&quot;: the long subject clause comes first and the verb late, and the passive keeps the demonstration last. <i lang="it">Quello</i> is Romulus (as D165).</p>
+<p><span class="lem"><i lang="it">si consigliasse</i>, <i lang="it">si deliberasse</i>.</span> &quot;Might take counsel&quot;, &quot;might deliberate&quot;: the first is reflexive, and the second is taken with it, Romulus deliberating; it could also be impersonal, &quot;it might be deliberated&quot;.</p>
+<p><span class="lem"><i lang="it">ragunare il Senato</i>.</span> &quot;Assemble the senate&quot;. The 1554 edition reads <i lang="it">ragionare</i>, which would be to reason with it (NM-DISC-I9-D005).</p>
+<p><span class="lem"><i lang="it">la cacciata de&#x27; Tarquinj</i>.</span> &quot;The expulsion of the Tarquins&quot; (names.md), traditionally 509 BC. <i lang="it">Il che ... Il che</i>: &quot;Which ... Which&quot;, the same chaining relative twice.</p>
+<p><span class="lem"><i lang="it">non fu innovato alcun ordine dello antico</i>.</span> &quot;No order of the ancient one was innovated&quot;: <i lang="it">innovare</i> transitive, as in older English. The 1554 edition reads <i lang="it">non fu introdotto alcun nuouo ordine</i>, &quot;no new order was introduced&quot; (NM-DISC-I9-D005).</p>
+<p><span class="lem"><i lang="it">testifica</i>.</span> &quot;Testifies&quot;. The 1554 edition reads <i lang="it">approua</i>.</p>
+<p><span class="lem"><i lang="it">conformi ad uno vivere civile e libero</i>.</span> &quot;Conformable to a civil and free living&quot;.</p>
+<p><span class="lem"><i lang="it">corroborazione</i>.</span> &quot;Corroboration&quot;, the cognate. I.8&#x27;s <i lang="it">riscontro</i> has the same English word (D160); recorded collapse (D170).</p>
+<p><span class="lem"><i lang="it">sopraddette</i>.</span> &quot;Above-said&quot; (D140).</p>
+<p><span class="lem"><i lang="it">Moisè, Licurgo, Solone</i>.</span> Moses, Lycurgus, Solon (names.md), the founders of I.1 and I.2.</p>
+<p><span class="lem"><i lang="it">a proposito del bene comune</i>.</span> &quot;To the purpose of the common good&quot;.</p>
+<p><span class="lem"><i lang="it">desiderando Agide Re di Sparta</i>.</span> &quot;Agis, king of Sparta, desiring&quot;: Agis IV, who tried in the 240s BC to restore the Lycurgan order (cancellation of debts, redistribution of land) and was put to death by the ephors in 241. Machiavelli&#x27;s source is Plutarch&#x27;s <i lang="it">Agis and Cleomenes</i>. The 1554 edition reads <i lang="it">considerando</i>, &quot;considering&quot; (NM-DISC-I9-D006).</p>
+<p><span class="lem"><i lang="it">ridurre ... tra quelli termini</i>.</span> &quot;Bring back within those bounds&quot;: <i lang="it">ridurre</i>, to lead back.</p>
+<p><span class="lem"><i lang="it">parendogli che per esserne in parte deviati</i>.</span> &quot;It seeming to him that through their having in part deviated from them&quot;: <i lang="it">deviati</i> is plural, the Spartans. <i lang="it">Parendogli</i> is &quot;it seeming to him&quot; both times, of Agis and of Cleomenes. The 1554 edition reads <i lang="it">usciti fuori</i>, &quot;gone out&quot;, for <i lang="it">deviati</i> (NM-DISC-I9-D006).</p>
+<p><span class="lem"><i lang="it">quella antica virtù</i>.</span> &quot;That ancient <i lang="it">virtù</i>&quot; (D16).</p>
+<p><span class="lem"><i lang="it">per conseguente</i>.</span> &quot;In consequence&quot;.</p>
+<p><span class="lem"><i lang="it">di forze e d&#x27;imperio</i>.</span> &quot;Of forces and of empire&quot;: <i lang="it">imperio</i> as dominion over others (D124).</p>
+<p><span class="lem"><i lang="it">ne&#x27; suoi primi principj</i>.</span> &quot;In his first beginnings&quot;: at the outset of the attempt (glossary, <i lang="it">principio</i>).</p>
+<p><span class="lem"><i lang="it">occupare la tirannide</i>.</span> &quot;Occupy the tyranny&quot; (glossary, <i lang="it">occupare</i>).</p>
+<p><span class="lem"><i lang="it">Cleomene</i>.</span> Cleomenes III, king from about 235 BC. In 227 he had four of the five ephors and some others killed, abolished the ephorate, cancelled debts and redistributed land; defeated by Antigonus Doson of Macedon at Sellasia in 222, he fled to Egypt and died there. Plutarch says he learnt of Agis&#x27; plans from Agis&#x27; widow, whom he married; the &quot;records and writings&quot; are Machiavelli&#x27;s.</p>
+<p><span class="lem"><i lang="it">per li ricordi e scritti</i>.</span> &quot;Through the records and writings&quot;: <i lang="it">ricordi</i>, memoranda.</p>
+<p><span class="lem"><i lang="it">la mente e intenzione sua</i>.</span> &quot;His mind and intention&quot;.</p>
+<p><span class="lem"><i lang="it">conobbe</i>.</span> &quot;Came to know&quot;: the passato remoto of an event; <i lang="it">conosciuto che l&#x27;hanno</i> (.02) is the same verb.</p>
+<p><span class="lem"><i lang="it">la voglia di pochi</i>.</span> &quot;The longing of few&quot; (D117).</p>
+<p><span class="lem"><i lang="it">presa occasione conveniente</i>.</span> &quot;A fitting occasion taken&quot;.</p>
+<p><span class="lem"><i lang="it">fece ammazzare tutti gli Efori</i>.</span> &quot;He had all the ephors killed&quot;. The 1554 edition reads <i lang="it">fece uenire</i>, &quot;had [them] come&quot;, summoned (NM-DISC-I9-D007); the killing is what makes Cleomenes the parallel to Romulus.</p>
+<p><span class="lem"><i lang="it">contrastare</i>.</span> &quot;Oppose&quot;.</p>
+<p><span class="lem"><i lang="it">resuscitare Sparta</i>.</span> &quot;Make Sparta rise again&quot;.</p>
+<p><span class="lem"><i lang="it">se non fusse stato la potenza de&#x27; Macedoni</i>.</span> &quot;If it had not been for the power of the Macedonians&quot;: <i lang="it">potenza</i>, &quot;power&quot; (D78).</p>
+<p><span class="lem"><i lang="it">dopo tale ordine</i>.</span> &quot;After such an order&quot;: after the new ordering.</p>
+<p><span class="lem"><i lang="it">a chi rifuggire</i>.</span> &quot;Anyone with whom to take refuge&quot;.</p>
+<p><span class="lem"><i lang="it">restò quel suo disegno, quantunque giusto e laudabile, imperfetto</i>.</span> &quot;That design of his remained, however just and laudable, imperfect&quot;: the last word is the sting, and the English keeps it last (D18). <i lang="it">Imperfetto</i> is unfinished, the older sense.</p>
+<p><span class="lem"><i lang="it">Considerato adunque tutte queste cose</i>.</span> &quot;All these things, then, considered&quot;: <i lang="it">adunque</i> &quot;then&quot; (D74). The participle stands invariable; the 1554 edition has <i lang="it">Considerate</i> (NM-DISC-I9-D008).</p>
+<p><span class="lem"><i lang="it">Remo e ... Tazio</i>.</span> Remus and Tatius: the brother and the companion of .01, named at last.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work fg">
+    <div class="work-head">
+      <span class="tag">FG-CONS.1.9</span>
+      <h2>Considerazione sul capitolo IX</h2>
+    </div>
+    <p class="rubric">Come egli è necessario esser solo a volere ordinare una repubblica di nuovo, o al tutto fuori delli antichi suoi ordini riformarla</p>
+    <p class="rubric">How it is necessary to be alone in wishing to order a republic anew, or to reform it wholly outside its ancient orders
+      <span class="rubric-note">Canestrini sets Machiavelli&#x27;s chapter title over the reply, with lower-case <i lang="it">repubblica</i>, <i lang="it">esser</i> for <i lang="it">essere</i> and <i lang="it">delli</i> for <i lang="it">degli</i>, and without a full stop.</span></p>
+
+    <div class="colheads"><div></div><div>Italian · 1857</div><div>English</div></div>
+      <div class="pair" id="FG-CONS.1.9.01">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.9.01">1.9.01</a></div>
+        <div class="col it" lang="it">Non è dubio che uno solo può porre migliore ordine alle cose che non fanno molti, e che uno in una città disordinata merita laude, se, non potendo riordinarla altrimenti, lo fa con la violenza e con la fraude, e modi estraordinarii. Ma è da pregare Dio che le republiche non abbino necessità di essere racconcie per simile via, perché oltre che gli animi degli uomini sono fallaci, e può uno sotto questo onesto colore occupare la tirannide, ci è anche periculo che la voluntà da principio buona non diventi cattiva, perché chi fa questo, non può subito, constituite le leggi, deporre la autorità, perché, essendo introdotte per violenza, sarebbono incontinenti annichilate, e però bisogna continui tanto nella autorità che il progresso del tempo e la esperienza le stabilisca, e in questo spazio può accadere che la dolcezza della potenza e la licenza del principato gli faccia mutare in mala la intenzione che da principio fussi stata buona. <span class="supplied">[È]</span> adunque questo uno modo di medicina desiderabile quando non vi sia altra speranza di salute, ma pericoloso e di malo esemplo, ed è laudabile sommamente colui che non ritiene in sé questa autorità se non quanto è necessario a stabilire le cose ordinate, come fece Licurgo, e se alcuno altro si può addurre in esemplo. Ma chi ritiene la potenza mentre vive, se bene governa rettamente, e lascia doppo sé forma buona di reggimento, non so quanto sia da essere laudato, perché non si può interpretare se non che sia mosso per ambizione propria, e se bene sia utile alla città quello che ha fatto, e non sia detestabile, come chi usa male la autorità occupata, pure non manca anche lui di ogni reprensione. A quello che dice il Discorso che Romulo spettò al bene comune e non alla propria ambizione, avendo constituito uno senato, non dico ora altro, perché bisogna prima bene leggere e considerare la vita di Romulo, il quale, se bene mi ricordo, si dubitò non fussi ammazzato dal senato, per arrogarsi troppa autorità: bisogna considerarla bene</div>
+        <div class="col en" lang="en">There is no doubt that one alone can set better order to things than many do, and that one in a disordered city merits praise if, not being able to reorder it otherwise, he does it with violence and with fraud, and extraordinary ways. But it is to be prayed to God that republics have no necessity of being mended by a like path, for besides that the spirits of men are fallacious, and one can under this honest colour occupy the tyranny, there is also danger that the will, good from the beginning, become bad, for whoever does this cannot at once, the laws constituted, lay down the authority, for, being introduced by violence, they would forthwith be annihilated, and therefore it is needful he continue so long in the authority that the progress of time and experience establish them, and in this space it can happen that the sweetness of power and the licence of the principate make him change into ill the intention that from the beginning had been good. This is, then, a way of medicine desirable when there is no other hope of health, but dangerous and of ill example, and he is supremely laudable who does not retain this authority in himself except so far as is necessary to establish the things ordered, as Lycurgus did, and if any other can be adduced for an example. But whoever retains the power while he lives, although he governs rightly, and leaves after him a good form of government, I do not know how far he is to be praised, for it cannot be interpreted except that he is moved by his own ambition, and although what he has done is useful to the city, and he is not detestable, as is he who uses ill the authority occupied, yet also he is not free of all reproof. As to what the Discourse says, that Romulus looked to the common good and not to his own ambition, having constituted a senate, I say nothing else now, for it is needful first to read well and consider the life of Romulus, who, if I remember well, it was suspected had been killed by the senate, for arrogating to himself too much authority: it is needful to consider it well</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> He grants the thesis without reserve — there is no doubt that one alone can set better order than many — and goes beyond Machiavelli&#x27;s excuse to praise: the man who reorders a disordered city by violence, fraud and extraordinary ways, when he cannot otherwise, merits it. Then the turn. Pray that republics never need it. Men&#x27;s spirits are fallacious, and the honest colour can cover a tyranny; and even a good will is in danger, because the founder cannot lay down his authority as soon as the laws are constituted, since laws brought in by violence would forthwith be annihilated; he must hold it until time and experience establish them, and in that space the sweetness of power and the licence of the principate can turn his intention to ill. So it is a way of medicine desirable when there is no other hope of health, but dangerous and of ill example. Two degrees of founder follow. Supremely laudable is the one who keeps the authority no longer than the ordering needs, as Lycurgus did, and any other, if one can be adduced; of the one who keeps it for life, although he governs rightly and leaves a good form of government, he does not know how far he is to be praised, since his motive cannot be interpreted except as ambition, and though what he has done is useful and he is not detestable, as is he who uses ill the authority occupied, he is not free of all reproof. On Romulus and the senate he says nothing yet: the life must first be read, and, if he remembers well, it was suspected that the senate killed Romulus for arrogating too much authority. He ends without a stop.</p>
+<p><span class="lem">History.</span> Lycurgus, in Plutarch&#x27;s <i lang="it">Life</i>, had the Spartans swear to keep his laws until he returned, and then left Sparta for good, so that the oath would bind them. The tradition that the senators killed Romulus is in Livy (1.16), who reports it as a whisper against the official account of his apotheosis, and in Plutarch (<i lang="it">Romulus</i> 26–27) and Dionysius of Halicarnassus (2.56), who give the motive Guicciardini gives: Romulus had grown too absolute. Canestrini&#x27;s note, which is his and is not carried, says that the observation on Romulus&#x27; life alludes to Machiavelli&#x27;s verdict that Romulus merits excuse and not blame.</p>
+<p><span class="lem">Cross-reference.</span> <i lang="it">Uno solo</i> is Machiavelli&#x27;s <i lang="it">un solo</i> <a class="xref" href="#NM-DISC.1.9.02">Machiavelli .02</a>, though the grant is comparative where Machiavelli&#x27;s rule is necessary; <i lang="it">merita laude</i> answers <i lang="it">meritare scusa, e non biasimo</i> <a class="xref" href="#NM-DISC.1.9.05">Machiavelli .05</a>; <i lang="it">racconcie</i> is Machiavelli&#x27;s <i lang="it">racconciare</i>, the violence that mends <a class="xref" href="#NM-DISC.1.9.02">Machiavelli .02</a>; <i lang="it">di malo esemplo</i> answers the <i lang="it">cattivo esempio</i> the many judge <a class="xref" href="#NM-DISC.1.9.01">Machiavelli .01</a>; <i lang="it">occupare la tirannide</i> is what the ephors feared of Agis <a class="xref" href="#NM-DISC.1.9.04">Machiavelli .04</a>. Machiavelli forbade bequeathing the authority and wanted the thing left to many; Guicciardini praises the founder who lays it down, adds that he cannot do so at once, and makes Lycurgus, one of Machiavelli&#x27;s &quot;infinite examples&quot; <a class="xref" href="#NM-DISC.1.9.04">Machiavelli .04</a>, the model. Machiavelli&#x27;s proof is the senate <a class="xref" href="#NM-DISC.1.9.03">Machiavelli .03</a>; Guicciardini&#x27;s hedged memory makes the senate the suspect. The medicine is the figure of his reply to I.4, where the tribunes were a good remedy for a sickness that need not have been.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from Canestrini 1857, <i>Opere inedite</i> vol. 1, pp. 1–65 (<span class="sig">WIT-FG-CONS-1857-CANESTRINI</span>) — the <i>editio princeps</i>, which governs. Collated against Palmarocchi 1933 (<span class="sig">WIT-FG-CONS-1933-PALMAROCCHI</span>): page images and the Wikisource transcription consulted as collation evidence, not reproduced (LICENSE §5).</p>
+<p><span class="lem">e modi estraordinarii Ma è da pregare</span> → <span class="lem">e modi estraordinarii. Ma è da pregare</span> (FG-CONS.1.9.01). No stop in the impression; a capital follows; the 1933 edition prints it. D67.</p>
+<p><span class="lem">fussi stata buona E adunque</span> → <span class="lem">fussi stata buona. [È] adunque</span> (FG-CONS.1.9.01). As C001. D67.</p>
+<p><span class="lem">addurre in esemplo Ma chi ritiene</span> → <span class="lem">addurre in esemplo. Ma chi ritiene</span> (FG-CONS.1.9.01). As C001. D67.</p>
+<p><span class="lem">di ogni reprensione A quello</span> → <span class="lem">di ogni reprensione. A quello</span> (FG-CONS.1.9.01). As C001. D67.</p>
+<p><span class="lem">troppa autorità bisogna considerarla</span> → <span class="lem">troppa autorità: bisogna considerarla</span> (FG-CONS.1.9.01). A wide gap and no mark in the impression, both readers; lower case follows; the 1933 edition prints a colon. D67.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem"></span> — [È] adunque questo uno modo di medicina. The 1857 witness reads <i lang="it">E adunque questo uno modo di medicina</i>. The 1933 witness reads <i lang="it">È adunche questo uno modo di medicina</i>. Canestrini prints the verb without its accent, and as printed the period has no finite verb. Emended as his I.3, I.7 and I.8 were (D114, D144, D157, D167).</p>
+<p><span class="lem">lo fa con la violenza e con la fraude, e modi estraordinarii</span> — 1857. The 1933 witness reads <i lang="it">lo fa con la violenzia o con la fraude e modi estraordinari</i>. Violence and fraud together, against violence or fraud. Both readers read Canestrini&#x27;s <i lang="it">e</i> without doubt; it construes, so D38. The English follows Canestrini.</p>
+<p><span class="lem">constituite le leggi</span> — 1857. The 1933 witness reads <i lang="it">constituite le legge</i>. Plural noun in both; Palmarocchi keeps the old plural in -e. Same sense.</p>
+<p><span class="lem">che Romulo spettò ... la vita di Romulo</span> — 1857. The 1933 witness reads <i lang="it">che Romolo spettò ... la vita di Romolo</i>. Guicciardini&#x27;s Latin form of the name in Canestrini, against Machiavelli&#x27;s Romolo in the 1933 edition. Romulus in English either way.</p>
+<p><span class="lem">o al tutto fuori delli antichi suoi ordini riformarla</span> — 1857. The 1933 witness reads <i lang="it">[... o al tutto fuor degli antichi suoi ordini riformarla.]</i>. Each editor sets his own form of Machiavelli&#x27;s rubric; the 1933 one is bracketed as editorial.</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem">The paragraph.</span> Canestrini prints one, and it is kept.</p>
+<p><span class="lem"><i lang="it">Non è dubio che uno solo</i>.</span> &quot;There is no doubt that one alone&quot;: his first words are Machiavelli&#x27;s thesis granted, in Machiavelli&#x27;s <i lang="it">un solo</i> (.02). Unqualified assent, as <i lang="it">[È] verissimo</i> in his I.7.</p>
+<p><span class="lem"><i lang="it">porre migliore ordine alle cose</i>.</span> &quot;Set better order to things&quot;: <i lang="it">porre</i>, &quot;set&quot; (D115).</p>
+<p><span class="lem"><i lang="it">merita laude</i>.</span> &quot;Merits praise&quot; (glossary, <i lang="it">laude</i>). <i lang="it">Merita</i> answers Machiavelli&#x27;s last line: Romulus <i lang="it">meritare scusa, e non biasimo</i>, &quot;merits excuse, and not blame&quot;. Guicciardini goes further than excuse, and then qualifies it.</p>
+<p><span class="lem"><i lang="it">con la violenza e con la fraude, e modi estraordinarii</i>.</span> &quot;With violence and with fraud, and extraordinary ways&quot;: Machiavelli&#x27;s <i lang="it">violento</i> and <i lang="it">azione straordinaria</i> (.02), with fraud added, which Machiavelli does not name. The 1933 edition reads <i lang="it">la violenzia o con la fraude</i>, violence or fraud (FG-CONS-I9-D002); both readers read Canestrini&#x27;s <i lang="it">e</i>. Canestrini prints a mark after <i lang="it">fraude</i> that neither reader could weigh; it is kept as a comma (D110), and the English keeps the afterthought.</p>
+<p><span class="lem"><i lang="it">è da pregare Dio</i>.</span> &quot;It is to be prayed to God&quot;.</p>
+<p><span class="lem"><i lang="it">necessità di essere racconcie per simile via</i>.</span> &quot;Necessity of being mended by a like path&quot;: <i lang="it">racconciare</i> is Machiavelli&#x27;s verb (<i lang="it">per racconciare</i>, &quot;to mend&quot;, .02). <i lang="it">Via</i> &quot;path&quot; (D131).</p>
+<p><span class="lem"><i lang="it">fallaci</i>.</span> &quot;Fallacious&quot;: deceptive, not to be relied on.</p>
+<p><span class="lem"><i lang="it">sotto questo onesto colore</i>.</span> &quot;Under this honest colour&quot;: a pretext of honour. <i lang="it">Onesto</i>, the older sense, honourable.</p>
+<p><span class="lem"><i lang="it">occupare la tirannide</i>.</span> &quot;Occupy the tyranny&quot;: Machiavelli&#x27;s phrase for what the ephors feared of Agis (.04).</p>
+<p><span class="lem"><i lang="it">periculo</i>.</span> &quot;Danger&quot; (glossary).</p>
+<p><span class="lem"><i lang="it">la voluntà da principio buona non diventi cattiva</i>.</span> &quot;The will, good at the beginning, become bad&quot;: <i lang="it">voluntà</i> &quot;will&quot; (glossary), <i lang="it">cattiva</i> &quot;bad&quot; (D03). <i lang="it">Non</i> after <i lang="it">periculo che</i>, an expression of fearing, not a negative. <i lang="it">Da principio</i>, &quot;from the beginning&quot;, as Machiavelli&#x27;s <i lang="it">da principio ordinato bene</i> (.02); again at the end of the period.</p>
+<p><span class="lem"><i lang="it">constituite le leggi</i>.</span> &quot;The laws constituted&quot;: an absolute participle; the verb is Machiavelli&#x27;s <i lang="it">costituire</i> (.02).</p>
+<p><span class="lem"><i lang="it">deporre la autorità</i>.</span> &quot;Lay down the authority&quot;: Machiavelli forbade bequeathing the authority and wanted the thing ordered left in the care of many (.02); Guicciardini praises the founder who lays it down, and says he cannot do so at once. The rest of the reply turns on the difference.</p>
+<p><span class="lem"><i lang="it">incontinenti annichilate</i>.</span> &quot;Forthwith annihilated&quot;: <i lang="it">incontinenti</i>, immediately, kept apart from <i lang="it">subito</i>, &quot;at once&quot;.</p>
+<p><span class="lem"><i lang="it">e però bisogna continui</i>.</span> &quot;And therefore it is needful he continue&quot; (D22, D75).</p>
+<p><span class="lem"><i lang="it">il progresso del tempo e la esperienza le stabilisca</i>.</span> &quot;The progress of time and experience establish them&quot;: two subjects, a singular verb, and the English cannot show it.</p>
+<p><span class="lem"><i lang="it">la dolcezza della potenza e la licenza del principato</i>.</span> &quot;The sweetness of power and the licence of the principate&quot; (glossary, <i lang="it">licenza</i>; D76, <i lang="it">Principato</i>). Guicciardini names what holding the founder&#x27;s authority does to the man who holds it.</p>
+<p><span class="lem"><i lang="it">mutare in mala la intenzione</i>.</span> &quot;Change into ill the intention&quot;: <i lang="it">mala</i>, &quot;ill&quot;, as <i lang="it">mala opinione</i> (D165).</p>
+<p><span class="lem"><i lang="it">[È] adunque questo uno modo di medicina</i>.</span> &quot;This is, then, a way of medicine&quot;: Canestrini prints <i lang="it">E</i> without the accent, and as printed the period has no finite verb; emended as his I.3, I.7 and I.8 were (D114, D144, D157, D167). The 1933 edition prints <i lang="it">È adunche</i> (FG-CONS-I9-D001). <i lang="it">Adunque</i> &quot;then&quot; (D74); <i lang="it">modo</i> &quot;way&quot;. The founder&#x27;s violence becomes a medicine; his reply to I.4 had the figure already, the tribunes a good remedy (<i lang="it">remedio</i>) for a sickness that need not have been.</p>
+<p><span class="lem"><i lang="it">speranza di salute</i>.</span> &quot;Hope of health&quot;: the medical figure is held. Machiavelli&#x27;s <i lang="it">salute di Roma</i> (I.8) was safety.</p>
+<p><span class="lem"><i lang="it">di malo esemplo</i>.</span> &quot;Of ill example&quot;: answering Machiavelli&#x27;s <i lang="it">di cattivo esempio</i>, &quot;of bad example&quot; (.01), with <i lang="it">malo</i> for <i lang="it">cattivo</i> (D165).</p>
+<p><span class="lem"><i lang="it">laudabile sommamente</i>.</span> &quot;Supremely laudable&quot;.</p>
+<p><span class="lem"><i lang="it">non ritiene in sé questa autorità se non quanto</i>.</span> &quot;Does not retain this authority in himself except so far as&quot;.</p>
+<p><span class="lem"><i lang="it">come fece Licurgo</i>.</span> &quot;As Lycurgus did&quot;: who, in Plutarch, gave Sparta his laws, bound the citizens by oath to keep them until his return, and left the city for good. Machiavelli named Lycurgus among the founders who took an authority to themselves (.04); Guicciardini makes him the model of laying it down.</p>
+<p><span class="lem"><i lang="it">e se alcuno altro si può addurre in esemplo</i>.</span> &quot;And if any other can be adduced for an example&quot;: elliptical, as the Italian, and doubtful that there is one. Machiavelli could give infinite examples, Lycurgus among them (.04); Guicciardini is not sure of one besides Lycurgus.</p>
+<p><span class="lem"><i lang="it">se bene governa rettamente</i>.</span> &quot;Although he governs rightly&quot;: <i lang="it">se bene</i>, &quot;although&quot; (D31).</p>
+<p><span class="lem"><i lang="it">forma buona di reggimento</i>.</span> &quot;A good form of government&quot; (D64).</p>
+<p><span class="lem"><i lang="it">non so quanto sia da essere laudato</i>.</span> &quot;I do not know how far he is to be praised&quot;: suspension (glossary, <i lang="it">non so</i>), not modesty. The question is how much, and he leaves it open.</p>
+<p><span class="lem"><i lang="it">interpretare</i>.</span> &quot;Interpreted&quot;.</p>
+<p><span class="lem"><i lang="it">mosso per ambizione propria</i>.</span> &quot;Moved by his own ambition&quot;: Machiavelli&#x27;s phrase turned, <i lang="it">non per ambizione propria</i> (.03).</p>
+<p><span class="lem"><i lang="it">detestabile, come chi usa male</i>.</span> &quot;Detestable, as is he who uses ill&quot;: the comparison is with the man who is detestable, and &quot;like him&quot; after the negative would have reversed it. <i lang="it">Detestabile</i> is the word of his I.8.</p>
+<p><span class="lem"><i lang="it">la autorità occupata</i>.</span> &quot;The authority occupied&quot; (glossary, <i lang="it">occupare</i>).</p>
+<p><span class="lem"><i lang="it">pure non manca anche lui di ogni reprensione</i>.</span> &quot;Yet also he is not free of all reproof&quot;: <i lang="it">ogni</i> after a negative, any. <i lang="it">Pure</i>, &quot;yet&quot;; <i lang="it">anche lui</i>, &quot;also he&quot; (D154). <i lang="it">Reprensione</i> is the noun of Machiavelli&#x27;s <i lang="it">riprendere</i>, &quot;reprove&quot; (.02): the orderer whom no wise mind, says Machiavelli, will reprove for his extraordinary action gets some reproof, for keeping the power.</p>
+<p><span class="lem"><i lang="it">il Discorso</i>.</span> &quot;The Discourse&quot;: Machiavelli&#x27;s chapter.</p>
+<p><span class="lem"><i lang="it">che Romulo spettò al bene comune</i>.</span> &quot;That Romulus looked to the common good&quot;: <i lang="it">spettare</i>, from Latin <i lang="la">spectare</i>, to look towards. Guicciardini&#x27;s <i lang="it">Romulo</i> is the Latin form; the 1933 edition prints <i lang="it">Romolo</i> (FG-CONS-I9-D004). Machiavelli&#x27;s <i lang="it">fusse per il bene comune, e non per ambizione propria</i> (.03), restated.</p>
+<p><span class="lem"><i lang="it">avendo constituito uno senato</i>.</span> &quot;Having constituted a senate&quot;: Machiavelli&#x27;s <i lang="it">ordinato un Senato</i> in another verb.</p>
+<p><span class="lem"><i lang="it">non dico ora altro</i>.</span> &quot;I say nothing else now&quot;: he defers, and will not take Machiavelli&#x27;s proof until the life has been considered.</p>
+<p><span class="lem"><i lang="it">bisogna prima bene leggere e considerare la vita di Romulo</i>.</span> &quot;It is needful first to read well and consider the life of Romulus&quot;: Machiavelli wrote &quot;whoever considers well the authority that Romulus reserved to himself&quot; (.03); Guicciardini asks for the life to be considered, not the authority. <i lang="it">Leggere</i>: the life is something to be read, perhaps Plutarch&#x27;s <i lang="it">Life</i> of Romulus, which carries the tradition he recalls.</p>
+<p><span class="lem"><i lang="it">se bene mi ricordo</i>.</span> &quot;If I remember well&quot;: here <i lang="it">se bene</i> is &quot;if well&quot;, not the concessive of a few lines before.</p>
+<p><span class="lem"><i lang="it">si dubitò non fussi ammazzato dal senato</i>.</span> &quot;It was suspected had been killed by the senate&quot;: <i lang="it">dubitare</i> with expletive <i lang="it">non</i>, to suspect, fear. Livy (1.16) tells that Romulus vanished in a storm while reviewing the army, that the senators said he had been taken up to the gods, and that a few whispered that the senators had torn him to pieces. The senate Machiavelli offers as proof of Romulus&#x27; good intent is, in this memory, suspected of killing him.</p>
+<p><span class="lem"><i lang="it">per arrogarsi troppa autorità</i>.</span> &quot;For arrogating to himself too much authority&quot;. Livy gives no reason; Plutarch (<i lang="it">Romulus</i> 26–27) and Dionysius of Halicarnassus (2.56) make it his growing absolutism.</p>
+<p><span class="lem"><i lang="it">bisogna considerarla bene</i>.</span> &quot;It is needful to consider it well&quot;: <i lang="it">la</i> is the life of Romulus. The colon before it is supplied from the 1933 edition (C005).</p>
+<p><span class="lem">No full stop.</span> Canestrini prints none after <i lang="it">bene</i>; the 1933 edition does. The English ends as the Italian does (D40).</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="colophon">
+    <div class="row">
+      <div>
+        <h3>What this is</h3>
+        <p>A free, openly licensed, bilingual edition of Guicciardini's 39 <i>Considerazioni</i> and the
+          <i>Discorsi</i> chapters they answer — 78 text units, Italian and English facing, every reading
+          traceable to a named public-domain witness.</p>
+        <p>It is a reading edition with a transparent apparatus, not a text of record. It does not adjudicate
+          the critical text against Bausi 2001 or the manuscript tradition, and does not claim to.</p>
+      </div>
+      <div>
+        <h3>On the title</h3>
+        <p>Machiavelli had been dead two years when Guicciardini wrote; the <i>Discorsi</i> were unpublished,
+          and the <i>Considerazioni</i> stayed unprinted until 1857. Machiavelli never answers.</p>
+        <p>“Conversation” is a quotation, not a description. It invokes Machiavelli's letter to Vettori of
+          10 December 1513, where he changes into court dress at evening, enters the antique courts of ancient
+          men, and reports that <i>they, in their humanity, answer me</i>. Guicciardini does to Machiavelli
+          what Machiavelli did to Livy — and is denied the reply Machiavelli claimed.</p>
+      </div>
+      <div>
+        <h3>Method</h3>
+        <p>No image-derived reading enters the text on a single reading. Each unit is transcribed twice,
+          independently, by readers who have not seen each other's work; disagreements are adjudicated against
+          the page images and recorded.</p>
+        <p>Existing English translations of the <i>Considerazioni</i> — Grayson (1965), Atkinson &amp; Sices
+          (2002) — are never used as translation inputs.</p>
+      </div>
+      <div>
+        <h3>Licence</h3>
+        <p>The established Italian text and the apparatus data are dedicated to the public domain under
+          <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>. They are Machiavelli's and
+          Guicciardini's sentences, and this edition adds no condition to them.</p>
+        <p>The English translation, the notes and the editorial apparatus are licensed
+          <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: reuse them anywhere, including
+          commercially, with attribution to David McDougall and this edition. The build tooling is MIT.</p>
+        <p>The witness scans are other people's digitisations, included as evidence under their own terms; no
+          grant is made over them, and no page image of Palmarocchi 1933 is reproduced here. Full terms,
+          layer by layer, are in the <span class="sig">LICENSE</span> file in the repository.</p>
+      </div>
+    </div>
+
+    <div class="state">
+      <p><strong>Version 0.3 · 11 of 39 pairs published.</strong>
+        This edition is versioned, not frozen. No open questions on this pair.</p>
+    </div>
+  </footer>
+
+</div>
