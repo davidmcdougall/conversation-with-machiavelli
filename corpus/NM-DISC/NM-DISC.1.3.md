@@ -13,7 +13,7 @@ paragraph_divisions: editorial  # witness prints one block; see SCOPE §3
 governing_witness: WIT-NM-DISC-1824-IA
 established_from: [sources/coldpass/NM-DISC.1.3-passA.md, sources/coldpass/NM-DISC.1.3-passB.md]
 collation: sources/coldpass/COLLATION-2026-09-29-I3.md
-comparison_collation: pending  # the held 1554 extract (zero-based pp. 64-66) is chapter VII, not III; see the establishment record
+comparison_collation: sources/coldpass/NM-DISC.1.3-1554.md  # cold read of Giglio 1554, collated by word 2026-10-06 (backfill); variants at sense-bearing loci verified on the page image
 relationship_pointer: FG-CONS-DR-003
 rubric: "Quali accidenti facessero creare in Roma i Tribuni della plebe, il che fece la Repubblica più perfetta."  # heading apparatus, not body; see SCOPE §3
 ---

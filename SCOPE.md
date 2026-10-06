@@ -196,7 +196,7 @@ than inside the first paragraph.
 | Link records | 39 | 0 | 39 |
 | NM source established | 11 | 28 | 39 |
 | FG source established | 11 | 28 | 39 |
-| Collated against the comparison witness | 18 units | 60 | 78 |
+| Collated against the comparison witness | 22 units | 56 | 78 |
 | Translated (draft, cold-reviewed) | 22 | 56 | 78 |
 | Annotated | 22 | 56 | 78 |
 | Published | 22 | 56 | 78 |

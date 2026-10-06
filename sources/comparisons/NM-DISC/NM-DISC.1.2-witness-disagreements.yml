@@ -1,0 +1,46 @@
+source_unit_id: NM-DISC.1.2
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-I2-D001
+    locator: NM-DISC.1.2.05
+    class: reading
+    witness_1824: "a degenerare dai loro antichi ... superare gli altri di sontuosità, e di lascivia"
+    witness_1554: "a tralignare da loro antichi ... superare gl'altri di thesori, et di lasciuia"
+    established: witness_1824
+    rationale: "Giglio's princes outdo the rest in treasure, the 1824's in sumptuousness: wealth held rather than wealth displayed."
+  - id: NM-DISC-I2-D002
+    locator: NM-DISC.1.2.05
+    class: reading
+    witness_1824: "rivoltisi alla avarizia, alla ambizione, alla usurpazione delle donne"
+    witness_1554: "riuoltisi alla auaritia, alla ambitione, & alla lussuria"
+    established: witness_1824
+    rationale: "Giglio has lust, an abstract vice, where the 1824 has the seizing of women, a concrete wrong done to the governed. The 1824 makes the third term an injury, which is what turns the multitude."
+  - id: NM-DISC-I2-D003
+    locator: NM-DISC.1.2.06
+    class: reading
+    witness_1824: "massime spenta che fu quella generazione, che l'aveva ordinato"
+    witness_1554: "massime spenti che furono coloro, che l'haueua ordinato"
+    established: witness_1824
+    rationale: "Same sense: those who had ordered it, or that generation, once dead."
+  - id: NM-DISC-I2-D004
+    locator: NM-DISC.1.2.06
+    class: reading
+    witness_1824: "o per suggestione d'alcuno buono uomo"
+    witness_1554: "o per opera d'alcun buono"
+    established: witness_1824
+    rationale: "Giglio's good man acts (`opera`) where the 1824's prompts (`suggestione`)."
+  - id: NM-DISC-I2-D005
+    locator: NM-DISC.1.2.07
+    class: reading
+    witness_1824: "la insolenza de' Grandi, e la licenza dell'universale"
+    witness_1554: "la insolentia de grandi, et la licentia di ciascuna"
+    established: witness_1824
+    rationale: "Giglio's `di ciascuna` (of each, feminine, with no noun) is hard to construe; the 1824 `dell'universale`, the generality, pairs with the great."
+  - id: NM-DISC-I2-D006
+    locator: NM-DISC.1.2.01-08
+    class: systematic_rewording
+    witness_1824: "the 1824 wording"
+    witness_1554: "Giglio's synonyms and reorderings: `il parere` for `l'opinione`, `a guisa` for `a similitudine`, `crescendo il numero` for `multiplicando la generazione`, `nociue` for `perniciose`, `formauano` for `constituivano`, `prima` for `nel principio`, `soggetta` for `suddita`, `ordini` and `leggi` for `costituzioni`, `piu fermo` for `stabilito`, `anni quaranta` for `quaranta anni`; verb endings in `-ino`/`-ono`; and the period's orthography (`huomini`, `-tione`, `&`, `Rep.`)"
+    established: witness_1824
+    rationale: The 1824 witness governs throughout.

@@ -1,0 +1,26 @@
+---
+witness: Discorsi, Venice, Giglio, 1554 — Book I, ch. III
+source: giglio-1 part2–part3, giglio-2 part1–part3 page images (cold read, images only); giglio-3 part1 consulted for what follows
+start: giglio-1 part2, line 5 (after a blank line) — rubric "QVALI ACCIDENTI FACESSI|no creare in Roma …"; preceded by the end of ch. II, "… come ne duoi sequenti capitoli largamente si dimostrera." Body begins giglio-1 part2 line 9 with a large woodcut initial: "COme dimostrano tutti coloro, …"
+end: giglio-2 part3, last text line "de nobili." (body set as a tapering cul-de-lampe, closed by a printed fleuron ornament; rest of page blank); what follows is giglio-3 (new page, headline LIBRO): rubric of ch. IIII, "CHE LA DISVNIONE DELLA plebe, & del Senato Romano fece libera, & potente quella Republica. Cap. IIII."
+leaves: leaf 1 = headline "LIBRO" (verso; no folio number printed); leaf 2 = headline "PRIMO." folio 8; leaf 3 = headline "LIBRO" (no folio number)
+word_count: rubric 18; body 387 (& counted as a word; elided forms such as d'essempi, dell'animo, gl'huomini counted as two words; "Rep." and "Cap." and the numeral each counted as one)
+uncertain_loci: 4
+expansions: tẽpo > tempo (giglio-1 part3); nõ > non (giglio-1 part3, "nõ si conosce"); mãcati > mancati (giglio-2 part2, "mã|cati", tilde over a); long s resolved throughout; ſſ / ß-type ligatures resolved to ss (e.g. neceſsario, eßi, grandißima, haueßino, fußino, neceßita, poteßino, eßer)
+marginalia: none
+---
+
+# Rubric
+QVALI ACCIDENTI FACESSIno creare in Roma i Tribuni della Plebe:ilche fece la Rep. piu perfetta. Cap. III.
+
+# Text
+COme dimostrano tutti coloro,che ragionano del uiuer ciuile,et come ne è piena d'essempi ogni historia, è necessario a chi dispone una Republica et ordina leggi in quella,presupporre tutti gli huomini cattiui , & che essi habbiano sempre ad usare la malignita dell'animo loro,qualunche uolta ne habbiano libera occasione:et quando alcuna malignita sta occulta un tempo,procede da una occulta cagione,che,per non si esser ueduta esperienza del contrario,non si conosce : ma la fa ⟨por|poi⟩ scoprire il tempo,ilquale dicono essere padre della uerita. Pareua che fusse in Roma intra la plebe, & il Senato( cacciati i Tarquini ) una unione grandissima, & che i nobili hauessino deposta quella loro superbia,& fussino diuentati d'animo popolare,et sopportabili da qualunche , anchora che di basso grado ⟨stette⟩ nascoso questo inganno, ne se ne uidde la cagione,infino che i Tarquini uissono , de quali temendo la nobilta, et hauendo paura che la plebe mal trattata non s'accostasse loro, si portaua humanamente con quella:ma come prima furono morti i Tarquini, et che a nobili fu la paura fuggita,cominciarono a sputare contra alla plebe quel ueleno,che si haueuono tenuto nel petto, et in tutti i modi,che poteuano,la offendeuano . la qual cosa fa testimonianza a quello, che disopra ho detto , che gl'huomini non operano mai nulla bene , se non per necessita : ma doue l'elettione abbonda , et che ui si puo usar licenza , si riempie subito ogni cosa di confusione, et di disordine . però si dice che la fame , et la pouerta fa gli huomini industriosi, et le leggi ⟨gli⟩ fanno buoni . Et doue una cosa per se medesima senza la legge opera bene , non è necessaria la legge:ma quando quella buona consuetudine manca,e subito la legge necessaria.pero mancati i Tarquini,che con la paura di loro teneuano la nobilta a freno,conuenne pensare ad uno nuouo ordine,che facesse quel medesimo effetto, che faceuano i Tarquini, quando erano uiui. et pero dopo molte confusioni , romori , et periculi ⟨di|de⟩ scandali , che nacquero tra la plebe, et la nobilita , si uenne per sicurta della plebe alla creatione de Tribuni , et quelli ordinarono con tante preminenze,et tanta reputatione, che potessino esser sempre dipoi mezi tra la plebe,et il senato,et ouuiare all'insolentia de nobili.
+
+# Uncertain loci
+1. giglio-1 part3, "ma la fa ⟨por|poi⟩ scoprire" — the type clearly shows "por"; possibly a turned/foul letter for "poi". Kept "por" as primary reading.
+2. giglio-2 part1, line 2, "di basso grado ⟨stette⟩ nascoso" — initial letters are a damaged/odd st-ligature (looks like "Stette"); reading "stette" is probable.
+3. giglio-2 part2, "et le leggi ⟨gli⟩ fanno buoni" — print shows "g'i" / "gii" with a broken l; read as "gli".
+4. giglio-2 part2–3, "periculi ⟨di|de⟩ scandali" — the short word is badly inked; "di" more likely.
+
+# Printed peculiarities kept
+Spacing before commas and full stops ("cattiui ,", "offendeuano .", "bene ,") and absence of space after punctuation ("coloro,che", "Plebe:ilche", "necessaria.pero") kept as printed. "Senato( cacciati i Tarquini )" spacing kept. Both "et" and "&" kept as printed, alternating. Lower-case sentence openings after full stops ("la qual cosa", "pero mancati", "et pero dopo") kept. Variant spellings kept: nobilta / nobilita, però (accented) / pero (unaccented), "e subito" (unaccented), haueuono, hauessino, fussino, qualunche, uidde, periculi, romori, mezi, ouuiare, insolentia. Rubric first line in capitals with the word FACESSIno split across the capital/lower-case lines (joined). Chapter numeral printed "III." (first stroke slightly damaged). Body ends in a tapered setting with a fleuron below.

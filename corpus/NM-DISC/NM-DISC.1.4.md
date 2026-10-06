@@ -13,7 +13,7 @@ paragraph_divisions: editorial  # witness prints one block; see SCOPE §3
 governing_witness: WIT-NM-DISC-1824-IA
 established_from: [sources/coldpass/NM-DISC.1.4-passA.md, sources/coldpass/NM-DISC.1.4-passB.md]
 collation: sources/coldpass/COLLATION-2026-09-29-I4.md
-comparison_collation: pending  # the held 1554 extract (zero-based pp. 65-67) is the end of chapter VII, not IV; see the establishment record
+comparison_collation: sources/coldpass/NM-DISC.1.4-1554.md  # cold read of Giglio 1554, collated by word 2026-10-06 (backfill); variants at sense-bearing loci verified on the page image
 relationship_pointer: FG-CONS-DR-004
 rubric: "Che la disunione della Plebe e del Senato romano fece libera e potente quella Repubblica."  # heading apparatus, not body; see SCOPE §3
 ---

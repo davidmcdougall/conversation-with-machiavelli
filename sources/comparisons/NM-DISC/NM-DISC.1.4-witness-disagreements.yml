@@ -1,0 +1,39 @@
+source_unit_id: NM-DISC.1.4
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-I4-D001
+    locator: NM-DISC.1.4.04
+    class: reading
+    witness_1824: "con i quali il Popolo possa sfogare l'ambizione sua"
+    witness_1554: "con i quali il popolo sfoghi l'ambitione sua"
+    established: witness_1824
+    rationale: "Giglio's people vent their ambition; the 1824's may vent it. The 1824 makes the outlet a capacity the city provides."
+  - id: NM-DISC-I4-D002
+    locator: NM-DISC.1.4.04
+    class: reading
+    witness_1824: "rade volte sono perniziosi alla libertà, perché e' nascono o da essere oppressi, o da suspizione d'avere a essere oppressi"
+    witness_1554: "rade uolte sono dannosi alla liberta, perche e nascono o da essere oppressi, o da suspitione di hauerci ad essere"
+    established: witness_1824
+    rationale: "Same sense: harmful for pernicious, and Giglio leaves the second `oppressi` understood."
+  - id: NM-DISC-I4-D003
+    locator: NM-DISC.1.4.05
+    class: reading
+    witness_1824: "E se i tumulti furono cagione della creazione de' Tribuni, meritano somma laude"
+    witness_1554: "Et della creatione de i Tribuni, meritano somma laude"
+    established: witness_1824
+    rationale: "Giglio has no conditional: the tumults earn the highest praise for the tribunes' creation, stated flatly. The 1824 makes the praise follow from the causal claim the chapter has argued."
+  - id: NM-DISC-I4-D004
+    locator: NM-DISC.1.4.05
+    class: reading
+    witness_1824: "furono constituiti per guardia della Libertà romana"
+    witness_1554: "furono ordinati per guardia della liberta Romana"
+    established: witness_1824
+    rationale: "Same sense."
+  - id: NM-DISC-I4-D005
+    locator: NM-DISC.1.4.01-05
+    class: systematic_rewording
+    witness_1824: "the 1824 wording"
+    witness_1554: "Giglio's forms: `ueniamo alli altri` for `vegniamo agli altri`, `quei` for `quelli`, `CCC.` for `trecento`, `condennò` for `condannò`, `beneficio` for `benefizio`, `estraordinarij` for `straordinarj`, `sodisfarli` for `soddisfargli`, verb endings in `-ino`/`-ono` (`aueghino`, `habbino`, `s'ingannono`); `che quelli partorivano` and `dipoi` read `che partoriuano` and `dipoi sopra`; and the period's orthography (`huomini`, `-tione`, `&`, `Rep.`)"
+    established: witness_1824
+    rationale: The 1824 witness governs throughout.

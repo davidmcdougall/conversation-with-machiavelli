@@ -13,7 +13,7 @@ paragraph_divisions: editorial  # witness prints one block; see SCOPE §3
 governing_witness: WIT-NM-DISC-1824-IA
 established_from: [sources/coldpass/NM-DISC.1.2-passA.md, sources/coldpass/NM-DISC.1.2-passB.md]
 collation: sources/coldpass/COLLATION-2026-09-28-I2.md
-comparison_collation: pending  # the held 1554 extract does not contain this chapter; see the establishment record
+comparison_collation: sources/coldpass/NM-DISC.1.2-1554.md  # cold read of Giglio 1554, collated by word 2026-10-06 (backfill); variants at sense-bearing loci verified on the page image
 relationship_pointer: FG-CONS-DR-002
 rubric: "Di quante specie sono le Repubbliche, e di quale fu la Repubblica romana."  # heading apparatus, not body; see SCOPE §3
 ---

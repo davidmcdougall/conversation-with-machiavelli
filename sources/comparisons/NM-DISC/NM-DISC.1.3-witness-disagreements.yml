@@ -1,0 +1,39 @@
+source_unit_id: NM-DISC.1.3
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-I3-D001
+    locator: NM-DISC.1.3.01
+    class: reading
+    witness_1824: "presupporre tutti gli uomini essere cattivi, e che gli abbiano sempre"
+    witness_1554: "presupporre tutti gli huomini cattiui, & che essi habbiano sempre"
+    established: witness_1824
+    rationale: "Same sense; Giglio has no `essere`."
+  - id: NM-DISC-I3-D002
+    locator: NM-DISC.1.3.01
+    class: reading
+    witness_1824: "padre di ogni verità"
+    witness_1554: "padre della uerita"
+    established: witness_1824
+    rationale: "Same sense: father of every truth, of the truth."
+  - id: NM-DISC-I3-D003
+    locator: NM-DISC.1.3.02
+    class: reading
+    witness_1824: "sopportabili da qualunque ancora che infimo"
+    witness_1554: "sopportabili da qualunche, anchora che di basso grado"
+    established: witness_1824
+    rationale: "Same sense: however lowly, of low rank."
+  - id: NM-DISC-I3-D004
+    locator: NM-DISC.1.3.03
+    class: reading
+    witness_1824: "la fame e la povertà fanno gli uomini industriosi"
+    witness_1554: "la fame, et la pouerta fa gli huomini industriosi"
+    established: witness_1824
+    rationale: "Same sense; Giglio's verb is singular, hunger-and-poverty taken as one cause."
+  - id: NM-DISC-I3-D005
+    locator: NM-DISC.1.3.01-03
+    class: systematic_rewording
+    witness_1824: "the 1824 wording"
+    witness_1554: "Giglio's forms: `contra` for `contro`, `tra` for `intra`, `reputatione` for `riputazione`, `nobilita` for `Nobiltà`, verb endings in `-ino`/`-ono` (`hauessino`, `fussino`, `haueuono`, `potessino`); `fa por scoprire` (a misprint for `poi`); and the period's orthography (`huomini`, `-tione`, `&`)"
+    established: witness_1824
+    rationale: The 1824 witness governs throughout.

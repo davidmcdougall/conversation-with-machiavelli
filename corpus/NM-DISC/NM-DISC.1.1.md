@@ -12,7 +12,7 @@ paragraph_divisions: editorial  # witness prints one block; see SCOPE §3
 governing_witness: WIT-NM-DISC-1824-IA
 established_from: [sources/coldpass/NM-DISC.1.1-passA.md, sources/coldpass/NM-DISC.1.1-passB.md]
 collation: sources/coldpass/COLLATION-2026-09-27-I1.md
-comparison_collation: pending  # the held 1554 extract does not contain this chapter; see the establishment record
+comparison_collation: sources/coldpass/NM-DISC.1.1-1554.md  # cold read of Giglio 1554, collated by word 2026-10-06 (backfill); variants at sense-bearing loci verified on the page image
 relationship_pointer: FG-CONS-DR-001
 rubric: "Quali siano stati universalmente i principj di qualunque città, e quale fusse quello di Roma."  # heading apparatus, not body; see SCOPE §3
 ---

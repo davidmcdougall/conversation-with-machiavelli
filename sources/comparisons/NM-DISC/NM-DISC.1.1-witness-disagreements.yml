@@ -1,0 +1,46 @@
+source_unit_id: NM-DISC.1.1
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-I1-D001
+    locator: NM-DISC.1.1.01
+    class: reading
+    witness_1824: "e da quali legislatori"
+    witness_1554: "et da quai datori di legge"
+    established: witness_1824
+    rationale: "Same sense: Giglio's lawgivers are 'givers of law'."
+  - id: NM-DISC-I1-D002
+    locator: NM-DISC.1.1.03
+    class: reading
+    witness_1824: "mossi o da loro medesimi, o da alcuno che sia infra di loro di maggiore autorità"
+    witness_1554: "mossi o da alcuno, che sia infra di loro di maggiore auttorita"
+    established: witness_1824
+    rationale: "Giglio has no `o da loro medesimi`: the scattered inhabitants are moved to gather only by someone of greater authority among them, never of themselves."
+  - id: NM-DISC-I1-D003
+    locator: NM-DISC.1.1.05
+    class: reading
+    witness_1824: "abbandonare il paese patrio, e cercarsi nuova sede"
+    witness_1554: "abbandonare il paese natio, et cercarsi nuoua habitatione"
+    established: witness_1824
+    rationale: "Same sense."
+  - id: NM-DISC-I1-D004
+    locator: NM-DISC.1.1.06
+    class: reading
+    witness_1824: "per la ubertà del sito"
+    witness_1554: "per la abondanza del sito"
+    established: witness_1824
+    rationale: "Same sense: fertility, abundance."
+  - id: NM-DISC-I1-D005
+    locator: NM-DISC.1.1.06
+    class: reading
+    witness_1824: "uomini oziosi, ed inabili ad ogni virtuoso esercizio"
+    witness_1554: "huomini otiosi, & impotenti ad ogni uirtuoso esercito"
+    established: witness_1824
+    rationale: "Giglio's `esercito` (army) beside `essercitio` a few lines on is most likely a misprint for `esercitio` (exercise); `impotenti` for `inabili` is the same sense."
+  - id: NM-DISC-I1-D006
+    locator: NM-DISC.1.1.01-08
+    class: systematic_rewording
+    witness_1824: "the 1824 wording"
+    witness_1554: "Giglio's synonyms and forms: `difesa` for `difensione`, `potergli molestare` for `poterli infestare`, `procesi` for `progressi`, `d'intorno` for `circa`, `tanto potere hebbe` for `tanto potette`, `tra` for `intra`, `Prencipe` for `Principe`, verb endings in `-ino`/`-ono` (`uolessino`, `trouono`, `fussino`); and the period's orthography (`huomini`, `-tione`, `&`)"
+    established: witness_1824
+    rationale: The 1824 witness governs throughout.
