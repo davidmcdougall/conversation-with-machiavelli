@@ -1,0 +1,74 @@
+source_unit_id: NM-DISC.1.10
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-I10-D001
+    locator: NM-DISC.1.10.01
+    class: reading
+    witness_1824: "infami e detestabili gli uomini destruttori delle Religioni ... utilità e onore alla umana generazione"
+    witness_1554: "infami, & degni di maladitione gli huomini destruttori delle religioni ... utilita, & honore alle genti humane"
+    established: witness_1824
+    rationale: "Giglio's destroyers are 'worthy of malediction' rather than detestable, and the arts serve 'the human peoples' rather than the human generation. Same sense."
+  - id: NM-DISC-I10-D002
+    locator: NM-DISC.1.10.01
+    class: reading
+    witness_1824: "gli oziosi, i vili, e i da pochi"
+    witness_1554: "gli otiosi, et uili"
+    established: witness_1824
+    rationale: "Giglio has no `e i da pochi`, the men of little account, and joins the idle and the vile in one class."
+  - id: NM-DISC-I10-D003
+    locator: NM-DISC.1.10.03
+    class: reading
+    witness_1824: "ma vedrebbero di lunga avervi avuto più sicurtà"
+    witness_1554: "ma uedrebbono di gran lunga hauerui hauuto piu sicurta"
+    established: witness_1824
+    rationale: "Same sense: far more, by far more."
+  - id: NM-DISC-I10-D004
+    locator: NM-DISC.1.10.04
+    class: reading
+    witness_1824: "spauriti dalla lunghezza dell'Imperio ... E tanto è più detestabile Cesare"
+    witness_1554: "spauentati dalla lunghezza dello imperio ... & tanto è piu uitupereuole Cesare"
+    established: witness_1824
+    rationale: "Giglio makes Caesar 'more vituperable', the rubric's word, where the 1824 has detestable, the word of .01."
+  - id: NM-DISC-I10-D005
+    locator: NM-DISC.1.10.04
+    class: reading
+    witness_1824: "talché non potendo biasimare quello per la sua potenza, e' celebrano il nimico suo"
+    witness_1554: "tal che non potendo biasimare quello per la sua potenza, e celebrarono il nemico suo"
+    established: witness_1824
+    rationale: "Giglio puts the writers' praise of Brutus in the past (`celebrarono`), against the present of `celebrono` in the clause before."
+  - id: NM-DISC-I10-D006
+    locator: NM-DISC.1.10.06
+    class: reading
+    witness_1824: "Pongasi adunque innanzi un Principe i tempi da Nerva a Marco ... e che furono poi; e dipoi elegga"
+    witness_1554: "Purgasi adunque inanzi un Prencipe è tempi da Nerua a Marco ... & che furono poi, elegga"
+    established: witness_1824
+    rationale: "`Purgasi` is almost certainly a misprint for `Pongasi` (the page's catchword reads `è tempo`); Giglio has no `e dipoi`."
+  - id: NM-DISC-I10-D007
+    locator: NM-DISC.1.10.07
+    class: reading
+    witness_1824: "Se considererà dipoi tritamente i tempi"
+    witness_1554: "Se considera dipoi minutamente i tempi"
+    established: witness_1824
+    rationale: "Same sense: minutely; Giglio's verb is present."
+  - id: NM-DISC-I10-D008
+    locator: NM-DISC.1.10.08
+    class: reading
+    witness_1824: "come sono loro proposte due vie"
+    witness_1554: "come sono loro preposte due uie"
+    established: witness_1824
+    rationale: "Proposed to them, set before them: the same sense."
+  - id: NM-DISC-I10-D009
+    locator: NM-DISC.1.10.08
+    class: reading
+    witness_1824: "l'altra li fa vivere in continue angustie"
+    witness_1554: "l'altra gli fa uiuere in continoue molestie"
+    established: witness_1824
+    rationale: "Giglio's second path is one of continual vexations, the 1824's of continual straits."
+  - id: NM-DISC-I10-D010
+    locator: NM-DISC.1.10.01-08
+    class: systematic_rewording
+    witness_1824: "the 1824 wording"
+    witness_1554: "Giglio's forms and small variants: `Prencipe` for `Principe`, `nemici` for `nimici` and `inimici`, `tra` for `intra`, `contra` for `contro`, `Phalari` for `Falari`, `Caligula`, `XXVI`, `XVI`, `X` for the numbers written out, `o che per fortuna`, verb endings in `-ino`/`-ono` (`uedrebbono`, `hebbeno`, `diuentono`, `celebrono`, `bastorono`, `lasciono`), `conferiscagli`, `propostali`, `openione`; and the period's orthography (`huomini`, `-tione`, `&`, `Rep.`)"
+    established: witness_1824
+    rationale: The 1824 witness governs throughout.

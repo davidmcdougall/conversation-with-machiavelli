@@ -1,0 +1,23 @@
+source_unit_id: NM-DISC.1.10
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-010
+passes:
+  - {id: A, performed: 2026-10-07, file: sources/coldpass/NM-DISC.1.10-passA.md, note: "subagent; page images only (350 ppi, thirds), separate directory"}
+  - {id: B, performed: 2026-10-07, file: sources/coldpass/NM-DISC.1.10-passB.md, note: "subagent; page images only (350 ppi, thirds), separate directory"}
+collation: sources/coldpass/COLLATION-2026-10-07-I10.md
+collation_result: "1,198 words. No word, clause or sense disagreement; the token streams are identical. The passes differ only in which specks they mark doubtful (a dot after `Marco`, a mark over `Severo`), and neither is carried."
+boundaries: "printed pp. 53-58; one block with a drop capital T; CAPITOLO X under the running head on p. 53; ends p. 58 line 3 `sempiterna infamia.`; CAPITOLO XI follows on the same page"
+interventions: []
+comparison_collation: >
+  Done 2026-10-07 against the 1554 extract (fol. 19v-21v). A cold reader
+  transcribed the Giglio leaves from the page images
+  (sources/coldpass/NM-DISC.1.10-1554.md); the transcript was collated by
+  word against the established text, and every reading published as a
+  variant note was checked on the page image, except D007 (`minutamente`),
+  which rests on the transcript. Sense-bearing differences are in
+  sources/comparisons/NM-DISC/NM-DISC.1.10-witness-disagreements.yml.
+normalisation_notes: "Class A only: accents (`perchè` → `perché`, `Perchè` → `Perché`, `talchè` → `talché`, `nè` → `né`, `Nè` → `Né`, `sè` → `sé`); elision solid (`l'arte`, `d'ogni`, `gl'ignoranti`, `d'uomini`, `l'Istorie`, `s'inganni`, `dell'Imperio`, `ch'è`, `gl'Imperadori`, `all'Imperio`, `l'Imperio`, `dall'altra`, `d'amore`, `l'Italia`, `d'uomo`, `d'uno`); apocope spaced (`de' Regni`, `e' fuggono`, `e' celebrano`, `ne' soldati`, `da' buoni`, `de' suoi`, `e' sarà`); spaces before punctuation; the spacing fault in `igno rantemente` closed."

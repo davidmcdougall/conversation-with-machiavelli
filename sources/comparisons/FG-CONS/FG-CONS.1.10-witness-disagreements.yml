@@ -1,0 +1,68 @@
+source_unit_id: FG-CONS.1.10
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-I10-D001
+    locator: FG-CONS.1.10.01, .03
+    class: emendation
+    witness_1857: "E vero che qualche volta ... E altro il caso di quelli"
+    witness_1933: "È vero che qualche volta ... È altro el caso di quelli"
+    established: "[È] vero che qualche volta ... [È] altro il caso di quelli"
+    publish_as_variant_note: true
+    rationale: "Canestrini prints the verb without its accent at both, and as printed neither period has a finite verb. Emended as his I.3, I.7, I.8 and I.9 were (D114, D144, D157, D167; D181)."
+  - id: FG-CONS-I10-D002
+    locator: FG-CONS.1.10.01
+    class: reading
+    witness_1857: "sono certo inumanissimi e detestabili"
+    witness_1933: "sono certo immanissimi e detestabili"
+    established: witness_1857
+    rationale: "Most inhuman, against most monstrous. Both readers read Canestrini's `inumanissimi`; it construes, so D38."
+  - id: FG-CONS-I10-D003
+    locator: FG-CONS.1.10.01
+    class: reading
+    witness_1857: "come sospetti. I quali la necessità ha condotti"
+    witness_1933: "come sospetti. E' quali la necessitá ha condotti"
+    established: witness_1857
+    rationale: "The relative with Canestrini's article, against Palmarocchi's Florentine plural `e'`. Same sense."
+  - id: FG-CONS-I10-D004
+    locator: FG-CONS.1.10.02
+    class: reading
+    witness_1857: "che meritano manco biasimo continuando in essa"
+    witness_1933: "che meritano manco biasimo continuando in esso"
+    established: witness_1857
+    rationale: "Canestrini's feminine takes the tyranny; Palmarocchi's masculine can take the case or the state. The English follows Canestrini: 'continuing in it'."
+  - id: FG-CONS-I10-D005
+    locator: FG-CONS.1.10.03
+    class: reading
+    witness_1857: "credo ve l'abbia conservata"
+    witness_1933: "credo che ve l'abbia conservata"
+    established: witness_1857
+    rationale: "Palmarocchi has the complementiser; same sense."
+  - id: FG-CONS-I10-D006
+    locator: FG-CONS.1.10.03
+    class: reading
+    witness_1857: "né piccolo è quello che li porta a lasciare illustre la memoria"
+    witness_1933: "né piccolo è quello che si porta a lasciare illustre la memoria"
+    established: witness_1857
+    rationale: "In Canestrini the love bears the fathers on; in Palmarocchi it is the love one bears to leaving the memory illustrious. Both construe; D38."
+  - id: FG-CONS-I10-D007
+    locator: FG-CONS.1.10.04
+    class: reading
+    witness_1857: "che e' tiranni deponghino le tirannidi ... e nelle immaginazioni degli uomini"
+    witness_1933: "che e' tiranni deponghino le tirannide ... e nelle immaginazione degli uomini"
+    established: witness_1857
+    rationale: "Palmarocchi keeps the old plurals in -e. Same sense."
+  - id: FG-CONS-I10-D008
+    locator: FG-CONS.1.10.01
+    class: reading
+    witness_1857: "sotto pena di rebellione"
+    witness_1933: "sotto pena [di] rebellione"
+    established: witness_1857
+    rationale: "Palmarocchi brackets the preposition as his supply; Canestrini prints it."
+  - id: FG-CONS-I10-D009
+    locator: FG-CONS.1.10.01-04
+    class: systematic_orthographic_profile
+    witness_1857: "Canestrini's `Il titulo`, `il`, `e` before vowels, `-nza`, `periculo`, `populi`, `reverenza`, `meraviglia`, `adunque`, `Lacedemone`, and lighter pointing"
+    witness_1933: "Palmarocchi's `El titolo`, `el`, `ed` before vowels, `potenzia`, `reverenzia`, `pericolo`, `popoli`, `maraviglia`, `adunche`, `Lacedèmone`, and heavier pointing (semicolons at `particulare`, `lasciata`, `principe`, `esempli`)"
+    established: witness_1857
+    rationale: Canestrini governs throughout.

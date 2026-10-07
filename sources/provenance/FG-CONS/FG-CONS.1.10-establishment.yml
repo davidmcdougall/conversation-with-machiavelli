@@ -1,0 +1,49 @@
+source_unit_id: FG-CONS.1.10
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-010
+responds_to: NM-DISC.1.10
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. Canestrini's footnote on `del 26` (the expulsion of the Medici in 1527 and the siege by the prince of Orange) is editorial and is not carried."
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38); errors are emended from Palmarocchi and bracketed (D68)."
+passes:
+  - {id: A, performed: 2026-10-07, file: sources/coldpass/FG-CONS.1.10-passA.md, note: "subagent; page images only (native 600 ppi rendered at 1200, half pages plus enlarged quarter crops), separate directory"}
+  - {id: B, performed: 2026-10-07, file: sources/coldpass/FG-CONS.1.10-passB.md, note: "subagent; same images, separate directory"}
+collation: sources/coldpass/COLLATION-2026-10-07-I10.md
+collation_result: >
+  841 words. No word, clause or sense disagreement. Three letters doubtful
+  to both readers, ruled by David: `resti` (D182), `e almanco` (D183),
+  `nessuna` (D184). Two spelling splits settled on the page image
+  (`periculosa`, `voluntà`). Two verbless periods emended `[È]` (D181).
+  Five stops supplied from the 1933 edition (D67); seven marks both readers
+  see and neither can weigh follow the 1933 edition (D110).
+witness_independence_check: "SCOPE §7. The passes split at two loci, both spelling: at .03 `voluntà` pass A reads `volontà`, which is neither Canestrini's nor the 1933 edition's (`voluntá`); at .02 `periculosa` pass B reads `pericolosa`, which is the 1933 form. No pattern; both are u/o misreadings on a scan that breaks u. Neither pass carries a Palmarocchi word-reading."
+boundaries: "printed pp. 23-26; four indented paragraphs (p. 23 `Il titulo`, p. 25 `L'altro caso`, p. 25 `E altro il caso`, p. 26 `Però questi pensieri`); ends p. 26 `che abbia fatto.`; CONSIDERAZIONE SUL CAPITOLO XI follows on the same page"
+corrections:
+  - {id: FG-CONS-I10-C001, locator: FG-CONS.1.10.01, was: "fondatori della tirannide Ma perché", now: "fondatori della tirannide. Ma perché", evidence: "No stop in the impression (A doubtful, B none); a capital follows; the 1933 edition prints it. D67."}
+  - {id: FG-CONS-I10-C002, locator: FG-CONS.1.10.01, was: "come sospetti I quali", now: "come sospetti. I quali", evidence: "As C001. D67."}
+  - {id: FG-CONS-I10-C003, locator: FG-CONS.1.10.02, was: "lasciare la tirannide Sanza che", now: "lasciare la tirannide. Sanza che", evidence: "A faint mark, not a stop, both readers; the 1933 edition prints one. D67."}
+  - {id: FG-CONS-I10-C004, locator: FG-CONS.1.10.02, was: "piene di disordini E se", now: "piene di disordini. E se", evidence: "As C003. D67."}
+  - {id: FG-CONS-I10-C005, locator: FG-CONS.1.10.03, was: "per elezione E se in alcuno regno", now: "per elezione. E se in alcuno regno", evidence: "Nothing at line end, both readers; the 1933 edition prints it. D67."}
+emendations:
+  - {id: FG-CONS-I10-E001, operation: emendation, rule: D68, status: ruled_D181, locator: FG-CONS.1.10.01, printed: "E vero che qualche volta", established: "[È] vero che qualche volta", source: WIT-FG-CONS-1857-CANESTRINI, note: "No accent, both readers and the page image; as printed the period has no finite verb; the 1933 edition prints `È`. As D114, D144, D157, D167."}
+  - {id: FG-CONS-I10-E002, operation: emendation, rule: D68, status: ruled_D181, locator: FG-CONS.1.10.03, printed: "E altro il caso di quelli", established: "[È] altro il caso di quelli", source: WIT-FG-CONS-1857-CANESTRINI, note: "As E001. Opens the third printed paragraph."}
+readings:
+  - {locus: "gli ⟨reati|resti⟩ colore", passes: "A ⟨reati|resti⟩; B ⟨reati|resti⟩", witness_1933: "resti", disposition: "resti, D182 (David, 2026-10-07)"}
+  - {locus: "⟨e|a⟩ almanco", passes: "A ⟨e|a⟩; B ⟨a|e⟩", witness_1933: "ed", disposition: "e, D183 (David, 2026-10-07)"}
+  - {locus: "nessun⟨a⟩ altra ragione", passes: "A ⟨nessuna|nessuno⟩; B ⟨nessunn|nessuna⟩", witness_1933: "nessuna", disposition: "nessuna, D184 (David, 2026-10-07)"}
+  - {locus: "cosa periculosa", passes: "A periculosa; B pericolosa", witness_1933: "pericolosa", disposition: "periculosa, read on the page image by the collator; spelling, not a word split (SCOPE §7)"}
+  - {locus: "la vo-|luntà di chi ha regnato", passes: "A volontà; B voluntà", witness_1933: "voluntá", disposition: "voluntà, read on the page image; spelling. At .02 `n'avessi volontà` both readers and the page agree on `volontà`."}
+pointing:
+  - {locus: "giustificazione. E questa", passes: "A ⟨.⟩; B ⟨·|.⟩", witness_1933: ".", disposition: "D110"}
+  - {locus: "bene qualificati, e in ultimo", passes: "A ⟨;|,⟩; B ⟨;|:⟩", witness_1933: ",", disposition: "D110"}
+  - {locus: "Cesare, Falari", passes: "A ⟨,|.⟩; B ⟨,|.⟩", witness_1933: ",", disposition: "D110"}
+  - {locus: "e simili, de' quali", passes: "A ⟨;|:|.⟩; B ⟨;|:|.⟩", witness_1933: ",", disposition: "D110"}
+  - {locus: "né è meraviglia, perché", passes: "A ⟨,|;⟩; B ,", witness_1933: ",", disposition: "D110"}
+  - {locus: "la patria in libertà, né considera", passes: "A ⟨;|,⟩; B ⟨;|:|.⟩", witness_1933: ",", disposition: "D110"}
+  - {locus: "della sua fazione, in modo che", passes: "A ⟨;|,⟩; B ⟨;|,⟩", witness_1933: ",", disposition: "D110"}
+  - {locus: "doverrebbe essere, cioè", passes: "A ⟨,|;|:⟩; B ⟨,|;|:⟩", witness_1933: ",", disposition: "D110"}
+  - {locus: "in fatto; anzi", passes: "A ⟨;⟩; B ⟨;|:⟩", witness_1933: ";", disposition: "D110"}
+normalisation_notes: "Class A: accents (`perchè` → `perché`, `nè` → `né`, `sè` → `sé`, unaccented `necessita` → `necessità`); elision solid (`l'amore`, `l'uno`, `l'altro`, `l'hanno`, `d'averla`, `l'abbino`, `n'avessi`, `ve l'abbia`, `L'altro`); apocope spaced; the Florentine plural article supplied as `e'` throughout (D35: `e' fondatori` ×2, `e' casi`, `e' re` ×2, `e' primi re`, `e' figliuoli` ×2, `e' più prossimi`, `e' padri`, `e' tiranni`, `e' regni`, `e' ragionamenti`); spaces before punctuation removed. Canestrini's note reference after `del 26,` is his and is not carried."
