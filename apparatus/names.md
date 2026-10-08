@@ -92,3 +92,16 @@ the original.
 | `Cleomene` | Cleomenes | NM I.9; Cleomenes III of Sparta |
 | `Efori` | ephors | NM I.9; lower case, an office. The 1554 edition prints `Ephori` |
 | `Macedoni` | Macedonians | NM I.9 |
+| `Scipioni` | Scipios | NM I.10; Scipio Africanus. Machiavelli's plurals kept |
+| `Cesare`, `Cesari` | Caesar, Caesars | NM I.10, FG I.10; Julius Caesar |
+| `Agesilai`, `Timoleoni`, `Dioni` | Agesilauses, Timoleons, Dions | NM I.10; Agesilaus II of Sparta, Timoleon of Corinth, Dion of Syracuse |
+| `Nabidi`, `Falari`, `Dionisj`; `Dionisio` | Nabises, Phalarises, Dionysiuses; Dionysius | NM I.10; Nabis of Sparta, Phalaris of Acragas, Dionysius of Syracuse. FG I.10 `Falari`, Phalaris |
+| `Catilina` | Catiline | NM I.10, as FG I.5 |
+| `Bruto` | Brutus | NM I.10; Marcus Junius Brutus |
+| `Tito`, `Nerva`, `Trajano`, `Adriano`, `Antonino`, `Marco` | Titus, Nerva, Trajan, Hadrian, Antoninus, Marcus | NM I.10; Antoninus Pius, Marcus Aurelius |
+| `Caligola`, `Nerone`, `Vitellio`, `Galba`, `Pertinace`, `Severo`, `Massimino` | Caligula, Nero, Vitellius, Galba, Pertinax, Severus, Maximinus | NM I.10; Septimius Severus, Maximinus Thrax |
+| `Campidoglio` | the Capitol | NM I.10, as NM I.8 |
+| `principe di Oranges` | prince of Orange | FG I.10; Philibert of Chalon, noted. `Oranges` as printed |
+| `Otto` | the Eight | FG I.10; the Otto di Guardia, noted |
+| `Lacedemone` | Lacedaemon | FG I.10; the city. The people as FG I.2 |
+| `Pisistrato`, `Silla` | Pisistratus, Sulla | FG I.10, as NM I.2, NM I.1 |

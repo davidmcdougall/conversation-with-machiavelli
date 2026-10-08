@@ -302,6 +302,91 @@ arrogating too much authority — turns Machiavelli's proof against him without
 asserting it. The English must keep `se bene mi ricordo` and `si dubitò` as
 the hedges they are. The unit ends without a stop.
 
+## Machiavelli, NM-DISC.1.10
+
+**Judgment and choice come apart, and the case is made in the chooser's own
+currency.** Everyone, mad or wise, wicked or good, praises the founders and
+blames the destroyers (.01). `Nientedimeno` almost all choose tyranny,
+deceived by a false good, `volontariamente o ignorantemente` (.02). The case
+against the tyrant is then made by his own measure: fame, glory, honour and
+above all security (`sicurtà`, `sicuro`), which he flees and the founder
+keeps. The security vocabulary runs from .02 to the last line and lands in
+the same English words every time.
+
+**The proof is conditional, and the condition is reading.** `è impossibile
+che ... se leggessero l'Istorie ... che non volessero`: men would choose
+otherwise if they read the histories and set store by them. The double `che`
+keeps the impossibility attached to its condition; the English must not let
+it become a flat assertion that men want to be Scipios.
+
+**Caesar's glory is a corrupted witness.** The writers who praise him were
+corrupted by his fortune and frightened by the rule that bore his name; what
+free writers would say shows only sideways, in Catiline and in the praise of
+Brutus. The `tanto ... quanto` proportion is the chapter's one explicit
+verdict on Caesar, and it turns the rubric's `Quanto ... tanto`.
+
+**The imperial evidence is a count with its exceptions explained.** Twenty-six
+emperors, sixteen killed, ten dead ordinarily; the good who were killed and
+the villainous one who was not are accounted for inside the same period, by
+`e se ... e se`. An English that lets the exceptions float has turned a
+demonstration into a statistic. Inheritance against adoption (.06) carries on
+I.9's rule against hereditary authority.
+
+**The two ages are a vision, and it ends in irony.** Predicate-first
+absolutes that the prince "will see", kept in that order (D194), close on
+`quanti obblighi ... abbia con Cesare`, "how many debts ... to Caesar", an
+irony neither Machiavelli nor the translation flags.
+
+**The close raises I.9's stakes, under a condition.** If ordering the city
+meant laying down the principate, the prince who did not would merit "some
+excuse"; since it does not, `non si merita scusa alcuna`, impersonal and
+general. "No excuse whatever" must not be lifted out as a maxim detached from
+that condition. Two paths, and the asymmetry of `l'una, che li fa ...` against
+`l'altra li fa ...` stays.
+
+## Guicciardini, FG-CONS.1.10
+
+**He grants the title and refuses its examples.** `Il titulo ... è
+verissimo`, restated with kingdoms first and blame for vituperation; then `Ma
+perché e' casi sono varii, e lo autore confonde gli esempli`, and the reply
+becomes a distinction of three cases: the man who makes a tyranny in a free
+fatherland, the man who inherits one, the legitimate king. Machiavelli's
+judgment stands; the mixing of his examples is what is refused. The English
+keeps the grant whole before the `Ma`, and does not make him defend tyranny.
+
+**Necessity excuses, and liberty can be the tyranny.** Inside the first case
+he opens another: the citizen whom disordered liberties leave no other way to
+save himself `merita essere assai scusato`. Justification is denied the
+usurper; excuse is given the citizen. Florence is the example, in the first
+person: good citizens `la necessità ha condotti` to desire the change of a
+state `che sotto nome di libertà è tirannico`. The popular government is the
+tyranny; the citizens are not drawn towards tyranny. No note or standfirst may
+restate it the other way round.
+
+**Very few, or perhaps none.** The heir merits less blame for keeping the
+tyranny and would merit more praise for leaving it, but `pochissimi o forse
+nessuno` have left it `sanza necessità`. The causes are hedged (`può`,
+`difficile`, `pare`, `communemente`), and `Sanza che` opens a period without a
+main clause. Sulla, who seized his power, is the rare example of laying it
+down. The phrase returns as `pochissimi e forse nessuno` in the last line;
+the `forse` survives both times and in the title.
+
+**Choice answers adoption; grant, suspension and belief stay distinct.**
+Machiavelli's proof was adoption; Guicciardini's reform is succession `per
+elezione`, his own design in I.2. He grants (`si truova pure qualcuno`),
+suspends (`io non so quali`, which is not "there are none"), and believes
+(`credo`) that where it has been, necessity kept it more than will.
+
+**The close: lesser reproof, on the case Machiavelli half excused.** `quanto
+... tanto`, the rubric's proportion, measures how often private men reason
+about these things against how rarely they are done, and `però` draws the
+conclusion: those who do not lay down a tyranny or disinherit their posterity
+merit `minore reprensione`. That is close to Machiavelli's "some excuse" for
+the prince who would have to lay down the principate; what Guicciardini
+denies is the condition of Machiavelli's "no excuse whatever", that the
+principate can be kept and the city ordered. Reproof, blame and excuse stay
+three words. The unit ends with a stop.
+
 ## The pair
 
 Machiavelli argues towards a demonstration. Guicciardini declines to be

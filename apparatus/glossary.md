@@ -77,7 +77,7 @@ last sentence answers Machiavelli's first move.
 | `favorire` | to favour | |
 | `disordine` / `disordini` | disorder | Set against `ordine`. |
 | `libertà` | liberty | FG `ha appetito la libertà`. Not modern liberal freedom. |
-| `facultà` | capacity | FG .02 `non avevano facultà di pervenire`. Not "faculty". |
+| `facultà` | capacity | FG .02 `non avevano facultà di pervenire`. Not "faculty". Of property, "substance" (D198). |
 
 ## Added from FG-CONS.1.12 (2026-09-18)
 
@@ -311,3 +311,34 @@ last sentence answers Machiavelli's first move.
 | `corroborazione` | corroboration | D170, recorded collapse with `riscontro` (D160). |
 | `subito` / `incontinenti` | at once / forthwith | D177. NM I.9 `subito ordinato`; FG I.9 both. |
 | `deporre` | lay down | FG I.9 `deporre la autorità`. |
+
+## Added from the I.10 pair (2026-10-07)
+
+| Italian | English | Note |
+|---|---|---|
+| `patria` | fatherland | Both authors throughout; NM I.10, FG I.10 ×5. |
+| `sicurtà`, `sicuro`, `sicuramente` | security, secure, securely | NM I.10's thread from .02 to the last line; FG I.10 `più sicuramente`. |
+| `gloria` | glory | NM I.10 ×8. |
+| `dipoi` | afterwards | D187. "Then" is `adunque`'s. |
+| `vituperio` / `vituperabile`, `vituperare` | disgrace / vituperable, vituperate | D186, holding D26 for the noun. |
+| `infamia`, `infame` | infamy, infamous | NM I.10; FG I.10 `più infame`. |
+| `detestabile` | detestable | NM I.10, FG I.10. |
+| `celebrare` / `celebre` | celebrate / renowned | NM I.10 (D195). |
+| `scellerato`; `malvagio` | villainous; vicious | D189. |
+| `incorrere` | incur | D192; a *currere* compound. |
+| `preporre`, `preposto` | appoint, appointed | NM I.10 `preposti agli eserciti`, `essere preposto`; as `preposti a guardia` (I.5). |
+| `Istoria`, `Istorie` | history, histories | NM I.10. |
+| `Imperadore` | emperor | NM I.10. |
+| `somma`, `sommo` / `sommamente` | supreme / supremely | D190. |
+| `pure` (concessive) | yet | D191. |
+| `facultà` (property) | substance | D198. `facultà` (a power to do) stays "capacity". |
+| `talmente che` | so that | FG I.10. `in modo che` stays "in such a way that". |
+| `quando bene` | even if | FG I.10; with the D31 concessives. |
+| `sanza che` | besides that | FG I.10, a further cause. |
+| `eredità`, `ereditario`; `successione`, `succedere` | inheritance, hereditary; succession, succeed | NM I.10 .06; FG I.10 .02–.04. |
+| `adozione` | adoption | NM I.10 .06; answered by FG `elezione`, "choice". |
+| `fazione` | faction | FG I.10. |
+| `sostenere` (custody) | detain | FG I.10 `sostenuti come sospetti`. |
+| `debitore` | debtor | FG I.10. No Italian echo of `obbligo` (D17); recorded so that no note claims one. |
+| `instituzione` | institution | FG I.10. |
+| `fortezza` | fortitude | FG I.10. |
