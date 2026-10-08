@@ -497,9 +497,28 @@ said so.
 
 That is the result to reason from, not the raw count. Run unscoped it produced
 44 divergences, none of which would have changed an English word. Scoped as
-above it is cheap, and a run that comes back empty is worth having. Revisit at
-unit ten whether a clean witness can be sampled rather than fully
-double-passed.
+above it is cheap, and a run that comes back empty is worth having.
+
+**Revisited at unit ten (2026-10-08, D199).** The two governing witnesses have
+not behaved alike, and the rule now follows the evidence for each.
+
+- ***Discorsi*, 1824: sampled.** Twelve chapters (I.1–I.10, I.12, I.14; I.11
+  not yet run), over 12,000 words, double-passed with no word, clause or sense
+  disagreement in any of them. From I.11 on, pass A reads the whole chapter;
+  pass B, a separate cold reader, reads one page chosen by the collator
+  after pass A is in, not by the reader, and at least a fifth of the chapter.
+  Any word, clause or sense disagreement in the sample sends the whole chapter
+  to a full pass B, and the sample rule is suspended for the next chapter too.
+  The 1554 comparison read stays full, and every word-level difference it
+  throws up is still looked at, so the chapter is read by two readers in any
+  case, one of them against a different text.
+- ***Considerazioni*, Canestrini 1857: full dual pass, unchanged.** The scan
+  breaks letters on every page; I.10 drew 40–47 doubtful loci per reader and
+  three letters doubtful to both. A sample would miss exactly what the rule is
+  for.
+
+Revisit again at unit twenty, or at the first sampled chapter whose sample
+disagrees.
 
 Everything else is deleted — Class T review of governance documents,
 bounded-amendment rechecks, the E1–E7 gate, the freeze tag. **The edition is
