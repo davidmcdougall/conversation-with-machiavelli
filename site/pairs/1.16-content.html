@@ -1,0 +1,639 @@
+<title>A Conversation with Machiavelli — A very great difference</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root {
+  --paper:      #EDEEEC;
+  --paper-sunk: #E4E6E3;
+  --ink:        #1B1E1C;
+  --ink-muted:  #5C625E;
+  --ink-faint:  #868C87;
+  --rule:       #C9CDC8;
+  --rule-faint: #DCDFDB;
+  --nm:         #3A5A6B;
+  --fg:         #6E5A3C;
+  --serif: "EB Garamond", "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  --sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --mono:  "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:      #161917;
+    --paper-sunk: #1D211E;
+    --ink:        #E3E6E1;
+    --ink-muted:  #A0A6A0;
+    --ink-faint:  #767C77;
+    --rule:       #343934;
+    --rule-faint: #262B27;
+    --nm:         #8FB4C6;
+    --fg:         #C4A97C;
+  }
+}
+:root[data-theme="dark"] {
+  --paper:      #161917;
+  --paper-sunk: #1D211E;
+  --ink:        #E3E6E1;
+  --ink-muted:  #A0A6A0;
+  --ink-faint:  #767C77;
+  --rule:       #343934;
+  --rule-faint: #262B27;
+  --nm:         #8FB4C6;
+  --fg:         #C4A97C;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 1160px; margin: 0 auto; padding-inline: 20px; padding-block: 0 0; }
+
+/* ---- masthead ---- */
+.masthead { padding-block: 56px 32px; border-bottom: 1px solid var(--rule); }
+.eyebrow {
+  font-family: var(--sans); font-size: 11px; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint);
+  margin: 0 0 18px;
+}
+h1 {
+  font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 5vw, 44px);
+  line-height: 1.12; margin: 0 0 14px; text-wrap: balance; letter-spacing: -0.01em;
+}
+h1 .sub { display: block; font-style: italic; color: var(--ink-muted); font-size: .52em; margin-top: 12px; letter-spacing: 0; }
+.standfirst {
+  font-family: var(--sans); font-size: 14.5px; line-height: 1.6;
+  color: var(--ink-muted); max-width: 62ch; margin: 0;
+}
+
+/* ---- the pairing device ---- */
+.pairing {
+  display: flex; align-items: stretch; gap: 0; margin: 30px 0 0;
+  border: 1px solid var(--rule); border-radius: 2px; overflow: hidden;
+  font-family: var(--sans); background: var(--paper-sunk);
+}
+.pairing > div { flex: 1 1 0; padding: 13px 16px; min-width: 0; }
+.pairing .who { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
+.pairing .nm-side .who { color: var(--nm); }
+.pairing .fg-side .who { color: var(--fg); }
+.pairing .what { font-size: 13.5px; color: var(--ink-muted); }
+.pairing .arrow {
+  flex: 0 0 auto; display: flex; align-items: center; justify-content: center;
+  padding-inline: 14px; color: var(--ink-faint); font-size: 15px;
+  border-inline: 1px solid var(--rule);
+}
+
+/* ---- pair-to-pair navigation ---- */
+.pairnav {
+  display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+  margin-top: 18px; font-family: var(--sans); font-size: 12.5px;
+  color: var(--ink-muted);
+}
+.pairnav a { text-decoration: none; color: var(--ink-muted); }
+.pairnav a:hover, .pairnav a:focus { color: var(--ink); text-decoration: underline; }
+
+/* ---- work sections ---- */
+.work { padding-block: 52px 0; }
+.work-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
+.work-head .tag {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .04em;
+  padding: 3px 7px; border-radius: 2px; color: var(--paper);
+}
+.work.nm .tag { background: var(--nm); }
+.work.fg .tag { background: var(--fg); }
+h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; letter-spacing: -0.005em; }
+.rubric {
+  font-style: italic; color: var(--ink-muted); max-width: 70ch;
+  margin: 10px 0 0; font-size: 16.5px; line-height: 1.5;
+}
+.rubric-note {
+  font-family: var(--sans); font-style: normal; font-size: 12px;
+  color: var(--ink-faint); margin-top: 7px;
+}
+.colheads {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  margin-top: 30px; padding-bottom: 7px; border-bottom: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint);
+}
+
+/* ---- the facing pair ---- */
+.pair {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  padding-block: 22px; border-bottom: 1px solid var(--rule-faint);
+  scroll-margin-top: 20px;
+}
+.pair:target { background: var(--paper-sunk); }
+.annot { grid-column: 2 / -1; margin-top: 14px; font-family: var(--sans); font-size: 13.5px;
+  line-height: 1.55; color: var(--ink-muted); }
+.annot summary { cursor: pointer; font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); list-style: none; }
+.annot summary::-webkit-details-marker { display: none; }
+.annot summary::before { content: "+ "; }
+.annot[open] summary::before { content: "− "; }
+.annot p { margin: 8px 0 0; max-width: 72ch; }
+.annot .xref { color: inherit; text-decoration: underline; text-decoration-color: var(--rule);
+  text-underline-offset: 2px; white-space: nowrap; }
+.gutter { padding-top: 4px; }
+.uid {
+  font-family: var(--mono); font-size: 10.5px; color: var(--ink-faint);
+  text-decoration: none; letter-spacing: -0.02em;
+}
+.uid:hover, .uid:focus { color: var(--ink); text-decoration: underline; }
+.col { min-width: 0; }
+.col.it { hyphens: auto; }
+.col.en { }
+.supplied { color: var(--ink-muted); }
+
+/* ---- apparatus ---- */
+.apparatus {
+  margin-top: 34px; padding-top: 22px; border-top: 2px solid var(--rule);
+  font-family: var(--sans); font-size: 13.5px; line-height: 1.58;
+  color: var(--ink-muted);
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 26px 34px;
+}
+.apparatus h3 {
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); margin: 0 0 9px;
+}
+.apparatus p { margin: 0 0 9px; }
+.apparatus p:last-child { margin-bottom: 0; }
+.apparatus .lem { font-family: var(--serif); font-size: 15px; color: var(--ink); font-style: italic; }
+.sig { font-family: var(--mono); font-size: 12px; color: var(--ink); }
+
+/* ---- colophon ---- */
+.colophon {
+  margin-top: 60px; padding-block: 28px 60px; border-top: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 13px; line-height: 1.6; color: var(--ink-muted);
+}
+.colophon .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 34px; }
+.colophon h3 {
+  font-size: 10.5px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--ink-faint); margin: 0 0 8px;
+}
+.colophon p { margin: 0 0 8px; }
+.colophon ul { margin: 0; padding-left: 16px; }
+.colophon li { margin-bottom: 5px; }
+.state {
+  margin-top: 26px; padding: 14px 16px; background: var(--paper-sunk);
+  border-left: 2px solid var(--ink-faint); border-radius: 0 2px 2px 0;
+  font-size: 12.5px;
+}
+.state strong { color: var(--ink); font-weight: 600; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--nm); outline-offset: 2px; }
+
+/* ---- contents / index page ---- */
+.toc { margin-top: 30px; }
+.toc-row {
+  display: grid; grid-template-columns: 40px 1fr 1fr; gap: 0 20px;
+  padding-block: 14px; border-bottom: 1px solid var(--rule-faint);
+  font-family: var(--sans); align-items: baseline;
+}
+.toc-row .n { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
+.toc-row a { text-decoration: none; color: var(--ink); font-family: var(--serif); font-size: 16px; }
+.toc-row a:hover, .toc-row a:focus { text-decoration: underline; }
+.toc-row .unpublished { color: var(--ink-faint); font-style: italic; font-size: 14px; }
+.toc-row .ids { color: var(--ink-faint); font-size: 11.5px; font-family: var(--mono); }
+
+@media (max-width: 760px) {
+  body { font-size: 16.5px; }
+  .colheads { display: none; }
+  .pair { grid-template-columns: 1fr; gap: 0; padding-block: 20px; }
+  .gutter { padding-top: 0; margin-bottom: 8px; }
+  .annot { grid-column: 1; }
+  .col.it { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px dotted var(--rule); }
+  .col.it::before, .col.en::before {
+    display: block; font-family: var(--sans); font-size: 10px; font-weight: 600;
+    letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px;
+  }
+  .col.it::before { content: "Italian"; }
+  .col.en::before { content: "English"; }
+  .pairing { flex-direction: column; }
+  .pairing .arrow { border-inline: 0; border-block: 1px solid var(--rule); padding-block: 6px; }
+  .toc-row { grid-template-columns: 1fr; gap: 4px; }
+}
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow">A Conversation with Machiavelli · Pair 14 of 39</p>
+    <h1>A very great difference
+      <span class="sub">Discourses I.16, and Guicciardini&#x27;s reply</span></h1>
+    <p class="standfirst">Machiavelli says that a people used to living under a prince, if by some accident it becomes free, maintains liberty with difficulty: like a brute animal nourished in prison and let go, it becomes the prey of the first who seeks to chain it again; and the state newly free makes partisan enemies of those who fed on the tyranny and cannot live content, and no partisan friends, since no one confesses a debt to one who does not offend him. No remedy, he says, is more powerful than to kill the sons of Brutus. Princes who have the multitude for enemy he judges unhappy, and their greatest remedy is to make the people a friend: its vengeance can be satisfied altogether, as Clearchus of Heraclea did by cutting the optimates to pieces, and its desire for liberty in part, by securing the few who want to command and giving the many, who want to live secure, laws in which the universal security is comprised, as the kings of France have bound themselves to infinite laws. Guicciardini makes a very great difference between a people that has never known liberty and one that has lost it by some accident, and will not have the Romans alleged to the contrary: they kept the kings&#x27; orders, which, if they were good, were so by fortune more than by prudence; they had felt Tarquinius; and their neighbours were free. His remedy is a tempered government, rigid against whoever machinates, persecuting no one on simple suspicion, easy in receiving the friends of the tyranny, who, he has seen in Florence, content themselves within it when they are secure, and guarding above all things against divisions, which brought the Medici back. In like cases, he grants, it is necessary to put hand into blood; but it would have been better that Brutus had not had sons than to have them so as to have to kill them. A people made the prince&#x27;s enemy by oppression is easily provided for by just and humane government; but where the root is the desire of liberty, as in Florence, which wished to be free so as to partake of the honours and have a hand in the government, no good treatment eradicates it, and it is puerile, he says, to believe that Clearchus killed the optimates to satisfy the people. Then the remedy the prince has is either partisans of such quality that they are powerful to oppress the people, or, beating down and annihilating the people, to introduce new inhabitants.</p>
+
+    <div class="pairing">
+      <div class="nm-side">
+        <div class="who">Niccolò Machiavelli</div>
+        <div class="what">Discorsi sopra la prima Deca di Tito Livio · written c. 1513–19, printed 1531</div>
+      </div>
+      <div class="arrow" aria-hidden="true">answered by</div>
+      <div class="fg-side">
+        <div class="who">Francesco Guicciardini</div>
+        <div class="what">Considerazioni intorno ai Discorsi del Machiavelli · written 1529–30, printed 1857</div>
+      </div>
+    </div>
+    <nav class="pairnav"><a href="1.14.html">← Pair 1.14</a><a href="../index.html">All 39 pairs</a><span></span></nav>
+  </header>
+
+  <section class="work nm">
+    <div class="work-head">
+      <span class="tag">NM-DISC.1.16</span>
+      <h2>Capitolo XVI</h2>
+    </div>
+    <p class="rubric">Un Popolo uso a vivere sotto un Principe, se per qualche accidente diventa libero, con difficultà mantiene la libertà.</p>
+    <p class="rubric">A people used to living under a prince, if by some accident it becomes free, maintains liberty with difficulty.</p>
+
+    <div class="colheads"><div></div><div>Italian · 1824</div><div>English</div></div>
+      <div class="pair" id="NM-DISC.1.16.01">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.16.01">1.16.01</a></div>
+        <div class="col it" lang="it">Quanta difficultà sia ad uno Popolo uso a vivere sotto un Principe preservare dipoi la libertà, se per alcuno accidente l&#x27;acquista, come l&#x27;acquistò Roma dopo la cacciata de&#x27; Tarquinj, lo dimostrano infiniti esempj, che si leggono nelle memorie delle antiche Istorie. E tale difficultà è ragionevole; perché quel Popolo è non altrimenti che uno animale bruto, il quale, ancorché di natura feroce e silvestre, sia stato nutrito sempre in carcere e in servitù, che dipoi lasciato a sorte in una campagna libero, non essendo uso a pascersi, né sapendo le latebre dove si abbia a rifuggire, diventa preda del primo che cerca rincatenarlo.</div>
+        <div class="col en" lang="en">How much difficulty there is for a people used to living under a prince to preserve liberty afterwards, if by some accident it acquires it, as Rome acquired it after the expulsion of the Tarquins, infinite examples demonstrate, which are read in the memorials of the ancient histories. And such difficulty is reasonable; for that people is not otherwise than a brute animal which, even though of a ferocious and wild nature, has been nourished always in prison and in servitude, which, afterwards let go by chance free in open country, not being used to feeding itself, nor knowing the lairs where it is to take refuge, becomes the prey of the first who seeks to chain it again.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The thesis, and its first ground. That a people used to living under a prince preserves liberty with difficulty, if by some accident it acquires it, infinite examples in the ancient histories demonstrate; and the difficulty is reasonable. The ground is a simile carried through one period: a brute animal, however ferocious and wild by nature, if it has been nourished always in prison and in servitude and is then let go free, does not know how to feed itself or where to take refuge, and becomes the prey of the first who seeks to chain it again. Its nature is not the trouble; its habit is. The case named is Rome, which acquired liberty after the expulsion of the Tarquins.</p>
+<p><span class="lem">History.</span> The Tarquins were expelled from Rome by tradition in 509 BC, when Lucius Junius Brutus and Lucius Tarquinius Collatinus became the first consuls (Livy 1.59–60).</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.16.02">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.16.02">1.16.02</a></div>
+        <div class="col it" lang="it">Questo medesimo interviene ad un Popolo, il quale sendo uso a vivere sotto i Governi d&#x27;altri, non sapendo ragionare né delle difese, o offese pubbliche, non conoscendo i Principi, né essendo conosciuto da loro, ritorna presto sotto un giogo, il quale il più delle volte è più grave che quello che per poco innanzi si aveva levato d&#x27;insù il collo: e trovasi in queste difficultà, ancora che la materia non sia in tutto corrotta. Perché in un Popolo dove in tutto è entrata la corruzione, non può, non che picciol tempo, ma punto vivere libero, come di sotto si discorrerà: e però i ragionamenti nostri sono di quelli Popoli dove la corruzione non sia ampliata assai, e dove sia più del buono, che del guasto.</div>
+        <div class="col en" lang="en">This same <span class="supplied">[thing]</span> happens to a people which, being used to living under the governments of others, not knowing how to reason either of public defences or offences, not knowing the princes nor being known by them, returns soon under a yoke which most of the time is heavier than that which a little before it had lifted off its neck: and it finds itself in these difficulties even though the matter be not altogether corrupted. For in a people where corruption has altogether entered, it cannot, not to say <span class="supplied">[for]</span> a little time, but at all live free, as will be discoursed below: and therefore our reasonings are of those peoples where corruption has not expanded much, and where there is more of the good than of the spoiled.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The simile applied, and the chapter&#x27;s limit. A people used to the governments of others does not know how to reason of public defences or offences, does not know the princes nor is known by them, and so returns soon under a yoke, most of the time heavier than the one it lifted off. And this happens even where the matter is not altogether corrupted. Where corruption has altogether entered, a people cannot live free at all, and that case is put off to &quot;below&quot; (in fact the next chapter); the reasonings here are of peoples where corruption has not expanded much, and there is more of the good than of the spoiled. Everything that follows stands inside that condition.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini opens with a different cut, which Machiavelli does not draw: a people that has never known liberty against one that has lost it by some accident <a class="xref" href="#FG-CONS.1.16.01">Guicciardini .01</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.16.03">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.16.03">1.16.03</a></div>
+        <div class="col it" lang="it">Aggiungesi alla soprascritta un&#x27;altra difficultà, la quale è che lo Stato che diventa libero, si fa partigiani nimici e non partigiani amici. Partigiani nimici gli diventano tutti coloro che dello Stato tirannico si prevalevano, pascendosi delle ricchezze del Principe; a&#x27; quali sendo tolta la facoltà del valersi, non possono vivere contenti, e sono forzati ciascuno di tentare di riassumere la tirannide, per ritornare nell&#x27;autorità loro. Non si acquista, come ho detto, partigiani amici, perché il vivere libero propone onori e premj, medianti alcune oneste e determinate cagioni, e fuori di quelle non premia né onora alcuno; e quando uno ha quelli onori e quegli utili che gli pare meritare, non confessa avere obbligo con coloro che lo rimunerano: oltre a questo, quella comune utilità che del vivere libero si trae, non è da alcuno, mentre ch&#x27;ella si possiede, conosciuta, la quale è di poter godere liberamente le cose sue senza alcuno sospetto, non dubitare dell&#x27;onore delle donne, di quel dei figliuoli, non temere di sé; perché nissuno confesserà mai avere obbligo con uno che non l&#x27;offenda. Però, come di sopra si dice, viene ad avere lo Stato libero e che di nuovo surge, partigiani nimici, e non partigiani amici.</div>
+        <div class="col en" lang="en">To the above-written <span class="supplied">[difficulty]</span> is added another difficulty, which is that the state that becomes free makes for itself partisan enemies and not partisan friends. Partisan enemies to it become all those who took advantage of the tyrannical state, feeding themselves on the riches of the prince; from whom the capacity of availing themselves being taken away, they cannot live content, and are forced each <span class="supplied">[of them]</span> to try to resume the tyranny, so as to return to their authority. It does not acquire, as I have said, partisan friends, because free living proposes honours and rewards by means of certain honest and determinate causes, and outside of those neither rewards nor honours anyone; and when one has those honours and those profits which it seems to him he merits, he does not confess having a debt to those who remunerate him: besides this, that common utility which is drawn from free living is not known by anyone while it is possessed, which is to be able to enjoy freely one&#x27;s own things without any suspicion, not to doubt of the honour of the women, of that of the children, not to fear for oneself; for no one will ever confess having a debt to one who does not offend him. Therefore, as is said above, the state that is free and that newly rises comes to have partisan enemies, and not partisan friends.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The second difficulty: the state that becomes free makes for itself partisans that are enemies and none that are friends. The enemies are those who took advantage of the tyranny and fed on the prince&#x27;s riches; deprived of the capacity to avail themselves, they cannot live content, and each is forced to try to resume the tyranny. The friends do not come, for two reasons. Free living rewards and honours only by rule, for honest and determinate causes, and whoever gets what he thinks he merits confesses no debt to those who give it. And the common utility of free living, to enjoy one&#x27;s own without suspicion, not to doubt of the honour of one&#x27;s women and children, not to fear for oneself, is not known by anyone while it is possessed: no one will confess a debt to one who does not offend him. The paragraph closes on the formula it opened with, now drawn as a consequence (<i lang="it">Però, come di sopra si dice</i>).</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini&#x27;s reply meets the first half in its own word: it happens many times, he says, that the tyranny&#x27;s friends, received by a tempered government and secure, &quot;content themselves within it&quot;, and he has seen it in Florence <a class="xref" href="#FG-CONS.1.16.03">Guicciardini .03</a>. The word &quot;suspicion&quot; returns in Guicciardini turned to the state&#x27;s suspicion of its citizens: the free city must persecute no one on simple suspicion <a class="xref" href="#FG-CONS.1.16.04">Guicciardini .04</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.16.04">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.16.04">1.16.04</a></div>
+        <div class="col it" lang="it">E volendo rimediare a questi inconvenienti e a questi disordini, che le soprascritte difficultà si arrecherebbono seco, non ci è più potente rimedio, né più valido, né più sano, né più necessario, che ammazzare i figliuoli di Bruto, i quali, come la Istoria mostra, non furono indotti insieme con altri giovani Romani a congiurare contro alla patria, per altro se non perché non si potevano valere straordinariamente sotto i Consoli, come sotto i Re; in modoché la libertà di quel Popolo pareva che fusse diventata la loro servitù. E chi prende a governare una moltitudine, o per via di libertà o per via di Principato, e non si assicura di coloro che a quell&#x27;ordine nuovo sono nimici, fa uno Stato di poca vita.</div>
+        <div class="col en" lang="en">And wishing to remedy these inconveniences and these disorders, which the above-written difficulties would bring with them, there is no more powerful remedy, nor more valid, nor more sound, nor more necessary, than to kill the sons of Brutus, who, as the history shows, were not induced together with other Roman young men to conspire against the fatherland for any other reason than because they could not avail themselves extraordinarily under the consuls as under the kings; in such a way that the liberty of that people seemed to have become their servitude. And whoever takes up governing a multitude, either by the path of liberty or by the path of principate, and does not secure himself of those who are enemies to that new order, makes a state of little life.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> The remedy, stated with four comparatives and no softening: against these inconveniences and disorders there is no remedy more powerful, more valid, more sound or more necessary than to kill the sons of Brutus. The sons of Brutus are a type as well as a case: young men who conspired against the fatherland for no other reason than that under the consuls they could not avail themselves extraordinarily as they had under the kings, so that the liberty of that people seemed to have become their servitude. The rule follows and widens it to every new order: whoever takes up governing a multitude, by the path of liberty or of principate, and does not secure himself of those who are enemies to it, makes a state of little life.</p>
+<p><span class="lem">History.</span> Livy 2.3–5: young nobles, among them Titus and Tiberius, sons of the consul Lucius Junius Brutus, conspired with envoys of the Tarquins to restore the kings; the plot was betrayed by a slave, and Brutus, as consul, watched his sons scourged and beheaded. Livy (2.3) gives the young men&#x27;s complaint, that the liberty of others had been turned into their servitude.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini grants that in such cases it is necessary to put hand into blood, but will not have the new liberty desire sons of Brutus so as to acquire reputation and terror by severity, a purpose Machiavelli does not state; and he narrows the class to the restless, the rapacious, and those without the quality for a place in liberty <a class="xref" href="#FG-CONS.1.16.04">Guicciardini .04</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.16.05">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.16.05">1.16.05</a></div>
+        <div class="col it" lang="it">Vero è che io giudico infelici quelli Principi, che per assicurare lo Stato loro hanno a tenere vie straordinarie, avendo per nimici la moltitudine; perché quello che ha per nimici i pochi, facilmente, e senza molti scandali si assicura; ma chi ha per nimico l&#x27;universale, non si assicura mai, e quanta più crudeltà usa, tanto diventa più debole il suo Principato. Talché il maggiore rimedio che si abbia è cercare di farsi il Popolo amico.</div>
+        <div class="col en" lang="en">It is true that I judge unhappy those princes who, to secure their state, are to hold extraordinary paths, having the multitude for enemies; for he who has the few for enemies secures himself readily and without many scandals; but whoever has the generality for enemy never secures himself, and the more cruelty he uses, the weaker becomes his principate. So that the greatest remedy there is, is to seek to make the people one&#x27;s friend.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> A concession in the first person, and the turn to princes. &quot;It is true that I judge unhappy&quot; the princes who, to secure their state, must hold to extraordinary paths because the multitude is their enemy: whoever has the few for enemies secures himself readily, but whoever has the generality for enemy never does, and the more cruelty he uses, the weaker his principate becomes. So the greatest remedy there is, is to seek to make the people one&#x27;s friend. Against a few enemies the remedy was to secure oneself of them, at its strongest by killing, and even then without many scandals; against the generality, cruelty only weakens, and the ground given (<i lang="it">perché</i>) is the number of the enemies.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini&#x27;s last sentence turns this remedy in its own verb: where the people&#x27;s enmity is rooted in the desire of liberty, the remedy the prince has is either to make himself partisans powerful to oppress the people, or to beat it down and bring in new inhabitants <a class="xref" href="#FG-CONS.1.16.05">Guicciardini .05</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.16.06">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.16.06">1.16.06</a></div>
+        <div class="col it" lang="it">E benché questo discorso sia disforme dal soprascritto, parlando qui d&#x27;un Principe, e quivi d&#x27;una Repubblica, nondimeno per non avere a tornare più in su questa materia, ne voglio parlare brievemente. Volendo pertanto un Principe guadagnarsi un Popolo che gli fusse nimico, parlando di quelli Principi che sono divenuti della loro Patria tiranni, dico ch&#x27;ei debbe esaminare prima quello che il Popolo desidera, e troverà sempre ch&#x27;ei desidera due cose; l&#x27;una, vendicarsi contro a coloro che sono cagione che sia servo; l&#x27;altra, di riavere la sua libertà. Al primo desiderio il Principe può satisfare in tutto, al secondo in parte.</div>
+        <div class="col en" lang="en">And albeit this discourse be unlike the above-written, speaking here of a prince, and there of a republic, nonetheless, so as not to have to turn again upon this matter, I wish to speak of it briefly. A prince, on that account, wishing to gain for himself a people that were his enemy, speaking of those princes who have become tyrants of their fatherland, I say that he must examine first what the people desires, and he will always find that it desires two things: the one, to avenge itself against those who are the cause that it is a servant; the other, to have back its liberty. The first desire the prince can satisfy altogether, the second in part.</div>
+        <details class="annot"><summary>Commentary · 1</summary>
+          <p><span class="lem">Argument.</span> A declared digression. The discourse is unlike what went before, a prince here and a republic there, but so as not to return to the matter Machiavelli treats it briefly, and he restricts it at once to princes who have become tyrants of their fatherland. Such a prince, wishing to gain a people that is his enemy, must first examine what it desires, and will find two things: vengeance on those who made it a servant, and to have back its liberty. The first can be satisfied altogether, the second in part.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.16.07">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.16.07">1.16.07</a></div>
+        <div class="col it" lang="it">Quanto al primo ce n&#x27;è lo esempio appunto. Clearco tiranno di Eraclea, sendo in esilio, occorse che per controversia venuta tra il Popolo e gli Ottimati di Eraclea, veggendosi gli Ottimati inferiori si volsono a favorire Clearco, e congiuratisi seco lo missono contro alla disposizione popolare in Eraclea, e tolsono la libertà al Popolo. In modo che trovandosi Clearco tra la insolenza degli Ottimati, i quali non poteva in alcun modo né contentare né correggere, e la rabbia de&#x27; Popolari, che non potevano sopportare lo avere perduta la libertà, deliberò ad un tratto liberarsi dal fastidio dei Grandi, e guadagnarsi il Popolo. E presa sopra questo conveniente occasione, tagliò a pezzi tutti gli Ottimati, con una estrema satisfazione de&#x27; Popolari. E così egli per questa via satisfece ad una delle voglie che hanno i Popoli, cioè di vendicarsi.</div>
+        <div class="col en" lang="en">As to the first, there is the example of it exactly. Clearchus, tyrant of Heraclea, being in exile, it occurred that, through a controversy come about between the people and the optimates of Heraclea, the optimates, seeing themselves inferior, turned to favouring Clearchus, and, having conspired with him, put him, against the popular disposition, into Heraclea and took liberty away from the people. In such a way that Clearchus, finding himself between the insolence of the optimates, whom he could in no way either content or correct, and the rage of the popular <span class="supplied">[men]</span>, who could not bear the having lost liberty, resolved at a stroke to free himself from the vexation of the great and to gain the people for himself. And, a fitting occasion for this being taken, he cut all the optimates to pieces, with an extreme satisfaction of the popular <span class="supplied">[men]</span>. And so he by this path satisfied one of the longings that peoples have, that is, to avenge themselves.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> The first desire, by example. Clearchus was in exile; the optimates, having the worse of a controversy with the people, conspired with him, put him into Heraclea against the popular disposition, and took liberty from the people. Caught between the insolence of the optimates, whom he could neither content nor correct, and the rage of the people, who could not bear the loss of liberty, he resolved at a stroke to free himself of the great and gain the people, and at a fitting occasion cut all the optimates to pieces, to the people&#x27;s extreme satisfaction. So he satisfied one of the longings peoples have, vengeance. The example is given as an example, without judgment.</p>
+<p><span class="lem">History.</span> Clearchus, tyrant of Heraclea on the Black Sea from about 364 BC until his murder some twelve years later. Justin (16.4–5) has him recalled from exile by the senate to put down the plebs, and then turn to the plebs and seize and kill the senators. Machiavelli&#x27;s version compresses the story and supplies the tyrant&#x27;s motive, to be free of the great and gain the people.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini finds it puerile to believe that Clearchus killed the optimates to satisfy the people: had they been his friends he would have gained little; what is to be believed, he implies, is that Clearchus held them suspect, wished to oppress them, and gave the deed the colour of pleasing the people <a class="xref" href="#FG-CONS.1.16.05">Guicciardini .05</a>. That is not far from Machiavelli&#x27;s first motive, to free himself from the vexation of the great; what Guicciardini refuses is the case as an example of a tyrant gaining a people by satisfying it.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.16.08">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.16.08">1.16.08</a></div>
+        <div class="col it" lang="it">Ma quanto all&#x27;altro popolare desiderio di riavere la sua libertà, non potendo il Principe satisfarli, debbe esaminare quali cagioni sono quelle che li fanno desiderare d&#x27;essere liberi; e troverà che una piccola parte di loro desidera d&#x27;essere libera per comandare, ma tutti gli altri, che sono infiniti, desiderano la libertà per vivere sicuri. Perché in tutte le Repubbliche, in qualunque modo ordinate, ai gradi del comandare non aggiungono mai quaranta o cinquanta cittadini; e perché questo è piccolo numero, è facile cosa assicurarsene, o con levarli via, o con far loro parte di tanti onori, che secondo le condizioni loro essi abbiano in buona parte a contentarsi. Quegli altri ai quali basta vivere sicuri, si satisfanno facilmente, facendo ordini e leggi, dove insieme con la potenza sua si comprenda la sicurtà universale. E quando un Principe faccia questo, e che il Popolo vegga che per accidente nissuno ei non rompa tali leggi, comincerà in breve tempo a vivere sicuro e contento. In esempio ci è il Regno di Francia, il quale non vive sicuro per altro che per essersi quelli Re obbligati ad infinite leggi, nelle quali si comprende la sicurtà di tutt&#x27;i suoi Popoli. E chi ordinò quello Stato, volle che quelli Re, dell&#x27;arme e del danajo facessero a loro modo, ma che d&#x27;ogni altra cosa non ne potessero altrimenti disporre che le leggi si ordinassero.</div>
+        <div class="col en" lang="en">But as to the other popular desire, of having back its liberty, the prince, not being able to satisfy them, must examine what causes are those that make them desire to be free; and he will find that a small part of them desires to be free in order to command, but all the others, who are infinite, desire liberty in order to live secure. For in all republics, in whatever way ordered, to the degrees of commanding there never attain forty or fifty citizens; and because this is a small number, it is an easy thing to secure oneself of them, either by removing them, or by giving them a share of so many honours that, according to their conditions, they are in good part to content themselves. Those others, for whom it is enough to live secure, are satisfied readily, by making orders and laws in which, together with his power, the universal security is comprised. And when a prince does this, and the people sees that by no accident does he break such laws, it will begin in a short time to live secure and content. For an example there is the kingdom of France, which lives secure for no other reason than through those kings&#x27; having bound themselves to infinite laws, in which the security of all its peoples is comprised. And he who ordered that state wished that those kings should do with arms and with money in their own way, but that of every other thing they should not be able to dispose otherwise than as the laws were ordered.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> The second desire, divided. The prince cannot satisfy the desire for liberty, so he must examine its causes: a small part of the people wants to be free in order to command, all the rest, who are infinite, in order to live secure. Those who attain to the degrees of commanding are never as many as forty or fifty, and can be secured either by removing them or by giving them a share of so many honours that, according to their conditions, they are in good part to content themselves. The many are satisfied readily, by orders and laws in which, with the prince&#x27;s power, the universal security is comprised; and when the people sees that the prince breaks such laws by no accident, it will soon begin to live secure and content. The example is France, which lives secure because its kings have bound themselves to infinite laws: whoever ordered that state willed that the kings do as they please with arms and money, and dispose of every other thing only as the laws were ordered. For the many, liberty is desired for the sake of security, and security a prince can give; liberty and security remain two words. The few, too, are secured by honours as well as by removal: the sword is not Machiavelli&#x27;s only means.</p>
+<p><span class="lem">History.</span> France and its laws appear also in <i lang="it">The Prince</i>, chapter 19, where the parlement restrains the great and protects the people without burdening the king.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini&#x27;s whole Florentine people wanted liberty &quot;so as to partake of the honours, so as to have a hand in the government&quot;: the motive Machiavelli confines to the few, and the honours he thought could content them; no good treatment, says Guicciardini, eradicates that desire <a class="xref" href="#FG-CONS.1.16.05">Guicciardini .05</a>. Machiavelli&#x27;s securing of the few by honours is his nearest point to Guicciardini&#x27;s reception of the tyranny&#x27;s friends <a class="xref" href="#FG-CONS.1.16.03">Guicciardini .03</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.16.09">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.16.09">1.16.09</a></div>
+        <div class="col it" lang="it">Quello Principe adunque o quella Repubblica che non si assicura nel principio dello Stato suo, conviene che si assicuri nella prima occasione, come fecero i Romani. Chi lascia passare quella, si pente tardi di non aver fatto quello che doveva fare. Sendo pertanto il Popolo romano ancora non corrotto quando ei ricuperò la libertà, potette mantenerla, morti i figliuoli di Bruto, e spenti i Tarquinj, con tutti quelli rimedj e ordini che altra volta si sono discorsi. Ma se fusse stato quel Popolo corrotto, né in Roma, né altrove si trovavano rimedj validi a mantenerla, come nel seguente capitolo mostreremo.</div>
+        <div class="col en" lang="en">That prince, then, or that republic which does not secure itself in the beginning of its state, it is fitting that it secure itself at the first occasion, as the Romans did. Whoever lets that pass repents late of not having done what he ought to have done. The Roman people, on that account, being still not corrupted when it recovered liberty, was able to maintain it, the sons of Brutus killed and the Tarquins extinguished, with all those remedies and orders that have another time been discoursed. But had that people been corrupted, neither in Rome nor elsewhere would valid remedies have been found to maintain it, as in the following chapter we shall show.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The rule for prince and republic alike: whoever does not secure himself at the beginning of his state must do it at the first occasion, as the Romans did, and whoever lets it pass repents late. Rome could maintain its liberty because the people was not yet corrupted when it recovered it: the sons of Brutus killed, the Tarquins extinguished, and the remedies and orders already discussed. Had it been corrupted, no remedy in Rome or anywhere would have been found. The counterfactual closes the frame the chapter opened in .02 and hands the corrupted people to the next chapter.</p>
+<p><span class="lem">Cross-reference.</span> Machiavelli&#x27;s Rome &quot;recovered&quot; liberty (<i lang="it">ricuperò</i>), having &quot;acquired&quot; it at .01, and his verb implies the distinction Guicciardini draws between a people that once was free and one that never was. Guicciardini raises Rome against his own distinction, as a people that never knew liberty and yet kept it, and answers: the Romans changed nothing but the transfer of the kings&#x27; power, and if those orders were good, that came less from prudence than from the fortune that they served liberty as well; they had felt Tarquinius; and free neighbours make it a lesser marvel <a class="xref" href="#FG-CONS.1.16.02">Guicciardini .02</a>. He does not dispute Machiavelli&#x27;s &quot;not yet corrupted&quot;.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from the 1824 edition (<span class="sig">WIT-NM-DISC-1824-IA</span>), page-image-backed, which governs. Collated against the 1554 Giglio printing, Venice (<span class="sig">WIT-NM-DISC-1554-IA</span>), which is comparison evidence only.</p>
+<p>Paragraph divisions are editorial. The witness prints the chapter as one unbroken block.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem">sotto un Principe preservare dipoi la libertà</span> — 1824. The 1554 witness reads <i lang="it">sotto un Prencipe conseruare dipoi la liberta</i>. Giglio&#x27;s people conserve their liberty rather than preserve it. Same sense; <i lang="it">conservare</i> is the word Guicciardini answers with.</p>
+<p><span class="lem">di quel dei figliuoli, non temere di sé</span> — 1824. The 1554 witness reads <i lang="it">di quel de figliuoli, non tenere di se</i>. Giglio&#x27;s <i lang="it">tenere</i> does not construe here; both 1824 readers read <i lang="it">temere</i> on the sampled page.</p>
+<p><span class="lem">a questi inconvenienti e a questi disordini, che le soprascritte difficultà si arrecherebbono seco</span> — 1824. The 1554 witness reads <i lang="it">a questi incouenienti, &amp; a quegli disordini, che le soprascritte difficulta ci arrecherebbono seco</i>. Giglio has <i lang="it">quegli</i> for the second <i lang="it">questi</i> and the difficulties bring them <i lang="it">to us</i>. Same sense.</p>
+<p><span class="lem">che per poco innanzi si aveva levato d&#x27;insù il collo</span> — 1824. The 1554 witness reads <i lang="it">che poco innanzi si haueua leuato dal collo</i>. Same sense. Rests on the transcript.</p>
+<p><span class="lem">pareva che fusse diventata la loro servitù</span> — 1824. The 1554 witness reads <i lang="it">pareua che fusse diuennuta la loro seruitù</i>. Same sense.</p>
+<p><span class="lem">avendo per nimici la moltitudine</span> — 1824. The 1554 witness reads <i lang="it">hauendo per nemici la grandissima moltitudine</i>. Giglio makes the hostile multitude <i lang="it">very great</i>.</p>
+<p><span class="lem">e quanta più crudeltà usa</span> — 1824. The 1554 witness reads <i lang="it">&amp; quanto piu crudelta usa</i>. A word-level difference at a letter the scan breaks (D203(b)); both 1824 readers read <i lang="it">quanta</i> on the sampled page. Adjective for adverb, same sense. Kept (D217).</p>
+<p><span class="lem">Talché il maggiore rimedio che si abbia è cercare</span> — 1824. The 1554 witness reads <i lang="it">Talche di maggior rimedio, che si habbia, e cercare</i>. Giglio&#x27;s <i lang="it">di</i> before <i lang="it">maggior rimedio</i> reads as a misprint for <i lang="it">il</i>.</p>
+<p><span class="lem">parlando qui d&#x27;un Principe, e quivi d&#x27;una Repubblica</span> — 1824. The 1554 witness reads <i lang="it">parlando qui di uno buonissimo Prencipe, et quiui d&#x27;una Republica</i>. Giglio&#x27;s prince here is <i lang="it">a very good</i> one. The 1824 text leaves him unqualified.</p>
+<p><span class="lem">quando ei ricuperò la libertà, potette mantenerla</span> — 1824. The 1554 witness reads <i lang="it">quando ei recupero la liberta, pote mantenerla</i>. Pass A doubted the pronoun&#x27;s first letter (<i lang="it">ei</i>/<i lang="it">ci</i>) on p. 80, outside the D199 sample; the alternatives are different words. Read <i lang="it">ei</i> with Giglio (D203(a), D217).</p>
+<p><span class="lem">che altra volta si sono discorsi</span> — 1824. The 1554 witness reads <i lang="it">che altre uolte si sono discorsi</i>. A word-level difference at a letter the scan breaks (D203(b)): <i lang="it">another time</i> against <i lang="it">other times</i>. Both construe; kept (D217).</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem"><i lang="it">preservare dipoi la libertà</i>.</span> &quot;To preserve liberty afterwards&quot;: <i lang="it">dipoi</i> as D187. The 1554 edition reads <i lang="it">conseruare</i>, &quot;conserve&quot;, the word Guicciardini answers with (NM-DISC-I16-D001).</p>
+<p><span class="lem"><i lang="it">come l&#x27;acquistò Roma dopo la cacciata de&#x27; Tarquinj</i>.</span> &quot;As Rome acquired it after the expulsion of the Tarquins&quot;: 509 BC. Rome is the case the chapter returns to at its close (.09).</p>
+<p><span class="lem"><i lang="it">lo dimostrano infiniti esempj</i>.</span> &quot;Infinite examples demonstrate&quot;: the Italian fronts the question and takes it up with <i lang="it">lo</i>; the English fronts it without the pronoun.</p>
+<p><span class="lem"><i lang="it">uno animale bruto</i>.</span> &quot;A brute animal&quot;: the chapter&#x27;s simile, carried through one period: nourished in prison, let go free, not used to feeding itself, not knowing its lairs, the prey of the first who seeks to chain it again. <i lang="it">Pascersi</i>, &quot;feeding itself&quot;, returns at .03, where the tyrant&#x27;s partisans were &quot;feeding themselves on the riches of the prince&quot;.</p>
+<p><span class="lem"><i lang="it">di natura feroce e silvestre</i>.</span> &quot;Of a ferocious and wild nature&quot;: <i lang="it">feroce</i> as I.11&#x27;s <i lang="it">ferocissimo</i>, &quot;most ferocious&quot;; <i lang="it">silvestre</i>, of the woods.</p>
+<p><span class="lem"><i lang="it">le latebre</i>.</span> &quot;The lairs&quot;: a Latinism (Latin <i lang="la">latebrae</i>, hiding places).</p>
+<p><span class="lem"><i lang="it">ritorna presto sotto un giogo</i>.</span> &quot;Returns soon under a yoke&quot;: the people&#x27;s yoke is heavier than the one it lifted off its neck. The animal&#x27;s chain (<i lang="it">rincatenarlo</i>) becomes a yoke.</p>
+<p><span class="lem"><i lang="it">ancora che la materia non sia in tutto corrotta</i>.</span> &quot;Even though the matter be not altogether corrupted&quot;: <i lang="it">ancora che</i>, &quot;even though&quot; (glossary). <i lang="it">Materia</i>, the matter a founder works in, as I.11&#x27;s marble; <i lang="it">corrotto</i>, &quot;corrupted&quot;, as the glossary (I.8). The corrupted people is put off to the next chapter (.09).</p>
+<p><span class="lem"><i lang="it">non può, non che picciol tempo, ma punto vivere libero</i>.</span> &quot;It cannot, not to say [for] a little time, but at all live free&quot;: <i lang="it">non che</i>, &quot;not to say&quot;, has no subject, and the English supplies none.</p>
+<p><span class="lem"><i lang="it">ampliata</i>.</span> &quot;Expanded&quot;: <i lang="it">ampliare</i> (D132).</p>
+<p><span class="lem"><i lang="it">del guasto</i>.</span> &quot;Of the spoiled&quot;: the corrupted, as of fruit or meat.</p>
+<p><span class="lem"><i lang="it">alla soprascritta</i>.</span> &quot;To the above-written [difficulty]&quot;: <i lang="it">soprascritto</i>, kept apart from <i lang="it">sopraddetto</i>, &quot;above-said&quot; (D140). It returns at .04 (<i lang="it">le soprascritte difficultà</i>) and .06 (<i lang="it">dal soprascritto</i>).</p>
+<p><span class="lem"><i lang="it">partigiani nimici e non partigiani amici</i>.</span> &quot;Partisan enemies and not partisan friends&quot;: the phrase opens .03 and closes it (<i lang="it">Però ...</i>), and each half is argued between; the English keeps the formula word for word. In the English the adjective and the noun have changed places: the Italian&#x27;s partisans are the noun, and they are enemies, not friends. Guicciardini&#x27;s last sentence turns it: the prince&#x27;s remedy is to make himself partisans &quot;of such quality&quot; that they can oppress the people (Guicciardini .05).</p>
+<p><span class="lem"><i lang="it">si prevalevano</i>.</span> &quot;Took advantage&quot;: <i lang="it">prevalersi</i>, kept apart from <i lang="it">valersi</i>, &quot;avail oneself&quot; (D162), which follows in the same period (<i lang="it">la facoltà del valersi</i>) and at .04 (<i lang="it">valere straordinariamente</i>).</p>
+<p><span class="lem"><i lang="it">a&#x27; quali sendo tolta la facoltà del valersi, non possono vivere contenti</i>.</span> &quot;From whom the capacity of availing themselves being taken away, they cannot live content&quot;: the Italian begins a relative and finishes with a new subject, and the English keeps the break. <i lang="it">Facoltà</i>, &quot;capacity&quot; (glossary <i lang="it">facultà</i>).</p>
+<p><span class="lem"><i lang="it">propone onori e premj, medianti alcune oneste e determinate cagioni</i>.</span> &quot;Proposes honours and rewards by means of certain honest and determinate causes&quot;: free living rewards by rule, for stated causes, and not otherwise. <i lang="it">Premj</i>, &quot;rewards&quot; (glossary).</p>
+<p><span class="lem"><i lang="it">quegli utili</i>, <i lang="it">quella comune utilità</i>.</span> &quot;Those profits&quot;, &quot;that common utility&quot;: what one man gets, and what all have without knowing it.</p>
+<p><span class="lem"><i lang="it">non confessa avere obbligo</i>.</span> &quot;He does not confess having a debt&quot;: <i lang="it">obbligo</i>, debt (D17), twice in the period; the second (<i lang="it">nissuno confesserà mai avere obbligo con uno che non l&#x27;offenda</i>) is the turn of the argument: no one owes thanks for not being harmed.</p>
+<p><span class="lem"><i lang="it">di quel dei figliuoli</i>.</span> &quot;Of that of the children&quot;: <i lang="it">figliuoli</i> is &quot;children&quot; here, where the honour is the family&#x27;s, and &quot;sons&quot; for the sons of Brutus (.04, .09).</p>
+<p><span class="lem"><i lang="it">non dubitare</i>, <i lang="it">non temere</i>.</span> &quot;Not to doubt&quot;, &quot;not to fear&quot;: two verbs kept apart (D205).</p>
+<p><span class="lem"><i lang="it">che di nuovo surge</i>.</span> &quot;That newly rises&quot;.</p>
+<p><span class="lem"><i lang="it">non ci è più potente rimedio, né più valido, né più sano, né più necessario</i>.</span> &quot;There is no more powerful remedy, nor more valid, nor more sound, nor more necessary&quot;: four comparatives, each with its own <i lang="it">più</i>, as printed. <i lang="it">Valido</i> in its older sense, strong, effective; the chapter&#x27;s last sentence has <i lang="it">rimedj validi</i>.</p>
+<p><span class="lem"><i lang="it">ammazzare i figliuoli di Bruto</i>.</span> &quot;To kill the sons of Brutus&quot;: Titus and Tiberius, sons of Lucius Junius Brutus, the first consul, who conspired with young nobles to restore the Tarquins and were put to death in their father&#x27;s sight (Livy 2.3–5). <i lang="it">La libertà di quel Popolo pareva che fusse diventata la loro servitù</i> follows Livy 2.3, where the young men complain that the liberty of others has been turned into their servitude.</p>
+<p><span class="lem"><i lang="it">straordinariamente</i>.</span> &quot;Extraordinarily&quot;: outside the orders (D151). Under the kings the young nobles could avail themselves beyond the laws; under the consuls they could not.</p>
+<p><span class="lem"><i lang="it">per via di libertà o per via di Principato</i>.</span> &quot;By the path of liberty or by the path of principate&quot;: <i lang="it">via</i>, path (D131); <i lang="it">Principato</i>, principate (D76).</p>
+<p><span class="lem"><i lang="it">fa uno Stato di poca vita</i>.</span> &quot;Makes a state of little life&quot;: I.11&#x27;s princes were &quot;of short life&quot; (<i lang="it">di corta vita</i>).</p>
+<p><span class="lem"><i lang="it">Vero è che io giudico infelici quelli Principi</i>.</span> &quot;It is true that I judge unhappy those princes&quot;: <i lang="it">infelice</i>, unhappy (glossary <i lang="it">infelicità</i>). The concession is Machiavelli&#x27;s judgment in the first person, not a maxim; the rule that follows (<i lang="it">perché</i>) is its ground.</p>
+<p><span class="lem"><i lang="it">l&#x27;universale</i>.</span> &quot;The generality&quot;: the people at large, against &quot;the few&quot;. Guicciardini&#x27;s I.2 has <i lang="it">bene universale</i>; the adjective returns at .08, &quot;the universal security&quot;.</p>
+<p><span class="lem"><i lang="it">e quanta più crudeltà usa, tanto diventa più debole il suo Principato</i>.</span> &quot;And the more cruelty he uses, the weaker becomes his principate&quot;: the postposed subject lands last, as printed (D18). The 1554 edition reads <i lang="it">quanto piu crudelta</i>, adverb for adjective, same sense (NM-DISC-I16-D007; D217).</p>
+<p><span class="lem"><i lang="it">il maggiore rimedio che si abbia</i>.</span> &quot;The greatest remedy there is&quot;: the 1554 edition reads <i lang="it">di maggior rimedio</i> (NM-DISC-I16-D008).</p>
+<p><span class="lem"><i lang="it">questo discorso sia disforme dal soprascritto</i>.</span> &quot;This discourse be unlike the above-written&quot;: the chapter has argued of a state newly free, and since .05 has spoken of princes; Machiavelli marks the turn as a digression. The 1554 edition makes the prince &quot;a very good prince&quot; (<i lang="it">di uno buonissimo Prencipe</i>, NM-DISC-I16-D009).</p>
+<p><span class="lem"><i lang="it">per non avere a tornare più in su questa materia</i>.</span> &quot;So as not to have to turn again upon this matter&quot;: D61&#x27;s &quot;be to&quot; cannot stand after &quot;so as not to&quot;, and the infinitive keeps &quot;have to&quot; (as D101 recorded for the passive). Elsewhere <i lang="it">avere a</i> is &quot;be to&quot;: <i lang="it">dove si abbia a rifuggire</i>, &quot;where it is to take refuge&quot; (.01); <i lang="it">hanno a tenere vie straordinarie</i>, &quot;are to hold extraordinary paths&quot; (.05); <i lang="it">abbiano ... a contentarsi</i> (.08).</p>
+<p><span class="lem"><i lang="it">Volendo pertanto un Principe ..., dico</i>.</span> &quot;A prince, on that account, wishing ..., I say&quot;: the gerund&#x27;s subject is left without a verb, and <i lang="it">dico</i> takes over. <i lang="it">Pertanto</i>, &quot;on that account&quot; (D98).</p>
+<p><span class="lem"><i lang="it">cagione che sia servo</i>.</span> &quot;The cause that it is a servant&quot;: the people&#x27;s servitude, in the chapter&#x27;s word.</p>
+<p><span class="lem"><i lang="it">riavere la sua libertà</i>.</span> &quot;To have back its liberty&quot;: here and at .08, and only there, the liberty is the people&#x27;s, <i lang="it">sua</i>: the liberty it desires, not the liberty a state has.</p>
+<p><span class="lem">Clearchus.</span> Clearchus of Heraclea on the Black Sea, tyrant from 364 BC. Justin (16.4–5) has him recalled from exile by the senate of Heraclea to put down the plebs, and then turn to the plebs and seize and kill the senators. Machiavelli&#x27;s optimates and his tyrant who cuts them &quot;to pieces&quot; are his compression. Guicciardini calls it puerile to believe that Clearchus killed the optimates to satisfy the people (Guicciardini .05).</p>
+<p><span class="lem"><i lang="it">occorse che</i>.</span> &quot;It occurred that&quot;: <i lang="it">occorrere</i>, of the <i lang="la">currere</i> family (D01), here in its plain sense of a thing that happens.</p>
+<p><span class="lem"><i lang="it">gli Ottimati</i>, <i lang="it">de&#x27; Popolari</i>, <i lang="it">dei Grandi</i>.</span> &quot;The optimates&quot;, &quot;of the popular men&quot;, &quot;of the great&quot;: D76, D118. The optimates and the great are one class named twice.</p>
+<p><span class="lem"><i lang="it">ad un tratto</i>.</span> &quot;At a stroke&quot;.</p>
+<p><span class="lem"><i lang="it">presa sopra questo conveniente occasione</i>.</span> &quot;A fitting occasion for this being taken&quot;: <i lang="it">conveniente</i>, the adjective of <i lang="it">convenire</i>, &quot;be fitting&quot; (D85).</p>
+<p><span class="lem"><i lang="it">una delle voglie</i>.</span> &quot;One of the longings&quot;: <i lang="it">voglia</i>, longing (D117), against <i lang="it">desiderio</i>, desire, which frames the two things the people wants (.06, .08).</p>
+<p><span class="lem"><i lang="it">non potendo il Principe satisfarli</i>.</span> &quot;The prince, not being able to satisfy them&quot;: the plural is the people as men, as in &quot;make them desire&quot;.</p>
+<p><span class="lem"><i lang="it">ai gradi del comandare non aggiungono mai quaranta o cinquanta cittadini</i>.</span> &quot;To the degrees of commanding there never attain forty or fifty citizens&quot;: that is, never as many as forty or fifty. <i lang="it">Grado</i>, degree (glossary).</p>
+<p><span class="lem"><i lang="it">o con levarli via</i>.</span> &quot;Either by removing them&quot;: <i lang="it">levare via</i>, remove (D131). The alternative is honours enough to content them.</p>
+<p><span class="lem"><i lang="it">abbiano in buona parte a contentarsi</i>.</span> &quot;They are in good part to content themselves&quot;: <i lang="it">avere a</i>, &quot;be to&quot; (D61).</p>
+<p><span class="lem"><i lang="it">si comprenda la sicurtà universale</i>.</span> &quot;The universal security is comprised&quot;: <i lang="it">sicurtà</i>, security (glossary), the chapter&#x27;s word for what the many want.</p>
+<p><span class="lem"><i lang="it">per accidente nissuno</i>.</span> &quot;By no accident&quot;: the rubric&#x27;s word.</p>
+<p><span class="lem"><i lang="it">comincerà in breve tempo a vivere sicuro e contento</i>.</span> &quot;It will begin in a short time to live secure and content&quot;: the subject could be the prince or the people; the English takes the people, which wants to live secure (.08) and lives so in France.</p>
+<p><span class="lem"><i lang="it">il Regno di Francia</i>.</span> &quot;The kingdom of France&quot;: Machiavelli returns to France and its laws elsewhere in the <i lang="it">Discorsi</i> and in <i lang="it">The Prince</i>, chapter 19.</p>
+<p><span class="lem"><i lang="it">per essersi quelli Re obbligati ad infinite leggi</i>.</span> &quot;Through those kings&#x27; having bound themselves to infinite laws&quot;: <i lang="it">obbligarsi</i>, to bind oneself. The glossary&#x27;s <i lang="it">obbligato</i> → &quot;indebted&quot; (D204) is the adjective of a debt; this is the reflexive verb, and &quot;indebted to infinite laws&quot; does not say what Machiavelli says. Put to David as O26.</p>
+<p><span class="lem"><i lang="it">dell&#x27;arme e del danajo facessero a loro modo</i>.</span> &quot;Should do with arms and with money in their own way&quot;.</p>
+<p><span class="lem"><i lang="it">altrimenti ... che le leggi si ordinassero</i>.</span> &quot;Otherwise than as the laws were ordered&quot;: passive <i lang="it">si</i> with <i lang="it">le leggi</i> as subject, the imperfect subjunctive by sequence after <i lang="it">volle che</i>; the agent is not named.</p>
+<p><span class="lem"><i lang="it">conviene che si assicuri</i>.</span> &quot;It is fitting that it secure itself&quot;: <i lang="it">convenire</i>, D85. The dislocated subject (<i lang="it">Quello Principe adunque o quella Repubblica ...</i>) is kept.</p>
+<p><span class="lem"><i lang="it">Sendo pertanto il Popolo romano ancora non corrotto quando ei ricuperò la libertà</i>.</span> &quot;The Roman people, on that account, being still not corrupted when it recovered liberty&quot;: pass A doubted the first letter of <i lang="it">ei</i> on p. 80, outside the D199 sample; read <i lang="it">ei</i> with the 1554 <i lang="it">quando ei recupero</i> (D203(a), D217; NM-DISC-I16-D010).</p>
+<p><span class="lem"><i lang="it">morti i figliuoli di Bruto, e spenti i Tarquinj</i>.</span> &quot;The sons of Brutus killed and the Tarquins extinguished&quot;: <i lang="it">morto</i> transitive, killed (D169). Guicciardini&#x27;s reply has the equality of the citizens &quot;not altogether extinguished&quot; (<i lang="it">non si spegne</i>, Guicciardini .02).</p>
+<p><span class="lem"><i lang="it">che altra volta si sono discorsi</i>.</span> &quot;That have another time been discoursed&quot;: <i lang="it">discorrere</i> (D01). The 1554 edition reads <i lang="it">altre uolte</i>, &quot;other times&quot; (NM-DISC-I16-D011; D217).</p>
+<p><span class="lem"><i lang="it">Ma se fusse stato ..., né in Roma, né altrove si trovavano rimedj validi</i>.</span> &quot;But had that people been corrupted, neither in Rome nor elsewhere would valid remedies have been found&quot;: the imperfect indicative in a contrary-to-fact condition (D47).</p>
+<p><span class="lem"><i lang="it">come nel seguente capitolo mostreremo</i>.</span> &quot;As in the following chapter we shall show&quot;: I.17, on a corrupted people come to liberty. Guicciardini did not answer it.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work fg">
+    <div class="work-head">
+      <span class="tag">FG-CONS.1.16</span>
+      <h2>Considerazione sul capitolo XVI</h2>
+    </div>
+    <p class="rubric">Un popolo uso a vivere sotto un principe, se per qualche accidente diventa libero, con difficultà mantiene la libertà</p>
+    <p class="rubric">A people used to living under a prince, if by some accident it becomes free, maintains liberty with difficulty
+      <span class="rubric-note">Canestrini&#x27;s setting of the chapter title, without a stop: Machiavelli&#x27;s rubric in lower case. It is heading apparatus, not Guicciardini&#x27;s (D32).</span></p>
+
+    <div class="colheads"><div></div><div>Italian · 1857</div><div>English</div></div>
+      <div class="pair" id="FG-CONS.1.16.01">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.16.01">1.16.01</a></div>
+        <div class="col it" lang="it">Io fo in questo Discorso grandissima differenza da uno populo che non abbia mai conosciuto libertà, a uno populo che qualche volta sia stato libero, ma per qualche accidente abbia perduto la libertà; perché in questo caso si possono ripigliare più facilmente gli ordini della libertà, vivendo ancora chi l&#x27;ha veduta, e restando molte memorie della antica republica. È ancora più acceso nel petto degli uomini il desiderio della libertà avendo provato e&#x27; mali della tirannide, e tanto più se non è caduta loro in mano per essere mancata la linea de&#x27; tiranni, ma perché sospinti dalla acerbità della servitù l&#x27;abbino recuperata con le armi. Costoro e amano più la libertà che quello populo che non l&#x27;ha mai cognosciuta, e sono più facili a ripigliare gli ordini delle republiche, e anche la materia è più disposta, perché in una città che sempre abbia avuto principato, è grande inequalità da uno cittadino all&#x27;altro, che è tutto contrario alle libertà sotto le quali sono gli uomini assai equali.</div>
+        <div class="col en" lang="en">I make in this Discourse a very great difference between a people that has never known liberty and a people that has at some time been free but by some accident has lost liberty; for in this case the orders of liberty can be taken up again more readily, there still living whoever has seen it, and there remaining many memorials of the ancient republic. Still more kindled in the breast of men is the desire of liberty, having tried the ills of tyranny, and so much the more if it has not fallen into their hand through the line of the tyrants having failed, but because, driven by the bitterness of servitude, they have recovered it with arms. These both love liberty more than that people which has never known it, and are easier in taking up again the orders of republics, and also the matter is more disposed, for in a city that has always had a principate there is great inequality from one citizen to another, which is all contrary to the liberties, under which men are quite equal.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> A distinction first. Guicciardini makes a very great difference between a people that has never known liberty and a people that was free once and lost liberty by some accident. The second takes up the orders of liberty more readily: while there still live those who saw it, its memorials remain, and the desire of liberty burns more in men who have tried the ills of tyranny, the more so if they recovered it with arms, driven by servitude, rather than because the tyrants&#x27; line failed. Such a people loves liberty more and is easier in taking up the orders of republics. And the matter is more disposed, because a city always under a principate has great inequality among its citizens, which is contrary to the liberties, under which men are quite equal.</p>
+<p><span class="lem">Cross-reference.</span> Machiavelli&#x27;s chapter is of a people &quot;used to living under a prince&quot; <a class="xref" href="#NM-DISC.1.16.01">Machiavelli .01</a>, and he limits it to peoples not altogether corrupted <a class="xref" href="#NM-DISC.1.16.02">Machiavelli .02</a>; Guicciardini cuts the case differently, by the people&#x27;s history, and takes up Machiavelli&#x27;s &quot;matter&quot;, making equality what disposes it. The rubric&#x27;s &quot;by some accident&quot; is turned from the getting of liberty to its loss.</p>
+        </details>
+      </div>
+      <div class="pair" id="FG-CONS.1.16.02">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.16.02">1.16.02</a></div>
+        <div class="col it" lang="it">Ma sotto il principato alcuni sono grandissimi, altri piccoli, perché il principe o per bisogno o per conformità di animo ha uno cerchio di uomini che si accostano quasi più al principe, che al privato. È adunque questa inequalità molto disproporzionata alla libertà in uno populo che sempre abbia avuto principato, la quale non può essere in una città che non sia stata in molto lunghissima servitù; perché comunemente chi occupa le libertà, per disperare manco il populo, per violentare manco le cose, ritiene quanto può la immagine della libertà, e secondo la superficie delle cose si ingegna governare la tirannide a uso di republica, e però non si spegne al tutto la equalità de&#x27; cittadini. Né mi siano allegati in contrario e&#x27; Romani che si accomodorono bene alla libertà ancora che mai non l&#x27;avessino cognosciuta, perché dal transferire la potestà de&#x27; re a&#x27; consuli in fuora, non mutorono niente degli ordini che erano sotto e&#x27; re; e&#x27; quali se furono buoni, non nacque tanto da prudenza loro, quanto da buona fortuna da essere stati gli ordini del regno tali che servirono anche alla libertà; e la creazione de&#x27; consuli si crede non fussi invenzione loro, ma imparata da&#x27; Commentarii di Servio Tullio. Mostrasi questo essere vero, perché gli altri ordini che furono necessarii alla conservazione della libertà e alla quiete della città, gli feciono in progresso di tempo stretti dalla necessità e ammaestrati dalla esperienza. Né mancò a&#x27; Romani quell&#x27;altro aculeo a desiderare la libertà, cioè l&#x27;avere provato le ingiurie della tirannide, perché non occasione o altro accidente gli mosse, che l&#x27;avere sentito sotto Tarquinio acerbissima servitù. Ed è anche minore maraviglia che fussino inclinati alla libertà, perché in quelli tempi quasi tutti e&#x27; populi vicini erano liberi; e&#x27; quali esempli muovono e infiammano gli uomini assai.</div>
+        <div class="col en" lang="en">But under the principate some are very great, others small, for the prince, either from need or from conformity of spirit, has a circle of men who approach almost more to the prince, than to the private <span class="supplied">[man]</span>. This inequality, then, is very disproportionate to liberty in a people that has always had a principate, which <span class="supplied">[inequality]</span> cannot be in a city that has not been in a very exceedingly long servitude; for commonly whoever occupies the liberties, so as to drive the people less to despair, so as to do less violence to things, retains as much as he can the image of liberty, and according to the surface of things contrives to govern the tyranny after the use of a republic, and therefore the equality of the citizens is not altogether extinguished. Nor let the Romans be alleged to me to the contrary, who accommodated themselves well to liberty even though they had never known it, for apart from transferring the power of the kings to the consuls, they changed nothing of the orders that were under the kings; which, if they were good, it arose not so much from their prudence as from good fortune from the orders of the kingdom having been such that they served also for liberty; and the creation of the consuls is believed not to have been their invention, but learned from the Commentaries of Servius Tullius. This is shown to be true, for the other orders that were necessary to the conservation of liberty and to the quiet of the city, they made them in progress of time, pressed by necessity and taught by experience. Nor did that other goad to desire liberty fail the Romans, that is, the having tried the injuries of tyranny, for no occasion or other accident moved them, but the having felt under Tarquinius a most bitter servitude. And it is also a lesser marvel that they were inclined to liberty, for in those times almost all the neighbouring peoples were free; which examples move and inflame men much.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> Inequality, and an objection. Under a principate some are very great, others small, because the prince, from need or from conformity of spirit, has a circle of men who come almost nearer to the prince than to a private man. But such inequality, he says, is found only after very long servitude, since usurpers commonly keep the image of liberty and govern the tyranny after the use of a republic, so that the equality of the citizens is not altogether extinguished. Then he raises Rome against himself: the Romans had never known liberty and kept it. His answer is threefold. They changed nothing but the transfer of the kings&#x27; power to the consuls, and if those orders were good, that arose not so much from the Romans&#x27; prudence as from the good fortune that the kingdom&#x27;s orders were such as served liberty as well; the creation of the consuls itself is believed to have come from Servius Tullius&#x27; commentaries, and the other orders were made over time, pressed by necessity and taught by experience. They had felt the injuries of tyranny under Tarquinius. And it is a lesser marvel that they inclined to liberty, since almost all their neighbours were free.</p>
+<p><span class="lem">History.</span> Livy 1.60 has the first two consuls created by the centuriate assembly according to the commentaries of Servius Tullius, Rome&#x27;s sixth king. The tribunes and the other magistracies came later, in the conflicts of the orders.</p>
+<p><span class="lem">Cross-reference.</span> Machiavelli&#x27;s Rome kept its liberty because it was not yet corrupted: the sons of Brutus killed, the Tarquins extinguished, and the remedies and orders discussed elsewhere <a class="xref" href="#NM-DISC.1.16.09">Machiavelli .09</a>. Guicciardini accounts for the same success by the kings&#x27; orders kept (by fortune more than prudence), by later orders made under necessity and experience, by the experience of Tarquinius, and by free neighbours. He does not dispute that Rome was not yet corrupted.</p>
+        </details>
+      </div>
+      <div class="pair" id="FG-CONS.1.16.03">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.16.03">1.16.03</a></div>
+        <div class="col it" lang="it">È adunque difficile conservare una libertà acquistata di nuovo, e molto più difficile a uno populo stato in continua servitù che a quello che qualche volta è stato libero; né ci è il migliore remedio a poterla conservare che ordinare uno governo in modo temperato, che da uno canto abbia vivacità a opprimere chi machinassi contro la libertà, da altro sia sicuro per quelli che vogliono vivere bene, e non inclinato a battere e&#x27; ricchi e i potenti quando non ne diano causa, e facile a ricevere quelli cittadini che sono stati amici della tirannide, quando o e&#x27; portamenti loro, o le condizioni che hanno, diano speranza che non abbino a essere inimici della libertà. Perché accade molte volte, e n&#x27;abbiamo visto la esperienza in Firenze, che quando il governo che succede alla tirannide è ragionevole, bene ordinato e sicuro per ognuno, che quelli che hanno potuto co&#x27; tiranni vi si contentano dentro, massime in quelle città che hanno naturale lo appetito della libertà, perché trovandosi buone facultà come ha il più delle volte chi è stato favorito, e avendo forse più d&#x27;appresso che gli altri cognosciuto e&#x27; fastidii della servitù, volentieri quando truovano sicurtà e condizione equale agli altri cittadini, si riposano e godono il suo. E lo assicurare gli uomini di questa sorte, pacifica e unisce la città, dove l&#x27;avergli a sospetto, e il travagliargli non la lasciano riposare, né se si tengono dentro, né se si cacciano fuora.</div>
+        <div class="col en" lang="en">It is, then, difficult to conserve a liberty newly acquired, and much more difficult for a people that has been in continual servitude than for one that has at some time been free; nor is there a better remedy for being able to conserve it than to order a government in a tempered way, that on the one hand has vigour to oppress whoever should machinate against liberty, on the other hand is secure for those who wish to live well, and not inclined to beat down the rich and the powerful when they give no cause for it, and easy in receiving those citizens who have been friends of the tyranny, when either their bearings, or the conditions they have, give hope that they are not to be enemies of liberty. For it happens many times, and we have seen the experience of it in Florence, that when the government that succeeds to the tyranny is reasonable, well ordered and secure for everyone, that those who have been able <span class="supplied">[to do much]</span> with the tyrants content themselves within it, above all in those cities that have the appetite of liberty as natural, for, finding themselves <span class="supplied">[with]</span> good substance, as whoever has been favoured has most of the time, and having perhaps known more nearly than the others the vexations of servitude, willingly, when they find security and a condition equal to the other citizens, they rest and enjoy their own. And the securing of men of this sort, pacifies and unites the city, whereas the holding them in suspicion, and the troubling them, do not let it rest, neither if they are kept within nor if they are driven out.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> The remedy is an order. A liberty newly acquired is hard to conserve, much harder for a people long in servitude; the best remedy is a tempered government, with vigour to put down whoever machinates against liberty, secure for those who wish to live well, not inclined to beat down the rich and powerful without cause, and easy in receiving the friends of the tyranny when their bearings or conditions give hope that they will not be enemies of liberty. It happens many times, he says, and &quot;we have seen the experience of it in Florence&quot;, that when the government after a tyranny is reasonable, well ordered and secure for all, those who were able to do much with the tyrants content themselves within it, above all where the appetite of liberty is natural: having substance, as the favoured most often do, and having perhaps known the vexations of servitude from closer than others, they rest and enjoy their own once they find security and equal condition. Securing such men pacifies and unites a city; suspicion and harassment leave it no rest, whether they are kept in or driven out.</p>
+<p><span class="lem">History.</span> The Florentine experience is most likely the republic of 1494–1512, which kept within it many who had served the Medici.</p>
+<p><span class="lem">Cross-reference.</span> This is the reply&#x27;s answer to Machiavelli&#x27;s partisan enemies, who, deprived of the capacity to avail themselves, &quot;cannot live content&quot; <a class="xref" href="#NM-DISC.1.16.03">Machiavelli .03</a>: received and secure, says Guicciardini, they &quot;content themselves&quot;. Machiavelli&#x27;s remedy against the same men was to secure oneself of them and kill the sons of Brutus <a class="xref" href="#NM-DISC.1.16.04">Machiavelli .04</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="FG-CONS.1.16.04">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.16.04">1.16.04</a></div>
+        <div class="col it" lang="it">Sia adunque ordinata in modo la republica che abbia prontezza a punire chi machina contro allo Stato, e in questo sia rigida e inesorabile, ripigliando per peccati gravissimi etiam quelli che paino leggieri, ma non perseguiti alcuno per semplice sospetto, né abbia per sospetti tanto quelli che hanno avuto condizione sotto il tiranno, quanto gli uomini che sono di natura inquieti, quelli che sono caduti in povertà, o che sono di qualità che non possono sperare condizione se non sotto il tiranno. Guardisi sopra tutto che nella città non nascan divisioni, le quali nascono ogni volta che il governo non è bene ordinato, perché nelle divisioni quelli della parte che può manco, si gettano al tiranno, ancora che fussino stati inimici suoi. Queste furono le cagioni che feciono rimettere e&#x27; Medici in Firenze nel 12, non dagli antichi amici loro, ma da molti che erano stati inimici; e il perseguitare doppo il 26 acerbamente sanza distinzione quelli che erano stati amici loro, ha fatto desiderare da molti la ritornata loro, che altrimenti l&#x27;arebbono abborrita non manco che gli altri. Non desideri la nuova libertà che vi sian figliuoli di Bruto, cioè chi machini contro allo Stato, per avere causa di acquistare riputazione e <span class="supplied">[terrore]</span> con la severità, perché se bene in simili casi è necessario mettere mano nel sangue, sarebbe stato meglio non avere avuto necessità, e che Bruto non avessi figliuoli, che averne per avergli ammazzare. Né abbi in concetto de&#x27; figliuoli di Bruto altri che quelli che sono inquieti per natura, rapaci, e che non hanno qualità di avere luogo nella libertà; perché questi sono quelli che sono periculosi, non coloro che accommodati di facultà e di qualità possono sperare di sentire e&#x27; frutti della libertà insieme cogli altri.</div>
+        <div class="col en" lang="en">Let the republic, then, be ordered in such a way that it has promptness to punish whoever machinates against the state, and in this let it be rigid and inexorable, taking up as most grave sins even those that seem light, but let it not persecute anyone on simple suspicion, nor hold as suspect so much those who have had condition under the tyrant as the men who are by nature restless, those who have fallen into poverty, or who are of such quality that they cannot hope for condition except under the tyrant. Let it beware above all things that in the city divisions do not arise, which arise every time the government is not well ordered, for in divisions those of the party that can do less, throw themselves to the tyrant, even though they had been his enemies. These were the causes that made the Medici be put back into Florence in <span class="supplied">[15]</span>12, not by their old friends, but by many who had been enemies; and the persecuting after <span class="supplied">[15]</span>26 bitterly without distinction of those who had been their friends has made their return desired by many, who otherwise would have abhorred it no less than the others. Let the new liberty not desire that there be sons of Brutus in it, that is, whoever may machinate against the state, so as to have cause to acquire reputation and terror with severity, for although in like cases it is necessary to put hand into blood, it would have been better not to have had the necessity, and that Brutus had not had sons, than to have them so as to have to kill them. Nor let it hold in the conception of sons of Brutus others than those who are restless by nature, rapacious, and who have not the quality to have a place in liberty; for these are those who are dangerous, not those who, accommodated with substance and with quality, can hope to feel the fruits of liberty together with the others.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> Rigour and restraint in one design. The republic must be prompt, rigid and inexorable against whoever machinates against the state, taking up as most grave even faults that seem light; but it must persecute no one on simple suspicion, nor suspect those who had standing under the tyrant so much as men restless by nature, men fallen into poverty, and those who can hope for standing only under a tyrant. Above all it must guard against divisions, which arise whenever the government is not well ordered, because in divisions the weaker party throws itself to the tyrant, even if it was his enemy. Florence is the proof, twice: the Medici were put back in 1512 not by their old friends but by many who had been enemies, and the bitter, indiscriminate persecution &quot;after [15]26&quot; of those who had been their friends made many desire their return who would otherwise have abhorred it. The new liberty must not desire sons of Brutus to acquire reputation and terror (an emended reading, D214) by severity: although in like cases it is necessary to put hand into blood, it would have been better not to have had the necessity, and that Brutus had not had sons, than to have them so as to have to kill them. And it must count as sons of Brutus only those restless by nature, the rapacious, and those who have not the quality to have a place in liberty, not men accommodated with substance and quality who can hope to feel its fruits.</p>
+<p><span class="lem">History.</span> The Medici returned to Florence in September 1512 behind a Spanish army, after Piero Soderini had been forced out by young men of the great families. They were expelled again in May 1527, and the last republic, under pressure of war, proceeded with increasing severity against those suspected of favouring them; Guicciardini, who had served the Medici popes, was himself proceeded against. The Medici returned in 1530 after the siege. Canestrini prints <i lang="it">26</i>, which the 1933 edition takes as a year; the expulsion was in May 1527, so the figure may be Guicciardini&#x27;s slip or loose reckoning. The persecution he means is the last republic&#x27;s.</p>
+<p><span class="lem">Cross-reference.</span> Machiavelli called killing the sons of Brutus the most powerful, valid, sound and necessary remedy <a class="xref" href="#NM-DISC.1.16.04">Machiavelli .04</a>. Guicciardini grants the necessity in such cases and refuses the wish for the occasion; the sons of Brutus become a narrow class, not a thing to be wished for.</p>
+        </details>
+      </div>
+      <div class="pair" id="FG-CONS.1.16.05">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.16.05">1.16.05</a></div>
+        <div class="col it" lang="it">Quanto a uno principe che abbia inimico il populo, poi che questo anche è tocco nel Discorso, dico che se gli è inimico per le oppressioni e acerbità della servitù, è facile a provedergli, levando via le ingiurie e governando giustamente e umanamente; ma se la radice della inimicizia è il desiderio della libertà, come abbiamo visto nel nostro di Firenze, che desiderava essere libero per participare degli onori, per avere mano nel governo, allora nessuna dolcezza, nessuna mansuetudine, nessuno buono trattamento del tiranno è atto a eradicare questo desiderio, né mai il tiranno con tutti e&#x27; buoni trattamenti se ne può fidare. È bene vero che quando gli uomini oltre a essere privati della libertà sono anche male trattati, vengono in disperazione, e chi è disperato non aspetta le occasioni, ma le cerca, e per liberarsi si mette a ogni periculo, dove coloro che non hanno altro tormento che il desiderio della libertà, non si precipitano, ma aspettano le occasioni; le quali quando vengono, non giova al tiranno essersi portato bene e avere governato dolcemente, e avere fatto come Clearco; del quale è puerile credere che ammazzassi gli ottimati per satisfare al populo, perché se fussino stati amici suoi, arebbe fatto poco guadagno, ma che avendogli sospetti e volendoli opprimere déssi colore di farlo per compiacere al populo. Il remedio adunque che ha il principe è, o farsi partigiani di qualità che siano potenti a opprimere il populo, o vero col battere e annichilare il populo di sorte che non possa muoversi, introducere nuovi abitatori e di qualità che non abbino a avere causa di desiderare la libertà.</div>
+        <div class="col en" lang="en">As to a prince who has the people as enemy, since this too is touched on in the Discourse, I say that if it is his enemy through the oppressions and bitterness of servitude, it is easy to provide for it, removing the injuries and governing justly and humanely; but if the root of the enmity is the desire of liberty, as we have seen in our <span class="supplied">[people]</span> of Florence, which desired to be free so as to partake of the honours, so as to have a hand in the government, then no sweetness, no mansuetude, no good treatment of the tyrant is apt to eradicate this desire, nor can the tyrant ever, with all the good treatments, trust it. It is indeed true that when men, besides being deprived of liberty, are also ill treated, they come into despair, and whoever is desperate does not wait for the occasions, but seeks them, and to free himself puts himself to every danger, whereas those who have no other torment than the desire of liberty, do not throw themselves headlong, but wait for the occasions; which, when they come, it does not avail the tyrant to have borne himself well and to have governed sweetly, and to have done as Clearchus; of whom it is puerile to believe that he killed the optimates to satisfy the people, for if they had been his friends he would have made little gain, but that, holding them suspect and wishing to oppress them, he gave colour of doing it to please the people. The remedy, then, that the prince has is, either to make himself partisans of such quality that they are powerful to oppress the people, or else, with beating down and annihilating the people in such sort that it cannot move, to introduce new inhabitants, and of such quality that they are not to have cause to desire liberty.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The prince, with the enmity divided by its root. If the people is the prince&#x27;s enemy through oppression and the bitterness of servitude, it is easy to provide for: remove the injuries and govern justly and humanely. If the root is the desire of liberty, as in Florence, which wanted to be free so as to partake of the honours and have a hand in the government, no sweetness or good treatment eradicates it, and the tyrant can never trust it. It is true that the ill-treated, desperate, seek the occasions and the others wait for them; but when the occasions come, good government avails the tyrant nothing, nor having done as Clearchus did, of whom it is puerile to believe that he killed the optimates to satisfy the people: had they been his friends he would have gained little; what is to be believed is that, holding them suspect and wishing to oppress them, he gave the deed the colour of pleasing the people. The remedy the prince has is either partisans of such quality that they can oppress the people, or to beat down and annihilate the people and bring in new inhabitants who will have no cause to desire liberty. It is stated as the remedy, without comment. He speaks of a prince, of a tyrant once the root is the desire of liberty, and of a prince again for the remedy; Machiavelli too restricted his digression to princes become tyrants of their fatherland.</p>
+<p><span class="lem">Cross-reference.</span> Machiavelli divided the people&#x27;s desire for liberty between the few who want to command and the many who want security, and thought the many could be satisfied by laws <a class="xref" href="#NM-DISC.1.16.08">Machiavelli .08</a>; Guicciardini&#x27;s Florence wants liberty for what Machiavelli gave the few, honours and a hand in government. Machiavelli&#x27;s Clearchus resolved to free himself from the vexation of the great and gain the people, and so satisfied the people&#x27;s longing for vengeance <a class="xref" href="#NM-DISC.1.16.07">Machiavelli .07</a>; Guicciardini&#x27;s suspicion is near the first motive, and what he calls puerile is the belief that the killing was done for the people. Where the enmity comes from oppression, he agrees that just and humane government provides for it. Where its root is the desire of liberty, the case Machiavelli says can be met only in part, the remedy Machiavelli sought, to make the people a friend <a class="xref" href="#NM-DISC.1.16.05">Machiavelli .05</a>, becomes partisans made to oppress it, in the same reflexive verb (<i lang="it">farsi</i>).</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from Canestrini 1857, <i>Opere inedite</i> vol. 1, pp. 1–65 (<span class="sig">WIT-FG-CONS-1857-CANESTRINI</span>) — the <i>editio princeps</i>, which governs. Collated against Palmarocchi 1933 (<span class="sig">WIT-FG-CONS-1933-PALMAROCCHI</span>): page images and the Wikisource transcription consulted as collation evidence, not reproduced (LICENSE §5).</p>
+<p><span class="lem">della antica republica È ancora</span> → <span class="lem">della antica republica. È ancora</span> (FG-CONS.1.16.01). Sentence break with a capital; neither pass sees a point; the 1933 edition prints one. D67.</p>
+<p><span class="lem">che al privato È adunque</span> → <span class="lem">che al privato. È adunque</span> (FG-CONS.1.16.02). Sentence break with a capital; neither pass sees a point; the 1933 edition prints one. D67.</p>
+<p><span class="lem">in molto lunghissima servitù: perché</span> → <span class="lem">in molto lunghissima servitù; perché</span> (FG-CONS.1.16.02). Both readers doubt the mark between colon and semicolon; the 1933 edition prints a semicolon. D110.</p>
+<p><span class="lem">la immagine della libertà; e secondo</span> → <span class="lem">la immagine della libertà, e secondo</span> (FG-CONS.1.16.02). Pass A ⟨;|,⟩, pass B ⟨,|;⟩; the 1933 edition prints a comma. D110.</p>
+<p><span class="lem">la equalità de&#x27; cittadini Né</span> → <span class="lem">la equalità de&#x27; cittadini. Né</span> (FG-CONS.1.16.02). Sentence break with a capital; neither pass sees a point; the 1933 edition prints one. D67.</p>
+<p><span class="lem">si riposano e godono il suo E lo</span> → <span class="lem">si riposano e godono il suo. E lo</span> (FG-CONS.1.16.03). Sentence break with a capital; neither pass sees a point; the 1933 edition prints one. D67.</p>
+<p><span class="lem">né se si cacciano fuora</span> → <span class="lem">né se si cacciano fuora.</span> (FG-CONS.1.16.03). Paragraph end; neither pass sees a point; the 1933 edition prints one. D67.</p>
+<p><span class="lem">se ne può fidare È bene</span> → <span class="lem">se ne può fidare. È bene</span> (FG-CONS.1.16.05). Pass A sees no point, pass B a faint one; the 1933 edition prints it. D110.</p>
+<p><span class="lem">per compiacere al populo Il remedio</span> → <span class="lem">per compiacere al populo. Il remedio</span> (FG-CONS.1.16.05). Sentence break with a capital; neither pass sees a point; the 1933 edition prints one. D67.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem"></span> — acquistare riputazione e [terrore] con la severità. The 1857 witness reads <i lang="it">acquistare riputazione e tenere con la severità</i>. The 1933 witness reads <i lang="it">acquistare riputazione e terrore con la severità</i>. Both cold readers read <i lang="it">tenere</i> without doubt. As printed the infinitive has no object and the period barely construes; reputation and terror are what severity acquires. The scan prints rr as n and e o-shaped (D145). Emended under D68, as D126 and D200 (D214).</p>
+<p><span class="lem">ma imparata da&#x27; Commentarii di Servio Tullio</span> — 1857. The 1933 witness reads <i lang="it">ma imparata de&#x27; commentari di Servio Tullio</i>. Learned from the Commentaries, against learned of them. Both readers read <i lang="it">da&#x27;</i> without doubt; it construes, so D38 (D216).</p>
+<p><span class="lem">chi machinassi contro la libertà</span> — 1857. The 1933 witness reads <i lang="it">chi machinassi contro alla libertà</i>. Same sense.</p>
+<p><span class="lem">a battere e&#x27; ricchi e i potenti</span> — 1857. The 1933 witness reads <i lang="it">a battere e&#x27; ricchi e potenti</i>. Canestrini repeats the article: the rich and the powerful as two classes.</p>
+<p><span class="lem">e alla quiete della città, gli feciono in progresso di tempo</span> — 1857. The 1933 witness reads <i lang="it">ed alla quiete della città, ma gli feciono in progresso di tempo</i>. Palmarocchi&#x27;s <i lang="it">ma</i> makes the contrast explicit; Canestrini leaves the main clause unannounced.</p>
+<p><span class="lem">perché nelle divisioni quelli della parte che può manco, si gettano al tiranno</span> — 1857. The 1933 witness reads <i lang="it">perché nelle divisione quella parte che può manco, si gettano al tiranno</i>. Canestrini&#x27;s plural subject agrees with <i lang="it">si gettano</i>; Palmarocchi&#x27;s collective <i lang="it">quella parte</i> takes the plural by sense.</p>
+<p><span class="lem">e il perseguitare doppo il 26 ... ha fatto desiderare</span> — 1857. The 1933 witness reads <i lang="it">ed el perseguitare doppo el &#x27;26 ... hanno fatto desiderare</i>. Canestrini&#x27;s singular agrees with <i lang="it">il perseguitare</i>. Same sense.</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem"><i lang="it">Io fo in questo Discorso grandissima differenza</i>.</span> &quot;I make in this Discourse a very great difference&quot;: <i lang="it">Discorso</i> is Machiavelli&#x27;s chapter, capitalised by Canestrini, as again at .05 (<i lang="it">tocco nel Discorso</i>). The difference is Guicciardini&#x27;s, and Machiavelli does not draw it: his chapter is of a people &quot;used to living under a prince&quot;, and its example, Rome, had lived under kings. One of the two readers doubted whether the first word is <i lang="it">Io</i> or <i lang="it">lo</i>; the other read <i lang="it">Io</i>, as does the 1933 edition.</p>
+<p><span class="lem"><i lang="it">da uno populo ... a uno populo</i>.</span> &quot;Between a people ... and a people&quot;: <i lang="it">differenza da ... a</i>.</p>
+<p><span class="lem"><i lang="it">per qualche accidente</i>.</span> &quot;By some accident&quot;: the rubric&#x27;s phrase, turned to the losing of liberty rather than its getting.</p>
+<p><span class="lem"><i lang="it">si possono ripigliare più facilmente gli ordini della libertà</i>.</span> &quot;The orders of liberty can be taken up again more readily&quot;: <i lang="it">ripigliare</i>, again at .01 and, in its other sense, at .04 (<i lang="it">ripigliando per peccati gravissimi</i>, &quot;taking up as most grave sins&quot;), where to take up is to rebuke. One English verb for one Italian verb in two senses (D224).</p>
+<p><span class="lem"><i lang="it">restando molte memorie</i>.</span> &quot;Many memorials remaining&quot;: <i lang="it">memorie</i> as Machiavelli&#x27;s <i lang="it">memorie delle antiche Istorie</i>, &quot;the memorials of the ancient histories&quot; (Machiavelli .01). The two readers split on the final vowel (<i lang="it">molta</i>/<i lang="it">molte</i>); read <i lang="it">molte</i> with the 1933 edition (D215).</p>
+<p><span class="lem"><i lang="it">È ancora più acceso nel petto degli uomini il desiderio della libertà</i>.</span> &quot;Still more kindled in the breast of men is the desire of liberty&quot;: the postposed subject is kept (D18).</p>
+<p><span class="lem"><i lang="it">avendo provato e&#x27; mali della tirannide</i>.</span> &quot;Having tried the ills of tyranny&quot;: the gerund&#x27;s subject is the men, not the desire. <i lang="it">Provare</i>, &quot;try&quot;, in its older sense, to experience; again at .02 (<i lang="it">l&#x27;avere provato le ingiurie</i>). <i lang="it">Male</i>, ill (glossary).</p>
+<p><span class="lem"><i lang="it">per essere mancata la linea de&#x27; tiranni</i>.</span> &quot;Through the line of the tyrants having failed&quot;: <i lang="it">mancare</i>, fail (D206), as again at .02 (<i lang="it">Né mancò a&#x27; Romani</i>).</p>
+<p><span class="lem"><i lang="it">acerbità</i>, <i lang="it">acerbissima</i>, <i lang="it">acerbamente</i>.</span> &quot;Bitterness&quot;, &quot;most bitter&quot;, &quot;bitterly&quot;: one root, at .01, .02, .04 and .05.</p>
+<p><span class="lem"><i lang="it">con le armi</i>.</span> &quot;With arms&quot;. Canestrini&#x27;s note on this sentence, on the despotisms of every age, is his, and is not carried.</p>
+<p><span class="lem"><i lang="it">Costoro e amano ... e sono più facili</i>.</span> &quot;These both love ... and are easier&quot;: <i lang="it">facile</i> as the glossary (D27).</p>
+<p><span class="lem"><i lang="it">la materia</i>.</span> &quot;The matter&quot;: Machiavelli&#x27;s word (Machiavelli .02), taken up and given a cause: matter is disposed to liberty where citizens are equal.</p>
+<p><span class="lem"><i lang="it">alle libertà sotto le quali sono gli uomini assai equali</i>.</span> &quot;To the liberties, under which men are quite equal&quot;: the plural, a free city&#x27;s liberties, as <i lang="it">chi occupa le libertà</i> at .02.</p>
+<p><span class="lem"><i lang="it">per conformità di animo</i>.</span> &quot;From conformity of spirit&quot;: <i lang="it">animo</i>, spirit (glossary).</p>
+<p><span class="lem"><i lang="it">uno cerchio di uomini</i>.</span> &quot;A circle of men&quot;: <i lang="it">cerchio</i>, as Machiavelli&#x27;s I.7 (D150).</p>
+<p><span class="lem"><i lang="it">si accostano quasi più al principe, che al privato</i>.</span> &quot;Approach almost more to the prince, than to the private [man]&quot;: nearer the prince&#x27;s condition than a private man&#x27;s, or nearer the prince himself; the English leaves both. <i lang="it">Privato</i>, a man without office.</p>
+<p><span class="lem"><i lang="it">la quale non può essere ... in molto lunghissima servitù</i>.</span> &quot;Which [inequality] cannot be ... in a very exceedingly long servitude&quot;: <i lang="it">la quale</i> is the inequality, which the English names in brackets so that &quot;which&quot; cannot attach to &quot;principate&quot;. Such inequality is found only after very long servitude, because usurpers keep the image of liberty (<i lang="it">perché ... e però</i>). The Italian doubles the intensive (<i lang="it">molto</i> on a superlative), and so does the English.</p>
+<p><span class="lem"><i lang="it">chi occupa le libertà</i>.</span> &quot;Whoever occupies the liberties&quot;: <i lang="it">occupare</i>, occupy (glossary), as Machiavelli&#x27;s I.9 <i lang="it">occupare la tirannide</i>.</p>
+<p><span class="lem"><i lang="it">per disperare manco il populo, per violentare manco le cose</i>.</span> &quot;So as to drive the people less to despair, so as to do less violence to things&quot;: <i lang="it">disperare</i> transitive. Its root returns at .05: men ill treated &quot;come into despair&quot;, and &quot;whoever is desperate&quot; seeks the occasions.</p>
+<p><span class="lem"><i lang="it">secondo la superficie delle cose</i>.</span> &quot;According to the surface of things&quot;: <i lang="it">superficie</i> as FG I.7 (D146).</p>
+<p><span class="lem"><i lang="it">a uso di republica</i>.</span> &quot;After the use of a republic&quot;: <i lang="it">uso</i>, use (D41).</p>
+<p><span class="lem"><i lang="it">non si spegne al tutto</i>.</span> &quot;Is not altogether extinguished&quot;: Machiavelli&#x27;s Tarquins were &quot;extinguished&quot; (<i lang="it">spenti</i>, Machiavelli .09).</p>
+<p><span class="lem"><i lang="it">Né mi siano allegati in contrario e&#x27; Romani</i>.</span> &quot;Nor let the Romans be alleged to me to the contrary&quot;: the Romans had lived under kings, so they are the case of a people that never knew liberty, and yet kept it. The objection is Guicciardini&#x27;s to his own distinction, and he answers it three ways: they changed nothing but the kings&#x27; power, and if those orders were good it was fortune more than prudence; they had felt the injuries of tyranny under Tarquinius; and their neighbours were free.</p>
+<p><span class="lem"><i lang="it">dal transferire la potestà de&#x27; re a&#x27; consuli in fuora</i>.</span> &quot;Apart from transferring the power of the kings to the consuls&quot;: <i lang="it">potestà</i>, power (D78). The two readers split on the apostrophe of <i lang="it">a&#x27;</i> (<i lang="it">a</i>/<i lang="it">a&#x27;</i>); read <i lang="it">a&#x27;</i> with the 1933 edition, a dropped apostrophe as D72 (D215).</p>
+<p><span class="lem"><i lang="it">e&#x27; quali se furono buoni, non nacque tanto da prudenza loro</i>.</span> &quot;Which, if they were good, it arose not so much from their prudence&quot;: the relative opens and a new construction finishes, and the English keeps the break. <i lang="it">Nascere</i>, arise (D04).</p>
+<p><span class="lem"><i lang="it">imparata da&#x27; Commentarii di Servio Tullio</i>.</span> &quot;Learned from the Commentaries of Servius Tullius&quot;: Livy 1.60 has the first two consuls created by the centuriate assembly &quot;according to the commentaries of Servius Tullius&quot;. Both readers read <i lang="it">da&#x27;</i>, &quot;from&quot;; the 1933 edition reads <i lang="it">de&#x27; commentari</i>, &quot;of the commentaries&quot;. <i lang="it">Da&#x27;</i> construes and is kept (D216; FG-CONS-I16-D002).</p>
+<p><span class="lem"><i lang="it">gli feciono in progresso di tempo stretti dalla necessità e ammaestrati dalla esperienza</i>.</span> &quot;They made them in progress of time, pressed by necessity and taught by experience&quot;: the object is fronted and taken up by <i lang="it">gli</i>, and the English keeps both. The tribunes, the subject of Guicciardini&#x27;s I.3, I.5 and I.6, are among these later orders. The 1933 edition has <i lang="it">ma</i> before <i lang="it">gli feciono</i> (FG-CONS-I16-D005).</p>
+<p><span class="lem"><i lang="it">quell&#x27;altro aculeo</i>.</span> &quot;That other goad&quot;: of the two things that kindle a people once free (.01), the memory of liberty the Romans lacked; the experience of tyranny they had.</p>
+<p><span class="lem"><i lang="it">sotto Tarquinio</i>.</span> &quot;Under Tarquinius&quot;: Tarquinius Superbus.</p>
+<p><span class="lem"><i lang="it">e&#x27; quali esempli muovono e infiammano</i>.</span> &quot;Which examples move and inflame&quot;: <i lang="it">esemplo</i>, example (glossary).</p>
+<p><span class="lem"><i lang="it">È adunque difficile</i>.</span> &quot;It is, then, difficult&quot;: both readers doubted the accent on the capital; read <i lang="it">È</i> with the 1933 edition (D215). It opens the third printed paragraph.</p>
+<p><span class="lem"><i lang="it">conservare</i>.</span> &quot;Conserve&quot; (glossary), against Machiavelli&#x27;s <i lang="it">preservare</i>, &quot;preserve&quot;, and <i lang="it">mantenere</i>, &quot;maintain&quot;.</p>
+<p><span class="lem"><i lang="it">il migliore remedio</i>.</span> &quot;A better remedy&quot;: <i lang="it">rimedio</i>, remedy, Machiavelli&#x27;s word (Machiavelli .04, .05). Guicciardini&#x27;s remedy is an order, not a killing.</p>
+<p><span class="lem"><i lang="it">in modo temperato</i>.</span> &quot;In a tempered way&quot;: <i lang="it">temperato</i> as FG I.12&#x27;s <i lang="it">complessione temperata</i> (D25).</p>
+<p><span class="lem"><i lang="it">vivacità</i>.</span> &quot;Vigour&quot; (D223): the cognate &quot;vivacity&quot; now means liveliness of manner; the word is the government&#x27;s quickness and force to put down a conspirator.</p>
+<p><span class="lem"><i lang="it">da uno canto ... da altro</i>.</span> &quot;On the one hand ... on the other hand&quot;: <i lang="it">da altro</i> as the glossary (D24).</p>
+<p><span class="lem"><i lang="it">chi machinassi contro la libertà</i>.</span> &quot;Whoever should machinate against liberty&quot;: <i lang="it">machinare</i>, as FG I.7 (D154), and at .04 against the state. The 1933 edition reads <i lang="it">contro alla libertà</i> (FG-CONS-I16-D003).</p>
+<p><span class="lem"><i lang="it">a battere e&#x27; ricchi e i potenti</i>.</span> &quot;To beat down the rich and the powerful&quot;: Canestrini repeats the article, two classes; the 1933 edition reads <i lang="it">e&#x27; ricchi e potenti</i> (FG-CONS-I16-D004). <i lang="it">Battere</i> returns at .05, of the prince who beats the people down.</p>
+<p><span class="lem"><i lang="it">e&#x27; portamenti loro</i>.</span> &quot;Their bearings&quot;: how they carry themselves.</p>
+<p><span class="lem"><i lang="it">che non abbino a essere inimici</i>.</span> &quot;That they are not to be enemies&quot;: <i lang="it">avere a</i>, &quot;be to&quot; (D61). <i lang="it">Inimico</i>, &quot;enemy&quot;, Guicciardini&#x27;s form of Machiavelli&#x27;s <i lang="it">nimico</i>.</p>
+<p><span class="lem"><i lang="it">e n&#x27;abbiamo visto la esperienza in Firenze</i>.</span> &quot;And we have seen the experience of it in Florence&quot;: most likely the republic of 1494–1512, which received citizens who had served the Medici. <i lang="it">Esperienza</i> is the same word as at .02, &quot;taught by experience&quot;.</p>
+<p><span class="lem"><i lang="it">che quando ..., che quelli</i>.</span> &quot;That when ..., that those&quot;: the pleonastic <i lang="it">che</i> is kept (D136).</p>
+<p><span class="lem"><i lang="it">che hanno potuto co&#x27; tiranni</i>.</span> &quot;Who have been able [to do much] with the tyrants&quot;: <i lang="it">potere</i> kept a verb, as <i lang="it">la parte che può manco</i>, &quot;the party that can do less&quot; (.04); &quot;power&quot; is <i lang="it">potestà</i>&#x27;s (.02).</p>
+<p><span class="lem"><i lang="it">trovandosi buone facultà</i>.</span> &quot;Finding themselves [with] good substance&quot;: <i lang="it">facultà</i> of property, substance (D198), as at .04 (<i lang="it">accommodati di facultà</i>).</p>
+<p><span class="lem"><i lang="it">d&#x27;appresso</i>.</span> &quot;More nearly&quot;: from closer at hand.</p>
+<p><span class="lem"><i lang="it">e&#x27; fastidii della servitù</i>.</span> &quot;The vexations of servitude&quot;: <i lang="it">fastidio</i>, Machiavelli&#x27;s word for what the great were to Clearchus (Machiavelli .07).</p>
+<p><span class="lem"><i lang="it">vi si contentano dentro ..., godono il suo</i>.</span> &quot;Content themselves within it ..., enjoy their own&quot;: the reply&#x27;s answer to Machiavelli&#x27;s partisan enemies, who, the capacity of availing themselves taken away, &quot;cannot live content&quot; (Machiavelli .03). Received and secure, says Guicciardini, the tyranny&#x27;s friends content themselves; Florence is his experience of it. Machiavelli&#x27;s common utility of free living is &quot;to be able to enjoy freely one&#x27;s own things&quot; (Machiavelli .03).</p>
+<p><span class="lem"><i lang="it">E lo assicurare</i>.</span> &quot;And the securing&quot;: one reader doubted the capital&#x27;s accent, the other read <i lang="it">E</i>, as does the 1933 edition. The conjunction construes; <i lang="it">È</i> would not. <i lang="it">Assicurare</i>, secure, Machiavelli&#x27;s verb (Machiavelli .04, .05, .08, .09): here the republic secures the men it suspects, rather than securing itself against them.</p>
+<p><span class="lem"><i lang="it">riposare</i>, <i lang="it">si riposano</i>.</span> &quot;Rest&quot;: the men rest and enjoy their own; suspicion does not let the city rest.</p>
+<p><span class="lem"><i lang="it">né se si tengono dentro, né se si cacciano fuora</i>.</span> &quot;Neither if they are kept within nor if they are driven out&quot;.</p>
+<p><span class="lem"><i lang="it">ripigliando per peccati gravissimi etiam quelli che paino leggieri</i>.</span> &quot;Taking up as most grave sins even those that seem light&quot;: <i lang="it">ripigliare per</i>, to take a fault up as. <i lang="la">Etiam</i> is Latin, as in FG I.3.</p>
+<p><span class="lem"><i lang="it">non perseguiti alcuno per semplice sospetto</i>.</span> &quot;Let it not persecute anyone on simple suspicion&quot;: <i lang="it">perseguitare</i>, persecute, again at .04 of the Florentine persecuting. Machiavelli&#x27;s common utility of free living is to enjoy one&#x27;s own &quot;without any suspicion&quot; (<i lang="it">senza alcuno sospetto</i>, Machiavelli .03); <i lang="it">sospetto</i> returns at .03 (<i lang="it">l&#x27;avergli a sospetto</i>) and .05 (<i lang="it">avendogli sospetti</i>).</p>
+<p><span class="lem"><i lang="it">che hanno avuto condizione sotto il tiranno</i>.</span> &quot;Who have had condition under the tyrant&quot;: standing, place. The word returns twice in the period and at .03 (&quot;a condition equal to the other citizens&quot;).</p>
+<p><span class="lem"><i lang="it">inquieti</i>.</span> &quot;Restless&quot;: twice, here and in the sons of Brutus whom Guicciardini allows.</p>
+<p><span class="lem"><i lang="it">Guardisi sopra tutto che nella città non nascan divisioni</i>.</span> &quot;Let it beware above all things that in the city divisions do not arise&quot;: <i lang="it">nascere</i>, arise (D04), twice in the period. <i lang="it">Sopra tutto</i>, &quot;above all things&quot;, kept apart from <i lang="it">massime</i>, &quot;above all&quot; (.03; glossary).</p>
+<p><span class="lem"><i lang="it">quelli della parte che può manco</i>.</span> &quot;Those of the party that can do less&quot;: the 1933 edition reads <i lang="it">quella parte</i> (FG-CONS-I16-D006).</p>
+<p><span class="lem"><i lang="it">rimettere e&#x27; Medici in Firenze nel 12</i>.</span> &quot;That made the Medici be put back into Florence in [15]12&quot;: the century is supplied (D79). The Medici returned in September 1512 behind a Spanish army, and young men of the great families forced Piero Soderini out. Canestrini&#x27;s note on this sentence, on 1512 and 1530, is his, and is not carried.</p>
+<p><span class="lem"><i lang="it">il perseguitare doppo il 26</i>.</span> &quot;The persecuting after [15]26&quot;: the century supplied as for <i lang="it">nel 12</i> (D79, D225); the 1933 edition prints <i lang="it">&#x27;26</i>. The persecution Guicciardini means is the last republic&#x27;s, which expelled the Medici in May 1527 and proceeded against their friends; the number may be his slip. Guicciardini was himself among those the republic proceeded against. The 1933 edition has <i lang="it">hanno fatto</i> for <i lang="it">ha fatto</i> (FG-CONS-I16-D007).</p>
+<p><span class="lem"><i lang="it">la ritornata loro</i>.</span> &quot;Their return&quot;: the Medici&#x27;s. The Italian says the persecution has made it desired, not that it has happened.</p>
+<p><span class="lem"><i lang="it">Non desideri la nuova libertà che vi sian figliuoli di Bruto</i>.</span> &quot;Let the new liberty not desire that there be sons of Brutus in it&quot;: Machiavelli&#x27;s remedy (Machiavelli .04), refused as a thing to be wished for.</p>
+<p><span class="lem"><i lang="it">riputazione e [terrore]</i>.</span> &quot;Reputation and terror&quot;: both readers read <i lang="it">tenere</i>, which leaves the infinitive without an object; the 1933 edition reads <i lang="it">terrore</i>. Emended under D68 (D214; FG-CONS-I16-D001). The English follows the emended text.</p>
+<p><span class="lem"><i lang="it">mettere mano nel sangue</i>.</span> &quot;Put hand into blood&quot;.</p>
+<p><span class="lem"><i lang="it">sarebbe stato meglio ..., che averne per avergli ammazzare</i>.</span> &quot;It would have been better ... than to have them so as to have to kill them&quot;: the preference stands under the concession <i lang="it">se bene in simili casi è necessario mettere mano nel sangue</i>, &quot;although in like cases it is necessary to put hand into blood&quot;. Both readers doubted the last letter of <i lang="it">averne</i> (<i lang="it">averno</i>); read with the 1933 edition (D215). <i lang="it">Avergli ammazzare</i> is <i lang="it">avere a</i> without the <i lang="it">a</i>; D61&#x27;s &quot;be to&quot; will not go after &quot;so as&quot;, and the English has &quot;have to&quot;. <i lang="it">Ammazzare</i>, kill (D169), Machiavelli&#x27;s verb.</p>
+<p><span class="lem"><i lang="it">Né abbi in concetto de&#x27; figliuoli di Bruto</i>.</span> &quot;Nor let it hold in the conception of sons of Brutus&quot;: the sons of Brutus become a class, and Guicciardini narrows it to the restless and rapacious.</p>
+<p><span class="lem"><i lang="it">periculosi</i>.</span> &quot;Dangerous&quot;: <i lang="it">pericolo</i>, danger (glossary), as <i lang="it">periculo</i> at .05.</p>
+<p><span class="lem"><i lang="it">accommodati di facultà e di qualità</i>.</span> &quot;Accommodated with substance and with quality&quot;: the verb of the Romans who &quot;accommodated themselves&quot; to liberty (.02).</p>
+<p><span class="lem"><i lang="it">sentire e&#x27; frutti della libertà</i>.</span> &quot;Feel the fruits of liberty&quot;: the verb of <i lang="it">l&#x27;avere sentito sotto Tarquinio acerbissima servitù</i>, &quot;the having felt under Tarquinius a most bitter servitude&quot; (.02).</p>
+<p><span class="lem"><i lang="it">poi che questo anche è tocco nel Discorso</i>.</span> &quot;Since this too is touched on in the Discourse&quot;: Machiavelli&#x27;s prince who would gain a people that is his enemy (Machiavelli .06–.08).</p>
+<p><span class="lem"><i lang="it">nel nostro di Firenze</i>.</span> &quot;In our [people] of Florence&quot;: <i lang="it">libero</i> is masculine, so the noun understood is <i lang="it">populo</i>.</p>
+<p><span class="lem"><i lang="it">per participare degli onori</i>.</span> &quot;So as to partake of the honours&quot;: <i lang="it">participare</i> here takes <i lang="it">di</i> and is intransitive, the sense of <i lang="it">partecipare di</i> (glossary, &quot;partake of&quot;), not D28&#x27;s transitive &quot;impart&quot;.</p>
+<p><span class="lem"><i lang="it">nessuna dolcezza, nessuna mansuetudine, nessuno buono trattamento</i>.</span> &quot;No sweetness, no mansuetude, no good treatment&quot;: three nouns, each with its negative. <i lang="it">Dolcemente</i>, &quot;sweetly&quot;, returns of the tyrant&#x27;s governing.</p>
+<p><span class="lem"><i lang="it">se ne può fidare</i>.</span> &quot;Trust it&quot;: <i lang="it">ne</i> is the people, or its desire; the English keeps &quot;it&quot; open. The one reader who saw the stop after <i lang="it">fidare</i> saw it faint; supplied with the 1933 edition (D110). Both readers doubted <i lang="it">ne</i> (<i lang="it">ne</i>/<i lang="it">no</i>); read <i lang="it">ne</i> with the 1933 edition (D215).</p>
+<p><span class="lem"><i lang="it">È bene vero</i>.</span> &quot;It is indeed true&quot;: as Machiavelli&#x27;s <i lang="it">Vero è che io giudico</i>, &quot;It is true that I judge&quot; (Machiavelli .05), a concession. Both readers doubted the accent; read <i lang="it">È</i> with the 1933 edition (D215).</p>
+<p><span class="lem"><i lang="it">non si precipitano</i>.</span> &quot;Do not throw themselves headlong&quot;.</p>
+<p><span class="lem"><i lang="it">le quali quando vengono, non giova al tiranno</i>.</span> &quot;Which, when they come, it does not avail the tyrant&quot;: the relative opens and is not finished; the English keeps it.</p>
+<p><span class="lem"><i lang="it">e avere fatto come Clearco</i>.</span> &quot;And to have done as Clearchus&quot;: Machiavelli&#x27;s example (Machiavelli .07).</p>
+<p><span class="lem"><i lang="it">del quale è puerile credere che ammazzassi gli ottimati per satisfare al populo</i>.</span> &quot;Of whom it is puerile to believe that he killed the optimates to satisfy the people&quot;: Machiavelli wrote that Clearchus resolved to free himself from the vexation of the great and gain the people, and cut the optimates to pieces &quot;to the extreme satisfaction of the popular men&quot; (Machiavelli .07). Guicciardini does not deny the killing or the satisfaction; he denies the motive.</p>
+<p><span class="lem"><i lang="it">ma che ... déssi colore di farlo per compiacere al populo</i>.</span> &quot;But that ... he gave colour of doing it to please the people&quot;: the second <i lang="it">che</i> hangs on <i lang="it">credere</i>. <i lang="it">Colore</i>, a pretext. Canestrini accents <i lang="it">déssi</i>, &quot;gave&quot;.</p>
+<p><span class="lem"><i lang="it">farsi partigiani di qualità che siano potenti</i>.</span> &quot;To make himself partisans of such quality that they are powerful&quot;: <i lang="it">di qualità che</i> as twice before in the reply (.04, .05). Machiavelli&#x27;s &quot;partisan enemies and not partisan friends&quot; (Machiavelli .03) answered in its own word, and his greatest remedy, &quot;to make the people one&#x27;s friend&quot; (<i lang="it">farsi il Popolo amico</i>, Machiavelli .05), turned in the same reflexive verb: the prince makes himself partisans to oppress the people. <i lang="it">Qualità</i>, quality (glossary), five times in the reply.</p>
+<p><span class="lem"><i lang="it">annichilare</i>.</span> &quot;Annihilating&quot;.</p>
+<p><span class="lem"><i lang="it">introducere nuovi abitatori</i>.</span> &quot;To introduce new inhabitants&quot;: <i lang="it">abitatori</i> as FG I.1 (D63). The unit ends with a stop.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="colophon">
+    <div class="row">
+      <div>
+        <h3>What this is</h3>
+        <p>A free, openly licensed, bilingual edition of Guicciardini's 39 <i>Considerazioni</i> and the
+          <i>Discorsi</i> chapters they answer — 78 text units, Italian and English facing, every reading
+          traceable to a named public-domain witness.</p>
+        <p>It is a reading edition with a transparent apparatus, not a text of record. It does not adjudicate
+          the critical text against Bausi 2001 or the manuscript tradition, and does not claim to.</p>
+      </div>
+      <div>
+        <h3>On the title</h3>
+        <p>Machiavelli had been dead two years when Guicciardini wrote; the <i>Discorsi</i> were unpublished,
+          and the <i>Considerazioni</i> stayed unprinted until 1857. Machiavelli never answers.</p>
+        <p>“Conversation” is a quotation, not a description. It invokes Machiavelli's letter to Vettori of
+          10 December 1513, where he changes into court dress at evening, enters the antique courts of ancient
+          men, and reports that <i>they, in their humanity, answer me</i>. Guicciardini does to Machiavelli
+          what Machiavelli did to Livy — and is denied the reply Machiavelli claimed.</p>
+      </div>
+      <div>
+        <h3>Method</h3>
+        <p>No image-derived reading enters the text on a single reading. Each unit is transcribed twice,
+          independently, by readers who have not seen each other's work; disagreements are adjudicated against
+          the page images and recorded.</p>
+        <p>Existing English translations of the <i>Considerazioni</i> — Grayson (1965), Atkinson &amp; Sices
+          (2002) — are never used as translation inputs.</p>
+      </div>
+      <div>
+        <h3>Licence</h3>
+        <p>The established Italian text and the apparatus data are dedicated to the public domain under
+          <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>. They are Machiavelli's and
+          Guicciardini's sentences, and this edition adds no condition to them.</p>
+        <p>The English translation, the notes and the editorial apparatus are licensed
+          <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: reuse them anywhere, including
+          commercially, with attribution to David McDougall and this edition. The build tooling is MIT.</p>
+        <p>The witness scans are other people's digitisations, included as evidence under their own terms; no
+          grant is made over them, and no page image of Palmarocchi 1933 is reproduced here. Full terms,
+          layer by layer, are in the <span class="sig">LICENSE</span> file in the repository.</p>
+      </div>
+    </div>
+
+    <div class="state">
+      <p><strong>Version 0.3 · 14 of 39 pairs published.</strong>
+        This edition is versioned, not frozen. Some translation questions on this pair are still open.</p>
+    </div>
+  </footer>
+
+</div>
