@@ -1,0 +1,23 @@
+source_unit_id: NM-DISC.1.16
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-014
+passes:
+  - {id: A, performed: 2026-10-11, file: sources/coldpass/NM-DISC.1.16-passA.md, note: "subagent; page images only (350 ppi, thirds), separate directory; full chapter"}
+  - {id: B, performed: 2026-10-11, file: sources/coldpass/NM-DISC.1.16-passB.md, note: "subagent; one page only (p. 77, 253 words, 21% of the chapter), chosen by the collator after pass A by D203(c) and recorded before it was given out; separate directory"}
+collation: sources/coldpass/COLLATION-2026-10-11-I16.md
+collation_result: "1,186 words (pass A). Sample of p. 77: the token streams are identical; no word, clause or sense disagreement, so no full pass B, and the sample rule stands for the next chapter. One pass-A doubt outside the sample whose alternatives are different words (D203(a)), `quando ⟨ei|ci⟩ ricuperò`, ruled `ei` with the 1554 reading; word-level differences from the 1554 edition at letters the scan breaks (D203(b)), `quanta`/`quanto` and `altra volta`/`altre uolte`, kept as printed, and `contro`/`contra` named as spelling (D217)."
+boundaries: "printed pp. 75-80; CAPITOLO XVI on p. 75 after line 7, the last line of XV; italic rubric of three lines; drop capital Q; one block; ends p. 80 line 8 `mostreremo.`; CAPITOLO XVII follows on the same page"
+interventions: []
+comparison_collation: >
+  Done 2026-10-11 against the 1554 extract (fol. 29r-31r). A cold reader
+  transcribed the Giglio leaves from the page images
+  (sources/coldpass/NM-DISC.1.16-1554.md); the transcript was collated by
+  word against the established text, and the readings published as variant
+  notes were checked on the leaf images by the collator, except `dal collo`
+  (D004), which rests on the transcript. Sense-bearing differences are in
+  sources/comparisons/NM-DISC/NM-DISC.1.16-witness-disagreements.yml.
+normalisation_notes: "Class A only: accents (`perchè` → `perché`, `Perchè` → `Perché`, `perche` → `perché`, `ancorchè` → `ancorché`, `modochè` → `modoché`, `Talchè` → `Talché`, `benchè` → `benché`, `nè` → `né`, `sè` → `sé`); elision solid (`l'acquista`, `l'acquistò`, `d'altri`, `d'insù`, `un'altra`, `nell'autorità`, `ch'ella`, `dell'onore`, `l'offenda`, `quell'ordine`, `l'universale`, `d'un`, `d'una`, `ch'ei`, `l'una`, `l'altra`, `n'è`, `all'altro`, `d'essere`, `tutt'i`, `dell'arme`, `d'ogni`); apocope spaced (`de' Tarquinj`, `a' quali`, `de' Popolari`); line-end hyphens removed; spaces before punctuation removed."

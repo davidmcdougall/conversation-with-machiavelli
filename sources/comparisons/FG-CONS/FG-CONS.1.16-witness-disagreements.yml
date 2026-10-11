@@ -1,0 +1,61 @@
+source_unit_id: FG-CONS.1.16
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-I16-D001
+    locator: FG-CONS.1.16.04
+    class: emendation
+    witness_1857: "acquistare riputazione e tenere con la severità"
+    witness_1933: "acquistare riputazione e terrore con la severità"
+    established: "acquistare riputazione e [terrore] con la severità"
+    publish_as_variant_note: true
+    rationale: "Both cold readers read `tenere` without doubt. As printed the infinitive has no object and the period barely construes; reputation and terror are what severity acquires. The scan prints rr as n and e o-shaped (D145). Emended under D68, as D126 and D200 (D214)."
+  - id: FG-CONS-I16-D002
+    locator: FG-CONS.1.16.02
+    class: reading
+    witness_1857: "ma imparata da' Commentarii di Servio Tullio"
+    witness_1933: "ma imparata de' commentari di Servio Tullio"
+    established: witness_1857
+    rationale: "Learned from the Commentaries, against learned of them. Both readers read `da'` without doubt; it construes, so D38 (D216)."
+  - id: FG-CONS-I16-D003
+    locator: FG-CONS.1.16.03
+    class: reading
+    witness_1857: "chi machinassi contro la libertà"
+    witness_1933: "chi machinassi contro alla libertà"
+    established: witness_1857
+    rationale: "Same sense."
+  - id: FG-CONS-I16-D004
+    locator: FG-CONS.1.16.03
+    class: reading
+    witness_1857: "a battere e' ricchi e i potenti"
+    witness_1933: "a battere e' ricchi e potenti"
+    established: witness_1857
+    rationale: "Canestrini repeats the article: the rich and the powerful as two classes."
+  - id: FG-CONS-I16-D005
+    locator: FG-CONS.1.16.02
+    class: reading
+    witness_1857: "e alla quiete della città, gli feciono in progresso di tempo"
+    witness_1933: "ed alla quiete della città, ma gli feciono in progresso di tempo"
+    established: witness_1857
+    rationale: "Palmarocchi's `ma` makes the contrast explicit; Canestrini leaves the main clause unannounced."
+  - id: FG-CONS-I16-D006
+    locator: FG-CONS.1.16.04
+    class: reading
+    witness_1857: "perché nelle divisioni quelli della parte che può manco, si gettano al tiranno"
+    witness_1933: "perché nelle divisione quella parte che può manco, si gettano al tiranno"
+    established: witness_1857
+    rationale: "Canestrini's plural subject agrees with `si gettano`; Palmarocchi's collective `quella parte` takes the plural by sense."
+  - id: FG-CONS-I16-D007
+    locator: FG-CONS.1.16.04
+    class: reading
+    witness_1857: "e il perseguitare doppo il 26 ... ha fatto desiderare"
+    witness_1933: "ed el perseguitare doppo el '26 ... hanno fatto desiderare"
+    established: witness_1857
+    rationale: "Canestrini's singular agrees with `il perseguitare`. Same sense."
+  - id: FG-CONS-I16-D008
+    locator: FG-CONS.1.16.01-05
+    class: systematic_orthographic_profile
+    witness_1857: "Canestrini's `il`, `populo`, `differenza`, `conosciuto`, `armi`, `prudenza`, `esperienza`, `necessarii`, `dentro`, `le quali`, `condizioni`, `divisioni`, `cagioni`, `oppressioni`, `occasioni`, `periculosi`, `abborrita`, `o vero`, `annichilare`, `e`, and lighter pointing"
+    witness_1933: "Palmarocchi's `el`, `popolo`, `differenzia`, `cognosciuto`, `arme`, `prudenzia`, `esperienzia`, `necessari`, `drento`, `le quale`, `condizione`, `divisione`, `cagione`, `oppressione`, `occasione`, `pericolosi`, `aborrita`, `overo`, `annichillare`, `ed`, and heavier pointing"
+    established: witness_1857
+    rationale: Canestrini governs throughout.

@@ -1,0 +1,61 @@
+source_unit_id: FG-CONS.1.16
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-014
+responds_to: NM-DISC.1.16
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. Canestrini's two notes on these pages (p. 31, on the chapter; p. 34, on 1512 and 1530) are his and are not carried."
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38); errors are emended from Palmarocchi and bracketed (D68)."
+passes:
+  - {id: A, performed: 2026-10-11, file: sources/coldpass/FG-CONS.1.16-passA.md, note: "subagent; page images only (native 600 ppi rendered at 1200, half pages plus enlarged quarter crops), separate directory"}
+  - {id: B, performed: 2026-10-11, file: sources/coldpass/FG-CONS.1.16-passB.md, note: "subagent; same images, separate directory"}
+collation: sources/coldpass/COLLATION-2026-10-11-I16.md
+collation_result: >
+  About 1,270 words (A 1,264, B 1,288; they count elisions differently).
+  Two word-level splits, `molta`/`molte` and `a`/`a'` before `consuli`, ruled
+  `molte` and `a'` with the 1933 edition (D215). No clause or sense
+  disagreement. One confident shared reading against the comparison witness
+  at letters the scan breaks, `riputazione e tenere` (1933 `terrore`),
+  emended under D68 (D214); one, `da' Commentarii` (1933 `de'`), kept (D216).
+  Common doubts where the alternative is a word, read with the 1933 edition
+  (D215). Six stops supplied (D67); three marks of uncertain weight follow
+  the 1933 edition (D110).
+witness_independence_check: "SCOPE §7. At the two split loci pass A sides with Palmarocchi at neither (`molta`, `a`), pass B at both (`molte`, `a'`), each from a damaged letter or mark the reader doubted. Neither pass carries a Palmarocchi word-reading where Canestrini differs: both have `tenere`, `da'`, `averno`, `contro la libertà`, `e i potenti`, `quelli della parte`, `ha fatto`, against the 1933 `terrore`, `de'`, `averne`, `contro alla libertà`, `e potenti`, `quella parte`, `hanno fatto`."
+boundaries: "printed pp. 31-35; heading CONSIDERAZIONE SUL CAPITOLO XVI. at the head of p. 31; Canestrini's rubric `Un popolo uso a vivere sotto un principe, se per qualche accidente diventa libero, con difficultà mantiene la libertà`, unstopped; five indented paragraphs (p. 31 l. 1, p. 32 l. 1, p. 32 last line, p. 33 l. 25, p. 34 l. 23); ends p. 35 l. 22 `causa di desiderare la libertà.`; CONSIDERAZIONE SUL CAPITOLO XXIII follows"
+corrections:
+  - {id: FG-CONS-I16-C001, locator: FG-CONS.1.16.01, was: "della antica republica È ancora", now: "della antica republica. È ancora", evidence: "Sentence break with a capital; neither pass sees a point; the 1933 edition prints one. D67."}
+  - {id: FG-CONS-I16-C002, locator: FG-CONS.1.16.02, was: "che al privato È adunque", now: "che al privato. È adunque", evidence: "Sentence break with a capital; neither pass sees a point; the 1933 edition prints one. D67."}
+  - {id: FG-CONS-I16-C003, locator: FG-CONS.1.16.02, was: "in molto lunghissima servitù: perché", now: "in molto lunghissima servitù; perché", evidence: "Both readers doubt the mark between colon and semicolon; the 1933 edition prints a semicolon. D110."}
+  - {id: FG-CONS-I16-C004, locator: FG-CONS.1.16.02, was: "la immagine della libertà; e secondo", now: "la immagine della libertà, e secondo", evidence: "Pass A ⟨;|,⟩, pass B ⟨,|;⟩; the 1933 edition prints a comma. D110."}
+  - {id: FG-CONS-I16-C005, locator: FG-CONS.1.16.02, was: "la equalità de' cittadini Né", now: "la equalità de' cittadini. Né", evidence: "Sentence break with a capital; neither pass sees a point; the 1933 edition prints one. D67."}
+  - {id: FG-CONS-I16-C006, locator: FG-CONS.1.16.03, was: "si riposano e godono il suo E lo", now: "si riposano e godono il suo. E lo", evidence: "Sentence break with a capital; neither pass sees a point; the 1933 edition prints one. D67."}
+  - {id: FG-CONS-I16-C007, locator: FG-CONS.1.16.03, was: "né se si cacciano fuora", now: "né se si cacciano fuora.", evidence: "Paragraph end; neither pass sees a point; the 1933 edition prints one. D67."}
+  - {id: FG-CONS-I16-C008, locator: FG-CONS.1.16.05, was: "se ne può fidare È bene", now: "se ne può fidare. È bene", evidence: "Pass A sees no point, pass B a faint one; the 1933 edition prints it. D110."}
+  - {id: FG-CONS-I16-C009, locator: FG-CONS.1.16.05, was: "per compiacere al populo Il remedio", now: "per compiacere al populo. Il remedio", evidence: "Sentence break with a capital; neither pass sees a point; the 1933 edition prints one. D67."}
+emendations:
+  - {id: FG-CONS-I16-E001, operation: emendation, rule: D68, status: ruled_D214, locator: FG-CONS.1.16.04, printed: "acquistare riputazione e tenere con la severità", established: "acquistare riputazione e [terrore] con la severità", source: WIT-FG-CONS-1933-PALMAROCCHI, note: "Both readers read `tenere` without doubt. As printed the infinitive has no object and the period barely construes; the 1933 edition reads `riputazione e terrore`. The scan prints rr as n and e o-shaped elsewhere. As D126 and D200, a clearly read word that barely construes. Not settled on the page image."}
+readings:
+  - {locus: "restando ⟨molta|molte⟩ memorie", passes: "A ⟨molta|molte⟩; B ⟨molte|molta⟩", witness_1933: "molte", disposition: "molte, D215 (David, 2026-10-11)"}
+  - {locus: "de' re ⟨a|a'⟩ consuli", passes: "A ⟨a|a'⟩; B ⟨a'|a⟩", witness_1933: "a'", disposition: "a', a dropped apostrophe as D72; D215"}
+  - {locus: "che ⟨averno⟩ per avergli ammazzare", passes: "A ⟨averno⟩; B ⟨averno⟩", witness_1933: "averne", disposition: "averne, D215"}
+  - {locus: "delle republiche, ⟨e|a⟩ anche", passes: "A ⟨e|a⟩; B ⟨e|a⟩", witness_1933: "ed anche", disposition: "e, D215"}
+  - {locus: "se ⟨ne|no⟩ può fidare", passes: "A ⟨ne|no⟩; B ⟨ne|no⟩", witness_1933: "ne", disposition: "ne, D215"}
+  - {locus: "sicurtà e ⟨condizione|condiziona⟩ equale", passes: "A ⟨condizione|condiziona⟩; B the same", witness_1933: "condizione", disposition: "condizione, D215"}
+  - {locus: "⟨È|E⟩ adunque difficile", passes: "A ⟨È|E⟩; B ⟨È|E⟩", witness_1933: "È", disposition: "È, D215"}
+  - {locus: "⟨È|E⟩ bene vero", passes: "A ⟨È|E⟩; B ⟨È|E⟩", witness_1933: "È", disposition: "È, D215"}
+  - {locus: "imparata da' Commentarii", passes: "A da'; B da'", witness_1933: "de'", disposition: "da' kept, D216 (D203(b) escalation)"}
+  - {locus: "godono il suo. ⟨E|È⟩ lo assicurare", passes: "A ⟨E|È⟩; B E", witness_1933: "E", disposition: "E; one reader's doubt, read by the other and the 1933 edition"}
+  - {locus: "nel nostro ⟨di|dì⟩ Firenze", passes: "A ⟨di|dì⟩; B di", witness_1933: "di", disposition: "di; one reader's doubt"}
+pointing:
+  - {locus: "sotto e' re; e' quali", passes: "A ⟨;⟩; B ⟨,|;⟩", witness_1933: ";", disposition: "D110"}
+  - {locus: "alla libertà; e la creazione", passes: "A ⟨;⟩; B ⟨,|;⟩", witness_1933: ";", disposition: "D110"}
+  - {locus: "libertà. Perché accade", passes: "A ⟨.|no stop⟩; B ⟨.⟩", witness_1933: ".", disposition: "printed"}
+  - {locus: "giustamente e umanamente;", passes: "A ⟨;⟩; B ⟨;|,⟩", witness_1933: ";", disposition: "printed"}
+  - {locus: "come Clearco;", passes: "A ⟨;|,⟩; B ⟨;|,⟩", witness_1933: ";", disposition: "printed"}
+  - {locus: "poco guadagno,", passes: "A ⟨,⟩; B ⟨,|;⟩", witness_1933: ",", disposition: "printed"}
+  - {locus: "dalla esperienza.", passes: "A ⟨.⟩; B ⟨.⟩", witness_1933: ".", disposition: "printed, faint"}
+  - {locus: "acerbissima servitù.", passes: "A ⟨.⟩; B ⟨.⟩", witness_1933: ".", disposition: "printed, faint"}
+not_supplied: []
+normalisation_notes: "Class A: accents (`perchè` → `perché`, `nè` → `né`, `Nè` → `Né`); elision solid (`l'ha`, `l'abbino`, `all'altro`, `l'avessino`, `l'avere`, `n'abbiamo`, `d'appresso`, `l'avergli`, `l'arebbono`); apocope spaced (`de' tiranni`, `de' cittadini`, `de' re`, `a' consuli`, `de' consuli`, `da' Commentarii`, `a' Romani`, `co' tiranni`, `de' figliuoli`); the Florentine plural article supplied as `e'` (D35: `e' mali`, `e' Romani`, `e' re`, `e' quali` twice, `e' populi`, `e' ricchi`, `e' portamenti`, `e' fastidii`, `e' Medici`, `e' frutti`, `e' buoni`); line-end hyphens removed; spaces before punctuation removed. `déssi` keeps Canestrini's accent."

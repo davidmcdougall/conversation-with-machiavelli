@@ -1,0 +1,88 @@
+source_unit_id: NM-DISC.1.16
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-I16-D001
+    locator: NM-DISC.1.16.01
+    class: reading
+    witness_1824: "sotto un Principe preservare dipoi la libertà"
+    witness_1554: "sotto un Prencipe conseruare dipoi la liberta"
+    established: witness_1824
+    rationale: "Giglio's people conserve their liberty rather than preserve it. Same sense; `conservare` is the word Guicciardini answers with."
+  - id: NM-DISC-I16-D002
+    locator: NM-DISC.1.16.03
+    class: reading
+    witness_1824: "di quel dei figliuoli, non temere di sé"
+    witness_1554: "di quel de figliuoli, non tenere di se"
+    established: witness_1824
+    rationale: "Giglio's `tenere` does not construe here; both 1824 readers read `temere` on the sampled page."
+  - id: NM-DISC-I16-D003
+    locator: NM-DISC.1.16.04
+    class: reading
+    witness_1824: "a questi inconvenienti e a questi disordini, che le soprascritte difficultà si arrecherebbono seco"
+    witness_1554: "a questi incouenienti, & a quegli disordini, che le soprascritte difficulta ci arrecherebbono seco"
+    established: witness_1824
+    rationale: "Giglio has `quegli` for the second `questi` and the difficulties bring them `to us`. Same sense."
+  - id: NM-DISC-I16-D004
+    locator: NM-DISC.1.16.02
+    class: reading
+    witness_1824: "che per poco innanzi si aveva levato d'insù il collo"
+    witness_1554: "che poco innanzi si haueua leuato dal collo"
+    established: witness_1824
+    rationale: "Same sense. Rests on the transcript."
+  - id: NM-DISC-I16-D005
+    locator: NM-DISC.1.16.04
+    class: reading
+    witness_1824: "pareva che fusse diventata la loro servitù"
+    witness_1554: "pareua che fusse diuennuta la loro seruitù"
+    established: witness_1824
+    rationale: "Same sense."
+  - id: NM-DISC-I16-D006
+    locator: NM-DISC.1.16.05
+    class: reading
+    witness_1824: "avendo per nimici la moltitudine"
+    witness_1554: "hauendo per nemici la grandissima moltitudine"
+    established: witness_1824
+    rationale: "Giglio makes the hostile multitude `very great`."
+  - id: NM-DISC-I16-D007
+    locator: NM-DISC.1.16.05
+    class: reading
+    witness_1824: "e quanta più crudeltà usa"
+    witness_1554: "& quanto piu crudelta usa"
+    established: witness_1824
+    rationale: "A word-level difference at a letter the scan breaks (D203(b)); both 1824 readers read `quanta` on the sampled page. Adjective for adverb, same sense. Kept (D217)."
+  - id: NM-DISC-I16-D008
+    locator: NM-DISC.1.16.05
+    class: reading
+    witness_1824: "Talché il maggiore rimedio che si abbia è cercare"
+    witness_1554: "Talche di maggior rimedio, che si habbia, e cercare"
+    established: witness_1824
+    rationale: "Giglio's `di` before `maggior rimedio` reads as a misprint for `il`."
+  - id: NM-DISC-I16-D009
+    locator: NM-DISC.1.16.06
+    class: reading
+    witness_1824: "parlando qui d'un Principe, e quivi d'una Repubblica"
+    witness_1554: "parlando qui di uno buonissimo Prencipe, et quiui d'una Republica"
+    established: witness_1824
+    rationale: "Giglio's prince here is `a very good` one. The 1824 text leaves him unqualified."
+  - id: NM-DISC-I16-D010
+    locator: NM-DISC.1.16.09
+    class: reading
+    witness_1824: "quando ei ricuperò la libertà, potette mantenerla"
+    witness_1554: "quando ei recupero la liberta, pote mantenerla"
+    established: witness_1824
+    rationale: "Pass A doubted the pronoun's first letter (`ei`/`ci`) on p. 80, outside the D199 sample; the alternatives are different words. Read `ei` with Giglio (D203(a), D217)."
+  - id: NM-DISC-I16-D011
+    locator: NM-DISC.1.16.09
+    class: reading
+    witness_1824: "che altra volta si sono discorsi"
+    witness_1554: "che altre uolte si sono discorsi"
+    established: witness_1824
+    rationale: "A word-level difference at a letter the scan breaks (D203(b)): `another time` against `other times`. Both construe; kept (D217)."
+  - id: NM-DISC-I16-D012
+    locator: NM-DISC.1.16.01-09
+    class: systematic_orthographic_profile
+    witness_1824: "The 1824 `Principe`, `nimici`, `contro`, `sendo`, `quelli`, `sicuro`, `straordinarie`, `facessero`, and modern pointing"
+    witness_1554: "Giglio's `Prencipe`, `nemici`, `contra` (three times, D217), `essendo`, `quei`, `securo`, `estraordinarie`, `facessino`, `&`, u for v, and lighter pointing"
+    established: witness_1824
+    rationale: 1824 governs throughout.

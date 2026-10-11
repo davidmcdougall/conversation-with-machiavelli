@@ -46,8 +46,11 @@ def fold(s):
     s = unicodedata.normalize("NFD", s.lower())
     return "".join(c for c in s if not unicodedata.combining(c)).replace("’", "'")
 
-def words(s):
-    s = re.sub(r'⟨([^⟩]*)⟩', lambda m: " " + m[1].replace("|", " ") + " ", s)
+def words(s, alt=None):
+    """Word tokens, folded. In a cold pass, ⟨a|b⟩ marks a doubt: with alt=k
+    the k-th alternative is taken, so that a hyphen inside it still joins."""
+    if alt is not None:
+        s = re.sub(r'⟨([^⟩]*)⟩', lambda m: m[1].split("|")[min(alt, m[1].count("|"))], s)
     s = re.sub(r'(\w)\[p\.\s*\d+\](\w)', r'\1\2', s)        # page break inside a word
     s = re.sub(r'\s*\[p\.\s*\d+\]\s*', ' ', s)
     s = re.sub(r'(\w)-[\s|/]*(\w)', r'\1\2', s)                  # rejoin line-end hyphens
@@ -164,7 +167,13 @@ def check_unit(unit, pair_paras):
     for s in srcs:
         p = ROOT / s
         if not p.exists(): bad(unit, 4, f"established_from {s} does not exist")
-        else: attested |= set(words(p.read_text(encoding="utf-8")))
+        else:
+            t = p.read_text(encoding="utf-8")
+            attested |= set(words(t, 0)) | set(words(t, 1))
+    # readings David ruled from the comparison witness, recorded in the establishment record
+    ruled = re.search(r'^readings:\n((?:  - .*\n)+)', prov_text, re.M)
+    if ruled:
+        attested |= {w for d in re.findall(r'disposition: "([^"]*)"', ruled[1]) for w in words(d.split(",")[0])}
     if attested:
         plain = re.sub(r'\S*\[[^\]]*\]\S*', ' ', " ".join(paras.values()) + " " + meta.get("rubric", ""))
         missing = sorted({w for w in words(plain) if w not in attested})
