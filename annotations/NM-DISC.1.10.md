@@ -9,7 +9,7 @@ format: as annotations/NM-DISC.1.12.md
 
 **Argument.** A ranking of reputations. Most praised are the heads and orderers of religions; next, the founders of republics and kingdoms; then the captains who have expanded their kingdom or their fatherland; then men of letters, each by his degree; then everyone else, for his art. Against them stand the infamous and detestable: destroyers of religions, dissipaters of kingdoms and republics, enemies of *virtù*, letters and the arts. No one, mad or wise, wicked or good, offered the choice between the two kinds, would fail to praise the first and blame the second. The chapter rests on that agreement: everyone already knows which is to be praised.
 
-**Cross-reference.** The ranking puts founders of religion above founders of states, which is where the next chapter goes: Numa, who gave Rome its religion, is set above Romulus in I.11 (not in this edition's corpus; I.12 follows from it). The founders of republics and kingdoms are I.9's subject.
+**Cross-reference.** The ranking puts founders of religion above founders of states, which is where the next chapter goes: Numa, who gave Rome its religion, is set above Romulus in I.11, the next pair, and I.12 follows from it. The founders of republics and kingdoms are I.9's subject.
 
 ## NM-DISC.1.10.02
 

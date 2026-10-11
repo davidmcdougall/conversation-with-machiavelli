@@ -82,7 +82,7 @@ exist. See §7.
 | 8 | NM-DISC.1.8 | FG-CONS.1.8 | FG-CONS-DR-008 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 9 | NM-DISC.1.9 | FG-CONS.1.9 | FG-CONS-DR-009 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 10 | NM-DISC.1.10 | FG-CONS.1.10 | FG-CONS-DR-010 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
-| 11 | NM-DISC.1.11 | FG-CONS.1.11 | FG-CONS-DR-011 | — | — | — | — | — |
+| 11 | NM-DISC.1.11 | FG-CONS.1.11 | FG-CONS-DR-011 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 12 | NM-DISC.1.12 | FG-CONS.1.12 | FG-CONS-DR-012 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 13 | NM-DISC.1.14 | FG-CONS.1.14 | FG-CONS-DR-013 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 14 | NM-DISC.1.16 | FG-CONS.1.16 | FG-CONS-DR-014 | — | — | — | — | — |
@@ -194,12 +194,12 @@ than inside the first paragraph.
 | Stage | Done | Remaining | Of |
 |---|---|---|---|
 | Link records | 39 | 0 | 39 |
-| NM source established | 12 | 27 | 39 |
-| FG source established | 12 | 27 | 39 |
-| Collated against the comparison witness | 24 units | 54 | 78 |
-| Translated (draft, cold-reviewed) | 24 | 54 | 78 |
-| Annotated | 24 | 54 | 78 |
-| Published | 24 | 54 | 78 |
+| NM source established | 13 | 26 | 39 |
+| FG source established | 13 | 26 | 39 |
+| Collated against the comparison witness | 26 units | 52 | 78 |
+| Translated (draft, cold-reviewed) | 26 | 52 | 78 |
+| Annotated | 26 | 52 | 78 |
+| Published | 26 | 52 | 78 |
 <!-- /state:stages -->
 
 The table is written by `scripts/state` from the files. The paragraphs below
@@ -320,6 +320,7 @@ clock; David's own time is the rulings, counted separately.
 | I.8 (965 + 443 words) | 12 | 3 | 6 | 5 | 5 | 3 | ~35 (stages approximate) | 1 ruling (D156) at establishment; one verbless opening emended by D114's precedent (D157); NM collated against 1554; commentary cold-reviewed |
 | I.9 (882 + 334 words) | 15 | 3 | 10 | 8 | 8 | 3 | ~50 (stages approximate) | no rulings; one verbless period emended by D114's precedent (D167), mid-paragraph; NM collated against 1554; commentary cold-reviewed; the establishment commit was made by David (`70f4e64`) |
 | I.10 (1,198 + 841 words) | 40 | 4 | 20 | 10 | 12 | 5 | ~95 (stages approximate) | 4 rulings (D182–D184 at establishment, D198 at translation); both passes subagents for the first time; two verbless periods emended by D114's precedent (D181); NM collated against 1554; commentary cold-reviewed; the computer link dropped twice mid-pair |
+| I.11 (1,076 + 340 words) | 35 | 4 | 20 | 12 | 12 | 5 | ~90 (stages approximate) | 1 batch at establishment (D200–D202) and three cold-pass amendments (D203); first chapter under D199, NM sample of p. 61 clean; one confident shared misreading caught only against the 1933 edition; NM collated against 1554; commentary cold-reviewed; the computer link dropped once mid-pair |
 
 ---
 
@@ -519,6 +520,21 @@ not behaved alike, and the rule now follows the evidence for each.
 
 Revisit again at unit twenty, or at the first sampled chapter whose sample
 disagrees.
+
+**Amended after the first sampled chapter (2026-10-11, D203).** I.11's
+sample came back clean, and its collation showed three gaps in the rule as
+written.
+
+- **Outside the sample**, a pass-A doubt whose alternatives are different
+  words has no second reader, so the "doubtful to both" trigger can never
+  fire. Every such doubt comes to David with the 1554 reading.
+- **A confident shared misreading** is invisible to a rule keyed on doubt.
+  Any word-level difference from the comparison witness at a letter the scan
+  is known to break (e/o/a, u/n, s/a) is escalated, whether or not either
+  reader doubted it. Both I.11 Canestrini readers read `o` for `e` with
+  confidence (D200).
+- **The sample page** is the page with the most pass-A uncertain loci, at
+  least a fifth of the chapter, chosen and recorded before it is given out.
 
 Everything else is deleted — Class T review of governance documents,
 bounded-amendment rechecks, the E1–E7 gate, the freeze tag. **The edition is

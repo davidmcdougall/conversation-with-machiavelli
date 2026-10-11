@@ -105,3 +105,15 @@ the original.
 | `Otto` | the Eight | FG I.10; the Otto di Guardia, noted |
 | `Lacedemone` | Lacedaemon | FG I.10; the city. The people as FG I.2 |
 | `Pisistrato`, `Silla` | Pisistratus, Sulla | FG I.10, as NM I.2, NM I.1 |
+| `Numa Pompilio`, `Numa` | Numa Pompilius, Numa | NM I.11, FG I.11; the 1554 edition prints `Numma` |
+| `Romolo` / `Romulo` | Romulus | NM I.11; FG I.11 prints `Romulo` five times and `Romolo` once (D201) |
+| `Scipione` | Scipio | NM I.11; Publius Cornelius Scipio, later Africanus. NM I.10's plural `Scipioni` |
+| `Annibale`, `Canne` | Hannibal, Cannae | NM I.11 |
+| `Manlio Torquato`; `Lucio Manlio`, `Tito Manlio` | Manlius Torquatus; Lucius Manlius, Titus Manlius | NM I.11; Lucius Manlius Imperiosus, noted. The 1554 edition prints `Mallio` |
+| `Marco Pomponio` | Marcus Pomponius | NM I.11; tribune of the plebs, 362 BC |
+| `Ninfa` | nymph | NM I.11; Egeria, unnamed by Machiavelli, noted |
+| `Licurgo`, `Solone` | Lycurgus, Solon | NM I.11, as NM I.2; the 1554 edition prints `Ligurgo` |
+| `Dante` | Dante | NM I.11; *Purgatorio* 7.121–123 |
+| `frate Girolamo Savonarola` | friar Girolamo Savonarola | NM I.11; `frate` lower case, as `messer` is kept |
+| `Sicilia`, `Firenze` | Sicily, Florence | NM I.11 |
+

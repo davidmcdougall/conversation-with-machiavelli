@@ -342,3 +342,25 @@ last sentence answers Machiavelli's first move.
 | `debitore` | debtor | FG I.10. No Italian echo of `obbligo` (D17); recorded so that no note claims one. |
 | `instituzione` | institution | FG I.10. |
 | `fortezza` | fortitude | FG I.10. |
+
+## Added from the I.11 pair (2026-10-11)
+
+| Italian | English | Note |
+|---|---|---|
+| `obbligato` / `obligata` | indebted | D204. The adjective of `obbligo`, debt (D17). NM I.11 .03; FG I.11 repeats the question. |
+| `bastare` / `sufficiente` | be enough / sufficient | D205. NM I.11 .01, .04 against .07. |
+| `dubitare (che ... non)` | doubt (whether) | D205. Apprehension; "fear" stays `temere`, `timore`. |
+| `timore`, `temere`; `pauroso` | fear; fearful | NM I.11: the fear of God, of a prince; the citizens `sbigottiti e paurosi`, "frightened and fearful". |
+| `mancare` | fail | D206. NM I.11 .06 ×4; FG I.11 `mancando`, `manchino`. |
+| `rozzo` / `grosso` | rude / gross | D207. `rozzo` of men and of marble alike. |
+| `civile`, `civiltà` | civil, civility | NM I.11 `ubbidienze civili`, `uomini civili`; `civiltà` as I.2. |
+| `giuramento`, `giurare` | oath, swear | NM I.11 .02 ×5. |
+| `ricorrere` | have recourse | D209. A *currere* compound. |
+| `introdurre` | introduce | NM I.11 ×4: religion and arms. |
+| `persuadere` | persuade | NM I.11 ×4. |
+| `conseguire` | attain | NM I.11 ×3. |
+| `disegno`, `disegnare` | design | NM I.11 .01, .05. |
+| `impresa` | enterprise | NM I.11 .01, .06. |
+| `principio` (FG `principii`) | beginning | Held: FG I.11 `ne' suoi principii`, `a' principii`. |
+| `laude` | praise | Held: FG I.11 `la prima laude`, answering NM's "first degree". |
+

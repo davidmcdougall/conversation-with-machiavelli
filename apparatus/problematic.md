@@ -387,6 +387,76 @@ denies is the condition of Machiavelli's "no excuse whatever", that the
 principate can be kept and the city ordered. Reproof, blame and excuse stay
 three words. The unit ends with a stop.
 
+## Machiavelli, NM-DISC.1.11
+
+**A comparison of two founders, decided by belief and not by verdict.** The
+concession comes first (`Ancoraché`: Romulus was first, and Rome is his
+daughter); then the heavens send Numa because Romulus' orders `non
+bastavano`. The weighing (`a quale principe Roma fusse più obbligata, o a
+Romolo o a Numa`) is a hypothetical dispute answered with `credo` and
+`piuttosto`, and its reason is an asymmetry: where religion is, arms can
+readily be introduced; where arms are and not religion, religion only with
+difficulty. The English keeps the dispute hypothetical, the belief a belief,
+`piuttosto` on Numa (not his preference), and `a Romolo ... a Numa` in
+matching words.
+
+**Fear of God is the operative term, and fear of a prince its stand-in for
+one life.** `timore di Dio` (.01, .06 twice) and `il timore d'un Principe`
+land in the same English, and no other word takes "fear" from them: Numa
+"doubted" whether his authority would be enough (D205). The chapter's close
+runs on one verb, `manca` ×4, "fails" (D206).
+
+**The oaths are extorted, and they bind anyway.** Scipio's sword and Titus
+Manlius' threat force both oaths; the proof is that a forced oath held men
+whom neither love of the fatherland nor the laws held. The English neither
+softens the coercion nor moralises it.
+
+**Numa simulated.** `simulò di avere congresso con una Ninfa` is stated
+flatly and then made general: no orderer of extraordinary laws did without
+recourse to God. The instrumental account runs beside the praise, unflagged,
+as in I.12.
+
+**The material is men, and the chapter ends on a modern case it will not
+judge.** `grossi` and `rozzi` stay two words, and `rozzo` one word for men
+and marble (D207). Florence and Savonarola are set beside Numa and the
+nymph, and here alone Machiavelli suspends judgment (`Io non voglio
+giudicare`), with his reason.
+
+**The chain and its corollary stay attached.** Religion caused good orders,
+good orders make good fortune, and from good fortune arose the successes
+(past, present, past). The rule that follows is restrictive: the kingdoms
+that depend `solo` on one man's *virtù* (D208). Dante's tercet stays
+subordinate to `come prudentemente Dante dice`.
+
+## Guicciardini, FG-CONS.1.11
+
+**He grants the foundations and suspends the ranking.** `Certo è`: arms
+and religion are both principal foundations (on the emended text, D200),
+each so necessary that, failing either, `si può dire` the vital parts fail.
+Then `ma io non so già se sia vero`, suspension and not denial, on
+Machiavelli's own question in Machiavelli's own words; then `anzi io
+inclinerei più presto nel contrario`, a conditional inclination, and `mi
+pare si possi mostrare`, a demonstration offered as it seems to him.
+Certainty, suspension, inclination, seeming: four acts, kept apart in the
+text and in the standfirst. An English that makes him prefer Romulus
+outright, or deny religion its necessity, has lost the reply.
+
+**Two reasons: one counterfactual, one borrowed.** The first is time: had
+Numa been first, the city `era ... oppressa` and Numa `né lasciava` room for
+arms, imperfects of what would have been (D47). Hence `Fu adunque a'
+principii più necessario Romulo`, which turns Machiavelli's "necessary to
+Numa". The second, `come anche dice lo scrittore`, is the first half of
+Machiavelli's concession (the times full of religion), extended to the
+neighbouring cities; the gross men are left out. The choice of Numa moves
+from the heavens and the senate to the people, still `ferocissimo`, who
+chose `volontariamente` and were inclined `per sé medesimi`.
+
+**The close leaves the cause open and the order fixed.** `o la prudenza o
+la fortuna ..., o l'uno e l'altro insieme`: he does not choose, and neither
+does the English. What he fixes is the sequence: the one of war first,
+because arms gave the city life enough to wait for Numa. The unit ends with
+a stop.
+
 ## The pair
 
 Machiavelli argues towards a demonstration. Guicciardini declines to be
