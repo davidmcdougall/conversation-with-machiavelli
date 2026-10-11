@@ -1,0 +1,41 @@
+source_unit_id: FG-CONS.1.2
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-002
+responds_to: NM-DISC.1.2
+record_note: "Written 2026-10-11 from sources/coldpass/COLLATION-2026-09-28-I2.md and the corpus front-matter, when scripts/validate found that the I.2 pair had no establishment record. No reading was revisited; every entry below restates the collation."
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. Canestrini's four notes on these pages are his and are not carried."
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38); errors are emended from Palmarocchi and bracketed (D68)."
+passes:
+  - {id: A, performed: 2026-09-28, file: sources/coldpass/FG-CONS.1.2-passA.md, note: "drafting session"}
+  - {id: B, performed: 2026-09-28, file: sources/coldpass/FG-CONS.1.2-passB.md, note: "subagent; page images only, separate directory"}
+collation: sources/coldpass/COLLATION-2026-09-28-I2.md
+collation_result: >
+  1,240 words. No clause or sense disagreement. Two word-level splits on
+  the barless e escalated and ruled by David on 2026-09-28: `delle città`
+  (D71) and `s'arà` (D72). One common doubt, `o dove`, read `o` on the page;
+  the 1933 `e dove` in the variant note (D38). Eleven stops supplied (D67).
+witness_independence_check: "SCOPE §7. At the three split loci pass A sides with Palmarocchi at none; pass B at one (`s'arà`), on the page. No pattern."
+boundaries: "printed pp. 6-10; five printed paragraphs; no stop after the closing `Discorso` (DEC-009 clause 10)"
+corrections:
+  - {id: FG-CONS-I2-C001, locator: FG-CONS.1.2.02, was: "del male E", now: "del male. E", evidence: "Sentence break with a capital; neither pass sees a point; the 1933 edition prints one. D67."}
+  - {id: FG-CONS-I2-C002, locator: FG-CONS.1.2.02, was: "ricordassi Mancherebbesi", now: "ricordassi. Mancherebbesi", evidence: "Sentence break with a capital; neither pass sees a point; the 1933 edition prints one. D67."}
+  - {id: FG-CONS-I2-C003, locator: FG-CONS.1.2.02, was: "grave pericolo Sia", now: "grave pericolo. Sia", evidence: "Sentence break with a capital; neither pass sees a point; the 1933 edition prints one. D67."}
+  - {id: FG-CONS-I2-C004, locator: FG-CONS.1.2.02, was: "per breve In", now: "per breve. In", evidence: "Sentence break with a capital; neither pass sees a point; the 1933 edition prints one. D67."}
+  - {id: FG-CONS-I2-C005, locator: FG-CONS.1.2.02, was: "limitatissima", now: "limitatissima.", evidence: "Paragraph end; neither pass sees a point; the 1933 edition prints one. D67."}
+  - {id: FG-CONS-I2-C006, locator: FG-CONS.1.2.03, was: "fare facilmente Il", now: "fare facilmente. Il", evidence: "Sentence break with a capital; neither pass sees a point; the 1933 edition prints one. D67."}
+  - {id: FG-CONS-I2-C007, locator: FG-CONS.1.2.03, was: "e cattivi", now: "e cattivi.", evidence: "Paragraph end; neither pass sees a point; the 1933 edition prints one. D67."}
+  - {id: FG-CONS-I2-C008, locator: FG-CONS.1.2.04, was: "del dominio Ebbono", now: "del dominio. Ebbono", evidence: "Sentence break with a capital; neither pass sees a point; the 1933 edition prints one. D67."}
+  - {id: FG-CONS-I2-C009, locator: FG-CONS.1.2.05, was: "bene universale Di", now: "bene universale. Di", evidence: "Sentence break with a capital; neither pass sees a point; the 1933 edition prints one. D67."}
+  - {id: FG-CONS-I2-C010, locator: FG-CONS.1.2.05, was: "e turbazione A", now: "e turbazione. A", evidence: "Sentence break with a capital; neither pass sees a point; the 1933 edition prints one. D67."}
+  - {id: FG-CONS-I2-C011, locator: FG-CONS.1.2.05, was: "è commessa E", now: "è commessa. E", evidence: "Sentence break with a capital; neither pass sees a point; the 1933 edition prints one. D67."}
+editorial_supplies:
+  - {id: FG-CONS-I2-S001, locator: FG-CONS.1.2.05, printed: "s arà", established: "s'arà", rule: D72, note: "The printed space is a dropped apostrophe, as D39; the 1933 edition reads s'ará."}
+readings:
+  - {locus: "la ruina delle città", passes: "A della; B ⟨dello⟩", witness_1933: "delle", disposition: "delle, D71"}
+  - {locus: "o dove può consistere", passes: "A ⟨e|o⟩; B o", witness_1933: "e dove", disposition: "o on the page, D38"}
+not_supplied: "Six wide spaces with no mark in either pass (`regia`, `annua`, `sedizione`, `modo`, `il male`, `sicura`); the 1933 edition points four of them."
+normalisation_notes: "Class A: accents, apostrophes, the plural article `e'`, apocope `de'`/`da'`, applied by rule and not enumerated."

@@ -1,0 +1,18 @@
+source_unit_id: NM-DISC.1.2
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-002
+record_note: "Written 2026-10-11 from sources/coldpass/COLLATION-2026-09-28-I2.md, sources/coldpass/NM-DISC.1.2-1554.md and the corpus front-matter, when scripts/validate found that the I.2 pair had no establishment record. No reading was revisited."
+rights: "PD page-image body text only."
+passes:
+  - {id: A, performed: 2026-09-28, file: sources/coldpass/NM-DISC.1.2-passA.md, note: "drafting session"}
+  - {id: B, performed: 2026-09-28, file: sources/coldpass/NM-DISC.1.2-passB.md, note: "subagent; page images only, separate directory"}
+collation: sources/coldpass/COLLATION-2026-09-28-I2.md
+collation_result: "1,908 words. No word, clause or sense disagreement. One faint comma (`in breve tempo,`) seen by pass B and missed by pass A is kept as printed."
+comparison_collation: sources/coldpass/NM-DISC.1.2-1554.md
+boundaries: "printed pp. 15-23; one block; drop capital on p. 15 to `dimostrerà.` on p. 23"
+corrections: []
+normalisation_notes: "Class A only; word division `gliOttimati` (p. 17) regularised."

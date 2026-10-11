@@ -1,0 +1,190 @@
+#!/usr/bin/env python3
+"""The four checks of SCOPE §7. Silent when clean; exit 1 with one line per problem.
+
+Usage:
+  scripts/validate            every unit in corpus/
+  scripts/validate 1.16       one pair
+
+1. Source line. Every unit names a governing witness that exists under
+   sources/witnesses/, holds the unit's page extract, and agrees with the
+   unit's establishment record; a built page cites it.
+2. Footnote references resolve. In translator's notes, commentary and the
+   variant/correction records: decision numbers (D…) exist in decisions.md;
+   record ids (FG-CONS-I11-D003) exist under sources/; "(Machiavelli .03)" and
+   [[ID]] point at paragraphs of the same pair; a note's `lemma` occurs in
+   the unit's Italian; a record's locator is a paragraph of the unit.
+3. Every Considerazioni unit responds to a Discorsi unit that exists, and the
+   one the pairing map gives it.
+4. Every established reading is attested in a named witness: each word of the
+   Italian (body and rubric) occurs in a cold pass of the governing witness
+   listed in established_from; each [bracketed] editorial reading is recorded
+   in the unit's establishment or collation record.
+"""
+import re, sys, unicodedata
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+problems = []
+def bad(unit, check, msg): problems.append(f"{unit}: [{check}] {msg}")
+
+def split_fm(path):
+    t = path.read_text(encoding="utf-8")
+    if not t.startswith("---"): return {}, t
+    _, fm, body = t.split("---", 2)
+    meta = {}
+    for line in fm.splitlines():
+        m = re.match(r'^([a-z_]+):\s*(.*)$', line)
+        if m: meta[m[1]] = re.sub(r'\s+#.*$', '', m[2]).strip().strip('"')
+    return meta, body
+
+def paragraphs(body):
+    body = body.split("\n---\n")[0]
+    return {m[1]: " ".join(m[2].split())
+            for m in re.finditer(r'^## (\S+)\s*\n+(.+?)(?=\n## |\Z)', body, re.S | re.M)}
+
+def fold(s):
+    s = unicodedata.normalize("NFD", s.lower())
+    return "".join(c for c in s if not unicodedata.combining(c)).replace("’", "'")
+
+def words(s):
+    s = re.sub(r'⟨([^⟩]*)⟩', lambda m: " " + m[1].replace("|", " ") + " ", s)
+    s = re.sub(r'(\w)\[p\.\s*\d+\](\w)', r'\1\2', s)        # page break inside a word
+    s = re.sub(r'\s*\[p\.\s*\d+\]\s*', ' ', s)
+    s = re.sub(r'(\w)-[\s|/]*(\w)', r'\1\2', s)                  # rejoin line-end hyphens
+    return re.findall(r'[a-z]+', fold(s))
+
+def flat(s): return " ".join(words(s))
+
+def roman(n):
+    out = ""
+    for v, r in ((10, "X"), (9, "IX"), (5, "V"), (4, "IV"), (1, "I")):
+        while n >= v: out, n = out + r, n - v
+    return out
+
+DECISIONS = set(re.findall(r'^\| (D\d+) \|', (ROOT / "decisions.md").read_text(encoding="utf-8"), re.M))
+SOURCES_TEXT = "\n".join(p.read_text(encoding="utf-8", errors="replace")
+                         for p in (ROOT / "sources").rglob("*") if p.suffix in (".yml", ".md"))
+PAIRS = {m[2]: m[1] for m in re.finditer(r'^\|\s*\d+\s*\|\s*(NM-DISC\.\S+?)\s*\|\s*(FG-CONS\.\S+?)\s*\|',
+                                         (ROOT / "links/pairing-map.md").read_text(encoding="utf-8"), re.M)}
+
+ARTICLES = {"il", "lo", "la", "i", "gli", "le", "l"}
+
+def lemma_found(f, it_flat):
+    """A lemma may be cited with its article (`la salute` for `alla salute`)
+    or, for a single word, in its dictionary form (`occorrere`)."""
+    w = f.split()
+    if f" {f} " in it_flat: return True
+    if len(w) > 1 and w[0] in ARTICLES: return lemma_found(" ".join(w[1:]), it_flat)
+    if len(w) == 1:
+        stem = w[0][:max(4, len(w[0]) - 3)]
+        return re.search(rf' {stem}', it_flat) is not None
+    return False
+
+def in_unit(loc, paras):
+    """A locator is one paragraph id, or a range `X.01-03` / `X.01-X.03`."""
+    if loc in paras: return True
+    m = re.match(r'^(.*\.)(\d\d)-(?:.*\.)?(\d\d)$', loc)
+    return bool(m) and m[1] + m[2] in paras and m[1] + m[3] in paras
+
+def check_refs(unit, where, text, pair_paras, it_flat):
+    for d in set(re.findall(r'\bD(\d{1,3})\b', text)):
+        if f"D{int(d):02d}" not in DECISIONS and f"D{d}" not in DECISIONS:
+            bad(unit, 2, f"{where}: D{d} is not in decisions.md")
+    for rid in set(re.findall(r'\b(?:FG-CONS|NM-DISC)-I+\d+-[A-Z]\d{3}\b', text)):
+        if not re.search(rf'id:\s*{re.escape(rid)}\b', SOURCES_TEXT):
+            bad(unit, 2, f"{where}: record {rid} not found under sources/")
+    for who, n in re.findall(r'\((Machiavelli|Guicciardini) \.(\d\d)', text):
+        tgt = ("NM-DISC." if who == "Machiavelli" else "FG-CONS.") + unit.split(".", 1)[1] + "." + n
+        if tgt not in pair_paras: bad(unit, 2, f"{where}: ({who} .{n}) is not a paragraph of this pair")
+    for tgt in re.findall(r'\[\[([^\]]+)\]\]', text):
+        if tgt not in pair_paras: bad(unit, 2, f"{where}: [[{tgt}]] is not a paragraph of this pair")
+
+def check_unit(unit, pair_paras):
+    work = unit.split(".")[0]
+    meta, body = split_fm(ROOT / f"corpus/{work}/{unit}.md")
+    paras = paragraphs(body)
+    it_flat = " " + flat(re.sub(r'[\[\]]', '', " ".join(paras.values()) + " " + meta.get("rubric", ""))) + " "
+    book, ch = unit.split(".")[1:3]
+    prov = ROOT / f"sources/provenance/{work}/{unit}-establishment.yml"
+    prov_text = prov.read_text(encoding="utf-8") if prov.exists() else ""
+
+    # 1 · source line
+    wit = meta.get("governing_witness")
+    if not wit:
+        bad(unit, 1, "no governing_witness in corpus front-matter")
+    else:
+        wdir = ROOT / f"sources/witnesses/{work}/{wit}"
+        label = roman(int(book)) + (ch.capitalize() if ch == "proem" else ch)
+        if not wdir.is_dir(): bad(unit, 1, f"{wit} is not a witness under sources/witnesses/{work}/")
+        elif not (wdir / f"{work}-{label}-pages.pdf").exists():
+            bad(unit, 1, f"{wit} holds no page extract {work}-{label}-pages.pdf")
+        if not prov.exists(): bad(unit, 1, f"no establishment record {prov.relative_to(ROOT)}")
+        elif not re.search(rf'^governing_witness:\s*"?{re.escape(wit)}"?\s*$', prov_text, re.M):
+            bad(unit, 1, "establishment record names a different governing witness")
+        page = ROOT / f"site/pairs/{book}.{ch}.html"
+        if page.exists() and wit not in page.read_text(encoding="utf-8"):
+            bad(unit, 1, f"site page does not cite {wit}")
+
+    # 2 · references in notes, commentary and records
+    tr = ROOT / f"translations/{unit}.md"
+    if tr.exists():
+        t = tr.read_text(encoding="utf-8")
+        notes = t.split("\n---\n", 2)[-1] if t.count("\n---\n") >= 2 else ""
+        check_refs(unit, "notes", notes, pair_paras, it_flat)
+        for lemma in re.findall(r'^\*\*(.+?)\*\*', notes, re.M):
+            for frag in re.findall(r'`([^`]+)`', lemma):
+                for piece in re.split(r'\.\.\.|…|/', frag):
+                    f = flat(piece.replace("[", "").replace("]", ""))
+                    if f and not lemma_found(f, it_flat):
+                        bad(unit, 2, f"note lemma `{piece.strip()}` does not occur in the Italian")
+    ann = ROOT / f"annotations/{unit}.md"
+    if ann.exists():
+        a = re.sub(r'^---\n.*?\n---\n', '', ann.read_text(encoding="utf-8"), count=1, flags=re.S)
+        check_refs(unit, "commentary", a, pair_paras, it_flat)
+        for sec in re.findall(r'^## (\S+)', a, re.M):
+            if sec not in paras: bad(unit, 2, f"commentary section {sec} is not a paragraph of the unit")
+    comp = ROOT / f"sources/comparisons/{work}/{unit}-witness-disagreements.yml"
+    for path in (comp, prov):
+        if path.exists():
+            for loc in set(re.findall(r'locator:\s*"?((?:NM-DISC|FG-CONS)\.[^\s",}]+)', path.read_text(encoding="utf-8"))):
+                if not in_unit(loc, paras): bad(unit, 2, f"{path.name}: locator {loc} is not a paragraph of the unit")
+
+    # 3 · responds_to
+    if work == "FG-CONS":
+        r = meta.get("responds_to")
+        if not r or not (ROOT / f"corpus/NM-DISC/{r}.md").exists():
+            bad(unit, 3, f"responds_to {r!r} is not a Discorsi unit in corpus/")
+        elif PAIRS.get(unit) != r:
+            bad(unit, 3, f"responds_to {r} but the pairing map gives {PAIRS.get(unit)}")
+
+    # 4 · attestation
+    srcs = re.findall(r'[\w./-]+\.md', meta.get("established_from", ""))
+    if not srcs: bad(unit, 4, "no established_from passes")
+    attested = set()
+    for s in srcs:
+        p = ROOT / s
+        if not p.exists(): bad(unit, 4, f"established_from {s} does not exist")
+        else: attested |= set(words(p.read_text(encoding="utf-8")))
+    if attested:
+        plain = re.sub(r'\S*\[[^\]]*\]\S*', ' ', " ".join(paras.values()) + " " + meta.get("rubric", ""))
+        missing = sorted({w for w in words(plain) if w not in attested})
+        if missing: bad(unit, 4, f"words in no cold pass of {wit}: {', '.join(missing)}")
+    records = prov_text + (comp.read_text(encoding="utf-8") if comp.exists() else "")
+    for sup in sorted(set(re.findall(r'\[[^\]]+\]', " ".join(paras.values())))):
+        if sup not in records: bad(unit, 4, f"editorial reading {sup} is recorded in no establishment or collation record")
+
+def main():
+    only = sys.argv[1] if len(sys.argv) > 1 else None
+    units = sorted(p.stem for p in (ROOT / "corpus").glob("*/*.md"))
+    pairs = {}
+    for u in units: pairs.setdefault(u.split(".", 1)[1], []).append(u)
+    for pair, us in sorted(pairs.items()):
+        if only and pair != only: continue
+        pp = {}
+        for u in us: pp.update(paragraphs(split_fm(ROOT / f"corpus/{u.split('.')[0]}/{u}.md")[1]))
+        for u in us: check_unit(u, pp)
+    if problems:
+        print("\n".join(problems)); sys.exit(1)
+
+if __name__ == "__main__":
+    main()

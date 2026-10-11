@@ -7,6 +7,9 @@ integrity_class: S2
 paragraph_divisions: editorial  # witness prints one block; see SCOPE §3
 rubric: "Di quanta importanza sia tenere conto della Religione, e come la Italia per esserne mancata mediante la Chiesa Romana, è rovinata."  # heading apparatus, not body; see SCOPE §3
 normalized_source: sources/normalized/NM-DISC/NM-DISC.1.12.md
+governing_witness: WIT-NM-DISC-1824-IA
+established_from: [sources/normalized/NM-DISC/NM-DISC.1.12.md, sources/coldpass/NM-DISC.1.12-passB.md]  # pass A is the 2026-07-17 transcription; pass B the 2026-09-18 cold reader
+collation: sources/coldpass/COLLATION-2026-09-18.md
 relationship_pointer: FG-CONS-DR-012
 ---
 
