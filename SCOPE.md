@@ -85,7 +85,7 @@ exist. See §7.
 | 11 | NM-DISC.1.11 | FG-CONS.1.11 | FG-CONS-DR-011 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 12 | NM-DISC.1.12 | FG-CONS.1.12 | FG-CONS-DR-012 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 13 | NM-DISC.1.14 | FG-CONS.1.14 | FG-CONS-DR-013 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
-| 14 | NM-DISC.1.16 | FG-CONS.1.16 | FG-CONS-DR-014 | — | — | — | — | — |
+| 14 | NM-DISC.1.16 | FG-CONS.1.16 | FG-CONS-DR-014 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 15 | NM-DISC.1.23 | FG-CONS.1.23 | FG-CONS-DR-015 | — | — | — | — | — |
 | 16 | NM-DISC.1.24 | FG-CONS.1.24 | FG-CONS-DR-016 | — | — | — | — | — |
 | 17 | NM-DISC.1.25 | FG-CONS.1.25 | FG-CONS-DR-017 | — | — | — | — | — |
@@ -194,12 +194,12 @@ than inside the first paragraph.
 | Stage | Done | Remaining | Of |
 |---|---|---|---|
 | Link records | 39 | 0 | 39 |
-| NM source established | 13 | 26 | 39 |
-| FG source established | 13 | 26 | 39 |
-| Collated against the comparison witness | 26 units | 52 | 78 |
-| Translated (draft, cold-reviewed) | 26 | 52 | 78 |
-| Annotated | 26 | 52 | 78 |
-| Published | 26 | 52 | 78 |
+| NM source established | 14 | 25 | 39 |
+| FG source established | 14 | 25 | 39 |
+| Collated against the comparison witness | 28 units | 50 | 78 |
+| Translated (draft, cold-reviewed) | 28 | 50 | 78 |
+| Annotated | 28 | 50 | 78 |
+| Published | 28 | 50 | 78 |
 <!-- /state:stages -->
 
 The table is written by `scripts/state` from the files. The paragraphs below
@@ -321,6 +321,7 @@ clock; David's own time is the rulings, counted separately.
 | I.9 (882 + 334 words) | 15 | 3 | 10 | 8 | 8 | 3 | ~50 (stages approximate) | no rulings; one verbless period emended by D114's precedent (D167), mid-paragraph; NM collated against 1554; commentary cold-reviewed; the establishment commit was made by David (`70f4e64`) |
 | I.10 (1,198 + 841 words) | 40 | 4 | 20 | 10 | 12 | 5 | ~95 (stages approximate) | 4 rulings (D182–D184 at establishment, D198 at translation); both passes subagents for the first time; two verbless periods emended by D114's precedent (D181); NM collated against 1554; commentary cold-reviewed; the computer link dropped twice mid-pair |
 | I.11 (1,076 + 340 words) | 35 | 4 | 20 | 12 | 12 | 5 | ~90 (stages approximate) | 1 batch at establishment (D200–D202) and three cold-pass amendments (D203); first chapter under D199, NM sample of p. 61 clean; one confident shared misreading caught only against the 1933 edition; NM collated against 1554; commentary cold-reviewed; the computer link dropped once mid-pair |
+| I.16 (1,186 + ~1,270 words) | 45 | 5 | 25 | 12 | 15 | 5 | ~110 (stages approximate) | 1 batch at establishment (D214–D217), the first under D203: NM sample of p. 77 clean; D203(a) raised one doubt outside the sample and D203(b) two confident shared readings in FG, one of them the emendation `[terrore]`; 1 open item at translation (O26); NM collated against 1554; commentary cold-reviewed; `scripts/validate` written and run first |
 
 ---
 

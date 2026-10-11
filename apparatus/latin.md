@@ -29,3 +29,5 @@ first time it is italicised.
 | `Periochae` | notes (Livy) |
 | `spectare` | FG I.9 note (D175) |
 | `patres` | NM I.9 commentary |
+| `etiam` | FG I.3, FG I.16 note |
+| `latebrae` | NM I.16 note |

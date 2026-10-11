@@ -364,3 +364,27 @@ last sentence answers Machiavelli's first move.
 | `principio` (FG `principii`) | beginning | Held: FG I.11 `ne' suoi principii`, `a' principii`. |
 | `laude` | praise | Held: FG I.11 `la prima laude`, answering NM's "first degree". |
 
+
+## Added from the I.16 pair (2026-10-11)
+
+| Italian | English | Note |
+|---|---|---|
+| `partigiano`, `partigiani` | partisan(s) | D218. NM I.16 `partigiani nimici e non partigiani amici` ×2, "partisan enemies and not partisan friends"; FG I.16 `farsi partigiani di qualità`. |
+| `assicurare`, `assicurarsi (di)` | secure, secure oneself (of) | D219. NM I.16 ×7; FG I.16 `lo assicurare gli uomini`. With `sicurtà`, `sicuro`. |
+| `preservare` / `mantenere` / `conservare` | preserve / maintain / conserve | D220. NM I.16 opening, rubric and close; FG I.16 `conservare`, `conservazione`. |
+| `servitù`; `servo` | servitude; servant | NM I.16 throughout; FG I.16 ×6. |
+| `universale` (noun) | the generality | NM I.16 .05 `chi ha per nimico l'universale`; the adjective stays "universal" (`sicurtà universale`; FG I.2 `bene universale`). |
+| `Popolari` (noun) | the popular [men] | NM I.16 ×2, as D118's `uomini ... popolari`. |
+| `ancorché` | even though | NM I.16 .01, with `ancora che` (I.11 `Ancoraché`). |
+| `talché` | so that | NM I.11, I.16; with `talmente che` (FG I.10). |
+| `soprascritto` | above-written | NM I.16 ×3; kept apart from `sopraddetto`, "above-said" (D140). |
+| `ripigliare` | take up (again) | D224. FG I.16 ×3, of orders (resume) and of faults (rebuke). |
+| `fastidio`, `fastidii` | vexation(s) | NM I.16 .07, FG I.16 .03. |
+| `condizione` | condition | FG I.16 ×4: standing, place. |
+| `inquieto` | restless | FG I.16 ×2. |
+| `perseguitare` | persecute | FG I.16 ×2. |
+| `sospetto` | suspicion; suspect | NM I.16 .03; FG I.16 ×3. |
+| `temperato` | tempered | FG I.12 `complessione temperata`, FG I.16 `in modo temperato`. |
+| `vivacità` | vigour | D223. FG I.16. |
+| `sopra tutto` | above all things | D223. Kept apart from `massime`, "above all". |
+| `acerbità`, `acerbo`, `acerbamente` | bitterness, bitter, bitterly | FG I.16 ×4. |

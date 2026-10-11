@@ -117,3 +117,11 @@ the original.
 | `frate Girolamo Savonarola` | friar Girolamo Savonarola | NM I.11; `frate` lower case, as `messer` is kept |
 | `Sicilia`, `Firenze` | Sicily, Florence | NM I.11 |
 
+| `Tarquinj`; `Tarquinio` | Tarquins; Tarquinius | NM I.16, as NM I.3; FG I.16 `Tarquinio`, Tarquinius Superbus |
+| `Bruto`, `figliuoli di Bruto` | Brutus, the sons of Brutus | NM I.16, FG I.16; Lucius Junius Brutus, the first consul, and his sons Titus and Tiberius. NM I.10's `Bruto` is Marcus Junius Brutus |
+| `Clearco` | Clearchus | NM I.16, FG I.16; tyrant of Heraclea Pontica |
+| `Eraclea` | Heraclea | NM I.16; Heraclea on the Black Sea |
+| `Consoli` / `consuli` | consuls | NM I.16; FG I.16 |
+| `Servio Tullio` | Servius Tullius | FG I.16, as FG I.2 |
+| `Medici` | the Medici | FG I.16; `e' Medici` |
+| `Regno di Francia` | the kingdom of France | NM I.16 |

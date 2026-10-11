@@ -457,6 +457,70 @@ does the English. What he fixes is the sequence: the one of war first,
 because arms gave the city life enough to wait for Numa. The unit ends with
 a stop.
 
+## Machiavelli, NM-DISC.1.16
+
+**Two difficulties, one remedy, inside a limit.** The first difficulty is the
+people's: like a brute animal nourished in prison and let go, it cannot feed
+itself or find its lairs, and falls to the first who would chain it again.
+The second is the state's: it makes for itself `partigiani nimici e non
+partigiani amici`, stated, argued and restated with `Però` (D218). The
+remedy follows in four comparatives (`più potente ... più valido ... più sano
+... più necessario`): kill the sons of Brutus. The whole stands inside `ancora
+che la materia non sia in tutto corrotta`, and the limit returns in the last
+sentence as a counterfactual (D47) that hands the corrupted people to I.17.
+An English that lets the remedy or the simile float free of the corruption
+condition has lost the chapter; one that softens the violence has too.
+
+**No debt to a government that does no harm.** Free living rewards by rule,
+so no one `confessa avere obbligo` for what he thinks he merits, and no one
+knows the common utility while he has it, `perché nissuno confesserà mai
+avere obbligo con uno che non l'offenda`. `Obbligo` is "debt" both times
+(D17); the French kings `obbligati ad infinite leggi` have bound themselves
+(O26).
+
+**The digression is declared, and divides the people.** `Vero è che io
+giudico` is a first-person concession, not a maxim; `E benché questo discorso
+sia disforme` marks the turn to tyrants as a digression. The people's two
+desires are met `in tutto` and `in parte`: vengeance by Clearchus' massacre,
+liberty by dividing the few who want to command (removed or contented with
+honours) from the infinite who want to live secure (contented with laws).
+`libertà` and `sicurtà` stay two words, and the few are secured by honours as
+well as by removal.
+
+## Guicciardini, FG-CONS.1.16
+
+**A distinction Machiavelli does not draw, defended against Rome.** `Io fo
+... grandissima differenza`: a people that never knew liberty against one
+that lost it by accident. He raises Rome against himself (`Né mi siano
+allegati in contrario`) and answers three ways: they changed nothing but the
+kings' power, and if those orders were good, it was fortune more than
+prudence that they served liberty (`se furono buoni`; the consuls only `si
+crede` from Servius); they had felt Tarquinius; and free neighbours make it
+`minore maraviglia`. The condition stays a condition.
+
+**The remedy is an order, and it answers the partisan enemies.**
+Machiavelli's beneficiaries of the tyranny `non possono vivere contenti`;
+Guicciardini's, received and secure, `vi si contentano dentro`, as `accade
+molte volte` and as Florence showed. Rigour and restraint stand in one
+design: `rigida e inesorabile` against whoever machinates, and no one
+persecuted `per semplice sospetto`. Divisions are the danger; 1512 and the
+persecution after `26` are his evidence.
+
+**The sons of Brutus are conceded, not wished for, and narrowed.** `se bene in
+simili casi è necessario mettere mano nel sangue` stays inside the period;
+`sarebbe stato meglio non avere avuto necessità, e che Bruto non avessi
+figliuoli` is a preference, not a denial of the remedy. No title, standfirst
+or note presents it without the concession.
+
+**The prince: the enmity divided by its root.** From oppression, easily
+provided for by just and humane government; from the desire of liberty, as in
+Florence, which wanted it `per participare degli onori` (the motive
+Machiavelli gave the few), incurable by treatment. `è puerile credere` is
+aimed at the motive, not the deed. The close turns `farsi il Popolo amico`
+into `farsi partigiani ... potenti a opprimere il populo`, stated as the
+remedy the prince has, neither softened nor made the only one. The unit ends
+with a stop.
+
 ## The pair
 
 Machiavelli argues towards a demonstration. Guicciardini declines to be
