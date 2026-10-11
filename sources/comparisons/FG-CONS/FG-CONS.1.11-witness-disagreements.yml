@@ -1,0 +1,47 @@
+source_unit_id: FG-CONS.1.11
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-I11-D001
+    locator: FG-CONS.1.11.01
+    class: emendation
+    witness_1857: "Certo è che e l'armi o la religione"
+    witness_1933: "Certo è che e l'arme e la religione"
+    established: "Certo è che e l'armi [e] la religione"
+    publish_as_variant_note: true
+    rationale: "Both cold readers read `o` without doubt. As printed the opening `e` has no partner, and `o` sets as alternatives what `ciascuno di questi` treats as two necessities; the scan prints e o-shaped throughout (D145). Emended under D68, as D126 (D200)."
+  - id: FG-CONS-I11-D002
+    locator: FG-CONS.1.11.01
+    class: reading
+    witness_1857: "o a Romolo o a Numa"
+    witness_1933: "o a Romulo o a Numa"
+    established: witness_1857
+    rationale: "Canestrini prints `Romolo` here and `Romulo` five times after; both readers saw the `o`. Kept as printed (D201)."
+  - id: FG-CONS-I11-D003
+    locator: FG-CONS.1.11.01
+    class: reading
+    witness_1857: "Numa trovò gli animi già disposti"
+    witness_1933: "Numa trovò gli uomini giá disposti"
+    established: witness_1857
+    rationale: "The spirits, against the men. Both readers doubted the first letter of `animi` (⟨animi|unimi⟩); it construes, so D38 (D201)."
+  - id: FG-CONS-I11-D004
+    locator: FG-CONS.1.11.01
+    class: reading
+    witness_1857: "quel luogo di mettere le armi"
+    witness_1933: "quel luogo di mettervi le arme"
+    established: witness_1857
+    rationale: "Palmarocchi has the locative in both infinitives; Canestrini only in the second. Same sense."
+  - id: FG-CONS-I11-D005
+    locator: FG-CONS.1.11.01
+    class: reading
+    witness_1857: "le difficultà di Numa fussino maggiori"
+    witness_1933: "le difficultá di Numa fussino maggiore"
+    established: witness_1857
+    rationale: "Palmarocchi keeps the old plural in -e. Same sense."
+  - id: FG-CONS-I11-D006
+    locator: FG-CONS.1.11.01
+    class: systematic_orthographic_profile
+    witness_1857: "Canestrini's `il`, `populo`, `Dipoi`, `e ancora`, `e uso`, `adunque`, `prudenza`, `si avessi`, `buone leggi`, `delle arti`, and lighter pointing"
+    witness_1933: "Palmarocchi's `el`, `popolo`, `Di poi`, `ed ancora`, `ed uso`, `adunche`, `prudenzia`, `s'avessi`, `buone legge`, `delle arte`, and heavier pointing"
+    established: witness_1857
+    rationale: Canestrini governs throughout.

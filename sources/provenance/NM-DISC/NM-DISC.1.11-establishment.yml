@@ -1,0 +1,23 @@
+source_unit_id: NM-DISC.1.11
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-011
+passes:
+  - {id: A, performed: 2026-10-11, file: sources/coldpass/NM-DISC.1.11-passA.md, note: "subagent; page images only (350 ppi, thirds), separate directory; full chapter"}
+  - {id: B, performed: 2026-10-11, file: sources/coldpass/NM-DISC.1.11-passB.md, note: "subagent; one page only (p. 61, 235 words, 22% of the chapter), chosen by the collator after pass A as the page with most pass-A doubts (D199, D203); separate directory"}
+collation: sources/coldpass/COLLATION-2026-10-11-I11.md
+collation_result: "1,076 words (pass A). Sample of p. 61: the token streams are identical; no word, clause or sense disagreement, so no full pass B, and the sample rule stands for the next chapter. One pass-A doubt outside the sample whose alternatives are different words, `come ⟨sì|si⟩ vede`, ruled `si` by David with the 1554 reading (D202)."
+boundaries: "printed pp. 58-62; one block with a two-line drop capital A; CAPITOLO XI on p. 58 below the last three lines of X; Dante's tercet set as three indented italic lines on p. 61, run in by the edition with ' / '; ends p. 62 line 20 `con un medesimo ordine.`; CAPITOLO XII follows on the same page"
+interventions: []
+comparison_collation: >
+  Done 2026-10-11 against the 1554 extract (fol. 21v-23v). A cold reader
+  transcribed the Giglio leaves from the page images
+  (sources/coldpass/NM-DISC.1.11-1554.md); the transcript was collated by
+  word against the established text, and the readings published as variant
+  notes were checked on the page image, except D001, D002, D011 and the
+  `li credevano` of D013, which rest on the transcript. Sense-bearing
+  differences are in sources/comparisons/NM-DISC/NM-DISC.1.11-witness-disagreements.yml.
+normalisation_notes: "Class A only: accents (`perchè` → `perché`, `Perchè` → `Perché`, `Ancorachè` → `Ancoraché`, `acciocchè` → `acciocché`, `Talchè` → `Talché`, `benchè` → `benché`, `nè` → `né`, `sè` → `sé`); elision solid (`l'Italia`, `d'ammazzarlo`, `l'accusa`, `l'amore`, `l'odio`, `l'onore`, `l'armi`, `dell'autorità`, `ch'egli`, `l'essere`, `d'altrui`, `d'un`, `d'esso`, `d'una`, `L'umana`, `l'ordini`, `s'egli`); apocope spaced (`a' Romani`, `ne' presenti`, `a' difetti`); spaces before punctuation and inside parentheses."

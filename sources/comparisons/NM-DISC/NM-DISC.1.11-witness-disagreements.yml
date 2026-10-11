@@ -1,0 +1,102 @@
+source_unit_id: NM-DISC.1.11
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-I11-D001
+    locator: NM-DISC.1.11.01
+    class: reading
+    witness_1824: "il nascimento e la educazione sua"
+    witness_1554: "il nascimento, & la nudritura sua"
+    established: witness_1824
+    rationale: "Giglio's Rome owes Romulus her nurture rather than her education. Same sense. Rests on the transcript."
+  - id: NM-DISC-I11-D002
+    locator: NM-DISC.1.11.01
+    class: reading
+    witness_1824: "e la costituì in modo"
+    witness_1554: "et la ordinò in modo"
+    established: witness_1824
+    rationale: "Numa ordered the religion rather than constituted it: Giglio puts it in the chapter's `ordine` family. Rests on the transcript."
+  - id: NM-DISC-I11-D003
+    locator: NM-DISC.1.11.02
+    class: reading
+    witness_1824: "come si vede manifestamente"
+    witness_1554: "come si uede manifestamente"
+    established: witness_1824
+    rationale: "Pass A doubted an accent over the i (`sì`); the page is outside the D199 sample, and the alternatives are different words. Read `si` with Giglio (D202)."
+  - id: NM-DISC-I11-D004
+    locator: NM-DISC.1.11.02
+    class: reading
+    witness_1824: "e sbigottiti e paurosi si erano convenuti"
+    witness_1554: "& sbigottiti della patria. si erano conuenuti"
+    established: witness_1824
+    rationale: "Giglio's citizens are frightened for the fatherland, not frightened and fearful."
+  - id: NM-DISC-I11-D005
+    locator: NM-DISC.1.11.02
+    class: reading
+    witness_1824: "Lucio Manlio, padre di Tito Manlio, che fu dipoi chiamato Torquato"
+    witness_1554: "Lucio Mallio, che fu dipoi chiamato Torquato"
+    established: witness_1824
+    rationale: "Without `padre di Tito Manlio`, Giglio seems to give the name Torquatus to the father, against Livy 7.5, and leaves `Tito` in the next clause unintroduced."
+  - id: NM-DISC-I11-D006
+    locator: NM-DISC.1.11.02
+    class: reading
+    witness_1824: "l'amore della patria e le leggi di quella"
+    witness_1554: "l'amore della patria, le leggi di quella"
+    established: witness_1824
+    rationale: "Asyndeton in Giglio. Same sense."
+  - id: NM-DISC-I11-D007
+    locator: NM-DISC.1.11.03
+    class: reading
+    witness_1824: "a quale principe Roma fusse più obbligata, o a Romolo o a Numa, credo che piuttosto"
+    witness_1554: "a quale Prencipe Roma fusse obligata a Romolo, o a Numma, credo piu tosto"
+    established: witness_1824
+    rationale: "Giglio has no comparative `più` and no correlative first `o`: the question is to which Rome was indebted, not more indebted. Guicciardini's reply has the comparative (`sia più obligata`)."
+  - id: NM-DISC-I11-D008
+    locator: NM-DISC.1.11.04
+    class: reading
+    witness_1824: "il quale simulò di avere congresso con una Ninfa, la quale lo consigliava"
+    witness_1554: "ilquale finse di hauere domestichezza con una Ninfa, laquale lo informaua"
+    established: witness_1824
+    rationale: "Feigned familiarity with a nymph who informed him, against simulated congress with a nymph who counselled him. The 1824's `simulò` and `congresso` are Livy's words (1.19, `simulat ... congressus`)."
+  - id: NM-DISC-I11-D009
+    locator: NM-DISC.1.11.06
+    class: reading
+    witness_1824: "i felici successi delle imprese"
+    witness_1554: "i felici auenimetti delle imprese"
+    established: witness_1824
+    rationale: "Giglio's `auenimetti` (for `avvenimenti`, a dropped tilde) is events; the 1824's `successi` outcomes."
+  - id: NM-DISC-I11-D010
+    locator: NM-DISC.1.11.06
+    class: reading
+    witness_1824: "della grandezza delle Repubbliche, così il dispregio di quello è cagione della rovina di esse"
+    witness_1554: "della grandezza della Republica, cosi il dispregio di quella e cagione della rouina d'esse"
+    established: witness_1824
+    rationale: "Giglio has the singular republic, and `quella` takes the observance rather than the worship; `d'esse` then has no plural antecedent."
+  - id: NM-DISC-I11-D011
+    locator: NM-DISC.1.11.06
+    class: reading
+    witness_1824: "la virtù d'esso ... dipendono solo dalla virtù d'un uomo"
+    witness_1554: "la uirtu d'esse ... dependeno solo alla uirtu d'un huomo"
+    established: witness_1824
+    rationale: "Giglio's `d'esse` (feminine plural) leaves the possessor unclear, as the 1824's `d'esso` partly does. Rests on the transcript."
+  - id: NM-DISC-I11-D012
+    locator: NM-DISC.1.11.06
+    class: reading
+    witness_1824: "Non è adunque la salute d'una Repubblica o d'un Regno avere un Principe"
+    witness_1554: "Non e adunque la salute d'una Rep. o d'un regno un Prencipe"
+    established: witness_1824
+    rationale: "Without `avere`, Giglio makes the prince himself the safety of the state, not the having of him."
+  - id: NM-DISC-I11-D013
+    locator: NM-DISC.1.11.07
+    class: reading
+    witness_1824: "un ordine e una opinione nuova ... e che presumono ... infiniti lo credevano"
+    witness_1554: "un ordine, o una opinione nuoua ... et che si presumono ... infiniti li credeuano"
+    established: witness_1824
+    rationale: "Giglio: an order or an opinion; who presume themselves; believed him rather than believed it (`li`, transcript)."
+  - id: NM-DISC-I11-D014
+    locator: NM-DISC.1.11.01-07
+    class: systematic_rewording
+    witness_1824: "the 1824 wording"
+    witness_1554: "Giglio's forms and small variants: `Numma` for `Numa`, `Mallio` for `Manlio`, `Prencipe`, `Ligurgo`, `fussero`, `obedienze`, `quei` for `quelli`, `data a i Romani`, `de gli huomini`, `diedero`, `qualunche`, `d'uno marmo`, `trouarebbe`, `ch'ella`, `Quei che la da`, `mantega`, `sofficienti`, `per tanto nissuno`, `d'altrui`; and the period's orthography (`huomini`, `-tione`, `&`, `Rep.`)"
+    established: witness_1824
+    rationale: The 1824 witness governs throughout.

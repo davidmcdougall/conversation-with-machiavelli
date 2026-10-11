@@ -1,0 +1,37 @@
+source_unit_id: FG-CONS.1.11
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-011
+responds_to: NM-DISC.1.11
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. No Canestrini note belongs to this reply."
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38); errors are emended from Palmarocchi and bracketed (D68)."
+passes:
+  - {id: A, performed: 2026-10-11, file: sources/coldpass/FG-CONS.1.11-passA.md, note: "subagent; page images only (native 600 ppi rendered at 1200, half pages plus enlarged quarter crops), separate directory"}
+  - {id: B, performed: 2026-10-11, file: sources/coldpass/FG-CONS.1.11-passB.md, note: "subagent; same images, separate directory"}
+collation: sources/coldpass/COLLATION-2026-10-11-I11.md
+collation_result: >
+  About 340 words. No word, clause or sense disagreement. One confident
+  shared reading, `e l'armi o la religione`, emended `[e]` under D68
+  (D200). Four letters doubtful to both readers, ruled by David with the
+  1933 edition or kept (D201): `e'`, `meriti`, `si`, `animi` (kept against
+  the 1933 `uomini`); `Romolo` kept as printed. One mark both readers see
+  and neither can weigh follows the 1933 edition (D110).
+witness_independence_check: "SCOPE §7. The passes split at no word. Neither carries a Palmarocchi word-reading: both read `o`, `armi`, `Romolo`, `mettere le armi`, `animi`, `prudenza`, against the 1933 `e`, `arme`, `Romulo`, `mettervi le arme`, `uomini`, `prudenzia`."
+boundaries: "printed pp. 26-27; heading CONSIDERAZIONE SUL CAPITOLO XI. on p. 26 after `che abbia fatto.`; Canestrini's rubric `Della religione de' Romani`, unstopped; one indented paragraph; ends p. 27 line 21 `con la religione.`; CONSIDERAZIONE SUL CAPITOLO XII follows"
+corrections:
+  - {id: FG-CONS-I11-C001, locator: FG-CONS.1.11.01, was: "mettervi la religione Fu adunque", now: "mettervi la religione. Fu adunque", evidence: "A faint trace both readers see and neither can weigh; a capital follows; the 1933 edition prints a full stop. D110."}
+emendations:
+  - {id: FG-CONS-I11-E001, operation: emendation, rule: D68, status: ruled_D200, locator: FG-CONS.1.11.01, printed: "Certo è che e l'armi o la religione", established: "Certo è che e l'armi [e] la religione", source: WIT-FG-CONS-1857-CANESTRINI, note: "Both readers read `o` without doubt; the opening `e` is left without its correlative; the 1933 edition reads `e l'arme e la religione`. As D126, a clearly printed word that barely construes. Not settled on the page image."}
+readings:
+  - {locus: "che ⟨e|a⟩ primi suoi dua re", passes: "A ⟨e|a⟩; B ⟨e|a⟩", witness_1933: "e'", disposition: "e', D201 (David, 2026-10-11)"}
+  - {locus: "che Numa ⟨meriti|mariti⟩", passes: "A ⟨meriti|mariti⟩; B ⟨meriti|mariti⟩", witness_1933: "meriti", disposition: "meriti, D201"}
+  - {locus: "mi pare ⟨si|ai⟩ possi", passes: "A ⟨si|ai⟩; B ⟨si|ai⟩", witness_1933: "si", disposition: "si, D201"}
+  - {locus: "trovò gli ⟨animi|unimi⟩", passes: "A ⟨animi|unimi⟩; B ⟨animi|unimi⟩", witness_1933: "uomini", disposition: "animi kept, D38; D201"}
+  - {locus: "o a ⟨Romolo|Romulo⟩", passes: "A ⟨Romolo|Romulo⟩; B ⟨Romolo|Romulo⟩", witness_1933: "Romulo", disposition: "Romolo as printed; spelling (D201)"}
+pointing:
+  - {locus: "religione. Fu", passes: "A ⟨.⟩; B ⟨.⟩", witness_1933: ".", disposition: "C001, D110"}
+  - {locus: "con la religione.", passes: "A ⟨.|,⟩; B ⟨.⟩", witness_1933: ".", disposition: "printed, faint; unit end"}
+normalisation_notes: "Class A: accents (`perchè` → `perché`, `nè` → `né`, `sè` → `sé`); elision solid (`l'avendo`, `l'uno`, `l'altro`); apocope spaced (`de' regni`, `ne' suoi`, `da' vicini`, `a' principii`, `de' Romani`); the Florentine plural article supplied as `e'` (D35: `e' Romani`, `e' primi`); line-end hyphens removed (`maggiori`, `bellicoso`, `Romani`, `volere`, `ammirabile`); spaces before punctuation removed. `dètte` keeps Canestrini's accent, which distinguishes `gave` from `said`."
