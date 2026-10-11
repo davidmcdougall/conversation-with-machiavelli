@@ -254,7 +254,7 @@ def emphasized(text, notes_raw):
     [bracketed] supplied-letter notation."""
     def repl(m):
         phrase = m.group(1)
-        return f'<i lang="{term_lang(phrase)}">{html.escape(phrase)}</i>'
+        return f'<i lang="{term_lang(phrase)}">{phrase}</i>'  # already escaped above
 
     out = re.sub(r'\*([^*]+)\*', lambda m: "\x00" + m.group(1) + "\x00", text)
     out = html.escape(out).replace("\x00", "\x01")

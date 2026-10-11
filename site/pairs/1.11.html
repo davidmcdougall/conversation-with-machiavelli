@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Machiavelli says the heavens, judging the orders of Romulus not enough, moved the senate to choose Numa, who, finding a most ferocious people and wishing to reduce it with the arts of peace, turned to religion; thereafter the Romans feared to break an oath more than the laws. If one were to dispute whether Rome was more indebted to Romulus or to Numa, he believes Numa would rather obtain the first degree, since where there is religion arms can readily be introduced, and where there are arms and not religion, religion only with difficulty. Numa simulated having congress with a nymph, as every orderer of extraordinary laws has had recourse to God; and it is indeed true, Machiavelli grants, that those times being full of religion, and the men gross, gave him great facility. Religion was among the first causes of Rome&#x27;s happiness, and kingdoms that depend on one man&#x27;s *virtù* alone are little durable, since that *virtù* fails with his life. Guicciardini grants that both arms and religion are principal foundations, each necessary. But he does not know whether it is true that Numa merits the first praise, or that his difficulties were greater, and would incline rather to the opposite, which it seems to him can be shown: had Numa been first, the city would, he says, have been oppressed by its neighbours in its beginnings. And, as the writer himself says, the times were full of religion: the people, still most ferocious, voluntarily chose a king venerable for justice and religion, which shows the Romans inclined of themselves to religion, so that Numa found the spirits already disposed. The prudence or the fortune of the Romans, or both together, was admirable, that their first two kings excelled one in war and one in peace, and that the one of war came first.">
+<style>*{box-sizing:border-box}body{margin:0;font:14px system-ui}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>A Conversation with Machiavelli — Romulus more necessary than Numa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root {
+  --paper:      #EDEEEC;
+  --paper-sunk: #E4E6E3;
+  --ink:        #1B1E1C;
+  --ink-muted:  #5C625E;
+  --ink-faint:  #868C87;
+  --rule:       #C9CDC8;
+  --rule-faint: #DCDFDB;
+  --nm:         #3A5A6B;
+  --fg:         #6E5A3C;
+  --serif: "EB Garamond", "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  --sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --mono:  "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:      #161917;
+    --paper-sunk: #1D211E;
+    --ink:        #E3E6E1;
+    --ink-muted:  #A0A6A0;
+    --ink-faint:  #767C77;
+    --rule:       #343934;
+    --rule-faint: #262B27;
+    --nm:         #8FB4C6;
+    --fg:         #C4A97C;
+  }
+}
+:root[data-theme="dark"] {
+  --paper:      #161917;
+  --paper-sunk: #1D211E;
+  --ink:        #E3E6E1;
+  --ink-muted:  #A0A6A0;
+  --ink-faint:  #767C77;
+  --rule:       #343934;
+  --rule-faint: #262B27;
+  --nm:         #8FB4C6;
+  --fg:         #C4A97C;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 1160px; margin: 0 auto; padding-inline: 20px; padding-block: 0 0; }
+
+/* ---- masthead ---- */
+.masthead { padding-block: 56px 32px; border-bottom: 1px solid var(--rule); }
+.eyebrow {
+  font-family: var(--sans); font-size: 11px; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint);
+  margin: 0 0 18px;
+}
+h1 {
+  font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 5vw, 44px);
+  line-height: 1.12; margin: 0 0 14px; text-wrap: balance; letter-spacing: -0.01em;
+}
+h1 .sub { display: block; font-style: italic; color: var(--ink-muted); font-size: .52em; margin-top: 12px; letter-spacing: 0; }
+.standfirst {
+  font-family: var(--sans); font-size: 14.5px; line-height: 1.6;
+  color: var(--ink-muted); max-width: 62ch; margin: 0;
+}
+
+/* ---- the pairing device ---- */
+.pairing {
+  display: flex; align-items: stretch; gap: 0; margin: 30px 0 0;
+  border: 1px solid var(--rule); border-radius: 2px; overflow: hidden;
+  font-family: var(--sans); background: var(--paper-sunk);
+}
+.pairing > div { flex: 1 1 0; padding: 13px 16px; min-width: 0; }
+.pairing .who { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
+.pairing .nm-side .who { color: var(--nm); }
+.pairing .fg-side .who { color: var(--fg); }
+.pairing .what { font-size: 13.5px; color: var(--ink-muted); }
+.pairing .arrow {
+  flex: 0 0 auto; display: flex; align-items: center; justify-content: center;
+  padding-inline: 14px; color: var(--ink-faint); font-size: 15px;
+  border-inline: 1px solid var(--rule);
+}
+
+/* ---- pair-to-pair navigation ---- */
+.pairnav {
+  display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+  margin-top: 18px; font-family: var(--sans); font-size: 12.5px;
+  color: var(--ink-muted);
+}
+.pairnav a { text-decoration: none; color: var(--ink-muted); }
+.pairnav a:hover, .pairnav a:focus { color: var(--ink); text-decoration: underline; }
+
+/* ---- work sections ---- */
+.work { padding-block: 52px 0; }
+.work-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
+.work-head .tag {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .04em;
+  padding: 3px 7px; border-radius: 2px; color: var(--paper);
+}
+.work.nm .tag { background: var(--nm); }
+.work.fg .tag { background: var(--fg); }
+h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; letter-spacing: -0.005em; }
+.rubric {
+  font-style: italic; color: var(--ink-muted); max-width: 70ch;
+  margin: 10px 0 0; font-size: 16.5px; line-height: 1.5;
+}
+.rubric-note {
+  font-family: var(--sans); font-style: normal; font-size: 12px;
+  color: var(--ink-faint); margin-top: 7px;
+}
+.colheads {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  margin-top: 30px; padding-bottom: 7px; border-bottom: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint);
+}
+
+/* ---- the facing pair ---- */
+.pair {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  padding-block: 22px; border-bottom: 1px solid var(--rule-faint);
+  scroll-margin-top: 20px;
+}
+.pair:target { background: var(--paper-sunk); }
+.annot { grid-column: 2 / -1; margin-top: 14px; font-family: var(--sans); font-size: 13.5px;
+  line-height: 1.55; color: var(--ink-muted); }
+.annot summary { cursor: pointer; font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); list-style: none; }
+.annot summary::-webkit-details-marker { display: none; }
+.annot summary::before { content: "+ "; }
+.annot[open] summary::before { content: "− "; }
+.annot p { margin: 8px 0 0; max-width: 72ch; }
+.annot .xref { color: inherit; text-decoration: underline; text-decoration-color: var(--rule);
+  text-underline-offset: 2px; white-space: nowrap; }
+.gutter { padding-top: 4px; }
+.uid {
+  font-family: var(--mono); font-size: 10.5px; color: var(--ink-faint);
+  text-decoration: none; letter-spacing: -0.02em;
+}
+.uid:hover, .uid:focus { color: var(--ink); text-decoration: underline; }
+.col { min-width: 0; }
+.col.it { hyphens: auto; }
+.col.en { }
+.supplied { color: var(--ink-muted); }
+
+/* ---- apparatus ---- */
+.apparatus {
+  margin-top: 34px; padding-top: 22px; border-top: 2px solid var(--rule);
+  font-family: var(--sans); font-size: 13.5px; line-height: 1.58;
+  color: var(--ink-muted);
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 26px 34px;
+}
+.apparatus h3 {
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); margin: 0 0 9px;
+}
+.apparatus p { margin: 0 0 9px; }
+.apparatus p:last-child { margin-bottom: 0; }
+.apparatus .lem { font-family: var(--serif); font-size: 15px; color: var(--ink); font-style: italic; }
+.sig { font-family: var(--mono); font-size: 12px; color: var(--ink); }
+
+/* ---- colophon ---- */
+.colophon {
+  margin-top: 60px; padding-block: 28px 60px; border-top: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 13px; line-height: 1.6; color: var(--ink-muted);
+}
+.colophon .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 34px; }
+.colophon h3 {
+  font-size: 10.5px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--ink-faint); margin: 0 0 8px;
+}
+.colophon p { margin: 0 0 8px; }
+.colophon ul { margin: 0; padding-left: 16px; }
+.colophon li { margin-bottom: 5px; }
+.state {
+  margin-top: 26px; padding: 14px 16px; background: var(--paper-sunk);
+  border-left: 2px solid var(--ink-faint); border-radius: 0 2px 2px 0;
+  font-size: 12.5px;
+}
+.state strong { color: var(--ink); font-weight: 600; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--nm); outline-offset: 2px; }
+
+/* ---- contents / index page ---- */
+.toc { margin-top: 30px; }
+.toc-row {
+  display: grid; grid-template-columns: 40px 1fr 1fr; gap: 0 20px;
+  padding-block: 14px; border-bottom: 1px solid var(--rule-faint);
+  font-family: var(--sans); align-items: baseline;
+}
+.toc-row .n { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
+.toc-row a { text-decoration: none; color: var(--ink); font-family: var(--serif); font-size: 16px; }
+.toc-row a:hover, .toc-row a:focus { text-decoration: underline; }
+.toc-row .unpublished { color: var(--ink-faint); font-style: italic; font-size: 14px; }
+.toc-row .ids { color: var(--ink-faint); font-size: 11.5px; font-family: var(--mono); }
+
+@media (max-width: 760px) {
+  body { font-size: 16.5px; }
+  .colheads { display: none; }
+  .pair { grid-template-columns: 1fr; gap: 0; padding-block: 20px; }
+  .gutter { padding-top: 0; margin-bottom: 8px; }
+  .annot { grid-column: 1; }
+  .col.it { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px dotted var(--rule); }
+  .col.it::before, .col.en::before {
+    display: block; font-family: var(--sans); font-size: 10px; font-weight: 600;
+    letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px;
+  }
+  .col.it::before { content: "Italian"; }
+  .col.en::before { content: "English"; }
+  .pairing { flex-direction: column; }
+  .pairing .arrow { border-inline: 0; border-block: 1px solid var(--rule); padding-block: 6px; }
+  .toc-row { grid-template-columns: 1fr; gap: 4px; }
+}
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow">A Conversation with Machiavelli · Pair 11 of 39</p>
+    <h1>Romulus more necessary than Numa
+      <span class="sub">Discourses I.11, and Guicciardini&#x27;s reply</span></h1>
+    <p class="standfirst">Machiavelli says the heavens, judging the orders of Romulus not enough, moved the senate to choose Numa, who, finding a most ferocious people and wishing to reduce it with the arts of peace, turned to religion; thereafter the Romans feared to break an oath more than the laws. If one were to dispute whether Rome was more indebted to Romulus or to Numa, he believes Numa would rather obtain the first degree, since where there is religion arms can readily be introduced, and where there are arms and not religion, religion only with difficulty. Numa simulated having congress with a nymph, as every orderer of extraordinary laws has had recourse to God; and it is indeed true, Machiavelli grants, that those times being full of religion, and the men gross, gave him great facility. Religion was among the first causes of Rome&#x27;s happiness, and kingdoms that depend on one man&#x27;s *virtù* alone are little durable, since that *virtù* fails with his life. Guicciardini grants that both arms and religion are principal foundations, each necessary. But he does not know whether it is true that Numa merits the first praise, or that his difficulties were greater, and would incline rather to the opposite, which it seems to him can be shown: had Numa been first, the city would, he says, have been oppressed by its neighbours in its beginnings. And, as the writer himself says, the times were full of religion: the people, still most ferocious, voluntarily chose a king venerable for justice and religion, which shows the Romans inclined of themselves to religion, so that Numa found the spirits already disposed. The prudence or the fortune of the Romans, or both together, was admirable, that their first two kings excelled one in war and one in peace, and that the one of war came first.</p>
+
+    <div class="pairing">
+      <div class="nm-side">
+        <div class="who">Niccolò Machiavelli</div>
+        <div class="what">Discorsi sopra la prima Deca di Tito Livio · written c. 1513–19, printed 1531</div>
+      </div>
+      <div class="arrow" aria-hidden="true">answered by</div>
+      <div class="fg-side">
+        <div class="who">Francesco Guicciardini</div>
+        <div class="what">Considerazioni intorno ai Discorsi del Machiavelli · written 1529–30, printed 1857</div>
+      </div>
+    </div>
+    <nav class="pairnav"><a href="1.10.html">← Pair 1.10</a><a href="../index.html">All 39 pairs</a><a href="1.12.html">Pair 1.12 →</a></nav>
+  </header>
+
+  <section class="work nm">
+    <div class="work-head">
+      <span class="tag">NM-DISC.1.11</span>
+      <h2>Capitolo XI</h2>
+    </div>
+    <p class="rubric">Della Religione de&#x27; Romani.</p>
+    <p class="rubric">Of the religion of the Romans.</p>
+
+    <div class="colheads"><div></div><div>Italian · 1824</div><div>English</div></div>
+      <div class="pair" id="NM-DISC.1.11.01">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.11.01">1.11.01</a></div>
+        <div class="col it" lang="it">Ancoraché Roma avesse il primo suo ordinatore Romolo, e che da quello abbia a riconoscere come figliuola il nascimento e la educazione sua, nondimeno giudicando i cieli che gli ordini di Romolo non bastavano a tanto Imperio, messono nel petto del Senato romano di eleggere Numa Pompilio per successore a Romolo, acciocché quelle cose che da lui fossero state lasciate in dietro, fossero da Numa ordinate. Il quale, trovando un Popolo ferocissimo, e volendolo ridurre nelle ubbidienze civili con le arti della pace, si volse alla Religione, come cosa al tutto necessaria a volere mantenere una civiltà, e la costituì in modo, che per più secoli non fu mai tanto timore di Dio quanto in quella Repubblica; il che facilitò qualunque impresa, che il Senato o quelli grandi uomini romani disegnassero fare.</div>
+        <div class="col en" lang="en">Even though Rome had as its first orderer Romulus, and is to acknowledge from him, as a daughter, its birth and its education, nonetheless, the heavens judging that the orders of Romulus were not enough for so great an empire, <span class="supplied">[they]</span> put <span class="supplied">[it]</span> into the breast of the Roman senate to choose Numa Pompilius as successor to Romulus, so that those things which had been left behind by him should be ordered by Numa. Who, finding a most ferocious people, and wishing to reduce it to civil obediences with the arts of peace, turned to religion, as a thing altogether necessary for <span class="supplied">[one]</span> wishing to maintain a civility, and constituted it in such a way that for several centuries there was never so much fear of God as in that republic; which facilitated whatever enterprise the senate or those great Roman men might design to do.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> A concession, then a correction by the heavens. Rome is Romulus&#x27; daughter, owing him her birth and education; but the heavens judged his orders not enough for so great an empire and put it into the senate&#x27;s breast to choose Numa, so that what Romulus had left behind Numa should order. Numa found a most ferocious people, and, wishing to bring it to civil obedience by the arts of peace, turned to religion as a thing altogether necessary to anyone who would maintain a civility. He constituted it so that for several centuries there was never so much fear of God as in that republic, and that fear made easy whatever the senate or the great Romans designed. Religion enters the chapter as an instrument of ordering, chosen by an orderer.</p>
+<p><span class="lem">History.</span> Numa Pompilius, by tradition Rome&#x27;s second king (reigned 715–673 BC), a Sabine of Cures, chosen after an interregnum (Livy 1.17–21). Livy credits him with the priesthoods, the calendar and the cult of Fides.</p>
+<p><span class="lem">Cross-reference.</span> I.10 ranked the heads and orderers of religions above the founders of republics and kingdoms; this chapter sets the orderer of a religion against the founder of a city. Guicciardini&#x27;s reply grants religion its place beside arms, doubts the ranking and would incline to the opposite, and moves the choice of Numa from the heavens and the senate to the people&#x27;s own will <a class="xref" href="#FG-CONS.1.11.01">Guicciardini .01</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.11.02">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.11.02">1.11.02</a></div>
+        <div class="col it" lang="it">E chi discorrerà infinite azioni, e del Popolo di Roma tutto insieme, e di molti dei Romani da per sé, vedrà come quelli cittadini temevano più assai rompere il giuramento che le leggi; come coloro che stimavano più la potenza di Dio, che quella degli uomini: come si vede manifestamente per gli esempj di Scipione e di Manlio Torquato; perché dopo la rotta che Annibale aveva dato a&#x27; Romani a Canne, molti cittadini si erano adunati insieme, e sbigottiti e paurosi si erano convenuti abbandonare l&#x27;Italia, e girsene in Sicilia; il che sentendo Scipione, gli andò a trovare, e col ferro ignudo in mano li costrinse a giurare di non abbandonare la Patria. Lucio Manlio, padre di Tito Manlio, che fu dipoi chiamato Torquato, era stato accusato da Marco Pomponio Tribuno della Plebe, e innanzi che venisse il dì del giudizio, Tito andò a trovar Marco, e minacciando d&#x27;ammazzarlo se non giurava di levare l&#x27;accusa al padre, lo costrinse al giuramento, e quello per timore, avendo giurato, gli levò l&#x27;accusa. E così quelli cittadini, i quali l&#x27;amore della patria e le leggi di quella non ritenevano in Italia, vi furon ritenuti da uno giuramento che furono forzati a pigliare; e quel Tribuno pose da parte l&#x27;odio che egli aveva col padre, la ingiuria che gli aveva fatta il figliuolo, e l&#x27;onore suo, per ubbidire al giuramento preso; il che non nacque da altro, che da quella Religione che Numa aveva introdotta in quella città.</div>
+        <div class="col en" lang="en">And whoever will discourse infinite actions, both of the people of Rome all together and of many of the Romans by themselves, will see how those citizens feared far more to break an oath than the laws; as those who esteemed the power of God more than that of men: as is seen manifestly by the examples of Scipio and of Manlius Torquatus; for after the rout that Hannibal had given the Romans at Cannae, many citizens had gathered together, and, frightened and fearful, had agreed to abandon Italy and go off to Sicily; which hearing, Scipio went to find them, and with the naked sword in hand constrained them to swear not to abandon the fatherland. Lucius Manlius, father of Titus Manlius, who was afterwards called Torquatus, had been accused by Marcus Pomponius, tribune of the plebs, and before the day of the judgment came, Titus went to find Marcus, and, threatening to kill him if he did not swear to remove the accusation from his father, constrained him to the oath, and he, from fear, having sworn, removed the accusation from him. And so those citizens whom the love of the fatherland and its laws did not retain in Italy were retained there by an oath which they were forced to take; and that tribune set aside the hatred that he had for the father, the injury that the son had done him, and his honour, to obey the oath taken; which arose from nothing other than from that religion which Numa had introduced into that city.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The proof that the Romans feared God: they feared breaking an oath more than breaking the laws, esteeming the power of God more than that of men. Two examples, both oaths extorted by force. After Cannae, citizens who meant to abandon Italy were made by Scipio, sword in hand, to swear not to abandon the fatherland; Titus Manlius forced the tribune who had indicted his father to swear to drop the charge, and the tribune kept his oath against his hatred, the injury done him and his honour. Oaths extorted by the power of men were kept for fear of the power of God. What love of fatherland and the laws could not do, a forced oath did, and that, Machiavelli says, arose from nothing but Numa&#x27;s religion.</p>
+<p><span class="lem">History.</span> The oath Scipio exacted after Cannae (216 BC) is in Livy 22.53; Livy has the conspirators, led by Lucius Caecilius Metellus, plan to go overseas to some king, and Sicily is Machiavelli&#x27;s. The Manlius story is Livy 7.4–5 (362 BC): Lucius Manlius Imperiosus, indicted by the tribune Marcus Pomponius partly for keeping his son Titus in rustic exile; the son came to the tribune with a knife. Titus took the name Torquatus later, from the torque of a Gaul he killed in single combat.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.11.03">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.11.03">1.11.03</a></div>
+        <div class="col it" lang="it">E vedesi, chi considera bene le Istorie romane, quanto serviva la Religione a comandare agli eserciti, a riunire la Plebe, a mantenere gli uomini buoni, a fare vergognare li tristi. Talché se si avesse a disputare a quale principe Roma fusse più obbligata, o a Romolo o a Numa, credo che piuttosto Numa otterrebbe il primo grado; perché dove è Religione facilmente si possono introdurre l&#x27;armi, e dove sono l&#x27;armi e non Religione, con difficultà si può introdurre quella.</div>
+        <div class="col en" lang="en">And it is seen, <span class="supplied">[by]</span> whoever considers the Roman histories well, how much religion served to command the armies, to reunite the plebs, to maintain men good, to make the wicked ashamed. So that, if one were to dispute to which prince Rome was more indebted, either to Romulus or to Numa, I believe that rather Numa would obtain the first degree; for where there is religion arms can readily be introduced, and where there are arms and not religion, that can be introduced with difficulty.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> Religion served to command armies, reunite the plebs, keep men good and shame the wicked. Hence the comparison, posed as a hypothetical dispute: if one had to say to which prince Rome were more indebted, Machiavelli believes that Numa, rather than Romulus, would obtain the first degree. The reason is an asymmetry: where there is religion, arms can readily be introduced; where there are arms and not religion, religion can be introduced only with difficulty. It is a belief about how the dispute would go, not a verdict; the conclusion of .06 is about religion as a cause, not about the ranking.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini repeats the question in Machiavelli&#x27;s words, suspends judgment on the answer, and would incline to the opposite <a class="xref" href="#FG-CONS.1.11.01">Guicciardini .01</a>. His first ground, which it seems to him can be shown, is the order of time: arms first, because without them the city would have been oppressed by its neighbours before it could receive a religion. His second is Machiavelli&#x27;s own concession at .05.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.11.04">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.11.04">1.11.04</a></div>
+        <div class="col it" lang="it">E si vede che a Romolo per ordinare il Senato, e per fare altri ordini civili e militari, non gli fu necessario dell&#x27;autorità di Dio, ma fu bene necessario a Numa, il quale simulò di avere congresso con una Ninfa, la quale lo consigliava di quello ch&#x27;egli avesse a consigliare il Popolo; e tutto nasceva, perché voleva mettere ordini nuovi e inusitati in quella città, e dubitava che la sua autorità non bastasse. E veramente mai non fu alcuno ordinatore di leggi straordinarie in un Popolo, che non ricorresse a Dio, perché altrimenti non sarebbero accettate; perché sono molti beni, conosciuti da uno prudente, i quali non hanno in sé ragioni evidenti da poterli persuadere ad altri. Però gli uomini savj che vogliono torre questa difficultà, ricorrono a Dio. Così fece Licurgo, così Solone, così molti altri che hanno avuto il medesimo fine di loro.</div>
+        <div class="col en" lang="en">And it is seen that to Romulus, to order the senate, and to make other civil and military orders, the authority of God was not necessary, but it was indeed necessary to Numa, who simulated having congress with a nymph, who counselled him on what he was to counsel the people; and all arose because he wished to put new and unaccustomed orders in that city, and doubted whether his authority would be enough. And truly there was never any orderer of extraordinary laws in a people who did not have recourse to God, for otherwise they would not be accepted; for there are many goods, known by a prudent one, which have not in themselves evident reasons such as to be able to persuade them to others. Therefore wise men who wish to take away this difficulty have recourse to God. So did Lycurgus, so Solon, so many others who have had the same end as they.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> Why Numa needed God and Romulus did not. Romulus could order the senate and the civil and military orders without divine authority; Numa, putting new and unaccustomed orders into the city, doubted whether his own authority would be enough, and simulated converse with a nymph who counselled him on what to counsel the people. Then the general rule: no orderer of extraordinary laws ever did without recourse to God, because many goods a prudent man knows carry no evident reasons such as could persuade others of them. Wise men take away the difficulty by recourse to God; Lycurgus did, Solon did. The instrumental account is stated flatly, inside the praise.</p>
+<p><span class="lem">History.</span> Livy 1.19 says Numa <i lang="it">simulat</i> nocturnal meetings with the goddess Egeria; Machiavelli&#x27;s <i lang="it">simulò</i> and <i lang="it">congresso</i> follow Livy&#x27;s words. Plutarch has Lycurgus bring his laws from Delphi (<i lang="it">Lycurgus</i> 5–6); for Solon he reports an oracle encouraging him (<i lang="it">Solon</i> 14), not laws given out as divine.</p>
+<p><span class="lem">Cross-reference.</span> Having put the orderers of religions first among the praised (I.10), Machiavelli here shows what ordering a religion involved: simulation. I.12 follows: princes and republics that would stay uncorrupted must keep the ceremonies of their religion uncorrupted, and must favour and increase whatever arises in its favour, even what they judge false.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.11.05">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.11.05">1.11.05</a></div>
+        <div class="col it" lang="it">Ammirando adunque il Popolo romano la bontà e la prudenza sua, cedeva ad ogni sua deliberazione. Ben è vero che l&#x27;essere quelli tempi pieni di Religione, e quegli uomini con i quali egli aveva a travagliare grossi, gli dettono facilità grande a conseguire i disegni suoi, potendo imprimere in loro facilmente qualunque nuova forma. E senza dubbio chi volesse ne&#x27; presenti tempi fare una Repubblica, più facilità troverebbe negli uomini montanari, dove non è alcuna civiltà, che in quelli che sono usi a vivere nelle città, dove la civiltà è corrotta; ed uno scultore trarrà più facilmente una bella statua da un marmo rozzo, che da uno male abbozzato d&#x27;altrui.</div>
+        <div class="col en" lang="en">The Roman people, then, admiring his goodness and prudence, yielded to his every deliberation. It is indeed true that those times&#x27; being full of religion, and those men with whom he was to labour being gross, gave him great facility in attaining his designs, being able to imprint on them readily any new form. And without doubt whoever might wish in the present times to make a republic would find more facility in mountain men, where there is no civility, than in those who are used to living in the cities, where civility is corrupted; and a sculptor will more readily draw a beautiful statue from a rude marble than from one ill blocked out by another.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> A concession inside the praise. The people, admiring Numa&#x27;s goodness and prudence, yielded to him; but it is indeed true that times full of religion and gross men gave him great facility, since a new form could readily be imprinted on them. The concession becomes a rule for the present: a founder of a republic now would find it easier among mountain men, who have no civility, than among city men, whose civility is corrupted, as a sculptor works a rough block more readily than one ill blocked out by another.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini takes up this concession, &quot;as the writer also says&quot;, keeps the times full of religion, drops the gross men, adds the neighbouring cities, and turns it against the ranking: it was easy to dispose the Roman people to religion <a class="xref" href="#FG-CONS.1.11.01">Guicciardini .01</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.11.06">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.11.06">1.11.06</a></div>
+        <div class="col it" lang="it">Considerato adunque tutto, conchiudo che la Religione introdotta da Numa fu tra le prime cagioni della felicità di quella città, perché quella causò buoni ordini, i buoni ordini fanno buona fortuna, e dalla buona fortuna nacquero i felici successi delle imprese. E come la osservanza del culto Divino è cagione della grandezza delle Repubbliche, così il dispregio di quello è cagione della rovina di esse. Perché dove manca il timore di Dio, conviene che o quel Regno rovini, o che sia sostenuto dal timore d&#x27;un Principe, che supplisca a&#x27; difetti della Religione. E perché i Principi sono di corta vita, conviene che quel Regno manchi presto, secondo che manca la virtù d&#x27;esso. Donde nasce, che i Regni, i quali dipendono solo dalla virtù d&#x27;un uomo, sono poco durabili; perché quella virtù manca con la vita di quello, e rade volte accade che la sia rinfrescata con la successione, come prudentemente Dante dice: <i lang="it">Rade volte discende per li rami / L&#x27;umana probitate, e questo vuole / Quel che la dà, perché da lui si chiami.</i> Non è adunque la salute d&#x27;una Repubblica o d&#x27;un Regno avere un Principe che prudentemente governi mentre vive, ma uno che l&#x27;ordini in modo, che morendo ancora la si mantenga.</div>
+        <div class="col en" lang="en">All, then, considered, I conclude that the religion introduced by Numa was among the first causes of the happiness of that city, for it caused good orders, good orders make good fortune, and from good fortune arose the happy successes of the enterprises. And as the observance of divine worship is cause of the greatness of republics, so the contempt of it is cause of their ruin. For where the fear of God fails, it is fitting that either that kingdom be ruined, or that it be sustained by the fear of a prince, who may make up for the defects of religion. And because princes are of short life, it is fitting that that kingdom fail soon, according as the <i lang="it">virtù</i> of him fails. Whence it arises that the kingdoms which depend alone on the <i lang="it">virtù</i> of one man are little durable; for that <i lang="it">virtù</i> fails with his life, and seldom does it happen that it be refreshed with the succession, as Dante prudently says: <i lang="it">Seldom descends through the branches / Human probity, and this he wills / Who gives it, so that from him it be called for.</i> It is not, then, the safety of a republic or of a kingdom to have a prince who governs prudently while he lives, but one who orders it in such a way that, he dying, it may maintain itself still.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> The conclusion, and a corollary. Numa&#x27;s religion was among the first causes of Rome&#x27;s happiness: it caused good orders, good orders make good fortune, and from good fortune came the happy outcomes of the enterprises. As the observance of divine worship makes republics great, contempt of it ruins them. Where the fear of God fails, a kingdom either falls or is held up by fear of a prince, and that lasts only as long as the prince&#x27;s <i lang="it">virtù</i>, which fails with his life and is seldom renewed in a successor. So the kingdoms that depend on one man&#x27;s <i lang="it">virtù</i> alone are little durable, and the safety of a republic or kingdom is not a prince who governs prudently while he lives but one who orders it to maintain itself after his death. Dante is cited for the rarity of inherited probity.</p>
+<p><span class="lem">History.</span> <i lang="it">Purgatorio</i> 7.121–123, spoken by Sordello of the princes in the valley. Dante has <i lang="it">risurge</i>, &quot;rises again&quot;; the editions here have <i lang="it">discende</i>.</p>
+<p><span class="lem">Cross-reference.</span> The corollary carries on the rule of I.9, that a founder must not leave his authority by inheritance and must leave the thing ordered in the care of many, and the inheritance against adoption of I.10. Guicciardini&#x27;s last sentence takes up the chain from religion to fortune and declines to choose between prudence and fortune <a class="xref" href="#FG-CONS.1.11.01">Guicciardini .01</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.11.07">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.11.07">1.11.07</a></div>
+        <div class="col it" lang="it">E benché agli uomini rozzi più facilmente si persuade un ordine e una opinione nuova, non è per questo impossibile persuaderla ancora agli uomini civili, e che presumono non essere rozzi. Al popolo di Firenze non pare essere né ignorante né rozzo; nondimeno da frate Girolamo Savonarola fu persuaso che parlava con Dio. Io non voglio giudicare s&#x27;egli era vero o no, perché d&#x27;un tanto uomo se ne debbe parlare con riverenza. Ma io dico bene che infiniti lo credevano, senza avere visto cosa nessuna straordinaria da farlo loro credere; perché la vita sua, la dottrina, il soggetto che prese, erano sufficienti a fargli prestare fede. Non sia pertanto nessuno che si sbigottisca di non potere conseguire quello che è stato conseguito da altri; perché gli uomini (come nella prefazione nostra si disse) nacquero, vissero, e morirono sempre con un medesimo ordine.</div>
+        <div class="col en" lang="en">And albeit an order and a new opinion are more readily persuaded to rude men, it is not for this impossible to persuade it also to civil men, and who presume themselves not to be rude. To the people of Florence it does not seem that it is either ignorant or rude; nonetheless it was persuaded by friar Girolamo Savonarola that he spoke with God. I do not wish to judge whether it was true or not, for of so great a man one must speak with reverence. But I say indeed that infinite <span class="supplied">[men]</span> believed it, without having seen any extraordinary thing to make them believe it; for his life, the doctrine, the subject that he took up, were sufficient to make <span class="supplied">[them]</span> lend him faith. Let there be no one, on that account, who is frightened of not being able to attain what has been attained by others; for men (as was said in our preface) were born, lived, and died always with one same order.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> An objection met: new orders are easier to persuade to rude men, but not impossible among civil men who think themselves anything but rude. The proof is Florence, which does not think itself ignorant or rude, and was persuaded by Savonarola that he spoke with God. The modern case is set beside the ancient one. Numa simulated converse with a nymph <a class="xref" href="#NM-DISC.1.11.04">Machiavelli .04</a>; of the friar&#x27;s converse with God Machiavelli declines, alone in the chapter, to judge whether it was true, and gives his reason: of so great a man one must speak with reverence. What he does say is that very many believed without having seen anything extraordinary; the friar&#x27;s life, doctrine and subject sufficed. The last sentence turns to the reader, with both cases in view: let no one be frightened of not attaining what others attained, since men were born, lived and died always in one same order.</p>
+<p><span class="lem">History.</span> Girolamo Savonarola, Dominican, returned to Florence in 1490 and preached as a prophet; after the expulsion of the Medici in 1494 he dominated the republic, until he was excommunicated, tried, and hanged and burned on 23 May 1498. Machiavelli&#x27;s letter of 9 March 1498 to Ricciardo Becchi reports two of his sermons.</p>
+<p><span class="lem">Cross-reference.</span> The preface to Book I argued that the ancients can be imitated, since heaven, sun, elements and men have not changed in motion, order and power; the chapter&#x27;s close repeats it. Guicciardini does not take up Savonarola.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from the 1824 edition (<span class="sig">WIT-NM-DISC-1824-IA</span>), page-image-backed, which governs. Collated against the 1554 Giglio printing, Venice (<span class="sig">WIT-NM-DISC-1554-IA</span>), which is comparison evidence only.</p>
+<p>Paragraph divisions are editorial. The witness prints the chapter as one unbroken block.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem">il nascimento e la educazione sua</span> — 1824. The 1554 witness reads <i lang="it">il nascimento, &amp; la nudritura sua</i>. Giglio&#x27;s Rome owes Romulus her nurture rather than her education. Same sense. Rests on the transcript.</p>
+<p><span class="lem">e la costituì in modo</span> — 1824. The 1554 witness reads <i lang="it">et la ordinò in modo</i>. Numa ordered the religion rather than constituted it: Giglio puts it in the chapter&#x27;s <i lang="it">ordine</i> family. Rests on the transcript.</p>
+<p><span class="lem">come si vede manifestamente</span> — 1824. The 1554 witness reads <i lang="it">come si uede manifestamente</i>. Pass A doubted an accent over the i (<i lang="it">sì</i>); the page is outside the D199 sample, and the alternatives are different words. Read <i lang="it">si</i> with Giglio (D202).</p>
+<p><span class="lem">e sbigottiti e paurosi si erano convenuti</span> — 1824. The 1554 witness reads <i lang="it">&amp; sbigottiti della patria. si erano conuenuti</i>. Giglio&#x27;s citizens are frightened for the fatherland, not frightened and fearful.</p>
+<p><span class="lem">Lucio Manlio, padre di Tito Manlio, che fu dipoi chiamato Torquato</span> — 1824. The 1554 witness reads <i lang="it">Lucio Mallio, che fu dipoi chiamato Torquato</i>. Without <i lang="it">padre di Tito Manlio</i>, Giglio seems to give the name Torquatus to the father, against Livy 7.5, and leaves <i lang="it">Tito</i> in the next clause unintroduced.</p>
+<p><span class="lem">l&#x27;amore della patria e le leggi di quella</span> — 1824. The 1554 witness reads <i lang="it">l&#x27;amore della patria, le leggi di quella</i>. Asyndeton in Giglio. Same sense.</p>
+<p><span class="lem">a quale principe Roma fusse più obbligata, o a Romolo o a Numa, credo che piuttosto</span> — 1824. The 1554 witness reads <i lang="it">a quale Prencipe Roma fusse obligata a Romolo, o a Numma, credo piu tosto</i>. Giglio has no comparative <i lang="it">più</i> and no correlative first <i lang="it">o</i>: the question is to which Rome was indebted, not more indebted. Guicciardini&#x27;s reply has the comparative (<i lang="it">sia più obligata</i>).</p>
+<p><span class="lem">il quale simulò di avere congresso con una Ninfa, la quale lo consigliava</span> — 1824. The 1554 witness reads <i lang="it">ilquale finse di hauere domestichezza con una Ninfa, laquale lo informaua</i>. Feigned familiarity with a nymph who informed him, against simulated congress with a nymph who counselled him. The 1824&#x27;s <i lang="it">simulò</i> and <i lang="it">congresso</i> are Livy&#x27;s words (1.19, <i lang="it">simulat ... congressus</i>).</p>
+<p><span class="lem">i felici successi delle imprese</span> — 1824. The 1554 witness reads <i lang="it">i felici auenimetti delle imprese</i>. Giglio&#x27;s <i lang="it">auenimetti</i> (for <i lang="it">avvenimenti</i>, a dropped tilde) is events; the 1824&#x27;s <i lang="it">successi</i> outcomes.</p>
+<p><span class="lem">della grandezza delle Repubbliche, così il dispregio di quello è cagione della rovina di esse</span> — 1824. The 1554 witness reads <i lang="it">della grandezza della Republica, cosi il dispregio di quella e cagione della rouina d&#x27;esse</i>. Giglio has the singular republic, and <i lang="it">quella</i> takes the observance rather than the worship; <i lang="it">d&#x27;esse</i> then has no plural antecedent.</p>
+<p><span class="lem">la virtù d&#x27;esso ... dipendono solo dalla virtù d&#x27;un uomo</span> — 1824. The 1554 witness reads <i lang="it">la uirtu d&#x27;esse ... dependeno solo alla uirtu d&#x27;un huomo</i>. Giglio&#x27;s <i lang="it">d&#x27;esse</i> (feminine plural) leaves the possessor unclear, as the 1824&#x27;s <i lang="it">d&#x27;esso</i> partly does. Rests on the transcript.</p>
+<p><span class="lem">Non è adunque la salute d&#x27;una Repubblica o d&#x27;un Regno avere un Principe</span> — 1824. The 1554 witness reads <i lang="it">Non e adunque la salute d&#x27;una Rep. o d&#x27;un regno un Prencipe</i>. Without <i lang="it">avere</i>, Giglio makes the prince himself the safety of the state, not the having of him.</p>
+<p><span class="lem">un ordine e una opinione nuova ... e che presumono ... infiniti lo credevano</span> — 1824. The 1554 witness reads <i lang="it">un ordine, o una opinione nuoua ... et che si presumono ... infiniti li credeuano</i>. Giglio: an order or an opinion; who presume themselves; believed him rather than believed it (<i lang="it">li</i>, transcript).</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem"><i lang="it">Ancoraché</i>.</span> &quot;Even though&quot;, as <i lang="it">ancora che</i> (glossary). The concession grants Romulus first place in time; the chapter goes on to believe that, were it disputed, Numa would rather have the first degree (.03).</p>
+<p><span class="lem"><i lang="it">primo suo ordinatore</i>.</span> &quot;Its first orderer&quot;: <i lang="it">ordinatore</i> in the <i lang="it">ordine</i> family (glossary). Numa is to order (<i lang="it">fossero da Numa ordinate</i>) what Romulus left behind, and the chapter&#x27;s close returns to the prince &quot;who orders it&quot; (.06).</p>
+<p><span class="lem"><i lang="it">abbia a riconoscere come figliuola</i>.</span> &quot;Is to acknowledge from him, as a daughter&quot;: <i lang="it">avere a</i>, &quot;be to&quot; (D61). Rome is the daughter.</p>
+<p><span class="lem"><i lang="it">tanto Imperio</i>.</span> &quot;So great an empire&quot;: the dominion the heavens foresaw, not the sovereignty Romulus held, so &quot;empire&quot; under D124.</p>
+<p><span class="lem"><i lang="it">messono nel petto del Senato</i>.</span> &quot;[They] put [it] into the breast of the senate&quot;: the heavens move the choice. The subject is the heavens, as of the gerund; &quot;they&quot; and &quot;it&quot; are the English&#x27;s. <i lang="it">Mettere</i>, put; <i lang="it">porre</i>, set (D115), as <i lang="it">pose da parte</i>, &quot;set aside&quot; (.02).</p>
+<p><span class="lem"><i lang="it">civiltà</i>.</span> &quot;Civility&quot; (glossary): civil life under laws. Held through .05, where civility is absent in the mountains and corrupt in the cities, and .07, where &quot;civil men&quot; are set against &quot;rude men&quot;.</p>
+<p><span class="lem"><i lang="it">costituì</i>.</span> &quot;Constituted&quot;: the glossary&#x27;s <i lang="it">costituire</i>. The 1554 edition reads <i lang="it">ordinò</i>, &quot;ordered&quot; (NM-DISC-I11-D002).</p>
+<p><span class="lem"><i lang="it">timore di Dio</i>.</span> &quot;Fear of God&quot;, held in all three places (.01, .06 twice): the fear that made Rome, the fear whose failing ruins a kingdom, and the &quot;fear of a prince&quot; that can stand in for it for one life only.</p>
+<p><span class="lem"><i lang="it">chi discorrerà infinite azioni</i>.</span> &quot;Whoever will discourse infinite actions&quot;: <i lang="it">discorrere</i> transitive, to run through, and the first verb of the <i lang="la">currere</i> family (D01). Guicciardini&#x27;s reply does not take it up here.</p>
+<p><span class="lem"><i lang="it">da per sé</i>.</span> &quot;By themselves&quot;: each on his own account, against the people &quot;all together&quot;.</p>
+<p><span class="lem"><i lang="it">come si vede</i>.</span> Pass A marked an accent over the <i lang="it">i</i> as possible; the period&#x27;s sense and the 1554 <i lang="it">come si uede</i> give <i lang="it">si</i> (D202).</p>
+<p><span class="lem">Scipio after Cannae.</span> Livy 22.53: after Cannae (216 BC) young nobles led by Lucius Caecilius Metellus planned to leave Italy, and Publius Cornelius Scipio, the future Africanus, burst in with his sword drawn and made them swear not to abandon the republic. Livy has them plan to go overseas to some king; Sicily is Machiavelli&#x27;s.</p>
+<p><span class="lem"><i lang="it">col ferro ignudo</i>.</span> &quot;With the naked sword&quot;: <i lang="it">ferro</i> is &quot;sword&quot; as in I.10 (.07).</p>
+<p><span class="lem"><i lang="it">sbigottiti e paurosi</i>.</span> &quot;Frightened and fearful&quot;: <i lang="it">sbigottire</i> as I.10&#x27;s <i lang="it">si sbigottirà</i>, and the last sentence&#x27;s <i lang="it">si sbigottisca</i>. The 1554 edition reads <i lang="it">sbigottiti della patria</i>, frightened for the fatherland (NM-DISC-I11-D004).</p>
+<p><span class="lem">Manlius.</span> Livy 7.4–5 (362 BC): the tribune Marcus Pomponius indicted Lucius Manlius Imperiosus, partly for his harshness to his son Titus; the son went to the tribune&#x27;s house and, with a knife, forced him to swear to drop the charge. Titus took the name Torquatus later, from the torque of a Gaul he killed in single combat. Machiavelli&#x27;s <i lang="it">padre di Tito Manlio, che fu dipoi chiamato Torquato</i> gives the name to the son, as Livy does; the 1554 edition omits <i lang="it">padre di Tito Manlio</i> and so seems to give it to the father (NM-DISC-I11-D005).</p>
+<p><span class="lem"><i lang="it">levare l&#x27;accusa</i>.</span> &quot;Remove the accusation&quot;: <i lang="it">levare</i>, remove (D131); <i lang="it">accusa</i>, accusation (D159).</p>
+<p><span class="lem"><i lang="it">l&#x27;amore della patria e le leggi di quella</i>.</span> &quot;The love of the fatherland and its laws&quot;: the 1554 edition has no <i lang="it">e</i> (NM-DISC-I11-D006).</p>
+<p><span class="lem"><i lang="it">l&#x27;onore suo</i>.</span> &quot;His honour&quot;: the tribune&#x27;s. Not &quot;his own&quot;, which would be supplied.</p>
+<p><span class="lem"><i lang="it">E vedesi, chi considera</i>.</span> &quot;And it is seen, [by] whoever considers&quot;: the Italian&#x27;s construction drifts from the impersonal to the relative; &quot;[by]&quot; is supplied (D53).</p>
+<p><span class="lem"><i lang="it">mantenere gli uomini buoni</i>.</span> &quot;To maintain men good&quot;: keep them good, not maintain good men.</p>
+<p><span class="lem"><i lang="it">li tristi</i>.</span> &quot;The wicked&quot; (D03).</p>
+<p><span class="lem"><i lang="it">a quale principe Roma fusse più obbligata</i>.</span> &quot;To which prince Rome was more indebted&quot;: the root of <i lang="it">obbligo</i>, &quot;debt&quot; (D17), so that I.10&#x27;s &quot;how many debts ... to Caesar&quot; and this debt stay one word; and Guicciardini&#x27;s reply repeats the question (<i lang="it">sia più obligata</i>) in the same English. The 1554 edition has no <i lang="it">più</i> (NM-DISC-I11-D007).</p>
+<p><span class="lem"><i lang="it">credo che piuttosto Numa</i>.</span> &quot;I believe that rather Numa would obtain&quot;: <i lang="it">piuttosto</i> sets Numa before Romulus; it is not what Numa would prefer. And <i lang="it">credo</i> is Machiavelli&#x27;s own act of belief here, the word the glossary keeps for Guicciardini&#x27;s assent.</p>
+<p><span class="lem"><i lang="it">il primo grado</i>.</span> &quot;The first degree&quot;: <i lang="it">grado</i> as the glossary has it.</p>
+<p><span class="lem"><i lang="it">facilmente</i>.</span> &quot;Readily&quot; (D27), in .03, .05 and .07: arms are readily introduced where religion is; new forms readily imprinted on gross men; new orders readily persuaded to rude ones.</p>
+<p><span class="lem"><i lang="it">a Romolo ... non gli fu necessario dell&#x27;autorità di Dio</i>.</span> &quot;To Romulus ... the authority of God was not necessary&quot;: &quot;to&quot; as for Numa in the same period and in the question of .03; the Italian&#x27;s pleonastic <i lang="it">gli</i> and partitive <i lang="it">dell&#x27;</i> are not reproduced. Guicciardini turns the word back: Romulus was &quot;more necessary at the beginnings&quot; (Guicciardini .01).</p>
+<p><span class="lem"><i lang="it">simulò di avere congresso con una Ninfa</i>.</span> &quot;Simulated having congress with a nymph&quot;: <i lang="it">congresso</i> in its older sense, a meeting, converse. Both words follow Livy 1.19, where Numa <i lang="it">simulat sibi cum dea Egeria congressus nocturnos esse</i>. The nymph is Egeria, whom Machiavelli does not name. The 1554 edition reads <i lang="it">finse di havere domestichezza con una Ninfa, laquale lo informava</i>, &quot;feigned having familiarity with a nymph, who informed him&quot; (NM-DISC-I11-D008).</p>
+<p><span class="lem"><i lang="it">dubitava che la sua autorità non bastasse</i>.</span> &quot;Doubted whether his authority would be enough&quot;: <i lang="it">dubitare</i> with the expletive <i lang="it">non</i>, apprehension rather than disbelief. &quot;Feared&quot; is kept for <i lang="it">temere</i> and <i lang="it">timore</i>, the chapter&#x27;s fear of God. <i lang="it">Bastare</i> is &quot;be enough&quot; in both places, so that Romulus&#x27; orders (.01) and Numa&#x27;s authority fall short in one word; <i lang="it">sufficienti</i> (.07) keeps &quot;sufficient&quot;.</p>
+<p><span class="lem"><i lang="it">ordinatore di leggi straordinarie</i>.</span> &quot;Orderer of extraordinary laws&quot;: <i lang="it">straordinario</i>, extraordinary (glossary), laws outside the ordinary.</p>
+<p><span class="lem"><i lang="it">conosciuti da uno prudente</i>; <i lang="it">da poterli persuadere ad altri</i>.</span> &quot;Known by a prudent one&quot;, as <i lang="it">un potente</i>, &quot;a powerful one&quot; (D06); &quot;such as to be able to persuade them to others&quot;: the goods, not the reasons, are what is persuaded. The 1554 edition reads <i lang="it">ad altrui</i>.</p>
+<p><span class="lem"><i lang="it">Però</i>.</span> &quot;Therefore&quot; (D22).</p>
+<p><span class="lem"><i lang="it">torre</i>.</span> &quot;Take away&quot;: <i lang="it">torre</i>, as <i lang="it">togliere via</i> (D131).</p>
+<p><span class="lem">Lycurgus, Solon.</span> Plutarch has Lycurgus bring his laws from Delphi (<i lang="it">Lycurgus</i> 5–6), and reports an oracle encouraging Solon (<i lang="it">Solon</i> 14), but not that Solon gave his laws out as divine; the generalisation is Machiavelli&#x27;s.</p>
+<p><span class="lem"><i lang="it">ricorresse a Dio</i>, <i lang="it">ricorrono a Dio</i>.</span> &quot;Had recourse to God&quot;, &quot;have recourse to God&quot;: <i lang="it">ricorrere</i> is a <i lang="la">currere</i> compound, and &quot;recourse&quot; keeps the root (D01).</p>
+<p><span class="lem"><i lang="it">la bontà e la prudenza sua</i>.</span> &quot;His goodness and prudence&quot;: Numa&#x27;s.</p>
+<p><span class="lem"><i lang="it">Ben è vero</i>.</span> &quot;It is indeed true&quot;: a concession to the argument, which Guicciardini takes up (Guicciardini .01: &quot;as the writer also says&quot;).</p>
+<p><span class="lem"><i lang="it">grossi</i>.</span> &quot;Gross&quot;: dull, unrefined, as in &quot;gross ignorance&quot;; not disgusting. Kept apart from <i lang="it">rozzi</i>, &quot;rude&quot; (.05, .07).</p>
+<p><span class="lem"><i lang="it">dettono</i>.</span> &quot;Gave&quot;: the 1554 edition reads <i lang="it">diedero</i>.</p>
+<p><span class="lem"><i lang="it">uomini montanari</i>.</span> &quot;Mountain men&quot;: highlanders, without civil life. <i lang="it">Corrotta</i>, &quot;corrupted&quot; (glossary, I.8).</p>
+<p><span class="lem"><i lang="it">un marmo rozzo</i>.</span> &quot;A rude marble&quot;: <i lang="it">rozzo</i> as of men at .07, so that the marble and the men are the same word. &quot;Rude&quot; keeps its older sense, unwrought.</p>
+<p><span class="lem"><i lang="it">male abbozzato d&#x27;altrui</i>.</span> &quot;Ill blocked out by another&quot;: roughed out badly by another sculptor.</p>
+<p><span class="lem"><i lang="it">buoni ordini, i buoni ordini fanno buona fortuna</i>.</span> The first two links are asyndetic and stay so (D12); the third is joined by <i lang="it">e</i>. The tenses run past, present, past: religion caused good orders, good orders make good fortune, and from good fortune arose the successes.</p>
+<p><span class="lem"><i lang="it">i felici successi delle imprese</i>.</span> &quot;The happy successes of the enterprises&quot;: <i lang="it">successi</i> in the older sense, outcomes. The 1554 edition reads <i lang="it">auenimetti</i>, a misprint for <i lang="it">avvenimenti</i>, &quot;events&quot; (NM-DISC-I11-D009).</p>
+<p><span class="lem"><i lang="it">culto Divino</i>; <i lang="it">dispregio</i>.</span> &quot;Divine worship&quot;; &quot;contempt&quot; (glossary).</p>
+<p><span class="lem"><i lang="it">delle Repubbliche</i>.</span> &quot;Of republics&quot;: the 1554 edition reads <i lang="it">della Republica</i>, and <i lang="it">di quella</i> for <i lang="it">di quello</i> (the worship).</p>
+<p><span class="lem"><i lang="it">manca</i>, <i lang="it">manchi</i>.</span> &quot;Fails&quot;, in all four places (.06): the fear of God, the kingdom, and the <i lang="it">virtù</i> twice, the second time with his life. One verb. Guicciardini&#x27;s reply opens with the same verb (<i lang="it">mancando</i>), &quot;failing&quot; (Guicciardini .01).</p>
+<p><span class="lem"><i lang="it">conviene</i>.</span> &quot;It is fitting&quot; (D85): the necessity of consequence, not of obligation.</p>
+<p><span class="lem"><i lang="it">secondo che manca la virtù d&#x27;esso</i>.</span> &quot;According as the <i lang="it">virtù</i> of him fails&quot;: probably the prince&#x27;s (<i lang="it">d&#x27;un Principe</i>, the period before), though the nearest antecedent is <i lang="it">quel Regno</i>; &quot;of him&quot; makes the choice. The 1554 edition reads <i lang="it">d&#x27;esse</i>.</p>
+<p><span class="lem"><i lang="it">i Regni, i quali dipendono solo dalla virtù d&#x27;un uomo</i>.</span> &quot;The kingdoms which depend alone on the <i lang="it">virtù</i> of one man&quot;: restrictive in sense, whatever the witness&#x27;s commas, so the English drops them; not all kingdoms. <i lang="it">Solo</i>, &quot;alone&quot;, I.9&#x27;s word (D172). The 1554 edition reads <i lang="it">dependeno solo alla virtù</i>.</p>
+<p><span class="lem">Dante.</span> <i lang="it">Purgatorio</i> 7.121–123. In Dante the line begins <i lang="it">Rade volte risurge per li rami</i>: probity &quot;rises again&quot; through the branches, like sap. Both editions here have <i lang="it">discende</i>, &quot;descends&quot;. The facing Italian is the edition&#x27;s; the English follows it. The tercet is set as verse in the witness and run in here, lines divided by a slash. <i lang="it">Quel che la dà</i>, &quot;he who gives it&quot;: God, who wills that probity be asked of him and not inherited. <i lang="it">Vuole</i> is &quot;wills&quot;, the one exception to D117&#x27;s &quot;wish&quot;: the will is God&#x27;s. The 1554 edition has <i lang="it">Quei</i>.</p>
+<p><span class="lem"><i lang="it">la salute</i>.</span> &quot;The safety&quot;, as I.8 <i lang="it">salute di Roma</i> and FG I.10 <i lang="it">la salute sua particulare</i>.</p>
+<p><span class="lem"><i lang="it">avere un Principe ... ma uno che l&#x27;ordini</i>.</span> &quot;To have a prince ... but one who orders it&quot;: <i lang="it">l&#x27;ordini</i>, orders the republic or the kingdom. The 1554 edition has no <i lang="it">avere</i>.</p>
+<p><span class="lem"><i lang="it">che morendo ancora la si mantenga</i>.</span> &quot;That, he dying, it may maintain itself still&quot;: <i lang="it">ancora</i> may go with <i lang="it">morendo</i>, &quot;even dying&quot;; the English leaves it where the reader can take it either way. <i lang="it">La</i> is feminine and takes the republic; the kingdom comes along in sense. It follows from I.9&#x27;s rule that the thing ordered must pass into the care of many.</p>
+<p><span class="lem"><i lang="it">un ordine e una opinione nuova</i>.</span> &quot;An order and a new opinion&quot;: <i lang="it">nuova</i> is written once, with the opinion, which <i lang="it">persuaderla</i> takes up. <i lang="it">Opinione</i>, opinion (D02). The 1554 edition reads <i lang="it">o una</i>.</p>
+<p><span class="lem"><i lang="it">agli uomini civili, e che presumono</i>.</span> &quot;To civil men, and who presume&quot;: one set of men, civil and presuming; the Florentines of the next period.</p>
+<p><span class="lem"><i lang="it">Al popolo di Firenze non pare essere né ignorante né rozzo</i>.</span> &quot;To the people of Florence it does not seem that it is either ignorant or rude&quot;: with the dative, the people does not think itself ignorant or rude; the English follows. The irony is Machiavelli&#x27;s, and unflagged.</p>
+<p><span class="lem">Savonarola.</span> Girolamo Savonarola, Dominican friar, returned to Florence in 1490, preached as a prophet, dominated the republic after 1494, and was hanged and burned on 23 May 1498. Machiavelli heard him preach and reported two sermons in a letter to Ricciardo Becchi of 9 March 1498.</p>
+<p><span class="lem"><i lang="it">Io non voglio giudicare</i>.</span> &quot;I do not wish to judge&quot;: the one suspension of judgment in the chapter, and on the one modern case.</p>
+<p><span class="lem"><i lang="it">infiniti lo credevano</i>.</span> &quot;Infinite [men] believed it&quot;: that he spoke with God. The 1554 edition reads <i lang="it">li credevano</i>, &quot;believed him&quot;.</p>
+<p><span class="lem"><i lang="it">fargli prestare fede</i>.</span> &quot;To make [them] lend him faith&quot;: <i lang="it">gli</i> taken as to him; &quot;them&quot; is supplied.</p>
+<p><span class="lem"><i lang="it">pertanto</i>.</span> &quot;On that account&quot; (D98).</p>
+<p><span class="lem"><i lang="it">come nella prefazione nostra si disse</i>.</span> &quot;As was said in our preface&quot;: the preface to Book I, where men, the heavens, the sun and the elements are said not to have changed in motion, order and power.</p>
+<p><span class="lem"><i lang="it">con un medesimo ordine</i>.</span> &quot;With one same order&quot;: the chapter&#x27;s last word is <i lang="it">ordine</i>, the word of its first sentence.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work fg">
+    <div class="work-head">
+      <span class="tag">FG-CONS.1.11</span>
+      <h2>Considerazione sul capitolo XI</h2>
+    </div>
+    <p class="rubric">Della religione de&#x27; Romani</p>
+    <p class="rubric">Of the religion of the Romans
+      </p>
+
+    <div class="colheads"><div></div><div>Italian · 1857</div><div>English</div></div>
+      <div class="pair" id="FG-CONS.1.11.01">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.11.01">1.11.01</a></div>
+        <div class="col it" lang="it">Certo è che e l&#x27;armi <span class="supplied">[e]</span> la religione sono fondamenti principali delle republiche e de&#x27; regni, e tanto necessarii che mancando ciascuno di questi si può dire manchino le parti vitali e sustanziali; ma io non so già se sia vero che se si avessi a disputare a quale principe Roma sia più obligata, o a Romolo o a Numa, che Numa meriti la prima laude, né che le difficultà di Numa fussino maggiori; anzi io inclinerei più presto nel contrario, e mi pare si possi mostrare con una ragione assai potente; perché se il primo re di Roma fussi stato Numa e non Romulo, certo la città era ne&#x27; suoi principii oppressa da&#x27; vicini, né lasciava Numa a Romulo quel luogo di mettere le armi che lasciò Romulo a Numa di mettervi la religione. Fu adunque a&#x27; principii più necessario Romulo che Numa. Dipoi, come anche dice lo scrittore, quelli tempi e ancora le città vicine furono piene di religione, in modo che con lo esemplo e similitudine di quelle fu facile disporvi il populo romano. E che questo sia vero lo mostra, che, morto Romulo, il populo ancora ferocissimo ed assuefatto in su le armi elesse volontariamente per re non uno uomo bellicoso e uso a comandare eserciti, ma desiderò avere uno re, venerabile di giustizia, di religione e delle arti della pace, e non l&#x27;avendo tale in Roma, lo andò a cavare delle città vicine; il che dimostra chiaramente che e&#x27; Romani per sé medesimi furono inclinati a volersi ordinare di religione e buone leggi spettanti alle arti della pace, in modo che Numa trovò gli animi già disposti a volere ricevere buoni ordini. E certo, o la prudenza o la fortuna de&#x27; Romani, o l&#x27;uno e l&#x27;altro insieme, fu ammirabile che e&#x27; primi suoi dua re fussino eccellentissimi, l&#x27;uno nelle arti della guerra, l&#x27;altro in quelle della pace; e che il primo fussi quello della guerra, perché colle armi dètte tanta vita alla nuova città, che potette aspettare Numa e chi la ordinassi con la religione.</div>
+        <div class="col en" lang="en">It is certain that both arms and religion are principal foundations of republics and of kingdoms, and so necessary that, each of these failing, one can say the vital and substantial parts fail; but I do not know whether it be true that, if one were to dispute to which prince Rome is more indebted, either to Romulus or to Numa, that Numa merits the first praise, nor that the difficulties of Numa were greater; on the contrary, I would incline rather to the opposite, and it seems to me it can be shown with a very powerful reason; for if the first king of Rome had been Numa and not Romulus, certainly the city would in its beginnings have been oppressed by the neighbours, nor would Numa have left to Romulus that place for putting arms which Romulus left to Numa for putting religion there. Romulus, then, was more necessary at the beginnings than Numa. Afterwards, as the writer also says, those times and also the neighbouring cities were full of religion, in such a way that with the example and likeness of those <span class="supplied">[cities]</span> it was easy to dispose the Roman people to it. And that this is true is shown by <span class="supplied">[this]</span>, that, Romulus being dead, the people, still most ferocious and accustomed to arms, voluntarily chose as king not a man bellicose and used to commanding armies, but desired to have a king venerable for justice, for religion and for the arts of peace, and not having such a one in Rome, went to fetch him out of the neighbouring cities; which demonstrates clearly that the Romans of themselves were inclined to wish to order themselves with religion and good laws looking to the arts of peace, in such a way that Numa found the spirits already disposed to wish to receive good orders. And certainly, either the prudence or the fortune of the Romans, or the one and the other together, was admirable, that their first two kings were most excellent, the one in the arts of war, the other in those of peace; and that the first was the one of war, for with arms he gave so much life to the new city that it was able to wait for Numa and for whoever should order it with religion.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> A grant, a suspension, an inclination and two reasons. The grant is whole (on the emended text, D200): it is certain that both arms and religion are principal foundations of republics and kingdoms, each so necessary that, failing either, one can say the vital and substantial parts fail. Then he suspends: he does not know whether it is true that, in the dispute Machiavelli posed, Numa merits the first praise, or that Numa&#x27;s difficulties were greater. Machiavelli does not say the second in so many words; Guicciardini draws it from the &quot;difficulty&quot; of the asymmetry and of the orderers&#x27; recourse to God. He would incline rather to the opposite, and it seems to him this can be shown with a very powerful reason. The first reason is the order of time. Had Numa been first, the city would in its beginnings have been oppressed by its neighbours, and Numa would not have left Romulus room for arms as Romulus left Numa room for religion; so Romulus was the more necessary at the beginnings. The second reason starts from Machiavelli&#x27;s own concession, that the times were full of religion, and extends it to the neighbouring cities, whose example and likeness made the Roman people easy to dispose to it. The proof is the choice of Numa itself. The people, still most ferocious and used to arms, chose of their own will not a warrior but a king venerable for justice, religion and the arts of peace, and went to fetch him out of the neighbouring cities; so the Romans were inclined of themselves to order themselves with religion and good laws, and Numa found the spirits already disposed. He ends without choosing between prudence and fortune, or both, as the cause of Rome&#x27;s having two most excellent kings, one of war and one of peace, and fixes only the order: the one of war first, because arms gave the city life enough to wait for Numa and for whoever should order it with religion.</p>
+<p><span class="lem">Cross-reference.</span> The question is Machiavelli&#x27;s, in his words, &quot;to which prince Rome was more indebted, either to Romulus or to Numa&quot; <a class="xref" href="#NM-DISC.1.11.03">Machiavelli .03</a>. The concession Guicciardini borrows is the first half of Machiavelli&#x27;s, that those times were full of religion; the gross men he leaves out <a class="xref" href="#NM-DISC.1.11.05">Machiavelli .05</a>. &quot;More necessary&quot; turns the word Machiavelli used to say Numa, and not Romulus, needed God&#x27;s authority <a class="xref" href="#NM-DISC.1.11.04">Machiavelli .04</a>. <i lang="it">Ferocissimo</i> is Machiavelli&#x27;s word for the people Numa found <a class="xref" href="#NM-DISC.1.11.01">Machiavelli .01</a>; Guicciardini keeps it and makes it the proof: a people still most ferocious chose a king of peace of its own will. Machiavelli&#x27;s heavens put the choice of Numa into the senate&#x27;s breast; Guicciardini gives it to the people (<i lang="it">volontariamente</i>, <i lang="it">desiderò</i>, <i lang="it">per sé medesimi</i>). The grant of arms and religion as two foundations, each necessary, answers Machiavelli&#x27;s asymmetry, that where there is religion arms can readily be introduced, and where there are arms and not religion, religion only with difficulty <a class="xref" href="#NM-DISC.1.11.03">Machiavelli .03</a>. He does not call the rule false, but his first reason turns its first half: at a city&#x27;s beginnings Numa would not have left Romulus room for arms, because the neighbours would have oppressed the city first. The question becomes what comes first. And where Machiavelli derived Rome&#x27;s fortune from Numa&#x27;s religion, religion causing good orders and good orders good fortune <a class="xref" href="#NM-DISC.1.11.06">Machiavelli .06</a>, Guicciardini leaves open whether prudence or fortune, or both, gave Rome its two kings. What the reply leaves alone: the forced oaths, Numa&#x27;s simulation, the rule that orderers of extraordinary laws have recourse to God, the kingdoms that fail with one man&#x27;s <i lang="it">virtù</i>, and Savonarola. The dispute is over rank and order, and over who chose Numa.</p>
+<p><span class="lem">History.</span> In Livy (1.17–18) the choice lies with the senate, as in Machiavelli, and not with the people: after Romulus&#x27; death and a year&#x27;s interregnum, the people, offered the choice, left it to the senate, which chose Numa of Cures, renowned for justice and religion (<i lang="it">inclita iustitia religioque</i>). The heavens are Machiavelli&#x27;s addition; the people&#x27;s own will is Guicciardini&#x27;s, though in Livy the people did defer of their own accord. On Numa&#x27;s character Guicciardini follows Livy even where he departs from him on who chose. The Sabines were Rome&#x27;s neighbours, and since the union under Titus Tatius partly its own people.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from Canestrini 1857, <i>Opere inedite</i> vol. 1, pp. 1–65 (<span class="sig">WIT-FG-CONS-1857-CANESTRINI</span>) — the <i>editio princeps</i>, which governs. Collated against Palmarocchi 1933 (<span class="sig">WIT-FG-CONS-1933-PALMAROCCHI</span>): page images and the Wikisource transcription consulted as collation evidence, not reproduced (LICENSE §5).</p>
+<p><span class="lem">mettervi la religione Fu adunque</span> → <span class="lem">mettervi la religione. Fu adunque</span> (FG-CONS.1.11.01). A faint trace both readers see and neither can weigh; a capital follows; the 1933 edition prints a full stop. D110.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem"></span> — Certo è che e l&#x27;armi [e] la religione. The 1857 witness reads <i lang="it">Certo è che e l&#x27;armi o la religione</i>. The 1933 witness reads <i lang="it">Certo è che e l&#x27;arme e la religione</i>. Both cold readers read <i lang="it">o</i> without doubt. As printed the opening <i lang="it">e</i> has no partner, and <i lang="it">o</i> sets as alternatives what <i lang="it">ciascuno di questi</i> treats as two necessities; the scan prints e o-shaped throughout (D145). Emended under D68, as D126 (D200).</p>
+<p><span class="lem">o a Romolo o a Numa</span> — 1857. The 1933 witness reads <i lang="it">o a Romulo o a Numa</i>. Canestrini prints <i lang="it">Romolo</i> here and <i lang="it">Romulo</i> five times after; both readers saw the <i lang="it">o</i>. Kept as printed (D201).</p>
+<p><span class="lem">Numa trovò gli animi già disposti</span> — 1857. The 1933 witness reads <i lang="it">Numa trovò gli uomini giá disposti</i>. The spirits, against the men. Both readers doubted the first letter of <i lang="it">animi</i> (⟨animi|unimi⟩); it construes, so D38 (D201).</p>
+<p><span class="lem">quel luogo di mettere le armi</span> — 1857. The 1933 witness reads <i lang="it">quel luogo di mettervi le arme</i>. Palmarocchi has the locative in both infinitives; Canestrini only in the second. Same sense.</p>
+<p><span class="lem">le difficultà di Numa fussino maggiori</span> — 1857. The 1933 witness reads <i lang="it">le difficultá di Numa fussino maggiore</i>. Palmarocchi keeps the old plural in -e. Same sense.</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem"><i lang="it">e l&#x27;armi [e] la religione</i>.</span> &quot;Both arms and religion&quot;. Canestrini prints <i lang="it">e l&#x27;armi o la religione</i>: as printed the first <i lang="it">e</i> has no partner, and &quot;arms or religion&quot; sets as alternatives what the next clause (<i lang="it">ciascuno di questi</i>, &quot;each of these&quot;) treats as two necessities. The 1933 edition reads <i lang="it">e l&#x27;arme e la religione</i>. Emended under D68 (D200); the English follows the emended text.</p>
+<p><span class="lem"><i lang="it">fondamenti principali</i>.</span> &quot;Principal foundations&quot;: the grant concedes Machiavelli&#x27;s religion its place beside arms, not above them.</p>
+<p><span class="lem"><i lang="it">mancando</i>, <i lang="it">manchino</i>.</span> &quot;Failing&quot;, &quot;fail&quot;: Machiavelli&#x27;s verb for the fear of God and the prince&#x27;s <i lang="it">virtù</i> (Machiavelli .06).</p>
+<p><span class="lem"><i lang="it">le parti vitali e sustanziali</i>.</span> &quot;The vital and substantial parts&quot;: of a body.</p>
+<p><span class="lem"><i lang="it">ma io non so già se sia vero</i>.</span> &quot;But I do not know whether it be true&quot;: <i lang="it">non so</i>, suspension, the second of the four acts (problematic.md). It does not say the claim is false.</p>
+<p><span class="lem"><i lang="it">che se si avessi a disputare ..., che Numa meriti</i>.</span> &quot;That, if one were to dispute ..., that Numa merits&quot;: the pleonastic <i lang="it">che</i> after the conditional is kept (D136).</p>
+<p><span class="lem"><i lang="it">a quale principe Roma sia più obligata, o a Romolo o a Numa</i>.</span> Machiavelli&#x27;s question in his own words (Machiavelli .03), with the subjunctive moved to the present; &quot;indebted&quot; as there. Canestrini prints <i lang="it">Romolo</i> here, the only time in the reply: both readers read the <i lang="it">o</i>, doubting it, and it is kept as printed (D201). Everywhere else it is <i lang="it">Romulo</i>, Guicciardini&#x27;s Latin form. The English has &quot;Romulus&quot; throughout.</p>
+<p><span class="lem"><i lang="it">meriti la prima laude</i>.</span> &quot;Merits the first praise&quot;, answering Machiavelli&#x27;s &quot;first degree&quot;. Both readers were unsure of the first vowel; read <i lang="it">meriti</i> with the 1933 edition (D201).</p>
+<p><span class="lem"><i lang="it">anzi io inclinerei più presto nel contrario</i>.</span> &quot;On the contrary, I would incline rather to the opposite&quot;: <i lang="it">anzi</i> reverses (D135), <i lang="it">più presto</i> is &quot;rather&quot; (D135), and <i lang="it">nel contrario</i> takes &quot;the opposite&quot; so that &quot;contrary&quot; is not said twice where the Italian says it once. The conditional <i lang="it">inclinerei</i> keeps it an inclination.</p>
+<p><span class="lem"><i lang="it">le difficultà di Numa</i>.</span> &quot;The difficulties of Numa&quot;: Machiavelli&#x27;s &quot;with difficulty&quot; (.03) and &quot;this difficulty&quot; (.04).</p>
+<p><span class="lem"><i lang="it">mi pare si possi mostrare</i>.</span> &quot;It seems to me it can be shown&quot;: both readers were unsure of a letter in <i lang="it">si</i>; read with the 1933 edition (D201).</p>
+<p><span class="lem"><i lang="it">la città era ... oppressa ..., né lasciava</i>.</span> &quot;Would have been oppressed ..., nor would ... have left&quot;: the imperfect indicative in a contrary-to-fact condition (D47).</p>
+<p><span class="lem"><i lang="it">ne&#x27; suoi principii</i>, <i lang="it">a&#x27; principii</i>.</span> &quot;In its beginnings&quot;, &quot;at the beginnings&quot;: <i lang="it">principio</i>, beginning (glossary).</p>
+<p><span class="lem"><i lang="it">quel luogo di mettere le armi</i>.</span> &quot;That place for putting arms&quot;: <i lang="it">vi</i>, &quot;there&quot;, is only in the second infinitive (<i lang="it">mettervi</i>), and the English keeps the asymmetry; the room Romulus left Numa for religion, which Numa as first king would not have left for arms. It answers Machiavelli&#x27;s &quot;arms can readily be introduced&quot; where there is religion (Machiavelli .03): Guicciardini puts arms first in time.</p>
+<p><span class="lem"><i lang="it">Fu adunque a&#x27; principii più necessario Romulo che Numa</i>.</span> &quot;Romulus, then, was more necessary at the beginnings than Numa&quot;: Machiavelli&#x27;s word, turned. The authority of God &quot;was not necessary&quot; to Romulus, &quot;but it was indeed necessary to Numa&quot; (Machiavelli .04). <i lang="it">Adunque</i>, then (D74).</p>
+<p><span class="lem"><i lang="it">Dipoi</i>.</span> &quot;Afterwards&quot;: <i lang="it">dipoi</i> as D187, here in the order of the argument, a second reason; not &quot;after Romulus&quot;. The times were already full of religion.</p>
+<p><span class="lem"><i lang="it">come anche dice lo scrittore</i>.</span> &quot;As the writer also says&quot;: Machiavelli, who granted that &quot;those times&#x27; being full of religion, and those men ... being gross, gave him great facility&quot; (Machiavelli .05). <i lang="it">Piene di religione</i> is his phrase, and the second reason is his own concession turned against his ranking.</p>
+<p><span class="lem"><i lang="it">con lo esemplo e similitudine di quelle</i>.</span> &quot;With the example and likeness of those [cities]&quot;: <i lang="it">quelle</i> is feminine, the neighbouring cities, not the times. <i lang="it">Similitudine</i>, likeness (glossary). The argument is imitation of neighbours, and Numa is fetched from one.</p>
+<p><span class="lem"><i lang="it">lo mostra, che</i>.</span> &quot;Is shown by [this], that&quot;: the fronted clause <i lang="it">che questo sia vero</i> is taken up again by <i lang="it">lo</i>; the subject of <i lang="it">mostra</i> is the clause that follows; &quot;[this]&quot; is supplied (D53).</p>
+<p><span class="lem"><i lang="it">ferocissimo</i>.</span> &quot;Most ferocious&quot;: Machiavelli&#x27;s word for the people Numa found (Machiavelli .01).</p>
+<p><span class="lem"><i lang="it">assuefatto</i>.</span> &quot;Accustomed&quot;, as FG I.10.</p>
+<p><span class="lem"><i lang="it">elesse volontariamente per re</i>.</span> &quot;Voluntarily chose as king&quot;: <i lang="it">eleggere</i>, choose (glossary). Guicciardini moves the choice from Machiavelli&#x27;s heavens, which put it into the senate&#x27;s breast (Machiavelli .01), to the people&#x27;s own will: <i lang="it">volontariamente</i>, <i lang="it">desiderò</i>, <i lang="it">per sé medesimi</i>. In Livy 1.17–18, after an interregnum, the people left the choice to the senate, which chose Numa.</p>
+<p><span class="lem"><i lang="it">uso a comandare eserciti</i>.</span> &quot;Used to commanding armies&quot;: <i lang="it">uso a</i> as Machiavelli&#x27;s <i lang="it">usi a vivere nelle città</i>, &quot;used to living in the cities&quot; (Machiavelli .05).</p>
+<p><span class="lem"><i lang="it">venerabile di giustizia, di religione</i>.</span> &quot;Venerable for justice, for religion&quot;.</p>
+<p><span class="lem"><i lang="it">lo andò a cavare delle città vicine</i>.</span> &quot;Went to fetch him out of the neighbouring cities&quot;: Numa was a Sabine of Cures.</p>
+<p><span class="lem"><i lang="it">spettanti</i>.</span> &quot;Looking to&quot;: the participle of <i lang="it">spettare</i>, as FG I.9 &quot;looked to&quot; (D175).</p>
+<p><span class="lem"><i lang="it">gli animi</i>.</span> &quot;The spirits&quot;: <i lang="it">animo</i>, spirit (glossary). Both readers were unsure of the first letter; the 1933 edition reads <i lang="it">uomini</i>, &quot;men&quot;. <i lang="it">Animi</i> construes and is kept (D38, D201; FG-CONS-I11-D003).</p>
+<p><span class="lem"><i lang="it">e&#x27; primi suoi dua re</i>.</span> &quot;Their first two kings&quot;: the Romans&#x27;, with <i lang="it">suo</i> for <i lang="it">loro</i>, as often in the period. Both readers were unsure of the article&#x27;s letter; read <i lang="it">e&#x27;</i> with the 1933 edition (D201).</p>
+<p><span class="lem"><i lang="it">colle armi dètte tanta vita</i>.</span> &quot;With arms he gave so much life&quot;: Canestrini accents <i lang="it">dètte</i>, &quot;gave&quot;, against <i lang="it">dette</i>, &quot;said&quot;.</p>
+<p><span class="lem"><i lang="it">chi la ordinassi con la religione</i>.</span> &quot;Whoever should order it with religion&quot;: most naturally Numa, named again by what he did; the subjunctive leaves the orderer indefinite. The reply ends with a stop.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="colophon">
+    <div class="row">
+      <div>
+        <h3>What this is</h3>
+        <p>A free, openly licensed, bilingual edition of Guicciardini's 39 <i>Considerazioni</i> and the
+          <i>Discorsi</i> chapters they answer — 78 text units, Italian and English facing, every reading
+          traceable to a named public-domain witness.</p>
+        <p>It is a reading edition with a transparent apparatus, not a text of record. It does not adjudicate
+          the critical text against Bausi 2001 or the manuscript tradition, and does not claim to.</p>
+      </div>
+      <div>
+        <h3>On the title</h3>
+        <p>Machiavelli had been dead two years when Guicciardini wrote; the <i>Discorsi</i> were unpublished,
+          and the <i>Considerazioni</i> stayed unprinted until 1857. Machiavelli never answers.</p>
+        <p>“Conversation” is a quotation, not a description. It invokes Machiavelli's letter to Vettori of
+          10 December 1513, where he changes into court dress at evening, enters the antique courts of ancient
+          men, and reports that <i>they, in their humanity, answer me</i>. Guicciardini does to Machiavelli
+          what Machiavelli did to Livy — and is denied the reply Machiavelli claimed.</p>
+      </div>
+      <div>
+        <h3>Method</h3>
+        <p>No image-derived reading enters the text on a single reading. Each unit is transcribed twice,
+          independently, by readers who have not seen each other's work; disagreements are adjudicated against
+          the page images and recorded.</p>
+        <p>Existing English translations of the <i>Considerazioni</i> — Grayson (1965), Atkinson &amp; Sices
+          (2002) — are never used as translation inputs.</p>
+      </div>
+      <div>
+        <h3>Licence</h3>
+        <p>The established Italian text and the apparatus data are dedicated to the public domain under
+          <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>. They are Machiavelli's and
+          Guicciardini's sentences, and this edition adds no condition to them.</p>
+        <p>The English translation, the notes and the editorial apparatus are licensed
+          <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: reuse them anywhere, including
+          commercially, with attribution to David McDougall and this edition. The build tooling is MIT.</p>
+        <p>The witness scans are other people's digitisations, included as evidence under their own terms; no
+          grant is made over them, and no page image of Palmarocchi 1933 is reproduced here. Full terms,
+          layer by layer, are in the <span class="sig">LICENSE</span> file in the repository.</p>
+      </div>
+    </div>
+
+    <div class="state">
+      <p><strong>Version 0.3 · 13 of 39 pairs published.</strong>
+        This edition is versioned, not frozen. No open questions on this pair.</p>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
