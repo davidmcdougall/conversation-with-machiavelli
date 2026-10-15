@@ -348,6 +348,7 @@ last sentence answers Machiavelli's first move.
 | Italian | English | Note |
 |---|---|---|
 | `obbligato` / `obligata` | indebted | D204. The adjective of `obbligo`, debt (D17). NM I.11 .03; FG I.11 repeats the question. |
+| `obbligarsi` (reflexive verb) | bind oneself | D229. The scoped exception to D204: NM I.16 .08 `per essersi quelli Re obbligati ad infinite leggi`, "having bound themselves to infinite laws". |
 | `bastare` / `sufficiente` | be enough / sufficient | D205. NM I.11 .01, .04 against .07. |
 | `dubitare (che ... non)` | doubt (whether) | D205. Apprehension; "fear" stays `temere`, `timore`. |
 | `timore`, `temere`; `pauroso` | fear; fearful | NM I.11: the fear of God, of a prince; the citizens `sbigottiti e paurosi`, "frightened and fearful". |

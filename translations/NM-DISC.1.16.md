@@ -10,7 +10,7 @@ cold_review: 2026-10-11, subagent with no access to the drafting work
 paragraph_divisions: editorial  # inherited from the source unit; see SCOPE §3
 rubric_en: "A people used to living under a prince, if by some accident it becomes free, maintains liberty with difficulty."
 translated: 2026-10-11
-open_for_david: "O26 (obbligati)"
+open_for_david: none — O26 ruled 2026-10-15 as D229
 ---
 
 # Discourses I.16
@@ -157,7 +157,7 @@ That prince, then, or that republic which does not secure itself in the beginnin
 
 **`il Regno di Francia`.** "The kingdom of France": Machiavelli returns to France and its laws elsewhere in the *Discorsi* and in *The Prince*, chapter 19.
 
-**`per essersi quelli Re obbligati ad infinite leggi`.** "Through those kings' having bound themselves to infinite laws": `obbligarsi`, to bind oneself. The glossary's `obbligato` → "indebted" (D204) is the adjective of a debt; this is the reflexive verb, and "indebted to infinite laws" does not say what Machiavelli says. Put to David as O26.
+**`per essersi quelli Re obbligati ad infinite leggi`.** "Through those kings' having bound themselves to infinite laws": `obbligarsi`, to bind oneself. The glossary's `obbligato` → "indebted" (D204) is the adjective of a debt; this is the reflexive verb, and "indebted to infinite laws" does not say what Machiavelli says. Ruled by David as D229.
 
 **`dell'arme e del danajo facessero a loro modo`.** "Should do with arms and with money in their own way".
 
