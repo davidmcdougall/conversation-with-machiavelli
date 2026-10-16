@@ -31,3 +31,4 @@ first time it is italicised.
 | `patres` | NM I.9 commentary |
 | `etiam` | FG I.3, FG I.16 note |
 | `latebrae` | NM I.16 note |
+| `verbi gratia` | FG I.23 |

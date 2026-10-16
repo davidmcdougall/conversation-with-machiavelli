@@ -521,6 +521,35 @@ into `farsi partigiani ... potenti a opprimere il populo`, stated as the
 remedy the prince has, neither softened nor made the only one. The unit ends
 with a stop.
 
+## Machiavelli, NM-DISC.1.23
+
+**One error, two cases, closed as a ring.** `tutta la fortuna tua, e non
+tutte le forze` (.01) returns as `tutta la tua fortuna con parte delle tue
+forze` (.03), the possessive given to both nouns only once the danger has
+happened; `Cadesi ancora in questo inconveniente` makes the Horatii and the
+guarded pass one mistake. The *virtù* of many staked on the *virtù* of three
+answers the *virtù* of the residue never tried. The rule keeps its exception
+(`se già ... non potessi`) and its hedge (`quasi sempre`, twice; the rubric
+says `spesso`), and `tenere` carries the condition: you may hold the place
+only if you can hold all your forces there. The second person changes sides
+at .04. Hannibal and 1515 are proofs, not maxims about mountains.
+
+## Guicciardini, FG-CONS.1.23
+
+**He grants the conclusion and does not believe it reaches the case.**
+`ancora che sia verissima`: the rule stands, but the Albans and Romans each
+took from the other what they took from themselves, and equal courses `si
+possono male riprendere`. The motive is graded (kinship granted, equality `è
+credibile`, restraint `pare verisimile`) and the verdict conditional:
+`presupposta questa equalità, io non veggo`. The passes become a case for
+`buono occhio`; Marignano is a counterfactual under `forse`; the Roman
+example is impossible, then turned. The close keeps Machiavelli's fact (few
+captains, no longer "very few virtuous") and refuses a cause, in his own
+words reversed: to venture part of the forces with all the fortune `non è da
+fuggire` when advantages concur; the reason is difficulty, which is close to
+Machiavelli's own reasons at .04. No title or standfirst may make him deny
+the rule or prescribe the guarding of passes. The unit ends with a stop.
+
 ## The pair
 
 Machiavelli argues towards a demonstration. Guicciardini declines to be

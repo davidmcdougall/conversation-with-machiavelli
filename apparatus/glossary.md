@@ -389,3 +389,29 @@ last sentence answers Machiavelli's first move.
 | `vivacità` | vigour | D223. FG I.16. |
 | `sopra tutto` | above all things | D223. Kept apart from `massime`, "above all". |
 | `acerbità`, `acerbo`, `acerbamente` | bitterness, bitter, bitterly | FG I.16 ×4. |
+
+
+## Added from the I.23 pair (2026-10-16)
+
+| Italian | English | Note |
+|---|---|---|
+| `partito` | course | D236. NM I.23 ×4, FG I.23 ×4: wise course, such a course, the course the Albans and Romans took, equal courses, a most secure course, a most imprudent course. |
+| `passo`, `passi` | pass, passes | NM I.23, FG I.23 throughout. |
+| `tenere` (a place, forces) | hold | NM I.23 ×7 (D242): the condition `tenere tutte le forze tue` is held in the same word. |
+| `grosso` (of an army) | in force | D238. NM I.23 `venire grosso`, `aspettarlo grosso`; FG I.23 `gente grosse`, troops in force. Scoped exception to D207. |
+| `genti`, `gente` | troops | NM I.23 `il residuo delle genti tue`, `Genti francesi`; FG I.23 `gente grosse`. |
+| `paesani` / `uomini del paese` | country people / men of the country | D238. NM I.23, FG I.23. |
+| `alpestre` | alpine | NM I.23 ×3, lower case: mountainous, rough. |
+| `sito` | site | NM I.23 `la malignità del sito`; FG I.23 ×2. |
+| `urtare` | strike | NM I.23 `ad urtarti`; FG I.23 `possa esservi urtato`. |
+| `fondamento` | foundation | NM I.23 ×2. |
+| `campagna` | open country | NM I.16, I.23; FG I.23 `alla campagna`. With `paese`, "country": recorded. |
+| `aventurare` | venture | FG I.23 ×2. |
+| `proibire` | prohibit | FG I.23 ×3. |
+| `transito` | transit | FG I.23 ×2. |
+| `militare a` | militate [against] | D239. D23's "has no force" holds for the negative `milita`. |
+| `pari` / `equale`, `equalità` | equal / equal, equality | FG I.23. Recorded collapse (D243). |
+| `voglia` (in `contro alla voglia di`) | will | D240. Recorded collapse with `volontà`; D117's "longing" stands elsewhere. |
+| `estraneo` | unrelated | D241. Against `congiunto`, conjoined. |
+| `avere a` (after a gerund; compound tenses) | have to | D237, with D101 and D222. |
+

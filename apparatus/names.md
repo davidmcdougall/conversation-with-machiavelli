@@ -125,3 +125,17 @@ the original.
 | `Servio Tullio` | Servius Tullius | FG I.16, as FG I.2 |
 | `Medici` | the Medici | FG I.16; `e' Medici` |
 | `Regno di Francia` | the kingdom of France | NM I.16 |
+| `Tullo`, `Mezio` | Tullus, Mettius | NM I.23; Tullus Hostilius, king of Rome, and Mettius Fufetius, dictator of Alba |
+| `Albani` | Albans | FG I.23 |
+| `Annibale` | Hannibal | NM I.23, FG I.23, as NM I.11 |
+| `Alpi` | Alps | NM I.23 (of the Apennines too), FG I.23 |
+| `Tesino` | Ticino | NM I.23; the Roman Ticinus, noted |
+| `Arezzo`, `Toscana`, `Lombardia`, `Milano` | Arezzo, Tuscany, Lombardy, Milan | NM I.23 |
+| `Francesco Re di Francia` | Francis, king of France | NM I.23; Francis I. Titles in lower case |
+| `Franzesi` / `Francesi` | the French | FG I.23 / NM I.23 |
+| `Flaminio Quinto` | Flaminius Quintus | FG I.23; Canestrini's garbled name for Titus Quinctius Flamininus, kept as printed and noted (as D119); the 1933 edition `Tito Quinzio` |
+| `Macedonia` | Macedonia | FG I.23 |
+| `Consalvo Fernando` | Consalvo Fernando | FG I.23; Gonzalo Fernández de Córdoba, the Great Captain. Guicciardini's form kept, noted |
+| `Garigliano` | Garigliano | FG I.23 |
+| `Scipione`, `Antioco`, `Ellesponto` | Scipio, Antiochus, the Hellespont | FG I.23; Scipio Africanus, Antiochus III |
+| `Marignano` | Marignano | FG I.23; 13-14 September 1515 |
