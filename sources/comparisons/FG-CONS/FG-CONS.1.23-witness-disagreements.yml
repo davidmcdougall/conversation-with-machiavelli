@@ -1,0 +1,123 @@
+source_unit_id: FG-CONS.1.23
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-I23-D001
+    locator: FG-CONS.1.23.02
+    class: emendation
+    witness_1857: "e in Livio, Scipione ripreso Antioco"
+    witness_1933: "ed in Livio, Scipione riprese Antioco"
+    established: "e in Livio, Scipione ripres[e] Antioco"
+    publish_as_variant_note: true
+    rationale: "Both cold readers read `ripreso` without doubt. As printed the clause has no finite verb (\"Scipio reproved\" becomes \"Scipio having been reproved\") and barely construes. The scan prints e o-shaped throughout. Emended under D68 from the 1933 edition, as D200 and D214 (D232)."
+  - id: FG-CONS-I23-D002
+    locator: FG-CONS.1.23.03
+    class: emendation
+    witness_1857: "perché è sicurissimo parato con parte delle sue forze potere impedire"
+    witness_1933: "perché è sicurissimo partito con parte delle tue forze potere impedire"
+    established: "perché è sicurissimo [partito] con parte delle sue forze potere impedire"
+    publish_as_variant_note: true
+    rationale: "Both cold readers read `parato`, \"prepared\", without doubt. With a bare infinitive it barely construes; `sicurissimo partito`, \"a most secure course\", is the 1933 reading, and `partito` is the chapter's word in both authors (Machiavelli .01, .02; Guicciardini .01, .03). Emended under D68, as D126 and D214; every letter is bracketed (D233)."
+  - id: FG-CONS-I23-D003
+    locator: FG-CONS.1.23.01
+    class: reading
+    witness_1857: "la perdita o il guadagno furono pari"
+    witness_1933: "la perdita ed el guadagno furono pari"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "Both cold readers read `o` without doubt, at a letter the scan breaks; escalated under D203(b). Canestrini's `o` construes: the loss or the gain, whichever came, was equal for the two sides. The 1933 `ed` makes the loss and the gain equal to each other. Kept as printed, D38 (D231)."
+  - id: FG-CONS-I23-D004
+    locator: FG-CONS.1.23.01
+    class: reading
+    witness_1857: "restorono così combattendo con parte delle forze loro"
+    witness_1933: "restorono così potenti combattendo con parte delle forze loro"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "Both readers read Canestrini without `potenti`. In the 1933 edition the Romans remained as powerful fighting with part of their forces; in Canestrini they remained so fighting, `così ... come se`, as if they had fought with all against all."
+  - id: FG-CONS-I23-D005
+    locator: FG-CONS.1.23.02
+    class: reading
+    witness_1857: "come si legge di Flaminio Quinto in Macedonia"
+    witness_1933: "come si legge di Tito Quinzio in Macedonia"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "One man either way: Titus Quinctius Flamininus, who in 198 BC forced Philip V's position on the Aous gorge in Epirus after holding before it some forty days (Livy 32.5-12). Canestrini's Guicciardini names him by cognomen and a garbled nomen; the 1933 edition by praenomen and nomen."
+  - id: FG-CONS-I23-D006
+    locator: FG-CONS.1.23.02
+    class: reading
+    witness_1857: "o almanco perderlo con poco danno suo"
+    witness_1933: "o almanco perderlo con poco danno tuo"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "Canestrini's `suo` is the defender's own loss; the 1933 `tuo` addresses the captain in the second person, as Machiavelli's chapter does throughout."
+  - id: FG-CONS-I23-D007
+    locator: FG-CONS.1.23.02
+    class: reading
+    witness_1857: "possono militare a chi tenta passare"
+    witness_1933: "può militare a chi tenta passare"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "Canestrini's plural takes the two difficulties together as subject; the 1933 singular takes them as one."
+  - id: FG-CONS-I23-D008
+    locator: FG-CONS.1.23.02
+    class: reading
+    witness_1857: "nella quale s'avessino combattuto tutti"
+    witness_1933: "nella quale s'avessino combattuti tutti"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "Agreement of the participle only; same sense."
+  - id: FG-CONS-I23-D009
+    locator: FG-CONS.1.23.03
+    class: reading
+    witness_1857: "con parte delle sue forze"
+    witness_1933: "con parte delle tue forze"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "As at .02, Canestrini keeps the captain in the third person, the 1933 edition turns to the second."
+  - id: FG-CONS-I23-D010
+    locator: FG-CONS.1.23.01
+    class: ruled_reading
+    witness_1857: "[si/s'] ha a considerare (a damaged mark)"
+    witness_1933: "s'ha a considerare"
+    established: "s'ha a considerare"
+    publish_as_variant_note: true
+    rationale: "The readers split on the mark before `ha`: one read `si`, the other `s'`. Same word, `si`; read with the 1933 edition, the elided form, as D72 (D234)."
+  - id: FG-CONS-I23-D011
+    locator: FG-CONS.1.23.01
+    class: ruled_reading
+    witness_1857: "se bene l[a/o] consanguinità (a damaged letter)"
+    witness_1933: "se bene la consanguinità"
+    established: "se bene la consanguinità"
+    publish_as_variant_note: true
+    rationale: "Both readers doubted the vowel of the article; `lo` does not agree with `consanguinità`, and the 1933 edition reads `la` (D234)."
+  - id: FG-CONS-I23-D012
+    locator: FG-CONS.1.23.01
+    class: ruled_reading
+    witness_1857: "totalmente, [e/a] perché l'uno (a damaged letter)"
+    witness_1933: "totalmente e perché l'uno"
+    established: "totalmente, e perché l'uno"
+    publish_as_variant_note: true
+    rationale: "Both readers doubted whether the letter is e or a; it prints a-shaped, as barless e does throughout the scan. `a perché` does not construe, and the 1933 edition reads `e` (D234)."
+  - id: FG-CONS-I23-D013
+    locator: FG-CONS.1.23.02
+    class: ruled_reading
+    witness_1857: "che con ragion[e/o] si può sperare (a damaged letter)"
+    witness_1933: "che con ragione si può sperare"
+    established: "che con ragione si può sperare"
+    publish_as_variant_note: true
+    rationale: "Both readers doubted the final letter; `con ragiono` does not construe, and the 1933 edition reads `ragione` (D234)."
+  - id: FG-CONS-I23-D014
+    locator: FG-CONS.1.23.03
+    class: ruled_reading
+    witness_1857: "con gli [u/n]omini del paese (a damaged letter)"
+    witness_1933: "con gli uomini del paese"
+    established: "con gli uomini del paese"
+    publish_as_variant_note: true
+    rationale: "Both readers doubted the first letter, the scan breaking u into n; the 1933 edition reads `uomini` (D234)."
+  - id: FG-CONS-I23-D015
+    locator: FG-CONS.1.23.01-04
+    class: systematic_orthographic_profile
+    witness_1857: "Canestrini's `il`, `populo`, `imprudenza`, `verbi gratia`, `Alpi`, `constringa`, `uccisioni`, `condizioni`, `occasioni`, `ragioni`, `adunque`, `appresso`, `circumjacente`, `resistenza`, `e`, and lighter pointing"
+    witness_1933: "Palmarocchi's `el`, `popolo`, `imprudenzia`, `verbigrazia`, `Alpe`, `costringa`, `uccisione`, `condizione`, `occasione`, `ragione`, `adunche`, `apresso`, `circumiacente`, `resistenzia`, `ed`, and heavier pointing"
+    established: witness_1857
+    rationale: Canestrini governs throughout. No other difference of word or sense.

@@ -1,0 +1,58 @@
+source_unit_id: FG-CONS.1.23
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-015
+responds_to: NM-DISC.1.23
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. Canestrini's note on p. 37 (on Francis I's crossing of the Alps in 1515) is his and is not carried."
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38); errors are emended from Palmarocchi and bracketed (D68)."
+passes:
+  - {id: A, performed: 2026-10-15, file: sources/coldpass/FG-CONS.1.23-passA.md, note: "subagent; page images only (native 600 ppi rendered at 1200, half pages enlarged 1.6x plus quarter crops enlarged 2.2x), separate directory"}
+  - {id: B, performed: 2026-10-15, file: sources/coldpass/FG-CONS.1.23-passB.md, note: "subagent; same images, separate directory"}
+collation: sources/coldpass/COLLATION-2026-10-16-I23.md
+collation_result: >
+  948 words (A), 947 (B). Three word-level splits, none a difference of
+  word: `si ha`/`s'ha` ruled `s'ha` with the 1933 edition (D234),
+  `risoluto`/`resoluto` (spelling; the printed o-shape is a barless e) and
+  `ne'`/`ne` (apostrophe, D39). No clause or sense disagreement. Two
+  confident shared readings against the comparison witness at letters the
+  scan breaks: `o il guadagno` (1933 `ed el`), kept (D231); `ripreso` (1933
+  `riprese`), emended (D232). One confident shared whole-word reading,
+  `parato` (1933 `partito`), emended (D233). Common doubts where the
+  alternative is a word read with the 1933 edition (D234). Four marks of
+  uncertain weight follow the 1933 edition (D110).
+witness_independence_check: "SCOPE §7. At the six split loci pass B sides with Palmarocchi at five, pass A at one, each from a damaged letter or mark the reader doubted. Neither pass carries a Palmarocchi word-reading where Canestrini differs: both have `o il guadagno`, `restorono così combattendo`, `Flaminio Quinto`, `danno suo`, `ripreso`, `possono militare`, `combattuto`, `parato`, `delle sue forze`, against the 1933 `ed el guadagno`, `così potenti combattendo`, `Tito Quinzio`, `danno tuo`, `riprese`, `può militare`, `combattuti`, `partito`, `delle tue forze`."
+boundaries: "printed pp. 35-39; heading CONSIDERAZIONE SUL CAPITOLO XXIII on p. 35 after line 22, the last line of the reply on XVI; Canestrini's rubric `Che non si debbe mettere a pericolo tutta la fortuna e non tutte le forze; e per questo, spesso il guardare i passi è dannoso`, unstopped; four indented paragraphs (p. 35 `Io non credo`, p. 36 l. 29, p. 38 l. 7, p. 38 l. 30); ends p. 39 l. 2 `è difficile il farlo.`; CONSIDERAZIONE SUL CAPITOLO XXIV follows"
+corrections:
+  - {id: FG-CONS-I23-C001, locator: FG-CONS.1.23.01, was: "furono pari, e quando", now: "furono pari; e quando", evidence: "Pass A ⟨,|;⟩, pass B ⟨;|,⟩; the 1933 edition prints a semicolon. D110."}
+  - {id: FG-CONS-I23-C002, locator: FG-CONS.1.23.01, was: "si possa biasimare. di volere", now: "si possa biasimare, di volere", evidence: "Pass A ⟨.|,⟩, pass B ⟨,|.⟩; lower case follows; the 1933 edition prints a comma. D110."}
+  - {id: FG-CONS-I23-C003, locator: FG-CONS.1.23.02, was: "di chi difende; perché", now: "di chi difende, perché", evidence: "Pass A ⟨;|,⟩, pass B ⟨,|;⟩; the 1933 edition prints a comma. D110."}
+  - {id: FG-CONS-I23-C004, locator: FG-CONS.1.23.02, was: "come feciono e' Svizzeri: a' quali", now: "come feciono e' Svizzeri; a' quali", evidence: "Both readers see a damaged mark, A ⟨;|.⟩, B ⟨:|;|.⟩; lower case follows. The 1933 comma is lighter than either reading, so the lighter reading both allow stands. D110."}
+emendations:
+  - {id: FG-CONS-I23-E001, operation: emendation, rule: D68, status: ruled_D232, locator: FG-CONS.1.23.02, printed: "e in Livio, Scipione ripreso Antioco", established: "e in Livio, Scipione ripres[e] Antioco", source: WIT-FG-CONS-1933-PALMAROCCHI, note: "Both readers read `ripreso` without doubt. As printed the clause has no finite verb and barely construes; the 1933 edition reads `riprese`. The scan prints e o-shaped throughout (D145). As D200 and D214, a clearly read word that barely construes. Not settled on the page image."}
+  - {id: FG-CONS-I23-E002, operation: emendation, rule: D68, status: ruled_D233, locator: FG-CONS.1.23.03, printed: "perché è sicurissimo parato con parte delle sue forze", established: "perché è sicurissimo [partito] con parte delle sue forze", source: WIT-FG-CONS-1933-PALMAROCCHI, note: "Both readers read `parato` without doubt. `Parato` with a bare infinitive barely construes; the 1933 edition reads `sicurissimo partito`, and `partito`, course, is the chapter's word in both authors. As D126 and D214, a whole word emended; every letter bracketed (DEC-009 clause 7)."}
+readings:
+  - {locus: "⟨si|s'⟩ ha a considerare", passes: "A ⟨si|a'⟩ ha; B ⟨s'|si⟩ha", witness_1933: "s'ha", disposition: "s'ha, D234 (David, 2026-10-16), as D72"}
+  - {locus: "se bene ⟨la|lo⟩ consanguinità", passes: "A ⟨la|ln⟩; B ⟨la|lo⟩", witness_1933: "la", disposition: "la, D234"}
+  - {locus: "totalmente, ⟨e|a⟩ perché", passes: "A ⟨e|a⟩; B ⟨e|a⟩", witness_1933: "e", disposition: "e, D234"}
+  - {locus: "che con ⟨ragione|ragiono⟩ si può sperare", passes: "A ⟨ragione|ragiono⟩; B the same", witness_1933: "ragione", disposition: "ragione, D234"}
+  - {locus: "con gli ⟨uomini|nomini⟩ del paese", passes: "A ⟨uomini|nomini⟩; B the same", witness_1933: "uomini", disposition: "uomini, D234"}
+  - {locus: "la perdita o il guadagno", passes: "A o; B o", witness_1933: "ed el", disposition: "o kept, D38; D231 (D203(b) escalation)"}
+  - {locus: "troppo ⟨risoluto|resoluto⟩", passes: "A ⟨risoluto|rosoluto⟩; B ⟨resoluto|rosoluto⟩", witness_1933: "resoluto", disposition: "resoluto: the printed o-shape is a barless e; spelling, not a word split (SCOPE §7)"}
+  - {locus: "stare ⟨ne'|ne⟩ luoghi", passes: "A ⟨ne'|ne⟩; B ⟨ne|ne'⟩", witness_1933: "ne'", disposition: "ne'; an apostrophe, D39 (Class A)"}
+pointing:
+  - {locus: "ed e' Romani; perché", passes: "A ⟨;|,⟩; B ⟨;|:⟩", witness_1933: ";", disposition: "printed"}
+  - {locus: "male riprendere. Se", passes: "A ⟨.|no stop⟩; B ⟨.|no stop⟩", witness_1933: ".", disposition: "printed, faint"}
+  - {locus: "la vittoria. Che se", passes: "A ⟨.|no stop⟩; B ⟨.|no stop⟩", witness_1933: ".", disposition: "printed, faint"}
+  - {locus: "sì presto sbaraglio, il tòrsi", passes: "A ⟨,|.⟩; B ⟨,|.⟩", witness_1933: ",", disposition: "printed"}
+  - {locus: "dello Ellesponto. Bisogna", passes: "A ⟨.|no stop⟩; B ⟨.|no stop⟩", witness_1933: ".", disposition: "printed, faint"}
+  - {locus: "le forze sue; e certo", passes: "A ⟨;|,⟩; B ⟨;|,⟩", witness_1933: ";", disposition: "printed"}
+  - {locus: "tenta proibire. E quando", passes: "A ⟨.|no stop⟩; B ⟨.|no stop⟩", witness_1933: ".", disposition: "printed, faint"}
+  - {locus: "per lungo spazio, e sarebbe", passes: "A ⟨,|.⟩; B ⟨,|.⟩", witness_1933: ";", disposition: "printed comma, D65"}
+  - {locus: "le altre difficultà. Anzi", passes: "A ⟨.|no stop⟩; B ⟨.|no stop⟩", witness_1933: ".", disposition: "printed, faint"}
+  - {locus: "de' Romani!", passes: "A ⟨!|?⟩; B ⟨!|?⟩", witness_1933: "!", disposition: "printed"}
+  - {locus: "il farlo.", passes: "A ⟨.|no stop⟩; B ⟨.|no stop⟩", witness_1933: ".", disposition: "printed, faint; kept at unit end, since both readers see it (D40 forbids supplying one)"}
+not_supplied: []
+normalisation_notes: "Class A: accents (`perchè` → `perché`, `nè` → `né`, `sè` → `sé`; `tôrsi` (B) and `tòrsi` (A) set `tòrsi`, as `tòrre` in FG I.10); elision solid (`d'accordo`, `s'ha`, `l'uno`, `l'altro`, `dall'altro`, `nell'altra`, `s'avessino`, `gl'importa`, `d'onde`, `n'arebbe`); apocope spaced (`su' passi`, `su' monti`, `su' fiumi`, `de' monti`, `de' Romani`, `de' paesani`, `ne' quali`, `ne' luoghi`, `a' tempi`, `a' Romani`, `a' quali`, `a' passi`); the Florentine plural article supplied as `e'` (D35: `e' Romani` twice, `e' partiti`, `e' Franzesi` twice, `e' Svizzeri`, `e' passi`); line-end hyphens removed; spaces before punctuation removed. `circumjacente` keeps Canestrini's j."

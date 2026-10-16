@@ -1,0 +1,26 @@
+source_unit_id: NM-DISC.1.23
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-015
+passes:
+  - {id: A, performed: 2026-10-15, file: sources/coldpass/NM-DISC.1.23-passA.md, note: "subagent; page images only (350 ppi, thirds), separate directory; full chapter"}
+  - {id: B, performed: 2026-10-15, file: sources/coldpass/NM-DISC.1.23-passB.md, note: "subagent; one page only (p. 96, 261 words, 36% of the chapter), chosen by the collator after pass A by D203(c) and recorded before it was given out; separate directory"}
+collation: sources/coldpass/COLLATION-2026-10-16-I23.md
+collation_result: "720 words (pass A). Sample of p. 96: the token streams are identical; no word, clause or sense disagreement, so no full pass B, and the sample rule stands for the next chapter. No pass-A doubt outside the sample whose alternatives are different words (D203(a)); the one other doubt is a speck in the rubric. One word-level difference from the 1554 edition at a letter the scan breaks (D203(b)), `campagna`/`campagne`, kept as printed (D235)."
+boundaries: "printed pp. 95-98; CAPITOLO XXIII on p. 95 after line 13, the last line of XXII; italic rubric of three lines; large initial N; one block; ends p. 98 line 12 `in su i monti.`; CAPITOLO XXIV follows on the same page"
+interventions: []
+readings:
+  - {locus: "sendo i monti come campagna", passes: "A campagna (p. 97, outside the sample)", witness_1554: "campagne", disposition: "campagna kept, D38; D235 (D203(b) escalation)"}
+comparison_collation: >
+  Done 2026-10-15 against the 1554 extract (fol. 38r-39r). A cold reader
+  transcribed the Giglio leaves from the page images
+  (sources/coldpass/NM-DISC.1.23-1554.md); the transcript was collated by
+  word against the established text, and the readings published as variant
+  notes were checked on the leaf images by the collator, except `di tre di
+  loro`, `la detta di sopra` and the two readings at .05, which rest on the
+  transcript. Sense-bearing differences are in
+  sources/comparisons/NM-DISC/NM-DISC.1.23-witness-disagreements.yml.
+normalisation_notes: "Class A only: accents (`perchè` → `perché`, `Perchè` → `Perché`, `Nè` → `Né`, `potè` → `poté`, `Talchè` → `Talché`); elision solid (`L'uno`, `l'uno`, `l'altro`, `nell'ordinare`, `l'aspetta`, `com'io`, `l'aspettarono`, `l'Alpi`, `l'ajuto`, `ch'erano`, `un'altra`, `tutt'i`); apocope spaced (`de' loro`, `su' passi`, `su' monti`, `de' luoghi`, `ne' Popoli`, `ne' luoghi`, `a' forestieri`, `a' paesani`, `de' quali`); line-end hyphens removed; spaces before punctuation removed."

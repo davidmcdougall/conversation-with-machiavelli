@@ -1,0 +1,67 @@
+source_unit_id: NM-DISC.1.23
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-I23-D001
+    locator: NM-DISC.1.23.01
+    class: reading
+    witness_1824: "quando ei commisero la fortuna tutta della Patria loro"
+    witness_1554: "quando è commisso ne la fortuna tutta de la patria loro"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The 1554 verb is garbled (`è commisso`, apparently for `commissono`); the 1824 `ei commisero`, \"they committed\", has Tullus and Mettius as subject."
+  - id: NM-DISC-I23-D002
+    locator: NM-DISC.1.23.01
+    class: reading
+    witness_1824: "di tre de' loro cittadini"
+    witness_1554: "di tre di loro cittadini"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Same sense: three of their citizens. Rests on the transcript."
+  - id: NM-DISC-I23-D003
+    locator: NM-DISC.1.23.03
+    class: reading
+    witness_1824: "E la cagione ne è suta la preallegata"
+    witness_1554: "et la cagione ne è suta la detta di sopra"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The 1824 Latinism `preallegata`, \"the aforesaid\", against the 1554's plain \"the one said above\". Same sense. Rests on the transcript."
+  - id: NM-DISC-I23-D004
+    locator: NM-DISC.1.23.03
+    class: reading
+    witness_1824: "tanto terrore, che senza potere esperimentare la virtù di essi"
+    witness_1554: "tanto errore, che senza potere esperimentare la uirtu di esse"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf: the 1554 prints `errore`, \"error\", where the 1824 has `terrore`, \"terror\", the word the losing of the pass would bring; and `esse`, which takes the `genti`, where the 1824 `essi` takes the peoples and the army together."
+  - id: NM-DISC-I23-D005
+    locator: NM-DISC.1.23.04
+    class: reading
+    witness_1824: "e perché e' non si possono chiudere tutti, sendo i monti come campagna"
+    witness_1554: "& perche e non si possono diuidere tutti, essendo i monti come campagne"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf. The 1554 `diuidere`, \"divide\", where the 1824 has `chiudere`, \"close\": the passes cannot all be closed. `Campagna` against `campagne` was escalated under D203(b) as a word-level difference at a letter the scan breaks: the singular construes (the mountains are like open country) and is kept, D38 (D235)."
+  - id: NM-DISC-I23-D006
+    locator: NM-DISC.1.23.04
+    class: reading
+    witness_1824: "le quali se non sono note a' forestieri, sono note a' paesani"
+    witness_1554: "lequali se non sono a forestieri, sono note a paesani"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf: the 1554 drops the first `note`, which the 1824 repeats."
+  - id: NM-DISC-I23-D007
+    locator: NM-DISC.1.23.05
+    class: reading
+    witness_1824: "Talché loro sbigottiti si ritirarono in Milano, e tutt'i popoli di Lombardia si aderirono alle Genti francesi"
+    witness_1554: "Talche eglino isbigottiti, si ritirarono in Milano, et tutti i popoli di Lombardia si accostarono alle genti Franciose"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The 1554 `si accostarono`, \"drew near to\", where the 1824 has `si aderirono`, \"adhered to\". Rests on the transcript."
+  - id: NM-DISC-I23-D008
+    locator: NM-DISC.1.23.01-05
+    class: systematic_orthographic_profile
+    witness_1824: "the 1824 spelling and pointing: `nimico`, `Mezio`, `esempio`, `ajuto`, `Svizzeri`, `nel 1515.`"
+    witness_1554: "Giglio's: `nemico`, `Metio`, `essempio`, `aiuto`, `Suizeri`, `Nel MCCCCCXV.`, u for v, `&`, `et`, `h-`, heavier pointing and parentheses"
+    established: witness_1824
+    rationale: "The 1824 governs throughout. No other difference that bears on the English."
