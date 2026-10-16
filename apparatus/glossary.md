@@ -415,3 +415,24 @@ last sentence answers Machiavelli's first move.
 | `estraneo` | unrelated | D241. Against `congiunto`, conjoined. |
 | `avere a` (after a gerund; compound tenses) | have to | D237, with D101 and D222. |
 
+
+## Added from the I.24 pair (2026-10-16)
+
+| Italian | English | Note |
+|---|---|---|
+| `meriti` / `demeriti` | merits / demerits | D249. NM I.24 throughout; FG I.24 ×3. |
+| `compensare`; `ricompensa` | compensate; recompense | D249. NM I.24 rubric, .03; FG I.24 ×3. `cancellare` cancel, kept apart. |
+| `premio`, `premiare` | reward | NM I.16, I.24; with `premii` / `pene` (I.3). |
+| `opera` (noun) | work | D253, with D83's `operare`. NM I.24 ×6. |
+| `egregio` | outstanding | D253. NM I.24 ×2. Not "egregious". |
+| `donare` / `dare` | donate / give | D253. NM I.24 `fu donato`, `fu dato`; `dono` gift. |
+| `gastigare` / `castigare` | chastise | NM I.24; the 1554 `castiga`. |
+| `riguardo` / `rispetto` | regard / respect | NM I.24 .02, .04: rule and case. `rispetto` as I.2 ("respect to"). |
+| `publico` / `Pubblico` (noun) | the public | NM I.24 .04, FG I.24. |
+| `omicidio` | homicide | D169; NM I.24, FG I.24 ×2. |
+| `fallo`, `fallare`; `delitto` | fault, fault (verb); crime | D252. |
+| `spettare` (of a charge) | pertain | D251. D175's "look to" stays for a ruler attending to an end. |
+| `assai` (of degree) | very | D254. `assai` of number stays "many". |
+| `indistintamente` | indiscriminately | D255. `sanza distinzione` stays "without distinction" (FG I.16). |
+| `molto tempo` / `lungo tempo` | a long time | D250, recorded collapse. |
+| `poi` | later | D250. `dipoi` stays "afterwards" (D187). |

@@ -139,3 +139,10 @@ the original.
 | `Garigliano` | Garigliano | FG I.23 |
 | `Scipione`, `Antioco`, `Ellesponto` | Scipio, Antiochus, the Hellespont | FG I.23; Scipio Africanus, Antiochus III |
 | `Marignano` | Marignano | FG I.23; 13-14 September 1515 |
+| `Orazio`, `Curiazj` | Horatius, Curiatii | NM I.24, FG I.24; Publius Horatius, the surviving champion of I.22-23 |
+| `Orazio Cocle` | Horatius Cocles | NM I.24; not the Horatius of .01 |
+| `Muzio Scevola` | Mucius Scaevola | NM I.24; Gaius Mucius Scaevola |
+| `Porsena` | Porsena | NM I.24; Lars Porsena of Clusium, as the witness prints it |
+| `Toscani` | Tuscans | NM I.24; Machiavelli's name for the Etruscans, kept and noted, as `Francesi` (I.7) |
+| `Galli` | Gauls | NM I.24, as FG I.1 |
+| `Manlio Capitolino`; `Campidoglio` | Manlius Capitolinus; the Capitol | NM I.24, as NM I.8; the 1554 edition prints `Mallio` |

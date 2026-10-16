@@ -32,3 +32,6 @@ first time it is italicised.
 | `etiam` | FG I.3, FG I.16 note |
 | `latebrae` | NM I.16 note |
 | `verbi gratia` | FG I.23 |
+| `virtus` | NM I.24 note and commentary (Livy 1.26) |
+| `perduellio` | I.24 commentary |
+| `sic` | NM I.24 note |

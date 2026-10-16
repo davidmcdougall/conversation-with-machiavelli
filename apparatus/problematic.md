@@ -550,6 +550,35 @@ fuggire` when advantages concur; the reason is difficulty, which is close to
 Machiavelli's own reasons at .04. No title or standfirst may make him deny
 the rule or prescribe the guarding of passes. The unit ends with a stop.
 
+## Machiavelli, NM-DISC.1.24
+
+**An appearance reversed, a rule, its reason, and the proofs.** Horatius'
+trial looks like popular ingratitude (.01); examined better, the people are
+to be blamed for absolving him, not for wishing to condemn him (.02). The rule
+follows inside the same period (`e la ragione è questa`): no well-ordered
+republic ever cancelled demerits with merits; the same man takes reward and
+penalty each in full. The reason is a consequence (.03): the citizen whom
+merit exempts grows insolent and civility dissolves; the corollary, that even
+a poor republic must reward. Neither the reversal nor the rule floats free
+as a maxim. The rule's `senza avere riguardo alcuno` (.02) is executed in
+Manlius' `senza rispetto alcuno` (.04), and the last period ends on the
+Capitol he had saved: merit and penalty in one place, not set against each
+other. `ancora che grande` keeps its attachment open.
+
+## Guicciardini, FG-CONS.1.24
+
+**He grants the rule and argues the case.** The rule that ill is not to be
+compensated with good is conceded by citing the Discourse (`come dice il
+Discorso, saria pernizioso`); he claims only a departure from it where `tante
+circumstanze` concur, an example for the judge, not for whoever would
+compensate indiscriminately. Two accounts of the absolution are set side by
+side, each hedged (`Si può dire forse`; `la verità pare che sia`), and `se lei
+aveva fallato` stays a condition. He turns Machiavelli's sentence about
+blaming the people under `in tal caso` and by degree (`più reprensibile ...
+che non fu`): the killing stays `delitto`, and no title, standfirst or note
+may make him say that merits cancel faults. `concorrere` comes five times and
+carries the cause. The unit ends with a stop.
+
 ## The pair
 
 Machiavelli argues towards a demonstration. Guicciardini declines to be
