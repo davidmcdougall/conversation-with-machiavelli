@@ -1,0 +1,545 @@
+<title>A Conversation with Machiavelli — A good eye</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root {
+  --paper:      #EDEEEC;
+  --paper-sunk: #E4E6E3;
+  --ink:        #1B1E1C;
+  --ink-muted:  #5C625E;
+  --ink-faint:  #868C87;
+  --rule:       #C9CDC8;
+  --rule-faint: #DCDFDB;
+  --nm:         #3A5A6B;
+  --fg:         #6E5A3C;
+  --serif: "EB Garamond", "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  --sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --mono:  "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:      #161917;
+    --paper-sunk: #1D211E;
+    --ink:        #E3E6E1;
+    --ink-muted:  #A0A6A0;
+    --ink-faint:  #767C77;
+    --rule:       #343934;
+    --rule-faint: #262B27;
+    --nm:         #8FB4C6;
+    --fg:         #C4A97C;
+  }
+}
+:root[data-theme="dark"] {
+  --paper:      #161917;
+  --paper-sunk: #1D211E;
+  --ink:        #E3E6E1;
+  --ink-muted:  #A0A6A0;
+  --ink-faint:  #767C77;
+  --rule:       #343934;
+  --rule-faint: #262B27;
+  --nm:         #8FB4C6;
+  --fg:         #C4A97C;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 1160px; margin: 0 auto; padding-inline: 20px; padding-block: 0 0; }
+
+/* ---- masthead ---- */
+.masthead { padding-block: 56px 32px; border-bottom: 1px solid var(--rule); }
+.eyebrow {
+  font-family: var(--sans); font-size: 11px; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint);
+  margin: 0 0 18px;
+}
+h1 {
+  font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 5vw, 44px);
+  line-height: 1.12; margin: 0 0 14px; text-wrap: balance; letter-spacing: -0.01em;
+}
+h1 .sub { display: block; font-style: italic; color: var(--ink-muted); font-size: .52em; margin-top: 12px; letter-spacing: 0; }
+.standfirst {
+  font-family: var(--sans); font-size: 14.5px; line-height: 1.6;
+  color: var(--ink-muted); max-width: 62ch; margin: 0;
+}
+
+/* ---- the pairing device ---- */
+.pairing {
+  display: flex; align-items: stretch; gap: 0; margin: 30px 0 0;
+  border: 1px solid var(--rule); border-radius: 2px; overflow: hidden;
+  font-family: var(--sans); background: var(--paper-sunk);
+}
+.pairing > div { flex: 1 1 0; padding: 13px 16px; min-width: 0; }
+.pairing .who { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
+.pairing .nm-side .who { color: var(--nm); }
+.pairing .fg-side .who { color: var(--fg); }
+.pairing .what { font-size: 13.5px; color: var(--ink-muted); }
+.pairing .arrow {
+  flex: 0 0 auto; display: flex; align-items: center; justify-content: center;
+  padding-inline: 14px; color: var(--ink-faint); font-size: 15px;
+  border-inline: 1px solid var(--rule);
+}
+
+/* ---- pair-to-pair navigation ---- */
+.pairnav {
+  display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+  margin-top: 18px; font-family: var(--sans); font-size: 12.5px;
+  color: var(--ink-muted);
+}
+.pairnav a { text-decoration: none; color: var(--ink-muted); }
+.pairnav a:hover, .pairnav a:focus { color: var(--ink); text-decoration: underline; }
+
+/* ---- work sections ---- */
+.work { padding-block: 52px 0; }
+.work-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
+.work-head .tag {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .04em;
+  padding: 3px 7px; border-radius: 2px; color: var(--paper);
+}
+.work.nm .tag { background: var(--nm); }
+.work.fg .tag { background: var(--fg); }
+h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; letter-spacing: -0.005em; }
+.rubric {
+  font-style: italic; color: var(--ink-muted); max-width: 70ch;
+  margin: 10px 0 0; font-size: 16.5px; line-height: 1.5;
+}
+.rubric-note {
+  font-family: var(--sans); font-style: normal; font-size: 12px;
+  color: var(--ink-faint); margin-top: 7px;
+}
+.colheads {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  margin-top: 30px; padding-bottom: 7px; border-bottom: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint);
+}
+
+/* ---- the facing pair ---- */
+.pair {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  padding-block: 22px; border-bottom: 1px solid var(--rule-faint);
+  scroll-margin-top: 20px;
+}
+.pair:target { background: var(--paper-sunk); }
+.annot { grid-column: 2 / -1; margin-top: 14px; font-family: var(--sans); font-size: 13.5px;
+  line-height: 1.55; color: var(--ink-muted); }
+.annot summary { cursor: pointer; font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); list-style: none; }
+.annot summary::-webkit-details-marker { display: none; }
+.annot summary::before { content: "+ "; }
+.annot[open] summary::before { content: "− "; }
+.annot p { margin: 8px 0 0; max-width: 72ch; }
+.annot .xref { color: inherit; text-decoration: underline; text-decoration-color: var(--rule);
+  text-underline-offset: 2px; white-space: nowrap; }
+.gutter { padding-top: 4px; }
+.uid {
+  font-family: var(--mono); font-size: 10.5px; color: var(--ink-faint);
+  text-decoration: none; letter-spacing: -0.02em;
+}
+.uid:hover, .uid:focus { color: var(--ink); text-decoration: underline; }
+.col { min-width: 0; }
+.col.it { hyphens: auto; }
+.col.en { }
+.supplied { color: var(--ink-muted); }
+
+/* ---- apparatus ---- */
+.apparatus {
+  margin-top: 34px; padding-top: 22px; border-top: 2px solid var(--rule);
+  font-family: var(--sans); font-size: 13.5px; line-height: 1.58;
+  color: var(--ink-muted);
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 26px 34px;
+}
+.apparatus h3 {
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); margin: 0 0 9px;
+}
+.apparatus p { margin: 0 0 9px; }
+.apparatus p:last-child { margin-bottom: 0; }
+.apparatus .lem { font-family: var(--serif); font-size: 15px; color: var(--ink); font-style: italic; }
+.sig { font-family: var(--mono); font-size: 12px; color: var(--ink); }
+
+/* ---- colophon ---- */
+.colophon {
+  margin-top: 60px; padding-block: 28px 60px; border-top: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 13px; line-height: 1.6; color: var(--ink-muted);
+}
+.colophon .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 34px; }
+.colophon h3 {
+  font-size: 10.5px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--ink-faint); margin: 0 0 8px;
+}
+.colophon p { margin: 0 0 8px; }
+.colophon ul { margin: 0; padding-left: 16px; }
+.colophon li { margin-bottom: 5px; }
+.state {
+  margin-top: 26px; padding: 14px 16px; background: var(--paper-sunk);
+  border-left: 2px solid var(--ink-faint); border-radius: 0 2px 2px 0;
+  font-size: 12.5px;
+}
+.state strong { color: var(--ink); font-weight: 600; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--nm); outline-offset: 2px; }
+
+/* ---- contents / index page ---- */
+.toc { margin-top: 30px; }
+.toc-row {
+  display: grid; grid-template-columns: 40px 1fr 1fr; gap: 0 20px;
+  padding-block: 14px; border-bottom: 1px solid var(--rule-faint);
+  font-family: var(--sans); align-items: baseline;
+}
+.toc-row .n { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
+.toc-row a { text-decoration: none; color: var(--ink); font-family: var(--serif); font-size: 16px; }
+.toc-row a:hover, .toc-row a:focus { text-decoration: underline; }
+.toc-row .unpublished { color: var(--ink-faint); font-style: italic; font-size: 14px; }
+.toc-row .ids { color: var(--ink-faint); font-size: 11.5px; font-family: var(--mono); }
+
+@media (max-width: 760px) {
+  body { font-size: 16.5px; }
+  .colheads { display: none; }
+  .pair { grid-template-columns: 1fr; gap: 0; padding-block: 20px; }
+  .gutter { padding-top: 0; margin-bottom: 8px; }
+  .annot { grid-column: 1; }
+  .col.it { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px dotted var(--rule); }
+  .col.it::before, .col.en::before {
+    display: block; font-family: var(--sans); font-size: 10px; font-weight: 600;
+    letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px;
+  }
+  .col.it::before { content: "Italian"; }
+  .col.en::before { content: "English"; }
+  .pairing { flex-direction: column; }
+  .pairing .arrow { border-inline: 0; border-block: 1px solid var(--rule); padding-block: 6px; }
+  .toc-row { grid-template-columns: 1fr; gap: 4px; }
+}
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow">A Conversation with Machiavelli · Pair 15 of 39</p>
+    <h1>A good eye
+      <span class="sub">Discourses I.23, and Guicciardini&#x27;s reply</span></h1>
+    <p class="standfirst">Machiavelli says that it was never judged a wise course to put in danger all one&#x27;s fortune and not all the forces: Tullus and Mettius staked their cities on three of their citizens; and those who, the enemy coming, guard the passes fall almost always into the same inconvenience, unless all their forces can be held there, since few men can live in alpine places and a lost pass most of the times brings so much terror that one loses all one&#x27;s fortune with part of one&#x27;s forces. The Romans awaited Hannibal in the plain, and in 1515 the Swiss on the mountains were turned by an unknown path. Guicciardini does not believe that from the conclusion, most true though it is, one can reprove the course the Albans and Romans agreed on: what each took from itself it took from the other, and equal courses can ill be reproved; it is credible that they knew themselves equal in forces, and, that equality presupposed, he does not see that the deliberation can be blamed, even between unrelated peoples. Guarding the passes, he believes, needs a good eye: let a captain see whether he can hope to hold the pass, whether making the enemy lose time matters, and whether he confides more in his forces in open country than he fears the enemy&#x27;s. When the enemy passes elsewhere the defender suffers no damage, as with the Swiss, whom neither the lost favour nor fright but other disorders, and disorders among themselves, brought to fight at Marignano with only part of their men; had all fought, perhaps they would not have lost. The Romans were not lords of those Alps, and their example can be turned the other way. Few captains have set out to bar the passes, not because they would not venture part of the forces with all the fortune, which is not to be fled when so many other advantages concur, but because it is difficult to do.</p>
+
+    <div class="pairing">
+      <div class="nm-side">
+        <div class="who">Niccolò Machiavelli</div>
+        <div class="what">Discorsi sopra la prima Deca di Tito Livio · written c. 1513–19, printed 1531</div>
+      </div>
+      <div class="arrow" aria-hidden="true">answered by</div>
+      <div class="fg-side">
+        <div class="who">Francesco Guicciardini</div>
+        <div class="what">Considerazioni intorno ai Discorsi del Machiavelli · written 1529–30, printed 1857</div>
+      </div>
+    </div>
+    <nav class="pairnav"><a href="1.16.html">← Pair 1.16</a><a href="../index.html">All 39 pairs</a><span></span></nav>
+  </header>
+
+  <section class="work nm">
+    <div class="work-head">
+      <span class="tag">NM-DISC.1.23</span>
+      <h2>Capitolo XXIII</h2>
+    </div>
+    <p class="rubric">Che non si debbe mettere a pericolo tutta la fortuna, e non tutte le forze; e per questo spesso il guardare i passi è dannoso.</p>
+    <p class="rubric">That one must not put in danger all the fortune, and not all the forces; and for this often the guarding of the passes is damaging.</p>
+
+    <div class="colheads"><div></div><div>Italian · 1824</div><div>English</div></div>
+      <div class="pair" id="NM-DISC.1.23.01">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.23.01">1.23.01</a></div>
+        <div class="col it" lang="it">Non fu mai giudicato partito savio mettere a pericolo tutta la fortuna tua, e non tutte le forze. Questo si fa in più modi. L&#x27;uno è facendo come Tullo e Mezio, quando ei commisero la fortuna tutta della Patria loro, e la virtù di tanti uomini, quanti avea l&#x27;uno e l&#x27;altro di costoro negli eserciti suoi, alla virtù e fortuna di tre de&#x27; loro cittadini, che veniva ad essere una minima parte delle forze di ciascuno di loro. Né si avvidero, come per questo partito tutta la fatica che avevano durata i loro antecessori nell&#x27;ordinare la Repubblica, per farla vivere lungamente libera, e per fare i suoi cittadini difensori della loro libertà, era quasi che suta vana, stando nella potenza di sì pochi a perderla. La qual cosa da quelli Re non poté esser peggio considerata.</div>
+        <div class="col en" lang="en">It was never judged a wise course to put in danger all your fortune, and not all the forces. This is done in several ways. The one is by doing as Tullus and Mettius, when they committed the whole fortune of their fatherland, and the <i lang="it">virtù</i> of so many men as the one and the other of them had in his armies, to the <i lang="it">virtù</i> and fortune of three of their citizens, which came to be a very small part of the forces of each of them. Nor did they perceive how by this course all the labour that their predecessors had endured in ordering the republic, so as to make it live long free, and so as to make its citizens defenders of their liberty, had been almost vain, it standing in the power of so few to lose it. Which thing could not have been worse considered by those kings.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The rule, then the first case. It was never judged a wise course to put in danger all your fortune and not all the forces: the danger is the mismatch, everything staked on part of what one has. This is done in several ways. The first is the Roman and Alban one: Tullus and Mettius committed the whole fortune of their fatherlands, and the <i lang="it">virtù</i> of their armies, to the <i lang="it">virtù</i> and fortune of three citizens each. The kings did not see that the labour of their predecessors in ordering the republic, to keep it long free and its citizens defenders of their liberty, was made almost vain when so few could lose it. Machiavelli says the thing could not have been worse considered by those kings. He speaks of the kings&#x27; predecessors ordering &quot;the republic&quot; to live long free: Rome under its third king is given the language of a free city, and the ordering is what the combat put at risk.</p>
+<p><span class="lem">History.</span> The combat of the Horatii and the Curiatii, three brothers for Rome and three for Alba, under Tullus Hostilius, Rome&#x27;s third king, and Mettius Fufetius, dictator of Alba (Livy 1.23-25). The Roman Horatius survived and Alba became subject to Rome. Machiavelli&#x27;s previous chapter (I.22) draws other lessons from the same story.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.23.02">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.23.02">1.23.02</a></div>
+        <div class="col it" lang="it">Cadesi ancora in questo inconveniente quasi sempre per coloro, che, venendo il nimico, disegnano di tenere i luoghi difficili, e guardare i passi. Perché quasi sempre questa deliberazione sarà dannosa, se già in quel luogo difficile comodamente tu non potessi tenere tutte le forze tue. In questo caso, tale partito è da prendere; ma sendo il luogo aspro, e non vi potendo tenere tutte le forze tue, il partito è dannoso.</div>
+        <div class="col en" lang="en">This inconvenience is fallen into also almost always by those who, the enemy coming, design to hold the difficult places and to guard the passes. For almost always this deliberation will be damaging, unless in that difficult place you could conveniently hold all your forces. In this case, such a course is to be taken; but the place being rough, and you not being able to hold all your forces there, the course is damaging.</div>
+        <details class="annot"><summary>Commentary · 1</summary>
+          <p><span class="lem">Argument.</span> The second case, and its condition. The same inconvenience is fallen into almost always by those who, when the enemy comes, try to hold the difficult places and guard the passes. Such a deliberation will almost always be damaging, unless all one&#x27;s forces can conveniently be held in that difficult place; then it is to be taken. Where the place is rough and cannot hold them all, it is damaging. The general rule is hedged, &quot;almost always&quot;, and carries its exception; the final condition is stated flat. The rubric says &quot;often&quot;, the body &quot;almost always&quot; twice.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.23.03">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.23.03">1.23.03</a></div>
+        <div class="col it" lang="it">Questo mi fa giudicare così, lo esempio di coloro che essendo assaltati da un nimico potente, ed essendo il paese loro circondato da monti e luoghi alpestri, non hanno mai tentato di combattere il nimico in su&#x27; passi e in su&#x27; monti, ma sono iti ad incontrarlo di là da essi; o quando non hanno voluto far questo, lo hanno aspettato dentro a essi monti, in luoghi benigni e non alpestri. E la cagione ne è suta la preallegata; perché non si potendo condurre alla guardia de&#x27; luoghi alpestri molti uomini, sì per non vi potere vivere lungo tempo, sì per essere i luoghi stretti e capaci di pochi, non è possibile sostenere un nimico, che venga grosso ad urtarti; ed al nimico è facile il venire grosso; perché la intenzione sua è passare, e non fermarsi, ed a chi l&#x27;aspetta è impossibile aspettarlo grosso, avendo ad alloggiarsi per più tempo, non sapendo quando il nimico voglia passare, in luoghi com&#x27;io ho detto stretti e sterili. Perdendo adunque quel passo che tu ti avevi presupposto tenere, e nel quale i tuoi Popoli e lo esercito tuo confidava, entra il più delle volte ne&#x27; Popoli e nel residuo delle genti tue tanto terrore, che senza potere esperimentare la virtù di essi, rimani perdente, e così vieni ad avere perduta tutta la tua fortuna con parte delle tue forze.</div>
+        <div class="col en" lang="en">This makes me judge so, the example of those who, being assailed by a powerful enemy, and their country being surrounded by mountains and alpine places, have never attempted to fight the enemy on the passes and on the mountains, but have gone to meet him beyond them; or, when they have not wished to do this, have awaited him within those mountains, in benign places and not alpine. And the cause of it has been the before-alleged; for, many men not being able to be led to the guard of alpine places, both through not being able to live there a long time and through the places&#x27; being narrow and capable of few, it is not possible to withstand an enemy who comes in force to strike you; and for the enemy the coming in force is easy, for his intention is to pass, and not to stop; and for whoever awaits him it is impossible to await him in force, having to lodge himself for a longer time, not knowing when the enemy may wish to pass, in places, as I have said, narrow and sterile. Losing, then, that pass which you had presupposed holding, and in which your peoples and your army confided, there enters most of the times into the peoples and into the residue of your troops so much terror that, without being able to make trial of their <i lang="it">virtù</i>, you remain the loser, and so you come to have lost all your fortune with part of your forces.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> Why the guarded pass fails. What makes him judge so is the example of those who, assailed by a powerful enemy in mountain country, have never tried to fight on the passes, but have gone beyond them or waited within, on gentle ground. The reason is the one just given: many men cannot be led to guard alpine places, for they cannot live there long and the places are narrow; the enemy, who wants only to pass, comes in force, while the defender, who does not know when the enemy will come, cannot wait in force in narrow and sterile places. When the pass is lost, the peoples and the rest of the troops that trusted in it are struck with such terror, most of the times, that their <i lang="it">virtù</i> is never tried, and the defender loses all his fortune with part of his forces. The chapter&#x27;s opening formula returns as the result.</p>
+<p><span class="lem">Cross-reference.</span> The ring closes: .01&#x27;s &quot;all your fortune, and not all the forces&quot; <a class="xref" href="#NM-DISC.1.23.01">Machiavelli .01</a> returns as &quot;all your fortune with part of your forces&quot;. Here the danger is no longer a choice, as it was for Tullus and Mettius, but what follows from a pass the peoples and the army confided in.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.23.04">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.23.04">1.23.04</a></div>
+        <div class="col it" lang="it">Ciascuno sa con quanta difficultà Annibale passasse le Alpi, che dividono la Lombardia dalla Francia, e con quanta difficultà passasse quelle che dividono la Lombardia dalla Toscana; nondimeno i Romani l&#x27;aspettarono prima in sul Tesino, e dipoi nel piano di Arezzo; e vollono più tosto che il loro esercito fusse consumato dal nimico ne&#x27; luoghi dove poteva vincere, che condurlo su per l&#x27;Alpi ad esser distrutto dalla malignità del sito. E chi leggerà sensatamente tutte le Istorie, troverà pochissimi virtuosi Capitani aver tentato di tenere simili passi, e per le ragioni dette, e perché e&#x27; non si possono chiudere tutti, sendo i monti come campagna, ed avendo non solamente le vie consuete e frequentate, ma molte altre, le quali se non sono note a&#x27; forestieri, sono note a&#x27; paesani, con l&#x27;ajuto de&#x27; quali sempre sarai condotto in qualunque luogo contro alla voglia di chi ti si oppone.</div>
+        <div class="col en" lang="en">Each knows with how much difficulty Hannibal passed the Alps, which divide Lombardy from France, and with how much difficulty he passed those that divide Lombardy from Tuscany; nonetheless the Romans awaited him first on the Ticino, and afterwards in the plain of Arezzo; and they wished rather that their army be consumed by the enemy in the places where it could win, than to lead it up over the Alps to be destroyed by the malignity of the site. And whoever reads all the histories with sense will find very few virtuous captains to have attempted to hold like passes, both for the reasons said and because they cannot all be closed, the mountains being like open country, and having not only the accustomed and frequented paths but many others, which, if they are not known to strangers, are known to the country people, with whose help you will always be led to whatever place against the will of whoever opposes you.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> Two proofs. Hannibal crossed the Alps and then the Apennines with great difficulty; the Romans nonetheless waited for him first on the Ticino and then in the plain of Arezzo, preferring to have their army consumed by the enemy where it could win than to lead it up into the mountains to be destroyed by the site. And whoever reads the histories with judgment will find very few virtuous captains who tried to hold such passes, both for the reasons given and because passes cannot all be closed, the mountains being like open country: they have many paths besides the usual ones, known to the people of the place if not to strangers, and with their help an invader is always led anywhere.</p>
+<p><span class="lem">History.</span> In 218 BC Hannibal crossed the Alps; the Romans met his cavalry on the Ticinus and were beaten. In 217 the consul Gaius Flaminius waited for him at Arretium (Arezzo); Hannibal crossed the Apennines, struggled through the flooded marshes of the Arno, marched past him, and destroyed his army at Lake Trasimene. Machiavelli&#x27;s &quot;the Romans awaited him&quot; is true of both places; that both encounters were Roman defeats he does not say, and his point is only where they chose to fight.</p>
+<p><span class="lem">Cross-reference.</span> &quot;You&quot; changes sides here: the one led through by the country people is the invader, and &quot;whoever opposes you&quot; is the defender of .02 and .03 <a class="xref" href="#NM-DISC.1.23.02">Machiavelli .02</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.23.05">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.23.05">1.23.05</a></div>
+        <div class="col it" lang="it">Di che se ne può addurre uno freschissimo esempio nel 1515. Quando Francesco Re di Francia disegnava passare in Italia per la ricuperazione dello Stato di Lombardia, il maggiore fondamento che facevano coloro ch&#x27;erano alla sua impresa contrarj, era che gli Svizzeri lo terrebbono ai passi in su i monti. E come per esperienza poi si vide, quel loro fondamento restò vano; perché lasciato quel Re da parte due o tre luoghi guardati da loro, se ne venne per un&#x27;altra via incognita, e fu prima in Italia, e loro appresso, che lo avessero presentito. Talché loro sbigottiti si ritirarono in Milano, e tutt&#x27;i popoli di Lombardia si aderirono alle Genti francesi, sendo mancati di quella opinione avevano, che i Francesi dovessero essere tenuti in su i monti.</div>
+        <div class="col en" lang="en">Of which one can adduce a very fresh example in 1515. When Francis, king of France, designed to pass into Italy for the recovery of the state of Lombardy, the greatest foundation that those who were contrary to his enterprise made was that the Swiss would hold him at the passes on the mountains. And, as was afterwards seen by experience, that foundation of theirs remained vain; for that king, having left aside two or three places guarded by them, came by another, unknown path, and was in Italy, and near them, before they had foreseen it. So that they, frightened, withdrew into Milan, and all the peoples of Lombardy adhered to the French troops, having failed of that opinion they had, that the French were to be held on the mountains.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> A very fresh example. In 1515, when Francis I came to recover Lombardy, his opponents founded their hopes on the Swiss holding the passes. The king left aside the two or three places they guarded and came by another, unknown path, and was in Italy before they had foreseen it; the Swiss, frightened, withdrew into Milan, and all Lombardy went over to the French, having lost the opinion that the mountains would stop them.</p>
+<p><span class="lem">History.</span> In August 1515 the Swiss, fighting for Duke Massimiliano Sforza and the league that supported him, held Susa and the main Alpine roads. On the advice of Gian Giacomo Trivulzio the French army crossed by the Col de l&#x27;Argentière (Larche) and came down the Stura valley, hauling its artillery over a route thought impassable; a French force under La Palice surprised and captured Prospero Colonna, commanding the league&#x27;s cavalry, at Villafranca. The Swiss fell back towards Milan, and part of them came to terms with the French; the rest fought and were beaten at Marignano on 13-14 September. Machiavelli stops before the battle, with the withdrawal into Milan and the defection of the Lombard peoples.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini disputes the account of the crossing, which he says costs the defender nothing, and carries the story on to Marignano.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from the 1824 edition (<span class="sig">WIT-NM-DISC-1824-IA</span>), page-image-backed, which governs. Collated against the 1554 Giglio printing, Venice (<span class="sig">WIT-NM-DISC-1554-IA</span>), which is comparison evidence only.</p>
+<p>Paragraph divisions are editorial. The witness prints the chapter as one unbroken block.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem">quando ei commisero la fortuna tutta della Patria loro</span> — 1824. The 1554 witness reads <i lang="it">quando è commisso ne la fortuna tutta de la patria loro</i>. The 1554 verb is garbled (<i lang="it">è commisso</i>, apparently for <i lang="it">commissono</i>); the 1824 <i lang="it">ei commisero</i>, &quot;they committed&quot;, has Tullus and Mettius as subject.</p>
+<p><span class="lem">di tre de&#x27; loro cittadini</span> — 1824. The 1554 witness reads <i lang="it">di tre di loro cittadini</i>. Same sense: three of their citizens. Rests on the transcript.</p>
+<p><span class="lem">E la cagione ne è suta la preallegata</span> — 1824. The 1554 witness reads <i lang="it">et la cagione ne è suta la detta di sopra</i>. The 1824 Latinism <i lang="it">preallegata</i>, &quot;the aforesaid&quot;, against the 1554&#x27;s plain &quot;the one said above&quot;. Same sense. Rests on the transcript.</p>
+<p><span class="lem">tanto terrore, che senza potere esperimentare la virtù di essi</span> — 1824. The 1554 witness reads <i lang="it">tanto errore, che senza potere esperimentare la uirtu di esse</i>. Checked on the leaf: the 1554 prints <i lang="it">errore</i>, &quot;error&quot;, where the 1824 has <i lang="it">terrore</i>, &quot;terror&quot;, the word the losing of the pass would bring; and <i lang="it">esse</i>, which takes the <i lang="it">genti</i>, where the 1824 <i lang="it">essi</i> takes the peoples and the army together.</p>
+<p><span class="lem">e perché e&#x27; non si possono chiudere tutti, sendo i monti come campagna</span> — 1824. The 1554 witness reads <i lang="it">&amp; perche e non si possono diuidere tutti, essendo i monti come campagne</i>. Checked on the leaf. The 1554 <i lang="it">diuidere</i>, &quot;divide&quot;, where the 1824 has <i lang="it">chiudere</i>, &quot;close&quot;: the passes cannot all be closed. <i lang="it">Campagna</i> against <i lang="it">campagne</i> was escalated under D203(b) as a word-level difference at a letter the scan breaks: the singular construes (the mountains are like open country) and is kept, D38 (D235).</p>
+<p><span class="lem">le quali se non sono note a&#x27; forestieri, sono note a&#x27; paesani</span> — 1824. The 1554 witness reads <i lang="it">lequali se non sono a forestieri, sono note a paesani</i>. Checked on the leaf: the 1554 drops the first <i lang="it">note</i>, which the 1824 repeats.</p>
+<p><span class="lem">Talché loro sbigottiti si ritirarono in Milano, e tutt&#x27;i popoli di Lombardia si aderirono alle Genti francesi</span> — 1824. The 1554 witness reads <i lang="it">Talche eglino isbigottiti, si ritirarono in Milano, et tutti i popoli di Lombardia si accostarono alle genti Franciose</i>. The 1554 <i lang="it">si accostarono</i>, &quot;drew near to&quot;, where the 1824 has <i lang="it">si aderirono</i>, &quot;adhered to&quot;. Rests on the transcript.</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem"><i lang="it">partito savio</i>.</span> &quot;A wise course&quot;: <i lang="it">partito</i> is the chapter&#x27;s word, and Guicciardini&#x27;s: &quot;this course&quot; (.01), &quot;such a course is to be taken ... the course is damaging&quot; (.02). One English word across both units (D236).</p>
+<p><span class="lem"><i lang="it">come Tullo e Mezio</i>.</span> &quot;As Tullus and Mettius did&quot;: Tullus Hostilius, king of Rome, and Mettius Fufetius, dictator of Alba, who staked the contest between the two cities on three brothers a side, the Horatii and the Curiatii (Livy 1.23-25). Machiavelli calls both &quot;kings&quot; at the end of the paragraph (<i lang="it">quelli Re</i>). Chapter I.22 is on the same combat.</p>
+<p><span class="lem"><i lang="it">quando ei commisero</i>.</span> &quot;When they committed&quot;: <i lang="it">ei</i>, they. The 1554 edition&#x27;s verb is garbled (NM-DISC-I23-D001).</p>
+<p><span class="lem"><i lang="it">la virtù di tanti uomini, quanti</i>.</span> &quot;The <i lang="it">virtù</i> of so many men as&quot;: <i lang="it">virtù</i> left in Italian (D16), three times in the chapter (.01 twice, .03). The armies&#x27; <i lang="it">virtù</i> is set beside the three champions&#x27; &quot;<i lang="it">virtù</i> and fortune&quot;.</p>
+<p><span class="lem"><i lang="it">era quasi che suta vana</i>.</span> &quot;Had been almost vain&quot;: <i lang="it">quasi</i> of degree, as <i lang="it">quasi sempre</i>, &quot;almost always&quot; (.02); <i lang="it">suta</i> is <i lang="it">stata</i>.</p>
+<p><span class="lem"><i lang="it">Cadesi ancora in questo inconveniente</i>.</span> &quot;This inconvenience is fallen into also&quot;: the impersonal <i lang="it">si</i> with an agent (<i lang="it">per coloro</i>), so a passive; <i lang="it">inconveniente</i> in the older sense, a drawback that follows (D133).</p>
+<p><span class="lem"><i lang="it">se già ... tu non potessi</i>.</span> &quot;Unless ... you could&quot;: <i lang="it">se già ... non</i>, the exception.</p>
+<p><span class="lem"><i lang="it">lo esempio di coloro</i>.</span> &quot;The example of those&quot;: the subject is postponed after <i lang="it">Questo</i>, as an apposition; the English keeps the comma.</p>
+<p><span class="lem"><i lang="it">luoghi alpestri</i>.</span> &quot;Alpine places&quot;: mountainous and rough, in lower case, set against <i lang="it">luoghi benigni</i>, &quot;benign places&quot;, gentle ground. The word keeps the Alps (.04) in view.</p>
+<p><span class="lem"><i lang="it">la preallegata</i>.</span> &quot;The before-alleged&quot;: a chancery word. The English keeps the root of <i lang="it">allegare</i>, &quot;allege&quot;, which Guicciardini uses of this chapter&#x27;s Roman example (<i lang="it">allegato nel Discorso</i>). The 1554 edition has the plain <i lang="it">la detta di sopra</i> (NM-DISC-I23-D003).</p>
+<p><span class="lem"><i lang="it">non è possibile sostenere un nimico</i>.</span> &quot;It is not possible to withstand an enemy&quot;: <i lang="it">sostenere</i> of resisting an attack. The glossary&#x27;s &quot;detain&quot; is the custodial sense (FG I.10).</p>
+<p><span class="lem"><i lang="it">venga grosso ad urtarti</i>.</span> &quot;Comes in force to strike you&quot;: <i lang="it">grosso</i>, in strength; <i lang="it">il venire grosso</i>, &quot;the coming in force&quot;; <i lang="it">aspettarlo grosso</i>, &quot;await him in force&quot;. A scoped exception to D207, which keeps <i lang="it">grosso</i> of men &quot;gross&quot; (D238). Guicciardini answers with <i lang="it">gente grosse</i> and <i lang="it">possa esservi urtato</i>.</p>
+<p><span class="lem"><i lang="it">avendo ad alloggiarsi per più tempo</i>.</span> &quot;Having to lodge himself for a longer time&quot;: <i lang="it">avere a</i> after a gerund takes &quot;have to&quot;, as after &quot;so as&quot; (D222, D237).</p>
+<p><span class="lem"><i lang="it">che tu ti avevi presupposto tenere</i>.</span> &quot;Which you had presupposed holding&quot;: <i lang="it">presupporre</i> as the glossary.</p>
+<p><span class="lem"><i lang="it">tanto terrore</i>.</span> &quot;So much terror&quot;: the subject is held to the end of its clause, after the two places it enters (D18). The 1554 edition prints <i lang="it">errore</i>, &quot;error&quot; (NM-DISC-I23-D004).</p>
+<p><span class="lem"><i lang="it">la virtù di essi</i>.</span> &quot;Their <i lang="it">virtù</i>&quot;: <i lang="it">essi</i> takes the peoples and the residue of the troops; the 1554 <i lang="it">esse</i> takes the troops alone (NM-DISC-I23-D004).</p>
+<p><span class="lem"><i lang="it">rimani perdente</i>.</span> &quot;You remain the loser&quot;: the second person runs from .02 to the end of .03 as the defender of the pass. It returns at .04 on the other side: there &quot;you&quot; is the one crossing, led by the country people, and the defender is &quot;whoever opposes you&quot; (<i lang="it">sarai condotto</i>, <i lang="it">ti si oppone</i>).</p>
+<p><span class="lem"><i lang="it">passasse le Alpi, che dividono la Lombardia dalla Francia</i>.</span> &quot;Passed the Alps, which divide Lombardy from France&quot;: the comma makes the first relative non-restrictive; the second, <i lang="it">quelle che dividono la Lombardia dalla Toscana</i>, is restrictive, for Machiavelli calls the Apennines Alps too.</p>
+<p><span class="lem"><i lang="it">passasse le Alpi</i>.</span> Hannibal crossed the Alps in 218 BC and the Apennines, between Lombardy and Tuscany, the next spring.</p>
+<p><span class="lem"><i lang="it">in sul Tesino, e dipoi nel piano di Arezzo</i>.</span> &quot;On the Ticino, and afterwards in the plain of Arezzo&quot;: the Romans met Hannibal on the Ticino (the Roman Ticinus) in 218 BC; in 217 the consul Flaminius waited for him at Arezzo, and was destroyed at Lake Trasimene. <i lang="it">dipoi</i> as D187.</p>
+<p><span class="lem"><i lang="it">chi leggerà sensatamente</i>.</span> &quot;Whoever reads ... with sense&quot;: with judgment. &quot;Sensibly&quot; has drifted towards prudence.</p>
+<p><span class="lem"><i lang="it">virtuosi Capitani</i>.</span> &quot;Virtuous captains&quot;: the adjective of <i lang="it">virtù</i> (glossary), not moral praise.</p>
+<p><span class="lem"><i lang="it">perché e&#x27; non si possono chiudere tutti</i>.</span> &quot;Because they cannot all be closed&quot;: <i lang="it">e&#x27;</i>, they (the passes), as <i lang="it">ei</i> at .01. The 1554 edition reads <i lang="it">diuidere</i>, &quot;divide&quot; (NM-DISC-I23-D005).</p>
+<p><span class="lem"><i lang="it">sendo i monti come campagna</i>.</span> &quot;The mountains being like open country&quot;: <i lang="it">campagna</i> as NM I.16 <i lang="it">in una campagna</i>, &quot;in open country&quot;. The 1554 plural <i lang="it">campagne</i> was put to David under D203(b); the singular construes and stands (D235; NM-DISC-I23-D005).</p>
+<p><span class="lem"><i lang="it">a&#x27; paesani</i>.</span> &quot;To the country people&quot;: those of the place. Kept apart from <i lang="it">forestieri</i>, &quot;strangers&quot; (D57), and from Guicciardini&#x27;s <i lang="it">uomini del paese</i>, &quot;men of the country&quot; (D238).</p>
+<p><span class="lem"><i lang="it">contro alla voglia di chi ti si oppone</i>.</span> &quot;Against the will of whoever opposes you&quot;: in this idiom <i lang="it">voglia</i> is &quot;will&quot;, not D117&#x27;s &quot;longing&quot;, which would read as yearning. A recorded collapse with <i lang="it">volontà</i> (D240).</p>
+<p><span class="lem"><i lang="it">uno freschissimo esempio nel 1515</i>.</span> &quot;A very fresh example in 1515&quot;: Francis I crossed the Alps in August 1515 by a little-used pass, turning the Swiss who held Susa and the main roads, and beat them at Marignano on 13-14 September. Guicciardini&#x27;s reply takes up the battle Machiavelli leaves out.</p>
+<p><span class="lem"><i lang="it">il maggiore fondamento che facevano</i>.</span> &quot;The greatest foundation that ... made&quot;: what they founded their hopes on. <i lang="it">Fondamento</i> returns: &quot;that foundation of theirs remained vain&quot;.</p>
+<p><span class="lem"><i lang="it">e fu prima in Italia, e loro appresso, che lo avessero presentito</i>.</span> &quot;And was in Italy, and near them, before they had foreseen it&quot;: <i lang="it">prima ... che</i>, before; <i lang="it">presentire</i>, to perceive beforehand. <i lang="it">loro appresso</i> is read as <i lang="it">appresso a loro</i>, near them; &quot;and they after [him]&quot; is possible, since <i lang="it">loro</i> is a subject in the next sentence, but fits <i lang="it">prima ... che</i> less well.</p>
+<p><span class="lem"><i lang="it">si aderirono alle Genti francesi</i>.</span> &quot;Adhered to the French troops&quot;: <i lang="it">genti</i>, troops, as <i lang="it">il residuo delle genti tue</i> (.03). The 1554 edition reads <i lang="it">si accostarono</i> (NM-DISC-I23-D007).</p>
+<p><span class="lem"><i lang="it">sendo mancati di quella opinione avevano</i>.</span> &quot;Having failed of that opinion they had&quot;: <i lang="it">mancare</i>, fail (D206); <i lang="it">opinione</i> as D02. The relative <i lang="it">che</i> is left out in the Italian, and the English leaves it out too.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work fg">
+    <div class="work-head">
+      <span class="tag">FG-CONS.1.23</span>
+      <h2>Considerazione sul capitolo XXIII</h2>
+    </div>
+    <p class="rubric">Che non si debbe mettere a pericolo tutta la fortuna e non tutte le forze; e per questo, spesso il guardare i passi è dannoso</p>
+    <p class="rubric">That one must not put in danger all the fortune and not all the forces; and for this, often the guarding of the passes is damaging
+      <span class="rubric-note">Canestrini&#x27;s setting of the chapter title, without a stop and with a comma after <i lang="it">per questo</i>: Machiavelli&#x27;s rubric in lower case. It is heading apparatus, not Guicciardini&#x27;s (D32).</span></p>
+
+    <div class="colheads"><div></div><div>Italian · 1857</div><div>English</div></div>
+      <div class="pair" id="FG-CONS.1.23.01">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.23.01">1.23.01</a></div>
+        <div class="col it" lang="it">Io non credo che dalla conclusione che fa il Discorso, ancora che sia verissima, si possa riprendere il partito che d&#x27;accordo feciono gli Albani ed e&#x27; Romani; perché, se bene ognuno di loro aventurò tutta la fortuna e non tutte le forze, s&#x27;ha a considerare che quello che ciascuno diminuì a sé, tolse ancora al compagno, in modo che la perdita o il guadagno furono pari; e quando e&#x27; partiti sono equali si possono male riprendere. Se e&#x27; Romani, verbi gratia, con parte delle forze loro avessino combattuto contro a tutte le forze degli Albani, sarebbe stato imprudenza; ma avendone diminuite altrettante agli Albani, restorono così combattendo con parte delle forze loro contro a equale parte delle forze degli inimici, come se con tutte avessino combattuto contro a tutte. E hassi a considerare che se bene la consanguinità, che si reputava tra l&#x27;uno populo e l&#x27;altro, gli condusse a disputare lo imperio con modo sì mansueto per non si distruggere totalmente, e perché l&#x27;uno non aspettava mala compagnia dall&#x27;altro, pure è credibile che la ragione principale fussi il cognoscersi pari di forze in modo che fussi difficile fare giudicio a chi facendo guerra ordinaria fussi per inclinare la vittoria. Che se uno di loro avessi cognosciuto avere vantaggio, pare verisimile che non fussi stato né sì buono, né sì imprudente che avessi accettato quello partito, e presupposta questa equalità, io non veggo che questa deliberazione non solo tra populi congiunti, ma etiam tra populi estranei si possa biasimare, di volere che sanza tante uccisioni e destruzione che fanno le guerre fare pruova di chi ha a essere il dominio. E se bene pare troppo resoluto il mettersi a sì presto sbaraglio, il tòrsi la facultà di potersi rifare, di potere contendere la fortuna, ci è il contrapeso che tutte le medesime condizioni sono nell&#x27;altra parte, in modo che se ti fa più facile la perdita, ti fa anche più facile la vittoria.</div>
+        <div class="col en" lang="en">I do not believe that, from the conclusion which the Discourse makes, even though it be most true, one can reprove the course that the Albans and the Romans took by agreement; for, although each of them ventured all the fortune and not all the forces, one is to consider that what each diminished to itself, it took also from its companion, in such a way that the loss or the gain were equal; and when the courses are equal they can ill be reproved. If the Romans, <i lang="la">verbi gratia</i>, with part of their forces had fought against all the forces of the Albans, it would have been imprudence; but having diminished as many of them to the Albans, they remained so, fighting with part of their forces against an equal part of the forces of the enemies, as if with all they had fought against all. And one is to consider that, although the consanguinity, which was reckoned between the one people and the other, led them to dispute the rule in a way so mild, so as not to destroy themselves totally, and because the one did not expect ill company from the other, yet it is credible that the principal reason was their knowing themselves equal in forces, in such a way that it was difficult to make judgment towards whom, making ordinary war, the victory was about to incline. For if one of them had known itself to have the advantage, it seems likely that it would not have been either so good or so imprudent as to have accepted that course, and, this equality presupposed, I do not see that this deliberation, not only between conjoined peoples but <i lang="la">etiam</i> between unrelated peoples, can be blamed, to wish, without so many killings and destruction as wars make, to make proof of whose the dominion is to be. And although it seems too resolute to put oneself at so sudden a hazard, to take from oneself the capacity of being able to recover oneself, of being able to contest fortune, there is the counterweight that all the same conditions are in the other party, in such a way that if it makes the loss easier for you, it makes the victory also easier for you.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The conclusion granted, its first case denied. Guicciardini does not believe that from the conclusion, even though most true, one can reprove the course the Albans and Romans took by agreement. Each ventured, in Machiavelli&#x27;s words, all its fortune and not all its forces, but what each took from itself it took from its companion, so the loss or the gain was equal; and equal courses can ill be reproved. Had the Romans fought with part against all the Albans&#x27; forces it would have been imprudence; fighting part against an equal part, they stood as if all had fought against all. Then the motive, in graded steps: he grants that the kinship of the two peoples led them to so mild a contest, and that neither expected ill treatment from the other; yet it is &quot;credible&quot; that the principal reason was their knowing themselves equal in forces, so that it was hard to judge which side ordinary war would favour, and it &quot;seems likely&quot; that a side which knew itself stronger would not have been so good, nor so imprudent, as to accept. On that presupposition he does not see that the deliberation can be blamed, even between unrelated peoples: to settle whose the dominion shall be without the killing and destruction of war. And if it seems too resolute to stake all at a stroke and give up the chance of recovering, the counterweight is that the other party is in the same condition, so that if it makes the loss easier, it makes the victory easier too.</p>
+<p><span class="lem">Cross-reference.</span> Machiavelli blamed the two kings for leaving the republic in the power of so few <a class="xref" href="#NM-DISC.1.23.01">Machiavelli .01</a>. Guicciardini moves the agency to the two peoples and adds that they agreed, which turns a rash staking of the republic into a bargain on equal terms, and, if the two were equal in strength as he thinks credible, a blameless one. He does not deny the rule; he does not believe this case can be reproved under it.</p>
+        </details>
+      </div>
+      <div class="pair" id="FG-CONS.1.23.02">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.23.02">1.23.02</a></div>
+        <div class="col it" lang="it">Quanto al non si opporre allo inimico in su&#x27; passi delle Alpi, credo sia cosa che abbia bisogno di buona considerazione e di buono occhio, perché il sito può essere tale, che con ragione si può sperare tenere il passo, o almanco perderlo con poco danno suo e con molto danno degli inimici; può anche essere lo inimico condizionato in modo che il tòrgli tempo importi assai, e lo opporsi al passo de&#x27; monti faccia questo effetto, che almanco lo constringa a dimorarvi molti giorni, come si legge di Flaminio Quinto in Macedonia, e di altri capitani. E in ciascuno di questi casi credo sia laudabile chi tenti questa difesa, la quale si legge uomini grandi avere fatto in su&#x27; monti e in su&#x27; fiumi, ne&#x27; quali è quasi la medesima ragione, e a&#x27; tempi nostri Consalvo Fernando per mettersi in sul passo del Garigliano roppe e&#x27; Franzesi, e in Livio, Scipione ripres<span class="supplied">[e]</span> Antioco che non avessi fatto pruova di proibire a&#x27; Romani il transito dello Ellesponto. Bisogna che il capitano sia perito, e consideri bene il sito e le qualità degli inimici e le forze sue; e certo gli è facile a considerare se il luogo è di qualità che possa esservi urtato, e se è capace di gente grosse a offesa e difesa, perché le medesime difficultà e del non potere molti stare ne&#x27; luoghi stretti, e del mancamento del vivere, possono militare a chi tenta passare come a chi tenta proibire. E quando pure passi per altri luoghi, come feciono e&#x27; Franzesi nel 1515, è sanza danno di chi difende, perché non viene a incontrarsi in loro, né gli toglie le occasioni di fare nel piano le medesime difese che arebbe potuto fare prima, come feciono e&#x27; Svizzeri; a&#x27; quali non questo disfavore, che può poco appresso a uomini militari; non lo sbigottimento, che non muove chi non ha collocato tutta la speranza sua in su&#x27; monti, ma altri disordini, e disordini tra loro feciono che non tutti ma parte feciono la giornata col re a Marignano, nella quale s&#x27;avessino combattuto tutti, forse non erano perdenti.</div>
+        <div class="col en" lang="en">As to not opposing oneself to the enemy on the passes of the Alps, I believe it is a thing that has need of good consideration and of a good eye, because the site can be such that with reason one can hope to hold the pass, or at least to lose it with little damage of one&#x27;s own and with much damage of the enemies; the enemy can also be so conditioned that taking time from him imports much, and opposing oneself at the pass of the mountains has this effect, that at least it constrains him to tarry there many days, as one reads of Flaminius Quintus in Macedonia, and of other captains. And in each of these cases I believe he is laudable who attempts this defence, which one reads great men to have made on mountains and on rivers, in which there is almost the same reason, and in our times Consalvo Fernando, through putting himself at the pass of the Garigliano, broke the French, and in Livy, Scipio reproved Antiochus that he had not made proof of prohibiting the Romans the transit of the Hellespont. It is needful that the captain be expert, and consider well the site and the qualities of the enemies and his own forces; and certainly it is easy for him to consider whether the place is of a quality that he can be struck there, and whether it is capable of troops in force for offence and defence, because the same difficulties, both of many not being able to stay in narrow places and of the failing of victual, can militate <span class="supplied">[against]</span> whoever attempts to pass as <span class="supplied">[against]</span> whoever attempts to prohibit. And when he yet passes by other places, as the French did in 1515, it is without damage to whoever defends, because he does not come to run into them, nor does he take from him the occasions of making in the plain the same defences that he could have made before, as the Swiss did; to whom not this disfavour, which can <span class="supplied">[do]</span> little with military men; not the fright, which does not move one who has not placed all his hope on the mountains, but other disorders, and disorders among themselves, made it that not all but part gave battle with the king at Marignano, in which, if all had fought, perhaps they would not have been losers.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> The passes: a judgment of cases. Not opposing the enemy on the passes of the Alps, he believes, needs good consideration and a good eye. The site may be such that the pass can reasonably be held, or lost at small cost to oneself and great cost to the enemy; the enemy may be so placed that delay matters much, and opposition at the pass may at least hold him many days, as with Flamininus in Macedonia. In each of these cases, he believes, the defence is laudable, and one reads that great men have made it on mountains and on rivers, where the reason is almost the same: Gonzalo at the Garigliano broke the French, and in Livy Scipio reproved Antiochus for not trying to bar the Hellespont. The captain must be expert and judge the site, the enemy and his own forces; and certainly, he says, it is easy for him to judge whether the place can be struck and whether it holds troops in force, since the difficulties of numbers and supply in narrow places can weigh on the one who tries to pass as on the one who bars him. And if the enemy does pass elsewhere, as the French did in 1515, the defender suffers no damage: he does not meet them, and loses nothing of the defences he could have made in the plain, as the Swiss made them. What undid the Swiss was neither the loss of the peoples&#x27; favour, which counts for little with soldiers, nor fright, which does not move a man who has not placed all his hope in the mountains, but other disorders, and disorders among themselves, which brought only part of them to fight at Marignano; had all fought, perhaps they would not have lost.</p>
+<p><span class="lem">History.</span> In 198 BC Titus Quinctius Flamininus faced Philip V of Macedon, entrenched in the gorge of the Aous in Epirus, for some forty days before a shepherd&#x27;s path let him turn the position (Livy 32.9-12). The pass was lost as Machiavelli says passes are lost, by a path known to the people of the place; Guicciardini claims for it only the delay. In the winter of 1503 Gonzalo Fernández de Córdoba held the line of the Garigliano against the French and on 29 December crossed it and routed them, after the waiting had worn the French down with rain, sickness and want; a case of delay, and of difficulties that weigh on the one who would pass, more than of a crossing barred. The victory secured the kingdom of Naples for Spain. At Marignano, on 13-14 September 1515, the Swiss who fought were the part of their army that had refused the terms some of their captains had made with the French at Gallarate, which is most likely what his &quot;disorders among themselves&quot; refers to; the &quot;other disorders&quot; he leaves unnamed.</p>
+<p><span class="lem">Cross-reference.</span> Machiavelli&#x27;s Swiss were &quot;frightened&quot; and the peoples went over to the French <a class="xref" href="#NM-DISC.1.23.05">Machiavelli .05</a>: Guicciardini names exactly those two effects and denies that they decided the outcome at Marignano. Machiavelli&#x27;s defender, once the pass is lost, &quot;remains the loser&quot; <a class="xref" href="#NM-DISC.1.23.03">Machiavelli .03</a>; Guicciardini&#x27;s Swiss lose a battle they might, under his <i lang="it">forse</i>, have won. Machiavelli&#x27;s &quot;very few virtuous captains&quot; who tried to hold passes <a class="xref" href="#NM-DISC.1.23.04">Machiavelli .04</a> are met by the great men who, one reads, made this defence on mountains and rivers; at .04 Guicciardini still grants that few captains tried. His first case, a site where the pass can reasonably be held, is close to Machiavelli&#x27;s own exception <a class="xref" href="#NM-DISC.1.23.02">Machiavelli .02</a>; the dispute lies in the others: delay, a pass lost cheaply, and what a turned pass costs.</p>
+        </details>
+      </div>
+      <div class="pair" id="FG-CONS.1.23.03">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.23.03">1.23.03</a></div>
+        <div class="col it" lang="it">Vegga adunque uno capitano, se ha modo da sperare di potere tenere il passo allo inimico, perché è sicurissimo <span class="supplied">[partito]</span> con parte delle sue forze potere impedire tutte le forze contrarie. Vegga se almanco gl&#x27;importa il fargli perdere tempo, e sperando o l&#x27;uno o l&#x27;altro come facilmente può accadere, e credo che in ogni parte si truovino esempli, sarà laudato a opporsi a&#x27; passi de&#x27; monti. Consideri ancora se alla campagna confidi più nelle forze sue che tema in quelle delli inimici, e secondo questa considerazione si risolva, né tenga conto dello esemplo de&#x27; Romani allegato nel Discorso; perché oltre alle altre ragioni che gli arebbono forse potuto fare risolvere a non tentare questa difesa, ci concorse anche la impossibilità, perché non erano signori di quelle Alpi d&#x27;onde passò Annibale, né del piano anche circumjacente per lungo spazio, e sarebbe stato partito imprudentissimo conducere lo esercito in luogo che avessino avuto a combattere con gli uomini del paese e con gli inimici, e dove mancassi loro da vivere e avanzassino tutte le altre difficultà. Anzi questo esemplo si può ritorcere in contrario, perché avendo Annibale nel transito delle Alpi ricevuto tanto danno per le molestie de&#x27; paesani, quanto più n&#x27;arebbe verisimilmente ricevuto, se vi avessi anche trovato la resistenza de&#x27; Romani!</div>
+        <div class="col en" lang="en">Let a captain see, then, whether he has a way to hope to be able to hold the pass against the enemy, because it is a most secure course with part of his forces to be able to impede all the contrary forces. Let him see whether at least it imports him to make him lose time; and hoping either the one or the other, as can readily happen, and I believe that in every part examples are found, he will be praised for opposing himself at the passes of the mountains. Let him consider also whether in open country he confides more in his own forces than he fears in those of the enemies, and according to this consideration let him resolve, nor let him take account of the example of the Romans alleged in the Discourse; for, besides the other reasons that perhaps could have made them resolve not to attempt this defence, there concurred also the impossibility, because they were not lords of those Alps whence Hannibal passed, nor of the circumjacent plain either for a long space, and it would have been a most imprudent course to lead the army into a place where they would have had to fight with the men of the country and with the enemies, and where <span class="supplied">[the means]</span> to live would fail them and all the other difficulties would abound. On the contrary, this example can be turned back the other way, because, Hannibal having received so much damage in the transit of the Alps through the molestations of the country people, how much more would he likely have received of it if he had also found there the resistance of the Romans!</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> Three tests for the captain, and the Roman example turned. Let him see whether he can hope to hold the pass, since to impede all the enemy&#x27;s forces with part of one&#x27;s own is a most secure course (an emended reading, D233); let him see whether at least making the enemy lose time matters; and, hoping either, as can readily happen, and he believes examples are found everywhere, he will be praised for opposing at the passes. Let him consider whether he confides more in his forces in open country than he fears the enemy&#x27;s, and resolve accordingly, taking no account of the Romans&#x27; example: besides other reasons that might perhaps have decided them, it was also impossible for them, since they were not lords of the Alps by which Hannibal came, nor of the plain around them, and it would have been most imprudent to lead an army where it would have to fight the inhabitants as well as the enemy, without supplies. On the contrary, the example can be turned: if Hannibal suffered so much in the Alps from the harassment of the mountain peoples, how much more would he likely have suffered had he met the Romans there too.</p>
+<p><span class="lem">History.</span> In 218 BC the mountain peoples harried Hannibal&#x27;s column in the passes (Livy 21.32-35). Cisalpine Gaul, on both banks of the Po, was Gallic country, where Rome had only just planted the colonies of Placentia and Cremona; the Boii and Insubres rose against them that year (Livy 21.25).</p>
+<p><span class="lem">Cross-reference.</span> The test of confidence answers Machiavelli&#x27;s peoples and army who &quot;confided&quot; in the pass <a class="xref" href="#NM-DISC.1.23.03">Machiavelli .03</a>. The most secure course, to impede all the enemy&#x27;s forces with part of one&#x27;s own, already inverts Machiavelli&#x27;s part-and-all formula, before .04 does it openly. His Roman example <a class="xref" href="#NM-DISC.1.23.04">Machiavelli .04</a> is first made irrelevant (the Romans had no choice) and then evidence for the other side.</p>
+        </details>
+      </div>
+      <div class="pair" id="FG-CONS.1.23.04">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.23.04">1.23.04</a></div>
+        <div class="col it" lang="it">Non è la ragione che pochi capitani si siano messi a proibire e&#x27; passi de&#x27; monti, perché non abbino voluto aventurare parte delle forze con tutta la fortuna, il che non è da fuggire quando concorrono tanti altri vantaggi che sono per supplire alle forze che mancano; ma perché è difficile il farlo.</div>
+        <div class="col en" lang="en">It is not the reason that few captains have put themselves to prohibit the passes of the mountains, because they have not wished to venture part of the forces with all the fortune, which is not to be fled when so many other advantages concur as are for supplying the forces that fail; but because it is difficult to do it.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The fact kept, the cause refused. Few captains have set out to bar the passes, as Machiavelli says, though his &quot;very few virtuous&quot; captains become &quot;few&quot;; but not because they would not venture part of the forces with all the fortune, which, Guicciardini says, is not to be fled when so many other advantages concur as make good the forces that are lacking. The reason is that it is difficult to do.</p>
+<p><span class="lem">Cross-reference.</span> The words reverse Machiavelli&#x27;s: &quot;all your fortune with part of your forces&quot; <a class="xref" href="#NM-DISC.1.23.03">Machiavelli .03</a> becomes &quot;part of the forces with all the fortune&quot;, and the course his .01 says was never judged wise becomes, under conditions, something not to be fled. The cause he refuses is one Machiavelli&#x27;s .04 does not quite give: Machiavelli&#x27;s own reasons there, supply and paths that cannot all be closed, are reasons of difficulty, so the reply ends nearer the chapter it answers than its opening suggests.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from Canestrini 1857, <i>Opere inedite</i> vol. 1, pp. 1–65 (<span class="sig">WIT-FG-CONS-1857-CANESTRINI</span>) — the <i>editio princeps</i>, which governs. Collated against Palmarocchi 1933 (<span class="sig">WIT-FG-CONS-1933-PALMAROCCHI</span>): page images and the Wikisource transcription consulted as collation evidence, not reproduced (LICENSE §5).</p>
+<p><span class="lem">furono pari, e quando</span> → <span class="lem">furono pari; e quando</span> (FG-CONS.1.23.01). Pass A ⟨,|;⟩, pass B ⟨;|,⟩; the 1933 edition prints a semicolon. D110.</p>
+<p><span class="lem">si possa biasimare. di volere</span> → <span class="lem">si possa biasimare, di volere</span> (FG-CONS.1.23.01). Pass A ⟨.|,⟩, pass B ⟨,|.⟩; lower case follows; the 1933 edition prints a comma. D110.</p>
+<p><span class="lem">di chi difende; perché</span> → <span class="lem">di chi difende, perché</span> (FG-CONS.1.23.02). Pass A ⟨;|,⟩, pass B ⟨,|;⟩; the 1933 edition prints a comma. D110.</p>
+<p><span class="lem">come feciono e&#x27; Svizzeri: a&#x27; quali</span> → <span class="lem">come feciono e&#x27; Svizzeri; a&#x27; quali</span> (FG-CONS.1.23.02). Both readers see a damaged mark, A ⟨;|.⟩, B ⟨:|;|.⟩; lower case follows. The 1933 comma is lighter than either reading, so the lighter reading both allow stands. D110.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem">e in Livio, Scipione ripres[e] Antioco</span>. The 1857 witness reads <i lang="it">e in Livio, Scipione ripreso Antioco</i>. The 1933 witness reads <i lang="it">ed in Livio, Scipione riprese Antioco</i>. Both cold readers read <i lang="it">ripreso</i> without doubt. As printed the clause has no finite verb (&quot;Scipio reproved&quot; becomes &quot;Scipio having been reproved&quot;) and barely construes. The scan prints e o-shaped throughout. Emended under D68 from the 1933 edition, as D200 and D214 (D232).</p>
+<p><span class="lem">perché è sicurissimo [partito] con parte delle sue forze potere impedire</span>. The 1857 witness reads <i lang="it">perché è sicurissimo parato con parte delle sue forze potere impedire</i>. The 1933 witness reads <i lang="it">perché è sicurissimo partito con parte delle tue forze potere impedire</i>. Both cold readers read <i lang="it">parato</i>, &quot;prepared&quot;, without doubt. With a bare infinitive it barely construes; <i lang="it">sicurissimo partito</i>, &quot;a most secure course&quot;, is the 1933 reading, and <i lang="it">partito</i> is the chapter&#x27;s word in both authors (Machiavelli .01, .02; Guicciardini .01, .03). Emended under D68, as D126 and D214; every letter is bracketed (D233).</p>
+<p><span class="lem">la perdita o il guadagno furono pari</span> — 1857. The 1933 witness reads <i lang="it">la perdita ed el guadagno furono pari</i>. Both cold readers read <i lang="it">o</i> without doubt, at a letter the scan breaks; escalated under D203(b). Canestrini&#x27;s <i lang="it">o</i> construes: the loss or the gain, whichever came, was equal for the two sides. The 1933 <i lang="it">ed</i> makes the loss and the gain equal to each other. Kept as printed, D38 (D231).</p>
+<p><span class="lem">restorono così combattendo con parte delle forze loro</span> — 1857. The 1933 witness reads <i lang="it">restorono così potenti combattendo con parte delle forze loro</i>. Both readers read Canestrini without <i lang="it">potenti</i>. In the 1933 edition the Romans remained as powerful fighting with part of their forces; in Canestrini they remained so fighting, <i lang="it">così ... come se</i>, as if they had fought with all against all.</p>
+<p><span class="lem">come si legge di Flaminio Quinto in Macedonia</span> — 1857. The 1933 witness reads <i lang="it">come si legge di Tito Quinzio in Macedonia</i>. One man either way: Titus Quinctius Flamininus, who in 198 BC forced Philip V&#x27;s position on the Aous gorge in Epirus after holding before it some forty days (Livy 32.5-12). Canestrini&#x27;s Guicciardini names him by cognomen and a garbled nomen; the 1933 edition by praenomen and nomen.</p>
+<p><span class="lem">o almanco perderlo con poco danno suo</span> — 1857. The 1933 witness reads <i lang="it">o almanco perderlo con poco danno tuo</i>. Canestrini&#x27;s <i lang="it">suo</i> is the defender&#x27;s own loss; the 1933 <i lang="it">tuo</i> addresses the captain in the second person, as Machiavelli&#x27;s chapter does throughout.</p>
+<p><span class="lem">possono militare a chi tenta passare</span> — 1857. The 1933 witness reads <i lang="it">può militare a chi tenta passare</i>. Canestrini&#x27;s plural takes the two difficulties together as subject; the 1933 singular takes them as one.</p>
+<p><span class="lem">nella quale s&#x27;avessino combattuto tutti</span> — 1857. The 1933 witness reads <i lang="it">nella quale s&#x27;avessino combattuti tutti</i>. Agreement of the participle only; same sense.</p>
+<p><span class="lem">con parte delle sue forze</span> — 1857. The 1933 witness reads <i lang="it">con parte delle tue forze</i>. As at .02, Canestrini keeps the captain in the third person, the 1933 edition turns to the second.</p>
+<p><span class="lem">s&#x27;ha a considerare</span>. The 1857 witness reads <i lang="it">[si/s&#x27;] ha a considerare (a damaged mark)</i>. The 1933 witness reads <i lang="it">s&#x27;ha a considerare</i>. The readers split on the mark before <i lang="it">ha</i>: one read <i lang="it">si</i>, the other <i lang="it">s&#x27;</i>. Same word, <i lang="it">si</i>; read with the 1933 edition, the elided form, as D72 (D234).</p>
+<p><span class="lem">se bene la consanguinità</span>. The 1857 witness reads <i lang="it">se bene l[a/o] consanguinità (a damaged letter)</i>. The 1933 witness reads <i lang="it">se bene la consanguinità</i>. Both readers doubted the vowel of the article; <i lang="it">lo</i> does not agree with <i lang="it">consanguinità</i>, and the 1933 edition reads <i lang="it">la</i> (D234).</p>
+<p><span class="lem">totalmente, e perché l&#x27;uno</span>. The 1857 witness reads <i lang="it">totalmente, [e/a] perché l&#x27;uno (a damaged letter)</i>. The 1933 witness reads <i lang="it">totalmente e perché l&#x27;uno</i>. Both readers doubted whether the letter is e or a; it prints a-shaped, as barless e does throughout the scan. <i lang="it">a perché</i> does not construe, and the 1933 edition reads <i lang="it">e</i> (D234).</p>
+<p><span class="lem">che con ragione si può sperare</span>. The 1857 witness reads <i lang="it">che con ragion[e/o] si può sperare (a damaged letter)</i>. The 1933 witness reads <i lang="it">che con ragione si può sperare</i>. Both readers doubted the final letter; <i lang="it">con ragiono</i> does not construe, and the 1933 edition reads <i lang="it">ragione</i> (D234).</p>
+<p><span class="lem">con gli uomini del paese</span>. The 1857 witness reads <i lang="it">con gli [u/n]omini del paese (a damaged letter)</i>. The 1933 witness reads <i lang="it">con gli uomini del paese</i>. Both readers doubted the first letter, the scan breaking u into n; the 1933 edition reads <i lang="it">uomini</i> (D234).</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem"><i lang="it">Io non credo che dalla conclusione che fa il Discorso, ancora che sia verissima</i>.</span> &quot;I do not believe that, from the conclusion which the Discourse makes, even though it be most true&quot;: the opening grants the conclusion and denies only that it reproves the Albans and Romans. <i lang="it">Io non credo</i> is Guicciardini&#x27;s assent turned negative; <i lang="it">ancora che</i>, &quot;even though&quot;, as the glossary. <i lang="it">Discorso</i> is Machiavelli&#x27;s chapter, capitalised by Canestrini, as at .03 (<i lang="it">allegato nel Discorso</i>).</p>
+<p><span class="lem"><i lang="it">il partito che d&#x27;accordo feciono gli Albani ed e&#x27; Romani</i>.</span> &quot;The course that the Albans and the Romans took by agreement&quot;: <i lang="it">partito</i>, course, Machiavelli&#x27;s word (D236). Guicciardini moves the agency from the two kings Machiavelli blames to the two peoples, and adds that the course was agreed.</p>
+<p><span class="lem"><i lang="it">s&#x27;ha a considerare</i>.</span> &quot;One is to consider&quot;: D61. The readers split on the mark before <i lang="it">ha</i> (<i lang="it">si</i>/<i lang="it">s&#x27;</i>), the same word; read <i lang="it">s&#x27;ha</i> with the 1933 edition (D234; FG-CONS-I23-D010).</p>
+<p><span class="lem"><i lang="it">la perdita o il guadagno furono pari</i>.</span> &quot;The loss or the gain were equal&quot;: the loss or the gain, whichever came, was the same for both sides. The plural verb is the Italian&#x27;s. Both readers read <i lang="it">o</i> without doubt; the 1933 edition reads <i lang="it">ed el guadagno</i>, &quot;the loss and the gain&quot;. The reading was put to David under D203(b), and Canestrini&#x27;s <i lang="it">o</i> stands because it construes (D231; FG-CONS-I23-D003).</p>
+<p><span class="lem"><i lang="it">quando e&#x27; partiti sono equali</i>.</span> &quot;When the courses are equal&quot;: when the terms each side accepts are the same. <i lang="it">Partito</i> keeps one English word with Machiavelli&#x27;s &quot;course&quot; (D236).</p>
+<p><span class="lem"><i lang="it">si possono male riprendere</i>.</span> &quot;They can ill be reproved&quot;: <i lang="it">male</i>, ill, as the glossary; <i lang="it">riprendere</i>, reprove (D173).</p>
+<p><span class="lem"><i lang="la">verbi gratia</i>.</span> Latin, &quot;for example&quot;, kept in italic.</p>
+<p><span class="lem"><i lang="it">sarebbe stato imprudenza</i>.</span> &quot;It would have been imprudence&quot;: the noun without an article, as the Italian.</p>
+<p><span class="lem"><i lang="it">avendone diminuite altrettante agli Albani</i>.</span> &quot;Having diminished as many of them to the Albans&quot;: the dative answers <i lang="it">quello che ciascuno diminuì a sé</i>, &quot;what each diminished to itself&quot;. The 1933 edition reads <i lang="it">così potenti combattendo</i>, &quot;remained as powerful fighting&quot;; Canestrini has no <i lang="it">potenti</i>, and <i lang="it">così ... come se</i> carries the comparison (FG-CONS-I23-D004).</p>
+<p><span class="lem"><i lang="it">se bene la consanguinità</i>.</span> &quot;Although the consanguinity&quot;: the Romans and Albans were held kin, Rome having been founded from Alba. Both readers doubted the article (<i lang="it">la</i>/<i lang="it">lo</i>); read <i lang="it">la</i> with the 1933 edition (D234; FG-CONS-I23-D011).</p>
+<p><span class="lem"><i lang="it">disputare lo imperio</i>.</span> &quot;To dispute the rule&quot;: sovereignty between the two cities, as FG I.1 <i lang="it">imperio di Alba</i> (D124).</p>
+<p><span class="lem"><i lang="it">e perché l&#x27;uno non aspettava mala compagnia dall&#x27;altro</i>.</span> &quot;And because the one did not expect ill company from the other&quot;: the conqueror would not ill-treat the conquered. <i lang="it">mala</i> &quot;ill&quot;, as D165&#x27;s <i lang="it">mala opinione</i>. Both readers doubted the first letter (<i lang="it">e</i>/<i lang="it">a</i>); read <i lang="it">e</i> with the 1933 edition (D234; FG-CONS-I23-D012).</p>
+<p><span class="lem"><i lang="it">pure è credibile</i>.</span> &quot;Yet it is credible&quot;: <i lang="it">pure</i> concessive, after <i lang="it">se bene</i> (D191). Guicciardini grants the kinship and the mildness, then puts a likelier cause beside them, and still calls it only credible.</p>
+<p><span class="lem"><i lang="it">fussi per inclinare la vittoria</i>.</span> &quot;The victory was about to incline&quot;: <i lang="it">essere per</i>, prospective (D45).</p>
+<p><span class="lem"><i lang="it">pare verisimile</i>.</span> &quot;It seems likely&quot;: with <i lang="it">è credibile</i> and <i lang="it">io non veggo</i>, three different degrees of assent in two periods; and <i lang="it">io non veggo</i> holds only under its condition, <i lang="it">presupposta questa equalità</i>, &quot;this equality presupposed&quot;. <i lang="it">questa deliberazione</i> answers Machiavelli&#x27;s <i lang="it">questa deliberazione</i> (.02), there the guarding of the passes.</p>
+<p><span class="lem"><i lang="it">tra populi estranei</i>.</span> &quot;Between unrelated peoples&quot;: set against <i lang="it">congiunti</i>, &quot;conjoined&quot;, of kin. &quot;Foreign&quot; is the adjective <i lang="it">forestiere</i>&#x27;s (glossary, I.7) and would lose the pair (D241).</p>
+<p><span class="lem"><i lang="la">etiam</i>.</span> Latin, &quot;even&quot;, in italic, as FG I.3 and I.16.</p>
+<p><span class="lem"><i lang="it">di volere che sanza tante uccisioni</i>.</span> &quot;To wish, without so many killings&quot;: the infinitive explains <i lang="it">questa deliberazione</i>; <i lang="it">volere</i>, wish (D117).</p>
+<p><span class="lem"><i lang="it">troppo resoluto</i>.</span> &quot;Too resolute&quot;. The readers split on the vowel (<i lang="it">risoluto</i>/<i lang="it">resoluto</i>); the printed letter is a barless e, and the 1933 edition reads <i lang="it">resoluto</i>. A spelling, not a word.</p>
+<p><span class="lem"><i lang="it">il mettersi a sì presto sbaraglio</i>.</span> &quot;To put oneself at so sudden a hazard&quot;: <i lang="it">sbaraglio</i>, the risk of everything at a stroke.</p>
+<p><span class="lem"><i lang="it">il tòrsi la facultà di potersi rifare</i>.</span> &quot;To take from oneself the capacity of being able to recover oneself&quot;: <i lang="it">facultà</i>, capacity (glossary); <i lang="it">rifarsi</i>, to make good one&#x27;s losses.</p>
+<p><span class="lem"><i lang="it">contendere la fortuna</i>.</span> &quot;To contest fortune&quot;: transitive, as the Italian.</p>
+<p><span class="lem"><i lang="it">il contrapeso</i>.</span> &quot;The counterweight&quot;: the same conditions in the other party mean that whatever makes the loss easier makes the victory easier too. <i lang="it">nell&#x27;altra parte</i>, &quot;in the other party&quot;, the opposing side; &quot;on the other side&quot; is D24&#x27;s <i lang="it">al rincontro</i>.</p>
+<p><span class="lem"><i lang="it">Quanto al non si opporre allo inimico in su&#x27; passi delle Alpi</i>.</span> &quot;As to not opposing oneself to the enemy on the passes of the Alps&quot;: the second paragraph turns to Machiavelli&#x27;s second way. Guicciardini takes the Alps from Machiavelli&#x27;s Hannibal and Francis.</p>
+<p><span class="lem"><i lang="it">di buono occhio</i>.</span> &quot;Of a good eye&quot;: the captain&#x27;s sight of the ground.</p>
+<p><span class="lem"><i lang="it">con poco danno suo</i>.</span> &quot;With little damage of one&#x27;s own&quot;: the defender&#x27;s. The 1933 edition reads <i lang="it">tuo</i>, &quot;your&quot;, in Machiavelli&#x27;s second person (FG-CONS-I23-D006).</p>
+<p><span class="lem"><i lang="it">lo inimico condizionato in modo che</i>.</span> &quot;The enemy ... so conditioned that&quot;: circumstanced, placed in such a condition; not the modern sense of trained.</p>
+<p><span class="lem"><i lang="it">il tòrgli tempo importi assai</i>.</span> &quot;Taking time from him imports much&quot;: <i lang="it">importare</i>, matter; the English cognate in its older sense.</p>
+<p><span class="lem"><i lang="it">come si legge di Flaminio Quinto in Macedonia</i>.</span> &quot;As one reads of Flaminius Quintus in Macedonia&quot;: Titus Quinctius Flamininus, who in 198 BC was held some forty days before Philip V&#x27;s position in the gorge of the Aous (Livy 32.9-12). Canestrini&#x27;s name is garbled and is kept as printed; the 1933 edition has <i lang="it">Tito Quinzio</i> (FG-CONS-I23-D005). Not the Gaius Flaminius of Machiavelli&#x27;s Arezzo.</p>
+<p><span class="lem"><i lang="it">chi tenti questa difesa</i>.</span> &quot;He ... who attempts this defence&quot;: <i lang="it">tentare</i>, attempt, as Machiavelli&#x27;s <i lang="it">tentato</i> (.03, .04).</p>
+<p><span class="lem"><i lang="it">Consalvo Fernando</i>.</span> Gonzalo Fernández de Córdoba, the Great Captain, who held the line of the Garigliano against the French in the winter of 1503 and broke them there on 29 December. Kept as Guicciardini names him.</p>
+<p><span class="lem"><i lang="it">Scipione ripres[e] Antioco</i>.</span> &quot;Scipio reproved Antiochus&quot;: both readers read <i lang="it">ripreso</i>, which leaves the clause without a finite verb; the 1933 edition reads <i lang="it">riprese</i>. Emended under D68 (D232; FG-CONS-I23-D001). The English follows the emended text. In Livy (37.36) Scipio Africanus tells Antiochus&#x27; envoy that the king might have had terms had he held Lysimachia or opposed the crossing of the Hellespont, which he let the Romans make unopposed.</p>
+<p><span class="lem"><i lang="it">il transito</i>.</span> &quot;The transit&quot;: as at .03 (<i lang="it">nel transito delle Alpi</i>).</p>
+<p><span class="lem"><i lang="it">proibire</i>.</span> &quot;Prohibit&quot;: to bar, used three times (.02 twice, .04), of the crossing and of the passes.</p>
+<p><span class="lem"><i lang="it">possa esservi urtato</i>.</span> &quot;He can be struck there&quot;: Machiavelli&#x27;s <i lang="it">ad urtarti</i>, &quot;to strike you&quot; (.03). <i lang="it">gente grosse</i>, &quot;troops in force&quot;, answers his <i lang="it">venga grosso</i> (D238).</p>
+<p><span class="lem"><i lang="it">del mancamento del vivere</i>.</span> &quot;Of the failing of victual&quot;: <i lang="it">il vivere</i>, provisions; <i lang="it">mancamento</i>, the noun of <i lang="it">mancare</i> (D206). At .03 <i lang="it">mancassi loro da vivere</i>, &quot;[the means] to live would fail them&quot;.</p>
+<p><span class="lem"><i lang="it">possono militare a chi tenta passare</i>.</span> &quot;Can militate [against] whoever attempts to pass&quot;: the difficulties weigh on attacker and defender alike. D23&#x27;s &quot;has no force&quot; holds for the negative <i lang="it">milita</i> of FG I.12; here the English cognate, in the one phrase where it survives, says this, and the direction the Italian <i lang="it">a</i> leaves open is supplied in brackets (D239). The 1933 edition has the singular <i lang="it">può</i> (FG-CONS-I23-D007).</p>
+<p><span class="lem"><i lang="it">E quando pure passi per altri luoghi</i>.</span> &quot;And when he yet passes by other places&quot;: <i lang="it">pure</i> concessive (D191): granted that the enemy does turn the pass.</p>
+<p><span class="lem"><i lang="it">come feciono e&#x27; Franzesi nel 1515</i>.</span> &quot;As the French did in 1515&quot;: Machiavelli&#x27;s example (.05). Canestrini&#x27;s note here, on the crossing, is his and is not carried.</p>
+<p><span class="lem"><i lang="it">come feciono e&#x27; Svizzeri</i>.</span> &quot;As the Swiss did&quot;: they withdrew and fought in the plain, as the defenders could.</p>
+<p><span class="lem"><i lang="it">non lo sbigottimento</i>.</span> &quot;Not the fright&quot;: the noun of Machiavelli&#x27;s <i lang="it">sbigottiti</i>, &quot;frightened&quot; (.05).</p>
+<p><span class="lem"><i lang="it">a&#x27; quali non questo disfavore</i>.</span> &quot;To whom not this disfavour&quot;: the loss of the peoples&#x27; favour that Machiavelli reports (<i lang="it">si aderirono alle Genti francesi</i>). The period stacks two negatives against <i lang="it">ma altri disordini</i> before the verb <i lang="it">feciono</i>; the English keeps the order.</p>
+<p><span class="lem"><i lang="it">che può poco appresso a uomini militari</i>.</span> &quot;Which can [do] little with military men&quot;: <i lang="it">potere</i> absolute, as D223.</p>
+<p><span class="lem"><i lang="it">la giornata col re a Marignano</i>.</span> &quot;Battle with the king at Marignano&quot;: 13-14 September 1515. <i lang="it">fare la giornata</i>, give battle (D49). Machiavelli&#x27;s chapter ends before the battle; Guicciardini&#x27;s reply makes it the case.</p>
+<p><span class="lem"><i lang="it">forse non erano perdenti</i>.</span> &quot;Perhaps they would not have been losers&quot;: the imperfect of a contrary-to-fact condition (D47), with his <i lang="it">forse</i>. Machiavelli&#x27;s defender &quot;remains the loser&quot; (<i lang="it">rimani perdente</i>, .03).</p>
+<p><span class="lem"><i lang="it">perché è sicurissimo [partito]</i>.</span> &quot;Because it is a most secure course&quot;: both readers read <i lang="it">parato</i>, &quot;prepared&quot;, which barely construes with the bare infinitive <i lang="it">potere impedire</i>; the 1933 edition reads <i lang="it">partito</i>. Emended under D68; the whole word is bracketed in the Italian (D233; FG-CONS-I23-D002). The English follows the emended text. <i lang="it">con parte delle sue forze</i>: the 1933 edition has <i lang="it">tue</i> (FG-CONS-I23-D009).</p>
+<p><span class="lem"><i lang="it">come facilmente può accadere</i>.</span> &quot;As can readily happen&quot;: <i lang="it">facilmente</i>, readily (D27).</p>
+<p><span class="lem"><i lang="it">sarà laudato a opporsi</i>.</span> &quot;He will be praised for opposing himself&quot;: <i lang="it">laudare</i>, praise (glossary).</p>
+<p><span class="lem"><i lang="it">se ha modo da sperare</i>.</span> &quot;Whether he has a way to hope&quot;: <i lang="it">modo</i>, way (glossary), as <i lang="it">con modo sì mansueto</i> (.01).</p>
+<p><span class="lem"><i lang="it">se alla campagna confidi più nelle forze sue</i>.</span> &quot;Whether in open country he confides more in his own forces&quot;: Machiavelli&#x27;s peoples and army &quot;confided&quot; in the pass (<i lang="it">confidava</i>, .03); Guicciardini&#x27;s captain is to weigh what he confides in when the pass is gone.</p>
+<p><span class="lem"><i lang="it">alla campagna</i>.</span> &quot;In open country&quot;: as Machiavelli&#x27;s <i lang="it">come campagna</i> (.04).</p>
+<p><span class="lem"><i lang="it">allegato nel Discorso</i>.</span> &quot;Alleged in the Discourse&quot;: <i lang="it">allegare</i>, cite, as Machiavelli&#x27;s <i lang="it">preallegata</i> (.03).</p>
+<p><span class="lem"><i lang="it">ci concorse anche la impossibilità</i>.</span> &quot;There concurred also the impossibility&quot;: <i lang="it">concorrere</i> (D01, D63), in its sense of running together; again at .04 (<i lang="it">quando concorrono tanti altri vantaggi</i>).</p>
+<p><span class="lem"><i lang="it">circumjacente</i>.</span> &quot;Circumjacent&quot;: lying round about. The cognate exists, and Canestrini&#x27;s j is kept in the Italian.</p>
+<p><span class="lem"><i lang="it">avessino avuto a combattere</i>.</span> &quot;They would have had to fight&quot;: <i lang="it">avere a</i> in a compound tense takes &quot;have to&quot; (D237).</p>
+<p><span class="lem"><i lang="it">gli uomini del paese</i>.</span> &quot;The men of the country&quot;: the inhabitants. <i lang="it">paesani</i>, &quot;the country people&quot; (.03; Machiavelli .04), kept apart (D238).</p>
+<p><span class="lem"><i lang="it">avanzassino tutte le altre difficultà</i>.</span> &quot;All the other difficulties would abound&quot;: <i lang="it">avanzare</i>, to be over and above.</p>
+<p><span class="lem"><i lang="it">Anzi questo esemplo si può ritorcere in contrario</i>.</span> &quot;On the contrary, this example can be turned back the other way&quot;: <i lang="it">anzi</i> reversing (D135). Machiavelli&#x27;s Roman example becomes evidence for the defence of the pass.</p>
+<p><span class="lem"><i lang="it">per le molestie de&#x27; paesani</i>.</span> &quot;Through the molestations of the country people&quot;: the mountain tribes who harried Hannibal&#x27;s march.</p>
+<p><span class="lem"><i lang="it">quanto più n&#x27;arebbe verisimilmente ricevuto</i>.</span> &quot;How much more would he likely have received of it&quot;: <i lang="it">verisimilmente</i>, likely, as <i lang="it">verisimile</i> (.01). Canestrini prints the exclamation mark, and so does the English.</p>
+<p><span class="lem"><i lang="it">Non è la ragione che pochi capitani si siano messi a proibire e&#x27; passi de&#x27; monti, perché</i>.</span> &quot;It is not the reason that few captains have put themselves to prohibit the passes of the mountains, because&quot;: the Italian puts the denial first and the true reason last, <i lang="it">ma perché è difficile il farlo</i>; the English keeps the order, so that the reply ends on its own reason.</p>
+<p><span class="lem"><i lang="it">il che non è da fuggire</i>.</span> &quot;Which is not to be fled&quot;: to venture part of the forces with all the fortune. The words reverse the close of Machiavelli&#x27;s .03, <i lang="it">tutta la tua fortuna con parte delle tue forze</i>, &quot;all your fortune with part of your forces&quot;, and Guicciardini will not have it shunned where other advantages concur. <i lang="it">fuggire</i>, flee (D192).</p>
+<p><span class="lem"><i lang="it">che sono per supplire alle forze che mancano</i>.</span> &quot;As are for supplying the forces that fail&quot;: <i lang="it">essere per</i> of fitness (D116); <i lang="it">supplire</i> in its older sense, to make good a want; <i lang="it">mancare</i>, fail (D206). Machiavelli&#x27;s &quot;very few virtuous captains&quot; (<i lang="it">pochissimi virtuosi Capitani</i>, .04) become Guicciardini&#x27;s &quot;few captains&quot;.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="colophon">
+    <div class="row">
+      <div>
+        <h3>What this is</h3>
+        <p>A free, openly licensed, bilingual edition of Guicciardini's 39 <i>Considerazioni</i> and the
+          <i>Discorsi</i> chapters they answer — 78 text units, Italian and English facing, every reading
+          traceable to a named public-domain witness.</p>
+        <p>It is a reading edition with a transparent apparatus, not a text of record. It does not adjudicate
+          the critical text against Bausi 2001 or the manuscript tradition, and does not claim to.</p>
+      </div>
+      <div>
+        <h3>On the title</h3>
+        <p>Machiavelli had been dead two years when Guicciardini wrote; the <i>Discorsi</i> were unpublished,
+          and the <i>Considerazioni</i> stayed unprinted until 1857. Machiavelli never answers.</p>
+        <p>“Conversation” is a quotation, not a description. It invokes Machiavelli's letter to Vettori of
+          10 December 1513, where he changes into court dress at evening, enters the antique courts of ancient
+          men, and reports that <i>they, in their humanity, answer me</i>. Guicciardini does to Machiavelli
+          what Machiavelli did to Livy — and is denied the reply Machiavelli claimed.</p>
+      </div>
+      <div>
+        <h3>Method</h3>
+        <p>No image-derived reading enters the text on a single reading. Each unit is transcribed twice,
+          independently, by readers who have not seen each other's work; disagreements are adjudicated against
+          the page images and recorded.</p>
+        <p>Existing English translations of the <i>Considerazioni</i> — Grayson (1965), Atkinson &amp; Sices
+          (2002) — are never used as translation inputs.</p>
+      </div>
+      <div>
+        <h3>Licence</h3>
+        <p>The established Italian text and the apparatus data are dedicated to the public domain under
+          <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>. They are Machiavelli's and
+          Guicciardini's sentences, and this edition adds no condition to them.</p>
+        <p>The English translation, the notes and the editorial apparatus are licensed
+          <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: reuse them anywhere, including
+          commercially, with attribution to David McDougall and this edition. The build tooling is MIT.</p>
+        <p>The witness scans are other people's digitisations, included as evidence under their own terms; no
+          grant is made over them, and no page image of Palmarocchi 1933 is reproduced here. Full terms,
+          layer by layer, are in the <span class="sig">LICENSE</span> file in the repository.</p>
+      </div>
+    </div>
+
+    <div class="state">
+      <p><strong>Version 0.3 · 15 of 39 pairs published.</strong>
+        This edition is versioned, not frozen. No open questions on this pair.</p>
+    </div>
+  </footer>
+
+</div>
