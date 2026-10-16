@@ -1,0 +1,463 @@
+<title>A Conversation with Machiavelli — Where so many circumstances concur</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root {
+  --paper:      #EDEEEC;
+  --paper-sunk: #E4E6E3;
+  --ink:        #1B1E1C;
+  --ink-muted:  #5C625E;
+  --ink-faint:  #868C87;
+  --rule:       #C9CDC8;
+  --rule-faint: #DCDFDB;
+  --nm:         #3A5A6B;
+  --fg:         #6E5A3C;
+  --serif: "EB Garamond", "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  --sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --mono:  "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:      #161917;
+    --paper-sunk: #1D211E;
+    --ink:        #E3E6E1;
+    --ink-muted:  #A0A6A0;
+    --ink-faint:  #767C77;
+    --rule:       #343934;
+    --rule-faint: #262B27;
+    --nm:         #8FB4C6;
+    --fg:         #C4A97C;
+  }
+}
+:root[data-theme="dark"] {
+  --paper:      #161917;
+  --paper-sunk: #1D211E;
+  --ink:        #E3E6E1;
+  --ink-muted:  #A0A6A0;
+  --ink-faint:  #767C77;
+  --rule:       #343934;
+  --rule-faint: #262B27;
+  --nm:         #8FB4C6;
+  --fg:         #C4A97C;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 1160px; margin: 0 auto; padding-inline: 20px; padding-block: 0 0; }
+
+/* ---- masthead ---- */
+.masthead { padding-block: 56px 32px; border-bottom: 1px solid var(--rule); }
+.eyebrow {
+  font-family: var(--sans); font-size: 11px; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint);
+  margin: 0 0 18px;
+}
+h1 {
+  font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 5vw, 44px);
+  line-height: 1.12; margin: 0 0 14px; text-wrap: balance; letter-spacing: -0.01em;
+}
+h1 .sub { display: block; font-style: italic; color: var(--ink-muted); font-size: .52em; margin-top: 12px; letter-spacing: 0; }
+.standfirst {
+  font-family: var(--sans); font-size: 14.5px; line-height: 1.6;
+  color: var(--ink-muted); max-width: 62ch; margin: 0;
+}
+
+/* ---- the pairing device ---- */
+.pairing {
+  display: flex; align-items: stretch; gap: 0; margin: 30px 0 0;
+  border: 1px solid var(--rule); border-radius: 2px; overflow: hidden;
+  font-family: var(--sans); background: var(--paper-sunk);
+}
+.pairing > div { flex: 1 1 0; padding: 13px 16px; min-width: 0; }
+.pairing .who { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
+.pairing .nm-side .who { color: var(--nm); }
+.pairing .fg-side .who { color: var(--fg); }
+.pairing .what { font-size: 13.5px; color: var(--ink-muted); }
+.pairing .arrow {
+  flex: 0 0 auto; display: flex; align-items: center; justify-content: center;
+  padding-inline: 14px; color: var(--ink-faint); font-size: 15px;
+  border-inline: 1px solid var(--rule);
+}
+
+/* ---- pair-to-pair navigation ---- */
+.pairnav {
+  display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+  margin-top: 18px; font-family: var(--sans); font-size: 12.5px;
+  color: var(--ink-muted);
+}
+.pairnav a { text-decoration: none; color: var(--ink-muted); }
+.pairnav a:hover, .pairnav a:focus { color: var(--ink); text-decoration: underline; }
+
+/* ---- work sections ---- */
+.work { padding-block: 52px 0; }
+.work-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
+.work-head .tag {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .04em;
+  padding: 3px 7px; border-radius: 2px; color: var(--paper);
+}
+.work.nm .tag { background: var(--nm); }
+.work.fg .tag { background: var(--fg); }
+h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; letter-spacing: -0.005em; }
+.rubric {
+  font-style: italic; color: var(--ink-muted); max-width: 70ch;
+  margin: 10px 0 0; font-size: 16.5px; line-height: 1.5;
+}
+.rubric-note {
+  font-family: var(--sans); font-style: normal; font-size: 12px;
+  color: var(--ink-faint); margin-top: 7px;
+}
+.colheads {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  margin-top: 30px; padding-bottom: 7px; border-bottom: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint);
+}
+
+/* ---- the facing pair ---- */
+.pair {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  padding-block: 22px; border-bottom: 1px solid var(--rule-faint);
+  scroll-margin-top: 20px;
+}
+.pair:target { background: var(--paper-sunk); }
+.annot { grid-column: 2 / -1; margin-top: 14px; font-family: var(--sans); font-size: 13.5px;
+  line-height: 1.55; color: var(--ink-muted); }
+.annot summary { cursor: pointer; font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); list-style: none; }
+.annot summary::-webkit-details-marker { display: none; }
+.annot summary::before { content: "+ "; }
+.annot[open] summary::before { content: "− "; }
+.annot p { margin: 8px 0 0; max-width: 72ch; }
+.annot .xref { color: inherit; text-decoration: underline; text-decoration-color: var(--rule);
+  text-underline-offset: 2px; white-space: nowrap; }
+.gutter { padding-top: 4px; }
+.uid {
+  font-family: var(--mono); font-size: 10.5px; color: var(--ink-faint);
+  text-decoration: none; letter-spacing: -0.02em;
+}
+.uid:hover, .uid:focus { color: var(--ink); text-decoration: underline; }
+.col { min-width: 0; }
+.col.it { hyphens: auto; }
+.col.en { }
+.supplied { color: var(--ink-muted); }
+
+/* ---- apparatus ---- */
+.apparatus {
+  margin-top: 34px; padding-top: 22px; border-top: 2px solid var(--rule);
+  font-family: var(--sans); font-size: 13.5px; line-height: 1.58;
+  color: var(--ink-muted);
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 26px 34px;
+}
+.apparatus h3 {
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); margin: 0 0 9px;
+}
+.apparatus p { margin: 0 0 9px; }
+.apparatus p:last-child { margin-bottom: 0; }
+.apparatus .lem { font-family: var(--serif); font-size: 15px; color: var(--ink); font-style: italic; }
+.sig { font-family: var(--mono); font-size: 12px; color: var(--ink); }
+
+/* ---- colophon ---- */
+.colophon {
+  margin-top: 60px; padding-block: 28px 60px; border-top: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 13px; line-height: 1.6; color: var(--ink-muted);
+}
+.colophon .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 34px; }
+.colophon h3 {
+  font-size: 10.5px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--ink-faint); margin: 0 0 8px;
+}
+.colophon p { margin: 0 0 8px; }
+.colophon ul { margin: 0; padding-left: 16px; }
+.colophon li { margin-bottom: 5px; }
+.state {
+  margin-top: 26px; padding: 14px 16px; background: var(--paper-sunk);
+  border-left: 2px solid var(--ink-faint); border-radius: 0 2px 2px 0;
+  font-size: 12.5px;
+}
+.state strong { color: var(--ink); font-weight: 600; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--nm); outline-offset: 2px; }
+
+/* ---- contents / index page ---- */
+.toc { margin-top: 30px; }
+.toc-row {
+  display: grid; grid-template-columns: 40px 1fr 1fr; gap: 0 20px;
+  padding-block: 14px; border-bottom: 1px solid var(--rule-faint);
+  font-family: var(--sans); align-items: baseline;
+}
+.toc-row .n { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
+.toc-row a { text-decoration: none; color: var(--ink); font-family: var(--serif); font-size: 16px; }
+.toc-row a:hover, .toc-row a:focus { text-decoration: underline; }
+.toc-row .unpublished { color: var(--ink-faint); font-style: italic; font-size: 14px; }
+.toc-row .ids { color: var(--ink-faint); font-size: 11.5px; font-family: var(--mono); }
+
+@media (max-width: 760px) {
+  body { font-size: 16.5px; }
+  .colheads { display: none; }
+  .pair { grid-template-columns: 1fr; gap: 0; padding-block: 20px; }
+  .gutter { padding-top: 0; margin-bottom: 8px; }
+  .annot { grid-column: 1; }
+  .col.it { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px dotted var(--rule); }
+  .col.it::before, .col.en::before {
+    display: block; font-family: var(--sans); font-size: 10px; font-weight: 600;
+    letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px;
+  }
+  .col.it::before { content: "Italian"; }
+  .col.en::before { content: "English"; }
+  .pairing { flex-direction: column; }
+  .pairing .arrow { border-inline: 0; border-block: 1px solid var(--rule); padding-block: 6px; }
+  .toc-row { grid-template-columns: 1fr; gap: 4px; }
+}
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow">A Conversation with Machiavelli · Pair 16 of 39</p>
+    <h1>Where so many circumstances concur
+      <span class="sub">Discourses I.24, and Guicciardini&#x27;s reply</span></h1>
+    <p class="standfirst">Machiavelli says that the Romans&#x27; trial of Horatius, who had conquered the Curiatii and then killed his sister, would seem popular ingratitude only to a superficial reader: well-ordered republics never cancel demerits with merits, and the people is rather to be blamed for absolving him than for wishing to condemn him, since a citizen whose merits excused his faults would grow insolent and all civility would dissolve; rewards must be kept even by a poor republic, as with Cocles, Scaevola and Manlius Capitolinus, who was thrown from the Capitol he had saved. Guicciardini says that it can perhaps be said that Horatius was absolved not so much for his merits as because killing a sister who complained of what had saved the fatherland should not seem an error; so understood, it is no marvel he was called into judgment, since the homicide needed absolution by the public, not by private men. Nonetheless the truth seems to be that killing her was a crime, since, if she had done wrong, punishing her pertained to the magistrates, and that the memory of his merits caused the absolution, above all since she seemed to have given him some cause. In such a case, with all these circumstances concurring, the Roman people would have been more reprehensible for condemning him than it was for absolving him. Not that it is good to make a rule of compensating ill with good, which, as the Discourse says, would be pernicious; but where so many circumstances concur it is very fitting to depart from the rule, and to make an example, for whoever is to judge, of being able to compensate it, not for whoever would compensate merits with sins indiscriminately.</p>
+
+    <div class="pairing">
+      <div class="nm-side">
+        <div class="who">Niccolò Machiavelli</div>
+        <div class="what">Discorsi sopra la prima Deca di Tito Livio · written c. 1513–19, printed 1531</div>
+      </div>
+      <div class="arrow" aria-hidden="true">answered by</div>
+      <div class="fg-side">
+        <div class="who">Francesco Guicciardini</div>
+        <div class="what">Considerazioni intorno ai Discorsi del Machiavelli · written 1529–30, printed 1857</div>
+      </div>
+    </div>
+    <nav class="pairnav"><a href="1.23.html">← Pair 1.23</a><a href="../index.html">All 39 pairs</a><span></span></nav>
+  </header>
+
+  <section class="work nm">
+    <div class="work-head">
+      <span class="tag">NM-DISC.1.24</span>
+      <h2>Capitolo XXIV</h2>
+    </div>
+    <p class="rubric">Le Repubbliche bene ordinate constituiscono premj e pene a&#x27; loro cittadini, né compensano mai l&#x27;uno con l&#x27;altro.</p>
+    <p class="rubric">Well-ordered republics constitute rewards and penalties for their citizens, nor do they ever compensate the one with the other.</p>
+
+    <div class="colheads"><div></div><div>Italian · 1824</div><div>English</div></div>
+      <div class="pair" id="NM-DISC.1.24.01">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.24.01">1.24.01</a></div>
+        <div class="col it" lang="it">Erano stati i meriti di Orazio grandissimi, avendo con la sua virtù vinti i Curiazj. Era stato il fallo suo atroce, avendo morto la sorella. Nondimeno dispiacque tanto tale omicidio ai Romani, che lo condussero a disputare della vita, non ostanteché gli meriti suoi fussero tanto grandi e sì freschi. La qual cosa a chi superficialmente la considerasse, parrebbe uno esempio d&#x27;ingratitudine popolare.</div>
+        <div class="col en" lang="en">The merits of Horatius had been very great, he having with his <i lang="it">virtù</i> overcome the Curiatii. His fault had been atrocious, he having killed his sister. Nonetheless such a homicide so displeased the Romans that they brought him to dispute for his life, notwithstanding that his merits were so great and so fresh. Which thing, to whoever should consider it superficially, would seem an example of popular ingratitude.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The case, set out as a balance. Horatius&#x27; merits had been very great, for he had overcome the Curiatii; his fault had been atrocious, for he had killed his sister. The two facts stand in matching clauses, each with its gerund of cause. Nonetheless the homicide so displeased the Romans that they put him on trial for his life, though his merits were so great and so fresh. To a superficial reader this would seem popular ingratitude: Machiavelli states the appearance in order to overturn it.</p>
+<p><span class="lem">History.</span> The combat of the Horatii and Curiatii, which Machiavelli discussed in I.22 and I.23, ended with one Roman brother alive. Returning with the spoils, Publius Horatius met his sister, who was betrothed to one of the Curiatii, mourning her betrothed; he killed her. Livy has him condemned by the duumvirs for treason (<i lang="la">perduellio</i>), saved on appeal to the people by his father&#x27;s pleas, and absolved more in admiration of his <i lang="la">virtus</i> than by the justice of the case (1.26). Machiavelli speaks only of the people&#x27;s trial.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.24.02">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.24.02">1.24.02</a></div>
+        <div class="col it" lang="it">Nondimeno chi la esaminerà meglio, e con migliore considerazione ricercherà quali debbono essere gli ordini delle Repubbliche, biasimerà quel Popolo più tosto per averlo assoluto, che per averlo voluto condannare; e la ragione è questa, che nessuna Repubblica bene ordinata, non mai cancellò i demeriti con li meriti dei suoi cittadini, ma avendo ordinati i premj ad una buona opera, e le pene ad una cattiva, ed avendo premiato uno per aver bene operato, se quel medesimo opera dipoi male, lo gastiga senza avere riguardo alcuno alle sue buone opere.</div>
+        <div class="col en" lang="en">Nonetheless whoever examines it better, and with better consideration searches out what the orders of republics must be, will blame that people rather for having absolved him than for having wished to condemn him; and the reason is this, that no well-ordered republic ever cancelled the demerits with the merits of its citizens, but, having ordered the rewards for a good work and the penalties for a bad one, and having rewarded one for having worked well, if that same one works ill afterwards, it chastises him without having any regard to his good works.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The reversal and its reason, in one period. Whoever examines the case better, and asks what the orders of republics must be, will blame the people rather for absolving Horatius than for wishing to condemn him. The reason follows at once (<i lang="it">e la ragione è questa</i>): no well-ordered republic ever cancelled demerits with merits. It orders rewards for good works and penalties for bad ones, and a citizen rewarded for working well who afterwards works ill is chastised without any regard to his good works. The two ledgers are kept apart; the same man takes each in full. The people&#x27;s fault, on this reading, was to let the merit cancel the fault.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini takes up this sentence and turns it under a condition <a class="xref" href="#FG-CONS.1.24.01">Guicciardini .01</a>: in such a case the people would have been more reprehensible for condemning him than it was for absolving him.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.24.03">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.24.03">1.24.03</a></div>
+        <div class="col it" lang="it">E quando questi ordini sono bene osservati, una Città vive libera molto tempo; altrimenti sempre rovinerà presto. Perché se ad un cittadino che abbia fatto qualche egregia opera per la Città, s&#x27;aggiunge oltre alla riputazione, che quella cosa gli arreca, una audacia e confidenza di potere, senza temer pena, far qualche opera non buona, diventerà in breve tempo tanto insolente, che si risolverà ogni civiltà. È ben necessario, volendo che sia temuta la pena per le triste opere, osservare i premj per le buone, come si vede che fece Roma. E benché una Repubblica sia povera, e possa dare poco, debbe di quel poco non astenersi; perché sempre ogni piccolo dono, dato ad alcuno per ricompensa di bene, ancora che grande, sarà stimato da chi lo riceve onorevole e grandissimo.</div>
+        <div class="col en" lang="en">And when these orders are well observed, a city lives free a long time; otherwise it will always fall to ruin soon. For if, to a citizen who has done some outstanding work for the city, there is added, beyond the reputation which that thing brings him, an audacity and confidence of being able, without fearing penalty, to do some work not good, he will become in a short time so insolent that all civility will dissolve. It is indeed necessary, wishing that the penalty be feared for wicked works, to observe the rewards for good ones, as one sees that Rome did. And albeit a republic be poor, and be able to give little, it must not abstain from that little; for always every small gift, given to someone in recompense of good, even though great, will be esteemed by him who receives it honourable and very great.</div>
+        <details class="annot"><summary>Commentary · 1</summary>
+          <p><span class="lem">Argument.</span> Why the rule holds, and its corollary. Where these orders are observed a city lives free a long time; otherwise it soon falls to ruin. The cause is a consequence: if a citizen who has done some outstanding work for the city gains, beyond the reputation it brings, the audacity and confidence of being able to do ill without fearing penalty, he soon grows so insolent that all civility dissolves. The other side of the rule follows: if the penalty is to be feared for wicked works, the rewards must be kept for good ones, as Rome did. Even a poor republic, which can give little, must not abstain from that little, for a small gift given in recompense of a good, even a great one, will be esteemed honourable and very great by whoever receives it.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.24.04">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.24.04">1.24.04</a></div>
+        <div class="col it" lang="it">È notissima la Istoria di Orazio Cocle, e quella di Muzio Scevola; come l&#x27;uno sostenne i nimici sopra un ponte, tantoché si tagliasse; l&#x27;altro si arse la mano, avendo errato, volendo ammazzare Porsena Re delli Toscani. A costoro, per queste due opere tanto egregie, fu donato dal Pubblico due stajora di terra per ciascuno. È nota ancora l&#x27;Istoria di Manlio Capitolino. A costui per aver salvato il Campidoglio da&#x27; Galli che vi erano a campo, fu dato da quelli, che insieme con lui vi erano assediati dentro, una piccola misura di farina. Il qual premio, secondo la fortuna che allora correva in Roma, fu grande, e di qualità che mosso poi Manlio o da invidia, o dalla sua cattiva natura, a far nascere sedizione in Roma, e cercando guadagnarsi il Popolo, fu senza rispetto alcuno de&#x27; suoi meriti, gittato precipite da quello Campidoglio, ch&#x27;egli prima con tanta sua gloria aveva salvato.</div>
+        <div class="col en" lang="en">The history of Horatius Cocles is very well known, and that of Mucius Scaevola: how the one withstood the enemies upon a bridge until it should be cut; the other burned his hand, having erred, wishing to kill Porsena, king of the Tuscans. To these, for these two works so outstanding, two <i lang="it">staiora</i> of land were donated by the public to each. The history of Manlius Capitolinus is also known. To him, for having saved the Capitol from the Gauls who were encamped there, there was given by those who were besieged within together with him a small measure of meal. Which reward, according to the fortune that then ran in Rome, was great, and of such quality that, Manlius being moved later either by envy or by his bad nature to make sedition arise in Rome, and seeking to gain the people for himself, he was, without any respect to his merits, thrown headlong from that Capitol which he before, with so much glory of his own, had saved.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> Proof by examples, first of reward, then of reward and penalty in one man. Horatius Cocles, who held the bridge until it could be cut, and Mucius Scaevola, who burned his hand before Porsena, were each given two <i lang="it">staiora</i> of land by the public: small gifts for outstanding works, as .03 prescribed. Manlius Capitolinus, who saved the Capitol from the Gauls, received from the besieged a small measure of meal, great by the fortune of the moment. When he afterwards stirred sedition, from envy or bad nature, he was thrown from the Capitol he had saved, without any respect to his merits. The last example is the chapter&#x27;s rule in action: the merit was rewarded, the fault punished, and neither was set against the other.</p>
+<p><span class="lem">History.</span> Cocles (Livy 2.10) and Scaevola (Livy 2.12-13) belong to the war with Lars Porsena of Clusium after the expulsion of the kings; Livy gives Cocles as much land as he could plough round in a day, and Scaevola land across the Tiber. Manlius held the Capitol when the Gauls took Rome, on the traditional reckoning in 390 BC; the besieged gave him each a half-pound of spelt and a little wine (Livy 5.47). In 384 BC he was condemned for aiming at kingship and thrown from the Tarpeian rock, on the Capitoline; Livy observes that the same place was the monument of his glory and of his last penalty (6.20).</p>
+<p><span class="lem">Cross-reference.</span> Manlius is the calumniator of I.8, where Machiavelli tells how his envy of Camillus led him to say that the treasure gathered to pay the Gauls had been taken by private citizens. I.8 takes his story only as far as his imprisonment under the dictator; this chapter carries it to his death.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from the 1824 edition (<span class="sig">WIT-NM-DISC-1824-IA</span>), page-image-backed, which governs. Collated against the 1554 Giglio printing, Venice (<span class="sig">WIT-NM-DISC-1554-IA</span>), which is comparison evidence only.</p>
+<p>Paragraph divisions are editorial. The witness prints the chapter as one unbroken block.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem">debbe di quel poco non astenersi</span> — 1824. The 1554 witness reads <i lang="it">debbe di di quel poco astenersi</i>. Checked on the leaf (fol. 40r): the 1554 has no <i lang="it">non</i> and prints <i lang="it">di</i> twice, so that it says the opposite, &quot;must abstain from that little&quot;. The 1824 <i lang="it">non astenersi</i>, &quot;not abstain&quot;, is what the argument needs: rewards are to be kept even by a poor republic.</p>
+<p><span class="lem">dato ad alcuno per ricompensa di bene, ancora che grande</span> — 1824. The 1554 witness reads <i lang="it">dato ad alcuno per ricompenso di bene, anchora che grande</i>. Checked on the leaf. <i lang="it">Ricompenso</i> is the masculine form of the same noun; a word-level difference at a/o, letters the scans break, so escalated under D203(b) although both 1824 readers read <i lang="it">ricompensa</i> without doubt on the sampled page. It construes and stands, D38 (D248). Both witnesses print <i lang="it">ancora che grande</i>, &quot;even though great&quot;, where the sense seems to want &quot;even though small&quot;: not a variant, and noted in the translation.</p>
+<p><span class="lem">come si vede che fece Roma</span> — 1824. The 1554 witness reads <i lang="it">come si uide che fece Roma</i>. Checked on the leaf: the 1554 past <i lang="it">si uide</i>, &quot;as was seen&quot;, for the 1824 present <i lang="it">si vede</i>, &quot;as one sees&quot;.</p>
+<p><span class="lem">biasimerà quel Popolo più tosto per averlo assoluto, che per averlo voluto condannare</span> — 1824. The 1554 witness reads <i lang="it">biasimerà quel popolo piu tosto per hauerlo assolto, che per hauerlo uoluto condennare</i>. Spelling only (<i lang="it">assolto</i>, <i lang="it">condennare</i>); rests on the transcript.</p>
+<p><span class="lem">È nota ancora l&#x27;Istoria di Manlio Capitolino ... mosso poi Manlio</span> — 1824. The 1554 witness reads <i lang="it">E nota anchora la historia di Mallio Capitolino ... mosso poi Mallio</i>. Checked on the leaf: the 1554 <i lang="it">Mallio</i> for <i lang="it">Manlio</i>, as at NM I.11 (names.md).</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem"><i lang="it">i meriti di Orazio</i>.</span> &quot;The merits of Horatius&quot;: Publius Horatius, the surviving Roman champion of the combat Machiavelli discussed in I.22 and I.23 (Livy 1.24-26). Returning in triumph, he killed his sister, who was mourning one of the Curiatii, her betrothed. Livy tells that he was condemned by the duumvirs, appealed to the people, and, after his father&#x27;s pleas, was absolved more in admiration of his <i lang="la">virtus</i> than by the justice of the case (1.26).</p>
+<p><span class="lem"><i lang="it">avendo con la sua virtù vinti i Curiazj</i>.</span> &quot;He having with his <i lang="it">virtù</i> overcome the Curiatii&quot;: <i lang="it">virtù</i> in Italian (D16). The two gerunds, <i lang="it">avendo ... vinti</i> and <i lang="it">avendo morto</i>, are kept parallel: the merit and the fault in the same form.</p>
+<p><span class="lem"><i lang="it">il fallo suo atroce</i>.</span> &quot;His fault ... atrocious&quot;: <i lang="it">fallo</i>, fault; Guicciardini&#x27;s reply has the verb, of the sister, under a condition: <i lang="it">se lei aveva fallato</i>.</p>
+<p><span class="lem"><i lang="it">avendo morto la sorella</i>.</span> &quot;He having killed his sister&quot;: <i lang="it">morto</i> transitive, killed (D169). The possessive &quot;his&quot; for the article is English idiom, not a supply.</p>
+<p><span class="lem"><i lang="it">omicidio</i>.</span> &quot;Homicide&quot;, as D169. Guicciardini uses the same word twice.</p>
+<p><span class="lem"><i lang="it">lo condussero a disputare della vita</i>.</span> &quot;They brought him to dispute for his life&quot;: he was put on trial for it. <i lang="it">Condurre</i>, bring or lead.</p>
+<p><span class="lem"><i lang="it">ingratitudine popolare</i>.</span> &quot;Popular ingratitude&quot;: the ingratitude of a people. Machiavelli treats it at length in I.28-30; the phrase anticipates that discussion.</p>
+<p><span class="lem"><i lang="it">Nondimeno</i> ... <i lang="it">Nondimeno</i>.</span> &quot;Nonetheless&quot; twice in five lines (.01, .02), as the glossary: the first turns from the merits to the trial, the second from appearance to examination. The English repeats.</p>
+<p><span class="lem"><i lang="it">gli ordini delle Repubbliche</i>.</span> &quot;The orders of republics&quot;: <i lang="it">ordine</i>, order (glossary), and <i lang="it">ordinata</i>, <i lang="it">ordinati</i> in the same period: the well-ordered republic has &quot;ordered&quot; rewards and penalties.</p>
+<p><span class="lem"><i lang="it">più tosto per averlo assoluto, che per averlo voluto condannare</i>.</span> &quot;Rather for having absolved him than for having wished to condemn him&quot;: the chapter&#x27;s reversal. The people&#x27;s fault, if any, was to let the merit cancel the fault.</p>
+<p><span class="lem"><i lang="it">non mai cancellò i demeriti con li meriti</i>.</span> &quot;Ever cancelled the demerits with the merits&quot;: the double negative <i lang="it">nessuna ... non mai</i> is Italian idiom and reads as one negative in English.</p>
+<p><span class="lem"><i lang="it">opera</i>, <i lang="it">operato</i>, <i lang="it">opera</i>, <i lang="it">opere</i>.</span> &quot;Work&quot;, &quot;worked&quot;, &quot;works&quot;: <i lang="it">operare</i>, work (D83), so that &quot;having worked well&quot; and &quot;a good work&quot; stay in one root, as in the Italian.</p>
+<p><span class="lem"><i lang="it">lo gastiga</i>.</span> &quot;It chastises him&quot;: the 1554 edition&#x27;s <i lang="it">castiga</i> is the same verb.</p>
+<p><span class="lem"><i lang="it">rovinerà presto</i>.</span> &quot;It will fall to ruin soon&quot;: <i lang="it">rovinare</i> intransitive; <i lang="it">rovina</i>, ruin (glossary). <i lang="it">molto tempo</i>, &quot;a long time&quot;, in the sentence before, shares D140&#x27;s English for <i lang="it">lungo tempo</i> (D250). The 1554 edition reads <i lang="it">tosto</i>, the same.</p>
+<p><span class="lem"><i lang="it">egregia opera</i>, <i lang="it">opere tanto egregie</i>.</span> &quot;Outstanding work&quot;, &quot;works so outstanding&quot;: English &quot;egregious&quot; now means the opposite.</p>
+<p><span class="lem"><i lang="it">audacia e confidenza</i>.</span> &quot;Audacity and confidence&quot;: confidence in the older sense of assurance, here presumption.</p>
+<p><span class="lem"><i lang="it">si risolverà ogni civiltà</i>.</span> &quot;All civility will dissolve&quot;: <i lang="it">civiltà</i>, civility, civil life under laws (glossary, I.2); <i lang="it">risolvere</i>, dissolve.</p>
+<p><span class="lem"><i lang="it">osservare i premj</i>.</span> &quot;To observe the rewards&quot;: to keep them, as orders are &quot;observed&quot; in the sentence before.</p>
+<p><span class="lem"><i lang="it">come si vede che fece Roma</i>.</span> &quot;As one sees that Rome did&quot;. The 1554 edition reads <i lang="it">si uide</i>, &quot;as was seen&quot; (NM-DISC-I24-D003).</p>
+<p><span class="lem"><i lang="it">E benché una Repubblica sia povera</i>.</span> &quot;And albeit a republic be poor&quot;: <i lang="it">benché</i>, albeit (D31).</p>
+<p><span class="lem"><i lang="it">debbe di quel poco non astenersi</i>.</span> &quot;It must not abstain from that little&quot;: <i lang="it">debbe</i>, must (D120). The 1554 edition prints <i lang="it">debbe di di quel poco astenersi</i>, without <i lang="it">non</i>, [<i lang="la">sic</i>], which says the opposite (NM-DISC-I24-D001).</p>
+<p><span class="lem"><i lang="it">per ricompensa di bene, ancora che grande</i>.</span> &quot;In recompense of good, even though great&quot;: <i lang="it">ancora che</i>, even though (glossary). <i lang="it">grande</i> most naturally attaches to <i lang="it">bene</i>: the good done may be great and the gift small, as .04 then shows. Both the 1824 and the 1554 editions print <i lang="it">grande</i>, and both cold readers read it so; the English, like the Italian, leaves the attachment to the reader. The 1554 reads <i lang="it">ricompenso</i>, the masculine form of the noun; the reading was put to David under D203(b) and <i lang="it">ricompensa</i> stands (D248; NM-DISC-I24-D002).</p>
+<p><span class="lem"><i lang="it">onorevole e grandissimo</i>.</span> &quot;Honourable and very great&quot;: the elative answers &quot;very great&quot; of Horatius&#x27; merits (.01).</p>
+<p><span class="lem"><i lang="it">Orazio Cocle</i>.</span> Horatius Cocles held the bridge over the Tiber against Porsena&#x27;s army until the Romans cut it behind him (Livy 2.10). Not the Horatius of .01.</p>
+<p><span class="lem"><i lang="it">Muzio Scevola</i>.</span> Gaius Mucius Scaevola, who entered Porsena&#x27;s camp to kill him, killed his secretary instead, and held his right hand in the fire before the king (Livy 2.12-13). <i lang="it">avendo errato</i>, &quot;having erred&quot;: he mistook the man.</p>
+<p><span class="lem"><i lang="it">Porsena Re delli Toscani</i>.</span> &quot;Porsena, king of the Tuscans&quot;: Lars Porsena of Clusium, king of the Etruscans; &quot;Tuscans&quot; for Machiavelli&#x27;s <i lang="it">Toscani</i>, as he names them.</p>
+<p><span class="lem"><i lang="it">tantoché si tagliasse</i>.</span> &quot;Until it should be cut&quot;: <i lang="it">tantoché</i>, so long that; the subjunctive keeps the prospect.</p>
+<p><span class="lem"><i lang="it">due stajora di terra</i>.</span> &quot;Two <i lang="it">staiora</i> of land&quot;: the <i lang="it">staioro</i> is a Tuscan measure of land, the area sown with a <i lang="it">staio</i> of seed. Livy gives Cocles as much land as he could plough round in a day, and Scaevola land across the Tiber (2.10, 2.13); Livy gives no measure; the two <i lang="it">staiora</i> each are Machiavelli&#x27;s.</p>
+<p><span class="lem"><i lang="it">fu donato dal Pubblico</i>.</span> &quot;Were donated by the public&quot;: <i lang="it">donare</i>, the verb of <i lang="it">dono</i>, &quot;gift&quot; (.03), kept apart from <i lang="it">dato</i>, &quot;given&quot;, of Manlius&#x27; meal; <i lang="it">Pubblico</i>, the commonwealth. Guicciardini&#x27;s <i lang="it">dal publico</i> is the same word.</p>
+<p><span class="lem"><i lang="it">Manlio Capitolino</i>.</span> Marcus Manlius Capitolinus, who saved the Capitol from the Gauls (390 BC on the traditional reckoning), roused by the geese; the besieged gave him each a half-pound of meal and a little wine (Livy 5.47). He was later condemned for aiming at kingship and thrown from the Tarpeian rock (Livy 6.20). Machiavelli told his calumnies in I.8. The 1554 edition prints <i lang="it">Mallio</i> (NM-DISC-I24-D005).</p>
+<p><span class="lem"><i lang="it">che vi erano a campo</i>.</span> &quot;Who were encamped there&quot;: besieging the Capitol.</p>
+<p><span class="lem"><i lang="it">secondo la fortuna che allora correva in Roma</i>.</span> &quot;According to the fortune that then ran in Rome&quot;: in the straits of the siege, a measure of meal was much. <i lang="it">Correre</i>, run: the simple verb of the <i lang="la">currere</i> family (D01).</p>
+<p><span class="lem"><i lang="it">e di qualità che mosso poi Manlio</i>.</span> &quot;And of such quality that, Manlius being moved later&quot;: the consecutive <i lang="it">che</i> opens a period that changes subject; Machiavelli&#x27;s point is that the reward did not buy him exemption.</p>
+<p><span class="lem"><i lang="it">senza rispetto alcuno de&#x27; suoi meriti</i>.</span> &quot;Without any respect to his merits&quot;: <i lang="it">rispetto</i> with the glossary&#x27;s &quot;respect to&quot;; the rule&#x27;s <i lang="it">senza avere riguardo alcuno</i> (.02), &quot;without having any regard&quot;, is executed in the same shape, two words as in the Italian.</p>
+<p><span class="lem"><i lang="it">gittato precipite</i>.</span> &quot;Thrown headlong&quot;: <i lang="it">precipite</i>, a Latinism.</p>
+<p><span class="lem"><i lang="it">ch&#x27;egli prima con tanta sua gloria aveva salvato</i>.</span> &quot;Which he before, with so much glory of his own, had saved&quot;: the chapter ends on the Capitol, saved and then the place of his death, the merit and the penalty in one place, not compensated. Livy makes the same observation of the place (6.20.12); Machiavelli&#x27;s <i lang="it">da quello Campidoglio</i> compresses the Tarpeian rock into the Capitol.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work fg">
+    <div class="work-head">
+      <span class="tag">FG-CONS.1.24</span>
+      <h2>Considerazione sul capitolo XXIV</h2>
+    </div>
+    <p class="rubric">Le repubbliche bene ordinate constituiscono premii e pene ai loro cittadini, né compensano mai l&#x27;uno con l&#x27;altro</p>
+    <p class="rubric">Well-ordered republics constitute rewards and penalties for their citizens, nor do they ever compensate the one with the other
+      <span class="rubric-note">Canestrini&#x27;s setting of the chapter title, in lower case and without a stop, with <i lang="it">premii</i> and <i lang="it">ai</i> for the 1824&#x27;s <i lang="it">premj</i> and <i lang="it">a&#x27;</i>. It is heading apparatus, not Guicciardini&#x27;s (D32).</span></p>
+
+    <div class="colheads"><div></div><div>Italian · 1857</div><div>English</div></div>
+      <div class="pair" id="FG-CONS.1.24.01">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.24.01">1.24.01</a></div>
+        <div class="col it" lang="it">Si può dire forse di Orazio che fu assoluto non tanto per la considerazione de&#x27; meriti suoi, quanto perché non paressi errore ammazzare una sorella che si lamentava di quello che era causa della salute e libertà della patria, e insultava al fratello autore di tanto bene; e intendendola così, non è maraviglia fussi chiamato in giudicio, perché di necessità l&#x27;omicidio aveva bisogno di assoluzione, fatta non da&#x27; privati, ma dal publico. Nondimeno la verità pare che sia che lo ammazzarla fussi delitto, perché se lei aveva fallato, non spettava a&#x27; privati ma a&#x27; magistrati punirla, e che la memoria de&#x27; meriti causassi la assoluzione di Orazio, concorrendo massime che lei pareva glien&#x27;avessi dato qualche causa poi che con pianti e querele era andata turbandogli sì bella vittoria. E in tal caso concorrendo tutte queste circumstanze di essere l&#x27;omicidio fatto non pensatamente, ma con <span class="supplied">[ir]</span>a provocata e assai giusta da uno giovane irritato nella gratulazione di sì bella vittoria, di avere offeso non altri che il padre e loro medesimi, di essere e&#x27; meriti di Orazio sì grandi e sì freschi, sarebbe stato più reprensibile il populo romano d&#x27;averlo condannato, che non fu d&#x27;averlo assoluto. Non perché sia bene fare regola di potere compensare il male col bene, che, come dice il Discorso, saria pernizioso, ma perché dove concorrono tante circumstanze sia molto conveniente partirsi dalla regola, e fare esemplo non a chi vuole indistintamente compensare e&#x27; meriti co&#x27; peccati, ma a chi ha a giudicare, di poterlo compensare, concorrendo tante cagioni quante concorsono nel caso di Orazio.</div>
+        <div class="col en" lang="en">One can say perhaps of Horatius that he was absolved not so much for the consideration of his merits as because it should not seem an error to kill a sister who was complaining of that which was the cause of the safety and liberty of the fatherland, and was insulting her brother, author of so much good; and, understanding it so, it is no marvel that he was called into judgment, because of necessity the homicide had need of absolution, made not by private men but by the public. Nonetheless the truth seems to be that killing her was a crime, because, if she had faulted, it pertained not to private men but to the magistrates to punish her, and that the memory of the merits caused the absolution of Horatius, there concurring above all <span class="supplied">[this]</span>, that she seemed to have given him some cause of it, since with weeping and complaints she had gone on troubling for him so fine a victory. And in such a case, there concurring all these circumstances, of the homicide&#x27;s being done not with forethought but in anger provoked and very just, by a young man irritated in the gratulation of so fine a victory, of his having offended no others than the father and themselves, of the merits of Horatius being so great and so fresh, the Roman people would have been more reprehensible for having condemned him than it was for having absolved him. Not because it is good to make a rule of being able to compensate the ill with the good, which, as the Discourse says, would be pernicious, but because where so many circumstances concur it is very fitting to depart from the rule, and to make an example not for whoever wishes indiscriminately to compensate the merits with the sins, but for whoever is to judge, of being able to compensate it, there concurring so many causes as concurred in the case of Horatius.</div>
+        <details class="annot"><summary>Commentary · 5</summary>
+          <p><span class="lem">Argument.</span> The rule granted, the case argued. Guicciardini sets two hedged accounts of the absolution side by side. First, &quot;one can say perhaps&quot;, Horatius was absolved not so much for his merits as because the killing of a sister who complained of what had saved the fatherland should not seem an error; so understood, the trial is no marvel, since a homicide needed absolution, and that from the public, not from private men. Then, &quot;nonetheless the truth seems to be&quot;, the killing was a crime, because if she had done wrong her punishment pertained to the magistrates, and it was the memory of his merits that caused the absolution, above all since she seemed to have given him some cause by troubling his victory with her complaints. On this second account he puts the case, under <i lang="it">in tal caso</i>: if the homicide was not premeditated but done in anger provoked and very just, by a young man irritated in the rejoicing over so fine a victory, offending no others than the father and &quot;themselves&quot; (most likely the house of the Horatii; the Italian does not say), and the merits were so great and so fresh, then in such a case the Roman people would have been more reprehensible to condemn him than it was to absolve him. He does not say the absolution was blameless: the killing stays a crime, and the comparison is of degree.</p>
+<p><span class="lem">Note.</span> Then the rule. It is not good to make a rule that ill can be compensated with good, which, as the Discourse says, would be pernicious. But where so many circumstances concur it is very fitting to depart from the rule, and to make an example, not for whoever would compensate merits with sins indiscriminately, but for whoever is to judge, of being able to compensate. The reply grants Machiavelli&#x27;s principle, citing the Discourse for it, and claims for the judge, where so many circumstances concur as in Horatius&#x27; case, a discretion that the rule as Machiavelli states it does not allow.</p>
+<p><span class="lem">Cross-reference.</span> Machiavelli would blame the people &quot;rather for having absolved him than for having wished to condemn him&quot; <a class="xref" href="#NM-DISC.1.24.02">Machiavelli .02</a>. Guicciardini&#x27;s sentence answers it with the same verbs, absolve and condemn, under <i lang="it">in tal caso</i>, and with <i lang="it">reprensibile</i> for Machiavelli&#x27;s <i lang="it">biasimerà</i>. Machiavelli&#x27;s rule is that no well-ordered republic &quot;ever cancelled the demerits with the merits&quot;; Guicciardini grants that a rule of compensation would be pernicious and argues only for departing from the rule where the circumstances concur. Machiavelli&#x27;s <i lang="it">fallo</i>, Horatius&#x27; fault <a class="xref" href="#NM-DISC.1.24.01">Machiavelli .01</a>, becomes the sister&#x27;s <i lang="it">fallato</i>, and only under a condition.</p>
+<p><span class="lem">Cross-reference.</span> The verb <i lang="it">concorrere</i>, concur, comes five times, of the sister&#x27;s provocation, of the circumstances and of the causes. It is the verb in which Guicciardini withholds ready assent at FG I.12 (<i lang="it">io non concorro facilmente</i>, &quot;I do not readily concur&quot;); here it carries the cause, and the reply ends on the case of Horatius rather than on the rule.</p>
+<p><span class="lem">History.</span> Livy has Horatius&#x27; father declare that his daughter was justly killed, and plead for the son before the people (1.26); Guicciardini&#x27;s &quot;the father and themselves&quot; may lean on that judgment of the family, though he does not cite it. The trial for <i lang="la">perduellio</i> before the duumvirs, and the appeal to the people, are Livy&#x27;s; Guicciardini, like Machiavelli, speaks only of the public absolution.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from Canestrini 1857, <i>Opere inedite</i> vol. 1, pp. 1–65 (<span class="sig">WIT-FG-CONS-1857-CANESTRINI</span>) — the <i>editio princeps</i>, which governs. Collated against Palmarocchi 1933 (<span class="sig">WIT-FG-CONS-1933-PALMAROCCHI</span>): page images and the Wikisource transcription consulted as collation evidence, not reproduced (LICENSE §5).</p>
+<p><span class="lem">a&#x27; magistrati punirla; e che la memoria</span> → <span class="lem">a&#x27; magistrati punirla, e che la memoria</span> (FG-CONS.1.24.01). Pass A ⟨;|,⟩, pass B ⟨;|,⟩; the 1933 edition prints a comma. D110.</p>
+<p><span class="lem">saria pernizioso; ma perché</span> → <span class="lem">saria pernizioso, ma perché</span> (FG-CONS.1.24.01). Pass A ⟨;|,⟩, pass B ⟨;|,⟩; the 1933 edition prints a comma. D110.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem">non pensatamente, ma con [ir]a provocata e assai giusta</span>. The 1857 witness reads <i lang="it">non pensatamente, ma con via provocata e assai giusta</i>. The 1933 witness reads <i lang="it">non pesatamente, ma con ira provocata ed assai giusta</i>. Both cold readers read <i lang="it">via</i> without doubt. As printed the phrase barely construes (&quot;with a way provoked and fairly just&quot;); the 1933 <i lang="it">ira</i>, anger, is what <i lang="it">provocata</i> and <i lang="it">irritato</i> in the same clause call for. Emended under D68 from the 1933 edition, as D126, D214 and D233 (D245).</p>
+<p><span class="lem">fatto non pensatamente</span> — 1857. The 1933 witness reads <i lang="it">fatto non pesatamente</i>. Both readers read <i lang="it">pensatamente</i>, &quot;with forethought&quot;, without doubt; the 1933 <i lang="it">pesatamente</i>, &quot;weighedly&quot;, comes to much the same. Not at a letter the scan breaks; kept as printed (D38).</p>
+<p><span class="lem">con pianti e querele era andata turbandogli</span> — 1857. The 1933 witness reads <i lang="it">con pianti e querele era andato turbandogli</i>. Both readers read <i lang="it">andata</i> without doubt, at a letter the scan breaks (a/o); escalated under D203(b). Canestrini&#x27;s feminine agrees with <i lang="it">lei</i>, the sister, who had gone on troubling the victory; the 1933 <i lang="it">andato</i> is the invariable participle. Same sense; kept, D38 (D247).</p>
+<p><span class="lem">il populo romano</span>. The 1857 witness reads <i lang="it">il popu[l/t]o romano (a damaged letter)</i>. The 1933 witness reads <i lang="it">el popolo romano</i>. The readers split on which form they preferred, each giving the other&#x27;s as alternative: A <i lang="it">poputo</i>, B <i lang="it">populo</i>. <i lang="it">Poputo</i> is not a word; Canestrini prints <i lang="it">populo</i> throughout the Considerazioni. Read <i lang="it">populo</i>, a reading, not an emendation (D246).</p>
+<p><span class="lem">fare regola di potere compensare</span>. The 1857 witness reads <i lang="it">fare regola di p[o/e]tere compensare (a damaged letter)</i>. The 1933 witness reads <i lang="it">fare regola di potere compensare</i>. The readers split on which form they preferred: A <i lang="it">petere</i>, B <i lang="it">potere</i>, each giving the other&#x27;s as alternative. <i lang="it">Petere</i> is not Italian; the 1933 edition reads <i lang="it">potere</i>. A reading (D246).</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem"><i lang="it">Si può dire forse</i>.</span> &quot;One can say perhaps&quot;: the reply opens on a possibility, and the next period (<i lang="it">Nondimeno la verità pare che sia</i>) sets a seeming truth beside it. Neither is asserted.</p>
+<p><span class="lem"><i lang="it">non tanto per la considerazione de&#x27; meriti suoi, quanto perché non paressi errore</i>.</span> &quot;Not so much for the consideration of his merits as because it should not seem an error&quot;: the subjunctive <i lang="it">paressi</i> gives the absolution a motive, that the killing of such a sister should not seem an error; a public absolution is what <i lang="it">intendendola così</i> makes &quot;no marvel&quot;. Then (<i lang="it">Nondimeno</i>) he moves the cause back to the merits.</p>
+<p><span class="lem"><i lang="it">che si lamentava di quello che era causa della salute e libertà della patria</i>.</span> &quot;Who was complaining of that which was the cause of the safety and liberty of the fatherland&quot;: the victory, or Horatius who won it; <i lang="it">quello</i> can be either. <i lang="it">salute</i>, safety, as NM I.8, I.11; <i lang="it">patria</i>, fatherland (glossary).</p>
+<p><span class="lem"><i lang="it">insultava al fratello</i>.</span> &quot;Was insulting her brother&quot;: <i lang="it">insultare a</i>, in the older sense, to assail with words.</p>
+<p><span class="lem"><i lang="it">non è maraviglia fussi chiamato in giudicio</i>.</span> &quot;It is no marvel that he was called into judgment&quot;: <i lang="it">giudicio</i>, judgment, as the glossary&#x27;s <i lang="it">giudicii</i>.</p>
+<p><span class="lem"><i lang="it">fatta non da&#x27; privati, ma dal publico</i>.</span> &quot;Made not by private men but by the public&quot;: <i lang="it">publico</i> as Machiavelli&#x27;s <i lang="it">Pubblico</i> (Machiavelli .04).</p>
+<p><span class="lem"><i lang="it">fussi delitto</i>.</span> &quot;Was a crime&quot;: <i lang="it">delitto</i>, a crime in law, set against Machiavelli&#x27;s <i lang="it">fallo</i>, &quot;fault&quot; (Machiavelli .01).</p>
+<p><span class="lem"><i lang="it">se lei aveva fallato</i>.</span> &quot;If she had faulted&quot;: <i lang="it">fallare</i>, the verb of Machiavelli&#x27;s <i lang="it">fallo</i>, &quot;fault&quot;; the English keeps the root, where &quot;erred&quot; would collide with <i lang="it">errore</i>, &quot;error&quot;, in the period before.</p>
+<p><span class="lem"><i lang="it">non spettava a&#x27; privati ma a&#x27; magistrati punirla</i>.</span> &quot;It pertained not to private men but to the magistrates to punish her&quot;: <i lang="it">spettare</i> of a right or charge, pertain. D175&#x27;s &quot;look to&quot; (FG I.9) is <i lang="it">spettare</i> of a ruler attending to an end, and does not fit a charge that belongs to someone (D251).</p>
+<p><span class="lem"><i lang="it">a&#x27; magistrati</i>.</span> &quot;The magistrates&quot;: the men in office (D93).</p>
+<p><span class="lem"><i lang="it">concorrendo massime che</i>.</span> &quot;There concurring above all [this], that&quot;: <i lang="it">concorrere</i>, concur (D01), here in its first sense, to run together, as at FG I.1 (D63). The verb comes four times in the unit and once in the past (<i lang="it">concorsono</i>): circumstances concur, and the reply&#x27;s verb of agreement becomes its verb of cause. <i lang="it">massime</i>, above all (glossary).</p>
+<p><span class="lem"><i lang="it">glien&#x27;avessi dato qualche causa</i>.</span> &quot;Had given him some cause of it&quot;: <i lang="it">glien&#x27;</i>, <i lang="it">gliene</i>, him ... of it, the killing. Both readers doubted the l; the alternative is not a word.</p>
+<p><span class="lem"><i lang="it">era andata turbandogli</i>.</span> &quot;She had gone on troubling for him&quot;: <i lang="it">andare</i> with the gerund, a continuing act. Both readers read <i lang="it">andata</i> without doubt, agreeing with <i lang="it">lei</i>; the 1933 edition reads <i lang="it">andato</i>. Put to David under D203(b) and kept (D247; FG-CONS-I24-D003).</p>
+<p><span class="lem"><i lang="it">sì bella vittoria</i>.</span> &quot;So fine a victory&quot;, twice: Guicciardini repeats the phrase, and the English repeats it.</p>
+<p><span class="lem"><i lang="it">non pensatamente</i>.</span> &quot;Not with forethought&quot;: not premeditated. The 1933 edition reads <i lang="it">pesatamente</i>, &quot;weighedly&quot;, to much the same effect (FG-CONS-I24-D002).</p>
+<p><span class="lem"><i lang="it">ma con [ir]a provocata e assai giusta</i>.</span> &quot;But in anger provoked and very just&quot;: Canestrini prints <i lang="it">via</i>, which both readers read without doubt and which barely construes (&quot;with a way provoked&quot;); the 1933 edition reads <i lang="it">ira</i>, anger, which <i lang="it">provocata</i> and <i lang="it">irritato</i> call for. Emended under D68 (D245; FG-CONS-I24-D001). <i lang="it">assai</i> of degree, &quot;very&quot; (D254); the glossary&#x27;s &quot;many&quot; is <i lang="it">assai</i> of number.</p>
+<p><span class="lem"><i lang="it">irritato nella gratulazione</i>.</span> &quot;Irritated in the gratulation&quot;: <i lang="it">gratulazione</i>, rejoicing over a success, kept as the older English cognate. <i lang="it">irritato</i> in the older, stronger sense, provoked to anger.</p>
+<p><span class="lem"><i lang="it">il padre e loro medesimi</i>.</span> &quot;The father and themselves&quot;: most likely the Horatii themselves, the house of the killer and the killed; the Italian does not say. Livy has the father declare the daughter justly killed (1.26).</p>
+<p><span class="lem"><i lang="it">il populo romano</i>.</span> &quot;The Roman people&quot;. The readers split on the letters (A <i lang="it">poputo</i>, B <i lang="it">populo</i>), each giving the other&#x27;s form as alternative; ruled <i lang="it">populo</i> (D246; FG-CONS-I24-D004).</p>
+<p><span class="lem"><i lang="it">più reprensibile ... d&#x27;averlo condannato, che non fu d&#x27;averlo assoluto</i>.</span> &quot;More reprehensible for having condemned him than it was for having absolved him&quot;: the reply takes up Machiavelli&#x27;s sentence and turns it under a condition. Machiavelli&#x27;s reader &quot;will blame that people rather for having absolved him than for having wished to condemn him&quot; (Machiavelli .02); Guicciardini, <i lang="it">in tal caso</i>, finds the people more reprehensible for having condemned him than for having absolved him. The verbs of the trial are the same (absolve, condemn); Machiavelli&#x27;s <i lang="it">voluto</i> drops out, and his <i lang="it">biasimare</i>, blame, becomes <i lang="it">reprensibile</i>, of the Italian family of <i lang="it">reprensione</i>, reproof (D173), which the English cognate does not show. The comparative does not say the absolution was blameless.</p>
+<p><span class="lem"><i lang="it">Non perché sia bene fare regola di potere compensare il male col bene</i>.</span> &quot;Not because it is good to make a rule of being able to compensate the ill with the good&quot;: <i lang="it">male</i> / <i lang="it">bene</i>, ill / good (glossary). The readers split on <i lang="it">potere</i> (A <i lang="it">petere</i>); ruled <i lang="it">potere</i> (D246; FG-CONS-I24-D005). <i lang="it">compensare</i> is the rubric&#x27;s verb.</p>
+<p><span class="lem"><i lang="it">come dice il Discorso, saria pernizioso</i>.</span> &quot;As the Discourse says, would be pernicious&quot;: Guicciardini grants the rule in Machiavelli&#x27;s chapter, which he names <i lang="it">il Discorso</i>, as at FG I.23.</p>
+<p><span class="lem"><i lang="it">sia molto conveniente partirsi dalla regola</i>.</span> &quot;It is very fitting to depart from the rule&quot;: <i lang="it">conveniente</i>, fitting, as <i lang="it">convenire</i> (D85). The subjunctive <i lang="it">sia</i> answers <i lang="it">Non perché sia bene</i>: the correlation, not a mark of commitment; English &quot;is&quot; in both.</p>
+<p><span class="lem"><i lang="it">fare esemplo non a chi vuole indistintamente compensare e&#x27; meriti co&#x27; peccati, ma a chi ha a giudicare, di poterlo compensare</i>.</span> &quot;To make an example not for whoever wishes indiscriminately to compensate the merits with the sins, but for whoever is to judge, of being able to compensate it&quot;: the example is of a power to judge, not of a rule to compensate. <i lang="it">indistintamente</i>, &quot;without distinction&quot;, as FG I.16; <i lang="it">avere a</i>, be to (D61); <i lang="it">peccati</i>, sins, as FG I.16.</p>
+<p><span class="lem"><i lang="it">concorrendo tante cagioni quante concorsono</i>.</span> &quot;There concurring so many causes as concurred&quot;: <i lang="it">cagione</i>, cause (glossary). The reply ends on the case, not the rule, with a stop.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="colophon">
+    <div class="row">
+      <div>
+        <h3>What this is</h3>
+        <p>A free, openly licensed, bilingual edition of Guicciardini's 39 <i>Considerazioni</i> and the
+          <i>Discorsi</i> chapters they answer — 78 text units, Italian and English facing, every reading
+          traceable to a named public-domain witness.</p>
+        <p>It is a reading edition with a transparent apparatus, not a text of record. It does not adjudicate
+          the critical text against Bausi 2001 or the manuscript tradition, and does not claim to.</p>
+      </div>
+      <div>
+        <h3>On the title</h3>
+        <p>Machiavelli had been dead two years when Guicciardini wrote; the <i>Discorsi</i> were unpublished,
+          and the <i>Considerazioni</i> stayed unprinted until 1857. Machiavelli never answers.</p>
+        <p>“Conversation” is a quotation, not a description. It invokes Machiavelli's letter to Vettori of
+          10 December 1513, where he changes into court dress at evening, enters the antique courts of ancient
+          men, and reports that <i>they, in their humanity, answer me</i>. Guicciardini does to Machiavelli
+          what Machiavelli did to Livy — and is denied the reply Machiavelli claimed.</p>
+      </div>
+      <div>
+        <h3>Method</h3>
+        <p>No image-derived reading enters the text on a single reading. Each unit is transcribed twice,
+          independently, by readers who have not seen each other's work; disagreements are adjudicated against
+          the page images and recorded.</p>
+        <p>Existing English translations of the <i>Considerazioni</i> — Grayson (1965), Atkinson &amp; Sices
+          (2002) — are never used as translation inputs.</p>
+      </div>
+      <div>
+        <h3>Licence</h3>
+        <p>The established Italian text and the apparatus data are dedicated to the public domain under
+          <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>. They are Machiavelli's and
+          Guicciardini's sentences, and this edition adds no condition to them.</p>
+        <p>The English translation, the notes and the editorial apparatus are licensed
+          <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: reuse them anywhere, including
+          commercially, with attribution to David McDougall and this edition. The build tooling is MIT.</p>
+        <p>The witness scans are other people's digitisations, included as evidence under their own terms; no
+          grant is made over them, and no page image of Palmarocchi 1933 is reproduced here. Full terms,
+          layer by layer, are in the <span class="sig">LICENSE</span> file in the repository.</p>
+      </div>
+    </div>
+
+    <div class="state">
+      <p><strong>Version 0.3 · 16 of 39 pairs published.</strong>
+        This edition is versioned, not frozen. No open questions on this pair.</p>
+    </div>
+  </footer>
+
+</div>
