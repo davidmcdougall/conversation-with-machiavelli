@@ -19,8 +19,14 @@ Usage:
    Italian (body and rubric) occurs in a cold pass of the governing witness
    listed in established_from; each [bracketed] editorial reading is recorded
    in the unit's establishment or collation record.
+5. Every textual ruling has a footnote (D230). Each ruling David made on the
+   text, as recorded in the establishment record (a ruled reading, or an
+   emendation), is cited by its D-number, or for an emendation by its
+   bracketed reading, in what the reader sees: the variant records, the
+   translator's notes or the commentary.
 """
 import re, sys, unicodedata
+import yaml
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -181,6 +187,25 @@ def check_unit(unit, pair_paras):
     records = prov_text + (comp.read_text(encoding="utf-8") if comp.exists() else "")
     for sup in sorted(set(re.findall(r'\[[^\]]+\]', " ".join(paras.values())))):
         if sup not in records: bad(unit, 4, f"editorial reading {sup} is recorded in no establishment or collation record")
+
+    # 5 · every textual ruling has a footnote (D230)
+    if prov.exists():
+        rec = yaml.safe_load(prov_text) or {}
+        seen = (comp.read_text(encoding="utf-8") if comp.exists() else "")
+        for f in (tr, ann):
+            if f.exists(): seen += f.read_text(encoding="utf-8")
+        for key in ("readings", "ruled_readings"):
+            for e in rec.get(key) or []:
+                if not isinstance(e, dict): continue
+                said = " ".join(str(e.get(k, "")) for k in ("disposition", "rule", "ruling"))
+                if re.search(r"one reader|spelling", said): continue
+                for d in set(re.findall(r"\bD\d+\b", said)) - {"D35", "D36", "D38", "D39", "D65", "D67", "D68", "D72", "D110", "D199", "D203"}:  # rules applied, not rulings
+                    if not re.search(rf"\b{d}\b", seen):
+                        bad(unit, 5, f"ruling {d} ({e.get('locus', '')}) has no footnote")
+        for e in rec.get("emendations") or []:
+            if not isinstance(e, dict): continue
+            for b in re.findall(r"\[[^\]]+\]", str(e.get("established", ""))):
+                if b not in seen: bad(unit, 5, f"emendation {b} has no footnote")
 
 def main():
     only = sys.argv[1] if len(sys.argv) > 1 else None

@@ -52,6 +52,22 @@ records:
     witness_1933: "ed el perseguitare doppo el '26 ... hanno fatto desiderare"
     established: witness_1857
     rationale: "Canestrini's singular agrees with `il perseguitare`. Same sense."
+  - id: FG-CONS-I16-D009
+    locator: FG-CONS.1.16.01
+    class: ruled_reading
+    witness_1857: delle republiche, [e/a] anche (a damaged letter)
+    witness_1933: delle republiche, ed anche
+    established: delle republiche, e anche
+    publish_as_variant_note: true
+    rationale: Both cold readers doubted whether the letter is e or a; `a anche` does not construe, and the 1933 edition reads `ed anche`. Read `e` (D215).
+  - id: FG-CONS-I16-D010
+    locator: FG-CONS.1.16.03
+    class: ruled_reading
+    witness_1857: sicurtà e condizion[e/a] equale (a damaged letter)
+    witness_1933: sicurtà e condizione equale
+    established: sicurtà e condizione equale
+    publish_as_variant_note: true
+    rationale: Both cold readers doubted the final letter; `condiziona` is not a word here, and the 1933 edition reads `condizione`. Read `condizione` (D215).
   - id: FG-CONS-I16-D008
     locator: FG-CONS.1.16.01-05
     class: systematic_orthographic_profile

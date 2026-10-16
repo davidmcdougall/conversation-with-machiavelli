@@ -20,6 +20,22 @@ records:
   established: "di loro. — Le quali"
   publish_as_variant_note: false
   rationale: Canestrini marks the turn with a dash; the stop before it is supplied from the 1933 edition (C002).
+- id: FG-CONS-I3-D004
+  locator: FG-CONS.1.3.01
+  class: ruled_reading
+  witness_1857: etiam avendo fac[u/o]ltà di fare male (a damaged letter)
+  witness_1933: etiam avendo facultà di fare male
+  established: etiam avendo facultà di fare male
+  publish_as_variant_note: true
+  rationale: Both cold readers doubted the vowel. The scan breaks u into n-shapes throughout; the same reply prints `facultà del fare male` clearly a few lines later, and the 1933 edition agrees. The English ("capacity") is the same either way (D112).
+- id: FG-CONS-I3-D005
+  locator: FG-CONS.1.3.02
+  class: ruled_reading
+  witness_1857: dello eleggere [a/e'] tribuni (a damaged letter)
+  witness_1933: dello eleggere e' tribuni
+  established: dello eleggere e' tribuni
+  publish_as_variant_note: true
+  rationale: 'The printed letter is a-shaped, but the scan prints barless e as a throughout this paragraph (`ara` for `era` twice); the reply prints `e tribuni` two sentences later, and `eleggere` takes a direct object, so `a` will not construe. Read `e''`, the plural article, with the 1933 edition: a reading, not an emendation (D113).'
 - id: FG-CONS-I3-D003
   locator: FG-CONS.1.3.01-02
   class: systematic_orthographic_profile

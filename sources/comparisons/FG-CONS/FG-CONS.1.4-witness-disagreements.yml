@@ -9,7 +9,7 @@ records:
   witness_1933: nuove legge
   established: nuove
   publish_as_variant_note: true
-  rationale: "The printed letter is a-shaped on a scan that loses the bar of e throughout (`plabe`, `aletti` in the same reply), and `nuova leggi` does not agree. Read as `nuove`, with the 1933 edition."
+  rationale: "The printed letter is a-shaped on a scan that loses the bar of e throughout (`plabe`, `aletti` in the same reply), and `nuova leggi` does not agree. Read as `nuove`, with the 1933 edition (D111)."
 - id: FG-CONS-I4-D002
   locator: FG-CONS.1.4.02
   class: reading

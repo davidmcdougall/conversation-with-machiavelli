@@ -77,6 +77,14 @@ records:
   rationale: 'Canestrini prints `s arà`, with a space where the apostrophe of `s''arà` (si avrà, one will
     have) fell out; the apostrophe is supplied. The noun differs: Canestrini''s `mistizia`, Palmarocchi''s
     `mistura`. Both are the mixture.'
+- id: FG-CONS-I2-D011
+  locator: FG-CONS.1.2.03
+  class: ruled_reading
+  witness_1857: la ruina d[e/o]lle città (a damaged letter)
+  witness_1933: la ruina delle città
+  established: la ruina delle città
+  publish_as_variant_note: true
+  rationale: 'The two cold readers split: one read `della`, the other doubted `dello`. The scan drops the crossbar of e throughout this page (one reader read `lo cose` for `le cose`), so the letter is a barless e; `delle` agrees with `città` and is what the 1933 edition prints. A reading, not an emendation (D71).'
 - id: FG-CONS-I2-D010
   locator: FG-CONS.1.2.01-05
   class: systematic_orthographic_profile

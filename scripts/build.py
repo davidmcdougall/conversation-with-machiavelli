@@ -361,9 +361,13 @@ def variants_html(work_id, unit_id):
             saw_systematic = True
             continue
         est = r.get("established")
-        est_text = r.get(est, "") if est else ""
-        parts = [f'<span class="lem">{notes_esc(str(est_text))}</span> — '
-                 f'{notes_esc(str(est).replace("witness_", ""))}.']
+        if est in r:
+            # `established` names the witness whose reading stands
+            parts = [f'<span class="lem">{notes_esc(str(r[est]))}</span> — '
+                     f'{notes_esc(str(est).replace("witness_", ""))}.']
+        else:
+            # `established` is the edition's own text (an emendation or a ruled reading)
+            parts = [f'<span class="lem">{notes_esc(str(est or ""))}</span>.']
         for k in r:
             if k.startswith("witness_") and k != est:
                 parts.append(
