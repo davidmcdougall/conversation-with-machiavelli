@@ -1,0 +1,26 @@
+source_unit_id: NM-DISC.1.24
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-016
+passes:
+  - {id: A, performed: 2026-10-16, file: sources/coldpass/NM-DISC.1.24-passA.md, note: "subagent; page images only (350 ppi, thirds), separate directory; full chapter"}
+  - {id: B, performed: 2026-10-16, file: sources/coldpass/NM-DISC.1.24-passB.md, note: "subagent; one page only (p. 99, 249 words, 57% of the chapter), chosen by the collator after pass A by D203(c) and recorded before it was given out; separate directory"}
+collation: sources/coldpass/COLLATION-2026-10-16-I24.md
+collation_result: "434 words (pass A). Sample of p. 99: the token streams are identical after Class A; no word, clause or sense disagreement, so no full pass B, and the sample rule stands for the next chapter. Both readers doubt the same worn m in `premiato`. No pass-A doubt outside the sample (D203(a)). One word-level difference from the 1554 edition at a letter the scans break (D203(b)), `ricompensa`/`ricompenso`, kept as printed (D248)."
+boundaries: "printed pp. 98-100; CAPITOLO XXIV on p. 98 after line 12, the last line of XXIII (`tenuti in su i monti.`); italic rubric of three lines; large initial E; one block; ends p. 100 line 14 `aveva salvato.`; CAPITOLO XXV follows on the same page"
+interventions: []
+readings:
+  - {locus: "per ricompensa di bene", passes: "A ricompensa; B ricompensa (p. 99, the sample)", witness_1554: "ricompenso", disposition: "ricompensa kept, D38; D248 (D203(b) escalation)"}
+comparison_collation: >
+  Done 2026-10-16 against the 1554 extract (fol. 39v-40r). A cold reader
+  transcribed the Giglio leaves from the page images
+  (sources/coldpass/NM-DISC.1.24-1554.md); the transcript was collated by
+  word against the established text, and the readings published as variant
+  notes on fol. 40r (`astenersi` without `non`, `ricompenso`, `uide`,
+  `Mallio`) were checked on the leaf image by the collator; `assolto`,
+  `tosto` and `condennare` rest on the transcript. Sense-bearing differences
+  are in sources/comparisons/NM-DISC/NM-DISC.1.24-witness-disagreements.yml.
+normalisation_notes: "Class A only: accents (`perchè` → `perché`, `Perchè` → `Perché`, `nè` → `né`, `benchè` → `benché`, `ostantechè` → `ostanteché`, `tantochè` → `tantoché`); elision solid (`d'ingratitudine`, `s'aggiunge`, `l'uno`, `l'altro`, `l'Istoria`, `ch'egli`; the rubric's `l' uno`, `l' altro` closed up); apocope spaced (`a' loro`, `da' Galli`, `de' suoi`); `Pub-|blico` across pp. 99-100 joined as `Pubblico`; line-end hyphens removed; spaces before punctuation removed. `que llo` (p. 100), printed with a wide gap, set `quello`."

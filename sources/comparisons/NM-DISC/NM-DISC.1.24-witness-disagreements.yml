@@ -1,0 +1,51 @@
+source_unit_id: NM-DISC.1.24
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-I24-D001
+    locator: NM-DISC.1.24.03
+    class: reading
+    witness_1824: "debbe di quel poco non astenersi"
+    witness_1554: "debbe di di quel poco astenersi"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 40r): the 1554 has no `non` and prints `di` twice, so that it says the opposite, \"must abstain from that little\". The 1824 `non astenersi`, \"not abstain\", is what the argument needs: rewards are to be kept even by a poor republic."
+  - id: NM-DISC-I24-D002
+    locator: NM-DISC.1.24.03
+    class: reading
+    witness_1824: "dato ad alcuno per ricompensa di bene, ancora che grande"
+    witness_1554: "dato ad alcuno per ricompenso di bene, anchora che grande"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf. `Ricompenso` is the masculine form of the same noun; a word-level difference at a/o, letters the scans break, so escalated under D203(b) although both 1824 readers read `ricompensa` without doubt on the sampled page. It construes and stands, D38 (D248). Both witnesses print `ancora che grande`, \"even though great\", where the sense seems to want \"even though small\": not a variant, and noted in the translation."
+  - id: NM-DISC-I24-D003
+    locator: NM-DISC.1.24.03
+    class: reading
+    witness_1824: "come si vede che fece Roma"
+    witness_1554: "come si uide che fece Roma"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf: the 1554 past `si uide`, \"as was seen\", for the 1824 present `si vede`, \"as one sees\"."
+  - id: NM-DISC-I24-D004
+    locator: NM-DISC.1.24.02
+    class: reading
+    witness_1824: "biasimerà quel Popolo più tosto per averlo assoluto, che per averlo voluto condannare"
+    witness_1554: "biasimerà quel popolo piu tosto per hauerlo assolto, che per hauerlo uoluto condennare"
+    established: witness_1824
+    publish_as_variant_note: false
+    rationale: "Spelling only (`assolto`, `condennare`); rests on the transcript."
+  - id: NM-DISC-I24-D005
+    locator: NM-DISC.1.24.04
+    class: reading
+    witness_1824: "È nota ancora l'Istoria di Manlio Capitolino ... mosso poi Manlio"
+    witness_1554: "E nota anchora la historia di Mallio Capitolino ... mosso poi Mallio"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf: the 1554 `Mallio` for `Manlio`, as at NM I.11 (names.md)."
+  - id: NM-DISC-I24-D006
+    locator: NM-DISC.1.24.01-04
+    class: systematic_orthographic_profile
+    witness_1824: "the 1824 spelling and pointing: `Orazio`, `Curiazj`, `omicidio`, `fussero`, `gastiga`, `presto`, `riputazione`, `confidenza`, `diventerà`, `nimici`, `stajora`"
+    witness_1554: "Giglio's: `Oratio`, `Curiatij`, `homicidio`, `fossero`, `castiga`, `tosto`, `reputatione`, `confidanza`, `diuentarà`, `nemici`, `staiora`, `Rep.`, u for v, `&`, `et`, `h-`, and heavier pointing with parentheses"
+    established: witness_1824
+    rationale: "The 1824 governs throughout. `presto`/`tosto` and `si aggiunge`/`si aggiugne` are the same words in other forms; `confidanza` and `diuentarà` are spellings, not other words. No other difference that bears on the English."

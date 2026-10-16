@@ -1,0 +1,51 @@
+source_unit_id: FG-CONS.1.24
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-I24-D001
+    locator: FG-CONS.1.24.01
+    class: emendation
+    witness_1857: "non pensatamente, ma con via provocata e assai giusta"
+    witness_1933: "non pesatamente, ma con ira provocata ed assai giusta"
+    established: "non pensatamente, ma con [ir]a provocata e assai giusta"
+    publish_as_variant_note: true
+    rationale: "Both cold readers read `via` without doubt. As printed the phrase barely construes (\"with a way provoked and fairly just\"); the 1933 `ira`, anger, is what `provocata` and `irritato` in the same clause call for. Emended under D68 from the 1933 edition, as D126, D214 and D233 (D245)."
+  - id: FG-CONS-I24-D002
+    locator: FG-CONS.1.24.01
+    class: reading
+    witness_1857: "fatto non pensatamente"
+    witness_1933: "fatto non pesatamente"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "Both readers read `pensatamente`, \"with forethought\", without doubt; the 1933 `pesatamente`, \"weighedly\", comes to much the same. Not at a letter the scan breaks; kept as printed (D38)."
+  - id: FG-CONS-I24-D003
+    locator: FG-CONS.1.24.01
+    class: reading
+    witness_1857: "con pianti e querele era andata turbandogli"
+    witness_1933: "con pianti e querele era andato turbandogli"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "Both readers read `andata` without doubt, at a letter the scan breaks (a/o); escalated under D203(b). Canestrini's feminine agrees with `lei`, the sister, who had gone on troubling the victory; the 1933 `andato` is the invariable participle. Same sense; kept, D38 (D247)."
+  - id: FG-CONS-I24-D004
+    locator: FG-CONS.1.24.01
+    class: ruled_reading
+    witness_1857: "il popu[l/t]o romano (a damaged letter)"
+    witness_1933: "el popolo romano"
+    established: "il populo romano"
+    publish_as_variant_note: true
+    rationale: "The readers split on which form they preferred, each giving the other's as alternative: A `poputo`, B `populo`. `Poputo` is not a word; Canestrini prints `populo` throughout the Considerazioni. Read `populo`, a reading, not an emendation (D246)."
+  - id: FG-CONS-I24-D005
+    locator: FG-CONS.1.24.01
+    class: ruled_reading
+    witness_1857: "fare regola di p[o/e]tere compensare (a damaged letter)"
+    witness_1933: "fare regola di potere compensare"
+    established: "fare regola di potere compensare"
+    publish_as_variant_note: true
+    rationale: "The readers split on which form they preferred: A `petere`, B `potere`, each giving the other's as alternative. `Petere` is not Italian; the 1933 edition reads `potere`. A reading (D246)."
+  - id: FG-CONS-I24-D006
+    locator: FG-CONS.1.24.01
+    class: systematic_orthographic_profile
+    witness_1857: "Canestrini's `il`, `populo`, `ammazzare`, `circumstanze`, `cagioni`, `e` before a vowel, `perchè`, and lighter pointing"
+    witness_1933: "Palmarocchi's `el`, `popolo`, `amazzare`, `circunstanzie`, `cagione`, `ed`, `perché`, `sí`, and his pointing"
+    established: witness_1857
+    rationale: Canestrini governs throughout. No other difference of word or sense.

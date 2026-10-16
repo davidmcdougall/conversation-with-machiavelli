@@ -1,0 +1,48 @@
+source_unit_id: FG-CONS.1.24
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-016
+responds_to: NM-DISC.1.24
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. No note of Canestrini's falls in this unit."
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38); errors are emended from Palmarocchi and bracketed (D68)."
+passes:
+  - {id: A, performed: 2026-10-16, file: sources/coldpass/FG-CONS.1.24-passA.md, note: "subagent; page images only (native 600 ppi rendered at 1200, half pages enlarged 1.6x plus quarter crops enlarged 2.2x), separate directory"}
+  - {id: B, performed: 2026-10-16, file: sources/coldpass/FG-CONS.1.24-passB.md, note: "subagent; same images, separate directory"}
+collation: sources/coldpass/COLLATION-2026-10-16-I24.md
+collation_result: >
+  263 words (A), 258 (B, counting closed elisions as one). Two splits, both
+  of preferred reading only: A prefers the printed shapes `poputo` and
+  `petere` as possible misprints, B prefers `populo` and `potere` as scan
+  damage, each giving the other's form as alternative; ruled readings with
+  the 1933 edition (D246). No clause or sense disagreement. One confident
+  shared reading that barely construes, `con via provocata` (1933 `con ira
+  provocata`), emended `[ir]a` (D245). One confident shared reading against
+  the comparison witness at a letter the scan breaks, `era andata` (1933
+  `andato`), kept (D247). Two marks of uncertain weight follow the 1933
+  edition (D110).
+witness_independence_check: "SCOPE §7. At the two split loci pass B sides with Palmarocchi (`populo`/`popolo`, `potere`), pass A against, each on a letter both readers doubted. Neither pass carries a Palmarocchi word-reading where Canestrini differs: both have `andata`, `pensatamente`, `via provocata`, `il populo`, `cagioni`, against the 1933 `andato`, `pesatamente`, `ira provocata`, `el popolo`, `cagione`. The passes read Canestrini."
+boundaries: "printed pp. 39-40; heading CONSIDERAZIONE SUL CAPITOLO XXIV on p. 39 after line 2, the last line of the reply on XXIII (`difficile il farlo.`); Canestrini's two-line rubric `Le repubbliche bene ordinate constituiscono premii e pene ai loro cittadini, nè compensano mai l'uno con l'altro`, unstopped; one indented paragraph (`Si può dire forse`); ends p. 40 l. 3 `nel caso di Orazio.`; CONSIDERAZIONE SUL CAPITOLO XXV follows"
+corrections:
+  - {id: FG-CONS-I24-C001, locator: FG-CONS.1.24.01, was: "a' magistrati punirla; e che la memoria", now: "a' magistrati punirla, e che la memoria", evidence: "Pass A ⟨;|,⟩, pass B ⟨;|,⟩; the 1933 edition prints a comma. D110."}
+  - {id: FG-CONS-I24-C002, locator: FG-CONS.1.24.01, was: "saria pernizioso; ma perché", now: "saria pernizioso, ma perché", evidence: "Pass A ⟨;|,⟩, pass B ⟨;|,⟩; the 1933 edition prints a comma. D110."}
+emendations:
+  - {id: FG-CONS-I24-E001, operation: emendation, rule: D68, status: ruled_D245, locator: FG-CONS.1.24.01, printed: "non pensatamente, ma con via provocata e assai giusta", established: "non pensatamente, ma con [ir]a provocata e assai giusta", source: WIT-FG-CONS-1933-PALMAROCCHI, note: "Both readers read `via` without doubt. As printed the phrase barely construes (\"with a way provoked and fairly just\"); the 1933 edition reads `ira`, anger, which the provocation and `irritato` in the same clause require. As D126, D214 and D233, a clearly read word that barely construes. The emended letters are bracketed (DEC-009 clause 7). Not settled on the page image."}
+readings:
+  - {locus: "il ⟨populo|poputo⟩ romano", passes: "A ⟨poputo|populo⟩; B ⟨populo|poputo⟩", witness_1933: "popolo", disposition: "populo, D246 (David, 2026-10-16): a broken l"}
+  - {locus: "regola di ⟨potere|petere⟩", passes: "A ⟨petere|potere⟩; B ⟨potere|petere⟩", witness_1933: "potere", disposition: "potere, D246: a barred o"}
+  - {locus: "era andata turbandogli", passes: "A andata; B andata", witness_1933: "andato", disposition: "andata kept, D38; D247 (D203(b) escalation)"}
+  - {locus: "glien'avessi", passes: "A ⟨glien'|ghen'⟩; B ⟨glien'avessi|ghen'avessi⟩", witness_1933: "glien'avessi", disposition: "glien': the alternative is not a word"}
+  - {locus: "qualche causa", passes: "A ⟨qualche|qualcho⟩; B the same", witness_1933: "qualche", disposition: "qualche: the alternative is not a word"}
+  - {locus: "nella gratulazione", passes: "A ⟨gratulazione|gratulaziona⟩; B the same", witness_1933: "gratulazione", disposition: "gratulazione: the alternative is not a word"}
+  - {locus: "compensare e' meriti", passes: "A ⟨e|c⟩; B ⟨e|c⟩", witness_1933: "e'", disposition: "e', D35: the alternative is not a word"}
+pointing:
+  - {locus: "autore di tanto bene; e intendendola", passes: "A ⟨;|,⟩; B ⟨;|,⟩", witness_1933: ";", disposition: "printed"}
+  - {locus: "fussi delitto, perché", passes: "A ⟨,|;⟩; B ,", witness_1933: ",", disposition: "printed"}
+  - {locus: "sì bella vittoria. E in tal caso", passes: "A ⟨.|no stop⟩; B .", witness_1933: ".", disposition: "printed, faint"}
+  - {locus: "d'averlo assoluto. Non perché", passes: "A ⟨.|no stop⟩; B .", witness_1933: ".", disposition: "printed, faint"}
+  - {locus: "nel caso di Orazio.", passes: "A ⟨.|no stop⟩; B .", witness_1933: ".", disposition: "printed, faint; kept at unit end, since pass B reads it without doubt (D40 forbids supplying one)"}
+not_supplied: []
+normalisation_notes: "Class A: accents (`perchè` → `perché`, `nè` → `né` in the rubric; `così` and `sì` (×3), where the accent is faint, set accented as both readers prefer); elision solid (`l'omicidio` twice, `d'averlo` twice, `glien'avessi`, `l'uno`, `l'altro`); apocope spaced (`de' meriti` twice, the second without a visible apostrophe, D39; `da' privati`, `a' privati`, `a' magistrati`, `co' peccati`); the Florentine plural article supplied as `e'` (D35: `e' meriti` twice); line-end hyphens removed; spaces before punctuation removed. `tanto` is doubted by B alone."
