@@ -86,8 +86,8 @@ customs, their vicious life had generated for them. And if the history of
 these were well considered, it would be very good instruction to any prince,
 to show him the path of glory or of blame, and of his security or of his
 fear. For of twenty-six emperors who were from Caesar to Maximinus, sixteen
-were killed, ten died ordinarily; and if of those who were killed there was
-some good one, like Galba and Pertinax, he was killed by that corruption that
+were killed, ten died ordinarily; and if of those who were slain there was
+some good one, like Galba and Pertinax, he was slain by that corruption that
 his predecessor had left in the soldiers. And if among those who died
 ordinarily there was some villainous one, like Severus, it arose from a very
 great fortune and *virtù* of his, which two things few men accompany.
@@ -115,8 +115,7 @@ times, where each can hold and defend that opinion which he wishes. He will
 see, in the end, the world triumph; full of reverence and of glory the
 prince; of love and of security the peoples. If he afterwards considers
 minutely the times of the other emperors, he will see them atrocious through
-wars, discordant through seditions, in peace and in war cruel, so many
-princes killed by the sword, so many civil wars, so many external, Italy
+wars, discordant through seditions, in peace and in war cruel, so many princes slain by the sword, so many civil wars, so many external, Italy
 afflicted, and full of new misfortunes, ruined and sacked the cities of it.
 He will see Rome burned, the Capitol undone by its citizens, desolate the
 ancient temples, corrupted the ceremonies, filled with adulteries the cities;

@@ -13,8 +13,7 @@ rubric_en: "How it is necessary to be alone in wishing to order a republic anew,
 rubric_source: Canestrini 1857, printed p. 22 — his setting of the chapter title over the reply, without a terminal stop
 translated: 2026-10-04
 open_for_david: none
-title: "A way of medicine"
-standfirst: "Machiavelli lays down that a republic or kingdom is never, or seldom, ordered well, or reformed wholly anew, except by one; that a prudent orderer must contrive to have the authority alone, and is excused by the effect when it is good; that he must not leave it hereditary; and that Romulus, who killed his brother and consented to his companion's death, merits excuse, since he at once ordered a senate and kept only the command of the armies and the assembling of the senate. Guicciardini grants that one alone can order better than many, and that he deserves praise who reorders a disordered city by violence and fraud when there is no other way. But it is to be prayed that republics never need it: men's spirits are fallacious, the honest colour can cover a tyranny, and the founder cannot lay down his authority until time has established the laws, so that power may turn a good intention to ill. It is a medicine for the hopeless case, dangerous and of ill example. Supremely laudable is the man who keeps the authority no longer than the ordering needs, as Lycurgus did; of whoever keeps it while he lives, although he governs rightly, he does not know how far he is to be praised, and such a man is not free of all reproof. As for Romulus and his senate, he says nothing yet: if he remembers well, Romulus was suspected to have been killed by the senate for arrogating too much authority, and the life must be considered well."
+standfirst: "Machiavelli holds that a state is seldom if ever well ordered except by one man holding authority alone, and that Romulus, acting for the common good, merits excuse for killing his brother. Guicciardini has no doubt that one man orders better than many, and that he deserves praise who reorders a disordered city by violence and fraud when there is no other way; but one must pray republics never need it, since the founder must hold power until the laws settle, and its sweetness may turn a good intention bad. It is a medicine to be wished for when there is no other hope, but dangerous and of ill example; of one who keeps such power for life, though he governs rightly, he does not know how far he is to be praised."
 ---
 
 # Consideration on chapter IX of Book I
@@ -31,8 +30,7 @@ mended by a like path, for besides that the spirits of men are fallacious,
 and one can under this honest colour occupy the tyranny, there is also danger
 that the will, good from the beginning, become bad, for whoever does this
 cannot at once, the laws constituted, lay down the authority, for, being
-introduced by violence, they would forthwith be annihilated, and therefore it
-is needful he continue so long in the authority that the progress of time and
+introduced by violence, they would forthwith be annihilated, and therefore it is required he continue so long in the authority that the progress of time and
 experience establish them, and in this space it can happen that the
 sweetness of power and the licence of the principate make him change into
 ill the intention that from the beginning had been good. This is, then, a way
@@ -41,16 +39,15 @@ and of ill example, and he is supremely laudable who does not retain this
 authority in himself except so far as is necessary to establish the things
 ordered, as Lycurgus did, and if any other can be adduced for an example. But
 whoever retains the power while he lives, although he governs rightly, and
-leaves after him a good form of government, I do not know how far he is to be
+leaves after him a good form of regimen, I do not know how far he is to be
 praised, for it cannot be interpreted except that he is moved by his own
 ambition, and although what he has done is useful to the city, and he is not
 detestable, as is he who uses ill the authority occupied, yet also he is
 not free of all reproof. As to what the Discourse says, that Romulus looked to
 the common good and not to his own ambition, having constituted a senate, I
-say nothing else now, for it is needful first to read well and consider the
+say nothing else now, for it is required first to read well and consider the
 life of Romulus, who, if I remember well, it was suspected had been killed by
-the senate, for arrogating to himself too much authority: it is needful to
-consider it well
+the senate, for arrogating to himself too much authority: it is required to consider it well
 
 ---
 
@@ -115,8 +112,7 @@ cannot do so at once. The rest of the reply turns on the difference.
 **`incontinenti annichilate`.** "Forthwith annihilated": `incontinenti`,
 immediately, kept apart from `subito`, "at once".
 
-**`e però bisogna continui`.** "And therefore it is needful he continue"
-(D22, D75).
+**`e però bisogna continui`.** "And therefore it is required he continue" (D22). `bisogna`, "it is required": the edition's rendering of the impersonal `bisognare`, in every tense (D260); the reasons are in the note on `bisogni` at Machiavelli I.2.
 
 **`il progresso del tempo e la esperienza le stabilisca`.** "The progress of
 time and experience establish them": two subjects, a singular verb, and the
@@ -163,7 +159,7 @@ Guicciardini is not sure of one besides Lycurgus.
 **`se bene governa rettamente`.** "Although he governs rightly": `se bene`,
 "although" (D31).
 
-**`forma buona di reggimento`.** "A good form of government" (D64).
+**`forma buona di reggimento`.** "A good form of regimen": `reggimento`, regimen, the older English for a form of rule, kept apart from `governo`, government (D262). "Regiment" is a false friend.
 
 **`non so quanto sia da essere laudato`.** "I do not know how far he is to be
 praised": suspension (glossary, `non so`), not modesty. The question is how
@@ -201,8 +197,7 @@ Machiavelli's `ordinato un Senato` in another verb.
 **`non dico ora altro`.** "I say nothing else now": he defers, and will not
 take Machiavelli's proof until the life has been considered.
 
-**`bisogna prima bene leggere e considerare la vita di Romulo`.** "It is
-needful first to read well and consider the life of Romulus": Machiavelli
+**`bisogna prima bene leggere e considerare la vita di Romulo`.** "It is required first to read well and consider the life of Romulus": Machiavelli
 wrote "whoever considers well the authority that Romulus reserved to himself"
 (.03); Guicciardini asks for the life to be considered, not the authority.
 `Leggere`: the life is something to be read, perhaps Plutarch's *Life* of
@@ -223,7 +218,7 @@ killing him.
 authority". Livy gives no reason; Plutarch (*Romulus* 26–27) and Dionysius
 of Halicarnassus (2.56) make it his growing absolutism.
 
-**`bisogna considerarla bene`.** "It is needful to consider it well": `la` is
+**`bisogna considerarla bene`.** "It is required to consider it well": `la` is
 the life of Romulus. The colon before it is supplied from the 1933 edition
 (C005).
 

@@ -35,7 +35,7 @@ And wishing to remedy these inconveniences and these disorders, which the above-
 
 ## NM-DISC.1.16.05
 
-It is true that I judge unhappy those princes who, to secure their state, are to hold extraordinary paths, having the multitude for enemies; for he who has the few for enemies secures himself readily and without many scandals; but whoever has the generality for enemy never secures himself, and the more cruelty he uses, the weaker becomes his principate. So that the greatest remedy there is, is to seek to make the people one's friend.
+It is true that I judge unhappy those princes who, to secure their state, have to hold extraordinary paths, having the multitude for enemies; for he who has the few for enemies secures himself readily and without many scandals; but whoever has the generality for enemy never secures himself, and the more cruelty he uses, the weaker becomes his principate. So that the greatest remedy there is, is to seek to make the people one's friend.
 
 ## NM-DISC.1.16.06
 
@@ -51,7 +51,7 @@ But as to the other popular desire, of having back its liberty, the prince, not 
 
 ## NM-DISC.1.16.09
 
-That prince, then, or that republic which does not secure itself in the beginning of its state, it is fitting that it secure itself at the first occasion, as the Romans did. Whoever lets that pass repents late of not having done what he ought to have done. The Roman people, on that account, being still not corrupted when it recovered liberty, was able to maintain it, the sons of Brutus killed and the Tarquins extinguished, with all those remedies and orders that have another time been discoursed. But had that people been corrupted, neither in Rome nor elsewhere would valid remedies have been found to maintain it, as in the following chapter we shall show.
+That prince, then, or that republic which does not secure itself in the beginning of its state, it is fitting that it secure itself at the first occasion, as the Romans did. Whoever lets that pass repents late of not having done what he ought to have done. The Roman people, on that account, being still not corrupted when it recovered liberty, was able to maintain it, the sons of Brutus slain and the Tarquins extinguished, with all those remedies and orders that have another time been discoursed. But had that people been corrupted, neither in Rome nor elsewhere would valid remedies have been found to maintain it, as in the following chapter we shall show.
 
 ---
 
@@ -121,7 +121,7 @@ That prince, then, or that republic which does not secure itself in the beginnin
 
 **`questo discorso sia disforme dal soprascritto`.** "This discourse be unlike the above-written": the chapter has argued of a state newly free, and since .05 has spoken of princes; Machiavelli marks the turn as a digression. The 1554 edition makes the prince "a very good prince" (`di uno buonissimo Prencipe`, NM-DISC-I16-D009).
 
-**`per non avere a tornare più in su questa materia`.** "So as not to have to turn again upon this matter": D61's "be to" cannot stand after "so as not to", and the infinitive keeps "have to" (as D101 recorded for the passive). Elsewhere `avere a` is "be to": `dove si abbia a rifuggire`, "where it is to take refuge" (.01); `hanno a tenere vie straordinarie`, "are to hold extraordinary paths" (.05); `abbiano ... a contentarsi` (.08).
+**`per non avere a tornare più in su questa materia`.** "So as not to have to turn again upon this matter": D61's "be to" cannot stand after "so as not to", and the infinitive keeps "have to" (as D101 recorded for the passive). Elsewhere `avere a` is "be to": `dove si abbia a rifuggire`, "where it is to take refuge" (.01); `hanno a tenere vie straordinarie`, "have to hold extraordinary paths" (.05), where "be to" misreads necessity as appointment (D261); `abbiano ... a contentarsi` (.08).
 
 **`Volendo pertanto un Principe ..., dico`.** "A prince, on that account, wishing ..., I say": the gerund's subject is left without a verb, and `dico` takes over. `Pertanto`, "on that account" (D98).
 
@@ -167,7 +167,7 @@ That prince, then, or that republic which does not secure itself in the beginnin
 
 **`Sendo pertanto il Popolo romano ancora non corrotto quando ei ricuperò la libertà`.** "The Roman people, on that account, being still not corrupted when it recovered liberty": pass A doubted the first letter of `ei` on p. 80, outside the D199 sample; read `ei` with the 1554 `quando ei recupero` (D203(a), D217; NM-DISC-I16-D010).
 
-**`morti i figliuoli di Bruto, e spenti i Tarquinj`.** "The sons of Brutus killed and the Tarquins extinguished": `morto` transitive, killed (D169). Guicciardini's reply has the equality of the citizens "not altogether extinguished" (`non si spegne`, Guicciardini .02).
+**`morti i figliuoli di Bruto, e spenti i Tarquinj`.** "The sons of Brutus slain and the Tarquins extinguished": `morto` transitive, slain (D262). Guicciardini's reply has the equality of the citizens "not altogether extinguished" (`non si spegne`, Guicciardini .02).
 
 **`che altra volta si sono discorsi`.** "That have another time been discoursed": `discorrere` (D01). The 1554 edition reads `altre uolte`, "other times" (NM-DISC-I16-D011; D217).
 

@@ -13,8 +13,7 @@ rubric_en: "Of how much importance it is to take account of religion, and how It
 rubric_source: Canestrini 1857, printed p. 27 — his own setting of the chapter title over the reply, not the 1824 Discorsi rubric
 translated: 2026-09-18; revised 2026-09-25 against the Canestrini re-establishment (FG-CONS-I12-F001)
 open_for_david: none — O06, O07, O12, O13, F002 ruled 2026-09-25 (decisions.md D40–D42, D47)
-title: "Religion, and the ruin of Italy"
-standfirst: "Machiavelli argues that a state must keep its religion uncorrupted, and that the Roman Church has ruined Italy twice over — by its example, and by keeping the peninsula divided. Guicciardini, reading him more than a decade later, goes further than Machiavelli on the first charge, grants the premise of the second, and then declines to draw his conclusion."
+standfirst: "Machiavelli holds that a state must keep its religion uncorrupted, and charges the Roman Church with destroying Italy's devotion by its court's wicked examples and, too weak to rule Italy yet strong enough to keep it divided, with causing its ruin. Guicciardini says no ill can be spoken of the Roman court that it does not deserve worse, and believes the Church has kept Italy from becoming a monarchy, but he does not know whether that was felicity or infelicity. Under a republic, one city's rule would have been calamity for the rest; divided Italy, though it has suffered, has had flourishing cities a republic would have denied it, so he judges such a monarchy more unhappy than happy. Nor has Italy ever been easily brought under one rule. Therefore, if the Church has opposed monarchies, he does not readily concur that this has been Italy's misfortune."
 ---
 
 # Consideration on chapter XII
@@ -29,8 +28,7 @@ more be said, for it is an infamy, an example of all the disgraces and
 opprobriums of the world. And I believe too that it is true that the greatness
 of the Church, that is the authority which religion has given it, has been the
 cause that Italy has not fallen into a monarchy; for on the one hand it has had
-such credit that it has been able to make itself head, and to summon, when it
-has been needed, external princes against whoever was about to oppress Italy; on
+such credit that it has been able to make itself head, and to summon, when it has been required, external princes against whoever was about to oppress Italy; on
 the other, being stripped of arms of its own, it has not had such forces as to
 have been able to establish temporal dominion other than what has voluntarily
 been given it by others.
@@ -51,7 +49,7 @@ And although Italy, divided into many dominions, has at various times suffered
 many calamities which perhaps in a single dominion it had not suffered, albeit
 the inundations of the barbarians were rather in the time of the Roman empire than
 otherwise, nonetheless in all these times it has had, on the other side, so many
-flourishing cities as it would not have had under a republic, for I reckon that
+flourishing cities as it would not have had under a republic, for I deem that
 a monarchy would have been more unhappy for it than happy. This reason has no
 force in a kingdom, which is more common to all the subjects; and therefore we
 see France and many other provinces live happy under one king; yet, whether by
@@ -112,7 +110,7 @@ the counterfactual.
 
 **`ché io reputo che`.** Canestrini accents the first `che` and leaves the second
 bare: a causal conjunction and then a complementiser. The English carries both —
-"for I reckon that" — where the earlier draft, following a text without the
+"for I deem that" — where the earlier draft, following a text without the
 accent, had "so that".
 
 **`consuetudine` and `costume`.** Two words: "usage" here, "custom" at
@@ -131,3 +129,5 @@ The edition prints the word, `vituperii`; the sense is the same either way.
 neither text here supplies one. The period ends as the page ends it. Two other
 sentence-final stops in this unit, displaced in the witness by Canestrini's note
 references, are supplied and declared.
+
+**`bisognato`.** "It has been required": the edition's rendering of the impersonal `bisognare`, in every tense (D260); the reasons are in the note on `bisogni` at Machiavelli I.2.

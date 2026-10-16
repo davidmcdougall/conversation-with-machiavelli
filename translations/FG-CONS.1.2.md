@@ -13,8 +13,7 @@ rubric_en: "Of how many species republics are, and of which was the Roman republ
 rubric_source: Canestrini 1857, printed p. 6 — his setting of the chapter title over the reply, without a terminal stop
 translated: 2026-09-28
 open_for_david: none
-title: "The mixed government"
-standfirst: "Machiavelli takes the six forms and their cycle from the ancients, and finds Rome's perfection in a mixture that chance and the disunion of plebs and senate produced. Guicciardini grants the mixture at once and spends his reply on how to order it: what each simple form does well and badly, and which powers to give the head, the senate and the people so that each keeps its good and loses its ill."
+standfirst: "Machiavelli holds, with the wiser writers, that each simple form of government slides into its corrupt twin, so prudent lawgivers mix all three, as Rome did by chance through the disunion of plebs and senate. Guicciardini has no doubt the mixture is better and more stable, above all when it takes the good of each form and leaves the bad. Since one man's rule cannot give all its good without its ill, he would rather have less good and safe: an elective head for life with tightly limited authority, as at Venice. He adds a large senate drawn from all eligible citizens to handle war and peace, and a people given nothing important except electing magistrates and confirming laws."
 ---
 
 # Consideration on chapter II of Book I
@@ -26,8 +25,7 @@ standfirst: "Machiavelli takes the six forms and their cycle from the ancients, 
 And there is no doubt that the mixed government of the three species, princes,
 optimates and people, is better and more stable than a simple government of any
 of the three species, and especially when it is mixed in such a way that from
-each species the good is taken and the bad left behind; which is the point it is
-needful to take heed of, or where the fallacy of whoever orders them can lie.
+each species the good is taken and the bad left behind; which is the point it is required to take heed of, or where the fallacy of whoever orders them can lie.
 And to discourse this article minutely, I say that the fruit of royal government
 is that much better, with more order, with more celerity, with more secrecy,
 with more resolution, the public things are governed when they depend on the
@@ -37,7 +35,7 @@ all that authority which is given him to do good effects makes them very bad;
 likewise, if he is good but insufficient, infinite disorders arise through his
 sloth. And even though the king were made by choice, not by succession, there is
 not entire security against these dangers, for whoever chooses can many times
-deceive himself, reckoning good or prudent one who is of another sort, and the
+deceive himself, deeming good or prudent one who is of another sort, and the
 greatness of the power and of the licence often changes the nature of whoever is
 chosen, and especially if he has sons, it is difficult for him not to desire to
 have them as successors, which, when he is king with absolute power, can with
@@ -49,8 +47,7 @@ laudable.
 
 Wishing then to order a government that should partake as much as can be of the
 good of royal government, and should not partake of the ill, it is impossible
-that it partake of all the good and flee all the ill, and it is needful to be
-content that it should rather have less of the good than, through wanting too
+that it partake of all the good and flee all the ill, and it is required to be content that it should rather have less of the good than, through wanting too
 much of it, partake also of the ill. And therefore it is necessary to make it
 perpetual, but to limit its authority, by making it so that by itself alone it
 cannot dispose of anything, or at least only of those things that are of lesser
@@ -90,7 +87,7 @@ come into the hands of imprudent and bad.
 
 ## FG-CONS.1.2.04
 
-It is needful to draw from this species of government what good one can, and to
+It is required to draw from this species of government what good one can, and to
 flee the ill, that the optimates be not always the same lines and families, but
 that from the whole body of the city, that is, from all those who according to
 the laws are able to partake of the magistracies, a senate be chosen that is to
@@ -127,7 +124,7 @@ republic that remits things to the consultation of the people is soon in peril;
 it is unstable and ever desirous of new things, and therefore easy to be moved
 and deceived by ambitious and seditious men; it willingly strikes at the
 qualified citizens, which necessitates them to seek novelty and disturbance. To
-flee these things, it is needful not to remit to the people any important
+flee these things, it is required not to remit to the people any important
 thing, except those which, if they were in the hands of others, liberty would
 not be secure, as is the choice of magistrates, the creation of laws, which it
 is not well should come to the people unless first digested and approved by the
@@ -175,8 +172,7 @@ keeps `male` apart from `cattivo`, "bad", and `reo`, "evil". `Il buono`
 (.01) and `di buono` (.05) are also "good": English cannot keep `buono` apart
 from `bene` as it keeps `cattivo` from `male`.
 
-**`riputando`.** "Reckoning" good or prudent: the verb of Guicciardini's
-`reputo`, "I reckon", used here of the voter who reckons wrongly.
+**`riputando`.** "Deeming" good or prudent: the verb of Guicciardini's `reputo`, "I deem" (D259), used here of the voter who deems wrongly.
 
 **`potestà`.** "Power": the power an office carries, `potestà sciolta`
 (loosed), `assoluta`. `Potenza`, power as might, does not occur in the reply.
@@ -194,7 +190,7 @@ before the others' minds (`ricordassi`). Matters are "reported" to him
 note adds that the doge could undertake nothing without the Great Council, the
 *Pregadi* (the senate) and the *Collegio*.
 
-**`Bisogna ... che`.** "It is needful": `bisogna` governs the two
+**`Bisogna ... che`.** "It is required" (D260; see the note on `bisogni`, Machiavelli .02): `bisogna` governs the two
 infinitives and then every `che` with a subjunctive in the long .04 period
 (that the optimates be not always the same families, that a senate be chosen,
 that it be perpetual, that they be many, that they have not absolute power, that

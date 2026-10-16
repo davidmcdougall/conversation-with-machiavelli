@@ -16,7 +16,7 @@ and always refreshes, across every published pair:
 
 Nothing here is hand-typed from the texts or about a specific pair:
   - paragraph text comes from corpus/ (Italian) and translations/ (English)
-  - a pair's title, standfirst and translator's notes come from that pair's
+  - a pair's editor's summary (standfirst) and translator's notes come from that pair's
     translation front-matter and its "## Notes" section
   - source and variant apparatus come from sources/provenance/ and
     sources/comparisons/ (AGENTS.md rule 4: witness decisions become source
@@ -471,6 +471,10 @@ h1 .sub { display: block; font-style: italic; color: var(--ink-muted); font-size
   font-family: var(--sans); font-size: 14.5px; line-height: 1.6;
   color: var(--ink-muted); max-width: 62ch; margin: 0;
 }
+.sf-label {
+  font-weight: 600; font-size: 11px; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--ink-faint); margin-right: .6em;
+}
 
 /* ---- the pairing device ---- */
 .pairing {
@@ -735,7 +739,7 @@ def build_pair(pair, published):
     <p class="eyebrow">A Conversation with Machiavelli · {eyebrow}</p>
     <h1>{html.escape(title)}
       <span class="sub">{html.escape(sub_label(pair))}</span></h1>
-    <p class="standfirst">{html.escape(standfirst)}</p>
+    <p class="standfirst"><span class="sf-label">Editor's summary</span> {html.escape(standfirst)}</p>
 
     <div class="pairing">
       <div class="nm-side">

@@ -13,8 +13,7 @@ rubric_en: "What have universally been the beginnings of any city whatever, and 
 rubric_source: Canestrini 1857, printed p. 3 — his setting of the chapter title over the reply, without a terminal stop
 translated: 2026-09-27
 open_for_david: 0 — O16 ruled 2026-09-28 as D70
-title: "How cities begin"
-standfirst: "Machiavelli sorts cities by who built them, natives or strangers, free or dependent, and finds in Rome's free beginning, and in the necessities its laws imposed, the reason its virtù lasted. Guicciardini accepts the distinction, places Rome in it on other grounds, sharpens what Machiavelli says of colonies, and ends on a harder claim: that where a city can be peopled at all, necessity makes it virtuous more surely than good laws."
+standfirst: "Machiavelli divides cities into those built by natives and those built by strangers, free or dependent, and holds that Rome kept its virtue because it began free and its laws imposed the necessities that a fertile site would not. Guicciardini accepts the distinction but places Rome among cities built by natives, as a colony of Alba, not of Aeneas, and corrects Machiavelli on colonies: some owe their founders nothing, and dependent ones, if accidents free them, can later grow great, as Florence did. He agrees a fertile site is better, since it draws people; but if enough people could be settled on ground not wholly barren but not rich, he has no doubt necessity would make them more virtuous than good laws, which men's will can change. Necessity, he says, steered Rome well."
 ---
 
 # Consideration on chapter I of Book I
@@ -28,7 +27,7 @@ In the first Discourse the distinction is true that all cities are built either
 by strangers or by men native to the place, and in this second member fall
 Venice and Athens, Rome falls there too, but differently from Athens and from
 Venice, for these were built by the dwellers from necessity of having either a
-secure refuge or a common government, but Rome, without any of these
+secure refuge or a common regimen, but Rome, without any of these
 necessities, was rather built as a colony of Alba, that is by men either Albans
 or subjects of the rule of Alba, for love of those places where they had been
 nurtured, or from ambition to govern themselves by themselves; nor can Rome, in

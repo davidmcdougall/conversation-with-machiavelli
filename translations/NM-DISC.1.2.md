@@ -24,7 +24,7 @@ subject to others, and I shall speak of those that have had their beginning far
 from all external servitude, but have at once governed themselves at their own
 discretion, either as republics or as a principate; which have had, as [they had] diverse
 beginnings, diverse laws and orders. For to some, either at their beginning or
-after no long time, the laws have been given by one alone, and at a stroke, like
+after not much time, the laws have been given by one alone, and at a stroke, like
 those that were given by Lycurgus to the Spartans; some have had them by chance,
 and at several times, and according to accidents, like Rome.
 
@@ -44,7 +44,7 @@ Those others which, if they do not have the perfect order, have taken a
 beginning good and apt for becoming better, can through the occurrence of accidents
 become perfect. But this will indeed be true, that they will never order themselves
 without dangers, for most men never agree to a new law that concerns a new
-order in the city unless it is shown them by a necessity that it is needful to do it;
+order in the city unless it is shown them by a necessity that it is required to do it;
 and since this necessity cannot come without danger, it is an easy thing for
 that republic to be ruined before it has brought itself to a perfection of order.
 Of which the republic of Florence bears full witness, which was reordered by the
@@ -274,3 +274,5 @@ and "respect" throughout the chapter, so that `di grado in grado` (.06) and
 
 **The sources.** The six forms and their cycle are Polybius, *Histories* book
 6, which Machiavelli follows closely without naming him.
+
+**`bisogni`.** "It is required": `bisognare`, impersonal, is rendered "it is required" throughout the edition, in every tense: "it was required", "it would be required" (D260). The edition first used "it is needful" (D75). "There is need" was also weighed, since it keeps the root of the noun `bisogno`, "need"; "it is required" is the more natural English. It carries Guicciardini's long chains of `che` with a subjunctive ("it is required that the captain be expert", Guicciardini I.23), which "one must" cannot, and it stays apart from `è necessario`, "it is necessary", and `conviene`, "it is fitting" (D85). The noun `bisogno` remains "need".

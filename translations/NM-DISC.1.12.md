@@ -110,8 +110,7 @@ come under one head, but has been under many princes and lords; from which has
 arisen so much disunion and so much weakness that it has been brought to have
 been prey, not only of powerful barbarians, but of whoever assails it. For which
 we other Italians have debt with the Church, and with no other. And whoever
-wished to see the truth of this more ready by certain experience would need to be
-of such power as to send the Roman court, with the authority it has in Italy, to
+wished to see the truth of this more ready by certain experience, it would be required that he be of such power as to send the Roman court, with the authority it has in Italy, to
 dwell in the lands of the Swiss, who today are those peoples who live, both as to
 religion and as to military orders, according to the ancients; and he would see
 that in a short time more disorder would be made in that province by the wicked
@@ -138,3 +137,5 @@ the witness prints it, in italic.
 **.06, `virtù`.** Left untranslated. Machiavelli sets it beside `potente` in the
 same clause — the Church was neither powerful enough nor of such *virtù* — so it
 cannot be simply power, and it is plainly not moral virtue.
+
+**`bisognerebbe`.** "It would be required": the edition's rendering of the impersonal `bisognare`, in every tense (D260); the reasons are in the note on `bisogni` at Machiavelli I.2. The Italian period changes construction after `chi volesse`, and the English keeps the break.

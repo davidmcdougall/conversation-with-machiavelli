@@ -13,8 +13,7 @@ rubric_en: "Where the guard of liberty is more securely set, whether in the peop
 rubric_source: Canestrini 1857, printed p. 14 — his setting of the chapter title over the reply, without a terminal stop
 translated: 2026-10-01
 open_for_david: none
-title: "That the guard belong to all"
-standfirst: "Machiavelli asks whether liberty is better guarded by the nobles, as at Sparta and Venice, or by the plebs, as at Rome, and answers that it depends on whether a republic means to make an empire or only to maintain itself. Guicciardini says he does not understand the question. Who governs is one thing; who holds a particular charge of liberty is another; and at Rome the guard of liberty was no less with the patricians than with the plebeians: consuls and dictators had charge of it, and the tribunes were created only to defend the plebs. In a mixed government he would have the guard belong to all, each order the guard of the other. Forced to choose, he would believe the nobles the lesser error, and he will not use Machiavelli's distinction: the government of the plebs is neither for acquiring nor for conserving."
+standfirst: "Machiavelli asks whether liberty is better guarded by the nobles, as at Sparta and Venice, or by the plebs, as at Rome, and answers that it depends on whether a republic means to build an empire or only to maintain itself. Guicciardini does not understand the question, since who governs is one thing and who holds a charge of defending liberty another; at Rome the guard was no less with the patricians, through consuls and dictators, and the tribunes defended only the plebs. In a mixed government he would have the guard belong to all; forced to choose a government purely of nobles or of plebs, he believes the nobles the lesser error, and he rejects Machiavelli's distinction: government by the plebs is fit neither to acquire nor to conserve."
 ---
 
 # Consideration on chapter V of Book I

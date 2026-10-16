@@ -19,7 +19,7 @@ open_for_david: none
 
 ## NM-DISC.1.24.01
 
-The merits of Horatius had been very great, he having with his *virtù* overcome the Curiatii. His fault had been atrocious, he having killed his sister. Nonetheless such a homicide so displeased the Romans that they brought him to dispute for his life, notwithstanding that his merits were so great and so fresh. Which thing, to whoever should consider it superficially, would seem an example of popular ingratitude.
+The merits of Horatius had been very great, he having with his *virtù* overcome the Curiatii. His fault had been atrocious, he having slain his sister. Nonetheless such a homicide so displeased the Romans that they brought him to dispute for his life, notwithstanding that his merits were so great and so fresh. Which thing, to whoever should consider it superficially, would seem an example of popular ingratitude.
 
 ## NM-DISC.1.24.02
 
@@ -27,7 +27,7 @@ Nonetheless whoever examines it better, and with better consideration searches o
 
 ## NM-DISC.1.24.03
 
-And when these orders are well observed, a city lives free a long time; otherwise it will always fall to ruin soon. For if, to a citizen who has done some outstanding work for the city, there is added, beyond the reputation which that thing brings him, an audacity and confidence of being able, without fearing penalty, to do some work not good, he will become in a short time so insolent that all civility will dissolve. It is indeed necessary, wishing that the penalty be feared for wicked works, to observe the rewards for good ones, as one sees that Rome did. And albeit a republic be poor, and be able to give little, it must not abstain from that little; for always every small gift, given to someone in recompense of good, even though great, will be esteemed by him who receives it honourable and very great.
+And when these orders are well observed, a city lives free much time; otherwise it will always fall to ruin soon. For if, to a citizen who has done some outstanding work for the city, there is added, beyond the reputation which that thing brings him, an audacity and confidence of being able, without fearing penalty, to do some work not good, he will become in a short time so insolent that all civility will dissolve. It is indeed necessary, wishing that the penalty be feared for wicked works, to observe the rewards for good ones, as one sees that Rome did. And albeit a republic be poor, and be able to give little, it must not abstain from that little; for always every small gift, given to someone in recompense of good, even though great, will be esteemed by him who receives it honourable and very great.
 
 ## NM-DISC.1.24.04
 
@@ -45,7 +45,7 @@ The history of Horatius Cocles is very well known, and that of Mucius Scaevola: 
 
 **`il fallo suo atroce`.** "His fault ... atrocious": `fallo`, fault; Guicciardini's reply has the verb, of the sister, under a condition: `se lei aveva fallato`.
 
-**`avendo morto la sorella`.** "He having killed his sister": `morto` transitive, killed (D169). The possessive "his" for the article is English idiom, not a supply.
+**`avendo morto la sorella`.** "He having slain his sister": `morto` transitive, slain, kept apart from `ammazzare`, kill (D262). The possessive "his" for the article is English idiom, not a supply.
 
 **`omicidio`.** "Homicide", as D169. Guicciardini uses the same word twice.
 
@@ -65,7 +65,7 @@ The history of Horatius Cocles is very well known, and that of Mucius Scaevola: 
 
 **`lo gastiga`.** "It chastises him": the 1554 edition's `castiga` is the same verb.
 
-**`rovinerà presto`.** "It will fall to ruin soon": `rovinare` intransitive; `rovina`, ruin (glossary). `molto tempo`, "a long time", in the sentence before, shares D140's English for `lungo tempo` (D250). The 1554 edition reads `tosto`, the same.
+**`rovinerà presto`.** "It will fall to ruin soon": `rovinare` intransitive; `rovina`, ruin (glossary). `molto tempo`, "much time", in the sentence before, kept apart from `lungo tempo`, "a long time" (D262). The 1554 edition reads `tosto`, the same.
 
 **`egregia opera`, `opere tanto egregie`.** "Outstanding work", "works so outstanding": English "egregious" now means the opposite.
 

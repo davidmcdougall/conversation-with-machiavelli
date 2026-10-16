@@ -29,7 +29,7 @@ last sentence answers Machiavelli's first move.
 | `regno` | kingdom | FG's whole distinction in .03 turns on kingdom ≠ republic. |
 | `monarchia` | monarchy | FG uses it for unified rule over Italy, not a constitutional label. |
 | `principe` | prince | |
-| `stato` / `Stati` | state | Only NM .04 `gli Stati e le Repubbliche cristiane`, where it is paired with republics and so cannot mean them. Modern nation-state must not be imported. **[open]** |
+| `stato` / `Stati` | state | Only NM .04 `gli Stati e le Repubbliche cristiane`, where it is paired with republics and so cannot mean them. Modern nation-state must not be imported. Ruled "state" (D265). |
 | `imperio` | empire / rule / command | **D124, 2026-10-01.** Three senses, three words. *Empire*, lower case: dominion over other peoples (NM I.1 `Imperio romano`, I.4, I.5 `fare uno Imperio`; FG I.12 `libertà e imperio`, `imperio romano`, `imperio d'Italia`). *Rule*: sovereignty in general (NM I.2 the kings' `Imperio`, I.12 `Imperio temporale`; FG I.1 `imperio di Alba`; FG I.12 `sotto uno imperio`, `altro imperio`, D30). *Command*: a magistrate's *imperium* (NM I.5 `gradi dell'Imperio`). FG I.2 `mero e misto imperio` → mere and mixed *imperium* (D125). |
 | `dominio` | dominion | NM `il dominio delle cose temporali`; FG `dominio temporale`, `in uno dominio solo`. |
 | `provincia` | province | Both authors, repeatedly, of Italy itself. Not a modern administrative unit — the territory-and-people of a country. Kept as the cognate because the facing text shows the reader what it is doing. |
@@ -56,12 +56,12 @@ last sentence answers Machiavelli's first move.
 
 | Italian | English | Note |
 |---|---|---|
-| `virtù` | *virtù*, italic, untranslated | NM .06 `né di tal virtù`: capacity, not moral virtue, and not simply power since it is distinguished from `potente` in the same clause. Facing-page editions can afford the loan-word; a note carries the rest. **[open]** |
+| `virtù` | *virtù*, italic, untranslated | NM .06 `né di tal virtù`: capacity, not moral virtue, and not simply power since it is distinguished from `potente` in the same clause. Facing-page editions can afford the loan-word; a note carries the rest. D16. |
 | `prudente` / `prudenti` | prudent | Practical judgment, argued locally by NM. Not caution. |
 | `conoscitori` | knowing in | `conoscitori delle cose naturali` = knowing in natural things. Not "experts". |
 | `credo` (FG) | I believe | |
 | `non so già` (FG) | I do not know | Suspension, not modesty. |
-| `reputo` (FG) | I reckon | Judgment. Distinct from `credo`. **[open]** |
+| `reputo` (FG) | I deem | D259. Judgment. Distinct from `credo`, "I believe". Was "I reckon", which read folksy. |
 
 ## Outcome vocabulary
 
@@ -71,7 +71,7 @@ last sentence answers Machiavelli's first move.
 | `calamità` | calamity | |
 | `rovina` | ruin | Both authors. |
 | `mantenere` | to maintain / to keep | `mantenere incorrotte` repeats in NM .01 — the repetition is preserved. |
-| `obbligo` | debt | NM .05 and .07, ironic: what Italians owe the Church. "Obligation" flattens the irony. **[open]** |
+| `obbligo` | debt | NM .05 and .07, ironic: what Italians owe the Church. "Obligation" flattens the irony. D17. |
 | `accrescere` | to increase | Must match `favorire` in the .02 → .03 echo. See problematic.md. D69. |
 | `augumentare`, `augumento` | to augment, augmentation | The cognate; kept apart from `accrescere` (D69). |
 | `favorire` | to favour | |
@@ -135,8 +135,8 @@ last sentence answers Machiavelli's first move.
 | `ozio` | idleness | Good for Venice (NM I.1 .03), a vice in .06; one word lets both show. |
 | `forestieri` | strangers | D57. |
 | `comodo` / `comodità` | convenient / convenience | D59. |
-| `avere a` + inf. | be to | D61. |
-| `reggere` / `reggimento` / `governare` | govern / government / govern | D64, recorded collapse. |
+| `avere a` + inf. | be to; have to | D61, D261. "Be to" where it is destinative (what is due or appointed); "have to" wherever English cannot take "be to" (after "so as", after a gerund, in a compound tense, in the passive, after a negative) or where the sense is necessity (D101, D222, D237, D261). |
+| `reggere` / `governare`; `reggimento` / `governo` | govern / govern; regimen / government | D64 for the verbs, a recorded collapse; D262 splits the nouns: `reggimento` "regimen". "Regiment" is a false friend. |
 | `virtuoso` | virtuous | The adjective of *virtù*; noted where it occurs. |
 | `ristringersi` | draw together | D58. |
 
@@ -147,13 +147,13 @@ last sentence answers Machiavelli's first move.
 |---|---|---|
 | `specie` / `spezie` | species | Both authors; FG I.1 already "species". |
 | `Principato`, `Ottimati`, `Popolare` | principate, optimates, popular | NM's three good states; their corruptions tyrannical, "state of few", licentious. FG names the holders: princes, optimates, people. |
-| `Stato` (of a form) | state | NM I.2 throughout: "one of the three states", "a state of few", "the popular state". Still **[open]** as a term. |
+| `Stato` (of a form) | state | NM I.2 throughout: "one of the three states", "a state of few", "the popular state". Ruled "state" (D265). |
 | `Governo` / `governare` | government / govern | D64 held. `si governano` → "govern themselves". |
 | `ordinatore` | orderer | With `ordine`, `ordinare`, `riordinare`, `disordinare`: order, order, reorder, disorder. |
 | `accidente` | accident | Both authors. |
 | `modo` / `modi` | way / ways | NM I.12 "this way"; I.2 "all the said ways". `in modo che` → "in such a way that". `via` → path. |
 | `adunque` | then | D74. NM I.12, I.1 (harmonised), I.2; FG I.2 `Volendo adunque`. Keeps "therefore" for `però`. |
-| `bisogna` | it is needful | D75. Governs FG's chains of `che` + subjunctive; `è necessario` stays "it is necessary". |
+| `bisogna`, `bisognare` | it is required | D260, replacing D75's "it is needful". In every tense ("it was required", "it would be required"); governs FG's chains of `che` + subjunctive. A full note at NM I.2 `bisogni`, a short one at its first appearance in each unit. The noun `bisogno` stays "need"; `è necessario` stays "it is necessary". |
 | `nondimeno` / `nientedimeno` | nonetheless / nevertheless | D45 for `nondimeno`. |
 | `benché` / `se bene` / `avvegnaché` / `ancora che` / `nonostante che` | albeit / although / though / even though / notwithstanding that | D31 extended. The concessive set; "though" and "even though" are the pair most likely to drift. |
 | `sortire` | to be allotted | NM I.2 twice. |
@@ -167,7 +167,7 @@ last sentence answers Machiavelli's first move.
 | `partecipare di` | to partake of | NM I.2 "one that should partake of all"; FG I.2 throughout, and `abili a partecipare de' magistrati`. Not D28 (`participare`, impart), which is transitive and FG I.12. |
 | `eleggere` / `elezione` | choose / choice | Held from I.1, including the election of kings and magistrates. |
 | `arbitrio` / `voluntà` | discretion / will | NM "at their own discretion"; FG "at the discretion of several", "the will of one alone". |
-| `riputare` | to reckon | The verb of FG's `reputo`, "I reckon". |
+| `riputare` | to deem | D259. The verb of FG's `reputo`, "I deem". |
 | `temporale` | temporary (of tenure) / temporal (of rule) | FG I.2 "temporary"; NM I.12 `Imperio temporale`, "temporal". |
 | `civiltà` | civility | NM I.2: civil life under laws. |
 | `referire` | report | D56 held in FG I.2. |
@@ -307,7 +307,7 @@ last sentence answers Machiavelli's first move.
 | `costituire` / `constituire` | constitute | NM I.9 `costituire una Repubblica`; FG I.9 `constituite le leggi`, `constituito uno senato`. |
 | `tirannide` | tyranny | NM I.9 `occupare la tirannide`; FG I.8, I.9. |
 | `vivere civile` | civil living | NM I.9 ×2, as `vivere politico`, `vivere libero`. |
-| `morto` (trans.) / `ammazzare` | killed | D169, recorded collapse. |
+| `morto` (trans.) / `ammazzare` | slain / killed | D262, replacing D169's recorded collapse. `morto` intransitive (`morto lui`) stays "dead". |
 | `corroborazione` | corroboration | D170, recorded collapse with `riscontro` (D160). |
 | `subito` / `incontinenti` | at once / forthwith | D177. NM I.9 `subito ordinato`; FG I.9 both. |
 | `deporre` | lay down | FG I.9 `deporre la autorità`. |
@@ -410,7 +410,7 @@ last sentence answers Machiavelli's first move.
 | `proibire` | prohibit | FG I.23 ×3. |
 | `transito` | transit | FG I.23 ×2. |
 | `militare a` | militate [against] | D239. D23's "has no force" holds for the negative `milita`. |
-| `pari` / `equale`, `equalità` | equal / equal, equality | FG I.23. Recorded collapse (D243). |
+| `pari` / `equale`, `equalità` | even / equal, equality | D262, replacing D243's recorded collapse. FG I.23. |
 | `voglia` (in `contro alla voglia di`) | will | D240. Recorded collapse with `volontà`; D117's "longing" stands elsewhere. |
 | `estraneo` | unrelated | D241. Against `congiunto`, conjoined. |
 | `avere a` (after a gerund; compound tenses) | have to | D237, with D101 and D222. |
@@ -434,5 +434,5 @@ last sentence answers Machiavelli's first move.
 | `spettare` (of a charge) | pertain | D251. D175's "look to" stays for a ruler attending to an end. |
 | `assai` (of degree) | very | D254. `assai` of number stays "many". |
 | `indistintamente` | indiscriminately | D255. `sanza distinzione` stays "without distinction" (FG I.16). |
-| `molto tempo` / `lungo tempo` | a long time | D250, recorded collapse. |
-| `poi` | later | D250. `dipoi` stays "afterwards" (D187). |
+| `molto tempo` / `lungo tempo` | much time / a long time | D262, replacing D250's recorded collapse. `lungamente` stays "long" (D140). |
+| `poi` | later | D250, D265. `dipoi` stays "afterwards" (D187). |

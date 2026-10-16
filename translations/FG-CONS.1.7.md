@@ -13,8 +13,7 @@ rubric_en: "How necessary in a republic accusations are for maintaining liberty"
 rubric_source: Canestrini 1857, printed p. 18 — his setting of the chapter title over the reply, without a terminal stop
 translated: 2026-10-02
 open_for_david: none
-title: "Who shall judge"
-standfirst: "Machiavelli praises the authority to accuse citizens before the people or a magistracy: it deters, and it gives the humours of a city an ordinary outlet, as the tribunes' summons of Coriolanus did, whereas Florence, lacking it, had Valori killed in a riot and Soderini brought down by a Spanish army. Guicciardini grants it is most true, and asks who is to judge. The innocent must not be readily vexed: an unjust condemnation frightens the powerful into discontent, and the man condemned may be an Alcibiades or a Coriolanus. The people is too dangerous a judge, moved by uproars, led into servitude by whoever courts it, and unable to put down its favourites, as the Gracchi and Manlius showed. Nor does the authority sit well in a few citizens: chosen narrowly they become too powerful, broadly too respectful, and the judges must in fact be more than fifty; the Florentine Quarantia would have served, had its faults been moderated. The answer is courts varied with the city's orders and humours, or judges mixed, choice, and nearer the mean than either extreme."
+standfirst: "Machiavelli holds that the power to accuse citizens before the people or a magistracy is the most useful a republic can give the guardians of its liberty: it deters, and gives a city's humours an ordinary outlet, as the tribunes' summons of Coriolanus did. Guicciardini grants that this is most true, but the innocent must not be easily harassed, since unjust condemnations frighten others and make the powerful discontented. In his opinion the people is too dangerous a judge, moved by rumour and led into servitude by whoever courts it, as with the Gracchi and Manlius Capitolinus; nor does the power sit well with a few, and the judges should be many, more than fifty, choice men nearer the mean than either extreme."
 ---
 
 # Consideration on chapter VII of Book I
@@ -26,7 +25,7 @@ standfirst: "Machiavelli praises the authority to accuse citizens before the peo
 It is most true that it is very useful, indeed almost necessary, that in a
 city there be easy ways of oppressing, by the path of the laws and of the
 judgments, the bad citizens, and especially those who should machinate
-against the state, but it is needful also to take heed that they be ordered in such a
+against the state, but it is required also to take heed that they be ordered in such a
 way that the innocent be not readily vexed or punished. For, besides being
 unjust, it is also pernicious to the city, for, this danger hanging over the
 men noble and of more quality, they, living with this continual
@@ -58,12 +57,12 @@ it is impossible to oppress such men by the path of the people: for an
 example there are the Gracchi, who, authors of seditious laws, and tending on
 the road to taking away the authority from the senate, could not be oppressed
 except against the will of the people, the like [with] Manlius Capitolinus, against
-whom it was needful to create the dictator, for until the practice of making
+whom it was required to create the dictator, for until the practice of making
 himself king was discovered, the people followed him.
 
 ## FG-CONS.1.7.03
 
-It is needful, then, that the republic be ordered in such a way, either that
+It is required, then, that the republic be ordered in such a way, either that
 the accusations have different judgments according as the orders and the
 humours of the city are different, or that the men appointed to the judgments
 be mixed in such a way that there be a tempering to be fitted to
@@ -166,8 +165,7 @@ throughout this page; read `e` (D145). The 1933 edition prints `ed`.
 
 **`vogliono essere assai`.** "Want to be many": `volere` of a requirement,
 not a wish, the one exception to D117's "wish" (D148); `vogliono farsi
-grandi`, "wish to make themselves great", in the same paragraph, is a wish. Machiavelli says the same of Soderini's eight: "it is needful that
-the judges be many" (.06). Guicciardini puts a number on it.
+grandi`, "wish to make themselves great", in the same paragraph, is a wish. Machiavelli says the same of Soderini's eight: "it is required that the judges be many" (.06). Guicciardini puts a number on it.
 
 **`la Quarantia`.** The Forty, a Florentine court for crimes against the
 state, modelled on the Venetian Quarantie; Soderini tried to introduce it,
@@ -223,3 +221,5 @@ infinitive, which leaves the relation open, as the Italian does.
 
 **No full stop.** Canestrini prints none after `estremi`; the 1933 edition
 does. The English ends as the Italian does (D40).
+
+**`bisogna`.** "It is required": the edition's rendering of the impersonal `bisognare`, in every tense (D260); the reasons are in the note on `bisogni` at Machiavelli I.2.

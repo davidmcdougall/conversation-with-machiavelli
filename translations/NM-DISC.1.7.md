@@ -45,8 +45,7 @@ counselled that the time had come to be able to chastise the plebs, and take
 from it that authority which it had acquired, and taken in prejudice of the
 nobility, [by] keeping it famished and not distributing the corn to it; which
 sentence having come to the ears of the people, it came into such indignation
-against Coriolanus that at his coming out of the senate they would have killed
-him tumultuously, if the tribunes had not summoned him to appear to defend his
+against Coriolanus that at his coming out of the senate they would have slain him tumultuously, if the tribunes had not summoned him to appear to defend his
 cause.
 
 ## NM-DISC.1.7.03
@@ -67,8 +66,7 @@ particular bounds, nor do they transcend to a thing that ruins the republic.
 
 And as to corroborating this opinion with examples, I wish that of the
 ancients this one of Coriolanus may suffice me, upon which let each consider
-how much ill would have resulted to the Roman republic if he had been killed
-tumultuously; for there would have arisen from it offence from private men to private
+how much ill would have resulted to the Roman republic if he had been slain tumultuously; for there would have arisen from it offence from private men to private
 men, which offence generates fear, fear seeks defence, for defence the partisans
 are procured, from the partisans arise the parties in cities, and from the parties
 the ruin of them. But the thing having been governed through whoever had
@@ -97,8 +95,7 @@ One could also allege, in fortification of the above-written conclusion, the
 accident that followed, again in Florence, upon Pietro Soderini, which
 followed altogether through there not being in that republic any way of
 accusations against the ambition of powerful citizens; for to accuse a
-powerful one to eight judges in a republic is not enough: it is needful that
-the judges be many, for few always do in the way of the few. So that, if such
+powerful one to eight judges in a republic is not enough: it is required that the judges be many, for few always do in the way of the few. So that, if such
 ways had been there, either the citizens would have accused him, [if] he was
 living ill, and by such means, without making the Spanish army come, would
 have vented their spirit; or, [if] he was not living ill, they would not have
@@ -196,8 +193,7 @@ nobility": to its injury. The 1554 edition has no "acquired, and"
 **`la qual sentenza`.** "Which sentence": an opinion pronounced, as in
 Guicciardini's I.5 (glossary).
 
-**`lo arebbero tumultuariamente morto`.** "They would have killed him
-tumultuously": `morire` transitive, "kill", as in .04; the plural verb after
+**`lo arebbero tumultuariamente morto`.** "They would have slain him tumultuously": `morire` transitive, "slay" (D262), as in .04; the plural verb after
 the singular `Popolo` is Machiavelli's.
 
 **`accidente`.** "Accident": an event, as in I.2 (glossary).
@@ -235,7 +231,7 @@ Florence" is `pur in Firenze`.
 magistracy of criminal justice, which heard offences against the state among
 others.
 
-**`bisogna`.** "It is needful" (D75).
+**`bisogna`.** "It is required": the edition's rendering of the impersonal `bisognare`, in every tense (D260); the reasons are in the note on `bisogni` at Machiavelli I.2.
 
 **`Tantoché`.** "So that", twice: consecutive.
 
@@ -248,7 +244,7 @@ the 1554 editions print `cerchio`, and the phrase is hard. The English takes
 contain its humours, and keeps the noun.
 
 **`agli assai giudici`.** "To the many judges": the article points back to
-"it is needful that the judges be many". The 1554 edition has `a i molti
+"it is required that the judges be many". The 1554 edition has `a i molti
 giudici`.
 
 **`una parte d'uomini`.** "A party of men": `parte` as `le parti nelle

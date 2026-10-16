@@ -25,7 +25,7 @@ nor of those orders that regarded either religion or the soldiery. And
 therefore, not wishing to hold any longer in suspense the spirits of those
 who might wish to understand some things about these parts, I say that many,
 it may be, will judge it of bad example that a founder of a civil living,
-such as Romulus was, should first have killed a brother of his, then
+such as Romulus was, should first have slain a brother of his, then
 consented to the death of Titus Tatius the Sabine, chosen by him as companion
 in the kingdom; judging from this that his citizens could, with the authority
 of their prince, out of ambition and desire to command, offend those who
@@ -144,11 +144,9 @@ stays "builder" (glossary). `Vivere civile`, as `vivere libero`, `vivere
 politico`: a way of living under laws. The 1554 edition reads `uno formatore`
 (NM-DISC-I9-D002).
 
-**`abbia prima morto un suo fratello`.** "Should first have killed a brother
-of his": `morto` transitive, the plain word. Remus, named only in the last
+**`abbia prima morto un suo fratello`.** "Should first have slain a brother of his": `morto` transitive. Remus, named only in the last
 sentence. The 1554 edition has the periphrasis `leuato di uita`, "taken from
-life" (NM-DISC-I9-D002). `Morto` and `ammazzare` (.04) are both "killed":
-recorded collapse (D169).
+life" (NM-DISC-I9-D002). `Morto` is "slain" and `ammazzare` (.04) "killed" (D262, replacing the collapse D169 recorded).
 
 **`Tito Tazio Sabino`.** Titus Tatius, king of the Sabines, who after the war
 over the Sabine women shared the kingdom with Romulus and was killed at

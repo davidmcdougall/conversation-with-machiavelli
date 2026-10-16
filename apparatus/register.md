@@ -54,3 +54,30 @@ no inversions for effect. But cognates that still work are kept rather than
 modernised away — `province`, `prudent`, `credulity`, `conjecture`, `augment` —
 because they hold the conceptual vocabulary in place and the facing text shows
 the reader why they were chosen.
+
+## Inversions (D263)
+
+Keep the Italian's predicate-first order only where the order does work the
+reader should feel: a landing, where the delayed subject carries the sting
+(D18); a catalogue of parallel predicate-first clauses, where the repetition
+is the rhetoric (D194); a contrast, where the fronted predicate answers the
+one before. Everything else is exposition (D19), and plain English order
+wins. The test: would a plain English writer front this, because the order
+is doing something? If not, normalise.
+
+## Editor's summaries (D264)
+
+The pair page carries no title of the editor's: the witness gives the reply
+none but Canestrini's heading and Machiavelli's rubric, and an editorial line
+above Guicciardini reads as his. The summary under the heading is labelled
+"Editor's summary" on the page. 90 to 130 words, capped at 150: one fair
+sentence for Machiavelli with his claim and its reason or condition, two or
+three for Guicciardini. His acts are marked in fixed words: `credo`
+"believes"; `non è dubio`, `certo` "has no doubt"; `non so` "does not know
+whether"; `reputo`, `giudico` "judges"; `non concorro facilmente` "does not
+readily concur"; `forse` "perhaps"; `pare` "it seems"; `si può dire` "it can
+be said". "Grants" only for a real concession to Machiavelli. No hedge, and
+no clause that limits a claim's scope, is dropped; `però` is "therefore".
+Plain English, not the translation's calques. Every summary is checked against
+the Italian by a cold reviewer before it is published.
+

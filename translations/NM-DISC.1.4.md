@@ -66,7 +66,7 @@ people can vent its ambition, and above all those cities that wish to avail
 themselves of the people in important things; among which the city of Rome had
 this way, that when that people wished to obtain a law, either it did some of
 the aforesaid things, or it would not give its name to go to war, so that to
-placate it it was needful in some part to satisfy them. And the desires of free
+placate it it was required in some part to satisfy them. And the desires of free
 peoples are seldom pernicious to liberty, for they arise either from
 being oppressed or from suspicion of having to be oppressed. And if
 these opinions were false, there is the remedy of harangues, that some
@@ -182,3 +182,5 @@ elliptical as the English.
 **`per guardia della Libertà romana`.** "As guard of Roman liberty": the
 tribunes as the keepers of liberty, the subject of the next chapter, which
 asks where that guard is more securely placed.
+
+**`bisognava`.** "It was required": the edition's rendering of the impersonal `bisognare`, in every tense (D260); the reasons are in the note on `bisogni` at Machiavelli I.2.

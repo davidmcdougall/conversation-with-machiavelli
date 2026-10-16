@@ -118,7 +118,7 @@ done a law's work went with them. `Mancati` also carries "dead".
 **`a freno`.** "Reined in": `freno` is the bit and bridle.
 
 **`convenne`.** "It was fitting": the impersonal of fitness, with no subject
-named. Kept apart from `bisogna`, "it is needful", and `è necessario`, "it is
+named. Kept apart from `bisogna`, "it is required" (D260), and `è necessario`, "it is
 necessary".
 
 **`scandali`.** "Scandals" in the older sense: public disturbances, occasions of

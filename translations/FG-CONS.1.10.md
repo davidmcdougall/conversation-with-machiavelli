@@ -13,8 +13,7 @@ rubric_en: "How much the founders of a republic or of a kingdom are laudable, so
 rubric_source: Canestrini 1857, printed p. 23 — his setting of the chapter title over the reply, without a terminal stop
 translated: 2026-10-07
 open_for_david: none
-title: "Very few, or perhaps none"
-standfirst: "Machiavelli ranks the founders of religions first among the praised and the founders of republics or kingdoms next, and calls their destroyers infamous and detestable. No one offered the choice would fail to praise the first, he says, yet almost all who could make a republic or a kingdom turn to tyranny. The writers who celebrate Caesar were corrupted by his fortune and frightened by the length of his rule. The emperors who lived under the laws needed no guard; those who came by adoption were good, and those by inheritance bad. A prince who could reorder a corrupt city and keep the principate merits no excuse if he does not. Guicciardini calls the title most true, but the cases are various and the author confounds the examples. He who occupies a tyranny in a free fatherland seldom has a necessity that is not his own fault, and Caesar is among the detestable. But a citizen whom disordered liberties leave no other way to save himself merits much excuse, the more so where what is called liberty is not. In Florence good citizens have been led to desire the change of a state that, he says, is tyrannical under the name of liberty. Heirs to a tyranny merit less blame for keeping it, and very few or perhaps none have left it without necessity; Sulla is the rare example. Some legitimate kings govern justly, but he does not know which have made the kingdom pass by choice, and where that has been, he believes necessity rather than will kept it. Such things are painted more readily in books than done, and those who do not do them merit lesser reproof."
+standfirst: "Machiavelli ranks founders of religions and states highest and holds that a prince able to reform a corrupt city while keeping power merits no excuse if he does not. Guicciardini calls the title most true, but cases vary, and the author confounds the examples: whoever founds a tyranny from appetite to rule, like Caesar, merits utmost reproach, while a citizen driven to it to save himself merits much excuse, the more so where what is called liberty is not. Heirs to a tyranny merit less blame, and very few or perhaps none have left it without necessity; some legitimate kings govern justly, but he does not know which have made succession elective. Such things are painted more easily in books than done, and therefore those who do not do them merit less reproof."
 ---
 
 # Consideration on chapter X of Book I
@@ -25,8 +24,7 @@ standfirst: "Machiavelli ranks the founders of religions first among the praised
 
 The title of this Discourse is most true, for supreme praise the founders of
 kingdoms and of republics merit, supreme blame the founders of tyranny. But
-because the cases are various, and the author confounds the examples, it is
-needful to consider that it seldom occurs that whoever occupies the tyranny in
+because the cases are various, and the author confounds the examples, it is required to consider that it seldom occurs that whoever occupies the tyranny in
 a free fatherland has such necessity to do it, or, if he has necessity, that it
 be caused without fault of his, so that there remain to him any colour of
 justification. And this sort of men, among whom was Caesar, full of many other
@@ -246,3 +244,5 @@ falls on those who do not lay down a tyranny or disinherit their posterity,
 the case to which Machiavelli granted "some excuse"; his "no excuse whatever"
 was for the prince who could keep the principate and order the city
 (Machiavelli .08).
+
+**`bisogna`.** "It is required": the edition's rendering of the impersonal `bisognare`, in every tense (D260); the reasons are in the note on `bisogni` at Machiavelli I.2.

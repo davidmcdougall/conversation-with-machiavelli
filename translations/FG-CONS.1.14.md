@@ -13,8 +13,7 @@ rubric_en: "The Romans interpreted the auspices according to necessity, and with
 rubric_source: Canestrini 1857, printed p. 30 — his setting of the chapter title over the reply, without a terminal stop
 translated: 2026-09-26
 open_for_david: none
-title: "Craft or belief"
-standfirst: "Machiavelli argues that the Romans bent the auspices to necessity while keeping up the show of obeying them, and takes the consul Papirius as his proof. Guicciardini does not hold it for certain that the captains were so calculating, believes that in the first times their minds were taken up with the religion, and finds that the same story does not tell against him."
+standfirst: "Machiavelli holds that the Romans, who used the auspices in every important action, nonetheless acted against them when reason required, but so artfully that they did not seem to scorn religion; the consul Papirius, who fought though the sacred chickens had not fed, is his proof. Guicciardini does not hold it certain that the captains used the authority of auspices and augury craftily, and believes that, above all in the earliest times, their minds were taken up with this religion. Nor does Papirius tell against him: the consul had his report from the keepers of the chickens, whose office it was, and had no need to heed what third persons told him."
 ---
 
 # Consideration on chapter XIV

@@ -40,7 +40,7 @@ all those who can have administration are called gentlemen. Which way chance
 gave, more than the prudence of whoever gave them the laws; for, many
 inhabitants having withdrawn onto those rocks where that city is now, for the
 causes stated above, when they had grown to such a number that, if they wished
-to live together, it was needful for them to make laws, they ordered a form of
+to live together, it was required that they make laws, they ordered a form of
 government; and, convening often together in the councils to deliberate on
 the city, when it seemed to them that they were so many as to be sufficient
 for a political living, they closed the path to all those others who should
@@ -112,8 +112,7 @@ Rome, then, could, after the likeness of Sparta, make a prince for life, make
 a small senate, but it could not, like that one, not grow the number of its
 citizens, wishing to make a great empire; which made [it] that the king for
 life, and the small number of the senate, as to union, would have availed it
-little. If anyone, on that account, wished to order a republic anew, he would
-be to examine whether he wished it to expand, like Rome, in dominion and in
+little. If anyone, on that account, wished to order a republic anew, he would have to examine whether he wished it to expand, like Rome, in dominion and in
 power, or else to stay within narrow bounds. In the first case it is necessary
 to order it like Rome, and to give place to the tumults and to the universal
 dissensions as best one can; for without a great number of men, and well
@@ -157,7 +156,7 @@ benign to it that it were not to make war, it would arise from this that
 idleness would make it either effeminate or divided; which two things,
 together or each by itself, would be the cause of its ruin. On that account,
 since one cannot, as I believe, balance this thing, nor maintain this middle
-path exactly, it is needful in ordering the republic to think of the more
+path exactly, it is required in ordering the republic to think of the more
 honourable part, and to order it in such a way that, should necessity after
 all induce it to expand, it could conserve what it had occupied.
 
@@ -356,7 +355,7 @@ elsewhere.
 **`questa via del mezzo` / `un modo mezzo`.** "This middle path" / "a middle
 way": two phrases, kept apart (D131).
 
-**`bisogna`.** "It is needful" (D75).
+**`bisogna`.** "It is required": the edition's rendering of the impersonal `bisognare`, in every tense (D260); the reasons are in the note on `bisogni` at Machiavelli I.2.
 
 **`quelle inimicizie ..., tollerarle`.** "Those enmities ..., to tolerate
 them": the infinitive depends on `credo che sia necessario`, and the object

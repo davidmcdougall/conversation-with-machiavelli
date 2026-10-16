@@ -39,7 +39,7 @@ format: as annotations/NM-DISC.1.12.md
 
 **History.** Soderini, gonfaloniere for life from 1502, was brought down in August 1512, when the Spanish army of the Holy League, with Medici partisans, sacked Prato and Florence's government gave way; he went into exile and the Medici returned. Machiavelli lost his office that autumn. The eight are usually taken to be the Otto di Guardia, the magistracy of criminal justice.
 
-**Cross-reference.** "It is needful that the judges be many" is the sentence Guicciardini takes up: "the judges want to be many, that is, more than fifty" [[FG-CONS.1.7.02]].
+**Cross-reference.** "It is required that the judges be many" is the sentence Guicciardini takes up: "the judges want to be many, that is, more than fifty" [[FG-CONS.1.7.02]].
 
 ## NM-DISC.1.7.07
 

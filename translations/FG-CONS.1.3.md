@@ -13,8 +13,7 @@ rubric_en: "What accidents made the tribunes of the plebs be created in Rome; wh
 rubric_source: Canestrini 1857, printed p. 10 — his setting of the chapter title over the reply, without a terminal stop
 translated: 2026-09-29
 open_for_david: none
-title: "Too absolutely"
-standfirst: "Machiavelli lays it down that whoever orders a republic must presuppose all men bad, and proves it on the Roman nobles, humane while the Tarquins lived and venomous once they were dead; the tribunes were the new order that did what fear of the kings had done. Guicciardini finds the premise laid down too absolutely: men are inclined by nature to the good, but their nature is fragile, and the wise order against the occasions for ill. He grants Machiavelli's cause for the tribunes, then argues that their powers came later and tempered only the nobles."
+standfirst: "Machiavelli holds that whoever orders a republic must presuppose all men bad, since they do good only from necessity: Rome's nobles were humane while the Tarquins lived and venomous after, and the tribunes did what fear of the Tarquins had done. Guicciardini finds this laid down too absolutely: many do good who could do ill, and all men incline by nature to the good, though their nature is fragile and occasions of ill are everywhere. He grants the rule of ordering things so that whoever would do ill cannot, but only to provide against those who may be bad; and he grants Machiavelli's cause for the tribunes, though their powers came later and tempered the nobles without checking the plebs."
 ---
 
 # Consideration on chapter III of Book I
