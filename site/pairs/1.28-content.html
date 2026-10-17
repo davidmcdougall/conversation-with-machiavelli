@@ -1,0 +1,488 @@
+<title>A Conversation with Machiavelli — For what cause the Romans were less ungrateful to their citizens than the Athenians</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root {
+  --paper:      #EDEEEC;
+  --paper-sunk: #E4E6E3;
+  --ink:        #1B1E1C;
+  --ink-muted:  #5C625E;
+  --ink-faint:  #868C87;
+  --rule:       #C9CDC8;
+  --rule-faint: #DCDFDB;
+  --nm:         #3A5A6B;
+  --fg:         #6E5A3C;
+  --serif: "EB Garamond", "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  --sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --mono:  "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:      #161917;
+    --paper-sunk: #1D211E;
+    --ink:        #E3E6E1;
+    --ink-muted:  #A0A6A0;
+    --ink-faint:  #767C77;
+    --rule:       #343934;
+    --rule-faint: #262B27;
+    --nm:         #8FB4C6;
+    --fg:         #C4A97C;
+  }
+}
+:root[data-theme="dark"] {
+  --paper:      #161917;
+  --paper-sunk: #1D211E;
+  --ink:        #E3E6E1;
+  --ink-muted:  #A0A6A0;
+  --ink-faint:  #767C77;
+  --rule:       #343934;
+  --rule-faint: #262B27;
+  --nm:         #8FB4C6;
+  --fg:         #C4A97C;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 1160px; margin: 0 auto; padding-inline: 20px; padding-block: 0 0; }
+
+/* ---- masthead ---- */
+.masthead { padding-block: 56px 32px; border-bottom: 1px solid var(--rule); }
+.eyebrow {
+  font-family: var(--sans); font-size: 11px; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint);
+  margin: 0 0 18px;
+}
+h1 {
+  font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 5vw, 44px);
+  line-height: 1.12; margin: 0 0 14px; text-wrap: balance; letter-spacing: -0.01em;
+}
+h1 .sub { display: block; font-style: italic; color: var(--ink-muted); font-size: .52em; margin-top: 12px; letter-spacing: 0; }
+.standfirst {
+  font-family: var(--sans); font-size: 14.5px; line-height: 1.6;
+  color: var(--ink-muted); max-width: 62ch; margin: 0;
+}
+.sf-label {
+  font-weight: 600; font-size: 11px; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--ink-faint); margin-right: .6em;
+}
+
+/* ---- the pairing device ---- */
+.pairing {
+  display: flex; align-items: stretch; gap: 0; margin: 30px 0 0;
+  border: 1px solid var(--rule); border-radius: 2px; overflow: hidden;
+  font-family: var(--sans); background: var(--paper-sunk);
+}
+.pairing > div { flex: 1 1 0; padding: 13px 16px; min-width: 0; }
+.pairing .who { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
+.pairing .nm-side .who { color: var(--nm); }
+.pairing .fg-side .who { color: var(--fg); }
+.pairing .what { font-size: 13.5px; color: var(--ink-muted); }
+.pairing .arrow {
+  flex: 0 0 auto; display: flex; align-items: center; justify-content: center;
+  padding-inline: 14px; color: var(--ink-faint); font-size: 15px;
+  border-inline: 1px solid var(--rule);
+}
+
+/* ---- pair-to-pair navigation ---- */
+.pairnav {
+  display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+  margin-top: 18px; font-family: var(--sans); font-size: 12.5px;
+  color: var(--ink-muted);
+}
+.pairnav a { text-decoration: none; color: var(--ink-muted); }
+.pairnav a:hover, .pairnav a:focus { color: var(--ink); text-decoration: underline; }
+
+/* ---- work sections ---- */
+.work { padding-block: 52px 0; }
+.work-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
+.work-head .tag {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .04em;
+  padding: 3px 7px; border-radius: 2px; color: var(--paper);
+}
+.work.nm .tag { background: var(--nm); }
+.work.fg .tag { background: var(--fg); }
+h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; letter-spacing: -0.005em; }
+.rubric {
+  font-style: italic; color: var(--ink-muted); max-width: 70ch;
+  margin: 10px 0 0; font-size: 16.5px; line-height: 1.5;
+}
+.rubric-note {
+  font-family: var(--sans); font-style: normal; font-size: 12px;
+  color: var(--ink-faint); margin-top: 7px;
+}
+.colheads {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  margin-top: 30px; padding-bottom: 7px; border-bottom: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint);
+}
+
+/* ---- the facing pair ---- */
+.pair {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  padding-block: 22px; border-bottom: 1px solid var(--rule-faint);
+  scroll-margin-top: 20px;
+}
+.pair:target { background: var(--paper-sunk); }
+.annot { grid-column: 2 / -1; margin-top: 14px; font-family: var(--sans); font-size: 13.5px;
+  line-height: 1.55; color: var(--ink-muted); }
+.annot summary { cursor: pointer; font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); list-style: none; }
+.annot summary::-webkit-details-marker { display: none; }
+.annot summary::before { content: "+ "; }
+.annot[open] summary::before { content: "− "; }
+.annot p { margin: 8px 0 0; max-width: 72ch; }
+.annot .xref { color: inherit; text-decoration: underline; text-decoration-color: var(--rule);
+  text-underline-offset: 2px; white-space: nowrap; }
+.gutter { padding-top: 4px; }
+.uid {
+  font-family: var(--mono); font-size: 10.5px; color: var(--ink-faint);
+  text-decoration: none; letter-spacing: -0.02em;
+}
+.uid:hover, .uid:focus { color: var(--ink); text-decoration: underline; }
+.col { min-width: 0; }
+.col.it { hyphens: auto; }
+.col.en { }
+.supplied { color: var(--ink-muted); }
+
+/* ---- apparatus ---- */
+.apparatus {
+  margin-top: 34px; padding-top: 22px; border-top: 2px solid var(--rule);
+  font-family: var(--sans); font-size: 13.5px; line-height: 1.58;
+  color: var(--ink-muted);
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 26px 34px;
+}
+.apparatus h3 {
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); margin: 0 0 9px;
+}
+.apparatus p { margin: 0 0 9px; }
+.apparatus p:last-child { margin-bottom: 0; }
+.apparatus .lem { font-family: var(--serif); font-size: 15px; color: var(--ink); font-style: italic; }
+.sig { font-family: var(--mono); font-size: 12px; color: var(--ink); }
+
+/* ---- colophon ---- */
+.colophon {
+  margin-top: 60px; padding-block: 28px 60px; border-top: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 13px; line-height: 1.6; color: var(--ink-muted);
+}
+.colophon .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 34px; }
+.colophon h3 {
+  font-size: 10.5px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--ink-faint); margin: 0 0 8px;
+}
+.colophon p { margin: 0 0 8px; }
+.colophon ul { margin: 0; padding-left: 16px; }
+.colophon li { margin-bottom: 5px; }
+.state {
+  margin-top: 26px; padding: 14px 16px; background: var(--paper-sunk);
+  border-left: 2px solid var(--ink-faint); border-radius: 0 2px 2px 0;
+  font-size: 12.5px;
+}
+.state strong { color: var(--ink); font-weight: 600; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--nm); outline-offset: 2px; }
+
+/* ---- contents / index page ---- */
+.toc { margin-top: 30px; }
+.toc-row {
+  display: grid; grid-template-columns: 40px 1fr 1fr; gap: 0 20px;
+  padding-block: 14px; border-bottom: 1px solid var(--rule-faint);
+  font-family: var(--sans); align-items: baseline;
+}
+.toc-row .n { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
+.toc-row a { text-decoration: none; color: var(--ink); font-family: var(--serif); font-size: 16px; }
+.toc-row a:hover, .toc-row a:focus { text-decoration: underline; }
+.toc-row .unpublished { color: var(--ink-faint); font-style: italic; font-size: 14px; }
+.toc-row .ids { color: var(--ink-faint); font-size: 11.5px; font-family: var(--mono); }
+
+@media (max-width: 760px) {
+  body { font-size: 16.5px; }
+  .colheads { display: none; }
+  .pair { grid-template-columns: 1fr; gap: 0; padding-block: 20px; }
+  .gutter { padding-top: 0; margin-bottom: 8px; }
+  .annot { grid-column: 1; }
+  .col.it { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px dotted var(--rule); }
+  .col.it::before, .col.en::before {
+    display: block; font-family: var(--sans); font-size: 10px; font-weight: 600;
+    letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px;
+  }
+  .col.it::before { content: "Italian"; }
+  .col.en::before { content: "English"; }
+  .pairing { flex-direction: column; }
+  .pairing .arrow { border-inline: 0; border-block: 1px solid var(--rule); padding-block: 6px; }
+  .toc-row { grid-template-columns: 1fr; gap: 4px; }
+}
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow">A Conversation with Machiavelli · Pair 19 of 39</p>
+    <h1>For what cause the Romans were less ungrateful to their citizens than the Athenians
+      <span class="sub">Discourses I.28, and Guicciardini&#x27;s reply</span></h1>
+    <p class="standfirst"><span class="sf-label">Editor's summary</span> Machiavelli believes the Romans were less ungrateful than the Athenians because they had less cause to suspect their citizens: no citizen took Rome&#x27;s liberty before Sulla and Marius, while Athens lost its liberty to Pisistratus; had Rome lost it, it would have been no kinder. Guicciardini says the reason could perhaps be approved had Rome never lost its liberty after the kings; but the Ten seized a tyranny, and even after liberty was recovered, when peoples are usually harshest, Rome proceeded against them most humanely. Therefore either the Romans lacked the Greeks&#x27; levity or, as he believes, government made the difference: in Rome greatness needed the senate&#x27;s consent, so there was less cause to suspect citizens, and a mixed government is less inclined and less able to strike the powerful than a purely popular one.</p>
+
+    <div class="pairing">
+      <div class="nm-side">
+        <div class="who">Niccolò Machiavelli</div>
+        <div class="what">Discorsi sopra la prima Deca di Tito Livio · written c. 1513–19, printed 1531</div>
+      </div>
+      <div class="arrow" aria-hidden="true">answered by</div>
+      <div class="fg-side">
+        <div class="who">Francesco Guicciardini</div>
+        <div class="what">Considerazioni intorno ai Discorsi del Machiavelli · written 1529–30, printed 1857</div>
+      </div>
+    </div>
+    <nav class="pairnav"><a href="1.26.html">← Pair 1.26</a><a href="../index.html">All 39 pairs</a><span></span></nav>
+  </header>
+
+  <section class="work nm">
+    <div class="work-head">
+      <span class="tag">NM-DISC.1.28</span>
+      <h2>Capitolo XXVIII</h2>
+    </div>
+    <p class="rubric">Per qual cagione i Romani furono meno ingrati ai loro cittadini che gli Ateniesi.</p>
+    <p class="rubric">For what cause the Romans were less ungrateful to their citizens than the Athenians.</p>
+
+    <div class="colheads"><div></div><div>Italian · 1824</div><div>English</div></div>
+      <div class="pair" id="NM-DISC.1.28.01">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.28.01">1.28.01</a></div>
+        <div class="col it" lang="it">Qualunque legge le cose fatte dalle Repubbliche, troverà in tutte qualche specie d&#x27;ingratitudine contro a&#x27; suoi cittadini, ma ne troverà meno in Roma che in Atene, e per avventura in qualunque altra Repubblica. E ricercando la cagione di questo, parlando di Roma e di Atene, credo accadesse, perché i Romani avevano meno cagione di sospettare dei loro cittadini che gli Ateniesi.</div>
+        <div class="col en" lang="en">Whoever reads the things done by republics will find in all of them some species of ingratitude against their citizens, but he will find less of it in Rome than in Athens, and, it may be, <span class="supplied">[than]</span> in any other republic. And seeking the cause of this, speaking of Rome and of Athens, I believe it happened because the Romans had less cause to suspect their citizens than the Athenians <span class="supplied">[had]</span>.</div>
+        <details class="annot"><summary>Commentary · 1</summary>
+          <p><span class="lem">Argument.</span> A comparison, and a cause offered as belief. Every republic shows some species of ingratitude towards its citizens, Rome less than Athens and, it may be, less than any other. Machiavelli confines the inquiry to the two cities and proposes the cause with <i lang="it">credo</i>: the Romans had less cause to suspect their citizens than the Athenians had. Ingratitude is made to depend on suspicion, and suspicion on cause; the rest of the chapter says where the cause came from.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.28.02">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.28.02">1.28.02</a></div>
+        <div class="col it" lang="it">Perché a Roma, ragionando di lei dalla cacciata de&#x27; Re insino a Silla e Mario, non fu mai tolta la libertà da alcuno suo cittadino; in modo che in lei non era grande cagione di sospettare di loro, e per conseguente d&#x27;offendergli inconsideratamente.</div>
+        <div class="col en" lang="en">For at Rome, reasoning of it from the expulsion of the kings as far as Sulla and Marius, liberty was never taken away by any citizen of its own; in such a way that in it there was no great cause to suspect them, and consequently to offend them inconsiderately.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The Roman half. From the expulsion of the kings to Sulla and Marius no citizen of Rome took its liberty away, and so there was no great cause to suspect citizens, and consequently none to offend them inconsiderately. The restriction to <i lang="it">alcuno suo cittadino</i> and the limits of the span carry the claim; they are where Guicciardini will press it.</p>
+<p><span class="lem">History.</span> The span runs from 509 BC, on the traditional reckoning, to the civil wars of Sulla and Marius, which began with Sulla&#x27;s march on Rome in 88 BC.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.28.03">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.28.03">1.28.03</a></div>
+        <div class="col it" lang="it">Intervenne bene ad Atene il contrario; perché sendole tolta la libertà da Pisistrato nel suo più florido tempo, e sotto uno inganno di bontà; come prima la diventò poi libera, ricordandosi delle ingiurie ricevute, e della passata servitù, diventò acerrima vendicatrice, non solamente degli errori, ma dell&#x27;ombra degli errori de&#x27; suoi cittadini. Di qui nacque lo esilio e la morte di tanti eccellenti uomini; di qui l&#x27;ordine dello Ostracismo, ed ogni altra violenza che contra i suoi Ottimati in varj tempi da quella Città fu fatt<span class="supplied">[a]</span>. Ed è verissimo quello che dicono questi scrittori della civiltà, che i popoli mordono più fieramente poi ch&#x27;egli hanno ricuperata la libertà, che poi che l&#x27;hanno conservata.</div>
+        <div class="col en" lang="en">At Athens indeed the contrary befell; for, liberty being taken away from it by Pisistratus in its most flourishing time, and under a deceit of goodness, as soon as it later became free, remembering the injuries received and the past servitude, it became a most sharp avenger not only of the errors, but of the shadow of the errors of its citizens. Hence arose the exile and the death of so many excellent men; hence the order of ostracism, and every other violence which at various times was done against its optimates by that city. And it is most true, what these writers of civility say, that peoples bite more fiercely after they have recovered liberty than after they have conserved it.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The Athenian half. Athens lost its liberty to Pisistratus in its most flourishing time and under a deceit of goodness; once free again, remembering the injuries received and the past servitude, it became the sharpest avenger of the errors of its citizens, and of the shadow of errors. From this arose exile and death for excellent men, ostracism, and every other violence against the optimates. Machiavelli then reports a maxim of &quot;these writers of civility&quot;, that peoples bite more fiercely after recovering liberty than after keeping it, and endorses it as most true; it is theirs, and it is attached to the Athenian case.</p>
+<p><span class="lem">History.</span> Pisistratus held the tyranny, with two interruptions, from 561/60 to his death in 528/7 BC; his son Hippias kept it until 510. Ostracism, the vote by potsherds that sent a citizen away for ten years without a charge, came after the tyranny&#x27;s fall; Aristides, Themistocles and Cimon were among those it exiled.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.28.04">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.28.04">1.28.04</a></div>
+        <div class="col it" lang="it">Chi considererà adunque quanto è detto, non biasimerà in questo Atene, né lauderà Roma; ma ne accuserà solo la necessità, per la diversità degli accidenti che in questa Città nacquero. Perché si vedrà, chi considererà le cose sottilmente, che se a Roma fusse suta tolta la libertà come ad Atene, non sarebbe stata Roma più pia verso i suoi cittadini, che si fusse quella.</div>
+        <div class="col en" lang="en">Whoever will consider, then, what has been said will not blame Athens in this, nor praise Rome; but will accuse necessity alone for it, through the diversity of the accidents that arose in this city. For it will be seen, whoever will consider things subtly, that if liberty had been taken away at Rome as at Athens, Rome would not have been more pious towards its citizens than that one was.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The verdict, and a counterfactual offered to be seen. Whoever considers what has been said will neither blame Athens nor praise Rome, but will accuse necessity alone, through the diversity of the accidents. Whoever considers things subtly will see that, had liberty been taken away at Rome as at Athens, Rome would have been no more pious towards its citizens. The ingratitude is moved from the character of a city to what befell it. Which city <i lang="it">questa Città</i> names the Italian leaves open, and so does the English.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini opens on a counterfactual of his own, the reverse of this one: if Rome had never lost its liberty after the kings, the reason could perhaps be approved <a class="xref" href="#FG-CONS.1.28.01">Guicciardini .01</a>. He then names the Ten.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.28.05">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.28.05">1.28.05</a></div>
+        <div class="col it" lang="it">Di che si può fare verissima coniettura, per quello che occorse dopo la cacciata de&#x27; Re contro a Collatino ed a Publio Valerio; de&#x27; quali il primo, ancora che si trovasse a liberare Roma, fu mandato in esilio non per altra cagione, che per tenere il nome de&#x27; Tarquinj; l&#x27;altro, avendo solo dato di sé sospetto per edificare una casa in sul monte Celio, fu ancora per essere fatto esule. Talché si può stimare, veduto quanto Roma fu in questi due sospettosa e severa, che ella arebbe usata l&#x27;ingratitudine come Atene, se dai suoi cittadini, come quella ne&#x27; primi tempi, ed innanzi allo augumento suo, fusse stata ingiuriata. E per non avere a tornare più sopra questa materia della ingratitudine, ne dirò quello ne occorrerà nel seguente capitolo.</div>
+        <div class="col en" lang="en">Of which a most true conjecture can be made, through what occurred after the expulsion of the kings against Collatinus and Publius Valerius; of whom the first, even though he had taken part in freeing Rome, was sent into exile for no other cause than for holding the name of the Tarquins; the other, having only given suspicion of himself by building a house on the Caelian Hill, was also about to be made an exile. So that one can esteem, seeing how suspicious and severe Rome was in these two, that it would have used ingratitude as Athens <span class="supplied">[did]</span>, if by its citizens, as that one in its first times, and before its augmentation, it had been injured. And so as not to have to return any more to this matter of ingratitude, I will say of it what will occur <span class="supplied">[to me]</span> of it in the following chapter.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> The conjecture from Rome&#x27;s own first years. Collatinus, who had taken part in freeing Rome, was sent into exile for no other cause than bearing the name of the Tarquins; Valerius, having only given suspicion of himself by building a house on the Caelian Hill, was about to be made an exile. Rome was suspicious and severe in these two, and so, Machiavelli estimates, it would have used ingratitude as Athens did, had it been injured by its citizens in its first times, before its augmentation. He calls the inference a conjecture, &quot;most true&quot;, and leaves the rest of the matter to the next chapter, I.29, on whether a people or a prince is more ungrateful.</p>
+<p><span class="lem">History.</span> Livy 2.2 (Collatinus, asked by Brutus to take away the royal name with himself, withdrew to Lavinium) and 2.7 (Valerius, suspected of aiming at kingship, pulled down the house he was building on the Velia). Livy records no threat of exile against Valerius, and his hill is the Velia, not the Caelian.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini does not take up Collatinus or Valerius. He answers the comparison, not this conjecture, and keeps Machiavelli&#x27;s mechanism, less cause to suspect, while grounding it in the mixed government <a class="xref" href="#FG-CONS.1.28.01">Guicciardini .01</a>.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from the 1824 edition (<span class="sig">WIT-NM-DISC-1824-IA</span>), page-image-backed, which governs. Collated against the 1554 Giglio printing, Venice (<span class="sig">WIT-NM-DISC-1554-IA</span>), which is comparison evidence only.</p>
+<p>Paragraph divisions are editorial. The witness prints the chapter as one unbroken block.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem">da quella Città fu fatt[a]</span>. The 1824 witness reads <i lang="it">ogni altra violenza che contra i suoi Ottimati in varj tempi da quella Città fu fatto</i>. The 1554 witness reads <i lang="it">ogni altra uiolenza, che contra i ſuoi Ottimati in uarij tempi da quella citta fu fatta</i>. Checked on the leaf (fol. 42v). Both readers read the 1824 <i lang="it">fatto</i> without doubt on the sampled page; the antecedent of <i lang="it">che</i> is <i lang="it">violenza</i>, and the masculine participle does not agree. Emended under D68 from the 1554 edition (D295). The English, &quot;was done&quot;, is the same either way.</p>
+<p><span class="lem">per la diversità degli accidenti che in questa Città nacquero</span> — 1824. The 1554 witness reads <i lang="it">per la diuerſità de gli accidenti, che in queſte città nacquero</i>. Checked on the leaf (fol. 42v). The 1554 has the plural, &quot;in these cities&quot;, Rome and Athens; the 1824 singular names Athens. A word-level difference at a letter the scans break, escalated under D203(b); the 1824 construes and is kept (D38; D296).</p>
+<p><span class="lem">ne dirò quello ne occorrerà nel seguente capitolo</span> — 1824. The 1554 witness reads <i lang="it">ne diro quello che occorrera nel ſeguente capitolo</i>. Checked on the leaf (fol. 43r). The 1554 has the relative <i lang="it">che</i>, &quot;what will occur&quot;; the 1824 has the pronoun <i lang="it">ne</i>, &quot;what will occur [to me] of it&quot;, with the relative understood. Read by pass A alone, outside the sample; it construes as an elliptical relative and is kept as printed (D38; D297), as D270.</p>
+<p><span class="lem">nel suo più florido tempo ... diventò acerrima vendicatrice</span> — 1824. The 1554 witness reads <i lang="it">nel ſuo piu fiorito tempo ... diuenne aſpra uendicatrice</i>. Checked on the leaf (fol. 42v). Two differences of word: <i lang="it">fiorito</i>, &quot;flowering&quot;, for <i lang="it">florido</i>, &quot;flourishing&quot;, the same sense; and <i lang="it">aspra</i>, &quot;harsh&quot;, for the superlative <i lang="it">acerrima</i>, &quot;most bitter&quot;: the 1554 makes Athens&#x27; vengeance harsh, the 1824 the bitterest. Both read by both readers on the sampled page.</p>
+<p><span class="lem">Chi considererà adunque quanto è detto ... Perché si vedrà</span> — 1824. The 1554 witness reads <i lang="it">Chi conſidera adunque, quanto e detto ... Perche ſi uerra</i>. Checked on the leaves (fol. 42v, 43r). The 1554 has the present <i lang="it">considera</i>, &quot;whoever considers&quot;, for the future, &quot;whoever will consider&quot;; its <i lang="it">si uerra</i>, &quot;it will come&quot;, is most likely a misprint for <i lang="it">si uedra</i>, &quot;it will be seen&quot;.</p>
+<p><span class="lem">avevano meno cagione di sospettare</span> — 1824. The 1554 witness reads <i lang="it">haueuano meno cagioni di ſoſpettare</i>. Checked on the leaf (fol. 42v). The 1554 plural, &quot;fewer causes&quot;, for the 1824 singular, &quot;less cause&quot;; not at a letter the 1824 scan breaks; recorded.</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem"><i lang="it">qualche specie d&#x27;ingratitudine contro a&#x27; suoi cittadini</i>.</span> &quot;Some species of ingratitude against their citizens&quot;: <i lang="it">specie</i>, species (glossary). <i lang="it">suoi</i> refers to the republics, <i lang="it">suo</i> for <i lang="it">loro</i> as often in both authors (D211).</p>
+<p><span class="lem"><i lang="it">e per avventura</i>.</span> &quot;And, it may be&quot;: as elsewhere in the edition, kept apart from <i lang="it">forse</i>, &quot;perhaps&quot;. The comparison carries over without a second <i lang="it">che</i>; the English supplies &quot;[than]&quot; (D53).</p>
+<p><span class="lem"><i lang="it">che gli Ateniesi</i>.</span> &quot;Than the Athenians [had]&quot;: <i lang="it">gli Ateniesi</i> is a subject, not the object of <i lang="it">sospettare</i>; the verb is supplied in brackets (D53).</p>
+<p><span class="lem"><i lang="it">credo accadesse</i>.</span> &quot;I believe it happened&quot;: <i lang="it">accadere</i>, happen (D273). Machiavelli marks his own judgment; the English keeps it a belief, not a finding.</p>
+<p><span class="lem"><i lang="it">sospettare di</i>.</span> &quot;To suspect&quot;: <i lang="it">sospettare</i>, <i lang="it">sospetto</i>, <i lang="it">sospettosa</i>, suspect, suspicion, suspicious, one root through the chapter and into Guicciardini&#x27;s reply.</p>
+<p><span class="lem"><i lang="it">ragionando di lei dalla cacciata de&#x27; Re insino a Silla e Mario</i>.</span> &quot;Reasoning of it from the expulsion of the kings as far as Sulla and Marius&quot;: <i lang="it">ragionare</i>, reason (D178); <i lang="it">insino a</i>, as far as (D166). The kings were expelled in 509 BC on the traditional reckoning; Sulla&#x27;s march on Rome was in 88 BC, his dictatorship from 82; Marius, with Cinna, took Rome in 87. Machiavelli names Sulla first. <i lang="it">cacciata</i>, expulsion, as in Guicciardini&#x27;s first line.</p>
+<p><span class="lem"><i lang="it">non fu mai tolta la libertà</i>.</span> &quot;Liberty was never taken away&quot;: <i lang="it">tolta</i>, of <i lang="it">togliere</i>, take away (D131); <i lang="it">libertà</i>, liberty (glossary). <i lang="it">tolta la libertà</i> comes three times (.02, .03, .04), and the English keeps one phrase, &quot;liberty taken away&quot;, for Rome&#x27;s never, Athens&#x27; once, and the counterfactual.</p>
+<p><span class="lem"><i lang="it">e per conseguente d&#x27;offendergli inconsideratamente</i>.</span> &quot;And consequently to offend them inconsiderately&quot;: <i lang="it">offendere</i>, offend, in the older sense of injure, as at NM I.7; <i lang="it">inconsideratamente</i>, inconsiderately (D104), the adverb of <i lang="it">considerare</i>, which the chapter takes up twice in .04.</p>
+<p><span class="lem"><i lang="it">Intervenne bene ad Atene il contrario</i>.</span> &quot;At Athens indeed the contrary befell&quot;: <i lang="it">intervenire</i>, befall, kept apart from <i lang="it">accadere</i>, happen (.01); &quot;intervene&quot; is a false friend. <i lang="it">bene</i> concedes and contrasts, &quot;indeed&quot;. The Italian puts the verb first; plain English order (D263).</p>
+<p><span class="lem"><i lang="it">sendole tolta la libertà da Pisistrato nel suo più florido tempo, e sotto uno inganno di bontà</i>.</span> &quot;Liberty being taken away from it by Pisistratus in its most flourishing time, and under a deceit of goodness&quot;: the absolute construction kept. Pisistratus seized the tyranny of Athens in 561/60 BC and held it, with two expulsions, until his death in 528/7; his son Hippias held it until 510. &quot;Under a deceit of goodness&quot;: Herodotus (1.59) and Plutarch (<i lang="it">Solon</i> 29-30) tell how he won the people as their champion. The 1554 edition reads <i lang="it">fiorito</i>, &quot;flowering&quot;, for <i lang="it">florido</i> (NM-DISC-I28-D004).</p>
+<p><span class="lem"><i lang="it">come prima la diventò poi libera</i>.</span> &quot;As soon as it later became free&quot;: <i lang="it">come prima</i>, as soon as; <i lang="it">la</i> is the subject pronoun, Athens.</p>
+<p><span class="lem"><i lang="it">diventò acerrima vendicatrice</i>.</span> &quot;It became a most sharp avenger&quot;: <i lang="it">acerrima</i>, the Latin superlative of <i lang="it">acre</i>, sharp; &quot;bitter&quot; is kept for <i lang="it">acerbo</i> (glossary, I.16), and &quot;fierce&quot; for <i lang="it">fieramente</i> two sentences on. The 1554 edition reads <i lang="it">aspra</i>, &quot;harsh&quot; (NM-DISC-I28-D004).</p>
+<p><span class="lem"><i lang="it">non solamente degli errori, ma dell&#x27;ombra degli errori</i>.</span> &quot;Not only of the errors, but of the shadow of the errors&quot;: the repetition kept; the shadow of an error is the suspicion of one.</p>
+<p><span class="lem"><i lang="it">Di qui nacque ... di qui</i>.</span> &quot;Hence arose ... hence&quot;: <i lang="it">nascere</i>, arise (D04); the anaphora kept.</p>
+<p><span class="lem"><i lang="it">lo esilio e la morte di tanti eccellenti uomini</i>.</span> &quot;The exile and the death of so many excellent men&quot;: Machiavelli names none. Aristides, Themistocles and Cimon were ostracised; Miltiades was fined and died soon after of a wound; the generals of Arginusae were put to death in 406 BC.</p>
+<p><span class="lem"><i lang="it">l&#x27;ordine dello Ostracismo</i>.</span> &quot;The order of ostracism&quot;: <i lang="it">ordine</i>, order (glossary), here an institution. Ostracism, the Athenian vote by potsherds that exiled a citizen for ten years without charge, introduced after the fall of the tyranny; Machiavelli capitalises it, the English does not.</p>
+<p><span class="lem"><i lang="it">ogni altra violenza che contra i suoi Ottimati in varj tempi da quella Città fu fatt[a]</i>.</span> &quot;Every other violence which at various times was done against its optimates by that city&quot;: <i lang="it">Ottimati</i>, optimates (D76). The 1824 prints <i lang="it">fatto</i>, which does not agree with <i lang="it">violenza</i>; emended <i lang="it">fatt[a]</i> from the 1554 edition (D295; NM-DISC-I28-D001). The English is the same either way.</p>
+<p><span class="lem"><i lang="it">Ed è verissimo quello che dicono questi scrittori della civiltà</i>.</span> &quot;And it is most true, what these writers of civility say&quot;: the English extraposes, as the Italian does, so that the maxim stays attached to what the writers say, and Machiavelli endorses it rather than asserting it as his own. <i lang="it">verissimo</i> returns in <i lang="it">verissima coniettura</i> (.05), and both are &quot;most true&quot;. <i lang="it">civiltà</i>, civility (glossary, I.2): civil life under laws, so &quot;writers of civility&quot; are writers on the civil life of cities. Machiavelli names none, and &quot;these&quot; points to no one named before.</p>
+<p><span class="lem"><i lang="it">i popoli mordono più fieramente poi ch&#x27;egli hanno ricuperata la libertà, che poi che l&#x27;hanno conservata</i>.</span> &quot;Peoples bite more fiercely after they have recovered liberty than after they have conserved it&quot;: <i lang="it">egli</i>, the pleonastic subject, not rendered; <i lang="it">conservare</i>, conserve (D220). The double <i lang="it">poi che</i>, after, is kept as &quot;after ... after&quot;.</p>
+<p><span class="lem"><i lang="it">Chi considererà adunque quanto è detto</i>.</span> &quot;Whoever will consider, then, what has been said&quot;: <i lang="it">adunque</i>, then (D74). The 1554 edition has the present, <i lang="it">considera</i> (NM-DISC-I28-D005).</p>
+<p><span class="lem"><i lang="it">non biasimerà in questo Atene, né lauderà Roma; ma ne accuserà solo la necessità</i>.</span> &quot;Will not blame Athens in this, nor praise Rome; but will accuse necessity alone for it&quot;: <i lang="it">biasimare</i>, blame (D173); <i lang="it">laudare</i>, praise (glossary); <i lang="it">accusare</i>, accuse (D159); <i lang="it">solo</i>, alone (D172). <i lang="it">ne</i>, for it, the ingratitude.</p>
+<p><span class="lem"><i lang="it">per la diversità degli accidenti che in questa Città nacquero</i>.</span> &quot;Through the diversity of the accidents that arose in this city&quot;: <i lang="it">accidente</i>, accident (glossary), what befalls a city. The last city named is Rome, and in this chapter <i lang="it">quella</i> is always Athens (.03, .04, .05), so <i lang="it">questa</i> reads most naturally as Rome; but the accidents that made the difference befell Athens, and the diversity lies between the two. The English &quot;this city&quot; leaves it as open as the Italian. The 1554 edition reads the plural, <i lang="it">in queste città</i>, &quot;in these cities&quot;; escalated as a word at a letter the scans break and kept (D296; NM-DISC-I28-D002).</p>
+<p><span class="lem"><i lang="it">Perché si vedrà, chi considererà le cose sottilmente, che</i>.</span> &quot;For it will be seen, whoever will consider things subtly, that&quot;: the impersonal <i lang="it">si vedrà</i> is joined to a personal <i lang="it">chi considererà</i>, and the English keeps the loose join rather than choose &quot;he will see&quot;. The 1554 edition prints <i lang="it">si uerra</i>, most likely a misprint for <i lang="it">si uedra</i> (NM-DISC-I28-D005).</p>
+<p><span class="lem"><i lang="it">se a Roma fusse suta tolta la libertà come ad Atene</i>.</span> &quot;If liberty had been taken away at Rome as at Athens&quot;: <i lang="it">suta</i>, the old participle of <i lang="it">essere</i>, &quot;been&quot;.</p>
+<p><span class="lem"><i lang="it">non sarebbe stata Roma più pia verso i suoi cittadini, che si fusse quella</i>.</span> &quot;Rome would not have been more pious towards its citizens than that one was&quot;: <i lang="it">pio</i>, pious, of duty owed, as in Latin <i lang="it">pietas</i>; <i lang="it">quella</i>, that one, Athens.</p>
+<p><span class="lem"><i lang="it">Di che si può fare verissima coniettura</i>.</span> &quot;Of which a most true conjecture can be made&quot;: <i lang="it">coniettura</i>, conjecture, the cognate kept (register.md).</p>
+<p><span class="lem"><i lang="it">per quello che occorse</i>.</span> &quot;Through what occurred&quot;: <i lang="it">occorrere</i>, occur (D01), the <i lang="la">currere</i> verb. It returns in the chapter&#x27;s last words, of what will occur to Machiavelli.</p>
+<p><span class="lem"><i lang="it">contro a Collatino ed a Publio Valerio</i>.</span> &quot;Against Collatinus and Publius Valerius&quot;: Lucius Tarquinius Collatinus, Lucretia&#x27;s husband and consul with Brutus in the first year, who was made to abdicate and leave Rome because he bore the name of the Tarquins; and Publius Valerius, later Publicola, who was suspected of aiming at kingship when he built a house on the Velia and pulled it down. Livy 2.2 and 2.7. Livy&#x27;s hill is the Velia; Machiavelli says the Caelian, a slip or another source. Livy records the suspicion, not a threat of exile: <i lang="it">fu ancora per essere fatto esule</i> sharpens the parallel with Collatinus.</p>
+<p><span class="lem"><i lang="it">ancora che si trovasse a liberare Roma</i>.</span> &quot;Even though he had taken part in freeing Rome&quot;: <i lang="it">trovarsi a</i>, to be among those doing a thing; <i lang="it">ancora che</i>, even though (glossary).</p>
+<p><span class="lem"><i lang="it">per tenere il nome de&#x27; Tarquinj</i>.</span> &quot;For holding the name of the Tarquins&quot;: <i lang="it">tenere</i>, hold, extended from the glossary&#x27;s holding of a place or forces. Livy&#x27;s Brutus asks Collatinus to take away the royal name with himself (2.2).</p>
+<p><span class="lem"><i lang="it">avendo solo dato di sé sospetto</i>.</span> &quot;Having only given suspicion of himself&quot;: <i lang="it">solo</i> here is the adverb, &quot;only&quot;; D172&#x27;s &quot;alone&quot; is for <i lang="it">solo</i> of a person or a cause, as <i lang="it">solo la necessità</i> (.04).</p>
+<p><span class="lem"><i lang="it">fu ancora per essere fatto esule</i>.</span> &quot;Was also about to be made an exile&quot;: <i lang="it">essere per</i>, be about to (D45); <i lang="it">ancora</i>, also.</p>
+<p><span class="lem"><i lang="it">Talché si può stimare</i>.</span> &quot;So that one can esteem&quot;: <i lang="it">talché</i>, so that (glossary); <i lang="it">stimare</i>, esteem, judge by estimate (D259 keeps &quot;esteem&quot; for it).</p>
+<p><span class="lem"><i lang="it">veduto quanto Roma fu in questi due sospettosa e severa</i>.</span> &quot;Seeing how suspicious and severe Rome was in these two&quot;: the absolute participle; <i lang="it">in questi due</i>, in the cases of these two men.</p>
+<p><span class="lem"><i lang="it">che ella arebbe usata l&#x27;ingratitudine come Atene</i>.</span> &quot;That it would have used ingratitude as Athens [did]&quot;: <i lang="it">arebbe</i>, the old conditional of <i lang="it">avere</i>; the verb of comparison is supplied in brackets (D53).</p>
+<p><span class="lem"><i lang="it">se dai suoi cittadini, come quella ne&#x27; primi tempi, ed innanzi allo augumento suo, fusse stata ingiuriata</i>.</span> &quot;If by its citizens, as that one in its first times, and before its augmentation, it had been injured&quot;: the Italian holds the verb to the end, after the condition, the comparison and the time; the English keeps the order and the commas, and supplies no verb to <i lang="it">come quella</i>. <i lang="it">augumento</i>, augmentation (glossary); <i lang="it">ingiuriare</i>, injure, the verb of <i lang="it">ingiuria</i>. Whether <i lang="it">ne&#x27; primi tempi</i> belongs to Rome or to <i lang="it">quella</i>, Athens, the Italian does not settle; the commas set it with <i lang="it">come quella</i>, but Athens lost its liberty <i lang="it">nel suo più florido tempo</i> (.03), not in its first times, and Rome&#x27;s first times are what Collatinus and Valerius have just shown, so the sense leans to Rome. <i lang="it">suo</i> is most naturally Rome&#x27;s.</p>
+<p><span class="lem"><i lang="it">E per non avere a tornare più sopra questa materia della ingratitudine</i>.</span> &quot;And so as not to have to return any more to this matter of ingratitude&quot;: <i lang="it">avere a</i> after &quot;so as&quot; is &quot;have to&quot; (D222, D261).</p>
+<p><span class="lem"><i lang="it">ne dirò quello ne occorrerà nel seguente capitolo</i>.</span> &quot;I will say of it what will occur [to me] of it in the following chapter&quot;: the first <i lang="it">ne</i> is &quot;of it&quot;, the matter; the second stands where a relative is wanted, with the relative understood. The 1554 edition reads <i lang="it">quello che occorrerà</i>, &quot;what will occur&quot;; the 1824 was read by one reader, construes as an elliptical relative and is kept (D297; NM-DISC-I28-D003). <i lang="it">occorrere</i>, occur (D01). The following chapter is I.29, <i lang="it">Quale sia più ingrato, o un Popolo, o un Principe</i>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work fg">
+    <div class="work-head">
+      <span class="tag">FG-CONS.1.28</span>
+      <h2>Considerazione sul capitolo XXVIII</h2>
+    </div>
+    <p class="rubric">Per qual cagione i Romani furono meno ingrati agli loro cittadini che gli Ateniesi.</p>
+    <p class="rubric">For what cause the Romans were less ungrateful to their citizens than the Athenians.
+      <span class="rubric-note">Canestrini&#x27;s setting of the chapter title, with <i lang="it">agli loro cittadini</i> for Machiavelli&#x27;s <i lang="it">ai loro cittadini</i>. It is heading apparatus, not Guicciardini&#x27;s (D32).</span></p>
+
+    <div class="colheads"><div></div><div>Italian · 1857</div><div>English</div></div>
+      <div class="pair" id="FG-CONS.1.28.01">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.28.01">1.28.01</a></div>
+        <div class="col it" lang="it">Se Roma non avessi mai doppo la cacciata de&#x27; re perduta la sua libertà, si potria forse approvare la ragione considerata nel Discorso, dello essere stati più pronti gli Ateniesi a battere e&#x27; suoi cittadini, che non furono e&#x27; Romani, ma chi considera che e&#x27; Dieci occuporono la tirannide, e la tennono occupata insino che la necessità gli strinse a deporla, dirà che da altro fondamento sia nata questa discordia, e massime ricordandosi che nel tempo ancora della recuperazione, nel quale per essere più fresca la memoria delle ingiurie si suole procedere più atrocemente, Roma contro a&#x27; Dieci e contro agli aderenti loro procedé umanissimamente e con somma circumspezione. Però bisogna dire, che o sia nato dalla natura de&#x27; Romani ne&#x27; quali non fu quella leggerezza che negli Ateniesi, conformi in questo alla proprietà degli altri Greci, ovvero, come io credo, che la diversità del governo ne fussi causa, perché il governo ateniese fu meramente populare, e nelle concioni del populo si trattavano le guerre, le paci e le altre deliberazioni importanti; ma in Roma se bene il populo ebbe la parte sua, vi fu grande la autorità del senato, e alla plebe fu il contrapeso della potenza della nobilità, e comunemente, dalla creazione de&#x27; magistrati in fuora, e constituzione delle nuove leggi, le cose gravi si trattavano nel senato, e se bene e&#x27; tribuni avevano autorità portarle al populo, nondimeno non fu usata se non dove fu o temerità grande o urgente cagione. D&#x27;onde nacque che in Atene e&#x27; cittadini potettono molto più facilmente con le arti populari farsi grandi, che in Roma, e nel governo meramente populare potettono più facilmente venire in sospetto, e con più leggerezza e manco considerazione essere oppressi. Ma in Roma fu più moderata la grandezza de&#x27; cittadini, avendo bisogno a continuarvi dentro non solo del favore populare, ma etiam del consenso del senato, e dove è minore grandezza de&#x27; cittadini, è minore causa di sospettare di loro; e dove il governo è misto, non è né tanta inclinazione, né tanta facilità di battere e&#x27; potenti; e&#x27; quali se bene in Roma potevano essere accusati al popolo da uno tribuno, poteva anche un altro tribuno opporsi alla accusazione, e l&#x27;arebbe forse fatto vedendola calunniosa. La qualità adunque del governo de&#x27; Romani più grave per sua natura, più temperato, più prudente che quello degli Ateniesi, fu causa che e&#x27; cittadini ebbono manco aperta la via alla tirannide, e in conseguenza vi fu minore ragione di sospettare di loro, e anche non vi potette essere tanta facilità di battere e&#x27; potenti.</div>
+        <div class="col en" lang="en">If Rome had never, after the expulsion of the kings, lost its liberty, one could perhaps approve the reason considered in the Discourse, for the Athenians&#x27; having been prompter to beat their citizens than the Romans were, but whoever considers that the Ten occupied the tyranny, and held it occupied until necessity constrained them to lay it down, will say that this discord has arisen from another foundation, and above all remembering that even in the time of the recovery, in which, the memory of the injuries being fresher, one is wont to proceed more atrociously, Rome proceeded against the Ten and against their adherents most humanely and with supreme circumspection. Therefore it is required to say that either it has arisen from the nature of the Romans in whom there was not that levity which <span class="supplied">[was]</span> in the Athenians, conformable in this to the property of the other Greeks, or else, as I believe, that the diversity of the government was the cause of it, because the Athenian government was merely popular, and in the harangues of the people wars, peaces and the other important deliberations were treated; but in Rome although the people had its part, the authority of the senate was great there, and to the plebs there was the counterweight of the power of the nobility, and commonly, apart from the creation of the magistrates and the constitution of the new laws, grave things were treated in the senate, and although the tribunes had authority to bring them to the people, nonetheless it was not used except where there was either great temerity or urgent cause. Whence it arose that in Athens the citizens could much more readily make themselves great with the popular arts than in Rome, and in the merely popular government could more readily come into suspicion, and with more levity and less consideration be oppressed. But in Rome the greatness of the citizens was more moderate, having need, to continue within it, not only of the popular favour but also of the consent of the senate, and where there is less greatness of the citizens, there is less cause to suspect them; and where the government is mixed, there is neither so much inclination nor so much facility to beat the powerful; who, although in Rome they could be accused to the people by one tribune, another tribune could also oppose himself to the accusation, and would perhaps have done it seeing it calumnious. The quality, then, of the government of the Romans, graver by its nature, more tempered, more prudent than that of the Athenians, was the cause that the citizens had the path to tyranny less open, and in consequence there was less reason to suspect them, and also there could not be so much facility to beat the powerful.</div>
+        <details class="annot"><summary>Commentary · 7</summary>
+          <p><span class="lem">Argument.</span> Guicciardini begins with a counterfactual. If Rome had never lost its liberty after the kings, the reason considered in the Discourse could perhaps be approved; but whoever considers that the Ten occupied the tyranny, and held it until necessity constrained them to lay it down, will say that this discord, the difference between the cities, has arisen from another foundation. Above all because of how Rome dealt with them: in the time of the recovery, when the memory of injuries is fresher and one is wont to proceed more atrociously, Rome proceeded against the Ten and their adherents most humanely and with supreme circumspection.</p>
+<p><span class="lem">Note.</span> He offers two causes and believes one. Either it arose from the nature of the Romans, who lacked the levity of the Athenians, a levity the Athenians shared with the other Greeks; or, <i lang="it">come io credo</i>, the diversity of government was the cause. Athens was merely popular, and wars, peaces and the other important deliberations were treated in the harangues of the people. In Rome the people had its part, but the senate&#x27;s authority was great, the plebs had the counterweight of the nobility&#x27;s power, and commonly, apart from the creation of magistrates and the constitution of new laws, grave things were treated in the senate; the tribunes&#x27; authority to bring them to the people was used only where there was great temerity or urgent cause. Hence at Athens the citizens could much more readily than at Rome make themselves great by the popular arts, and in the merely popular government could more readily come into suspicion and be oppressed with more levity and less consideration. At Rome the greatness of the citizens was more moderate, since to continue in it they needed the senate&#x27;s consent as well as popular favour. Where there is less greatness, there is less cause to suspect; where the government is mixed, there is neither so much inclination nor so much facility to beat the powerful, since one tribune could accuse them and another could oppose the accusation, and would perhaps have done so, seeing it calumnious. The close draws three consequences from the quality of the Roman government, graver, more tempered and more prudent than the Athenian: the path to tyranny less open to the citizens, in consequence less reason to suspect them, and less facility to beat the powerful.</p>
+<p><span class="lem">Note.</span> He does not choose between the causes by refuting the first; he states a belief in the second. Whether the Athenian levity of the first returns in the second, where the popular government oppresses &quot;with more levity&quot;, the reader may judge.</p>
+<p><span class="lem">History.</span> The first board of decemvirs was appointed in 451 BC to write the laws; the second, under Appius Claudius, kept office beyond its year and ruled as tyrants until the death of Verginia brought it down in 449 (Livy 3.33-58). Machiavelli discusses the decemvirate at I.35 and I.40-45. Of the ten, Appius Claudius and Spurius Oppius killed themselves in prison before judgment, the rest went into exile and their goods were confiscated; the tribune Marcus Duillius then declared an end to prosecutions (Livy 3.56-59). Guicciardini gives no instances of the humanity he praises.</p>
+<p><span class="lem">Cross-reference.</span> Machiavelli&#x27;s claim rests on a span, from the expulsion of the kings to Sulla and Marius, in which no citizen took Rome&#x27;s liberty away <a class="xref" href="#NM-DISC.1.28.02">Machiavelli .02</a>, and on a counterfactual: had Rome lost its liberty as Athens did, it would have been no more pious <a class="xref" href="#NM-DISC.1.28.04">Machiavelli .04</a>. Guicciardini&#x27;s opening reverses the counterfactual and names the Ten, who fall within the span. He does not say whether their tyranny is the case Machiavelli&#x27;s counterfactual imagined, with its Athenian conditions; he says only that Rome, having recovered its liberty from them, proceeded humanely.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini&#x27;s rule of the recovery, <i lang="it">per essere più fresca la memoria delle ingiurie si suole procedere più atrocemente</i>, is close to two things in Machiavelli: Athens <i lang="it">ricordandosi delle ingiurie ricevute</i> and the maxim of the writers of civility, that peoples bite more fiercely after recovering their liberty <a class="xref" href="#NM-DISC.1.28.03">Machiavelli .03</a>. Guicciardini cites neither; he grants the rule as what is wont to happen, and denies it of Rome.</p>
+<p><span class="lem">Cross-reference.</span> The mechanism is Machiavelli&#x27;s: less cause to suspect <a class="xref" href="#NM-DISC.1.28.01">Machiavelli .01</a>. Guicciardini keeps it, in his own words (<i lang="it">minore causa di sospettare di loro</i>), and moves its ground from an accident, liberty never taken away, to an order, the mixed government. Machiavelli&#x27;s <i lang="it">diversità degli accidenti</i> <a class="xref" href="#NM-DISC.1.28.04">Machiavelli .04</a> becomes <i lang="it">la diversità del governo</i>; his <i lang="it">inconsideratamente</i> <a class="xref" href="#NM-DISC.1.28.02">Machiavelli .02</a> returns as the Athenians&#x27; <i lang="it">manco considerazione</i>; and where Machiavelli has Rome without cause to offend its citizens, Guicciardini has <i lang="it">battere</i>, beat, three times, twice of the facility a mixed government lacks. The word <i lang="it">ingratitudine</i> does not occur in the reply. The calumnious accusation that a second tribune could stop is the distinction between accusation and calumny drawn in I.7 and I.8.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from Canestrini 1857, <i>Opere inedite</i> vol. 1, pp. 1–65 (<span class="sig">WIT-FG-CONS-1857-CANESTRINI</span>) — the <i>editio princeps</i>, which governs. Collated against Palmarocchi 1933 (<span class="sig">WIT-FG-CONS-1933-PALMAROCCHI</span>): page images and the Wikisource transcription consulted as collation evidence, not reproduced (LICENSE §5).</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem">dirà che da altro fondamento sia nata questa discordia</span> — 1857. The 1933 witness reads <i lang="it">dirà che da altro fondamento sia nata questa differenzia</i>. Read by both readers without doubt. The 1933 edition has <i lang="it">differenzia</i>, &quot;difference&quot;, the difference between the two cities&#x27; treatment of their citizens. Canestrini&#x27;s <i lang="it">discordia</i>, &quot;discord&quot;, construes and is kept as printed (D38; D290), though the 1933 word fits the argument more closely.</p>
+<p><span class="lem">dentro</span>. The 1857 witness reads <i lang="it">avendo bisogno a continuarvi dentr[o/a] (a damaged letter)</i>. The 1933 witness reads <i lang="it">avendo bisogno a continuarvi dentro</i>. Both readers doubted the last letter and split on which form they preferred, each giving the other as alternative. <i lang="it">Dentra</i> is not a word. A reading, with the 1933 edition (D291).</p>
+<p><span class="lem">nobilità</span>. The 1857 witness reads <i lang="it">della potenza della nobilità (pass A); nobiltà (pass B)</i>. The 1933 witness reads <i lang="it">della potenza della nobilità</i>. Each reader read his form without doubt; they are two forms of one word, and the 1933 edition has pass A&#x27;s. Read <i lang="it">nobilità</i> (D292). The English is &quot;nobility&quot; either way.</p>
+<p><span class="lem">e constituzione delle nuove leggi</span> — 1857. The 1933 witness reads <i lang="it">e constituzione della nuova legge</i>. Read by both readers without doubt; a word-level difference at e/a, escalated under D203(b). Three words agree in the plural, which a barless e does not produce. Kept as printed (D38; D293): &quot;the constitution of the new laws&quot; against the 1933 &quot;of the new law&quot;.</p>
+<p><span class="lem">tennono</span>. The 1857 witness reads <i lang="it">e la tenn[o]no occupata (a damaged letter)</i>. The 1933 witness reads <i lang="it">e la tennono occupata</i>. Both readers doubted the second vowel and both prefer <i lang="it">tennono</i>, as the 1933 edition reads; pass A gives <i lang="it">tenneno</i>, another form of the same verb, as alternative. Read as preferred (D294).</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem"><i lang="it">Se Roma non avessi mai doppo la cacciata de&#x27; re perduta la sua libertà</i>.</span> &quot;If Rome had never, after the expulsion of the kings, lost its liberty&quot;: a counterfactual, and Guicciardini&#x27;s first move against Machiavelli&#x27;s premise that, from the expulsion of the kings to Sulla and Marius, Rome&#x27;s liberty was never taken away by any citizen of its own (Machiavelli .02). The Ten fall inside that span. The sentence turns Machiavelli&#x27;s own counterfactual, <i lang="it">se a Roma fusse suta tolta la libertà come ad Atene</i> (Machiavelli .04), into a fact. <i lang="it">cacciata</i>, expulsion, Machiavelli&#x27;s word. <i lang="it">avessi</i> is the Florentine third-person subjunctive.</p>
+<p><span class="lem"><i lang="it">si potria forse approvare la ragione considerata nel Discorso</i>.</span> &quot;One could perhaps approve the reason considered in the Discourse&quot;: conditional and hedged, not a concession. <i lang="it">il Discorso</i>, Machiavelli&#x27;s chapter, as at FG I.24, I.25. <i lang="it">ragione</i>, reason: the argument, Machiavelli&#x27;s <i lang="it">cagione</i>, cause (Machiavelli .01), restated as his reasoning.</p>
+<p><span class="lem"><i lang="it">dello essere stati più pronti gli Ateniesi a battere e&#x27; suoi cittadini, che non furono e&#x27; Romani</i>.</span> &quot;For the Athenians&#x27; having been prompter to beat their citizens than the Romans were&quot;: the nominal infinitive (D109). <i lang="it">battere</i>, beat (D120): to strike at or bring down a citizen, not to flog him. It stands where Machiavelli has <i lang="it">offendere</i>, &quot;offend&quot; (Machiavelli .02), and returns twice, in the rule on mixed government and in the reply&#x27;s last words. <i lang="it">pronto</i>, prompt; &quot;ready&quot; is kept off it so that &quot;readily&quot; stays <i lang="it">facilmente</i>&#x27;s (glossary). <i lang="it">che non furono</i>, the expletive negative of the comparison, not rendered.</p>
+<p><span class="lem"><i lang="it">ma chi considera che e&#x27; Dieci occuporono la tirannide</i>.</span> &quot;But whoever considers that the Ten occupied the tyranny&quot;: the decemvirs of 451-449 BC, appointed to write the laws, who kept office beyond their term and ruled as tyrants until Appius Claudius&#x27; attempt on Verginia brought them down (Livy 3.33-58). Machiavelli treats them at I.35 and I.40-45; I.40 is in this edition. <i lang="it">occupare</i>, occupy; <i lang="it">tirannide</i>, tyranny (glossary). <i lang="it">considerare</i>, consider, against Machiavelli&#x27;s two <i lang="it">chi considererà</i> (Machiavelli .04).</p>
+<p><span class="lem"><i lang="it">e la tennono occupata insino che la necessità gli strinse a deporla</i>.</span> &quot;And held it occupied until necessity constrained them to lay it down&quot;: <i lang="it">tenere</i>, hold (glossary); <i lang="it">deporre</i>, lay down (glossary, FG I.9). <i lang="it">necessità</i>, necessity: Machiavelli&#x27;s word for what is to be accused in place of blaming Athens or praising Rome (Machiavelli .04); here it is only what made the Ten lay the tyranny down. Both readers doubted the second vowel of <i lang="it">tennono</i>; read as both prefer (D294; FG-CONS-I28-D005).</p>
+<p><span class="lem"><i lang="it">dirà che da altro fondamento sia nata questa discordia</i>.</span> &quot;Will say that this discord has arisen from another foundation&quot;: <i lang="it">fondamento</i>, foundation (glossary); <i lang="it">nascere</i>, arise (D04). <i lang="it">questa discordia</i> points back to the difference in conduct between Athens and Rome, the subject of the Discourse, named as a disagreement between them; it is not the civil strife at Rome under the Ten. the 1933 edition reads <i lang="it">differenzia</i>, &quot;difference&quot;, which fits the argument more closely. Both readers read <i lang="it">discordia</i> without doubt, it construes, and it is kept (D290; FG-CONS-I28-D001).</p>
+<p><span class="lem"><i lang="it">e massime ricordandosi</i>.</span> &quot;And above all remembering&quot;: <i lang="it">massime</i>, above all (glossary). The subject of the gerund is the one who considers.</p>
+<p><span class="lem"><i lang="it">nel tempo ancora della recuperazione</i>.</span> &quot;Even in the time of the recovery&quot;: the recovery of liberty after the decemvirs, as Machiavelli&#x27;s <i lang="it">ricuperata la libertà</i> (Machiavelli .03); <i lang="it">ancora</i>, even, attached to the time.</p>
+<p><span class="lem"><i lang="it">si suole procedere più atrocemente</i>.</span> &quot;One is wont to proceed more atrociously&quot;: granted as a rule and denied of Rome. It is close to Machiavelli&#x27;s Athens <i lang="it">ricordandosi delle ingiurie ricevute</i> and to the maxim he takes from the writers of civility (Machiavelli .03); Guicciardini cites neither. The pointing after <i lang="it">atrocemente</i> was doubtful to both readers; the 1933 comma is followed (D110).</p>
+<p><span class="lem"><i lang="it">procedé umanissimamente e con somma circumspezione</i>.</span> &quot;Proceeded most humanely and with supreme circumspection&quot;: <i lang="it">somma</i>, supreme (D190). In Livy (3.56-59) Appius and Spurius Oppius killed themselves in prison before judgment, the other eight went into exile and their goods were confiscated; then the tribune Duillius forbade further prosecutions, the moderation Guicciardini means.</p>
+<p><span class="lem"><i lang="it">Però bisogna dire</i>.</span> &quot;Therefore it is required to say&quot;: <i lang="it">però</i>, therefore (D22), consecutive. <i lang="it">bisogna</i>, &quot;it is required&quot;: the edition&#x27;s rendering of the impersonal <i lang="it">bisognare</i>, in every tense (D260); the reasons are in the note on <i lang="it">bisogni</i> at Machiavelli I.2.</p>
+<p><span class="lem"><i lang="it">che o sia nato dalla natura de&#x27; Romani ... ovvero, come io credo, che la diversità del governo ne fussi causa</i>.</span> &quot;That either it has arisen from the nature of the Romans ... or else, as I believe, that the diversity of the government was the cause of it&quot;: two explanations, the second marked as his belief (<i lang="it">credo</i>), not the first refuted. <i lang="it">ovvero</i>, or else; the pleonastic second <i lang="it">che</i> is kept, &quot;that ... that&quot; (D136). <i lang="it">diversità</i>, diversity, as Machiavelli&#x27;s <i lang="it">la diversità degli accidenti</i> (Machiavelli .04): Guicciardini moves the diversity from what befell the cities to how they were governed. <i lang="it">causa</i>, cause; Machiavelli&#x27;s <i lang="it">cagione</i>, the recorded collapse (glossary). The pointing after <i lang="it">causa</i> was doubtful to both readers; the 1933 comma is followed (D110).</p>
+<p><span class="lem"><i lang="it">ne&#x27; quali non fu quella leggerezza che negli Ateniesi</i>.</span> &quot;In whom there was not that levity which [was] in the Athenians&quot;: only the verb is supplied (D53). Canestrini has no comma before <i lang="it">ne&#x27; quali</i>, and the English adds none (D65). <i lang="it">leggerezza</i>, levity, twice in the reply.</p>
+<p><span class="lem"><i lang="it">conformi in questo alla proprietà degli altri Greci</i>.</span> &quot;Conformable in this to the property of the other Greeks&quot;: <i lang="it">conformi</i> agrees with the Athenians; <i lang="it">proprietà</i>, property, a people&#x27;s distinctive character.</p>
+<p><span class="lem"><i lang="it">fu meramente populare</i>.</span> &quot;Was merely popular&quot;: <i lang="it">meramente</i>, in the older sense, purely, without mixture, as in <i lang="it">mero e misto imperio</i>, &quot;mere and mixed <i lang="la">imperium</i>&quot; (D125), as the reply&#x27;s <i lang="it">governo è misto</i>, &quot;government is mixed&quot;, below. Not &quot;merely&quot; as &quot;only just&quot;.</p>
+<p><span class="lem"><i lang="it">nelle concioni del populo</i>.</span> &quot;In the harangues of the people&quot;: <i lang="it">concioni</i>, harangues (glossary), the assemblies where the people were addressed and decided.</p>
+<p><span class="lem"><i lang="it">le guerre, le paci e le altre deliberazioni importanti</i>.</span> &quot;Wars, peaces and the other important deliberations&quot;: the plural <i lang="it">paci</i> kept. The pointing after <i lang="it">importanti</i> divided the readers; the 1933 semicolon is followed (D110).</p>
+<p><span class="lem"><i lang="it">vi fu grande la autorità del senato</i>.</span> &quot;The authority of the senate was great there&quot;: <i lang="it">autorità</i>, authority (glossary).</p>
+<p><span class="lem"><i lang="it">e alla plebe fu il contrapeso della potenza della nobilità</i>.</span> &quot;And to the plebs there was the counterweight of the power of the nobility&quot;: the nobility&#x27;s power weighed against the plebs. The readers split between <i lang="it">nobilità</i> and <i lang="it">nobiltà</i>, two forms of the word; read <i lang="it">nobilità</i> with the 1933 edition (D292; FG-CONS-I28-D003). <i lang="it">potenza</i>, power (glossary).</p>
+<p><span class="lem"><i lang="it">dalla creazione de&#x27; magistrati in fuora, e constituzione delle nuove leggi</i>.</span> &quot;Apart from the creation of the magistrates and the constitution of the new laws&quot;: the elections and the passing of laws, which went to the people; <i lang="it">magistrato</i>, magistrate (D93); <i lang="it">constituzione</i>, constitution, the act of constituting (glossary <i lang="it">costituire</i>). The 1933 edition reads <i lang="it">della nuova legge</i>, singular; escalated as a word at a letter the scan breaks and kept (D293; FG-CONS-I28-D004).</p>
+<p><span class="lem"><i lang="it">e se bene e&#x27; tribuni avevano autorità portarle al populo, nondimeno non fu usata</i>.</span> &quot;And although the tribunes had authority to bring them to the people, nonetheless it was not used&quot;: <i lang="it">se bene</i>, although (D31); <i lang="it">nondimeno</i>, nonetheless (glossary). <i lang="it">portarle</i>, the grave things; the authority without <i lang="it">di</i> before the infinitive, as Canestrini prints it. <i lang="it">temerità</i>, temerity; <i lang="it">urgente cagione</i>, urgent cause: the reply&#x27;s one <i lang="it">cagione</i>. The stop after <i lang="it">cagione</i> was doubtful to both readers; the 1933 stop is followed, and a capital follows (D110).</p>
+<p><span class="lem"><i lang="it">D&#x27;onde nacque che in Atene e&#x27; cittadini potettono molto più facilmente con le arti populari farsi grandi</i>.</span> &quot;Whence it arose that in Athens the citizens could much more readily make themselves great with the popular arts&quot;: <i lang="it">D&#x27;onde</i>, whence; <i lang="it">facilmente</i>, readily (D27); <i lang="it">arti populari</i>, the arts of courting the people. <i lang="it">farsi grandi</i>, make themselves great, set against <i lang="it">la grandezza de&#x27; cittadini</i>, the greatness of the citizens, below.</p>
+<p><span class="lem"><i lang="it">e nel governo meramente populare potettono più facilmente venire in sospetto</i>.</span> &quot;And in the merely popular government could more readily come into suspicion&quot;: Machiavelli&#x27;s <i lang="it">sospettare</i> (Machiavelli .01, .02) returns as the effect of the government, not of a lost liberty.</p>
+<p><span class="lem"><i lang="it">con più leggerezza e manco considerazione essere oppressi</i>.</span> &quot;With more levity and less consideration be oppressed&quot;: <i lang="it">manco</i>, less; <i lang="it">considerazione</i>, consideration, answering Machiavelli&#x27;s <i lang="it">inconsideratamente</i> (Machiavelli .02); <i lang="it">opprimere</i>, oppress (glossary).</p>
+<p><span class="lem"><i lang="it">avendo bisogno a continuarvi dentro</i>.</span> &quot;Having need, to continue within it&quot;: the gerund has no subject of its own; it is the citizens who have need. <i lang="it">bisogno</i>, need, the noun (glossary), kept apart from <i lang="it">bisogna</i>. <i lang="it">continuarvi dentro</i>, to continue within it, <i lang="it">vi</i> the greatness. Both readers doubted the last letter of <i lang="it">dentro</i> and split on it; read <i lang="it">dentro</i> with the 1933 edition (D291; FG-CONS-I28-D002).</p>
+<p><span class="lem"><i lang="it">non solo del favore populare, ma etiam del consenso del senato</i>.</span> &quot;Not only of the popular favour but also of the consent of the senate&quot;: <i lang="la">etiam</i> is Latin, as at FG I.3 and I.16, here in the sense &quot;also&quot;.</p>
+<p><span class="lem"><i lang="it">e dove è minore grandezza de&#x27; cittadini, è minore causa di sospettare di loro</i>.</span> &quot;And where there is less greatness of the citizens, there is less cause to suspect them&quot;: <i lang="it">è</i> existential, &quot;there is&quot;, in both clauses, as in the next clause and in <i lang="it">vi fu minore ragione di sospettare di loro</i> at the close. &quot;Less cause to suspect&quot; is Machiavelli&#x27;s phrase at .01, kept in his English: Guicciardini keeps the mechanism and gives it a new cause.</p>
+<p><span class="lem"><i lang="it">non è né tanta inclinazione, né tanta facilità di battere e&#x27; potenti</i>.</span> &quot;There is neither so much inclination nor so much facility to beat the powerful&quot;: <i lang="it">inclinazione</i>, inclination, as FG I.12, I.26; <i lang="it">potenti</i>, the powerful (glossary <i lang="it">potente</i>). The pointing after <i lang="it">potenti</i> was doubtful to both readers; the 1933 semicolon is followed (D110).</p>
+<p><span class="lem"><i lang="it">e&#x27; quali se bene in Roma potevano essere accusati al popolo da uno tribuno, poteva anche un altro tribuno opporsi alla accusazione</i>.</span> &quot;Who, although in Rome they could be accused to the people by one tribune, another tribune could also oppose himself to the accusation&quot;: the relative is left without a verb of its own when the subject changes; the English keeps the anacoluthon. <i lang="it">uno tribuno</i>, one tribune, against <i lang="it">un altro tribuno</i>, another: the tribunes&#x27; power to veto one another. <i lang="it">accusare</i>, <i lang="it">accusazione</i>, accuse, accusation (D159), Machiavelli&#x27;s public charge of I.7. Canestrini prints <i lang="it">popolo</i> here and <i lang="it">populo</i> elsewhere; both &quot;people&quot;.</p>
+<p><span class="lem"><i lang="it">e l&#x27;arebbe forse fatto vedendola calunniosa</i>.</span> &quot;And would perhaps have done it seeing it calumnious&quot;: <i lang="it">forse</i>, perhaps; <i lang="it">calunnioso</i>, calumnious, the adjective of <i lang="it">calunnia</i> (D159): the accusation that is in truth a calumny, the distinction of I.7 and I.8.</p>
+<p><span class="lem"><i lang="it">La qualità adunque del governo de&#x27; Romani più grave per sua natura, più temperato, più prudente</i>.</span> &quot;The quality, then, of the government of the Romans, graver by its nature, more tempered, more prudent&quot;: <i lang="it">adunque</i>, then (D74); <i lang="it">qualità</i>, quality (glossary); <i lang="it">temperato</i>, tempered (glossary); <i lang="it">prudente</i>, prudent (glossary). The three comparatives agree with <i lang="it">governo</i>.</p>
+<p><span class="lem"><i lang="it">fu causa che e&#x27; cittadini ebbono manco aperta la via alla tirannide</i>.</span> &quot;Was the cause that the citizens had the path to tyranny less open&quot;: <i lang="it">via</i>, path (D131).</p>
+<p><span class="lem"><i lang="it">e in conseguenza vi fu minore ragione di sospettare di loro</i>.</span> &quot;And in consequence there was less reason to suspect them&quot;: <i lang="it">ragione</i>, reason: the word of the first period for Machiavelli&#x27;s argument (<i lang="it">la ragione considerata nel Discorso</i>), returned at the close for Machiavelli&#x27;s own reason, less cause to suspect, now the consequence of the government.</p>
+<p><span class="lem"><i lang="it">e anche non vi potette essere tanta facilità di battere e&#x27; potenti</i>.</span> &quot;And also there could not be so much facility to beat the powerful&quot;: the reply ends on the phrase of the period before, as its first period turned on <i lang="it">battere</i>.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="colophon">
+    <div class="row">
+      <div>
+        <h3>What this is</h3>
+        <p>A free, openly licensed, bilingual edition of Guicciardini's 39 <i>Considerazioni</i> and the
+          <i>Discorsi</i> chapters they answer — 78 text units, Italian and English facing, every reading
+          traceable to a named public-domain witness.</p>
+        <p>It is a reading edition with a transparent apparatus, not a text of record. It does not adjudicate
+          the critical text against Bausi 2001 or the manuscript tradition, and does not claim to.</p>
+      </div>
+      <div>
+        <h3>On the title</h3>
+        <p>Machiavelli had been dead two years when Guicciardini wrote; the <i>Discorsi</i> were unpublished,
+          and the <i>Considerazioni</i> stayed unprinted until 1857. Machiavelli never answers.</p>
+        <p>“Conversation” is a quotation, not a description. It invokes Machiavelli's letter to Vettori of
+          10 December 1513, where he changes into court dress at evening, enters the antique courts of ancient
+          men, and reports that <i>they, in their humanity, answer me</i>. Guicciardini does to Machiavelli
+          what Machiavelli did to Livy — and is denied the reply Machiavelli claimed.</p>
+      </div>
+      <div>
+        <h3>Method</h3>
+        <p>No image-derived reading enters the text on a single reading. Each unit is transcribed twice,
+          independently, by readers who have not seen each other's work; disagreements are adjudicated against
+          the page images and recorded.</p>
+        <p>Existing English translations of the <i>Considerazioni</i> — Grayson (1965), Atkinson &amp; Sices
+          (2002) — are never used as translation inputs.</p>
+      </div>
+      <div>
+        <h3>Licence</h3>
+        <p>The established Italian text and the apparatus data are dedicated to the public domain under
+          <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>. They are Machiavelli's and
+          Guicciardini's sentences, and this edition adds no condition to them.</p>
+        <p>The English translation, the notes and the editorial apparatus are licensed
+          <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: reuse them anywhere, including
+          commercially, with attribution to David McDougall and this edition. The build tooling is MIT.</p>
+        <p>The witness scans are other people's digitisations, included as evidence under their own terms; no
+          grant is made over them, and no page image of Palmarocchi 1933 is reproduced here. Full terms,
+          layer by layer, are in the <span class="sig">LICENSE</span> file in the repository.</p>
+      </div>
+    </div>
+
+    <div class="state">
+      <p><strong>Version 0.3 · 19 of 39 pairs published.</strong>
+        This edition is versioned, not frozen. No open questions on this pair.</p>
+    </div>
+  </footer>
+
+</div>
