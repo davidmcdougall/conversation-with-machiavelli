@@ -1,0 +1,43 @@
+source_unit_id: NM-DISC.1.26
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-I26-D001
+    locator: NM-DISC.1.26.03
+    class: reading
+    witness_1824: "come nel presente capitolo per esempio si mostrerà"
+    witness_1554: "come nel ſeguente capitolo per eſſempio ſi moſtrera"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 41v). The 1554 reads `seguente`, \"following\": the example of men who can be neither wholly good nor wholly bad (Giovampagolo Baglioni and Julius II at Perugia) is in I.27, whose rubric repeats the clause. The 1824 `presente` was read by both readers on the sampled page; it construes and is kept as printed (D38; D282)."
+  - id: NM-DISC-I26-D002
+    locator: NM-DISC.1.26.02
+    class: reading
+    witness_1824: "Edificare oltra di questo nuove Città, disfare delle vecchie"
+    witness_1554: "Edificare oltra di queſte nuoue citta,disfare delle fatte"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 41r). Two differences. `queste` for `questo` (\"besides these [things]\" for \"besides this\"), at a letter the scans break, escalated under D203(b) and kept (D281). `delle fatte`, \"some of those made\", for `delle vecchie`, \"some of the old ones\": the 1554 speaks of unmaking what has been built, the 1824 of unmaking the old."
+  - id: NM-DISC-I26-D003
+    locator: NM-DISC.1.26.01
+    class: reading
+    witness_1824: "con nuova autorità"
+    witness_1554: "con nuoue auttorita"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 41r): the 1554 has the plural, \"new authorities\", against the 1824 singular, at a letter the scans break; escalated under D203(b) and kept (D281). The English is unaffected."
+  - id: NM-DISC-I26-D004
+    locator: NM-DISC.1.26.02
+    class: reading
+    witness_1824: "dice, che tramutava gli uomini di Provincia in Provincia"
+    witness_1554: "dice, che tramutò gli huomini di prouincia in prouincia"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 41r): the 1554 has the perfect, \"transferred\", for the 1824 imperfect of habit, \"used to transfer\"."
+  - id: NM-DISC-I26-D005
+    locator: NM-DISC.1.26.01-03
+    class: systematic_orthographic_profile
+    witness_1824: "the 1824 spelling and pointing: `Principe`, `Principato`, `d'una`/`di una`, `fussero`, `migliore`, `ch'egli`, `sendo`, `piccolo`, `il quale`, `nimici`, `cristiano`, `qualunque`, `piuttosto`, `degli`"
+    witness_1554: "Giglio's: `Prencipe`, `prencipato`, `d'una`, `fusseno`, `megliore`, `che egli`, `essendo`, `picciolo`, `ilquale`, `nemici`, `Christiano`, `qualunche`, `piu tosto`, `de gli`, u for v, ſ, `&`, `et`, `h-`, the Latin flagged by marginal inverted commas, and lighter or heavier pointing (`Re. Qui ...`)"
+    established: witness_1824
+    rationale: "The 1824 governs throughout. `fusseno` and `fussero`, `sendo` and `essendo` are forms of the same words. No other difference that bears on the English."

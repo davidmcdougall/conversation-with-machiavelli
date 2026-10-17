@@ -1,0 +1,38 @@
+source_unit_id: FG-CONS.1.26
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-018
+responds_to: NM-DISC.1.26
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. Canestrini's footnote on p. 41 (quoting the opening of Machiavelli's chapter and its `vie di mezzo`) is his and is not carried."
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38); errors are emended from Palmarocchi and bracketed (D68)."
+passes:
+  - {id: A, performed: 2026-10-17, file: sources/coldpass/FG-CONS.1.26-passA.md, note: "subagent; page images only (native rendered at 1200 ppi, half pages enlarged 1.6x plus quarter crops enlarged 2.2x), separate directory"}
+  - {id: B, performed: 2026-10-17, file: sources/coldpass/FG-CONS.1.26-passB.md, note: "subagent; same images, separate directory"}
+collation: sources/coldpass/COLLATION-2026-10-17-I26.md
+collation_result: >
+  313 words (A and B). One word-level split, `dallo`/`dello interesse`, read
+  `dello` (D279). Three doubts common to both readers whose alternatives are
+  words, read as both prefer: `interesse`, `sono`, `petto` (D280). One split
+  of pointing and two common doubts of pointing settled by D110. No clause or
+  sense disagreement.
+witness_independence_check: "SCOPE §7. At the one word split pass A keeps the printed shape, pass B the 1933 form; the 1933 form is what both readers give as alternative. Neither pass carries a Palmarocchi word-reading where Canestrini differs: both have `il principato`, `il trattarli`, `il principe`, `mutazioni`, `armi proprie`, `guadagnarla`, `necessarii remedii`, `estraordinarii`, `comunemente`, an unbracketed `non ricognoscere`, against the 1933 `el principato`, `el trattarli`, `el principe`, `mutazione`, `arme proprie`, `guadagnarli`, `necessari remedi`, `estraordinari`, `communemente`, `[non] ricognoscere`. The passes read Canestrini."
+boundaries: "printed pp. 40-42; heading CONSIDERAZIONE SUL CAPITOLO XXVI on p. 40 after the last line of the reply on XXV (`di maggiore potestà.`); Canestrini's two-line rubric `Un principe nuovo, in una città o provincia presa da lui, debbe fare ogni cosa nuova`, its stop faint; one indented paragraph (`Sono alcune città`); ends p. 42 line 3 `estraordinarii e violenti`, its stop doubtful; CONSIDERAZIONE SUL CAPITOLO XXVIII follows (Guicciardini has no reply on XXVII). One footnote of Canestrini's, keyed after `sì forti` on p. 41."
+corrections: []
+emendations: []
+readings:
+  - {locus: "in sul rispetto ⟨dallo|dello⟩ interesse", passes: "A ⟨dallo|dello⟩; B ⟨dello|dallo⟩", witness_1933: "dello", disposition: "dello, D279 (David, 2026-10-17): a barless e; `dallo` barely construes after `rispetto`"}
+  - {locus: "dello ⟨interesse|interessa⟩ proprio", passes: "A ⟨interesse|interessa⟩; B the same", witness_1933: "interesse", disposition: "interesse, D280 (David, 2026-10-17): `interessa` does not construe after `dello`"}
+  - {locus: "che ⟨sono|sonò⟩ stati", passes: "A ⟨sono|sonò⟩; B the same", witness_1933: "sono", disposition: "sono, D280: a speck over the o; `sonò stati` does not construe"}
+  - {locus: "del ⟨petto|patto⟩ loro", passes: "A ⟨petto|patto⟩; B the same", witness_1933: "petto", disposition: "petto, D280: a barless e; `eradicare del patto loro` makes no sense"}
+pointing:
+  - {locus: "sotto uno tiranno; come e' regni", passes: "A ⟨;|,⟩; B ⟨,|;⟩", witness_1933: ";", disposition: "semicolon: a mark both readers see and neither can weigh; the 1933 edition breaks the tie (D110)"}
+  - {locus: "co' beneficii, di guadagnarla; perché", passes: "A ⟨,|;⟩; B ⟨,|;⟩", witness_1933: ";", disposition: "semicolon, D110"}
+  - {locus: "quando sia necessario, e nondimeno", passes: "A ⟨,|;⟩; B ⟨,|;⟩", witness_1933: ",", disposition: "comma, D110"}
+  - {locus: "di guadagnarlo, pure che", passes: "A ⟨,|;⟩; B ⟨,|;⟩", witness_1933: ",", disposition: "comma, D110"}
+  - {locus: "e violenti. (unit end)", passes: "A ⟨.|,⟩; B ⟨.|,⟩", witness_1933: ".", disposition: "printed, doubtful; D110; not a supply, so D40 does not apply"}
+  - {locus: "sì forti a fondare", passes: "A and B: Canestrini's note reference, no stop", witness_1933: ",", disposition: "no stop supplied: none is needed for the construction, and the lighter pointing stands (D65)"}
+not_supplied: ["the 1933 comma after `sì forti`, where Canestrini's note reference stands"]
+normalisation_notes: "Class A: accents (`nè` → `né`, `perchè` → `perché` ×3, `benchè` → `benché`); elision solid (`l'onore`, `dall'altro`); apocope spaced (`co' buoni`, `de' principi`, `de' remedii`, `co' beneficii` ×2, the faint apostrophe of the second supplied by D39); the Florentine plural article supplied as `e'` (D35: `e' quali` ×2, `e' regni`, `e' rimedii`, `e' remedii`); line-end hyphens removed; spaces before punctuation removed. Canestrini's note reference after `sì forti` and his footnote are his, not Guicciardini's, and are not carried."

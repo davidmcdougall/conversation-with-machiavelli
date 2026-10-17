@@ -1,0 +1,43 @@
+source_unit_id: FG-CONS.1.26
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-I26-D001
+    locator: FG-CONS.1.26.01
+    class: ruled_reading
+    witness_1857: "in sul rispetto d[a/e]llo interesse proprio (an a-shaped letter)"
+    witness_1933: "in sul rispetto dello interesse proprio"
+    established: "in sul rispetto dello interesse proprio"
+    publish_as_variant_note: true
+    rationale: "Both readers see an a; they split on which form they preferred, each giving the other as alternative. `Dallo` barely construes after `rispetto`; the scan prints e without its crossbar throughout. A reading, not an emendation (D279)."
+  - id: FG-CONS-I26-D002
+    locator: FG-CONS.1.26.01
+    class: ruled_reading
+    witness_1857: "dello interess[e/a] proprio; che son[o/ò] stati; del p[e/a]tto loro (damaged letters)"
+    witness_1933: "dello interesse proprio; che sono stati; del petto loro"
+    established: "interesse; sono; petto"
+    publish_as_variant_note: true
+    rationale: "Each letter doubtful to both readers, and each alternative a word (`interessa`, `sonò`, `patto`); none of the alternatives construes in its place. Readings, with the 1933 edition (D280)."
+  - id: FG-CONS-I26-D003
+    locator: FG-CONS.1.26.01
+    class: reading
+    witness_1857: "che quella parte che si può guadagnare co' beneficii, di guadagnarla"
+    witness_1933: "che quella parte che si può guadagnare co' benefíci, di guadagnarli"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "Read by both passes. Canestrini's `guadagnarla` agrees with `quella parte`; the 1933 `guadagnarli` takes the men the part is made of. Not a letter the scan breaks; the sense is the same."
+  - id: FG-CONS-I26-D004
+    locator: FG-CONS.1.26.01
+    class: reading
+    witness_1857: "quello desiderio di non ricognoscere superiore di governare"
+    witness_1933: "quello desiderio di [non] ricognoscere superiore, di governare"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "Canestrini prints `non`, read by both passes; the 1933 edition brackets it as an editorial supply, which suggests its manuscript lacks it, and points `superiore, di governare`, making the governing a second desire. Canestrini governs; the English takes `di governare` with `superiore`."
+  - id: FG-CONS-I26-D005
+    locator: FG-CONS.1.26.01
+    class: systematic_orthographic_profile
+    witness_1857: "Canestrini's `il principato`, `il trattarli`, `il principe`, `necessarii remedii`, `estraordinarii`, `beneficii`, `comunemente`, `armi`, `mutazioni`, `perchè`, `sì`, and his pointing"
+    witness_1933: "Palmarocchi's `el principato`, `el trattarli`, `el principe`, `necessari remedi`, `estraordinari`, `benefíci`, `communemente`, `arme`, `mutazione`, `perché`, `sí`, and his pointing (`forti,`, `superiore,`)"
+    established: witness_1857
+    rationale: "Canestrini governs throughout. The 1933 `delle mutazione` does not agree and is recorded only here. No other difference of word or sense."
