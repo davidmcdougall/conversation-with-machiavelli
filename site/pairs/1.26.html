@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Machiavelli holds that a new prince who does not turn to civil life does best to make everything new: the methods are most cruel, but whoever rejects the good path and would keep his state should take the other. Guicciardini sorts the cases by the people: where a change of prince matters little and lawful rule is unfamiliar, strong remedies are unnecessary; where the inclination is contrary, a kingdom long under one line one could hope to win by good treatment, but a people inclined to liberty requires them. Therefore what benefits can win should be won, since violent remedies, though they secure, weaken, above all a prince without his own arms; therefore the prince needs the spirit for extraordinary remedies when necessary, and the prudence to miss no chance for humanity and benefits, not taking as an absolute rule what Machiavelli says, who always liked such remedies beyond measure.">
+<style>*{box-sizing:border-box}body{margin:0;font:14px system-ui}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>A Conversation with Machiavelli — A new prince, in a city or province taken by him, must make every thing new</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root {
+  --paper:      #EDEEEC;
+  --paper-sunk: #E4E6E3;
+  --ink:        #1B1E1C;
+  --ink-muted:  #5C625E;
+  --ink-faint:  #868C87;
+  --rule:       #C9CDC8;
+  --rule-faint: #DCDFDB;
+  --nm:         #3A5A6B;
+  --fg:         #6E5A3C;
+  --serif: "EB Garamond", "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  --sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --mono:  "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:      #161917;
+    --paper-sunk: #1D211E;
+    --ink:        #E3E6E1;
+    --ink-muted:  #A0A6A0;
+    --ink-faint:  #767C77;
+    --rule:       #343934;
+    --rule-faint: #262B27;
+    --nm:         #8FB4C6;
+    --fg:         #C4A97C;
+  }
+}
+:root[data-theme="dark"] {
+  --paper:      #161917;
+  --paper-sunk: #1D211E;
+  --ink:        #E3E6E1;
+  --ink-muted:  #A0A6A0;
+  --ink-faint:  #767C77;
+  --rule:       #343934;
+  --rule-faint: #262B27;
+  --nm:         #8FB4C6;
+  --fg:         #C4A97C;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 1160px; margin: 0 auto; padding-inline: 20px; padding-block: 0 0; }
+
+/* ---- masthead ---- */
+.masthead { padding-block: 56px 32px; border-bottom: 1px solid var(--rule); }
+.eyebrow {
+  font-family: var(--sans); font-size: 11px; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint);
+  margin: 0 0 18px;
+}
+h1 {
+  font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 5vw, 44px);
+  line-height: 1.12; margin: 0 0 14px; text-wrap: balance; letter-spacing: -0.01em;
+}
+h1 .sub { display: block; font-style: italic; color: var(--ink-muted); font-size: .52em; margin-top: 12px; letter-spacing: 0; }
+.standfirst {
+  font-family: var(--sans); font-size: 14.5px; line-height: 1.6;
+  color: var(--ink-muted); max-width: 62ch; margin: 0;
+}
+.sf-label {
+  font-weight: 600; font-size: 11px; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--ink-faint); margin-right: .6em;
+}
+
+/* ---- the pairing device ---- */
+.pairing {
+  display: flex; align-items: stretch; gap: 0; margin: 30px 0 0;
+  border: 1px solid var(--rule); border-radius: 2px; overflow: hidden;
+  font-family: var(--sans); background: var(--paper-sunk);
+}
+.pairing > div { flex: 1 1 0; padding: 13px 16px; min-width: 0; }
+.pairing .who { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
+.pairing .nm-side .who { color: var(--nm); }
+.pairing .fg-side .who { color: var(--fg); }
+.pairing .what { font-size: 13.5px; color: var(--ink-muted); }
+.pairing .arrow {
+  flex: 0 0 auto; display: flex; align-items: center; justify-content: center;
+  padding-inline: 14px; color: var(--ink-faint); font-size: 15px;
+  border-inline: 1px solid var(--rule);
+}
+
+/* ---- pair-to-pair navigation ---- */
+.pairnav {
+  display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+  margin-top: 18px; font-family: var(--sans); font-size: 12.5px;
+  color: var(--ink-muted);
+}
+.pairnav a { text-decoration: none; color: var(--ink-muted); }
+.pairnav a:hover, .pairnav a:focus { color: var(--ink); text-decoration: underline; }
+
+/* ---- work sections ---- */
+.work { padding-block: 52px 0; }
+.work-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
+.work-head .tag {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .04em;
+  padding: 3px 7px; border-radius: 2px; color: var(--paper);
+}
+.work.nm .tag { background: var(--nm); }
+.work.fg .tag { background: var(--fg); }
+h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; letter-spacing: -0.005em; }
+.rubric {
+  font-style: italic; color: var(--ink-muted); max-width: 70ch;
+  margin: 10px 0 0; font-size: 16.5px; line-height: 1.5;
+}
+.rubric-note {
+  font-family: var(--sans); font-style: normal; font-size: 12px;
+  color: var(--ink-faint); margin-top: 7px;
+}
+.colheads {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  margin-top: 30px; padding-bottom: 7px; border-bottom: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint);
+}
+
+/* ---- the facing pair ---- */
+.pair {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  padding-block: 22px; border-bottom: 1px solid var(--rule-faint);
+  scroll-margin-top: 20px;
+}
+.pair:target { background: var(--paper-sunk); }
+.annot { grid-column: 2 / -1; margin-top: 14px; font-family: var(--sans); font-size: 13.5px;
+  line-height: 1.55; color: var(--ink-muted); }
+.annot summary { cursor: pointer; font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); list-style: none; }
+.annot summary::-webkit-details-marker { display: none; }
+.annot summary::before { content: "+ "; }
+.annot[open] summary::before { content: "− "; }
+.annot p { margin: 8px 0 0; max-width: 72ch; }
+.annot .xref { color: inherit; text-decoration: underline; text-decoration-color: var(--rule);
+  text-underline-offset: 2px; white-space: nowrap; }
+.gutter { padding-top: 4px; }
+.uid {
+  font-family: var(--mono); font-size: 10.5px; color: var(--ink-faint);
+  text-decoration: none; letter-spacing: -0.02em;
+}
+.uid:hover, .uid:focus { color: var(--ink); text-decoration: underline; }
+.col { min-width: 0; }
+.col.it { hyphens: auto; }
+.col.en { }
+.supplied { color: var(--ink-muted); }
+
+/* ---- apparatus ---- */
+.apparatus {
+  margin-top: 34px; padding-top: 22px; border-top: 2px solid var(--rule);
+  font-family: var(--sans); font-size: 13.5px; line-height: 1.58;
+  color: var(--ink-muted);
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 26px 34px;
+}
+.apparatus h3 {
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); margin: 0 0 9px;
+}
+.apparatus p { margin: 0 0 9px; }
+.apparatus p:last-child { margin-bottom: 0; }
+.apparatus .lem { font-family: var(--serif); font-size: 15px; color: var(--ink); font-style: italic; }
+.sig { font-family: var(--mono); font-size: 12px; color: var(--ink); }
+
+/* ---- colophon ---- */
+.colophon {
+  margin-top: 60px; padding-block: 28px 60px; border-top: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 13px; line-height: 1.6; color: var(--ink-muted);
+}
+.colophon .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 34px; }
+.colophon h3 {
+  font-size: 10.5px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--ink-faint); margin: 0 0 8px;
+}
+.colophon p { margin: 0 0 8px; }
+.colophon ul { margin: 0; padding-left: 16px; }
+.colophon li { margin-bottom: 5px; }
+.state {
+  margin-top: 26px; padding: 14px 16px; background: var(--paper-sunk);
+  border-left: 2px solid var(--ink-faint); border-radius: 0 2px 2px 0;
+  font-size: 12.5px;
+}
+.state strong { color: var(--ink); font-weight: 600; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--nm); outline-offset: 2px; }
+
+/* ---- contents / index page ---- */
+.toc { margin-top: 30px; }
+.toc-row {
+  display: grid; grid-template-columns: 40px 1fr 1fr; gap: 0 20px;
+  padding-block: 14px; border-bottom: 1px solid var(--rule-faint);
+  font-family: var(--sans); align-items: baseline;
+}
+.toc-row .n { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
+.toc-row a { text-decoration: none; color: var(--ink); font-family: var(--serif); font-size: 16px; }
+.toc-row a:hover, .toc-row a:focus { text-decoration: underline; }
+.toc-row .unpublished { color: var(--ink-faint); font-style: italic; font-size: 14px; }
+.toc-row .ids { color: var(--ink-faint); font-size: 11.5px; font-family: var(--mono); }
+
+@media (max-width: 760px) {
+  body { font-size: 16.5px; }
+  .colheads { display: none; }
+  .pair { grid-template-columns: 1fr; gap: 0; padding-block: 20px; }
+  .gutter { padding-top: 0; margin-bottom: 8px; }
+  .annot { grid-column: 1; }
+  .col.it { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px dotted var(--rule); }
+  .col.it::before, .col.en::before {
+    display: block; font-family: var(--sans); font-size: 10px; font-weight: 600;
+    letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px;
+  }
+  .col.it::before { content: "Italian"; }
+  .col.en::before { content: "English"; }
+  .pairing { flex-direction: column; }
+  .pairing .arrow { border-inline: 0; border-block: 1px solid var(--rule); padding-block: 6px; }
+  .toc-row { grid-template-columns: 1fr; gap: 4px; }
+}
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow">A Conversation with Machiavelli · Pair 18 of 39</p>
+    <h1>A new prince, in a city or province taken by him, must make every thing new
+      <span class="sub">Discourses I.26, and Guicciardini&#x27;s reply</span></h1>
+    <p class="standfirst"><span class="sf-label">Editor's summary</span> Machiavelli holds that a new prince who does not turn to civil life does best to make everything new: the methods are most cruel, but whoever rejects the good path and would keep his state should take the other. Guicciardini sorts the cases by the people: where a change of prince matters little and lawful rule is unfamiliar, strong remedies are unnecessary; where the inclination is contrary, a kingdom long under one line one could hope to win by good treatment, but a people inclined to liberty requires them. Therefore what benefits can win should be won, since violent remedies, though they secure, weaken, above all a prince without his own arms; therefore the prince needs the spirit for extraordinary remedies when necessary, and the prudence to miss no chance for humanity and benefits, not taking as an absolute rule what Machiavelli says, who always liked such remedies beyond measure.</p>
+
+    <div class="pairing">
+      <div class="nm-side">
+        <div class="who">Niccolò Machiavelli</div>
+        <div class="what">Discorsi sopra la prima Deca di Tito Livio · written c. 1513–19, printed 1531</div>
+      </div>
+      <div class="arrow" aria-hidden="true">answered by</div>
+      <div class="fg-side">
+        <div class="who">Francesco Guicciardini</div>
+        <div class="what">Considerazioni intorno ai Discorsi del Machiavelli · written 1529–30, printed 1857</div>
+      </div>
+    </div>
+    <nav class="pairnav"><a href="1.25.html">← Pair 1.25</a><a href="../index.html">All 39 pairs</a><span></span></nav>
+  </header>
+
+  <section class="work nm">
+    <div class="work-head">
+      <span class="tag">NM-DISC.1.26</span>
+      <h2>Capitolo XXVI</h2>
+    </div>
+    <p class="rubric">Un Principe nuovo in una Città o Provincia presa da lui, debbe fare ogni cosa nuova.</p>
+    <p class="rubric">A new prince, in a city or province taken by him, must make every thing new.</p>
+
+    <div class="colheads"><div></div><div>Italian · 1824</div><div>English</div></div>
+      <div class="pair" id="NM-DISC.1.26.01">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.26.01">1.26.01</a></div>
+        <div class="col it" lang="it">Qualunque diventa Principe o di una Città o di uno Stato, e tanto più quando i fondamenti suoi fussero deboli, e non si volga o per via di Regno o di Repubblica alla vita civile, il migliore rimedio ch&#x27;egli abbia a tenere quel Principato, è, sendo egli nuovo Principe, fare ogni cosa di nuovo in quello Stato, come è, nelle Città fare nuovi Governi con nuovi nomi, con nuova autorità, con nuovi uomini, fare i poveri ricchi, come fece David quando ei diventò Re: qui esurientes implevit bonis, et divites dimisit inanes.</div>
+        <div class="col en" lang="en">Whoever becomes prince either of a city or of a state, and so much the more when his foundations should be weak, and does not turn, either by the path of a kingdom or of a republic, to civil life, the best remedy that he has for holding that principate is, he being a new prince, to make every thing anew in that state, as is, in the cities, to make new governments with new names, with new authority, with new men, to make the poor rich, as David did when he became king: <i lang="la">qui esurientes implevit bonis, et divites dimisit inanes</i>.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The case before the precept. The subject is any new prince of a city or a state who does not turn his rule, by kingdom or by republic, to civil life; weak foundations make the precept the more pressing, they do not define the case. That is the prince I.25 set aside at its close: whoever would order an absolute power by the path of a republic or a kingdom must keep the shadow of the ancient ways, whoever would make the absolute power the authors call tyranny must renew every thing. For this prince the best remedy for holding the principate is to make every thing anew in the state. The instances follow in a run of infinitives: new governments with new names, new authority, new men; making the poor rich.</p>
+<p><span class="lem">History.</span> David, the shepherd made king (1 Samuel 16 to 2 Samuel 5), is joined to a verse of the Magnificat, Mary&#x27;s song in Luke 1.53, which Machiavelli makes a relative clause on David by adding <i lang="it">qui</i>. The verse&#x27;s reversal of hungry and rich is the programme in small: those raised by the new prince owe him everything.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.26.02">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.26.02">1.26.02</a></div>
+        <div class="col it" lang="it">Edificare oltra di questo nuove Città, disfare delle vecchie, cambiare gli abitatori da un luogo ad un altro, e insomma non lasciare cosa niuna intatta in quella Provincia, e che non vi sia né grado, né ordine, né stato, né ricchezza, che chi la tiene non la riconosca da te: e pigliare per sua mira Filippo di Macedonia padre di Alessandro, il quale con questi modi di piccolo Re diventò Principe di Grecia. E chi scrive di lui, dice, che tramutava gli uomini di Provincia in Provincia, come i mandriani tramutano le mandrie loro.</div>
+        <div class="col en" lang="en">To build, besides this, new cities, to unmake some of the old <span class="supplied">[ones]</span>, to change the inhabitants from one place to another, and in sum to leave no thing intact in that province, and that there be neither degree, nor order, nor state, nor wealth, which he who holds it does not acknowledge <span class="supplied">[as]</span> from you: and to take for his mark Philip of Macedon, father of Alexander, who with these ways from a small king became prince of Greece. And he who writes of him says that he used to transfer men from province to province, as herdsmen transfer their herds.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The list goes on from offices to the land and the people: build new cities, unmake some of the old, move the inhabitants, leave nothing intact, and, coordinated with these, that there be no degree, order, standing or wealth which its holder does not acknowledge as from the prince. Here the sentence turns to &quot;you&quot;, as if the precept were spoken to the prince, and back to the third person for the model, Philip of Macedon, who with these ways rose from a small king to prince of Greece; of whom, Machiavelli reports, one who writes of him says that he used to move men from province to province as herdsmen move their herds. <i lang="it">questi modi</i>, &quot;these ways&quot;, enters here, and the verdict will be pronounced on it.</p>
+<p><span class="lem">History.</span> Philip II (r. 359-336 BC) won the hegemony of Greece at Chaeronea in 338 BC. Machiavelli does not name the writer; Justin&#x27;s epitome of Pompeius Trogus (8.5-6) is the likeliest source, where Philip transfers peoples and cities as shepherds drive their flocks now to winter, now to summer pastures. The 1554 edition has the perfect, &quot;transferred&quot;, where the 1824 has the imperfect of habit.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.26.03">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.26.03">1.26.03</a></div>
+        <div class="col it" lang="it">Sono questi modi crudelissimi, e nimici d&#x27;ogni vivere, non solamente cristiano, ma umano; e debbegli qualunque uomo fuggire, e volere piuttosto vivere privato, che Re con tanta rovina degli uomini. Nondimeno colui che non vuole pigliare quella prima via del bene, quando si voglia mantenere, conviene che entri in questo male. Ma gli uomini pigliano certe vie del mezzo, che sono dannosissime; perché non sanno essere né tutti buoni, né tutti cattivi, come nel presente capitolo per esempio si mostrerà.</div>
+        <div class="col en" lang="en">These ways are most cruel, and enemies of every living, not only Christian but human; and any man whatever must flee them, and wish rather to live private than king with so much ruin of men. Nonetheless he who does not wish to take that first path of the good, when he wishes to maintain himself, it is fitting that he enter into this ill. But men take certain middle paths, which are most damaging; for they do not know how to be either all good or all bad, as will be shown by example in the present chapter.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> The verdict falls on the same <i lang="it">modi</i> named with Philip: these ways are most cruel, enemies of every way of living, not only Christian but human, and any man (the chapter&#x27;s first word again) must flee them and wish rather to live a private man than be king with such ruin of men. That condemnation is unreserved. Then <i lang="it">Nondimeno</i>: whoever will not take that first path of the good, when he wishes to maintain himself, it is fitting that he enter this ill. The necessity is conditional on two acts of will, refusing the good and wishing to maintain oneself, and the verdict is not withdrawn by it. The middle paths that men take are called most damaging, because men do not know how to be wholly good or wholly bad.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini divides the case by the people the prince takes over, not by the prince <a class="xref" href="#FG-CONS.1.26.01">Guicciardini .01</a>. For those inclined to liberty he grants strong remedies but would have the prince gain by benefits whatever part can be gained; whether that mixture is one of the middle paths condemned here is the reader&#x27;s question, not one either author poses. Guicciardini closes on Machiavelli&#x27;s taste for extraordinary remedies; set beside this paragraph&#x27;s verdict on the same ways, the edition leaves the two to stand together.</p>
+<p><span class="lem">Text.</span> The last clause promises an example in &quot;the present chapter&quot;. The example, Giovampagolo Baglioni, who had Julius II in his power at Perugia and did not dare to use it, is the matter of I.27, whose rubric takes up the clause (<i lang="it">Sanno rarissime volte gli uomini essere al tutto tristi, o al tutto buoni</i>); I.27 dates the pope&#x27;s expedition 1505, where the histories give 1506. The 1554 edition reads <i lang="it">seguente</i>, &quot;following&quot;, which fits; the 1824 <i lang="it">presente</i> is kept as printed (D282).</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from the 1824 edition (<span class="sig">WIT-NM-DISC-1824-IA</span>), page-image-backed, which governs. Collated against the 1554 Giglio printing, Venice (<span class="sig">WIT-NM-DISC-1554-IA</span>), which is comparison evidence only.</p>
+<p>Paragraph divisions are editorial. The witness prints the chapter as one unbroken block.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem">come nel presente capitolo per esempio si mostrerà</span> — 1824. The 1554 witness reads <i lang="it">come nel ſeguente capitolo per eſſempio ſi moſtrera</i>. Checked on the leaf (fol. 41v). The 1554 reads <i lang="it">seguente</i>, &quot;following&quot;: the example of men who can be neither wholly good nor wholly bad (Giovampagolo Baglioni and Julius II at Perugia) is in I.27, whose rubric repeats the clause. The 1824 <i lang="it">presente</i> was read by both readers on the sampled page; it construes and is kept as printed (D38; D282).</p>
+<p><span class="lem">Edificare oltra di questo nuove Città, disfare delle vecchie</span> — 1824. The 1554 witness reads <i lang="it">Edificare oltra di queſte nuoue citta,disfare delle fatte</i>. Checked on the leaf (fol. 41r). Two differences. <i lang="it">queste</i> for <i lang="it">questo</i> (&quot;besides these [things]&quot; for &quot;besides this&quot;), at a letter the scans break, escalated under D203(b) and kept (D281). <i lang="it">delle fatte</i>, &quot;some of those made&quot;, for <i lang="it">delle vecchie</i>, &quot;some of the old ones&quot;: the 1554 speaks of unmaking what has been built, the 1824 of unmaking the old.</p>
+<p><span class="lem">con nuova autorità</span> — 1824. The 1554 witness reads <i lang="it">con nuoue auttorita</i>. Checked on the leaf (fol. 41r): the 1554 has the plural, &quot;new authorities&quot;, against the 1824 singular, at a letter the scans break; escalated under D203(b) and kept (D281). The English is unaffected.</p>
+<p><span class="lem">dice, che tramutava gli uomini di Provincia in Provincia</span> — 1824. The 1554 witness reads <i lang="it">dice, che tramutò gli huomini di prouincia in prouincia</i>. Checked on the leaf (fol. 41r): the 1554 has the perfect, &quot;transferred&quot;, for the 1824 imperfect of habit, &quot;used to transfer&quot;.</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem"><i lang="it">Qualunque diventa Principe o di una Città o di uno Stato</i>.</span> &quot;Whoever becomes prince either of a city or of a state&quot;: <i lang="it">principe</i>, prince (glossary); <i lang="it">stato</i>, state (D265), here the dominion a prince holds, set beside the city and, in the rubric, the province.</p>
+<p><span class="lem"><i lang="it">e tanto più quando i fondamenti suoi fussero deboli</i>.</span> &quot;And so much the more when his foundations should be weak&quot;: <i lang="it">fussero</i> is subjunctive, and &quot;should&quot; keeps it from reading as a past fact. The clause raises the degree of the precept that follows; it does not limit it to weak princes. <i lang="it">fondamento</i>, foundation (glossary).</p>
+<p><span class="lem"><i lang="it">e non si volga o per via di Regno o di Repubblica alla vita civile</i>.</span> &quot;And does not turn, either by the path of a kingdom or of a republic, to civil life&quot;: the condition that makes the case. A prince who turns his rule into a kingdom or a republic is the one I.25 told to keep the shadow of the ancient ways; this chapter is for the one who does not. <i lang="it">via</i>, path (D131), as <i lang="it">per via di Repubblica, o di Regno</i> at NM I.25 .03. <i lang="it">vita civile</i>, civil life: the noun <i lang="it">vita</i>, where earlier chapters have the infinitive <i lang="it">vivere civile</i>, &quot;civil living&quot; (NM I.9).</p>
+<p><span class="lem"><i lang="it">il migliore rimedio ch&#x27;egli abbia a tenere quel Principato</i>.</span> &quot;The best remedy that he has for holding that principate&quot;: <i lang="it">abbia</i> is &quot;has&quot;, and <i lang="it">a tenere</i> says what the remedy is for; this is not <i lang="it">avere a</i> + infinitive (D261). <i lang="it">tenere</i>, hold (glossary, I.23); <i lang="it">Principato</i>, principate (glossary).</p>
+<p><span class="lem"><i lang="it">sendo egli nuovo Principe</i>.</span> &quot;He being a new prince&quot;: the absolute construction kept.</p>
+<p><span class="lem"><i lang="it">fare ogni cosa di nuovo</i>.</span> &quot;To make every thing anew&quot;: <i lang="it">di nuovo</i>, anew, against the rubric&#x27;s <i lang="it">nuova</i>, new.</p>
+<p><span class="lem"><i lang="it">come è, nelle Città fare nuovi Governi</i>.</span> &quot;As is, in the cities, to make new governments&quot;: <i lang="it">come è</i> introduces the instances, and the list runs in asyndeton through .01 (D12), infinitive after infinitive; .02 joins with <i lang="it">e</i> (<i lang="it">e insomma</i>, <i lang="it">e che</i>, <i lang="it">e pigliare</i>). The witness has only commas, and the English keeps them, so that whether making the poor rich is one of the things done <i lang="it">nelle Città</i> stays as open as in the Italian. <i lang="it">governo</i>, government (D262); <i lang="it">fare</i>, make, and <i lang="it">di nuovo</i>, <i lang="it">nuovo</i>, anew, new, carry the list.</p>
+<p><span class="lem"><i lang="it">con nuova autorità</i>.</span> &quot;With new authority&quot;: <i lang="it">autorità</i>, authority (glossary). The 1554 edition reads the plural, <i lang="it">nuove auttorità</i>, &quot;new authorities&quot;; escalated as a word at a letter the scans break, and kept (D281; NM-DISC-I26-D003).</p>
+<p><span class="lem"><i lang="it">fare i poveri ricchi, come fece David quando ei diventò Re</i>.</span> &quot;To make the poor rich, as David did when he became king&quot;: David, the shepherd who became king (1 Samuel 16-2 Samuel 5). The verse that follows is the Magnificat&#x27;s (Luke 1.53), which the Vulgate prints without <i lang="it">qui</i>; Machiavelli&#x27;s <i lang="it">qui</i> makes David its subject. He applies Mary&#x27;s words to David&#x27;s act; whether he took them for a psalm cannot be told from the text. In sense the verse echoes Psalm 107.9 (106.9 in the Vulgate). Kept as printed.</p>
+<p><span class="lem"><i lang="la">qui esurientes implevit bonis, et divites dimisit inanes</i>.</span> Latin, left in italic (D14): &quot;who filled the hungry with good things, and the rich he sent away empty&quot;; the relative <i lang="it">qui</i>, absent from the Vulgate of Luke 1.53, takes David as antecedent. The 1824 prints it in italic; the 1554 flags it with marginal inverted commas.</p>
+<p><span class="lem"><i lang="it">Edificare oltra di questo nuove Città, disfare delle vecchie</i>.</span> &quot;To build, besides this, new cities, to unmake some of the old ones&quot;: <i lang="it">edificare</i>, build (glossary); <i lang="it">disfare</i>, unmake, the opposite of <i lang="it">fare</i>, make, which the chapter is built on; <i lang="it">delle vecchie</i>, partitive, &quot;some of the old ones&quot;. The 1554 edition reads <i lang="it">oltra di queste</i>, &quot;besides these [things]&quot;, escalated and kept (D281), and <i lang="it">delle fatte</i>, &quot;some of those made&quot;, for <i lang="it">delle vecchie</i> (NM-DISC-I26-D002).</p>
+<p><span class="lem"><i lang="it">cambiare gli abitatori da un luogo ad un altro</i>.</span> &quot;To change the inhabitants from one place to another&quot;: <i lang="it">abitatori</i>, inhabitants, as NM I.1.</p>
+<p><span class="lem"><i lang="it">non lasciare cosa niuna intatta</i>.</span> &quot;To leave no thing intact&quot;: <i lang="it">cosa niuna</i>, no thing, keeping the <i lang="it">cosa</i> of the rubric&#x27;s <i lang="it">ogni cosa</i>.</p>
+<p><span class="lem"><i lang="it">né grado, né ordine, né stato, né ricchezza</i>.</span> &quot;Neither degree, nor order, nor state, nor wealth&quot;: <i lang="it">grado</i>, degree (glossary); <i lang="it">ordine</i>, order (glossary). <i lang="it">stato</i> here is a man&#x27;s standing, not a dominion; the edition keeps &quot;state&quot; (D265), in its older English sense of rank or condition (&quot;a man of low state&quot;), and the facing page shows the same word as at .01.</p>
+<p><span class="lem"><i lang="it">che chi la tiene non la riconosca da te</i>.</span> &quot;Which he who holds it does not acknowledge [as] from you&quot;: <i lang="it">riconoscere da</i>, to acknowledge as received from, as NM I.11 <i lang="it">abbia a riconoscere</i>. The sentence turns to the second person here, and back to the third with <i lang="it">per sua mira</i>; the English keeps both turns. <i lang="it">la</i> takes the last of the list, <i lang="it">ricchezza</i>, and through it the whole.</p>
+<p><span class="lem"><i lang="it">pigliare per sua mira Filippo di Macedonia padre di Alessandro</i>.</span> &quot;To take for his mark Philip of Macedon, father of Alexander&quot;: <i lang="it">mira</i>, the mark aimed at. Philip II of Macedon (r. 359–336 BC).</p>
+<p><span class="lem"><i lang="it">di piccolo Re diventò Principe di Grecia</i>.</span> &quot;From a small king became prince of Greece&quot;: the hegemony of Greece after Chaeronea (338 BC). <i lang="it">Principe</i> keeps the edition&#x27;s &quot;prince&quot; (glossary).</p>
+<p><span class="lem"><i lang="it">E chi scrive di lui, dice</i>.</span> &quot;And he who writes of him says&quot;: Machiavelli names no author. The likeliest source is Justin&#x27;s epitome of Pompeius Trogus (8.5–6), where Philip moves peoples and cities as shepherds drive their flocks now to winter, now to summer pastures.</p>
+<p><span class="lem"><i lang="it">tramutava ... tramutano</i>.</span> &quot;Used to transfer ... transfer&quot;: one verb for Philip and the herdsmen, as the Italian; the imperfect is of habit. The 1554 edition has the perfect, <i lang="it">tramutò</i> (NM-DISC-I26-D004).</p>
+<p><span class="lem"><i lang="it">come i mandriani tramutano le mandrie loro</i>.</span> &quot;As herdsmen transfer their herds&quot;: <i lang="it">mandriani</i>, <i lang="it">mandrie</i>, one root, kept in &quot;herdsmen&quot;, &quot;herds&quot;.</p>
+<p><span class="lem"><i lang="it">Sono questi modi crudelissimi</i>.</span> &quot;These ways are most cruel&quot;: the verb first in the Italian, not the predicate; plain English order (D263). <i lang="it">modi</i>, ways (glossary), the same word as Philip&#x27;s <i lang="it">questi modi</i> just before.</p>
+<p><span class="lem"><i lang="it">nimici d&#x27;ogni vivere, non solamente cristiano, ma umano</i>.</span> &quot;Enemies of every living, not only Christian but human&quot;: <i lang="it">vivere</i>, the infinitive as a noun, living (as <i lang="it">vivere civile</i>), here any way of living together.</p>
+<p><span class="lem"><i lang="it">e debbegli qualunque uomo fuggire</i>.</span> &quot;And any man whatever must flee them&quot;: <i lang="it">dovere</i>, must (D274); <i lang="it">gli</i>, them, the ways. <i lang="it">qualunque uomo</i> repeats the chapter&#x27;s first word, <i lang="it">Qualunque</i>: whoever becomes prince, any man whatever.</p>
+<p><span class="lem"><i lang="it">e volere piuttosto vivere privato, che Re</i>.</span> &quot;And wish rather to live private than king&quot;: <i lang="it">volere</i>, wish (D117); <i lang="it">privato</i>, private, as FG I.10 <i lang="it">ridursi privato</i> and NM I.10 <i lang="it">in istato privato</i>. The Italian sets <i lang="it">privato</i> and <i lang="it">Re</i> side by side without a noun; so does the English. <i lang="it">piuttosto</i>, rather; FG&#x27;s <i lang="it">più presto ... che</i> (D135) is also &quot;rather ... than&quot;, a recorded collapse.</p>
+<p><span class="lem"><i lang="it">con tanta rovina degli uomini</i>.</span> &quot;With so much ruin of men&quot;: <i lang="it">rovina</i>, ruin (glossary).</p>
+<p><span class="lem"><i lang="it">Nondimeno colui che non vuole pigliare quella prima via del bene, quando si voglia mantenere, conviene che entri in questo male</i>.</span> &quot;Nonetheless he who does not wish to take that first path of the good, when he wishes to maintain himself, it is fitting that he enter into this ill&quot;: the period opens on <i lang="it">colui</i> and turns to the impersonal <i lang="it">conviene</i> without a main verb for him; the English keeps the break. <i lang="it">nondimeno</i>, nonetheless (glossary); <i lang="it">conviene</i>, it is fitting (D85), not &quot;he must&quot;; <i lang="it">bene</i> / <i lang="it">male</i>, good / ill (glossary, I.2). <i lang="it">mantenere</i>, maintain (glossary): the prince maintains himself, as I.25&#x27;s reformer maintains a state.</p>
+<p><span class="lem"><i lang="it">quella prima via del bene</i>.</span> &quot;That first path of the good&quot;: either the path just named, living private rather than king, or the first case of .01, the turn by kingdom or republic to civil life (<i lang="it">per via di</i>). The English keeps &quot;path&quot; for <i lang="it">via</i> all three times (.01, here, <i lang="it">vie del mezzo</i>) and does not choose; <i lang="it">via</i>, path (D131).</p>
+<p><span class="lem"><i lang="it">certe vie del mezzo</i>.</span> &quot;Certain middle paths&quot;: as NM I.6 <i lang="it">questa via del mezzo</i>, &quot;this middle path&quot; (D131). Guicciardini&#x27;s reply recommends gaining by benefits whoever can be gained, which is close to what Machiavelli here calls a middle path; Canestrini&#x27;s note to the reply (not carried) quotes this clause.</p>
+<p><span class="lem"><i lang="it">dannosissime</i>.</span> &quot;Most damaging&quot;: <i lang="it">dannoso</i>, damaging (D106).</p>
+<p><span class="lem"><i lang="it">né tutti buoni, né tutti cattivi</i>.</span> &quot;Either all good or all bad&quot;: <i lang="it">cattivo</i>, bad (D03). <i lang="it">tutti</i> agrees with <i lang="it">uomini</i> and is predicative: wholly good, wholly bad, not &quot;all men&quot;. The thought is taken up in the rubric of I.27, <i lang="it">Sanno rarissime volte gli uomini essere al tutto tristi, o al tutto buoni</i>, with <i lang="it">tristi</i>, wicked, for <i lang="it">cattivi</i>.</p>
+<p><span class="lem"><i lang="it">come nel presente capitolo per esempio si mostrerà</i>.</span> &quot;As will be shown by example in the present chapter&quot;: the Italian puts the place first; plain English order (D263). <i lang="it">per esempio</i> names the means of showing, &quot;by example&quot;; where it introduces an instance it stays &quot;for an example&quot; (FG I.4). The example the clause promises, Giovampagolo Baglioni, who did not dare to seize Julius II at Perugia, is given in I.27, whose rubric takes up the clause before. The 1554 edition reads <i lang="it">seguente</i>, &quot;following&quot;, which fits the sequence of chapters; the 1824 <i lang="it">presente</i> was read by both readers and is kept as printed (D282; NM-DISC-I26-D001). The 1824 reading may be a slip, but it is Italian and construes, and the edition does not correct a reading that construes (D38).</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work fg">
+    <div class="work-head">
+      <span class="tag">FG-CONS.1.26</span>
+      <h2>Considerazione sul capitolo XXVI</h2>
+    </div>
+    <p class="rubric">Un principe nuovo, in una città o provincia presa da lui, debbe fare ogni cosa nuova.</p>
+    <p class="rubric">A new prince, in a city or province taken by him, must make every thing new.
+      <span class="rubric-note">Canestrini&#x27;s setting of the chapter title, in lower case, with commas round the place; its stop is faint (D110). It is heading apparatus, not Guicciardini&#x27;s (D32).</span></p>
+
+    <div class="colheads"><div></div><div>Italian · 1857</div><div>English</div></div>
+      <div class="pair" id="FG-CONS.1.26.01">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.26.01">1.26.01</a></div>
+        <div class="col it" lang="it">Sono alcune città o regni e&#x27; quali tengono poco conto delle mutazioni del principe, né sono anche solite a essere governate sì legittimamente che non possino comportare uno principe che domini poco politicamente. In quelle che sono di questa sorte non sono necessarii remedii sì forti a fondare il principato; e se vi è alcuno particulare non contento della mutazione, uno principe savio ha molti modi di guadagnarlo, pure che questa displicenza sia fondata in sul rispetto dello interesse proprio, perché non gli mancano modi a contentare gli uomini collo utile e con l&#x27;onore. Ma la difficultà è dove la inclinazione del populo è tutta contraria al nuovo governo, come sono le città solite a essere libere, quando vengono sotto uno tiranno; come e&#x27; regni che sono stati lunghissimamente sotto una progenie, che amano comunemente quello nome e quella memoria; benché questi si potria sperare di guadagnare co&#x27; buoni trattamenti, e&#x27; quali al fine potrebbono fare dimenticare la memoria de&#x27; principi passati. Ma a quelli che hanno per inclinazione la libertà, non è sufficiente remedio il trattarli bene, perché non si può con alcuna dolcezza eradicare del petto loro quello desiderio di non ricognoscere superiore di governare; e però in simile caso bisogna usare de&#x27; remedii forti, avendo però innanzi agli occhi che quella parte che si può guadagnare co&#x27; beneficii, di guadagnarla; perché e&#x27; rimedii violenti, se da uno canto ti assicurano, dall&#x27;altro, massime a uno principe che non sia fondato in sulle armi proprie, fanno in mille modi debolezza. Però bisogna che il principe abbia animo a usare questi estraordinarii, quando sia necessario, e nondimeno sia sì prudente, che non pretermetta qualunque occasione se gli presenti di stabilire le cose sue con la umanità e co&#x27; beneficii, non pigliando così per regola assoluta quello che dice lo Scrittore, al quale sempre piacquono sopra modo e&#x27; remedii estraordinarii e violenti.</div>
+        <div class="col en" lang="en">There are some cities or kingdoms which take little account of the changes of prince, nor are they even used to being governed so legitimately that they cannot bear a prince who dominates little politically. In those which are of this sort remedies so strong are not necessary to found the principate; and if there is some particular <span class="supplied">[man]</span> not content with the change, a wise prince has many ways of gaining him, provided that this displeasure be founded upon respect to his own interest, for he does not lack ways to content men with advantage and with honour. But the difficulty is where the inclination of the people is wholly contrary to the new government, as are the cities used to being free, when they come under a tyrant; as <span class="supplied">[are]</span> the kingdoms which have been very long under one lineage, which commonly love that name and that memory; albeit these one could hope to gain with good treatment, which in the end could make the memory of the past princes be forgotten. But for those who have liberty for their inclination, treating them well is not a sufficient remedy, for one cannot with any sweetness eradicate from their breast that desire not to acknowledge a superior, <span class="supplied">[and]</span> of governing; and therefore in like case it is required to use strong remedies, having therefore before one&#x27;s eyes that the part which can be gained with benefits, to gain it; for violent remedies, if on the one hand they secure you, on the other, above all to a prince who is not founded upon his own arms, make weakness in a thousand ways. Therefore it is required that the prince have the spirit to use these extraordinary <span class="supplied">[remedies]</span>, when it be necessary, and nonetheless be so prudent that he let slip no occasion whatever that may present itself to him of establishing his affairs with humanity and with benefits, not taking thus for an absolute rule what the writer says, who was always pleased beyond measure by extraordinary and violent remedies.</div>
+        <details class="annot"><summary>Commentary · 4</summary>
+          <p><span class="lem">Argument.</span> Guicciardini sorts the case by the people, not by the prince. There are cities and kingdoms that take little account of a change of prince and are not used to being governed so legitimately that they cannot bear one who dominates little politically; there remedies so strong are not necessary to found the principate, and a discontented private man can be gained, provided his discontent rests on his own interest, with advantage and honour. The difficulty is where the people&#x27;s inclination is wholly contrary to the new government, and there he divides again: cities used to being free that come under a tyrant, and kingdoms long under one line that love its name and memory. The kingdoms, he allows, one could hope to gain with good treatment, which in the end could make the old princes forgotten.</p>
+<p><span class="lem">Note.</span> For those whose inclination is liberty he grants the strong remedies: no sweetness will root out of them the desire not to acknowledge a superior (and, on the construal drafted and put to David as O29, of governing). Three conclusions follow, each drawn with <i lang="it">però</i>, consecutive. Therefore strong remedies are required in such a case, the prince having before his eyes that the part which can be gained by benefits is to be gained, because violent remedies, if on one side they secure him, on the other make weakness in a thousand ways, above all for a prince not founded on his own arms. Therefore it is required that the prince have the spirit for extraordinary remedies when necessary, and nonetheless be so prudent as to let slip no occasion of establishing his affairs by humanity and benefits. He ends by declining to take what the writer says as an absolute rule, and by a judgment on the man: extraordinary and violent remedies always pleased him beyond measure.</p>
+<p><span class="lem">Cross-reference.</span> Machiavelli&#x27;s case is the prince who does not turn to civil life <a class="xref" href="#NM-DISC.1.26.01">Machiavelli .01</a>; Guicciardini&#x27;s first period describes such a prince from below, one who &quot;dominates little politically&quot;, and says where remedies so strong are not needed. His free peoples, who will not acknowledge a superior, refuse what Machiavelli&#x27;s prince is to exact: that no degree, order or wealth be held except as acknowledged from him <a class="xref" href="#NM-DISC.1.26.02">Machiavelli .02</a>.</p>
+<p><span class="lem">Cross-reference.</span> Both make the extraordinary remedies conditional, on different grounds: Machiavelli on the prince&#x27;s will, refusing the good path <i lang="it">quando si voglia mantenere</i>, when he wishes to maintain himself <a class="xref" href="#NM-DISC.1.26.03">Machiavelli .03</a>; Guicciardini on necessity, <i lang="it">quando sia necessario</i>. Machiavelli has also called these ways most cruel and to be fled by any man. Guicciardini does not refer to that verdict; his charge that such remedies &quot;always pleased&quot; Machiavelli &quot;beyond measure&quot; and Machiavelli&#x27;s own verdict on them stand side by side in this edition, which does not settle the friction.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from Canestrini 1857, <i>Opere inedite</i> vol. 1, pp. 1–65 (<span class="sig">WIT-FG-CONS-1857-CANESTRINI</span>) — the <i>editio princeps</i>, which governs. Collated against Palmarocchi 1933 (<span class="sig">WIT-FG-CONS-1933-PALMAROCCHI</span>): page images and the Wikisource transcription consulted as collation evidence, not reproduced (LICENSE §5).</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem">in sul rispetto dello interesse proprio</span>. The 1857 witness reads <i lang="it">in sul rispetto d[a/e]llo interesse proprio (an a-shaped letter)</i>. The 1933 witness reads <i lang="it">in sul rispetto dello interesse proprio</i>. Both readers see an a; they split on which form they preferred, each giving the other as alternative. <i lang="it">Dallo</i> barely construes after <i lang="it">rispetto</i>; the scan prints e without its crossbar throughout. A reading, not an emendation (D279).</p>
+<p><span class="lem">interesse; sono; petto</span>. The 1857 witness reads <i lang="it">dello interess[e/a] proprio; che son[o/ò] stati; del p[e/a]tto loro (damaged letters)</i>. The 1933 witness reads <i lang="it">dello interesse proprio; che sono stati; del petto loro</i>. Each letter doubtful to both readers, and each alternative a word (<i lang="it">interessa</i>, <i lang="it">sonò</i>, <i lang="it">patto</i>); none of the alternatives construes in its place. Readings, with the 1933 edition (D280).</p>
+<p><span class="lem">che quella parte che si può guadagnare co&#x27; beneficii, di guadagnarla</span> — 1857. The 1933 witness reads <i lang="it">che quella parte che si può guadagnare co&#x27; benefíci, di guadagnarli</i>. Read by both passes. Canestrini&#x27;s <i lang="it">guadagnarla</i> agrees with <i lang="it">quella parte</i>; the 1933 <i lang="it">guadagnarli</i> takes the men the part is made of. Not a letter the scan breaks; the sense is the same.</p>
+<p><span class="lem">quello desiderio di non ricognoscere superiore di governare</span> — 1857. The 1933 witness reads <i lang="it">quello desiderio di [non] ricognoscere superiore, di governare</i>. Canestrini prints <i lang="it">non</i>, read by both passes; the 1933 edition brackets it as an editorial supply, which suggests its manuscript lacks it, and points <i lang="it">superiore, di governare</i>, making the governing a second desire. Canestrini governs; the English takes <i lang="it">di governare</i> with <i lang="it">superiore</i>.</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem"><i lang="it">Sono alcune città o regni</i>.</span> &quot;There are some cities or kingdoms&quot;: <i lang="it">regno</i>, kingdom (glossary). The reply opens by dividing the cases Machiavelli&#x27;s chapter takes as one: <i lang="it">Qualunque diventa Principe o di una Città o di uno Stato</i> (Machiavelli .01).</p>
+<p><span class="lem"><i lang="it">tengono poco conto delle mutazioni del principe</i>.</span> &quot;Take little account of the changes of prince&quot;: <i lang="it">mutazione</i>, change, the noun of <i lang="it">mutare</i> (D272); the reply has it again, singular, at <i lang="it">non contento della mutazione</i>. The 1933 edition prints <i lang="it">delle mutazione</i>.</p>
+<p><span class="lem"><i lang="it">né sono anche solite a essere governate sì legittimamente</i>.</span> &quot;Nor are they even used to being governed so legitimately&quot;: <i lang="it">solite</i>, used to, as <i lang="it">le città solite a essere libere</i> below; one English phrase for both.</p>
+<p><span class="lem"><i lang="it">uno principe che domini poco politicamente</i>.</span> &quot;A prince who dominates little politically&quot;: he dominates, and in a way little political; <i lang="it">dominare</i>, the verb of <i lang="it">dominio</i>, dominion (glossary), so &quot;dominate&quot;, not &quot;rule&quot;. <i lang="it">politicamente</i>, the adverb of <i lang="it">politico</i>, as Machiavelli&#x27;s <i lang="it">vivere politico</i>, &quot;political living&quot; (glossary, I.6): rule by laws and orders. The cities that can bear such a prince are those not used to it.</p>
+<p><span class="lem"><i lang="it">non sono necessarii remedii sì forti a fondare il principato</i>.</span> &quot;Remedies so strong are not necessary to found the principate&quot;: <i lang="it">remedio</i> / <i lang="it">rimedio</i>, remedy (glossary), Machiavelli&#x27;s <i lang="it">il migliore rimedio</i> (Machiavelli .01). Both spellings occur in the reply and both are &quot;remedy&quot;. <i lang="it">necessario</i>, necessary, kept apart from <i lang="it">bisogna</i> (D260). Canestrini&#x27;s note reference stands after <i lang="it">sì forti</i>; his note, not carried, quotes the opening of Machiavelli&#x27;s chapter.</p>
+<p><span class="lem"><i lang="it">alcuno particulare</i>.</span> &quot;Some particular [man]&quot;: <i lang="it">particulare</i> as a noun, a private person, in the edition&#x27;s word (D93); the noun is supplied in brackets (D53).</p>
+<p><span class="lem"><i lang="it">uno principe savio</i>.</span> &quot;A wise prince&quot;: <i lang="it">savio</i>, wise, kept apart from <i lang="it">prudente</i>, prudent, at the end of the reply.</p>
+<p><span class="lem"><i lang="it">ha molti modi di guadagnarlo</i>.</span> &quot;Has many ways of gaining him&quot;: <i lang="it">modi</i>, ways (glossary), as Machiavelli&#x27;s <i lang="it">questi modi</i> (Machiavelli .02, .03): Guicciardini&#x27;s ways are of another kind. <i lang="it">guadagnare</i>, gain, held through the reply (four times): the verb of winning men over, set against Machiavelli&#x27;s making every thing new.</p>
+<p><span class="lem"><i lang="it">pure che questa displicenza sia fondata in sul rispetto dello interesse proprio</i>.</span> &quot;Provided that this displeasure be founded upon respect to his own interest&quot;: <i lang="it">pure che</i>, provided that, a condition on the kind of discontent; <i lang="it">rispetto</i>, respect (glossary, &quot;respect to&quot;); <i lang="it">proprio</i>, his own. Both readers saw an a at <i lang="it">dallo</i>; read <i lang="it">dello</i> (D279; FG-CONS-I26-D001). Both doubted the last letter of <i lang="it">interesse</i> and the 1933 edition agrees with their preference (D280; FG-CONS-I26-D002).</p>
+<p><span class="lem"><i lang="it">a contentare gli uomini collo utile e con l&#x27;onore</i>.</span> &quot;To content men with advantage and with honour&quot;: <i lang="it">utile</i> as a noun, advantage, the material good paired with honour; the adjective stays &quot;useful&quot; (<i lang="it">più presto dannoso che utile</i>, &quot;rather damaging than useful&quot;, D135).</p>
+<p><span class="lem"><i lang="it">la inclinazione del populo</i>.</span> &quot;The inclination of the people&quot;: <i lang="it">inclinazione</i>, inclination, as FG I.12; <i lang="it">populo</i>, people (glossary).</p>
+<p><span class="lem"><i lang="it">come sono le città solite a essere libere, quando vengono sotto uno tiranno; come e&#x27; regni</i>.</span> &quot;As are the cities used to being free, when they come under a tyrant; as [are] the kingdoms&quot;: two instances of the contrary inclination, in parallel; the second verb is supplied in brackets (D53). The pointing after <i lang="it">tiranno</i> was doubtful to both readers; the 1933 semicolon is followed (D110).</p>
+<p><span class="lem"><i lang="it">che sono stati lunghissimamente sotto una progenie</i>.</span> &quot;Which have been very long under one lineage&quot;: <i lang="it">lunghissimamente</i>, the elative of <i lang="it">lungamente</i>, &quot;long&quot; (D140). <i lang="it">progenie</i>, a line of descent: &quot;lineage&quot;, since English &quot;progeny&quot; now means offspring. Both readers doubted a speck over the o of <i lang="it">sono</i>; read <i lang="it">sono</i> (D280; FG-CONS-I26-D002).</p>
+<p><span class="lem"><i lang="it">che amano comunemente quello nome e quella memoria</i>.</span> &quot;Which commonly love that name and that memory&quot;: the antecedent of <i lang="it">che</i> is the kingdoms, that is, their peoples. <i lang="it">memoria</i> comes back in the next clause, <i lang="it">la memoria de&#x27; principi passati</i>, and the English keeps one word.</p>
+<p><span class="lem"><i lang="it">benché questi si potria sperare di guadagnare co&#x27; buoni trattamenti</i>.</span> &quot;Albeit these one could hope to gain with good treatment&quot;: <i lang="it">benché</i>, albeit (D31). <i lang="it">si potria sperare</i>, one could hope: conditional, not &quot;it can be hoped&quot;. <i lang="it">questi</i>, the kingdoms, is fronted as the object of <i lang="it">guadagnare</i>; the English keeps it first because it is set against the next sentence&#x27;s <i lang="it">a quelli che hanno per inclinazione la libertà</i>: these can be gained, those cannot by good treatment (D263, contrast). <i lang="it">trattamenti</i> is plural; English &quot;treatment&quot; takes it as a mass noun.</p>
+<p><span class="lem"><i lang="it">e&#x27; quali al fine potrebbono fare dimenticare</i>.</span> &quot;Which in the end could make ... be forgotten&quot;: <i lang="it">e&#x27; quali</i>, the good treatments.</p>
+<p><span class="lem"><i lang="it">Ma a quelli che hanno per inclinazione la libertà</i>.</span> &quot;But for those who have liberty for their inclination&quot;: the cities used to being free, now named by their inclination. <i lang="it">a quelli</i> is the dative of the judgment, &quot;for those&quot;; <i lang="it">libertà</i>, liberty (glossary).</p>
+<p><span class="lem"><i lang="it">il trattarli bene</i>.</span> &quot;Treating them well&quot;: the nominal infinitive (D109).</p>
+<p><span class="lem"><i lang="it">eradicare del petto loro</i>.</span> &quot;Eradicate from their breast&quot;: both readers doubted the e of <i lang="it">petto</i>; read with the 1933 edition (D280; FG-CONS-I26-D002).</p>
+<p><span class="lem"><i lang="it">quello desiderio di non ricognoscere superiore di governare</i>.</span> &quot;That desire not to acknowledge a superior, [and] of governing&quot;: <i lang="it">ricognoscere</i>, the older form of <i lang="it">riconoscere</i>, &quot;acknowledge&quot;, as Machiavelli&#x27;s <i lang="it">non la riconosca da te</i> (Machiavelli .02): the free refuse the acknowledgement Machiavelli&#x27;s prince demands. <i lang="it">superiore di</i> + infinitive is not a natural construction, so the English takes <i lang="it">di governare</i> as a second complement of <i lang="it">desiderio</i>, in asyndeton, with the supplied &quot;[and]&quot; (D53) and a comma Canestrini does not print; the 1933 edition points it so. Canestrini prints <i lang="it">non</i>; the 1933 edition brackets it as an editorial supply (FG-CONS-I26-D004). The construal is put to David as O29.</p>
+<p><span class="lem"><i lang="it">e però in simile caso bisogna usare de&#x27; remedii forti</i>.</span> &quot;And therefore in like case it is required to use strong remedies&quot;: <i lang="it">simile</i>, like (glossary); <i lang="it">però</i>, therefore (D22), consecutive. <i lang="it">bisogna</i>, &quot;it is required&quot;: the edition&#x27;s rendering of the impersonal <i lang="it">bisognare</i>, in every tense (D260); the reasons are in the note on <i lang="it">bisogni</i> at Machiavelli I.2. <i lang="it">de&#x27; remedii</i>, partitive, not rendered: &quot;some strong remedies&quot; would understate it.</p>
+<p><span class="lem"><i lang="it">avendo però innanzi agli occhi</i>.</span> &quot;Having therefore before one&#x27;s eyes&quot;: the second <i lang="it">però</i>. It is kept &quot;therefore&quot; (D22): the consequence drawn from the preceding judgment, that strong remedies are required for this case, is that the part which can be gained by benefits is to be gained, a consideration to be kept before one&#x27;s eyes; the <i lang="it">perché</i> then gives the reason. Read as &quot;however&quot;, it would be the adversative D22 excludes.</p>
+<p><span class="lem"><i lang="it">che quella parte che si può guadagnare co&#x27; beneficii, di guadagnarla</i>.</span> &quot;That the part which can be gained with benefits, to gain it&quot;: <i lang="it">che</i> opens a clause whose subject is taken up by <i lang="it">-la</i>, and the infinitive has no governing verb; the English keeps the anacoluthon whole. <i lang="it">beneficii</i>, benefits, as at the close (<i lang="it">co&#x27; beneficii</i>). The 1933 edition reads <i lang="it">guadagnarli</i>, &quot;to gain them&quot;, the men of that part (FG-CONS-I26-D003).</p>
+<p><span class="lem"><i lang="it">perché e&#x27; rimedii violenti, se da uno canto ti assicurano, dall&#x27;altro ... fanno in mille modi debolezza</i>.</span> &quot;For violent remedies, if on the one hand they secure you, on the other ... make weakness in a thousand ways&quot;: <i lang="it">da uno canto ... dall&#x27;altro</i>, on the one hand ... on the other (D223); <i lang="it">assicurare</i>, secure (D219), Machiavelli&#x27;s verb for the new prince in I.16; the second person <i lang="it">ti</i> is Guicciardini&#x27;s, as Machiavelli&#x27;s <i lang="it">da te</i> (Machiavelli .02). <i lang="it">fare debolezza</i>, &quot;make weakness&quot;: <i lang="it">fare</i> kept as &quot;make&quot;, the verb of Machiavelli&#x27;s rubric. The pointing before <i lang="it">perché</i> was doubtful to both readers; the 1933 semicolon is followed (D110).</p>
+<p><span class="lem"><i lang="it">a uno principe che non sia fondato in sulle armi proprie</i>.</span> &quot;To a prince who is not founded upon his own arms&quot;: <i lang="it">armi proprie</i>, own arms, a soldiery of one&#x27;s own subjects (FG I.6), against hired or foreign troops. <i lang="it">fondato</i>, founded, as <i lang="it">fondare il principato</i> and <i lang="it">fondata in sul rispetto</i> above.</p>
+<p><span class="lem"><i lang="it">Però bisogna che il principe abbia animo a usare questi estraordinarii</i>.</span> &quot;Therefore it is required that the prince have the spirit to use these extraordinary [remedies]&quot;: <i lang="it">però</i>, therefore (D22); <i lang="it">animo</i>, spirit (glossary); <i lang="it">estraordinario</i>, extraordinary (glossary, <i lang="it">straordinario</i>), the noun supplied from <i lang="it">remedii</i> (D53).</p>
+<p><span class="lem"><i lang="it">sia sì prudente, che non pretermetta qualunque occasione se gli presenti</i>.</span> &quot;Be so prudent that he let slip no occasion whatever that may present itself to him&quot;: <i lang="it">prudente</i>, prudent (glossary); <i lang="it">pretermettere</i>, let pass, let slip; &quot;pretermit&quot; survives only in law. <i lang="it">occasione</i>, occasion (glossary). The negative governs <i lang="it">qualunque</i>: no occasion whatever.</p>
+<p><span class="lem"><i lang="it">di stabilire le cose sue con la umanità e co&#x27; beneficii</i>.</span> &quot;Of establishing his affairs with humanity and with benefits&quot;: <i lang="it">stabilire</i>, establish; <i lang="it">le cose sue</i>, his things, his affairs; <i lang="it">umanità</i>, humanity, the quality Machiavelli&#x27;s <i lang="it">non solamente cristiano, ma umano</i> (Machiavelli .03) names from the other side.</p>
+<p><span class="lem"><i lang="it">non pigliando così per regola assoluta quello che dice lo Scrittore</i>.</span> &quot;Not taking thus for an absolute rule what the writer says&quot;: <i lang="it">pigliare</i>, take, Machiavelli&#x27;s verb (<i lang="it">pigliare per sua mira</i>, Machiavelli .02; <i lang="it">pigliare quella prima via</i>, <i lang="it">pigliano certe vie</i>, Machiavelli .03). <i lang="it">regola assoluta</i>, absolute rule: What he denies is that it is absolute. <i lang="it">lo Scrittore</i>, Machiavelli, as <i lang="it">lo scrittore</i> at FG I.11; Canestrini capitalises it here, the English keeps lower case for both.</p>
+<p><span class="lem"><i lang="it">al quale sempre piacquono sopra modo e&#x27; remedii estraordinarii e violenti</i>.</span> &quot;Who was always pleased beyond measure by extraordinary and violent remedies&quot;: the Italian delays its subject to the reply&#x27;s last words, and the English passive keeps the remedies last (D18). A judgment on Machiavelli himself, not on the chapter; set it beside his own verdict on these ways, <i lang="it">crudelissimi</i>, to be fled by any man (Machiavelli .03). <i lang="it">sopra modo</i>, beyond measure: Guicciardini&#x27;s charge is excess, set against his own <i lang="it">sì prudente</i>. The reply ends here; the stop is doubtful to both readers and the 1933 edition prints one (D110).</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="colophon">
+    <div class="row">
+      <div>
+        <h3>What this is</h3>
+        <p>A free, openly licensed, bilingual edition of Guicciardini's 39 <i>Considerazioni</i> and the
+          <i>Discorsi</i> chapters they answer — 78 text units, Italian and English facing, every reading
+          traceable to a named public-domain witness.</p>
+        <p>It is a reading edition with a transparent apparatus, not a text of record. It does not adjudicate
+          the critical text against Bausi 2001 or the manuscript tradition, and does not claim to.</p>
+      </div>
+      <div>
+        <h3>On the title</h3>
+        <p>Machiavelli had been dead two years when Guicciardini wrote; the <i>Discorsi</i> were unpublished,
+          and the <i>Considerazioni</i> stayed unprinted until 1857. Machiavelli never answers.</p>
+        <p>“Conversation” is a quotation, not a description. It invokes Machiavelli's letter to Vettori of
+          10 December 1513, where he changes into court dress at evening, enters the antique courts of ancient
+          men, and reports that <i>they, in their humanity, answer me</i>. Guicciardini does to Machiavelli
+          what Machiavelli did to Livy — and is denied the reply Machiavelli claimed.</p>
+      </div>
+      <div>
+        <h3>Method</h3>
+        <p>No image-derived reading enters the text on a single reading. Each unit is transcribed twice,
+          independently, by readers who have not seen each other's work; disagreements are adjudicated against
+          the page images and recorded.</p>
+        <p>Existing English translations of the <i>Considerazioni</i> — Grayson (1965), Atkinson &amp; Sices
+          (2002) — are never used as translation inputs.</p>
+      </div>
+      <div>
+        <h3>Licence</h3>
+        <p>The established Italian text and the apparatus data are dedicated to the public domain under
+          <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>. They are Machiavelli's and
+          Guicciardini's sentences, and this edition adds no condition to them.</p>
+        <p>The English translation, the notes and the editorial apparatus are licensed
+          <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: reuse them anywhere, including
+          commercially, with attribution to David McDougall and this edition. The build tooling is MIT.</p>
+        <p>The witness scans are other people's digitisations, included as evidence under their own terms; no
+          grant is made over them, and no page image of Palmarocchi 1933 is reproduced here. Full terms,
+          layer by layer, are in the <span class="sig">LICENSE</span> file in the repository.</p>
+      </div>
+    </div>
+
+    <div class="state">
+      <p><strong>Version 0.3 · 18 of 39 pairs published.</strong>
+        This edition is versioned, not frozen. Some translation questions on this pair are still open.</p>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
