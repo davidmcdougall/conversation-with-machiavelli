@@ -3,7 +3,8 @@
 **A Conversation with Machiavelli: Guicciardini's *Considerazioni* on the
 *Discorsi*** — a free, bilingual, hyperlinked edition of Guicciardini's 39
 responses and the *Discorsi* chapters they answer. 78 text units, Italian and
-English facing, every reading traceable to a named public-domain witness.
+English facing, every reading traceable to a named public-domain witness;
+plus the few Machiavelli chapters a paired text depends on (§2, D288).
 
 **Version.** Draft 0.3 — 2026-09-18. Nothing here is frozen; this file is
 revised as the work teaches us things.
@@ -61,8 +62,10 @@ privately, after a draft is finished, as a calibration check only.
 
 ## 2. Corpus inventory — 39 pairs, 78 units
 
-Guicciardini answered 39 of Machiavelli's chapters and stopped. That set is
-closed; it is not a selection we are making. This is the entire project.
+Guicciardini answered 39 of Machiavelli's chapters and passed over the rest.
+He did not stop early: he answers as late as III.24, and he never says why he
+chose what he chose. That set is closed; it is not a selection we are making.
+The 39 pairs are v1 and the whole of the paired edition.
 
 **This table is generated, never hand-edited.** `scripts/state` walks
 `corpus/`, `translations/` and `sources/` and emits it from each unit's
@@ -126,6 +129,26 @@ Draft 0.2 gave 453 and 1,053. Those came from `wc -w` over the whole unit file,
 front-matter included, and run ~7% high. Count bodies. Both register figures
 are low-confidence regardless; step 1 of execution replaces them with a real
 count across all 78 units.
+
+**Context units (D288).** A Machiavelli chapter Guicciardini did not answer
+enters the edition, with the full pipeline (established Italian, English,
+notes) but no Guicciardini column, only when a paired text promises or depends
+on matter given in that chapter. Shared theme is not enough. The page says
+plainly that Guicciardini does not comment on it, and gives no reason, because
+none is known. Admitted so far: **NM-DISC.1.27** (I.26 closes by promising an
+example that is given in I.27, and I.27's rubric takes up I.26's last clause;
+D282). A context unit is done after v1's 39 pairs, never ahead of them.
+
+**The unanswered chapters (D289).** The *Discorsi* has 142 chapters
+(I 60, II 33, III 49); Guicciardini answers 38 of them and the proem to Book
+II, leaving 104, and the Book I proem and dedication. They get one page, not
+translations: all 142 laid out by book, the answered ones linked to their
+pairs, each unanswered one with its rubric (taken from the governing 1824
+witness, not from the linked site), a link to the Italian (a scan of the 1824
+edition where one is reachable) and a link to Detmold's English (1882, public
+domain). No reasons for the omissions are offered, chapter by chapter or in
+general. The pattern is the content: every chapter answered through I.12, then
+16 of the remaining 48 in Book I, 7 and the proem in Book II, 3 in Book III.
 
 ---
 
@@ -562,6 +585,8 @@ date every page.
   correspondence, the literary works. The census map is kept, as a map.
 - Adjudicating the critical text against Bausi 2001 or Harley MS 3533.
 - Any claim to be an edition of record.
+- Translating the *Discorsi* chapters Guicciardini did not answer, except a
+  context unit admitted under D288. The rest are linked out (D289).
 - External Italianist review as a gate. Solicit it after publishing, as
   feedback on something real, not as permission to begin.
 
