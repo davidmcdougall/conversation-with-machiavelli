@@ -1,0 +1,43 @@
+source_unit_id: NM-DISC.1.25
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-I25-D001
+    locator: NM-DISC.1.25.03
+    class: reading
+    witness_1824: "debbe osservare colui che vuole ordinare una potenza assoluta, o per via di Repubblica, o di Regno; ma quello che vuol fare una potestà assoluta, la quale dagli autori è chiamata Tirannide, debbe rinnovare ogni cosa"
+    witness_1554: "debbe oſſeruare colui,che uuole ordinare una potenza aſſoluta,laquale da gli auttori è chiamata tirannide,perche debbe rinouare ogni coſa"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 41r). The 1554 omits the words between one `assoluta` and the next, an eye-skip, so that the renewal of everything is prescribed to whoever would order any absolute power, and the distinction of republic or kingdom from tyranny is lost. The 1824 is what the chapter's argument and the next chapter's rubric need."
+  - id: NM-DISC-I25-D002
+    locator: NM-DISC.1.25.01
+    class: reading
+    witness_1824: "gli ordini nuovi fussero al tutto alieni dai passati"
+    witness_1554: "gli ordini nuoui fuſſero al tutto diuerſi da i paſſati"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 40v): the 1554 `diuersi`, \"different\", for the 1824 `alieni`, \"alien\". A weaker word for the same claim."
+  - id: NM-DISC-I25-D003
+    locator: NM-DISC.1.25.02
+    class: reading
+    witness_1824: "e lo sottomessono al sommo Sacerdote"
+    witness_1554: "et lo ſottomeſſono al Sacerdote"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 40v): the 1554 has no `sommo`. The 1824's chief priest is the *pontifex maximus*; the 1554 says only \"the priest\"."
+  - id: NM-DISC-I25-D004
+    locator: NM-DISC.1.25.03
+    class: reading
+    witness_1824: "ritengano più dell'antico sia possibile"
+    witness_1554: "ritenghino piu dell'antico, che ſia poßibile"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 40v-41r): the 1554 has `che`. The 1824 reading rests on pass A alone, outside the sample, read without doubt; it construes as an elliptical comparative and is kept, D38 (D270). The sense is the same."
+  - id: NM-DISC-I25-D005
+    locator: NM-DISC.1.25.01-03
+    class: systematic_orthographic_profile
+    witness_1824: "the 1824 spelling and pointing: `satisfazione`, `almanco`, `acciò che`, `paja`, `d'un Re`, `ch'egli avessero`, `dodici`, `sacrifizio`, `assenza`, `crearono`, `essi chiamarono`, `satisfarsi`, `ritengano`, `autori`"
+    witness_1554: "Giglio's: `ſatisfatione`, `al manco`, `accioche`, `paia`, `di uno Re`, `che eßi haueßino`, `XII`, `ſacrificio`, `aſſentia`, `creorono`, `loro chiamorono`, `ſodiſfarſi`, `ritenghino`, `auttori`, u for v, ſ, `&`, `et`, `h-`, and heavier pointing with parentheses"
+    established: witness_1824
+    rationale: "The 1824 governs throughout. `creorono`, `chiamorono` and `ritenghino` are other forms of the same words; `sodisfarsi` and `satisfarsi` the same verb. No other difference that bears on the English."

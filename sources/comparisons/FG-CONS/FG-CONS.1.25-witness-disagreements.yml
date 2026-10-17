@@ -1,0 +1,43 @@
+source_unit_id: FG-CONS.1.25
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-I25-D001
+    locator: FG-CONS.1.25.01
+    class: emendation
+    witness_1857: "La canclusione del Discorso"
+    witness_1933: "La conclusione del Discorso"
+    established: "La c[o]nclusione del Discorso"
+    publish_as_variant_note: true
+    rationale: "Both cold readers see a clear a; `canclusione` is not a word. Emended under D68 from the 1933 edition (D267)."
+  - id: FG-CONS-I25-D002
+    locator: FG-CONS.1.25.01
+    class: ruled_reading
+    witness_1857: "che [a/n] chi muta spezie di governo (a damaged letter)"
+    witness_1933: "che a chi muta spezie di governo"
+    established: "che a chi muta spezie di governo"
+    publish_as_variant_note: true
+    rationale: "The readers split on which form they preferred, each giving the other's as alternative: A `a`, B the printed n-shape. `N` is not a word; the comparison needs `a chi`, as in `a chi non muta` just before. A reading, not an emendation (D268)."
+  - id: FG-CONS-I25-D003
+    locator: FG-CONS.1.25.01
+    class: ruled_reading
+    witness_1857: "se di [u/a]no regno (a damaged letter)"
+    witness_1933: "se di uno regno"
+    established: "se di uno regno"
+    publish_as_variant_note: true
+    rationale: "The readers split on which form they preferred: A `uno`, B `ano`, each giving the other's as alternative. `Ano` is not a word in this sense; the scan breaks u into a- and n-shapes throughout. A reading (D268)."
+  - id: FG-CONS-I25-D004
+    locator: FG-CONS.1.25.01
+    class: ruled_reading
+    witness_1857: "si armassino [e/è] consuli (a speck above the letter)"
+    witness_1933: "si armassino e' consuli"
+    established: "si armassino e' consuli"
+    publish_as_variant_note: true
+    rationale: "Both readers doubted whether a speck above the e is a grave accent. `È consuli` does not construe; the plural article, as the 1933 edition reads, does. A reading (D269); the apostrophe by D35."
+  - id: FG-CONS-I25-D005
+    locator: FG-CONS.1.25.01
+    class: systematic_orthographic_profile
+    witness_1857: "Canestrini's `verbi gratia`, `e Romani`, `Sacrificulo`, `perchè`, `sì`, `potestà`, and his pointing (`governo, perchè`, `momento, perchè`, `religione;`)"
+    witness_1933: "Palmarocchi's `verbigrazia`, `e' romani`, `sacrificulo`, `perché`, `sí`, `potestá`, and his pointing (`governo;`, `momento;`, `religione,`)"
+    established: witness_1857
+    rationale: Canestrini governs throughout. No other difference of word or sense.

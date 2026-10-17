@@ -1,0 +1,37 @@
+source_unit_id: FG-CONS.1.25
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-017
+responds_to: NM-DISC.1.25
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. No note of Canestrini's falls in this unit."
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38); errors are emended from Palmarocchi and bracketed (D68)."
+passes:
+  - {id: A, performed: 2026-10-17, file: sources/coldpass/FG-CONS.1.25-passA.md, note: "subagent; page images only (native 600 ppi rendered at 1200, half pages enlarged 1.6x plus quarter crops enlarged 2.2x), separate directory"}
+  - {id: B, performed: 2026-10-17, file: sources/coldpass/FG-CONS.1.25-passB.md, note: "subagent; same images, separate directory"}
+collation: sources/coldpass/COLLATION-2026-10-17-I25.md
+collation_result: >
+  120 words (A and B). Two splits, both of preferred reading only, the other
+  form not a word: `a`/`n`, `uno`/`ano`; ruled readings with the 1933
+  edition (D268). One doubt common to both readers between two words,
+  `e`/`è consuli`, read `e'` (D269). No clause or sense disagreement. One
+  clearly printed non-word, `canclusione`, emended `c[o]nclusione` (D267).
+witness_independence_check: "SCOPE §7. At the two split loci pass A sides with Palmarocchi (`a`, `uno`), pass B with the printed shape; in each the other form is not a word. Neither pass carries a Palmarocchi word-reading where Canestrini differs: both have `canclusione`, `verbi gratia`, `e Romani`, `Sacrificulo`, `governo,`, `religione;`, against the 1933 `conclusione`, `verbigrazia`, `e' romani`, `sacrificulo`, `governo;`, `religione,`. The passes read Canestrini."
+boundaries: "printed p. 40; heading CONSIDERAZIONE SUL CAPITOLO XXV after line 3, the last line of the reply on XXIV (`caso di Orazio.`); Canestrini's two-line rubric `Chi vuole riformare uno stato antico in una città libera, ritenga almeno l'ombra de' modi antichi`, its stop faint; one indented paragraph (`La canclusione`); ends `di maggiore potestà`, its stop faint; CONSIDERAZIONE SUL CAPITOLO XXVI follows on the same page"
+corrections: []
+emendations:
+  - {id: FG-CONS-I25-E001, operation: emendation, rule: D68, status: ruled_D267, locator: FG-CONS.1.25.01, printed: "La canclusione del Discorso", established: "La c[o]nclusione del Discorso", source: WIT-FG-CONS-1933-PALMAROCCHI, note: "Both readers see a crisp a and give `conclusione` as the alternative. `Canclusione` is not a word; the 1933 edition reads `conclusione`. A non-word, so emended under D68, the emended letter bracketed (DEC-009 clause 7). Not settled on the page image."}
+readings:
+  - {locus: "che ⟨a|n⟩ chi muta", passes: "A ⟨a|n⟩; B ⟨n|a⟩", witness_1933: "a", disposition: "a, D268 (David, 2026-10-17): a broken letter; `n` is not a word"}
+  - {locus: "se di ⟨uno|ano⟩ regno", passes: "A ⟨uno|ano⟩; B ⟨ano|uno⟩", witness_1933: "uno", disposition: "uno, D268: u broken into an a-shape; `ano` is not a word"}
+  - {locus: "si armassino ⟨e|è⟩ consuli", passes: "A ⟨e|è⟩; B ⟨e|è⟩", witness_1933: "e'", disposition: "e', D269 (David, 2026-10-17): `è` does not construe; the apostrophe by D35"}
+  - {locus: "in ⟨una|ana⟩ città", passes: "A ⟨una|ana⟩; B the same", witness_1933: "una", disposition: "una: the alternative is not a word"}
+  - {locus: "⟨essendo|esaando⟩ già", passes: "A ⟨essendo|esaando⟩; B the same", witness_1933: "essendo", disposition: "essendo: the alternative is not a word"}
+  - {locus: "non ⟨sia|sta⟩ buono", passes: "A sia; B ⟨sia|sta⟩", witness_1933: "sia", disposition: "sia: doubted by one reader only"}
+pointing:
+  - {locus: "spezie di governo, ma lo riforma", passes: "A ,; B ⟨,|.⟩", witness_1933: ",", disposition: "printed"}
+  - {locus: "di maggiore potestà.", passes: "A ⟨.|no stop⟩; B ⟨.|no stop⟩", witness_1933: ".", disposition: "printed, faint; both readers see a trace and the 1933 edition breaks the tie (D110); not a supply, so D40 does not apply"}
+not_supplied: []
+normalisation_notes: "Class A: accents (`perchè` → `perché` twice; `sì esattamente`, where the accent is clear to A and faint to B, set accented as both prefer); elision solid (`nell'uno`, `s'ebbe`, `nell'altro`, `l'ombra` in the rubric); apocope spaced (`de' littori`, `de' modi`); the Florentine plural article supplied as `e'` (D35: `e' Romani`; `e' consuli` by D269); line-end hyphens removed; spaces before punctuation removed."

@@ -1,0 +1,25 @@
+source_unit_id: NM-DISC.1.25
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-017
+passes:
+  - {id: A, performed: 2026-10-17, file: sources/coldpass/NM-DISC.1.25-passA.md, note: "subagent; page images only (350 ppi, thirds), separate directory; full chapter"}
+  - {id: B, performed: 2026-10-17, file: sources/coldpass/NM-DISC.1.25-passB.md, note: "subagent; one page only (p. 100, 89 words, 27% of the chapter), chosen by the collator after pass A by D203(c) and recorded before it was given out; separate directory"}
+collation: sources/coldpass/COLLATION-2026-10-17-I25.md
+collation_result: "333 words (pass A). Sample of p. 100: the token streams are identical after Class A; no word, clause or sense disagreement, so no full pass B, and the sample rule stands for the next chapter. No pass-A doubt outside the sample whose alternative is a word (D203(a)). No word-level difference from the 1554 edition at a letter the scans break other than spellings of one word (`creorono`, `chiamorono`; D203(b)). One reading resting on pass A alone and differing from the 1554 by a word, kept as printed (D270)."
+boundaries: "printed pp. 100-101; CAPITOLO XXV on p. 100 after line 13, the last line of XXIV (`aveva salvato.`); italic rubric of three lines; large initial C; one block, running on across the page turn; ends p. 101 line 29 `si dirà.`; CAPITOLO XXVI opens p. 102"
+interventions: []
+readings:
+  - {locus: "ritengano più dell'antico sia possibile", passes: "A without `che`, no doubt (p. 101, outside the sample)", witness_1554: "piu dell'antico, che sia poßibile", disposition: "kept as printed, D38; D270 (raised by the collator, no D203 trigger)"}
+comparison_collation: >
+  Done 2026-10-17 against the 1554 extract (fol. 40v-41r). A cold reader
+  transcribed the Giglio leaves from the page images
+  (sources/coldpass/NM-DISC.1.25-1554.md); the transcript was collated by
+  word against the established text, and the readings published as variant
+  notes (`diuersi`, `al Sacerdote`, `che sia poßibile`, the omission at .03)
+  were checked on the leaf images by the collator. Sense-bearing
+  differences are in sources/comparisons/NM-DISC/NM-DISC.1.25-witness-disagreements.yml.
+normalisation_notes: "Class A only: accents (`perchè` → `perché`, `Perchè` → `Perché`, `Talmentechè` → `Talmenteché`); elision solid (`d'una`, `l'ombra`, `l'universale`, `d'un`, `ch'egli`, `dell'antiche`, `dell'antico`; the rubric's `l' ombra` closed up); apocope spaced (`de' modi`, `de' Re`); line-end hyphens removed; spaces before punctuation removed. The raised stop after `sono` (p. 100) set as a full stop, as both readers read it."
