@@ -1,0 +1,59 @@
+source_unit_id: NM-DISC.1.28
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-I28-D001
+    locator: NM-DISC.1.28.03
+    class: emendation
+    witness_1824: "ogni altra violenza che contra i suoi Ottimati in varj tempi da quella Città fu fatto"
+    witness_1554: "ogni altra uiolenza, che contra i ſuoi Ottimati in uarij tempi da quella citta fu fatta"
+    established: "da quella Città fu fatt[a]"
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 42v). Both readers read the 1824 `fatto` without doubt on the sampled page; the antecedent of `che` is `violenza`, and the masculine participle does not agree. Emended under D68 from the 1554 edition (D295). The English, \"was done\", is the same either way."
+  - id: NM-DISC-I28-D002
+    locator: NM-DISC.1.28.04
+    class: reading
+    witness_1824: "per la diversità degli accidenti che in questa Città nacquero"
+    witness_1554: "per la diuerſità de gli accidenti, che in queſte città nacquero"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 42v). The 1554 has the plural, \"in these cities\", Rome and Athens; the 1824 singular names Athens. A word-level difference at a letter the scans break, escalated under D203(b); the 1824 construes and is kept (D38; D296)."
+  - id: NM-DISC-I28-D003
+    locator: NM-DISC.1.28.05
+    class: reading
+    witness_1824: "ne dirò quello ne occorrerà nel seguente capitolo"
+    witness_1554: "ne diro quello che occorrera nel ſeguente capitolo"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 43r). The 1554 has the relative `che`, \"what will occur\"; the 1824 has the pronoun `ne`, \"what will occur [to me] of it\", with the relative understood. Read by pass A alone, outside the sample; it construes as an elliptical relative and is kept as printed (D38; D297), as D270."
+  - id: NM-DISC-I28-D004
+    locator: NM-DISC.1.28.03
+    class: reading
+    witness_1824: "nel suo più florido tempo ... diventò acerrima vendicatrice"
+    witness_1554: "nel ſuo piu fiorito tempo ... diuenne aſpra uendicatrice"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 42v). Two differences of word: `fiorito`, \"flowering\", for `florido`, \"flourishing\", the same sense; and `aspra`, \"harsh\", for the superlative `acerrima`, \"most bitter\": the 1554 makes Athens' vengeance harsh, the 1824 the bitterest. Both read by both readers on the sampled page."
+  - id: NM-DISC-I28-D005
+    locator: NM-DISC.1.28.04
+    class: reading
+    witness_1824: "Chi considererà adunque quanto è detto ... Perché si vedrà"
+    witness_1554: "Chi conſidera adunque, quanto e detto ... Perche ſi uerra"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaves (fol. 42v, 43r). The 1554 has the present `considera`, \"whoever considers\", for the future, \"whoever will consider\"; its `si uerra`, \"it will come\", is most likely a misprint for `si uedra`, \"it will be seen\"."
+  - id: NM-DISC-I28-D006
+    locator: NM-DISC.1.28.01
+    class: reading
+    witness_1824: "avevano meno cagione di sospettare"
+    witness_1554: "haueuano meno cagioni di ſoſpettare"
+    established: witness_1824
+    publish_as_variant_note: false
+    rationale: "Checked on the leaf (fol. 42v). The 1554 plural, \"fewer causes\", for the 1824 singular, \"less cause\"; not at a letter the 1824 scan breaks; recorded."
+  - id: NM-DISC-I28-D007
+    locator: NM-DISC.1.28.01-05
+    class: systematic_orthographic_profile
+    witness_1824: "the 1824 spelling and pointing: `Repubbliche`, `troverà`, `d'ingratitudine`, `contro a'`, `dei loro`, `Atene`, `perché`, `insino`, `sendole`, `diventò`, `contra`, `varj`, `ricuperata`, `ch'egli`, `suta`, `Tarquinj`, `arebbe`, `augumento`"
+    witness_1554: "Giglio's: `Republiche`, `trouerra`, `de ingratitudine`, `contra a`, `de lor`, `Athene`, `perche`, `infino`, `essendole`, `diuenne`, `uarij`, `recuperata`, `che essi`, `stata`, `Tarquini`, `harebbe`, `augmento`, `de i Re`, `fato`, u for v, ſ, `&`, `et`, `h-`, tilde abbreviations, and heavier pointing (semicolons and parentheses)"
+    established: witness_1824
+    rationale: "The 1824 governs throughout. `suta` and `stata`, `diventò` and `diuenne`, `sendole` and `essendole` are forms of the same words. No other difference that bears on the English."

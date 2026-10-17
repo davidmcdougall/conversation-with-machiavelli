@@ -1,0 +1,39 @@
+source_unit_id: FG-CONS.1.28
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-019
+responds_to: NM-DISC.1.28
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. No note of Canestrini's falls in this unit."
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38); errors are emended from Palmarocchi and bracketed (D68)."
+passes:
+  - {id: A, performed: 2026-10-17, file: sources/coldpass/FG-CONS.1.28-passA.md, note: "subagent; page images only (native rendered at 1200 ppi, half pages enlarged 1.6x plus quarter crops enlarged 2.2x), separate directory"}
+  - {id: B, performed: 2026-10-17, file: sources/coldpass/FG-CONS.1.28-passB.md, note: "subagent; same images, separate directory"}
+collation: sources/coldpass/COLLATION-2026-10-17-I28.md
+collation_result: >
+  426 words (A and B). Two word-level splits: `dentro`/`dentra`, read
+  `dentro` (D291); `nobilità`/`nobiltà`, read `nobilità` (D292). One doubt
+  common to both readers, read as both prefer: `tennono` (D294). Two
+  readings kept against the 1933 edition: `discordia` (D290) and `delle
+  nuove leggi` (D293). One split of pointing and four common doubts of
+  pointing settled by D110. No clause or sense disagreement.
+witness_independence_check: "SCOPE §7. At `nobilità` pass A agrees with the 1933 edition and pass B does not; at `dentro` the 1933 form is the only word available. Neither pass carries a Palmarocchi word-reading where Canestrini differs: both have `discordia`, `il governo`, `il populo`, `concioni`, `le paci`, `deliberazioni importanti`, `delle nuove leggi`, `le cose gravi`, `le arti populari`, `e in conseguenza`, `D'onde`, against the 1933 `differenzia`, `el governo`, `el popolo`, `concione`, `le pace`, `deliberazione importante`, `della nuova legge`, `le cose grave`, `le arte populare`, `ed in consequenzia`, `Donde`. The passes read Canestrini."
+boundaries: "printed pp. 42-43; heading CONSIDERAZIONE SUL CAPITOLO XXVIII on p. 42 after line 3, the last line of the reply on XXVI (`e remedii estraordinarii e violenti.`); Canestrini's two-line rubric `Per qual cagione i Romani furono meno ingrati agli loro cittadini che gli Ateniesi.`; one indented paragraph (`Se Roma`); ends p. 43 `di battere e potenti.`; CONSIDERAZIONE SUL CAPITOLO XXIX follows on the same page. No notes of Canestrini's."
+corrections: []
+emendations: []
+readings:
+  - {locus: "da altro fondamento sia nata questa discordia", passes: "A and B `discordia`, no doubt", witness_1933: "differenzia", disposition: "discordia, kept as printed, D38; D290 (David, 2026-10-17), raised by the collator, no D203 trigger"}
+  - {locus: "avendo bisogno a continuarvi ⟨dentro|dentra⟩", passes: "A ⟨dentro|dentra⟩; B ⟨dentra|dentro⟩", witness_1933: "dentro", disposition: "dentro, D291 (David, 2026-10-17): `dentra` is not a word"}
+  - {locus: "il contrapeso della potenza della nobilità", passes: "A `nobilità`; B `nobiltà`; neither doubted", witness_1933: "nobilità", disposition: "nobilità, D292 (David, 2026-10-17): two forms of one word; pass B most likely dropped the i"}
+  - {locus: "e constituzione delle nuove leggi", passes: "A and B, no doubt", witness_1933: "della nuova legge", disposition: "delle nuove leggi, kept as printed, D38; D293 (David, 2026-10-17), escalated under D203(b) at e/a"}
+  - {locus: "e la ⟨tennono⟩ occupata", passes: "A ⟨tennono|tenneno⟩; B ⟨tennono|tenuono⟩", witness_1933: "tennono", disposition: "tennono, D294 (David, 2026-10-17): read as both readers prefer"}
+pointing:
+  - {locus: "più atrocemente, Roma", passes: "A ⟨,|.⟩; B ⟨,|.⟩", witness_1933: ",", disposition: "comma, D110"}
+  - {locus: "ne fussi causa, perché", passes: "A ⟨;|,⟩; B ⟨;|,⟩", witness_1933: ",", disposition: "comma, D110"}
+  - {locus: "deliberazioni importanti; ma", passes: "A ⟨,|;⟩; B ⟨;|,⟩", witness_1933: ";", disposition: "semicolon: a mark both readers see and neither can weigh; the 1933 edition breaks the tie (D110)"}
+  - {locus: "urgente cagione. D'onde", passes: "A ⟨.|,⟩; B ⟨.|,⟩", witness_1933: ".", disposition: "stop, D110; the capital follows"}
+  - {locus: "di battere e' potenti; e' quali", passes: "A ⟨,|;⟩; B ⟨,|;⟩", witness_1933: ";", disposition: "semicolon, D110"}
+not_supplied: []
+normalisation_notes: "Class A: accents (`perchè` → `perché`, `procedè` → `procedé`, `nè` → `né` ×2); elision solid (`l' arebbe` → `l'arebbe`; `D'onde` as printed); apocope spaced (`de' re`, `a' Dieci`, `de' Romani` ×2, `ne' quali`, `de' magistrati`, `de' cittadini` ×2, the faint apostrophes supplied by D39); the Florentine plural article supplied as `e'` (D35: `e' suoi`, `e' Romani`, `e' Dieci`, `e' tribuni`, `e' cittadini` ×2, `e' potenti` ×2, `e' quali`); line-end hyphens removed; spaces before punctuation removed."

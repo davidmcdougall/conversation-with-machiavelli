@@ -1,0 +1,30 @@
+source_unit_id: NM-DISC.1.28
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-019
+passes:
+  - {id: A, performed: 2026-10-17, file: sources/coldpass/NM-DISC.1.28-passA.md, note: "subagent; page images only (350 ppi, thirds), separate directory; full chapter"}
+  - {id: B, performed: 2026-10-17, file: sources/coldpass/NM-DISC.1.28-passB.md, note: "subagent; one page only (p. 105, 197 words, 47% of the chapter), chosen by the collator after pass A by D203(c) and recorded before it was given out; separate directory"}
+collation: sources/coldpass/COLLATION-2026-10-17-I28.md
+collation_result: "417 words (pass A). Sample of p. 105: the token streams are identical after Class A; no word, clause or sense disagreement, so no full pass B, and the sample rule stands for the next chapter. No pass-A doubt outside the sample whose alternative is a word (D203(a)). Two word-level differences from the 1554 edition at letters the scans break: `fu fatto`, a broken agreement on the sampled page, emended `fatt[a]` (D295); `questa Città`, outside the sample, kept (D296). One sense-bearing word read by pass A alone, kept against the 1554 (D297)."
+boundaries: "printed pp. 105-106; CAPITOLO XXVIII opens p. 105 under the running head; two-line italic rubric; large initial Q; one block; ends p. 106 line 23 `nel seguente capitolo.`; the rest of p. 106 blank; CAPITOLO XXIX opens p. 107"
+interventions: []
+emendations:
+  - {id: NM-DISC-I28-E001, operation: emendation, rule: D68, status: ruled_D295, locator: NM-DISC.1.28.03, printed: "da quella Città fu fatto", established: "da quella Città fu fatt[a]", source: WIT-NM-DISC-1554-IA, note: "Read by both readers without doubt on the sampled p. 105. The antecedent of `che` is `ogni altra violenza`; the masculine participle does not agree. The 1554 edition prints `fu fatta` (fol. 42v). A broken agreement, so emended under D68, the emended letter bracketed (DEC-009 clause 7). Not settled on the page image."}
+readings:
+  - {locus: "da quella Città fu fatt[a]", passes: "A and B `fatto`, no doubt (p. 105, the sample)", witness_1554: "da quella citta fu fatta", disposition: "fatt[a], D295 (David, 2026-10-17): emended under D68, escalated under D203(b) at o/a"}
+  - {locus: "che in questa Città nacquero", passes: "A `questa`, no doubt (p. 106, outside the sample)", witness_1554: "che in queste città nacquero", disposition: "kept as printed, D38; D296 (David, 2026-10-17), escalated under D203(b) at a/e"}
+  - {locus: "ne dirò quello ne occorrerà", passes: "A `ne`, no doubt (p. 106, outside the sample)", witness_1554: "ne diro quello che occorrera", disposition: "kept as printed, D38; D297 (David, 2026-10-17), raised by the collator, no D203 trigger"}
+comparison_collation: >
+  Done 2026-10-17 against the 1554 extract (fol. 42v-43r). A cold reader
+  transcribed the Giglio leaves from the page images
+  (sources/coldpass/NM-DISC.1.28-1554.md); the transcript was collated by
+  word against the established text, and the readings published as variant
+  notes (`fatta`, `queste città`, `che occorrerà`, `cagioni`, `fiorito`,
+  `aspra`, `considera`) were checked on the leaf images by the collator.
+  Sense-bearing differences are in
+  sources/comparisons/NM-DISC/NM-DISC.1.28-witness-disagreements.yml.
+normalisation_notes: "Class A only: accents (`perchè` → `perché` ×4, `nè` → `né`, `sè` → `sé`, `Talchè` → `Talché`); elision solid (`d' ingratitudine`, `d' offendergli`, `dell' ombra`, `l' ordine`, `ch' egli`, `l' hanno`, `l' altro`, `l' ingratitudine` → closed up); apocope spaced as printed (`a' suoi`, `de' Re` ×2, `de' suoi`, `de' quali`, `de' Tarquinj`, `ne' primi`); line-end hyphens removed. Euphonic `ed` as printed (D36)."

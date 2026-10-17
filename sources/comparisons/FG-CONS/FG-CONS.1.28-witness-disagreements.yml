@@ -1,0 +1,51 @@
+source_unit_id: FG-CONS.1.28
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-I28-D001
+    locator: FG-CONS.1.28.01
+    class: ruled_reading
+    witness_1857: "dirà che da altro fondamento sia nata questa discordia"
+    witness_1933: "dirà che da altro fondamento sia nata questa differenzia"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "Read by both readers without doubt. The 1933 edition has `differenzia`, \"difference\", the difference between the two cities' treatment of their citizens. Canestrini's `discordia`, \"discord\", construes and is kept as printed (D38; D290), though the 1933 word fits the argument more closely."
+  - id: FG-CONS-I28-D002
+    locator: FG-CONS.1.28.01
+    class: ruled_reading
+    witness_1857: "avendo bisogno a continuarvi dentr[o/a] (a damaged letter)"
+    witness_1933: "avendo bisogno a continuarvi dentro"
+    established: "dentro"
+    publish_as_variant_note: true
+    rationale: "Both readers doubted the last letter and split on which form they preferred, each giving the other as alternative. `Dentra` is not a word. A reading, with the 1933 edition (D291)."
+  - id: FG-CONS-I28-D003
+    locator: FG-CONS.1.28.01
+    class: ruled_reading
+    witness_1857: "della potenza della nobilità (pass A); nobiltà (pass B)"
+    witness_1933: "della potenza della nobilità"
+    established: "nobilità"
+    publish_as_variant_note: true
+    rationale: "Each reader read his form without doubt; they are two forms of one word, and the 1933 edition has pass A's. Read `nobilità` (D292). The English is \"nobility\" either way."
+  - id: FG-CONS-I28-D004
+    locator: FG-CONS.1.28.01
+    class: ruled_reading
+    witness_1857: "e constituzione delle nuove leggi"
+    witness_1933: "e constituzione della nuova legge"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "Read by both readers without doubt; a word-level difference at e/a, escalated under D203(b). Three words agree in the plural, which a barless e does not produce. Kept as printed (D38; D293): \"the constitution of the new laws\" against the 1933 \"of the new law\"."
+  - id: FG-CONS-I28-D005
+    locator: FG-CONS.1.28.01
+    class: ruled_reading
+    witness_1857: "e la tenn[o]no occupata (a damaged letter)"
+    witness_1933: "e la tennono occupata"
+    established: "tennono"
+    publish_as_variant_note: true
+    rationale: "Both readers doubted the second vowel and both prefer `tennono`, as the 1933 edition reads; pass A gives `tenneno`, another form of the same verb, as alternative. Read as preferred (D294)."
+  - id: FG-CONS-I28-D006
+    locator: FG-CONS.1.28.01
+    class: systematic_orthographic_profile
+    witness_1857: "Canestrini's `il governo`, `il populo`, `concioni`, `le paci`, `deliberazioni importanti`, `le cose gravi`, `le arti populari`, `comunemente`, `e in conseguenza`, `e anche`, `ovvero`, `D'onde`, `perchè`, `procedè`, and his pointing (`Greci,`, `senato,`, `tirannide,`)"
+    witness_1933: "Palmarocchi's `el governo`, `el popolo`, `concione`, `le pace`, `deliberazione importante`, `le cose grave`, `le arte populare`, `communemente`, `ed in consequenzia`, `ed anche`, `overo`, `Donde`, and his pointing (`greci;`, `senato;`, `tirannide;`), with a paragraph opened at `Donde`"
+    established: witness_1857
+    rationale: "Canestrini governs throughout. No other difference of word or sense."
