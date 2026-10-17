@@ -63,7 +63,7 @@ expense; of which cities the Roman people built many, and throughout its empire:
 or else they are built by a prince, not to live in, but for his glory, as the
 city of Alexandria by Alexander. And through these cities not having their origin
 free, it rarely occurs that they make great progress and can be numbered among
-the heads of kingdoms. Similar to these was the building of Florence, for,
+the heads of kingdoms. The building of Florence was similar to these, for,
 whether built by the soldiers of Sulla or by chance by the inhabitants of the
 mountains of Fiesole (who, trusting in that long peace which arose in the world
 under Octavian, withdrew to live in the plain upon the Arno), it was built under
