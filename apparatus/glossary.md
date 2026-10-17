@@ -471,3 +471,22 @@ last sentence answers Machiavelli's first move.
 | `guadagnare` | gain | FG I.26 ×4: the reply's verb against Machiavelli's `fare`. |
 | `particulare` (noun) | particular [man] | D93. FG I.26 `alcuno particulare`; the adjective "particular" as before. |
 | `beneficii` | benefits | FG I.26 ×2. |
+
+
+## Added from the I.28 pair (2026-10-17)
+
+| Italian | English | Note |
+|---|---|---|
+| `sospettare`, `sospetto`, `sospettoso` | suspect, suspicion, suspicious | NM I.16, I.28 throughout; FG I.16, I.28. "Less cause to suspect" is held word for word across Machiavelli's .01 and Guicciardini's reply (D300). |
+| `ingratitudine`, `ingrato` | ingratitude, ungrateful | NM I.28 ×3 and rubric; I.29. |
+| `pronto` | prompt | D298. FG I.28 `più pronti`. "Ready" is kept off it so that "readily" stays `facilmente`'s (D27). |
+| `intervenire` / `accadere` | befall / happen | D298, with D273. NM I.28. |
+| `acerrimo` | most sharp | D298. NM I.28. "Bitter" is `acerbo`'s (I.16). |
+| `meramente` | merely (purely) | D298. FG I.28 ×2; with D125's `mero`. |
+| `solo` (adverb) | only | D298, a scoped exception to D172. NM I.28 `avendo solo dato`. |
+| `battere` | beat | D120. FG I.28 ×3: to strike at or bring down a citizen. |
+| `leggerezza` | levity | FG I.28 ×2. |
+| `facilità` | facility | FG I.28 ×2, with `facilmente` readily, `facile` easy (D27). |
+| `procedere` | proceed | FG I.28 ×2. |
+| `recuperazione` / `ricuperare` | recovery / recover | FG I.28; NM I.28 `ricuperata la libertà`. |
+| `tolta la libertà` | liberty taken away | D298, D131. NM I.28 ×3 (.02, .03, .04). |

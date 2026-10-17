@@ -153,3 +153,14 @@ the original.
 | `Filippo di Macedonia` | Philip of Macedon | NM I.26; Philip II (r. 359-336 BC). The established English form for the man; the place stays `Macedonia`, Macedonia (FG I.23) |
 | `Alessandro` | Alexander | NM I.26; Alexander the Great |
 | `Grecia` | Greece | NM I.26, as NM I.6 |
+| `Atene`, `Ateniesi` | Athens, Athenians | NM I.28, FG I.28 |
+| `Pisistrato` | Pisistratus | NM I.28, as NM I.2 |
+| `Silla e Mario` | Sulla and Marius | NM I.28; Sulla as NM I.1, Marius as NM I.5 |
+| `Ostracismo` | ostracism | NM I.28; lower case, an institution |
+| `Ottimati` | optimates | NM I.28, as NM I.2 (D76) |
+| `Collatino` | Collatinus | NM I.28; Lucius Tarquinius Collatinus, consul in the first year (Livy 2.2) |
+| `Publio Valerio` | Publius Valerius | NM I.28; later Publicola (Livy 2.7), noted |
+| `monte Celio` | the Caelian Hill | NM I.28; Livy has the Velia, noted |
+| `Tarquinj` | Tarquins | NM I.28, as NM I.3 |
+| `Dieci` | the Ten | FG I.28; the decemvirs of 451-449 BC, noted |
+| `Greci` | Greeks | FG I.28 |
