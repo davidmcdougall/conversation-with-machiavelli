@@ -35,3 +35,9 @@ first time it is italicised.
 | `virtus` | NM I.24 note and commentary (Livy 1.26) |
 | `perduellio` | I.24 commentary |
 | `sic` | NM I.24 note |
+| `sacrificulus` | NM I.25, FG I.25 (D271) |
+| `rex sacrificulus` | NM I.25 note, commentary |
+| `rex sacrorum` | NM I.25 note |
+| `pontifex maximus` | NM I.25 note |
+| `pontifex` | I.25 commentary |
+

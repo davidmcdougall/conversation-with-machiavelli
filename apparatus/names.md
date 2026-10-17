@@ -146,3 +146,7 @@ the original.
 | `Toscani` | Tuscans | NM I.24; Machiavelli's name for the Etruscans, kept and noted, as `Francesi` (I.7) |
 | `Galli` | Gauls | NM I.24, as FG I.1 |
 | `Manlio Capitolino`; `Campidoglio` | Manlius Capitolinus; the Capitol | NM I.24, as NM I.8; the 1554 edition prints `Mallio` |
+| `Re sacrificolo` / `re Sacrificulo` | king *sacrificulus* | NM I.25, FG I.25; the *rex sacrificulus* or *rex sacrorum* (Livy 2.2). An office, not a name (D271) |
+| `sommo Sacerdote` | the supreme priest | NM I.25; the *pontifex maximus*, noted |
+| `Romani` | Romans | FG I.25 `e' Romani` |
+

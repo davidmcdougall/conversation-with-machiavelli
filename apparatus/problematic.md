@@ -579,6 +579,40 @@ che non fu`): the killing stays `delitto`, and no title, standfirst or note
 may make him say that merits cancel faults. `concorrere` comes five times and
 carries the cause. The unit ends with a stop.
 
+## Machiavelli, NM-DISC.1.25
+
+**A rule about seeming, proved by what Rome kept, and bounded at the close.**
+The precept is conditional on its end: whoever would have a reformed state
+accepted, and maintain it with the satisfaction of each, is necessitated to
+retain at least the shadow of the ancient ways. Its reason is the pair `pare`
+/ `è`, `pajono` / `sono`, which lands in the same English verbs both times,
+and is not to float free as a maxim. The Roman proof keeps two things: the
+number (two consuls held to the one king's twelve lictors) and the name (the
+`Re sacrificolo`, set under the supreme priest); .03 names number, authority
+and time as what may change, and the name as what must stay. `ritenere` and
+`desiderare` are one word each throughout: the reformer who desires, and the
+people who must not come to desire the kings. The last period fixes the
+precept's scope, republic or kingdom against tyranny (I.26); the object-first
+`E questo ... debbe osservare colui` is kept for that contrast, and `ordinare`
+/ `fare` carry it in English where `potenza` / `potestà` cannot (O28). The
+unit ends with a stop.
+
+## Guicciardini, FG-CONS.1.25
+
+**He grants the conclusion and ranks the cases it fits.** `è più necessaria a
+chi ... che a chi`: a comparative, not a denial. The hinge is `riformare`
+against `mutare`, reform within a form against a change of species, and
+`mutare` stays "change" through `mutando la potestà regia`. The Roman
+founding, Machiavelli's own example and his own case at .03, is moved into
+the class where the rule matters less, for a reason in men's `opinione`, and
+the claim is of degree (`sì esattamente`). The examples are `non ... di molto
+momento`, not false: he substitutes reasons, superstition for the king of
+sacrifices, and for the lictors that insignia of greater power would not have
+been borne. `l'uno ... l'altro` cross the order of naming; the singular
+`esemplo` takes `sono`. No standfirst or note may make him say the ancient
+orders may be discarded, or that appearances do not matter. The unit ends
+with a faint stop.
+
 ## The pair
 
 Machiavelli argues towards a demonstration. Guicciardini declines to be

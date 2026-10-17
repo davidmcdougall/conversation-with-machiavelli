@@ -436,3 +436,17 @@ last sentence answers Machiavelli's first move.
 | `indistintamente` | indiscriminately | D255. `sanza distinzione` stays "without distinction" (FG I.16). |
 | `molto tempo` / `lungo tempo` | much time / a long time | D262, replacing D250's recorded collapse. `lungamente` stays "long" (D140). |
 | `poi` | later | D250, D265. `dipoi` stays "afterwards" (D187). |
+
+
+## Added from the I.25 pair (2026-10-17)
+
+| Italian | English | Note |
+|---|---|---|
+| `riformare` / `mutare` | reform / change | D272. NM I.25 rubric, .01; FG I.25 `riforma`, `muta` ×2, `mutando`. Guicciardini's reply turns on the pair. |
+| `ritenere` | retain | D272. NM I.25 rubric, .01, .03 ×2. |
+| `Re sacrificolo` / `re Sacrificulo` | king *sacrificulus* | D271. NM I.25, FG I.25. |
+| `Littori` / `littori` | lictors | NM I.25, FG I.25. |
+| `almeno` / `almanco` | at least / at least | NM I.25 rubric / body. Recorded collapse: one word in two forms. |
+| `superstizione` | superstition | FG I.25. Kept apart from `credulità`, credulity. |
+| `potestà` / `potenza` | power / power | D78 held in NM I.25 .03 and FG I.25, where the two stand in one period; O28 open. |
+
