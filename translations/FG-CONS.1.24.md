@@ -76,6 +76,6 @@ One can say perhaps of Horatius that he was absolved not so much for the conside
 
 **`sia molto conveniente partirsi dalla regola`.** "It is very fitting to depart from the rule": `conveniente`, fitting, as `convenire` (D85). The subjunctive `sia` answers `Non perché sia bene`: the correlation, not a mark of commitment; English "is" in both.
 
-**`fare esemplo non a chi vuole indistintamente compensare e' meriti co' peccati, ma a chi ha a giudicare, di poterlo compensare`.** "To make an example not for whoever wishes indiscriminately to compensate the merits with the sins, but for whoever is to judge, of being able to compensate it": the example is of a power to judge, not of a rule to compensate. `indistintamente`, "without distinction", as FG I.16; `avere a`, be to (D61); `peccati`, sins, as FG I.16.
+**`fare esemplo non a chi vuole indistintamente compensare e' meriti co' peccati, ma a chi ha a giudicare, di poterlo compensare`.** "To make an example not for whoever wishes indiscriminately to compensate the merits with the sins, but for whoever is to judge, of being able to compensate it": the example is of a power to judge, not of a rule to compensate. `indistintamente`, "indiscriminately" (D255), kept apart from FG I.16 `sanza distinzione`, "without distinction"; `avere a`, be to (D61); `peccati`, sins, as FG I.16.
 
 **`concorrendo tante cagioni quante concorsono`.** "There concurring so many causes as concurred": `cagione`, cause (glossary). The reply ends on the case, not the rule, with a stop.

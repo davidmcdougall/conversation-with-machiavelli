@@ -10,7 +10,7 @@ cold_review: 2026-10-17, subagent with no access to the drafting work
 paragraph_divisions: editorial  # inherited from the source unit; see SCOPE §3
 rubric_en: "Whoever wishes to reform an ancient state in a free city, let him retain at least the shadow of the ancient ways."
 translated: 2026-10-17
-open_for_david: O28
+open_for_david: none — O28 ruled 2026-10-17 as D278
 ---
 
 # Discourses I.25
@@ -99,7 +99,7 @@ And this must be observed by all those who wish to cancel an ancient living in a
 
 **`che almeno ritengano il nome`.** "That at least they retain the name": the `che` resumes the precept after the condition. The Romans kept the name of king in the *rex sacrificulus*.
 
-**`colui che vuole ordinare una potenza assoluta, o per via di Repubblica, o di Regno; ma quello che vuol fare una potestà assoluta`.** "He who wishes to order an absolute power, either by the path of a republic or of a kingdom; but he who wishes to make an absolute power": the Italian sets `ordinare` against `fare` and `potenza` against `potestà`. The edition renders both nouns "power" (D78, a recorded collapse), so in English the contrast is carried by order against make, and by republic or kingdom against tyranny; the facing Italian shows the second noun change. Whether to split the two here is an open question (O28). The 1554 edition omits the words from the first `assoluta` to the second, by an eye-skip, so that renewal of every thing is prescribed to whoever orders any absolute power (NM-DISC-I25-D001).
+**`colui che vuole ordinare una potenza assoluta, o per via di Repubblica, o di Regno; ma quello che vuol fare una potestà assoluta`.** "He who wishes to order an absolute power, either by the path of a republic or of a kingdom; but he who wishes to make an absolute power": the Italian sets `ordinare` against `fare` and `potenza` against `potestà`. The edition renders both nouns "power" (D78, a recorded collapse), so in English the contrast is carried by order against make, and by republic or kingdom against tyranny; the facing Italian shows the second noun change. The collapse is kept here by ruling (D278). The 1554 edition omits the words from the first `assoluta` to the second, by an eye-skip, so that renewal of every thing is prescribed to whoever orders any absolute power (NM-DISC-I25-D001).
 
 **`la quale dagli autori è chiamata Tirannide`.** "Which is called tyranny by the authors": `autori`, the writers, probably the ancient writers on forms of government; `tirannide`, tyranny (glossary). The Italian puts the agent first; the order does no work here, so English order (D263).
 

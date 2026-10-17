@@ -448,5 +448,5 @@ last sentence answers Machiavelli's first move.
 | `Littori` / `littori` | lictors | NM I.25, FG I.25. |
 | `almeno` / `almanco` | at least / at least | NM I.25 rubric / body. Recorded collapse: one word in two forms. |
 | `superstizione` | superstition | FG I.25. Kept apart from `credulità`, credulity. |
-| `potestà` / `potenza` | power / power | D78 held in NM I.25 .03 and FG I.25, where the two stand in one period; O28 open. |
+| `potestà` / `potenza` | power / power | D78 held in NM I.25 .03 and FG I.25, where the two stand in one period (D278). |
 

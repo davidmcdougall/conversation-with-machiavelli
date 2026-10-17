@@ -594,7 +594,7 @@ and time as what may change, and the name as what must stay. `ritenere` and
 people who must not come to desire the kings. The last period fixes the
 precept's scope, republic or kingdom against tyranny (I.26); the object-first
 `E questo ... debbe osservare colui` is kept for that contrast, and `ordinare`
-/ `fare` carry it in English where `potenza` / `potestà` cannot (O28). The
+/ `fare` carry it in English where `potenza` / `potestà` cannot (D278). The
 unit ends with a stop.
 
 ## Guicciardini, FG-CONS.1.25
