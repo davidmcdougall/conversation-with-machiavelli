@@ -613,6 +613,58 @@ been borne. `l'uno ... l'altro` cross the order of naming; the singular
 orders may be discarded, or that appearances do not matter. The unit ends
 with a faint stop.
 
+## Machiavelli, NM-DISC.1.26
+
+**A precept for one case, its verdict, and a necessity against the
+verdict, each turning on what the prince wills.** The case is fixed in a
+first period whose subject `Qualunque` is left hanging and resumed by
+`egli`: a new prince who does not turn, `per via di Regno o di Repubblica`,
+to civil life (`tanto più` if his foundations are weak raises the degree and
+does not narrow the case); I.25's reformer is the other case. For him the
+best remedy is to make every thing anew: `fare` and `nuovo` carry the list,
+from new governments to the unmaking of cities (`disfare`) and the transfer
+of peoples. The list runs in asyndeton through .01 and is joined by `e` in
+.02; it turns to the second person at `da te` and ends on Philip as the
+mark. Then the verdict, on the same `modi`: most cruel, enemies of every
+living, Christian and human; `qualunque uomo` (the chapter's first word
+again) must flee them and *wish* rather to live private than be king. Then
+`Nondimeno`, in a second period whose subject `colui` is left hanging:
+whoever does not wish to take `quella prima via del bene`, `quando si voglia
+mantenere`, it is fitting (`conviene`, not "must") that he enter this ill.
+`volere` comes three times and is one English verb; `via` comes three times
+(.01, the first path, the middle paths) and is one English word, and no note
+closes what the "first path" refers to. The precept is conditional on
+wishing to maintain oneself and is not to float free as a maxim; neither
+the verdict nor the necessity cancels the other. The middle paths close the
+chapter: men cannot be wholly good or wholly bad (`tutti` predicative).
+`presente capitolo` is kept (D282). The unit ends with a stop.
+
+## Guicciardini, FG-CONS.1.26
+
+**He sorts the case by the people, not the prince, and limits the rule.**
+Machiavelli's case is a prince who does not turn to civil life;
+Guicciardini's `Sono alcune città o regni` asks what the governed are used
+to. Where a change of prince counts for little and the people are not used
+to being governed legitimately, a prince who rules `poco politicamente`
+(Machiavelli's prince, seen from below) needs no remedies `sì forti`, and
+the discontented private man is gained, `pure che` his discontent rests on
+his own interest. The difficulty is where the inclination is contrary; there
+he divides again. Kingdoms long under one line `si potria sperare di
+guadagnare` with good treatment; those whose inclination is liberty require
+strong remedies (`bisogna`): the one real concession. `Però` the part that
+can be gained with benefits is to be gained, because violent remedies, `se
+da uno canto ti assicurano`, make weakness, `massime` for a prince without
+his own arms; and `però` the prince must have the spirit for extraordinary
+remedies `quando sia necessario` (against Machiavelli's `quando si voglia
+mantenere`) and the prudence to lose no occasion of humanity. The close
+denies that the rule is `regola assoluta`, not that it is a rule, and turns
+on the man (`al quale sempre piacquono sopra modo`), against Machiavelli's
+own verdict that these ways are `crudelissimi`; the remedies land last.
+`guadagnare` comes four times, against Machiavelli's `fare`; `ricognoscere`
+answers his `riconosca da te`. The three `però` are consecutive (D22) and
+draw three separate conclusions; they must not be merged or made
+adversative. The unit ends with a doubtful stop.
+
 ## The pair
 
 Machiavelli argues towards a demonstration. Guicciardini declines to be

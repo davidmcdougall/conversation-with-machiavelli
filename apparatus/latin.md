@@ -40,4 +40,4 @@ first time it is italicised.
 | `rex sacrorum` | NM I.25 note |
 | `pontifex maximus` | NM I.25 note |
 | `pontifex` | I.25 commentary |
-
+| `qui esurientes implevit bonis, et divites dimisit inanes` | NM I.26 (Luke 1.53, with Machiavelli's `qui`) |

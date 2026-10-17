@@ -149,4 +149,7 @@ the original.
 | `Re sacrificolo` / `re Sacrificulo` | king *sacrificulus* | NM I.25, FG I.25; the *rex sacrificulus* or *rex sacrorum* (Livy 2.2). An office, not a name (D271) |
 | `sommo Sacerdote` | the supreme priest | NM I.25; the *pontifex maximus*, noted |
 | `Romani` | Romans | FG I.25 `e' Romani` |
-
+| `David` | David | NM I.26; the king of Israel, to whom Machiavelli applies Luke 1.53 |
+| `Filippo di Macedonia` | Philip of Macedon | NM I.26; Philip II (r. 359-336 BC). The established English form for the man; the place stays `Macedonia`, Macedonia (FG I.23) |
+| `Alessandro` | Alexander | NM I.26; Alexander the Great |
+| `Grecia` | Greece | NM I.26, as NM I.6 |

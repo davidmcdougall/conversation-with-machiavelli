@@ -450,3 +450,24 @@ last sentence answers Machiavelli's first move.
 | `superstizione` | superstition | FG I.25. Kept apart from `credulità`, credulity. |
 | `potestà` / `potenza` | power / power | D78 held in NM I.25 .03 and FG I.25, where the two stand in one period (D278). |
 
+
+
+## Added from the I.26 pair (2026-10-17)
+
+| Italian | English | Note |
+|---|---|---|
+| `autorità` | authority | NM I.25 .03, I.26 .01; FG I.9 `deporre la autorità`. Kept apart from `potestà`, `potenza`, power (D78). |
+| `dovere` (`debbe`, `si debbe`) | must | D274. NM I.25 ×4, I.26 rubric and .03. "Is to be" is `avere a`'s (D61). |
+| `pigliare` | take | NM I.26 ×3 (`per sua mira`, `quella prima via`, `certe vie`); FG I.26 `non pigliando ... per regola assoluta`, answering him. |
+| `tramutare` | transfer | NM I.26 ×2: Philip and the herdsmen, one verb. |
+| `riconoscere da`; `ricognoscere` | acknowledge [as] from; acknowledge | D283. NM I.11, I.26 `non la riconosca da te`; FG I.26 `non ricognoscere superiore`, the refusal of the same acknowledgement. |
+| `privato` (of a man) | private | NM I.10 `in istato privato`, I.26 `vivere privato`; FG I.10 `ridursi privato`. |
+| `vivere` (noun, bare) | living | NM I.26 `ogni vivere`, with `vivere civile`, `vivere libero`, `vivere politico`. `vita civile` (NM I.26) stays "civil life". |
+| `fare` / `disfare`; `di nuovo` | make / unmake; anew | NM I.26: the rubric's `fare ogni cosa nuova`, `fare ogni cosa di nuovo`, `disfare delle vecchie`. FG I.26 `fanno ... debolezza`, "make weakness". |
+| `per esempio` (the means) | by example | D283. NM I.26 `per esempio si mostrerà`; `per esemplo` introducing an instance stays "for an example" (FG I.4). |
+| `utile` (noun) | advantage | D283. FG I.26 `collo utile e con l'onore`. The adjective stays "useful" (D135). |
+| `progenie` | lineage | D283. FG I.26. English "progeny" now means offspring. |
+| `dominare` | dominate | FG I.26 `domini poco politicamente`; the verb of `dominio`, dominion. |
+| `guadagnare` | gain | FG I.26 ×4: the reply's verb against Machiavelli's `fare`. |
+| `particulare` (noun) | particular [man] | D93. FG I.26 `alcuno particulare`; the adjective "particular" as before. |
+| `beneficii` | benefits | FG I.26 ×2. |

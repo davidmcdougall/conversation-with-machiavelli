@@ -89,7 +89,7 @@ exist. See §7.
 | 15 | NM-DISC.1.23 | FG-CONS.1.23 | FG-CONS-DR-015 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 16 | NM-DISC.1.24 | FG-CONS.1.24 | FG-CONS-DR-016 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 17 | NM-DISC.1.25 | FG-CONS.1.25 | FG-CONS-DR-017 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
-| 18 | NM-DISC.1.26 | FG-CONS.1.26 | FG-CONS-DR-018 | — | — | — | — | — |
+| 18 | NM-DISC.1.26 | FG-CONS.1.26 | FG-CONS-DR-018 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 19 | NM-DISC.1.28 | FG-CONS.1.28 | FG-CONS-DR-019 | — | — | — | — | — |
 | 20 | NM-DISC.1.29 | FG-CONS.1.29 | FG-CONS-DR-020 | — | — | — | — | — |
 | 21 | NM-DISC.1.30 | FG-CONS.1.30 | FG-CONS-DR-021 | — | — | — | — | — |
@@ -194,12 +194,12 @@ than inside the first paragraph.
 | Stage | Done | Remaining | Of |
 |---|---|---|---|
 | Link records | 39 | 0 | 39 |
-| NM source established | 17 | 22 | 39 |
-| FG source established | 17 | 22 | 39 |
-| Collated against the comparison witness | 34 units | 44 | 78 |
-| Translated (draft, cold-reviewed) | 34 | 44 | 78 |
-| Annotated | 34 | 44 | 78 |
-| Published | 34 | 44 | 78 |
+| NM source established | 18 | 21 | 39 |
+| FG source established | 18 | 21 | 39 |
+| Collated against the comparison witness | 36 units | 42 | 78 |
+| Translated (draft, cold-reviewed) | 36 | 42 | 78 |
+| Annotated | 36 | 42 | 78 |
+| Published | 36 | 42 | 78 |
 <!-- /state:stages -->
 
 The table is written by `scripts/state` from the files. The paragraphs below
@@ -325,6 +325,7 @@ clock; David's own time is the rulings, counted separately.
 | I.23 (720 + 948 words) | 40 | 5 | 20 | 12 | 12 | 5 | ~95 (stages approximate) | 1 batch at establishment (D231–D235): NM sample of p. 96 clean, one D203(b) escalation against the 1554 (`campagna`); FG two emendations (`ripres[e]`, `[partito]`), one kept reading (`o il guadagno`), a split and four common doubts; standing footnote rule D230, with a backfill of reader-facing notes for earlier rulings, a `build.py` fix for emendation lemmas, and `validate` check 5; NM collated against 1554; commentary cold-reviewed; the computer link dropped once mid-pair |
 | I.24 (434 + 263 words) | 25 | 5 | 15 | 10 | 10 | 5 | ~70 (stages approximate) | 1 batch at establishment (D245–D248): NM sample of p. 99 clean, one D203(b) escalation against the 1554 (`ricompensa`); FG one emendation (`[ir]a`), two splits of preferred reading (`populo`, `potere`), one kept reading (`andata`); NM collated against 1554; commentary cold-reviewed |
 | I.25 (333 + 120 words) | 35 | 5 | 15 | 12 | 10 | 5 | ~85 (stages approximate) | 1 batch at establishment (D267–D270): NM sample of p. 100 clean; nothing under D203(a) or (b); one single-reader reading against the 1554 raised by the collator and kept (`sia possibile`, D270); FG one emendation (`c[o]nclusione`), two splits of preferred reading (`a`, `uno`), one common doubt (`e'`); 1 open item at translation (O28, `potenza`/`potestà`); NM collated against 1554; commentary cold-reviewed; the computer link dropped once mid-pair |
+| I.26 (268 + 313 words) | 30 | 5 | 15 | 15 | 10 | 5 | ~80 (stages approximate) | 1 batch at establishment (D279-D282): NM sample of p. 103 clean; two D203(b) escalations against the 1554 (`nuova`, `questo`) kept; one sense-bearing word raised by the collator and kept (`presente`, against the 1554 `seguente`); FG one split (`dello`) and three common doubts with word alternatives; 1 open item at translation (O29, `superiore di governare`); NM collated against 1554; commentary cold-reviewed; the computer link dropped once mid-pair |
 
 ---
 
