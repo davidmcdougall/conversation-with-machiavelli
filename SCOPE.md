@@ -94,7 +94,7 @@ exist. See §7.
 | 17 | NM-DISC.1.25 | FG-CONS.1.25 | FG-CONS-DR-017 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 18 | NM-DISC.1.26 | FG-CONS.1.26 | FG-CONS-DR-018 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 19 | NM-DISC.1.28 | FG-CONS.1.28 | FG-CONS-DR-019 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
-| 20 | NM-DISC.1.29 | FG-CONS.1.29 | FG-CONS-DR-020 | — | — | — | — | — |
+| 20 | NM-DISC.1.29 | FG-CONS.1.29 | FG-CONS-DR-020 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 21 | NM-DISC.1.30 | FG-CONS.1.30 | FG-CONS-DR-021 | — | — | — | — | — |
 | 22 | NM-DISC.1.32 | FG-CONS.1.32 | FG-CONS-DR-022 | — | — | — | — | — |
 | 23 | NM-DISC.1.39 | FG-CONS.1.39 | FG-CONS-DR-023 | — | — | — | — | — |
@@ -217,12 +217,12 @@ than inside the first paragraph.
 | Stage | Done | Remaining | Of |
 |---|---|---|---|
 | Link records | 39 | 0 | 39 |
-| NM source established | 19 | 20 | 39 |
-| FG source established | 19 | 20 | 39 |
-| Collated against the comparison witness | 38 units | 40 | 78 |
-| Translated (draft, cold-reviewed) | 38 | 40 | 78 |
-| Annotated | 38 | 40 | 78 |
-| Published | 38 | 40 | 78 |
+| NM source established | 20 | 19 | 39 |
+| FG source established | 20 | 19 | 39 |
+| Collated against the comparison witness | 40 units | 38 | 78 |
+| Translated (draft, cold-reviewed) | 40 | 38 | 78 |
+| Annotated | 40 | 38 | 78 |
+| Published | 40 | 38 | 78 |
 <!-- /state:stages -->
 
 The table is written by `scripts/state` from the files. The paragraphs below
@@ -350,6 +350,7 @@ clock; David's own time is the rulings, counted separately.
 | I.25 (333 + 120 words) | 35 | 5 | 15 | 12 | 10 | 5 | ~85 (stages approximate) | 1 batch at establishment (D267–D270): NM sample of p. 100 clean; nothing under D203(a) or (b); one single-reader reading against the 1554 raised by the collator and kept (`sia possibile`, D270); FG one emendation (`c[o]nclusione`), two splits of preferred reading (`a`, `uno`), one common doubt (`e'`); 1 open item at translation (O28, `potenza`/`potestà`); NM collated against 1554; commentary cold-reviewed; the computer link dropped once mid-pair |
 | I.26 (268 + 313 words) | 30 | 5 | 15 | 15 | 10 | 5 | ~80 (stages approximate) | 1 batch at establishment (D279-D282): NM sample of p. 103 clean; two D203(b) escalations against the 1554 (`nuova`, `questo`) kept; one sense-bearing word raised by the collator and kept (`presente`, against the 1554 `seguente`); FG one split (`dello`) and three common doubts with word alternatives; 1 open item at translation (O29, `superiore di governare`, ruled as D287); NM collated against 1554; commentary cold-reviewed; the computer link dropped once mid-pair |
 | I.28 (417 + 426 words) | 30 | 5 | 20 | 15 | 12 | 5 | ~90 (stages approximate) | 1 batch at establishment (D290-D297): NM sample of p. 105 clean; two D203(b) escalations against the 1554, one the first *Discorsi* emendation (`fatt[a]`, a broken agreement) and one kept (`questa Città`); one single-reader word raised by the collator and kept (`ne occorrerà`); FG two splits (`dentro`, `nobilità`), one common doubt (`tennono`), one D203(b) escalation kept (`delle nuove leggi`) and one sense-bearing word kept against the 1933 (`discordia`); no open item at translation; NM collated against 1554; commentary cold-reviewed; the decision numbers shifted by two mid-pair when D288-D289 landed from another session; the computer link dropped once mid-pair |
+| I.29 (1,098 + 1,264 words) | 45 | 10 | 25 | 15 | 15 | 5 | ~115 (stages approximate) | the unit-twenty review of the sampling rule first (D302, the sample page by 1554 differences, with line crops); 1 batch at establishment (D303-D310): NM a miscount first sent p. 110 and the rule's page, p. 108, then went to a further reader, both clean, crops clean; two common doubts read as the conjunction with the 1554, three D203(b) differences and one sense-bearing word kept; FG two splits of form, nine common doubts, two D203(b) readings kept, one emendation (`ség[u]ito`), one sense-bearing reading kept; 1 open item at translation (O30, `fazione`); NM collated against 1554; commentary cold-reviewed |
 
 ---
 
@@ -564,6 +565,25 @@ written.
   confidence (D200).
 - **The sample page** is the page with the most pass-A uncertain loci, at
   least a fifth of the chapter, chosen and recorded before it is given out.
+
+**Revisited at unit twenty (2026-10-18, D302).** Nineteen 1824 chapters
+(I.1–I.12, I.14, I.16, I.23–I.26, I.28), twelve read twice in full and seven
+sampled: pass B never disagreed with pass A on a word, clause or sense. Every
+locus that came to David from the sampled chapters was surfaced by pass A's
+own doubt or by the 1554 comparison, and two sense-bearing whole words had
+rested on pass A alone. So the sample now follows the 1554:
+
+- **The sample page** is the eligible page (at least a fifth of the chapter)
+  with the most word-level differences from the 1554 edition per word, after
+  spelling normalisation; ties go to the larger total of normalised
+  differences. It is chosen after pass A and the Giglio read are in, and
+  recorded before it is given out. This replaces D203(c).
+- **With the page**, the pass-B reader gets line crops of every word-level
+  1554 difference outside it, without being told which word, so that no
+  reading the comparison witness questions rests on one reader.
+
+D203(a) and (b) stand. Revisit at unit thirty, or at the first sample or crop
+that disagrees.
 
 **Footnotes on textual rulings (2026-10-16, D230).** Every ruling David makes
 on the text, whether a reading at a doubtful letter, an emendation, or a

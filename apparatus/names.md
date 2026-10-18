@@ -80,7 +80,7 @@ the original.
 | `Campidoglio` | the Capitol | NM I.8 |
 | `Lucca`, `Lucchesi` | Lucca, the Lucchese | NM I.8 |
 | `messer Giovanni Guicciardini` | messer Giovanni Guicciardini | NM I.8, FG I.8; commissary at Lucca, 1430. `messer` kept |
-| `Capitano` | the Captain | NM I.8; a Florentine magistrate with criminal jurisdiction, noted |
+| `Capitano` | the Captain | NM I.8; a Florentine magistrate with criminal jurisdiction, noted. Of an army commander (NM I.29) it is "captain", lower case (glossary) |
 | `Fabio Massimo` | Fabius Maximus | FG I.8; Quintus Fabius Maximus Cunctator |
 | `Cosimo` | Cosimo | FG I.8; Cosimo de' Medici, noted |
 | `Romolo` / `Romulo` | Romulus | NM I.9 (as NM I.2); FG I.9 prints `Romulo`, Guicciardini's Latin form, which the 1933 edition gives as `Romolo` |
@@ -164,3 +164,21 @@ the original.
 | `Tarquinj` | Tarquins | NM I.28, as NM I.3 |
 | `Dieci` | the Ten | FG I.28; the decemvirs of 451-449 BC, noted |
 | `Greci` | Greeks | FG I.28 |
+| `Cornelio Tacito` | Cornelius Tacitus | NM I.29; *Histories* 4.3 quoted |
+| `Vespasiano` | Vespasian | NM I.29, FG I.29 |
+| `Antonio Primo` | Antonius Primus | NM I.29, FG I.29; Marcus Antonius Primus |
+| `Muziano` | Mucianus | NM I.29, FG I.29; Gaius Licinius Mucianus |
+| `Vitellio`, `Vitelliani` | Vitellius, Vitellian | NM I.29, as NM I.10 |
+| `Giudea`, `Illiria`, `Asia` | Judaea, Illyria, Asia | NM I.29. Machiavelli's Asia, where Vespasian was in Egypt, kept and noted |
+| `Consalvo Ferrante` | Consalvo Ferrante | NM I.29, FG I.29; Gonzalo Fernández de Córdoba. Both authors' form here; FG I.23 has `Consalvo Fernando` |
+| `Ferrando`, `re Don Ferrando` | Ferdinand, King Don Ferdinand | NM I.29, FG I.29; Ferdinand II of Aragon. `Don` kept |
+| `Ragona` | Aragon | NM I.29 |
+| `Regno di Napoli`, `Napoli` | Kingdom of Naples, Naples | NM I.29 |
+| `re Filippo` | King Philip | FG I.29; Philip I of Castile |
+| `Catone Prisco`, `Catone` | Cato Priscus, Cato | NM I.29, FG I.29; Marcus Porcius Cato the Censor |
+| `Cesare` | Caesar | NM I.29, as NM I.10 |
+| `Cammillo` | Camillus | FG I.29; Canestrini's spelling of `Camillo` |
+| `Fabio Massimo` | Fabius Maximus | FG I.29, as FG I.8 |
+| `Cicerone`, `Catilina` | Cicero, Catiline | FG I.29. Machiavelli's `Tullio` stays Tully (D103) |
+| `Metello`, `Publio Rutilio` | Metellus, Publius Rutilius | FG I.29; Q. Caecilius Metellus Numidicus, P. Rutilius Rufus |
+| `Asiatico` | Asiaticus | FG I.29; Lucius Cornelius Scipio Asiaticus |

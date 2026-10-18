@@ -490,3 +490,33 @@ last sentence answers Machiavelli's first move.
 | `procedere` | proceed | FG I.28 ×2. |
 | `recuperazione` / `ricuperare` | recovery / recover | FG I.28; NM I.28 `ricuperata la libertà`. |
 | `tolta la libertà` | liberty taken away | D298, D131. NM I.28 ×3 (.02, .03, .04). |
+
+
+## Added from the I.29 pair (2026-10-18)
+
+| Italian | English | Note |
+|---|---|---|
+| `usare` (ingratitude, gratitude) | use | D313. NM I.29 throughout (`usi ... questa ingratitudine`, `usino gratitudine`, `l'usarono`); FG I.29 `si usa`, `hanno usato ingratitudine`. |
+| `avarizia`; `cupidità` | avarice; cupidity | NM I.29, FG I.29: the first of the causes. |
+| `invidia`; `ignoranza` | envy; ignorance | FG I.29, the two causes Guicciardini adds. |
+| `Capitano` | captain | NM I.29, the commander of an army; kept apart from the Florentine magistracy of NM I.8 in names.md. |
+| `remunerare`, `remunerazione`, `remuneratore` | remunerate, remuneration, remunerator | FG I.29 ×6, beside `premiare`, reward. |
+| `vincere` / `superare` | vanquish (an enemy, a difficulty), win (a thing won) / overcome | D313. NM I.29. |
+| `levare` / `togliere`, `torre` / `menare` | remove / take away / lead | D313, with D131. NM I.29 .04-.05. |
+| `allo incontro` | in return | D313. NM I.29 .02, of requital. Kept apart from `al rincontro`, "on the other side" (D24). |
+| `genti d'arme` | men-at-arms | D313. NM I.29. `genti` alone stays "troops" (I.23). |
+| `fazione` (military) | action | NM I.29 `in tale fazione`. **[open]** O30: a sense split from `fazione`, "faction" (FG I.10). |
+| `porre modo` | set a measure | D311. NM I.29. `modo` stays "way". |
+| `assai` + noun or comparative | much | D312. NM I.29 `assai gloria`, `assai manco`. `assai` of degree before an adjective stays "very" (D254). |
+| `ritenuto` (restrained) | held back | D312. NM I.29 .02. `ritenere` stays "retain" (D272). |
+| `fortezza`, `Fortezze` (strongholds) | fortress, fortresses | D312. NM I.29 .05. `fortezza` the virtue stays "fortitude" (FG I.10). |
+| `mancare di` + noun | lack | D312. FG I.29 ×2. The bare verb stays "fail" (D206). |
+| `riscontrare` | check | D312. FG I.29 `riscontrare una calunnia falsa`. `riscontro` stays "corroboration" (D160). |
+| `santo`, `santità` | holy, holiness | D313. NM I.29 `riputato santo`; FG I.29 `la santità di chi`, `furono santi`. |
+| `spaventoso`, `spaventare` | frightening, frighten | D313. FG I.29. |
+| `gagliardo` / `forte` | hard / strong | D313. FG I.29 .02. |
+| `disonorare` | dishonour | NM I.29 .02; FG I.29 .02, Guicciardini's echo. |
+| `confidare`, `confidarsi di` | confide, confide in | NM I.29 .06; FG I.29 .02, .06. |
+| `molesto` | irksome | FG I.29 ×2. |
+| `paura` | fear | D313. NM I.29. A recorded collapse with `temere`, `timore` (I.11). |
+| `ciascuno` | each one | D161, D313. NM I.29 `ciascuno che al presente vive`. |

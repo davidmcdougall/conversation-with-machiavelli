@@ -41,3 +41,8 @@ first time it is italicised.
 | `pontifex maximus` | NM I.25 note |
 | `pontifex` | I.25 commentary |
 | `qui esurientes implevit bonis, et divites dimisit inanes` | NM I.26 (Luke 1.53, with Machiavelli's `qui`) |
+| `Proclivius est injuriae, quam beneficio vicem exsolvere, quia gratia oneri, ultio in quaestu habetur.` | NM I.29 (Tacitus, *Histories* 4.3) |
+| `Tanto proclivius` | NM I.29 note |
+| `tanto` | NM I.29 note |
+| `magister equitum` | FG I.29 note |
+| `Cato Maior` | NM I.29 note (Plutarch) |
