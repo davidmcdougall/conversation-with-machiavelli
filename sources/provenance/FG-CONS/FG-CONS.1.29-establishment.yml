@@ -1,0 +1,50 @@
+source_unit_id: FG-CONS.1.29
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-020
+responds_to: NM-DISC.1.29
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. Canestrini's two notes in this unit (p. 46, on Consalvo and the kingdom of Naples; p. 47, glossing `chi` as `Del quale`) are his and are not carried."
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38); errors are emended from Palmarocchi and bracketed (D68)."
+passes:
+  - {id: A, performed: 2026-10-18, file: sources/coldpass/FG-CONS.1.29-passA.md, note: "subagent; page images only (native 600 ppi rendered at 1200, full pages and halves), separate directory"}
+  - {id: B, performed: 2026-10-18, file: sources/coldpass/FG-CONS.1.29-passB.md, note: "subagent; same images, separate directory"}
+collation: sources/coldpass/COLLATION-2026-10-18-I29.md
+collation_result: >
+  1,264 words (A and B). Two word-level splits, each between forms of one
+  word: `periculo`/`pericolo`, read `periculo`, and `abbino`/`abbine`, read
+  `abbino` (D306). Nine doubts common to both readers whose alternatives are
+  words, read with the 1933 edition (D307). Two confident shared readings
+  against the 1933 edition at letters the scan breaks, kept (D308); one, a
+  non-word, emended `ség[u]ito` (D309). One sense-bearing difference kept
+  (D310). Seven marks settled by D110 and D67. No clause or sense
+  disagreement.
+witness_independence_check: "SCOPE §7. At `pericolo` pass B agrees with the 1933 edition against the shape both readers report; at `abbino` pass A does. Neither pass carries a Palmarocchi word-reading where Canestrini differs: both have `origini sue`, `il populo`, `ignoranza`, `occasioni`, `remunerazioni`, `de' populi`, `dentro`, `esecuzioni forti`, `duo capi`, `cagioni`, `reputazione`, `discordie`, `da lui`, `errò in questo Roma`, `dice`, `contro Asiatico`, against the 1933 `origine sua`, `el popolo`, `ignoranzia`, `occasione`, `remunerazione`, `de' popoli`, `drento`, `esecuzione forte`, `duoi capi`, `cagione`, `riputazione`, `differenzie`, `tra lui`, `[Roma] errò in questo`, `dica`, `contro a Asiatico`. The passes read Canestrini."
+boundaries: "printed pp. 43-47; heading CONSIDERAZIONE SUL CAPITOLO XXIX on p. 43 after line 22, the last line of the reply on XXVIII (`lità di battere e potenti.`); Canestrini's one-line rubric `Quale sia più ingrato, o un popolo, o un principe`; six indented paragraphs (`Se bene`, `Quanto al sospetto`, `Quanto agli altri duo capi`, `Restano`, `Quanto agli esempli`, `Nè voglio`); two notes of Canestrini's (p. 46, p. 47); ends p. 47 line 30 `o l' altro.`; CONSIDERAZIONE SUL CAPITOLO XXX opens p. 48"
+corrections:
+  - {id: FG-CONS-I29-C001, locator: FG-CONS.1.29.01, was: "la invidia, e considerando", now: "la invidia; e considerando", evidence: "Pass A ⟨,|;⟩, pass B ⟨,|;⟩; the 1933 edition prints a semicolon. D110."}
+  - {id: FG-CONS-I29-C002, locator: FG-CONS.1.29.01, was: "a giudicio mio più E prima", now: "a giudicio mio più. E prima", evidence: "Pass A ⟨.|∅⟩, pass B ⟨.|∅⟩; a capital follows; the 1933 edition prints a stop. D67, D110."}
+  - {id: FG-CONS-I29-C003, locator: FG-CONS.1.29.04, was: "allegati nel Discorso, perché", now: "allegati nel Discorso; perché", evidence: "Pass A ⟨,|;⟩, pass B ⟨,|;⟩; the 1933 edition prints a semicolon. D110."}
+  - {id: FG-CONS-I29-C004, locator: FG-CONS.1.29.04, was: "del re Filippo, e inoltre", now: "del re Filippo; e inoltre", evidence: "Pass A ⟨,|;⟩, pass B ⟨,|;⟩; the 1933 edition prints a semicolon. D110."}
+  - {id: FG-CONS-I29-C005, locator: FG-CONS.1.29.05, was: "mandati in esilio E mi maraviglio", now: "mandati in esilio. E mi maraviglio", evidence: "Pass A ⟨.|∅⟩, pass B ⟨.|∅⟩; a capital follows; the 1933 edition prints a stop. D67, D110."}
+  - {id: FG-CONS-I29-C006, locator: FG-CONS.1.29.05, was: "e' meriti suoi La quale", now: "e' meriti suoi. La quale", evidence: "Pass A ⟨.|∅⟩, pass B ⟨.|∅⟩; a capital follows; the 1933 edition prints a stop. D67, D110."}
+  - {id: FG-CONS-I29-C007, locator: FG-CONS.1.29.05, was: "e' progressi suoi; e se Catone", now: "e' progressi suoi, e se Catone", evidence: "Pass A ⟨;|,⟩, pass B ⟨;|,⟩; the 1933 edition prints a comma. D110."}
+emendations:
+  - {id: FG-CONS-I29-E001, operation: emendation, rule: D68, status: ruled_D309, locator: FG-CONS.1.29.05, printed: "né ségnito di uomini", established: "né ség[u]ito di uomini", source: WIT-FG-CONS-1933-PALMAROCCHI, note: "Both readers read `ségnito` without doubt. `Ségnito` is not a word; the 1933 edition reads `séguito`. The scan breaks u into n throughout, but both readers saw an n, so as D267 the non-word is emended under D68, the emended letter bracketed (DEC-009 clause 7). Not settled on the page image."}
+readings:
+  - {locus: "gli potrebbono fare ⟨periculo|pericolo⟩", passes: "A ⟨periculo|poriculo⟩; B ⟨pericolo|poriculo⟩", witness_1933: "pericolo", disposition: "periculo, D306 (David, 2026-10-18): two forms of one word; both readers report a u in the printed shape"}
+  - {locus: "altri cittadini che ⟨abbino|abbine⟩ più qualità", passes: "A `abbino`; B `abbine`; neither doubted", witness_1933: "abbino", disposition: "abbino, D306 (David, 2026-10-18): a split at e/o; the 1933 edition reads `abbino`"}
+  - {locus: "è ⟨raro|rare⟩ ⟨e|a⟩ piccolo remuneratore", passes: "A and B ⟨raro|rare⟩ ⟨e|a⟩", witness_1933: "raro e", disposition: "raro e, D307 (David, 2026-10-18): common doubts; with the 1933 edition"}
+  - {locus: "la borsa sua, ⟨e|a⟩ di cose ancora", passes: "A and B ⟨e|a⟩", witness_1933: "e", disposition: "e, D307 (David, 2026-10-18): common doubt; with the 1933 edition"}
+  - {locus: "manco distingue, ⟨e|a⟩ manco ⟨cognosce|cognosco⟩", passes: "A and B ⟨e|a⟩ ⟨cognosce|cognosco⟩", witness_1933: "e manco cognosce", disposition: "e, cognosce, D307 (David, 2026-10-18): common doubts; with the 1933 edition"}
+  - {locus: "di loro, ⟨e|a⟩ questi sempre desiderano", passes: "A and B ⟨e|a⟩", witness_1933: "e", disposition: "e, D307 (David, 2026-10-18): common doubt; with the 1933 edition"}
+  - {locus: "manco che ⟨le|la⟩ altre republiche", passes: "A and B ⟨le|la⟩", witness_1933: "le", disposition: "le, D307 (David, 2026-10-18): common doubt; with the 1933 edition"}
+  - {locus: "Publio Rutilio, ⟨e|o⟩ in molti altri uomini clari ⟨e|a⟩ innocenti", passes: "A and B ⟨e|o⟩ and ⟨e|a⟩", witness_1933: "ed in ... ed innocenti", disposition: "e ... e, D307 (David, 2026-10-18): common doubts; with the 1933 edition"}
+  - {locus: "mandati in ⟨esilio|esiliò⟩", passes: "A ⟨esilio|esiliô⟩; B ⟨esilio|esiliò⟩", witness_1933: "esilio", disposition: "esilio, D307 (David, 2026-10-18): a blot over the o; with the 1933 edition"}
+  - {locus: "tutte queste origini sue", passes: "A and B, no doubt", witness_1933: "origine sua", disposition: "origini sue, kept as printed, D38; D308 (David, 2026-10-18), escalated under D203(b) at e/a"}
+  - {locus: "quello che dice il Discorso", passes: "A and B, no doubt", witness_1933: "dica", disposition: "dice, kept as printed, D38; D308 (David, 2026-10-18), escalated under D203(b) at e/a"}
+  - {locus: "le discordie che ... potevano nascere da lui e gli eredi del re Filippo", passes: "A and B, no doubt", witness_1933: "le differenzie ... tra lui e gli eredi", disposition: "discordie, da lui, kept as printed, D38; D310 (David, 2026-10-18), raised by the collator, no D203 trigger"}
+not_supplied: []
+normalisation_notes: "Class A: accents (`perchè` → `perché`, `benchè` → `benché`, `nè`/`Nè` → `né`/`Né`, `sè` → `sé`; `piu` → `più` where the accent was not seen); elision solid (`nell' una`, `un' altra`, `gl' innocenti`, `s' ha`, `l' altro` closed up); apocope spaced (`de' principi`, `de' populi`, `a' suoi`, `a' quali`, `de' quali`, `de' cavalieri`, `de' buoni`, `de' cattivi`); the Florentine plural article supplied as `e'` (D35: `e' principi`, `e' magistrati` ×2, `e' morsi`, `e' meriti`, `e' progressi`, `e' costumi`, `e' buoni`); Canestrini's note references removed; line-end hyphens removed; spaces before punctuation removed."

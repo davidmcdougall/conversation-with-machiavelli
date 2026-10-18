@@ -1,0 +1,75 @@
+source_unit_id: FG-CONS.1.29
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-I29-D001
+    locator: FG-CONS.1.29.02
+    class: ruled_reading
+    witness_1857: "gli potrebbono fare peric[u/o]lo (A periculo, B pericolo; both report the printed shape `poriculo`)"
+    witness_1933: "pericolo"
+    established: "periculo"
+    publish_as_variant_note: true
+    rationale: "The readers split on the form they preferred, but both saw a u printed after the c. Two forms of one word; read as printed, `periculo`, Guicciardini's Latinate spelling (D306). The English is \"danger\" either way."
+  - id: FG-CONS-I29-D002
+    locator: FG-CONS.1.29.03
+    class: ruled_reading
+    witness_1857: "altri cittadini che abbin[o/e] più qualità (A abbino, B abbine; neither doubted)"
+    witness_1933: "abbino"
+    established: "abbino"
+    publish_as_variant_note: true
+    rationale: "A split at e/o, a letter the scan breaks. `Abbino` is the Florentine subjunctive the reply uses; read with the 1933 edition (D306)."
+  - id: FG-CONS-I29-D003
+    locator: FG-CONS.1.29.01-05
+    class: ruled_reading
+    witness_1857: "letters doubtful to both readers: `raro e`, `e di cose`, `e manco cognosce`, `e questi`, `le altre`, `e in molti`, `clari e innocenti`, `esilio`"
+    witness_1933: "the same words (`ed in`, `ed innocenti`)"
+    established: witness_1933
+    publish_as_variant_note: true
+    rationale: "Each letter was doubtful to both readers, and each alternative is a word (`rare`, `a`, `cognosco`, `la`, `o`, `esiliò`), none construing in its place. Read with the 1933 edition (D307), as D201, D215, D234 and D280."
+  - id: FG-CONS-I29-D004
+    locator: FG-CONS.1.29.01
+    class: ruled_reading
+    witness_1857: "e considerando bene tutte queste origini sue"
+    witness_1933: "e considerando bene tutte queste origine sua"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "Read by both readers without doubt; a difference at e/a, escalated under D203(b). The plural agrees throughout and construes; kept (D38; D308)."
+  - id: FG-CONS-I29-D005
+    locator: FG-CONS.1.29.06
+    class: ruled_reading
+    witness_1857: "Né voglio pretermettere che quello che dice il Discorso è molto alieno dalla verità"
+    witness_1933: "che quello che dica el Discorso è molto alieno dalla verità"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "Read by both readers without doubt; a difference at e/a, escalated under D203(b). The indicative construes, \"what the Discourse says\"; kept (D38; D308)."
+  - id: FG-CONS-I29-D006
+    locator: FG-CONS.1.29.05
+    class: emendation
+    witness_1857: "né ségnito di uomini"
+    witness_1933: "né séguito di uomini"
+    established: "né ség[u]ito di uomini"
+    publish_as_variant_note: true
+    rationale: "Read by both readers without doubt. `Ségnito` is not a word; the scan breaks u into n throughout. Emended under D68 from the 1933 edition (D309). English \"following\"."
+  - id: FG-CONS-I29-D007
+    locator: FG-CONS.1.29.04
+    class: ruled_reading
+    witness_1857: "per le discordie che nella successione del regno potevano nascere da lui e gli eredi del re Filippo"
+    witness_1933: "per le differenzie che nella successione del regno potevano nascere tra lui e gli eredi del re Filippo"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "Read by both readers without doubt; whole words, not letters the scan breaks, so no D203 rule triggers; raised by the collator because they bear on sense, as D290. Canestrini's \"discords that could arise from him and the heirs\" construes; the 1933 \"differences that could arise between him and the heirs\" is smoother. Kept (D38; D310)."
+  - id: FG-CONS-I29-D008
+    locator: FG-CONS.1.29.02
+    class: reading
+    witness_1857: "e se errò in questo Roma manco che le altre republiche"
+    witness_1933: "e se [Roma] errò in questo manco che le altre republiche"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "Word order only: the 1933 edition brackets `Roma` as its own supply before the verb; Canestrini prints it after `in questo`. The same sense."
+  - id: FG-CONS-I29-D009
+    locator: FG-CONS.1.29.01-06
+    class: systematic_orthographic_profile
+    witness_1857: "Canestrini's `il`, `populo`, `ignoranza`, `occasioni`, `remunerazioni`, `dentro`, `esecuzioni forti`, `duo`, `cagioni`, `reputazione`, `Cammillo`, `conjurazione`, `contro Asiatico`, and his pointing"
+    witness_1933: "Palmarocchi's `el`, `popolo`, `ignoranzia`, `occasione`, `remunerazione`, `drento`, `esecuzione forte`, `duoi`, `cagione`, `riputazione`, `Camillo`, `coniurazione`, `contro a Asiatico`, `ed` before vowels, and his heavier pointing; his rubric `Quale sia più ingrato, o uno popolo o uno principe`, bracketed as his"
+    established: witness_1857
+    rationale: "Canestrini governs throughout. No other difference of word or sense."

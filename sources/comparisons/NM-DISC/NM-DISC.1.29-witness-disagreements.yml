@@ -1,0 +1,75 @@
+source_unit_id: NM-DISC.1.29
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-I29-D001
+    locator: NM-DISC.1.29.04
+    class: ruled_reading
+    witness_1824: "il quale regnava a Roma, e virtuosissimamente ruppe due eserciti Vitelliani"
+    witness_1554: "il quale regnaua a Roma, et uirtuosissimamente ruppe due esserciti Vitelliani"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 44r). Both 1824 readers doubted a raised mark after `e`, which as `e'` would make a pronoun, \"he\". Read as the conjunction, with the 1554 `et` (D303). The English is the same either way: Antonius is the subject of `ruppe`."
+  - id: NM-DISC-I29-D002
+    locator: NM-DISC.1.29.08
+    class: ruled_reading
+    witness_1824: "E parve tanto straordinario il vivere suo"
+    witness_1554: "Et parue tanto estraordinario il uiuer suo"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 45r). Both 1824 readers saw a raised mark by `E`, which as `E'` would make the impersonal pronoun, \"it seemed\". Read as the conjunction, \"And ... seemed\", with the 1554 `Et` (D303)."
+  - id: NM-DISC-I29-D003
+    locator: NM-DISC.1.29.02
+    class: ruled_reading
+    witness_1824: "dove quel Capitano, vincendola, ne abbia acquistata assai gloria"
+    witness_1554: "doue quel Capitano (uincendo) ne habbia acquistato assai gloria"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 43v). The 1554 participle is unagreed and its gerund has no object (`uincendo` for `vincendola`); the 1824 agrees `acquistata` with `gloria`. A difference at a/o, escalated under D203(b); both construe; the 1824 kept (D38; D304)."
+  - id: NM-DISC-I29-D004
+    locator: NM-DISC.1.29.03
+    class: ruled_reading
+    witness_1824: "che egli si ha guadagnato nel suo esercito, e nei suoi Popoli"
+    witness_1554: "ch'ei si ha guadagnato nel suo essercito, o ne suoi popoli"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 44r). The 1554 has `o`, \"or among his peoples\"; the 1824 `e`, \"and\". A difference at e/o, escalated under D203(b); the 1824, read by both readers without doubt, construes and is kept (D38; D304)."
+  - id: NM-DISC-I29-D005
+    locator: NM-DISC.1.29.07
+    class: ruled_reading
+    witness_1824: "Coriolano e Camillo furono fatti esuli per ingiuria, che l'uno e l'altro aveva fatto alla Plebe"
+    witness_1554: "Coriolano, e Camillo furono banditi per ingiuria, che l'uno et l'altro haueua fatta alla plebe"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 45r). Two differences. The 1554 `fatta` agrees with `ingiuria`; the 1824 `fatto` is the unagreed participle that `avere` allows, not a broken agreement (contrast D295, where the auxiliary was `essere`); escalated under D203(b) at o/a and kept (D38; D304). And `banditi`, \"banished\", for `fatti esuli`, \"made exiles\": the same sense."
+  - id: NM-DISC-I29-D006
+    locator: NM-DISC.1.29.09
+    class: ruled_reading
+    witness_1824: "avendo meno cagione di sospettare, come di sotto si dirà"
+    witness_1554: "hauendo meno cagione di sospettare, come tosto si dira"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 45r). The 1554 has `tosto`, \"as will soon be said\"; the 1824 `di sotto`, \"as will be said below\". Read by both readers without doubt; it construes and is kept (D38; D305). Either reading points forward; which later chapter Machiavelli means is not said."
+  - id: NM-DISC-I29-D007
+    locator: NM-DISC.1.29.02
+    class: reading
+    witness_1824: "*Proclivius est injuriae, quam beneficio vicem exsolvere, quia gratia oneri, ultio in quaestu habetur.* Ma quando"
+    witness_1554: "Proclimus est iniuria quam beneficio uicem exoluere: quia gratia oneri, ultio in quæstu habetur. Cioè. L'animo è piu chino alla ingiuria, che al benificare altrui, perche il beneficio è tenuto à grauezza, e la uendetta a guadagno. Ma quando"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 43v). The 1554 misprints the Latin (`Proclimus`, `iniuria`) and follows it with an Italian rendering, \"that is, the mind is more inclined to injury than to benefiting others, because the benefit is held a burden and revenge a gain\", which the 1824 does not print. The Latin is Tacitus, *Histories* 4.3."
+  - id: NM-DISC-I29-D008
+    locator: NM-DISC.1.29.08
+    class: reading
+    witness_1824: "come cosa inconsueta in Roma"
+    witness_1554: "come cosa non usata in Roma"
+    established: witness_1824
+    publish_as_variant_note: false
+    rationale: "Checked on the leaf (fol. 45r). The same sense, \"unaccustomed\" and \"not used\"."
+  - id: NM-DISC-I29-D009
+    locator: NM-DISC.1.29.01-09
+    class: systematic_orthographic_profile
+    witness_1824: "the 1824 spelling and pointing: `Principe`, `E`, `nimici`, `riputazione`, `sendo`, `dichiarato`, `ubbidienza`, `Talché`, `dunque`, `contro ai Francesi`, `dovrebbe`, `virtù`, `opinione`"
+    witness_1554: "Giglio's: `Prencipe`, `Et`, `nemici`, `reputatione`, `essendo`, `dechiarato`, `obbidienza`, `tal che`, `adunque`, `contra a Franciosi`, `douerebbe`, `uirtuti`, `oppenione`, u for v, ſ, `&`, `h-`, tilde abbreviations, and heavier pointing; besides these, small differences of word that do not bear on the English (`di discorrere`, `sospetta`, `per la viltà`, `brevissimo`, `poi` for `dopo`, `che essi` for `ch'egli`, `fra` for `infra`)"
+    established: witness_1824
+    rationale: "The 1824 governs throughout. No other difference that bears on the English."

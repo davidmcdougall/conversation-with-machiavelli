@@ -1,0 +1,31 @@
+source_unit_id: NM-DISC.1.29
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-020
+passes:
+  - {id: A, performed: 2026-10-18, file: sources/coldpass/NM-DISC.1.29-passA.md, note: "subagent; page images only (350 ppi, thirds), separate directory; full chapter"}
+  - {id: B, performed: 2026-10-18, file: sources/coldpass/NM-DISC.1.29-passB.md, note: "subagent; one page (p. 110, 260 words), chosen by the collator under D302 on a miscount (a 1554 catchword counted as a difference), plus thirteen line crops (pp. 107-109, 111) holding every word-level 1554 difference outside p. 110, given without saying which word; separate directory"}
+  - {id: B2, performed: 2026-10-18, file: sources/coldpass/NM-DISC.1.29-passB-p108.md, note: "subagent; one page (p. 108, 260 words, 24% of the chapter), the page D302 chooses once the miscount is corrected (tied with p. 109 at four word-level 1554 differences, broken on the total count); separate directory"}
+collation: sources/coldpass/COLLATION-2026-10-18-I29.md
+collation_result: "1,098 words (pass A). Pages 110 and 108 and the thirteen crops: the token streams are identical after Class A; no word, clause or sense disagreement, so no full pass B, and the sample rule stands for the next chapter. Two doubts common to both readers between two words, read as the conjunction with the 1554 edition (D303). Three word-level differences from the 1554 at letters the scans break, each read by both readers, kept (D304). One sense-bearing difference from the 1554, read by both readers, kept (D305)."
+boundaries: "printed pp. 107-111; CAPITOLO XXIX opens p. 107 under the running head; two-line italic rubric; large initial E; one block; the Tacitus quotation in italic; ends p. 111 line 14 `si dirà.`; CAPITOLO XXX follows on the same page"
+interventions: []
+emendations: []
+readings:
+  - {locus: "il quale regnava a Roma, ⟨e|e'⟩ virtuosissimamente ruppe", passes: "A ⟨e|e'⟩ (p. 108); B ⟨e|e'⟩ (crop)", witness_1554: "et uirtuosissimamente", disposition: "e, D303 (David, 2026-10-18): a raised mark both readers doubt; the conjunction, with the 1554 `et`"}
+  - {locus: "⟨E|E'⟩ parve tanto straordinario", passes: "A ⟨E|E'⟩ (p. 111); B the mark seen, read as a speck (crop)", witness_1554: "Et parue", disposition: "E, D303 (David, 2026-10-18): the conjunction, with the 1554 `Et`"}
+  - {locus: "ne abbia acquistata assai gloria", passes: "A and B `acquistata`, no doubt (p. 107; B in a crop)", witness_1554: "ne habbia acquistato", disposition: "acquistata, kept as printed, D38; D304 (David, 2026-10-18), escalated under D203(b) at a/o"}
+  - {locus: "nel suo esercito, e nei suoi Popoli", passes: "A and B `e`, no doubt (p. 108; B in a crop)", witness_1554: "nel suo essercito, o ne suoi popoli", disposition: "e, kept as printed, D38; D304 (David, 2026-10-18), escalated under D203(b) at e/o"}
+  - {locus: "per ingiuria, che l'uno e l'altro aveva fatto alla Plebe", passes: "A and B `fatto`, no doubt (p. 110, the sample)", witness_1554: "haueua fatta", disposition: "fatto, kept as printed, D38; D304 (David, 2026-10-18), escalated under D203(b) at o/a: with `avere` the participle may stay unagreed, so not a broken agreement (contrast D295)"}
+  - {locus: "come di sotto si dirà", passes: "A and B, no doubt (p. 111; B in a crop)", witness_1554: "come tosto si dira", disposition: "di sotto, kept as printed, D38; D305 (David, 2026-10-18), raised by the collator, no D203 trigger"}
+comparison_collation: >
+  Done 2026-10-18 against the 1554 extract (fol. 43v-45r). A cold reader
+  transcribed the Giglio leaves from the page images
+  (sources/coldpass/NM-DISC.1.29-1554.md); the transcript was collated by
+  word against pass A, and the readings published as variant notes were
+  checked on the leaf images by the collator. Sense-bearing differences are in
+  sources/comparisons/NM-DISC/NM-DISC.1.29-witness-disagreements.yml.
+normalisation_notes: "Class A only: accents (`perchè` → `perché` ×5, `benchè` → `benché`, `Talchè`/`talchè` → `Talché`/`talché` ×4, `nè` → `né`, `sè` → `sé`); elision solid (`l' offende`, `d' Antonio`, `d' arme`, `nell' una`, `nell' altra`, `l' uno`, `l' altro`, `all' uno`, `l' ingratitudine`, `l' usarono` → closed up); line-end hyphens removed. Euphonic `ed` as printed (D36)."
