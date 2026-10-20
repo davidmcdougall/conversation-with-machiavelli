@@ -5,3 +5,6 @@ _to_delete/
 
 # Palmarocchi 1933 scans: consulted locally, not republished (SCOPE §4)
 sources/witnesses/FG-CONS/WIT-FG-CONS-1933-PALMAROCCHI/*.jpg
+
+# Created by the Claude desktop app; not part of the edition
+Claude outputs/
