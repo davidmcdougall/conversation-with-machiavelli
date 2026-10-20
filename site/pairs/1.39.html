@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Machiavelli holds that the same humours recur in all peoples, so that whoever diligently examines the past can foresee the future: Florence let its Ten of War lapse, blaming them for the war, and Rome turned against the consuls&#x27; name, until each saw its error. Guicciardini does not believe the Florentine complaint was wholly without reason: the Ten had more authority than a well-ordered liberty allows, and were re-created with limits once experience showed that lacking them in difficult times was most damaging. The Roman example is not similar: outside campaigns the consuls&#x27; authority was subject to appeal and the tribunes, and therefore there was less cause to moderate it. Terentilius&#x27; movement was seditious, and that moderate authority, though the plebs was strong, more readily defended the patrician magistrates.">
+<style>*{box-sizing:border-box}body{margin:0;font:14px system-ui}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>A Conversation with Machiavelli — In different peoples the same accidents are often seen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root {
+  --paper:      #EDEEEC;
+  --paper-sunk: #E4E6E3;
+  --ink:        #1B1E1C;
+  --ink-muted:  #5C625E;
+  --ink-faint:  #868C87;
+  --rule:       #C9CDC8;
+  --rule-faint: #DCDFDB;
+  --nm:         #3A5A6B;
+  --fg:         #6E5A3C;
+  --serif: "EB Garamond", "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  --sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --mono:  "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:      #161917;
+    --paper-sunk: #1D211E;
+    --ink:        #E3E6E1;
+    --ink-muted:  #A0A6A0;
+    --ink-faint:  #767C77;
+    --rule:       #343934;
+    --rule-faint: #262B27;
+    --nm:         #8FB4C6;
+    --fg:         #C4A97C;
+  }
+}
+:root[data-theme="dark"] {
+  --paper:      #161917;
+  --paper-sunk: #1D211E;
+  --ink:        #E3E6E1;
+  --ink-muted:  #A0A6A0;
+  --ink-faint:  #767C77;
+  --rule:       #343934;
+  --rule-faint: #262B27;
+  --nm:         #8FB4C6;
+  --fg:         #C4A97C;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 1160px; margin: 0 auto; padding-inline: 20px; padding-block: 0 0; }
+
+/* ---- masthead ---- */
+.masthead { padding-block: 56px 32px; border-bottom: 1px solid var(--rule); }
+.eyebrow {
+  font-family: var(--sans); font-size: 11px; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint);
+  margin: 0 0 18px;
+}
+h1 {
+  font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 5vw, 44px);
+  line-height: 1.12; margin: 0 0 14px; text-wrap: balance; letter-spacing: -0.01em;
+}
+h1 .sub { display: block; font-style: italic; color: var(--ink-muted); font-size: .52em; margin-top: 12px; letter-spacing: 0; }
+.standfirst {
+  font-family: var(--sans); font-size: 14.5px; line-height: 1.6;
+  color: var(--ink-muted); max-width: 62ch; margin: 0;
+}
+.sf-label {
+  font-weight: 600; font-size: 11px; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--ink-faint); margin-right: .6em;
+}
+
+/* ---- the pairing device ---- */
+.pairing {
+  display: flex; align-items: stretch; gap: 0; margin: 30px 0 0;
+  border: 1px solid var(--rule); border-radius: 2px; overflow: hidden;
+  font-family: var(--sans); background: var(--paper-sunk);
+}
+.pairing > div { flex: 1 1 0; padding: 13px 16px; min-width: 0; }
+.pairing .who { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
+.pairing .nm-side .who { color: var(--nm); }
+.pairing .fg-side .who { color: var(--fg); }
+.pairing .what { font-size: 13.5px; color: var(--ink-muted); }
+.pairing .arrow {
+  flex: 0 0 auto; display: flex; align-items: center; justify-content: center;
+  padding-inline: 14px; color: var(--ink-faint); font-size: 15px;
+  border-inline: 1px solid var(--rule);
+}
+
+/* ---- pair-to-pair navigation ---- */
+.pairnav {
+  display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+  margin-top: 18px; font-family: var(--sans); font-size: 12.5px;
+  color: var(--ink-muted);
+}
+.pairnav a { text-decoration: none; color: var(--ink-muted); }
+.pairnav a:hover, .pairnav a:focus { color: var(--ink); text-decoration: underline; }
+
+/* ---- work sections ---- */
+.work { padding-block: 52px 0; }
+.work-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
+.work-head .tag {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .04em;
+  padding: 3px 7px; border-radius: 2px; color: var(--paper);
+}
+.work.nm .tag { background: var(--nm); }
+.work.fg .tag { background: var(--fg); }
+h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; letter-spacing: -0.005em; }
+.rubric {
+  font-style: italic; color: var(--ink-muted); max-width: 70ch;
+  margin: 10px 0 0; font-size: 16.5px; line-height: 1.5;
+}
+.rubric-note {
+  font-family: var(--sans); font-style: normal; font-size: 12px;
+  color: var(--ink-faint); margin-top: 7px;
+}
+.colheads {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  margin-top: 30px; padding-bottom: 7px; border-bottom: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint);
+}
+
+/* ---- the facing pair ---- */
+.pair {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  padding-block: 22px; border-bottom: 1px solid var(--rule-faint);
+  scroll-margin-top: 20px;
+}
+.pair:target { background: var(--paper-sunk); }
+.annot { grid-column: 2 / -1; margin-top: 14px; font-family: var(--sans); font-size: 13.5px;
+  line-height: 1.55; color: var(--ink-muted); }
+.annot summary { cursor: pointer; font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); list-style: none; }
+.annot summary::-webkit-details-marker { display: none; }
+.annot summary::before { content: "+ "; }
+.annot[open] summary::before { content: "− "; }
+.annot p { margin: 8px 0 0; max-width: 72ch; }
+.annot .xref { color: inherit; text-decoration: underline; text-decoration-color: var(--rule);
+  text-underline-offset: 2px; white-space: nowrap; }
+.gutter { padding-top: 4px; }
+.uid {
+  font-family: var(--mono); font-size: 10.5px; color: var(--ink-faint);
+  text-decoration: none; letter-spacing: -0.02em;
+}
+.uid:hover, .uid:focus { color: var(--ink); text-decoration: underline; }
+.col { min-width: 0; }
+.col.it { hyphens: auto; }
+.col.en { }
+.supplied { color: var(--ink-muted); }
+
+/* ---- apparatus ---- */
+.apparatus {
+  margin-top: 34px; padding-top: 22px; border-top: 2px solid var(--rule);
+  font-family: var(--sans); font-size: 13.5px; line-height: 1.58;
+  color: var(--ink-muted);
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 26px 34px;
+}
+.apparatus h3 {
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); margin: 0 0 9px;
+}
+.apparatus p { margin: 0 0 9px; }
+.apparatus p:last-child { margin-bottom: 0; }
+.apparatus .lem { font-family: var(--serif); font-size: 15px; color: var(--ink); font-style: italic; }
+.sig { font-family: var(--mono); font-size: 12px; color: var(--ink); }
+
+/* ---- colophon ---- */
+.colophon {
+  margin-top: 60px; padding-block: 28px 60px; border-top: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 13px; line-height: 1.6; color: var(--ink-muted);
+}
+.colophon .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 34px; }
+.colophon h3 {
+  font-size: 10.5px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--ink-faint); margin: 0 0 8px;
+}
+.colophon p { margin: 0 0 8px; }
+.colophon ul { margin: 0; padding-left: 16px; }
+.colophon li { margin-bottom: 5px; }
+.state {
+  margin-top: 26px; padding: 14px 16px; background: var(--paper-sunk);
+  border-left: 2px solid var(--ink-faint); border-radius: 0 2px 2px 0;
+  font-size: 12.5px;
+}
+.state strong { color: var(--ink); font-weight: 600; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--nm); outline-offset: 2px; }
+
+/* ---- contents / index page ---- */
+.toc { margin-top: 30px; }
+.toc-row {
+  display: grid; grid-template-columns: 40px 1fr 1fr; gap: 0 20px;
+  padding-block: 14px; border-bottom: 1px solid var(--rule-faint);
+  font-family: var(--sans); align-items: baseline;
+}
+.toc-row .n { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
+.toc-row a { text-decoration: none; color: var(--ink); font-family: var(--serif); font-size: 16px; }
+.toc-row a:hover, .toc-row a:focus { text-decoration: underline; }
+.toc-row .unpublished { color: var(--ink-faint); font-style: italic; font-size: 14px; }
+.toc-row .ids { color: var(--ink-faint); font-size: 11.5px; font-family: var(--mono); }
+.toc-row .dated { color: var(--ink-faint); font-size: 12px; text-align: right; }
+
+@media (max-width: 760px) {
+  body { font-size: 16.5px; }
+  .colheads { display: none; }
+  .pair { grid-template-columns: 1fr; gap: 0; padding-block: 20px; }
+  .gutter { padding-top: 0; margin-bottom: 8px; }
+  .annot { grid-column: 1; }
+  .col.it { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px dotted var(--rule); }
+  .col.it::before, .col.en::before {
+    display: block; font-family: var(--sans); font-size: 10px; font-weight: 600;
+    letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px;
+  }
+  .col.it::before { content: "Italian"; }
+  .col.en::before { content: "English"; }
+  .pairing { flex-direction: column; }
+  .pairing .arrow { border-inline: 0; border-block: 1px solid var(--rule); padding-block: 6px; }
+  .toc-row { grid-template-columns: 1fr; gap: 4px; }
+  .toc-row .dated { text-align: left; }
+}
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow">A Conversation with Machiavelli · Pair 23 of 39</p>
+    <h1>In different peoples the same accidents are often seen
+      <span class="sub">Discourses I.39, and Guicciardini&#x27;s reply</span></h1>
+    <p class="standfirst"><span class="sf-label">Editor's summary</span> Machiavelli holds that the same humours recur in all peoples, so that whoever diligently examines the past can foresee the future: Florence let its Ten of War lapse, blaming them for the war, and Rome turned against the consuls&#x27; name, until each saw its error. Guicciardini does not believe the Florentine complaint was wholly without reason: the Ten had more authority than a well-ordered liberty allows, and were re-created with limits once experience showed that lacking them in difficult times was most damaging. The Roman example is not similar: outside campaigns the consuls&#x27; authority was subject to appeal and the tribunes, and therefore there was less cause to moderate it. Terentilius&#x27; movement was seditious, and that moderate authority, though the plebs was strong, more readily defended the patrician magistrates.</p>
+
+    <div class="pairing">
+      <div class="nm-side">
+        <div class="who">Niccolò Machiavelli</div>
+        <div class="what">Discorsi sopra la prima Deca di Tito Livio · written c. 1513–19, printed 1531</div>
+      </div>
+      <div class="arrow" aria-hidden="true">answered by</div>
+      <div class="fg-side">
+        <div class="who">Francesco Guicciardini</div>
+        <div class="what">Considerazioni intorno ai Discorsi del Machiavelli · written 1529–30, printed 1857</div>
+      </div>
+    </div>
+    <nav class="pairnav"><a href="1.32.html">← Pair 1.32</a><a href="../index.html">All 39 pairs</a><span></span></nav>
+  </header>
+
+  <section class="work nm">
+    <div class="work-head">
+      <span class="tag">NM-DISC.1.39</span>
+      <h2>Capitolo XXXIX</h2>
+    </div>
+    <p class="rubric">In diversi Popoli si veggono spesso i medesimi accidenti.</p>
+    <p class="rubric">In different peoples the same accidents are often seen.</p>
+
+    <div class="colheads"><div></div><div>Italian · 1824</div><div>English</div></div>
+      <div class="pair" id="NM-DISC.1.39.01">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.39.01">1.39.01</a></div>
+        <div class="col it" lang="it">E&#x27; si conosce facilmente per chi considera le cose presenti e le antiche, come in tutte le Città e in tutt&#x27;i Popoli sono quelli medesimi desiderj e quelli medesimi umori, e come vi furono sempre. In modo ch&#x27;egli è facil cosa a chi esamina con diligenza le cose passate, prevedere in ogni Repubblica le future, e farvi quelli rimedj che dagli antichi sono stati usati, o non ne trovando degli usati, pensarne de&#x27; nuovi, per la similitudine degli accidenti. Ma perché queste considerazioni sono neglette, o non intese da chi legge, o se le son intese, non sono conosciute da chi governa, ne seguita che sempre sono i medesimi scandali in ogni tempo.</div>
+        <div class="col en" lang="en">It is readily known, by whoever considers the things present and the ancient, that in all cities and in all peoples there are those same desires and those same humours, and that they were always there. In such a way that it is an easy thing for whoever examines with diligence the things past to foresee in every republic the future ones, and to apply there those remedies which have been used by the ancients, or, not finding any used, to think of new ones, through the likeness of the accidents. But because these considerations are neglected, or not understood by whoever reads, or, if they are understood, are not known by whoever governs, it follows from it that there are always the same scandals in every time.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The chapter opens with a premise and a condition. The premise: whoever considers things present and ancient knows readily that the same desires and the same humours are in all cities and peoples, and always were. The consequence, with its condition: it is an easy thing, for whoever examines the past with diligence, to foresee the future in every republic, and to apply the remedies the ancients used or think of new ones by the likeness of the accidents. The third sentence says why the same scandals recur in every time: the considerations are neglected, or not understood by whoever reads, or, understood, not known by whoever governs. The sameness the rubric announces is the ground of foresight; the recurring scandals are laid on the failure of readers and governors.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini does not take up this premise. His reply answers the two examples that follow, and separates them <a class="xref" href="#FG-CONS.1.39.01">Guicciardini .01</a> <a class="xref" href="#FG-CONS.1.39.02">Guicciardini .02</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.39.02">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.39.02">1.39.02</a></div>
+        <div class="col it" lang="it">Avendo la Città di Firenze dopo il 94 perduta parte dello Imperio suo, come Pisa e altre terre, fu necessitata a fare guerra a coloro, che le occupavano: e perché chi le occupava era potente, ne seguiva che si spendeva assai nella guerra senza alcun frutto: dallo spendere assai, ne risultavano assai gravezze, dalle gravezze infinite querele del Popolo: e perché questa guerra era amministrata da un Magistrato di dieci cittadini, che si chiamavano i Dieci della guerra, l&#x27;universale cominciò a recarselo in dispetto, come quello che fusse cagione e della guerra e delle spese di essa, e cominciò a persuadersi che, tolto via detto Magistrato, fusse tolto via la guerra; tantoché avendosi a rifare, non se gli fecero gli scambj; e lasciatosi spirare, si commisero le azioni sue alla Signoria. La qual deliberazione fu tanto perniziosa, che non solamente non levò la guerra, come l&#x27;universale si persuadeva, ma tolti via quelli uomini, che con prudenza l&#x27;amministravano, ne seguì tanto disordine, che oltre a Pisa, si perdé Arezzo e molti altri luoghi; in modoché ravvedutosi il Popolo dell&#x27;error suo, e come la cagione del male era la febbre, e non il medico, rifece il Magistrato de&#x27; Dieci.</div>
+        <div class="col en" lang="en">Having lost, after <span class="supplied">[14]</span>94, part of its empire, such as Pisa and other towns, the city of Florence was necessitated to make war on those who occupied them: and because whoever occupied them was powerful, it followed from it that much was spent on the war without any fruit: from spending much, there resulted many burdens, from the burdens infinite complaints of the people: and because this war was administered by a magistracy of ten citizens, who were called the Ten of War, the generality began to take it in despite, as being the cause both of the war and of the expenses of it, and began to persuade itself that, the said magistracy taken away, the war was taken away; so much so that, it having to be remade, its replacements were not made; and, it having been let expire, its functions were committed to the Signoria. Which deliberation was so pernicious that not only did it not remove the war, as the generality persuaded itself, but, those men taken away who administered it with prudence, there followed from it so much disorder that, besides Pisa, Arezzo and many other places were lost; in such a way that the people, having perceived its error, and that the cause of the ill was the fever and not the physician, remade the magistracy of the Ten.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> The modern case comes first. Florence, having lost part of its dominion after 1494, Pisa among it, had to make war on those who held the towns; because they were powerful, much was spent on the war without any fruit; spending brought burdens, burdens brought complaints; and because the war was administered by a magistracy of ten citizens, the Ten of War, the generality came to hold the office as the cause of the war and its expense, and persuaded itself that to take away the office was to take away the war. So the Ten were not renewed when their term ran out, and their functions went to the Signoria. The result reversed the belief: the war was not removed, the men who had administered it with prudence were, and in the disorder Arezzo and other places were lost besides Pisa. The people saw its error, that the cause of the ill was the fever and not the physician, and remade the Ten. The generality&#x27;s grievance is reported as a belief, and the chapter&#x27;s verdict on it is the result.</p>
+<p><span class="lem">History.</span> Machiavelli dates nothing here but the losses after 1494, and gives no date for the Ten&#x27;s lapse, for Arezzo&#x27;s loss, or for the restoration; none is supplied.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini does not believe the Florentine complaint was wholly without reason: the Ten&#x27;s authority, he says, was more than a well-ordered liberty bears, and it was re-created with limits <a class="xref" href="#FG-CONS.1.39.01">Guicciardini .01</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.39.03">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.39.03">1.39.03</a></div>
+        <div class="col it" lang="it">Questo medesimo umore si levò in Roma contro al nome de&#x27; Consoli, perché veggendo quello Popolo nascere l&#x27;una guerra dall&#x27;altra, e non poter mai riposarsi, dove e&#x27; dovevano pensare che la nascesse dall&#x27;ambizione dei vicini che gli volevano opprimere, pensavano nascesse dall&#x27;ambizione de&#x27; Nobili, che non potendo dentro in Roma gastigare la Plebe difesa dalla potestà Tribunizia, la volevano condurre fuori di Roma sotto i Consoli, per opprimerla dove la non aveva ajuto alcuno. E pensarono per questo, che fusse necessario, o levar via i Consoli, o regolare in modo la loro potestà, ch&#x27;e&#x27; non avessero autorità sopra il Popolo, né fuori, né in casa.</div>
+        <div class="col en" lang="en">This same humour rose in Rome against the name of the consuls, because, that people seeing one war arise from the other, and <span class="supplied">[itself]</span> never able to rest, where they should have thought that it arose from the ambition of the neighbours who wished to oppress them, they thought it arose from the ambition of the nobles, who, not being able within Rome to chastise the plebs defended by the tribunician power, wished to bring it out of Rome under the consuls, to oppress it where it had no aid whatever. And they thought for this that it was necessary either to remove the consuls, or to regulate their power in such a way that they would have authority over the people neither outside nor at home.</div>
+        <details class="annot"><summary>Commentary · 1</summary>
+          <p><span class="lem">Argument.</span> &quot;This same humour&quot; makes the Roman case the same case. Wars arose one from another and the people could never rest; where it ought to have thought that the wars arose from the ambition of its neighbours, it thought they arose from the ambition of the nobles, who, unable to chastise the plebs within Rome under the protection of the tribunes, wished to lead it out under the consuls, where it had no aid. So it thought the consuls must be removed, or their power so regulated that they had authority over the people neither in the field nor at home. The nobles&#x27; design is what the people thought, set against what it ought to have thought; Machiavelli does not assert it.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.39.04">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.39.04">1.39.04</a></div>
+        <div class="col it" lang="it">Il primo che tentò questa legge, fu uno Terentillo Tribuno, il quale proponeva che si dovessero creare cinque uomini, che dovessero considerare la potenza de&#x27; Consoli, e limitarla. Il che alterò assai la Nobiltà, parendogli che la maestà dell&#x27;Imperio fusse al tutto declinata, talché alla Nobiltà non restasse più alcun grado in quella Repubblica. Fu nondimeno tanta l&#x27;ostinazione de&#x27; Tribuni, che il nome Consolare si spense; e furono in fine contenti dopo qualche altro ordine, piuttosto creare i Tribuni con potestà Consolare, che i Consoli: tanto avevano più in odio il nome, che l&#x27;autorità loro. E così seguirono lungo tempo, infino che conosciuto l&#x27;error loro, come i Fiorentini tornarono ai Dieci, così loro ricrearono i Consoli.</div>
+        <div class="col en" lang="en">The first who attempted this law was one Terentilius, a tribune, who proposed that five men should be created, who should consider the power of the consuls, and limit it. Which altered the nobility much, it seeming to them that the majesty of the command had wholly declined, so that no degree any longer remained to the nobility in that republic. The obstinacy of the tribunes was nonetheless so great that the consular name was extinguished; and they were in the end content, after some other order, rather to create the tribunes with consular power than the consuls: so much more did they hold in hatred the name than the authority of them. And so they continued a long time, until, their error known, as the Florentines returned to the Ten, so they re-created the consuls.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> Terentilius, a tribune, first attempted the law: five men to consider the consuls&#x27; power and limit it. The nobility was disturbed, thinking the majesty of the command wholly declined and no degree left to it in the republic. The tribunes&#x27; obstinacy prevailed so far that the consular name was extinguished, and in the end, after some other arrangement, they were content, Machiavelli does not say who, to create the tribunes with consular power rather than the consuls: so much more was the name hated than the authority. So it went on a long time, until, its error known, Rome re-created the consuls as Florence returned to the Ten. The close sets the two cases side by side with &quot;as ... so&quot;, and &quot;known&quot; returns to the knowledge the chapter began with.</p>
+<p><span class="lem">History.</span> Livy brings in Gaius Terentilius Harsa at 3.9: in the consuls&#x27; absence from the city he proposed five men to write down laws on the consuls&#x27; power, so that the consul should use only the right the people gave him. Machiavelli&#x27;s &quot;consider and limit&quot; is his own summary. The military tribunes with consular power, and the later return to consuls, are told by Livy in the books that follow; the dates and loci are not checked here.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini answers that the example of Terentilius is not similar: the consuls&#x27; authority, when they were not on campaign, was limited by appeal, the tribunes&#x27; intercession and the senate, and therefore there was less cause to moderate it; on the contrary, he adds, it was a movement wholly seditious <a class="xref" href="#FG-CONS.1.39.02">Guicciardini .02</a>. Where Machiavelli&#x27;s Romans hated the name more than the authority, Guicciardini says nothing of the name.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from the 1824 edition (<span class="sig">WIT-NM-DISC-1824-IA</span>), page-image-backed, which governs. Collated against the 1554 Giglio printing, Venice (<span class="sig">WIT-NM-DISC-1554-IA</span>), which is comparison evidence only.</p>
+<p>Paragraph divisions are editorial. The witness prints the chapter as one unbroken block.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem">cominciò a persuadersi che, tolto via detto Magistrato, fusse tolto via la guerra</span> — 1824. The 1554 witness reads <i lang="it">comincio a perſuaderſi , che tolto uia detto magiſtrato, fuſſe tolta uia la guerra</i>. Checked on the leaf (fol. 57r). The 1554 agrees the participle with <i lang="it">la guerra</i>; the 1824 leaves it unagreed before a following subject, as the period does, perhaps drawn by the <i lang="it">tolto via</i> just before. Read by both 1824 readers without doubt on the sampled page; a difference at o/a under D203(b). It construes, so kept (D342). Not D295, where the subject preceded.</p>
+<p><span class="lem">prevedere in ogni Repubblica le future</span> — 1824. The 1554 witness reads <i lang="it">preuedere in ogni Republiche le future</i>. Checked on the leaf (fol. 57r). The 1554 sets the plural after <i lang="it">ogni</i>. Read by pass A and the pass-B crop; a difference at a/e, kept (D343).</p>
+<p><span class="lem">dopo il 94 perduta parte dello Imperio suo</span> — 1824. The 1554 witness reads <i lang="it">dopo il XCIIII. perduto parte dello Imperio ſuo</i>. Checked on the leaf (fol. 57r). The 1824 agrees the participle with <i lang="it">parte</i>; the 1554 leaves it unagreed. The year in roman numerals. Read by pass A and the pass-B crop; a difference at a/o, kept (D343).</p>
+<p><span class="lem">pensavano nascesse dall&#x27;ambizione de&#x27; Nobili</span> — 1824. The 1554 witness reads <i lang="it">penſauano naſceſſe dell&#x27;ambitione de nobili</i>. Checked on the leaf (fol. 57v). <i lang="it">dall&#x27;</i>, &quot;from&quot;, repeats the clause before (<i lang="it">dall&#x27;ambizione dei vicini</i>, where the 1554 has <i lang="it">d&#x27;ambitione</i>); the 1554 <i lang="it">dell&#x27;</i>. Read by both readers without doubt on the sampled page; a difference at a/e, kept (D343).</p>
+<p><span class="lem">parendogli che la maestà dell&#x27;Imperio ... piuttosto creare i Tribuni ... E così seguirono lungo tempo, infino che conosciuto l&#x27;error loro, come i Fiorentini tornarono ai Dieci</span> — 1824. The 1554 witness reads <i lang="it">parendole , che la maieſta dell&#x27;Imperio ... piu toſto creare Tribuni ... et coſi ſeguitorno lungo tempo , infino che conoſciuto l&#x27;errore, come i Fiorentini ritornorno a Dieci</i>. Checked on the leaf (fol. 57v). The 1554 has the pronoun agree with <i lang="it">la Nobiltà</i> (<i lang="it">parendole</i>, &quot;seeming to it&quot;), where the 1824&#x27;s <i lang="it">gli</i> takes the nobles; no article before <i lang="it">Tribuni</i>; <i lang="it">seguitorno</i>, &quot;continued&quot;, for <i lang="it">seguirono</i>; <i lang="it">l&#x27;errore</i> without <i lang="it">loro</i>; <i lang="it">ritornorno a</i>. Each read by pass A and a pass-B crop without doubt; none at a letter the scans break. Same sense.</p>
+<p><span class="lem">il Magistrato de&#x27; Dieci ... contro al nome de&#x27; Consoli ... che la nascesse</span> — 1824. The 1554 witness reads <i lang="it">il magiſtrato di Dieci ... contra al nome de Conſoli ... che ella naſceſſe</i>. Forms (<i lang="it">di</i>, <i lang="it">contra</i>, <i lang="it">ella</i>), no difference of sense. Read on the sampled page.</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem"><i lang="it">E&#x27; si conosce facilmente per chi considera le cose presenti e le antiche</i>.</span> &quot;It is readily known, by whoever considers the things present and the ancient&quot;: <i lang="it">E&#x27;</i>, the impersonal pronoun, not the verb; <i lang="it">facilmente</i>, readily (D27); <i lang="it">considerare</i>, consider (glossary), which returns in the five men who are to <i lang="it">considerare la potenza de&#x27; Consoli</i> (.04); <i lang="it">conoscere</i>, know, held through the chapter (<i lang="it">non sono conosciute</i>, .01; <i lang="it">conosciuto l&#x27;error loro</i>, .04), so that the knowledge the chapter opens with is the knowledge Rome reached late.</p>
+<p><span class="lem"><i lang="it">come in tutte le Città e in tutt&#x27;i Popoli sono quelli medesimi desiderj e quelli medesimi umori, e come vi furono sempre</i>.</span> &quot;That in all cities and in all peoples there are those same desires and those same humours, and that they were always there&quot;: <i lang="it">come</i> after a verb of knowing, &quot;that&quot; (D334); <i lang="it">desiderio</i>, desire (D117); <i lang="it">umore</i>, humour (glossary, NM I.4), the word the Roman case takes up (<i lang="it">Questo medesimo umore</i>, .03). <i lang="it">quelli</i> twice is kept, as the Italian repeats it.</p>
+<p><span class="lem"><i lang="it">In modo ch&#x27;egli è facil cosa a chi esamina con diligenza le cose passate, prevedere in ogni Repubblica le future</i>.</span> &quot;In such a way that it is an easy thing for whoever examines with diligence the things past to foresee in every republic the future ones&quot;: <i lang="it">in modo che</i>, in such a way that (glossary); <i lang="it">facile</i>, easy (D27); <i lang="it">prevedere</i>, foresee. The 1554 edition reads <i lang="it">ogni Republiche</i>, the plural (NM-DISC-I39-D002, D343). The claim is conditional on the examination, and its next clause makes the remedy depend on the likeness of the accidents.</p>
+<p><span class="lem"><i lang="it">e farvi quelli rimedj che dagli antichi sono stati usati, o non ne trovando degli usati, pensarne de&#x27; nuovi, per la similitudine degli accidenti</i>.</span> &quot;And to apply there those remedies which have been used by the ancients, or, not finding any used, to think of new ones, through the likeness of the accidents&quot;: <i lang="it">farvi</i>, literally to make there, of remedies &quot;apply&quot;; <i lang="it">vi</i>, there, in the republic or among the future things, and &quot;there&quot; keeps both; <i lang="it">rimedio</i>, remedy (glossary); <i lang="it">similitudine</i>, likeness (glossary). The likeness is the ground of the remedies, old and new, and perhaps of the foresight too; the phrase closes the period and its scope is left open.</p>
+<p><span class="lem"><i lang="it">Ma perché queste considerazioni sono neglette, o non intese da chi legge, o se le son intese, non sono conosciute da chi governa</i>.</span> &quot;But because these considerations are neglected, or not understood by whoever reads, or, if they are understood, are not known by whoever governs&quot;: three failures: the considerations are neglected, or not understood by whoever reads, or, understood, not known by whoever governs. <i lang="it">intendere</i>, understand, and <i lang="it">conoscere</i>, know, are kept apart; the reader and the governor are distinguished, and the failure that remains is the governor&#x27;s. Whether <i lang="it">da chi legge</i> also governs <i lang="it">neglette</i> is left as open as the Italian leaves it.</p>
+<p><span class="lem"><i lang="it">ne seguita che sempre sono i medesimi scandali in ogni tempo</i>.</span> &quot;It follows from it that there are always the same scandals in every time&quot;: <i lang="it">scandalo</i>, scandal, in the older sense of public disturbance; <i lang="it">ne</i> is kept, &quot;from it&quot;. The paragraph ends on the sameness that the rubric announced.</p>
+<p><span class="lem"><i lang="it">Avendo la Città di Firenze dopo il 94 perduta parte dello Imperio suo, come Pisa e altre terre</i>.</span> &quot;Having lost, after [14]94, part of its empire, such as Pisa and other towns, the city of Florence&quot;: the subject of the gerund put first in the main clause, plain order (D263, exposition), with no pronoun added; <i lang="it">imperio</i>, empire, dominion over other peoples (D124); <i lang="it">terra</i>, a walled town, the Florentine sense; the year supplied as at NM I.2 (names.md). Machiavelli dates the losses only <i lang="it">dopo il 94</i>. The 1554 edition prints the year in roman figures and reads <i lang="it">perduto</i>, unagreed (NM-DISC-I39-D003, D343).</p>
+<p><span class="lem"><i lang="it">fu necessitata a fare guerra a coloro, che le occupavano</i>.</span> &quot;Was necessitated to make war on those who occupied them&quot;: <i lang="it">necessitare</i>, necessitate, as <i lang="it">necessitato</i> at NM I.30, I.32.</p>
+<p><span class="lem"><i lang="it">ne seguiva che si spendeva assai nella guerra senza alcun frutto: dallo spendere assai, ne risultavano assai gravezze</i>.</span> &quot;It followed from it that much was spent on the war without any fruit: from spending much, there resulted many burdens&quot;: <i lang="it">assai</i> three times. After a verb, &quot;much&quot; (D348), as D312&#x27;s &quot;much&quot; with a noun; D333&#x27;s &quot;enough&quot; stays for the claim of sufficiency it was ruled on (NM I.32); so also <i lang="it">alterò assai</i> (.04). With a plural noun, of number, &quot;many&quot; (glossary, NM I.7). <i lang="it">frutto</i>, fruit; <i lang="it">gravezza</i>, burden (D334). The chain of causes runs in colons, as the witness points it, and is kept so: war, spending, burdens, complaints.</p>
+<p><span class="lem"><i lang="it">dalle gravezze infinite querele del Popolo</i>.</span> &quot;From the burdens infinite complaints of the people&quot;: the verb carried over; <i lang="it">querela</i>, complaint, the word Guicciardini&#x27;s reply opens on (<i lang="it">la querela de&#x27; Fiorentini</i>, Guicciardini .01), and held in the same English (D348).</p>
+<p><span class="lem"><i lang="it">da un Magistrato di dieci cittadini, che si chiamavano i Dieci della guerra</i>.</span> &quot;By a magistracy of ten citizens, who were called the Ten of War&quot;: <i lang="it">Magistrato</i>, magistracy, the office (D93); the Ten as names.md. Guicciardini names them Ten of Balìa, and later of Liberty and Peace (Guicciardini .01).</p>
+<p><span class="lem"><i lang="it">l&#x27;universale cominciò a recarselo in dispetto, come quello che fusse cagione e della guerra e delle spese di essa</i>.</span> &quot;The generality began to take it in despite, as being the cause both of the war and of the expenses of it&quot;: <i lang="it">l&#x27;universale</i>, the generality (glossary, NM I.16); <i lang="it">recarsi in dispetto</i>, to take in despite, to conceive a grudge against; &quot;despite&quot; is kept apart from <i lang="it">dispregio</i>, contempt (glossary). <i lang="it">fusse</i> is the subjunctive of the generality&#x27;s belief, and &quot;as being&quot; keeps it a belief; <i lang="it">cagione</i>, cause (glossary).</p>
+<p><span class="lem"><i lang="it">e cominciò a persuadersi che, tolto via detto Magistrato, fusse tolto via la guerra</i>.</span> &quot;And began to persuade itself that, the said magistracy taken away, the war was taken away&quot;: <i lang="it">togliere via</i>, take away (D131), twice, as the Italian repeats it, the two removals one act in the generality&#x27;s mind; <i lang="it">detto</i>, said (D140); <i lang="it">persuadersi</i>, persuade itself, which returns at <i lang="it">come l&#x27;universale si persuadeva</i>. The 1554 edition agrees the second participle, <i lang="it">tolta</i> (NM-DISC-I39-D001, D342).</p>
+<p><span class="lem"><i lang="it">tantoché avendosi a rifare, non se gli fecero gli scambj</i>.</span> &quot;So much so that, it having to be remade, its replacements were not made&quot;: <i lang="it">tantoché</i>, consecutive here, &quot;so much so that&quot;; <i lang="it">avere a</i> after a gerund, &quot;have to&quot; (D237, D261): the office had to be made anew; <i lang="it">rifare</i>, remake, the verb that returns when the people <i lang="it">rifece il Magistrato</i> (.02); <i lang="it">scambio</i>, the replacement, the next board elected in place of the old.</p>
+<p><span class="lem"><i lang="it">e lasciatosi spirare, si commisero le azioni sue alla Signoria</i>.</span> &quot;And, it having been let expire, its functions were committed to the Signoria&quot;: <i lang="it">spirare</i>, expire; <i lang="it">azioni</i>, the office&#x27;s business and powers, &quot;functions&quot;, so that &quot;action&quot; stays for <i lang="it">fazione</i> in its military sense (D341, D348); the Signoria, Florence&#x27;s chief magistracy (names.md).</p>
+<p><span class="lem"><i lang="it">La qual deliberazione fu tanto perniziosa, che non solamente non levò la guerra</i>.</span> &quot;Which deliberation was so pernicious that not only did it not remove the war&quot;: <i lang="it">deliberazione</i>, deliberation, the word Guicciardini uses of the Ten&#x27;s re-creation (<i lang="it">E fu questa deliberazione tale</i>, Guicciardini .01); <i lang="it">levare</i>, remove (D131).</p>
+<p><span class="lem"><i lang="it">ma tolti via quelli uomini, che con prudenza l&#x27;amministravano, ne seguì tanto disordine, che oltre a Pisa, si perdé Arezzo e molti altri luoghi</i>.</span> &quot;But, those men taken away who administered it with prudence, there followed from it so much disorder that, besides Pisa, Arezzo and many other places were lost&quot;: <i lang="it">prudenza</i>, prudence (glossary <i lang="it">prudente</i>); <i lang="it">disordine</i>, disorder (glossary); the singular verb with its compound subject following it, put in English order (D263, exposition). Arezzo had been subject to Florence; Machiavelli gives no date for its loss.</p>
+<p><span class="lem"><i lang="it">in modoché ravvedutosi il Popolo dell&#x27;error suo, e come la cagione del male era la febbre, e non il medico</i>.</span> &quot;In such a way that the people, having perceived its error, and that the cause of the ill was the fever and not the physician&quot;: <i lang="it">ravvedersi di</i>, perceive, come to see; <i lang="it">come</i>, that, a second object of the same participle; <i lang="it">male</i>, ill (glossary). The figure is the people&#x27;s own recognition: it had blamed the physician for the fever.</p>
+<p><span class="lem"><i lang="it">rifece il Magistrato de&#x27; Dieci</i>.</span> &quot;Remade the magistracy of the Ten&quot;: <i lang="it">rifare</i>, remake, as above.</p>
+<p><span class="lem"><i lang="it">Questo medesimo umore si levò in Roma contro al nome de&#x27; Consoli</i>.</span> &quot;This same humour rose in Rome against the name of the consuls&quot;: <i lang="it">levarsi</i>, rise, the reflexive of <i lang="it">levare</i>, remove; English cannot hold the two in one word. <i lang="it">nome</i>, name: the chapter closes on the name hated more than the authority (.04).</p>
+<p><span class="lem"><i lang="it">perché veggendo quello Popolo nascere l&#x27;una guerra dall&#x27;altra, e non poter mai riposarsi</i>.</span> &quot;Because, that people seeing one war arise from the other, and [itself] never able to rest&quot;: both infinitives hang on <i lang="it">veggendo</i>, the second thing seen, and the supplied word keeps them there (D53); <i lang="it">nascere</i>, arise (D04), three times in the period and one English word.</p>
+<p><span class="lem"><i lang="it">dove e&#x27; dovevano pensare che la nascesse dall&#x27;ambizione dei vicini che gli volevano opprimere, pensavano nascesse dall&#x27;ambizione de&#x27; Nobili</i>.</span> &quot;Where they should have thought that it arose from the ambition of the neighbours who wished to oppress them, they thought it arose from the ambition of the nobles&quot;: <i lang="it">dovere</i> in the imperfect of an obligation not met, &quot;should have&quot;; &quot;must&quot; (D274) cannot carry the unfulfilled sense (D348). <i lang="it">e&#x27;</i>, they; <i lang="it">la</i>, it, the war. The nobles&#x27; design that follows is what the people thought, not what Machiavelli asserts. <i lang="it">dall&#x27;ambizione</i> twice, &quot;from the ambition&quot;; the 1554 edition reads <i lang="it">dell&#x27;ambitione</i> the second time (NM-DISC-I39-D004, D343). <i lang="it">ambizione</i>, ambition; <i lang="it">opprimere</i>, oppress (glossary); <i lang="it">Nobili</i>, nobles (glossary).</p>
+<p><span class="lem"><i lang="it">che non potendo dentro in Roma gastigare la Plebe difesa dalla potestà Tribunizia</i>.</span> &quot;Who, not being able within Rome to chastise the plebs defended by the tribunician power&quot;: <i lang="it">gastigare</i>, chastise (glossary); <i lang="it">potestà</i>, power (D78); the tribunes&#x27; power to protect the plebs within the city.</p>
+<p><span class="lem"><i lang="it">la volevano condurre fuori di Roma sotto i Consoli, per opprimerla dove la non aveva ajuto alcuno</i>.</span> &quot;Wished to bring it out of Rome under the consuls, to oppress it where it had no aid whatever&quot;: <i lang="it">condurre</i>, bring, as FG I.32 <i lang="it">condotto</i>; <i lang="it">ajuto</i>, aid, kept apart from <i lang="it">giovare</i>, help (D334); <i lang="it">alcuno</i> after a negative and after its noun, &quot;whatever&quot; (D195), as NM I.32 <i lang="it">obbligo alcuno</i>; before its noun it is &quot;any&quot; (<i lang="it">senza alcun frutto</i>, .02). Outside the city, Machiavelli&#x27;s people thought, the plebs had no aid; the tribunes&#x27; protection was confined to the city (history, not checked here).</p>
+<p><span class="lem"><i lang="it">E pensarono per questo, che fusse necessario, o levar via i Consoli, o regolare in modo la loro potestà</i>.</span> &quot;And they thought for this that it was necessary either to remove the consuls, or to regulate their power&quot;: <i lang="it">levare via</i>, remove (D131); <i lang="it">regolare</i>, regulate.</p>
+<p><span class="lem"><i lang="it">ch&#x27;e&#x27; non avessero autorità sopra il Popolo, né fuori, né in casa</i>.</span> &quot;That they would have authority over the people neither outside nor at home&quot;: the subjunctive of result, &quot;would&quot;, so that &quot;should&quot; stays the mark of <i lang="it">dovere</i> in this chapter, and English takes one negative where the Italian has three; <i lang="it">autorità</i>, authority (glossary); <i lang="it">fuori</i> and <i lang="it">in casa</i>, in the field and in the city, the Roman <i lang="la">domi militiaeque</i>.</p>
+<p><span class="lem"><i lang="it">Il primo che tentò questa legge, fu uno Terentillo Tribuno</i>.</span> &quot;The first who attempted this law was one Terentilius, a tribune&quot;: <i lang="it">tentare</i>, attempt (D334); Gaius Terentilius Harsa, tribune of the plebs, whom Livy brings in at 3.9 (names.md).</p>
+<p><span class="lem"><i lang="it">il quale proponeva che si dovessero creare cinque uomini, che dovessero considerare la potenza de&#x27; Consoli, e limitarla</i>.</span> &quot;Who proposed that five men should be created, who should consider the power of the consuls, and limit it&quot;: <i lang="it">dovere</i> in the subjunctive of a proposal, &quot;should&quot;, twice; &quot;must&quot; (D274) would make the proposal a command, and &quot;be to&quot; is <i lang="it">avere a</i>&#x27;s (D61) (D348). <i lang="it">potenza</i>, power (D78), the same English as <i lang="it">potestà</i> in the sentences around it, a recorded collapse; <i lang="it">considerare</i>, consider, the chapter&#x27;s opening verb. In Livy the five were to write down laws on the consuls&#x27; power (3.9); Machiavelli says consider and limit.</p>
+<p><span class="lem"><i lang="it">Il che alterò assai la Nobiltà, parendogli che la maestà dell&#x27;Imperio fusse al tutto declinata</i>.</span> &quot;Which altered the nobility much, it seeming to them that the majesty of the command had wholly declined&quot;: <i lang="it">alterare</i>, alter, in its older sense, disturb, as NM I.25 (<i lang="it">alterando le cose nuove le menti degli uomini</i>); <i lang="it">assai</i> with the verb, &quot;much&quot; (D348); <i lang="it">parendogli</i>, &quot;it seeming to them&quot;, the nobles, after the singular <i lang="it">la Nobiltà</i>; the 1554 edition reads <i lang="it">parendole</i>, &quot;to it&quot; (NM-DISC-I39-D005, which records the 1554&#x27;s readings in .04 together). <i lang="it">Imperio</i> here is the consuls&#x27; <i lang="la">imperium</i>, &quot;command&quot; (D124); <i lang="it">al tutto</i>, wholly (D284); <i lang="it">declinare</i>, decline.</p>
+<p><span class="lem"><i lang="it">talché alla Nobiltà non restasse più alcun grado in quella Repubblica</i>.</span> &quot;So that no degree any longer remained to the nobility in that republic&quot;: <i lang="it">talché</i>, so that (glossary); <i lang="it">grado</i>, degree (glossary).</p>
+<p><span class="lem"><i lang="it">Fu nondimeno tanta l&#x27;ostinazione de&#x27; Tribuni, che il nome Consolare si spense</i>.</span> &quot;The obstinacy of the tribunes was nonetheless so great that the consular name was extinguished&quot;: predicate first in the Italian; English order (D263, exposition). <i lang="it">nondimeno</i>, nonetheless (glossary); <i lang="it">spegnere</i>, extinguish (glossary).</p>
+<p><span class="lem"><i lang="it">e furono in fine contenti dopo qualche altro ordine, piuttosto creare i Tribuni con potestà Consolare, che i Consoli</i>.</span> &quot;And they were in the end content, after some other order, rather to create the tribunes with consular power than the consuls&quot;: <i lang="it">ordine</i>, order (glossary), here an arrangement made before the consular tribunes, which Machiavelli does not describe; <i lang="it">piuttosto ... che</i>, rather ... than. Who were content is not said; the English keeps &quot;they&quot;. The tribunes with consular power are Livy&#x27;s military tribunes with consular power, who replaced the consuls in many years until the consulship was restored (the dates are not given by Machiavelli and are not checked here).</p>
+<p><span class="lem"><i lang="it">tanto avevano più in odio il nome, che l&#x27;autorità loro</i>.</span> &quot;So much more did they hold in hatred the name than the authority of them&quot;: the landing keeps the name first and the authority last (D18). <i lang="it">loro</i>, of them, the consuls; &quot;their&quot; would attach it to the haters.</p>
+<p><span class="lem"><i lang="it">E così seguirono lungo tempo, infino che conosciuto l&#x27;error loro, come i Fiorentini tornarono ai Dieci, così loro ricrearono i Consoli</i>.</span> &quot;And so they continued a long time, until, their error known, as the Florentines returned to the Ten, so they re-created the consuls&quot;: <i lang="it">seguire</i> without an object, continue (the 1554 edition <i lang="it">seguitorno</i>, NM-DISC-I39-D005); <i lang="it">lungo tempo</i>, a long time (D262); <i lang="it">conoscere</i>, know, closing the chain of .01; <i lang="it">come ... così</i>, as ... so, the two cases set side by side to the end. <i lang="it">ricreare</i>, re-create; Guicciardini&#x27;s <i lang="it">creorono di nuovo</i>, &quot;created anew&quot;, tells the Florentine half (Guicciardini .01). The 1554 edition reads <i lang="it">l&#x27;errore</i>, without <i lang="it">loro</i>, and <i lang="it">ritornorno a</i> (NM-DISC-I39-D005).</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work fg">
+    <div class="work-head">
+      <span class="tag">FG-CONS.1.39</span>
+      <h2>Considerazione sul capitolo XXXIX</h2>
+    </div>
+    <p class="rubric">In diversi popoli si veggono spesso i medesimi accidenti.</p>
+    <p class="rubric">In different peoples the same accidents are often seen.
+      <span class="rubric-note">Canestrini&#x27;s setting of the chapter title, Machiavelli&#x27;s rubric in lower case. It is heading apparatus, not Guicciardini&#x27;s (D32). &quot;Different&quot;, as Machiavelli&#x27;s (Machiavelli, the rubric).</span></p>
+
+    <div class="colheads"><div></div><div>Italian · 1857</div><div>English</div></div>
+      <div class="pair" id="FG-CONS.1.39.01">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.39.01">1.39.01</a></div>
+        <div class="col it" lang="it">Io non credo che la querela de&#x27; Fiorentini contro al magistrato de&#x27; Dieci fussi al tutto sanza ragione; perché secondo gli ordini antichi della città fatti in diversa spezie di governo, quello magistrato aveva più autorità che non comportava una libertà bene ordinata, essendo in potestà loro fare sanza participazione di altri, paci, guerre, tregue, leghe, soldare capitani, chi e quanti e come volevano, spendere tutti e&#x27; danari sanza alcuno stanziamento o freno, e avendo generalmente nelle cose appartenenti alla guerra tanta autorità, quanta il populo fiorentino. Dalla quale autorità troppo assoluta nacquono in buona parte le opinioni populari di non volere creare più quello magistrato, ma avendo mostrato la esperienza che se bene la troppa autorità era perniziosa, era anche dannosissimo alla città mancare ne&#x27; tempi difficili di uno magistrato di uomini prudenti che vigilassi e indirizzassi le cose, cognoscendo con le bastonate quello di che non erano stati capaci con la ragione, creorono di nuovo il magistrato de&#x27; Dieci sopra la guerra, limitandogli la autorità in quelle cose che erano giudicate periculose, alle quali ordinorono bisognassi la partecipazione degli Ottanta. E fu questa deliberazione tale che mai più poi, eziandio in tempo di pace, si fece difficultà di creare quello magistrato, chiamandoli non Dieci di Balìa come prima per la autorità assoluta che avevano, ma Dieci di Libertà e Pace.</div>
+        <div class="col en" lang="en">I do not believe that the complaint of the Florentines against the magistracy of the Ten was wholly without reason; because, according to the ancient orders of the city, made in a different species of government, that magistracy had more authority than a well-ordered liberty would bear, it being in their power to make, without participation of others, peaces, wars, truces, leagues, to hire captains, whom and how many and how they wished, to spend all the moneys without any appropriation or bridle, and having generally, in the things pertaining to war, as much authority as the Florentine people. From which too absolute authority there arose in good part the popular opinions of not wishing to create that magistracy any more, but, experience having shown that, although too much authority was pernicious, it was also most damaging to the city to lack, in difficult times, a magistracy of prudent men who should watch over and direct things, knowing with the cudgellings that which they had not been able to grasp with reason, they created anew the magistracy of the Ten over the war, limiting its authority in those things which were judged dangerous, for which they ordered that the participation of the Eighty should be required. And this deliberation was such that never again later, even in time of peace, was difficulty made of creating that magistracy, calling them not Ten of Balìa, as before, for the absolute authority which they had, but Ten of Liberty and Peace.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> The reply opens on a negated belief: he does not believe the Florentines&#x27; complaint against the Ten was wholly without reason. It is not a concession to Machiavelli, and not a defence of the people&#x27;s decision. The reason is the office itself: under the ancient orders of the city, made in another species of government, the Ten had more authority than a well-ordered liberty bears, to make peace, war, truces and leagues without others, to hire captains at will, to spend all the money without appropriation or bridle, and generally, in the things of war, as much authority as the Florentine people. From that excess, in good part, arose the popular opinion against creating the office again. Then experience showed both sides, under one &quot;although&quot;: too much authority was pernicious, and lacking a magistracy of prudent men in difficult times was most damaging. Taught by the cudgellings what reason had not taught them, the Florentines created the Ten anew, with their authority limited, in the things judged dangerous, by the participation of the Eighty; after that the office was created even in peacetime without difficulty, under a new name, Ten of Liberty and Peace, not, as before, of Balìa, the name given for the absolute authority they had.</p>
+<p><span class="lem">Cross-reference.</span> Machiavelli&#x27;s generality blamed the Ten for the war and its cost, and the people, seeing its error, recognised the fever and not the physician <a class="xref" href="#NM-DISC.1.39.02">Machiavelli .02</a>. Guicciardini gives the popular opinions against the office a cause of his own, in good part its too absolute authority; on the cause of the war, and the figure of the fever, he says nothing. He takes up Machiavelli&#x27;s words, the complaint, the magistracy, the deliberation, pernicious, and gives &quot;pernicious&quot; to the excess of authority rather than to the lapse. Machiavelli said the people remade the Ten; Guicciardini says how, with limits, and the verb of the limit is the one Machiavelli gave Terentilius&#x27; five men <a class="xref" href="#NM-DISC.1.39.04">Machiavelli .04</a>.</p>
+<p><span class="lem">History.</span> Canestrini&#x27;s notes, not carried, describe the Ten as an old magistracy that often changed its name and number, and the Eighty as a council drawn from the Great Council. Guicciardini gives no dates.</p>
+        </details>
+      </div>
+      <div class="pair" id="FG-CONS.1.39.02">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.39.02">1.39.02</a></div>
+        <div class="col it" lang="it">Non è simile lo esemplo di Terentillo, perché la autorità de&#x27; consuli quando non erano nelle espedizioni, non era in parte alcuna assoluta, ma sottoposta alla provocazione al populo, impedita dalla intercessione de&#x27; tribuni, e in tutte le cose gravi più tosto esecutrice de&#x27; pareri del senato che padrona, e però vi era manco cagione di moderarla; anzi era moto tutto sedizioso, e a fine di introducere uno governo interamente populare e licenzioso. Donde nacque che ancora che in quelli tempi la plebe potessi assai e fussi molto volta a battere e&#x27; magistrati patrizii, li difese più facilmente la autorità consulare, come autorità non troppa, ma moderata e conveniente.</div>
+        <div class="col en" lang="en">The example of Terentilius is not similar, because the authority of the consuls, when they were not on the expeditions, was not absolute in any part, but subject to the appeal to the people, impeded by the intercession of the tribunes, and in all grave things rather executrix of the views of the senate than mistress, and therefore there was less cause to moderate it; on the contrary, it was a movement wholly seditious, and to the end of introducing a government entirely popular and licentious. Whence it arose that, even though in those times the plebs could do much and was much turned to beating the patrician magistrates, the consular authority defended them more readily, as an authority not too much, but moderate and fitting.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> The Roman example is not similar. The consuls&#x27; authority, when they were not on campaign, was in no part absolute: it was subject to appeal to the people, impeded by the tribunes&#x27; intercession, and in grave things rather the executrix of the senate&#x27;s views than mistress. Therefore there was less cause to moderate it; on the contrary, it was a movement wholly seditious, aimed at a government entirely popular and licentious; the subject is unstated, most naturally Terentilius&#x27; attempt. Whence, even though the plebs was then strong and much given to striking at the patrician magistrates, the consular authority, being not too great but moderate and fitting, defended them more readily. The reply ends on the measure the Ten had lacked.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini&#x27;s three limits are all limits at home, and he leaves the consuls&#x27; authority in the field unjudged; it was outside the city that Machiavelli&#x27;s people thought the nobles would oppress it under the consuls, and it thought it necessary either to remove the consuls or so to regulate their power that they would have authority over the people neither outside nor at home <a class="xref" href="#NM-DISC.1.39.03">Machiavelli .03</a>. He does not take up Machiavelli&#x27;s premise that the same humours recur in all peoples <a class="xref" href="#NM-DISC.1.39.01">Machiavelli .01</a>; he denies the likeness of the two examples on which the chapter rests its case. Machiavelli&#x27;s Romans hated the consular name more than the authority <a class="xref" href="#NM-DISC.1.39.04">Machiavelli .04</a>; Guicciardini speaks only of the authority.</p>
+<p><span class="lem">History.</span> The appeal to the people and the tribunes&#x27; intercession are the Roman <i lang="la">provocatio</i> and <i lang="la">intercessio</i>. The edition&#x27;s English for <i lang="it">provocazione</i> is the &quot;appeal&quot; of Machiavelli&#x27;s <i lang="it">appellazione</i> at I.32.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from Canestrini 1857, <i>Opere inedite</i> vol. 1, pp. 1–65 (<span class="sig">WIT-FG-CONS-1857-CANESTRINI</span>) — the <i>editio princeps</i>, which governs. Collated against Palmarocchi 1933 (<span class="sig">WIT-FG-CONS-1933-PALMAROCCHI</span>): page images and the Wikisource transcription consulted as collation evidence, not reproduced (LICENSE §5).</p>
+<p><span class="lem">il populo fiorentino Dalla quale</span> → <span class="lem">il populo fiorentino. Dalla quale</span> (FG-CONS.1.39.01). Pass A ⟨.|∅⟩, pass B ⟨.|∅⟩; no stop shows before the capital; the 1933 edition prints one. D67, D347.</p>
+<p><span class="lem">degli Ottanta⁽¹⁾ E fu questa</span> → <span class="lem">degli Ottanta. E fu questa</span> (FG-CONS.1.39.01). Pass A ⟨.|∅⟩, pass B ⟨.|∅⟩; the stop displaced by Canestrini&#x27;s note reference, as D40; the 1933 edition prints one. D347.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem">fussi molto volta a battere</span>. The 1857 witness reads <i lang="it">fussi molto volta a battere (o and a doubtful to both readers)</i>. The 1933 witness reads <i lang="it">fussi molto volta a battere</i>. Both readers see <i lang="it">molto volta</i> and doubt the final letters, each offering <i lang="it">molte volte</i>, &quot;many times&quot;. Read as printed, the letters both readers see, with the 1933 edition: &quot;much turned to striking&quot; (D344).</p>
+<p><span class="lem">le opinioni populari di non volere creare più quello magistrato</span> — 1857. The 1933 witness reads <i lang="it">le opinione populare di non volere servire più quello magistrato</i>. Read by both readers without doubt; a whole word, not at a letter the scan breaks. The 1933 <i lang="it">servire</i>, to serve on the magistracy, makes the opinion the citizens&#x27; refusal to sit; Canestrini&#x27;s <i lang="it">creare</i>, to create it, makes it a refusal to set it up, answered in the same period by <i lang="it">creorono di nuovo</i>. Both construe; kept (D345).</p>
+<p><span class="lem">li difese più facilmente la autorità consulare</span> — 1857. The 1933 witness reads <i lang="it">si difese più facilmente la autorità consulare</i>. Read by both readers without doubt; a whole word. With <i lang="it">li</i> the consular authority is the subject and the patrician magistrates just named the object: it defended them more readily. With the 1933 <i lang="it">si</i> the consular authority was itself the more readily defended. Both construe; kept (D346).</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem"><i lang="it">Io non credo che la querela de&#x27; Fiorentini contro al magistrato de&#x27; Dieci fussi al tutto sanza ragione</i>.</span> &quot;I do not believe that the complaint of the Florentines against the magistracy of the Ten was wholly without reason&quot;: the reply opens on a negated belief (<i lang="it">credo</i>, glossary), not a concession and not a denial. <i lang="it">querela</i>, complaint, the word of Machiavelli&#x27;s <i lang="it">infinite querele del Popolo</i> (Machiavelli .02) (D348); <i lang="it">magistrato</i>, magistracy, the office (D93); <i lang="it">al tutto</i>, wholly (D284). He does not say the complaint was right, only that it was not wholly without reason. Against Machiavelli&#x27;s figure of the fever and not the physician (Machiavelli .02), he puts part of the cause in the office itself, and states the damage of lacking it in his own words (<i lang="it">dannosissimo</i>, below).</p>
+<p><span class="lem"><i lang="it">perché secondo gli ordini antichi della città fatti in diversa spezie di governo</i>.</span> &quot;Because, according to the ancient orders of the city, made in a different species of government&quot;: <i lang="it">ordini</i>, orders (glossary); <i lang="it">spezie</i>, species (glossary); <i lang="it">diverso</i>, different, as in the rubric. The orders were made under another form of government; that they no longer fitted the government of the complaint is implied, and which form is not said.</p>
+<p><span class="lem"><i lang="it">quello magistrato aveva più autorità che non comportava una libertà bene ordinata</i>.</span> &quot;That magistracy had more authority than a well-ordered liberty would bear&quot;: <i lang="it">comportare</i>, bear, allow; the <i lang="it">non</i> after the comparative is not rendered; <i lang="it">libertà</i>, liberty (glossary). The comma after <i lang="it">ordinata</i> is the one both readers preferred where they doubted the mark, and the 1933 edition&#x27;s (D110, D347).</p>
+<p><span class="lem"><i lang="it">essendo in potestà loro fare sanza participazione di altri, paci, guerre, tregue, leghe, soldare capitani, chi e quanti e come volevano, spendere tutti e&#x27; danari sanza alcuno stanziamento o freno</i>.</span> &quot;It being in their power to make, without participation of others, peaces, wars, truces, leagues, to hire captains, whom and how many and how they wished, to spend all the moneys without any appropriation or bridle&quot;: the catalogue in asyndeton is kept (D12); <i lang="it">potestà</i>, power (D78); <i lang="it">participazione</i>, participation, printed <i lang="it">partecipazione</i> later in the reply and one English word; <i lang="it">soldare</i>, hire, take into pay; <i lang="it">stanziamento</i>, appropriation, the vote of funds by the councils; <i lang="it">freno</i>, bridle. <i lang="it">e&#x27;</i> is the plural article (D35).</p>
+<p><span class="lem"><i lang="it">e avendo generalmente nelle cose appartenenti alla guerra tanta autorità, quanta il populo fiorentino</i>.</span> &quot;And having generally, in the things pertaining to war, as much authority as the Florentine people&quot;: the comparison ends without a verb, and the English supplies none. The stop after <i lang="it">fiorentino</i> is supplied from the 1933 edition; the scan shows none before the capital (D67, D347; FG-CONS-I39-C001).</p>
+<p><span class="lem"><i lang="it">Dalla quale autorità troppo assoluta nacquono in buona parte le opinioni populari di non volere creare più quello magistrato</i>.</span> &quot;From which too absolute authority there arose in good part the popular opinions of not wishing to create that magistracy any more&quot;: <i lang="it">nascere</i>, arise (D04); <i lang="it">in buona parte</i>, in good part, his limit on the cause; <i lang="it">volere</i>, wish (D117); <i lang="it">creare</i>, create. The 1933 edition reads <i lang="it">servire</i>, to serve in that magistracy; Canestrini&#x27;s <i lang="it">creare</i> is kept, as both readers read it, and is answered by <i lang="it">creorono di nuovo</i> in the same period (D345; FG-CONS-I39-D002). Where Machiavelli&#x27;s generality blamed the Ten for the war and its cost, Guicciardini puts the opinions down in good part to the Ten&#x27;s own excess of authority.</p>
+<p><span class="lem"><i lang="it">ma avendo mostrato la esperienza che se bene la troppa autorità era perniziosa, era anche dannosissimo alla città mancare ne&#x27; tempi difficili di uno magistrato di uomini prudenti</i>.</span> &quot;But, experience having shown that, although too much authority was pernicious, it was also most damaging to the city to lack, in difficult times, a magistracy of prudent men&quot;: <i lang="it">se bene</i>, although (D31); <i lang="it">pernizioso</i>, pernicious, Machiavelli&#x27;s word for the deliberation to let the Ten lapse (<i lang="it">tanto perniziosa</i>, Machiavelli .02), turned here on the excess of authority; <i lang="it">dannoso</i>, damaging (D106); <i lang="it">mancare di</i> with a noun, &quot;lack&quot; (D312). Both clauses stand: the excess was pernicious, and the lack was damaging.</p>
+<p><span class="lem"><i lang="it">che vigilassi e indirizzassi le cose</i>.</span> &quot;Who should watch over and direct things&quot;: the subjunctive of the office&#x27;s purpose.</p>
+<p><span class="lem"><i lang="it">cognoscendo con le bastonate quello di che non erano stati capaci con la ragione</i>.</span> &quot;Knowing with the cudgellings that which they had not been able to grasp with reason&quot;: <i lang="it">essere capace di</i>, to grasp, in the older sense; English &quot;capable of&quot; would say ability to do. <i lang="it">cognoscere</i>, know, Machiavelli&#x27;s verb of the people&#x27;s recognition (<i lang="it">conosciuto l&#x27;error loro</i>, Machiavelli .04); <i lang="it">bastonate</i>, beatings with a stick, the losses that taught them; <i lang="it">con ... con</i> is kept.</p>
+<p><span class="lem"><i lang="it">creorono di nuovo il magistrato de&#x27; Dieci sopra la guerra, limitandogli la autorità in quelle cose che erano giudicate periculose</i>.</span> &quot;They created anew the magistracy of the Ten over the war, limiting its authority in those things which were judged dangerous&quot;: <i lang="it">di nuovo</i>, anew (glossary); Machiavelli&#x27;s <i lang="it">rifece</i> and <i lang="it">ricrearono</i> (Machiavelli .02, .04). <i lang="it">limitare</i>, limit, Machiavelli&#x27;s verb for Terentilius&#x27; five men (<i lang="it">considerare la potenza de&#x27; Consoli, e limitarla</i>, Machiavelli .04): the limit Guicciardini approves for the Ten is the one he will refuse for the consuls. <i lang="it">periculoso</i>, dangerous (glossary <i lang="it">periculo</i>).</p>
+<p><span class="lem"><i lang="it">alle quali ordinorono bisognassi la partecipazione degli Ottanta</i>.</span> &quot;For which they ordered that the participation of the Eighty should be required&quot;: <i lang="it">ordinare</i>, order (glossary). <i lang="it">bisognare</i>, &quot;it is required&quot;, in every tense (D260); see the note on <i lang="it">bisogni</i> at NM I.2. The Eighty, the council drawn from the Great Council, as Canestrini&#x27;s own note says (names.md). The stop before <i lang="it">E fu</i> is supplied from the 1933 edition, displaced in Canestrini by his note reference (D40, D347; FG-CONS-I39-C002).</p>
+<p><span class="lem"><i lang="it">E fu questa deliberazione tale che mai più poi, eziandio in tempo di pace, si fece difficultà di creare quello magistrato</i>.</span> &quot;And this deliberation was such that never again later, even in time of peace, was difficulty made of creating that magistracy&quot;: <i lang="it">deliberazione</i>, deliberation, Machiavelli&#x27;s word for the decision to let the Ten lapse (Machiavelli .02); <i lang="it">poi</i>, later (D250); <i lang="it">eziandio</i>, even.</p>
+<p><span class="lem"><i lang="it">chiamandoli non Dieci di Balìa come prima per la autorità assoluta che avevano, ma Dieci di Libertà e Pace</i>.</span> &quot;Calling them not Ten of Balìa, as before, for the absolute authority which they had, but Ten of Liberty and Peace&quot;: <i lang="it">balìa</i>, full power, kept in Italian as the title; the reason for the old name is given, the reason for the new is left to the name itself. Canestrini&#x27;s note on the Ten (p. 49) is his and is not carried.</p>
+<p><span class="lem"><i lang="it">Non è simile lo esemplo di Terentillo</i>.</span> &quot;The example of Terentilius is not similar&quot;: <i lang="it">simile</i>, similar (glossary), since &quot;like&quot; cannot stand without an object; the Italian fronts the predicate, the English takes plain order (D263, exposition); <i lang="it">esemplo</i>, example (glossary). Terentilius as Machiavelli&#x27;s (names.md). Guicciardini does not answer Machiavelli&#x27;s general claim of .01, that the same humours recur in all peoples; he answers the two examples, and separates them.</p>
+<p><span class="lem"><i lang="it">perché la autorità de&#x27; consuli quando non erano nelle espedizioni, non era in parte alcuna assoluta</i>.</span> &quot;Because the authority of the consuls, when they were not on the expeditions, was not absolute in any part&quot;: <i lang="it">espedizione</i>, expedition (glossary); the limit is his, and leaves the consuls&#x27; authority in the field unjudged. Machiavelli&#x27;s people feared the consuls precisely outside the city, where the tribunes&#x27; power did not reach, and wanted them without authority &quot;neither outside nor at home&quot; (Machiavelli .03); Guicciardini&#x27;s three limits are all limits at home.</p>
+<p><span class="lem"><i lang="it">ma sottoposta alla provocazione al populo, impedita dalla intercessione de&#x27; tribuni</i>.</span> &quot;But subject to the appeal to the people, impeded by the intercession of the tribunes&quot;: <i lang="it">provocazione al populo</i>, the Roman <i lang="la">provocatio ad populum</i>, &quot;appeal&quot;, the word given to Machiavelli&#x27;s <i lang="it">appellazione</i> at I.32: one English word for two Italian (D348). <i lang="it">intercessione</i>, intercession, the tribunes&#x27; <i lang="la">intercessio</i>, their veto.</p>
+<p><span class="lem"><i lang="it">e in tutte le cose gravi più tosto esecutrice de&#x27; pareri del senato che padrona</i>.</span> &quot;And in all grave things rather executrix of the views of the senate than mistress&quot;: <i lang="it">più tosto ... che</i>, rather ... than (D135); <i lang="it">esecutrice</i> and <i lang="it">padrona</i> keep their feminine nouns, &quot;executrix&quot; and &quot;mistress&quot;, after <i lang="it">la autorità</i>, both without the article, as the Italian has them; <i lang="it">parere</i>, a view given, kept apart from <i lang="it">opinione</i>, opinion (D02).</p>
+<p><span class="lem"><i lang="it">e però vi era manco cagione di moderarla</i>.</span> &quot;And therefore there was less cause to moderate it&quot;: <i lang="it">però</i>, therefore (D22), consecutive on the limits just listed; <i lang="it">manco</i>, less; <i lang="it">cagione</i>, cause (glossary); <i lang="it">moderare</i>, moderate, which returns in <i lang="it">moderata e conveniente</i> at the close.</p>
+<p><span class="lem"><i lang="it">anzi era moto tutto sedizioso, e a fine di introducere uno governo interamente populare e licenzioso</i>.</span> &quot;On the contrary, it was a movement wholly seditious, and to the end of introducing a government entirely popular and licentious&quot;: <i lang="it">anzi</i>, reversing, &quot;on the contrary&quot; (D135); <i lang="it">moto</i>, movement; <i lang="it">sedizioso</i>, seditious (glossary <i lang="it">sedizione</i>); <i lang="it">licenzioso</i>, licentious, with <i lang="it">licenza</i>, licence (glossary). The subject of <i lang="it">era</i> is unstated: Terentilius&#x27; attempt, not the consular authority. Where Machiavelli gave the Roman people a mistaken belief about the nobles, Guicciardini gives the movement a seditious end.</p>
+<p><span class="lem"><i lang="it">Donde nacque che ancora che in quelli tempi la plebe potessi assai e fussi molto volta a battere e&#x27; magistrati patrizii</i>.</span> &quot;Whence it arose that, even though in those times the plebs could do much and was much turned to beating the patrician magistrates&quot;: <i lang="it">ancora che</i>, even though (glossary); <i lang="it">potere assai</i>, could do much, <i lang="it">assai</i> with a verb (D348); <i lang="it">molto volta a</i>, much turned to, as printed and as the 1933 edition reads, where both readers doubted the letters (D344; FG-CONS-I39-D001); <i lang="it">battere</i>, beat (D120), to strike at; <i lang="it">plebe</i>, plebs (glossary).</p>
+<p><span class="lem"><i lang="it">li difese più facilmente la autorità consulare, come autorità non troppa, ma moderata e conveniente</i>.</span> &quot;The consular authority defended them more readily, as an authority not too much, but moderate and fitting&quot;: <i lang="it">li</i>, them, the patrician magistrates, where Machiavelli&#x27;s plebs was <i lang="it">difesa dalla potestà Tribunizia</i> (Machiavelli .03); the 1933 edition reads <i lang="it">si difese</i>, &quot;was defended&quot;, and Canestrini&#x27;s <i lang="it">li</i> is kept (D346; FG-CONS-I39-D003). <i lang="it">facilmente</i>, readily (D27); <i lang="it">non troppa</i>, not too much, against <i lang="it">troppa autorità</i> (.01); <i lang="it">conveniente</i>, fitting, as <i lang="it">convenire</i> (D85). The reply ends on the measure the Ten had lacked, and with a stop, which both readers see faintly.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="colophon">
+    <div class="row">
+      <div>
+        <h3>What this is</h3>
+        <p>A free, openly licensed, bilingual edition of Guicciardini's 39 <i>Considerazioni</i> and the
+          <i>Discorsi</i> chapters they answer — 78 text units, Italian and English facing, every reading
+          traceable to a named public-domain witness.</p>
+        <p>It is a reading edition with a transparent apparatus, not a text of record. It does not adjudicate
+          the critical text against Bausi 2001 or the manuscript tradition, and does not claim to.</p>
+      </div>
+      <div>
+        <h3>On the title</h3>
+        <p>Machiavelli had been dead two years when Guicciardini wrote; the <i>Discorsi</i> were unpublished,
+          and the <i>Considerazioni</i> stayed unprinted until 1857. Machiavelli never answers.</p>
+        <p>“Conversation” is a quotation, not a description. It invokes Machiavelli's letter to Francesco Vettori of
+          10 December 1513: at evening he puts on royal and curial garments (<i>panni reali e curiali</i>),
+          enters the ancient courts of ancient men (<i>le antiche corti degli antichi uomini</i>), asks them the
+          reason for their actions, and <i>quelli per loro umanità mi rispondono</i>, “they, for their humanity,
+          answer me”. Guicciardini does to Machiavelli what Machiavelli did to Livy — and is denied the reply
+          Machiavelli claimed. The letter is quoted from the 1813 <i>Opere</i>, vol. 8, p. 96, read twice from
+          the page image.</p>
+      </div>
+      <div>
+        <h3>Method</h3>
+        <p>No image-derived reading enters the text on a single reading. Each unit is transcribed twice,
+          independently, by readers who have not seen each other's work; disagreements are adjudicated against
+          the page images and recorded.</p>
+        <p>Existing English translations of the <i>Considerazioni</i> — Grayson (1965), Atkinson &amp; Sices
+          (2002) — are never used as translation inputs.</p>
+      </div>
+      <div>
+        <h3>Licence</h3>
+        <p>The established Italian text and the apparatus data are dedicated to the public domain under
+          <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>. They are Machiavelli's and
+          Guicciardini's sentences, and this edition adds no condition to them.</p>
+        <p>The English translation, the notes and the editorial apparatus are licensed
+          <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: reuse them anywhere, including
+          commercially, with attribution to David McDougall and this edition. The build tooling is MIT.</p>
+        <p>The witness scans are other people's digitisations, included as evidence under their own terms; no
+          grant is made over them, and no page image of Palmarocchi 1933 is reproduced here. Full terms,
+          layer by layer, are in the <span class="sig">LICENSE</span> file in the repository.</p>
+      </div>
+    </div>
+
+    <div class="state">
+      <p><strong>Version 0.3 · 23 of 39 pairs published.</strong>
+        Published 20 October 2026. This edition is versioned, not frozen. No open questions on this pair.</p>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
