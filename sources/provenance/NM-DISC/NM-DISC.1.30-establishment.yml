@@ -1,0 +1,29 @@
+source_unit_id: NM-DISC.1.30
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-021
+passes:
+  - {id: A, performed: 2026-10-20, file: sources/coldpass/NM-DISC.1.30-passA.md, note: "subagent; page images only (350 ppi, thirds), separate directory; full chapter"}
+  - {id: B, performed: 2026-10-20, file: sources/coldpass/NM-DISC.1.30-passB.md, note: "subagent; p. 112 only (262 words, 48% of the chapter), chosen by the collator under D302 after pass A and the Giglio read and recorded before it was given out, with four line crops carrying every word-level 1554 difference outside it; separate directory"}
+collation: sources/coldpass/COLLATION-2026-10-20-I30.md
+collation_result: "543 words (pass A). Sample of p. 112 and four crops: identical after Class A; no word, clause or sense disagreement, so no full pass B, and the sample rule stands for the next chapter. One printed non-word read by both readers, `tntta`, emended `t[u]tta` (D318). One word-level difference from the 1554 at a letter the scans break, `prenda`, kept (D319). Two sense-bearing differences kept: `giudicando` (D320), no `tanti` (D321)."
+boundaries: "printed pp. 111-113; CAPITOLO XXX on p. 111 after body line 15 (`si dirà.`, the end of XXIX); four-line italic rubric; large initial U; one block; ends p. 113 line 25 `dai cittadini romani.`; CAPITOLO XXXI opens p. 114"
+interventions: []
+emendations:
+  - {id: NM-DISC-I30-E001, operation: emendation, rule: D68, status: ruled_D318, locator: NM-DISC.1.30.04, printed: "adoperandosi tntta la Città", established: "adoperandosi t[u]tta la Città", source: WIT-NM-DISC-1554-IA, note: "Both readers (pass A and the pass-B crop) see an n on a crisp page, an inverted or foul sort. `Tntta` is not a word; the 1554 edition prints `tutta` (fol. 46r). Emended under D68, the emended letter bracketed (DEC-009 clause 7). Not settled on the page image."}
+readings:
+  - {locus: "adoperandosi t[u]tta la Città", passes: "A ⟨tutta|tntta⟩ (p. 113); B ⟨tutta|tntta⟩ (crop 3)", witness_1554: "adoperandosi tutta la citta", disposition: "t[u]tta, D318 (David, 2026-10-20): a printed non-word, emended under D68"}
+  - {locus: "prenda animosamente la parte contraria", passes: "A and B `prenda`, no doubt (p. 112, the sample)", witness_1554: "prende animosamente la parte contraria", disposition: "kept as printed, D38; D319 (David, 2026-10-20), escalated under D203(b) at a/e"}
+  - {locus: "Ma dico bene a quel Capitano, giudicando che non possa fuggire", passes: "A and B, no doubt (p. 112, the sample)", witness_1554: "Ma dico bene a quel Capitano, che giudicando io, ch'ei non possa fuggire", disposition: "kept as printed, D38; D320 (David, 2026-10-20), raised by the collator, no D203 trigger"}
+  - {locus: "in ogni età uomini virtuosi, ... che il Popolo non aveva cagione", passes: "A and B, no doubt (p. 113, crop 3)", witness_1554: "in ogni eta tanti huomini uirtuosi, ... che'l popolo non haueua cagione", disposition: "kept as printed, D38; D321 (David, 2026-10-20), raised by the collator, no D203 trigger"}
+comparison_collation: >
+  Done 2026-10-20 against the 1554 extract (fol. 45v-46r). A cold reader
+  transcribed the Giglio leaves from the page images
+  (sources/coldpass/NM-DISC.1.30-1554.md); the transcript was collated by
+  word against pass A, and the readings published as variant notes were
+  checked on the leaf images by the collator. Sense-bearing differences are
+  in sources/comparisons/NM-DISC/NM-DISC.1.30-witness-disagreements.yml.
+normalisation_notes: "Class A only: accents (`perchè` → `perché` ×2, `nè` → `né` ×3, `sè` → `sé`, `acciocchè` → `acciocché`, `Talchè` → `Talché`); elision solid (`s' ei`, `l' esercito`, `d' ogni`, `l' offendere`, `l' onorevole`, `gl' Ignobili`, `d' offenderli`, `d' essere` closed up); apocope and the pronoun spaced as printed (`ne' tempi`, `e' si`); spaces before punctuation removed; line-end hyphens removed. Euphonic `ed` as printed (D36); `paja` as printed."

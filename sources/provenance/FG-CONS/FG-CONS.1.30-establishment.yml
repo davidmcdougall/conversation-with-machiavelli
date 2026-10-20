@@ -1,0 +1,32 @@
+source_unit_id: FG-CONS.1.30
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-021
+responds_to: NM-DISC.1.30
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. Canestrini's note on this reply (p. 48, keyed to `Discorso`, a paraphrase of Machiavelli's first sentence) is his and is not carried."
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38); errors are emended from Palmarocchi and bracketed (D68)."
+passes:
+  - {id: A, performed: 2026-10-20, file: sources/coldpass/FG-CONS.1.30-passA.md, note: "subagent; page images only (native 600 ppi rendered at 1200, full page and halves), separate directory"}
+  - {id: B, performed: 2026-10-20, file: sources/coldpass/FG-CONS.1.30-passB.md, note: "subagent; same images, separate directory"}
+collation: sources/coldpass/COLLATION-2026-10-20-I30.md
+collation_result: >
+  92 words (A and B), 107 tokens identical after preferred readings. No
+  word, clause or sense disagreement. Rubric `a una repubblica`, an a
+  doubted by both readers, read `o` (D322). One doubt common to both
+  readers whose alternative is a word, `E ne vediamo`, read `E` (D323).
+  Three marks doubtful to both settled by D110 (D324).
+witness_independence_check: "SCOPE §7. Neither pass carries a Palmarocchi word-reading where Canestrini differs: both have `espedizioni`, `reputazione`, `il ricordo`, `Stato suo;`, `tutto dì`, against the 1933 `espedizione`, `riputazione`, `el ricordo`, `stato suo,`, `tuttodí`. The passes read Canestrini."
+boundaries: "printed p. 48; heading CONSIDERAZIONE SUL CAPITOLO XXX. under the running head, nothing of an earlier reply on the page; Canestrini's three-line rubric with a hanging indent; one indented paragraph (`Io laudo` ... `di questi sinistri.`); one note of Canestrini's keyed to `Discorso`; CONSIDERAZIONE SUL CAPITOLO XXXII follows on the same page (no reply on XXXI)"
+corrections:
+  - {id: FG-CONS-I30-C001, locator: rubric, was: "della ingratitudine: e quali", now: "della ingratitudine; e quali", evidence: "Pass A ⟨:|;⟩, pass B ⟨:|;⟩; a blotted mark; the 1933 edition prints a semicolon. D110, D324."}
+emendations: []
+readings:
+  - {locus: "rubric: un principe ⟨a|o⟩ una repubblica", passes: "A and B ⟨a|o⟩", witness_1933: "uno principe o una republica", disposition: "o, D322 (David, 2026-10-20): both readers see an a and doubt it; `a` does not construe; a reading at a letter the scan breaks"}
+  - {locus: "⟨E|È⟩ ne vediamo", passes: "A and B ⟨E|È⟩", witness_1933: "E ne vediamo", disposition: "E, D323 (David, 2026-10-20): common doubt; `È` does not construe; with the 1933 edition"}
+  - {locus: "per capitani ⟨;|,⟩ e credo", passes: "A and B ⟨;|,⟩", witness_1933: ";", disposition: "`;`, D110, D324 (David, 2026-10-20)"}
+  - {locus: "rubric: oppresso da quella⟨.|∅⟩", passes: "A and B ⟨.|∅⟩", witness_1933: ".", disposition: "`.`, D110, D324 (David, 2026-10-20)"}
+not_supplied: []
+normalisation_notes: "Class A: accents (`perchè` → `perché`); the Florentine plural article supplied as `e'` (D35: `e' suoi`, `e' quali`); `de' principi` spaced; Canestrini's note reference removed; spaces before punctuation removed (`reputazione ,`, `capitani ;`, `suo ;`); line-end hyphens removed."

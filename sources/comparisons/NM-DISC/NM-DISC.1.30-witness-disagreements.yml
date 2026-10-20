@@ -1,0 +1,67 @@
+source_unit_id: NM-DISC.1.30
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-I30-D001
+    locator: NM-DISC.1.30.04
+    class: emendation
+    witness_1824: "Perchè adoperandosi tntta la Città"
+    witness_1554: "perche adoperandosi tutta la citta"
+    established: "Perché adoperandosi t[u]tta la Città"
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 46r). Both 1824 readers see an n, an inverted or foul sort on a crisp page; `tntta` is not a word. Emended under D68 from the 1554 edition (D318)."
+  - id: NM-DISC-I30-D002
+    locator: NM-DISC.1.30.02
+    class: ruled_reading
+    witness_1824: "prenda animosamente la parte contraria, e tenga tutti quelli modi"
+    witness_1554: "prende animosamente la parte contraria, & tenga tutti quei modi"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 45v). The 1554 has the indicative `prende`; the 1824 the subjunctive `prenda`, in line with `faccia`, `tenga`, `occupi` in the same advice. A difference at a/e, escalated under D203(b); read by both readers without doubt; kept (D38; D319)."
+  - id: NM-DISC-I30-D003
+    locator: NM-DISC.1.30.02
+    class: ruled_reading
+    witness_1824: "Ma dico bene a quel Capitano, giudicando che non possa fuggire i morsi della ingratitudine, che faccia una delle due cose"
+    witness_1554: "Ma dico bene a quel Capitano, che giudicando io, ch'ei non possa fuggire i morsi della ingratitudine, che faccia una delle due cose"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 45v). The 1554 names the one who judges, `io`, Machiavelli, and gives `possa` its subject, `ei`, the captain: \"I say to that captain, since I judge that he cannot escape the bites of ingratitude, that he should do one of two things\". The 1824 leaves the gerund's subject to the reader, and it reads most easily as the captain's own judgement. Read by both readers without doubt; it construes; kept (D38; D320). The English follows the 1824; a translator's note gives the 1554."
+  - id: NM-DISC-I30-D004
+    locator: NM-DISC.1.30.04
+    class: ruled_reading
+    witness_1824: "surgeva sempre in Roma in ogni età uomini virtuosi, e ornati di varie vittorie, che il Popolo non aveva cagione di dubitare"
+    witness_1554: "surgeua sempre in Roma in ogni eta tanti huomini uirtuosi, & ornati di uarie uittorie, che'l popolo non haueua cagione di dubitare"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 46r). The 1554 `tanti ... che`, \"so many ... that\", makes the people's lack of cause a result of the number of such men; the 1824, without `tanti`, leaves the `che` loosely consecutive. Read by both readers without doubt; it construes; kept (D38; D321)."
+  - id: NM-DISC-I30-D005
+    locator: NM-DISC.1.30.03
+    class: reading
+    witness_1824: "Talchè stando ambigui, tra quella loro dimora e ambiguità, sono oppressi"
+    witness_1554: "Tal che stando dubbiosi tra quella loro dimora, et ambiguita sono oppressi"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 46r). The 1554 `dubbiosi`, \"doubtful\", for `ambigui`, \"ambiguous\": the 1824 repeats its noun in `ambiguità`. Same sense."
+  - id: NM-DISC-I30-D006
+    locator: NM-DISC.1.30.04
+    class: reading
+    witness_1824: "si mantenevano interi, e rispettivi di non dare ombra di alcuna ambizione"
+    witness_1554: "si manteneuano interi, et con rispetto di non dare ombra d'alcuna ambitione"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 46r). The 1554 `con rispetto`, \"with care\", for the adjective `rispettivi`, \"careful\". Same sense."
+  - id: NM-DISC-I30-D007
+    locator: NM-DISC.1.30.01
+    class: reading
+    witness_1824: "come facevano nel principio quelli Imperadori romani, come fa ne' tempi nostri il Turco ... s'ei non spengono in altrui quella gloria che loro non hanno saputo guadagnarsi"
+    witness_1554: "come faceuano nel principio quei Imperadori Romani, come fa a i tempi nostri il Turco ... se non spengono in altrui quella gloria, che eßi non hanno saputo guadagnarsi"
+    established: witness_1824
+    publish_as_variant_note: false
+    rationale: "Forms of one word or construction (`quei`, `a i tempi`, `eßi`, no pronoun after `se`); no difference of sense."
+  - id: NM-DISC-I30-D008
+    locator: NM-DISC.1.30.01
+    class: systematic_orthographic_profile
+    witness_1554: "Giglio's `Prencipe`, `eſſercito`, `eſſendo` for `sendo`, `Rep.`/`Repub.`, `ambitione`, tildes (`nō`, `cō`, `corrōpa`, `facē-`), `&`/`et`, and his pointing (parenthesised `(eſſendo la gloria di altrui)`, `(come di ſopra ſi diſſe)`)"
+    established: witness_1824
+    publish_as_variant_note: false
+    rationale: "Spelling and pointing; DEC-009 classes, not readings."

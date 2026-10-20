@@ -1,0 +1,28 @@
+source_unit_id: FG-CONS.1.30
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-I30-D001
+    locator: rubric
+    class: ruled_reading
+    witness_1857: "Quali modi debbe usare un principe [a/o] una repubblica (a damaged letter)"
+    witness_1933: "[Quali modi debbe usare uno principe o una republica"
+    established: "Quali modi debbe usare un principe o una repubblica"
+    publish_as_variant_note: true
+    rationale: "Both readers see an a and doubt it, offering o. `A` does not construe in the disjunction; the 1933 edition, and Machiavelli's rubric in the 1824 and 1554 editions, read `o`. The scan breaks letters at o/a. A reading, not an emendation (D322)."
+  - id: FG-CONS-I30-D002
+    locator: FG-CONS.1.30.01
+    class: ruled_reading
+    witness_1857: "[E/È] ne vediamo tutto dì (a mark above the capital)"
+    witness_1933: "E ne vediamo tuttodí"
+    established: "E ne vediamo tutto dì"
+    publish_as_variant_note: true
+    rationale: "Both readers doubted whether the mark over the capital is a grave accent. `È ne vediamo` does not construe; the conjunction, as the 1933 edition reads, does. A reading (D323)."
+  - id: FG-CONS-I30-D003
+    locator: FG-CONS.1.30.01
+    class: systematic_orthographic_profile
+    witness_1857: "Canestrini's `espedizioni`, `reputazione`, `il ricordo`, `tutto dì`, `e suoi`, `e quali`, and his pointing (`reputazione, e altrimenti`, `Stato suo; ma`)"
+    witness_1933: "Palmarocchi's `espedizione`, `riputazione`, `el ricordo`, `tuttodí`, `e' suoi`, `e' quali`, and his pointing (`riputazione; ed altrimenti`, `stato suo, ma`)"
+    established: witness_1857
+    publish_as_variant_note: false
+    rationale: "Orthographic profile and pointing; DEC-009 classes. The pointing doubtful to both readers follows the 1933 edition by D110 (D324)."
