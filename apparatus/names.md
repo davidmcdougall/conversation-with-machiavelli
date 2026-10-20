@@ -183,3 +183,9 @@ the original.
 | `Metello`, `Publio Rutilio` | Metellus, Publius Rutilius | FG I.29; Q. Caecilius Metellus Numidicus, P. Rutilius Rufus |
 | `Asiatico` | Asiaticus | FG I.29; Lucius Cornelius Scipio Asiaticus |
 | `il Turco` | the Turk | NM I.30; the Ottoman sultan, presumably Selim I (`Gran Turco`, I.1) |
+| `Firenze`, `Fiorentini` | Florence, Florentines | NM I.39, FG I.39 |
+| `Pisa`, `Arezzo` | Pisa, Arezzo | NM I.39; Florentine subject towns lost `dopo il 94`, as Machiavelli dates it |
+| `Dieci della guerra`; `Dieci`, `Dieci di Balìa`, `Dieci di Libertà e Pace` | the Ten of War; the Ten, Ten of Balìa, Ten of Liberty and Peace | NM I.39, FG I.39; the Florentine magistracy over war, not the Roman decemvirs of FG I.28, who share the English "the Ten" |
+| `Signoria` | the Signoria | NM I.39; Florence's chief magistracy |
+| `Ottanta` | the Eighty | FG I.39; the council drawn from the Great Council, as Canestrini's own note says |
+| `Terentillo` | Terentilius | NM I.39, FG I.39; Gaius Terentilius Harsa, tribune of the plebs (Livy 3.9). Both witnesses spell it with `-ll-`; the English takes Livy's form, as `Cammillo` → Camillus |

@@ -46,3 +46,6 @@ first time it is italicised.
 | `tanto` | NM I.29 note |
 | `magister equitum` | FG I.29 note |
 | `Cato Maior` | NM I.29 note (Plutarch) |
+| `provocatio` | FG I.39 commentary |
+| `provocatio ad populum` | FG I.39 note |
+| `domi militiaeque` | NM I.39 note |

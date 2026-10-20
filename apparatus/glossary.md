@@ -566,3 +566,25 @@ last sentence answers Machiavelli's first move.
 | `per lo ordinario` | by the ordinary | D163. FG I.8, FG I.32. |
 | `ingannarsi` | deceive oneself | NM I.32 .03. |
 | `dovendo` (gerund of `dovere`) | having to | D334. A recorded collapse with `avere a` (D261); `dovere` finite stays "must" (D274). |
+
+
+## Added from the I.39 pair (2026-10-20)
+
+| Italian | English | Note |
+|---|---|---|
+| `assai` + verb | much; enough (sufficiency) | D348. NM I.39 `si spendeva assai`, `dallo spendere assai`, `alterò assai`; FG I.39 `potessi assai`. D333's "enough" stays for the claim of sufficiency (NM I.32 `assai operavano`). |
+| `dovere` (subjunctive of a proposal; imperfect of an unmet obligation) | should; should have | D348. NM I.39 `si dovessero creare`, `dovessero considerare`, `dovevano pensare`. `dovere` finite stays "must" (D274); a bare subjunctive in the same unit is not given "should". |
+| `querela` | complaint | D348. NM I.39 `infinite querele del Popolo`; FG I.39 `la querela de' Fiorentini`, the reply's first noun. |
+| `azioni` (of an office) | functions | D348. NM I.39. "Action" stays `fazione`'s military sense (D341). |
+| `provocazione` / `appellazione` | appeal / appeal | D348, a recorded collapse. FG I.39 `provocazione al populo`; NM I.32 `appellazione alla Plebe`. |
+| `intercessione` | intercession | FG I.39, the tribunes' *intercessio*. |
+| `participazione` / `partecipazione` | participation | D348. FG I.39, one noun in two spellings; the verbs stay split, `participare` impart (D28), `partecipare di` partake of. |
+| `diverso` | different | NM I.25; I.39 rubric (both authors); FG I.39 `diversa spezie`. |
+| `levarsi` | rise | D348. NM I.39 `si levò`; `levare` stays "remove" (D131). |
+| `rifare` / `ricreare` / `creare di nuovo` | remake / re-create / create anew | D348. NM I.39 `avendosi a rifare`, `rifece`, `ricrearono`; FG I.39 `creorono di nuovo`. |
+| `aiuto`, `ajuto` | aid | D348. NM I.39. Kept apart from `giovare`, help (D334). |
+| `pernizioso` | pernicious | NM I.39 (the lapse of the Ten); FG I.39 (the excess of authority). |
+| `deliberazione` | deliberation | NM I.39, FG I.39, of the decision on the Ten. |
+| `limitare` | limit | NM I.39 (Terentilius' five men), FG I.39 (the Ten). |
+| `considerazione` | consideration | NM I.39 .01, with `considerare`. |
+| `moderare`, `moderato` | moderate | FG I.39 ×2. |
