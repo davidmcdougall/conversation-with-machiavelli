@@ -117,7 +117,7 @@ Concluding, then, this discourse, I say that, this vice of ingratitude being use
 
 **`per viltà dei nimici`.** "Through the cowardice of the enemies": `viltà` of fighting men is cowardice. The 1554 edition has `per la uilta`.
 
-**`in tale fazione`.** "In such an action": `fazione` here is a military operation, the campaign the captains shared. The glossary's "faction" (FG I.10) is a party in the state; the sense split is ruled provisionally and held for review at the next occurrence of the word (D317): the ruling rests on context, `tale` pointing back to the victory and `sono stati seco in` meaning taking part with him.
+**`in tale fazione`.** "In such an action": `fazione` here is a military operation, the campaign the captains shared. The glossary's "faction" (NM I.7, FG I.10) is a party in the state; the sense split rests on context, `tale` pointing back to the victory and `sono stati seco in` meaning taking part with him (D317), and is confirmed by Machiavelli's other uses: `nell'altre fazioni` of combats (II.18), and `in tal fazione` of the battle of Decius and Fabius (III.45), the same phrase (D341).
 
 **`Poi che Vespasiano sendo in Giudea fu dichiarato dal suo esercito Imperadore`.** "After Vespasian, being in Judaea, was declared emperor by his army": `Imperadore`, emperor (glossary). Vespasian was hailed in July 69 while commanding the war in Judaea; the story that follows is Tacitus' (*Histories* 2-4).
 

@@ -505,7 +505,7 @@ last sentence answers Machiavelli's first move.
 | `levare` / `togliere`, `torre` / `menare` | remove / take away / lead | D313, with D131. NM I.29 .04-.05. |
 | `allo incontro` | in return | D313. NM I.29 .02, of requital. Kept apart from `al rincontro`, "on the other side" (D24). |
 | `genti d'arme` | men-at-arms | D313. NM I.29. `genti` alone stays "troops" (I.23). |
-| `fazione` (military) | action | NM I.29 `in tale fazione`. D317: a sense split from `fazione`, "faction" (FG I.10, political). **Review item**: check against the next occurrence of `fazione`. |
+| `fazione` (military) | action | NM I.29 `in tale fazione`. D317, confirmed by D341: a sense split from `fazione`, "faction" (NM I.7, FG I.10, political). Decided by sense at each occurrence: a party in the state, or a military operation or engagement (II.18, III.45 `in tal fazione`). |
 | `porre modo` | set a measure | D311. NM I.29. `modo` stays "way". |
 | `assai` + noun or comparative | much | D312. NM I.29 `assai gloria`, `assai manco`. `assai` of degree before an adjective stays "very" (D254). |
 | `ritenuto` (restrained) | held back | D312. NM I.29 .02. `ritenere` stays "retain" (D272). |
