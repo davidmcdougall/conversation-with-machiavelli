@@ -1,0 +1,422 @@
+<title>A Conversation with Machiavelli — A republic or a prince must not defer benefiting men until their necessities</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root {
+  --paper:      #EDEEEC;
+  --paper-sunk: #E4E6E3;
+  --ink:        #1B1E1C;
+  --ink-muted:  #5C625E;
+  --ink-faint:  #868C87;
+  --rule:       #C9CDC8;
+  --rule-faint: #DCDFDB;
+  --nm:         #3A5A6B;
+  --fg:         #6E5A3C;
+  --serif: "EB Garamond", "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  --sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --mono:  "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:      #161917;
+    --paper-sunk: #1D211E;
+    --ink:        #E3E6E1;
+    --ink-muted:  #A0A6A0;
+    --ink-faint:  #767C77;
+    --rule:       #343934;
+    --rule-faint: #262B27;
+    --nm:         #8FB4C6;
+    --fg:         #C4A97C;
+  }
+}
+:root[data-theme="dark"] {
+  --paper:      #161917;
+  --paper-sunk: #1D211E;
+  --ink:        #E3E6E1;
+  --ink-muted:  #A0A6A0;
+  --ink-faint:  #767C77;
+  --rule:       #343934;
+  --rule-faint: #262B27;
+  --nm:         #8FB4C6;
+  --fg:         #C4A97C;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 1160px; margin: 0 auto; padding-inline: 20px; padding-block: 0 0; }
+
+/* ---- masthead ---- */
+.masthead { padding-block: 56px 32px; border-bottom: 1px solid var(--rule); }
+.eyebrow {
+  font-family: var(--sans); font-size: 11px; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint);
+  margin: 0 0 18px;
+}
+h1 {
+  font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 5vw, 44px);
+  line-height: 1.12; margin: 0 0 14px; text-wrap: balance; letter-spacing: -0.01em;
+}
+h1 .sub { display: block; font-style: italic; color: var(--ink-muted); font-size: .52em; margin-top: 12px; letter-spacing: 0; }
+.standfirst {
+  font-family: var(--sans); font-size: 14.5px; line-height: 1.6;
+  color: var(--ink-muted); max-width: 62ch; margin: 0;
+}
+.sf-label {
+  font-weight: 600; font-size: 11px; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--ink-faint); margin-right: .6em;
+}
+
+/* ---- the pairing device ---- */
+.pairing {
+  display: flex; align-items: stretch; gap: 0; margin: 30px 0 0;
+  border: 1px solid var(--rule); border-radius: 2px; overflow: hidden;
+  font-family: var(--sans); background: var(--paper-sunk);
+}
+.pairing > div { flex: 1 1 0; padding: 13px 16px; min-width: 0; }
+.pairing .who { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
+.pairing .nm-side .who { color: var(--nm); }
+.pairing .fg-side .who { color: var(--fg); }
+.pairing .what { font-size: 13.5px; color: var(--ink-muted); }
+.pairing .arrow {
+  flex: 0 0 auto; display: flex; align-items: center; justify-content: center;
+  padding-inline: 14px; color: var(--ink-faint); font-size: 15px;
+  border-inline: 1px solid var(--rule);
+}
+
+/* ---- pair-to-pair navigation ---- */
+.pairnav {
+  display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+  margin-top: 18px; font-family: var(--sans); font-size: 12.5px;
+  color: var(--ink-muted);
+}
+.pairnav a { text-decoration: none; color: var(--ink-muted); }
+.pairnav a:hover, .pairnav a:focus { color: var(--ink); text-decoration: underline; }
+
+/* ---- work sections ---- */
+.work { padding-block: 52px 0; }
+.work-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
+.work-head .tag {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .04em;
+  padding: 3px 7px; border-radius: 2px; color: var(--paper);
+}
+.work.nm .tag { background: var(--nm); }
+.work.fg .tag { background: var(--fg); }
+h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; letter-spacing: -0.005em; }
+.rubric {
+  font-style: italic; color: var(--ink-muted); max-width: 70ch;
+  margin: 10px 0 0; font-size: 16.5px; line-height: 1.5;
+}
+.rubric-note {
+  font-family: var(--sans); font-style: normal; font-size: 12px;
+  color: var(--ink-faint); margin-top: 7px;
+}
+.colheads {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  margin-top: 30px; padding-bottom: 7px; border-bottom: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint);
+}
+
+/* ---- the facing pair ---- */
+.pair {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  padding-block: 22px; border-bottom: 1px solid var(--rule-faint);
+  scroll-margin-top: 20px;
+}
+.pair:target { background: var(--paper-sunk); }
+.annot { grid-column: 2 / -1; margin-top: 14px; font-family: var(--sans); font-size: 13.5px;
+  line-height: 1.55; color: var(--ink-muted); }
+.annot summary { cursor: pointer; font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); list-style: none; }
+.annot summary::-webkit-details-marker { display: none; }
+.annot summary::before { content: "+ "; }
+.annot[open] summary::before { content: "− "; }
+.annot p { margin: 8px 0 0; max-width: 72ch; }
+.annot .xref { color: inherit; text-decoration: underline; text-decoration-color: var(--rule);
+  text-underline-offset: 2px; white-space: nowrap; }
+.gutter { padding-top: 4px; }
+.uid {
+  font-family: var(--mono); font-size: 10.5px; color: var(--ink-faint);
+  text-decoration: none; letter-spacing: -0.02em;
+}
+.uid:hover, .uid:focus { color: var(--ink); text-decoration: underline; }
+.col { min-width: 0; }
+.col.it { hyphens: auto; }
+.col.en { }
+.supplied { color: var(--ink-muted); }
+
+/* ---- apparatus ---- */
+.apparatus {
+  margin-top: 34px; padding-top: 22px; border-top: 2px solid var(--rule);
+  font-family: var(--sans); font-size: 13.5px; line-height: 1.58;
+  color: var(--ink-muted);
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 26px 34px;
+}
+.apparatus h3 {
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); margin: 0 0 9px;
+}
+.apparatus p { margin: 0 0 9px; }
+.apparatus p:last-child { margin-bottom: 0; }
+.apparatus .lem { font-family: var(--serif); font-size: 15px; color: var(--ink); font-style: italic; }
+.sig { font-family: var(--mono); font-size: 12px; color: var(--ink); }
+
+/* ---- colophon ---- */
+.colophon {
+  margin-top: 60px; padding-block: 28px 60px; border-top: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 13px; line-height: 1.6; color: var(--ink-muted);
+}
+.colophon .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 34px; }
+.colophon h3 {
+  font-size: 10.5px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--ink-faint); margin: 0 0 8px;
+}
+.colophon p { margin: 0 0 8px; }
+.colophon ul { margin: 0; padding-left: 16px; }
+.colophon li { margin-bottom: 5px; }
+.state {
+  margin-top: 26px; padding: 14px 16px; background: var(--paper-sunk);
+  border-left: 2px solid var(--ink-faint); border-radius: 0 2px 2px 0;
+  font-size: 12.5px;
+}
+.state strong { color: var(--ink); font-weight: 600; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--nm); outline-offset: 2px; }
+
+/* ---- contents / index page ---- */
+.toc { margin-top: 30px; }
+.toc-row {
+  display: grid; grid-template-columns: 40px 1fr 1fr; gap: 0 20px;
+  padding-block: 14px; border-bottom: 1px solid var(--rule-faint);
+  font-family: var(--sans); align-items: baseline;
+}
+.toc-row .n { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
+.toc-row a { text-decoration: none; color: var(--ink); font-family: var(--serif); font-size: 16px; }
+.toc-row a:hover, .toc-row a:focus { text-decoration: underline; }
+.toc-row .unpublished { color: var(--ink-faint); font-style: italic; font-size: 14px; }
+.toc-row .ids { color: var(--ink-faint); font-size: 11.5px; font-family: var(--mono); }
+
+@media (max-width: 760px) {
+  body { font-size: 16.5px; }
+  .colheads { display: none; }
+  .pair { grid-template-columns: 1fr; gap: 0; padding-block: 20px; }
+  .gutter { padding-top: 0; margin-bottom: 8px; }
+  .annot { grid-column: 1; }
+  .col.it { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px dotted var(--rule); }
+  .col.it::before, .col.en::before {
+    display: block; font-family: var(--sans); font-size: 10px; font-weight: 600;
+    letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px;
+  }
+  .col.it::before { content: "Italian"; }
+  .col.en::before { content: "English"; }
+  .pairing { flex-direction: column; }
+  .pairing .arrow { border-inline: 0; border-block: 1px solid var(--rule); padding-block: 6px; }
+  .toc-row { grid-template-columns: 1fr; gap: 4px; }
+}
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow">A Conversation with Machiavelli · Pair 22 of 39</p>
+    <h1>A republic or a prince must not defer benefiting men until their necessities
+      <span class="sub">Discourses I.32, and Guicciardini&#x27;s reply</span></h1>
+    <p class="standfirst"><span class="sf-label">Editor's summary</span> Machiavelli holds that a republic or a prince must not wait for danger to win the people, because benefits given then are credited to the enemy, create no debt, and hasten the giver&#x27;s ruin; Rome succeeded for causes that seldom recur. Guicciardini distinguishes. With new benefits in a time of necessity, it is much easier to bind closer a man ordinarily your friend, as with the Romans, than to gain one wholly your enemy, which is very hard; yet even in the easier case it is incomparably more useful to have done it before the need. In either case he does not blame the man who was imprudent not to provide beforehand if, brought to necessity, he tries this late remedy: it has little hope of helping, but no danger of harm.</p>
+
+    <div class="pairing">
+      <div class="nm-side">
+        <div class="who">Niccolò Machiavelli</div>
+        <div class="what">Discorsi sopra la prima Deca di Tito Livio · written c. 1513–19, printed 1531</div>
+      </div>
+      <div class="arrow" aria-hidden="true">answered by</div>
+      <div class="fg-side">
+        <div class="who">Francesco Guicciardini</div>
+        <div class="what">Considerazioni intorno ai Discorsi del Machiavelli · written 1529–30, printed 1857</div>
+      </div>
+    </div>
+    <nav class="pairnav"><a href="1.30.html">← Pair 1.30</a><a href="../index.html">All 39 pairs</a><span></span></nav>
+  </header>
+
+  <section class="work nm">
+    <div class="work-head">
+      <span class="tag">NM-DISC.1.32</span>
+      <h2>Capitolo XXXII</h2>
+    </div>
+    <p class="rubric">Una Repubblica o uno Principe non debbe differire a beneficare gli uomini nelle loro necessitadi.</p>
+    <p class="rubric">A republic or a prince must not defer benefiting men until their necessities.</p>
+
+    <div class="colheads"><div></div><div>Italian · 1824</div><div>English</div></div>
+      <div class="pair" id="NM-DISC.1.32.01">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.32.01">1.32.01</a></div>
+        <div class="col it" lang="it">Ancora che ai Romani succedesse felicemente essere liberali al Popolo, sopravvenendo il pericolo, quando Porsena venne ad assaltare Roma per rimettere i Tarquinj, dove il Senato dubitando della Plebe che non volesse piuttosto accettare i Re che sostenere la guerra, per assicurarsene la sgravò delle gabelle del sale, e d&#x27;ogni gravezza dicendo, come i poveri assai operavano in beneficio pubblico, se ei nutrivano i loro figliuoli, e che per questo beneficio quel Popolo si esponesse a sopportare ossidione, fame, e guerra; non sia però alcuno che confidatosi in questo esempio differisca ne&#x27; tempi di pericoli a guadagnarsi il Popolo, perché mai gli riuscirà quello che riuscì ai Romani; perché l&#x27;universale giudicherà non aver quel bene da te, ma dagli avversarj tuoi; e dovendo temere che, passata la necessità, tu ritolga loro quello che hai forzatamente loro dato, non arà teco obbligo alcuno.</div>
+        <div class="col en" lang="en">Even though it fell out happily for the Romans to be liberal to the people, the danger supervening, when Porsena came to assault Rome to restore the Tarquins, where the senate, doubting of the plebs whether it would wish rather to accept the kings than to sustain the war, to secure itself of it disburdened it of the gabelles on salt, and of every burden, saying that the poor worked enough for the public benefit if they nourished their children, and <span class="supplied">[even though]</span> for this benefit that people exposed itself to bear siege, hunger, and war; let there not therefore be anyone who, having confided in this example, defers gaining the people for himself until the times of dangers, for what succeeded for the Romans will never succeed for him; for the generality will judge that it has that good not from you, but from your adversaries; and, having to fear that, the necessity past, you take back from them what you have forcedly given them, it will have no debt whatever with you.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The chapter&#x27;s first period is a concession and a prohibition in one sentence. Rome, when Porsena came to restore the Tarquins, was liberal to the people in its danger, and it fell out well: the senate, doubting whether the plebs might rather accept the kings than sustain the war, relieved it of the salt gabelles and of every burden, saying that the poor did enough for the public benefit if they raised their children; and, for this benefit, the people exposed itself to bear siege, hunger and war. Even so, no one is to take this example as licence to defer gaining the people until times of danger. Two grounds follow, each opened by &quot;for&quot;: what succeeded for the Romans will never succeed for him; and the generality will judge that it has the good not from you but from your adversaries, and, having to fear that once the necessity is past you will take back what you gave under constraint, it will have no debt with you. The period ends on the debt the benefit does not create. Midway the sentence turns from &quot;anyone&quot; to &quot;him&quot; and then to &quot;you&quot;, and the second person holds to its end.</p>
+<p><span class="lem">History.</span> Livy tells the episode at 2.9. With Porsena approaching, the senate took the sale of salt into public hands and freed the plebs from port dues and tribute, on the ground that the poor paid enough if they raised their children (2.9.6); the concord this bought, he says, held the city together through the siege and hunger that followed (2.9.8). Machiavelli turns Livy&#x27;s ground into the senate&#x27;s words, and gives the reliefs in the fiscal vocabulary of his own time, the gabelle on salt and &quot;every burden&quot; (<i lang="it">gravezza</i>). Livy&#x27;s salt measure was a public monopoly of its sale, not the remission of a tax.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.32.02">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.32.02">1.32.02</a></div>
+        <div class="col it" lang="it">E la cagione perché ai Romani tornò bene questo partito, fu perché lo Stato era nuovo, e non per ancora fermo, ed aveva veduto quel Popolo, come innanzi si erano fatte leggi in beneficio suo, come quella della appellazione alla Plebe, in modo che ei potette persuadersi che quel bene che gli era fatto, non era tanto causato dalla venuta dei nimici, quanto dalla disposizione del Senato in beneficarli; oltra di questo la memoria dei Re era fresca, da&#x27; quali erano stati in molti modi vilipesi e ingiuriati. E perché simili cagioni accaggiono rade volte, occorrerà ancora rade volte, che simili rimedj giovino.</div>
+        <div class="col en" lang="en">And the cause why this course turned out well for the Romans was because the state was new, and not as yet firm, and that people had seen that laws had been made before for its benefit, such as that of the appeal to the plebs, in such a way that it could persuade itself that that good which was done to it was not so much caused by the coming of the enemies as by the disposition of the senate to benefit them; besides this, the memory of the kings was fresh, by whom they had been in many ways vilified and injured. And because like causes happen seldom, it will also occur seldom that like remedies help.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> Why it worked for Rome, and why it will seldom work for anyone else. The state was new and not yet firm, and the people had already seen laws made for its benefit, the appeal to the plebs among them, so that it could persuade itself that the good was caused not so much by the coming of the enemies as by the senate&#x27;s disposition to benefit it; besides this, the memory of the kings, who had vilified and injured them, was fresh. The judgment of .01 is turned round in the same words, &quot;that good&quot;: there the generality credits it to the adversaries, here the people to the senate. The exception is closed by rarity: like causes happen seldom, so like remedies will seldom help. Machiavelli&#x27;s &quot;never&quot; of .01, said of whoever trusts the example, has become &quot;seldom&quot;, said of the remedy where the causes recur; the chapter does not reconcile the two.</p>
+<p><span class="lem">History.</span> The law of appeal is Livy&#x27;s law of Publius Valerius Publicola, carried in the first year of the republic, which allowed a citizen to appeal to the people against a magistrate (2.8.2). Livy places it before Porsena&#x27;s war, as Machiavelli&#x27;s &quot;before&quot; requires. Machiavelli calls it an appeal to the plebs; Livy says the people.</p>
+<p><span class="lem">Cross-reference.</span> Of the advantages Machiavelli gives Rome here, a new state, a people already benefited by laws and the fresh memory of the kings, Guicciardini takes up none.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.32.03">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.32.03">1.32.03</a></div>
+        <div class="col it" lang="it">Però debbe qualunque tiene Stato, così Repubblica come Principe, considerare innanzi, quali tempi gli possono venire addosso contrarj, e di quali uomini nei tempi avversi si può avere di bisogno, e dipoi vivere con loro in quel modo che giudica, sopravvenendo qualunque caso, essere necessitato vivere. E quello che altrimente si governa, o Principe o Repubblica, e massime un Principe, e poi in sul fatto crede, quando il pericolo sopravviene, coi benefizj riguadagnarsi gli uomini, se ne inganna; perché non solamente non se ne assicura, ma accelera la sua rovina.</div>
+        <div class="col en" lang="en">Therefore whoever holds state, a republic as well as a prince, must consider beforehand what contrary times can come upon him, and of what men in adverse times one can have need, and afterwards live with them in that way in which he judges <span class="supplied">[himself]</span>, whatever case supervening, to be necessitated to live. And that one who governs himself otherwise, either prince or republic, and above all a prince, and later on the spot believes, when the danger supervenes, <span class="supplied">[that he will]</span> regain men for himself with benefits, deceives himself in it; for not only does he not secure himself of them, but he accelerates his ruin.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The precept is drawn from the rarity: therefore whoever holds state, republic or prince, must consider beforehand what contrary times may come upon him and of what men he may have need in adverse times, and then live with them in the way he judges he would be forced to live, whatever case should come. Then its negative case: whoever governs himself otherwise, and a prince above all, and later, on the spot, when danger comes, believes he will regain men with benefits, deceives himself; for not only does he not secure himself of them, he hastens his ruin. Machiavelli gives no reason why the prince is singled out, and none for the ruin beyond the failure itself. For the ruler who has governed himself otherwise and then trusts to benefits, the remedy that worked at Rome does not merely fail to secure the men; Machiavelli says it hastens his ruin.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini answers the last clause directly: the late remedy has little hope of helping, he says, but no danger of doing harm <a class="xref" href="#FG-CONS.1.32.01">Guicciardini .01</a>. He holds that, even in the easier case, it is beyond comparison more useful to have acted before the need, and divides the men to be won into friends and enemies, a distinction this chapter does not draw.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from the 1824 edition (<span class="sig">WIT-NM-DISC-1824-IA</span>), page-image-backed, which governs. Collated against the 1554 Giglio printing, Venice (<span class="sig">WIT-NM-DISC-1554-IA</span>), which is comparison evidence only.</p>
+<p>Paragraph divisions are editorial. The witness prints the chapter as one unbroken block.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem">si esponesse a sopportare ossidione, fame, e guerra</span> — 1824. The 1554 witness reads <i lang="it">ſi eſponeſſe a ſopportare aſſedio,ſame,&amp; guerra</i>. Checked on the leaf (fol. 47v). The 1554 has the common word for siege, <i lang="it">assedio</i>; the 1824 the Latinate <i lang="it">ossidione</i> (<i lang="it">obsidio</i>). Read by both 1824 readers without doubt on the sampled page. Same sense.</p>
+<p><span class="lem">differisca ne&#x27; tempi di pericoli a guadagnarsi il Popolo, perchè mai gli riuscirà quello</span> — 1824. The 1554 witness reads <i lang="it">differiſca ne tempi de pericoli a guadagnarſi il popolo ;per che mai non gli riuſcira quello</i>. Checked on the leaf (fol. 47v). The 1554 <i lang="it">de pericoli</i>, &quot;of the dangers&quot;, with the article, and <i lang="it">mai non gli riuscira</i>, the negative doubled; the 1824 <i lang="it">mai</i> before the verb is a full negative. Both read by both 1824 readers without doubt on the sampled page. Same sense.</p>
+<p><span class="lem">o Principe o Repubblica, e massime un Principe</span> — 1824. The 1554 witness reads <i lang="it">o Prencipe,o Rep.et maſſimamẽte un Prencipe</i>. Checked on the leaf (fol. 48r). The adverb in its longer form; read by pass A and the pass-B crop. Same sense.</p>
+<p><span class="lem">in modo che ei potette persuadersi ... quali tempi gli possono venire addosso</span> — 1824. The 1554 witness reads <i lang="it">in modo,che ei pote perſuaderſi ... quali tẽpi li poſſono uenire adoſſo</i>. Forms of one word (<i lang="it">pote</i>, <i lang="it">li</i>); no difference of sense. Read by pass A and the pass-B crops.</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem"><i lang="it">Ancora che ai Romani succedesse felicemente essere liberali al Popolo</i>.</span> &quot;Even though it fell out happily for the Romans to be liberal to the people&quot;: <i lang="it">ancora che</i>, even though (glossary); <i lang="it">succedere</i>, &quot;fall out&quot;, of an outcome, so that &quot;succeed&quot; stays for <i lang="it">riuscire</i>, which the same period uses twice; <i lang="it">liberale</i>, liberal, generous. <i lang="it">succedere</i> is &quot;fall out&quot; here, a sense split from the glossary&#x27;s &quot;succeed&quot; (NM I.10, of succession), which goes to <i lang="it">riuscire</i> in this period (D332). The concession runs to the semicolon before <i lang="it">non sia però</i>, and the example it grants is the whole of the Porsena episode.</p>
+<p><span class="lem"><i lang="it">sopravvenendo il pericolo, quando Porsena venne ad assaltare Roma per rimettere i Tarquinj</i>.</span> &quot;The danger supervening, when Porsena came to assault Rome to restore the Tarquins&quot;: <i lang="it">sopravvenire</i>, supervene, three times in the chapter (.01, .03 twice) and one English word, each time of the danger or the case that comes upon one; <i lang="it">rimettere</i>, restore, put back. Porsena, Lars Porsena of Clusium (names.md), as at I.24. Livy tells it at 2.9.</p>
+<p><span class="lem"><i lang="it">dove il Senato dubitando della Plebe che non volesse piuttosto accettare i Re che sostenere la guerra</i>.</span> &quot;Where the senate, doubting of the plebs whether it would wish rather to accept the kings than to sustain the war&quot;: <i lang="it">dubitare che ... non</i>, apprehension, &quot;doubt whether&quot;, the <i lang="it">non</i> not rendered (D205); <i lang="it">Plebe</i>, plebs (glossary); <i lang="it">sostenere</i>, sustain.</p>
+<p><span class="lem"><i lang="it">per assicurarsene la sgravò delle gabelle del sale, e d&#x27;ogni gravezza</i>.</span> &quot;To secure itself of it disburdened it of the gabelles on salt, and of every burden&quot;: <i lang="it">assicurarsi di</i>, secure oneself of (D219); <i lang="it">sgravare</i> and <i lang="it">gravezza</i>, disburden and burden, one root kept; <i lang="it">gabelle</i>, gabelles, the old name, in English as in Italian, for indirect taxes and above all the tax on salt. Livy says the senate took the sale of salt into public hands and freed the plebs from port dues and tribute (2.9.6); Machiavelli gives the reliefs in Florentine terms instead, <i lang="it">gabelle</i> and <i lang="it">gravezza</i>; taking the sale of salt into public hands is not the same as remitting a salt tax.</p>
+<p><span class="lem"><i lang="it">dicendo, come i poveri assai operavano in beneficio pubblico, se ei nutrivano i loro figliuoli</i>.</span> &quot;Saying that the poor worked enough for the public benefit if they nourished their children&quot;: <i lang="it">come</i>, that, after a verb of saying, as after <i lang="it">aveva veduto</i> (.02); <i lang="it">assai</i> with a verb, &quot;enough&quot;: the <i lang="it">se</i> clause makes it a claim of sufficiency, as Livy&#x27;s <i lang="it">satis</i> (2.9.6); a scoped sense, beside D254&#x27;s &quot;very&quot; and D312&#x27;s &quot;much&quot; (D333). <i lang="it">operare</i>, work (D83); <i lang="it">in beneficio</i>, &quot;for the benefit&quot;, here and at .02. <i lang="it">figliuoli</i>, children (D221).</p>
+<p><span class="lem"><i lang="it">e che per questo beneficio quel Popolo si esponesse a sopportare ossidione, fame, e guerra</i>.</span> &quot;And [even though] for this benefit that people exposed itself to bear siege, hunger, and war&quot;: the subjunctive <i lang="it">esponesse</i>, against the indicative <i lang="it">operavano</i> of what the senate said, most naturally resumes <i lang="it">Ancora che</i>: a second thing granted, the people&#x27;s bearing the siege and hunger that followed, as Livy tells it (2.9.8). The English supplies &quot;[even though]&quot; (D53). It can also be read as continuing what the senate said, and the facing Italian keeps that open. <i lang="it">ossidione</i>, siege, the Latinate word (<i lang="it">obsidio</i>); the 1554 edition reads <i lang="it">assedio</i>, the common one. The list is kept with its commas.</p>
+<p><span class="lem"><i lang="it">non sia però alcuno che confidatosi in questo esempio differisca ne&#x27; tempi di pericoli a guadagnarsi il Popolo</i>.</span> &quot;Let there not therefore be anyone who, having confided in this example, defers gaining the people for himself until the times of dangers&quot;: <i lang="it">però</i>, therefore (D22), as in Guicciardini&#x27;s <i lang="it">non gli accade però</i> at I.30: the concession does not, on that account, license the delay. <i lang="it">confidarsi in</i>, confide in (glossary); <i lang="it">guadagnare</i>, gain (glossary). On &quot;until&quot; for <i lang="it">ne&#x27;</i>, see the rubric. The 1554 edition reads <i lang="it">de pericoli</i>, &quot;of the dangers&quot;.</p>
+<p><span class="lem"><i lang="it">perché mai gli riuscirà quello che riuscì ai Romani</i>.</span> &quot;For what succeeded for the Romans will never succeed for him&quot;: <i lang="it">riuscire</i>, succeed, both times; plain English order (D263, exposition). <i lang="it">mai</i> before the verb is a full negative; the 1554 edition adds <i lang="it">non</i>, the same sense.</p>
+<p><span class="lem"><i lang="it">perché l&#x27;universale giudicherà non aver quel bene da te, ma dagli avversarj tuoi</i>.</span> &quot;For the generality will judge that it has that good not from you, but from your adversaries&quot;: <i lang="it">l&#x27;universale</i>, the generality (glossary, NM I.16); the second person enters here and holds to the end of the period. <i lang="it">avversario</i>, adversary, kept apart from <i lang="it">nimico</i>, enemy (.02).</p>
+<p><span class="lem"><i lang="it">e dovendo temere che, passata la necessità, tu ritolga loro quello che hai forzatamente loro dato</i>.</span> &quot;And, having to fear that, the necessity past, you take back from them what you have forcedly given them&quot;: <i lang="it">dovendo</i>, having to: <i lang="it">dovere</i> (D274) as a gerund cannot take &quot;must&quot;, and shares &quot;having to&quot; with <i lang="it">avere a</i> (D261), a recorded collapse (D334); <i lang="it">ritogliere</i>, take back, with <i lang="it">togliere</i>, take away (D131); <i lang="it">loro</i>, them, plural after the singular <i lang="it">l&#x27;universale</i>, kept; <i lang="it">forzatamente</i>, forcedly, given under constraint, not by force.</p>
+<p><span class="lem"><i lang="it">non arà teco obbligo alcuno</i>.</span> &quot;It will have no debt whatever with you&quot;: <i lang="it">obbligo</i>, debt (D17); <i lang="it">alcuno</i> after a negative, &quot;whatever&quot; (D195). The period lands on the debt that the benefit does not create.</p>
+<p><span class="lem"><i lang="it">E la cagione perché ai Romani tornò bene questo partito</i>.</span> &quot;And the cause why this course turned out well for the Romans&quot;: <i lang="it">cagione</i>, cause (glossary); <i lang="it">partito</i>, course (D236); <i lang="it">tornare bene</i>, turn out well.</p>
+<p><span class="lem"><i lang="it">fu perché lo Stato era nuovo, e non per ancora fermo</i>.</span> &quot;Was because the state was new, and not as yet firm&quot;: <i lang="it">Stato</i>, state (D265); <i lang="it">fermo</i>, firm, as Guicciardini&#x27;s <i lang="it">bene fermo lo Stato suo</i> at I.30.</p>
+<p><span class="lem"><i lang="it">ed aveva veduto quel Popolo, come innanzi si erano fatte leggi in beneficio suo, come quella della appellazione alla Plebe</i>.</span> &quot;And that people had seen that laws had been made before for its benefit, such as that of the appeal to the plebs&quot;: <i lang="it">quel Popolo</i> is the subject, postposed; the English puts it first (D263, exposition). <i lang="it">innanzi</i>, before; <i lang="it">come</i>, that, as in .01; <i lang="it">appellazione</i>, appeal. Livy&#x27;s law of Valerius Publicola, of the first year of the republic (2.8.2), gave the appeal <i lang="it">ad populum</i>, to the people; Machiavelli writes <i lang="it">alla Plebe</i>.</p>
+<p><span class="lem"><i lang="it">in modo che ei potette persuadersi che quel bene che gli era fatto, non era tanto causato dalla venuta dei nimici, quanto dalla disposizione del Senato in beneficarli</i>.</span> &quot;In such a way that it could persuade itself that that good which was done to it was not so much caused by the coming of the enemies as by the disposition of the senate to benefit them&quot;: <i lang="it">in modo che</i>, in such a way that (glossary); <i lang="it">ei</i>, it, the people; <i lang="it">persuadersi</i>, persuade itself; <i lang="it">disposizione</i>, disposition; <i lang="it">nimici</i>, enemies. The people is &quot;it&quot; and &quot;them&quot; by turns, as the Italian has <i lang="it">gli</i> and <i lang="it">-li</i>. The good is the one the generality of .01 would credit to the adversaries; here the people credits it to the senate.</p>
+<p><span class="lem"><i lang="it">oltra di questo la memoria dei Re era fresca, da&#x27; quali erano stati in molti modi vilipesi e ingiuriati</i>.</span> &quot;Besides this, the memory of the kings was fresh, by whom they had been in many ways vilified and injured&quot;: <i lang="it">ingiuriare</i>, injure, with <i lang="it">ingiuria</i>, injury (glossary). The relative is kept after &quot;fresh&quot;, away from its noun, as the Italian has it; &quot;they&quot; is the people, plural again.</p>
+<p><span class="lem"><i lang="it">E perché simili cagioni accaggiono rade volte, occorrerà ancora rade volte, che simili rimedj giovino</i>.</span> &quot;And because like causes happen seldom, it will also occur seldom that like remedies help&quot;: <i lang="it">simile</i>, like (glossary), twice; <i lang="it">accadere</i>, happen (D298); <i lang="it">occorrere</i>, occur, one of the <i lang="la">currere</i> family (D01); <i lang="it">rade volte</i>, seldom (D97), twice, as the Italian repeats it; <i lang="it">rimedio</i>, remedy, the word Guicciardini takes up in his last sentence (<i lang="it">questo remedio</i>); <i lang="it">giovare</i>, help, also his.</p>
+<p><span class="lem"><i lang="it">Però debbe qualunque tiene Stato, così Repubblica come Principe, considerare innanzi</i>.</span> &quot;Therefore whoever holds state, a republic as well as a prince, must consider beforehand&quot;: <i lang="it">però</i>, therefore (D22), drawing the precept from the rarity of the causes; <i lang="it">tenere Stato</i>, hold state; <i lang="it">così ... come</i>, as well ... as. The rubric&#x27;s pair returns, republic first.</p>
+<p><span class="lem"><i lang="it">quali tempi gli possono venire addosso contrarj</i>.</span> &quot;What contrary times can come upon him&quot;: the adjective is held to the end in the Italian; English order (D263, exposition).</p>
+<p><span class="lem"><i lang="it">e di quali uomini nei tempi avversi si può avere di bisogno</i>.</span> &quot;And of what men in adverse times one can have need&quot;: <i lang="it">bisogno</i>, need (glossary), the noun Guicciardini takes up in <i lang="it">innanzi al bisogno</i>.</p>
+<p><span class="lem"><i lang="it">e dipoi vivere con loro in quel modo che giudica, sopravvenendo qualunque caso, essere necessitato vivere</i>.</span> &quot;And afterwards live with them in that way in which he judges [himself], whatever case supervening, to be necessitated to live&quot;: <i lang="it">dipoi</i>, afterwards (D187); <i lang="it">necessitato</i>, necessitated, as I.30. The precept is to live now as one would be forced to live then; the supplied &quot;[himself]&quot; is bracketed (D53).</p>
+<p><span class="lem"><i lang="it">E quello che altrimente si governa, o Principe o Repubblica, e massime un Principe</i>.</span> &quot;And that one who governs himself otherwise, either prince or republic, and above all a prince&quot;: <i lang="it">quello</i>, that one, as at I.30; <i lang="it">governarsi</i>, govern oneself (D64); <i lang="it">massime</i>, above all (glossary). The 1554 edition reads <i lang="it">massimamente</i>, the same word. The prince is singled out without a reason given.</p>
+<p><span class="lem"><i lang="it">e poi in sul fatto crede, quando il pericolo sopravviene, coi benefizj riguadagnarsi gli uomini</i>.</span> &quot;And later on the spot believes, when the danger supervenes, [that he will] regain men for himself with benefits&quot;: <i lang="it">in sul fatto</i>, on the spot, at the moment of the event; <i lang="it">poi</i>, later (D250); <i lang="it">riguadagnarsi</i>, regain for himself, with <i lang="it">guadagnarsi</i> of .01; <i lang="it">benefizj</i>, benefits (glossary <i lang="it">beneficii</i>). <i lang="it">credere</i> with the bare infinitive is a belief that he will regain them; English needs the supplied words, bracketed.</p>
+<p><span class="lem"><i lang="it">se ne inganna; perché non solamente non se ne assicura, ma accelera la sua rovina</i>.</span> &quot;Deceives himself in it; for not only does he not secure himself of them, but he accelerates his ruin&quot;: <i lang="it">ingannarsi</i>, deceive oneself; <i lang="it">assicurarsi di</i>, secure oneself of (D219), <i lang="it">ne</i> most naturally the men; <i lang="it">accelerare</i>, accelerate; <i lang="it">rovina</i>, ruin (glossary). The chapter ends on the ruin, which the remedy brings nearer rather than averting.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work fg">
+    <div class="work-head">
+      <span class="tag">FG-CONS.1.32</span>
+      <h2>Considerazione sul capitolo XXXII</h2>
+    </div>
+    <p class="rubric">Una repubblica o uno principe non debbe differire a beneficare gli uomini nelle sue necessitadi.</p>
+    <p class="rubric">A republic or a prince must not defer benefiting men until their necessities.
+      <span class="rubric-note">Canestrini&#x27;s setting of the chapter title, in lower case and in Machiavelli&#x27;s words, except that <i lang="it">nelle loro necessitadi</i> becomes <i lang="it">nelle sue necessitadi</i>. After a singular republic or prince, <i lang="it">sue</i> most readily means the ruler&#x27;s necessities; it can also stand for <i lang="it">loro</i>, as Guicciardini writes it (D211), and mean the men&#x27;s. &quot;Their&quot; keeps both. Both readers saw <i lang="it">necessltati</i>, a broken letter, and split between <i lang="it">necessità</i> and <i lang="it">necessitadi</i>; read <i lang="it">necessitadi</i>, with the 1933 edition and Machiavelli&#x27;s rubric (D329; FG-CONS-I32-D001). Both doubted <i lang="it">nella</i> against <i lang="it">nelle</i>, and <i lang="it">nelle</i> is read, as the agreement with <i lang="it">sue</i> and the 1933 edition require (D330; FG-CONS-I32-D002). It is heading apparatus, not Guicciardini&#x27;s (D32).</span></p>
+
+    <div class="colheads"><div></div><div>Italian · 1857</div><div>English</div></div>
+      <div class="pair" id="FG-CONS.1.32.01">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.32.01">1.32.01</a></div>
+        <div class="col it" lang="it">Altro è con nuovi beneficii nel tempo della necessità cercare di farsi più amico uno che per lo ordinario ti sia amico, altro è cercare di guadagnarsi uno che totalmente ti sia inimico. Nel primo è molto più facilità, come intervenne a&#x27; Romani, il secondo è difficilissimo, e non dimeno nel primo ancora è sanza comparazione più utile averlo fatto innanzi al bisogno. Ma nell&#x27;uno caso e l&#x27;altro non biasimo chi è stato imprudente a non vi provedere prima, se condotto alla necessità tenta questo remedio; il quale se bene ha poca speranza di giovare, non ha con seco periculo di nuocere.</div>
+        <div class="col en" lang="en">It is one thing, with new benefits in the time of necessity, to seek to make one who by the ordinary is a friend to you more one&#x27;s friend, it is another to seek to gain for oneself one who is wholly an enemy to you. In the first there is much more facility, as befell the Romans, the second is most difficult, and nonetheless in the first also it is without comparison more useful to have done it before the need. But in the one case and the other I do not blame him who has been imprudent in not providing for it earlier, if, brought to the necessity, he attempts this remedy; which, although it has little hope of helping, does not have with it danger of doing harm.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> A reply of 103 words in three periods. The first divides the men Machiavelli spoke of in general by what they already are to the giver. To seek, with new benefits in a time of necessity, to make one who is ordinarily your friend more your friend is one thing; to seek to gain one who is wholly your enemy is another. The second weighs them: the first much easier, as it was for the Romans, the second most difficult; and even in the first case it is without comparison more useful to have done it before the need. That much of Machiavelli&#x27;s precept he grants: providing beforehand is beyond comparison more useful, even in the easier case. He grants it as a comparison, not as a rule. The third turns: in either case he does not blame the man who has been imprudent in not providing earlier, if, brought to the necessity, he attempts this remedy, a remedy which, although it has little hope of helping, carries no danger of doing harm. He calls the man imprudent, limits the withholding of blame to that condition, and does not recommend the remedy.</p>
+<p><span class="lem">Cross-reference.</span> The last clause answers the last clause of the chapter. Machiavelli&#x27;s man who has governed himself otherwise and, when danger comes, believes he can regain men with benefits &quot;accelerates his ruin&quot; <a class="xref" href="#NM-DISC.1.32.03">Machiavelli .03</a>; Guicciardini says the remedy carries no danger of doing harm. He takes up Machiavelli&#x27;s own words for it, &quot;necessity&quot;, &quot;remedy&quot;, &quot;help&quot; and &quot;need&quot; <a class="xref" href="#NM-DISC.1.32.01">Machiavelli .01</a> <a class="xref" href="#NM-DISC.1.32.02">Machiavelli .02</a> <a class="xref" href="#NM-DISC.1.32.03">Machiavelli .03</a>, and with &quot;little hope&quot; concedes Machiavelli&#x27;s conclusion that such remedies seldom help, without taking up the ground he gave for it, that like causes happen seldom. He does not take up the grounds Machiavelli gave in his first period for the late benefit&#x27;s failure, that the generality credits it to your adversaries and, fearing it will be taken back, has no debt with you <a class="xref" href="#NM-DISC.1.32.01">Machiavelli .01</a>; for the ruin itself Machiavelli gives no separate reason.</p>
+<p><span class="lem">Cross-reference.</span> Machiavelli&#x27;s subject was &quot;the people&quot; and &quot;men&quot; in general, and his example the Roman plebs. Guicciardini&#x27;s &quot;as befell the Romans&quot; puts that example in his easier case, among friends, without saying why. Machiavelli had the senate doubting whether the plebs would rather accept the kings <a class="xref" href="#NM-DISC.1.32.01">Machiavelli .01</a>, though he then gives the people reasons to credit the senate&#x27;s disposition <a class="xref" href="#NM-DISC.1.32.02">Machiavelli .02</a>.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from Canestrini 1857, <i>Opere inedite</i> vol. 1, pp. 1–65 (<span class="sig">WIT-FG-CONS-1857-CANESTRINI</span>) — the <i>editio princeps</i>, which governs. Collated against Palmarocchi 1933 (<span class="sig">WIT-FG-CONS-1933-PALMAROCCHI</span>): page images and the Wikisource transcription consulted as collation evidence, not reproduced (LICENSE §5).</p>
+<p><span class="lem">a Romani; il secondo</span> → <span class="lem">a&#x27; Romani, il secondo</span> (FG-CONS.1.32.01). Pass A ⟨;|,⟩, pass B ⟨;|,⟩; the 1933 edition prints a comma. D110, D331.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem">nelle sue necessitadi</span>. The 1857 witness reads <i lang="it">nelle sue necessltati (a damaged word)</i>. The 1933 witness reads <i lang="it">[Una republica o uno principe non debbe differire a beneficare gli uomini nelle sue necessitadi.]</i>. Both readers see <i lang="it">necessltati</i>; pass A prefers <i lang="it">necessità</i>, pass B <i lang="it">necessitadi</i>, each with <i lang="it">necessitati</i> as alternative. The 1933 edition and Machiavelli&#x27;s rubric in the 1824 read <i lang="it">necessitadi</i>. A reading at a broken letter (D329).</p>
+<p><span class="lem">nelle sue; cercare di farsi; ti sia amico</span>. The 1857 witness reads <i lang="it">rubric <i lang="it">ne lla sue</i>; body <i lang="it">cercare di farai</i>, <i lang="it">ti aia amico</i> (damaged letters)</i>. The 1933 witness reads <i lang="it">nelle sue; cercare di farsi; ti sia amico</i>. Each letter doubtful to both readers, each alternative a word (<i lang="it">nella</i>, <i lang="it">farai</i>, <i lang="it">aia</i>), none construing in its place; with the 1933 edition. Readings, not emendations (D330).</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem"><i lang="it">Altro è con nuovi beneficii nel tempo della necessità cercare di farsi più amico uno che per lo ordinario ti sia amico, altro è cercare di guadagnarsi uno che totalmente ti sia inimico</i>.</span> &quot;It is one thing, with new benefits in the time of necessity, to seek to make one who by the ordinary is a friend to you more one&#x27;s friend, it is another to seek to gain for oneself one who is wholly an enemy to you&quot;: <i lang="it">altro è ..., altro è</i> held in one period with &quot;it is&quot; twice, as FG I.5 (D121). <i lang="it">beneficii</i>, benefits (glossary); <i lang="it">necessità</i>, necessity, Machiavelli&#x27;s word for the time of danger (<i lang="it">passata la necessità</i>, Machiavelli .01); <i lang="it">per lo ordinario</i>, by the ordinary (D163, FG I.8), the man who is a friend in the ordinary course of things; <i lang="it">guadagnarsi</i>, gain for oneself, Machiavelli&#x27;s verb (<i lang="it">a guadagnarsi il Popolo</i>). The persons shift from the impersonal (<i lang="it">farsi</i>, <i lang="it">guadagnarsi</i>) to <i lang="it">ti</i>, &quot;you&quot;, as Machiavelli shifted to <i lang="it">te</i> (Machiavelli .01); the English keeps both. <i lang="it">inimico</i>, enemy; Machiavelli&#x27;s form is <i lang="it">nimico</i>, and his enemies are Porsena&#x27;s side (Machiavelli .02), where Guicciardini&#x27;s is the man to be benefited. <i lang="it">farsi</i> is read where both readers doubted <i lang="it">farai</i>, which does not construe after <i lang="it">cercare di</i>; and <i lang="it">sia</i> where both doubted <i lang="it">aia</i> (D330; FG-CONS-I32-D002).</p>
+<p><span class="lem">The distinction.</span> Machiavelli&#x27;s subject was &quot;the people&quot; and &quot;men&quot; in general; Guicciardini divides them by what they already are to the giver, friend or enemy, a distinction the chapter does not draw. He gives no reason why the Romans were the easy case.</p>
+<p><span class="lem"><i lang="it">Nel primo è molto più facilità, come intervenne a&#x27; Romani, il secondo è difficilissimo</i>.</span> &quot;In the first there is much more facility, as befell the Romans, the second is most difficult&quot;: <i lang="it">facilità</i>, facility (glossary, FG I.28); <i lang="it">intervenire</i>, befall (D298); <i lang="it">difficilissimo</i>, the elative, &quot;most difficult&quot;. The two members are joined by a comma, without a conjunction: the comma is the 1933 edition&#x27;s, where both readers preferred a semicolon and doubted it (D110; D331), and the English keeps the light pointing (D65). Canestrini&#x27;s <i lang="it">a Romani</i> prints no apostrophe; it is supplied as for the plural article (D35).</p>
+<p><span class="lem"><i lang="it">e non dimeno nel primo ancora è sanza comparazione più utile averlo fatto innanzi al bisogno</i>.</span> &quot;And nonetheless in the first also it is without comparison more useful to have done it before the need&quot;: <i lang="it">non dimeno</i>, nonetheless (glossary), in two words as Canestrini prints it; <i lang="it">ancora</i>, also, even in the easier case; <i lang="it">sanza comparazione</i>, without comparison; <i lang="it">bisogno</i>, need, Machiavelli&#x27;s <i lang="it">avere di bisogno</i> (Machiavelli .03); <i lang="it">innanzi</i>, before, as his <i lang="it">considerare innanzi</i>, &quot;consider beforehand&quot; (Machiavelli .03). Here Guicciardini agrees with Machiavelli&#x27;s precept, to provide beforehand, and says so in his own degree.</p>
+<p><span class="lem"><i lang="it">Ma nell&#x27;uno caso e l&#x27;altro non biasimo chi è stato imprudente a non vi provedere prima</i>.</span> &quot;But in the one case and the other I do not blame him who has been imprudent in not providing for it earlier&quot;: <i lang="it">biasimare</i>, blame (D173); <i lang="it">imprudente</i>, imprudent: the man who did not <i lang="it">considerare innanzi</i> (Machiavelli .03); <i lang="it">provedere</i>, provide; <i lang="it">prima</i>, earlier, kept apart from <i lang="it">innanzi</i>, &quot;before&quot;. The act is a withholding of blame, not praise: the man has been imprudent, and Guicciardini says so.</p>
+<p><span class="lem"><i lang="it">se condotto alla necessità tenta questo remedio</i>.</span> &quot;If, brought to the necessity, he attempts this remedy&quot;: <i lang="it">tentare</i>, attempt, as FG I.23; <i lang="it">remedio</i>, remedy, Machiavelli&#x27;s <i lang="it">simili rimedj</i> (Machiavelli .02). The condition limits the withholding of blame to the man already brought to necessity. He does not recommend the late remedy.</p>
+<p><span class="lem"><i lang="it">il quale se bene ha poca speranza di giovare, non ha con seco periculo di nuocere</i>.</span> &quot;Which, although it has little hope of helping, does not have with it danger of doing harm&quot;: <i lang="it">se bene</i>, although (D31); <i lang="it">giovare</i>, help, Machiavelli&#x27;s verb (<i lang="it">che simili rimedj giovino</i>); <i lang="it">nuocere</i>, do harm (D106); <i lang="it">periculo</i>, danger (glossary). The landing answers Machiavelli&#x27;s last clause, that the man who relies on such benefits <i lang="it">accelera la sua rovina</i> (Machiavelli .03): Guicciardini grants the little hope, taking up Machiavelli&#x27;s <i lang="it">rade volte ... giovino</i>, and states that there is no danger, without engaging Machiavelli&#x27;s reasons. The reply ends here, with a stop.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="colophon">
+    <div class="row">
+      <div>
+        <h3>What this is</h3>
+        <p>A free, openly licensed, bilingual edition of Guicciardini's 39 <i>Considerazioni</i> and the
+          <i>Discorsi</i> chapters they answer — 78 text units, Italian and English facing, every reading
+          traceable to a named public-domain witness.</p>
+        <p>It is a reading edition with a transparent apparatus, not a text of record. It does not adjudicate
+          the critical text against Bausi 2001 or the manuscript tradition, and does not claim to.</p>
+      </div>
+      <div>
+        <h3>On the title</h3>
+        <p>Machiavelli had been dead two years when Guicciardini wrote; the <i>Discorsi</i> were unpublished,
+          and the <i>Considerazioni</i> stayed unprinted until 1857. Machiavelli never answers.</p>
+        <p>“Conversation” is a quotation, not a description. It invokes Machiavelli's letter to Vettori of
+          10 December 1513, where he changes into court dress at evening, enters the antique courts of ancient
+          men, and reports that <i>they, in their humanity, answer me</i>. Guicciardini does to Machiavelli
+          what Machiavelli did to Livy — and is denied the reply Machiavelli claimed.</p>
+      </div>
+      <div>
+        <h3>Method</h3>
+        <p>No image-derived reading enters the text on a single reading. Each unit is transcribed twice,
+          independently, by readers who have not seen each other's work; disagreements are adjudicated against
+          the page images and recorded.</p>
+        <p>Existing English translations of the <i>Considerazioni</i> — Grayson (1965), Atkinson &amp; Sices
+          (2002) — are never used as translation inputs.</p>
+      </div>
+      <div>
+        <h3>Licence</h3>
+        <p>The established Italian text and the apparatus data are dedicated to the public domain under
+          <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>. They are Machiavelli's and
+          Guicciardini's sentences, and this edition adds no condition to them.</p>
+        <p>The English translation, the notes and the editorial apparatus are licensed
+          <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: reuse them anywhere, including
+          commercially, with attribution to David McDougall and this edition. The build tooling is MIT.</p>
+        <p>The witness scans are other people's digitisations, included as evidence under their own terms; no
+          grant is made over them, and no page image of Palmarocchi 1933 is reproduced here. Full terms,
+          layer by layer, are in the <span class="sig">LICENSE</span> file in the repository.</p>
+      </div>
+    </div>
+
+    <div class="state">
+      <p><strong>Version 0.3 · 22 of 39 pairs published.</strong>
+        This edition is versioned, not frozen. No open questions on this pair.</p>
+    </div>
+  </footer>
+
+</div>
