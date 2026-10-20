@@ -1,0 +1,28 @@
+source_unit_id: NM-DISC.1.39
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-023
+passes:
+  - {id: A, performed: 2026-10-20, file: sources/coldpass/NM-DISC.1.39-passA.md, note: "subagent; page images only (350 ppi, thirds), isolated directory and isolated output folder; full chapter. A first pass-A file was overwritten by the Giglio reader's output through a shared output folder; it and that Giglio read were discarded and both rerun"}
+  - {id: B, performed: 2026-10-20, file: sources/coldpass/NM-DISC.1.39-passB.md, note: "subagent; p. 141 only (248 words, 45% of the chapter), chosen by the collator under D302 after pass A and the Giglio read and recorded before it was given out, with six line crops carrying every word-level 1554 difference outside it; separate directory"}
+collation: sources/coldpass/COLLATION-2026-10-20-I39.md
+collation_result: "546 words (pass A). Sample of p. 141 and six crops: identical after Class A; no word, clause or sense disagreement, so no full pass B, and the sample rule stands for the next chapter. No pass-A doubt with a word for an alternative. Four word-level differences from the 1554 at letters the scans break, each read by two readers without doubt, came to David and were kept (D342, D343)."
+boundaries: "printed pp. 140-142 (extract pp. 140-143); CAPITOLO XXXIX at the head of p. 140 under the running head; two-line italic rubric; large initial E; one block; ends p. 142 body line 12 `così loro ricrearono i Consoli.`; CAPITOLO XL follows on p. 142"
+interventions: []
+emendations: []
+readings:
+  - {locus: "NM-DISC.1.39.02 fusse tolto via la guerra", passes: "A and B (sampled p. 141) `tolto`, without doubt", witness_1554: "fuſſe tolta uia la guerra", disposition: "tolto kept, D342 (David, 2026-10-20): a word-level difference at o/a under D203(b); the subject follows the participle, where the period leaves it unagreed, so it construes (D38), unlike D295"}
+  - {locus: "NM-DISC.1.39.01 ogni Repubblica; .02 perduta parte; .03 dall'ambizione de' Nobili", passes: "A and B (crops of p. 140; sampled p. 141), without doubt", witness_1554: "ogni Republiche; perduto parte; dell'ambitione de nobili", disposition: "kept, D343 (David, 2026-10-20): word-level differences at a/e and a/o under D203(b); all construe (D38)"}
+comparison_collation: >
+  Done 2026-10-20 against the 1554 extract (fol. 57r-57v). A cold reader
+  transcribed the Giglio leaves from the page images
+  (sources/coldpass/NM-DISC.1.39-1554.md); the transcript was collated by
+  word against pass A, and the readings published as variant notes were
+  checked on the leaf images by the collator. A first Giglio read, made in
+  a shared output folder, was discarded; it and the rerun agree on every
+  word. Differences are in
+  sources/comparisons/NM-DISC/NM-DISC.1.39-witness-disagreements.yml.
+normalisation_notes: "Class A only: accents (`perchè` → `perché` ×3, `perdè` → `perdé`, `tantochè`, `modochè`, `talchè` → `-ché`, `nè` → `né` ×2); elision solid (`tutt' i`, `ch' egli`, `ch' e'`, `l' universale` ×2, `l' amministravano`, `l' una`, `dall' altra`, `dall' ambizione`, `dell' error` closed up); apocope spaced (`de'nuovi`, `de'Consoli`, `de'Tribuni` → `de' `); spaces before punctuation removed; line-end hyphens removed. `desiderj`, `rimedj`, `scambj`, `ajuto` as printed."

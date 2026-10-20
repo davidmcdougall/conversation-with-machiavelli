@@ -1,0 +1,34 @@
+source_unit_id: FG-CONS.1.39
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-023
+responds_to: NM-DISC.1.39
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. Canestrini's two notes on this reply, (1) on p. 49 keyed to `de' Dieci` (`Magistrato antico che cambiò spesso di nome ...`) and (1) on p. 50 keyed to `Ottanta` (`Il Consiglio degli Ottanta, tratto dal Consiglio Grande`), are his and are not carried."
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38); errors are emended from Palmarocchi and bracketed (D68)."
+passes:
+  - {id: A, performed: 2026-10-20, file: sources/coldpass/FG-CONS.1.39-passA.md, note: "subagent; page images only (native 600 ppi rendered at 1200, full pages and halves), separate image directory"}
+  - {id: B, performed: 2026-10-20, file: sources/coldpass/FG-CONS.1.39-passB.md, note: "subagent; same images, separate image directory and output folder"}
+collation: sources/coldpass/COLLATION-2026-10-20-I39.md
+collation_result: >
+  331 words (A 331, B 330 by its own count), the 369 body tokens identical
+  after preferred readings. No word, clause or sense disagreement. One doubt
+  common to both readers whose alternatives are words, `molto volta`, read
+  as printed with the 1933 edition (D344). Two whole words kept against the
+  1933 edition, `creare` (D345) and `li` (D346). Marks doubtful to both
+  settled by D110 and D67 (D347).
+witness_independence_check: "SCOPE §7. Neither pass carries a Palmarocchi word-reading where Canestrini differs: both have `paci`, `tregue`, `volevano`, `il populo fiorentino`, `le opinioni populari`, `creare`, `la esperienza`, `il magistrato`, `periculose`, `partecipazione`, `nelle espedizioni`, `e in tutte`, `e a fine`, `patrizii`, `li difese`, against the 1933 `pace`, `triegue`, `volevono`, `el popolo fiorentino`, `le opinione populare`, `servire`, `la esperienzia`, `el magistrato`, `pericolose`, `participazione`, `nelle espedizione`, `ed in tutte`, `ed a fine`, `patrizi`, `si difese`. The passes read Canestrini."
+boundaries: "printed pp. 49-50; heading CONSIDERAZIONE SUL CAPITOLO XXXIX on p. 49 directly after the reply on XXXII (no replies on XXXIII-XXXVIII); Canestrini's one-line centred rubric; two indented paragraphs (`Io non credo` ... `Libertà e Pace.`, `Non è simile` ... `moderata e conveniente.`); two notes of Canestrini's, (1) on p. 49 and (1) on p. 50; the rest of p. 50 is blank, and CONSIDERAZIONE SUL CAPITOLO XL opens p. 51"
+corrections:
+  - {id: FG-CONS-I39-C001, locator: FG-CONS.1.39.01, was: "il populo fiorentino Dalla quale", now: "il populo fiorentino. Dalla quale", evidence: "Pass A ⟨.|∅⟩, pass B ⟨.|∅⟩; no stop shows before the capital; the 1933 edition prints one. D67, D347."}
+  - {id: FG-CONS-I39-C002, locator: FG-CONS.1.39.01, was: "degli Ottanta⁽¹⁾ E fu questa", now: "degli Ottanta. E fu questa", evidence: "Pass A ⟨.|∅⟩, pass B ⟨.|∅⟩; the stop displaced by Canestrini's note reference, as D40; the 1933 edition prints one. D347."}
+emendations: []
+readings:
+  - {locus: "FG-CONS.1.39.02 fussi ⟨molto|molte⟩ ⟨volta|volte⟩ a battere", passes: "A ⟨molto volta|molte volte⟩, B ⟨molto|molte⟩ ⟨volta|volte⟩; both see o and a", witness_1933: "fussi molto volta a battere", disposition: "molto volta, D344 (David, 2026-10-20): common doubt; read as printed, the letters both readers see, with the 1933 edition; `molto volta a`, much turned to, construes with `fussi`"}
+  - {locus: "FG-CONS.1.39.01 di non volere creare più quello magistrato", passes: "A and B `creare`, without doubt", witness_1933: "di non volere servire più quello magistrato", disposition: "creare kept, D345 (David, 2026-10-20): a whole word, no D203 trigger; raised because it bears on sense; it construes and is answered by `creorono di nuovo` (D38)"}
+  - {locus: "FG-CONS.1.39.02 li difese più facilmente la autorità consulare", passes: "A and B `li`, without doubt", witness_1933: "si difese più facilmente la autorità consulare", disposition: "li kept, D346 (David, 2026-10-20): a whole word; raised because it bears on sense; it construes, with the patrician magistrates as object (D38)"}
+  - {locus: "ragione⟨;|,⟩; ordinata⟨,|.⟩; volevano⟨,|;⟩; assoluta⟨,|.⟩; conveniente⟨.|∅⟩", passes: "A and B doubt each mark and prefer the same one", witness_1933: "; , , , .", disposition: "as both readers preferred, with the 1933 edition, D110, D347 (David, 2026-10-20)"}
+not_supplied: []
+normalisation_notes: "Class A: accents (`perchè` → `perché` ×2, `piu` → `più`, `Balía` → `Balìa`); `e danari`, `e magistrati` given the apostrophe of the plural article, `e'`, by D35; `de'` where the apostrophe is faint (×3), as both readers took it; Canestrini's note references removed; spaces before punctuation removed; line-end hyphens removed."

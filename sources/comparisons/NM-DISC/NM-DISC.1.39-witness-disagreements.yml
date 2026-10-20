@@ -1,0 +1,59 @@
+source_unit_id: NM-DISC.1.39
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-I39-D001
+    locator: NM-DISC.1.39.02
+    class: ruled_reading
+    witness_1824: "cominciò a persuadersi che, tolto via detto Magistrato, fusse tolto via la guerra"
+    witness_1554: "comincio a perſuaderſi , che tolto uia detto magiſtrato, fuſſe tolta uia la guerra"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 57r). The 1554 agrees the participle with `la guerra`; the 1824 leaves it unagreed before a following subject, as the period does, perhaps drawn by the `tolto via` just before. Read by both 1824 readers without doubt on the sampled page; a difference at o/a under D203(b). It construes, so kept (D342). Not D295, where the subject preceded."
+  - id: NM-DISC-I39-D002
+    locator: NM-DISC.1.39.01
+    class: ruled_reading
+    witness_1824: "prevedere in ogni Repubblica le future"
+    witness_1554: "preuedere in ogni Republiche le future"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 57r). The 1554 sets the plural after `ogni`. Read by pass A and the pass-B crop; a difference at a/e, kept (D343)."
+  - id: NM-DISC-I39-D003
+    locator: NM-DISC.1.39.02
+    class: ruled_reading
+    witness_1824: "dopo il 94 perduta parte dello Imperio suo"
+    witness_1554: "dopo il XCIIII. perduto parte dello Imperio ſuo"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 57r). The 1824 agrees the participle with `parte`; the 1554 leaves it unagreed. The year in roman numerals. Read by pass A and the pass-B crop; a difference at a/o, kept (D343)."
+  - id: NM-DISC-I39-D004
+    locator: NM-DISC.1.39.03
+    class: ruled_reading
+    witness_1824: "pensavano nascesse dall'ambizione de' Nobili"
+    witness_1554: "penſauano naſceſſe dell'ambitione de nobili"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 57v). `dall'`, \"from\", repeats the clause before (`dall'ambizione dei vicini`, where the 1554 has `d'ambitione`); the 1554 `dell'`. Read by both readers without doubt on the sampled page; a difference at a/e, kept (D343)."
+  - id: NM-DISC-I39-D005
+    locator: NM-DISC.1.39.04
+    class: reading
+    witness_1824: "parendogli che la maestà dell'Imperio ... piuttosto creare i Tribuni ... E così seguirono lungo tempo, infino che conosciuto l'error loro, come i Fiorentini tornarono ai Dieci"
+    witness_1554: "parendole , che la maieſta dell'Imperio ... piu toſto creare Tribuni ... et coſi ſeguitorno lungo tempo , infino che conoſciuto l'errore, come i Fiorentini ritornorno a Dieci"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 57v). The 1554 has the pronoun agree with `la Nobiltà` (`parendole`, \"seeming to it\"), where the 1824's `gli` takes the nobles; no article before `Tribuni`; `seguitorno`, \"continued\", for `seguirono`; `l'errore` without `loro`; `ritornorno a`. Each read by pass A and a pass-B crop without doubt; none at a letter the scans break. Same sense."
+  - id: NM-DISC-I39-D006
+    locator: NM-DISC.1.39.03
+    class: reading
+    witness_1824: "il Magistrato de' Dieci ... contro al nome de' Consoli ... che la nascesse"
+    witness_1554: "il magiſtrato di Dieci ... contra al nome de Conſoli ... che ella naſceſſe"
+    established: witness_1824
+    publish_as_variant_note: false
+    rationale: "Forms (`di`, `contra`, `ella`), no difference of sense. Read on the sampled page."
+  - id: NM-DISC-I39-D007
+    locator: NM-DISC.1.39.01
+    class: systematic_orthographic_profile
+    witness_1554: "Giglio's `quei`, `quegli`, `humori`, `riſoltauano`, `x.` for `dieci` and `i x.` for `i Dieci`, `l'attioni`, `caſtigar`, `podeſta`, `doueuono`, `haueßino`, `doueßino`, `alcuno`, `maieſta`, `ricreorno`, `Laqual`, `ilquale`, `Ilche`, tildes (`ſcãdali`, `Hauẽdo`, `Firẽze`), `&`/`et`, the opening `E Si` beside the 1824 `E' si`, and his pointing (`ſempre , In modo`, `la guerra(come l'uniuerſale ſi perſuadeua)`)"
+    established: witness_1824
+    publish_as_variant_note: false
+    rationale: "Spelling and pointing; DEC-009 classes, not readings."

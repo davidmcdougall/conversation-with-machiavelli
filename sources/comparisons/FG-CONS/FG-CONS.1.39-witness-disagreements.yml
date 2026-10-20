@@ -1,0 +1,36 @@
+source_unit_id: FG-CONS.1.39
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-I39-D001
+    locator: FG-CONS.1.39.02
+    class: ruled_reading
+    witness_1857: "fussi molto volta a battere (o and a doubtful to both readers)"
+    witness_1933: "fussi molto volta a battere"
+    established: "fussi molto volta a battere"
+    publish_as_variant_note: true
+    rationale: "Both readers see `molto volta` and doubt the final letters, each offering `molte volte`, \"many times\". Read as printed, the letters both readers see, with the 1933 edition: \"much turned to striking\" (D344)."
+  - id: FG-CONS-I39-D002
+    locator: FG-CONS.1.39.01
+    class: ruled_reading
+    witness_1857: "le opinioni populari di non volere creare più quello magistrato"
+    witness_1933: "le opinione populare di non volere servire più quello magistrato"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "Read by both readers without doubt; a whole word, not at a letter the scan breaks. The 1933 `servire`, to serve on the magistracy, makes the opinion the citizens' refusal to sit; Canestrini's `creare`, to create it, makes it a refusal to set it up, answered in the same period by `creorono di nuovo`. Both construe; kept (D345)."
+  - id: FG-CONS-I39-D003
+    locator: FG-CONS.1.39.02
+    class: ruled_reading
+    witness_1857: "li difese più facilmente la autorità consulare"
+    witness_1933: "si difese più facilmente la autorità consulare"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "Read by both readers without doubt; a whole word. With `li` the consular authority is the subject and the patrician magistrates just named the object: it defended them more readily. With the 1933 `si` the consular authority was itself the more readily defended. Both construe; kept (D346)."
+  - id: FG-CONS-I39-D004
+    locator: FG-CONS.1.39.01
+    class: systematic_orthographic_profile
+    witness_1857: "Canestrini's `paci`, `tregue`, `volevano`, `il populo`, `le opinioni populari`, `la esperienza`, `il magistrato`, `periculose`, `partecipazione` (beside `participazione` earlier in the reply), `nelle espedizioni`, `e in tutte`, `e a fine`, `patrizii`, and his pointing (`magistrato, ma`, `moderarla; anzi`)"
+    witness_1933: "Palmarocchi's `pace`, `triegue`, `volevono`, `el popolo`, `le opinione populare`, `la esperienzia`, `el magistrato`, `pericolose`, `participazione`, `nelle espedizione`, `ed in tutte`, `ed a fine`, `patrizi`, and his pointing (`magistrato; ma`, `moderarla, anzi`)"
+    established: witness_1857
+    publish_as_variant_note: false
+    rationale: "Orthographic profile, forms and pointing; DEC-009 classes. The pointing doubtful to both readers follows the 1933 edition by D110, and two stops are supplied from it, D67 (D347)."
