@@ -548,3 +548,21 @@ last sentence answers Machiavelli's first move.
 | `ricordo` (FG) | counsel | D325. FG I.30 `il ricordo del Discorso`; kept apart from NM `precetto`, precept. |
 | `sinistri` (noun) | mishaps | D325. FG I.30. The adjective `sinistro` stays "sinister". |
 | `principi` (chief men) | princes | D05, D325. NM I.30 `i principi del suo esercito`, lower case in the witness. |
+
+
+## Added from the I.32 pair (2026-10-20)
+
+| Italian | English | Note |
+|---|---|---|
+| `beneficare`; `beneficio`, `benefizj` / `beneficii` | benefit (verb); benefit(s) | D334. NM I.32 rubric, .01 ×2, .02 ×2, .03; FG I.32 `nuovi beneficii`. |
+| `differire` | defer | D334. NM I.32 rubric, .01; "until" for `nelle`/`ne'` of the time to which a thing is put off. |
+| `sopravvenire` | supervene | D334. NM I.32 ×3, of the danger and of the case. |
+| `succedere` (of an outcome) / `riuscire` | fall out / succeed | D332. NM I.32 .01. `succedere` of succession stays "succeed" (NM I.10). |
+| `assai` + verb | enough | D333. NM I.32 `assai operavano`. |
+| `sgravare` / `gravezza` | disburden / burden | D334. NM I.32 .01, one root. |
+| `avversario` / `nimico`, `inimico` | adversary / enemy | D334. NM I.32 .01, .02; FG I.32. |
+| `giovare` | help | D334. NM I.32 `rimedj giovino`; FG I.32 `poca speranza di giovare`. "Avail" is `valersi`'s (D162). |
+| `innanzi` / `prima` | before, beforehand / earlier | D334. NM I.32 .02, .03; FG I.32 `innanzi al bisogno`, `provedere prima`. |
+| `per lo ordinario` | by the ordinary | D163. FG I.8, FG I.32. |
+| `ingannarsi` | deceive oneself | NM I.32 .03. |
+| `dovendo` (gerund of `dovere`) | having to | D334. A recorded collapse with `avere a` (D261); `dovere` finite stays "must" (D274). |

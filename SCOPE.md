@@ -96,7 +96,7 @@ exist. See §7.
 | 19 | NM-DISC.1.28 | FG-CONS.1.28 | FG-CONS-DR-019 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 20 | NM-DISC.1.29 | FG-CONS.1.29 | FG-CONS-DR-020 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 21 | NM-DISC.1.30 | FG-CONS.1.30 | FG-CONS-DR-021 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
-| 22 | NM-DISC.1.32 | FG-CONS.1.32 | FG-CONS-DR-022 | — | — | — | — | — |
+| 22 | NM-DISC.1.32 | FG-CONS.1.32 | FG-CONS-DR-022 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 23 | NM-DISC.1.39 | FG-CONS.1.39 | FG-CONS-DR-023 | — | — | — | — | — |
 | 24 | NM-DISC.1.40 | FG-CONS.1.40 | FG-CONS-DR-024 | — | — | — | — | — |
 | 25 | NM-DISC.1.47 | FG-CONS.1.47 | FG-CONS-DR-025 | — | — | — | — | — |
@@ -217,12 +217,12 @@ than inside the first paragraph.
 | Stage | Done | Remaining | Of |
 |---|---|---|---|
 | Link records | 39 | 0 | 39 |
-| NM source established | 21 | 18 | 39 |
-| FG source established | 21 | 18 | 39 |
-| Collated against the comparison witness | 42 units | 36 | 78 |
-| Translated (draft, cold-reviewed) | 42 | 36 | 78 |
-| Annotated | 42 | 36 | 78 |
-| Published | 42 | 36 | 78 |
+| NM source established | 22 | 17 | 39 |
+| FG source established | 22 | 17 | 39 |
+| Collated against the comparison witness | 44 units | 34 | 78 |
+| Translated (draft, cold-reviewed) | 44 | 34 | 78 |
+| Annotated | 44 | 34 | 78 |
+| Published | 44 | 34 | 78 |
 <!-- /state:stages -->
 
 The table is written by `scripts/state` from the files. The paragraphs below
@@ -352,6 +352,7 @@ clock; David's own time is the rulings, counted separately.
 | I.28 (417 + 426 words) | 30 | 5 | 20 | 15 | 12 | 5 | ~90 (stages approximate) | 1 batch at establishment (D290-D297): NM sample of p. 105 clean; two D203(b) escalations against the 1554, one the first *Discorsi* emendation (`fatt[a]`, a broken agreement) and one kept (`questa Città`); one single-reader word raised by the collator and kept (`ne occorrerà`); FG two splits (`dentro`, `nobilità`), one common doubt (`tennono`), one D203(b) escalation kept (`delle nuove leggi`) and one sense-bearing word kept against the 1933 (`discordia`); no open item at translation; NM collated against 1554; commentary cold-reviewed; the decision numbers shifted by two mid-pair when D288-D289 landed from another session; the computer link dropped once mid-pair |
 | I.29 (1,098 + 1,264 words) | 45 | 10 | 25 | 15 | 15 | 5 | ~115 (stages approximate) | the unit-twenty review of the sampling rule first (D302, the sample page by 1554 differences, with line crops); 1 batch at establishment (D303-D310): NM a miscount first sent p. 110 and the rule's page, p. 108, then went to a further reader, both clean, crops clean; two common doubts read as the conjunction with the 1554, three D203(b) differences and one sense-bearing word kept; FG two splits of form, nine common doubts, two D203(b) readings kept, one emendation (`ség[u]ito`), one sense-bearing reading kept; 1 open item at translation (O30, `fazione`, ruled 2026-10-19 as D317 and held for review); NM collated against 1554; commentary cold-reviewed |
 | I.30 (543 + 92 words) | 35 | 5 | 20 | 15 | 12 | 5 | ~95 (stages approximate) | 1 batch at establishment (D318-D324), the second under D302: NM sample of p. 112 (the densest page in 1554 differences) with four crops, clean; one printed non-word in the 1824 emended (`t[u]tta`), the second *Discorsi* emendation; one D203(b) difference kept (`prenda`) and two sense-bearing 1554 differences kept (`giudicando`, no `tanti`); FG no word disagreement, the rubric's `a`/`o` and `E`/`È` read, three marks by D110; the D317 revisit checked, no `fazione`; no open item at translation; NM collated against 1554; commentary cold-reviewed; the computer link dropped three times mid-pair |
+| I.32 (337 + 103 words) | 25 | 5 | 15 | 15 | 12 | 5 | ~80 (stages approximate) | 1 batch at establishment (D329-D331), the third under D302: NM sample of p. 117 (the denser page in 1554 differences, counting forms of one word once) with three crops of p. 118, clean, and nothing raised in NM; FG body without a split, the rubric's `necessitadi` split and three common doubts read with the 1933 edition, four marks by D110; the D317 revisit checked, no `fazione`; no open item at translation; NM collated against 1554; commentary cold-reviewed; the computer link dropped twice mid-pair |
 
 ---
 
