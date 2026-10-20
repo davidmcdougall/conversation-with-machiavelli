@@ -1,0 +1,455 @@
+<title>A Conversation with Machiavelli — Which ways a prince or a republic must use to flee this vice of ingratitude, and which that captain or that citizen [must use] so as not to be oppressed by it</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root {
+  --paper:      #EDEEEC;
+  --paper-sunk: #E4E6E3;
+  --ink:        #1B1E1C;
+  --ink-muted:  #5C625E;
+  --ink-faint:  #868C87;
+  --rule:       #C9CDC8;
+  --rule-faint: #DCDFDB;
+  --nm:         #3A5A6B;
+  --fg:         #6E5A3C;
+  --serif: "EB Garamond", "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  --sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --mono:  "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:      #161917;
+    --paper-sunk: #1D211E;
+    --ink:        #E3E6E1;
+    --ink-muted:  #A0A6A0;
+    --ink-faint:  #767C77;
+    --rule:       #343934;
+    --rule-faint: #262B27;
+    --nm:         #8FB4C6;
+    --fg:         #C4A97C;
+  }
+}
+:root[data-theme="dark"] {
+  --paper:      #161917;
+  --paper-sunk: #1D211E;
+  --ink:        #E3E6E1;
+  --ink-muted:  #A0A6A0;
+  --ink-faint:  #767C77;
+  --rule:       #343934;
+  --rule-faint: #262B27;
+  --nm:         #8FB4C6;
+  --fg:         #C4A97C;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 1160px; margin: 0 auto; padding-inline: 20px; padding-block: 0 0; }
+
+/* ---- masthead ---- */
+.masthead { padding-block: 56px 32px; border-bottom: 1px solid var(--rule); }
+.eyebrow {
+  font-family: var(--sans); font-size: 11px; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint);
+  margin: 0 0 18px;
+}
+h1 {
+  font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 5vw, 44px);
+  line-height: 1.12; margin: 0 0 14px; text-wrap: balance; letter-spacing: -0.01em;
+}
+h1 .sub { display: block; font-style: italic; color: var(--ink-muted); font-size: .52em; margin-top: 12px; letter-spacing: 0; }
+.standfirst {
+  font-family: var(--sans); font-size: 14.5px; line-height: 1.6;
+  color: var(--ink-muted); max-width: 62ch; margin: 0;
+}
+.sf-label {
+  font-weight: 600; font-size: 11px; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--ink-faint); margin-right: .6em;
+}
+
+/* ---- the pairing device ---- */
+.pairing {
+  display: flex; align-items: stretch; gap: 0; margin: 30px 0 0;
+  border: 1px solid var(--rule); border-radius: 2px; overflow: hidden;
+  font-family: var(--sans); background: var(--paper-sunk);
+}
+.pairing > div { flex: 1 1 0; padding: 13px 16px; min-width: 0; }
+.pairing .who { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
+.pairing .nm-side .who { color: var(--nm); }
+.pairing .fg-side .who { color: var(--fg); }
+.pairing .what { font-size: 13.5px; color: var(--ink-muted); }
+.pairing .arrow {
+  flex: 0 0 auto; display: flex; align-items: center; justify-content: center;
+  padding-inline: 14px; color: var(--ink-faint); font-size: 15px;
+  border-inline: 1px solid var(--rule);
+}
+
+/* ---- pair-to-pair navigation ---- */
+.pairnav {
+  display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+  margin-top: 18px; font-family: var(--sans); font-size: 12.5px;
+  color: var(--ink-muted);
+}
+.pairnav a { text-decoration: none; color: var(--ink-muted); }
+.pairnav a:hover, .pairnav a:focus { color: var(--ink); text-decoration: underline; }
+
+/* ---- work sections ---- */
+.work { padding-block: 52px 0; }
+.work-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
+.work-head .tag {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .04em;
+  padding: 3px 7px; border-radius: 2px; color: var(--paper);
+}
+.work.nm .tag { background: var(--nm); }
+.work.fg .tag { background: var(--fg); }
+h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; letter-spacing: -0.005em; }
+.rubric {
+  font-style: italic; color: var(--ink-muted); max-width: 70ch;
+  margin: 10px 0 0; font-size: 16.5px; line-height: 1.5;
+}
+.rubric-note {
+  font-family: var(--sans); font-style: normal; font-size: 12px;
+  color: var(--ink-faint); margin-top: 7px;
+}
+.colheads {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  margin-top: 30px; padding-bottom: 7px; border-bottom: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint);
+}
+
+/* ---- the facing pair ---- */
+.pair {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  padding-block: 22px; border-bottom: 1px solid var(--rule-faint);
+  scroll-margin-top: 20px;
+}
+.pair:target { background: var(--paper-sunk); }
+.annot { grid-column: 2 / -1; margin-top: 14px; font-family: var(--sans); font-size: 13.5px;
+  line-height: 1.55; color: var(--ink-muted); }
+.annot summary { cursor: pointer; font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); list-style: none; }
+.annot summary::-webkit-details-marker { display: none; }
+.annot summary::before { content: "+ "; }
+.annot[open] summary::before { content: "− "; }
+.annot p { margin: 8px 0 0; max-width: 72ch; }
+.annot .xref { color: inherit; text-decoration: underline; text-decoration-color: var(--rule);
+  text-underline-offset: 2px; white-space: nowrap; }
+.gutter { padding-top: 4px; }
+.uid {
+  font-family: var(--mono); font-size: 10.5px; color: var(--ink-faint);
+  text-decoration: none; letter-spacing: -0.02em;
+}
+.uid:hover, .uid:focus { color: var(--ink); text-decoration: underline; }
+.col { min-width: 0; }
+.col.it { hyphens: auto; }
+.col.en { }
+.supplied { color: var(--ink-muted); }
+
+/* ---- apparatus ---- */
+.apparatus {
+  margin-top: 34px; padding-top: 22px; border-top: 2px solid var(--rule);
+  font-family: var(--sans); font-size: 13.5px; line-height: 1.58;
+  color: var(--ink-muted);
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 26px 34px;
+}
+.apparatus h3 {
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); margin: 0 0 9px;
+}
+.apparatus p { margin: 0 0 9px; }
+.apparatus p:last-child { margin-bottom: 0; }
+.apparatus .lem { font-family: var(--serif); font-size: 15px; color: var(--ink); font-style: italic; }
+.sig { font-family: var(--mono); font-size: 12px; color: var(--ink); }
+
+/* ---- colophon ---- */
+.colophon {
+  margin-top: 60px; padding-block: 28px 60px; border-top: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 13px; line-height: 1.6; color: var(--ink-muted);
+}
+.colophon .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 34px; }
+.colophon h3 {
+  font-size: 10.5px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--ink-faint); margin: 0 0 8px;
+}
+.colophon p { margin: 0 0 8px; }
+.colophon ul { margin: 0; padding-left: 16px; }
+.colophon li { margin-bottom: 5px; }
+.state {
+  margin-top: 26px; padding: 14px 16px; background: var(--paper-sunk);
+  border-left: 2px solid var(--ink-faint); border-radius: 0 2px 2px 0;
+  font-size: 12.5px;
+}
+.state strong { color: var(--ink); font-weight: 600; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--nm); outline-offset: 2px; }
+
+/* ---- contents / index page ---- */
+.toc { margin-top: 30px; }
+.toc-row {
+  display: grid; grid-template-columns: 40px 1fr 1fr; gap: 0 20px;
+  padding-block: 14px; border-bottom: 1px solid var(--rule-faint);
+  font-family: var(--sans); align-items: baseline;
+}
+.toc-row .n { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
+.toc-row a { text-decoration: none; color: var(--ink); font-family: var(--serif); font-size: 16px; }
+.toc-row a:hover, .toc-row a:focus { text-decoration: underline; }
+.toc-row .unpublished { color: var(--ink-faint); font-style: italic; font-size: 14px; }
+.toc-row .ids { color: var(--ink-faint); font-size: 11.5px; font-family: var(--mono); }
+
+@media (max-width: 760px) {
+  body { font-size: 16.5px; }
+  .colheads { display: none; }
+  .pair { grid-template-columns: 1fr; gap: 0; padding-block: 20px; }
+  .gutter { padding-top: 0; margin-bottom: 8px; }
+  .annot { grid-column: 1; }
+  .col.it { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px dotted var(--rule); }
+  .col.it::before, .col.en::before {
+    display: block; font-family: var(--sans); font-size: 10px; font-weight: 600;
+    letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px;
+  }
+  .col.it::before { content: "Italian"; }
+  .col.en::before { content: "English"; }
+  .pairing { flex-direction: column; }
+  .pairing .arrow { border-inline: 0; border-block: 1px solid var(--rule); padding-block: 6px; }
+  .toc-row { grid-template-columns: 1fr; gap: 4px; }
+}
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow">A Conversation with Machiavelli · Pair 21 of 39</p>
+    <h1>Which ways a prince or a republic must use to flee this vice of ingratitude, and which that captain or that citizen [must use] so as not to be oppressed by it
+      <span class="sub">Discourses I.30, and Guicciardini&#x27;s reply</span></h1>
+    <p class="standfirst"><span class="sf-label">Editor's summary</span> Machiavelli holds that a prince, to escape having either to live in suspicion or to be ungrateful, must go on his expeditions in person, because victory then leaves the glory and the acquisition all his; for the prince who stays at home through negligence or little prudence he has no precept. Guicciardini answers only the prince. He praises a prince&#x27;s going in person, because the expeditions then carry more reputation and the prince is better served than through captains. He believes the advice perhaps necessary to a tyrant or to whoever does not hold his state well secured, but of little use to a great and natural king: although our princes commonly make war through captains, these mishaps do not therefore happen to them, or very seldom.</p>
+
+    <div class="pairing">
+      <div class="nm-side">
+        <div class="who">Niccolò Machiavelli</div>
+        <div class="what">Discorsi sopra la prima Deca di Tito Livio · written c. 1513–19, printed 1531</div>
+      </div>
+      <div class="arrow" aria-hidden="true">answered by</div>
+      <div class="fg-side">
+        <div class="who">Francesco Guicciardini</div>
+        <div class="what">Considerazioni intorno ai Discorsi del Machiavelli · written 1529–30, printed 1857</div>
+      </div>
+    </div>
+    <nav class="pairnav"><a href="1.29.html">← Pair 1.29</a><a href="../index.html">All 39 pairs</a><span></span></nav>
+  </header>
+
+  <section class="work nm">
+    <div class="work-head">
+      <span class="tag">NM-DISC.1.30</span>
+      <h2>Capitolo XXX</h2>
+    </div>
+    <p class="rubric">Quali modi debbe usare un Principe o una Repubblica per fuggire questo vizio della ingratitudine, e quali quel Capitano o quel Cittadino per non essere oppresso da quella.</p>
+    <p class="rubric">Which ways a prince or a republic must use to flee this vice of ingratitude, and which that captain or that citizen [must use] so as not to be oppressed by it.</p>
+
+    <div class="colheads"><div></div><div>Italian · 1824</div><div>English</div></div>
+      <div class="pair" id="NM-DISC.1.30.01">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.30.01">1.30.01</a></div>
+        <div class="col it" lang="it">Un Principe per fuggire questa necessità di avere a vivere con sospetto, o essere ingrato, debbe personalmente andare nelle espedizioni, come facevano nel principio quelli Imperadori romani, come fa ne&#x27; tempi nostri il Turco, e come hanno fatto e fanno quelli che sono virtuosi. Perché vincendo, la gloria e lo acquisto è tutto loro: e quando non vi sono, sendo la gloria d&#x27;altrui, non pare loro potere usare quello acquisto, s&#x27;ei non spengono in altrui quella gloria che loro non hanno saputo guadagnarsi, e diventare ingrati ed ingiusti; e senza dubbio è maggiore la loro perdita, che il guadagno.</div>
+        <div class="col en" lang="en">A prince, to flee this necessity of having to live with suspicion, or be ungrateful, must personally go on the expeditions, as those Roman emperors did in the beginning, as the Turk does in our times, and as those who are virtuous have done and do. For, winning, the glory and the acquisition is all theirs: and when they are not there, the glory being another&#x27;s, it does not seem to them that they can use that acquisition if they do not extinguish in another that glory which they have not known how to gain for themselves, and become ungrateful and unjust; and without doubt their loss is greater than the gain.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The chapter answers the question I.29 left: if suspicion is natural to princes, and ingratitude follows from it, what can be done? The rubric asks for four remedies, for the prince and the republic, and for the captain and the citizen they send. The prince&#x27;s remedy removes the cause rather than the vice. If he goes on his expeditions himself, winning leaves the glory and the acquisition his; there is no captain&#x27;s glory to suspect. If he does not go, the glory is another&#x27;s, and he seems to himself unable to use the acquisition without extinguishing that glory; the chapter&#x27;s next words, &quot;and become ungrateful and unjust&quot;, hang loosely on the sentence, and the edition leaves them so. Machiavelli puts the cost in a sentence: the loss is greater than the gain.</p>
+<p><span class="lem">History.</span> Machiavelli&#x27;s three examples are classes, not persons: the Roman emperors &quot;in the beginning&quot;, the Turk &quot;in our times&quot;, and the virtuous of every time. He names no emperor. The Ottoman sultans of his day commanded their own campaigns; presumably Selim I, whom he calls the Grand Turk at I.1, who led the wars of 1514-17 against Persia and the Mamluks in person.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.30.02">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.30.02">1.30.02</a></div>
+        <div class="col it" lang="it">Ma quando o per negligenza o per poca prudenza e&#x27; si rimangono a casa oziosi, e mandano un Capitano, io non ho che precetto dar loro altro, che quello che per loro medesimi si sanno. Ma dico bene a quel Capitano, giudicando che non possa fuggire i morsi della ingratitudine, che faccia una delle due cose, o subito dopo la vittoria lasci l&#x27;esercito, e rimettasi nelle mani del suo Principe, guardandosi da ogni atto insolente o ambizioso, acciocché quello spogliato d&#x27;ogni sospetto abbia cagione o di premiarlo, o di non l&#x27;offendere; o quando questo non gli paja di fare, prenda animosamente la parte contraria, e tenga tutti quelli modi, per li quali creda che quello acquisto sia suo proprio e non del Principe suo, facendosi benevoli i soldati ed i sudditi, e faccia nuove amicizie coi vicini, occupi con li suoi uomini le Fortezze, corrompa i principi del suo esercito, e di quelli che non può corrompere si assicuri, e per questi modi cerchi di punire il suo Signore di quella ingratitudine che esso gli userebbe.</div>
+        <div class="col en" lang="en">But when, either through negligence or through little prudence, they remain at home idle, and send a captain, I have no precept to give them other than what they know by themselves. But I say indeed to that captain, judging that he cannot flee the bites of ingratitude, that he should do one of the two things: either at once after the victory leave the army, and put himself in the hands of his prince, guarding himself from every insolent or ambitious act, so that that one, stripped of every suspicion, may have cause either to reward him or not to offend him; or, when this does not seem to him <span class="supplied">[good]</span> to do, spiritedly take the contrary part, and hold all those ways by which he may believe that acquisition to be his own and not his prince&#x27;s, making the soldiers and the subjects well-disposed to himself, and make new friendships with the neighbours, occupy with his men the fortresses, corrupt the princes of his army, and of those whom he cannot corrupt secure himself, and by these ways seek to punish his lord for that ingratitude which he would use towards him.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The prince who stays at home through negligence or little prudence is given nothing: Machiavelli says he has no precept for him beyond what such princes know for themselves. The advice goes instead to the captain, judged unable to flee the bites of ingratitude; whose judgment that is, Machiavelli&#x27;s or the captain&#x27;s own, the text leaves open. He has two ways and, as .03 says, no third. He can give up the army at once after the victory and put himself in his prince&#x27;s hands, avoiding every insolent or ambitious act, so that the prince, stripped of suspicion, may have cause either to reward him or not to offend him. Or, when this does not seem good to him, he can spiritedly take the contrary part: hold every way by which he may believe the acquisition his own, win the soldiers and the subjects, make friends of the neighbours, occupy the fortresses with his men, corrupt the army&#x27;s chief men, secure himself of the rest, and by these ways seek to punish his lord for the ingratitude his lord would use towards him. The second course is set out at greater length than the first, and Machiavelli passes no judgment on it beyond calling it punishment.</p>
+<p><span class="lem">Cross-reference.</span> Two steps of the captain&#x27;s second course answer what I.29 showed being taken from victorious captains: Ferdinand removed Consalvo&#x27;s command of the men-at-arms and then took the fortresses from him, and Mucianus, sent by Vespasian, at once took the army&#x27;s obedience from Antonius. The army and the fortresses are what the captain of I.30 is told to secure.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.30.03">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.30.03">1.30.03</a></div>
+        <div class="col it" lang="it">Altre vie non ci sono; ma, come di sopra si disse, gli uomini non sanno essere né al tutto tristi, né al tutto buoni. E sempre interviene che subito dopo la vittoria, lasciare lo esercito non vogliono, portarsi modestamente non possono, usare termini violenti, e che abbiano in sé l&#x27;onorevole, non sanno. Talché stando ambigui, tra quella loro dimora e ambiguità, sono oppressi.</div>
+        <div class="col en" lang="en">There are no other paths; but, as was said above, men do not know how to be either wholly wicked or wholly good. And it always befalls that at once after the victory, to leave the army they do not wish, to carry themselves modestly they cannot, to use violent bearings, and such as have the honourable in them, they do not know how. So that, standing ambiguous, between that delay of theirs and ambiguity, they are oppressed.</div>
+        <details class="annot"><summary>Commentary · 1</summary>
+          <p><span class="lem">Argument.</span> Then nature closes both ways. Men do not know how to be either wholly wicked or wholly good, a claim made at the close of I.26 and in I.27, whose rubric says they very seldom know how. And it always befalls, Machiavelli says, that after the victory captains do not wish to leave the army, cannot carry themselves modestly, and do not know how to use violent bearings that keep their honour: will, power and knowledge fail in turn. Between delay and ambiguity they are oppressed. The two remedies are offered as the only ones, and then shown to be, as men are, almost never taken. The captain&#x27;s half of the rubric is answered by explaining why the remedy fails.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.30.04">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.30.04">1.30.04</a></div>
+        <div class="col it" lang="it">Quanto ad una Repubblica, volendo fuggire questo vizio dello ingrato, non si può dare il medesimo rimedio che al Principe; cioè che vada e non mandi nelle espedizioni sue, sendo necessitata a mandare un suo cittadino. Conviene pertanto che per rimedio io le dia, che la tenga i medesimi modi che tenne la Repubblica romana, ad esser meno ingrata che le altre; il che nacque dai modi del suo Governo. Perché adoperandosi t<span class="supplied">[u]</span>tta la Città, e gli Nobili e gl&#x27;Ignobili, nella guerra, surgeva sempre in Roma in ogni età uomini virtuosi, e ornati di varie vittorie, che il Popolo non aveva cagione di dubitare di alcuno di loro, sendo assai, e guardando l&#x27;uno l&#x27;altro. E intanto si mantenevano interi, e rispettivi di non dare ombra di alcuna ambizione, né cagione al Popolo come ambiziosi d&#x27;offenderli, che venendo alla Dittatura, quello maggior gloria ne riportava, che più tosto la deponeva. E così non potendo simili modi generare sospetto, non generavano ingratitudine. In modo che una Repubblica che non voglia avere cagione d&#x27;essere ingrata, si debbe governare come Roma; e uno cittadino che voglia fuggire quelli suoi morsi, debbe osservare i termini osservati dai cittadini romani.</div>
+        <div class="col en" lang="en">As to a republic, wishing to flee this vice of the ungrateful <span class="supplied">[one]</span>, the same remedy cannot be given as to the prince; that is, that it should go and not send on its expeditions, being necessitated to send a citizen of its own. It is fitting, on that account, that for a remedy I give it that it hold the same ways that the Roman republic held, so as to be less ungrateful than the others; which arose from the ways of its government. For, the whole city, both the nobles and the ignoble, employing itself in the war, there rose always in Rome, in every age, virtuous men, and adorned with various victories, that the people had no cause to doubt any one of them, <span class="supplied">[they]</span> being many, and the one watching the other. And they maintained themselves so far whole, and respectful of giving no shadow of any ambition, nor cause to the people to offend them as ambitious, that, coming to the dictatorship, that one carried away greater glory from it who laid it down the sooner. And so, like ways not being able to generate suspicion, they did not generate ingratitude. In such a way that a republic that does not wish to have cause to be ungrateful must govern itself as Rome; and a citizen who wishes to flee those bites of its must observe the bearings observed by the Roman citizens.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> A republic cannot go on its own expeditions; it must send a citizen. Its remedy is Rome&#x27;s ways, and Machiavelli derives Rome&#x27;s being less ungrateful than the others from the ways of its government. Because the whole city, nobles and ignoble, served in war, every age produced many virtuous men with victories to their names. No one of them could alarm the people, for there were many and each watched the others. They kept themselves so far uncorrupted, and so careful of seeming ambitious, that whoever laid the dictatorship down soonest earned the most glory from it. Such ways could not generate suspicion, so they did not generate ingratitude: the chain of I.29, suspicion then ingratitude, is cut at its first link. The citizen&#x27;s remedy follows in one clause: observe the bearings Roman citizens observed.</p>
+<p><span class="lem">Cross-reference.</span> The republic&#x27;s remedy takes up a claim of I.29, that among all the peoples that ever had empire Rome was the least ungrateful, and gives a cause for it from the ways of Rome&#x27;s government. It also anticipates the case of the dictatorship, which Machiavelli argues at I.34. That a city fighting with its own citizens multiplies its men of <i lang="it">virtù</i> is a thread of the <i lang="it">Discorsi</i> from I.21 on, where a prince or republic without its own soldiers is blamed.</p>
+<p><span class="lem">History.</span> The dictatorship was an emergency magistracy, held for six months at most and commonly laid down as soon as its task was done. Livy reports L. Quinctius Cincinnatus resigning on the sixteenth day (3.29); Machiavelli names no dictator here.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from the 1824 edition (<span class="sig">WIT-NM-DISC-1824-IA</span>), page-image-backed, which governs. Collated against the 1554 Giglio printing, Venice (<span class="sig">WIT-NM-DISC-1554-IA</span>), which is comparison evidence only.</p>
+<p>Paragraph divisions are editorial. The witness prints the chapter as one unbroken block.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem">Perché adoperandosi t[u]tta la Città</span>. The 1824 witness reads <i lang="it">Perchè adoperandosi tntta la Città</i>. The 1554 witness reads <i lang="it">perche adoperandosi tutta la citta</i>. Checked on the leaf (fol. 46r). Both 1824 readers see an n, an inverted or foul sort on a crisp page; <i lang="it">tntta</i> is not a word. Emended under D68 from the 1554 edition (D318).</p>
+<p><span class="lem">prenda animosamente la parte contraria, e tenga tutti quelli modi</span> — 1824. The 1554 witness reads <i lang="it">prende animosamente la parte contraria, &amp; tenga tutti quei modi</i>. Checked on the leaf (fol. 45v). The 1554 has the indicative <i lang="it">prende</i>; the 1824 the subjunctive <i lang="it">prenda</i>, in line with <i lang="it">faccia</i>, <i lang="it">tenga</i>, <i lang="it">occupi</i> in the same advice. A difference at a/e, escalated under D203(b); read by both readers without doubt; kept (D38; D319).</p>
+<p><span class="lem">Ma dico bene a quel Capitano, giudicando che non possa fuggire i morsi della ingratitudine, che faccia una delle due cose</span> — 1824. The 1554 witness reads <i lang="it">Ma dico bene a quel Capitano, che giudicando io, ch&#x27;ei non possa fuggire i morsi della ingratitudine, che faccia una delle due cose</i>. Checked on the leaf (fol. 45v). The 1554 names the one who judges, <i lang="it">io</i>, Machiavelli, and gives <i lang="it">possa</i> its subject, <i lang="it">ei</i>, the captain: &quot;I say to that captain, since I judge that he cannot escape the bites of ingratitude, that he should do one of two things&quot;. The 1824 leaves the gerund&#x27;s subject unexpressed: Machiavelli&#x27;s judgement or the captain&#x27;s own. Read by both readers without doubt; it construes; kept (D38; D320). The English follows the 1824; a translator&#x27;s note gives the 1554.</p>
+<p><span class="lem">surgeva sempre in Roma in ogni età uomini virtuosi, e ornati di varie vittorie, che il Popolo non aveva cagione di dubitare</span> — 1824. The 1554 witness reads <i lang="it">surgeua sempre in Roma in ogni eta tanti huomini uirtuosi, &amp; ornati di uarie uittorie, che&#x27;l popolo non haueua cagione di dubitare</i>. Checked on the leaf (fol. 46r). The 1554 <i lang="it">tanti ... che</i>, &quot;so many ... that&quot;, makes the people&#x27;s lack of cause a result of the number of such men; the 1824, without <i lang="it">tanti</i>, leaves the <i lang="it">che</i> loosely consecutive. Read by both readers without doubt; it construes; kept (D38; D321).</p>
+<p><span class="lem">Talchè stando ambigui, tra quella loro dimora e ambiguità, sono oppressi</span> — 1824. The 1554 witness reads <i lang="it">Tal che stando dubbiosi tra quella loro dimora, et ambiguita sono oppressi</i>. Checked on the leaf (fol. 46r). The 1554 <i lang="it">dubbiosi</i>, &quot;doubtful&quot;, for <i lang="it">ambigui</i>, &quot;ambiguous&quot;: the 1824 repeats its noun in <i lang="it">ambiguità</i>. Same sense.</p>
+<p><span class="lem">si mantenevano interi, e rispettivi di non dare ombra di alcuna ambizione</span> — 1824. The 1554 witness reads <i lang="it">si manteneuano interi, et con rispetto di non dare ombra d&#x27;alcuna ambitione</i>. Checked on the leaf (fol. 46r). The 1554 <i lang="it">con rispetto</i>, &quot;with care&quot;, for the adjective <i lang="it">rispettivi</i>, &quot;careful&quot;. Same sense.</p>
+<p><span class="lem">come facevano nel principio quelli Imperadori romani, come fa ne&#x27; tempi nostri il Turco ... s&#x27;ei non spengono in altrui quella gloria che loro non hanno saputo guadagnarsi</span> — 1824. The 1554 witness reads <i lang="it">come faceuano nel principio quei Imperadori Romani, come fa a i tempi nostri il Turco ... se non spengono in altrui quella gloria, che eßi non hanno saputo guadagnarsi</i>. Forms of one word or construction (<i lang="it">quei</i>, <i lang="it">a i tempi</i>, <i lang="it">eßi</i>, no pronoun after <i lang="it">se</i>); no difference of sense.</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem"><i lang="it">Un Principe per fuggire questa necessità di avere a vivere con sospetto, o essere ingrato</i>.</span> &quot;A prince, to flee this necessity of having to live with suspicion, or be ungrateful&quot;: the necessity is I.29&#x27;s, where suspicion was found <i lang="it">tanto ... naturale ... nei Principi</i> that they cannot use gratitude. <i lang="it">avere a</i> + infinitive of necessity, &quot;have to&quot; (D61, D261); the bare <i lang="it">essere</i> hangs on it too, and the English keeps the Italian&#x27;s comma so that &quot;be ungrateful&quot; is the second thing the prince would have to do, not a second purpose.</p>
+<p><span class="lem"><i lang="it">debbe personalmente andare nelle espedizioni</i>.</span> &quot;Must personally go on the expeditions&quot;: <i lang="it">espedizione</i>, expedition, as I.29&#x27;s <i lang="it">una espedizione importante</i>; <i lang="it">personalmente</i>, personally, the word Guicciardini takes up (Guicciardini .01). The remedy removes the cause: if the prince wins, there is no captain&#x27;s glory to suspect.</p>
+<p><span class="lem"><i lang="it">come facevano nel principio quelli Imperadori romani</i>.</span> &quot;As those Roman emperors did in the beginning&quot;: <i lang="it">principio</i>, beginning (glossary). Machiavelli names none.</p>
+<p><span class="lem"><i lang="it">come fa ne&#x27; tempi nostri il Turco</i>.</span> &quot;As the Turk does in our times&quot;: the Ottoman sultan, presumably Selim I, the <i lang="it">Gran Turco</i> of I.1, who led his campaigns of 1514-17 in person; the date of the chapter is not fixed. The 1554 edition reads <i lang="it">a i tempi nostri</i>, the same sense.</p>
+<p><span class="lem"><i lang="it">e come hanno fatto e fanno quelli che sono virtuosi</i>.</span> &quot;And as those who are virtuous have done and do&quot;: <i lang="it">virtuoso</i>, the adjective of <i lang="it">virtù</i> (glossary), of princes. Canestrini&#x27;s note to Guicciardini&#x27;s reply paraphrases this whole first sentence; it is his, and is not carried.</p>
+<p><span class="lem"><i lang="it">Perché vincendo, la gloria e lo acquisto è tutto loro</i>.</span> &quot;For, winning, the glory and the acquisition is all theirs&quot;: the singular verb with the double subject is kept, the two taken as one thing; <i lang="it">acquisto</i>, acquisition, with <i lang="it">acquistare</i>, acquire (glossary); <i lang="it">gloria</i>, glory.</p>
+<p><span class="lem"><i lang="it">e quando non vi sono, sendo la gloria d&#x27;altrui</i>.</span> &quot;And when they are not there, the glory being another&#x27;s&quot;: <i lang="it">vi</i>, there, on the expedition.</p>
+<p><span class="lem"><i lang="it">non pare loro potere usare quello acquisto, s&#x27;ei non spengono in altrui quella gloria</i>.</span> &quot;It does not seem to them that they can use that acquisition if they do not extinguish in another that glory&quot;: <i lang="it">spegnere</i>, extinguish. The 1554 edition reads <i lang="it">se non spengono</i>, without the pronoun.</p>
+<p><span class="lem"><i lang="it">che loro non hanno saputo guadagnarsi</i>.</span> &quot;Which they have not known how to gain for themselves&quot;: <i lang="it">guadagnare</i>, gain (glossary); <i lang="it">sapere</i> + infinitive, know how. The 1554 edition reads <i lang="it">eßi</i> for <i lang="it">loro</i>.</p>
+<p><span class="lem"><i lang="it">e diventare ingrati ed ingiusti</i>.</span> &quot;And become ungrateful and unjust&quot;: the infinitive has no clear governor. It may run on from <i lang="it">potere</i>, what the prince seems to himself to have to do, or stand loosely as the consequence of extinguishing the glory. The English keeps the loose coordination, and no note settles it.</p>
+<p><span class="lem"><i lang="it">e senza dubbio è maggiore la loro perdita, che il guadagno</i>.</span> &quot;And without doubt their loss is greater than the gain&quot;: plain English order (D263, exposition). <i lang="it">perdita</i>, <i lang="it">guadagno</i>, loss, gain (FG I.23).</p>
+<p><span class="lem"><i lang="it">Ma quando o per negligenza o per poca prudenza e&#x27; si rimangono a casa oziosi</i>.</span> &quot;But when, either through negligence or through little prudence, they remain at home idle&quot;: <i lang="it">e&#x27;</i>, they, the princes; <i lang="it">ozioso</i>, idle, with <i lang="it">ozio</i>, idleness (glossary). The two causes are faults, and Machiavelli leaves the prince who commits them to his own knowledge.</p>
+<p><span class="lem"><i lang="it">io non ho che precetto dar loro altro, che quello che per loro medesimi si sanno</i>.</span> &quot;I have no precept to give them other than what they know by themselves&quot;: <i lang="it">precetto</i>, precept. Machiavelli declines to advise the prince who will not go. Guicciardini calls the advice of the first sentence the Discourse&#x27;s <i lang="it">ricordo</i> (Guicciardini .01).</p>
+<p><span class="lem"><i lang="it">Ma dico bene a quel Capitano, giudicando che non possa fuggire i morsi della ingratitudine</i>.</span> &quot;But I say indeed to that captain, judging that he cannot flee the bites of ingratitude&quot;: <i lang="it">bene</i> strengthens the verb, &quot;indeed&quot;, as D174&#x27;s <i lang="it">Debbe bene</i>, against the precept withheld from the prince. The gerund&#x27;s subject is not expressed: it may be Machiavelli, who judges the captain&#x27;s case, or the captain, judging his own. The English keeps both. The 1554 edition makes it Machiavelli&#x27;s, <i lang="it">che giudicando io, ch&#x27;ei non possa fuggire</i>, &quot;since I judge that he cannot flee&quot;; the 1824 is kept as printed (D320; NM-DISC-I30-D003). <i lang="it">morsi</i>, bites, the word Guicciardini uses of princes&#x27; harder ingratitude at FG I.29.</p>
+<p><span class="lem"><i lang="it">che faccia una delle due cose</i>.</span> &quot;That he should do one of the two things&quot;: the article kept; the two are offered as the only ones (<i lang="it">Altre vie non ci sono</i>, .03).</p>
+<p><span class="lem"><i lang="it">o subito dopo la vittoria lasci l&#x27;esercito, e rimettasi nelle mani del suo Principe</i>.</span> &quot;Either at once after the victory leave the army, and put himself in the hands of his prince&quot;: <i lang="it">subito</i>, at once (D177), the word I.29 used of the suspicion that arises <i lang="it">subito ... dopo la vittoria</i>.</p>
+<p><span class="lem"><i lang="it">guardandosi da ogni atto insolente o ambizioso</i>.</span> &quot;Guarding himself from every insolent or ambitious act&quot;: I.29 made the captain&#x27;s <i lang="it">modo o termine usato insolentemente</i> the thing that increases the prince&#x27;s suspicion; <i lang="it">insolente</i>, insolent (glossary <i lang="it">insolenza</i>).</p>
+<p><span class="lem"><i lang="it">acciocché quello spogliato d&#x27;ogni sospetto abbia cagione o di premiarlo, o di non l&#x27;offendere</i>.</span> &quot;So that that one, stripped of every suspicion, may have cause either to reward him or not to offend him&quot;: <i lang="it">quello</i>, that one, the prince, as <i lang="it">quello</i> in .04; <i lang="it">premiare</i>, reward; <i lang="it">offendere</i>, offend, the two of I.29 .02. The 1554 edition reads <i lang="it">l&#x27;offenderlo</i>.</p>
+<p><span class="lem"><i lang="it">o quando questo non gli paja di fare</i>.</span> &quot;Or, when this does not seem to him [good] to do&quot;: <i lang="it">parere di</i> + infinitive, to see fit; the supply is bracketed (D53).</p>
+<p><span class="lem"><i lang="it">prenda animosamente la parte contraria</i>.</span> &quot;Spiritedly take the contrary part&quot;: <i lang="it">animosamente</i>, from <i lang="it">animo</i>, spirit (glossary), so &quot;spiritedly&quot;, before its verb as in the Italian. The 1554 edition reads <i lang="it">prende</i>, the indicative; the 1824 subjunctive runs with <i lang="it">faccia</i>, <i lang="it">tenga</i>, <i lang="it">occupi</i>, and is kept (D319; NM-DISC-I30-D002).</p>
+<p><span class="lem"><i lang="it">e tenga tutti quelli modi, per li quali creda che quello acquisto sia suo proprio e non del Principe suo</i>.</span> &quot;And hold all those ways by which he may believe that acquisition to be his own and not his prince&#x27;s&quot;: <i lang="it">tenere</i>, hold (D242); <i lang="it">modi</i>, ways (glossary); the subjunctive <i lang="it">creda</i>, &quot;may believe&quot;. The acquisition of .01 is now the captain&#x27;s to keep.</p>
+<p><span class="lem"><i lang="it">facendosi benevoli i soldati ed i sudditi</i>.</span> &quot;Making the soldiers and the subjects well-disposed to himself&quot;: <i lang="it">benevolo</i>, well-disposed, wishing him well.</p>
+<p><span class="lem"><i lang="it">occupi con li suoi uomini le Fortezze</i>.</span> &quot;Occupy with his men the fortresses&quot;: in the Italian&#x27;s order; <i lang="it">Fortezze</i>, fortresses, strongholds (D312), as I.29 .05, where Ferdinand took them from Consalvo.</p>
+<p><span class="lem"><i lang="it">corrompa i principi del suo esercito</i>.</span> &quot;Corrupt the princes of his army&quot;: <i lang="it">principi</i> here are the chief men of the army, its commanders. The glossary&#x27;s &quot;prince&quot; is held, as D05 held it where the draft had &quot;the other leading men of the city&quot;; the witness prints the word lower case, against <i lang="it">Principe</i>, the sovereign, capitalised throughout, a distinction the English cannot carry. <i lang="it">corrompere</i>, corrupt (glossary), as with bribes at I.8.</p>
+<p><span class="lem"><i lang="it">e di quelli che non può corrompere si assicuri</i>.</span> &quot;And of those whom he cannot corrupt secure himself&quot;: the fronted object kept as a contrast with <i lang="it">corrompa i principi</i> (D263); <i lang="it">assicurarsi di</i>, secure oneself of (D219), the phrase I.29 used of the prince&#x27;s security against the captain.</p>
+<p><span class="lem"><i lang="it">e per questi modi cerchi di punire il suo Signore di quella ingratitudine che esso gli userebbe</i>.</span> &quot;And by these ways seek to punish his lord for that ingratitude which he would use towards him&quot;: <i lang="it">usare</i>, use, the verb of ingratitude through I.29 (D313); the conditional <i lang="it">userebbe</i>, &quot;would use&quot;, makes the punishment pre-emptive. <i lang="it">Signore</i>, lord, kept apart from <i lang="it">Principe</i>, prince, as at I.29.</p>
+<p><span class="lem"><i lang="it">Altre vie non ci sono</i>.</span> &quot;There are no other paths&quot;: <i lang="it">via</i>, path (D131), against <i lang="it">modi</i>, ways.</p>
+<p><span class="lem"><i lang="it">come di sopra si disse, gli uomini non sanno essere né al tutto tristi, né al tutto buoni</i>.</span> &quot;As was said above, men do not know how to be either wholly wicked or wholly good&quot;: I.27&#x27;s rubric uses <i lang="it">al tutto</i> in nearly these words, and I.26 closes on <i lang="it">non sanno essere né tutti buoni, né tutti cattivi</i>; <i lang="it">tristo</i>, wicked (D03).</p>
+<p><span class="lem"><i lang="it">E sempre interviene che subito dopo la vittoria, lasciare lo esercito non vogliono, portarsi modestamente non possono, usare termini violenti, e che abbiano in sé l&#x27;onorevole, non sanno</i>.</span> &quot;And it always befalls that at once after the victory, to leave the army they do not wish, to carry themselves modestly they cannot, to use violent bearings, and such as have the honourable in them, they do not know how&quot;: a catalogue of three objects fronted before their verbs, kept in the Italian&#x27;s order (D263, a catalogue; D194). <i lang="it">volere</i>, <i lang="it">potere</i>, <i lang="it">sapere</i>: will, power, knowledge, each failing in turn. <i lang="it">intervenire</i>, befall (D298). <i lang="it">termine</i>, bearing, conduct, as I.29&#x27;s <i lang="it">modo o termine</i>; <i lang="it">portarsi</i>, carry oneself, kept off &quot;bear&quot; so that the two Italian words do not share an English root.</p>
+<p><span class="lem"><i lang="it">Talché stando ambigui, tra quella loro dimora e ambiguità, sono oppressi</i>.</span> &quot;So that, standing ambiguous, between that delay of theirs and ambiguity, they are oppressed&quot;: <i lang="it">ambigui</i>, <i lang="it">ambiguità</i>, one root kept; <i lang="it">dimora</i>, delay, lingering; <i lang="it">opprimere</i>, oppress, the rubric&#x27;s word, the landing set off by the Italian&#x27;s comma. The 1554 edition reads <i lang="it">dubbiosi</i>, &quot;doubtful&quot;, the same sense.</p>
+<p><span class="lem"><i lang="it">Quanto ad una Repubblica, volendo fuggire questo vizio dello ingrato</i>.</span> &quot;As to a republic, wishing to flee this vice of the ungrateful [one]&quot;: the gerund&#x27;s subject is the republic; <i lang="it">dello ingrato</i>, of the ungrateful one, varying the rubric&#x27;s <i lang="it">della ingratitudine</i>.</p>
+<p><span class="lem"><i lang="it">cioè che vada e non mandi nelle espedizioni sue, sendo necessitata a mandare un suo cittadino</i>.</span> &quot;That is, that it should go and not send on its expeditions, being necessitated to send a citizen of its own&quot;: a republic cannot go in person; whoever leads its army is a citizen.</p>
+<p><span class="lem"><i lang="it">che la tenga i medesimi modi che tenne la Repubblica romana, ad esser meno ingrata che le altre</i>.</span> &quot;That it hold the same ways that the Roman republic held, so as to be less ungrateful than the others&quot;: <i lang="it">la</i>, it, the republic, as subject. At I.29 Rome was the least ungrateful of all the peoples that ever had empire.</p>
+<p><span class="lem"><i lang="it">Perché adoperandosi t[u]tta la Città, e gli Nobili e gl&#x27;Ignobili, nella guerra</i>.</span> &quot;For, the whole city, both the nobles and the ignoble, employing itself in the war&quot;: the reflexive kept, and the apposition beside its noun; <i lang="it">Nobili</i>, nobles; <i lang="it">Ignobili</i>, the ignoble (D118). The 1824 prints <i lang="it">tntta</i>, an inverted or foul sort on a clean page, which both readers saw; emended from the 1554 <i lang="it">tutta</i> (D318; NM-DISC-I30-D001).</p>
+<p><span class="lem"><i lang="it">surgeva sempre in Roma in ogni età uomini virtuosi, e ornati di varie vittorie, che il Popolo non aveva cagione di dubitare di alcuno di loro</i>.</span> &quot;There rose always in Rome, in every age, virtuous men, and adorned with various victories, that the people had no cause to doubt any one of them&quot;: the singular verb with the plural subject kept as &quot;there rose&quot;; <i lang="it">dubitare di</i>, doubt, apprehension (D205). The <i lang="it">che</i> has no <i lang="it">tanti</i> to answer: the 1554 edition prints <i lang="it">tanti huomini uirtuosi</i>, &quot;so many virtuous men ... that&quot;, which makes the people&#x27;s ease a result of their number; the 1824 construes loosely and is kept, and the English keeps its looseness (D321; NM-DISC-I30-D004).</p>
+<p><span class="lem"><i lang="it">sendo assai, e guardando l&#x27;uno l&#x27;altro</i>.</span> &quot;[They] being many, and the one watching the other&quot;: <i lang="it">assai</i>, of number, many (glossary, I.7); <i lang="it">guardare</i>, watch: each a check on the others, where the captain of .02 could only guard himself.</p>
+<p><span class="lem"><i lang="it">E intanto si mantenevano interi, e rispettivi di non dare ombra di alcuna ambizione</i>.</span> &quot;And they maintained themselves so far whole, and respectful of giving no shadow of any ambition&quot;: <i lang="it">intanto ... che</i>, &quot;so far ... that&quot; (D174), the 1554 printing it in two words; <i lang="it">mantenere</i>, maintain (D220); <i lang="it">interi</i>, whole, uncorrupted; <i lang="it">rispettivo</i>, respectful (D155), here of the care that keeps a man from seeming ambitious; <i lang="it">ombra</i>, shadow, as I.25&#x27;s <i lang="it">l&#x27;ombra ... de&#x27; modi antichi</i>. The 1554 edition reads <i lang="it">con rispetto</i>, the same sense.</p>
+<p><span class="lem"><i lang="it">né cagione al Popolo come ambiziosi d&#x27;offenderli</i>.</span> &quot;Nor cause to the people to offend them as ambitious&quot;: the people&#x27;s <i lang="it">offendere</i> answers the prince&#x27;s of .02.</p>
+<p><span class="lem"><i lang="it">che venendo alla Dittatura, quello maggior gloria ne riportava, che più tosto la deponeva</i>.</span> &quot;That, coming to the dictatorship, that one carried away greater glory from it who laid it down the sooner&quot;: <i lang="it">Dittatura</i>, dictatorship, the Roman magistracy for an emergency, held for six months at most; <i lang="it">riportare</i>, carry away, as Antonius&#x27; reward at I.29; <i lang="it">deporre</i>, lay down (glossary); <i lang="it">più tosto</i>, the sooner, of time, where I.29&#x27;s <i lang="it">piuttosto</i> was &quot;rather&quot;. Machiavelli names no dictator.</p>
+<p><span class="lem"><i lang="it">E così non potendo simili modi generare sospetto, non generavano ingratitudine</i>.</span> &quot;And so, like ways not being able to generate suspicion, they did not generate ingratitude&quot;: <i lang="it">simile</i>, like (glossary); the chain of I.29 run backwards: no suspicion, no ingratitude.</p>
+<p><span class="lem"><i lang="it">In modo che una Repubblica che non voglia avere cagione d&#x27;essere ingrata, si debbe governare come Roma</i>.</span> &quot;In such a way that a republic that does not wish to have cause to be ungrateful must govern itself as Rome&quot;: <i lang="it">in modo che</i>, in such a way that (glossary); <i lang="it">si debbe</i>, must (D274); no verb supplied after &quot;as Rome&quot; (D242).</p>
+<p><span class="lem"><i lang="it">e uno cittadino che voglia fuggire quelli suoi morsi, debbe osservare i termini osservati dai cittadini romani</i>.</span> &quot;And a citizen who wishes to flee those bites of its must observe the bearings observed by the Roman citizens&quot;: <i lang="it">suoi</i>, its, the republic&#x27;s or ingratitude&#x27;s, and the English leaves it open; <i lang="it">termini</i>, bearings, as in .03; the repetition <i lang="it">osservare ... osservati</i> kept. The rubric&#x27;s last part is answered in one clause.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work fg">
+    <div class="work-head">
+      <span class="tag">FG-CONS.1.30</span>
+      <h2>Considerazione sul capitolo XXX</h2>
+    </div>
+    <p class="rubric">Quali modi debbe usare un principe o una repubblica per fuggire questo vizio della ingratitudine; e quali quel capitano o quel cittadino per non essere oppresso da quella.</p>
+    <p class="rubric">Which ways a prince or a republic must use to flee this vice of ingratitude; and which that captain or that citizen [must use] so as not to be oppressed by it.
+      <span class="rubric-note">Canestrini&#x27;s setting of the chapter title, in lower case, in Machiavelli&#x27;s words. After <i lang="it">ingratitudine</i> both readers preferred a colon and doubted it; the semicolon is the 1933 edition&#x27;s (D110; D324). Both readers saw <i lang="it">a una repubblica</i>, a broken letter; read <i lang="it">o</i>, as the sense and the 1933 edition require (D322; FG-CONS-I30-D001). It is heading apparatus, not Guicciardini&#x27;s (D32).</span></p>
+
+    <div class="colheads"><div></div><div>Italian · 1857</div><div>English</div></div>
+      <div class="pair" id="FG-CONS.1.30.01">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.30.01">1.30.01</a></div>
+        <div class="col it" lang="it">Io laudo che uno principe vadia nelle espedizioni personalmente, perché procedono con altra reputazione, e altrimenti è servito da tutti e&#x27; suoi che quando le amministra per capitani; e credo che il ricordo del Discorso sia forse necessario a uno tiranno o a chi non abbia bene fermo lo Stato suo; ma di poco frutto a uno re grande e naturale. E ne vediamo tutto dì lo esemplo de&#x27; principi nostri, e&#x27; quali se bene communemente fanno le guerre per capitani, non gli accade però, o rarissime volte, uno di questi sinistri.</div>
+        <div class="col en" lang="en">I praise <span class="supplied">[it]</span> that a prince go on the expeditions personally, because they proceed with other reputation, and he is served by all his own otherwise than when he administers them through captains; and I believe that the counsel of the Discourse is perhaps necessary to a tyrant or to whoever does not have his state well firm; but of little fruit to a great and natural king. And of it we see every day the example of our princes, who, although they commonly make the wars through captains, there does not therefore happen to them, or very seldom, one of these mishaps.</div>
+        <details class="annot"><summary>Commentary · 5</summary>
+          <p><span class="lem">Argument.</span> A reply of 92 words, which answers the prince&#x27;s part of the chapter only. Guicciardini begins with praise: a prince does well to go on his expeditions himself. His reasons are not Machiavelli&#x27;s. Machiavelli&#x27;s prince goes so that the glory and the acquisition stay his and he has no captain to suspect; Guicciardini&#x27;s goes because the expeditions proceed with a different reputation, and because his men serve him otherwise than when he works through captains. Both reasons concern the conduct of the war, not gratitude.</p>
+<p><span class="lem">Note.</span> Then a belief, hedged inside itself: the counsel of the Discourse is perhaps necessary to a tyrant, or to whoever does not hold his state well and firmly, but of little profit to a great and natural king. The evidence is what is seen every day: the princes he calls ours commonly make war through captains, and do not, for that reason, suffer these mishaps, or very seldom. He limits the scope of Machiavelli&#x27;s remedy rather than denying it, and the limit comes from experience, not from an argument about suspicion.</p>
+<p><span class="lem">Cross-reference.</span> Machiavelli gives no precept to the prince who stays at home through negligence or little prudence and sends a captain <a class="xref" href="#NM-DISC.1.30.02">Machiavelli .02</a>. Guicciardini&#x27;s princes commonly make their wars through captains; he gives them no such cause, and reports that the mishaps do not, for that reason, follow, or very seldom.</p>
+<p><span class="lem">Cross-reference.</span> The captain&#x27;s two ways, the republic, Rome and the citizen <a class="xref" href="#NM-DISC.1.30.02">Machiavelli .02</a> <a class="xref" href="#NM-DISC.1.30.04">Machiavelli .04</a> are not taken up, except as &quot;these mishaps&quot;. Canestrini&#x27;s footnote to the reply, not carried here, paraphrases the sentence of the chapter the reply praises <a class="xref" href="#NM-DISC.1.30.01">Machiavelli .01</a>.</p>
+<p><span class="lem">History.</span> Which princes Guicciardini means is not said. In his lifetime the kings of France and Spain both made war in person and through captains: Charles VIII and Louis XII crossed into Italy themselves, and Ferdinand of Aragon conquered Naples through Gonzalo Fernández de Córdoba, the Consalvo of I.29. When the reply was written, around 1530, the kings were Francis I and Charles V.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from Canestrini 1857, <i>Opere inedite</i> vol. 1, pp. 1–65 (<span class="sig">WIT-FG-CONS-1857-CANESTRINI</span>) — the <i>editio princeps</i>, which governs. Collated against Palmarocchi 1933 (<span class="sig">WIT-FG-CONS-1933-PALMAROCCHI</span>): page images and the Wikisource transcription consulted as collation evidence, not reproduced (LICENSE §5).</p>
+<p><span class="lem">della ingratitudine: e quali</span> → <span class="lem">della ingratitudine; e quali</span> (rubric). Pass A ⟨:|;⟩, pass B ⟨:|;⟩; a blotted mark; the 1933 edition prints a semicolon. D110, D324.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem">Quali modi debbe usare un principe o una repubblica</span>. The 1857 witness reads <i lang="it">Quali modi debbe usare un principe [a/o] una repubblica (a damaged letter)</i>. The 1933 witness reads <i lang="it">[Quali modi debbe usare uno principe o una republica</i>. Both readers see an a and doubt it, offering o. <i lang="it">A</i> does not construe in the disjunction; the 1933 edition, and Machiavelli&#x27;s rubric in the 1824 and 1554 editions, read <i lang="it">o</i>. The scan breaks letters at o/a. A reading, not an emendation (D322).</p>
+<p><span class="lem">E ne vediamo tutto dì</span>. The 1857 witness reads <i lang="it">[E/È] ne vediamo tutto dì (a mark above the capital)</i>. The 1933 witness reads <i lang="it">E ne vediamo tuttodí</i>. Both readers doubted whether the mark over the capital is a grave accent. <i lang="it">È ne vediamo</i> does not construe; the conjunction, as the 1933 edition reads, does. A reading (D323).</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem"><i lang="it">Io laudo che uno principe vadia nelle espedizioni personalmente</i>.</span> &quot;I praise [it] that a prince go on the expeditions personally&quot;: <i lang="it">laudare</i>, praise (glossary); <i lang="it">vadia</i>, the subjunctive of <i lang="it">andare</i>, kept as an English subjunctive; <i lang="it">espedizioni</i>, <i lang="it">personalmente</i>, Machiavelli&#x27;s words (Machiavelli .01). The reply opens on agreement, with the Discourse&#x27;s own remedy, and takes up the prince&#x27;s part only.</p>
+<p><span class="lem"><i lang="it">perché procedono con altra reputazione</i>.</span> &quot;Because they proceed with other reputation&quot;: the subject is the expeditions; <i lang="it">altra</i>, other, here different and greater; <i lang="it">procedere</i>, proceed (glossary, FG I.28); <i lang="it">reputazione</i>, reputation, as Machiavelli&#x27;s <i lang="it">riputazione</i> (I.29). Guicciardini gives two reasons of his own; neither is Machiavelli&#x27;s, which was that the glory and the acquisition stay the prince&#x27;s (Machiavelli .01).</p>
+<p><span class="lem"><i lang="it">e altrimenti è servito da tutti e&#x27; suoi che quando le amministra per capitani</i>.</span> &quot;And he is served by all his own otherwise than when he administers them through captains&quot;: <i lang="it">e&#x27; suoi</i>, his own, his men, the plural article by D35; <i lang="it">amministrare</i>, administer, of the expeditions (<i lang="it">le</i>); <i lang="it">capitani</i>, captains, Machiavelli&#x27;s <i lang="it">Capitano</i> (Machiavelli .02). The second reason looks to the prince&#x27;s service, not to his gratitude.</p>
+<p><span class="lem"><i lang="it">e credo che il ricordo del Discorso sia forse necessario</i>.</span> &quot;And I believe that the counsel of the Discourse is perhaps necessary&quot;: <i lang="it">credo</i>, I believe; <i lang="it">forse</i>, perhaps; the belief is hedged inside itself. <i lang="it">ricordo</i>, counsel: a piece of advice set down to be remembered; it is also the word that names the maxims Guicciardini collected, though nothing here points to them. It names the advice of Machiavelli&#x27;s first sentence; Machiavelli, for his part, says he has no <i lang="it">precetto</i>, precept, for the prince who stays at home (Machiavelli .02). <i lang="it">il Discorso</i>, Machiavelli&#x27;s chapter, as at FG I.25 and I.29.</p>
+<p><span class="lem"><i lang="it">a uno tiranno o a chi non abbia bene fermo lo Stato suo</i>.</span> &quot;To a tyrant or to whoever does not have his state well firm&quot;: <i lang="it">tiranno</i>, tyrant (glossary <i lang="it">tirannide</i>); <i lang="it">Stato</i>, state (D265), here a ruler&#x27;s hold on his dominion; <i lang="it">fermo</i>, firm. Guicciardini narrows where the remedy is perhaps needed: not princes in general, but the tyrant and the prince who does not hold his state well. <i lang="it">bene</i> is kept: the insecure, not the wholly insecure.</p>
+<p><span class="lem"><i lang="it">ma di poco frutto a uno re grande e naturale</i>.</span> &quot;But of little fruit to a great and natural king&quot;: <i lang="it">frutto</i>, fruit, profit; <i lang="it">naturale</i>, natural, a king by birth, against the tyrant. The verb is carried over from <i lang="it">sia</i>; the English carries it too.</p>
+<p><span class="lem"><i lang="it">E ne vediamo tutto dì lo esemplo de&#x27; principi nostri</i>.</span> &quot;And of it we see every day the example of our princes&quot;: <i lang="it">ne</i>, of it; <i lang="it">tutto dì</i>, every day; <i lang="it">de&#x27; principi nostri</i>, of our princes. Which princes he means he does not say; the evidence is what is seen every day, against Machiavelli&#x27;s Roman emperors and the Turk.</p>
+<p><span class="lem"><i lang="it">e&#x27; quali se bene communemente fanno le guerre per capitani</i>.</span> &quot;Who, although they commonly make the wars through captains&quot;: <i lang="it">se bene</i>, although (D31); <i lang="it">communemente</i>, commonly. Machiavelli&#x27;s prince who stays at home was negligent or imprudent (Machiavelli .02); Guicciardini&#x27;s commonly does so, and is not called either.</p>
+<p><span class="lem"><i lang="it">non gli accade però, o rarissime volte, uno di questi sinistri</i>.</span> &quot;There does not therefore happen to them, or very seldom, one of these mishaps&quot;: <i lang="it">però</i>, therefore (D22): making war through captains does not, for that reason, bring the mishap; <i lang="it">accadere</i>, happen (D298), with the dative <i lang="it">gli</i>, the princes; <i lang="it">rarissime volte</i>, very seldom (D97), correcting the negation downward without replacing it: the princes are not said never to suffer these things, nor only to suffer them seldom; <i lang="it">sinistri</i>, mishaps, the noun of <i lang="it">sinistro</i>, the ill turns Machiavelli described: ingratitude to a victorious captain, or a captain&#x27;s revolt. The reply ends here, with a stop, and says nothing of the captain, the republic or Rome.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="colophon">
+    <div class="row">
+      <div>
+        <h3>What this is</h3>
+        <p>A free, openly licensed, bilingual edition of Guicciardini's 39 <i>Considerazioni</i> and the
+          <i>Discorsi</i> chapters they answer — 78 text units, Italian and English facing, every reading
+          traceable to a named public-domain witness.</p>
+        <p>It is a reading edition with a transparent apparatus, not a text of record. It does not adjudicate
+          the critical text against Bausi 2001 or the manuscript tradition, and does not claim to.</p>
+      </div>
+      <div>
+        <h3>On the title</h3>
+        <p>Machiavelli had been dead two years when Guicciardini wrote; the <i>Discorsi</i> were unpublished,
+          and the <i>Considerazioni</i> stayed unprinted until 1857. Machiavelli never answers.</p>
+        <p>“Conversation” is a quotation, not a description. It invokes Machiavelli's letter to Vettori of
+          10 December 1513, where he changes into court dress at evening, enters the antique courts of ancient
+          men, and reports that <i>they, in their humanity, answer me</i>. Guicciardini does to Machiavelli
+          what Machiavelli did to Livy — and is denied the reply Machiavelli claimed.</p>
+      </div>
+      <div>
+        <h3>Method</h3>
+        <p>No image-derived reading enters the text on a single reading. Each unit is transcribed twice,
+          independently, by readers who have not seen each other's work; disagreements are adjudicated against
+          the page images and recorded.</p>
+        <p>Existing English translations of the <i>Considerazioni</i> — Grayson (1965), Atkinson &amp; Sices
+          (2002) — are never used as translation inputs.</p>
+      </div>
+      <div>
+        <h3>Licence</h3>
+        <p>The established Italian text and the apparatus data are dedicated to the public domain under
+          <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>. They are Machiavelli's and
+          Guicciardini's sentences, and this edition adds no condition to them.</p>
+        <p>The English translation, the notes and the editorial apparatus are licensed
+          <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: reuse them anywhere, including
+          commercially, with attribution to David McDougall and this edition. The build tooling is MIT.</p>
+        <p>The witness scans are other people's digitisations, included as evidence under their own terms; no
+          grant is made over them, and no page image of Palmarocchi 1933 is reproduced here. Full terms,
+          layer by layer, are in the <span class="sig">LICENSE</span> file in the repository.</p>
+      </div>
+    </div>
+
+    <div class="state">
+      <p><strong>Version 0.3 · 21 of 39 pairs published.</strong>
+        This edition is versioned, not frozen. No open questions on this pair.</p>
+    </div>
+  </footer>
+
+</div>
