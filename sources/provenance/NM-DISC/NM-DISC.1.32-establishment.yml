@@ -1,0 +1,24 @@
+source_unit_id: NM-DISC.1.32
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-022
+passes:
+  - {id: A, performed: 2026-10-20, file: sources/coldpass/NM-DISC.1.32-passA.md, note: "subagent; page images only (350 ppi, thirds), separate directory; full chapter"}
+  - {id: B, performed: 2026-10-20, file: sources/coldpass/NM-DISC.1.32-passB.md, note: "subagent; p. 117 only (185 words, 55% of the chapter), chosen by the collator under D302 after pass A and the Giglio read and recorded before it was given out, with three line crops carrying every word-level 1554 difference outside it; separate directory"}
+collation: sources/coldpass/COLLATION-2026-10-20-I32.md
+collation_result: "337 words (pass A). Sample of p. 117 and three crops: identical after Class A; no word, clause or sense disagreement, so no full pass B, and the sample rule stands for the next chapter. No pass-A doubt with a word for an alternative; no word-level difference from the 1554 at a letter the scans break; no sense-bearing difference raised. Nothing came to David."
+boundaries: "printed pp. 117-118 (extract pp. 117-119); CAPITOLO XXXII at the head of p. 117 under the running head; three-line italic rubric; large initial A; one block; ends p. 118 body line 19 `ma accelera la sua rovina.`; CAPITOLO XXXIII follows on p. 118"
+interventions: []
+emendations: []
+readings: []
+comparison_collation: >
+  Done 2026-10-20 against the 1554 extract (fol. 47v-48r). A cold reader
+  transcribed the Giglio leaves from the page images
+  (sources/coldpass/NM-DISC.1.32-1554.md); the transcript was collated by
+  word against pass A, and the readings published as variant notes were
+  checked on the leaf images by the collator. Differences are in
+  sources/comparisons/NM-DISC/NM-DISC.1.32-witness-disagreements.yml.
+normalisation_notes: "Class A only: accents (`perchè` → `perché` ×6); elision solid (`d' ogni` closed up); apocope spaced as printed (`ne' tempi`, `da' quali`); spaces before punctuation removed; line-end hyphens removed. Euphonic `ed` as printed (D36); `Tarquinj`, `avversarj`, `rimedj`, `contrarj`, `benefizj` as printed."

@@ -1,0 +1,28 @@
+source_unit_id: FG-CONS.1.32
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-I32-D001
+    locator: rubric
+    class: ruled_reading
+    witness_1857: "nelle sue necessltati (a damaged word)"
+    witness_1933: "[Una republica o uno principe non debbe differire a beneficare gli uomini nelle sue necessitadi.]"
+    established: "nelle sue necessitadi"
+    publish_as_variant_note: true
+    rationale: "Both readers see `necessltati`; pass A prefers `necessità`, pass B `necessitadi`, each with `necessitati` as alternative. The 1933 edition and Machiavelli's rubric in the 1824 read `necessitadi`. A reading at a broken letter (D329)."
+  - id: FG-CONS-I32-D002
+    locator: FG-CONS.1.32.01
+    class: ruled_reading
+    witness_1857: "rubric `ne lla sue`; body `cercare di farai`, `ti aia amico` (damaged letters)"
+    witness_1933: "nelle sue; cercare di farsi; ti sia amico"
+    established: "nelle sue; cercare di farsi; ti sia amico"
+    publish_as_variant_note: true
+    rationale: "Each letter doubtful to both readers, each alternative a word (`nella`, `farai`, `aia`), none construing in its place; with the 1933 edition. Readings, not emendations (D330)."
+  - id: FG-CONS-I32-D003
+    locator: FG-CONS.1.32.01
+    class: systematic_orthographic_profile
+    witness_1857: "Canestrini's `il secondo`, `il quale`, `difficilissimo`, `non dimeno`, `remedio`, `periculo`, `beneficii`, `a Romani`, and his pointing (`remedio; il quale`)"
+    witness_1933: "Palmarocchi's `el secondo`, `el quale`, `difficillimo`, `nondimeno`, `rimedio`, `pericolo`, `benefíci`, `a' romani`, and his pointing (`rimedio, el quale`)"
+    established: witness_1857
+    publish_as_variant_note: false
+    rationale: "Orthographic profile and pointing; DEC-009 classes. The pointing doubtful to both readers follows the 1933 edition by D110 (D331)."

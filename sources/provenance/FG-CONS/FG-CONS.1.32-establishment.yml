@@ -1,0 +1,34 @@
+source_unit_id: FG-CONS.1.32
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-022
+responds_to: NM-DISC.1.32
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. Canestrini's note (2) on this reply (pp. 48-49, keyed after `difficilissimo`, a paraphrase and quotation of Machiavelli's chapter) is his and is not carried."
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38); errors are emended from Palmarocchi and bracketed (D68)."
+passes:
+  - {id: A, performed: 2026-10-20, file: sources/coldpass/FG-CONS.1.32-passA.md, note: "subagent; page images only (native 600 ppi rendered at 1200, full pages and halves), separate directory"}
+  - {id: B, performed: 2026-10-20, file: sources/coldpass/FG-CONS.1.32-passB.md, note: "subagent; same images, separate directory"}
+collation: sources/coldpass/COLLATION-2026-10-20-I32.md
+collation_result: >
+  103 words (A and B), the 118 body tokens identical after preferred
+  readings. No word, clause or sense disagreement in the body. Rubric split
+  `necessità`/`necessitadi` read `necessitadi` (D329). Three doubts common
+  to both readers whose alternatives are words, rubric `nelle`, `farsi`,
+  `sia`, read with the 1933 edition (D330). Four marks doubtful to both
+  settled by D110 (D331).
+witness_independence_check: "SCOPE §7. Neither pass carries a Palmarocchi word-reading where Canestrini differs: both have `il secondo`, `difficilissimo`, `non dimeno`, `remedio; il quale`, `periculo`, `beneficii`, against the 1933 `el secondo`, `difficillimo`, `nondimeno`, `rimedio, el quale`, `pericolo`, `benefíci`. The passes read Canestrini."
+boundaries: "printed pp. 48-49; heading CONSIDERAZIONE SUL CAPITOLO XXXII on p. 48 directly after the reply on XXX (no reply on XXXI); Canestrini's two-line centred rubric; one indented paragraph (`Altro è` ... `di nuocere.`), six lines on p. 49; one note of Canestrini's, (2), from the foot of p. 48 onto p. 49; CONSIDERAZIONE SUL CAPITOLO XXXIX follows on p. 49"
+corrections:
+  - {id: FG-CONS-I32-C001, locator: FG-CONS.1.32.01, was: "a Romani; il secondo", now: "a' Romani, il secondo", evidence: "Pass A ⟨;|,⟩, pass B ⟨;|,⟩; the 1933 edition prints a comma. D110, D331."}
+emendations: []
+readings:
+  - {locus: "rubric: nelle sue ⟨necessità|necessitadi⟩", passes: "A ⟨necessità|necessitati⟩, B ⟨necessitadi|necessitati⟩; printed shape `necessltati`", witness_1933: "nelle sue necessitadi", disposition: "necessitadi, D329 (David, 2026-10-20): a split between words at a broken letter; with the 1933 edition and Machiavelli's rubric"}
+  - {locus: "rubric: ⟨nelle|nella⟩ sue", passes: "A and B ⟨nelle|nella⟩, printed `ne lla`", witness_1933: "nelle sue", disposition: "nelle, D330 (David, 2026-10-20): common doubt; `nella` does not agree with `sue`"}
+  - {locus: "cercare di ⟨farsi|farai⟩", passes: "A and B ⟨farsi|farai⟩", witness_1933: "cercare di farsi", disposition: "farsi, D330 (David, 2026-10-20): common doubt; `farai` does not construe"}
+  - {locus: "ti ⟨sia|aia⟩ amico", passes: "A and B ⟨sia|aia⟩", witness_1933: "ti sia amico", disposition: "sia, D330 (David, 2026-10-20): common doubt; `aia` does not construe"}
+  - {locus: "inimico⟨.|∅⟩ Nel primo; bisogno⟨.|∅⟩ Ma; rubric necessitadi⟨.|∅⟩", passes: "A and B doubt each mark (B prefers none at the rubric)", witness_1933: ". . .", disposition: "`.` at each, D110, D331 (David, 2026-10-20)"}
+not_supplied: []
+normalisation_notes: "Class A: accents; elision solid (`nell' uno` → `nell'uno`); the gap in `pri ma` closed; `a Romani` given its apostrophe, `a'`, as the plural article by D35 (the syntax fixes the article; the 1933 edition prints `a'`); Canestrini's note reference removed; spaces before punctuation removed; line-end hyphens removed."

@@ -1,0 +1,43 @@
+source_unit_id: NM-DISC.1.32
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-I32-D001
+    locator: NM-DISC.1.32.01
+    class: reading
+    witness_1824: "si esponesse a sopportare ossidione, fame, e guerra"
+    witness_1554: "ſi eſponeſſe a ſopportare aſſedio,ſame,& guerra"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 47v). The 1554 has the common word for siege, `assedio`; the 1824 the Latinate `ossidione` (*obsidio*). Read by both 1824 readers without doubt on the sampled page. Same sense."
+  - id: NM-DISC-I32-D002
+    locator: NM-DISC.1.32.01
+    class: reading
+    witness_1824: "differisca ne' tempi di pericoli a guadagnarsi il Popolo, perchè mai gli riuscirà quello"
+    witness_1554: "differiſca ne tempi de pericoli a guadagnarſi il popolo ;per che mai non gli riuſcira quello"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 47v). The 1554 `de pericoli`, \"of the dangers\", with the article, and `mai non gli riuscira`, the negative doubled; the 1824 `mai` before the verb is a full negative. Both read by both 1824 readers without doubt on the sampled page. Same sense."
+  - id: NM-DISC-I32-D003
+    locator: NM-DISC.1.32.03
+    class: reading
+    witness_1824: "o Principe o Repubblica, e massime un Principe"
+    witness_1554: "o Prencipe,o Rep.et maſſimamẽte un Prencipe"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 48r). The adverb in its longer form; read by pass A and the pass-B crop. Same sense."
+  - id: NM-DISC-I32-D004
+    locator: NM-DISC.1.32.02
+    class: reading
+    witness_1824: "in modo che ei potette persuadersi ... quali tempi gli possono venire addosso"
+    witness_1554: "in modo,che ei pote perſuaderſi ... quali tẽpi li poſſono uenire adoſſo"
+    established: witness_1824
+    publish_as_variant_note: false
+    rationale: "Forms of one word (`pote`, `li`); no difference of sense. Read by pass A and the pass-B crops."
+  - id: NM-DISC-I32-D005
+    locator: NM-DISC.1.32.01
+    class: systematic_orthographic_profile
+    witness_1554: "Giglio's `Prencipe`, `Rep.`, `qualunq;`, `appellaggione`, `hauea`, `nouo`, `iuanzi`, `altrimenti`, tildes (`felicemẽ-te`, `tẽpi`, `quã-do`), `&`/`et`, and his pointing (`guerra. Non sia`, `beneficarli. Oltra`, `(ſopra uegnẽdo qualunque caſo)`)"
+    established: witness_1824
+    publish_as_variant_note: false
+    rationale: "Spelling and pointing; DEC-009 classes, not readings."
