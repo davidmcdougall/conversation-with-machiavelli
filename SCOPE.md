@@ -31,13 +31,16 @@ kept as printed (D38).
 the *Discorsi* were unpublished; the *Considerazioni* stayed unprinted until
 1857. Machiavelli never answers. "Conversation" is therefore a deliberate
 quotation, not a description: it invokes Machiavelli's letter to Vettori of
-10 December 1513, where he changes into court dress at evening, enters "le
-antique corti delli antiqui huomini," questions the ancients on the reasons for
-their actions, and reports that *"quelli per loro humanità mi rispondono."*
+10 December 1513, where at evening he puts on "panni reali e curiali," enters
+"le antiche corti degli antichi uomini," asks the ancients the reason for their
+actions, and reports that *"quelli per loro umanità mi rispondono."*
 Guicciardini does to Machiavelli what Machiavelli did to Livy — and is denied
 the reply Machiavelli claimed. That asymmetry is the edition's argument and
-belongs in the first paragraph of the introduction. (Establish the Vettori text
-from a witness like everything else here; do not quote it from memory.)
+belongs in the first paragraph of the introduction. The letter is established
+from a witness like everything else here: the 1813 *Opere*, vol. 8, Lettere
+familiari XXVI, p. 96, read twice from the page image (D339; record in
+`sources/provenance/NM-LETT/`). An earlier draft of this paragraph quoted the
+autograph's spellings from memory; they are withdrawn.
 
 **Honest positioning.** Two complete English translations already exist:
 Margaret Grayson in *Francesco Guicciardini: Selected Writings* (OUP, 1965),

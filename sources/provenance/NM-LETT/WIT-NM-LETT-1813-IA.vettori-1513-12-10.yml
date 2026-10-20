@@ -1,0 +1,34 @@
+witness_id: WIT-NM-LETT-1813-IA
+work_id: NM-LETT
+source_unit_id: NM-LETT.vettori-1513-12-10
+purpose: "The letter to Francesco Vettori of 10 December 1513, quoted in the introduction and on the index for the edition's title (SCOPE §1). Not a text unit; the correspondence stays out of scope (SCOPE §8)."
+type: independent_historical_edition_scan_extract
+edition: {title: "Opere di Niccolò Machiavelli cittadino e segretario fiorentino", volume: 8, imprint: "Italia [Florence]", publication_year: 1813, section: "Lettere familiari, XXVI, Al medesimo [Francesco Vettori]"}
+files:
+  - path: sources/witnesses/NM-LETT/WIT-NM-LETT-1813-IA/VETTORI-1513-12-10-pages.pdf
+    role: immutable_bounded_scan_extract
+    sha256: 9f36232cb7d5a9dfad0e6154025c5f518146e1dac4d879aceb7cbdd63a850823
+locator: {source_pdf_zero_based_pages: [100, 101, 102, 103, 104, 105], printed_pages: "93-98", opening: "p. 93, `XXVI.` / `AL MEDESIMO.` / `Magnifico Ambasciatore.`, after the close of XXV dated 26 August 1513", quoted_passage: "p. 96, lines 1-10", close: "p. 98, `Sis felix.` / `Die 10 Decembris 1513.` / `Niccolò Machiavelli`, then XXVII"}
+acquisition:
+  acquired_at: 2026-10-20
+  acquired_by: "Claude (Cowork session)"
+  archive_identifier: operediniccoloma08mach
+  source_pdf_url: https://archive.org/download/operediniccoloma08mach/operediniccoloma08mach.pdf
+  source_pdf_sha256: 0d13cec84b9115cefd9f70647365dbb7515e9ce8ed1ad387f1467cd40d38f054
+  contributing_library: Getty Research Institute
+  derivation: "pypdf bounded extraction of zero-based pages 100-105; located with the scan's text layer, read only from the page images"
+rights_assessment:
+  underlying_work: public_domain_by_age
+  edition: public_domain_by_age
+  scan_layer: public_domain_historical_scan
+  corpus_reuse: reproducible_in_corpus
+  evidence: [https://archive.org/details/operediniccoloma08mach]
+establishment:
+  passes:
+    - {id: A, file: sources/coldpass/NM-LETT.vettori-1513-12-10-passA.md, note: "subagent; page images of pp. 93, 96, 98 only (400 ppi, whole and halves), separate directory"}
+    - {id: B, file: sources/coldpass/NM-LETT.vettori-1513-12-10-passB.md, note: "subagent; same images, separate directory"}
+  result: "p. 96 identical between the passes in every word; no doubt in the quoted lines. Doubts elsewhere (`ogni`, `un`, `mai`, `settimane`, the p. 98 page number, two marks) have no word for an alternative or lie outside the quotation."
+  quoted: "p. 96, ll. 1-10: `la sera mi ritorno a casa, ed entro nel mio Scrittojo; ed in sull'uscio mi spoglio quella veste contadina, piena di fango e di loto, e mi metto panni reali e curiali, e rivestito condecentemente entro nelle antiche corti degli antichi uomini, dove da loro ricevuto amorevolmente mi pasco di quel cibo, che solum è mio, e che io nacqui per lui; dove io non mi vergogno parlare con loro, e domandare della ragione delle loro azioni; e quelli per loro umanità mi rispondono` (Class A applied: spaces before punctuation, elision closed)"
+  date: "p. 98: `Die 10 Decembris 1513.`; read by both passes"
+  ruling: D339
+note: "A normalised 1813 text, not the autograph. The spellings SCOPE §1 quoted from memory (`le antique corti delli antiqui huomini`, `humanità`) are not this witness's and are withdrawn (D339)."
