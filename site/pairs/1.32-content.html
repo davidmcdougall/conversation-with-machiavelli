@@ -202,6 +202,7 @@ a { color: inherit; }
 .toc-row a:hover, .toc-row a:focus { text-decoration: underline; }
 .toc-row .unpublished { color: var(--ink-faint); font-style: italic; font-size: 14px; }
 .toc-row .ids { color: var(--ink-faint); font-size: 11.5px; font-family: var(--mono); }
+.toc-row .dated { color: var(--ink-faint); font-size: 12px; text-align: right; }
 
 @media (max-width: 760px) {
   body { font-size: 16.5px; }
@@ -219,6 +220,7 @@ a { color: inherit; }
   .pairing { flex-direction: column; }
   .pairing .arrow { border-inline: 0; border-block: 1px solid var(--rule); padding-block: 6px; }
   .toc-row { grid-template-columns: 1fr; gap: 4px; }
+  .toc-row .dated { text-align: left; }
 }
 </style>
 
@@ -415,7 +417,7 @@ a { color: inherit; }
 
     <div class="state">
       <p><strong>Version 0.3 · 22 of 39 pairs published.</strong>
-        This edition is versioned, not frozen. No open questions on this pair.</p>
+        Published 20 October 2026. This edition is versioned, not frozen. No open questions on this pair.</p>
     </div>
   </footer>
 

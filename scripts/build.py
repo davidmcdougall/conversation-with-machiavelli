@@ -34,6 +34,9 @@ import sys
 import html
 import pathlib
 import argparse
+import datetime
+import os
+import subprocess
 
 try:
     import yaml
@@ -151,6 +154,64 @@ def edition_version():
     text = (ROOT / "SCOPE.md").read_text(encoding="utf-8")
     m = re.search(r'\*\*Version\.\*\*\s*Draft\s*(\S+)', text)
     return m.group(1) if m else "?"
+
+
+# ---------------------------------------------------------------------------
+# Page dates (SCOPE §7: "date every page"), derived from git, never typed
+# ---------------------------------------------------------------------------
+
+def _git(*args):
+    """Read-only git query; GIT_OPTIONAL_LOCKS=0 keeps `status` from taking index.lock."""
+    try:
+        out = subprocess.run(["git", "-C", str(ROOT), *args], capture_output=True, text=True,
+                             env=dict(os.environ, GIT_OPTIONAL_LOCKS="0"), check=True)
+        return out.stdout.strip()
+    except (OSError, subprocess.CalledProcessError):
+        return None
+
+
+def pair_sources(pair):
+    nm, fg = f"NM-DISC.{pair}", f"FG-CONS.{pair}"
+    return [f"corpus/NM-DISC/{nm}.md", f"corpus/FG-CONS/{fg}.md",
+            f"translations/{nm}.md", f"translations/{fg}.md",
+            f"annotations/{nm}.md", f"annotations/{fg}.md",
+            f"sources/provenance/NM-DISC/{nm}-establishment.yml",
+            f"sources/provenance/FG-CONS/{fg}-establishment.yml",
+            f"sources/comparisons/NM-DISC/{nm}-witness-disagreements.yml",
+            f"sources/comparisons/FG-CONS/{fg}-witness-disagreements.yml"]
+
+
+def pair_dates(pair):
+    """(published, revised) as ISO dates.
+
+    published: the commit that first added site/pairs/<pair>.html; today if not yet committed.
+    revised: today if any of the pair's text or apparatus files has uncommitted changes;
+    otherwise the date of the last commit touching them. Rebuilding an unchanged pair
+    therefore leaves its dates unchanged.
+    """
+    today = datetime.date.today().isoformat()
+    paths = [s for s in pair_sources(pair) if (ROOT / s).exists()]
+    added = _git("log", "--diff-filter=A", "--format=%cs", "--", f"site/pairs/{pair}.html")
+    published = added.splitlines()[-1] if added else today
+    dirty = _git("status", "--porcelain", "--", *paths)
+    if dirty is None or dirty:
+        revised = today
+    else:
+        revised = _git("log", "-1", "--format=%cs", "--", *paths) or today
+    return published, max(published, revised)
+
+
+def long_date(iso):
+    d = datetime.date.fromisoformat(iso)
+    return f"{d.day} {d.strftime('%B')} {d.year}"
+
+
+def dates_line(pair):
+    published, revised = pair_dates(pair)
+    line = f"Published {long_date(published)}"
+    if revised != published:
+        line += f"; last revised {long_date(revised)}"
+    return line + "."
 
 
 def discover_published():
@@ -605,6 +666,7 @@ a { color: inherit; }
 .toc-row a:hover, .toc-row a:focus { text-decoration: underline; }
 .toc-row .unpublished { color: var(--ink-faint); font-style: italic; font-size: 14px; }
 .toc-row .ids { color: var(--ink-faint); font-size: 11.5px; font-family: var(--mono); }
+.toc-row .dated { color: var(--ink-faint); font-size: 12px; text-align: right; }
 
 @media (max-width: 760px) {
   body { font-size: 16.5px; }
@@ -622,6 +684,7 @@ a { color: inherit; }
   .pairing { flex-direction: column; }
   .pairing .arrow { border-inline: 0; border-block: 1px solid var(--rule); padding-block: 6px; }
   .toc-row { grid-template-columns: 1fr; gap: 4px; }
+  .toc-row .dated { text-align: left; }
 }
 </style>'''
 
@@ -813,7 +876,7 @@ def build_pair(pair, published):
 {COLOPHON.format(state=f"""
     <div class="state">
       <p><strong>Version {edition_version()} · {len(published)} of {len(rows)} pairs published.</strong>
-        This edition is versioned, not frozen. {open_items_note(nm_en_m, fg_en_m)}</p>
+        {dates_line(pair)} This edition is versioned, not frozen. {open_items_note(nm_en_m, fg_en_m)}</p>
     </div>""")}
 
 </div>'''
@@ -835,18 +898,21 @@ def build_index(published):
     rows = pairing_map()
 
     toc = []
+    revised_dates = []
     for r in rows:
         pub = published_by_nm.get(r["nm"])
         if pub:
             nm_en_m, _, _ = parse_translation(r["nm"], "NM-DISC")
             fg_en_m, _, _ = parse_translation(r["fg"], "FG-CONS")
             title = fg_en_m.get("title") or nm_en_m.get("rubric_en", "").rstrip(".")
+            pub_d, rev_d = pair_dates(pub["pair"])
+            revised_dates.append(rev_d)
             toc.append(
                 f'''      <div class="toc-row">
         <div class="n">{r['n']:02d}</div>
         <div><a href="pairs/{pub['pair']}.html">{html.escape(title)}</a>
           <div class="ids">{r['nm']} · {r['fg']}</div></div>
-        <div></div>
+        <div class="dated">{long_date(rev_d)}</div>
       </div>''')
         else:
             toc.append(
@@ -866,7 +932,7 @@ def build_index(published):
     <p class="eyebrow">A Conversation with Machiavelli · {len(published)} of {len(rows)} pairs published</p>
     <h1>Guicciardini's <i>Considerazioni</i> on the <i>Discorsi</i>
       <span class="sub">A free, bilingual, hyperlinked edition</span></h1>
-    <p class="standfirst">Guicciardini answered 39 of Machiavelli's chapters and stopped. Each pair below
+    <p class="standfirst">Guicciardini answered 39 of Machiavelli's chapters and passed over the rest. Each pair below
       puts the chapter and the reply on one screen, Italian and English facing, with a transparent apparatus.</p>
   </header>
 
@@ -879,6 +945,7 @@ def build_index(published):
 {COLOPHON.format(state=f"""
     <div class="state">
       <p><strong>Version {edition_version()} · {len(published)} of {len(rows)} pairs published.</strong>
+        Last updated {long_date(max(revised_dates)) if revised_dates else "—"}. Each pair is dated on its page and above, by its last revision.
         This edition is versioned, not frozen. Publish, be wrong, fix it, publish again, and date every page.</p>
     </div>""")}
 
