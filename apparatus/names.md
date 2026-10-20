@@ -182,3 +182,4 @@ the original.
 | `Cicerone`, `Catilina` | Cicero, Catiline | FG I.29. Machiavelli's `Tullio` stays Tully (D103) |
 | `Metello`, `Publio Rutilio` | Metellus, Publius Rutilius | FG I.29; Q. Caecilius Metellus Numidicus, P. Rutilius Rufus |
 | `Asiatico` | Asiaticus | FG I.29; Lucius Cornelius Scipio Asiaticus |
+| `il Turco` | the Turk | NM I.30; the Ottoman sultan, presumably Selim I (`Gran Turco`, I.1) |

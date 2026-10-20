@@ -520,3 +520,31 @@ last sentence answers Machiavelli's first move.
 | `molesto` | irksome | FG I.29 ×2. |
 | `paura` | fear | D313. NM I.29. A recorded collapse with `temere`, `timore` (I.11). |
 | `ciascuno` | each one | D161, D313. NM I.29 `ciascuno che al presente vive`. |
+
+
+## Added from the I.30 pair (2026-10-20)
+
+| Italian | English | Note |
+|---|---|---|
+| `fuggire` | flee | D325. NM I.30 rubric and ×4 (`fuggire questa necessità`, `i morsi`, `questo vizio`). |
+| `termine`, `termini` | bearing, bearings | D325. NM I.29 `modo o termine`; I.30 `usare termini violenti`, `osservare i termini`. `portarsi` is "carry oneself", so that the two do not share a root. |
+| `morsi` | bites | D325. FG I.29 `e' morsi de' principi`; NM I.30 ×2. |
+| `espedizione` | expedition | NM I.29; I.30 ×2; FG I.30 `vadia nelle espedizioni`. |
+| `personalmente` | personally | NM I.30 .01; FG I.30, the reply's echo. |
+| `acquisto` | acquisition | NM I.30 ×3, with `acquistare`, acquire. |
+| `perdita` / `guadagno` | loss / gain | FG I.23 (D231); NM I.30 .01. |
+| `vizio` | vice | NM I.30 rubric, .04. |
+| `Signore` | lord | NM I.29, I.30; kept apart from `Principe`, prince. |
+| `offendere` | offend | NM I.29, I.30 ×2; the older sense, injure. |
+| `spegnere` | extinguish | NM I.7, I.30. |
+| `ombra` | shadow | NM I.25, I.30. |
+| `riportare` | carry away | NM I.29 (Antonius' reward), I.30 (the dictator's glory). |
+| `osservare` | observe | NM I.25, I.30 ×2. |
+| `generare` | generate | NM I.30 ×2. |
+| `ambiguo`, `ambiguità` | ambiguous, ambiguity | NM I.30 .03, one root kept. |
+| `animosamente` | spiritedly | NM I.30, with `animo`, spirit. |
+| `reputazione` / `riputazione` | reputation | In use since I.16; recorded with I.30 (D325). |
+| `tiranno` | tyrant | FG I.8, I.9, I.30, with `tirannide`, tyranny. |
+| `ricordo` (FG) | counsel | D325. FG I.30 `il ricordo del Discorso`; kept apart from NM `precetto`, precept. |
+| `sinistri` (noun) | mishaps | D325. FG I.30. The adjective `sinistro` stays "sinister". |
+| `principi` (chief men) | princes | D05, D325. NM I.30 `i principi del suo esercito`, lower case in the witness. |
