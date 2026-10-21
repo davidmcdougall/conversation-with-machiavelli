@@ -1,0 +1,26 @@
+source_unit_id: NM-DISC.1.40
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-024
+passes:
+  - {id: A, performed: 2026-10-21, file: sources/coldpass/NM-DISC.1.40-passA.md, note: "subagent; page images only (350 ppi, whole and thirds), isolated image directory and isolated output folder; full chapter"}
+  - {id: B, performed: 2026-10-21, file: sources/coldpass/NM-DISC.1.40-passB.md, note: "subagent; same images, separate image directory and output folder; full chapter, since no page holds a fifth of it (D352)"}
+collation: sources/coldpass/COLLATION-2026-10-21-I40.md
+collation_result: "1,814 words, both passes. No page reaches a fifth of the chapter (the fullest, p. 147, 257 words, 14%), so pass B read it all (D352). The 2,064 word and punctuation tokens are identical after Class A: no word, clause or sense disagreement. No common doubt has a word for an alternative. Four word-level differences from the 1554 at letters the scans break, and four sense-bearing whole-word differences, each read by both readers without doubt, came to David and were kept (D353, D354)."
+boundaries: "printed pp. 142-149 (extract pp. 142-150); CAPITOLO XL on p. 142 after the last line of XXXIX; four-line italic rubric; drop initial V; one block; Livy's Latin in italic within the text; ends p. 149 body line 29 `occupare la Tirannide.`; CAPITOLO XLI opens p. 150"
+interventions: []
+emendations: []
+readings:
+  - {locus: "NM-DISC.1.40.02 per fermare nuove leggi; esaminare e fermare dette leggi; .04 tutta la Nobiltà; .03 per poterlo ... emendare; .08 non gliene arebbono potuto mantenere", passes: "A and B, without doubt", witness_1554: "formare; formare; nabilta; poterle; potuta", disposition: "kept, D353 (David, 2026-10-21): word-level differences at e/o, o/a under D203(b); all construe"}
+  - {locus: "NM-DISC.1.40.01 si aveva presupposto di stabilire; .06 guidati da parte di detti Dieci; .08 ed amico di quelli; che a tutti satisfaccia", passes: "A and B, without doubt", witness_1554: "presupposto stabile; guardati; & nemico di quelli; a tutta", disposition: "kept, D354 (David, 2026-10-21): whole words bearing on sense, raised by the collator; all construe"}
+comparison_collation: >
+  Done 2026-10-21 against the 1554 extract (fol. 58r-61r). A cold reader
+  transcribed the Giglio leaves from the page images
+  (sources/coldpass/NM-DISC.1.40-1554.md); the transcript was collated by
+  word against pass A, and the readings published as variant notes were
+  checked on the leaf images by the collator. Differences are in
+  sources/comparisons/NM-DISC/NM-DISC.1.40-witness-disagreements.yml.
+normalisation_notes: "Class A only: accents (`perchè`/`Perchè` → `perché`/`Perché`, `benchè`, `acciocchè`, `modochè`, `talchè`, `ancorachè`, `talmentechè` → `-ché`, `nè` → `né`, `sè` → `sé`); elision solid (`d' accordo`, `senz' alcun`, `l' autorità`, `s' era`, `ch' egli`, `d' opporsegli`, `ch' egli`, `l' error`, `d' esser`, `n' andarono`, `dell' antica`, `l' una`, `l' altra`, `l' universale`, `quell' ufficio`, `ch' arebbe`, `ch' è`, `l' ambizione` closed up); apocope spaced (`de'suoi`, `a'Nobili`, `ne'quali`, `e'si`, `e'non` → `de' `, `a' `, `ne' `, `e' `); spaces before punctuation removed; line-end hyphens removed; the italic Latin kept in italic. `esempj`, `volontarj`, `principj` as printed."

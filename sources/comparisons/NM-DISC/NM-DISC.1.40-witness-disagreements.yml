@@ -1,0 +1,99 @@
+source_unit_id: NM-DISC.1.40
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-I40-D001
+    locator: NM-DISC.1.40.02
+    class: ruled_reading
+    witness_1824: "per fermare nuove leggi in Roma ... che avessero ad esaminare e fermare dette leggi"
+    witness_1554: "per formare nuoue leggi in Roma ... che haueßino ad eſſaminare & formare dette leggi"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 58r), both places. The 1554 `formare`, to form the laws; the 1824 `fermare`, to fix or settle them. Read by both 1824 readers without doubt; a difference at e/o under D203(b). It construes, so kept (D353)."
+  - id: NM-DISC-I40-D002
+    locator: NM-DISC.1.40.03
+    class: ruled_reading
+    witness_1824: "acciocché si conoscesse se vi era alcuno difetto, per poterlo innanzi alla confermazione loro emendare"
+    witness_1554: "accioche ſi conoſceſſe, ſe u'era alcuno difetto per poterle inanzi alla confirmatione loro emendare"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 58v). With the 1824 `lo` what is to be emended is the defect; with the 1554 `le`, the laws. Read by both readers without doubt; a difference at o/e under D203(b). It construes, so kept (D353)."
+  - id: NM-DISC-I40-D003
+    locator: NM-DISC.1.40.08
+    class: ruled_reading
+    witness_1824: "e che non gliene arebbono potuto mantenere"
+    witness_1554: "& che non glie ne harebbono potuta mantenere"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 60r). The 1554 agrees the participle with the tyranny; with `avere` the 1824 leaves it unagreed. Read by both readers without doubt; a difference at o/a under D203(b). Kept (D353). The 1554 `nabilta` for `Nobiltà` (.04, fol. 58v), a misprint at o/a, is kept by the same ruling and is not a reading."
+  - id: NM-DISC-I40-D004
+    locator: NM-DISC.1.40.01
+    class: ruled_reading
+    witness_1824: "quella Tirannide, che egli si aveva presupposto di stabilire in Roma"
+    witness_1554: "quella tirrannide, che egli ſi haueua preſuppoſto ſtabile in Roma"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 58r). The 1824 has Appius presuppose that he would establish the tyranny; the 1554, that it would be stable. Read by both readers without doubt; a whole word bearing on sense, raised by the collator. It construes, so kept (D354)."
+  - id: NM-DISC-I40-D005
+    locator: NM-DISC.1.40.06
+    class: ruled_reading
+    witness_1824: "uscissi fuori con due eserciti, guidati da parte di detti Dieci"
+    witness_1554: "uſcißi fuori con due eſſerciti guardati da parte di detti Dieci"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 59v). `guidati`, led by some of the Ten; the 1554 `guardati`, guarded. Read by both readers without doubt; a whole word bearing on sense. Kept (D354)."
+  - id: NM-DISC-I40-D006
+    locator: NM-DISC.1.40.08
+    class: ruled_reading
+    witness_1824: "e' si fece inimico di coloro che glie l'avevano data, e che glie ne potevano mantenere, ed amico di quelli che non erano concorsi a dargliene"
+    witness_1554: "e ſi fece nemico di coloro,che glie la haueuano data, et che gli ne poteuano mantenere, & nemico di quelli, che non erano concorſi a dargliene"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 60r). The 1554 makes Appius the enemy of both parties, against the antithesis the period goes on to state (`perdessi coloro che gli erano amici; e cercò di avere amici quelli che non gli potevano essere amici`). Read by both readers without doubt; a whole word bearing on sense. Kept (D354)."
+  - id: NM-DISC-I40-D007
+    locator: NM-DISC.1.40.08
+    class: ruled_reading
+    witness_1824: "non potendo il Tiranno avere né tante ricchezze, né tanti onori, che a tutti satisfaccia"
+    witness_1554: "non potendo il Tiranno hauere ne tante ricchezze, ne tanti honori,che a tutta ſatisfaccia"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 60v). The 1554 `a tutta`, to the whole of it, the nobility named just before (`se la può mai guadagnare tutta`); the 1824 `a tutti`, to all. Read by both readers without doubt. Kept (D354)."
+  - id: NM-DISC-I40-D008
+    locator: NM-DISC.1.40.04
+    class: reading
+    witness_1824: "*Ille vero impedimentum pro occasione arripuit;* e nominò sé tra i primi"
+    witness_1554: "Ille uero impedimentum pro occaſione arripuit.Cioè; ma egli queſto impedimento preſe per occaſione.Et nominò ſe tra i primi"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 59r). The 1554 follows each of Livy's sentences in the chapter with an Italian rendering introduced by `Cioè`, which the 1824 does not print; the Latin lines are flagged with marginal double commas. Of `Finem fecit ferendae alienae personae` it gives `ad Appio fu cagione, ch'ei pigliasse la primiera persona`, of `Credebant ... fore` a gloss on Appius' humility, of `Quibus donis ...` `Onde i giovani corrotti da i doni amavano anzi il licentioso vivere, che la libertà comune`."
+  - id: NM-DISC-I40-D009
+    locator: NM-DISC.1.40.05
+    class: reading
+    witness_1824: "ma non pubblicate. Da questo i Dieci presero occasione di continuare nel Magistrato"
+    witness_1554: "ma non publicate.Dieci preſono occaſione di ſeguire il magiſtrato"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaves (fol. 59r-59v). The 1554 has no `Da questo i` and reads `seguire il magistrato`, to follow on in the magistracy, for `continuare nel Magistrato`. Read by both 1824 readers without doubt. Same sense."
+  - id: NM-DISC-I40-D010
+    locator: NM-DISC.1.40.03
+    class: reading
+    witness_1824: "avendosi a punire un cittadino romano per omicidio"
+    witness_1554: "hauendoſi a punire un cittadino Romano per homicida"
+    established: witness_1824
+    publish_as_variant_note: false
+    rationale: "The 1554 names the man (`homicida`, a homicide) for the deed. Read by both 1824 readers without doubt; same sense."
+  - id: NM-DISC-I40-D011
+    locator: NM-DISC.1.40.05
+    class: reading
+    witness_1824: "E per isbigottire il Popolo ed il Senato ... e se alcuno battuto ... e se lo avesse"
+    witness_1554: "& per isbigottire il ſuo popolo, & il Senato ... Se alcuno battuto"
+    established: witness_1824
+    publish_as_variant_note: false
+    rationale: "The 1554 adds `suo` and drops the `e` before `se alcuno`; at .07 it has `se lo haueſſe tenuto` for `se questo modo avesse tenuto`, and at .10 `dap loro` for `da per loro`. No difference of sense."
+  - id: NM-DISC-I40-D012
+    locator: NM-DISC.1.40.01
+    class: systematic_orthographic_profile
+    witness_1554: "Giglio's `ſouerchio`, `creatione`, `attioni`, `Rep.`, `diſegnaßino`, `tale`, `duoi`, `delli`, `creorno X`, `tra` for `intra` and `fra`, `Prencipe`, `merauiglia`, `XII`, `X`, `CXX`, `romore`, `oppenione`, `uolontieri`, `nemico`/`nemica` for `inimico`/`inimica` throughout, `onde` for `donde`, `eſſendo` for `sendo`, `eßi` for `loro`, the verb forms in `-ßino` and `-orno`/`-ono`, `Tal che`, `anchora che`, tildes and `&`/`et`, and his pointing"
+    established: witness_1824
+    publish_as_variant_note: false
+    rationale: "Spelling, forms and pointing; DEC-009 classes, not readings."

@@ -1,0 +1,28 @@
+source_unit_id: FG-CONS.1.40
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-I40-D001
+    locator: FG-CONS.1.40.01
+    class: ruled_reading
+    witness_1857: "rubric: in essa ⟨è|e⟩ da notare: dove si considera, ⟨intra|mira⟩ molte altre cose (split between the readers)"
+    witness_1933: "[in essa è da notare: dove si considera, intra molte altre cose, come si può o salvare, per simile accidente]"
+    established: "in essa è da notare: dove si considera, intra molte altre cose"
+    publish_as_variant_note: true
+    rationale: "Canestrini's rubric. Pass A reads `è` and `intra`, pass B the printed shapes `e` and `mira`, each offering the other; neither `e` nor `mira` construes, and the 1933 edition, with Machiavelli's own rubric in the 1824 (`è`), reads `è` and `intra`. Readings, not emendations (D355). The 1933 rubric, bracketed as Palmarocchi's, has `o salvare`; Canestrini's has no `o`, read by both readers."
+  - id: FG-CONS-I40-D002
+    locator: FG-CONS.1.40.02
+    class: ruled_reading
+    witness_1857: "più gagliardo, ⟨e|a⟩ che non varia di animo ⟨si|sì⟩ facilmente (both readers doubtful at each)"
+    witness_1933: "più gagliardo, e che non varia di animo sí facilmente"
+    established: "più gagliardo, e che non varia di animo sì facilmente"
+    publish_as_variant_note: true
+    rationale: "Both readers doubt the letter after `gagliardo,` and prefer `e`; `a` does not construe. At `si` both see no accent and prefer the printed letters; the sense wants the adverb, \"so readily\", the scan drops fine strokes, and the 1933 edition prints `sí`. Both read with the 1933 edition (D356)."
+  - id: FG-CONS-I40-D003
+    locator: FG-CONS.1.40.01
+    class: systematic_orthographic_profile
+    witness_1857: "Canestrini's `il principale`, `e i compagni`, `il persuadersi`, `leggi` ×2, `populo`, `nobiltà`, `trovano`, `ragioni`, `cagioni leggieri`, `imprudenza`, `occorrenze`, and his pointing (`violentare,`, `durassi,`, `nobili,`)"
+    witness_1933: "Palmarocchi's `el principale`, `ed e' compagni`, `el persuadersi`, `legge`, `popolo`, `nobilità`, `truovano`, `ragione`, `cagione leggiere`, `imprudenzia`, `occorrenzie`, and his pointing (`violentare;`, `durassi;`, `nobili;`)"
+    established: witness_1857
+    publish_as_variant_note: false
+    rationale: "Orthographic profile, forms and pointing; DEC-009 classes. The pointing doubtful to both readers follows the 1933 edition by D110, and two stops are supplied from it, D67 (D357)."

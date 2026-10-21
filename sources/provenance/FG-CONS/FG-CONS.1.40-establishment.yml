@@ -1,0 +1,33 @@
+source_unit_id: FG-CONS.1.40
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-024
+responds_to: NM-DISC.1.40
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. Canestrini prints no note on this reply."
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38); errors are emended from Palmarocchi and bracketed (D68)."
+passes:
+  - {id: A, performed: 2026-10-21, file: sources/coldpass/FG-CONS.1.40-passA.md, note: "subagent; page images only (native 600 ppi rendered at 1200, full pages and halves), isolated image directory and output folder"}
+  - {id: B, performed: 2026-10-21, file: sources/coldpass/FG-CONS.1.40-passB.md, note: "subagent; same images, separate image directory and output folder"}
+collation: sources/coldpass/COLLATION-2026-10-21-I40.md
+collation_result: >
+  365 words (A 365, B 365), the 408 body tokens identical after preferred
+  readings but for the accent on `vòlti` (Class A). No word, clause or sense
+  disagreement in the body. Two rubric splits between words, `è` and
+  `intra`, read with the 1933 edition (D355). Two common doubts whose
+  alternatives are words, `e che` and `sì`, read with the 1933 edition
+  (D356). Marks doubtful to both settled by D110 and D67 (D357).
+witness_independence_check: "SCOPE §7. Neither pass carries a Palmarocchi word-reading where Canestrini differs: both have `il principale`, `e i compagni`, `il persuadersi`, `leggi`, `populo`, `nobiltà`, `trovano`, `ragioni`, `cagioni leggieri`, `imprudenza`, `occorrenze`, against the 1933 `el principale`, `ed e' compagni`, `el persuadersi`, `legge`, `popolo`, `nobilità`, `truovano`, `ragione`, `cagione leggiere`, `imprudenzia`, `occorrenzie`. The passes read Canestrini."
+boundaries: "printed pp. 51-52; heading CONSIDERAZIONE SUL CAPITOLO XL at the head of p. 51 under the running head (no replies on XXXIII-XXXVIII; the reply on XXXIX ends on p. 50); Canestrini's three-line rubric in smaller type; two indented paragraphs (`Io mi persuado` ... `occupare la libertà.`, `E quanto alla dottrina generale` ... `occorrenze che girano.`); CONSIDERAZIONE SUL CAPITOLO XLVII follows on p. 52; no note belongs to the reply"
+corrections:
+  - {id: FG-CONS-I40-C001, locator: FG-CONS.1.40.02, was: "di farnelo cadere presto Così nell'una parte", now: "di farnelo cadere presto. Così nell'una parte", evidence: "Pass A ⟨.|∅⟩, pass B ⟨.|∅⟩; no stop shows before the capital; the 1933 edition prints one. D67, D357."}
+  - {id: FG-CONS-I40-C002, locator: FG-CONS.1.40.02, was: "come fa il populo Sono partiti", now: "come fa il populo. Sono partiti", evidence: "Pass A ⟨.|∅⟩, pass B ⟨.|∅⟩; no stop shows before the capital; the 1933 edition prints one. D67, D357."}
+emendations: []
+readings:
+  - {locus: "FG-CONS.1.40 rubric in essa ⟨è|e⟩ da notare; si considera, ⟨intra|mira⟩ molte altre cose", passes: "A ⟨è|e⟩, ⟨intra|mira⟩; B ⟨e|è⟩, ⟨mira|intra⟩", witness_1933: "in essa è da notare; intra molte altre cose", disposition: "è, intra, D355 (David, 2026-10-21): splits between words; `e` and `mira` do not construe"}
+  - {locus: "FG-CONS.1.40.02 più gagliardo, ⟨e|a⟩ che non varia; di animo ⟨si|sì⟩ facilmente", passes: "A and B ⟨e|a⟩, both prefer e; A and B ⟨si|sì⟩, both prefer the printed si, seeing no accent", witness_1933: "e che non varia; sí facilmente", disposition: "e, sì, D356 (David, 2026-10-21): common doubts whose alternatives are words; read with the 1933 edition"}
+  - {locus: "libertà⟨;|,⟩ e la quale; nobiltà⟨;|,⟩ perché; tirannide⟨∅|,⟩; libertà⟨.|∅⟩ (paragraph end); diversi⟨;|,⟩; rubric notare⟨:|∅⟩ and its final stop", passes: "A and B doubt each mark; both prefer ; ; ∅ . ; : .", witness_1933: ", , ∅ . ; : .", disposition: "with the 1933 edition, D357 (David, 2026-10-21)"}
+not_supplied: []
+normalisation_notes: "Class A: accents (`perchè` → `perché` ×3, `benchè` → `benché`, `vôlti`/`vòlti` → `vòlti`); elision closed up (`dell' avere`, `d' Atene`, `nell' una`, `nell' altra`, `s' ha`); `e quali`, `e nobili` given the apostrophe of the plural article, `e'`, by D35; spaces before punctuation removed; line-end hyphens removed."
