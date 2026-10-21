@@ -101,7 +101,7 @@ exist. See §7.
 | 21 | NM-DISC.1.30 | FG-CONS.1.30 | FG-CONS-DR-021 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 22 | NM-DISC.1.32 | FG-CONS.1.32 | FG-CONS-DR-022 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 23 | NM-DISC.1.39 | FG-CONS.1.39 | FG-CONS-DR-023 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
-| 24 | NM-DISC.1.40 | FG-CONS.1.40 | FG-CONS-DR-024 | — | — | — | — | — |
+| 24 | NM-DISC.1.40 | FG-CONS.1.40 | FG-CONS-DR-024 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 25 | NM-DISC.1.47 | FG-CONS.1.47 | FG-CONS-DR-025 | — | — | — | — | — |
 | 26 | NM-DISC.1.49 | FG-CONS.1.49 | FG-CONS-DR-026 | — | — | — | — | — |
 | 27 | NM-DISC.1.58 | FG-CONS.1.58 | FG-CONS-DR-027 | — | — | — | — | — |
@@ -220,12 +220,12 @@ than inside the first paragraph.
 | Stage | Done | Remaining | Of |
 |---|---|---|---|
 | Link records | 39 | 0 | 39 |
-| NM source established | 23 | 16 | 39 |
-| FG source established | 23 | 16 | 39 |
-| Collated against the comparison witness | 46 units | 32 | 78 |
-| Translated (draft, cold-reviewed) | 46 | 32 | 78 |
-| Annotated | 46 | 32 | 78 |
-| Published | 46 | 32 | 78 |
+| NM source established | 24 | 15 | 39 |
+| FG source established | 24 | 15 | 39 |
+| Collated against the comparison witness | 48 units | 30 | 78 |
+| Translated (draft, cold-reviewed) | 48 | 30 | 78 |
+| Annotated | 48 | 30 | 78 |
+| Published | 48 | 30 | 78 |
 <!-- /state:stages -->
 
 The table is written by `scripts/state` from the files. The paragraphs below
@@ -357,6 +357,7 @@ clock; David's own time is the rulings, counted separately.
 | I.30 (543 + 92 words) | 35 | 5 | 20 | 15 | 12 | 5 | ~95 (stages approximate) | 1 batch at establishment (D318-D324), the second under D302: NM sample of p. 112 (the densest page in 1554 differences) with four crops, clean; one printed non-word in the 1824 emended (`t[u]tta`), the second *Discorsi* emendation; one D203(b) difference kept (`prenda`) and two sense-bearing 1554 differences kept (`giudicando`, no `tanti`); FG no word disagreement, the rubric's `a`/`o` and `E`/`È` read, three marks by D110; the D317 revisit checked, no `fazione`; no open item at translation; NM collated against 1554; commentary cold-reviewed; the computer link dropped three times mid-pair |
 | I.32 (337 + 103 words) | 25 | 5 | 15 | 15 | 12 | 5 | ~80 (stages approximate) | 1 batch at establishment (D329-D331), the third under D302: NM sample of p. 117 (the denser page in 1554 differences, counting forms of one word once) with three crops of p. 118, clean, and nothing raised in NM; FG body without a split, the rubric's `necessitadi` split and three common doubts read with the 1933 edition, four marks by D110; the D317 revisit checked, no `fazione`; no open item at translation; NM collated against 1554; commentary cold-reviewed; the computer link dropped twice mid-pair |
 | I.39 (546 + 331 words) | 40 | 10 | 20 | 15 | 12 | 5 | ~100 (stages approximate) | 1 batch at establishment (D342-D347), the fourth under D302: NM sample of p. 141 (the denser eligible page in 1554 differences either way of counting forms; p. 142 under a fifth) with six crops of pp. 140 and 142, clean; four D203(b) differences against the 1554 kept (`tolto`, `Repubblica`, `perduta`, `dall'ambizione`); FG body without a split, one common doubt read as printed (`molto volta`), two whole words kept against the 1933 (`creare`, `li`), pointing by D110 and two stops supplied (D67, D40); a shared output folder let the Giglio reader's file overwrite NM pass A, and both were rerun in isolated folders; no open item at translation; NM collated against 1554; commentary cold-reviewed; the computer link dropped once mid-pair |
+| I.40 (1,814 + 365 words) | 45 | 5 | 25 | 20 | 15 | 5 | ~115 (stages approximate) | 1 batch at establishment (D353-D357): no page holds a fifth of the chapter, so NM pass B read it all (D352), and the passes agree on every word; four D203(b) differences and four sense-bearing whole words against the 1554 kept; FG body without a word split, two rubric splits read (`è`, `intra`), two common doubts (`e`, `sì`), pointing by D110 and two stops by D67; 2 open items at translation (O31 `rumore`, O32 `se bene` contrary to fact), ruled the same day as D362, D363; Livy's Latin checked against the Latin Library text of Book 3; NM collated against 1554; commentary cold-reviewed; every reader given its own image and output folder |
 
 ---
 

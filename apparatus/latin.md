@@ -49,3 +49,20 @@ first time it is italicised.
 | `provocatio` | FG I.39 commentary |
 | `provocatio ad populum` | FG I.39 note |
 | `domi militiaeque` | NM I.39 note |
+| `Credebant enim haud gratuitam in tanta superbia comitatem fore.` | NM I.40 (after Livy 3.35) |
+| `Ille vero impedimentum pro occasione arripuit;` | NM I.40 (after Livy 3.35) |
+| `Ille vero impedimentum pro occasione arripuit` | NM I.40 note |
+| `Finem fecit ferendae alienae personae;` | NM I.40 (after Livy 3.36) |
+| `Finem fecit ferendae alienae personae` | NM I.40 note |
+| `Et inde libertatis captare auram, unde servitutem timendo, in eum statum rempublicam adduxerant.` | NM I.40 (after Livy 3.37) |
+| `Et inde libertatis captare auram, unde servitutem timendo, in eum statum rempublicam adduxerant` | NM I.40 note |
+| `Ut ipsi, taedio praesentium, consules desiderarent.` | NM I.40 (after Livy 3.37) |
+| `Ut ipsi, taedio praesentium, consules desiderarent` | NM I.40 note |
+| `Quibus donis juventus corrumpebatur, et malebat licentiam suam, quam omnium libertatem.` | NM I.40 |
+| `Quibus donis juventus corrumpebatur, et malebat licentiam suam, quam omnium libertatem` | NM I.40 note |
+| `profecto haud gratuitam in tanta superbia comitatem fore` | NM I.40 note (Livy 3.35) |
+| `Ille enimvero ... impedimentum pro occasione arripuit` | NM I.40 note (Livy 3.35) |
+| `Ille finis Appio alienae personae ferendae fuit` | NM I.40 note, commentary (Livy 3.36) |
+| `et inde libertatis captare auram` | NM I.40 note (Livy 3.37) |
+| `taedio praesentium consules duo tandem et status pristinus rerum in desiderium veniant` | NM I.40 note (Livy 3.37) |
+| `Hac mercede iuventus nobilis corrupta` | NM I.40 note, commentary (Livy 3.37) |

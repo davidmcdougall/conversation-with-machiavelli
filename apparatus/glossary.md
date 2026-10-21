@@ -588,3 +588,38 @@ last sentence answers Machiavelli's first move.
 | `limitare` | limit | NM I.39 (Terentilius' five men), FG I.39 (the Ten). |
 | `considerazione` | consideration | NM I.39 .01, with `considerare`. |
 | `moderare`, `moderato` | moderate | FG I.39 ×2. |
+
+
+## Added from the I.40 pair (2026-10-21)
+
+| Italian | English | Note |
+|---|---|---|
+| `rumore` (talk with a stated content) | rumour | D362. NM I.40 `nascere un rumore per Roma, che se ...`. `rumore` of public tumult stays "uproar" (D155). |
+| `se bene` + pluperfect subjunctive (contrary to fact) | even had | D363. FG I.40 `se bene si fussino vòlti`. D31's "although" stays elsewhere. |
+| `persuadersi`; `mi persuado` (FG) | persuade oneself; I persuade myself | D358. NM I.39, I.40; FG I.40 `Io mi persuado`, `il persuadersi`, one verb for his conviction and the error it judges. In an editor's summary, "is persuaded". Kept apart from `credo`, "believe". |
+| `errore` | error | NM I.39, I.40 throughout; FG I.40 `il principale errore`. |
+| `creare`, `creazione` | create, creation | NM I.40 rubric and throughout; with `rifare` remake, `ricreare` re-create (D348). |
+| `stabilire`; `stabile` | establish; stable | NM I.40 .01, .02; FG I.40 `stabile`, `stabilì`. |
+| `fondare`; `fondamento` | found; foundation | NM I.40 .02, .07; FG I.40 .01, .02. `fondatore` founder (D171); `edificare` stays "build". |
+| `medesimo` | same | NM I.39, I.40 ×3. |
+| `contado` | countryside | D70. NM I.40 .09 ×4; FG I.1. |
+| `ridurre`, `ridursi` | bring, be brought, bring oneself | D314, D358. NM I.29; I.40 .02, .06 ×2. "Draw together" stays `ristringersi`'s (D58). |
+| `surgere` / `levarsi` | rise / rise | D358, a recorded collapse. NM I.4, I.30, I.40 `surgere`; NM I.39 `si levò`. |
+| `proporre` | propose; set over (a guard) | D358. NM I.40 .04 (candidates), .10 `proporre loro guardia`, `proposi`. "Set" is shared with `porre` (D115) for the shared root. |
+| `convenire` (personal) | convene (come together, agree) | D358. NM I.40 .07 ×2. The impersonal `conviene` stays "it is fitting" (D85). |
+| `solo` (before its noun) | sole | D358. NM I.40 `solo Magistrato`. D172's "alone" stays for the predicative and adverbial `solo`; D298's "only" for the adverb. |
+| `azioni` (narrated doings) | proceedings | D358. NM I.40 .01 `in esse azioni`. `azioni` of an office stays "functions" (D348); "action" is `fazione`'s (D341). |
+| `levità` / `leggerezza` | levity / levity | D358, a recorded collapse. FG I.40; FG I.28. |
+| `girare` | go round | D358. FG I.40 `occorrenze che girano`. "Turn" stays `volgersi`'s. |
+| `occorrenza` | occurrence | FG I.40, the noun of `occorrere` (D01). |
+| `amico` / `inimico`; `farsi amico` | friend / enemy; make one's friend | NM I.40 .08, .09; FG I.40 `amicissimo`, `farsi amica la nobiltà`. |
+| `superbia` | pride | NM I.40 .05, .06. |
+| `satellite` | satellite (armed attendant) | NM I.40 .05, .09. |
+| `salvare`, `salvarsi` | save, save oneself | NM I.40 rubric, .09, .10. |
+| `tiranneggiare` | tyrannise | NM I.40, with `tiranno`, `tirannide`. |
+| `intrinseco` | intrinsic | NM I.40 .09 ×2. |
+| `regola` | rule | FG I.26, I.40. |
+| `comportare` | bear | FG I.39, I.40. |
+| `violentare` | do violence to | FG I.40; the root of `violenza`, violence (NM I.40). |
+| `sagace` / `savio` | sagacious / wise | NM I.40 .02 / .07; kept apart. |
+| `appello`, `appellare`, `appellazione` | appeal | NM I.32, I.40; with `provocazione` (D348). |

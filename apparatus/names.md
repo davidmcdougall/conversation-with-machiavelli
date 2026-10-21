@@ -189,3 +189,17 @@ the original.
 | `Signoria` | the Signoria | NM I.39; Florence's chief magistracy |
 | `Ottanta` | the Eighty | FG I.39; the council drawn from the Great Council, as Canestrini's own note says |
 | `Terentillo` | Terentilius | NM I.39, FG I.39; Gaius Terentilius Harsa, tribune of the plebs (Livy 3.9). Both witnesses spell it with `-ll-`; the English takes Livy's form, as `Cammillo` → Camillus |
+| `Decemvirato` | the decemvirate | NM I.40, FG I.40 rubric and body; lower case, an office |
+| `Dieci` | the Ten | NM I.40; the Roman decemvirs, as FG I.28, kept apart from the Florentine Ten of I.39, who share the English |
+| `Appio`, `Appio Claudio` | Appius, Appius Claudius | NM I.40, FG I.40; Appius Claudius the decemvir, not the ancestor of FG I.4 (Attus Clausus) |
+| `Spurio Postumio` | Spurius Postumius | NM I.40; Spurius Postumius Albus, envoy to Athens (Livy 3.31) |
+| `Solone` | Solon | NM I.40, as NM I.2 |
+| `Virginia`, `Virginio` | Virginia, Virginius | NM I.40; Livy's Verginia and Lucius Verginius (3.44), noted; Machiavelli's forms kept |
+| `Valerio`, `Orazio` | Valerius, Horatius | NM I.40; Lucius Valerius Potitus and Marcus Horatius Barbatus (Livy 3.39). Not the Horatius of I.24 |
+| `Sabini`, `Volsci` | Sabines, Volsci | NM I.40; Livy 3.38 has the Sabines and the Aequi, noted; Machiavelli's Volsci kept |
+| `Monte Sacro` | the Sacred Mount | NM I.40 |
+| `Nabide` | Nabis | NM I.40; the singular of NM I.10's `Nabidi` |
+| `il Re Ferrando` | King Ferdinand | NM I.40; Machiavelli's `Ferrando` of I.29 is Ferdinand II of Aragon; that this is the same king is not said in I.40 |
+| `Silla` | Sulla | FG I.40, as NM I.1, I.28 |
+| `Manlio Capitolino` | Manlius Capitolinus | FG I.40, as FG I.5, I.7, I.8 |
+| `Duca d'Atene` | the Duke of Athens | FG I.40; the usual identification, Walter of Brienne, lord of Florence 1342-43, not checked here |
