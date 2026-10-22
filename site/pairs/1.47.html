@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Machiavelli believes men deceive themselves much in general things, not so much in particulars, and that one can conclude a prudent man must never flee popular judgment in distributing degrees and dignities, where alone it is not deceived, or more rarely than the few. Guicciardini says this can be said otherwise: experience many times corrects what men had imagined beforehand; and one can also consider that the Roman plebs fought only to remove an infamy and, partly appeased, abstained from choosing the unfit. He believes the people is deceived less here than elsewhere, trusting long common opinion, but does not accept that in this it is deceived more rarely than the few: that opinion, not knowledge, governs it, and as to ignorance it is much more dangerous than the few.">
+<style>*{box-sizing:border-box}body{margin:0;font:14px system-ui}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>A Conversation with Machiavelli — Men, even though they deceive themselves in generals, in particulars do not deceive themselves</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root {
+  --paper:      #EDEEEC;
+  --paper-sunk: #E4E6E3;
+  --ink:        #1B1E1C;
+  --ink-muted:  #5C625E;
+  --ink-faint:  #868C87;
+  --rule:       #C9CDC8;
+  --rule-faint: #DCDFDB;
+  --nm:         #3A5A6B;
+  --fg:         #6E5A3C;
+  --serif: "EB Garamond", "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  --sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --mono:  "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:      #161917;
+    --paper-sunk: #1D211E;
+    --ink:        #E3E6E1;
+    --ink-muted:  #A0A6A0;
+    --ink-faint:  #767C77;
+    --rule:       #343934;
+    --rule-faint: #262B27;
+    --nm:         #8FB4C6;
+    --fg:         #C4A97C;
+  }
+}
+:root[data-theme="dark"] {
+  --paper:      #161917;
+  --paper-sunk: #1D211E;
+  --ink:        #E3E6E1;
+  --ink-muted:  #A0A6A0;
+  --ink-faint:  #767C77;
+  --rule:       #343934;
+  --rule-faint: #262B27;
+  --nm:         #8FB4C6;
+  --fg:         #C4A97C;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 1160px; margin: 0 auto; padding-inline: 20px; padding-block: 0 0; }
+
+/* ---- masthead ---- */
+.masthead { padding-block: 56px 32px; border-bottom: 1px solid var(--rule); }
+.eyebrow {
+  font-family: var(--sans); font-size: 11px; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint);
+  margin: 0 0 18px;
+}
+h1 {
+  font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 5vw, 44px);
+  line-height: 1.12; margin: 0 0 14px; text-wrap: balance; letter-spacing: -0.01em;
+}
+h1 .sub { display: block; font-style: italic; color: var(--ink-muted); font-size: .52em; margin-top: 12px; letter-spacing: 0; }
+.standfirst {
+  font-family: var(--sans); font-size: 14.5px; line-height: 1.6;
+  color: var(--ink-muted); max-width: 62ch; margin: 0;
+}
+.sf-label {
+  font-weight: 600; font-size: 11px; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--ink-faint); margin-right: .6em;
+}
+
+/* ---- the pairing device ---- */
+.pairing {
+  display: flex; align-items: stretch; gap: 0; margin: 30px 0 0;
+  border: 1px solid var(--rule); border-radius: 2px; overflow: hidden;
+  font-family: var(--sans); background: var(--paper-sunk);
+}
+.pairing > div { flex: 1 1 0; padding: 13px 16px; min-width: 0; }
+.pairing .who { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
+.pairing .nm-side .who { color: var(--nm); }
+.pairing .fg-side .who { color: var(--fg); }
+.pairing .what { font-size: 13.5px; color: var(--ink-muted); }
+.pairing .arrow {
+  flex: 0 0 auto; display: flex; align-items: center; justify-content: center;
+  padding-inline: 14px; color: var(--ink-faint); font-size: 15px;
+  border-inline: 1px solid var(--rule);
+}
+
+/* ---- pair-to-pair navigation ---- */
+.pairnav {
+  display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+  margin-top: 18px; font-family: var(--sans); font-size: 12.5px;
+  color: var(--ink-muted);
+}
+.pairnav a { text-decoration: none; color: var(--ink-muted); }
+.pairnav a:hover, .pairnav a:focus { color: var(--ink); text-decoration: underline; }
+
+/* ---- work sections ---- */
+.work { padding-block: 52px 0; }
+.work-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
+.work-head .tag {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .04em;
+  padding: 3px 7px; border-radius: 2px; color: var(--paper);
+}
+.work.nm .tag { background: var(--nm); }
+.work.fg .tag { background: var(--fg); }
+h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; letter-spacing: -0.005em; }
+.rubric {
+  font-style: italic; color: var(--ink-muted); max-width: 70ch;
+  margin: 10px 0 0; font-size: 16.5px; line-height: 1.5;
+}
+.rubric-note {
+  font-family: var(--sans); font-style: normal; font-size: 12px;
+  color: var(--ink-faint); margin-top: 7px;
+}
+.colheads {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  margin-top: 30px; padding-bottom: 7px; border-bottom: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint);
+}
+
+/* ---- the facing pair ---- */
+.pair {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  padding-block: 22px; border-bottom: 1px solid var(--rule-faint);
+  scroll-margin-top: 20px;
+}
+.pair:target { background: var(--paper-sunk); }
+.annot { grid-column: 2 / -1; margin-top: 14px; font-family: var(--sans); font-size: 13.5px;
+  line-height: 1.55; color: var(--ink-muted); }
+.annot summary { cursor: pointer; font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); list-style: none; }
+.annot summary::-webkit-details-marker { display: none; }
+.annot summary::before { content: "+ "; }
+.annot[open] summary::before { content: "− "; }
+.annot p { margin: 8px 0 0; max-width: 72ch; }
+.annot .xref { color: inherit; text-decoration: underline; text-decoration-color: var(--rule);
+  text-underline-offset: 2px; white-space: nowrap; }
+.gutter { padding-top: 4px; }
+.uid {
+  font-family: var(--mono); font-size: 10.5px; color: var(--ink-faint);
+  text-decoration: none; letter-spacing: -0.02em;
+}
+.uid:hover, .uid:focus { color: var(--ink); text-decoration: underline; }
+.col { min-width: 0; }
+.col.it { hyphens: auto; }
+.col.en { }
+.supplied { color: var(--ink-muted); }
+
+/* ---- apparatus ---- */
+.apparatus {
+  margin-top: 34px; padding-top: 22px; border-top: 2px solid var(--rule);
+  font-family: var(--sans); font-size: 13.5px; line-height: 1.58;
+  color: var(--ink-muted);
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 26px 34px;
+}
+.apparatus h3 {
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); margin: 0 0 9px;
+}
+.apparatus p { margin: 0 0 9px; }
+.apparatus p:last-child { margin-bottom: 0; }
+.apparatus .lem { font-family: var(--serif); font-size: 15px; color: var(--ink); font-style: italic; }
+.sig { font-family: var(--mono); font-size: 12px; color: var(--ink); }
+
+/* ---- colophon ---- */
+.colophon {
+  margin-top: 60px; padding-block: 28px 60px; border-top: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 13px; line-height: 1.6; color: var(--ink-muted);
+}
+.colophon .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 34px; }
+.colophon h3 {
+  font-size: 10.5px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--ink-faint); margin: 0 0 8px;
+}
+.colophon p { margin: 0 0 8px; }
+.colophon ul { margin: 0; padding-left: 16px; }
+.colophon li { margin-bottom: 5px; }
+.state {
+  margin-top: 26px; padding: 14px 16px; background: var(--paper-sunk);
+  border-left: 2px solid var(--ink-faint); border-radius: 0 2px 2px 0;
+  font-size: 12.5px;
+}
+.state strong { color: var(--ink); font-weight: 600; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--nm); outline-offset: 2px; }
+
+/* ---- contents / index page ---- */
+.toc { margin-top: 30px; }
+.toc-row {
+  display: grid; grid-template-columns: 40px 1fr 1fr; gap: 0 20px;
+  padding-block: 14px; border-bottom: 1px solid var(--rule-faint);
+  font-family: var(--sans); align-items: baseline;
+}
+.toc-row .n { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
+.toc-row a { text-decoration: none; color: var(--ink); font-family: var(--serif); font-size: 16px; }
+.toc-row a:hover, .toc-row a:focus { text-decoration: underline; }
+.toc-row .unpublished { color: var(--ink-faint); font-style: italic; font-size: 14px; }
+.toc-row .ids { color: var(--ink-faint); font-size: 11.5px; font-family: var(--mono); }
+.toc-row .dated { color: var(--ink-faint); font-size: 12px; text-align: right; }
+
+@media (max-width: 760px) {
+  body { font-size: 16.5px; }
+  .colheads { display: none; }
+  .pair { grid-template-columns: 1fr; gap: 0; padding-block: 20px; }
+  .gutter { padding-top: 0; margin-bottom: 8px; }
+  .annot { grid-column: 1; }
+  .col.it { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px dotted var(--rule); }
+  .col.it::before, .col.en::before {
+    display: block; font-family: var(--sans); font-size: 10px; font-weight: 600;
+    letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px;
+  }
+  .col.it::before { content: "Italian"; }
+  .col.en::before { content: "English"; }
+  .pairing { flex-direction: column; }
+  .pairing .arrow { border-inline: 0; border-block: 1px solid var(--rule); padding-block: 6px; }
+  .toc-row { grid-template-columns: 1fr; gap: 4px; }
+  .toc-row .dated { text-align: left; }
+}
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow">A Conversation with Machiavelli · Pair 25 of 39</p>
+    <h1>Men, even though they deceive themselves in generals, in particulars do not deceive themselves
+      <span class="sub">Discourses I.47, and Guicciardini&#x27;s reply</span></h1>
+    <p class="standfirst"><span class="sf-label">Editor's summary</span> Machiavelli believes men deceive themselves much in general things, not so much in particulars, and that one can conclude a prudent man must never flee popular judgment in distributing degrees and dignities, where alone it is not deceived, or more rarely than the few. Guicciardini says this can be said otherwise: experience many times corrects what men had imagined beforehand; and one can also consider that the Roman plebs fought only to remove an infamy and, partly appeased, abstained from choosing the unfit. He believes the people is deceived less here than elsewhere, trusting long common opinion, but does not accept that in this it is deceived more rarely than the few: that opinion, not knowledge, governs it, and as to ignorance it is much more dangerous than the few.</p>
+
+    <div class="pairing">
+      <div class="nm-side">
+        <div class="who">Niccolò Machiavelli</div>
+        <div class="what">Discorsi sopra la prima Deca di Tito Livio · written c. 1513–19, printed 1531</div>
+      </div>
+      <div class="arrow" aria-hidden="true">answered by</div>
+      <div class="fg-side">
+        <div class="who">Francesco Guicciardini</div>
+        <div class="what">Considerazioni intorno ai Discorsi del Machiavelli · written 1529–30, printed 1857</div>
+      </div>
+    </div>
+    <nav class="pairnav"><a href="1.40.html">← Pair 1.40</a><a href="../index.html">All 39 pairs</a><span></span></nav>
+  </header>
+
+  <section class="work nm">
+    <div class="work-head">
+      <span class="tag">NM-DISC.1.47</span>
+      <h2>Capitolo XLVII</h2>
+    </div>
+    <p class="rubric">Gli uomini ancora che s&#x27;ingannino ne&#x27; generali, ne&#x27; particolari non s&#x27;ingannano.</p>
+    <p class="rubric">Men, even though they deceive themselves in generals, in particulars do not deceive themselves.</p>
+
+    <div class="colheads"><div></div><div>Italian · 1824</div><div>English</div></div>
+      <div class="pair" id="NM-DISC.1.47.01">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.47.01">1.47.01</a></div>
+        <div class="col it" lang="it">Essendosi il Popolo romano, come di sopra si dice, recato a noja il nome Consolare, e volendo che potessero esser fatti Consoli uomini Plebei, o che fusse limitata la loro autorità, la Nobiltà, per non deonestare l&#x27;autorità Consolare né con l&#x27;una né con l&#x27;altra cosa, prese una via di mezzo, e fu contenta che si creassero quattro Tribuni con potestà Consolare, i quali potessero essere così Plebei come Nobili. Fu contenta a questo la Plebe, parendogli spegnere il Consolato, ed avere in questo sommo grado la parte sua. Nacque di questo un caso notabile, che venendosi alla creazione di questi Tribuni, e potendosi creare tutti Plebei, furono dal Popolo romano creati tutti Nobili. Onde Tito Livio dice queste parole: <i lang="la">Quorum comitiorum eventus docuit, alios animos in contentione libertatis et honoris; alios secundum deposita certamina in incorrupto judicio esse.</i></div>
+        <div class="col en" lang="en">The Roman people having, as is said above, come to loathe the consular name, and wishing that plebeian men could be made consuls, or that their authority should be limited, the nobility, so as not to debase the consular authority with either the one thing or the other, took a middle path, and was content that four tribunes should be created with consular power, who could be plebeians as well as nobles. Content with this was the plebs, it seeming to it that it extinguished the consulate, and had in this supreme degree its part. There arose from this a notable case: that, it coming to the creation of these tribunes, and it being possible to create them all plebeians, there were created by the Roman people all nobles. Whence Livy says these words: <i lang="la">Quorum comitiorum eventus docuit, alios animos in contentione libertatis et honoris; alios secundum deposita certamina in incorrupto judicio esse.</i></div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The case comes before the claim. The people, having taken the consular name in dislike, wanted plebeian men to be able to be made consuls, or the consular authority limited; the nobility, to debase that authority by neither, took a middle path, tribunes with consular power who could be plebeians as well as nobles, and the plebs was content, it seeming to it that it had extinguished the consulate and held its part in the supreme degree. Then the notable case: when it came to the creation of these tribunes, and all could have been created plebeians, the people created all nobles. Livy&#x27;s sentence is given as the verdict, that spirits are one thing in the contest for liberty and honour and another in uncorrupted judgment once the contests are laid down.</p>
+<p><span class="lem">History.</span> The Latin Library text of Livy 4.6 (consulted 2026-10-22) has the sentence Machiavelli quotes, with <i lang="la">dignitatis</i> where he has <i lang="la">honoris</i>, and without the <i lang="it">in</i> that the 1824 prints before <i lang="la">incorrupto</i> (the 1554 omits it too). It continues that the people created all the tribunes patricians, content that account had been taken of the plebeians; Guicciardini quotes that clause <a class="xref" href="#FG-CONS.1.47.01">Guicciardini .01</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.47.02">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.47.02">1.47.02</a></div>
+        <div class="col it" lang="it">Ed esaminando donde possa procedere questo, credo proceda che gli uomini nelle cose generali s&#x27;ingannano assai, nelle particolari non tanto. Pareva generalmente alla Plebe di meritare il Consolato, per avere più parte in la Città, per portare più pericolo nelle guerre, per esser quella che con le braccia sue manteneva Roma libera, e la faceva potente. E parendogli, come è detto, questo suo desiderio ragionevole, volse ottenere questa autorità in ogni modo. Ma come la ebbe a fare giudizio degli uomini suoi particolarmente, conobbe la debolezza di quelli, e giudicò che nessuno di loro meritasse quello che tutta insieme gli pareva meritare. Talché vergognatasi di loro, ricorse a quelli che lo meritavano. Della qual deliberazione maravigliandosi meritamente Tito Livio, dice queste parole: <i lang="la">Hanc modestiam, aequitatemque et altitudinem animi ubi nunc in uno inveneris, quae tunc populi universi fuit?</i></div>
+        <div class="col en" lang="en">And, examining whence this may proceed, I believe it proceeds <span class="supplied">[from this]</span>, that men in general things deceive themselves much, in particular ones not so much. It seemed generally to the plebs that it merited the consulate, through having more part in the city, through bearing more danger in the wars, through being that which with its arms maintained Rome free, and made it powerful. And this desire of its seeming to it, as has been said, reasonable, it wished to obtain this authority by every way. But when it was to make judgment of its men particularly, it knew the weakness of them, and judged that none of them merited that which, all together, it seemed to it to merit. So that, ashamed of them, it had recourse to those who merited it. At which deliberation Livy, deservedly marvelling, says these words: <i lang="la">Hanc modestiam, aequitatemque et altitudinem animi ubi nunc in uno inveneris, quae tunc populi universi fuit?</i></div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The claim is a belief (<i lang="it">credo proceda</i>) and a comparison: men deceive themselves much in general things, not so much in particular ones. The rubric&#x27;s absolute is not repeated here. It seemed to the plebs, judging generally, that it merited the consulate, for its larger part in the city, its greater danger in the wars, its arms that kept Rome free and powerful; and this desire seemed to it reasonable. When it was to judge its own men particularly, it knew their weakness, judged that none of them merited what all together it seemed to merit, and, ashamed of them, had recourse to those who did. Livy&#x27;s marvel at the modesty of the whole people, which one would not now find in one man, closes the case. No one in this telling makes the plebs judge particularly; the Roman case is credited to the senate only in .06.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini restates the claim as <i lang="it">più facilmente ... che</i>, a comparison, and offers, as something one can also consider, a further reading of the Roman case: the plebs had fought only to remove the infamy of general exclusion, and, partly vented, abstained from choosing those not fit <a class="xref" href="#FG-CONS.1.47.01">Guicciardini .01</a>. Machiavelli&#x27;s reason, the knowledge of particular men, is not denied there; another is set beside it.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.47.03">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.47.03">1.47.03</a></div>
+        <div class="col it" lang="it">In corroborazione di questo se ne può addurre un altro notabile esempio, seguito in Capova da poi che Annibale ebbe rotto i Romani a Canne; per la qual rotta sendo tutta sollevata Italia, Capova stava ancora per tumultuare, per l&#x27;odio che era tra il Popolo ed il Senato: e trovandosi in quel tempo nel supremo Magistrato Pacuvio Calano, e conoscendo il pericolo che portava quella Città di tumultuare, disegnò con suo grado riconciliare la Plebe con la Nobiltà; e fatto questo pensiero, fece ragunare il Senato, e narrò loro l&#x27;odio che il Popolo aveva contro di loro, ed i pericoli che portavano di essere ammazzati da quello, e data la Città ad Annibale, sendo le cose de&#x27; Romani afflitte; dipoi soggiunse, che se volevano lasciar governare questa cosa a lui, farebbe in modo che si unirebbono insieme; ma li voleva serrare dentro al palazzo, e, col fare potestà al Popolo di potergli gastigare, salvarli.</div>
+        <div class="col en" lang="en">In corroboration of this there can be adduced another notable example, which followed at Capua after Hannibal had routed the Romans at Cannae; through which rout all Italy being stirred up, Capua too was about to break into tumult, through the hatred that was between the people and the senate: and Pacuvius Calanus finding himself at that time in the supreme magistracy, and knowing the danger that city bore of breaking into tumult, he designed, of his own will, to reconcile the plebs with the nobility; and, this thought made, he had the senate gathered, and narrated to them the hatred which the people had against them, and the dangers they bore of being killed by it, and the city given to Hannibal, the things of the Romans being afflicted; afterwards he added that, if they wished to leave this thing to him to govern, he would act in such a way that they would unite together; but he wished to shut them inside the palace, and, by making it in the people&#x27;s power to be able to chastise them, to save them.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> Capua is offered as corroboration, and here the descent to particulars is arranged. After Cannae, with Italy stirred up, Capua was near tumult from the hatred between people and senate. Pacuvius, in the supreme magistracy, designed to reconcile them (<i lang="it">con suo grado</i>, of his own will or by his office&#x27;s standing; the translation takes the first, D372): he told the senators of their danger, of being killed and of the city given to Hannibal, and proposed to shut them in the palace and put them in the people&#x27;s power in order to save them.</p>
+<p><span class="lem">History.</span> The Latin Library text of Livy 23.2-3 (consulted 2026-10-22) tells the story of Pacuvius Calavius: the senate shut in the curia, the people called on to name a replacement for each senator condemned, and the names shouted down.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.47.04">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.47.04">1.47.04</a></div>
+        <div class="col it" lang="it">Cederono a questa sua opinione i Senatori, e quello chiamò il Popolo a concione, avendo rinchiuso in palazzo il Senato, e disse come egli era venuto il tempo di poter domare la superbia della Nobiltà, e vendicarsi delle ingiurie ricevute da quella, avendoli rinchiusi tutti sotto la sua custodia; ma perché credeva che loro non volessero che la loro Città rimanesse senza governo, era necessario, volendo ammazzare i Senatori vecchi, crearne de&#x27; nuovi. E per tanto aveva messo tutti gli nomi degli Senatori in una borsa, e comincerebbe a trargli in loro presenza, ed egli farebbe i tratti di mano in mano morire, come prima loro avessero trovato il successore. E cominciato a trarne uno, fu al nome di quello levato un rumor grandissimo, chiamandolo uomo superbo, crudele ed arrogante; e chiedendo Pacuvio, che facessero lo scambio, si racchetò tutta la concione: e dopo alquanto spazio fu nominato un della Plebe, al nome del quale chi cominciò a fischiare, chi a ridere, chi a dirne male in un modo, e chi in un altro; e così seguitando di mano in mano, tutti quelli che furono nominati li giudicavano indegni del grado Senatorio; in modoché Pacuvio presa sopra questo occasione, disse: poiché voi giudicate che questa Città stia male senza Senato, ed a fare gli scambj ai Senatori vecchi non v&#x27;accordate, io penso che sia bene che voi vi riconciliate insieme; perché questa paura in la quale i Senatori sono stati, gli arà fatti in modo riumiliare, che quella umanità che voi cercavate altrove, troverete in loro. E accordatisi a questo, ne seguì l&#x27;unione di questo ordine, e quello inganno in che egli erano, si scoperse, come e&#x27; furono costretti venire a&#x27; particolari.</div>
+        <div class="col en" lang="en">The senators yielded to this opinion of his, and he called the people to assembly, having shut the senate in the palace, and said that the time had come to be able to tame the pride of the nobility, and to avenge itself of the injuries received from it, having shut them all in under his custody; but because he believed that they would not wish their city to remain without government, it was necessary, wishing to kill the old senators, to create new ones. And on that account he had put all the names of the senators in a purse, and would begin to draw them in their presence, and he would have those drawn die one after another, as soon as they had found the successor. And, having begun to draw one, at the name of him there was raised a very great uproar, calling him a man proud, cruel and arrogant; and Pacuvius asking that they make the replacement, the whole assembly grew quiet: and after some space one of the plebs was named, at whose name some began to hiss, some to laugh, some to speak ill of him in one way, and some in another; and so, continuing one after another, all those who were named they judged unworthy of the senatorial degree; in such a way that Pacuvius, having taken occasion upon this, said: since you judge that this city fares ill without a senate, and do not agree on making the replacements for the old senators, I think that it is well that you be reconciled together; because this fear in which the senators have been will have made them humble themselves again in such a way that that humanity which you were seeking elsewhere you will find in them. And, they having agreed to this, there followed from it the union of this order, and that deceit in which they were was discovered, when they were constrained to come to particulars.</div>
+        <details class="annot"><summary>Commentary · 1</summary>
+          <p><span class="lem">Argument.</span> The people is called to assembly and told the time has come to avenge itself; but since Pacuvius believed it would not want the city without government, new senators would have to be created if it wished to kill the old. The names are drawn; the first meets an uproar, and at Pacuvius&#x27; request for a replacement the assembly falls silent; the plebeians named are hissed, laughed at and abused, and all are judged unworthy. Pacuvius takes the occasion: since they judge the city fares ill without a senate and do not agree on replacements, let them be reconciled, for fear will have humbled the senators, and the humanity sought elsewhere will be found in them. The deceit is discovered when the people is constrained to come to particulars. <i lang="it">scoprire</i> returns in .05, where the popular men threaten to discover the citizens&#x27; deceit and it is their own that is discovered; the translation keeps &quot;discover&quot; for both.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.47.05">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.47.05">1.47.05</a></div>
+        <div class="col it" lang="it">Ingannansi oltra di questo i Popoli generalmente nel giudicare le cose e gli accidenti di esse, le quali dipoi si conoscono particolarmente, si avveggono di tale inganno. Dopo il 1514 sendo stati i Principi della Città cacciati da Firenze, e non vi essendo alcuno governo ordinato, ma piuttosto una certa licenza ambiziosa, e andando le cose pubbliche di male in peggio, molti Popolari veggendo la rovina della Città, e non ne intendendo altra cagione, ne accusavano l&#x27;ambizione di qualche potente che nutrisse i disordini, per poter fare uno Stato a suo proposito, e torre loro la libertà: e stavano questi tali per le logge e per le piazze, dicendo male di molti cittadini, e minacciandoli che se mai si trovassero dei Signori, scoprirebbono questo loro inganno, e gli gastigarebbono. Occorreva spesso che di simili ne ascendeva alcuno al supremo Magistrato, e com&#x27;egli era salito in quel luogo, e che e&#x27; vedeva le cose più d&#x27;appresso, conosceva i disordini donde nascevano, ed i pericoli che soprastavano, e la difficultà del rimediarvi. E veduto come i tempi e non gli uomini causavano il disordine, diventava subito d&#x27;un altro animo, e d&#x27;un&#x27;altra fatta, perché la cognizione delle cose particolari gli toglieva via quello inganno, che nel considerare generalmente si aveva presupposto. Dimodoché quelli che lo avevano prima, quando era privato, sentito parlare, e vedutolo poi nel supremo Magistrato stare quieto, credevano che nascesse, non per più vera cognizione delle cose, ma perché fusse stato aggirato e corrotto dai Grandi. E accadendo questo a molti uomini, e molte volte, ne nacque tra loro un proverbio, che diceva: costoro hanno un animo in piazza, e uno altro in palazzo.</div>
+        <div class="col en" lang="en">Peoples, besides this, deceive themselves generally in judging things and the accidents of them, which afterwards are known particularly, they become aware of such deceit. After 1514, the princes of the city having been driven out of Florence, and there being no ordered government there, but rather a certain ambitious licence, and public things going from ill to worse, many popular <span class="supplied">[men]</span>, seeing the ruin of the city, and not understanding any other cause of it, accused for it the ambition of some powerful one nourishing the disorders, so as to be able to make a state to his purpose, and take liberty away from them: and such men as these stood about the loggias and the piazzas, speaking ill of many citizens, and threatening them that if ever they found themselves of the Signori, they would discover this deceit of theirs, and would chastise them. It occurred often that of like <span class="supplied">[men]</span> someone ascended to the supreme magistracy, and when he had climbed to that place, and saw things from nearer at hand, he knew the disorders, whence they arose, and the dangers that hung over, and the difficulty of remedying them. And having seen that the times and not the men caused the disorder, he became at once of another spirit, and of another make, because the knowledge of particular things took away from him that deceit which, in considering generally, he had presupposed. In such a way that those who had heard him speak earlier, when he was private, and had later seen him stay quiet in the supreme magistracy, believed that it arose, not from truer knowledge of things, but because he had been got round and corrupted by the great. And, this happening to many men, and many times, there arose among them a proverb, which said: these men have one spirit in the piazza, and another in the palace.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> A second kind of deceit: peoples judge things and their accidents generally, and become aware of the deceit when they know them particularly. Popular men, seeing the ruin of the city and understanding no other cause, blamed the ambition of some powerful man and threatened, if they ever became Signori, to discover and punish the citizens&#x27; deceit. Often, when one of them rose to the supreme magistracy and saw things from nearer, he knew the disorders, their sources, the dangers and the difficulty of the remedy; and seeing that the times and not the men caused the disorder, he became of another spirit, because the knowledge of particular things took away the deceit he had presupposed in considering generally. That change is Machiavelli&#x27;s own statement. What belongs to those who had heard him before is the cause they gave it, that he had been got round and corrupted by the great; the proverb of one spirit in the piazza and another in the palace arose among them. Their belief is itself a judgment of a particular man, and a false one, an editorial observation: the case supports the first claim, about things, not the conclusion about distributions.</p>
+<p><span class="lem">History.</span> The 1824 dates the case <i lang="it">Dopo il 1514</i>, the 1554 <i lang="it">MCCCCXCIIII</i>, 1494 (D364). Machiavelli names no one: his <i lang="it">Principi</i> driven from Florence are not identified in the text. A reference account (English Wikipedia, &quot;Piero di Lorenzo de&#x27; Medici&quot;, consulted 2026-10-22) gives 1494 for the Medici&#x27;s flight from Florence and 1512 for their return. The edition keeps its governing witness and records the disagreement.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini keeps the Florentine example and restates its point: the Florentines lacked in the piazzas the notice and the advices they later saw in the palace <a class="xref" href="#FG-CONS.1.47.01">Guicciardini .01</a>. Where Machiavelli has the knowledge of particular things, Guicciardini has the notice a magistracy holds; he too speaks of knowing the particulars.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.47.06">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.47.06">1.47.06</a></div>
+        <div class="col it" lang="it">Considerando dunque tutto quello che si è discorso, si vede come e&#x27; si può fare tosto aprire gli occhi a&#x27; Popoli, trovando modo, veggendo ch&#x27;un generale gli inganna, ch&#x27;egli abbiano a descendere a&#x27; particolari, come fece Pacuvio in Capova, ed il Senato in Roma. Credo ancora che si possa conchiudere, che mai un uomo prudente non debbe fuggire il giudizio Popolare nelle cose particolari, circa le distribuzioni de&#x27; gradi e delle dignità; perché solo in questo il Popolo non s&#x27;inganna, e se s&#x27;inganna qualche volta, fia sì raro, che s&#x27;inganneranno più volte i pochi uomini che avessero a fare simili distribuzioni. Né mi par superfluo mostrare nel seguente capitolo l&#x27;ordine che teneva il Senato per isgannare il Popolo nelle distribuzioni sue.</div>
+        <div class="col en" lang="en">Considering, then, all that has been discoursed, one sees that one can quickly make peoples open their eyes, by finding a way, seeing that a general <span class="supplied">[thing]</span> deceives them, that they have to descend to particulars, as Pacuvius did in Capua, and the senate in Rome. I believe also that one can conclude that a prudent man must never flee the popular judgment in particular things, concerning the distributions of degrees and of dignities; because only in this does the people not deceive itself, and if it deceives itself at some time, it will be so rare that the few men who were to make like distributions will deceive themselves more times. Nor does it seem to me superfluous to show in the following chapter the order which the senate held to undeceive the people in its distributions.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> Two conclusions. The first is a means: peoples&#x27; eyes can be opened quickly by finding a way to make them descend to particulars when a general thing deceives them, as Pacuvius did at Capua and the senate at Rome. The second is a belief that one can conclude: a prudent man must never flee popular judgment in particular things, concerning the distributions of degrees and dignities, because only in this the people is not deceived, and if it is at some time, it will be so rare that the few who were to make such distributions will be deceived more times. The conclusion is limited twice, to particular things and to distributions; the few are hypothetical (<i lang="it">avessero a fare</i>), and the comparison is a prediction (<i lang="it">s&#x27;inganneranno</i>). The chapter then promises the order the senate held to undeceive the people in its distributions, the one matter in which it has just been said not to be deceived; the tension is the editor&#x27;s observation, and the next chapter is not part of this pair.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini believes the people deceives itself less in distributions than in other things, because it judges a citizen by long universal opinion, and does not accept that in this it is not deceived, or is deceived at rarer times than the few; it governs itself by universal opinions, and as to ignorance it is much more dangerous than the judgment of few <a class="xref" href="#FG-CONS.1.47.02">Guicciardini .02</a>.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from the 1824 edition (<span class="sig">WIT-NM-DISC-1824-IA</span>), page-image-backed, which governs. Collated against the 1554 Giglio printing, Venice (<span class="sig">WIT-NM-DISC-1554-IA</span>), which is comparison evidence only.</p>
+<p>Paragraph divisions are editorial. The witness prints the chapter as one unbroken block.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem">Dopo il 1514 sendo stati i Principi della Città cacciati da Firenze</span> — 1824. The 1554 witness reads <i lang="it">Dopo il MCCCCXCIIII eſſendo ſtati i Prencipi della citta cacciati da Firenze</i>. Checked on the leaf (fol. 66v) and on the 1824 page (p. 162). The 1824 prints the date in figures, <i lang="it">1514</i>; the 1554 in numerals, <i lang="it">MCCCCXCIIII</i>, 1494. Read by pass A and by the pass-B crop reader without doubt. A date the page prints plainly construes, and D68 does not reach a date that may be wrong outside the page; kept as printed (D364), the 1554&#x27;s date given here and in a translator&#x27;s note.</p>
+<p><span class="lem">trovando modo, veggendo ch&#x27;un generale gli inganna</span> — 1824. The 1554 witness reads <i lang="it">trouando modo(ueggẽda che uno generale gli inganna )</i>. Checked on the leaf (fol. 67r). A difference at o/a under D203(b), read by pass A and the crop reader without doubt. The 1554 <i lang="it">ueggẽda</i> is not a form of the verb; the 1824 kept (D365).</p>
+<p><span class="lem">ma piuttosto una certa licenza ambiziosa ... per poter fare uno Stato a suo proposito, e torre loro la libertà ... costoro hanno un animo in piazza, e uno altro in palazzo</span> — 1824. The 1554 witness reads <i lang="it">ma piu toſto una licenza ambitioſa ... per poter fare un ſtato a ſuo propoſito,et torre la liberta ... Coſtoro hanno uno animo in piazZa , et uno in palazzo</i>. Checked on the leaves (fol. 66v-67r). The 1554 has no <i lang="it">certa</i>, no <i lang="it">loro</i> after <i lang="it">torre</i>, and no <i lang="it">altro</i> in the proverb. Each 1824 word read by pass A and the crop reader without doubt. Same sense.</p>
+<p><span class="lem"><i lang="it">alios secundum deposita certamina in incorrupto judicio esse.</i> Ed esaminando</span> — 1824. The 1554 witness reads <i lang="it">alios ſecundum depoſita certamina incorrupto iudicio eſſe.Cioe l&#x27;auenimẽto de i quali comitij(cioe cõſigli) dimoſtrò, gli animi eſſere diuerſi,quando ſi contende della libertà et de gli honori;da quello,ch&#x27;è quãdo dipoſte le conteſe il giudicio reſta ſincero.Et eſſaminando</i>. Checked on the leaf (fol. 65v). The 1554 has no <i lang="it">in</i> before <i lang="la">incorrupto</i>, and, as in I.40, follows Livy&#x27;s Latin with an Italian rendering introduced by <i lang="it">Cioè</i>; it does so again after <i lang="it">fuit?</i> (.02, fol. 66r: <i lang="it">cioè Questa modestia,honestà &amp; grandezza di animo,che allhora era in tutto il popolo, doue si trouerà hora in un solo?</i>). The 1824 prints neither rendering. The 1824 <i lang="it">in</i> read by both readers (the sample page).</p>
+<p><span class="lem">nelle particolari non tanto. Pareva generalmente alla Plebe di meritare il Consolato</span> — 1824. The 1554 witness reads <i lang="it">ne particolari non tanto . Pareua generalmente alla plebe Romana,di meritare il Conſolato</i>. Checked on the leaf (fol. 65v). The 1554 <i lang="it">ne particolari</i> takes <i lang="it">particolari</i> as a masculine noun, the 1824 <i lang="it">nelle particolari</i> as the feminine plural answering <i lang="it">nelle cose generali</i>; the 1554 adds <i lang="it">Romana</i>. Read by both 1824 readers (the sample page). Same sense.</p>
+<p><span class="lem">In corroborazione di questo ... da poi che Annibale ebbe rotto i Romani a Canne</span> — 1824. The 1554 witness reads <i lang="it">In cõfermatione di queſto ... dapoi che Annibale hebbe rotti i Romani a Canne</i>. Checked on the leaf (fol. 66r). <i lang="it">confermatione</i> for <i lang="it">corroborazione</i>, and the participle agreed with its object. Read by both 1824 readers (the sample page). Same sense.</p>
+<p><span class="lem">la parte sua. Nacque di questo un caso notabile ... furono dal Popolo romano creati tutti Nobili</span> — 1824. The 1554 witness reads <i lang="it">la parte ſua nacquene di queſto un caſo notabile ... furono dal popolo Romano creati tutti i nobili</i>. Checked on the leaf (fol. 65v). The 1554 <i lang="it">nacquene</i> adds the clitic and <i lang="it">tutti i nobili</i> the article. Read by pass A and the crop reader without doubt. Same sense.</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem"><i lang="it">Essendosi il Popolo romano, come di sopra si dice, recato a noja il nome Consolare</i>.</span> &quot;The Roman people having, as is said above, come to loathe the consular name&quot;: <i lang="it">recarsi a noia</i>, to take a thing in dislike. <i lang="it">nome</i>, name: the people&#x27;s quarrel is with the name, as at I.39, where the same humour rose against <i lang="it">il nome de&#x27; Consoli</i>. The period&#x27;s main verbs belong to the nobility (<i lang="it">prese</i>, <i lang="it">fu contenta</i>); the people&#x27;s motive is a participle.</p>
+<p><span class="lem"><i lang="it">per non deonestare l&#x27;autorità Consolare né con l&#x27;una né con l&#x27;altra cosa</i>.</span> &quot;So as not to debase the consular authority with either the one thing or the other&quot;: <i lang="it">deonestare</i>, to strip of honour, here &quot;debase&quot;, kept apart from <i lang="it">disonorare</i>, dishonour (D313); the 1554 reads <i lang="it">dishonestare</i> (form). The two things are the two demands just named, plebeian consuls and a limited authority.</p>
+<p><span class="lem"><i lang="it">Fu contenta a questo la Plebe, parendogli spegnere il Consolato, ed avere in questo sommo grado la parte sua</i>.</span> &quot;Content with this was the plebs, it seeming to it that it extinguished the consulate, and had in this supreme degree its part&quot;: the fronted predicate answers <i lang="it">fu contenta</i> of the nobility in the period before, so the order is kept (D263, a contrast). <i lang="it">sommo grado</i>, supreme degree (D190); <i lang="it">parte</i>, part, the plebs&#x27; share.</p>
+<p><span class="lem"><i lang="it">che venendosi alla creazione di questi Tribuni, e potendosi creare tutti Plebei, furono dal Popolo romano creati tutti Nobili</i>.</span> &quot;That, it coming to the creation of these tribunes, and it being possible to create them all plebeians, there were created by the Roman people all nobles&quot;: the delayed <i lang="it">tutti Nobili</i> is the case, and the English holds it last (D18). The 1554 reads <i lang="it">tutti i nobili</i> and, before, <i lang="it">nacquene di questo</i> (NM-DISC-I47-D007).</p>
+<p><span class="lem"><i lang="la">Quorum comitiorum eventus docuit, alios animos in contentione libertatis et honoris; alios secundum deposita certamina in incorrupto judicio esse.</i>.</span> Left in Latin, as printed: &quot;The outcome of which elections showed that spirits are one thing in the contest for liberty and honour, another, once the contests are laid down, in uncorrupted judgment.&quot; Livy 4.6, which the Latin Library text (thelatinlibrary.com/livy/liv.4.shtml, consulted 2026-10-22) gives as <i lang="la">Eventus eorum comitiorum docuit alios animos in contentione libertatis dignitatisque, alios secundum deposita certamina incorrupto iudicio esse</i>: Machiavelli&#x27;s <i lang="la">honoris</i> for that text&#x27;s <i lang="la">dignitatis</i>, and the 1824&#x27;s <i lang="it">in</i> before <i lang="la">incorrupto</i>, which the 1554 does not print either (NM-DISC-I47-D004). The 1554 follows the Latin with an Italian rendering introduced by <i lang="it">Cioè</i>; the 1824 does not.</p>
+<p><span class="lem"><i lang="it">credo proceda che gli uomini nelle cose generali s&#x27;ingannano assai, nelle particolari non tanto</i>.</span> &quot;I believe it proceeds [from this], that men in general things deceive themselves much, in particular ones not so much&quot;: <i lang="it">credo</i>, I believe, Machiavelli&#x27;s own; <i lang="it">procedere</i>, proceed (glossary), twice; <i lang="it">assai</i> after a verb, &quot;much&quot; (D348). The rubric&#x27;s absolute (<i lang="it">non s&#x27;ingannano</i>) is here a comparison (<i lang="it">non tanto</i>), and the close returns to the absolute within a limit (.06). The 1554 reads <i lang="it">ne particolari</i> (NM-DISC-I47-D005).</p>
+<p><span class="lem"><i lang="it">Pareva generalmente alla Plebe di meritare il Consolato</i>.</span> &quot;It seemed generally to the plebs that it merited the consulate&quot;: <i lang="it">generalmente</i>, generally, the plebs judging in general, against <i lang="it">particolarmente</i> two periods on and <i lang="it">considerare generalmente</i> (.05); <i lang="it">tutta insieme</i>, all together, is the plebs as a whole. <i lang="it">meritare</i>, merit, four times in the paragraph with <i lang="it">meritamente</i>. The 1554 adds <i lang="it">Romana</i> after <i lang="it">Plebe</i> (NM-DISC-I47-D005).</p>
+<p><span class="lem"><i lang="it">per portare più pericolo nelle guerre, per esser quella che con le braccia sue manteneva Roma libera</i>.</span> &quot;Through bearing more danger in the wars, through being that which with its arms maintained Rome free&quot;: <i lang="it">portare</i> of danger, bear, as twice at Capua (.03); <i lang="it">braccia</i>, the limbs, not weapons (<i lang="it">armi</i>); English &quot;arms&quot; carries both, a collapse recorded in the glossary (D374).</p>
+<p><span class="lem"><i lang="it">volse ottenere questa autorità in ogni modo</i>.</span> &quot;It wished to obtain this authority by every way&quot;: <i lang="it">volse</i>, the old perfect of <i lang="it">volere</i>, wish (D117); <i lang="it">in ogni modo</i>, by whatever way, at any cost; <i lang="it">modo</i>, way (glossary).</p>
+<p><span class="lem"><i lang="it">Ma come la ebbe a fare giudizio degli uomini suoi particolarmente, conobbe la debolezza di quelli</i>.</span> &quot;But when it was to make judgment of its men particularly, it knew the weakness of them&quot;: <i lang="it">avere a</i>, destinative, &quot;was to&quot; (D261); <i lang="it">giudizio</i>, judgment, with <i lang="it">giudicare</i>, judge (D374); <i lang="it">conoscere</i>, know, the chapter&#x27;s verb of knowing by acquaintance, with its noun <i lang="it">cognizione</i>, knowledge (.05), kept apart from <i lang="it">intendere</i>, understand (.05) (D374); <i lang="it">particolarmente</i>, particularly, the adverb of the rubric&#x27;s <i lang="it">particolari</i>. Temporal <i lang="it">come</i> is &quot;when&quot; throughout the unit; <i lang="it">come prima</i> (.04) is &quot;as soon as&quot;.</p>
+<p><span class="lem"><i lang="it">Della qual deliberazione maravigliandosi meritamente Tito Livio</i>.</span> &quot;At which deliberation Livy, deservedly marvelling&quot;: <i lang="it">Tito Livio</i>, Livy (names.md); <i lang="it">meritamente</i>, deservedly, in the root of the plebs&#x27; <i lang="it">meritare</i>, which English cannot hold in one word.</p>
+<p><span class="lem"><i lang="la">Hanc modestiam, aequitatemque et altitudinem animi ubi nunc in uno inveneris, quae tunc populi universi fuit?</i>.</span> Left in Latin, as printed: &quot;This modesty and fairness and loftiness of spirit, which was then the whole people&#x27;s, where would you now find in one man?&quot; Livy 4.6, where the same Latin Library text reads <i lang="la">quae tum</i>; the sentence is Livy&#x27;s comment on the same elections. The 1554 again adds an Italian rendering (<i lang="it">cioè Questa modestia ...</i>), which the 1824 does not print.</p>
+<p><span class="lem"><i lang="it">In corroborazione di questo se ne può addurre un altro notabile esempio, seguito in Capova da poi che Annibale ebbe rotto i Romani a Canne</i>.</span> &quot;In corroboration of this there can be adduced another notable example, which followed at Capua after Hannibal had routed the Romans at Cannae&quot;: <i lang="it">corroborazione</i>, corroboration (D170); <i lang="it">rompere</i> of an army, rout, so that <i lang="it">rotta</i>, rout, keeps the root in the next clause; <i lang="it">seguire</i>, follow, as <i lang="it">ne seguì</i> (.04). The 1554 reads <i lang="it">confermatione</i> and <i lang="it">rotti</i> (NM-DISC-I47-D006). The story is Livy&#x27;s, 23.2-3; the Latin Library text (thelatinlibrary.com/livy/liv.23.shtml, consulted 2026-10-22) has the senate shut in the curia.</p>
+<p><span class="lem"><i lang="it">Capova stava ancora per tumultuare</i>.</span> &quot;Capua too was about to break into tumult&quot;: <i lang="it">stare per</i>, be about to, as <i lang="it">essere per</i> (D45); <i lang="it">ancora</i>, too (or &quot;still&quot;); <i lang="it">tumultuare</i> in the root of <i lang="it">tumulto</i>, tumult (glossary), twice. <i lang="it">sollevata</i>, &quot;stirred up&quot;, of Italy in revolt.</p>
+<p><span class="lem"><i lang="it">Pacuvio Calano</i>.</span> Pacuvius Calanus, Machiavelli&#x27;s form; the Latin Library text of Livy 23.2 names him Pacuvius Calavius (names.md).</p>
+<p><span class="lem"><i lang="it">disegnò con suo grado riconciliare la Plebe con la Nobiltà</i>.</span> &quot;He designed, of his own will, to reconcile the plebs with the nobility&quot;: <i lang="it">con suo grado</i> read as the idiom of <i lang="it">di suo grado</i>, <i lang="it">a suo grado</i>, of his own will or pleasure; the other reading, by the standing of his office, just named, is possible, and English cannot hold both (D372). <i lang="it">disegnare</i>, design (glossary).</p>
+<p><span class="lem"><i lang="it">farebbe in modo che si unirebbono insieme; ma li voleva serrare dentro al palazzo, e, col fare potestà al Popolo di potergli gastigare, salvarli</i>.</span> &quot;He would act in such a way that they would unite together; but he wished to shut them inside the palace, and, by making it in the people&#x27;s power to be able to chastise them, to save them&quot;: <i lang="it">potestà</i>, power (D78); <i lang="it">gastigare</i>, chastise; <i lang="it">salvare</i>, save.</p>
+<p><span class="lem"><i lang="it">chiamò il Popolo a concione</i>, <i lang="it">si racchetò tutta la concione</i>.</span> &quot;He called the people to assembly&quot;, &quot;the whole assembly grew quiet&quot;: <i lang="it">concione</i>, the people gathered to be addressed, and, at its second appearance, the gathering itself, which &quot;harangue&quot;, the glossary&#x27;s word for the speeches (NM I.4, I.5; FG I.2, I.28), cannot be. &quot;Assembly&quot; is a sense split, decided by sense at each occurrence (D371); so that the two gatherings do not seem to share a word, <i lang="it">ragunare il Senato</i> is &quot;had the senate gathered&quot; (.03).</p>
+<p><span class="lem"><i lang="it">e disse come egli era venuto il tempo di poter domare la superbia della Nobiltà, e vendicarsi delle ingiurie ricevute da quella, avendoli rinchiusi tutti sotto la sua custodia</i>.</span> &quot;And said that the time had come to be able to tame the pride of the nobility, and to avenge itself of the injuries received from it, having shut them all in under his custody&quot;: <i lang="it">come</i> after a verb of saying, &quot;that&quot; (D334); <i lang="it">egli</i> is the pleonastic subject; <i lang="it">superbia</i>, pride (D358); <i lang="it">ingiuria</i>, injury. The subject of <i lang="it">vendicarsi</i> is the people he addresses. <i lang="it">sua</i> may be Pacuvius&#x27;, the subject of <i lang="it">avendoli</i>, or the people&#x27;s, given power over the senators in .03; &quot;his&quot; is a choice.</p>
+<p><span class="lem"><i lang="it">era necessario, volendo ammazzare i Senatori vecchi, crearne de&#x27; nuovi</i>.</span> &quot;It was necessary, wishing to kill the old senators, to create new ones&quot;: <i lang="it">è necessario</i>, it is necessary (glossary), not <i lang="it">bisogna</i>; <i lang="it">ammazzare</i>, kill (D262); the English leaves the gerund as unattached as the Italian.</p>
+<p><span class="lem"><i lang="it">E per tanto aveva messo tutti gli nomi degli Senatori in una borsa</i>.</span> &quot;And on that account he had put all the names of the senators in a purse&quot;: <i lang="it">per tanto</i>, on that account (D98); <i lang="it">borsa</i>, purse, the bag from which names are drawn by lot.</p>
+<p><span class="lem"><i lang="it">ed egli farebbe i tratti di mano in mano morire, come prima loro avessero trovato il successore</i>.</span> &quot;And he would have those drawn die one after another, as soon as they had found the successor&quot;: <i lang="it">di mano in mano</i>, one after another, twice in the paragraph (D374); <i lang="it">come prima</i>, as soon as.</p>
+<p><span class="lem"><i lang="it">fu al nome di quello levato un rumor grandissimo</i>.</span> &quot;At the name of him there was raised a very great uproar&quot;: <i lang="it">rumore</i>, uproar, public tumult (D155), where D362&#x27;s &quot;rumour&quot; is talk with a stated content; <i lang="it">levare</i> of a cry or uproar, raise, the root sense, where D131&#x27;s &quot;remove&quot; is <i lang="it">levare</i> with a thing taken away (D371); it pairs with <i lang="it">levarsi</i>, rise (D348).</p>
+<p><span class="lem"><i lang="it">e chiedendo Pacuvio, che facessero lo scambio</i>.</span> &quot;And Pacuvius asking that they make the replacement&quot;: <i lang="it">scambio</i>, replacement, and <i lang="it">gli scambj</i> below (glossary, I.39).</p>
+<p><span class="lem"><i lang="it">tutti quelli che furono nominati li giudicavano indegni del grado Senatorio</i>.</span> &quot;All those who were named they judged unworthy of the senatorial degree&quot;: a fronted object resumed by <i lang="it">li</i>, kept, since the period lands on <i lang="it">indegni del grado Senatorio</i>; <i lang="it">indegno</i>, unworthy (D374), Guicciardini&#x27;s word for the people&#x27;s exclusion (Guicciardini .01); <i lang="it">grado</i>, degree.</p>
+<p><span class="lem"><i lang="it">poiché voi giudicate ... io penso che sia bene che voi vi riconciliate insieme</i>.</span> &quot;Since you judge ... I think that it is well that you be reconciled together&quot;: Pacuvius&#x27; words are given without quotation marks, as the witness prints them, after <i lang="it">disse:</i>.</p>
+<p><span class="lem"><i lang="it">perché questa paura in la quale i Senatori sono stati, gli arà fatti in modo riumiliare, che quella umanità che voi cercavate altrove, troverete in loro</i>.</span> &quot;Because this fear in which the senators have been will have made them humble themselves again in such a way that that humanity which you were seeking elsewhere you will find in them&quot;: <i lang="it">paura</i>, fear (D313); <i lang="it">riumiliare</i>, humble again; <i lang="it">umanità</i>, humanity, as at I.40. The fronted object lands the period on <i lang="it">in loro</i> (D263, a landing).</p>
+<p><span class="lem"><i lang="it">ne seguì l&#x27;unione di questo ordine, e quello inganno in che egli erano, si scoperse, come e&#x27; furono costretti venire a&#x27; particolari</i>.</span> &quot;There followed from it the union of this order, and that deceit in which they were was discovered, when they were constrained to come to particulars&quot;: <i lang="it">ordine</i>, order (glossary), which order is not said; <i lang="it">egli</i>, they, the old plural; <i lang="it">scoprire</i>, discover, as in .05; <i lang="it">costringere</i>, constrain; <i lang="it">venire a&#x27; particolari</i> answers the rubric. The 1554 reads <i lang="it">eßi</i> for <i lang="it">egli</i> (form).</p>
+<p><span class="lem"><i lang="it">Ingannansi oltra di questo i Popoli generalmente nel giudicare le cose e gli accidenti di esse, le quali dipoi si conoscono particolarmente, si avveggono di tale inganno</i>.</span> &quot;Peoples, besides this, deceive themselves generally in judging things and the accidents of them, which afterwards are known particularly, they become aware of such deceit&quot;: the period does not close its construction: <i lang="it">le quali</i> opens a relative that <i lang="it">si avveggono</i>, with the peoples as subject, does not complete. The English keeps the break and supplies nothing. <i lang="it">accidente</i>, accident (glossary); <i lang="it">avvedersi</i>, become aware.</p>
+<p><span class="lem"><i lang="it">Dopo il 1514</i>.</span> The 1824 prints <i lang="it">1514</i>; the 1554 prints <i lang="it">MCCCCXCIIII</i>, 1494 (NM-DISC-I47-D001). The edition keeps its governing witness (D364).</p>
+<p><span class="lem"><i lang="it">sendo stati i Principi della Città cacciati da Firenze</i>.</span> &quot;The princes of the city having been driven out of Florence&quot;: <i lang="it">Principi</i>, princes (D05), lower case in the English as at I.30; <i lang="it">cacciare</i>, drive out (D10).</p>
+<p><span class="lem"><i lang="it">andando le cose pubbliche di male in peggio</i>.</span> &quot;Public things going from ill to worse&quot;: <i lang="it">male</i> as a noun is &quot;ill&quot; (glossary), so that &quot;bad&quot; stays <i lang="it">cattivo</i>&#x27;s (D03). The 1554 has no <i lang="it">certa</i> before <i lang="it">licenza</i> (NM-DISC-I47-D003).</p>
+<p><span class="lem"><i lang="it">molti Popolari veggendo la rovina della Città, e non ne intendendo altra cagione, ne accusavano l&#x27;ambizione di qualche potente che nutrisse i disordini</i>.</span> &quot;Many popular [men], seeing the ruin of the city, and not understanding any other cause of it, accused for it the ambition of some powerful one nourishing the disorders&quot;: <i lang="it">Popolari</i>, the popular [men] (glossary); <i lang="it">intendere</i>, understand; <i lang="it">un potente</i>, a powerful one (D06). <i lang="it">nutrisse</i> is the popular men&#x27;s supposition; the English gives it no &quot;should&quot;, which D348 keeps for <i lang="it">dovere</i>.</p>
+<p><span class="lem"><i lang="it">e torre loro la libertà</i>.</span> &quot;And take liberty away from them&quot;: <i lang="it">torre</i>, take away (D131). The 1554 has no <i lang="it">loro</i> (NM-DISC-I47-D003).</p>
+<p><span class="lem"><i lang="it">e stavano questi tali per le logge e per le piazze</i>.</span> &quot;And such men as these stood about the loggias and the piazzas&quot;: the open places of Florence, where the proverb at the end of the paragraph puts one spirit; <i lang="it">palazzo</i>, the palace, the seat of the magistracy, where it puts the other.</p>
+<p><span class="lem"><i lang="it">se mai si trovassero dei Signori, scoprirebbono questo loro inganno</i>.</span> &quot;If ever they found themselves of the Signori, they would discover this deceit of theirs&quot;: <i lang="it">Signori</i>, the members of the Signoria, Florence&#x27;s chief magistracy (names.md), the <i lang="it">supremo Magistrato</i> of the next period. <i lang="it">loro</i> is the citizens&#x27;: the deceit they charge is the citizens&#x27;.</p>
+<p><span class="lem"><i lang="it">Occorreva spesso che di simili ne ascendeva alcuno al supremo Magistrato</i>.</span> &quot;It occurred often that of like [men] someone ascended to the supreme magistracy&quot;: <i lang="it">occorrere</i>, occur (D01), the <i lang="la">currere</i> family; <i lang="it">simile</i>, like (glossary); <i lang="it">ascendere</i>, ascend (D374), against <i lang="it">descendere</i>, descend, in .06; <i lang="it">salire</i>, climb, in the next clause.</p>
+<p><span class="lem"><i lang="it">conosceva i disordini donde nascevano, ed i pericoli che soprastavano, e la difficultà del rimediarvi</i>.</span> &quot;He knew the disorders, whence they arose, and the dangers that hung over, and the difficulty of remedying them&quot;: <i lang="it">nascere</i>, arise (D04); <i lang="it">rimedio</i>, remedy (glossary), in its verb. The 1554 reads <i lang="it">onde naſceuono</i> (form).</p>
+<p><span class="lem"><i lang="it">E veduto come i tempi e non gli uomini causavano il disordine, diventava subito d&#x27;un altro animo, e d&#x27;un&#x27;altra fatta</i>.</span> &quot;And having seen that the times and not the men caused the disorder, he became at once of another spirit, and of another make&quot;: <i lang="it">come</i> after a verb of seeing, &quot;that&quot; (D334); <i lang="it">subito</i>, at once (D177); <i lang="it">animo</i>, spirit (glossary), as in the proverb that closes the paragraph.</p>
+<p><span class="lem"><i lang="it">perché la cognizione delle cose particolari gli toglieva via quello inganno, che nel considerare generalmente si aveva presupposto</i>.</span> &quot;Because the knowledge of particular things took away from him that deceit which, in considering generally, he had presupposed&quot;: <i lang="it">cognizione</i>, knowledge, the noun of <i lang="it">conoscere</i>, know, kept apart from Guicciardini&#x27;s <i lang="it">notizia</i>, notice (Guicciardini .01, .02) (D373, D374); <i lang="it">togliere via</i>, take away (D131); <i lang="it">presupporre</i>, presuppose (glossary), as Appius&#x27; presupposed tyranny at I.40.</p>
+<p><span class="lem"><i lang="it">Dimodoché quelli che lo avevano prima, quando era privato, sentito parlare</i>.</span> &quot;In such a way that those who had heard him speak earlier, when he was private&quot;: <i lang="it">di modo che</i>, <i lang="it">in modo che</i>, in such a way that (glossary, D374), as <i lang="it">in modoché</i> (.04); <i lang="it">prima</i>, earlier (D334).</p>
+<p><span class="lem"><i lang="it">ma perché fusse stato aggirato e corrotto dai Grandi</i>.</span> &quot;But because he had been got round and corrupted by the great&quot;: <i lang="it">aggirare</i>, get round, in the root of <i lang="it">girare</i>, go round (D358); <i lang="it">corrompere</i>, corrupt (glossary); <i lang="it">Grandi</i>, the great (D118).</p>
+<p><span class="lem"><i lang="it">costoro hanno un animo in piazza, e uno altro in palazzo</i>.</span> The 1554 has no <i lang="it">altro</i> (NM-DISC-I47-D003).</p>
+<p><span class="lem"><i lang="it">si vede come e&#x27; si può fare tosto aprire gli occhi a&#x27; Popoli, trovando modo, veggendo ch&#x27;un generale gli inganna, ch&#x27;egli abbiano a descendere a&#x27; particolari</i>.</span> &quot;One sees that one can quickly make peoples open their eyes, by finding a way, seeing that a general [thing] deceives them, that they have to descend to particulars&quot;: <i lang="it">discorrere</i>, discourse (D01), in <i lang="it">si è discorso</i> just before; <i lang="it">un generale</i>, a general [thing], the rubric&#x27;s <i lang="it">generali</i> in the singular, where English &quot;a general&quot; would be a commander; <i lang="it">avere a</i>, &quot;have to&quot; (D261), with <i lang="it">trovando modo</i> as the means. The 1554 reads <i lang="it">ueggẽda</i>, which is not a form of the verb; the 1824&#x27;s <i lang="it">veggendo</i> is kept (NM-DISC-I47-D002, D365).</p>
+<p><span class="lem"><i lang="it">che mai un uomo prudente non debbe fuggire il giudizio Popolare nelle cose particolari, circa le distribuzioni de&#x27; gradi e delle dignità</i>.</span> &quot;That a prudent man must never flee the popular judgment in particular things, concerning the distributions of degrees and of dignities&quot;: <i lang="it">credo</i>, I believe, again, with <i lang="it">si possa conchiudere</i>, one can conclude; <i lang="it">dovere</i>, must (D274); <i lang="it">fuggire</i>, flee (D325); <i lang="it">grado</i>, degree, the fourth time in the chapter; <i lang="it">distribuzione</i>, distribution, <i lang="it">dignità</i>, dignity (D374). The conclusion is limited twice, to particular things and to distributions.</p>
+<p><span class="lem"><i lang="it">perché solo in questo il Popolo non s&#x27;inganna, e se s&#x27;inganna qualche volta, fia sì raro, che s&#x27;inganneranno più volte i pochi uomini che avessero a fare simili distribuzioni</i>.</span> &quot;Because only in this does the people not deceive itself, and if it deceives itself at some time, it will be so rare that the few men who were to make like distributions will deceive themselves more times&quot;: <i lang="it">solo</i>, only (D298), the rubric&#x27;s absolute restored within the limit of <i lang="it">in questo</i>; <i lang="it">fia</i>, it will be; <i lang="it">avere a</i>, destinative, &quot;were to&quot; (D261). The comparison with the few is what Guicciardini refuses (Guicciardini .02).</p>
+<p><span class="lem"><i lang="it">l&#x27;ordine che teneva il Senato per isgannare il Popolo nelle distribuzioni sue</i>.</span> &quot;The order which the senate held to undeceive the people in its distributions&quot;: <i lang="it">tenere</i>, hold (D242); <i lang="it">isgannare</i>, undeceive, the last word of the family. <i lang="it">sue</i> may be the people&#x27;s distributions or the senate&#x27;s; &quot;its&quot; keeps both.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work fg">
+    <div class="work-head">
+      <span class="tag">FG-CONS.1.47</span>
+      <h2>Considerazione sul capitolo XLVII</h2>
+    </div>
+    <p class="rubric">Gli uomini, ancora che si ingannino ne&#x27; generali, nei particolari non si ingannano.</p>
+    <p class="rubric">Men, even though they deceive themselves in generals, in particulars do not deceive themselves.
+      <span class="rubric-note">Canestrini&#x27;s setting of the chapter title: Machiavelli&#x27;s rubric with <i lang="it">si ingannino</i> and <i lang="it">si ingannano</i> for <i lang="it">s&#x27;ingannino</i>, <i lang="it">s&#x27;ingannano</i>, and <i lang="it">nei</i> for <i lang="it">ne&#x27;</i>. It is heading apparatus, not Guicciardini&#x27;s (D32). The two readers split at <i lang="it">ne&#x27;</i>/<i lang="it">nei</i>, read with the 1933 edition (FG-CONS-I47-D001, D366); both spellings are the same word.</span></p>
+
+    <div class="colheads"><div></div><div>Italian · 1857</div><div>English</div></div>
+      <div class="pair" id="FG-CONS.1.47.01">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.47.01">1.47.01</a></div>
+        <div class="col it" lang="it">Quello che dice il Discorso, che più facilmente gli uomini si ingannano ne&#x27; generali che ne&#x27; particulari, si può dire in uno altro modo, che la esperienza sganna molte volte gli uomini di quello che s&#x27;hanno immaginato innanzi mettino mano nella piaga; perché non è maraviglia che chi non sapeva e&#x27; particulari delle cose, muti sentenza quando poi gli ha saputi e veduti in viso; e a questo tende lo esemplo de&#x27; Fiorentini, e&#x27; quali non avendo nelle piazze quella notizia, né vedendo quegli avvisi che poi vedevano in palazzo, erano facilmente di opinione diversa dalla verità. Si può anche nello esemplo de&#x27; Romani considerare, che al populo pareva cosa indegna e vituperosa che generalmente tutti fussino incapaci degli onori, e che parendogli avere acquistato assai a conseguire di potere essere abili al magistrato di potestà consulare, restassino in parte sfogati, e si astenessino da eleggere e&#x27; non idonei, come quelli che non avessino combattuto per la ambizione particulare di ascendere a quello grado, ma solo per levarsi quella infamia che la plebe tutta fussi proibita dalle leggi di participare degli onori; e però bene dice Livio: « <i lang="la">contenta eo quod sui ratio habita esset.</i> »</div>
+        <div class="col en" lang="en">What the Discourse says, that men more readily deceive themselves in generals than in particulars, can be said in another way, that experience many times undeceives men of what they have imagined before they put a hand into the wound; because it is no marvel that whoever did not know the particulars of things should change sentence when later he has known them and seen them in the face; and the example of the Florentines tends to this, who, not having in the piazzas that notice, nor seeing those advices which later they saw in the palace, were readily of an opinion different from the truth. One can also consider in the example of the Romans that it seemed to the people a thing unworthy and disgraceful that generally all should be incapable of the honours, and that, it seeming to them that they had acquired much in attaining to be able to be eligible for the magistracy of consular power, they remained in part vented, and abstained from choosing those not fit, as those who had not fought for the particular ambition of ascending to that degree, but only to remove from themselves that infamy, that the whole plebs should be prohibited by the laws from partaking of the honours; and therefore Livy says well: “<i lang="la">contenta eo quod sui ratio habita esset.</i>”</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> He takes Machiavelli&#x27;s first claim as a comparison, that men deceive themselves more readily in generals than in particulars, and says it can be put another way: experience many times undeceives men of what they imagined before they put a hand into the wound, and it is no marvel that one who did not know the particulars of things changes his sentence when later he has known them and seen them in the face. His <i lang="it">sganna</i> takes up the family of Machiavelli&#x27;s last line, <i lang="it">isgannare</i>. The Florentine example tends to this: in the piazzas they did not have the notice nor see the advices they later saw in the palace, and were readily of an opinion different from the truth. Then, as something one can also consider, a further reading of the Roman case: it seemed to the people unworthy and disgraceful that all were generally incapable of the honours; and, it seeming to them that they had acquired much in becoming eligible for the magistracy of consular power, they remained in part vented and abstained from choosing those not fit, as men who had fought not for particular ambition but only to remove the infamy of the plebs&#x27; exclusion by law. Therefore Livy&#x27;s word: content that account had been taken of it.</p>
+<p><span class="lem">Cross-reference.</span> Machiavelli has three cases: the plebs judging its own men <a class="xref" href="#NM-DISC.1.47.02">Machiavelli .02</a>, Capua <a class="xref" href="#NM-DISC.1.47.03">Machiavelli .03</a> <a class="xref" href="#NM-DISC.1.47.04">Machiavelli .04</a>, and the Florentine magistrate who comes to know the causes <a class="xref" href="#NM-DISC.1.47.05">Machiavelli .05</a>. Guicciardini restates the Florentine one in terms of the notice a magistracy has, and sets beside Machiavelli&#x27;s account of the Roman plebs a reason from honour; he does not call Machiavelli&#x27;s account false, and he says nothing of Capua.</p>
+<p><span class="lem">History.</span> The Latin Library text of Livy 4.6 (consulted 2026-10-22) reads <i lang="la">contentus eo quod ratio habita plebeiorum esset</i>, of the people that created the tribunes all patricians; Guicciardini&#x27;s <i lang="it">contenta ... sui</i> makes the plebs the subject.</p>
+        </details>
+      </div>
+      <div class="pair" id="FG-CONS.1.47.02">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.47.02">1.47.02</a></div>
+        <div class="col it" lang="it">L&#x27;altra conclusione del Discorso, che manco si inganni il populo nella distribuzione degli onori e de&#x27; magistrati che nell&#x27;altre cose, credo sia vero, e la ragione è in pronto, perché è materia che più facilmente si cognosce; e in questo caso il giudicio del populo è fondato non in sulla notizia che abbia per sé stesso del valore di uno cittadino, ma in su quella opinione universale che nasce dalla lunghezza del tempo e dalla esperienza che ne hanno avuto questo e quello particulare. Non accetto già che in questo il populo non si inganni, o almanco più rare volte che non fanno e&#x27; pochi, perché il populo si governa in questo giudicio non con la notizia particulare, ma con le opinioni universali, né esamina o distingue sottilmente, in modo che si inganna spesso, massime in quelle elezioni delle quali pochi sono capaci; crede a&#x27; romori falsi, muovesi per fondamenti leggieri, e in effetto quanto alla ignoranza è molto più pericoloso che il giudicio di pochi.</div>
+        <div class="col en" lang="en">The other conclusion of the Discourse, that the people deceives itself less in the distribution of honours and of magistracies than in other things, I believe it is true, and the reason is at hand, because it is a matter that is more readily known; and in this case the judgment of the people is founded not upon the notice it may have of itself of the worth of a citizen, but upon that universal opinion which arises from the length of time and from the experience which this and that particular <span class="supplied">[man]</span> have had of him. I do not accept that in this the people does not deceive itself, or at least <span class="supplied">[deceives itself]</span> at rarer times than the few do, because the people governs itself in this judgment not with particular notice, but with universal opinions, nor does it examine or distinguish subtly, in such a way that it deceives itself often, above all in those choices of which few are capable; it believes false rumours, it is moved by light foundations, and in effect, as to ignorance, it is much more dangerous than the judgment of few.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The second conclusion he states as a comparison, that the people deceives itself less in the distribution of honours and magistracies than in other things, and believes it true, for a reason of his own: the matter is more readily known, and the people&#x27;s judgment rests not on its own notice of a citizen&#x27;s worth but on a universal opinion grown from length of time and from the experience that this man and that have had of him. Then a refusal, limited to this matter: he does not accept that the people is not deceived in it, or that it is deceived at rarer times than the few. The ground he granted turns: the people governs itself here by universal opinions, not particular notice, does not examine or distinguish subtly, and so is often deceived, above all in choices of which few are capable; it believes false rumours and is moved by light foundations, and as to ignorance it is much more dangerous than the judgment of few. The comparison is limited to ignorance, <i lang="it">quanto alla ignoranza</i>, and he does not say the few judge well. His assent and his refusal are to different propositions: the comparative he believes, the people against itself in other things; the claim he refuses is Machiavelli&#x27;s <i lang="it">solo in questo</i> with its comparison with the few. &quot;Often&quot; and &quot;less than in other things&quot; do not contradict each other.</p>
+<p><span class="lem">Cross-reference.</span> Machiavelli&#x27;s close is limited to this matter and concedes an occasional error: only in this is the people not deceived, and if it is at some time, it will be so rare that the few will be deceived more times <a class="xref" href="#NM-DISC.1.47.06">Machiavelli .06</a>. Guicciardini restates Machiavelli&#x27;s <i lang="it">più volte</i> as <i lang="it">più rare volte</i>, the people deceived more rarely than the few, in order to refuse it; he answers <i lang="it">fia sì raro</i> with <i lang="it">spesso</i>, and the comparison with the few with <i lang="it">quanto alla ignoranza ... molto più pericoloso</i>. The reply sets <i lang="it">notizia particulare</i> against <i lang="it">opinioni universali</i> but does not refer this back to Machiavelli&#x27;s first claim <a class="xref" href="#NM-DISC.1.47.02">Machiavelli .02</a>, and its word is <i lang="it">universali</i>, not <i lang="it">generali</i>; the connection is the editor&#x27;s. Guicciardini&#x27;s <i lang="it">crede a&#x27; romori falsi</i> describes the same failure as the piazza&#x27;s false belief about the quiet magistrate in Machiavelli&#x27;s Florentine case <a class="xref" href="#NM-DISC.1.47.05">Machiavelli .05</a>, an editorial observation.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from Canestrini 1857, <i>Opere inedite</i> vol. 1, pp. 1–65 (<span class="sig">WIT-FG-CONS-1857-CANESTRINI</span>) — the <i>editio princeps</i>, which governs. Collated against Palmarocchi 1933 (<span class="sig">WIT-FG-CONS-1933-PALMAROCCHI</span>): page images and the Wikisource transcription consulted as collation evidence, not reproduced (LICENSE §5).</p>
+<p><span class="lem">questo e quello particulare Non accetto già</span> → <span class="lem">questo e quello particulare. Non accetto già</span> (FG-CONS.1.47.02). Pass A ⟨.|∅⟩, pass B ⟨.|∅⟩; no stop shows before the capital; the 1933 edition prints one. D67, D369.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem">pericoloso; nei particolari</span>. The 1857 witness reads <i lang="it">è molto più ⟨pericoloso|periculoso⟩ che il giudicio di pochi (split between the readers); rubric: ancora che si ingannino ne&#x27; generali, ⟨ne&#x27;|nei⟩ particolari (split)</i>. The 1933 witness reads <i lang="it">è molto piú pericoloso che el giudicio di pochi; rubric [... ne&#x27; generali, nei particulari ...]</i>. Pass A reads <i lang="it">pericoloso</i>, pass B <i lang="it">periculoso</i>, neither in doubt; in the rubric A prefers <i lang="it">ne&#x27;</i>, B <i lang="it">nei</i>, each offering the other. Forms of one word, read with the 1933 edition (D366), as D246. The 1933 rubric, bracketed as Palmarocchi&#x27;s, reads <i lang="it">come che s&#x27;ingannino</i> and <i lang="it">particulari</i>; Canestrini&#x27;s <i lang="it">ancora che si ingannino</i> and <i lang="it">particolari</i> are read by both readers.</p>
+<p><span class="lem">o; quelle; delle; su</span>. The 1857 witness reads <i lang="it">né esamina ⟨o|e⟩ distingue; in ⟨quelle|quella⟩ elezioni ⟨delle|della⟩ quali; ma in ⟨su|sn|sa⟩ quella opinione (both readers doubtful at each)</i>. The 1933 witness reads <i lang="it">né esamina o distingue; in quelle elezione delle quali; ma in su quella opinione</i>. Doubts common to both readers whose alternatives are words. Both prefer <i lang="it">o</i>, <i lang="it">quelle</i>, <i lang="it">delle</i>, <i lang="it">su</i>. <i lang="it">quella elezioni</i> and <i lang="it">della quali</i> do not agree and <i lang="it">in sa</i> does not construe; <i lang="it">e distingue</i> construes, and the 1933 edition reads <i lang="it">o</i>. Read with the 1933 edition (D367), as D307, D330.</p>
+<p><span class="lem">L&#x27;altra conclusione del Discorso ... credo sia vero</span> — 1857. The 1933 witness reads <i lang="it">credo sia vera</i>. A difference at o/a under D203(b), read by both readers without doubt and checked on the page image. With <i lang="it">vero</i> Guicciardini believes it true; the 1933 <i lang="it">vera</i> agrees the adjective with <i lang="it">conclusione</i>. It construes, so kept (D368).</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem"><i lang="it">Quello che dice il Discorso, che più facilmente gli uomini si ingannano ne&#x27; generali che ne&#x27; particulari</i>.</span> &quot;What the Discourse says, that men more readily deceive themselves in generals than in particulars&quot;: <i lang="it">il Discorso</i>, the Discourse, Guicciardini&#x27;s name for the chapter he answers; <i lang="it">facilmente</i>, readily (D27); <i lang="it">ingannarsi</i>, deceive oneself (D334), Machiavelli&#x27;s verb. He restates the rubric as a comparison (<i lang="it">più facilmente ... che</i>), which is Machiavelli&#x27;s own form in the body (<i lang="it">assai ... non tanto</i>, Machiavelli .02), not the rubric&#x27;s absolute. <i lang="it">generali</i>, <i lang="it">particulari</i>, the rubric&#x27;s nouns, &quot;generals&quot; and &quot;particulars&quot;.</p>
+<p><span class="lem"><i lang="it">si può dire in uno altro modo, che la esperienza sganna molte volte gli uomini di quello che s&#x27;hanno immaginato innanzi mettino mano nella piaga</i>.</span> &quot;Can be said in another way, that experience many times undeceives men of what they have imagined before they put a hand into the wound&quot;: <i lang="it">si può dire</i>, it can be said, the impersonal of the restatement; <i lang="it">modo</i>, way (glossary); <i lang="it">sgannare</i>, undeceive, Machiavelli&#x27;s <i lang="it">isgannare</i> of the chapter&#x27;s last line; <i lang="it">molte volte</i>, many times; <i lang="it">innanzi</i>, before (D334). The image is kept as printed; no source is named, and none is supplied here. The two readers doubted the mark after <i lang="it">piaga</i> and preferred a semicolon, which the 1933 edition prints (D369).</p>
+<p><span class="lem"><i lang="it">perché non è maraviglia che chi non sapeva e&#x27; particulari delle cose, muti sentenza quando poi gli ha saputi e veduti in viso</i>.</span> &quot;Because it is no marvel that whoever did not know the particulars of things should change sentence when later he has known them and seen them in the face&quot;: <i lang="it">sapere</i>, know, here and <i lang="it">saputi</i>, a recorded collapse with <i lang="it">conoscere</i>, <i lang="it">cognoscere</i> (D374). <i lang="it">sentenza</i>, sentence, an opinion pronounced (glossary); <i lang="it">poi</i>, later (D250); <i lang="it">in viso</i>, in the face. Both readers read a colon after <i lang="it">viso</i> with doubt; the semicolon is the 1933 edition&#x27;s (D369).</p>
+<p><span class="lem"><i lang="it">e a questo tende lo esemplo de&#x27; Fiorentini, e&#x27; quali non avendo nelle piazze quella notizia, né vedendo quegli avvisi che poi vedevano in palazzo, erano facilmente di opinione diversa dalla verità</i>.</span> &quot;And the example of the Florentines tends to this, who, not having in the piazzas that notice, nor seeing those advices which later they saw in the palace, were readily of an opinion different from the truth&quot;: Machiavelli&#x27;s Florentine case (Machiavelli .05), whose piazza and palace come from its proverb. <i lang="it">notizia</i>, notice, in the older sense of information held, three times in the reply, kept apart from Machiavelli&#x27;s <i lang="it">cognizione</i>, knowledge (Machiavelli .05) (D373); <i lang="it">avvisi</i>, advices, reports; <i lang="it">diverso</i>, different (D348). Canestrini&#x27;s note at <i lang="it">verità</i>, on the palace and the proverb, is his and is not carried.</p>
+<p><span class="lem"><i lang="it">Si può anche nello esemplo de&#x27; Romani considerare</i>.</span> &quot;One can also consider in the example of the Romans&quot;: <i lang="it">considerare</i>, consider (glossary); the act is offered (<i lang="it">si può</i>), not asserted. The example is Machiavelli&#x27;s tribunes with consular power (Machiavelli .01-.02).</p>
+<p><span class="lem"><i lang="it">che al populo pareva cosa indegna e vituperosa che generalmente tutti fussino incapaci degli onori</i>.</span> &quot;That it seemed to the people a thing unworthy and disgraceful that generally all should be incapable of the honours&quot;: <i lang="it">indegno</i>, unworthy, Machiavelli&#x27;s word for the men the Capuans named (Machiavelli .04), here the exclusion; <i lang="it">vituperoso</i>, disgraceful, in the root of <i lang="it">vituperio</i>, disgrace (D26, D373); <i lang="it">generalmente</i>, generally: the grievance is the general exclusion; <i lang="it">incapace</i>, incapable, answered by <i lang="it">capaci</i> in .02.</p>
+<p><span class="lem"><i lang="it">e che parendogli avere acquistato assai a conseguire di potere essere abili al magistrato di potestà consulare, restassino in parte sfogati</i>.</span> &quot;And that, it seeming to them that they had acquired much in attaining to be able to be eligible for the magistracy of consular power, they remained in part vented&quot;: <i lang="it">assai</i> after a verb, &quot;much&quot; (D348); <i lang="it">abile</i>, eligible (D374); <i lang="it">potestà</i>, power (D78), the tribunes <i lang="it">con potestà Consolare</i> of Machiavelli .01; <i lang="it">sfogare</i>, vent (D149).</p>
+<p><span class="lem"><i lang="it">e si astenessino da eleggere e&#x27; non idonei</i>.</span> &quot;And abstained from choosing those not fit&quot;: <i lang="it">eleggere</i>, choose (glossary), not &quot;elect&quot;; <i lang="it">e&#x27;</i>, the plural article (D35); <i lang="it">idoneo</i>, fit (D374).</p>
+<p><span class="lem"><i lang="it">come quelli che non avessino combattuto per la ambizione particulare di ascendere a quello grado, ma solo per levarsi quella infamia</i>.</span> &quot;As those who had not fought for the particular ambition of ascending to that degree, but only to remove from themselves that infamy&quot;: <i lang="it">particulare</i>, particular, here of private ambition against the plebs as a whole; <i lang="it">ascendere</i>, ascend, Machiavelli&#x27;s verb for the popular man raised to the supreme magistracy (Machiavelli .05); <i lang="it">solo</i>, only (D298); <i lang="it">levarsi</i> with an object, remove from oneself, where D348&#x27;s &quot;rise&quot; is the intransitive (D373).</p>
+<p><span class="lem"><i lang="it">che la plebe tutta fussi proibita dalle leggi di participare degli onori</i>.</span> &quot;That the whole plebs should be prohibited by the laws from partaking of the honours&quot;: <i lang="it">participare di</i>, partake of: D28&#x27;s &quot;impart&quot; is the verb with a direct object, whatever its spelling (D373).</p>
+<p><span class="lem"><i lang="it">e però bene dice Livio: « contenta eo quod sui ratio habita esset. »</i>.</span> &quot;And therefore Livy says well&quot;: <i lang="it">però</i>, therefore (D22), consecutive on the account just given. The Latin is left as Canestrini prints it, in italic within guillemets: &quot;content with this, that account had been taken of it.&quot; The Latin Library text of Livy 4.6 (thelatinlibrary.com/livy/liv.4.shtml, consulted 2026-10-22) reads <i lang="la">contentus eo quod ratio habita plebeiorum esset</i>, of the people (<i lang="it">populus</i>) that created the tribunes all patricians; Guicciardini&#x27;s <i lang="it">contenta</i> and <i lang="it">sui</i> make the plebs the subject. Machiavelli&#x27;s <i lang="it">Fu contenta a questo la Plebe</i> (Machiavelli .01) is the same verb. Both readers doubted the mark after <i lang="it">Livio</i> and preferred a colon, which the 1933 edition prints (D369).</p>
+<p><span class="lem"><i lang="it">L&#x27;altra conclusione del Discorso, che manco si inganni il populo nella distribuzione degli onori e de&#x27; magistrati che nell&#x27;altre cose, credo sia vero</i>.</span> &quot;The other conclusion of the Discourse, that the people deceives itself less in the distribution of honours and of magistracies than in other things, I believe it is true&quot;: <i lang="it">credo</i>, I believe (glossary), his assent; <i lang="it">manco</i>, less. The conclusion as he states it is comparative, the people against itself in other things; Machiavelli&#x27;s comparison with the few is taken up separately below. <i lang="it">vero</i> is neuter: what he believes true is the proposition, &quot;it&quot;, not the conclusion as such, with which the 1933 edition&#x27;s <i lang="it">vera</i> would agree (FG-CONS-I47-D003, D368).</p>
+<p><span class="lem"><i lang="it">e la ragione è in pronto, perché è materia che più facilmente si cognosce</i>.</span> &quot;And the reason is at hand, because it is a matter that is more readily known&quot;: <i lang="it">in pronto</i>, at hand, <i lang="it">pronto</i> prompt (D298), so that &quot;ready&quot; stays off it; <i lang="it">cognoscere</i> and <i lang="it">sapere</i> (.01) are both &quot;know&quot;, with Machiavelli&#x27;s <i lang="it">conoscere</i>, a recorded collapse (D374). The readers split at the mark after <i lang="it">cognosce</i>; the semicolon is the 1933 edition&#x27;s (D369).</p>
+<p><span class="lem"><i lang="it">e in questo caso il giudicio del populo è fondato non in sulla notizia che abbia per sé stesso del valore di uno cittadino, ma in su quella opinione universale che nasce dalla lunghezza del tempo e dalla esperienza che ne hanno avuto questo e quello particulare</i>.</span> &quot;And in this case the judgment of the people is founded not upon the notice it may have of itself of the worth of a citizen, but upon that universal opinion which arises from the length of time and from the experience which this and that particular [man] have had of him&quot;: <i lang="it">per sé stesso</i>, of itself, first-hand, against what others report; <i lang="it">valore</i>, worth; <i lang="it">universale</i>, universal, the adjective; <i lang="it">esperienza</i>, experience, as in .01; <i lang="it">particulare</i>, particular [man] (D93). The reason he grants is not Machiavelli&#x27;s: the people does not know the particular citizen, it trusts a long common opinion. Both readers doubted the stop after <i lang="it">particulare</i> before <i lang="it">Non</i>; it is supplied from the 1933 edition (FG-CONS-I47-C001, D369).</p>
+<p><span class="lem"><i lang="it">Non accetto già che in questo il populo non si inganni, o almanco più rare volte che non fanno e&#x27; pochi</i>.</span> &quot;I do not accept that in this the people does not deceive itself, or at least [deceives itself] at rarer times than the few do&quot;: <i lang="it">non accetto</i>, I do not accept, a fifth act beside <i lang="it">credo</i>, <i lang="it">non so</i>, <i lang="it">reputo</i> and <i lang="it">non concorro facilmente</i>: a refusal of a proposition, not a suspension (D374); <i lang="it">già</i> intensifies it and is not rendered, as in <i lang="it">non so già</i> (glossary). <i lang="it">in questo</i> limits the refusal to the distributions. After <i lang="it">almanco</i> the verb is understood in the positive, and the bracket supplies it, so that the second proposition refused, that the people deceives itself more rarely than the few, cannot be read as negated. <i lang="it">rare volte</i>, at rare times (D90, D373), so that <i lang="it">volte</i> answers Machiavelli&#x27;s <i lang="it">più volte</i>; the expletive <i lang="it">non</i> after the comparative is not rendered. <i lang="it">e&#x27; pochi</i>, the few (D35): Machiavelli&#x27;s <i lang="it">i pochi uomini</i> (Machiavelli .06). He refuses both of Machiavelli&#x27;s claims for the people in this matter, its not being deceived and its being deceived more rarely than the few.</p>
+<p><span class="lem"><i lang="it">perché il populo si governa in questo giudicio non con la notizia particulare, ma con le opinioni universali</i>.</span> &quot;Because the people governs itself in this judgment not with particular notice, but with universal opinions&quot;: <i lang="it">governare</i>, govern (D64); the same pair as above, <i lang="it">notizia</i> against <i lang="it">opinione universale</i>, turned: the ground that made the conclusion true now makes the people&#x27;s judgment fallible.</p>
+<p><span class="lem"><i lang="it">né esamina o distingue sottilmente, in modo che si inganna spesso, massime in quelle elezioni delle quali pochi sono capaci</i>.</span> &quot;Nor does it examine or distinguish subtly, in such a way that it deceives itself often, above all in those choices of which few are capable&quot;: <i lang="it">o distingue</i>, <i lang="it">quelle</i>, <i lang="it">delle</i>, letters doubtful to both readers, read with the 1933 edition (FG-CONS-I47-D002, D367); <i lang="it">elezione</i>, choice (glossary). <i lang="it">capace</i> answers <i lang="it">incapaci degli onori</i> in .01, and the Italian leaves open whether the few are capable of judging the choice or of filling the place; &quot;capable&quot; keeps both, where D350&#x27;s &quot;able to grasp&quot; would settle it (D373). <i lang="it">spesso</i>, often, answers Machiavelli&#x27;s <i lang="it">fia sì raro</i>.</p>
+<p><span class="lem"><i lang="it">crede a&#x27; romori falsi, muovesi per fondamenti leggieri</i>.</span> &quot;It believes false rumours, it is moved by light foundations&quot;: <i lang="it">romore</i>, rumour, talk, as D362, since a false <i lang="it">romore</i> is a report and not a tumult; <i lang="it">fondamento</i>, foundation (glossary), Machiavelli&#x27;s word for the nobility&#x27;s firmer foundation at I.40; <i lang="it">leggieri</i>, light, as FG I.40 <i lang="it">cagioni leggieri</i>. The readers doubted the mark after <i lang="it">capaci</i> and preferred a semicolon, which the 1933 edition prints (D369).</p>
+<p><span class="lem"><i lang="it">e in effetto quanto alla ignoranza è molto più pericoloso che il giudicio di pochi</i>.</span> &quot;And in effect, as to ignorance, it is much more dangerous than the judgment of few&quot;: <i lang="it">in effetto</i>, in effect; <i lang="it">ignoranza</i>, ignorance (FG I.29); <i lang="it">pericoloso</i>, dangerous, in the root of <i lang="it">pericolo</i>, danger (glossary), the word on which the readers split with <i lang="it">periculoso</i> (FG-CONS-I47-D001, D366). <i lang="it">di pochi</i>, without the article, against <i lang="it">e&#x27; pochi</i> above. The subject is the people, or its judgment; the Italian does not say which, and &quot;it&quot; keeps both. The reply ends on the comparison with the few on which Machiavelli&#x27;s argument closes (Machiavelli .06), turned against the people.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="colophon">
+    <div class="row">
+      <div>
+        <h3>What this is</h3>
+        <p>A free, openly licensed, bilingual edition of Guicciardini's 39 <i>Considerazioni</i> and the
+          <i>Discorsi</i> chapters they answer — 78 text units, Italian and English facing, every reading
+          traceable to a named public-domain witness.</p>
+        <p>It is a reading edition with a transparent apparatus, not a text of record. It does not adjudicate
+          the critical text against Bausi 2001 or the manuscript tradition, and does not claim to.</p>
+      </div>
+      <div>
+        <h3>On the title</h3>
+        <p>Machiavelli had been dead two years when Guicciardini wrote; the <i>Discorsi</i> were unpublished,
+          and the <i>Considerazioni</i> stayed unprinted until 1857. Machiavelli never answers.</p>
+        <p>“Conversation” is a quotation, not a description. It invokes Machiavelli's letter to Francesco Vettori of
+          10 December 1513: at evening he puts on royal and curial garments (<i>panni reali e curiali</i>),
+          enters the ancient courts of ancient men (<i>le antiche corti degli antichi uomini</i>), asks them the
+          reason for their actions, and <i>quelli per loro umanità mi rispondono</i>, “they, for their humanity,
+          answer me”. Guicciardini does to Machiavelli what Machiavelli did to Livy — and is denied the reply
+          Machiavelli claimed. The letter is quoted from the 1813 <i>Opere</i>, vol. 8, p. 96, read twice from
+          the page image.</p>
+      </div>
+      <div>
+        <h3>Method</h3>
+        <p>No image-derived reading enters the text on a single reading. Each unit is transcribed twice,
+          independently, by readers who have not seen each other's work; disagreements are adjudicated against
+          the page images and recorded.</p>
+        <p>Existing English translations of the <i>Considerazioni</i> — Grayson (1965), Atkinson &amp; Sices
+          (2002) — are never used as translation inputs.</p>
+      </div>
+      <div>
+        <h3>Licence</h3>
+        <p>The established Italian text and the apparatus data are dedicated to the public domain under
+          <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>. They are Machiavelli's and
+          Guicciardini's sentences, and this edition adds no condition to them.</p>
+        <p>The English translation, the notes and the editorial apparatus are licensed
+          <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: reuse them anywhere, including
+          commercially, with attribution to David McDougall and this edition. The build tooling is MIT.</p>
+        <p>The witness scans are other people's digitisations, included as evidence under their own terms; no
+          grant is made over them, and no page image of Palmarocchi 1933 is reproduced here. Full terms,
+          layer by layer, are in the <span class="sig">LICENSE</span> file in the repository.</p>
+      </div>
+    </div>
+
+    <div class="state">
+      <p><strong>Version 0.3 · 25 of 39 pairs published.</strong>
+        Published 22 October 2026. This edition is versioned, not frozen. No open questions on this pair.</p>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
