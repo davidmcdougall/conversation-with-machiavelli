@@ -66,3 +66,14 @@ first time it is italicised.
 | `et inde libertatis captare auram` | NM I.40 note (Livy 3.37) |
 | `taedio praesentium consules duo tandem et status pristinus rerum in desiderium veniant` | NM I.40 note (Livy 3.37) |
 | `Hac mercede iuventus nobilis corrupta` | NM I.40 note, commentary (Livy 3.37) |
+| `Quorum comitiorum eventus docuit, alios animos in contentione libertatis et honoris; alios secundum deposita certamina in incorrupto judicio esse.` | NM I.47 (after Livy 4.6) |
+| `Quorum comitiorum eventus docuit, alios animos in contentione libertatis et honoris; alios secundum deposita certamina in incorrupto judicio esse` | NM I.47 note |
+| `Eventus eorum comitiorum docuit alios animos in contentione libertatis dignitatisque, alios secundum deposita certamina incorrupto iudicio esse` | NM I.47 note (Livy 4.6) |
+| `Hanc modestiam, aequitatemque et altitudinem animi ubi nunc in uno inveneris, quae tunc populi universi fuit?` | NM I.47 (after Livy 4.6) |
+| `contenta eo quod sui ratio habita esset.` | FG I.47 |
+| `contentus eo quod ratio habita plebeiorum esset` | FG I.47 note, commentary (Livy 4.6) |
+| `quae tum` | NM I.47 note |
+| `dignitatis` | NM I.47 commentary |
+| `honoris` | NM I.47 commentary |
+| `incorrupto` | NM I.47 note, commentary |
+

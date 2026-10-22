@@ -203,3 +203,8 @@ the original.
 | `Silla` | Sulla | FG I.40, as NM I.1, I.28 |
 | `Manlio Capitolino` | Manlius Capitolinus | FG I.40, as FG I.5, I.7, I.8 |
 | `Duca d'Atene` | the Duke of Athens | FG I.40; the usual identification, Walter of Brienne, lord of Florence 1342-43, not checked here |
+| `Tito Livio` | Livy | NM I.47 ×2; as `T. Livio` |
+| `Pacuvio Calano` | Pacuvius Calanus | NM I.47; Machiavelli's form. The Latin Library text of Livy 23.2 (consulted 2026-10-22) names him Pacuvius Calavius, noted |
+| `Signori` | the Signori | NM I.47; the members of the Signoria, Florence's chief magistracy (NM I.39) |
+| `Capova`, `Annibale`, `Canne` | Capua, Hannibal, Cannae | NM I.47, as NM I.5, I.11 |
+

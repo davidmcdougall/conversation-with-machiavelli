@@ -59,7 +59,7 @@ def words(s, alt=None):
         s = re.sub(r'⟨([^⟩]*)⟩', lambda m: m[1].split("|")[min(alt, m[1].count("|"))], s)
     s = re.sub(r'(\w)\[p\.\s*\d+\](\w)', r'\1\2', s)        # page break inside a word
     s = re.sub(r'\s*\[p\.\s*\d+\]\s*', ' ', s)
-    s = re.sub(r'(\w)-[\s|/]*(\w)', r'\1\2', s)                  # rejoin line-end hyphens
+    s = re.sub(r'(\w)-\*?[\s|/]*\*?(\w)', r'\1\2', s)            # rejoin line-end hyphens, italic runs included (D378)
     return re.findall(r'[a-z]+', fold(s))
 
 def flat(s): return " ".join(words(s))

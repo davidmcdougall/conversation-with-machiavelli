@@ -623,3 +623,37 @@ last sentence answers Machiavelli's first move.
 | `violentare` | do violence to | FG I.40; the root of `violenza`, violence (NM I.40). |
 | `sagace` / `savio` | sagacious / wise | NM I.40 .02 / .07; kept apart. |
 | `appello`, `appellare`, `appellazione` | appeal | NM I.32, I.40; with `provocazione` (D348). |
+
+
+## Added from the I.47 pair (2026-10-22)
+
+| Italian | English | Note |
+|---|---|---|
+| `ingannare`, `ingannarsi`; `inganno`; `isgannare` / `sgannare` | deceive, deceive oneself; deceit; undeceive | D374. NM I.47 rubric and throughout; FG I.47 `si ingannano`, `sganna`. `ingannarsi` as D334; `inganno` as FG I.40. |
+| `generale` / `particolare`, `particulare` (nouns, and with `cose`); `generalmente` / `particolarmente` | generals / particulars, general / particular things; generally / particularly | D374. NM I.47, FG I.47. The singular `un generale` takes a bracket, "a general [thing]", where English would read a commander. `particulare` of a man stays "particular [man]" (D93). |
+| `concione` (the gathering) | assembly | D371. NM I.47 `chiamò il Popolo a concione`, `si racchetò tutta la concione`. A sense split, by sense at each occurrence; `concioni`, the speeches to the assembled people, stay "harangues" (FG I.2, I.28; NM I.4, I.5). |
+| `levare` (a cry, an uproar) | raise | D371. NM I.47 `levato un rumor grandissimo`. "Remove" stays for a thing taken away (D131); it pairs with `levarsi`, rise (D348). |
+| `levarsi` + object | remove from oneself | D373. FG I.47 `levarsi quella infamia`. D348's "rise" stays for the intransitive. |
+| `con suo grado`, `di suo grado` | of his own will | D372. NM I.47. `grado` of rank or measure stays "degree". |
+| `participare` / `partecipare` + `di` | partake of | D373. FG I.2, FG I.47 `participare degli onori`. D28's "impart" is the verb with a direct object, whatever its spelling. |
+| `più rare volte` | at rarer times | D373, extending D90. FG I.47, answering NM `più volte`, "more times". |
+| `vituperoso` | disgraceful | D373. FG I.47; the root of `vituperio`, disgrace (D26). |
+| `notizia` | notice | D373. FG I.47 ×3, information held. Kept apart from `cognizione`, knowledge (NM I.47). |
+| `conoscere`, `cognizione`; `cognoscere`; `sapere`; `intendere` | know, knowledge; know; know; understand | D374. NM I.47; FG I.47. `conoscere` / `cognoscere` / `sapere` "know" is a recorded collapse; `intendere`, understand, is kept apart (NM I.39, I.47). |
+| `capace` / `incapace` | capable / incapable | D373. FG I.47 `incapaci degli onori`, `delle quali pochi sono capaci`. D350's "able to grasp" stays for `fatto capace`, `essere capace` of understanding (FG I.39, I.40). |
+| `abile` | eligible | D374. FG I.47 `abili al magistrato`. |
+| `idoneo` | fit | D374. FG I.47. |
+| `indegno` | unworthy | D374. NM I.47 `indegni del grado Senatorio`; FG I.47 `cosa indegna`. |
+| `ascendere` / `descendere` | ascend / descend | D374. NM I.47 ×2; FG I.47. |
+| `giudicare`, `giudizio` / `giudicio` | judge, judgment | D374. NM I.47; FG I.47. `giudicii`, courts, stay "judgments" (I.7). |
+| `meritare`; `meritamente` | merit; deservedly | D374. NM I.47. |
+| `portare` (danger) | bear | D374. NM I.47 ×3. |
+| `di mano in mano`; `come prima` | one after another; as soon as | D374. NM I.47. Temporal `come` alone, "when". |
+| `di modo che`, `dimodoché` | in such a way that | D374, with `in modo che` (glossary). NM I.47. |
+| `ragunare` | gather | D374. NM I.47; kept off "assemble" so that `concione` has it. |
+| `distribuzione`; `dignità` | distribution; dignity | D374. NM I.47 ×3; FG I.47. |
+| `avvisi` | advices | D374. FG I.47: reports reaching a magistracy. |
+| `braccia` / `armi` | arms / arms | D374, a recorded collapse. NM I.47 `con le braccia sue`. |
+| `stare per` + infinitive | be about to | D374, as `essere per` (D45). NM I.47. |
+| `non accetto` (FG) | I do not accept | D374. FG I.47. A refusal of a proposition, a fifth act beside `credo`, `non so`, `reputo`, `non concorro facilmente`; "does not accept" in an editor's summary. |
+
