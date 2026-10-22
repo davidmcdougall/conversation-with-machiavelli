@@ -1,0 +1,67 @@
+source_unit_id: NM-DISC.1.47
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-I47-D001
+    locator: NM-DISC.1.47.05
+    class: ruled_reading
+    witness_1824: "Dopo il 1514 sendo stati i Principi della Città cacciati da Firenze"
+    witness_1554: "Dopo il MCCCCXCIIII eſſendo ſtati i Prencipi della citta cacciati da Firenze"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 66v) and on the 1824 page (p. 162). The 1824 prints the date in figures, `1514`; the 1554 in numerals, `MCCCCXCIIII`, 1494. Read by pass A and by the pass-B crop reader without doubt. A date the page prints plainly construes, and D68 does not reach a date that may be wrong outside the page; kept as printed (D364), the 1554's date given here and in a translator's note."
+  - id: NM-DISC-I47-D002
+    locator: NM-DISC.1.47.06
+    class: ruled_reading
+    witness_1824: "trovando modo, veggendo ch'un generale gli inganna"
+    witness_1554: "trouando modo(ueggẽda che uno generale gli inganna )"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 67r). A difference at o/a under D203(b), read by pass A and the crop reader without doubt. The 1554 `ueggẽda` is not a form of the verb; the 1824 kept (D365)."
+  - id: NM-DISC-I47-D003
+    locator: NM-DISC.1.47.05
+    class: reading
+    witness_1824: "ma piuttosto una certa licenza ambiziosa ... per poter fare uno Stato a suo proposito, e torre loro la libertà ... costoro hanno un animo in piazza, e uno altro in palazzo"
+    witness_1554: "ma piu toſto una licenza ambitioſa ... per poter fare un ſtato a ſuo propoſito,et torre la liberta ... Coſtoro hanno uno animo in piazZa , et uno in palazzo"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaves (fol. 66v-67r). The 1554 has no `certa`, no `loro` after `torre`, and no `altro` in the proverb. Each 1824 word read by pass A and the crop reader without doubt. Same sense."
+  - id: NM-DISC-I47-D004
+    locator: NM-DISC.1.47.01
+    class: reading
+    witness_1824: "*alios secundum deposita certamina in incorrupto judicio esse.* Ed esaminando"
+    witness_1554: "alios ſecundum depoſita certamina incorrupto iudicio eſſe.Cioe l'auenimẽto de i quali comitij(cioe cõſigli) dimoſtrò, gli animi eſſere diuerſi,quando ſi contende della libertà et de gli honori;da quello,ch'è quãdo dipoſte le conteſe il giudicio reſta ſincero.Et eſſaminando"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 65v). The 1554 has no `in` before `incorrupto`, and, as in I.40, follows Livy's Latin with an Italian rendering introduced by `Cioè`; it does so again after `fuit?` (.02, fol. 66r: `cioè Questa modestia,honestà & grandezza di animo,che allhora era in tutto il popolo, doue si trouerà hora in un solo?`). The 1824 prints neither rendering. The 1824 `in` read by both readers (the sample page)."
+  - id: NM-DISC-I47-D005
+    locator: NM-DISC.1.47.02
+    class: reading
+    witness_1824: "nelle particolari non tanto. Pareva generalmente alla Plebe di meritare il Consolato"
+    witness_1554: "ne particolari non tanto . Pareua generalmente alla plebe Romana,di meritare il Conſolato"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 65v). The 1554 `ne particolari` takes `particolari` as a masculine noun, the 1824 `nelle particolari` as the feminine plural answering `nelle cose generali`; the 1554 adds `Romana`. Read by both 1824 readers (the sample page). Same sense."
+  - id: NM-DISC-I47-D006
+    locator: NM-DISC.1.47.03
+    class: reading
+    witness_1824: "In corroborazione di questo ... da poi che Annibale ebbe rotto i Romani a Canne"
+    witness_1554: "In cõfermatione di queſto ... dapoi che Annibale hebbe rotti i Romani a Canne"
+    established: witness_1824
+    publish_as_variant_note: false
+    rationale: "Checked on the leaf (fol. 66r). `confermatione` for `corroborazione`, and the participle agreed with its object. Read by both 1824 readers (the sample page). Same sense."
+  - id: NM-DISC-I47-D007
+    locator: NM-DISC.1.47.01
+    class: reading
+    witness_1824: "la parte sua. Nacque di questo un caso notabile ... furono dal Popolo romano creati tutti Nobili"
+    witness_1554: "la parte ſua nacquene di queſto un caſo notabile ... furono dal popolo Romano creati tutti i nobili"
+    established: witness_1824
+    publish_as_variant_note: false
+    rationale: "Checked on the leaf (fol. 65v). The 1554 `nacquene` adds the clitic and `tutti i nobili` the article. Read by pass A and the crop reader without doubt. Same sense."
+  - id: NM-DISC-I47-D008
+    locator: NM-DISC.1.47.01
+    class: systematic_orthographic_profile
+    witness_1554: "Giglio's `dishoneſtare` for `deonestare`, `creaßino`, `IIII` for `quattro`, `podeſtà` for `potestà`, `ne la` for `in la`, `portar`, `ella` for `la`, `quale` for `qual`, `eſſendo` for `sendo`, `contra` for `contro`, `laſciare`, `gli` for `li`, `caſtigare`/`caſtigherebbono` for `gastigare`/`gastigarebbono`, `ſaluargli`, `oppenione`, `gli era` for `egli era`, `eßi` for `loro` and for `egli` (plural), `i nomi de i Senatori` for `gli nomi degli Senatori`, `comincierebbe`, `li tratti`, `romore`, `uno` for `un`, `giudicauono`, `nella quale` for `in la quale`, `rahumiliare` for `riumiliare`, `cercaui` for `cercavate`, `ſe conoſcono`, `tal`, `Prencipi`, `de ſignori`, `de ſimili`, `da preſſo` for `d'appresso`, `onde naſceuono` for `donde nascevano`, `di modo che`, `l'haueuano`, `pare`, tildes, `&`/`et`, `ꝑ`, and his pointing"
+    established: witness_1824
+    publish_as_variant_note: false
+    rationale: "Spelling, forms and pointing; DEC-009 classes, not readings. `castigherebbono`, `giudicauono` and `ueggẽda` differ at letters the scans break; the first two are the 1554's forms, the third is D002."

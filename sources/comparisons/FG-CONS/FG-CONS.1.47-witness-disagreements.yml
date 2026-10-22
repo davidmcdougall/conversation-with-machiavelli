@@ -1,0 +1,36 @@
+source_unit_id: FG-CONS.1.47
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-I47-D001
+    locator: FG-CONS.1.47.02
+    class: ruled_reading
+    witness_1857: "è molto più ⟨pericoloso|periculoso⟩ che il giudicio di pochi (split between the readers); rubric: ancora che si ingannino ne' generali, ⟨ne'|nei⟩ particolari (split)"
+    witness_1933: "è molto piú pericoloso che el giudicio di pochi; rubric [... ne' generali, nei particulari ...]"
+    established: "pericoloso; nei particolari"
+    publish_as_variant_note: true
+    rationale: "Pass A reads `pericoloso`, pass B `periculoso`, neither in doubt; in the rubric A prefers `ne'`, B `nei`, each offering the other. Forms of one word, read with the 1933 edition (D366), as D246. The 1933 rubric, bracketed as Palmarocchi's, reads `come che s'ingannino` and `particulari`; Canestrini's `ancora che si ingannino` and `particolari` are read by both readers."
+  - id: FG-CONS-I47-D002
+    locator: FG-CONS.1.47.02
+    class: ruled_reading
+    witness_1857: "né esamina ⟨o|e⟩ distingue; in ⟨quelle|quella⟩ elezioni ⟨delle|della⟩ quali; ma in ⟨su|sn|sa⟩ quella opinione (both readers doubtful at each)"
+    witness_1933: "né esamina o distingue; in quelle elezione delle quali; ma in su quella opinione"
+    established: "o; quelle; delle; su"
+    publish_as_variant_note: true
+    rationale: "Doubts common to both readers whose alternatives are words. Both prefer `o`, `quelle`, `delle`, `su`. `quella elezioni` and `della quali` do not agree and `in sa` does not construe; `e distingue` construes, and the 1933 edition reads `o`. Read with the 1933 edition (D367), as D307, D330."
+  - id: FG-CONS-I47-D003
+    locator: FG-CONS.1.47.02
+    class: ruled_reading
+    witness_1857: "L'altra conclusione del Discorso ... credo sia vero"
+    witness_1933: "credo sia vera"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "A difference at o/a under D203(b), read by both readers without doubt and checked on the page image. With `vero` Guicciardini believes it true; the 1933 `vera` agrees the adjective with `conclusione`. It construes, so kept (D368)."
+  - id: FG-CONS-I47-D004
+    locator: FG-CONS.1.47.01
+    class: systematic_orthographic_profile
+    witness_1857: "Canestrini's `il Discorso`, `esperienza`, `sentenza`, `e a questo`, `Fiorentini`, `avvisi`, `Romani`, `populo` ×6, `leggi`, `e in questo`, `il giudicio` ×2, `ne hanno`, `le opinioni universali`, `elezioni`, `ignoranza`, `e' quali` printed `e quali`, `e' non idonei` printed `e non`, `e' pochi` printed `e pochi`, the guillemets round the Latin, and his pointing"
+    witness_1933: "Palmarocchi's `el Discorso`, `esperienzia`, `sentenzia`, `ed a questo`, `fiorentini`, `avisi`, `romani`, `popolo`, `legge`, `ed in questo`, `el giudicio`, `n'hanno`, `le opinione universale`, `elezione`, `ignoranzia`, `e' quali`, `e' non idonei`, `e' pochi`, the Latin without guillemets, and his pointing"
+    established: witness_1857
+    publish_as_variant_note: false
+    rationale: "Orthographic profile, forms and pointing; DEC-009 classes. The plural article takes its apostrophe by D35. The pointing doubtful to both readers follows the 1933 edition by D110, and one stop is supplied from it, D67 (D369)."

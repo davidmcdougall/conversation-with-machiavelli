@@ -1,0 +1,34 @@
+source_unit_id: FG-CONS.1.47
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-025
+responds_to: NM-DISC.1.47
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. Canestrini's note (1) on p. 52, keyed to `verità.`, is his and is not carried."
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38); errors are emended from Palmarocchi and bracketed (D68)."
+passes:
+  - {id: A, performed: 2026-10-21, file: sources/coldpass/FG-CONS.1.47-passA.md, note: "subagent; page images only (native 600 ppi rendered at 1200, full pages and halves), own image and output folders"}
+  - {id: B, performed: 2026-10-21, file: sources/coldpass/FG-CONS.1.47-passB.md, note: "subagent; same images, separate image and output folders"}
+collation: sources/coldpass/COLLATION-2026-10-22-I47.md
+collation_result: >
+  363 words (A 363, B 363), the 414 body tokens identical after preferred
+  readings but for `pericoloso`/`periculoso` and the point after
+  `cognosce`. The word split and the rubric's `ne'`/`nei` read with the
+  1933 edition (D366). Four common doubts whose alternatives are words,
+  `o`, `quelle`, `delle`, `su`, read with it (D367). `vero` kept against
+  the 1933 `vera` (D368). Marks doubtful to both settled by D110 and D67
+  (D369).
+witness_independence_check: "SCOPE §7. Neither pass carries a Palmarocchi word-reading where Canestrini differs: both have `il Discorso`, `esperienza` ×2, `sentenza`, `e a questo`, `avvisi`, `populo`, `leggi`, `vero`, `e in questo`, `il giudicio`, `ne hanno`, `le opinioni universali`, `elezioni`, `ignoranza`, against the 1933 `el Discorso`, `esperienzia`, `sentenzia`, `ed a questo`, `avisi`, `popolo`, `legge`, `vera`, `ed in questo`, `el giudicio`, `n'hanno`, `le opinione universale`, `elezione`, `ignoranzia`. The passes read Canestrini."
+boundaries: "printed pp. 52-53; heading CONSIDERAZIONE SUL CAPITOLO XLVII on p. 52 below the end of the XL reply (`... e altre occorrenze che girano.`); Canestrini's two-line rubric; two indented paragraphs (`Quello che dice il Discorso` ... `habita esset. »`, p. 52 l. 1 - p. 53 l. 9; `L'altra conclusione del Discorso` ... `il giudicio di pochi.`, p. 53 ll. 10-26); Canestrini's note (1) at the foot of p. 52, keyed to `verità.`, not carried; CONSIDERAZIONE SUL CAPITOLO XLIX opens p. 54"
+corrections:
+  - {id: FG-CONS-I47-C001, locator: FG-CONS.1.47.02, was: "questo e quello particulare Non accetto già", now: "questo e quello particulare. Non accetto già", evidence: "Pass A ⟨.|∅⟩, pass B ⟨.|∅⟩; no stop shows before the capital; the 1933 edition prints one. D67, D369."}
+emendations: []
+readings:
+  - {locus: "FG-CONS.1.47.02 più ⟨pericoloso|periculoso⟩; rubric ⟨ne'|nei⟩ particolari", passes: "A pericoloso, ne'; B periculoso, nei", witness_1933: "pericoloso; nei particulari", disposition: "pericoloso, nei, D366 (David, 2026-10-22): splits between forms, read with the 1933 edition"}
+  - {locus: "FG-CONS.1.47.02 esamina ⟨o|e⟩ distingue; in ⟨quelle|quella⟩ elezioni ⟨delle|della⟩ quali; in ⟨su|sa⟩ quella opinione", passes: "A and B doubtful at each, both preferring o, quelle, delle, su", witness_1933: "o; quelle; delle; su", disposition: "o, quelle, delle, su, D367 (David, 2026-10-22): common doubts whose alternatives are words; read with the 1933 edition"}
+  - {locus: "FG-CONS.1.47.02 credo sia vero", passes: "A and B, without doubt", witness_1933: "vera", disposition: "kept, D368 (David, 2026-10-22): word-level difference at o/a under D203(b); construes"}
+  - {locus: "piaga⟨;|,⟩; viso⟨:|.|;⟩; Livio⟨:|.⟩; cognosce⟨,|;⟩; particulare⟨.|∅⟩; capaci⟨;|,⟩; rubric ingannano⟨.|∅⟩", passes: "A and B doubt each mark (B reads no stop after the rubric); both prefer ; : : . ; at piaga, viso, Livio, particulare, capaci; split at cognosce", witness_1933: "; ; : ; . ; .", disposition: "with the 1933 edition, D369 (David, 2026-10-22)"}
+not_supplied: []
+normalisation_notes: "Class A: accents (`perchè` → `perché` ×3, `nè` → `né` ×2, `sè` → `sé`); elision closed up (`s' hanno`, `L' altra`, `nell' altre`); `e quali`, `e non idonei`, `e pochi` given the apostrophe of the plural article, `e'`, by D35; spaces before punctuation removed; line-end hyphens removed. The Latin, set in italic within guillemets, kept so."
