@@ -207,4 +207,13 @@ the original.
 | `Pacuvio Calano` | Pacuvius Calanus | NM I.47; Machiavelli's form. The Latin Library text of Livy 23.2 (consulted 2026-10-22) names him Pacuvius Calavius, noted |
 | `Signori` | the Signori | NM I.47; the members of the Signoria, Florence's chief magistracy (NM I.39) |
 | `Capova`, `Annibale`, `Canne` | Capua, Hannibal, Cannae | NM I.47, as NM I.5, I.11 |
+| `Romolo`, `Numa`, `Tullo Ostilio`, `Servio` | Romulus, Numa, Tullus Hostilius, Servius | NM I.49; Servius Tullius, as FG I.2 |
+| `Dieci cittadini` | the Ten citizens | NM I.49 .01; the Roman decemvirs, as NM I.40 |
+| `Mamerco`; `Mamerco Emilio` | Mamercus; Mamercus Aemilius | NM I.49; FG I.49. Mamercus Aemilius, dictator in the year conventionally dated 434 BC (Livy 4.24) |
+| `Firenze`, `Vinegia` | Florence, Venice | NM I.49 |
+| `Capitano` | the Captain | NM I.49 .05, as NM I.8; the office is not identified |
+| `otto cittadini` | eight citizens | NM I.49 .05; presumably the Otto di Guardia (the Eight, FG I.10), not named as a magistracy |
+| `dieci cittadini` (Venice) | ten citizens | NM I.49 .05; the Venetian Council of Ten, kept apart from the Roman Ten (NM I.40, I.49 .01) and the Florentine Ten (NM I.39) |
+| `Quarantie` | the Quarantie | NM I.49 .05; the Venetian courts of forty, kept in Italian. The Florentine Quarantia of FG I.7 shares the name |
+| `Pregadi`; `Consiglio de' Pregadi` | the Pregadi; the council of the Pregadi | NM I.49 .05; the Venetian senate. Machiavelli's `il Consiglio maggiore` kept; it is not the Great Council (*Maggior Consiglio*) |
 

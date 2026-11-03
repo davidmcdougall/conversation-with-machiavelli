@@ -657,3 +657,25 @@ last sentence answers Machiavelli's first move.
 | `stare per` + infinitive | be about to | D374, as `essere per` (D45). NM I.47. |
 | `non accetto` (FG) | I do not accept | D374. FG I.47. A refusal of a proposition, a fifth act beside `credo`, `non so`, `reputo`, `non concorro facilmente`; "does not accept" in an editor's summary. |
 
+
+## Added from the I.49 pair (2026-11-02)
+
+| Italian | English | Note |
+|---|---|---|
+| `immediate` | immediately | NM I.49 rubric, .03 (`immediate servo`), .04 (`eseguiva immediate`); FG I.49 rubric. The Latin adverb: without intermediary, from the first. |
+| `servo`, `serve` (adjective) | servile | D388. NM I.49 rubric, .03, .05; FG I.49 rubric. In the old sense, in servitude, not of manner. The noun `servo` stays "servant" (NM I.16); `soggetto` "subject", `sottoposto` "subjected" (NM I.49 .03). |
+| `difettivo` / `defettivo` | defective | NM I.49 .02 (the historian); FG I.49 (the Roman government), his echo. |
+| `Censori`, `censori` | censors | NM I.49 ×4; FG I.49 ×2. |
+| `privare (di)` | deprive (of) | NM I.49 `privarono Mamerco del Senato`; FG I.49 `privare del senato`. |
+| `freno`; `tenere a freno` | rein; hold reined in | D389. NM I.3, I.49; FG I.49 `il freno del tribuno`. |
+| `rifugio`, `rifuggire` | refuge, take refuge (in) | D389. NM I.49 .04. "Have recourse" stays `ricorrere`'s (D209). |
+| `potissimo` | chief | D389. NM I.49 `cagione potissima`. "Principal" stays `principale`'s (FG I.40). |
+| `vegghiare` (of a magistracy) | be [then] in office | D389. NM I.49 .02. |
+| `azioni publiche` | public business | D389. FG I.49; a third sense beside D348 "functions" and D358 "proceedings". I.50's rubric has `le azioni della Città`. |
+| `parte` (a faction) | party | D389. NM I.49 .03 `a proposito della parte loro`. `in questa parte` stays "in this part". |
+| `non pertanto` | for all that | D389. NM I.49 .03. Kept apart from `pertanto`, on that account (D98). |
+| `maraviglia`; `non è maraviglia` | marvel; it is no marvel | NM I.49 .03, .06; FG I.47. |
+| `restituire` | restore | FG I.49 ×2. |
+| `posporre` | set aside | FG I.49 `posposta la disciplina militare`: excepted from the judgment. |
+| `eseguire`, `esecuzione` | execute, execution | NM I.49 .04: carrying out a sentence. |
+| `Scrittore` (FG) | the Writer | FG I.26, I.29, I.49: Machiavelli; capitalised where Canestrini capitalises. |
