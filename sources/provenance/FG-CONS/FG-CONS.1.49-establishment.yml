@@ -1,0 +1,35 @@
+source_unit_id: FG-CONS.1.49
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-026
+responds_to: NM-DISC.1.49
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. Canestrini's note (1) on p. 54 belongs to the LVIII reply; no note of his falls in this unit."
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38); errors are emended from Palmarocchi and bracketed (D68)."
+passes:
+  - {id: A, performed: 2026-11-02, file: sources/coldpass/FG-CONS.1.49-passA.md, note: "subagent; page images only (native 600 ppi rendered at 1200, full page and halves), own image, work and output folders, forbidden the session scratchpad and /tmp (D370)"}
+  - {id: B, performed: 2026-11-02, file: sources/coldpass/FG-CONS.1.49-passB.md, note: "subagent; same images, separate folders"}
+collation: sources/coldpass/COLLATION-2026-11-02-I49.md
+collation_result: >
+  169 words (A 169, B 169), the body tokens identical after preferred
+  readings but for `sì`/`si` and the point after `solo`. The split read with
+  the 1933 edition (D382). Two printed non-words read by both, `cha`,
+  `arrore`, emended (D381). Five common doubts whose alternatives are words,
+  `io`, the rubric's `ne`, `e'`, `il`, `lo`, read with the 1933 edition
+  (D383). Pointing by D110 and D67, no stop at the unit's end (D40) (D384).
+witness_independence_check: "SCOPE §7. Neither pass carries a Palmarocchi word-reading where Canestrini differs: both have `cha`, `arrore`, `il governo`, `parti`, `azioni`, `il freno`, `remedio` ×2, `republica ,`, `populo`, `fatta ,`, `seguenti`, `eleggevano il senato`, and the rubric's `città`, `leggi`, `mantenghino ,`, against the 1933 `che`, `errore`, `el governo`, `parte`, `azione`, `el freno`, `rimedio`, `republica;`, `popolo`, `fatta,`, `sequenti`, `legevano el senato`, `cittadi`, `legge`, `mantenghino:`. The passes read Canestrini."
+boundaries: "printed p. 54; heading CONSIDERAZIONE SUL CAPITOLO XLIX at the head of the page, below the running head (the end of the XLVII reply is on p. 53); Canestrini's three-line rubric; one indented paragraph (`E questo Discorso` ... `benchè lo credo`, p. 54 body ll. 1-17), no stop visible to pass B at its end; CONSIDERAZIONE SUL CAPITOLO LVIII follows on the same page, with Canestrini's note (1) keyed to its `populo`, not carried"
+corrections:
+  - {id: FG-CONS-I49-C001, locator: FG-CONS.1.49.01, was: "anzi era in potestà di uno solo Nè credo", now: "anzi era in potestà di uno solo. Né credo", evidence: "Pass A ⟨.|∅⟩, pass B ⟨∅|.⟩; the next word is capitalised; the 1933 edition prints a stop. D67, D384 (David, 2026-11-02)."}
+emendations:
+  - {id: FG-CONS-I49-E001, operation: emendation, rule: D68, status: ruled_D381, locator: FG-CONS.1.49.01, printed: "o non lasciare cha una deliberazione", established: "o non lasciare ch[e] una deliberazione", source: WIT-FG-CONS-1933-PALMAROCCHI, note: "Both readers read `cha`, each giving `che` as the alternative. `Cha` is not a word; the 1933 edition reads `che`. Emended under D68, the letter bracketed, as D267. Not settled on the page image."}
+  - {id: FG-CONS-I49-E002, operation: emendation, rule: D68, status: ruled_D381, locator: FG-CONS.1.49.01, printed: "Fu anche arrore che", established: "Fu anche [e]rrore che", source: WIT-FG-CONS-1933-PALMAROCCHI, note: "Both readers read `arrore`, each giving `errore` as the alternative. `Arrore` is not a word; the 1933 edition reads `errore`. Emended under D68, as D267. Not settled on the page image."}
+readings:
+  - {locus: "FG-CONS.1.49.01 per ⟨sì|si⟩ buona opera", passes: "A sì (B as alternative); B si (A as alternative)", witness_1933: "sí", disposition: "sì, D382 (David, 2026-11-02): a split between two words, read with the 1933 edition; `si buona opera` does not construe"}
+  - {locus: "FG-CONS.1.49.01 quello che ⟨io|lo|to⟩; rubric ⟨ne|nè⟩ hanno; o che ⟨e|è|i⟩ seguenti; ⟨il|el⟩ che; benchè ⟨lo|io⟩ credo", passes: "A and B doubtful at each, both preferring io, ne, e, il, lo", witness_1933: "io; ne; e'; il; lo", disposition: "io, ne, e', il, lo, D383 (David, 2026-11-02): common doubts whose alternatives are words; read with the 1933 edition; `e'` by D35"}
+  - {locus: "solo⟨.|∅⟩; credo⟨.|∅⟩ (unit end); rubric impossibilità⟨.|∅⟩", passes: "A sees faint stops at all three; B none at solo or credo, a stop at the rubric", witness_1933: ". ; . ; .", disposition: "D384 (David, 2026-11-02): `solo.` supplied from the 1933 edition (C001, D67); the rubric's stop read with it (D110); none supplied at the unit's end (D40)"}
+  - {locus: "dua; de'; feciono", passes: "doubted by one reader only (A dua/due, de'/de; B feciono/feceno)", witness_1933: "dua; de'; feciono", disposition: "as printed: one reader only, the other reading alike without doubt"}
+not_supplied: ["the terminal stop after `credo` (D40)"]
+normalisation_notes: "Class A: accents (`perchè` → `perché`, `benchè` → `benché`, `Nè` → `Né`); apocope spaced (`A'quali` → `A' quali`); `e seguenti` given the apostrophe of the plural article, `e'`, by D35; spaces before punctuation removed; line-end hyphens removed."

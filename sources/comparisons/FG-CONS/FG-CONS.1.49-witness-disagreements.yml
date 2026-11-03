@@ -1,0 +1,43 @@
+source_unit_id: FG-CONS.1.49
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-I49-D001
+    locator: FG-CONS.1.49.01
+    class: emendation
+    witness_1857: "o non lasciare cha una deliberazione ... Fu anche arrore che"
+    witness_1933: "o non lasciare che una deliberazione ... Fu anche errore che"
+    established: "o non lasciare ch[e] una deliberazione ... Fu anche [e]rrore che"
+    publish_as_variant_note: true
+    rationale: "Both cold readers read an a in each, giving the e-form as the alternative; neither `cha` nor `arrore` is a word. Emended under D68 from the 1933 edition (D381)."
+  - id: FG-CONS-I49-D002
+    locator: FG-CONS.1.49.01
+    class: ruled_reading
+    witness_1857: "per [sì/si] buona opera (accent doubtful)"
+    witness_1933: "per sí buona opera"
+    established: "per sì buona opera"
+    publish_as_variant_note: true
+    rationale: "The readers split, A `sì`, B `si`, each giving the other's as alternative. Only the adverb construes. A reading (D382)."
+  - id: FG-CONS-I49-D003
+    locator: FG-CONS.1.49.01
+    class: correction
+    witness_1857: "di uno solo Nè credo (stop not visible to B, faint to A)"
+    witness_1933: "di uno solo. Né credo"
+    established: "di uno solo. Né credo"
+    publish_as_variant_note: true
+    rationale: "Supplied from the 1933 edition, FG-CONS-I49-C001 (D67, D384). No stop is supplied at the unit's end, after `credo` (D40)."
+  - id: FG-CONS-I49-D004
+    locator: FG-CONS.1.49.01
+    class: ruled_reading
+    witness_1857: "quello che [io/lo] ... rubric [ne/nè] hanno ... o che [e/è/i] seguenti ... [il/el] che ... benchè [lo/io] credo (damaged letters)"
+    witness_1933: "quello che io ... ne hanno ... o che e' sequenti ... il che ... benché lo credo"
+    established: "quello che io ... ne hanno ... o che e' seguenti ... il che ... benché lo credo"
+    publish_as_variant_note: true
+    rationale: "Doubtful to both readers, both preferring these forms, the alternatives words. Read with the 1933 edition (D383); `e'` by D35."
+  - id: FG-CONS-I49-D005
+    locator: FG-CONS.1.49.01
+    class: systematic_orthographic_profile
+    witness_1857: "Canestrini's `il governo`, `parti`, `azioni`, `il freno`, `remedio`, `populo`, `seguenti`, `eleggevano il senato`, `perchè`, `benchè`, and his pointing (`republica ,`, `fatta ,`); rubric `città`, `leggi`, `mantenghino ,`"
+    witness_1933: "Palmarocchi's `el governo`, `parte`, `azione`, `el freno`, `rimedio`, `popolo`, `sequenti`, `legevano el senato`, `perché`, `benché`, `republica;`, `fatta,`; rubric `cittadi`, `legge`, `mantenghino:`"
+    established: witness_1857
+    rationale: Canestrini governs throughout. No other difference of word or sense.

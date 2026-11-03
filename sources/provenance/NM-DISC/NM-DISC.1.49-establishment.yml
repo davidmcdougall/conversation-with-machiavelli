@@ -1,0 +1,26 @@
+source_unit_id: NM-DISC.1.49
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-026
+passes:
+  - {id: A, performed: 2026-11-02, file: sources/coldpass/NM-DISC.1.49-passA.md, note: "subagent; page images only (350 ppi, whole and thirds), own image, work and output folders, forbidden the session scratchpad and /tmp (D370); full chapter"}
+  - {id: B, performed: 2026-11-02, file: sources/coldpass/NM-DISC.1.49-passB.md, note: "subagent; the D302 sample page p. 167 (whole and thirds) and three line crops of every word-level 1554 difference outside it, own folders"}
+collation: sources/coldpass/COLLATION-2026-11-02-I49.md
+collation_result: "810 words. Two eligible pages (pp. 166, 167; pp. 165 and 168 fall under a fifth); p. 167 has the more word-level 1554 differences per word (2 of 242, against 2 of 253); sample and crops agree with pass A on every word, clause and sense. Two differences from the 1554 came to David: `si è rotto`, emended `r[e]tto` (D379), and `pericoloso`, kept against `pericolosa` under D203(b) (D380)."
+boundaries: "printed pp. 165-168 (extract pp. 165-169); CAPITOLO XLIX opens p. 165 below the running head (the end of XLVIII is on p. 164, outside the extract); five-line italic rubric; drop initial Q; one block; no notes; ends p. 168 body line 18 `che le non si possano riordinare mai.`; CAPITOLO L follows on p. 168"
+interventions: []
+emendations:
+  - {id: NM-DISC-I49-E001, operation: emendation, rule: "D68, D126", status: ruled_D379, locator: NM-DISC.1.49.03, printed: "e che per sè medesimo si è rotto, come Roma", established: "e che per sé medesimo si è r[e]tto, come Roma", source: WIT-NM-DISC-1554-IA, note: "Read by pass A and the crop reader without doubt, and seen by the collator on p. 166 and on fol. 68v. A word-level difference at e/o under D203(b). The 1824 `rotto` is a word that does not construe in its place; the 1554 `retto` does, and answers `sotto governo d'altri` and `ordinata da sé medesima`. The emended letter bracketed (DEC-009 clause 7)."}
+readings:
+  - {locus: "NM-DISC.1.49.04 dove il differire la esecuzione mediante l'appellazione fusse pericoloso", passes: "A and B (the sample page), without doubt", witness_1554: "fuſſe pericoloſa", disposition: "kept, D380 (David, 2026-11-02): a word-level difference at o/a under D203(b); the 1824 agrees with `il differire` and construes, D38"}
+comparison_collation: >
+  Done 2026-11-02 against the 1554 extract (fol. 68r-69r). A cold reader
+  transcribed the Giglio leaves from the page images
+  (sources/coldpass/NM-DISC.1.49-1554.md); the transcript was collated by
+  word against pass A, and the readings published as variant notes were
+  checked on the leaf images by the collator. Differences are in
+  sources/comparisons/NM-DISC/NM-DISC.1.49-witness-disagreements.yml.
+normalisation_notes: "Class A only: accents (`perchè`/`Perchè` → `perché`/`Perché`, `benchè` → `benché`, `sè` → `sé`; `Mà`, a mark both 1824 readers doubted, read `Ma`); elision closed up (`all' Im-`, `l' occasione`, `ch' erano`, `l' hanno`, `l' uffizio`, `v' hanno`, `l' accusatore`); apocope spaced (`de'suoi` → `de' suoi`); thin spaces before punctuation removed, and the space inside `( veggendo`; `citta dino`, `anco ra` closed; line-end hyphens removed. `ajutarono`, `principj`, `suffragj` as printed."

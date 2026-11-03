@@ -1,0 +1,35 @@
+source_unit_id: NM-DISC.1.49
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-I49-D001
+    locator: NM-DISC.1.49.03
+    class: emendation
+    witness_1824: "il principio libero, e che per sè medesimo si è rotto, come Roma"
+    witness_1554: "il principio loro libero , & che per ſe medeſimo ſi è retto , come Roma"
+    established: "il principio libero, e che per sé medesimo si è r[e]tto, come Roma"
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 68v) and on the 1824 page (p. 166). The 1824 prints `rotto` plainly, read by pass A and the crop reader without doubt; the 1554 `retto`. A difference at e/o under D203(b). `Si è rotto`, has broken, does not construe with `per sé medesimo` in a clause describing a free beginning; `si è retto`, has governed itself, does, and answers Florence `sotto governo d'altri` in the same period and Rome `ordinata da sé medesima` at the close. A real word that cannot be construed in its place, emended from the comparison witness under D68 as extended by D126, the letter bracketed (D379)."
+  - id: NM-DISC-I49-D002
+    locator: NM-DISC.1.49.04
+    class: ruled_reading
+    witness_1824: "dove il differire la esecuzione mediante l'appellazione fusse pericoloso"
+    witness_1554: "doue il differire la eſſecutione , mediante l'appellaggione, fuſſe pericoloſa"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaf (fol. 69r). A difference at o/a under D203(b), read by both 1824 readers (the sample page) without doubt. The 1824 agrees the adjective with `il differire`, the 1554 with `la esecuzione`; the 1824 construes and is kept (D38, D380). English \"dangerous\" either way; what is dangerous is the deferring."
+  - id: NM-DISC-I49-D003
+    locator: NM-DISC.1.49.01
+    class: reading
+    witness_1824: "provvedimenti che ajutarono a tenere Roma libera ... il principio libero (.03) ... avevano questa autorità collocata in un forestiero (.05) ... ministri de' pochi (.05)"
+    witness_1554: "prouedimenti , che aiutarono tenere Roma libera ... il principio loro libero ... haueuano queſta auttorita poſta in un foreſtiero ... miniſtri di pochi"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Checked on the leaves (fol. 68r, 68v, 69r). The 1554 has no `a` before `tenere`, adds `loro` before `libero`, has `posta` for `collocata` and `di pochi` for `de' pochi`. Each 1824 word read by two readers (pass A with the sample page or a crop). Same sense."
+  - id: NM-DISC-I49-D004
+    locator: NM-DISC.1.49.01
+    class: systematic_orthographic_profile
+    witness_1554: "Giglio's `ne l'ordinare`, `Rep.`, `mantenghino`, `fuſsino`, `Numma`, `i x. cittadini` for `i Dieci cittadini`, `ella` for `la`, `differiſsino`, `creatione`, `Fecciono`, `XVIII`, `uegghiauono`, `hebbon`, `priuorno`, `l'hiſtoria`, `l'hiſtorico`, `uiuere`, `alcuno`, `elle` for `le`, `poßino`, `habbino`, `eſſendo` for `sendo`, `CC` for `dugento`, `ampla`, `nõ per tãto`, `d'uno ordinatore`, `contra`, `e` for `ei`, `appellaggione`, `eſequiua`, `Prencipe`, `uennono`, `poter`, `delli ſtati`, `creorno`, `faceßino`, `ufficio`, `è` for `ei`, `ne haueßino`, `ui hanno`, `Pregai`, `caſtigarli`, `tener`, `merauiglia`, `fare`, `fauore`, `uiuer`, `nell'altre`, `difficultati`, `riordinar`, tildes, `&`/`et`, and his pointing (parentheses at `eſſendo ſerue`, `per poter eſſere ... potenti`, and the misprinted `Pregai)che`)"
+    established: witness_1824
+    publish_as_variant_note: false
+    rationale: "Spelling, forms and pointing; DEC-009 classes, not readings. `pericolosa` and `retto` differ at letters the scans break and are D002 and D001."
