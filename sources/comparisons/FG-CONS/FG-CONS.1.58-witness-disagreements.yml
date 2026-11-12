@@ -1,0 +1,43 @@
+source_unit_id: FG-CONS.1.58
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-I58-D001
+    locator: FG-CONS.1.58.02
+    class: emendation
+    witness_1857: "né lo esamplo suo ... da principali magistrati o nel quale se la moltitudine"
+    witness_1933: "né lo esemplo suo ... da' principali magistrati, e nel quale se la moltitudine"
+    established: "né lo es[e]mplo suo ... da' principali magistrati, [e] nel quale se la moltitudine"
+    publish_as_variant_note: true
+    rationale: "`esamplo`, read by both readers at an a-shaped letter, is not a form of the word, printed `esemplo` a line above (D396). `o nel quale`, read by both and seen by the collator, sets up no alternative: the clause is a second relative on `il populo romano` (D397). Both emended from the 1933 edition under D68."
+  - id: FG-CONS-I58-D002
+    locator: FG-CONS.1.58.02
+    class: ruled_reading
+    witness_1857: "rubric più [savia/savio] (letter doubtful) ... tanti e [si/sì] noti (accent doubtful)"
+    witness_1933: "più savia ... tanti e sí noti"
+    established: "più savia ... tanti e sì noti"
+    publish_as_variant_note: true
+    rationale: "The rubric split between the readers; only `savia` agrees with `moltitudine` (D395). `sì` doubtful to both, who preferred `si`; only the adverb construes (D398). Read with the 1933 edition."
+  - id: FG-CONS-I58-D003
+    locator: FG-CONS.1.58.02
+    class: ruled_reading
+    witness_1857: "regolata di buone leggi, piena di costumi santi e accuratissimi della sua libertà (.02) ... che non procederia il populo romano (.03) ... si troveria più prudenza ... non si troveria in una moltitudine ... si troveria de' re ... si troveria una continuazione (.03) ... che sotto a principi (.03)"
+    witness_1933: "regolata da buone legge, piena di costumi santi ed amantissimi della sua libertá ... che non procedeva el popolo romano ... si troverrá (four times) ... che sotto e' principi"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "Words read alike by both readers; `accuratissimi` and `di` seen by the collator on p. 57. `accuratissimi` (most careful of) for `amantissimi` (most loving of); the conditional `procederia`, `troveria` for the imperfect and the future; `di` for `da` of the agent; `a` for `e'` at a/e under D203(b). Canestrini construes at each and is kept (D38, D399, D400)."
+  - id: FG-CONS-I58-D004
+    locator: FG-CONS.1.58.01
+    class: reading
+    witness_1857: "non distinguono [, / ;] ... di confusione [; / ,] però (.01) ... del Discorso [; / ,] perché (.02) ... più ordine [, / none] più distinzione (.03) (the passes split, each doubting)"
+    witness_1933: "non distinguono, ... di confusione; però ... del Discorso; perché ... più ordine, più distinzione"
+    established: "as the 1933 edition"
+    publish_as_variant_note: false
+    rationale: "Pointing neither reader could weigh, read with the 1933 edition (D110)."
+  - id: FG-CONS-I58-D005
+    locator: FG-CONS.1.58.01
+    class: systematic_orthographic_profile
+    witness_1857: "Canestrini's `populo`, `constanza`, `prudenza`, `il governo`, `leggi`, `negozii`, `dissonanza`, `deliberazioni`, `le quali`, `ignoranza`, `comune`, `e oltre`, `e esamine`, `titulo`, `verbi gratia`, `vizii`, `cagioni`, `imprudenza`, `il populo`, `il dire`, rubric `un principe`, and his pointing"
+    witness_1933: "Palmarocchi's `popolo`, `constanzia`, `prudenzia`, `el governo`, `legge`, `negocii`, `dissonanzia`, `deliberazione`, `le quale`, `ignoranzia`, `commune`, `ed oltre`, `ed esamine`, `el titolo`, `verbigrazia`, `vizi`, `cagione`, `imprudenzia`, `el popolo`, `el dire`, rubric `uno principe`, and his"
+    established: witness_1857
+    rationale: Canestrini governs throughout. No other difference of word or sense.

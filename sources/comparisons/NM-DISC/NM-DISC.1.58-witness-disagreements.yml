@@ -1,0 +1,51 @@
+source_unit_id: NM-DISC.1.58
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-I58-D001
+    locator: NM-DISC.1.58.10
+    class: ruled_reading
+    witness_1824: "hann⟨o|e⟩ durato assai gli Stati delle Repubbliche (a damaged sort)"
+    witness_1554: "hanno durato assai gli ſtati delle Rep."
+    established: "hanno durato assai gli Stati delle Repubbliche"
+    publish_as_variant_note: true
+    rationale: "Pass A read `hanno`, a worn sort; pass B read the last letter as e, `hanne`, not a word. The collator saw the 1824 page (p. 197): the sort is open on the right, a broken o or a c rather than a closed e. Same word in both passes; the 1554 reads `hanno`. A reading (D392)."
+  - id: NM-DISC-I58-D002
+    locator: NM-DISC.1.58.10
+    class: ruled_reading
+    witness_1824: "se si ragionerà dell'uno e dell'altro sciolto (.10) ... sono contro a chi ei temono che occupi il ben comune; quelle d'un Principe sono contro a chi ei temono (.11) ... nelle cose gagliarde, o che pajano utili (.07)"
+    witness_1554: "ſe ſi ragionera dell'uno, & dell'altra ſciolto ... contra a chi ei temano, che occupi il ben commune. Quelle di un Prencipe ſono contra a chi ei temano ... o che paiono utili"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Word-level differences at o/a under D203(b), read by both 1824 readers without doubt. `dell'altro` agrees with the masculine pair (Principe, Popolo) the sentence is weighing; `temono` and `pajano` are the indicative and the subjunctive where the 1554 has the reverse. The 1824 construes at each and is kept (D38, D393)."
+  - id: NM-DISC-I58-D003
+    locator: NM-DISC.1.58.05
+    class: ruled_reading
+    witness_1824: "Conchiudo adunque contro alla comune opinione (.05) ... la importanza della malattia dell'uno e dell'altro: che se a curare la malattia del Popolo (.10) ... perché e' sono e sono stati assai Principi; e de' buoni, e de' savj ne sono stati pochi (.02) ... E chi considererà il Popolo romano (.06) ... e si troverà in lei essere quella medesima bontà (.02)"
+    witness_1554: "Conchiudo adunque oltre alla commune oppenione ... l'importanza della malitia dell'uno, et dell'altro: che ſe a curare la malitia del popolo ... perche de cattiui ſono, & ſono ſtati aſſai Prencipi; & de buoni, et de ſaui ne ſono ſtati pochi ... Et chi conſidera il popolo Romano ... & ſi truoui in lei eſſere quella medeſima bonta"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Sense-bearing whole words, each read by both 1824 readers without doubt. `contro` (against) for `oltre` (beyond, besides); `malattia` (illness), which the cure by words and by steel follows, for `malitia` (malice); `e' sono` (there are) for `de cattivi sono` (of bad ones there are); the future `considererà`, `troverà` for the present `considera` and the subjunctive `truovi`. The 1824 construes at each and is kept (D38, D394)."
+  - id: NM-DISC-I58-D004
+    locator: NM-DISC.1.58.01
+    class: reading
+    witness_1824: "Populum brevi, posteaquam ab eo periculum nullum erat, desiderium ejus tenuit. Ed altrove ... superbe dominatur. Io non so"
+    witness_1554: "Populum breui, poſtea quàm ab eo periculum nullum erat, deſiderium eius tenuit. Cioe. D'indi a poco il popolo, poi che con la morte di lui, uide ceſſato il pericolo, deſiderò ch'egli uiueſſe. Et altroue ... ſuperbe dominatur Cioe, tale e la natura del popolo, che e ouero humile in ſeruire, o ſuperba in ſignoreggiare. Io non ſo"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The 1554 follows each Livy quotation with an Italian rendering introduced by `Cioè`; the 1824 prints neither, and both 1824 readers read the Latin without them. Recorded, not ruled."
+  - id: NM-DISC-I58-D005
+    locator: NM-DISC.1.58.01
+    class: reading
+    witness_1824: "sommamente dipoi desiderava (.01) ... accusare gli uomini particolarmente, e massime i Principi (.02) ... come sono loro (.02) ... arebbono avuto la forza (.03) ... perché l'è sentenza (.03) ... de' Principi tenuti savj, li quali (.03) ... Tiranni e Principi (.04) ... dallo avere (.05) ... ch'egli aggiungono (.09) ... gli Stati dei Principi (.10)"
+    witness_1554: "dipòi lo deſideraua ... accuſare tutti gli huomini particolarmente, et maßimamente i Prencipi ... come ſono eßi ... hauuto forza ... perche è ſentenza ... di prencipi tenuti ſaui, i quali ... Tiranni ei prencipi ... dell'hauere ... che eßi aggiungono ... gli ſtati di prencipi"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Words the 1554 adds, drops or changes without changing the sense; each 1824 word read by both readers."
+  - id: NM-DISC-I58-D006
+    locator: NM-DISC.1.58.01
+    class: systematic_orthographic_profile
+    witness_1554: "Giglio's `eſſere`, `attioni`, `Mallio`, `Hiſtorici`, `Hierone`, `oppenione`, `Prencipe`, `giudicio`, `elettioni`, `degnità`, `uertu`, `megliore`, `imperadori`, `nemico`, `contra`, `tra`/`fra`, `cercarno`, `riſuſcitato`, `eguali`, `tanti centinaia`, `pote`, `de i re`, `ella`, `crudeltati`, `l'hiſtorico`, `habbi`, `conſtitutioni`, `altrimenti`, `da legge`, `ciaſcuno`, `bene`, `mal`, `pare`, the misprints `Preucipe`, `ba`, tildes, `&`/`et`, and his pointing"
+    established: witness_1824
+    publish_as_variant_note: false
+    rationale: "Spelling, forms and pointing; DEC-009 classes, not readings. The o/a differences are D002."

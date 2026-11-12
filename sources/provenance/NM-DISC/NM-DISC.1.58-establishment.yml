@@ -1,0 +1,28 @@
+source_unit_id: NM-DISC.1.58
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-027
+passes:
+  - {id: A, performed: 2026-11-04, file: sources/coldpass/NM-DISC.1.58-passA.md, note: "subagent; page images only (350 ppi, whole and thirds), own image, work and output folders outside the session scratchpad, forbidden it and /tmp (D370); full chapter"}
+  - {id: B, performed: 2026-11-04, file: sources/coldpass/NM-DISC.1.58-passB.md, note: "subagent; the same images in separate folders; full chapter, since no page is eligible for the D302 sample (D391, as D352)"}
+collation: sources/coldpass/COLLATION-2026-11-12-I58.md
+collation_result: "1,775 words (A and B alike, p. 192 187, p. 193 248, p. 194 256, p. 195 256, p. 196 270, p. 197 267, p. 198 263, p. 199 28). No page reaches a fifth of the chapter (355 words), so pass B read it all (D391). The passes agree on every word, clause and sense; the one split, `hann⟨o|e⟩` (p. 197), a damaged sort in the same word, read `hanno` with the 1554 (D392). Against the 1554: four differences at e/o/a kept under D203(b) (D393); six sense-bearing whole words kept (D394)."
+boundaries: "printed pp. 192-199 (extract pp. 192-200); CAPITOLO LVIII opens p. 192 below the running head (the end of LVII is on p. 191, outside the extract); two-line italic rubric; drop initial N; one block; no notes; ends p. 199 body line 4 `o di quelle fatte con un Principe.`; CAPITOLO LIX follows on p. 199"
+interventions: []
+emendations: []
+readings:
+  - {locus: "NM-DISC.1.58.10 Come hanno durato assai gli Stati dei Principi, hann⟨o|e⟩ durato assai gli Stati delle Repubbliche", passes: "A hanno (alternative `hannc`, a damaged sort); B `hanne` as printed (alternative `hanno`)", witness_1554: "hanno", disposition: "hanno, D392 (David, 2026-11-12): the same word in both passes; the sort, seen by the collator on p. 197, is open on the right, a broken o rather than a closed e; `hanne` is not a word; variant note"}
+  - {locus: "NM-DISC.1.58.10 dell'altro sciolto; .11 ei temono (twice); .07 che pajano utili", passes: "A and B, without doubt", witness_1554: "dell'altra; temano (twice); paiono", disposition: "kept, D393 (David, 2026-11-12): word-level differences at o/a under D203(b); the 1824 construes, D38"}
+  - {locus: "NM-DISC.1.58.05 contro alla comune opinione; .10 malattia (twice); .02 perché e' sono e sono stati assai Principi; .06 chi considererà; .02 si troverà in lei", passes: "A and B, without doubt", witness_1554: "oltre alla commune oppenione; malitia; perche de cattiui sono, & sono stati assai Prencipi; chi conſidera; ſi truoui in lei", disposition: "kept, D394 (David, 2026-11-12): sense-bearing whole words; the 1824 construes at each, D38; variant notes, and translator's notes on `contro` and `malattia`"}
+comparison_collation: >
+  Done 2026-11-04 against the 1554 extract (fol. 79r-82r). A cold reader
+  transcribed the Giglio leaves from the page images
+  (sources/coldpass/NM-DISC.1.58-1554.md); the transcript was collated by
+  word against pass A after spelling normalisation, and the readings
+  published as variant notes were checked against the transcript and, for
+  D392, on the 1824 page by the collator. Differences are in
+  sources/comparisons/NM-DISC/NM-DISC.1.58-witness-disagreements.yml.
+normalisation_notes: "Class A only: accents (`perchè`/`Perchè` → `perché`/`Perché`, `nè`/`Nè` → `né`/`Né`, `sè` → `sé`, `poichè`, `talchè`, `Sicchè` → `-ché`); elision closed up and apocope spaced as both readers set them; thin spaces before punctuation removed; line-end hyphens removed. `savj`, `esempj`, `varj`, `pajano`, `centinaja`, `rimedj`, `arebbono`, `aranno` as printed. The two Livy quotations set in italic as printed."

@@ -1,0 +1,39 @@
+source_unit_id: FG-CONS.1.58
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-027
+responds_to: NM-DISC.1.58
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. Canestrini's three editorial notes in this unit (keyed to `populo` p. 54, `prudenti.` p. 56, `vogliono,` p. 58) are his commentary, not Guicciardini's text, and are not carried."
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38); errors are emended from Palmarocchi and bracketed (D68)."
+passes:
+  - {id: A, performed: 2026-11-04, file: sources/coldpass/FG-CONS.1.58-passA.md, note: "subagent; page images only (native 600 ppi rendered at 1200, full page and halves), own image, work and output folders outside the session scratchpad, forbidden it and /tmp (D370)"}
+  - {id: B, performed: 2026-11-04, file: sources/coldpass/FG-CONS.1.58-passB.md, note: "subagent; same images, separate folders"}
+collation: sources/coldpass/COLLATION-2026-11-12-I58.md
+collation_result: >
+  973 words (A 973, B 973), the body tokens identical after preferred readings
+  but for `esemplo`/`esamplo`, `e`/`o nel quale` and the rubric's
+  `savia`/`savio`. The rubric read with the 1933 edition (D395); `esamplo` and
+  `o nel quale`, the printed letter seen by both readers, emended (D396,
+  D397); the common doubt `sì noti` read with the 1933 edition (D398);
+  `sotto a principi` kept under D203(b) (D399); four sense-bearing words kept
+  against the 1933 (D400). Three ,/; splits and one doubtful comma read with
+  the 1933 edition (D110); no stop at the unit's end (D40).
+witness_independence_check: "SCOPE §7. Neither pass carries a Palmarocchi word-reading where Canestrini differs: both have `populo` throughout, `constanza`, `prudenza`, `il governo`, `leggi`, `negozii`, `dissonanza`, `deliberazioni`, `le quali`, `ignoranza`, `comune`, `esempli`, `regolata di buone leggi`, `accuratissimi`, `procederia`, `si troveria` ×4, `titulo`, `verbi gratia`, `vizii`, `cagioni`, `sotto a principi`, rubric `un principe`, against the 1933 `popolo`, `constanzia`, `prudenzia`, `el governo`, `legge`, `negocii`, `dissonanzia`, `deliberazione`, `le quale`, `ignoranzia`, `commune`, `regolata da buone legge`, `amantissimi`, `procedeva`, `si troverrá`, `el titolo`, `verbigrazia`, `vizi`, `cagione`, `sotto e' principi`, `uno principe`. At the three splits pass A preferred the 1933 word but recorded the printed glyph as its alternative each time; a preference for sense, not a reading of the other book. The passes read Canestrini."
+boundaries: "printed pp. 54-59; heading CONSIDERAZIONE SUL CAPITOLO LVIII on p. 54 below the end of the XLIX reply (`benchè lo credo`); Canestrini's one-line rubric, no stop; three indented paragraphs (`Difficile impresa` p. 54; `Gli esempli` p. 56; `Di poi` p. 57); ends p. 59 `in uno populo che in uno principe`, no stop visible; CONSIDERAZIONE SUL CAPITOLO LX follows on p. 59 (no reply on LIX)"
+corrections: []
+emendations:
+  - {id: FG-CONS-I58-E001, operation: emendation, rule: D68, status: ruled_D396, locator: FG-CONS.1.58.02, printed: "né lo esamplo suo fa a proposito", established: "né lo es[e]mplo suo fa a proposito", source: WIT-FG-CONS-1933-PALMAROCCHI, note: "A preferred `esemplo` but read the letter as `a` (`esamplo` its alternative); B read `esamplo`. Both see an a-shaped letter; `esamplo` is not a form of the word; `esemplo` is printed a line above; the 1933 edition reads `esemplo`. Emended under D68, the letter bracketed, as D381."}
+  - {id: FG-CONS-I58-E002, operation: emendation, rule: "D68, D126", status: ruled_D397, locator: FG-CONS.1.58.02, printed: "da principali magistrati o nel quale se la moltitudine", established: "da' principali magistrati, [e] nel quale se la moltitudine", source: WIT-FG-CONS-1933-PALMAROCCHI, note: "Both readers see `o` (A preferring `e`, B `o`), and so did the collator on p. 57. A word-level difference at e/o under D203(b). The clause is a second relative on `il populo romano` (`nel quale le cose ... nel quale se la moltitudine ...`); `o` (or) sets up no alternative and does not construe; the 1933 edition reads `e`. A real word that cannot be construed in its place, emended under D68 as extended by D126."}
+readings:
+  - {locus: "rubric La moltitudine è più ⟨savia|savio⟩", passes: "A savia (savio as alternative); B savio (savia as alternative)", witness_1933: "savia", disposition: "savia, D395 (David, 2026-11-12): a split of preferred reading; only the feminine agrees with `moltitudine`; the 1933 edition and the 1824 rubric read `savia`"}
+  - {locus: "FG-CONS.1.58.02 tanti e ⟨si|sì⟩ noti", passes: "A and B doubtful, both preferring si", witness_1933: "sí", disposition: "sì, D398 (David, 2026-11-12): a common doubt whose alternatives are words; only the adverb construes with `tanti e ... noti che`"}
+  - {locus: "FG-CONS.1.58.03 che sotto a principi", passes: "A ⟨a|e⟩, B ⟨a|a'⟩, both preferring a", witness_1933: "sotto e' principi", disposition: "kept, D399 (David, 2026-11-12): a word-level difference at a/e under D203(b); `sotto a principi` construes, D38; English the same"}
+  - {locus: "FG-CONS.1.58.02 costumi santi e accuratissimi della sua libertà; regolata di buone leggi; .03 non procederia il populo romano; si troveria (four times)", passes: "A and B alike (A doubting the m of accuratissimi, B reading `accuratissini`)", witness_1933: "amantissimi; regolata da buone legge; procedeva; si troverrá", disposition: "kept, D400 (David, 2026-11-12): sense-bearing words read alike by both readers and seen by the collator (`accuratissimi`, `di`) on p. 57; Canestrini construes at each, D38"}
+  - {locus: "FG-CONS.1.58.01 non distinguono⟨,|;⟩; di confusione⟨;|,⟩ però; .02 del Discorso⟨;|,⟩ perché; .03 più ordine⟨,|∅⟩ più distinzione", passes: "split (A `,`, B `;`; A `,`, B `;`; A `,`, B `;`; A none, B `,`), each doubted", witness_1933: ", ; ; ; ; ,", disposition: "read with the 1933 edition (D110): `distinguono,`, `confusione;`, `Discorso;`, `ordine,`"}
+  - {locus: "rumano; deliberazioai; principo; auccessori; accuratissini; ponsiero; qualo", passes: "both readers name the word and record the printed letter as broken", witness_1933: "romano; deliberazione; principe; successori; amantissimi; pensiero; quale", disposition: "read as the word: broken letters of the bitonal scan, no ruling"}
+  - {locus: "e ⟨e|o⟩ chi (.01); libero ⟨e|è⟩ sciolto (.03); titulo (.03)", passes: "doubted by one reader only, the other reading alike without doubt", witness_1933: "e chi; e sciolto; titolo", disposition: "as printed"}
+not_supplied: ["the terminal stop after `principe` (D40)", "a stop after the rubric, which Canestrini prints without one"]
+normalisation_notes: "Class A: accents (`perchè` → `perché`, `nè`/`Nè` → `né`/`Né`, `sè` → `sé`); the apostrophe of the plural article supplied (`e quali` ×2, `e venti`, `e governi`, `e termini`, `per e quali`, `e successori` → `e'`), and of the apocopated article (`da principali` → `da' principali`, `de re` → `de' re`, `ne principi` → `ne' principi`); spaces before punctuation removed; line-end hyphens removed; footnote calls removed with Canestrini's notes."
