@@ -76,4 +76,9 @@ first time it is italicised.
 | `dignitatis` | NM I.47 commentary |
 | `honoris` | NM I.47 commentary |
 | `incorrupto` | NM I.47 note, commentary |
-
+| `Populum brevi, posteaquam ab eo periculum nullum erat, desiderium ejus tenuit.` | NM I.58 (after Livy 6.20) |
+| `Populum brevi, posteaquam ab eo periculum nullum erat, desiderium ejus tenuit` | NM I.58 note |
+| `Haec natura multitudinis est, aut humiliter servit, aut superbe dominatur.` | NM I.58 (after Livy 24.25) |
+| `Haec natura multitudinis est, aut humiliter servit, aut superbe dominatur` | NM I.58 note |
+| `vox populi vox Dei` | NM I.58 note |
+| `Anabasis` | NM I.58 commentary (Arrian) |

@@ -217,3 +217,14 @@ the original.
 | `Quarantie` | the Quarantie | NM I.49 .05; the Venetian courts of forty, kept in Italian. The Florentine Quarantia of FG I.7 shares the name |
 | `Pregadi`; `Consiglio de' Pregadi` | the Pregadi; the council of the Pregadi | NM I.49 .05; the Venetian senate. Machiavelli's `il Consiglio maggiore` kept; it is not the Great Council (*Maggior Consiglio*) |
 
+| `Tito Livio` | Livy | NM I.58 .01, as NM I.47 |
+| `Manlio Capitolino`; `Manlio` | Manlius Capitolinus; Manlius | NM I.58 .01, .03, as NM I.8, I.24; the 1554 edition prints `Mallio` |
+| `Siracusa`, `Siracusana` | Syracuse, the Syracusan | NM I.58 .01, .04 |
+| `Girolamo`; `Jerone` | Hieronymus; Hiero | NM I.58 .01; Hieronymus, king of Syracuse 215-214 BC, grandson (`nipote`) of Hiero II. Not the Florentine `frate Girolamo` of NM I.11 |
+| `Egitto`, `Sparta`, `Francia` | Egypt, Sparta, France | NM I.58 .02; as NM I.2, I.16 for Sparta and France |
+| `Alessandro`; `Alessandro Magno`; `Clito` | Alexander; Alexander the Great; Clitus | NM I.58 .03, .04; Alexander as NM I.26. Clitus, the companion he killed in 328 BC |
+| `Erode`; `Marianne` | Herod; Mariamne | NM I.58 .03, .04; Herod the Great and his wife Mariamne. `Marianne` is Machiavelli's form, the English takes the usual one |
+| `Dieci` | the Ten | NM I.58 .03; the Roman decemvirs, as NM I.40 |
+| `Scipione` | Scipio | NM I.58 .06; Scipio Africanus, as NM I.11, I.29 |
+| `Atene`, `Pisistrato` | Athens, Pisistratus | NM I.58 .08, as NM I.2, I.28 |
+| `Francia` (`quegli di Francia`) | France (those of France) | FG I.58 .03, the French kings |

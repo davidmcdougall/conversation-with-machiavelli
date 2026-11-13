@@ -679,3 +679,30 @@ last sentence answers Machiavelli's first move.
 | `posporre` | set aside | FG I.49 `posposta la disciplina militare`: excepted from the judgment. |
 | `eseguire`, `esecuzione` | execute, execution | NM I.49 .04: carrying out a sentence. |
 | `Scrittore` (FG) | the Writer | FG I.26, I.29, I.49: Machiavelli; capitalised where Canestrini capitalises. |
+
+
+## Added from the I.58 pair (2026-11-13)
+
+| Italian | English | Note |
+|---|---|---|
+| `moltitudine` | multitude | D402. NM I.58 rubric and throughout; FG I.58 throughout. Kept apart from `Popolo`, `populo`, people, and `Popoli`, peoples. |
+| `regolato` (dalle leggi) / `sciolto` (dalle leggi) | regulated / unbound | D402. NM I.58 and FG I.58 throughout, the pair's two participles; `incatenato` chained (NM I.58 .10). `sciolto` as FG I.10 `autorità sciolta`, the authority unbound. |
+| `obbligato alle leggi` | obliged to the laws | D401. NM I.58 .10. D204's "indebted" stays for debt; D229's "bound oneself" for the reflexive; "bound" is FG I.58's `legati`. |
+| `costante`, `constanza` / `incostante`, `incostanza`, `inconstanza` | constant, constancy / inconstant, inconstancy | D402. NM I.58 rubric, .01, .04; FG I.58 throughout. |
+| `vario`, `variazione`, `varietà` | various, variation, variety | D402. NM I.58 .04, .05; FG I.58 ×3. One root kept: the sense is changeable. |
+| `savio` / `pazzo`, `pazzia` | wise / mad, madness | D402. NM I.58 rubric, .10, .11; `sagace` stays "sagacious" (NM I.40). |
+| `incolpare` | inculpate | D402. NM I.58 .04; kept apart from `accusare` accuse, `biasimo` blame (D173). |
+| `malattia`; `cura`, `curare` | illness; cure | D402. NM I.58 .10, the physician's figure. |
+| `ferro` | the steel | D402. NM I.58 .10, the sword as remedy. |
+| `concionanti` | haranguers | D402. NM I.58 .07; with `concioni`, harangues. |
+| `assomigliare` | liken | D402. NM I.58 .07; FG I.58 .01, his answer in the same verb. |
+| `epilogare` | epilogize | D402. NM I.58 .10. |
+| `preposto` (ranked above) | preferred | D401. FG I.58 .01. `preporre` of a man over a charge stays "appoint" (NM I.10). |
+| `abile a` + infinitive | able to | D401. FG I.58 .01. D374's "eligible" stays for fitness for office. |
+| `termini` (of a comparison, a question) | terms | D401. FG I.3 (*data paritate terminorum*); FG I.58 .03 ×2. D325's "bearings" stays for conduct. |
+| `all'incontro` (of position) | over against | D401. NM I.58 .02. D313's "in return" stays for requital; `al rincontro` "on the other side" (D24), which FG I.58 .03 uses to reverse the comparison. |
+| `non accade` | there is no occasion | D401. FG I.58 .02. D298's "happen" stays for events. |
+| `vantaggio` | advantage | D401, a recorded collapse with `utile` (noun, D283). NM I.58 .05. |
+| `pel contrario` | on the contrary | D401, a recorded collapse with `anzi` reversing (D135). FG I.58 .03. |
+| `assunto` | assumption | FG I.58 .03: the proposition taken up to be proved. |
+| `impertinente` | impertinent | FG I.58 .03: not pertaining to the question. |

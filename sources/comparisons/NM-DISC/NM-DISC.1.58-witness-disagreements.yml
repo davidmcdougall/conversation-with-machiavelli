@@ -6,7 +6,7 @@ records:
     locator: NM-DISC.1.58.10
     class: ruled_reading
     witness_1824: "hann⟨o|e⟩ durato assai gli Stati delle Repubbliche (a damaged sort)"
-    witness_1554: "hanno durato assai gli ſtati delle Rep."
+    witness_1554: "hanno durato assai gli ſtati delle Rep. (abbreviated)"
     established: "hanno durato assai gli Stati delle Repubbliche"
     publish_as_variant_note: true
     rationale: "Pass A read `hanno`, a worn sort; pass B read the last letter as e, `hanne`, not a word. The collator saw the 1824 page (p. 197): the sort is open on the right, a broken o or a c rather than a closed e. Same word in both passes; the 1554 reads `hanno`. A reading (D392)."
