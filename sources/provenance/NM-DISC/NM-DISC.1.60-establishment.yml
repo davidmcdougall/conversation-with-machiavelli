@@ -1,0 +1,26 @@
+source_unit_id: NM-DISC.1.60
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-028
+passes:
+  - {id: A, performed: 2026-11-19, file: sources/coldpass/NM-DISC.1.60-passA.md, note: "subagent; page images only (350 ppi, whole and thirds), own image, work and output folders outside the session scratchpad, forbidden it and /tmp (D370); full chapter"}
+  - {id: B, performed: 2026-11-19, file: sources/coldpass/NM-DISC.1.60-passB.md, note: "subagent; separate folders; the D302 sample page p. 203 whole, with line crops of p. 202 ll. 3, 15-16 and 20 (the three 1554 differences on that page), not told which word"}
+collation: sources/coldpass/COLLATION-2026-11-19-I60.md
+collation_result: "360 words (pass A: p. 202 177, p. 203 183). Sample page p. 203, the eligible page with more word-level 1554 differences per word (5/183 against 3/177), chosen and recorded after pass A and the Giglio read. Pass B's p. 203 and its three crops agree with pass A word for word. Against the 1554: one difference at e/a kept under D203(b) and five whole words kept (D409)."
+boundaries: "printed pp. 202-203 (extract pp. 202-204, the last blank); CAPITOLO LX on p. 202 after the four-line close of LIX; two-line italic rubric; drop initial E; one block; no notes; ends p. 203 l. 22 `giovanissimi.`; FINE DEL LIBRO PRIMO follows"
+interventions: []
+emendations: []
+readings:
+  - {locus: "NM-DISC.1.60.01 poiché il Consolato venne nella Plebe", passes: "A and B (crop), without doubt", witness_1554: "nelle plebe", disposition: "kept, D409 (David, 2026-11-19): a word-level difference at e/a under D203(b); the 1824 agrees with the singular `Plebe`, D38"}
+  - {locus: "NM-DISC.1.60.02 che fece Roma; avere il Consolato; si nutrì; non ha a fare questa distinzione; .03 avendolo ad eleggere", passes: "A and B (sample page and crops), without doubt", witness_1554: "che fece in Roma; hauere Conſolato; nutri; ha a fare queſta diſtintione; hauendouelo ad eleggere", disposition: "kept, D409 (David, 2026-11-19): whole words; the 1824 construes at each, D38; variant notes, and a translator's note on `non ha a fare`, where the 1554's dropped negative reverses the sense"}
+comparison_collation: >
+  Done 2026-11-19 against the 1554 extract (fol. 83v-84r). A cold reader
+  transcribed the Giglio leaves from the page images
+  (sources/coldpass/NM-DISC.1.60-1554.md); the transcript was collated by
+  word against pass A after spelling normalisation, and the three p. 202
+  differences were given to pass B as line crops. Differences are in
+  sources/comparisons/NM-DISC/NM-DISC.1.60-witness-disagreements.yml.
+normalisation_notes: "Class A only: accents (`poichè` → `poiché`, `perchè` → `perché`, `nè` → `né`, `ventitrè` → `ventitré`); elision closed up (`l' ordine`, `d' una`, `dell' animo` → `l'ordine`, `d'una`, `dell'animo`) and apocope spaced (`e' non`, `e' convenne`); the initial `E'` kept, the pronoun; line-end hyphens removed. The Latin phrase set in italic as printed."

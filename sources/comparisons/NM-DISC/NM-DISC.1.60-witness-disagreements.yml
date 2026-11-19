@@ -1,0 +1,35 @@
+source_unit_id: NM-DISC.1.60
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-I60-D001
+    locator: NM-DISC.1.60.02
+    class: ruled_reading
+    witness_1824: "ma quella che vuol fare quel che fece Roma, non ha a fare questa distinzione"
+    witness_1554: "Ma quella, che uuole fare quello che fece Roma, ha a fare queſta diſtintione"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The 1554 drops the negative and reverses the sense: a city that would do what Rome did would have to make the distinction of blood, against the argument that such a city must give the plebs hope of the consulship. Read by both 1824 readers without doubt (pass B on the sample page); the 1824 construes and is kept (D38, D409)."
+  - id: NM-DISC-I60-D002
+    locator: NM-DISC.1.60.01
+    class: ruled_reading
+    witness_1824: "poiché il Consolato venne nella Plebe (.01) ... gli effetti che fece Roma (.02) ... di avere il Consolato, e di questa speranza si nutrì un tempo (.02) ... avendolo ad eleggere la moltitudine (.03)"
+    witness_1554: "poi che'l Conſolato uenne nelle plebe ... gli effetti, che fece in Roma ... di hauere Conſolato, et di queſta ſperanza nutri un tempo ... hauendouelo ad eleggere la moltitudine"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "`nella`/`nelle` at e/a under D203(b), the 1824 agreeing with the singular; four whole words the 1554 adds or drops (`in`, `il`, `si`, `vi`). Read by both 1824 readers without doubt (pass B on the crops and the sample page); the 1824 construes at each (D38, D409)."
+  - id: NM-DISC-I60-D003
+    locator: NM-DISC.1.60.01
+    class: reading
+    witness_1824: "o in giovane o in vecchio che la fusse (.01) ... fu fatto Consolo nelli ventitré anni (.01) ... che la Città non se ne potesse valere (.03) ... di Scipione, di Pompeo, e di molti altri (.03)"
+    witness_1554: "o in giouane, o in uecchio che ella fuſſe ... fu fatto Cõſolo nel li XXIII. anni ... che ella citta non ſe ne poteſſe ualere ... di Scipione, & di Pompeio, & di molti altri"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Forms the 1554 sets differently without changing the sense (`ella` for `la`, the numeral, `&` before Pompey); each 1824 word read by pass A, and on p. 203 by pass B."
+  - id: NM-DISC-I60-D004
+    locator: NM-DISC.1.60.01
+    class: systematic_orthographic_profile
+    witness_1554: "Giglio's `hiſtoria`, `Republica Romana`, `poi che'l`, `a i`, `anchora`, `teſtimonio`, `Coruino`, `præmium`, `Laqual`, `neceßita`, `citta`, `a gli huomini`, `hora`, `di poi`, `uuole`, `quello`, `diſtintione`, `uno giouane`, `habbi`, `di una`, `facci`, `attione`, `uertu`, `allhora`, `la haueſſe`, `dellaquale`, `Pompeio`, tildes, `&`/`et`, and his pointing"
+    established: witness_1824
+    publish_as_variant_note: false
+    rationale: "Spelling, forms and pointing; DEC-009 classes, not readings."

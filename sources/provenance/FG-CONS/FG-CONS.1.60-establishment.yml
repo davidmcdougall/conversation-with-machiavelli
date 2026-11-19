@@ -1,0 +1,34 @@
+source_unit_id: FG-CONS.1.60
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-028
+responds_to: NM-DISC.1.60
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. Canestrini's note (1) on the lacuna (p. 59) is his commentary, not Guicciardini's text, and is not carried; its conjecture is reported as his in the translator's note."
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38); errors are emended from Palmarocchi and bracketed (D68)."
+passes:
+  - {id: A, performed: 2026-11-19, file: sources/coldpass/FG-CONS.1.60-passA.md, note: "subagent; page images only (native 600 ppi rendered at 1200, full page and halves), own image, work and output folders outside the session scratchpad, forbidden it and /tmp (D370)"}
+  - {id: B, performed: 2026-11-19, file: sources/coldpass/FG-CONS.1.60-passB.md, note: "subagent; same images, separate folders"}
+collation: sources/coldpass/COLLATION-2026-11-19-I60.md
+collation_result: >
+  170 words (A 170, B 170), the body tokens identical after preferred
+  readings. The rubric's `qualunqua`/`qualunque` read `qualunque` with the
+  1933 edition (D406); the lacuna after `Cicerone nel` printed `. . .`
+  (D407); `e così con verità` kept against the 1933 `così è` (D408). The
+  common doubt at `consule ___ e se` read `;` and the faint stop at `tempo.`
+  read with the 1933 edition (D110); no stop at the unit's end (D40).
+witness_independence_check: "SCOPE §7. Neither pass carries a Palmarocchi word-reading where Canestrini differs: both have `il Discorso`, `il divieto` (twice), `il tempo`, `così con verità`, `principii`, `il consulato;`, `e almanco`, `leggi`, `utili`, rubric `senza`, against the 1933 `el Discorso`, `el divieto`, `el tempo`, `così è con verità`, `princípi`, `el consulato,`, `ed almanco`, `legge`, `utile`, `sanza`. The passes read Canestrini."
+boundaries: "printed pp. 59-60; heading CONSIDERAZIONE SUL CAPITOLO LX on p. 59 below the end of the LVIII reply (`in uno principe`); Canestrini's two-line rubric, no stop; one indented paragraph; ends p. 60 l. 6 `non essendo trattate nel Discorso`, no stop visible; CONSIDERAZIONE SUL PROEMIO DEL LIBRO II follows on p. 60 (no reply on LIX)"
+corrections: []
+emendations: []
+lacunae:
+  - {id: FG-CONS-I60-L001, rule: D407, status: ruled_D407, locator: FG-CONS.1.60.01, printed: "Cicerone nel . . . .(1) dice (A four points, B three, each doubting the count)", established: "Cicerone nel . . . dice", witness_1933: "Cicerone nel . . . . . dice", note: "Both witnesses leave the work unnamed. Printed as a three-point lacuna, unbracketed; Canestrini's conjecture (De Legibus III) and the editor's identification (Philippics 5.47-48) in the translator's note."}
+readings:
+  - {locus: "rubric e ⟨qualunqua|qualunque⟩ altro magistrato", passes: "A qualunqua (qualunque as alternative); B qualunque", witness_1933: "qualunque", disposition: "qualunque, D406 (David, 2026-11-19): a split of preferred reading, two forms of one word; the a-shape is the scan's barless e; the 1933 edition, the 1824 rubric and the 1554 heading (`qualunche`) have the -e form"}
+  - {locus: "FG-CONS.1.60.01 bisogna dire, e così con verità, che", passes: "A and B, without doubt", witness_1933: "e così è con verità", disposition: "kept, D408 (David, 2026-11-19): a sense-bearing word against the 1933 edition; Canestrini construes as an ellipsis, D38; the ellipsis left unsupplied in the English; variant note"}
+  - {locus: "FG-CONS.1.60.01 essere consule⟨,|;⟩ e se; in progresso di tempo⟨.|∅⟩ Come", passes: "both readers alike, each doubting", witness_1933: "consule; ... tempo.", disposition: "read with the 1933 edition (D110): `consule;`, `tempo.`"}
+  - {locus: "una; tra; o no; principii; quali", passes: "both readers (A only at `quali`) name the word and record the printed letter as broken", witness_1933: "una; tra; o no; princípi; quali", disposition: "read as the word: broken letters of the bitonal scan, no ruling"}
+not_supplied: ["the terminal stop after `Discorso` (D40)", "a stop after the rubric, which Canestrini prints without one"]
+normalisation_notes: "Class A: accents (`perchè` → `perché`, `trentatrè` → `trentatré`); the apostrophe of the apocopated article supplied (`ne principii` → `ne' principii`) and elision closed up (`l' uno`, `l' altro` → `l'uno`, `l'altro`); spaces before punctuation removed; line-end hyphens removed; Canestrini's note call removed with his note."

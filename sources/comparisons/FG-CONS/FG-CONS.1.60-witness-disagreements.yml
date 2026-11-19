@@ -1,0 +1,36 @@
+source_unit_id: FG-CONS.1.60
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-I60-D001
+    locator: FG-CONS.1.60.01
+    class: lacuna
+    witness_1857: "non che Cicerone nel . . . .(1) dice (the points' count doubtful to both readers; Canestrini's note: a lacuna in the text, perhaps De Legibus III)"
+    witness_1933: "non che Cicerone nel . . . . . dice"
+    established: "non che Cicerone nel . . . dice"
+    publish_as_variant_note: true
+    rationale: "Both witnesses leave the work unnamed. Printed as a three-point lacuna, unbracketed, since brackets mark the edition's own supplies (D407)."
+  - id: FG-CONS-I60-D002
+    locator: FG-CONS.1.60.01
+    class: ruled_reading
+    witness_1857: "rubric e [qualunqua/qualunque] altro magistrato (split) ... bisogna dire, e così con verità, che"
+    witness_1933: "e qualunque altro magistrato ... bisogna dire, e così è con verità, che"
+    established: "qualunque ... e così con verità"
+    publish_as_variant_note: true
+    rationale: "The rubric split between the readers, two forms of one word, read with the 1933 edition (D406). `così con verità`, read alike by both without doubt, construes as an ellipsis and is kept against the 1933 `così è` (D38, D408)."
+  - id: FG-CONS-I60-D003
+    locator: FG-CONS.1.60.01
+    class: reading
+    witness_1857: "essere consule [, / ;] e se (both doubting) ... di tempo [. / none] Come (both doubting) ... il consulato; e almanco ... consule, ma di poi"
+    witness_1933: "essere consule; e se ... di tempo. Come ... el consulato, ed almanco ... consule; ma di poi"
+    established: "consule; ... tempo. ... il consulato; e almanco ... consule, ma di poi"
+    publish_as_variant_note: false
+    rationale: "Pointing neither reader could weigh read with the 1933 edition; marks both read alike without doubt kept against it (D110)."
+  - id: FG-CONS-I60-D004
+    locator: FG-CONS.1.60.01
+    class: systematic_orthographic_profile
+    witness_1857: "Canestrini's `il Discorso`, `il divieto`, `il tempo`, `principii`, `il consulato`, `e almanco`, `leggi`, `utili`, rubric `senza`, and his pointing"
+    witness_1933: "`el Discorso`, `el divieto`, `el tempo`, `princípi`, `el consulato`, `ed almanco`, `legge`, `utile`, rubric `sanza`"
+    established: witness_1857
+    publish_as_variant_note: false
+    rationale: "Forms and spelling; DEC-009 classes, not readings."
