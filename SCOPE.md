@@ -105,7 +105,7 @@ exist. See §7.
 | 25 | NM-DISC.1.47 | FG-CONS.1.47 | FG-CONS-DR-025 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 26 | NM-DISC.1.49 | FG-CONS.1.49 | FG-CONS-DR-026 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 27 | NM-DISC.1.58 | FG-CONS.1.58 | FG-CONS-DR-027 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
-| 28 | NM-DISC.1.60 | FG-CONS.1.60 | FG-CONS-DR-028 | — | — | — | — | — |
+| 28 | NM-DISC.1.60 | FG-CONS.1.60 | FG-CONS-DR-028 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 29 | NM-DISC.2.proem | FG-CONS.2.proem | FG-CONS-DR-029 | — | — | — | — | — |
 | 30 | NM-DISC.2.10 | FG-CONS.2.10 | FG-CONS-DR-030 | — | — | — | — | — |
 | 31 | NM-DISC.2.12 | FG-CONS.2.12 | FG-CONS-DR-031 | — | — | — | — | — |
@@ -220,12 +220,12 @@ than inside the first paragraph.
 | Stage | Done | Remaining | Of |
 |---|---|---|---|
 | Link records | 39 | 0 | 39 |
-| NM source established | 27 | 12 | 39 |
-| FG source established | 27 | 12 | 39 |
-| Collated against the comparison witness | 54 units | 24 | 78 |
-| Translated (draft, cold-reviewed) | 54 | 24 | 78 |
-| Annotated | 54 | 24 | 78 |
-| Published | 54 | 24 | 78 |
+| NM source established | 28 | 11 | 39 |
+| FG source established | 28 | 11 | 39 |
+| Collated against the comparison witness | 56 units | 22 | 78 |
+| Translated (draft, cold-reviewed) | 56 | 22 | 78 |
+| Annotated | 56 | 22 | 78 |
+| Published | 56 | 22 | 78 |
 <!-- /state:stages -->
 
 The table is written by `scripts/state` from the files. The paragraphs below
@@ -361,6 +361,7 @@ clock; David's own time is the rulings, counted separately.
 | I.47 (1,126 + 363 words) | 60 | 10 | 25 | 25 | 15 | 5 | ~140 (stages approximate) | 1 batch at establishment (D364-D369), the sixth under D302: NM sample of p. 160 (the densest eligible page in word-level 1554 differences, either way of counting) with nine crops, clean; the 1824 date `1514` kept against the 1554 `MCCCCXCIIII` and `veggendo` against `ueggẽda`; FG one word split and the rubric split read with the 1933 edition, four common doubts read with it, `vero` kept against `vera`, pointing by D110 and D67; the first NM pass A and Giglio read discarded and rerun after a shared-scratchpad overwrite, traced (D370); 3 open items at translation (O33-O35), ruled the same day as D371-D373; Livy 4.6 and 23.2-3 checked against the Latin Library text; NM collated against 1554; commentary cold-reviewed; the computer link dropped once mid-pair |
 | I.49 (810 + 169 words) | 30 | 5 | 20 | 20 | 10 | 5 | ~90 (stages approximate) | 1 batch at establishment (D379-D384), the seventh under D302: NM sample of p. 167 (the denser of the two eligible pages in word-level 1554 differences) with three crops, clean; `rotto` emended `r[e]tto` from the 1554, the first whole-word sense emendation in the *Discorsi*, and `pericoloso` kept under D203(b); FG one word split, two printed non-words emended (`ch[e]`, `[e]rrore`), five common doubts read with the 1933 edition, `solo.` supplied and no terminal stop (D40); 3 open items at translation (O36-O38), ruled the same day as D388-D390, among them I.50 as a context unit, since the reply takes in I.50's consuls; ruled the same day as D388-D390; Livy 4.8, 4.24 and 4.26 checked against the Latin Library text; NM collated against 1554; commentary cold-reviewed; no reader collision under D370 |
 | I.58 (1,775 + 973 words) | 45 | 10 | 30 | 25 | 15 | 5 | ~130 (stages approximate) | 1 batch at establishment (D391-D400): no page reaches a fifth of the chapter (the fullest 15%), so NM pass B read it all (D391, as D352), and the passes agree on every word but one damaged sort read `hanno` (D392); four o/a differences and six sense-bearing whole words kept against the 1554, among them `contro` (`oltre`) and `malattia` (`malitia`); the 1554's Italian renderings of both Livy quotations recorded; FG three splits, `es[e]mplo` and `[e] nel quale` emended, the rubric's `savia` and the common doubt `sì` read with the 1933 edition, `sotto a` and four sense-bearing words kept against it (`accuratissimi`, `procederia`, `troveria` ×4, `di`), pointing by D110, no terminal stop; 1 open item at translation (O39, seven scoped renderings), ruled as D401; Livy 6.17, 6.20 and 24.25 checked against the Latin Library text; NM collated against 1554; commentary cold-reviewed; David's ruling on the batch came eight days after it was put; no reader collision under D370 |
+| I.60 (360 + 170 words) | 25 | 10 | 15 | 20 | 10 | 5 | ~85 (stages approximate) | 1 batch at establishment (D406-D409), the eighth under D302: NM sample of p. 203 (the denser of two eligible pages in word-level 1554 differences) with three crops of p. 202, clean; five whole words kept against the 1554, among them `non ha a fare`, where the 1554 drops the negative; FG no word split, the rubric `qualunque` read with the 1933 edition, the edition's first lacuna printed `. . .` (D407), `così con verità` kept against the 1933 `è`; 1 open item at translation (O40, `non avere a` prohibitive); Livy 7.26, 7.32, 7.42 and *Periochae* 50 and Cicero *Philippics* 5.47-48 checked against the Latin Library text; NM collated against 1554; commentary cold-reviewed; the session run from a cloud container with the readers in its own folders, the batch ruled the same afternoon |
 
 ---
 

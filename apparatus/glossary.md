@@ -706,3 +706,25 @@ last sentence answers Machiavelli's first move.
 | `pel contrario` | on the contrary | D401, a recorded collapse with `anzi` reversing (D135). FG I.58 .03. |
 | `assunto` | assumption | FG I.58 .03: the proposition taken up to be proved. |
 | `impertinente` | impertinent | FG I.58 .03: not pertaining to the question. |
+
+
+## Added from the I.60 pair (2026-11-19)
+
+| Italian | English | Note |
+|---|---|---|
+| `Consolato` / `consulato`; `Consolo` / `consule` | consulship; consul | D410. NM I.60 rubric, .01, .02 (the office), .01 (the man); FG I.60 throughout. `Consoli` / `consuli` stay "consuls" (names.md). |
+| `sangue` | blood | D410. NM I.60 .01, .02, the Latin `sanguinis`; birth, as a respect for office. |
+| `età` / `tempo` | age / time | D410. NM I.60 `rispetto di età`, and `quella del tempo` (.03) for age under another word; FG I.60 sets them apart, `del divieto della età e del tempo`, `tempo` the interval between tenures. "Time" held in both. |
+| `speranza` | hope | D410. NM I.60 .02 ×4. |
+| `effetto`; `venire allo effetto` | effect; come to the effect | D410. NM I.60 .02, with `fare gli effetti` "make the effects" (`fare`, make). |
+| `disputare` | dispute | D410. NM I.60 .01, .02; with `disputa`. |
+| `azione` (a single deed done by a man) | deed | D410. NM I.60 .03 `nobilissima azione`. Beside D348 "functions", D358 "proceedings", D389 "public business"; "action" stays `fazione`'s (D341). |
+| `prudenza` | prudence | NM I.60 .03; FG I.58 throughout. With `prudente`. |
+| `adoperare` | employ | NM I.60 .02; NM I.30 `adoperandosi`. |
+| `trattare` | treat | NM I.60 .02; FG I.60 ×2; FG I.3 `trattare e' comodi suoi`. |
+| `trionfare` | triumph | NM I.60 .03. |
+| `divieto` / `proibizione` | ban / prohibition | D410. FG I.60; `divieto` the bar on holding an office, also a term of Florentine government. |
+| `non che` (resuming a negative, additive) | nor that | D410. FG I.60 .01, after `Non si ricorda ... che`. The scalar `non che` stays "not to say", "let alone" (NM I.16, D226). |
+| `ricordarsi` | remember | FG I.60 .01, of the Discourse; kept apart from `ricordo` (D325). |
+| `in altro luogo` / `altrove` / `altra volta` | in another place / elsewhere / another time | FG I.60, FG I.49 / NM I.60 .02 / NM I.60 .02. |
+| `legge particulare` | particular law | FG I.60 .01; a law made for one man. The noun `particulare` stays "particular [man]" (D93). |

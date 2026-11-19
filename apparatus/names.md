@@ -228,3 +228,8 @@ the original.
 | `Scipione` | Scipio | NM I.58 .06; Scipio Africanus, as NM I.11, I.29 |
 | `Atene`, `Pisistrato` | Athens, Pisistratus | NM I.58 .08, as NM I.2, I.28 |
 | `Francia` (`quegli di Francia`) | France (those of France) | FG I.58 .03, the French kings |
+| `Valerio Corvino`; `Valerio detto` | Valerius Corvinus; the said Valerius | NM I.60 .01, .03; FG I.60. Machiavelli's form, kept in both authors; Livy's Marcus Valerius Corvus, consul at twenty-three (Livy 7.26), noted |
+| `Scipione` | Scipio | NM I.60 .03; by the editor's identification Scipio Africanus, as NM I.58 |
+| `Pompeo` | Pompey | NM I.60 .03; Gnaeus Pompeius Magnus |
+| `Scipione Africano minore` | Scipio Africanus the younger | FG I.60 .01; Publius Cornelius Scipio Aemilianus, consul 147 BC (Livy, *Periochae* 50) |
+| `Cicerone` | Cicero | FG I.60 .01, as FG I.29; the work cited is a lacuna (D407) |
