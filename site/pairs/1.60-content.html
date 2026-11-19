@@ -1,0 +1,420 @@
+<title>A Conversation with Machiavelli — How the consulship and any other magistracy in Rome was given without respect of age</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root {
+  --paper:      #EDEEEC;
+  --paper-sunk: #E4E6E3;
+  --ink:        #1B1E1C;
+  --ink-muted:  #5C625E;
+  --ink-faint:  #868C87;
+  --rule:       #C9CDC8;
+  --rule-faint: #DCDFDB;
+  --nm:         #3A5A6B;
+  --fg:         #6E5A3C;
+  --serif: "EB Garamond", "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  --sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --mono:  "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:      #161917;
+    --paper-sunk: #1D211E;
+    --ink:        #E3E6E1;
+    --ink-muted:  #A0A6A0;
+    --ink-faint:  #767C77;
+    --rule:       #343934;
+    --rule-faint: #262B27;
+    --nm:         #8FB4C6;
+    --fg:         #C4A97C;
+  }
+}
+:root[data-theme="dark"] {
+  --paper:      #161917;
+  --paper-sunk: #1D211E;
+  --ink:        #E3E6E1;
+  --ink-muted:  #A0A6A0;
+  --ink-faint:  #767C77;
+  --rule:       #343934;
+  --rule-faint: #262B27;
+  --nm:         #8FB4C6;
+  --fg:         #C4A97C;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 1160px; margin: 0 auto; padding-inline: 20px; padding-block: 0 0; }
+
+/* ---- masthead ---- */
+.masthead { padding-block: 56px 32px; border-bottom: 1px solid var(--rule); }
+.eyebrow {
+  font-family: var(--sans); font-size: 11px; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint);
+  margin: 0 0 18px;
+}
+h1 {
+  font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 5vw, 44px);
+  line-height: 1.12; margin: 0 0 14px; text-wrap: balance; letter-spacing: -0.01em;
+}
+h1 .sub { display: block; font-style: italic; color: var(--ink-muted); font-size: .52em; margin-top: 12px; letter-spacing: 0; }
+.standfirst {
+  font-family: var(--sans); font-size: 14.5px; line-height: 1.6;
+  color: var(--ink-muted); max-width: 62ch; margin: 0;
+}
+.sf-label {
+  font-weight: 600; font-size: 11px; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--ink-faint); margin-right: .6em;
+}
+
+/* ---- the pairing device ---- */
+.pairing {
+  display: flex; align-items: stretch; gap: 0; margin: 30px 0 0;
+  border: 1px solid var(--rule); border-radius: 2px; overflow: hidden;
+  font-family: var(--sans); background: var(--paper-sunk);
+}
+.pairing > div { flex: 1 1 0; padding: 13px 16px; min-width: 0; }
+.pairing .who { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
+.pairing .nm-side .who { color: var(--nm); }
+.pairing .fg-side .who { color: var(--fg); }
+.pairing .what { font-size: 13.5px; color: var(--ink-muted); }
+.pairing .arrow {
+  flex: 0 0 auto; display: flex; align-items: center; justify-content: center;
+  padding-inline: 14px; color: var(--ink-faint); font-size: 15px;
+  border-inline: 1px solid var(--rule);
+}
+
+/* ---- pair-to-pair navigation ---- */
+.pairnav {
+  display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+  margin-top: 18px; font-family: var(--sans); font-size: 12.5px;
+  color: var(--ink-muted);
+}
+.pairnav a { text-decoration: none; color: var(--ink-muted); }
+.pairnav a:hover, .pairnav a:focus { color: var(--ink); text-decoration: underline; }
+
+/* ---- work sections ---- */
+.work { padding-block: 52px 0; }
+.work-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
+.work-head .tag {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .04em;
+  padding: 3px 7px; border-radius: 2px; color: var(--paper);
+}
+.work.nm .tag { background: var(--nm); }
+.work.fg .tag { background: var(--fg); }
+h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; letter-spacing: -0.005em; }
+.rubric {
+  font-style: italic; color: var(--ink-muted); max-width: 70ch;
+  margin: 10px 0 0; font-size: 16.5px; line-height: 1.5;
+}
+.rubric-note {
+  font-family: var(--sans); font-style: normal; font-size: 12px;
+  color: var(--ink-faint); margin-top: 7px;
+}
+.colheads {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  margin-top: 30px; padding-bottom: 7px; border-bottom: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint);
+}
+
+/* ---- the facing pair ---- */
+.pair {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  padding-block: 22px; border-bottom: 1px solid var(--rule-faint);
+  scroll-margin-top: 20px;
+}
+.pair:target { background: var(--paper-sunk); }
+.annot { grid-column: 2 / -1; margin-top: 14px; font-family: var(--sans); font-size: 13.5px;
+  line-height: 1.55; color: var(--ink-muted); }
+.annot summary { cursor: pointer; font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); list-style: none; }
+.annot summary::-webkit-details-marker { display: none; }
+.annot summary::before { content: "+ "; }
+.annot[open] summary::before { content: "− "; }
+.annot p { margin: 8px 0 0; max-width: 72ch; }
+.annot .xref { color: inherit; text-decoration: underline; text-decoration-color: var(--rule);
+  text-underline-offset: 2px; white-space: nowrap; }
+.gutter { padding-top: 4px; }
+.uid {
+  font-family: var(--mono); font-size: 10.5px; color: var(--ink-faint);
+  text-decoration: none; letter-spacing: -0.02em;
+}
+.uid:hover, .uid:focus { color: var(--ink); text-decoration: underline; }
+.col { min-width: 0; }
+.col.it { hyphens: auto; }
+.col.en { }
+.supplied { color: var(--ink-muted); }
+
+/* ---- apparatus ---- */
+.apparatus {
+  margin-top: 34px; padding-top: 22px; border-top: 2px solid var(--rule);
+  font-family: var(--sans); font-size: 13.5px; line-height: 1.58;
+  color: var(--ink-muted);
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 26px 34px;
+}
+.apparatus h3 {
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); margin: 0 0 9px;
+}
+.apparatus p { margin: 0 0 9px; }
+.apparatus p:last-child { margin-bottom: 0; }
+.apparatus .lem { font-family: var(--serif); font-size: 15px; color: var(--ink); font-style: italic; }
+.sig { font-family: var(--mono); font-size: 12px; color: var(--ink); }
+
+/* ---- colophon ---- */
+.colophon {
+  margin-top: 60px; padding-block: 28px 60px; border-top: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 13px; line-height: 1.6; color: var(--ink-muted);
+}
+.colophon .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 34px; }
+.colophon h3 {
+  font-size: 10.5px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--ink-faint); margin: 0 0 8px;
+}
+.colophon p { margin: 0 0 8px; }
+.colophon ul { margin: 0; padding-left: 16px; }
+.colophon li { margin-bottom: 5px; }
+.state {
+  margin-top: 26px; padding: 14px 16px; background: var(--paper-sunk);
+  border-left: 2px solid var(--ink-faint); border-radius: 0 2px 2px 0;
+  font-size: 12.5px;
+}
+.state strong { color: var(--ink); font-weight: 600; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--nm); outline-offset: 2px; }
+
+/* ---- contents / index page ---- */
+.toc { margin-top: 30px; }
+.toc-row {
+  display: grid; grid-template-columns: 40px 1fr 1fr; gap: 0 20px;
+  padding-block: 14px; border-bottom: 1px solid var(--rule-faint);
+  font-family: var(--sans); align-items: baseline;
+}
+.toc-row .n { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
+.toc-row a { text-decoration: none; color: var(--ink); font-family: var(--serif); font-size: 16px; }
+.toc-row a:hover, .toc-row a:focus { text-decoration: underline; }
+.toc-row .unpublished { color: var(--ink-faint); font-style: italic; font-size: 14px; }
+.toc-row .ids { color: var(--ink-faint); font-size: 11.5px; font-family: var(--mono); }
+.toc-row .dated { color: var(--ink-faint); font-size: 12px; text-align: right; }
+
+@media (max-width: 760px) {
+  body { font-size: 16.5px; }
+  .colheads { display: none; }
+  .pair { grid-template-columns: 1fr; gap: 0; padding-block: 20px; }
+  .gutter { padding-top: 0; margin-bottom: 8px; }
+  .annot { grid-column: 1; }
+  .col.it { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px dotted var(--rule); }
+  .col.it::before, .col.en::before {
+    display: block; font-family: var(--sans); font-size: 10px; font-weight: 600;
+    letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px;
+  }
+  .col.it::before { content: "Italian"; }
+  .col.en::before { content: "English"; }
+  .pairing { flex-direction: column; }
+  .pairing .arrow { border-inline: 0; border-block: 1px solid var(--rule); padding-block: 6px; }
+  .toc-row { grid-template-columns: 1fr; gap: 4px; }
+  .toc-row .dated { text-align: left; }
+}
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow">A Conversation with Machiavelli · Pair 28 of 39</p>
+    <h1>How the consulship and any other magistracy in Rome was given without respect of age
+      <span class="sub">Discourses I.60, and Guicciardini&#x27;s reply</span></h1>
+    <p class="standfirst"><span class="sf-label">Editor's summary</span> Machiavelli argues that Rome gave the plebs the consulship regardless of birth, from necessity, since denying men the hope of reward is dangerous, and regardless of age, which Rome never regarded, since a city must be able to use a young man of proven virtù while he is young. Guicciardini answers that the Discourse forgets that Scipio Africanus the younger could not be consul until a special law lifted the age ban, and that Cicero puts the consular age ten years above thirty-three. If it was otherwise with Valerius Corvinus, it must be said, and truly, that the early republic&#x27;s orders differed from later ones, as with re-election, later barred for ten years. Whether the two laws are useful to republics he leaves to another place, since the Discourse does not treat them.</p>
+
+    <div class="pairing">
+      <div class="nm-side">
+        <div class="who">Niccolò Machiavelli</div>
+        <div class="what">Discorsi sopra la prima Deca di Tito Livio · written c. 1513–19, printed 1531</div>
+      </div>
+      <div class="arrow" aria-hidden="true">answered by</div>
+      <div class="fg-side">
+        <div class="who">Francesco Guicciardini</div>
+        <div class="what">Considerazioni intorno ai Discorsi del Machiavelli · written 1529–30, printed 1857</div>
+      </div>
+    </div>
+    <nav class="pairnav"><a href="1.58.html">← Pair 1.58</a><a href="../index.html">All 39 pairs</a><span></span></nav>
+  </header>
+
+  <section class="work nm">
+    <div class="work-head">
+      <span class="tag">NM-DISC.1.60</span>
+      <h2>Capitolo LX</h2>
+    </div>
+    <p class="rubric">Come il Consolato e qualunque altro Magistrato in Roma si dava senza rispetto di età.</p>
+    <p class="rubric">How the consulship and any other magistracy in Rome was given without respect of age.</p>
+
+    <div class="colheads"><div></div><div>Italian · 1824</div><div>English</div></div>
+      <div class="pair" id="NM-DISC.1.60.01">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.60.01">1.60.01</a></div>
+        <div class="col it" lang="it">E&#x27; si vede per l&#x27;ordine della istoria, come la Repubblica romana, poiché il Consolato venne nella Plebe, concesse quello ai suoi cittadini senza rispetto di età o di sangue; ancora che il rispetto della età mai non fusse in Roma, ma sempre si andò a trovare la virtù, o in giovane o in vecchio che la fusse. Il che si vede per il testimone di Valerio Corvino, che fu fatto Consolo nelli ventitré anni; e Valerio detto parlando ai suoi soldati disse, come il Consolato <i lang="it">erat praemium virtutis non sanguinis</i>. La qual cosa se fu bene considerata, o no, sarebbe da disputare assai.</div>
+        <div class="col en" lang="en">It is seen by the order of the history that the Roman republic, after the consulship came into the plebs, granted it to its citizens without respect of age or of blood; even though respect of age never was in Rome, but one always went to find <i lang="it">virtù</i>, whether it were in <span class="supplied">[a]</span> young <span class="supplied">[man]</span> or in <span class="supplied">[an]</span> old <span class="supplied">[one]</span>. Which is seen by the witness of Valerius Corvinus, who was made consul at twenty-three years; and the said Valerius, speaking to his soldiers, said that the consulship <i lang="it">erat praemium virtutis non sanguinis</i>. Which thing, whether it was well considered or not, would be <span class="supplied">[matter]</span> for much disputing.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The last chapter of Book I states a fact and then two grounds for it. The fact: once the consulship came to the plebs, Rome granted it without respect of age or of blood. Machiavelli adds at once that respect of age was never in Rome, which always went to find <i lang="it">virtù</i> in young or old, and gives one witness, Valerius Corvinus, consul at twenty-three, who told his soldiers that the consulship was the reward of <i lang="it">virtù</i> and not of blood. Whether that was well considered he calls matter for much disputing, and the rest of the chapter takes the two respects in turn, blood and then age.</p>
+<p><span class="lem">History.</span> Marcus Valerius Corvus, Machiavelli&#x27;s Corvinus, was consul in the year conventionally dated 348 BC; Livy gives his age at the election as twenty-three (7.26) and has him recall it in a speech of 342 (7.40). The words to his soldiers are from his speech before the battle at Mount Gaurus in 343 (7.32), where Livy&#x27;s Corvus says the consulship is now the reward not of birth but of <i lang="la">virtus</i>. The plebs had won access to the consulship by the Licinian-Sextian laws, conventionally dated 367 BC (Livy 6.42).</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.60.02">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.60.02">1.60.02</a></div>
+        <div class="col it" lang="it">E quanto al sangue, fu concesso questo per necessità, e quella necessità che fu in Roma, sarebbe in ogni Città che volesse fare gli effetti che fece Roma, come altra volta si è detto; perché e&#x27; non si può dare agli uomini disagio senza premio, né si può torre la speranza di conseguire il premio senza pericolo. E però a buona ora convenne che la Plebe avesse speranza di avere il Consolato, e di questa speranza si nutrì un tempo senza averlo. Dipoi non bastò la speranza, che e&#x27; convenne che si venisse allo effetto. Ma la Città che non adopera la sua Plebe ad alcuna cosa gloriosa, la può trattare a suo modo, come altrove si disputò; ma quella che vuol fare quel che fece Roma, non ha a fare questa distinzione.</div>
+        <div class="col en" lang="en">And as to blood, this was granted by necessity, and that necessity which was in Rome would be in every city that wished to make the effects that Rome made, as has been said another time; because one cannot give men hardship without reward, nor can one take away the hope of attaining the reward without danger. And therefore early it was fitting that the plebs should have hope of having the consulship, and on this hope it nourished itself <span class="supplied">[for]</span> a time without having it. Afterwards the hope was not enough, so that it was fitting that one should come to the effect. But the city that does not employ its plebs in any glorious thing can treat it after its own way, as was disputed elsewhere; but that <span class="supplied">[city]</span> which wishes to make what Rome made is not to make this distinction.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> Blood is taken first, and the ground is necessity. A city that would make the effects Rome made would meet Rome&#x27;s necessity: men cannot be given hardship without reward, nor deprived of the hope of reward without danger. So it was fitting that the plebs have the hope of the consulship early; it lived on the hope for a time; then hope was not enough, and it was fitting to come to the thing itself. The necessity is conditional on the ambition: a city that employs its plebs in nothing glorious may treat it as it likes; one that would do what Rome did is not to make the distinction of blood.</p>
+<p><span class="lem">Cross-reference.</span> The choice between a republic that employs its plebs and grows, as Rome, and one that does not, as Sparta and Venice, is the argument of I.6, which the editor takes to be what Machiavelli recalls here twice (<i lang="it">come altra volta si è detto</i>, <i lang="it">come altrove si disputò</i>). Guicciardini does not answer the argument from blood.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.1.60.03">
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.60.03">1.60.03</a></div>
+        <div class="col it" lang="it">E dato che così sia, quella del tempo non ha replica, anzi è necessaria; perché nello eleggere un giovane in un grado che abbia bisogno d&#x27;una prudenza di vecchio, conviene, avendolo ad eleggere la moltitudine, che a quel grado lo faccia pervenire qualche sua nobilissima azione. E quando un giovane è di tanta virtù, che si sia fatto in qualche cosa notabile conoscere, sarebbe cosa dannosissima che la Città non se ne potesse valere allora, e che l&#x27;avesse ad aspettare che fusse invecchiato con lui quel vigore dell&#x27;animo, e quella prontezza, della quale in quella età la patria sua si poteva valere; come si valse Roma di Valerio Corvino, di Scipione, di Pompeo, e di molti altri che trionfarono giovanissimi.</div>
+        <div class="col en" lang="en">And granted that it be so, that of time has no reply, but rather is necessary; because in choosing a young man to a degree that has need of a prudence of <span class="supplied">[an]</span> old <span class="supplied">[man]</span>, it is fitting, the multitude having to choose him, that some most noble deed of his make him arrive at that degree. And when a young man is of so much <i lang="it">virtù</i> that he has made himself known in some notable thing, it would be a most damaging thing that the city could not avail itself of him then, and that it should have to wait until there had grown old with him that vigour of spirit and that promptness of which at that age his fatherland could avail itself; as Rome availed itself of Valerius Corvinus, of Scipio, of Pompey, and of many others who triumphed most young.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> Age is the second respect. Granted that it be so (the editor takes this as the argument from blood), <i lang="it">quella del tempo</i>, which the sense requires to be the disregard of age though the Italian gives it no clear antecedent, has no reply and is necessary. Where the multitude chooses, it is fitting that some most noble deed carry a young man to a degree that needs an old man&#x27;s prudence; and when a young man has made himself known in some notable thing, it would be most damaging that the city could not avail itself of him while his vigour and promptness last. Valerius Corvinus, Scipio, Pompey and many others who triumphed most young close the chapter and the book.</p>
+<p><span class="lem">History.</span> Corvus triumphed as consul over the Volsci of Satricum in 346 BC, at about twenty-five (Livy 7.27), and over the Samnites in 343 (7.38). Machiavelli&#x27;s Scipio, on the editor&#x27;s identification Scipio Africanus, took the Spanish command at about twenty-four (Livy 26.18) and was consul in 205 BC at about thirty, before the <i lang="it">lex Villia annalis</i> of 180 BC fixed ages for office (Livy 40.44); but returning from Spain in 206 he did not press for a triumph, since no one had triumphed who held command without a magistracy (28.38), and his triumph came in 201, after Zama, at about thirty-four. Pompey triumphed in his mid-twenties, in a year disputed between 81 and 79 BC, having held no magistracy, and was consul in 70 under the legal age and without the offices that normally came before it.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini sets against the chapter&#x27;s <i lang="it">mai</i>, on the editor&#x27;s reading, two things the Discourse does not remember: Scipio Aemilianus, who could be consul under age only by a particular law, and the age Cicero gives as consular <a class="xref" href="#FG-CONS.1.60.01">Guicciardini .01</a>. Corvinus he takes under <i lang="it">se</i>: if it was otherwise with him, it must be said that the orders of the early republic were other than those that arose later. He leaves to another place whether the laws of age and of interval are useful to republics, since the Discourse does not treat them, and he does not take up the argument from blood or the claim that disregard of age is necessary.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from the 1824 edition (<span class="sig">WIT-NM-DISC-1824-IA</span>), page-image-backed, which governs. Collated against the 1554 Giglio printing, Venice (<span class="sig">WIT-NM-DISC-1554-IA</span>), which is comparison evidence only.</p>
+<p>Paragraph divisions are editorial. The witness prints the chapter as one unbroken block.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem">ma quella che vuol fare quel che fece Roma, non ha a fare questa distinzione</span> — 1824. The 1554 witness reads <i lang="it">Ma quella, che uuole fare quello che fece Roma, ha a fare queſta diſtintione</i>. The 1554 drops the negative and reverses the sense: a city that would do what Rome did would have to make the distinction of blood, against the argument that such a city must give the plebs hope of the consulship. Read by both 1824 readers without doubt (pass B on the sample page); the 1824 construes and is kept (D38, D409).</p>
+<p><span class="lem">poiché il Consolato venne nella Plebe (.01) ... gli effetti che fece Roma (.02) ... di avere il Consolato, e di questa speranza si nutrì un tempo (.02) ... avendolo ad eleggere la moltitudine (.03)</span> — 1824. The 1554 witness reads <i lang="it">poi che&#x27;l Conſolato uenne nelle plebe ... gli effetti, che fece in Roma ... di hauere Conſolato, et di queſta ſperanza nutri un tempo ... hauendouelo ad eleggere la moltitudine</i>. <i lang="it">nella</i>/<i lang="it">nelle</i> at e/a under D203(b), the 1824 agreeing with the singular; four whole words the 1554 adds or drops (<i lang="it">in</i>, <i lang="it">il</i>, <i lang="it">si</i>, <i lang="it">vi</i>). Read by both 1824 readers without doubt (pass B on the crops and the sample page); the 1824 construes at each (D38, D409).</p>
+<p><span class="lem">o in giovane o in vecchio che la fusse (.01) ... fu fatto Consolo nelli ventitré anni (.01) ... che la Città non se ne potesse valere (.03) ... di Scipione, di Pompeo, e di molti altri (.03)</span> — 1824. The 1554 witness reads <i lang="it">o in giouane, o in uecchio che ella fuſſe ... fu fatto Cõſolo nel li XXIII. anni ... che ella citta non ſe ne poteſſe ualere ... di Scipione, &amp; di Pompeio, &amp; di molti altri</i>. Forms the 1554 sets differently without changing the sense (<i lang="it">ella</i> for <i lang="it">la</i>, the numeral, <i lang="it">&amp;</i> before Pompey); each 1824 word read by pass A, and on p. 203 by pass B.</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem"><i lang="it">E&#x27; si vede per l&#x27;ordine della istoria, come la Repubblica romana, poiché il Consolato venne nella Plebe</i>.</span> &quot;It is seen by the order of the history that the Roman republic, after the consulship came into the plebs&quot;: <i lang="it">E&#x27;</i>, the impersonal subject; <i lang="it">come</i>, &quot;that&quot;, introducing what is seen, as <i lang="it">dico come</i> (NM I.58); <i lang="it">istoria</i>, history (glossary); <i lang="it">poiché</i> temporal, after. <i lang="it">Plebe</i>, plebs (glossary). The 1554 reads <i lang="it">nelle plebe</i> (NM-DISC-I60-D002, D409); the 1824&#x27;s singular agrees with <i lang="it">Plebe</i>. The plebs won the consulship by the Licinian-Sextian laws, conventionally dated 367 BC (Livy 6.42).</p>
+<p><span class="lem"><i lang="it">concesse quello ai suoi cittadini senza rispetto di età o di sangue</i>.</span> &quot;Granted it to its citizens without respect of age or of blood&quot;: <i lang="it">concedere</i>, grant, as <i lang="it">fu concesso</i> (.02). <i lang="it">sangue</i>, blood, birth: the chapter&#x27;s two respects, taken in turn, blood at .02 and age at .03.</p>
+<p><span class="lem"><i lang="it">ancora che il rispetto della età mai non fusse in Roma, ma sempre si andò a trovare la virtù, o in giovane o in vecchio che la fusse</i>.</span> &quot;Even though respect of age never was in Rome, but one always went to find <i lang="it">virtù</i>, whether it were in [a] young [man] or in [an] old [one]&quot;: <i lang="it">ancora che</i>, even though (glossary); it corrects the scope of <i lang="it">poiché</i>: the disregard of age is not dated from the plebs&#x27; consulship but was always Rome&#x27;s, and only blood waited. <i lang="it">mai non</i>, never; <i lang="it">si andò a trovare</i>, impersonal, one went to find. <i lang="it">virtù</i> untranslated (D16). <i lang="it">la</i> is <i lang="it">virtù</i>. Guicciardini answers this clause: the age ban was in Rome, at least later (Guicciardini .01).</p>
+<p><span class="lem"><i lang="it">Il che si vede per il testimone di Valerio Corvino, che fu fatto Consolo nelli ventitré anni</i>.</span> &quot;Which is seen by the witness of Valerius Corvinus, who was made consul at twenty-three years&quot;: <i lang="it">testimone</i>, witness, here the evidence his case gives, not a witness in the edition&#x27;s sense of a printed source; the 1554 reads <i lang="it">testimonio</i>. Machiavelli&#x27;s Valerius Corvinus is Livy&#x27;s Marcus Valerius Corvus, consul in the year conventionally dated 348 BC; the Latin Library text of Livy (thelatinlibrary.com/livy/liv.7.shtml, consulted 2026-11-19) gives his age at the election as twenty-three (7.26) and in his own speech (7.40). The 1554 prints the age as a numeral, <i lang="it">XXIII.</i> (NM-DISC-I60-D003).</p>
+<p><span class="lem"><i lang="it">e Valerio detto parlando ai suoi soldati disse, come il Consolato erat praemium virtutis non sanguinis</i>.</span> &quot;And the said Valerius, speaking to his soldiers, said that the consulship <i lang="it">erat praemium virtutis non sanguinis</i>&quot;: &quot;was the reward of <i lang="it">virtù</i>, not of blood&quot;. The editor compares Livy 7.32, where Corvus tells his soldiers that the consulship is now the reward not of birth but of <i lang="la">virtus</i>: the Latin Library text reads <i lang="it">nec generis, ut ante, sed virtutis est praemium</i>, with <i lang="it">generis</i>, birth, and the present tense. Printed in italic in the 1824; the 1554 sets marginal inverted commas beside it. <i lang="it">praemium</i> answers the Italian <i lang="it">premio</i>, reward (glossary), twice in .02.</p>
+<p><span class="lem"><i lang="it">La qual cosa se fu bene considerata, o no, sarebbe da disputare assai</i>.</span> &quot;Which thing, whether it was well considered or not, would be [matter] for much disputing&quot;: <i lang="it">essere da</i> + infinitive, the matter for a doing (D53 for the bracket). <i lang="it">disputare</i>, dispute, as <i lang="it">si disputò</i> (.02). The question is taken up at once, blood at .02 and age at .03; <i lang="it">La qual cosa</i> may be the Roman practice or Valerius&#x27; saying, and the Italian does not say which.</p>
+<p><span class="lem"><i lang="it">fu concesso questo per necessità, e quella necessità che fu in Roma, sarebbe in ogni Città che volesse fare gli effetti che fece Roma</i>.</span> &quot;This was granted by necessity, and that necessity which was in Rome would be in every city that wished to make the effects that Rome made&quot;: <i lang="it">fare gli effetti</i>, make the effects (glossary, <i lang="it">fare</i>), kept with its object, as NM I.58 &quot;make that same effect&quot;, and held in <i lang="it">quel che fece Roma</i>, &quot;what Rome made&quot;, below, so that the paragraph&#x27;s two conditions keep one verb; <i lang="it">effetto</i> again in <i lang="it">si venisse allo effetto</i>, came to the effect, the hope made actual. The 1554 reads <i lang="it">che fece in Roma</i> (NM-DISC-I60-D002, D409). <i lang="it">come altra volta si è detto</i>: as has been said another time; the editor takes the reference to be NM I.6, where a republic that would grow as Rome grew must arm and employ its plebs.</p>
+<p><span class="lem"><i lang="it">perché e&#x27; non si può dare agli uomini disagio senza premio, né si può torre la speranza di conseguire il premio senza pericolo</i>.</span> &quot;Because one cannot give men hardship without reward, nor can one take away the hope of attaining the reward without danger&quot;: <i lang="it">disagio</i>, hardship; the clause is general, and the editor reads it here of the plebs&#x27; service in war; <i lang="it">torre</i>, take away (D131); <i lang="it">conseguire</i>, attain (glossary); <i lang="it">pericolo</i>, danger (glossary).</p>
+<p><span class="lem"><i lang="it">E però a buona ora convenne che la Plebe avesse speranza di avere il Consolato, e di questa speranza si nutrì un tempo senza averlo</i>.</span> &quot;And therefore early it was fitting that the plebs should have hope of having the consulship, and on this hope it nourished itself [for] a time without having it&quot;: <i lang="it">però</i>, therefore (D22); <i lang="it">a buona ora</i>, early, in good time; <i lang="it">convenne</i>, it was fitting (D85), and again <i lang="it">che e&#x27; convenne</i> in the next sentence. The 1554 omits the article before <i lang="it">Consolato</i> and the reflexive <i lang="it">si</i> (NM-DISC-I60-D002, D409). The plebs could stand for the consular tribunate from the year conventionally dated 445 BC, before the consulship itself (Livy 4.6), which the editor suggests is the hope that fed them; NM I.47 treats the episode.</p>
+<p><span class="lem"><i lang="it">Dipoi non bastò la speranza, che e&#x27; convenne che si venisse allo effetto</i>.</span> &quot;Afterwards the hope was not enough, so that it was fitting that one should come to the effect&quot;: <i lang="it">dipoi</i>, afterwards (D187); <i lang="it">bastare</i>, be enough (D205); <i lang="it">si venisse</i>, subjunctive under <i lang="it">convenne</i>, &quot;should come&quot;, as <i lang="it">avesse</i> &quot;should have&quot; before it. <i lang="it">che</i> is taken as consecutive; after the negative it can also be read explicatively, the second clause saying what replaced hope.</p>
+<p><span class="lem"><i lang="it">Ma la Città che non adopera la sua Plebe ad alcuna cosa gloriosa, la può trattare a suo modo, come altrove si disputò</i>.</span> &quot;But the city that does not employ its plebs in any glorious thing can treat it after its own way, as was disputed elsewhere&quot;: <i lang="it">adoperare</i>, employ; <i lang="it">trattare</i>, treat; <i lang="it">a suo modo</i>, as it pleases, &quot;after its own way&quot; (glossary, <i lang="it">modo</i>). The dispute is presumably NM I.6, Venice and Sparta against Rome.</p>
+<p><span class="lem"><i lang="it">ma quella che vuol fare quel che fece Roma, non ha a fare questa distinzione</i>.</span> &quot;But that which wishes to do what Rome did is not to make this distinction&quot;: <i lang="it">avere a</i> with the negative. D261 gives &quot;have to&quot; after a negative, but &quot;does not have to make&quot; would turn the sentence into a permission; the sense is a prohibition, what such a city may not do, and the destinative &quot;is not to&quot; is kept, with the amendment of D261 put to David (O40). &quot;This distinction&quot; is of blood. The 1554 reads <i lang="it">ha a fare</i>, without the negative, which reverses the sense: such a city would have to make the distinction. The 1824 construes with the argument and is kept (NM-DISC-I60-D001, D409).</p>
+<p><span class="lem"><i lang="it">E dato che così sia, quella del tempo non ha replica, anzi è necessaria</i>.</span> &quot;And granted that it be so, that of time has no reply, but rather is necessary&quot;: <i lang="it">quella del tempo</i>, that of time, age: <i lang="it">quella</i> has no antecedent that makes the sense run. Taken with <i lang="it">questa distinzione</i>, it would make the distinction of age necessary, against what follows; the sense needs the disregard of age, as in .01 <i lang="it">concesse ... senza rispetto di età</i>. The English leaves it as open as the Italian. <i lang="it">replica</i>, reply, an answer that could be made against it; <i lang="it">anzi</i> after a negative, &quot;but rather&quot; (D90).</p>
+<p><span class="lem"><i lang="it">perché nello eleggere un giovane in un grado che abbia bisogno d&#x27;una prudenza di vecchio, conviene, avendolo ad eleggere la moltitudine</i>.</span> &quot;Because in choosing a young man to a degree that has need of a prudence of [an] old [man], it is fitting, the multitude having to choose him&quot;: <i lang="it">eleggere</i>, choose (glossary), the multitude&#x27;s choice of magistrates, as NM I.58 .08; <i lang="it">grado</i>, degree (glossary), here of office; <i lang="it">bisogno</i>, need (glossary); <i lang="it">prudenza</i>, prudence (glossary); <i lang="it">conviene</i>, it is fitting (D85); <i lang="it">avere a</i> after a gerund, &quot;having to&quot; (D237): the gerund gives the reason, that the choice lies with the multitude, so a deed it can see must carry the young man; it does not mean the multitude is bound to choose him. The 1554 reads <i lang="it">hauendouelo</i> (NM-DISC-I60-D002, D409).</p>
+<p><span class="lem"><i lang="it">che a quel grado lo faccia pervenire qualche sua nobilissima azione</i>.</span> &quot;That some most noble deed of his make him arrive at that degree&quot;: the order normalised, as exposition (D263). <i lang="it">azione</i> of a single deed done by a man, &quot;deed&quot;: &quot;action&quot; is <i lang="it">fazione</i>&#x27;s (D341), D358&#x27;s &quot;proceedings&quot; is scoped to narrated doings, D348&#x27;s &quot;functions&quot; and D389&#x27;s &quot;public business&quot; to offices.</p>
+<p><span class="lem"><i lang="it">che si sia fatto in qualche cosa notabile conoscere</i>.</span> &quot;That he has made himself known in some notable thing&quot;: <i lang="it">farsi conoscere</i>, make oneself known, its parts split in the Italian by the phrase. <i lang="it">dannosissima</i>, most damaging (D106).</p>
+<p><span class="lem"><i lang="it">che la Città non se ne potesse valere allora, e che l&#x27;avesse ad aspettare che fusse invecchiato con lui quel vigore dell&#x27;animo, e quella prontezza</i>.</span> &quot;That the city could not avail itself of him then, and that it should have to wait until there had grown old with him that vigour of spirit and that promptness&quot;: <i lang="it">l&#x27;avesse</i>: <i lang="it">la</i>, the city, as subject (as .01 <i lang="it">che la fusse</i>), not &quot;wait for him&quot;. The delayed subject is kept, since it is heavy and carries its relative, <i lang="it">della quale</i>, which agrees with <i lang="it">prontezza</i>. <i lang="it">valersi di</i>, avail oneself of (D162), twice more in the sentence; <i lang="it">avere a</i> with necessity, &quot;have to&quot; (D261); <i lang="it">animo</i>, spirit (glossary); <i lang="it">prontezza</i>, promptness, as FG I.58. <i lang="it">in quella età</i>, at that age, the young man&#x27;s, not an era. <i lang="it">patria</i>, fatherland (glossary). The 1554 reads <i lang="it">ella citta</i> for <i lang="it">la Città</i> (NM-DISC-I60-D003).</p>
+<p><span class="lem"><i lang="it">come si valse Roma di Valerio Corvino, di Scipione, di Pompeo, e di molti altri che trionfarono giovanissimi</i>.</span> &quot;As Rome availed itself of Valerius Corvinus, of Scipio, of Pompey, and of many others who triumphed most young&quot;: <i lang="it">Scipione</i>, by the editor&#x27;s identification Scipio Africanus, as NM I.58 (names.md); <i lang="it">Pompeo</i>, Pompey (names.md). The triumphs are Machiavelli&#x27;s claim; the commentary gives the record. <i lang="it">giovanissimi</i>, most young, the superlative kept, as <i lang="it">nobilissima</i>, <i lang="it">dannosissima</i>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work fg">
+    <div class="work-head">
+      <span class="tag">FG-CONS.1.60</span>
+      <h2>Considerazione sul capitolo LX</h2>
+    </div>
+    <p class="rubric">Come il consolato e qualunque altro magistrato in Roma si dava senza rispetto di età</p>
+    <p class="rubric">How the consulship and any other magistracy in Rome was given without respect of age
+      <span class="rubric-note">Canestrini&#x27;s setting of the chapter title: Machiavelli&#x27;s rubric with <i lang="it">consolato</i>, <i lang="it">magistrato</i> lower case and no stop. It is heading apparatus, not Guicciardini&#x27;s (D32). Pass A read <i lang="it">qualunqua</i>, pass B <i lang="it">qualunque</i>, two forms of one word; the a-shape is the scan&#x27;s barless e, and the 1933 edition, the 1824 rubric and the 1554 heading have the -e form (FG-CONS-I60-D002, D406).</span></p>
+
+    <div class="colheads"><div></div><div>Italian · 1857</div><div>English</div></div>
+      <div class="pair" id="FG-CONS.1.60.01">
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.60.01">1.60.01</a></div>
+        <div class="col it" lang="it">Non si ricorda il Discorso, che Scipione Africano minore non potette essere fatto consule se per legge particulare non gli fu prima levato il divieto della età; non che Cicerone nel . . . dice, che a chi è di età di trentatré anni manca il tempo di dieci anni a essere consule; e se in Valerio Corvino fu altrimenti, bisogna dire, e così con verità, che altri furono gli ordini nel principio della republica, altri nacquono in progresso di tempo. Come ancora fu del tempo de&#x27; magistrati, perché ne&#x27; principii non vi era proibizione che non si potessi continuare il consulato; e almanco chi era consule ora, poteva fra poco tempo essere di nuovo eletto consule, ma di poi fu fatta una legge che tra l&#x27;uno consulato e l&#x27;altro dovessi essere almanco intervallo di dieci anni. Le quali due leggi, cioè del divieto della età e del tempo, se sono utili alle republiche o no, si tratterà in altro luogo, perché in questo non è nostra considerazione, non essendo trattate nel Discorso</div>
+        <div class="col en" lang="en">The Discourse does not remember that Scipio Africanus the younger could not be made consul if by a particular law the ban of age was not first removed from him; nor that Cicero in the . . . says that to one who is of the age of thirty-three years there lacks the time of ten years to be consul; and if in Valerius Corvinus it was otherwise, it is required to say, and so with truth, that other were the orders in the beginning of the republic, others arose in progress of time. As it was too with the time of the magistracies, because in the beginnings there was no prohibition that the consulship could not be continued; and at least he who was consul now could within a little time be chosen consul anew, but afterwards a law was made that between one consulship and the other there should be at least an interval of ten years. Which two laws, that is, of the ban of age and of time, whether they are useful to republics or not, it will be treated in another place, because in this <span class="supplied">[place]</span> it is not our consideration, they not being treated in the Discourse</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> He answers Machiavelli&#x27;s fact, not his reasons. The Discourse does not remember that the younger Scipio Africanus could be consul only once a particular law had lifted the ban of age; nor that Cicero, in a work the text leaves blank, says that a man of thirty-three lacks ten years of the time to be consul. Corvinus is taken under <i lang="it">se</i>, neither granted nor disputed: if it was otherwise with him, it must be said, and so with truth, that the orders of the early republic were other than those that arose later. The interval between consulships is a like case: at first nothing forbade continuing in the consulship, and later a law required ten years between one consulship and the next. Whether the two laws, of age and of time, are useful to republics he leaves to another place, since the Discourse does not treat them. He does not take up the argument from blood, or Machiavelli&#x27;s claim, on the editor&#x27;s reading of <i lang="it">quella del tempo</i>, that disregard of age is necessary.</p>
+<p><span class="lem">History.</span> Scipio Aemilianus, adopted son of the elder Africanus&#x27;s son, was named consul by the people for the year conventionally dated 147 BC while standing for the aedileship, and released from the laws, since by his years he could not lawfully be consul (Livy, <i lang="la">Periochae</i> 50, the Latin Library text, consulted 2026-11-19); he triumphed in 146, at about thirty-eight. The ten-year interval is the plebiscite Livy records in the year conventionally dated 342 BC, that no one should hold the same magistracy again within ten years (7.42). Canestrini&#x27;s note guesses Cicero&#x27;s <i lang="it">De Legibus</i> III. The editor&#x27;s identification is <i lang="it">Philippics</i> 5.47-48 (Latin Library text, consulted 2026-11-19), from the debate of January 43 BC on honours for the young Octavian. At 5.47 Cicero says that the early Romans had no laws fixing the ages for office, which came many years later, Guicciardini&#x27;s distinction of early and later orders; at 5.48 that Alexander died in his thirty-third year, ten years short of the Roman consular age, which does not match Guicciardini&#x27;s thirty-three exactly, and he names the Corvini and the elder Africanus as men made consul young, which tells for Machiavelli&#x27;s examples. Whether Guicciardini had the passage in mind cannot be shown.</p>
+<p><span class="lem">Cross-reference.</span> The <i lang="it">mai</i> that Guicciardini&#x27;s two examples answer, on the editor&#x27;s reading, is Machiavelli&#x27;s <i lang="it">il rispetto della età mai non fusse in Roma</i> <a class="xref" href="#NM-DISC.1.60.01">Machiavelli .01</a>. His Corvinus is the age witness of <a class="xref" href="#NM-DISC.1.60.01">Machiavelli .01</a>, named again at <a class="xref" href="#NM-DISC.1.60.03">Machiavelli .03</a>; his Scipio is the younger, where Machiavelli&#x27;s, among those who triumphed most young, is presumably the elder.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from Canestrini 1857, <i>Opere inedite</i> vol. 1, pp. 1–65 (<span class="sig">WIT-FG-CONS-1857-CANESTRINI</span>) — the <i>editio princeps</i>, which governs. Collated against Palmarocchi 1933 (<span class="sig">WIT-FG-CONS-1933-PALMAROCCHI</span>): page images and the Wikisource transcription consulted as collation evidence, not reproduced (LICENSE §5).</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem">non che Cicerone nel . . . dice</span>. The 1857 witness reads <i lang="it">non che Cicerone nel . . . .(1) dice (the points&#x27; count doubtful to both readers; Canestrini&#x27;s note: a lacuna in the text, perhaps De Legibus III)</i>. The 1933 witness reads <i lang="it">non che Cicerone nel . . . . . dice</i>. Both witnesses leave the work unnamed. Printed as a three-point lacuna, unbracketed, since brackets mark the edition&#x27;s own supplies (D407).</p>
+<p><span class="lem">qualunque ... e così con verità</span>. The 1857 witness reads <i lang="it">rubric e [qualunqua/qualunque] altro magistrato (split) ... bisogna dire, e così con verità, che</i>. The 1933 witness reads <i lang="it">e qualunque altro magistrato ... bisogna dire, e così è con verità, che</i>. The rubric split between the readers, two forms of one word, read with the 1933 edition (D406). <i lang="it">così con verità</i>, read alike by both without doubt, construes as an ellipsis and is kept against the 1933 <i lang="it">così è</i> (D38, D408).</p>
+<p><span class="lem">consule; ... tempo. ... il consulato; e almanco ... consule, ma di poi</span>. The 1857 witness reads <i lang="it">essere consule [, / ;] e se (both doubting) ... di tempo [. / none] Come (both doubting) ... il consulato; e almanco ... consule, ma di poi</i>. The 1933 witness reads <i lang="it">essere consule; e se ... di tempo. Come ... el consulato, ed almanco ... consule; ma di poi</i>. Pointing neither reader could weigh read with the 1933 edition; marks both read alike without doubt kept against it (D110).</p>
+<p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem"><i lang="it">Non si ricorda il Discorso, che Scipione Africano minore non potette essere fatto consule se per legge particulare non gli fu prima levato il divieto della età</i>.</span> &quot;The Discourse does not remember that Scipio Africanus the younger could not be made consul if by a particular law the ban of age was not first removed from him&quot;: the fronted verb normalised (D263); <i lang="it">il Discorso</i>, the Discourse, his name for Machiavelli&#x27;s chapter (FG I.58). <i lang="it">Scipione Africano minore</i>, Scipio Africanus the younger, Publius Cornelius Scipio Aemilianus (names.md). The Latin Library text of the <i lang="la">Periochae</i> of Livy, book 50 (consulted 2026-11-19), records that he was named consul by the people while standing for the aedileship, <i lang="it">legibus solutus</i>, released from the laws, for the year conventionally dated 147 BC. <i lang="it">minore</i> distinguishes him from the elder Africanus, whom names.md takes to be Machiavelli&#x27;s <i lang="it">Scipione</i> (Machiavelli .03). <i lang="it">legge particulare</i>, a particular law, made for one man; <i lang="it">levare</i>, remove (D131); <i lang="it">divieto</i>, ban, the bar on holding an office, also a term of Florentine government, kept apart from <i lang="it">proibizione</i>, prohibition, below. <i lang="it">consule</i>, consul, Guicciardini&#x27;s form of Machiavelli&#x27;s <i lang="it">Consolo</i>.</p>
+<p><span class="lem"><i lang="it">non che Cicerone nel . . . dice</i>.</span> &quot;Not to say that Cicero in the . . . says&quot;: <i lang="it">non che</i>, nor that: the opening&#x27;s <i lang="it">non ... che</i> resumed, a second thing the Discourse does not remember; not the scalar <i lang="it">non che</i> of NM I.16 (D226), &quot;not to say&quot;, &quot;let alone&quot;. Canestrini prints a row of points here with a note, the readers counting three and four; the 1933 edition prints five. Neither names the work, and the edition prints the gap as it stands (FG-CONS-I60-D001, D407). Canestrini&#x27;s note guesses Cicero&#x27;s <i lang="it">De Legibus</i>, book III, which treats the magistracies. The editor&#x27;s identification is <i lang="it">Philippics</i> 5.47-48: the Latin Library text (thelatinlibrary.com/cicero/phil5.shtml, consulted 2026-11-19) says that Alexander of Macedon died in his thirty-third year, an age ten years short of the consular age under Roman law. Guicciardini&#x27;s <i lang="it">di età di trentatré anni</i> does not match that count exactly. The same passage names the Corvini and the elder Africanus as men made consul young, examples that tell for Machiavelli&#x27;s side; whether Guicciardini had the passage in mind cannot be shown.</p>
+<p><span class="lem"><i lang="it">che a chi è di età di trentatré anni manca il tempo di dieci anni a essere consule</i>.</span> &quot;That to one who is of the age of thirty-three years there lacks the time of ten years to be consul&quot;: the consular age implied, on Guicciardini&#x27;s figures, is forty-three. <i lang="it">età</i>, age, as Machiavelli&#x27;s rubric.</p>
+<p><span class="lem"><i lang="it">e se in Valerio Corvino fu altrimenti, bisogna dire, e così con verità, che altri furono gli ordini nel principio della republica, altri nacquono in progresso di tempo</i>.</span> &quot;And if in Valerius Corvinus it was otherwise, it is required to say, and so with truth, that other were the orders in the beginning of the republic, others arose in progress of time&quot;: <i lang="it">bisogna</i>, it is required (D260; see the note on <i lang="it">bisogni</i> at Machiavelli I.2). <i lang="it">e così con verità</i>, as Canestrini prints it, an ellipsis, left unsupplied in the English as in the Italian; it may resume <i lang="it">dire</i>, said so with truth. The 1933 edition reads <i lang="it">e così è con verità</i>, with the verb (FG-CONS-I60-D002, D408). The predicate-first <i lang="it">altri furono</i> is kept because the correlative <i lang="it">altri ... altri</i> carries the contrast of beginning and progress of time (D263, a contrast). <i lang="it">ordini</i>, orders (glossary); <i lang="it">principio</i>, beginning (glossary); <i lang="it">nascere</i>, arise (D04). Guicciardini takes Machiavelli&#x27;s example under <i lang="it">se</i>, neither granting nor disputing it, and answers his <i lang="it">mai</i> (Machiavelli .01) by time: the orders of the beginning were other than those that arose later. The editor reads this as allowing that early Rome may have lacked the ban.</p>
+<p><span class="lem"><i lang="it">Come ancora fu del tempo de&#x27; magistrati, perché ne&#x27; principii non vi era proibizione che non si potessi continuare il consulato</i>.</span> &quot;As it was too with the time of the magistracies, because in the beginnings there was no prohibition that the consulship could not be continued&quot;: <i lang="it">tempo</i>, time, here the interval between tenures, as <i lang="it">del tempo</i> below; Machiavelli&#x27;s <i lang="it">quella del tempo</i> (Machiavelli .03) is age, and Guicciardini sets <i lang="it">età</i> and <i lang="it">tempo</i> apart (<i lang="it">del divieto della età e del tempo</i>); &quot;time&quot; is kept in both units; <i lang="it">magistrati</i>, magistracies (D93); <i lang="it">continuare</i>, continue, hold again without a break. The <i lang="it">non</i> after <i lang="it">proibizione</i> is the pleonastic negative of a verb of forbidding; the English keeps it as the content of the prohibition, which English can bear: there was no rule that the consulship could not be continued, so nothing forbade continuing it. <i lang="it">chi era consule ora</i>, he who was consul now, the moment within the past narrated; <i lang="it">di nuovo</i>, anew (glossary); <i lang="it">eletto</i>, chosen (glossary, <i lang="it">eleggere</i>).</p>
+<p><span class="lem"><i lang="it">ma di poi fu fatta una legge che tra l&#x27;uno consulato e l&#x27;altro dovessi essere almanco intervallo di dieci anni</i>.</span> &quot;But afterwards a law was made that between one consulship and the other there should be at least an interval of ten years&quot;: <i lang="it">di poi</i>, afterwards (D187); <i lang="it">almanco</i>, at least (glossary), twice in the period, the first restricting, the second a minimum. Livy records a plebiscite of the year conventionally dated 342 BC that no one hold the same magistracy again within ten years (7.42).</p>
+<p><span class="lem"><i lang="it">Le quali due leggi, cioè del divieto della età e del tempo, se sono utili alle republiche o no, si tratterà in altro luogo, perché in questo non è nostra considerazione, non essendo trattate nel Discorso</i>.</span> &quot;Which two laws, that is, of the ban of age and of time, whether they are useful to republics or not, it will be treated in another place, because in this [place] it is not our consideration, they not being treated in the Discourse&quot;: <i lang="it">si tratterà</i>, impersonal: the matter deferred is whether the laws are useful, and <i lang="it">Le quali due leggi</i> is left hanging; the English keeps the break. <i lang="it">in altro luogo</i>, in another place, against <i lang="it">in questo</i>; <i lang="it">utili</i>, useful; <i lang="it">trattare</i>, treat, twice, the second of what the Discourse treats; <i lang="it">considerazione</i>, consideration (glossary), the word of his title, <i lang="it">Considerazioni</i>. Canestrini prints no stop at the end, and none is supplied (D40).</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="colophon">
+    <div class="row">
+      <div>
+        <h3>What this is</h3>
+        <p>A free, openly licensed, bilingual edition of Guicciardini's 39 <i>Considerazioni</i> and the
+          <i>Discorsi</i> chapters they answer — 78 text units, Italian and English facing, every reading
+          traceable to a named public-domain witness.</p>
+        <p>It is a reading edition with a transparent apparatus, not a text of record. It does not adjudicate
+          the critical text against Bausi 2001 or the manuscript tradition, and does not claim to.</p>
+      </div>
+      <div>
+        <h3>On the title</h3>
+        <p>Machiavelli had been dead two years when Guicciardini wrote; the <i>Discorsi</i> were unpublished,
+          and the <i>Considerazioni</i> stayed unprinted until 1857. Machiavelli never answers.</p>
+        <p>“Conversation” is a quotation, not a description. It invokes Machiavelli's letter to Francesco Vettori of
+          10 December 1513: at evening he puts on royal and curial garments (<i>panni reali e curiali</i>),
+          enters the ancient courts of ancient men (<i>le antiche corti degli antichi uomini</i>), asks them the
+          reason for their actions, and <i>quelli per loro umanità mi rispondono</i>, “they, for their humanity,
+          answer me”. Guicciardini does to Machiavelli what Machiavelli did to Livy — and is denied the reply
+          Machiavelli claimed. The letter is quoted from the 1813 <i>Opere</i>, vol. 8, p. 96, read twice from
+          the page image.</p>
+      </div>
+      <div>
+        <h3>Method</h3>
+        <p>No image-derived reading enters the text on a single reading. Each unit is transcribed twice,
+          independently, by readers who have not seen each other's work; disagreements are adjudicated against
+          the page images and recorded.</p>
+        <p>Existing English translations of the <i>Considerazioni</i> — Grayson (1965), Atkinson &amp; Sices
+          (2002) — are never used as translation inputs.</p>
+      </div>
+      <div>
+        <h3>Licence</h3>
+        <p>The established Italian text and the apparatus data are dedicated to the public domain under
+          <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>. They are Machiavelli's and
+          Guicciardini's sentences, and this edition adds no condition to them.</p>
+        <p>The English translation, the notes and the editorial apparatus are licensed
+          <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: reuse them anywhere, including
+          commercially, with attribution to David McDougall and this edition. The build tooling is MIT.</p>
+        <p>The witness scans are other people's digitisations, included as evidence under their own terms; no
+          grant is made over them, and no page image of Palmarocchi 1933 is reproduced here. Full terms,
+          layer by layer, are in the <span class="sig">LICENSE</span> file in the repository.</p>
+      </div>
+    </div>
+
+    <div class="state">
+      <p><strong>Version 0.3 · 28 of 39 pairs published.</strong>
+        Published 19 November 2026. This edition is versioned, not frozen. Some translation questions on this pair are still open.</p>
+    </div>
+  </footer>
+
+</div>
