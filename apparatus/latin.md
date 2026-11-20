@@ -29,7 +29,7 @@ first time it is italicised.
 | `Periochae` | notes (Livy) |
 | `spectare` | FG I.9 note (D175) |
 | `patres` | NM I.9 commentary |
-| `etiam` | FG I.3, FG I.16 note |
+| `etiam` | FG I.3, FG I.16 note, FG II.12 .02 |
 | `latebrae` | NM I.16 note |
 | `verbi gratia` | FG I.23 |
 | `virtus` | NM I.24 note and commentary (Livy 1.26) |

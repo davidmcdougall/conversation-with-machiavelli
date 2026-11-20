@@ -258,3 +258,17 @@ the original.
 | `la Marca` | the Marches | NM II.10 .05 |
 | `Pericle`; `Peloponneso` | Pericles; the Peloponnese | NM II.10 .06 |
 | `Campani`, `Sidicini`, `Sanniti` | Campanians, Sidicini, Samnites | NM II.10 .06; the 1554 `Capouani` |
+| `Ciro`; `Massageti`; `Regina Tamiri` | Cyrus; the Massagetae; Queen Tomyris | NM II.12 .02; Herodotus' story (the editor's identification). `Creso`, Croesus, as NM II.10 |
+| `Agatocle`; `Cartaginesi` | Agathocles; Carthaginians | NM II.12 .02, .05; FG II.12 .01; Agathocles of Syracuse |
+| `Anteo Re di Libia`; `Ercole Egizio` | Antaeus, king of Libya; Hercules the Egyptian | NM II.12 .03; the epithet Machiavelli's, kept |
+| `Ferrando Re di Napoli`, `re Ferrando` | Ferdinand, king of Naples; King Ferdinand | NM II.12 .03; FG II.12 ×3. Ferdinand I of Naples (Ferrante), d. 1494, by the editor's identification; kept apart from the `Ferrando` of NM I.29, I.40, Ferdinand II of Aragon |
+| `Carlo VIII`; `Alfonso` | Charles VIII; Alfonso | NM II.12 .03; Charles VIII of France; Alfonso II of Naples, Ferdinand's son |
+| `Romagna` | Romagna | NM II.12 .03 |
+| `Castruccio`; `Re Roberto di Napoli`; `il Duca di Milano` | Castruccio; King Robert of Naples; the duke of Milan | NM II.12 .05; Castruccio Castracani, lord of Lucca; the duke not named (the editor reads Giangaleazzo Visconti) |
+| `la Magna` | Germany | NM II.12 .06, as NM II.proem `Popoli della Magna` |
+| `Cimbri` | Cimbri | NM II.12 .06, as FG I.1 |
+| `Visconti` | the Visconti | FG II.12 .01 |
+| `Paolo Orsino`; `Ladislao`; `il duca Giovanni` | Paolo Orsino; Ladislaus; Duke John | FG II.12 .02; the surname as printed; Ladislaus of Naples; John of Anjou (the editor's identifications) |
+| `Filippo re di Macedonia`; `Antioco` | Philip, king of Macedonia; Antiochus | FG II.12 .02; Philip V and Antiochus III (the editor's identifications); kept apart from NM I.26's Philip of Macedon |
+| `Spagna`, `Africa` / `Affrica` | Spain, Africa | FG II.12 .02; NM II.12 .02 `l'Affrica` |
+| `Livio` | Livy | FG II.12 .02 |

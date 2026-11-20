@@ -792,3 +792,42 @@ last sentence answers Machiavelli's first move.
 | `dubitare che ... non`, `dubitare non` + a feared outcome | doubt lest | D431, with D205. NM II.proem .07, II.10 .02. |
 | `dovere`, past, of an inference | must have | D431, with D274. NM II.10 .06 `Doverono i Campani ... misurare`. |
 | `vincere` without an object | win | D431, extending D313. NM II.10 .02, .05; FG II.10 `hanno vinto`. |
+
+
+## Added from the II.12 pair (2026-11-20)
+
+| Italian | English | Note |
+|---|---|---|
+| `discosto`; `discostare`; `discostarsi` | at a distance; distance; go to a distance | D444. NM II.12 ×9, the chapter's question (.02, .03 ×3, .04 ×2, .05, .06 `sì discosto`, .07). One root held; kept apart from `trarre`, draw. |
+| `trarre` | draw | D444. NM II.12 .03 `traesse forze`, .04 `trarre ... danari`. |
+| `assaltare` | assail | D444. NM II.12 rubric and ×10; FG II.12 rubric; NM II.10, I.23. |
+| `casa`; `a casa`, `in casa`, `di casa` | home; to home, at home, of home | D444. Both authors throughout II.12, the pair's key word. |
+| `confini` | borders | NM II.12 ×5. |
+| `fonte` | spring | D444. NM II.12 .02, .04, Hannibal's figure both times. |
+| `spacciare`, `spacciato` | despatch, despatched | D444. NM II.12 .05, .06 ×2; FG II.12, Guicciardini's echo. |
+| `arrischiare` | hazard | NM II.12 .04 ×2. |
+| `disagio` | hardship | NM II.12 .04 ×2. |
+| `longinquo` / `propinquo` | far-off / near | D444. NM II.12 .05; `propinquo` as glossary (NM I.12, I.2), .04 `rifugj propinqui`. |
+| `viltà` | baseness | NM II.12 .05, set against *virtù*. |
+| `consiglio` / `ricordo` (NM) | counsel / counsel | D444, a recorded collapse; D325's `ricordo` "counsel" extended to Machiavelli (NM II.12 .03). |
+| `giornata` (of distance) | days' [march] | D444. NM II.12 .04 `parecchie giornate`. Decided by sense; "battle" stays for the engagement (D49), as FG II.12 `una giornata`. |
+| `inferire` (la guerra) | bring (war) | D444. NM II.12 and FG II.12 rubric; Latin *bellum inferre*. |
+| `reggere` (a war) | uphold | D444. FG II.12 .01 `non potrei reggerla`. "Govern" stays for rule (D64); "bear" is `comportare`'s. |
+| `entrate` (FG) / `rendite` (NM) | revenues / revenues | D444, a recorded collapse. FG II.12 ×3; NM II.12 .05. |
+| `guerreggiare` / `fare guerra` | wage war / make war | D444. FG II.12 .02. |
+| `servirsi di` | make use of | D444. FG II.12 .02. "Avail oneself" stays `valersi`'s (D162). |
+| `prevenire` | forestall | D444. FG II.12 .02: to be beforehand, not to prevent. |
+| `aderire` | adhere | D444. FG II.12 .02 `aderirei`; a conditional assent, kept apart from `concorrere`, concur (D01). |
+| `temporeggiare` | temporize | FG II.12 .02. |
+| `diversione` | diversion | FG II.12 .01, medical and military. |
+| `opportunità` | opportunity | FG II.12 ×3. |
+| `resoluzione`, `risolvere` | resolution, resolve | FG II.12 .01, .02 ×2. |
+| `inesperto`, `espertissimo` | inexpert, most expert | FG II.12 .02. |
+| `inclinato` | inclined | FG II.12 .01, .02. |
+| `rimandare` | send again | FG II.12 .02: not "send back". |
+| `impeto` | onset | NM II.12 .06. |
+| `raccozzare` | muster | NM II.12 .06. `ragunare` stays "gather" (D374). |
+| `supplemento` | supplement | NM II.12 .04: troops sent to make up an army. |
+| `residuo`, `residui` | residue, residues | D444. NM I.23, NM II.12 .06. |
+| `condurre` (forces) | conduct | D444. NM II.12 .06. "Lead" stays `menare`'s (D313). |
+| `distinzione` | distinction | NM II.12 .05; FG II.12 .01, .02 (`per distinzione`), the hinge of the reply. |
