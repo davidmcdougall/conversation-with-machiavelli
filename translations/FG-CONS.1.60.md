@@ -12,7 +12,7 @@ paragraph_divisions: witness  # Canestrini prints one indented paragraph
 rubric_en: "How the consulship and any other magistracy in Rome was given without respect of age"
 rubric_source: Canestrini 1857, printed p. 59 — his setting of the chapter title over the reply
 translated: 2026-11-19
-open_for_david: none  # O40 (`non avere a`) is on the Machiavelli unit
+open_for_david: none
 standfirst: "Machiavelli argues that Rome gave the plebs the consulship regardless of birth, from necessity, since denying men the hope of reward is dangerous, and regardless of age, which Rome never regarded, since a city must be able to use a young man of proven virtù while he is young. Guicciardini answers that the Discourse forgets that Scipio Africanus the younger could not be consul until a special law lifted the age ban, and that Cicero puts the consular age ten years above thirty-three. If it was otherwise with Valerius Corvinus, it must be said, and truly, that the early republic's orders differed from later ones, as with re-election, later barred for ten years. Whether the two laws are useful to republics he leaves to another place, since the Discourse does not treat them."
 ---
 

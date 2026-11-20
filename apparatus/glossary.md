@@ -135,7 +135,7 @@ last sentence answers Machiavelli's first move.
 | `ozio` | idleness | Good for Venice (NM I.1 .03), a vice in .06; one word lets both show. |
 | `forestieri` | strangers | D57. |
 | `comodo` / `comodità` | convenient / convenience | D59. |
-| `avere a` + inf. | be to; have to | D61, D261. "Be to" where it is destinative (what is due or appointed); "have to" wherever English cannot take "be to" (after "so as", after a gerund, in a compound tense, in the passive, after a negative) or where the sense is necessity (D101, D222, D237, D261). |
+| `avere a` + inf. | be to; have to | D61, D261. "Be to" where it is destinative (what is due or appointed); "have to" wherever English cannot take "be to" (after "so as", after a gerund, in a compound tense, in the passive, after a negative) or where the sense is necessity (D101, D222, D237, D261). Prohibitive `non avere a` takes "must not" (NM I.60 `non ha a fare`, D414); "does not have to" stays for absence of necessity (FG I.14 `non aveva a attendere`). "Must" is otherwise `dovere`'s (D274): an overlap in the negative only, recorded. |
 | `reggere` / `governare`; `reggimento` / `governo` | govern / govern; regimen / government | D64 for the verbs, a recorded collapse; D262 splits the nouns: `reggimento` "regimen". "Regiment" is a false friend. |
 | `virtuoso` | virtuous | The adjective of *virtù*; noted where it occurs. |
 | `ristringersi` | draw together | D58. |
@@ -728,3 +728,31 @@ last sentence answers Machiavelli's first move.
 | `ricordarsi` | remember | FG I.60 .01, of the Discourse; kept apart from `ricordo` (D325). |
 | `in altro luogo` / `altrove` / `altra volta` | in another place / elsewhere / another time | FG I.60, FG I.49 / NM I.60 .02 / NM I.60 .02. |
 | `legge particulare` | particular law | FG I.60 .01; a law made for one man. The noun `particulare` stays "particular [man]" (D93). |
+
+
+## Added from the II.proem pair (2026-11-20)
+
+| Italian | English | Note |
+|---|---|---|
+| `laudare`, `laude` / `biasimare` | praise / blame | D422. NM II.proem throughout (×10); FG II.proem `laudati`. `biasimo` stays "blame" (D173); `accusare` accuse, kept apart. |
+| `secolo`, `secoli` | century, centuries | D422. NM II.proem .06 `il secolo presente o l'antico`; FG II.proem `per molti secoli`. "Age" stays `età`'s (D410). |
+| `concordare` | accord | D422. FG II.proem `Non concordo già seco`. Kept apart from `concorrere`, concur (D01): not Guicciardini's formula of non-concurrence. In an editor's summary, "does not agree". |
+| `pretermettere` | pass over | FG I.58, FG II.proem `le pretermetto`. |
+| `già` after a negative | not rendered | D374, D423. NM II.proem .03 `non essere già sempre vero`; FG II.proem `Non concordo già`, `non è già vero il negare`, which echoes Machiavelli's. "Indeed" stays `anzi`'s (D147). |
+| `allora` | at that time | D423. NM II.proem .03 ×2, .07. "Then" is `adunque`'s (D74, D187). |
+| `acciocché` | in order that | D423. NM II.proem .07 ×2: purpose. "So that" stays `talché`'s and `talmente che`'s, result. |
+| `sopportabile` / `insopportabile` | supportable / insupportable | D423. NM II.proem .06. "Bear" stays `comportare`'s (FG I.39, I.40). |
+| `riuscire` (of how a thing proves) | turn out | D423. NM II.proem .06 `riescano`. "Succeed" (D332) stays for a thing that comes off. |
+| `giovanezza` / `gioventù` | youth / youth | D423, a recorded collapse. NM II.proem .01 / .06 ×2. |
+| `invecchiare` | grow old | NM II.proem .06 ×2. |
+| `pertinente` | pertaining | D423. NM II.proem .02 ×2, .07 ×2. "Pertain" is shared with `spettare` (D251) for the cognate. |
+| `variare`; `variazione` | vary; variation | NM II.proem .04 ×2, .06 ×2; FG II.proem `si variino`, `variati`, `variazioni`. With D402. |
+| `virtuosamente` | virtuously | NM II.proem .02, .04; the adverb of *virtù*. FG II.proem `virtuosa`, virtuous. |
+| `Setta`, `Sette` | sect, sects | NM II.proem .04 ×2. |
+| `replicare` (restating) | repeat | D423. NM II.proem .03 `Replico`. `replica`, an answer that could be made, stays "reply" (NM I.60). |
+| `fiorire` | flourish | FG II.proem ×3. |
+| `sepolto` | buried | FG II.proem ×2. |
+| `oscuro` | obscure | FG II.proem ×2. |
+| `eccellenza`, `eccellente` | excellence, excellent | NM II.proem .03 `uomo eccellente`; FG II.proem ×2. |
+| `prezzo` (`in sommo prezzo`) | price (of supreme price) | D424. FG II.proem: esteem, not cost. |
+| `vero`, `verissimo`; `conclusione` | true, most true; conclusion | FG II.proem: the concession's words, returned to in the close. |

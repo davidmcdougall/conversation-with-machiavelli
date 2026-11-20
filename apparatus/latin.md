@@ -82,3 +82,4 @@ first time it is italicised.
 | `Haec natura multitudinis est, aut humiliter servit, aut superbe dominatur` | NM I.58 note |
 | `vox populi vox Dei` | NM I.58 note |
 | `Anabasis` | NM I.58 commentary (Arrian) |
+| `pro tribunali` | NM II.proem .05 |

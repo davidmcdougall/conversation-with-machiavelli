@@ -233,3 +233,12 @@ the original.
 | `Pompeo` | Pompey | NM I.60 .03; Gnaeus Pompeius Magnus |
 | `Scipione Africano minore` | Scipio Africanus the younger | FG I.60 .01; Publius Cornelius Scipio Aemilianus, consul 147 BC (Livy, *Periochae* 50) |
 | `Cicerone` | Cicero | FG I.60 .01, as FG I.29; the work cited is a lacuna (D407) |
+| `Assiria`, `Media`, `Persia` | Assyria, Media, Persia | NM II.proem .04; the succession recalls the old order of the world empires (the editor's comparison) |
+| `Regno de' Franchi` | the kingdom of the Franks | NM II.proem .04; presumably Charlemagne's (the editor's identification) |
+| `Regno de' Turchi` | the kingdom of the Turks | NM II.proem .04; the Ottomans, as `il Turco` (NM I.30) |
+| `il Soldano` (`quel del Soldano`) | the Sultan (that of the Sultan) | NM II.proem .04; presumably the Mamluk sultan of Egypt and Syria (the editor's identification) |
+| `Popoli della Magna` | the peoples of Germany | NM II.proem .04; `Magna`, Alemagna |
+| `Setta saracina` | Saracen sect | NM II.proem .04; with `Sette`, sects; the religion of the Arabs and those who carried it (the editor's reading) |
+| `Imperio romano orientale` | the eastern Roman empire | NM II.proem .04; `Imperio`, empire, lower case (D124) |
+| `Oltramontano` | ultramontane | NM II.proem .05; from beyond the mountains; the witness's capital not carried, as `Barbari` |
+| `Greci`, `Romani` | the Greeks, the Romans | FG II.proem .01 |

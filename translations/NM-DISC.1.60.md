@@ -10,7 +10,7 @@ cold_review: 2026-11-19, subagent with no access to the drafting work
 paragraph_divisions: editorial  # inherited from the source unit; see SCOPE §3
 rubric_en: "How the consulship and any other magistracy in Rome was given without respect of age."
 translated: 2026-11-19
-open_for_david: O40  # `non avere a` prohibitive, "is not to"; amends D261's after-a-negative clause
+open_for_david: none  # O40 ruled 2026-11-19 as D414, "must not"
 ---
 
 # Discourses I.60
@@ -23,7 +23,7 @@ It is seen by the order of the history that the Roman republic, after the consul
 
 ## NM-DISC.1.60.02
 
-And as to blood, this was granted by necessity, and that necessity which was in Rome would be in every city that wished to make the effects that Rome made, as has been said another time; because one cannot give men hardship without reward, nor can one take away the hope of attaining the reward without danger. And therefore early it was fitting that the plebs should have hope of having the consulship, and on this hope it nourished itself [for] a time without having it. Afterwards the hope was not enough, so that it was fitting that one should come to the effect. But the city that does not employ its plebs in any glorious thing can treat it after its own way, as was disputed elsewhere; but that [city] which wishes to make what Rome made is not to make this distinction.
+And as to blood, this was granted by necessity, and that necessity which was in Rome would be in every city that wished to make the effects that Rome made, as has been said another time; because one cannot give men hardship without reward, nor can one take away the hope of attaining the reward without danger. And therefore early it was fitting that the plebs should have hope of having the consulship, and on this hope it nourished itself [for] a time without having it. Afterwards the hope was not enough, so that it was fitting that one should come to the effect. But the city that does not employ its plebs in any glorious thing can treat it after its own way, as was disputed elsewhere; but that [city] which wishes to make what Rome made must not make this distinction.
 
 ## NM-DISC.1.60.03
 
@@ -57,7 +57,7 @@ And granted that it be so, that of time has no reply, but rather is necessary; b
 
 **`Ma la Città che non adopera la sua Plebe ad alcuna cosa gloriosa, la può trattare a suo modo, come altrove si disputò`.** "But the city that does not employ its plebs in any glorious thing can treat it after its own way, as was disputed elsewhere": `adoperare`, employ; `trattare`, treat; `a suo modo`, as it pleases, "after its own way" (glossary, `modo`). The dispute is presumably NM I.6, Venice and Sparta against Rome.
 
-**`ma quella che vuol fare quel che fece Roma, non ha a fare questa distinzione`.** "But that which wishes to do what Rome did is not to make this distinction": `avere a` with the negative. D261 gives "have to" after a negative, but "does not have to make" would turn the sentence into a permission; the sense is a prohibition, what such a city may not do, and the destinative "is not to" is kept, with the amendment of D261 put to David (O40). "This distinction" is of blood. The 1554 reads `ha a fare`, without the negative, which reverses the sense: such a city would have to make the distinction. The 1824 construes with the argument and is kept (NM-DISC-I60-D001, D409).
+**`ma quella che vuol fare quel che fece Roma, non ha a fare questa distinzione`.** "But that [city] which wishes to make what Rome made must not make this distinction": `avere a` with the negative, a prohibition, what such a city may not do. "Does not have to make" would turn it into a permission, so `non avere a` where the sense is prohibitive takes "must not"; "does not have to" stays where the sense is absence of necessity (D414, amending D261). "This distinction" is of blood. The 1554 reads `ha a fare`, without the negative, which reverses the sense: such a city would have to make the distinction. The 1824 construes with the argument and is kept (NM-DISC-I60-D001, D409).
 
 **`E dato che così sia, quella del tempo non ha replica, anzi è necessaria`.** "And granted that it be so, that of time has no reply, but rather is necessary": `quella del tempo`, that of time, age: `quella` has no antecedent that makes the sense run. Taken with `questa distinzione`, it would make the distinction of age necessary, against what follows; the sense needs the disregard of age, as in .01 `concesse ... senza rispetto di età`. The English leaves it as open as the Italian. `replica`, reply, an answer that could be made against it; `anzi` after a negative, "but rather" (D90).
 
