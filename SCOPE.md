@@ -107,7 +107,7 @@ exist. See §7.
 | 27 | NM-DISC.1.58 | FG-CONS.1.58 | FG-CONS-DR-027 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 28 | NM-DISC.1.60 | FG-CONS.1.60 | FG-CONS-DR-028 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 29 | NM-DISC.2.proem | FG-CONS.2.proem | FG-CONS-DR-029 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
-| 30 | NM-DISC.2.10 | FG-CONS.2.10 | FG-CONS-DR-030 | — | — | — | — | — |
+| 30 | NM-DISC.2.10 | FG-CONS.2.10 | FG-CONS-DR-030 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 31 | NM-DISC.2.12 | FG-CONS.2.12 | FG-CONS-DR-031 | — | — | — | — | — |
 | 32 | NM-DISC.2.13 | FG-CONS.2.13 | FG-CONS-DR-032 | — | — | — | — | — |
 | 33 | NM-DISC.2.14 | FG-CONS.2.14 | FG-CONS-DR-033 | — | — | — | — | — |
@@ -220,12 +220,12 @@ than inside the first paragraph.
 | Stage | Done | Remaining | Of |
 |---|---|---|---|
 | Link records | 39 | 0 | 39 |
-| NM source established | 29 | 10 | 39 |
-| FG source established | 29 | 10 | 39 |
-| Collated against the comparison witness | 58 units | 20 | 78 |
-| Translated (draft, cold-reviewed) | 58 | 20 | 78 |
-| Annotated | 58 | 20 | 78 |
-| Published | 58 | 20 | 78 |
+| NM source established | 30 | 9 | 39 |
+| FG source established | 30 | 9 | 39 |
+| Collated against the comparison witness | 60 units | 18 | 78 |
+| Translated (draft, cold-reviewed) | 60 | 18 | 78 |
+| Annotated | 60 | 18 | 78 |
+| Published | 60 | 18 | 78 |
 <!-- /state:stages -->
 
 The table is written by `scripts/state` from the files. The paragraphs below
@@ -363,6 +363,7 @@ clock; David's own time is the rulings, counted separately.
 | I.58 (1,775 + 973 words) | 45 | 10 | 30 | 25 | 15 | 5 | ~130 (stages approximate) | 1 batch at establishment (D391-D400): no page reaches a fifth of the chapter (the fullest 15%), so NM pass B read it all (D391, as D352), and the passes agree on every word but one damaged sort read `hanno` (D392); four o/a differences and six sense-bearing whole words kept against the 1554, among them `contro` (`oltre`) and `malattia` (`malitia`); the 1554's Italian renderings of both Livy quotations recorded; FG three splits, `es[e]mplo` and `[e] nel quale` emended, the rubric's `savia` and the common doubt `sì` read with the 1933 edition, `sotto a` and four sense-bearing words kept against it (`accuratissimi`, `procederia`, `troveria` ×4, `di`), pointing by D110, no terminal stop; 1 open item at translation (O39, seven scoped renderings), ruled as D401; Livy 6.17, 6.20 and 24.25 checked against the Latin Library text; NM collated against 1554; commentary cold-reviewed; David's ruling on the batch came eight days after it was put; no reader collision under D370 |
 | I.60 (360 + 170 words) | 25 | 10 | 15 | 20 | 10 | 5 | ~85 (stages approximate) | 1 batch at establishment (D406-D409), the eighth under D302: NM sample of p. 203 (the denser of two eligible pages in word-level 1554 differences) with three crops of p. 202, clean; five whole words kept against the 1554, among them `non ha a fare`, where the 1554 drops the negative; FG no word split, the rubric `qualunque` read with the 1933 edition, the edition's first lacuna printed `. . .` (D407), `così con verità` kept against the 1933 `è`; 1 open item at translation (O40, `non avere a` prohibitive); Livy 7.26, 7.32, 7.42 and *Periochae* 50 and Cicero *Philippics* 5.47-48 checked against the Latin Library text; NM collated against 1554; commentary cold-reviewed; the session run from a cloud container with the readers in its own folders, the batch ruled the same afternoon |
 | II.proem (1,250 + 361 words) | 40 | 15 | 25 | 25 | 15 | 10 | ~130 (stages approximate) | 1 batch at establishment (D415-D421), the ninth under D302: NM sample of p. 208 (of two eligible pages, the denser per word in word-level 1554 differences) with nineteen crops, and, where the 1554 fol. 84v has lost about 62 words, those lines read whole by pass B (D415), all clean; three D203(b) differences and the sense-bearing 1554 words kept (D420); FG one split (`a'`) and two common doubts read with the 1933 edition (D416, D417), `[È] adunque` by D114 (D418), pointing by D110; no rubric in any witness, the page headed by the witnesses' own headings and `build.py` changed to carry them (D421); O40 ruled first (D414, "must not"), applied at I.60 .02; no open item at translation; NM collated against 1554; commentary cold-reviewed; the cold reviews stopped by a usage limit and resumed after five hours |
+| II.10 (1,139 + 245 words) | 30 | 10 | 20 | 25 | 15 | 5 | ~105 (stages approximate) | the unit-thirty review of the sampling rule first: D302 made standing, no further scheduled review (D426); no new establishment question, every locus ruled by precedent (D427-D430), the tenth chapter under D302: NM sample of p. 251 (the densest of three eligible pages in word-level 1554 differences) with thirteen crops, clean; the 1824 kept against 1554 readings that omit money from the false measures, reverse the Romans' condition and make Pericles advise against money (D428); FG one split, `impossibil[e]` emended, `furno` kept against the 1933 `siano` (D429); Canestrini's rubric agrees with the 1824's (D430); the first readers' top and bottom image crops duplicated the whole page, recorded; 2 open items at translation (O41 `fortezza`, O42 `ferro`), ruled the same day as D432, D433; the six commits of I.60 and II.proem found unpushed, and this session cannot push; NM collated against 1554; commentary cold-reviewed |
 
 ---
 
@@ -596,6 +597,17 @@ rested on pass A alone. So the sample now follows the 1554:
 
 D203(a) and (b) stand. Revisit at unit thirty, or at the first sample or crop
 that disagrees.
+
+**Reviewed at unit thirty (2026-11-20, D426): standing.** Ten 1824
+chapters ran under D302 (I.29-II.proem, 9,659 words): eight sampled with
+60 line crops, every one agreeing with pass A word for word, and two read
+twice in full because no page held a fifth of the chapter. Across all
+twenty-nine chapters pass B has never disagreed with pass A on a word,
+clause or sense. D302 stands unchanged for the rest of the *Discorsi*,
+with no further scheduled review; it is revisited only at the first
+sample or crop that disagrees. The sample page is kept because it is the
+only check on pass A reading towards the 1554 against the 1824, which no
+crop can see.
 
 **Footnotes on textual rulings (2026-10-16, D230).** Every ruling David makes
 on the text, whether a reading at a doubtful letter, an emendation, or a

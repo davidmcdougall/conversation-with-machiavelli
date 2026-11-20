@@ -242,3 +242,19 @@ the original.
 | `Imperio romano orientale` | the eastern Roman empire | NM II.proem .04; `Imperio`, empire, lower case (D124) |
 | `Oltramontano` | ultramontane | NM II.proem .05; from beyond the mountains; the witness's capital not carried, as `Barbari` |
 | `Greci`, `Romani` | the Greeks, the Romans | FG II.proem .01 |
+| `Quinto Curzio` | Quintus Curtius | NM II.10 .02 ×2; Quintus Curtius Rufus, historian of Alexander |
+| `Antipatro macedone`; `il Re spartano`, `il Re di Sparta` | Antipater the Macedonian; the Spartan king, the king of Sparta | NM II.10 .02, .05; Agis III, not named by Machiavelli |
+| `Dario` | Darius | NM II.10 .02; Darius III |
+| `il Duca Carlo` | Duke Charles | NM II.10 .02; Charles the Bold, duke of Burgundy. |
+| `il Papa`; `Papa Giulio II` | the pope; Pope Julius II | NM II.10 .02; the first Leo X, not named |
+| `Francesco Maria` | Francesco Maria | NM II.10 .02; Francesco Maria della Rovere, duke of Urbino |
+| `Urbino` | Urbino | NM II.10 .02 |
+| `Creso`, `Lidia` | Croesus, Lydia | NM II.10 .03 |
+| `Solone ateniese` | Solon the Athenian | NM II.10 .03, as NM I.2 |
+| `Francesi` | the French | NM II.10 .03 ×3, the Gauls of 280-279 BC; as NM I.7 |
+| `il Re di Macedonia` | the king of Macedonia | NM II.10 .03; not named |
+| `Veneziani` | Venetians | NM II.10 .03; as `Viniziani` |
+| `Asdrubale`; `Claudio Nerone` | Hasdrubal; Claudius Nero | NM II.10 .05; Hasdrubal Barca; Gaius Claudius Nero, consul 207 BC. Kept apart from the emperor Nero (`Nerone`, NM I.10) |
+| `la Marca` | the Marches | NM II.10 .05 |
+| `Pericle`; `Peloponneso` | Pericles; the Peloponnese | NM II.10 .06 |
+| `Campani`, `Sidicini`, `Sanniti` | Campanians, Sidicini, Samnites | NM II.10 .06; the 1554 `Capouani` |

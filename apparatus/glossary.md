@@ -756,3 +756,39 @@ last sentence answers Machiavelli's first move.
 | `eccellenza`, `eccellente` | excellence, excellent | NM II.proem .03 `uomo eccellente`; FG II.proem ×2. |
 | `prezzo` (`in sommo prezzo`) | price (of supreme price) | D424. FG II.proem: esteem, not cost. |
 | `vero`, `verissimo`; `conclusione` | true, most true; conclusion | FG II.proem: the concession's words, returned to in the close. |
+
+
+## Added from the II.10 pair (2026-11-20)
+
+| Italian | English | Note |
+|---|---|---|
+| `danari` / `danaro` | money / money | D431, a recorded collapse: plural and singular take the English singular. NM II.10 throughout; FG II.10 throughout. Kept apart from `oro`, gold, and `tesoro`, treasure. |
+| `nervo` (`il nervo della guerra`) | sinew (the sinew of war) | D431. NM II.10 rubric, .02 ×3, .04, .05, .06; FG II.10 and its rubric. Singular, as printed; not the proverbial English plural. |
+| `oro`; `argento` | gold; silver | NM II.10 .03, .04, .06. |
+| `tesoro`; `erario` | treasure; treasury | D431. NM II.10 .02, .03, .04. |
+| `ferro` | the steel | D402 held. NM II.10 .03 ×2, .04 ×2: the metal of arms set against gold. |
+| `armi proprie`; `soldati proprii` | arms of one's own; soldiers of one's own | D431. NM II.10 .01; FG II.10 ×3, his answer in his own term. With `armi fedeli`, faithful arms. |
+| `soldati`; `buoni soldati` | soldiers; good soldiers | NM II.10 throughout; FG II.10 `soldati`, never `buoni`. |
+| `mercenario` | mercenary | FG II.10 `soldati mercenarii`. |
+| `carestia`; `carestioso` | dearth; in dearth | D431. NM II.10 .04, .05 ×3; FG II.10 `carestioso di danari`, Machiavelli's word. |
+| `vettovaglie` | victuals | NM II.10 .05; FG II.10. |
+| `necessitare`; `necessità`, `necessitadi`; `necessario` | necessitate; necessity, necessities; necessary | NM II.10 .02, .05 ×4, .06 ×2; FG II.10 `necessarii` ×2. One root held. |
+| `rotto`; `rotte` | routed; routs | D431. NM II.10 .02, .06. |
+| `tentare la fortuna` | try the fortune | NM II.10 .02, .05 ×2 (`della zuffa`). With `zuffa`, engagement (D49). |
+| `benivolenza`; `fede`, `fedele` | benevolence; faith, faithful | NM II.10 .01 ×2. |
+| `sentenza` | sentence | Held (FG I.5). NM II.10 .02 ×2; FG II.10 ×2, the reply's subject. |
+| `seguitare` (a sentence) | follow | NM II.10 .02; FG II.10, his echo. |
+| `intendere` | understand | D374 held. FG II.10 ×3: the reply turns on what the sentence meant. |
+| `sostenere` (a war) | sustain | D431. FG II.10. "Detain" stays for custody (FG I.10). |
+| `confesso` (FG) | I confess | D431. FG II.10: a narrow concession, beside `credo`, `non so`, `reputo`, `non concorro facilmente`, `non accetto` (D374). In an editor's summary, "grants". |
+| `provedere` | provide | FG I.32 `provedere prima`; FG II.10 ×2. |
+| `soccorso` | succour | NM II.10 .05. |
+| `fortezza` (of a country) | strength | D432. NM II.10 .01 `la fortezza del paese`, what mountains, lakes and passes give it. A third sense beside "fortitude" (FG I.10) and "fortress" (D312), decided by sense at each occurrence. |
+| `ferro` (the metal, against gold) | steel | D433. NM II.10 .03 ×2, .04 ×2, without the article; "the steel" stays for the weapon as remedy (D402, NM I.58). |
+| `qualche volta` | sometimes | D431. NM II.10 .05, .06; FG II.10, as FG I.29, FG II.proem. `talvolta` stays "at times" (FG II.proem). |
+| `misurare` | measure | NM II.10 .01, .06: the chapter's ring, from the prince's forces to the Campanians' power. |
+| `allegare` (an authority) | cite | D431. NM II.10 .02. Not "allege". |
+| `in ogni modo` | in any case | D431. NM II.10 .05 ×2. `modo` alone stays "way". |
+| `dubitare che ... non`, `dubitare non` + a feared outcome | doubt lest | D431, with D205. NM II.proem .07, II.10 .02. |
+| `dovere`, past, of an inference | must have | D431, with D274. NM II.10 .06 `Doverono i Campani ... misurare`. |
+| `vincere` without an object | win | D431, extending D313. NM II.10 .02, .05; FG II.10 `hanno vinto`. |
