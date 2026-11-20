@@ -1,0 +1,555 @@
+<title>A Conversation with Machiavelli — Whether it is better, fearing to be assailed, to bring, or to await, war</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root {
+  --paper:      #EDEEEC;
+  --paper-sunk: #E4E6E3;
+  --ink:        #1B1E1C;
+  --ink-muted:  #5C625E;
+  --ink-faint:  #868C87;
+  --rule:       #C9CDC8;
+  --rule-faint: #DCDFDB;
+  --nm:         #3A5A6B;
+  --fg:         #6E5A3C;
+  --serif: "EB Garamond", "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  --sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --mono:  "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:      #161917;
+    --paper-sunk: #1D211E;
+    --ink:        #E3E6E1;
+    --ink-muted:  #A0A6A0;
+    --ink-faint:  #767C77;
+    --rule:       #343934;
+    --rule-faint: #262B27;
+    --nm:         #8FB4C6;
+    --fg:         #C4A97C;
+  }
+}
+:root[data-theme="dark"] {
+  --paper:      #161917;
+  --paper-sunk: #1D211E;
+  --ink:        #E3E6E1;
+  --ink-muted:  #A0A6A0;
+  --ink-faint:  #767C77;
+  --rule:       #343934;
+  --rule-faint: #262B27;
+  --nm:         #8FB4C6;
+  --fg:         #C4A97C;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 1160px; margin: 0 auto; padding-inline: 20px; padding-block: 0 0; }
+
+/* ---- masthead ---- */
+.masthead { padding-block: 56px 32px; border-bottom: 1px solid var(--rule); }
+.eyebrow {
+  font-family: var(--sans); font-size: 11px; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint);
+  margin: 0 0 18px;
+}
+h1 {
+  font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 5vw, 44px);
+  line-height: 1.12; margin: 0 0 14px; text-wrap: balance; letter-spacing: -0.01em;
+}
+h1 .sub { display: block; font-style: italic; color: var(--ink-muted); font-size: .52em; margin-top: 12px; letter-spacing: 0; }
+.standfirst {
+  font-family: var(--sans); font-size: 14.5px; line-height: 1.6;
+  color: var(--ink-muted); max-width: 62ch; margin: 0;
+}
+.sf-label {
+  font-weight: 600; font-size: 11px; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--ink-faint); margin-right: .6em;
+}
+
+/* ---- the pairing device ---- */
+.pairing {
+  display: flex; align-items: stretch; gap: 0; margin: 30px 0 0;
+  border: 1px solid var(--rule); border-radius: 2px; overflow: hidden;
+  font-family: var(--sans); background: var(--paper-sunk);
+}
+.pairing > div { flex: 1 1 0; padding: 13px 16px; min-width: 0; }
+.pairing .who { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
+.pairing .nm-side .who { color: var(--nm); }
+.pairing .fg-side .who { color: var(--fg); }
+.pairing .what { font-size: 13.5px; color: var(--ink-muted); }
+.pairing .arrow {
+  flex: 0 0 auto; display: flex; align-items: center; justify-content: center;
+  padding-inline: 14px; color: var(--ink-faint); font-size: 15px;
+  border-inline: 1px solid var(--rule);
+}
+
+/* ---- pair-to-pair navigation ---- */
+.pairnav {
+  display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+  margin-top: 18px; font-family: var(--sans); font-size: 12.5px;
+  color: var(--ink-muted);
+}
+.pairnav a { text-decoration: none; color: var(--ink-muted); }
+.pairnav a:hover, .pairnav a:focus { color: var(--ink); text-decoration: underline; }
+
+/* ---- work sections ---- */
+.work { padding-block: 52px 0; }
+.work-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
+.work-head .tag {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .04em;
+  padding: 3px 7px; border-radius: 2px; color: var(--paper);
+}
+.work.nm .tag { background: var(--nm); }
+.work.fg .tag { background: var(--fg); }
+h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; letter-spacing: -0.005em; }
+.rubric {
+  font-style: italic; color: var(--ink-muted); max-width: 70ch;
+  margin: 10px 0 0; font-size: 16.5px; line-height: 1.5;
+}
+.rubric-note {
+  font-family: var(--sans); font-style: normal; font-size: 12px;
+  color: var(--ink-faint); margin-top: 7px;
+}
+.colheads {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  margin-top: 30px; padding-bottom: 7px; border-bottom: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint);
+}
+
+/* ---- the facing pair ---- */
+.pair {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  padding-block: 22px; border-bottom: 1px solid var(--rule-faint);
+  scroll-margin-top: 20px;
+}
+.pair:target { background: var(--paper-sunk); }
+.annot { grid-column: 2 / -1; margin-top: 14px; font-family: var(--sans); font-size: 13.5px;
+  line-height: 1.55; color: var(--ink-muted); }
+.annot summary { cursor: pointer; font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); list-style: none; }
+.annot summary::-webkit-details-marker { display: none; }
+.annot summary::before { content: "+ "; }
+.annot[open] summary::before { content: "− "; }
+.annot p { margin: 8px 0 0; max-width: 72ch; }
+.annot .xref { color: inherit; text-decoration: underline; text-decoration-color: var(--rule);
+  text-underline-offset: 2px; white-space: nowrap; }
+.gutter { padding-top: 4px; }
+.uid {
+  font-family: var(--mono); font-size: 10.5px; color: var(--ink-faint);
+  text-decoration: none; letter-spacing: -0.02em;
+}
+.uid:hover, .uid:focus { color: var(--ink); text-decoration: underline; }
+.col { min-width: 0; }
+.col.it { hyphens: auto; }
+.col.en { }
+.supplied { color: var(--ink-muted); }
+
+/* ---- apparatus ---- */
+.apparatus {
+  margin-top: 34px; padding-top: 22px; border-top: 2px solid var(--rule);
+  font-family: var(--sans); font-size: 13.5px; line-height: 1.58;
+  color: var(--ink-muted);
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 26px 34px;
+}
+.apparatus h3 {
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); margin: 0 0 9px;
+}
+.apparatus p { margin: 0 0 9px; }
+.apparatus p:last-child { margin-bottom: 0; }
+.apparatus .lem { font-family: var(--serif); font-size: 15px; color: var(--ink); font-style: italic; }
+.sig { font-family: var(--mono); font-size: 12px; color: var(--ink); }
+
+/* ---- colophon ---- */
+.colophon {
+  margin-top: 60px; padding-block: 28px 60px; border-top: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 13px; line-height: 1.6; color: var(--ink-muted);
+}
+.colophon .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 34px; }
+.colophon h3 {
+  font-size: 10.5px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--ink-faint); margin: 0 0 8px;
+}
+.colophon p { margin: 0 0 8px; }
+.colophon ul { margin: 0; padding-left: 16px; }
+.colophon li { margin-bottom: 5px; }
+.state {
+  margin-top: 26px; padding: 14px 16px; background: var(--paper-sunk);
+  border-left: 2px solid var(--ink-faint); border-radius: 0 2px 2px 0;
+  font-size: 12.5px;
+}
+.state strong { color: var(--ink); font-weight: 600; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--nm); outline-offset: 2px; }
+
+/* ---- contents / index page ---- */
+.toc { margin-top: 30px; }
+.toc-row {
+  display: grid; grid-template-columns: 40px 1fr 1fr; gap: 0 20px;
+  padding-block: 14px; border-bottom: 1px solid var(--rule-faint);
+  font-family: var(--sans); align-items: baseline;
+}
+.toc-row .n { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
+.toc-row a { text-decoration: none; color: var(--ink); font-family: var(--serif); font-size: 16px; }
+.toc-row a:hover, .toc-row a:focus { text-decoration: underline; }
+.toc-row .unpublished { color: var(--ink-faint); font-style: italic; font-size: 14px; }
+.toc-row .ids { color: var(--ink-faint); font-size: 11.5px; font-family: var(--mono); }
+.toc-row .dated { color: var(--ink-faint); font-size: 12px; text-align: right; }
+
+@media (max-width: 760px) {
+  body { font-size: 16.5px; }
+  .colheads { display: none; }
+  .pair { grid-template-columns: 1fr; gap: 0; padding-block: 20px; }
+  .gutter { padding-top: 0; margin-bottom: 8px; }
+  .annot { grid-column: 1; }
+  .col.it { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px dotted var(--rule); }
+  .col.it::before, .col.en::before {
+    display: block; font-family: var(--sans); font-size: 10px; font-weight: 600;
+    letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px;
+  }
+  .col.it::before { content: "Italian"; }
+  .col.en::before { content: "English"; }
+  .pairing { flex-direction: column; }
+  .pairing .arrow { border-inline: 0; border-block: 1px solid var(--rule); padding-block: 6px; }
+  .toc-row { grid-template-columns: 1fr; gap: 4px; }
+  .toc-row .dated { text-align: left; }
+}
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow">A Conversation with Machiavelli · Pair 31 of 39</p>
+    <h1>Whether it is better, fearing to be assailed, to bring, or to await, war
+      <span class="sub">Discourses II.12, and Guicciardini&#x27;s reply</span></h1>
+    <p class="standfirst"><span class="sf-label">Editor's summary</span> Machiavelli argues that a prince with armed peoples should await a powerful war at home, and one with disarmed subjects keep it away, because his *virtù* lies in money, which war at home impedes most. Guicciardini finds the case too doubtful to resolve easily: Machiavelli&#x27;s distinction, armed or disarmed subjects, is not enough; the subjects&#x27; faith, the towns&#x27; strength, revenues and the enemy&#x27;s condition also matter. He judges that whoever has war at home should, given the chance, begin it in the enemy&#x27;s country too; against a stronger enemy, he says, one cannot think of attacking abroad, and with even means and the forces needed he would be inclined to counsel not awaiting war at home. He is not moved by the Roman counterfactual, which he calls an impossible case.</p>
+
+    <div class="pairing">
+      <div class="nm-side">
+        <div class="who">Niccolò Machiavelli</div>
+        <div class="what">Discorsi sopra la prima Deca di Tito Livio · written c. 1513–19, printed 1531</div>
+      </div>
+      <div class="arrow" aria-hidden="true">answered by</div>
+      <div class="fg-side">
+        <div class="who">Francesco Guicciardini</div>
+        <div class="what">Considerazioni intorno ai Discorsi del Machiavelli · written 1529–30, printed 1857</div>
+      </div>
+    </div>
+    <nav class="pairnav"><a href="2.10.html">← Pair 2.10</a><a href="../index.html">All 39 pairs</a><span></span></nav>
+  </header>
+
+  <section class="work nm">
+    <div class="work-head">
+      <span class="tag">NM-DISC.2.12</span>
+      <h2>Capitolo XII</h2>
+    </div>
+    <p class="rubric">S&#x27;egli è meglio, temendo di essere assaltato, inferire, o aspettare la guerra.</p>
+    <p class="rubric">Whether it is better, fearing to be assailed, to bring, or to await, war.
+      </p>
+
+    <div class="colheads"><div></div><div>Italian · 1824</div><div>English</div></div>
+      <div class="pair" id="NM-DISC.2.12.01">
+        <div class="gutter"><a class="uid" href="#NM-DISC.2.12.01">2.12.01</a></div>
+        <div class="col it" lang="it">Io ho sentito da uomini assai pratichi nelle cose della guerra qualche volta disputare, se sono duoi Principi quasi di eguali forze, se quello più gagliardo abbia bandito la guerra contro a quell&#x27;altro, quale sia miglior partito per l&#x27;altro, o aspettare il nimico dentro ai confini suoi, o andarlo a trovare in casa, ed assaltare lui. E ne ho sentito addurre ragioni da ogni parte.</div>
+        <div class="col en" lang="en">I have heard men very practised in the things of war sometimes dispute, if there are two princes of almost equal forces, if that harder <span class="supplied">[one]</span> has proclaimed war against that other, which is the better course for the other: either to await the enemy within his borders, or to go to find him at home and assail him. And I have heard reasons adduced for it on every side.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The chapter opens on a question Machiavelli has heard disputed by men practised in war, not on a thesis of his own. Two princes of almost equal forces; the harder has proclaimed war on the other; which course is better for the one attacked, to await the enemy within his borders or to go and assail him at home? He has heard reasons on every side, and the next three paragraphs report them before he says what he understands.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini begins from this report: the Discourse has many examples for both opinions, and there are also many reasons that make the case so doubtful that it is not easily resolved <a class="xref" href="#FG-CONS.2.12.01">Guicciardini .01</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.2.12.02">
+        <div class="gutter"><a class="uid" href="#NM-DISC.2.12.02">2.12.02</a></div>
+        <div class="col it" lang="it">E chi difende lo andare assaltare altrui ne allega il consiglio che Creso dette a Ciro, quando arrivato in su i confini de&#x27; Massageti per fare loro guerra, la loro Regina Tamiri gli mandò a dire, che eleggesse quale de&#x27; duoi partiti volesse, o entrare nel Regno suo, dove essa lo aspetterebbe, o volesse che ella venisse a trovar lui. E venuta la cosa in disputazione, Creso contro all&#x27;opinione degli altri, disse che si andasse a trovare lei; allegando che se egli la vincesse discosto al suo Regno, che ei non le torrebbe il Regno, perché ella arebbe tempo a rifarsi; ma se la vincesse dentro a&#x27; suoi confini, potrebbe seguirla in su la fuga, e non le dando spazio a rifarsi, torle lo Stato. Allegano ancora il consiglio che dette Annibale ad Antioco, quando quel Re disegnava fare guerra ai Romani, dove ei mostrò come i Romani non si potevano vincere se non in Italia, perché quivi altri si poteva valere dell&#x27;armi e delle ricchezze e degli amici loro; ma chi li combatteva fuora d&#x27;Italia, e lasciava loro l&#x27;Italia libera, lasciava loro quella fonte, che mai le manca vita a somministrare forze dove bisogna, e conchiuse che ai Romani si poteva prima torre Roma che lo Imperio, e prima la Italia che le altre Provincie. Allega ancora Agatocle, che non potendo sostenere la guerra di casa, assaltò i Cartaginesi che gliene facevano, e li ridusse a domandare pace. Allega Scipione, che per levare la guerra d&#x27;Italia, assaltò l&#x27;Affrica.</div>
+        <div class="col en" lang="en">And whoever defends going to assail others cites for it the counsel that Croesus gave to Cyrus, when, <span class="supplied">[Cyrus]</span> having arrived on the borders of the Massagetae to make war on them, their queen Tomyris sent to tell him that he choose which of the two courses he wished: either to enter her kingdom, where she would await him, or wished that she come to find him. And the thing having come into disputation, Croesus, against the opinion of the others, said that they go to find her; citing that if he vanquished her at a distance from her kingdom, he would not take the kingdom away from her, because she would have time to remake herself; but if he vanquished her within her borders, he could follow her in her flight, and, not giving her space to remake herself, take the state away from her. They cite also the counsel that Hannibal gave to Antiochus, when that king designed to make war on the Romans, where he showed how the Romans could not be vanquished except in Italy, because there another could avail himself of their arms and riches and friends; but whoever fought them outside Italy, and left them Italy free, left them that spring to which life never fails for supplying forces where it is required, and he concluded that from the Romans Rome could be taken away earlier than the empire, and Italy earlier than the other provinces. He cites also Agathocles, who, not being able to sustain the war at home, assailed the Carthaginians, who were making it on him, and brought them to ask for peace. He cites Scipio, who, to remove the war from Italy, assailed Africa.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> The case for carrying the war abroad is made by authorities, each cited by those who hold it. Croesus counsels Cyrus to go and find Tomyris, because a victory at a distance from her kingdom would leave her time to remake herself, while a victory within her borders would let him follow her in flight and take her state from her. Hannibal tells Antiochus that the Romans cannot be vanquished except in Italy, because there another can avail himself of their arms, riches and friends; whoever fights them outside Italy and leaves them Italy free leaves them a spring that never fails to supply forces, and Rome could be taken from the Romans earlier than the empire, and Italy earlier than the other provinces. Agathocles, unable to sustain the war at home, assails the Carthaginians and brings them to ask for peace; Scipio assails Africa to remove the war from Italy. These are cited by those who defend assailing, not judged by Machiavelli.</p>
+<p><span class="lem">History.</span> The Croesus story is Herodotus&#x27; (1.206-214): Cyrus took the counsel, crossed into the Massagetae&#x27;s country and was killed there. Machiavelli tells only the counsel. Hannibal&#x27;s counsel to Antiochus III is in Livy (34.60). Agathocles of Syracuse invaded Africa in 310 BC while Syracuse was besieged; Scipio Africanus crossed to Africa in 204 BC, and Hannibal was recalled from Italy in 203 BC. The identifications are the editor&#x27;s.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini sets Scipio and Agathocles under a different case, the man who already has the war at home and begins it in the enemy&#x27;s country as well to constrain him to depart <a class="xref" href="#FG-CONS.2.12.01">Guicciardini .01</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.2.12.03">
+        <div class="gutter"><a class="uid" href="#NM-DISC.2.12.03">2.12.03</a></div>
+        <div class="col it" lang="it">Chi parla al contrario dice, che chi vuole fare capitare male uno nimico, lo discosti da casa. Allegano gli Ateniesi, che mentre che feciono la guerra comoda alla casa loro restarono superiori; come si discostarono, ed andarono con gli eserciti in Sicilia, perderono la libertà. Allega le favole poetiche dove si mostra, che Anteo Re di Libia, assaltato da Ercole Egizio, fu insuperabile mentreché lo aspettò dentro a&#x27; confini del suo Regno, ma come e&#x27; se ne discostò per astuzia di Ercole, perdè lo Stato e la vita. Onde è dato luogo alla favola di Anteo, che sendo in terra ripigliava le forze da sua madre che era la Terra, e che Ercole avvedutosi di questo lo levò in alto, e discostollo dalla terra. Allegane ancora i giudizj moderni. Ciascuno sa come Ferrando Re di Napoli fu ne&#x27; suoi tempi tenuto un savissimo Principe, e venendo la fama duoi anni avanti la sua morte, come il Re di Francia Carlo VIII voleva venire ad assaltarlo, avendo fatte assai preparazioni ammalò, e venendo a morte, tra gli altri ricordi che lasciò ad Alfonso suo figliuolo, fu che egli aspettasse il nimico dentro al Regno, e per cosa del Mondo non traesse forze fuori dello Stato suo, ma lo aspetta<span class="supplied">[s]</span>se dentro a&#x27; suoi confini tutto intero; il che non fu osservato da quello; ma mandato un esercito in Romagna, senza combattere perdè quello e lo Stato.</div>
+        <div class="col en" lang="en">Whoever speaks to the contrary says that whoever wishes to make an enemy come to a bad end, let him distance him from home. They cite the Athenians, who, while they made war convenient to their home, remained superior; when they went to a distance, and went with their armies into Sicily, they lost their liberty. He cites the poetic fables, where it is shown that Antaeus, king of Libya, assailed by Hercules the Egyptian, was insuperable while he awaited him within the borders of his kingdom, but when he went to a distance from it, through the craft of Hercules, he lost the state and his life. Whence place is given to the fable of Antaeus, that, being on the earth, he took up force again from his mother, who was the Earth, and that Hercules, having perceived this, raised him on high, and distanced him from the earth. He cites for it also modern judgments. Each one knows how Ferdinand, king of Naples, was held in his times a most wise prince, and, the report coming, two years before his death, how the king of France, Charles VIII, wished to come to assail him, <span class="supplied">[Ferdinand]</span>, having made many preparations, fell ill; and, coming to death, among the other counsels that he left to Alfonso his son was that he await the enemy within the kingdom, and for nothing in the world draw forces out of his state, but await him within his borders all entire; which was not observed by him; but, having sent an army into Romagna, without fighting he lost it and the state.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> The contrary case: whoever wishes an enemy to come to a bad end, let him distance him from home. They cite the Athenians, who remained superior while they made war convenient to their home, and lost their liberty when they went with their armies into Sicily. They cite the poetic fables: Antaeus, king of Libya, was insuperable while he awaited Hercules within the borders of his kingdom, and lost his state and his life when he went to a distance from it through Hercules&#x27; craft; from this, the party says, came the fable of Antaeus, son of the Earth, lifted off the ground by Hercules. They cite modern judgments too. Ferdinand of Naples was held a most wise prince; when the report came, two years before his death, that Charles VIII of France wished to assail him, he made many preparations, fell ill, and among his last counsels told his son Alfonso to await the enemy within the kingdom, for nothing in the world to draw forces out of his state, and to await him within his borders all entire. Alfonso did not observe it, sent an army into Romagna, and without fighting lost the army and the state. The counsel is reported as Ferdinand&#x27;s, and the loss is set beside its neglect; the whole is cited by those who argue for awaiting.</p>
+<p><span class="lem">History.</span> The Athenian expedition to Sicily ended in disaster in 413 BC. Ferdinand I of Naples (Ferrante) died in January 1494; Charles VIII invaded later that year, and Alfonso II sent forces into Romagna under his son Ferrandino before abdicating early in 1495. The identifications and dates are the editor&#x27;s, and the sequence is Machiavelli&#x27;s.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini names Ferdinand three times: in a parenthesis on the difference between carrying war to the enemy&#x27;s home and meeting him outside his country, without saying which part of the example he means <a class="xref" href="#FG-CONS.2.12.01">Guicciardini .01</a>; as the king who could not put into the open country an army even with that of the enemies; and as the king against whom Duke John could have pressed a victory <a class="xref" href="#FG-CONS.2.12.02">Guicciardini .02</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.2.12.04">
+        <div class="gutter"><a class="uid" href="#NM-DISC.2.12.04">2.12.04</a></div>
+        <div class="col it" lang="it">Le ragioni che oltre alle cose dette da ogni parte si adducono, sono: Che chi assalta viene con maggiore animo che chi aspetta, il che fa più confidente lo esercito; toglie oltra di questo molte comodità al nimico di potersi valere delle sue cose, non si potendo valere di quei sudditi che sieno saccheggiati; e per avere il nimico in casa è costretto il signore avere più rispetto a trarre da loro danari e affaticarli, sicché e&#x27; viene a seccare quella fonte, come dice Annibale, che fa che colui può sostenere la guerra. Oltre di questo i suoi soldati, per trovarsi nei paesi altrui, sono più necessitati a combattere, e quella necessità fa virtù, come più volte abbiamo detto. Dall&#x27;altra parte si dice, come aspettando il nimico si aspetta con assai vantaggio, perché senza disagio alcuno tu puoi dare a quello molti disagi di vettovaglia, e d&#x27;ogni altra cosa che abbia bisogno uno esercito; puoi meglio impedirgli i disegni suoi, per la notizia del paese che tu hai più di lui: puoi con più forze incontrarlo, per poterle facilmente tutte unire, ma non potere già tutte discostarle da casa; puoi sendo rotto rifarti facilmente, sì perché del tuo esercito se ne salverà assai, per avere i rifugj propinqui, sì perché il supplemento non ha a venire discosto; tanto che tu vieni ad arrischiare tutte le forze, e non tutta la fortuna, e discostandoti arrischi tutta la fortuna, e non tutte le forze. Ed alcuni sono stati, che per indebolire meglio il suo nimico, lo lasciano entrare parecchie giornate in su il paese loro, e pigliare assai Terre, acciò che, lasciando i presidj in tutte, indebolisca il suo esercito, e possanlo dipoi combattere più facilmente.</div>
+        <div class="col en" lang="en">The reasons which, beyond the things said, are adduced on every side are: that whoever assails comes with greater spirit than whoever awaits, which makes the army more confident; he takes away, beyond this, many conveniences from the enemy for being able to avail himself of his things, he not being able to avail himself of those subjects who are sacked; and, through having the enemy at home, the lord is constrained to have more respect to drawing money from them and wearying them, so that he comes to dry up that spring, as Hannibal says, which makes it that that man can sustain the war. Beyond this, his soldiers, through finding themselves in others&#x27; countries, are more necessitated to fight, and that necessity makes <i lang="it">virtù</i>, as we have said more times. On the other hand it is said that in awaiting the enemy one awaits with much advantage, because without any hardship <span class="supplied">[to yourself]</span> you can give him many hardships of victuals, and of every other thing that an army has need of; you can better impede his designs, through the notice of the country that you have more than he: you can meet him with more forces, through being able readily to unite them all, but not being able to distance them all from home; you can, being routed, remake yourself readily, both because much of your army will be saved, through having refuges near, and because the supplement does not have to come from a distance; so that you come to hazard all the forces, and not all the fortune, and, going to a distance, you hazard all the fortune, and not all the forces. And there have been some who, to weaken their enemy better, let him enter several days&#x27; <span class="supplied">[march]</span> into their country, and take many towns, in order that, leaving garrisons in all of them, he may weaken his army, and they may afterwards fight him more readily.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The reasons, beyond the authorities, set side by side. For assailing: the assailant comes with greater spirit; the defender cannot avail himself of subjects who are sacked, and the lord, with the enemy at home, is constrained to have more respect in drawing money from them and wearying them, so that he comes to dry up the spring Hannibal spoke of; the assailant&#x27;s soldiers, in others&#x27; countries, are more necessitated to fight, and necessity makes <i lang="it">virtù</i>. For awaiting: without any hardship to yourself you can give him many hardships of victuals and of everything an army needs, impede his designs through knowledge of the country, meet him with more forces because you can readily unite them all, and, if routed, remake yourself from near refuges and a supplement that does not have to come from a distance. What is said for awaiting closes on a chiasmus whose second member holds only under its condition: so that you come to hazard all the forces and not all the fortune; going to a distance, you hazard all the fortune and not all the forces. Some have let an enemy enter several days&#x27; march into their country and take many towns, so that, leaving garrisons in all of them, he weakens his army, and they may afterwards fight him more readily.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini gives reasons of his own, under a conditional, for carrying the war abroad when forces are even: greater reward in victory, less loss in defeat and more time to remake oneself, and the enemy&#x27;s preparations disturbed. He does not cite this list <a class="xref" href="#FG-CONS.2.12.02">Guicciardini .02</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.2.12.05">
+        <div class="gutter"><a class="uid" href="#NM-DISC.2.12.05">2.12.05</a></div>
+        <div class="col it" lang="it">Ma per dire ora io quello che io ne intendo, io credo che si abbia a fare questa distinzione: o io ho il mio paese armato, come i Romani, e come l&#x27;hanno i Svizzeri; o io l&#x27;ho disarmato, come l&#x27;avevano i Cartaginesi, e come l&#x27;hanno i Re di Francia e gl&#x27;Italiani. In questo caso si debbe tenere il nimico discosto a casa; perché sendo la tua virtù nel danaro e non negli uomini, qualunque volta ti è impedita la via di quello, tu sei spacciato, né cosa veruna te lo impedisce, quanto la guerra di casa. In esempj ci sono i Cartaginesi, i quali mentre che ebbero la casa loro libera, poterono con le rendite fare guerra coi Romani, e quando l&#x27;avevano assaltata, non potevano resistere ad Agatocle. I Fiorentini non avevano rimedio alcuno con Castruccio signore di Lucca, perché ei faceva loro la guerra in casa, tanto ch&#x27;egli ebbero a darsi, per essere difesi, al Re Roberto di Napoli. Ma morto Castruccio, quelli medesimi Fiorentini ebbero animo di assaltare il Duca di Milano in casa, e operare di torgli il Regno: tanta virtù mostrarono nelle guerre longinque, e tanta viltà nelle propinque!</div>
+        <div class="col en" lang="en">But to say now what I understand of it, I believe that this distinction is to be made: either I have my country armed, as the Romans <span class="supplied">[had]</span>, and as the Swiss have it; or I have it disarmed, as the Carthaginians had it, and as the kings of France and the Italians have it. In this case one must keep the enemy at a distance from home; because, your <i lang="it">virtù</i> being in money and not in men, whenever the path to it is impeded for you, you are despatched; nor does any thing impede it for you so much as war at home. For examples there are the Carthaginians, who, while they had their home free, were able with the revenues to make war with the Romans, and, when they had it assailed, were not able to resist Agathocles. The Florentines had no remedy whatever against Castruccio, lord of Lucca, because he made war on them at home, so that they had to give themselves, in order to be defended, to King Robert of Naples. But, Castruccio dead, those same Florentines had the spirit to assail the duke of Milan at home, and to work to take his kingdom away from him: so much <i lang="it">virtù</i> did they show in far-off wars, and so much baseness in near ones!</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> Machiavelli&#x27;s own answer is a belief and a distinction: he believes the distinction to be made is whether a country is armed, as the Romans&#x27; was and the Swiss&#x27; is, or disarmed, as the Carthaginians&#x27; was and as the kings of France and the Italians have it. The disarmed case is answered first: one must keep the enemy at a distance from home. Its <i lang="it">virtù</i> is in money, not men; whenever the way to money is impeded, you are despatched, and nothing impedes it so much as war at home. Carthage could fight Rome while its home was free and could not resist Agathocles when it was assailed. Florence had no remedy against Castruccio, who made war on it at home, and gave itself to King Robert, yet the same Florentines later had the spirit to assail the duke of Milan at home: so much <i lang="it">virtù</i> far away, so much baseness near. The examples are given for the disarmed case.</p>
+<p><span class="lem">History.</span> Castruccio Castracani, lord of Lucca, defeated Florence at Altopascio in 1325; Florence then gave the lordship of the city to Charles of Calabria, King Robert&#x27;s son, who entered it in 1326. The wars against the duke of Milan are presumably those against Giangaleazzo Visconti in the 1390s. The identifications are the editor&#x27;s.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini says this distinction alone is not enough, and adds the considerations he finds passed over <a class="xref" href="#FG-CONS.2.12.01">Guicciardini .01</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.2.12.06">
+        <div class="gutter"><a class="uid" href="#NM-DISC.2.12.06">2.12.06</a></div>
+        <div class="col it" lang="it">Ma quando i Regni sono armati, come era armata Roma, e come sono i Svizzeri, sono più difficili a vincere quanto più ti appressi a loro. Perché questi Corpi possono unire più forze a resistere ad uno impeto, che non possono ad assaltare altrui. Né mi muove in questo caso l&#x27;autorità d&#x27;Annibale, perché la passione e l&#x27;utile suo gli faceva così dire ad Antioco. Perché se i Romani avessero avute in tanto spazio di tempo quelle tre rotte in Francia, ch&#x27;egli ebbero in Italia da Annibale, senza dubbio erano spacciati; perché non si sarebbero valuti dei residui degli eserciti, come si valsero in Italia, non arebbero avuto a rifarsi quelle comodità, né potevano con quelle forze resistere al nimico che poterono. Non si trova che per assaltare una Provincia, mandassero mai fuora eserciti che passassero cinquantamila persone; ma per difendere la casa ne misero in arme contro ai Francesi, dopo la prima guerra punica, diciotto centinaja di migliaja. Né arebbono potuto poi romper quelli in Lombardia, come li ruppero in Toscana; perché contro a tanto numero di inimici non arebbono potuto condurre tante forze sì discosto, né combatterli con quella comodità. I Cimbri ruppero uno esercito romano in la Magna, né vi ebbero i Romani rimedio. Ma come egli arrivarono in Italia, e che poterono mettere tutte le loro forze insieme, gli spacciarono. Gli Svizzeri è facile vincerli fuori di casa, dove e&#x27; non possono mandare più che un trenta o quarantamila uomini; ma vincerli in casa, dove e&#x27; ne possono raccozzare centomila, è difficilissimo.</div>
+        <div class="col en" lang="en">But when kingdoms are armed, as Rome was armed, and as the Swiss are, they are the more difficult to vanquish the more you approach them. For these bodies can unite more forces to resist an onset than they can to assail others. Nor does the authority of Hannibal move me in this case, because his passion and his advantage made him speak so to Antiochus. For, if the Romans had had, in so much space of time, those three routs in France that they had in Italy from Hannibal, without doubt they were despatched; because they would not have availed themselves of the residues of the armies as they availed themselves of them in Italy, they would not have had those conveniences for remaking themselves, nor could they resist the enemy with those forces with which they could. It is not found that, to assail a province, they ever sent out armies that exceeded fifty thousand persons; but to defend home they put in arms against the French, after the first Punic war, eighteen hundred thousand. Nor could they later have routed those in Lombardy as they routed them in Tuscany; because against so great a number of enemies they could not have conducted so many forces at such a distance, nor fought them with that convenience. The Cimbri routed a Roman army in Germany, nor did the Romans have a remedy there. But when they arrived in Italy, and <span class="supplied">[the Romans]</span> could put all their forces together, they despatched them. The Swiss it is easy to vanquish outside their home, where they cannot send more than some thirty or forty thousand men; but to vanquish them at home, where they can muster a hundred thousand of them, is most difficult.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> The armed case: armed kingdoms are the more difficult to vanquish the nearer one comes, because such bodies can unite more forces to resist than to assail. Hannibal&#x27;s authority does not move Machiavelli in this case, because Hannibal&#x27;s passion and his advantage made him speak so to Antiochus. If the Romans had had in Gaul, in so short a space of time, the three routs they had from Hannibal in Italy, Machiavelli says, without doubt they were despatched: they could not have availed themselves of the residues of their armies, remade themselves as conveniently, or resisted with the forces they had. It is not found that Rome, to assail a province, ever sent out armies above fifty thousand, but to defend home it armed eighteen hundred thousand against the Gauls; it could not have routed them in Lombardy as it did in Tuscany. The Cimbri routed a Roman army in Germany, where the Romans had no remedy, and were despatched once they reached Italy and the Romans could put all their forces together; the Swiss are easy to vanquish outside their home, where they cannot send more than thirty or forty thousand men, and most difficult at home, where they can muster a hundred thousand. The counterfactual is stated as a certainty, and the figures are Machiavelli&#x27;s.</p>
+<p><span class="lem">History.</span> The Cimbri defeated Roman armies beyond the Alps (at Noreia in Noricum, 113 BC; at Arausio in Gaul, 105 BC) and were destroyed by Marius at Vercellae in 101 BC. The Gallic war after the first Punic war is presumably the invasion of 225 BC, ended at Telamon in Etruria. The identifications are the editor&#x27;s.</p>
+<p><span class="lem">Cross-reference.</span> This counterfactual does not move Guicciardini: it supposes an impossible case, that whoever is routed at another&#x27;s home, above all in a distant place, could so suddenly after the first rout have sent two new armies there, one after the other <a class="xref" href="#FG-CONS.2.12.02">Guicciardini .02</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.2.12.07">
+        <div class="gutter"><a class="uid" href="#NM-DISC.2.12.07">2.12.07</a></div>
+        <div class="col it" lang="it">Conchiudo adunque di nuovo, che quel Principe che ha i suoi Popoli armati e ordinati alla guerra, aspetti sempre in casa una guerra potente e pericolosa, e non la vada a rincontrare. Ma quello che ha i suoi sudditi disarmati, ed il paese inusitato alla guerra, se la discosti sempre da casa il più che può. E così l&#x27;uno e l&#x27;altro, ciascuno nel suo grado, si difenderà meglio.</div>
+        <div class="col en" lang="en">I conclude, then, anew, that the prince who has his peoples armed and ordered for war always await at home a powerful and dangerous war, and not go to meet it. But he who has his subjects disarmed, and the country unused to war, let him always distance it from home as far as he can. And so the one and the other, each in his degree, will defend himself better.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The conclusion is repeated as counsel and divided in two. The prince whose peoples are armed and ordered for war is to await a powerful and dangerous war at home always, and not go out to meet it; the prince with disarmed subjects and a country unused to war is to keep it always as far from home as he can. Each in his degree will defend himself better. The counsel is given for the two cases Machiavelli has distinguished.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini&#x27;s reply does not deny either half. It adds conditions the distinction leaves out <a class="xref" href="#FG-CONS.2.12.01">Guicciardini .01</a>, and where forces are even and one is ordered with the forces needed, he &quot;should be inclined to counsel&quot; not awaiting war at home <a class="xref" href="#FG-CONS.2.12.02">Guicciardini .02</a>.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from the 1824 edition (<span class="sig">WIT-NM-DISC-1824-IA</span>), page-image-backed, which governs. Collated against the 1554 Giglio printing, Venice (<span class="sig">WIT-NM-DISC-1554-IA</span>), which is comparison evidence only.</p>
+<p>Paragraph divisions are editorial. The witness prints the chapter as one unbroken block.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem">lasciava loro quella fonte, che mai le manca vita a somministrare forze dove bisogna (.02)</span> — 1824. The 1554 witness reads <i lang="it">laſciaua loro quella forza che mai le manca uita a ſomminiſtrare forze doue biſogna</i>. The 1554&#x27;s <i lang="it">forza</i> anticipates the <i lang="it">forze</i> the spring supplies; the 1824&#x27;s <i lang="it">fonte</i> is the figure the chapter takes up again in .04 (<i lang="it">seccare quella fonte, come dice Annibale</i>). Read by both 1824 readers without doubt. Kept (D38, D438).</p>
+<p><span class="lem">tanto che tu vieni ad arrischiare tutte le forze, e non tutta la fortuna, e discostandoti arrischi tutta la fortuna, e non tutte le forze (.04) ... e possanlo dipoi combattere più facilmente (.04)</span> — 1824. The 1554 witness reads <i lang="it">tanto che tu uieni a riſchiare tutte le forze, &amp; non tutta la fortuna, &amp; arriſchi tutta la fortuna, &amp; non tutte le forze ... &amp; poſsinlo dipoi combattere</i>. The 1554 omits <i lang="it">discostandoti</i>, so the second member of the chiasmus loses its condition and contradicts the first; and omits <i lang="it">più facilmente</i>. Read by both 1824 readers without doubt. Kept (D38, D438).</p>
+<p><span class="lem">tanta virtù mostrarono nelle guerre longinque, e tanta viltà nelle propinque (.05)</span> — 1824. The 1554 witness reads <i lang="it">tanta uertu moſtrarono nelle guerre lontane, &amp; tanta uiltà nelle uicine</i>. Synonyms, the 1554&#x27;s the plainer words. Read by both 1824 readers without doubt. Kept (D38, D438).</p>
+<p><span class="lem">ei non le torrebbe il Regno (.02) ... ei mostrò come (.02) ... come i Romani, e come l&#x27;hanno i Svizzeri; ... come l&#x27;avevano i Cartaginesi, e come l&#x27;hanno i Re di Francia (.05) ... tu sei spacciato (.05) ... quanto la guerra di casa (.05) ... uno esercito romano (.06)</span> — 1824. The 1554 witness reads <i lang="it">non gli terrebbe il regno ... moſtra come ... come i Romani o come hanno gli Suizeri ... come haueano i Carthagineſi o come l&#x27;hanno il Re di Francia ... tu ſei ſpacciata ... quanta la guerra di caſa ... un&#x27;eſſercito Romana</i>. Word-level differences at e/o/a, escalated under D203(b); read by both 1824 readers without doubt. <i lang="it">torrebbe</i> (take away) against <i lang="it">terrebbe</i> (hold); the 1554&#x27;s <i lang="it">Romana</i> and <i lang="it">spacciata</i> break agreement. The 1824 construes at each and is kept (D38, D438).</p>
+<p><span class="lem">in su i confini (.02) ... ei non le torrebbe (.02) ... e prima la Italia (.02) ... restarono superiori; come (.03) ... Allegano gli Ateniesi (.03) ... se ne salverà assai (.04) ... i Re di Francia (.05) ... ti appressi a loro (.05) ... Non si trova che per assaltare una Provincia, mandassero (.06) ... sì discosto (.06) ... in la Magna (.06) ... ch&#x27;egli ebbero ×2 (.05, .06) ... inusitato alla guerra (.07)</span> — 1824. The 1554 witness reads <i lang="it">in ſu confini ... non gli terrebbe ... prima l&#x27;Italia ... reſtarono ſuperiori, &amp; come ... Allegane gli Athenieſi ... ſe ne ſalueranno aſſai ... il Re di Francia ... appreſsi loro ... Non ſi troua per aſſaltare una prouincia che eſsi mandaſsino ... di diſcoſto ... ne la Magna ... che eſsi hebbero ... inuſitato della guerra</i>. Whole words the 1554 sets otherwise, adds or drops; read by both 1824 readers without doubt. The 1824 construes at each and is kept (D38, D438).</p>
+<p><span class="lem">aspetta[s]se</span>. The 1824 witness reads <i lang="it">ma lo aspettase dentro a&#x27;suoi confini</i>. The 1554 witness reads <i lang="it">ma l&#x27;aſpettaſſe dentro a i ſuoi confini</i>. Both readers see one s; not a form the 1824 uses. Emended from the 1554 and bracketed (D68, D438).</p>
+<p><span class="lem">CAPITOLO XII / S&#x27; egli è meglio, temendo di essere assaltato, / inferire, o aspettare la guerra.</span> — 1824. The 1554 witness reads <i lang="it">SE EGLIE MEGLIO, TEMENdo di eſſer aſſaltato, muouere, o aſpettare la guerra. Cap. XII.</i>. The 1554 reads <i lang="it">muouere</i>, move [war], for <i lang="it">inferire</i>; otherwise spelling. Canestrini&#x27;s rubric over the reply agrees with the 1824 (D440).</p>
+<p><span class="lem">nimico; puoi (×4, .04); danaro; contro; li; cinquantamila; diciotto centinaja; trenta o quarantamila; centomila; Massageti; Tamiri; Egizio</span> — 1824. The 1554 witness reads <i lang="it">nemico; poi; danaio; contra; gli; L milia; XVIII centinaia; XXX o XL mila; C mila; Meſſageti; Thamiri; Egittio</i>. Forms of one word and spellings; recorded, not ruled.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem"><i lang="it">se quello più gagliardo abbia bandito la guerra</i>.</span> &quot;[And] the harder has proclaimed war&quot;: <i lang="it">gagliardo</i>, hard (D313), against <i lang="it">forte</i> strong; the comparative of two princes <i lang="it">quasi di eguali forze</i>, <i lang="it">eguale</i> &quot;equal&quot; (D262). Both <i lang="it">se</i> are conditional; the question is <i lang="it">quale</i>, and &quot;that harder [one]&quot; keeps <i lang="it">quello ... quell&#x27;altro</i>.</p>
+<p><span class="lem"><i lang="it">quale sia miglior partito per l&#x27;altro</i>.</span> &quot;Which is the better course for the other&quot;: <i lang="it">partito</i>, course (D236), here and at <i lang="it">quale de&#x27; duoi partiti</i>.</p>
+<p><span class="lem"><i lang="it">il nimico</i>.</span> &quot;The enemy&quot;: <i lang="it">nimico</i>, <i lang="it">inimico</i> (.06), enemy (D334), throughout; the 1554 spells it <i lang="it">nemico</i>.</p>
+<p><span class="lem"><i lang="it">allega</i>, <i lang="it">Allegano</i>, <i lang="it">Allegane</i>.</span> &quot;Cites&quot;, &quot;they cite&quot;, &quot;he cites for it&quot;: <i lang="it">allegare</i>, cite (D431). Machiavelli moves between singular and plural for the same party, <i lang="it">chi difende</i> and <i lang="it">chi parla al contrario</i> with <i lang="it">Allega</i> and <i lang="it">Allegano</i>, and the English keeps each number. <i lang="it">Allegane</i> is <i lang="it">allega</i> + <i lang="it">ne</i>, &quot;cites for it&quot;.</p>
+<p><span class="lem"><i lang="it">discosto al suo Regno</i>; <i lang="it">lo discosti da casa</i>.</span> &quot;At a distance from her kingdom&quot;; &quot;let him distance him from home&quot;: <i lang="it">discosto</i>, at a distance; <i lang="it">discostare</i>, distance (.03 ×2, .04, .07); <i lang="it">discostarsi</i>, go to a distance (.03 ×2, .04). One root held through the chapter, <i lang="it">sì discosto</i> (.06) included: the question is the distance of the war from home. The English keeps <i lang="it">da</i> &quot;from&quot; where the Italian has <i lang="it">al</i> or <i lang="it">a casa</i> (.05). <i lang="it">trarre</i>, draw (.03, .04), is kept apart (D444).</p>
+<p><span class="lem"><i lang="it">torrebbe</i>, <i lang="it">torle</i>, <i lang="it">torre</i>, <i lang="it">torgli</i>.</span> &quot;Take away&quot;: <i lang="it">torre</i>, take away (D131, D313), four times. At <i lang="it">torrebbe</i> the 1554 reads <i lang="it">terrebbe</i>, &quot;would hold&quot; (NM-DISC-II12-D004, D438).</p>
+<p><span class="lem"><i lang="it">arebbe tempo a rifarsi</i>.</span> &quot;Would have time to remake herself&quot;: <i lang="it">rifare</i>, remake (D348), reflexive here and at .04 (<i lang="it">rifarti</i>, <i lang="it">a rifarsi</i>); &quot;recover&quot; is not used, so that the verb holds across both authors (Guicciardini .01 <i lang="it">a rifarti</i>, <i lang="it">riordinarti e rifarti</i>).</p>
+<p><span class="lem"><i lang="it">quella fonte, che mai le manca vita a somministrare forze dove bisogna</i>.</span> &quot;That spring to which life never fails for supplying forces where it is required&quot;: <i lang="it">fonte</i>, spring, taken up again in .04 (<i lang="it">seccare quella fonte, come dice Annibale</i>), so the figure is Hannibal&#x27;s both times. The 1554 reads <i lang="it">quella forza</i> (NM-DISC-II12-D001, D438). <i lang="it">mancare</i>, fail (D206); <i lang="it">le</i> is the spring. <i lang="it">bisogna</i>, it is required (D260): see the note on <i lang="it">bisogni</i> at Machiavelli I.2.</p>
+<p><span class="lem"><i lang="it">prima torre Roma che lo Imperio, e prima la Italia che le altre Provincie</i>.</span> &quot;Rome could be taken away earlier than the empire, and Italy earlier than the other provinces&quot;: <i lang="it">prima</i>, earlier (D334); <i lang="it">Imperio</i>, empire (D124), dominion over other peoples; <i lang="it">Provincia</i>, province (glossary).</p>
+<p><span class="lem"><i lang="it">levare la guerra d&#x27;Italia</i>.</span> &quot;To remove the war from Italy&quot;: <i lang="it">levare</i>, remove (D131).</p>
+<p><span class="lem"><i lang="it">fare capitare male</i>.</span> &quot;Make ... come to a bad end&quot;, the idiom. <i lang="it">chi vuole ...</i> is the subject of the jussive <i lang="it">lo discosti</i>, which the English resumes with &quot;let him&quot;, as at .07.</p>
+<p><span class="lem"><i lang="it">mentre che feciono la guerra comoda alla casa loro</i>.</span> &quot;While they made war convenient to their home&quot;: <i lang="it">comodo</i>, convenient (D59); <i lang="it">comodità</i>, convenience, through .04 and .06.</p>
+<p><span class="lem"><i lang="it">Ercole Egizio</i>.</span> &quot;Hercules the Egyptian&quot;: Machiavelli&#x27;s name for the Hercules of the Antaeus story; the epithet is his and is not corrected. <i lang="it">astuzia</i>, craft, with <i lang="it">astutamente</i>, craftily (D52).</p>
+<p><span class="lem"><i lang="it">ripigliava le forze</i>.</span> &quot;Took up force again&quot;: <i lang="it">ripigliare</i>, take up again (D224); <i lang="it">forze</i>, force, the singular of strength the glossary allows (<i lang="it">ingegno e forze</i>), so that a wrestler&#x27;s strength does not read as troops.</p>
+<p><span class="lem"><i lang="it">Ferrando Re di Napoli</i>.</span> &quot;Ferdinand, king of Naples&quot;: on the editor&#x27;s identification Ferdinand I of Naples (Ferrante), who died in January 1494; not the Ferdinand of Aragon of Machiavelli I.29. Guicciardini names him three times (Guicciardini .01, .02).</p>
+<p><span class="lem"><i lang="it">la fama</i>.</span> &quot;The report&quot;: what was heard of the French king&#x27;s design, not renown.</p>
+<p><span class="lem"><i lang="it">tra gli altri ricordi</i>.</span> &quot;Among the other counsels&quot;: <i lang="it">ricordo</i>, counsel (D325, extended to Machiavelli, D444), here Ferdinand&#x27;s last advice to his son; a recorded collapse with <i lang="it">consiglio</i>, counsel (.02 ×2).</p>
+<p><span class="lem"><i lang="it">lo aspetta[s]se</i>.</span> &quot;Await him&quot;: the 1824 prints <i lang="it">aspettase</i>, with one s; emended from the 1554 (NM-DISC-II12-D006, D438).</p>
+<p><span class="lem"><i lang="it">perdè quello e lo Stato</i>.</span> &quot;He lost ... it and the state&quot;: <i lang="it">quello</i>, the army.</p>
+<p><span class="lem"><i lang="it">toglie oltra di questo molte comodità al nimico</i>.</span> &quot;He takes away, beyond this, many conveniences from the enemy&quot;: the subject is <i lang="it">chi assalta</i>, unexpressed; <i lang="it">Che</i> governs only the first reason and is not repeated. <i lang="it">togliere</i>, take away (D131); <i lang="it">oltra di questo</i>, <i lang="it">Oltre di questo</i>, &quot;beyond this&quot; (NM II.proem, NM II.10).</p>
+<p><span class="lem"><i lang="it">è costretto il signore avere più rispetto a trarre da loro danari</i>.</span> &quot;The lord is constrained to have more respect to drawing money from them&quot;: <i lang="it">avere rispetto a</i>, have respect to (glossary); <i lang="it">costretto</i>, constrained, kept apart from <i lang="it">necessitato</i>, necessitated (NM II.10); <i lang="it">rispetto</i>, respect (glossary); <i lang="it">danari</i>, <i lang="it">danaro</i>, money (D431). <i lang="it">Signore</i>, lord (glossary).</p>
+<p><span class="lem"><i lang="it">quella necessità fa virtù, come più volte abbiamo detto</i>.</span> &quot;That necessity makes <i lang="it">virtù</i>, as we have said more times&quot;: <i lang="it">più volte</i>, more times (D373); <i lang="it">virtù</i> (D16); the cross-reference is Machiavelli&#x27;s (I.1, among others).</p>
+<p><span class="lem"><i lang="it">senza disagio alcuno tu puoi dare a quello molti disagi</i>.</span> &quot;Without any hardship [to yourself] you can give him many hardships&quot;: <i lang="it">disagio</i>, hardship, twice; the bracket marks whose hardship the first is. The second person runs from here to the end of the list, and the four <i lang="it">puoi</i> stay &quot;you can&quot;; the 1554 spells them <i lang="it">poi</i>.</p>
+<p><span class="lem"><i lang="it">per la notizia del paese</i>.</span> &quot;Through the notice of the country&quot;: <i lang="it">notizia</i>, notice (D373), knowledge held of the ground.</p>
+<p><span class="lem"><i lang="it">ma non potere già tutte discostarle da casa</i>.</span> &quot;But not being able to distance them all from home&quot;: the infinitive continues <i lang="it">per poterle</i>; <i lang="it">già</i> after a negative is not rendered (D423).</p>
+<p><span class="lem"><i lang="it">per avere il nimico in casa</i>, <i lang="it">per trovarsi</i>, <i lang="it">per poterle</i>, <i lang="it">per avere i rifugj</i>.</span> &quot;Through having&quot;, &quot;through finding&quot;, &quot;through being able&quot;, &quot;through having&quot;: causal <i lang="it">per</i> with the infinitive, one English preposition.</p>
+<p><span class="lem"><i lang="it">il supplemento non ha a venire discosto</i>.</span> &quot;The supplement does not have to come from a distance&quot;: <i lang="it">avere a</i>, &quot;have to&quot; after a negative (D261). <i lang="it">supplemento</i>, supplement, the fresh troops sent to make up the army.</p>
+<p><span class="lem"><i lang="it">tanto che tu vieni ad arrischiare tutte le forze, e non tutta la fortuna, e discostandoti arrischi tutta la fortuna, e non tutte le forze</i>.</span> &quot;So that you come to hazard all the forces, and not all the fortune, and, going to a distance, you hazard all the fortune, and not all the forces&quot;: a chiasmus whose second member holds only under <i lang="it">discostandoti</i>. It turns Machiavelli I.23&#x27;s <i lang="it">tutta la fortuna tua, e non tutte le forze</i>; here there is no possessive, and none is supplied. The 1554 omits the gerund, so that the two members contradict each other (NM-DISC-II12-D002, D438). <i lang="it">arrischiare</i>, hazard.</p>
+<p><span class="lem"><i lang="it">parecchie giornate</i>.</span> &quot;Several days&#x27; [march]&quot;: <i lang="it">giornata</i> of distance, the day&#x27;s journey, decided by sense (D444); &quot;battle&quot; stays for the engagement (D49).</p>
+<p><span class="lem"><i lang="it">assai Terre</i>, <i lang="it">assai preparazioni</i>.</span> &quot;Many towns&quot;, &quot;many preparations&quot;: <i lang="it">assai</i> of number, &quot;many&quot; (glossary, I.7); <i lang="it">Terre</i>, towns, lower case in the English.</p>
+<p><span class="lem"><i lang="it">possanlo dipoi combattere più facilmente</i>.</span> &quot;They may afterwards fight him more readily&quot;: <i lang="it">dipoi</i>, afterwards (D187); <i lang="it">facilmente</i>, readily (D27), as at <i lang="it">per poterle facilmente</i> and <i lang="it">rifarti facilmente</i>; <i lang="it">è facile</i> (.06) stays &quot;it is easy&quot;. The purpose subjunctives <i lang="it">indebolisca</i>, <i lang="it">possanlo</i> both take &quot;may&quot;. The 1554 omits <i lang="it">più facilmente</i> (NM-DISC-II12-D002, D438).</p>
+<p><span class="lem"><i lang="it">io credo che si abbia a fare questa distinzione</i>.</span> &quot;I believe that this distinction is to be made&quot;: <i lang="it">credo</i>, I believe (glossary), Machiavelli&#x27;s own judgment, marked; <i lang="it">avere a</i>, &quot;be to&quot; (D261).</p>
+<p><span class="lem"><i lang="it">come i Romani, e come l&#x27;hanno i Svizzeri</i>.</span> &quot;As the Romans [had], and as the Swiss have it&quot;: the bracket supplies the verb the first member leaves to the second. At both <i lang="it">e come</i> the 1554 reads <i lang="it">o come</i> (NM-DISC-II12-D004, D438). <i lang="it">i Re di Francia</i>, &quot;the kings of France&quot;, plural; the 1554 <i lang="it">il Re</i> (NM-DISC-II12-D005).</p>
+<p><span class="lem"><i lang="it">In questo caso</i>.</span> &quot;In this case&quot;: the second, the disarmed country; the first is answered in .06.</p>
+<p><span class="lem"><i lang="it">si debbe tenere il nimico discosto a casa</i>.</span> &quot;One must keep the enemy at a distance from home&quot;: <i lang="it">dovere</i>, must (D274).</p>
+<p><span class="lem"><i lang="it">sendo la tua virtù nel danaro e non negli uomini</i>.</span> &quot;Your <i lang="it">virtù</i> being in money and not in men&quot;: <i lang="it">virtù</i> (D16); <i lang="it">danaro</i>, money (D431).</p>
+<p><span class="lem"><i lang="it">tu sei spacciato</i>.</span> &quot;You are despatched&quot;: <i lang="it">spacciare</i>, despatch, finish off, here, at <i lang="it">erano spacciati</i> (.06) and <i lang="it">gli spacciarono</i> (.06), one verb. The 1554 reads <i lang="it">spacciata</i> (NM-DISC-II12-D004).</p>
+<p><span class="lem"><i lang="it">quando l&#x27;avevano assaltata</i>.</span> &quot;When they had it assailed&quot;: <i lang="it">la</i> is the home (<i lang="it">la casa loro</i>); the construction, a participle agreed with its object, is kept.</p>
+<p><span class="lem"><i lang="it">I Fiorentini non avevano rimedio alcuno con Castruccio</i>.</span> &quot;The Florentines had no remedy whatever against Castruccio&quot;: <i lang="it">rimedio</i>, remedy (glossary); Castruccio Castracani, lord of Lucca, who defeated the Florentines at Altopascio in 1325; Florence gave itself to Charles of Calabria, son of King Robert of Naples, in 1326, and Machiavelli names the king (the editor&#x27;s identification; Machiavelli&#x27;s <i lang="it">Re Roberto</i> is kept). <i lang="it">ebbero a darsi</i>, &quot;had to give themselves&quot; (D261, necessity).</p>
+<p><span class="lem"><i lang="it">il Duca di Milano</i>.</span> &quot;The duke of Milan&quot;: not named; on the editor&#x27;s reading the wars against Giangaleazzo Visconti in the 1390s, which Guicciardini&#x27;s <i lang="it">nelle guerre fatte loro da&#x27; Visconti</i> (Guicciardini .01) seems to take up.</p>
+<p><span class="lem"><i lang="it">nelle guerre longinque, e tanta viltà nelle propinque</i>.</span> &quot;In far-off wars, and so much baseness in near ones&quot;: <i lang="it">longinquo</i>, far-off (D444); <i lang="it">propinquo</i>, near (glossary), as <i lang="it">i rifugj propinqui</i> (.04). The 1554 has the plainer <i lang="it">lontane</i> and <i lang="it">uicine</i> (NM-DISC-II12-D003, D438). <i lang="it">viltà</i>, baseness, against <i lang="it">virtù</i>.</p>
+<p><span class="lem"><i lang="it">questi Corpi</i>.</span> &quot;These bodies&quot;: the armed kingdoms, the capital kept as printed in the Italian only.</p>
+<p><span class="lem"><i lang="it">ad uno impeto</i>.</span> &quot;To an onset&quot;: <i lang="it">impeto</i>, the attack of an assailant.</p>
+<p><span class="lem"><i lang="it">la passione e l&#x27;utile suo</i>.</span> &quot;His passion and his advantage&quot;: <i lang="it">utile</i>, advantage (D283).</p>
+<p><span class="lem"><i lang="it">senza dubbio erano spacciati</i>.</span> &quot;Without doubt they were despatched&quot;: the indicative in the apodosis of a counterfactual, as in the Italian, and so <i lang="it">né potevano</i>, &quot;nor could they resist&quot;, with <i lang="it">che poterono</i>, &quot;with which they could&quot;.</p>
+<p><span class="lem"><i lang="it">quelle tre rotte in Francia, ch&#x27;egli ebbero in Italia da Annibale</i>.</span> &quot;Those three routs in France that they had in Italy from Hannibal&quot;: <i lang="it">rotte</i>, routs (D431); the Trebia, Trasimene and Cannae, by the editor&#x27;s count. <i lang="it">Francia</i> is Machiavelli&#x27;s France for Gaul, as <i lang="it">Francesi</i> (names.md).</p>
+<p><span class="lem"><i lang="it">diciotto centinaja di migliaja</i>.</span> &quot;Eighteen hundred thousand&quot;: the figure is Machiavelli&#x27;s, against the Gauls after the first Punic war (the war of 225 BC, by the editor&#x27;s identification), and is not corrected.</p>
+<p><span class="lem"><i lang="it">I Cimbri ruppero uno esercito romano in la Magna</i>.</span> &quot;The Cimbri routed a Roman army in Germany&quot;: <i lang="it">la Magna</i>, Germany (names.md); <i lang="it">uno esercito romano</i>, where the 1554 reads <i lang="it">Romana</i> (NM-DISC-II12-D004, D438, under D203(b)). The Romans who despatched them in Italy were Marius&#x27; army (101 BC, by the editor&#x27;s identification); the bracketed subject marks the change.</p>
+<p><span class="lem"><i lang="it">dei residui degli eserciti</i>.</span> &quot;The residues of the armies&quot;: <i lang="it">residuo</i>, residue, as <i lang="it">il residuo delle genti tue</i> (Machiavelli I.23). *<i lang="it"><i lang="it">condurre</i>.</i>* &quot;Conduct&quot;: &quot;lead&quot; stays <i lang="it">menare</i>&#x27;s (D313).</p>
+<p><span class="lem"><i lang="it">raccozzare</i>.</span> &quot;Muster&quot;: gather together in haste; <i lang="it">ragunare</i>, gather, kept apart (D374).</p>
+<p><span class="lem"><i lang="it">Conchiudo adunque di nuovo</i>.</span> &quot;I conclude, then, anew&quot;: <i lang="it">adunque</i>, then (D74); <i lang="it">di nuovo</i>, anew (glossary).</p>
+<p><span class="lem"><i lang="it">i suoi Popoli armati e ordinati alla guerra</i>.</span> &quot;His peoples armed and ordered for war&quot;: <i lang="it">Popoli</i>, peoples (D402); <i lang="it">ordinare</i>, order (glossary).</p>
+<p><span class="lem"><i lang="it">eleggesse</i>, <i lang="it">volesse</i>, <i lang="it">si andasse</i>, <i lang="it">aspettasse</i>.</span> The reported commands of .02 and .03 keep the bare subjunctive, &quot;that he choose&quot;, &quot;that they go&quot;, &quot;that he await&quot; (D348, D423).</p>
+<p><span class="lem"><i lang="it">aspetti</i>, <i lang="it">se la discosti</i>.</span> &quot;Always await&quot;, &quot;let him always distance it&quot;: subjunctives of counsel, the first under <i lang="it">Conchiudo ... che</i>, the second free-standing; neither takes <i lang="it">dovere</i>&#x27;s &quot;should&quot; (D348).</p>
+<p><span class="lem"><i lang="it">ciascuno nel suo grado</i>.</span> &quot;Each in his degree&quot;: <i lang="it">grado</i>, degree (glossary).</p>
+<p>The unit ends with a stop.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work fg">
+    <div class="work-head">
+      <span class="tag">FG-CONS.2.12</span>
+      <h2>Considerazione sul capitolo XII</h2>
+    </div>
+    <p class="rubric">S&#x27;egli è meglio, temendo di essere assaltato, inferire, o aspettare la guerra</p>
+    <p class="rubric">Whether it is better, fearing to be assailed, to bring, or to await, war
+      </p>
+
+    <div class="colheads"><div></div><div>Italian · 1857</div><div>English</div></div>
+      <div class="pair" id="FG-CONS.2.12.01">
+        <div class="gutter"><a class="uid" href="#FG-CONS.2.12.01">2.12.01</a></div>
+        <div class="col it" lang="it">Se nel presente Discorso si truovano esempli assai nell&#x27;una e l&#x27;altra opinione, ci sono anche ragioni assai che fanno il caso sì dubio, che non è di facile resoluzione, e a volerlo bene deliberare ha bisogno di molte considerazioni che sono state pretermesse dallo Autore. Perché non basta sola quella distinzione: o io ho e&#x27; sudditi armati o e&#x27; sono disarmati, ma è necessario pensare più oltre: o e&#x27; populi miei sono fedeli o e&#x27; sono inclinati alle ribellioni, o le terre sono forti, o le sono deboli; o io posso, ancora che io abbia la guerra in casa che mi consumi le entrate, in quanto al danaio sostenerla lungamente, o io non potrei reggerla. S&#x27;ha ancora a considerare le condizioni dello inimico, cioè che milizia ha, che paesi, che entrate, che modo a sostenere la guerra in casa, che modo a farla fuora di casa; perché il governo e tutte le azioni della guerra s&#x27;hanno sempre a regolare secondo le qualità e i progressi dello inimico. È ancora differenza, quando io aspetto guerra da altri, il dire: io la porto a casa sua; il dire: io esco del mio paese, e rincontro lo inimico fuori del paese suo (e questo è lo esemplo del re Ferrando). È differenza il dire: io comincio la guerra in sul suo innanzi che lui l&#x27;abbia cominciata a me; a dire: io ho già la guerra in casa; ma per constrignere lo inimico a partirsene, io la comincio anche in sul suo, come fe Scipione quando Annibale era in Italia, come fece Agatocle assediato da Cartaginesi, come e&#x27; Fiorentini tante volte nelle guerre fatte loro da&#x27; Visconti. E quanto a questo ultimo caso io giudicherò sempre che chi ha la guerra in casa, se ha opportunità nel tempo medesimo di cominciarla in quello dello inimico, lo debba fare; perché essendo cosa inaspettata, disordina tutti e&#x27; disegni dello inimico; e ogni piccolo successo che vi abbia, lo constrigne a ritirarsi con tutto <span class="supplied">[o]</span> con parte delle forze sue a difendere casa sua, e interviene come de&#x27; remedii che usano questi fisici a curare le infermità, tra&#x27; quali sempre la diversione è giudicata remedio potente e molto approvato.</div>
+        <div class="col en" lang="en">If in the present Discourse many examples are found for the one and the other opinion, there are also many reasons which make the case so doubtful that it is not of easy resolution, and, <span class="supplied">[for one]</span> wishing to deliberate it well, <span class="supplied">[it]</span> has need of many considerations which have been passed over by the Author. For that distinction alone is not enough: either I have the subjects armed or they are disarmed; but it is necessary to think further: either my peoples are faithful or they are inclined to rebellions; either the towns are strong, or they are weak; either I can, even though I have the war at home that consumes my revenues, as to money sustain it long, or I could not uphold it. One has also to consider the conditions of the enemy, that is, what soldiery he has, what countries, what revenues, what way to sustain the war at home, what way to make it outside home; because the government and all the proceedings of the war have always to be regulated according to the qualities and the progress of the enemy. There is a difference also, when I await war from others, <span class="supplied">[between]</span> saying: I carry it to his home; <span class="supplied">[and]</span> saying: I go out of my country, and meet the enemy outside his country (and this is the example of King Ferdinand). There is a difference <span class="supplied">[between]</span> saying: I begin the war on his <span class="supplied">[ground]</span> before he has begun it on me; <span class="supplied">[and]</span> saying: I have the war already at home, but to constrain the enemy to depart from it, I begin it also on his, as Scipio did when Hannibal was in Italy, as Agathocles did, besieged by Carthaginians, as the Florentines <span class="supplied">[did]</span> so many times in the wars made on them by the Visconti. And as to this last case, I shall always judge that whoever has the war at home, if he has opportunity at the same time to begin it in that of the enemy, must do it; because, being a thing unexpected, it disorders all the enemy&#x27;s designs; and every small success that he may have there constrains him to withdraw with all or with part of his forces to defend his home; and it befalls as with the remedies that these physicians use to cure sicknesses, among which diversion is always judged a powerful remedy and much approved.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The Discourse has many examples for both opinions, he says, and there are also many reasons that make the case so doubtful that it is not easily resolved; deliberating it well needs many considerations the Author passed over. Machiavelli&#x27;s distinction, armed or disarmed subjects, is not enough by itself. One must also ask whether one&#x27;s peoples are faithful or inclined to rebellions, whether the towns are strong or weak, and whether one can, as to money, sustain a war at home long while it consumes one&#x27;s revenues; and of the enemy, what soldiery, countries, revenues and ways he has to sustain war at home and make it abroad, because the government and all the proceedings of a war must always be regulated by the enemy&#x27;s qualities and progress. He then draws two differences. When one awaits war from others, saying &quot;I carry it to his home&quot; is not the same as saying &quot;I go out of my country and meet the enemy outside his&quot;, and to this he adds, in a parenthesis, the example of King Ferdinand, without saying which part of it he means. And beginning a war in the enemy&#x27;s country before he begins it is not the same as beginning it there, when the war is already at home, to constrain him to depart, as Scipio, Agathocles and the Florentines did. On that last case he gives a judgment, &quot;I shall always judge&quot;: whoever has war at home, if he has opportunity at the same time to begin it in the enemy&#x27;s country, must do it, because the surprise disorders the enemy&#x27;s designs and any small success constrains him to withdraw with all or part of his forces. It befalls, he says, as with the remedies physicians use to cure sicknesses, among which diversion is always judged a powerful remedy and much approved.</p>
+<p><span class="lem">Cross-reference.</span> The distinction he finds not enough by itself is Machiavelli&#x27;s own <a class="xref" href="#NM-DISC.2.12.05">Machiavelli .05</a>. Ferdinand is Machiavelli&#x27;s modern example <a class="xref" href="#NM-DISC.2.12.03">Machiavelli .03</a>; Scipio and Agathocles are among the authorities cited for assailing <a class="xref" href="#NM-DISC.2.12.02">Machiavelli .02</a>, here set under a different case; and the Florentines who fought the Visconti answer Machiavelli&#x27;s Florentines who assailed the duke of Milan <a class="xref" href="#NM-DISC.2.12.05">Machiavelli .05</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="FG-CONS.2.12.02">
+        <div class="gutter"><a class="uid" href="#FG-CONS.2.12.02">2.12.02</a></div>
+        <div class="col it" lang="it">Resta la resoluzione degli altri casi, ne&#x27; quali procedendo per distinzione, dico che quando lo inimico da chi tu <span class="supplied">[temi]</span> la guerra ha più esercito e più potenza di te, che tu non puoi pensare di fargli la guerra in casa, perché bisognano molte forze e molte opportunità a portare la guerra a casa di altri, le quali non sono così necessarie a chi fa guerra in casa sua, perché si serve del favore del paese, de&#x27; sudditi e delle difficultà degli inimici, co&#x27; quali remedii può andarsi temporeggiando. E in questo grado era il re Ferrando, il quale non poteva mettere in campagna esercito pari a quello degli inimici. Ma quando tu ti senti e di gente e di danari e dell&#x27;altre opportunità della guerra pari allo inimico, e ordinato di quelle forze che sono necessarie a fare guerra in casa sua, io sarei inclinato a consigliare di non aspettare la guerra a casa propria, perché vincendo, il premio è maggiore, potendoti portare quella vittoria facilmente lo acquisto del regno di altri; dove la vittoria in casa tua non ti porta altro che la liberazione del tuo Stato, perdendo, il danno è minore, perché non perdi altro che quello esercito, e hai più tempo a rifarti; dove perdendo in casa, se lo inimico accelera la vittoria, come potette fare Annibale a Canne, come a&#x27; tempi moderni Paolo Orsino a Ladislao, il duca Giovanni al re Ferrando, una giornata è bastante a farti perdere lo Stato. Portando la guerra a casa lo inimico, hai già disturbato il disegno suo di fare la guerra in casa tua, hai impedito le preparazioni necessarie a questo effetto, in modo che etiam vincendoti ha bisogno di tempo e di nuovi ordini a venire a guerreggiarti in casa; il che ti dà spazio a riordinarti e rifarti. E tanto più facilmente aderirei a questa conclusione, quanto io vedessi lo inimico non avere paese forte, o non avere sudditi fedeli, o condizionato lo Stato in modo che facilmente si potessi disordinargli le entrate, o essergli difficile, se avessi una rotta, a rifarsi in breve spazio di tempo. Veggo che sempre e&#x27; Romani, quando potettono, prevennono le guerre a casa altri, contro a Filippo re di Macedonia, contro a Antioco, contro a&#x27; Cartaginesi; e quando non lo feciono, furono malcontenti di non l&#x27;avere fatto. Né mi muove quello che dice lo Scrittore, che se e&#x27; Romani avessino avuto in tanto spazio di tempo quelle tre rotte in Francia, che gli ebbono in Italia da Annibale, sarebbono sanza dubio stati spacciati; perché si pone uno caso impossibile, che chi ha una rotta in casa di altri, massime in luogo lont<span class="supplied">[a]</span>no, possi così subitamente dopo la prima rotta avervi rimandato l&#x27;uno dopo l&#x27;altro dua nuovi eserciti. E chi risolve bene il partito di fuggire la guerra in casa col portarla a casa di altri, vi va con tale fondamento che può così sperare di rompere lo inimico, come temere di essere rotto; altrimenti la aspetta in casa, come feciono e&#x27; Romani da Annibale; e&#x27; quali essendo già molti anni, come dice Livio, inesperti alla guerra, e avendo la guerra con capitano e con soldati espertissimi, se furono rotti in casa, sarebbono forse più facilmente stati nel principio della guerra rotti da lui in Spagna o in Africa.</div>
+        <div class="col en" lang="en">There remains the resolution of the other cases, in which, proceeding by distinction, I say that when the enemy from whom you fear the war has more army and more power than you, that you cannot think of making the war on him at home, because many forces and many opportunities are required to carry the war to the home of others, which are not so necessary to whoever makes war at his own home, because he makes use of the favour of the country, of the subjects, and of the difficulties of the enemies, with which remedies he can go on temporizing. And in this degree was King Ferdinand, who could not put into the open country an army even with that of the enemies. But when you feel yourself, both in troops and in money and in the other opportunities of war, even with the enemy, and ordered with those forces that are necessary to make war at his home, I should be inclined to counsel not awaiting the war at one&#x27;s own home, because, winning, the reward is greater, that victory being able readily to bring you the acquisition of the kingdom of others, whereas victory at your home brings you nothing other than the liberation of your state; losing, the damage is less, because you lose nothing other than that army, and you have more time to remake yourself; whereas, losing at home, if the enemy accelerates the victory, as Hannibal could do at Cannae, as in modern times Paolo Orsino to Ladislaus, Duke John to King Ferdinand, one battle is enough to make you lose the state. Carrying the war to the enemy&#x27;s home, you have already disturbed his design of making the war at your home, you have impeded the preparations necessary to this effect, in such a way that, even vanquishing you, he has need of time and of new orders to come to wage war on you at home; which gives you space to reorder and remake yourself. And so much the more readily I should adhere to this conclusion, the more I saw the enemy not to have a strong country, or not to have faithful subjects, or <span class="supplied">[his]</span> state so conditioned that his revenues could readily be disordered, or it to be difficult for him, if he had a rout, to remake himself in a short space of time. I see that the Romans always, when they could, forestalled the wars at others&#x27; home, against Philip king of Macedonia, against Antiochus, against the Carthaginians; and when they did not do it, they were discontented not to have done it. Nor does what the Writer says move me, that if the Romans had had, in so much space of time, those three routs in France that they had in Italy from Hannibal, they would without doubt have been despatched; because an impossible case is set, that whoever has a rout at the home of others, above all in a distant place, could so suddenly, after the first rout, have sent there again, the one after the other, two new armies. And whoever resolves well on the course of fleeing war at home by carrying it to the home of others, goes there on such a foundation that he can as well hope to rout the enemy as fear to be routed; otherwise he awaits it at home, as the Romans did from Hannibal; who, being already for many years, as Livy says, inexpert in war, and having the war with a captain and with soldiers most expert, if they were routed at home, would perhaps more readily have been, at the beginning of the war, routed by him in Spain or in Africa</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> The other cases are resolved by distinction, in his own voice (&quot;I say&quot;). When the enemy whose war you fear has more army and power than you, you cannot think of making war on him at home, because carrying war abroad needs many forces and opportunities that are not so necessary to whoever makes war at his own home: he makes use of the favour of the country, of the subjects, and of the enemy&#x27;s difficulties, and can temporize. Ferdinand, who could not put an even army into the open country, is the example of that degree. Where forces are even and you are ordered with the forces needed for war in the enemy&#x27;s country, he &quot;should be inclined to counsel&quot; not awaiting war at home, and gives reasons: victory abroad can readily bring a kingdom, victory at home only the liberation of your state; defeat abroad loses nothing but that army and leaves more time to remake yourself, while at home, if the enemy accelerates the victory, one battle is enough to make you lose the state: as Hannibal could do at Cannae, and, in modern times, Paolo Orsino against Ladislaus and Duke John against King Ferdinand. Carrying the war out also disturbs the enemy&#x27;s design and impedes his preparations. He should adhere to this conclusion the more readily, the more he saw the enemy without a strong country, or without faithful subjects, or with his state so conditioned that his revenues could readily be disordered, or unable, if routed, to remake himself in a short space of time. He sees that the Romans always, when they could, forestalled wars at others&#x27; home, against Philip of Macedonia, Antiochus and the Carthaginians, and were discontented when they did not. What the Writer says of three Roman routs in Gaul does not move him, because it sets an impossible case: that whoever has a rout at another&#x27;s home, above all in a distant place, could so suddenly after the first rout have sent there again two new armies, one after the other. Whoever resolves well to flee war at home by carrying it to another&#x27;s goes on such a foundation that he can as well hope to rout the enemy as fear to be routed; otherwise he awaits it at home, as the Romans did with Hannibal. The Romans had been, as Livy says, inexpert in war for many years and faced a most expert captain and soldiers; if they were routed at home, they would perhaps more readily have been routed by him at the beginning of the war in Spain or in Africa. The reply ends there, under that &quot;perhaps&quot;, without a stop.</p>
+<p><span class="lem">History.</span> Paolo Orsino&#x27;s action against King Ladislaus of Naples and Duke John of Anjou&#x27;s against King Ferdinand are named by Guicciardini without detail; on the editor&#x27;s reading the second is John of Anjou&#x27;s victory over Ferdinand I at Sarno in 1460. The first is not identified here. Philip is presumably Philip V of Macedon and Antiochus is Antiochus III (the editor&#x27;s identifications).</p>
+<p><span class="lem">Cross-reference.</span> &quot;Nor does what the Writer says move me&quot; turns Machiavelli&#x27;s own words against Hannibal on Machiavelli <a class="xref" href="#NM-DISC.2.12.06">Machiavelli .06</a>. His reasons for carrying the war abroad can be read beside the reasons Machiavelli reports, which he does not cite <a class="xref" href="#NM-DISC.2.12.04">Machiavelli .04</a>, and the Roman counterfactual that does not move him is the one in <a class="xref" href="#NM-DISC.2.12.06">Machiavelli .06</a>. He does not take up Croesus, Hannibal&#x27;s counsel, Athens, Antaeus, Castruccio, the Cimbri or the Swiss, and he does not deny Machiavelli&#x27;s conclusion for armed and disarmed peoples <a class="xref" href="#NM-DISC.2.12.07">Machiavelli .07</a>; he adds the conditions under which he would decide.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from Canestrini 1857, <i>Opere inedite</i> vol. 1, pp. 1–65 (<span class="sig">WIT-FG-CONS-1857-CANESTRINI</span>) — the <i>editio princeps</i>, which governs. Collated against Palmarocchi 1933 (<span class="sig">WIT-FG-CONS-1933-PALMAROCCHI</span>): page images and the Wikisource transcription consulted as collation evidence, not reproduced (LICENSE §5).</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem">[temi]</span>. The 1857 witness reads <i lang="it">quando lo inimico da chi tu tenti la guerra</i>. The 1933 witness reads <i lang="it">quando lo inimico da chi tu temi la guerra</i>. Read by both readers without doubt. <i lang="it">tenti</i> gives the clause no sense, war not being attempted from an enemy; the case is the one in which war is feared, as the rubric&#x27;s <i lang="it">temendo</i> has it. The whole word emended from the 1933 edition and bracketed (D126, D441).</p>
+<p><span class="lem">[o]</span>. The 1857 witness reads <i lang="it">con tutto a con parte delle forze sue</i>. The 1933 witness reads <i lang="it">con tutte o con parte delle forze sue</i>. A broken sort at the head of p. 64, doubtful to both readers and taken by both for an a, which does not construe. Emended from the 1933 edition and bracketed (D68, D442).</p>
+<p><span class="lem">lont[a]no</span>. The 1857 witness reads <i lang="it">in luogo lontono</i>. The 1933 witness reads <i lang="it">in luogo lontano</i>. A split at the scan&#x27;s a/o: one reader reads the printed letter as o, the other prefers a and sees o. Not a form of the word; emended from the 1933 edition and bracketed (D68, D439, as D429).</p>
+<p><span class="lem">con tutto [o] con parte (.01) ... sarebbono forse più facilmente stati (.02)</span> — 1857. The 1933 witness reads <i lang="it">con tutte o con parte ... sarebbono forse molto più facilmente stati</i>. Read by both readers without doubt. <i lang="it">tutto</i> is the whole, against <i lang="it">parte</i>; the 1933 edition agrees it with <i lang="it">forze</i> and adds <i lang="it">molto</i>. Canestrini construes and is kept (D38, D439).</p>
+<p><span class="lem">truovano; ragioni; considerazioni; il (article); potenza; condizioni; azioni; pari; degli inimici; ribellioni; dopo; fe</span> — 1857. The 1933 witness reads <i lang="it">trovano; ragione; considerazione; el; potenzia; condizione; azione; pare; delli inimici; ribellione; doppo; fe&#x27;</i>. Forms and spellings; recorded, not ruled.</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem">The heading and the rubric.</span> Canestrini&#x27;s heading, CONSIDERAZIONE SUL CAPITOLO XII, without the <i lang="it">del libro II</i> he prints over the reply to II.10; the column is headed as the page is (D443). His rubric is Machiavelli&#x27;s word for word (Machiavelli, rubric); the stop after it, doubtful to both readers, is not set (D440). His two notes, on Ferdinand of Naples and on Paolo Orsini, are his commentary and are not carried.</p>
+<p><span class="lem"><i lang="it">Se nel presente Discorso si truovano esempli assai nell&#x27;una e l&#x27;altra opinione</i>.</span> &quot;If in the present Discourse many examples are found for the one and the other opinion&quot;: <i lang="it">Discorso</i>, Discourse, the chapter; <i lang="it">esempli</i>, examples; <i lang="it">assai</i> of number, &quot;many&quot; (glossary, I.7), here and at <i lang="it">ragioni assai</i>, which answers Machiavelli&#x27;s <i lang="it">ne ho sentito addurre ragioni da ogni parte</i> (Machiavelli .01). <i lang="it">opinione</i>, opinion (D02).</p>
+<p><span class="lem"><i lang="it">sì dubio, che non è di facile resoluzione</i>.</span> &quot;So doubtful that it is not of easy resolution&quot;: <i lang="it">facile</i>, easy (D27); <i lang="it">resoluzione</i>, resolution, returned to at the head of the second paragraph (<i lang="it">Resta la resoluzione</i>).</p>
+<p><span class="lem"><i lang="it">a volerlo bene deliberare ha bisogno di molte considerazioni che sono state pretermesse dallo Autore</i>.</span> &quot;[For one] wishing to deliberate it well, [it] has need of many considerations which have been passed over by the Author&quot;: the subject of <i lang="it">ha bisogno</i> is the case, supplied in brackets, and <i lang="it">a volerlo</i> is the condition of the one deliberating; <i lang="it">bisogno</i>, need (glossary); <i lang="it">considerazione</i>, consideration (glossary), the word of Canestrini&#x27;s heading; <i lang="it">pretermettere</i>, pass over (FG II.proem). <i lang="it">Autore</i>, the Author, Machiavelli, capitalised as printed, as <i lang="it">lo Scrittore</i> below.</p>
+<p><span class="lem"><i lang="it">Perché non basta sola quella distinzione</i>.</span> &quot;For that distinction alone is not enough&quot;: the distinction is Machiavelli&#x27;s own (<i lang="it">si abbia a fare questa distinzione</i>, Machiavelli .05), restated in Guicciardini&#x27;s first person. <i lang="it">bastare</i>, be enough (D205); <i lang="it">Perché</i> here is causal and opens the period, &quot;for&quot;.</p>
+<p><span class="lem"><i lang="it">o io ho e&#x27; sudditi armati o e&#x27; sono disarmati</i>.</span> &quot;Either I have the subjects armed or they are disarmed&quot;: Machiavelli&#x27;s <i lang="it">paese armato</i> (Machiavelli .05) becomes <i lang="it">sudditi</i>, subjects, Machiavelli&#x27;s word in .07; the article is kept, against the possessive of <i lang="it">e&#x27; populi miei</i> that follows.</p>
+<p><span class="lem"><i lang="it">o e&#x27; populi miei sono fedeli o e&#x27; sono inclinati alle ribellioni, o le terre sono forti, o le sono deboli</i>.</span> &quot;Either my peoples are faithful or they are inclined to rebellions; either the towns are strong, or they are weak&quot;: <i lang="it">populi</i>, peoples (D402); <i lang="it">fedele</i>, faithful (glossary); <i lang="it">terre</i>, towns, as Machiavelli&#x27;s <i lang="it">assai Terre</i> (Machiavelli .04).</p>
+<p><span class="lem"><i lang="it">ancora che io abbia la guerra in casa che mi consumi le entrate</i>.</span> &quot;Even though I have the war at home that consumes my revenues&quot;: <i lang="it">ancora che</i>, even though (D31); <i lang="it">che mi consumi</i>, a restrictive relative in the subjunctive, without commas; <i lang="it">entrate</i>, revenues, against Machiavelli&#x27;s <i lang="it">rendite</i>, revenues (Machiavelli .05), a recorded collapse (D444). Both readers doubted the last letter of the second <i lang="it">entrate</i>; read with the 1933 edition (D439).</p>
+<p><span class="lem"><i lang="it">in quanto al danaio sostenerla lungamente, o io non potrei reggerla</i>.</span> &quot;As to money sustain it long, or I could not uphold it&quot;: <i lang="it">danaio</i>, money (D431), Canestrini&#x27;s form of <i lang="it">danaro</i>, as the 1933 edition prints it; <i lang="it">in quanto al danaio</i> before the verb, as printed; <i lang="it">lungamente</i>, long (D140); <i lang="it">sostenere</i> a war, sustain (D431). <i lang="it">reggere</i> here bears the war, not a people: &quot;uphold&quot; (D444). &quot;Govern&quot; (D64) stays for rule, and &quot;bear&quot; is <i lang="it">comportare</i>&#x27;s (FG I.39).</p>
+<p><span class="lem"><i lang="it">che milizia ha, che paesi, che entrate, che modo</i>.</span> &quot;What soldiery he has, what countries, what revenues, what way&quot;: <i lang="it">milizia</i>, soldiery (D60); <i lang="it">modo</i>, way (glossary).</p>
+<p><span class="lem"><i lang="it">il governo e tutte le azioni della guerra s&#x27;hanno sempre a regolare</i>.</span> &quot;The government and all the proceedings of the war have always to be regulated&quot;: <i lang="it">governo</i>, government (D262); <i lang="it">azioni</i>, proceedings (D358), the doings of a war; <i lang="it">regolare</i>, regulate (D402); <i lang="it">avere a</i>, &quot;have to&quot; in the passive (D261).</p>
+<p><span class="lem"><i lang="it">il dire: io la porto a casa sua; il dire: io esco del mio paese</i>.</span> &quot;[Between] saying: I carry it to his home; [and] saying: I go out of my country&quot;: the brackets supply the terms of the difference, which the Italian sets side by side; <i lang="it">a dire</i> in the second pair is rendered as <i lang="it">il dire</i>, the brackets supplying the terms of both differences. The difference is between carrying the war into the enemy&#x27;s home and meeting him beyond his own frontier.</p>
+<p><span class="lem"><i lang="it">(e questo è lo esemplo del re Ferrando)</i>.</span> &quot;(And this is the example of King Ferdinand)&quot;: Machiavelli&#x27;s Ferdinand of Naples (Machiavelli .03), whose counsel was to await the enemy within the kingdom, and whose son sent an army into Romagna. The parenthesis names the example, not which part of it Guicciardini means, and the note does not settle that.</p>
+<p><span class="lem"><i lang="it">È differenza</i>.</span> &quot;There is a difference&quot;: both readers doubted the accent; only the verb construes, and the 1933 edition reads it (D439).</p>
+<p><span class="lem"><i lang="it">come fe Scipione ... come fece Agatocle ... come e&#x27; Fiorentini</i>.</span> &quot;As Scipio did ... as Agathocles did ... as the Florentines [did]&quot;: the third verb is left to the first two, and supplied in brackets; <i lang="it">tante volte</i>, so many times; Machiavelli&#x27;s Scipio and Agathocles (Machiavelli .02), now set as the case of the man who already has the war at home; the Florentines against the Visconti are Guicciardini&#x27;s own, and answer Machiavelli&#x27;s Florentines who assailed the duke of Milan (Machiavelli .05).</p>
+<p><span class="lem"><i lang="it">io giudicherò sempre</i>.</span> &quot;I shall always judge&quot;: <i lang="it">giudicare</i>, judge (D374), a judgment, the act marked (register, D264).</p>
+<p><span class="lem"><i lang="it">lo debba fare</i>.</span> &quot;Must do it&quot;: <i lang="it">dovere</i>, must (D274).</p>
+<p><span class="lem"><i lang="it">ogni piccolo successo che vi abbia, lo constrigne</i>.</span> &quot;Every small success that he may have there constrains him&quot;: <i lang="it">abbia</i>, subjunctive, &quot;may have&quot;; the subject is the man who carries the war, and <i lang="it">lo</i> is the enemy.</p>
+<p><span class="lem"><i lang="it">disordina</i>.</span> &quot;It disorders&quot;: <i lang="it">disordinare</i>, disorder (glossary), as <i lang="it">disordinargli le entrate</i> below.</p>
+<p><span class="lem"><i lang="it">con tutto [o] con parte delle forze sue</i>.</span> &quot;With all or with part of his forces&quot;: the first letter of p. 64 is broken, both readers taking it for an a; emended from the 1933 edition (FG-CONS-II12-D002, D442). The 1933 edition also reads <i lang="it">tutte</i> (FG-CONS-II12-D004).</p>
+<p><span class="lem"><i lang="it">remedio potente</i>.</span> &quot;A powerful remedy&quot;: <i lang="it">potente</i>, powerful (D06).</p>
+<p><span class="lem"><i lang="it">interviene come de&#x27; remedii che usano questi fisici</i>.</span> &quot;It befalls as with the remedies that these physicians use&quot;: <i lang="it">intervenire</i>, befall (D298); <i lang="it">rimedio</i>, <i lang="it">remedio</i>, remedy (glossary), which returns at <i lang="it">co&#x27; quali remedii</i> (.02); <i lang="it">infermità</i>, sickness (glossary). <i lang="it">diversione</i>, diversion, both readers doubting its article, read <i lang="it">la</i> with the 1933 edition (D439).</p>
+<p><span class="lem"><i lang="it">Resta la resoluzione degli altri casi, ne&#x27; quali procedendo per distinzione, dico</i>.</span> &quot;There remains the resolution of the other cases, in which, proceeding by distinction, I say&quot;: <i lang="it">dico</i>, I say, Guicciardini&#x27;s own resolution, and <i lang="it">per distinzione</i>, his method against the one distinction he has found not enough by itself.</p>
+<p><span class="lem"><i lang="it">quando lo inimico da chi tu [temi] la guerra</i>.</span> &quot;When the enemy from whom you fear the war&quot;: Canestrini prints <i lang="it">tenti</i>, which gives the clause no sense; the whole word emended from the 1933 edition (FG-CONS-II12-D001, D441). The case is the rubric&#x27;s, <i lang="it">temendo di essere assaltato</i>. Both readers doubted <i lang="it">lo</i>; read with the 1933 edition (D439).</p>
+<p><span class="lem"><i lang="it">che tu non puoi pensare di fargli la guerra in casa</i>.</span> &quot;That you cannot think of making the war on him at home&quot;: <i lang="it">che</i> resumes <i lang="it">dico che</i> after the <i lang="it">quando</i> clause, and the English keeps the second &quot;that&quot;. The period is complete: the case is stated, then its reason (<i lang="it">perché bisognano</i>). The second case is built the same way (<i lang="it">Ma quando ..., io sarei inclinato</i>).</p>
+<p><span class="lem"><i lang="it">perché bisognano molte forze</i>.</span> &quot;Because many forces are required&quot;: <i lang="it">bisognare</i>, be required (D260), personal here, with <i lang="it">forze</i> its subject; see the note on <i lang="it">bisogni</i> at Machiavelli I.2.</p>
+<p><span class="lem"><i lang="it">si serve del favore del paese</i>.</span> &quot;He makes use of the favour of the country&quot;: <i lang="it">servirsi</i>, make use of, kept apart from <i lang="it">valersi</i>, avail oneself (D162), which is Machiavelli&#x27;s verb at .02 and .06.</p>
+<p><span class="lem"><i lang="it">può andarsi temporeggiando</i>.</span> &quot;He can go on temporizing&quot;: <i lang="it">temporeggiare</i>, temporize, the progressive kept.</p>
+<p><span class="lem"><i lang="it">E in questo grado era il re Ferrando, il quale non poteva mettere in campagna esercito pari a quello degli inimici</i>.</span> &quot;And in this degree was King Ferdinand, who could not put into the open country an army even with that of the enemies&quot;: the inversion is kept so that the relative clause stays on its noun (D263); <i lang="it">grado</i>, degree (glossary), as Machiavelli&#x27;s <i lang="it">ciascuno nel suo grado</i> (Machiavelli .07); <i lang="it">campagna</i>, open country (glossary); <i lang="it">pari</i>, even (D262).</p>
+<p><span class="lem"><i lang="it">e di gente e di danari</i>.</span> &quot;Both in troops and in money&quot;: <i lang="it">gente</i>, troops (glossary); <i lang="it">danari</i>, money (D431).</p>
+<p><span class="lem"><i lang="it">e ordinato di quelle forze</i>.</span> &quot;And ordered with those forces&quot;: <i lang="it">ordinato di</i>, ordered with, furnished; <i lang="it">ordinare</i>, order (glossary), as Machiavelli&#x27;s <i lang="it">ordinati alla guerra</i> (Machiavelli .07), which the condition answers.</p>
+<p><span class="lem"><i lang="it">io sarei inclinato a consigliare</i>.</span> &quot;I should be inclined to counsel&quot;: a conditional, not a verdict; with <i lang="it">aderirei</i> below, &quot;I should adhere&quot;, the second judgment of the reply held in the conditional.</p>
+<p><span class="lem"><i lang="it">perché vincendo, il premio è maggiore ... perdendo, il danno è minore</i>.</span> &quot;Because, winning, the reward is greater ... losing, the damage is less&quot;: <i lang="it">premio</i>, reward (glossary); <i lang="it">danno</i>, damage (D106). The two gerunds are kept as the Italian sets them; <i lang="it">vincere</i> without an object, win (D431); with an object, vanquish (D313), as <i lang="it">etiam vincendoti</i>. <i lang="it">facilmente</i>, readily (D27), here and at <i lang="it">facilmente si potessi disordinargli</i>, <i lang="it">più facilmente ... rotti</i>.</p>
+<p><span class="lem"><i lang="it">come potette fare Annibale a Canne, come a&#x27; tempi moderni Paolo Orsino a Ladislao, il duca Giovanni al re Ferrando</i>.</span> &quot;As Hannibal could do at Cannae, as in modern times Paolo Orsini [did] to Ladislaus, Duke John to King Ferdinand&quot;: The second and third members leave the verb to the first, <i lang="it">potette fare</i>, &quot;could do&quot;: the examples are of what the victor was in a position to do, and the English supplies nothing. <i lang="it">Canne</i>, both readers doubting the last letter, read with the 1933 edition (D439). <i lang="it">Paolo Orsino</i> as printed (names.md); the identifications are in the commentary as the editor&#x27;s.</p>
+<p><span class="lem"><i lang="it">una giornata è bastante a farti perdere lo Stato</i>.</span> &quot;One battle is enough to make you lose the state&quot;: <i lang="it">giornata</i>, battle (D49).</p>
+<p><span class="lem"><i lang="it">etiam vincendoti</i>.</span> &quot;Even vanquishing you&quot;: <i lang="la">etiam</i>, Latin, even, in Guicciardini&#x27;s Italian (latin.md).</p>
+<p><span class="lem"><i lang="it">ha bisogno di tempo e di nuovi ordini</i>.</span> &quot;He has need of time and of new orders&quot;: both readers doubted <i lang="it">e</i>; read with the 1933 edition (D439). <i lang="it">ordini</i>, orders (glossary).</p>
+<p><span class="lem"><i lang="it">a venire a guerreggiarti in casa</i>.</span> &quot;To come to wage war on you at home&quot;: <i lang="it">guerreggiare</i>, wage war, kept apart from <i lang="it">fare guerra</i>, make war (D444).</p>
+<p><span class="lem"><i lang="it">il che ti dà spazio a riordinarti e rifarti</i>.</span> &quot;Which gives you space to reorder and remake yourself&quot;: <i lang="it">riordinare</i>, reorder (glossary); <i lang="it">rifarsi</i>, remake oneself (D348), as Machiavelli&#x27;s <i lang="it">rifarsi</i>, <i lang="it">rifarti</i> (Machiavelli .02, .04).</p>
+<p><span class="lem"><i lang="it">E tanto più facilmente aderirei a questa conclusione</i>.</span> &quot;And so much the more readily I should adhere to this conclusion&quot;: the four conditions on the enemy all depend on <i lang="it">vedessi</i>, three as accusative and infinitive, the article of <i lang="it">lo Stato</i> bracketed as &quot;[his]&quot;; <i lang="it">facilmente</i>, readily (D27), the word of Guicciardini&#x27;s <i lang="it">non concorro facilmente</i>; <i lang="it">aderire</i>, adhere, a conditional assent to his own conclusion, kept apart from <i lang="it">concorrere</i>, concur (D01).</p>
+<p><span class="lem"><i lang="it">Veggo che sempre e&#x27; Romani, quando potettono, prevennono le guerre a casa altri</i>.</span> &quot;I see that the Romans always, when they could, forestalled the wars at others&#x27; home&quot;: <i lang="it">prevenire</i>, forestall, to be beforehand, carrying the war into the enemy&#x27;s country; not to prevent it; Philip V of Macedon and Antiochus III, by the editor&#x27;s identification.</p>
+<p><span class="lem"><i lang="it">Né mi muove quello che dice lo Scrittore</i>.</span> &quot;Nor does what the Writer says move me&quot;: <i lang="it">lo Scrittore</i>, the Writer (glossary). The phrase is Machiavelli&#x27;s own against Hannibal (<i lang="it">Né mi muove in questo caso l&#x27;autorità d&#x27;Annibale</i>, Machiavelli .06), turned on Machiavelli&#x27;s counterfactual about the three routs.</p>
+<p><span class="lem"><i lang="it">sarebbono sanza dubio stati spacciati</i>.</span> &quot;They would without doubt have been despatched&quot;: <i lang="it">spacciare</i>, despatch (D444), Machiavelli&#x27;s verb (Machiavelli .05, .06); Guicciardini restates Machiavelli&#x27;s indicative <i lang="it">erano spacciati</i> as a conditional.</p>
+<p><span class="lem"><i lang="it">perché si pone uno caso impossibile</i>.</span> &quot;Because an impossible case is set&quot;: <i lang="it">porre</i>, set (D115). The impossibility is that a power routed abroad, above all far off, should have sent two new armies after the first rout; that Rome did so at home is the editor&#x27;s reading of the three routs. <i lang="it">rimandare</i>, send again, not send back: the armies had not been there before.</p>
+<p><span class="lem"><i lang="it">massime in luogo lont[a]no</i>.</span> &quot;Above all in a distant place&quot;: <i lang="it">massime</i>, above all (glossary). Canestrini prints <i lang="it">lontono</i>; emended from the 1933 edition (FG-CONS-II12-D003, D439).</p>
+<p><span class="lem"><i lang="it">E chi risolve bene il partito di fuggire la guerra in casa col portarla a casa di altri</i>.</span> &quot;And whoever resolves well on the course of fleeing war at home by carrying it to the home of others&quot;: <i lang="it">partito</i>, course (D236); <i lang="it">fuggire</i>, flee (D325).</p>
+<p><span class="lem"><i lang="it">può così sperare di rompere lo inimico, come temere di essere rotto</i>.</span> &quot;He can as well hope to rout the enemy as fear to be routed&quot;: <i lang="it">rompere</i>, rout, and <i lang="it">rotto</i>, routed (D431); <i lang="it">temere</i>, fear (glossary).</p>
+<p><span class="lem"><i lang="it">altrimenti la aspetta in casa</i>.</span> &quot;Otherwise he awaits it at home&quot;: <i lang="it">altrimenti</i>, otherwise, the alternative to carrying the war abroad.</p>
+<p><span class="lem"><i lang="it">come dice Livio</i>.</span> &quot;As Livy says&quot;: Guicciardini&#x27;s citation; the passage is not identified here.</p>
+<p><span class="lem"><i lang="it">sarebbono forse più facilmente stati nel principio della guerra rotti da lui in Spagna o in Africa</i>.</span> &quot;Would perhaps more readily have been, at the beginning of the war, routed by him in Spain or in Africa&quot;: <i lang="it">forse</i>, perhaps, limits the counter-claim; <i lang="it">in Spagna o in Africa</i> goes with <i lang="it">rotti</i>; the 1933 edition reads <i lang="it">forse molto più</i> (FG-CONS-II12-D004). The reply ends without a stop (D40).</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="colophon">
+    <div class="row">
+      <div>
+        <h3>What this is</h3>
+        <p>A free, openly licensed, bilingual edition of Guicciardini's 39 <i>Considerazioni</i> and the
+          <i>Discorsi</i> chapters they answer — 78 text units, Italian and English facing, every reading
+          traceable to a named public-domain witness.</p>
+        <p>It is a reading edition with a transparent apparatus, not a text of record. It does not adjudicate
+          the critical text against Bausi 2001 or the manuscript tradition, and does not claim to.</p>
+      </div>
+      <div>
+        <h3>On the title</h3>
+        <p>Machiavelli had been dead two years when Guicciardini wrote; the <i>Discorsi</i> were unpublished,
+          and the <i>Considerazioni</i> stayed unprinted until 1857. Machiavelli never answers.</p>
+        <p>“Conversation” is a quotation, not a description. It invokes Machiavelli's letter to Francesco Vettori of
+          10 December 1513: at evening he puts on royal and curial garments (<i>panni reali e curiali</i>),
+          enters the ancient courts of ancient men (<i>le antiche corti degli antichi uomini</i>), asks them the
+          reason for their actions, and <i>quelli per loro umanità mi rispondono</i>, “they, for their humanity,
+          answer me”. Guicciardini does to Machiavelli what Machiavelli did to Livy — and is denied the reply
+          Machiavelli claimed. The letter is quoted from the 1813 <i>Opere</i>, vol. 8, p. 96, read twice from
+          the page image.</p>
+      </div>
+      <div>
+        <h3>Method</h3>
+        <p>No image-derived reading enters the text on a single reading. Each unit is transcribed twice,
+          independently, by readers who have not seen each other's work; disagreements are adjudicated against
+          the page images and recorded.</p>
+        <p>Existing English translations of the <i>Considerazioni</i> — Grayson (1965), Atkinson &amp; Sices
+          (2002) — are never used as translation inputs.</p>
+      </div>
+      <div>
+        <h3>Licence</h3>
+        <p>The established Italian text and the apparatus data are dedicated to the public domain under
+          <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>. They are Machiavelli's and
+          Guicciardini's sentences, and this edition adds no condition to them.</p>
+        <p>The English translation, the notes and the editorial apparatus are licensed
+          <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: reuse them anywhere, including
+          commercially, with attribution to David McDougall and this edition. The build tooling is MIT.</p>
+        <p>The witness scans are other people's digitisations, included as evidence under their own terms; no
+          grant is made over them, and no page image of Palmarocchi 1933 is reproduced here. Full terms,
+          layer by layer, are in the <span class="sig">LICENSE</span> file in the repository.</p>
+      </div>
+    </div>
+
+    <div class="state">
+      <p><strong>Version 0.3 · 31 of 39 pairs published.</strong>
+        Published 20 November 2026. This edition is versioned, not frozen. No open questions on this pair.</p>
+    </div>
+  </footer>
+
+</div>
