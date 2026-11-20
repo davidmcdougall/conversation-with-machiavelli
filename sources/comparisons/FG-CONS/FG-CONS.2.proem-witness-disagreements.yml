@@ -1,0 +1,44 @@
+source_unit_id: FG-CONS.2.proem
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-IIproem-D001
+    locator: FG-CONS.2.proem.01
+    class: emendation
+    witness_1857: "E adunque vera conclusione che non sempre e tempi antichi sono da essere preferiti"
+    witness_1933: "È adunche vera conclusione che non sempre e' tempi antichi sono da essere preferiti"
+    established: "[È] adunque vera conclusione"
+    publish_as_variant_note: true
+    rationale: "As printed the period has no finite verb; emended from the 1933 edition and bracketed (D68, D114, D418)."
+  - id: FG-CONS-IIproem-D002
+    locator: FG-CONS.2.proem.01
+    class: ruled_reading
+    witness_1857: "la pittura [o/e] la scultura (both readers prefer o, both naming e) ... di che [fa/fu] menzione (both prefer fa) ... appresso [n'/a'] Romani (split)"
+    witness_1933: "la pittura e la scultura ... di che fa menzione ... apresso a' romani"
+    established: "la pittura e la scultura ... fa menzione ... appresso a' Romani"
+    publish_as_variant_note: true
+    rationale: "Letters the scan breaks, read with the 1933 edition: `e` because the verbs that follow are plural and take both arts together (D416); `fa`, the common doubt, and `a'` where one reader printed the non-word `n'` (D417)."
+  - id: FG-CONS-IIproem-D003
+    locator: FG-CONS.2.proem.01
+    class: reading
+    witness_1857: "verissima [. / ,] che ... pretermetto [. / none] Non ... lo Scrittore [, / none] chi ... la pace [; / ,] dalle ... l'altre [. / none] (all doubtful to both) ... dallo Scrittore, alle quali"
+    witness_1933: "verissima, che ... pretermetto. Non ... scrittore, chi ... pace; dalle ... l'altre. ... dallo scrittore; alle quali"
+    established: "verissima, ... pretermetto. ... Scrittore, chi ... pace; ... l'altre (no stop) ... Scrittore, alle quali"
+    publish_as_variant_note: false
+    rationale: "Pointing neither reader could weigh read with the 1933 edition; a mark both read alike without doubt kept against it; no stop at the unit's end (D110, D40, D419)."
+  - id: FG-CONS-IIproem-D004
+    locator: FG-CONS.2.proem.01
+    class: reading
+    witness_1857: "le ragioni ... eccellenti ... variazioni delle arti ... dalle occasioni"
+    witness_1933: "le ragione ... eccellente ... variazione delle arte ... dalle occasione"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "Plurals Canestrini prints in -i where the 1933 edition keeps Guicciardini's -e forms; read by both readers without doubt; one word, one sense either way."
+  - id: FG-CONS-IIproem-D005
+    locator: FG-CONS.2.proem.01
+    class: systematic_orthographic_profile
+    witness_1857: "Canestrini's `il debito`, `qualche una altra`, `cento cinquanta`, `appresso`, `e avoli`, `e oscuri`, `vestigii`, `Il medesimo`, `il moto`, `adunque`, `il negare`, `Scrittore`, and his pointing"
+    witness_1933: "`el debito`, `qualcun'altra`, `centocinquanta`, `apresso`, `ed avoli`, `ed oscuri`, `vestigi`, `El medesimo`, `el moto`, `adunche`, `el negare`, `scrittore`"
+    established: witness_1857
+    publish_as_variant_note: false
+    rationale: "Forms and spelling; DEC-009 classes, not readings."

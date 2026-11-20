@@ -1,0 +1,30 @@
+source_unit_id: NM-DISC.2.proem
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-029
+passes:
+  - {id: A, performed: 2026-11-19, file: sources/coldpass/NM-DISC.2.proem-passA.md, note: "subagent; page images only (350 ppi, whole and thirds), own image, work and output folders, forbidden every other path (D370); full chapter"}
+  - {id: B, performed: 2026-11-19, file: sources/coldpass/NM-DISC.2.proem-passB.md, note: "subagent; separate folders; the D302 sample page p. 208 whole, line crops of the nineteen lines holding every other word-level 1554 difference (p. 206 ll. 9, 16, 22, 25, 29; p. 207 ll. 7, 14, 16, 21, 24, 25, 30; p. 209 ll. 9, 15, 17, 21, 22; p. 210 ll. 11, 16), shuffled, not told which word; and p. 205 and p. 206 ll. 1-5 whole, where the 1554 leaf is lost (D415)"}
+collation: sources/coldpass/COLLATION-2026-11-19-II-proem.md
+collation_result: "1,250 words (pass A: p. 205 109, p. 206 248, p. 207 267, p. 208 263, p. 209 239, p. 210 124). Sample page p. 208, of the two eligible pages the one with more word-level 1554 differences per word (6/263 against 6/267), chosen and recorded after pass A and the Giglio read. Pass B's p. 208, its nineteen crops and the two regions agree with pass A word for word. Against the 1554: three differences at e/o/a kept under D203(b) and the whole words kept (D420)."
+boundaries: "printed pp. 205-210 (p. 205 unnumbered); under the half-title DISCORSI / SOPRA / LA PRIMA DECA DI T. LIVIO, a rule, and LIBRO SECONDO; no rubric, chapter number or proem heading; drop initial L; one block; no notes; ends p. 210 l. 16 `allo augumento dello Imperio suo.`; CAPITOLO PRIMO opens p. 211"
+heading: "LIBRO SECONDO, the half-title; no rubric in the witness (D421)"
+interventions: []
+emendations: []
+procedure:
+  - {id: D415, note: "The 1554 fol. 84v has lost the left of its last thirteen lines (about 62 words), answering 1824 p. 205 ll. 5-13 and p. 206 ll. 1-5. No comparison reading stands there, so pass B read those lines whole; they agree with pass A."}
+readings:
+  - {locus: "NM-DISC.2.proem.02 molto inferiori; delle cose pertinenti; .06 mossi da", passes: "A, and B on crops, without doubt", witness_1554: "molte inferiori; dalle coſe pertinenti; meßi d'", disposition: "kept, D420 (David, 2026-11-19): word-level differences at e/o/a under D203(b); the 1824 construes at each, D38; variant note"}
+  - {locus: "NM-DISC.2.proem.02-.07 the whole-word differences (pubblico, che gli è, ed in Grecia, desiderare i futuri, augumento, altri, quelli, maculati, due, ti, hanno, conseguirne, costumi, amati, and eight additions and omissions)", passes: "A, and B on the sample page and crops, without doubt", witness_1554: "politico; di cui è; & non in Grecia; laudare i futuri; accreſcimẽto; altrui; quella; macchiate; ſue; gli; hauendo; conſeguire; coſtume; amato; and the rest as the comparison record", disposition: "kept, D420 (David, 2026-11-19): the 1824 construes at each, D38; variant notes, and translator's notes where the sense moves"}
+comparison_collation: >
+  Done 2026-11-19 against the 1554 extract (fol. 84v-86v). A cold reader
+  transcribed the Giglio leaves from the page images
+  (sources/coldpass/NM-DISC.2.proem-1554.md); the transcript was collated by
+  word against pass A after spelling normalisation, and every word-level
+  difference outside the sample page was given to pass B as a line crop.
+  Differences are in
+  sources/comparisons/NM-DISC/NM-DISC.2.proem-witness-disagreements.yml.
+normalisation_notes: "Class A only: accents (`perchè` → `perché`, `nè` → `né`, `ancorachè` → `ancoraché`, `ancorchè` → `ancorché`, `acciocchè` → `acciocché`, `sè` → `sé`); elision closed up (`s' intenda`, `d' invidiarle`, `s' inganna`, `dall' uno all' altro`, `l' Imperio`, `d' esse`, `cos' alcuna`, `d' ogni`, `l' antico`, `tutt' i`, `d' uomo` → `s'intenda` ...); `l'Imp rio`, the e uninked, → `l'Imperio`; spaces before punctuation removed (`accusano ;`, `Religione ,`); the stray mark after `malignità` (p. 210 l. 8, doubtful to pass A, below the line) not taken as a comma, the 1554 having none; line-end hyphens removed. `testimonj`, `vizj`, `seguìto` as printed."

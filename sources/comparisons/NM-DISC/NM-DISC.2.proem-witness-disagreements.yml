@@ -1,0 +1,51 @@
+source_unit_id: NM-DISC.2.proem
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-IIproem-D001
+    locator: NM-DISC.2.proem.03
+    class: ruled_reading
+    witness_1824: "una città o una provincia essere ordinata al vivere pubblico (.03) ... in quella Città o Provincia, che gli è venuto il tempo (.03) ... chi nasce in Italia ed in Grecia (.05) ... e desiderare i futuri (.06) ... allo augumento dello Imperio suo (.07)"
+    witness_1554: "una prouincia eſſere ordinata al uiuere politico ... in quella citta,o prouincia,di cui è uenuto il tempo ... chi naſce in Italia, & non in Grecia ... et laudare i futuri ... allo accreſcimẽto dell'Imperio ſuo"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Sense-bearing whole words, read by both 1824 readers without doubt (pass B on crops). `politico` for `pubblico` is the 1554's term for the same ordered life; `non in Grecia` would deny Greece the case the sentence goes on to make (`o in Grecia Turco`); `laudare i futuri` repeats the verb given to the past. The 1824 construes at each and is kept (D38, D420)."
+  - id: NM-DISC-IIproem-D002
+    locator: NM-DISC.2.proem.02
+    class: ruled_reading
+    witness_1824: "giudicarle alle antiche molto inferiori (.02) ... ragionando non delle cose pertinenti alle arti (.02) ... non fussero mossi da alcuna ragionevole cagione (.06)"
+    witness_1554: "giudicarle alle antiche molte inferiori ... ragionando non dalle coſe pertinenti ... non fußino meßi d'alcuna ragioneuole cagione"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Word-level differences at e/o/a, escalated under D203(b); read by both 1824 readers without doubt on crops. `molto` adverbial, `delle` with `ragionando`, `mossi` moved: the 1824 construes at each and is kept (D38, D420)."
+  - id: NM-DISC-IIproem-D003
+    locator: NM-DISC.2.proem.02
+    class: ruled_reading
+    witness_1824: "delle due Provincie (.02) ... non ti potendo quelle offendere, e non ti dando cagione (.02) ... costumi degli uomini (.02) ... come queste cose procedino (.04) ... per quello si ha notizia (.04) ... solo vi era differenza (.04) ... in di molte nazioni (.04) ... il Regno de' Franchi, il Regno de' Turchi (.04) ... laudare gli altri; perché in quelli vi sono (.05) ... maculati d'ogni ragione bruttura (.05) ... quando egli invecchiano (.06) ... perché hanno dalla natura (.06) ... conseguirne poche (.06) ... più amati dal Cielo (.07)"
+    witness_1554: "delle ſue prouincie ... non potendo quelle offendere,& non gli dando cagione ... coſtume de gli huomini ... come in queſte coſe procedino ... per quello che ſi ha notitia ... ui era queſta differenza ... in molte nationi ... il Regno di Franchi, et il Regno di Turchi ... laudare gli altrui, perche in quella ui ſono ... macchiate d'ogni ragione di bruttura ... quando inuecchiano ... perche hauendo dalla natura ... conſeguire poche ... piu amato dal cielo"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Whole words the 1554 sets otherwise, adds or drops; read by both 1824 readers without doubt (pass B on the sample page and crops). The 1824 construes at each and is kept (D38, D420)."
+  - id: NM-DISC-IIproem-D004
+    locator: NM-DISC.2.proem.01
+    class: heading
+    witness_1824: "DISCORSI / SOPRA / LA PRIMA DECA DI T. LIVIO / LIBRO SECONDO (the half-title; no rubric)"
+    witness_1554: "DELLI DISCORSI DI NICOLO MACHIAVELLI, CITTADINO, ET SEcretario Fiorentino, ſopra la prima Deca di Tito Liuio, A ZANOBI BVONDELMONTI, ET A COSIMO RVCELLAI, LIBRO SECONDO. PREFATIONE."
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Neither witness gives the proem a rubric. The 1554 repeats the dedication to Buondelmonti and Rucellai over Book II and calls the text PREFATIONE; the edition heads the page as the 1824 does and imports nothing (D421, D32)."
+  - id: NM-DISC-IIproem-D005
+    locator: NM-DISC.2.proem.01
+    class: lacuna_in_comparison
+    witness_1824: "di, che da loro sono state per la memoria ... per fare le loro vitto- (p. 205 ll. 5-13, p. 206 ll. 1-5)"
+    witness_1554: "fol. 84v: the left of the last thirteen lines lost, about 62 words; the right ends of the lines legible"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "No comparison reading survives here, so the 1824 lines were read whole by the second 1824 reader as well as the first; they agree (D415)."
+  - id: NM-DISC-IIproem-D006
+    locator: NM-DISC.2.proem.01
+    class: systematic_orthographic_profile
+    witness_1554: "Giglio's `huomini`, `ragioneuolmente`, `ricordono`, `il piu`, `uertuoſamente`, `nemici`, `merauigliarſi`, `diſpiaccino`, `anchora che`, `dar`, `meritono`, `elle`, `ella`, `ria`, `quei`, `da l'`, `nationi`, `rouinorno`, `gli`, `rincomperi`, `di`, `militia`, `delli`, `giudicio`, `quale`, `douerebbe`, `tutti`, `Eſſendo`, `fare`, `fußino`, `qualunche`, `eglie`, `accio che`, `da Romani`, tildes, `&`/`et`, and his pointing"
+    established: witness_1824
+    publish_as_variant_note: false
+    rationale: "Spelling, forms and pointing; DEC-009 classes, not readings."

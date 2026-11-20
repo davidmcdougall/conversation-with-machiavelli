@@ -1,0 +1,34 @@
+source_unit_id: FG-CONS.2.proem
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-029
+responds_to: NM-DISC.2.proem
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. Canestrini's note (1) on p. 60 is his commentary, not Guicciardini's text, and is not carried."
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38); errors are emended from Palmarocchi and bracketed (D68)."
+passes:
+  - {id: A, performed: 2026-11-19, file: sources/coldpass/FG-CONS.2.proem-passA.md, note: "subagent; page images only (native 600 ppi rendered at 1200, full page and halves), own image, work and output folders, forbidden every other path (D370)"}
+  - {id: B, performed: 2026-11-19, file: sources/coldpass/FG-CONS.2.proem-passB.md, note: "subagent; same images, separate folders"}
+collation: sources/coldpass/COLLATION-2026-11-19-II-proem.md
+collation_result: >
+  361 words (A 361, B 361), the body tokens identical after preferred
+  readings but one split, `appresso ⟨n'|a'⟩ Romani`, read `a'` with the 1933
+  edition (D417). The common doubts `⟨fa|fu⟩ menzione` and `la pittura
+  ⟨o|e⟩ la scultura` read `fa` (D417) and `e` (D416) with it. The verbless
+  `E adunque` emended `[È]` (D418). Pointing doubtful to both read with the
+  1933 edition (D110); no stop at the unit's end (D40); D419.
+witness_independence_check: "SCOPE §7. Neither pass carries a Palmarocchi word-reading where Canestrini differs: both have `il debito`, `le ragioni`, `qualche una altra`, `cento cinquanta`, `appresso`, `e avoli`, `e oscuri`, `vestigii`, `Il medesimo`, `eccellenti`, `variazioni delle arti`, `il moto`, `occasioni`, `adunque`, `il negare`, against the 1933 `el debito`, `ragione`, `qualcun'altra`, `centocinquanta`, `apresso`, `ed avoli`, `ed oscuri`, `vestigi`, `El medesimo`, `eccellente`, `variazione delle arte`, `el moto`, `occasione`, `adunche`, `el negare`. The passes read Canestrini."
+boundaries: "printed pp. 60-61; heading CONSIDERAZIONE SUL PROEMIO DEL LIBRO II on p. 60 below the end of the LX reply (`non essendo trattate nel Discorso`); no rubric; one indented paragraph; ends p. 61 l. 20 `che l' altre`, the stop faint to both; CONSIDERAZIONE SUL CAPITOLO X DEL LIBRO II follows"
+heading: "CONSIDERAZIONE SUL PROEMIO DEL LIBRO II; no rubric (D421)"
+corrections: []
+emendations:
+  - {id: FG-CONS-IIproem-E001, rule: D418, status: ruled_D418, locator: FG-CONS.2.proem.01, printed: "E adunque vera conclusione che", established: "[È] adunque vera conclusione che", witness_1933: "È adunche vera conclusione che", note: "As printed the period has no finite verb; both readers see no accent and say the sense wants È. Emended under D68 as D114, D167."}
+readings:
+  - {locus: "FG-CONS.2.proem.01 appresso ⟨n'|a'⟩ Romani", passes: "A n' (a non-word; a' as alternative); B a'", witness_1933: "apresso a' romani", disposition: "a', D417 (David, 2026-11-19): a split, the one reading a non-word; with the 1933 edition"}
+  - {locus: "FG-CONS.2.proem.01 di che ⟨fa|fu⟩ menzione lo Scrittore", passes: "both prefer fa, both doubting", witness_1933: "fa menzione", disposition: "fa, D417 (David, 2026-11-19): a common doubt with a word for alternative, read with the 1933 edition"}
+  - {locus: "FG-CONS.2.proem.01 la pittura ⟨o|e⟩ la scultura", passes: "both prefer o, both name e", witness_1933: "la pittura e la scultura", disposition: "e, D416 (David, 2026-11-19): a common doubt at the scan's e/o; the 1933 edition and the plural verbs that follow (`fussino`, `restassino oscure`, `state sepolte`) take both arts together; variant note"}
+  - {locus: "FG-CONS.2.proem.01 verissima⟨.|,⟩; pretermetto⟨.|∅⟩; lo Scrittore⟨,|∅⟩ chi; pace⟨;|,⟩; l'altre⟨.|∅⟩", passes: "both readers doubting at each", witness_1933: "verissima, ... pretermetto. ... scrittore, chi ... pace; ... l'altre.", disposition: "D419: read with the 1933 edition (D110): `verissima,`, `pretermetto.`, `Scrittore,`, `pace;`; no stop at the unit's end (D40)"}
+not_supplied: ["the terminal stop after `l'altre` (D40)"]
+normalisation_notes: "Class A: accents (`benchè` → `benché`, `perchè` → `perché`); the apostrophe of the apocopated article supplied (`e tempi` → `e' tempi`, `e luoghi` → `e' luoghi`, `e costumi`, `e quali`, `a tempi` → `a' tempi`, `de nostri` → `de' nostri`) and elision closed up (`un' altra`, `l' altre` → `un'altra`, `l'altre`); spaces before punctuation removed (`vestigii ?`); line-end hyphens removed; Canestrini's note call removed with his note."
