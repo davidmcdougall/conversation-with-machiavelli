@@ -244,21 +244,53 @@ def roman(n):
     return "".join(out)
 
 
-def nm_heading(pair):
-    _, ch = pair.split(".", 1)
-    return f"Capitolo {roman(int(ch))}" if ch.isdigit() else ch.capitalize()
-
-
-def fg_heading(pair):
+def nm_heading(pair, meta=None):
+    """The Machiavelli column's heading, as the 1824 witness heads the unit:
+    CAPITOLO N, or for a unit with no chapter number the witness's own
+    heading from the corpus front-matter (`heading`), e.g. the Book II
+    half-title LIBRO SECONDO over the proem (D421)."""
     _, ch = pair.split(".", 1)
     if ch.isdigit():
-        return f"Considerazione sul capitolo {roman(int(ch))}"
-    return f"Considerazione sul {ch}" if ch != "proem" else "Considerazione sul proemio"
+        return f"Capitolo {roman(int(ch))}"
+    h = (meta or {}).get("heading", "")
+    return h.capitalize() if h else ch.capitalize()
+
+
+def fg_heading(pair, meta=None):
+    """The Guicciardini column's heading, as Canestrini prints it: he adds
+    `del libro II` (III) to every reply after Book I, and heads the proem's
+    reply `Considerazione sul proemio del libro II` (D421)."""
+    book, ch = pair.split(".", 1)
+    if (meta or {}).get("heading"):
+        return meta["heading"]
+    of_book = f" del libro {roman(int(book))}" if book != "1" else ""
+    if ch.isdigit():
+        return f"Considerazione sul capitolo {roman(int(ch))}{of_book}"
+    return f"Considerazione sul proemio{of_book}" if ch == "proem" else f"Considerazione sul {ch}{of_book}"
+
+
+def rubric_lines(it_m, en_m, note_html=""):
+    """The rubric, Italian and English; nothing where the witness prints
+    none (D421), so that no empty heading line is emitted."""
+    it, en = it_m.get("rubric", ""), en_m.get("rubric_en", "")
+    if not it and not en:
+        return ""
+    return (f'    <p class="rubric">{html.escape(it)}</p>\n'
+            f'    <p class="rubric">{html.escape(en)}\n      {note_html}</p>')
+
+
+def page_title(nm_en_m, fg_en_m):
+    """The page heading: never an editorial title (D264). Machiavelli's
+    rubric as the witness gives it; where the witness prints no rubric, its
+    own heading in English (`heading_en`, D421)."""
+    return (fg_en_m.get("title") or nm_en_m.get("rubric_en", "").rstrip(".")
+            or nm_en_m.get("heading_en", ""))
 
 
 def sub_label(pair):
     book, ch = pair.split(".", 1)
-    return f"Discourses {roman(int(book))}.{ch}, and Guicciardini's reply"
+    sep = ", " if not ch.isdigit() else "."
+    return f"Discourses {roman(int(book))}{sep}{ch}, and Guicciardini's reply"
 
 
 def notes_esc(s):
@@ -789,7 +821,7 @@ def build_pair(pair, published):
     row = next((r for r in rows if r["nm"] == nm_id), None)
     eyebrow = f"Pair {row['n']} of {len(rows)}" if row else pair
 
-    title = fg_en_m.get("title") or nm_en_m.get("rubric_en", "").rstrip(".")
+    title = page_title(nm_en_m, fg_en_m)
     standfirst = fg_en_m.get("standfirst", "")
 
     fg_rubric_note_html = (
@@ -824,10 +856,9 @@ def build_pair(pair, published):
   <section class="work nm">
     <div class="work-head">
       <span class="tag">{nm_id}</span>
-      <h2>{nm_heading(pair)}</h2>
+      <h2>{nm_heading(pair, nm_it_m)}</h2>
     </div>
-    <p class="rubric">{html.escape(nm_it_m.get("rubric", ""))}</p>
-    <p class="rubric">{html.escape(nm_en_m.get("rubric_en", ""))}</p>
+{rubric_lines(nm_it_m, nm_en_m)}
 
     <div class="colheads"><div></div><div>Italian · {WORKS['NM-DISC']['edition_year']}</div><div>English</div></div>
 {rows_html(nm_it, nm_en, nm_notes_raw, nm_ann)}
@@ -851,11 +882,9 @@ def build_pair(pair, published):
   <section class="work fg">
     <div class="work-head">
       <span class="tag">{fg_id}</span>
-      <h2>{fg_heading(pair)}</h2>
+      <h2>{fg_heading(pair, fg_it_m)}</h2>
     </div>
-    <p class="rubric">{html.escape(fg_it_m.get("rubric", ""))}</p>
-    <p class="rubric">{html.escape(fg_en_m.get("rubric_en", ""))}
-      {fg_rubric_note_html}</p>
+{rubric_lines(fg_it_m, fg_en_m, fg_rubric_note_html)}
 
     <div class="colheads"><div></div><div>Italian · {WORKS['FG-CONS']['edition_year']}</div><div>English</div></div>
 {rows_html(fg_it, fg_en, fg_notes_raw, fg_ann)}
@@ -907,7 +936,7 @@ def build_index(published):
         if pub:
             nm_en_m, _, _ = parse_translation(r["nm"], "NM-DISC")
             fg_en_m, _, _ = parse_translation(r["fg"], "FG-CONS")
-            title = fg_en_m.get("title") or nm_en_m.get("rubric_en", "").rstrip(".")
+            title = page_title(nm_en_m, fg_en_m)
             pub_d, rev_d = pair_dates(pub["pair"])
             revised_dates.append(rev_d)
             toc.append(
