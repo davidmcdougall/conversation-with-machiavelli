@@ -1,0 +1,44 @@
+source_unit_id: FG-CONS.2.12
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-II12-D001
+    locator: FG-CONS.2.12.02
+    class: emendation
+    witness_1857: "quando lo inimico da chi tu tenti la guerra"
+    witness_1933: "quando lo inimico da chi tu temi la guerra"
+    established: "[temi]"
+    publish_as_variant_note: true
+    rationale: "Read by both readers without doubt. `tenti` gives the clause no sense, war not being attempted from an enemy; the case is the one in which war is feared, as the rubric's `temendo` has it. The whole word emended from the 1933 edition and bracketed (D126, D441)."
+  - id: FG-CONS-II12-D002
+    locator: FG-CONS.2.12.01
+    class: emendation
+    witness_1857: "con tutto a con parte delle forze sue"
+    witness_1933: "con tutte o con parte delle forze sue"
+    established: "[o]"
+    publish_as_variant_note: true
+    rationale: "A broken sort at the head of p. 64, doubtful to both readers and taken by both for an a, which does not construe. Emended from the 1933 edition and bracketed (D68, D442)."
+  - id: FG-CONS-II12-D003
+    locator: FG-CONS.2.12.02
+    class: emendation
+    witness_1857: "in luogo lontono"
+    witness_1933: "in luogo lontano"
+    established: "lont[a]no"
+    publish_as_variant_note: true
+    rationale: "A split at the scan's a/o: one reader reads the printed letter as o, the other prefers a and sees o. Not a form of the word; emended from the 1933 edition and bracketed (D68, D439, as D429)."
+  - id: FG-CONS-II12-D004
+    locator: FG-CONS.2.12.01
+    class: ruled_reading
+    witness_1857: "con tutto [o] con parte (.01) ... sarebbono forse più facilmente stati (.02)"
+    witness_1933: "con tutte o con parte ... sarebbono forse molto più facilmente stati"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "Read by both readers without doubt. `tutto` is the whole, against `parte`; the 1933 edition agrees it with `forze` and adds `molto`. Canestrini construes and is kept (D38, D439)."
+  - id: FG-CONS-II12-D005
+    locator: FG-CONS.2.12.01
+    class: form
+    witness_1857: "truovano; ragioni; considerazioni; il (article); potenza; condizioni; azioni; pari; degli inimici; ribellioni; dopo; fe"
+    witness_1933: "trovano; ragione; considerazione; el; potenzia; condizione; azione; pare; delli inimici; ribellione; doppo; fe'"
+    established: witness_1857
+    publish_as_variant_note: false
+    rationale: "Forms and spellings; recorded, not ruled."

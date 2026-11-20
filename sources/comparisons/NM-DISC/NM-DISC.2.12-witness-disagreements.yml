@@ -1,0 +1,68 @@
+source_unit_id: NM-DISC.2.12
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-II12-D001
+    locator: NM-DISC.2.12.02
+    class: ruled_reading
+    witness_1824: "lasciava loro quella fonte, che mai le manca vita a somministrare forze dove bisogna (.02)"
+    witness_1554: "laſciaua loro quella forza che mai le manca uita a ſomminiſtrare forze doue biſogna"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The 1554's `forza` anticipates the `forze` the spring supplies; the 1824's `fonte` is the figure the chapter takes up again in .04 (`seccare quella fonte, come dice Annibale`). Read by both 1824 readers without doubt. Kept (D38, D438)."
+  - id: NM-DISC-II12-D002
+    locator: NM-DISC.2.12.04
+    class: ruled_reading
+    witness_1824: "tanto che tu vieni ad arrischiare tutte le forze, e non tutta la fortuna, e discostandoti arrischi tutta la fortuna, e non tutte le forze (.04) ... e possanlo dipoi combattere più facilmente (.04)"
+    witness_1554: "tanto che tu uieni a riſchiare tutte le forze, & non tutta la fortuna, & arriſchi tutta la fortuna, & non tutte le forze ... & poſsinlo dipoi combattere"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The 1554 omits `discostandoti`, so the second member of the chiasmus loses its condition and contradicts the first; and omits `più facilmente`. Read by both 1824 readers without doubt. Kept (D38, D438)."
+  - id: NM-DISC-II12-D003
+    locator: NM-DISC.2.12.05
+    class: ruled_reading
+    witness_1824: "tanta virtù mostrarono nelle guerre longinque, e tanta viltà nelle propinque (.05)"
+    witness_1554: "tanta uertu moſtrarono nelle guerre lontane, & tanta uiltà nelle uicine"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Synonyms, the 1554's the plainer words. Read by both 1824 readers without doubt. Kept (D38, D438)."
+  - id: NM-DISC-II12-D004
+    locator: NM-DISC.2.12.02
+    class: ruled_reading
+    witness_1824: "ei non le torrebbe il Regno (.02) ... ei mostrò come (.02) ... come i Romani, e come l'hanno i Svizzeri; ... come l'avevano i Cartaginesi, e come l'hanno i Re di Francia (.05) ... tu sei spacciato (.05) ... quanto la guerra di casa (.05) ... uno esercito romano (.06)"
+    witness_1554: "non gli terrebbe il regno ... moſtra come ... come i Romani o come hanno gli Suizeri ... come haueano i Carthagineſi o come l'hanno il Re di Francia ... tu ſei ſpacciata ... quanta la guerra di caſa ... un'eſſercito Romana"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Word-level differences at e/o/a, escalated under D203(b); read by both 1824 readers without doubt. `torrebbe` (take away) against `terrebbe` (hold); the 1554's `Romana` and `spacciata` break agreement. The 1824 construes at each and is kept (D38, D438)."
+  - id: NM-DISC-II12-D005
+    locator: NM-DISC.2.12.02
+    class: ruled_reading
+    witness_1824: "in su i confini (.02) ... ei non le torrebbe (.02) ... e prima la Italia (.02) ... restarono superiori; come (.03) ... Allegano gli Ateniesi (.03) ... se ne salverà assai (.04) ... i Re di Francia (.05) ... ti appressi a loro (.05) ... Non si trova che per assaltare una Provincia, mandassero (.06) ... sì discosto (.06) ... in la Magna (.06) ... ch'egli ebbero ×2 (.05, .06) ... inusitato alla guerra (.07)"
+    witness_1554: "in ſu confini ... non gli terrebbe ... prima l'Italia ... reſtarono ſuperiori, & come ... Allegane gli Athenieſi ... ſe ne ſalueranno aſſai ... il Re di Francia ... appreſsi loro ... Non ſi troua per aſſaltare una prouincia che eſsi mandaſsino ... di diſcoſto ... ne la Magna ... che eſsi hebbero ... inuſitato della guerra"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Whole words the 1554 sets otherwise, adds or drops; read by both 1824 readers without doubt. The 1824 construes at each and is kept (D38, D438)."
+  - id: NM-DISC-II12-D006
+    locator: NM-DISC.2.12.03
+    class: emendation
+    witness_1824: "ma lo aspettase dentro a'suoi confini"
+    witness_1554: "ma l'aſpettaſſe dentro a i ſuoi confini"
+    established: "aspetta[s]se"
+    publish_as_variant_note: true
+    rationale: "Both readers see one s; not a form the 1824 uses. Emended from the 1554 and bracketed (D68, D438)."
+  - id: NM-DISC-II12-D007
+    locator: NM-DISC.2.12.01
+    class: heading
+    witness_1824: "CAPITOLO XII / S' egli è meglio, temendo di essere assaltato, / inferire, o aspettare la guerra."
+    witness_1554: "SE EGLIE MEGLIO, TEMENdo di eſſer aſſaltato, muouere, o aſpettare la guerra. Cap. XII."
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The 1554 reads `muouere`, move [war], for `inferire`; otherwise spelling. Canestrini's rubric over the reply agrees with the 1824 (D440)."
+  - id: NM-DISC-II12-D008
+    locator: NM-DISC.2.12.01
+    class: form
+    witness_1824: "nimico; puoi (×4, .04); danaro; contro; li; cinquantamila; diciotto centinaja; trenta o quarantamila; centomila; Massageti; Tamiri; Egizio"
+    witness_1554: "nemico; poi; danaio; contra; gli; L milia; XVIII centinaia; XXX o XL mila; C mila; Meſſageti; Thamiri; Egittio"
+    established: witness_1824
+    publish_as_variant_note: false
+    rationale: "Forms of one word and spellings; recorded, not ruled."

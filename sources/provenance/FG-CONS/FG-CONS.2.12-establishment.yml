@@ -1,0 +1,38 @@
+source_unit_id: FG-CONS.2.12
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-031
+responds_to: NM-DISC.2.12
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. Canestrini's notes on p. 63 (keyed after `Ferrando).`, on Ferdinand of Naples) and p. 64 (keyed to `Paolo Orsino`, on Paolo Orsini) are his commentary and are not carried."
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38); errors are emended from Palmarocchi and bracketed (D68, D126)."
+passes:
+  - {id: A, performed: 2026-11-20, file: sources/coldpass/FG-CONS.2.12-passA.md, note: "subagent; page images only (native 600 ppi rendered at 1200, the whole page and halves cut in pixels, sizes and checksums verified before dispatch), own image, work and output folders, forbidden every other path (D370)"}
+  - {id: B, performed: 2026-11-20, file: sources/coldpass/FG-CONS.2.12-passB.md, note: "subagent; same images, separate folders"}
+collation: sources/coldpass/COLLATION-2026-11-20-II12.md
+collation_result: >
+  919 words (A 919, B 919: p. 62 41, p. 63 291, p. 64 276, p. 65 311), the
+  body tokens identical after preferred readings but one split,
+  `lont⟨o|a⟩no` (p. 65 l. 21), emended `lont[a]no` (D439). Six letters
+  doubtful to both read with the 1933 edition where only one construes
+  (D439, as D398); the seventh, `con tutto ⟨a⟩ con parte`, emended `[o]`
+  by David (D442); `tenti` emended `[temi]` by David (D441). Pointing
+  doubtful to both read with the 1933 edition (D110); no stop at the
+  unit's end (D40).
+witness_independence_check: "SCOPE §7. Neither pass carries a Palmarocchi word-reading where Canestrini differs: both have `truovano`, `ragioni`, `considerazioni`, `e` (not `ed`) `a volerlo`, `tenti`, `potenza`, `tutto`, `il` (not `el`), `condizioni`, `azioni`, `pari`, `degli inimici`, `ribellioni`, `dopo`, `forse più` (no `molto`), against the 1933 `trovano`, `ragione`, `considerazione`, `ed a`, `temi`, `potenzia`, `tutte`, `el`, `condizione`, `azione`, `pare`, `delli`, `ribellione`, `doppo`, `forse molto più`. At the one split, pass B preferred the 1933 letter and gave the printed one as its observation: a preference for sense, not a reading of the other book. The passes read Canestrini."
+boundaries: "printed pp. 62-65; heading CONSIDERAZIONE SUL CAPITOLO XII on p. 62 below the end of the II.10 reply (`... nè la dannerà / in modo alcuno`), without `del libro II`, then a two-line rubric in smaller type; two indented paragraphs, the second at p. 64 l. 5; ends p. 65 l. 31 `in Spagna o in Africa`, no stop visible to either; CONSIDERAZIONE SUL CAPITOLO XIII opens p. 66"
+heading: "CONSIDERAZIONE SUL CAPITOLO XII, without `del libro II`, set in the unit's `heading` front-matter (D443)"
+rubric: "S' egli è meglio, temendo di essere assaltato, inferire, / o aspettare la guerra⟨.|∅⟩ (A) / ⟨.|,⟩ (B): word for word the 1824 rubric; no stop, as Canestrini's rubrics are carried (D440, as D430)"
+corrections: []
+emendations:
+  - {id: FG-CONS-II12-E001, rule: D439, status: ruled_D439, locator: FG-CONS.2.12.02, printed: "in luogo lontono", established: "in luogo lont[a]no", witness_1933: "in luogo lontano", note: "A split: pass A prefers the printed `lontono`, naming `lontano`; pass B prefers `lontano`, seeing the second a printed like o. Not a form of the word. Emended under D68, as D429."}
+  - {id: FG-CONS-II12-E002, rule: D441, status: ruled_D441, locator: FG-CONS.2.12.02, printed: "quando lo inimico da chi tu tenti la guerra", established: "quando lo inimico da chi tu [temi] la guerra", witness_1933: "quando lo inimico da chi tu temi la guerra", note: "Read by both without doubt. As printed the clause has no sense; the case is the one in which war is feared (the rubric's `temendo`; .01 `quando io aspetto guerra da altri`). The whole word emended under D126 (O43, David 2026-11-20). Not checked on the page image."}
+  - {id: FG-CONS-II12-E003, rule: D442, status: ruled_D442, locator: FG-CONS.2.12.01, printed: "con tutto a con parte delle forze sue", established: "con tutto [o] con parte delle forze sue", witness_1933: "con tutte o con parte delle forze sue", note: "The first letter of p. 64 is broken; doubtful to both, both taking it for an a (A naming n, B o). Only `o` construes. Emended under D68 (O44, David 2026-11-20). Not checked on the page image."}
+readings:
+  - {locus: "FG-CONS.2.12.01 `che ⟨entrate|entrato⟩`; .01 `sempre ⟨la|lo⟩ diversione`; .02 `quando ⟨lo|la⟩ inimico`; .02 `di tempo ⟨e|a⟩ di nuovi ordini`; .02 `a ⟨Canne|Canno⟩`; .01 `⟨È|E⟩ differenza`", passes: "doubtful to both, both preferring the first", witness_1933: "entrate; la; lo; e; Canne; È", disposition: "D439 (2026-11-20, by precedent): only the preferred form construes, and the 1933 edition reads it"}
+  - {locus: "FG-CONS.2.12.01 `con tutto [o] con parte`; .02 `sarebbono forse più facilmente`", passes: "both, without doubt", witness_1933: "con tutte o con parte; sarebbono forse molto più facilmente", disposition: "kept, D439 (2026-11-20, by precedent: D38): Canestrini construes; variant note"}
+  - {locus: "FG-CONS.2.12 pointing doubtful to both or split (31 loci; table in the collation)", passes: "see the collation", witness_1933: "see the collation", disposition: "D439: read with the 1933 edition (D110) where both doubt or split; a mark both read alike kept; no stop at the unit's end (D40)"}
+not_supplied: ["the terminal stop after `Africa` (D40)"]
+normalisation_notes: "Class A: accents (`nè` → `né`, `perchè` → `perché`); the apostrophe of the apocopated article supplied (`e sudditi` → `e' sudditi`, `e populi`, `e Fiorentini`, `e disegni`, `e Romani` ×3, `e quali`); Canestrini's thin space after the apostrophe closed up (`l' una`, `S' ha`, `dell' altre`, `l' avere`, `l' uno`, `l' altro`) or kept as a word space after the apocopated form (`de' remedii`, `ne' quali`, `co' quali`, `a' tempi`, `a' Cartaginesi`, `da' Visconti`); `fe` as printed; line-end hyphens removed; Canestrini's note calls removed with his notes."

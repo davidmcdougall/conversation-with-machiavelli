@@ -1,0 +1,31 @@
+source_unit_id: NM-DISC.2.12
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-031
+passes:
+  - {id: A, performed: 2026-11-20, file: sources/coldpass/NM-DISC.2.12-passA.md, note: "subagent; page images only (350 ppi, whole page and thirds cut in pixels, sizes and checksums verified before dispatch), own image, work and output folders, forbidden every other path (D370); full chapter. A first dispatch without its rules was stopped before it read or wrote anything, its folders emptied, and the reader dispatched again"}
+  - {id: B, performed: 2026-11-20, file: sources/coldpass/NM-DISC.2.12-passB.md, note: "subagent; separate folders; full chapter, no page being eligible for the D302 sample (D437)"}
+collation: sources/coldpass/COLLATION-2026-11-20-II12.md
+collation_result: "1,371 words in both passes (p. 254 62, p. 255 258, p. 256 259, p. 257 260, p. 258 271, p. 259 237, p. 260 24), identical word for word after Class A. No page holds a fifth of the chapter (274), so pass B read it all (D437, as D352, D391). `aspettase` emended `aspetta[s]se` (D438). Against the 1554: seven differences at e/o/a kept under D203(b) and the whole words kept (D438)."
+boundaries: "printed pp. 254-260; p. 254 opens with the end of II.11 (`... di quelli che si pigliano per la difesa propria.`), then CAPITOLO XII and the two-line italic rubric; large initial I; one block; no notes; ends p. 260 l. 3 `si difenderà meglio.`; CAPITOLO XIII follows on p. 260"
+heading: "CAPITOLO XII"
+rubric_check: "1824: `S' egli è meglio, temendo di essere assaltato, inferire, o aspettare la guerra.` Canestrini's rubric over the reply agrees word for word, without a visible stop; the 1554 heads the chapter `SE EGLIE MEGLIO, TEMENdo di eſſer aſſaltato, muouere, o aſpettare la guerra. Cap. XII.` (D440)"
+interventions: []
+emendations:
+  - {id: NM-DISC-II12-E001, rule: D438, status: ruled_D438, locator: NM-DISC.2.12.03, printed: "ma lo aspettase dentro a'suoi confini", established: "ma lo aspetta[s]se dentro a' suoi confini", witness_1554: "ma l'aſpettaſſe dentro a i ſuoi confini", note: "Both readers see one s, pass A at enlargement. Not a form the 1824 uses (`aspettasse`, four lines above). Emended under D68, as D381."}
+procedure:
+  - {id: D437, note: "No eligible D302 sample page (a fifth of 1,371 is 274; p. 258 holds 271). Pass B read the whole chapter, as D352, D391."}
+readings:
+  - {locus: "NM-DISC.2.12.02 `ei non le torrebbe il Regno`, `ei mostrò`; .05 `e come l'hanno i Svizzeri`, `e come l'hanno i Re di Francia`, `tu sei spacciato`, `quanto la guerra di casa`; .06 `uno esercito romano`", passes: "A and B, without doubt", witness_1554: "non gli terrebbe il regno; moſtra; o come hanno gli Suizeri; o come l'hanno il Re di Francia; ſpacciata; quanta; un'eſſercito Romana", disposition: "kept, D438 (2026-11-20, by precedent: D203(b), D38): word-level differences at e/o/a; the 1824 construes at each; variant note"}
+  - {locus: "NM-DISC.2.12.02-.07 the whole-word differences: `quella fonte` (.02), `e discostandoti arrischi` (.04), `combattere più facilmente` (.04), `i Re di Francia` (.05), `longinque`, `propinque` (.05), `sì discosto` (.06), `se ne salverà` (.04), `inusitato alla guerra` (.07), `Allegano` (.03), `e prima la Italia` (.02), `superiori; come` (.03), `ei non` (.02), `in su i confini` (.02), `l'hanno` (.05), `ti appressi a loro` (.06), `in la Magna` (.06), `ch'egli` ×2 (.05, .06), `Non si trova che per` (.06)", passes: "A and B, without doubt", witness_1554: "`quella forza`; `& arriſchi` (no `discostandoti`); `combattere` (no `più facilmente`); `il Re`; `lontane`, `uicine`; `di diſcoſto`; `ſalueranno`; `della guerra`; `Allegane`; `prima l'Italia`; `& come`; `non`; `in ſu confini`; `hanno`; `appreſsi loro`; `ne la Magna`; `che eſsi`; `Non ſi troua per ... che eſsi mandaſsino`", disposition: "kept, D438 (2026-11-20, by precedent: D38): the 1824 construes at each; variant notes, and translator's notes where the sense moves (`fonte`, `discostandoti`, `longinque`)"}
+comparison_collation: >
+  Done 2026-11-20 against the 1554 extract (fol. 105r-107r). A cold reader
+  transcribed the Giglio leaves from the page images
+  (sources/coldpass/NM-DISC.2.12-1554.md); no damage, no text lost. The
+  transcript was collated by word against both full 1824 passes after
+  spelling normalisation. Differences are in
+  sources/comparisons/NM-DISC/NM-DISC.2.12-witness-disagreements.yml.
+normalisation_notes: "Class A only: accents (`perchè` → `perché`, `nè` → `né`, `sicchè` → `sicché`, `mentrechè` → `mentreché`); elision closed up (`quell' altro`, `l' altro`, `all' opinione`, `d' Italia`, `l' Italia`, `dell' armi`, `l' Affrica`, `d' ogni`, `l' hanno`, `l' ho`, `l' avevano`, `gl' Italiani`, `l' autorità`, `d' Annibale`, `l' utile`, `ch' egli`, `l' uno`, `l' altro` → closed); the space restored after the apocopated `de'`, `a'`, `ne'`, `e'` where the impression closes it (`de'Massageti`, `a'suoi`, `ne'suoi`, `e'se`); the rubric's `S' egli` closed; the stray raised dot between `possono` and `ad` (p. 258 l. 28), doubted by both, not taken as text; spaces before punctuation removed; line-end hyphens removed. `giudizj`, `rifugj`, `presidj`, `esempj`, `centinaja`, `Affrica`, `Svizzeri` as printed."
