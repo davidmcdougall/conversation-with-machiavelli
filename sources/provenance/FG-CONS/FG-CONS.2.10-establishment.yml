@@ -1,0 +1,33 @@
+source_unit_id: FG-CONS.2.10
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-030
+responds_to: NM-DISC.2.10
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. Canestrini's note (1) on p. 62, keyed to `provede,`, gathering Machiavelli's sentences on iron and gold and a French proverb, is his commentary and is not carried."
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38); errors are emended from Palmarocchi and bracketed (D68)."
+passes:
+  - {id: A, performed: 2026-11-20, file: sources/coldpass/FG-CONS.2.10-passA.md, note: "subagent; page images only (native 600 ppi rendered at 1200, the whole page; the halves were mis-cropped and duplicated it, so the reader enlarged from the whole page), own image, work and output folders, forbidden every other path (D370)"}
+  - {id: B, performed: 2026-11-20, file: sources/coldpass/FG-CONS.2.10-passB.md, note: "subagent; same images, separate folders"}
+collation: sources/coldpass/COLLATION-2026-11-20-II10.md
+collation_result: >
+  245 words (A 245, B 245: p. 61 70, p. 62 175), the body tokens identical
+  after preferred readings but one split, `impossibil⟨e|a⟩` (p. 61 l. 7),
+  emended `impossibil[e]` (D429). Rubric `che ⟨è|e⟩ la comune` read `è`.
+  Pointing doubtful to both read with the 1933 edition (D110); no stop at
+  the unit's end (D40).
+witness_independence_check: "SCOPE §7. Neither pass carries a Palmarocchi word-reading where Canestrini differs: both have `furno`, `necessarii`, `ridicula, ma`, `le armi`, `le munizioni`, `nella guerra, e quali`, `e in ogni caso e in ogni`, `dietro`, `da poi`, `proprii`, `mercenarii`, `e anche`, `proprii, e ognuno`, `interpreterà`, `sentenza`, `comunemente`, against the 1933 `siano`, `necessari`, `ridicula; ma`, `le arme`, `le munizione`, `nella guerra; e' quali`, `ed in ogni caso ed in`, `drieto`, `dappoi`, `propri`, `mercennari`, `ed anche`, `propri; ed ognuno`, `interpreterrá`, `sentenzia`, `communemente`. At the one split, pass A preferred the 1933 letter and gave the printed one as its alternative: a preference for sense, not a reading of the other book. The passes read Canestrini."
+boundaries: "printed pp. 61-62; heading CONSIDERAZIONE SUL CAPITOLO X DEL LIBRO II. on p. 61 below the end of the proem's reply (`più vir- / tuosa che l' altre`), then a two-line rubric in smaller type; one indented paragraph; ends p. 62 `in modo alcuno`, no stop visible to either; CONSIDERAZIONE SUL CAPITOLO XII follows with its rubric"
+heading: "CONSIDERAZIONE SUL CAPITOLO X DEL LIBRO II., as build.py prints it for Book II (D421)"
+rubric: "I danari non sono il nervo della guerra, secondo che ⟨è|e⟩ la comune / oppinione⟨.|∅⟩, both readers doubting the accent and the stop: `è`, the verb, as the 1824 rubric and the 1933 edition's bracketed rubric; no stop, as Canestrini's other rubrics are carried (D430)"
+corrections: []
+emendations:
+  - {id: FG-CONS-II10-E001, rule: D429, status: ruled_D429, locator: FG-CONS.2.10.01, printed: "sanza quelli era impossibila a sostenerla", established: "sanza quelli era impossibil[e] a sostenerla", witness_1933: "era impossibile a sostenerla", note: "A split: pass A prefers `impossibile`, giving `impossibila` as alternative; pass B reads `impossibila`, the last letter clearly a. Not a form of the word, printed `impossibile` on p. 62. Emended under D68, as D381, D396."}
+readings:
+  - {locus: "FG-CONS.2.10 rubric `secondo che ⟨è|e⟩ la comune oppinione⟨.|∅⟩`", passes: "both prefer è and a stop, both doubting", witness_1933: "[... secondo che è la comune opinione.] (the editor's bracketed rubric, from Machiavelli)", disposition: "è, D430 (2026-11-20, by precedent): only `è` construes; no stop (D40, as Canestrini's other rubrics are carried)"}
+  - {locus: "FG-CONS.2.10.01 `che e' danari furno il nervo della guerra`", passes: "both, without doubt", witness_1933: "che e' danari siano el nervo della guerra", disposition: "kept, D429 (2026-11-20, by precedent: D38): `furno` construes, the sentence as once pronounced; variant note and translator's note"}
+  - {locus: "FG-CONS.2.10.01 `mercenarii⟨,|;⟩`; `⟨co'|co⟩ danari`; `trovare danari⟨.|∅⟩ Chi`; `alcuno⟨.|∅⟩`", passes: "A doubting the first, B reading a comma; A preferring `co'`, B `co`; both doubting the last two", witness_1933: "mercennari, ... co' danari ... trovare danari. Chi ... alcuno.", disposition: "D429: read with the 1933 edition (D110): `mercenarii,`, `co'`, `danari.`; no stop at the unit's end (D40)"}
+not_supplied: ["the terminal stop after `alcuno` (D40)"]
+normalisation_notes: "Class A: accents (`nè` → `né`, `perchè` → `perché`); the apostrophe of the apocopated article and pronoun supplied (`e danari` → `e' danari`, `e soldati`, `e fussino`, `e quali`); Canestrini's thin space after the apostrophe closed up (`l' ha` → `l'ha`) or kept as a word space after the apocopated form (`a' tempi`, `co' soldati`); line-end hyphens removed; Canestrini's note call removed with his note."

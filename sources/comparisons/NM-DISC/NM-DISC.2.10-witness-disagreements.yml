@@ -1,0 +1,67 @@
+source_unit_id: NM-DISC.2.10
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-II10-D001
+    locator: NM-DISC.2.10.01
+    class: ruled_reading
+    witness_1824: "ei non s'inganni; ed ogni volta s'ingannerà quando le misuri o dai danari, o dal sito (.01)"
+    witness_1554: "ei non s'ingannera,quando le miſuri o dal ſito"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The 1554 runs the two clauses into one (`non s'ingannera, quando`) and drops money from the false measures of a prince's forces, the measure the chapter goes on to refute. Read by both 1824 readers without doubt (pass B on a crop). The 1824 construes and is kept (D38, D428)."
+  - id: NM-DISC-II10-D002
+    locator: NM-DISC.2.10.04
+    class: ruled_reading
+    witness_1824: "Ai Romani, s'egli avessero voluto fare la guerra più coi danari che con il ferro, non sarebbe bastato (.04)"
+    witness_1554: "A i Romani(ſe non haueſſero uoluto fare la guerra piu co i danari, che con il ferro) non ſarebbe baſtato"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The 1554's negative turns the condition into its contrary; the next period (`Ma facendo le loro guerre con il ferro`) answers the 1824's. Read by both 1824 readers without doubt (pass B on a crop). Kept (D38, D428)."
+  - id: NM-DISC-II10-D003
+    locator: NM-DISC.2.10.06
+    class: ruled_reading
+    witness_1824: "mostrando che e' potevano vincere quella guerra con la industria e con la forza del danaro (.06)"
+    witness_1554: "moſtrando, che poteua uincere quella guerra con l'induſtria, & non con la forZa del danaio"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The 1554 has Pericles advise against relying on money; the 1824 has him rely on it, which the period's close answers (`valsono più il consiglio e i buoni soldati di Sparta, che la industria ed il danaro di Atene`). Read by both 1824 readers without doubt (pass B on a crop). Kept (D38, D428)."
+  - id: NM-DISC-II10-D004
+    locator: NM-DISC.2.10.06
+    class: ruled_reading
+    witness_1824: "Doverono i Campani (.06)"
+    witness_1554: "Douerono i Capouani"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Livy's people (7.29-31); the 1554 names them by their city, Capua. Read by both 1824 readers without doubt (pass B on a crop). Kept (D38, D428)."
+  - id: NM-DISC-II10-D005
+    locator: NM-DISC.2.10.02
+    class: ruled_reading
+    witness_1824: "La quale sentenza è detta da Quinto Curzio (.02) ... Talché Quinto Curzio (.02) ... considerato le grandi imprese (.04)"
+    witness_1554: "laqual ſentenza e dato da Q. Curtio ... talche Quinta Curtio (the 1554 reader doubting a/o) ... conſiderate le grandi impreſe"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Word-level differences at e/o/a, escalated under D203(b); read by both 1824 readers without doubt (pass B on crops). `detta` agrees with `sentenza`; `considerato` impersonal before its object. The 1824 construes at each and is kept (D38, D428)."
+  - id: NM-DISC-II10-D006
+    locator: NM-DISC.2.10.01
+    class: ruled_reading
+    witness_1824: "più presto (.01) ... donde e' sarebbe (.02) ... Oltra di questo (.03) ... donde quelli Francesi (.03) ... intervenne a lui (.05) ... o a morire di fame (.05) ... per essere più onorevole (.05) ... un Capitano che è necessitato o a fuggirsi (.05) ... e tra le quali (.05) ... replicandolo di nuovo, l'oro (.06) ... che e' potevano (.06) ... preso ch'egli ebbero (.06)"
+    witness_1554: "piu toſto ... onde e ſarebbe ... Oltra queſto ... onde quei Francioſi ... interuiene a lui ... o morire di fame ... per eſſere piu honore ... un Capitano è neceßitato a fuggirſi ... tra le quali ... replicandolo di nuouo, e l'oro ... che poteua ... preſo che eſsi hebbero"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "Whole words the 1554 sets otherwise, adds or drops; read by both 1824 readers without doubt (pass B on the sample page or crops). The 1824 construes at each and is kept (D38, D428)."
+  - id: NM-DISC-II10-D007
+    locator: NM-DISC.2.10.01
+    class: heading
+    witness_1824: "CAPITOLO X / I danari non sono il nervo della guerra, / secondo che è la comune opinione."
+    witness_1554: "I DANARI NON SONO IL NERuo della guerra, ſecondo che e la commune oppenione. Cap. X."
+    established: witness_1824
+    publish_as_variant_note: false
+    rationale: "The rubrics agree but for spelling; Canestrini's rubric over the reply agrees with both (D430)."
+  - id: NM-DISC-II10-D008
+    locator: NM-DISC.2.10.01
+    class: systematic_orthographic_profile
+    witness_1554: "Giglio's `uno Prencipe`, `elle`, `arme`, `gli` for `li` and `i`, `Q.`, `laqual`, `Prencipi`, `harebbon`, `Suizeri`, `ſopra nominati`, `buon`, `Francioſi`, `quei`, `ruppeno`, `accomulata`, `Venitiani`, `oppenione`, `ſon`, `hauer`, `feciono`, `hebbono`, `denari`, `nemico`, `neceßitati`, `fuora`, `de`, `ſimil`, `e danari`, `fare`, `danaio`, `proſperaſsino`, `ualſon`, `teſtimonio`, `buna`, `conchiuſione`, `da i`, `contra a i`, `prendeßino`, tildes, `&`/`et`, and his pointing"
+    established: witness_1824
+    publish_as_variant_note: false
+    rationale: "Spelling, forms and pointing; DEC-009 classes, not readings."

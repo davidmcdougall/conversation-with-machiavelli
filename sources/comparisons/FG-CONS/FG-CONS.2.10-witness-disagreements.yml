@@ -1,0 +1,36 @@
+source_unit_id: FG-CONS.2.10
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-II10-D001
+    locator: FG-CONS.2.10.01
+    class: emendation
+    witness_1857: "sanza quelli era impossibila a sostenerla"
+    witness_1933: "sanza quelli era impossibile a sostenerla"
+    established: "impossibil[e]"
+    publish_as_variant_note: true
+    rationale: "A split at the scan's a/e: one reader reads the printed letter as a, the other prefers e and names a. Not a form of the word, which Canestrini prints `impossibile` a few lines below; emended from the 1933 edition and bracketed (D68, D429, as D396)."
+  - id: FG-CONS-II10-D002
+    locator: FG-CONS.2.10.01
+    class: ruled_reading
+    witness_1857: "che e danari furno il nervo della guerra"
+    witness_1933: "che e' danari siano el nervo della guerra"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "Read by both readers without doubt. `furno`, were, puts the sentence in the past, as once pronounced; the 1933 `siano` states it as a standing claim. Canestrini construes and is kept (D38, D429, as D408)."
+  - id: FG-CONS-II10-D003
+    locator: FG-CONS.2.10.01
+    class: reading
+    witness_1857: "rubric `secondo che [è/e] la comune / oppinione [. / none]` (both doubting) ... mercenarii [, / ;] ... [co'/co] danari ... trovare danari [. / none] Chi ... alcuno [. / none]"
+    witness_1933: "[... secondo che è la comune opinione.] ... mercennari, ... co' danari ... danari. Chi ... alcuno."
+    established: "è ... oppinione (no stop) ... mercenarii, ... co' danari ... danari. Chi ... alcuno (no stop)"
+    publish_as_variant_note: false
+    rationale: "The rubric's verb read `è`, as the 1824 rubric (D430, as D398); pointing neither reader could weigh read with the 1933 edition; no stop at the unit's or the rubric's end (D110, D40, D429)."
+  - id: FG-CONS-II10-D004
+    locator: FG-CONS.2.10.01
+    class: systematic_orthographic_profile
+    witness_1857: "Canestrini's `sentenza`, `necessarii`, `le armi`, `le munizioni`, `e in ogni caso e in ogni`, `dietro`, `da poi`, `proprii`, `mercenarii`, `e anche`, `interpreterà`, `comunemente`, and his pointing (`ridicula, ma`, `guerra, e quali`, `proprii, e ognuno`)"
+    witness_1933: "`sentenzia`, `necessari`, `le arme`, `le munizione`, `ed in ogni caso ed in ogni`, `drieto`, `dappoi`, `propri`, `mercennari`, `ed anche`, `interpreterrá`, `communemente`; `ridicula; ma`, `guerra; e' quali`, `propri; ed ognuno`"
+    established: witness_1857
+    publish_as_variant_note: false
+    rationale: "Forms, spelling and pointing both readers read alike without doubt; DEC-009 classes, not readings."

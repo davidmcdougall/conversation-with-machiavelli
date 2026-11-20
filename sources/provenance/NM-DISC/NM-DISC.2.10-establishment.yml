@@ -1,0 +1,31 @@
+source_unit_id: NM-DISC.2.10
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-030
+passes:
+  - {id: A, performed: 2026-11-20, file: sources/coldpass/NM-DISC.2.10-passA.md, note: "subagent; page images only (350 ppi, whole and the middle third; the top and bottom thirds were mis-cropped and duplicated the whole page, so the reader made its own enlargements from the whole page), own image, work and output folders, forbidden every other path (D370); full chapter"}
+  - {id: B, performed: 2026-11-20, file: sources/coldpass/NM-DISC.2.10-passB.md, note: "subagent; separate folders; the D302 sample page p. 251 whole (thirds correctly cropped), and thirteen line crops holding every other word-level 1554 difference (p. 248 ll. 4-7, 18-20, 21-22; p. 249 ll. 4-6, 8-10; p. 250 ll. 1-2, 5-7, 17-19, 20-22, 26-28; p. 252 ll. 2-5, 16-18, 19-21), shuffled, not told which word (D427)"}
+collation: sources/coldpass/COLLATION-2026-11-20-II10.md
+collation_result: "1,139 words (pass A: p. 248 189, p. 249 259, p. 250 261, p. 251 249, p. 252 181). Sample page p. 251, of the three eligible pages (249, 250, 251; a fifth of 1,139 is 228) the one with most word-level 1554 differences per word (6/249, against 5/261 and 2/259), chosen and recorded after pass A and the Giglio read. Pass B's p. 251 agrees with pass A token for token (241 to 241 after Class A); every crop reads pass A's words. Against the 1554: three differences at e/o/a kept under D203(b) and the whole words kept (D428)."
+boundaries: "printed pp. 248-252; p. 248 opens with the last two lines of II.9 (`... che gli / opprimeva.`), then CAPITOLO X and the two-line italic rubric; raised initial P; one block; no notes; ends p. 252 l. 22 `se si vollono salvare.`; the rest of p. 252 blank; CAPITOLO XI opens p. 253"
+heading: "CAPITOLO X"
+rubric_check: "1824: `I danari non sono il nervo della guerra, secondo che è la comune opinione.` Canestrini's rubric over the reply agrees word for word, spelling `oppinione` and without a visible stop; the 1554 heads the chapter `I DANARI NON SONO IL NERuo della guerra, secondo che e la commune oppenione. Cap. X.` (D430)"
+interventions: []
+emendations: []
+procedure:
+  - {id: D427, note: "Sample page p. 251 and thirteen crops (D302, standing by D426). Pass B read the sample page whole and the crops; all agree with pass A."}
+readings:
+  - {locus: "NM-DISC.2.10.02 è detta da Quinto Curzio; Talché Quinto Curzio; .04 considerato le grandi imprese", passes: "A, and B on crops, without doubt", witness_1554: "e dato da Q. Curtio; talche Quinta Curtio (the 1554 reader doubting a/o); conſiderate le grandi impreſe", disposition: "kept, D428 (2026-11-20, by precedent: D203(b), D38): word-level differences at e/o/a; the 1824 construes at each; variant note"}
+  - {locus: "NM-DISC.2.10.01-.06 the whole-word differences: `s'inganni; ed ogni volta s'ingannerà quando`, `o dai danari`, `presto`, `donde` (twice), `Oltra di questo`, `s'egli avessero voluto`, `intervenne`, `o a morire`, `onorevole`, `un Capitano che è`, `o a fuggirsi`, `e tra le quali`, `replicandolo di nuovo, l'oro`, `e' potevano`, `con la industria e con la forza del danaro`, `Campani`, `ch'egli ebbero`", passes: "A, and B on the sample page or crops, without doubt", witness_1554: "`s'ingannera, quando` (no `ed ogni volta`); `o dai danari` omitted; `toſto`; `onde`; `Oltra queſto`; `ſe non haueſſero uoluto`; `interuiene`; `o morire`; `honore`; `un Capitano è`; `a fuggirſi`; `tra le quali`; `replicandolo di nuouo, e l'oro`; `poteua`; `con l'induſtria, & non con la forZa del danaio`; `Capouani`; `che eſsi hebbero`", disposition: "kept, D428 (2026-11-20, by precedent: D38): the 1824 construes at each; variant notes, and translator's notes where the sense moves (`o dai danari`, `s'egli avessero`, `con la forza`, `Campani`)"}
+comparison_collation: >
+  Done 2026-11-20 against the 1554 extract (fol. 102v-104r). A cold reader
+  transcribed the Giglio leaves from the page images
+  (sources/coldpass/NM-DISC.2.10-1554.md); the transcript was collated by
+  word against pass A after spelling normalisation, and every word-level
+  difference outside the sample page was given to pass B as a line crop.
+  Differences are in
+  sources/comparisons/NM-DISC/NM-DISC.2.10-witness-disagreements.yml.
+normalisation_notes: "Class A only: accents (`perchè` → `perché`, `nè` → `né`, `sè` → `sé`, `benchè` → `benché`, `Talchè` → `Talché`, `ancorachè` → `ancoraché`); elision closed up (`s' inganni`, `s' ingannerà`, `dall' altra`, `d' armi`, `d' Alessandro`, `quell' oro`, `dell' oro`, `l' oro`, `s' egli`, `d' az-`, `l' altre`, `l' arme` → `s'inganni` ...); the space restored after the apocopated `e'`, `da'`, `ne'`, `de'`, `a'` where the impression closes it (`e'sarebbe`, `da'Principi`, `ne'nostri`, `e'potevano`); the stray raised marks after `essere` (p. 251 l. 2) and `vincere` (l. 15), preferred by pass A and doubted by pass B, not taken as text; spaces before punctuation removed; line-end hyphens removed. `ajutarli`, `tributarj`, `necessitadi`, `Svizzeri` as printed."
