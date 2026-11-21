@@ -29,7 +29,7 @@ first time it is italicised.
 | `Periochae` | notes (Livy) |
 | `spectare` | FG I.9 note (D175) |
 | `patres` | NM I.9 commentary |
-| `etiam` | FG I.3, FG I.16 note, FG II.12 .02 |
+| `etiam` | FG I.3, FG I.16 note, FG II.12 .02, NM II.13 .05, FG II.13 .01 |
 | `latebrae` | NM I.16 note |
 | `verbi gratia` | FG I.23 |
 | `virtus` | NM I.24 note and commentary (Livy 1.26) |
@@ -83,3 +83,10 @@ first time it is italicised.
 | `vox populi vox Dei` | NM I.58 note |
 | `Anabasis` | NM I.58 commentary (Arrian) |
 | `pro tribunali` | NM II.proem .05 |
+| `Nam si etiam nunc sub umbra foederis aequi servitutem pati possumus, etc.` | NM II.13 .04 (Livy 8.4.2) |
+| `Nam si etiam nunc sub umbra foederis aequi servitutem pati possumus` | NM II.13 note |
+| `sub umbra foederis` | FG II.13 note |
+| `foederis aequi` | FG II.13 note, commentary |
+| `socii` | NM II.13 note |
+| `ingenuus` | NM II.13 note |
+| `Cyropaedia` | NM II.13 notes and commentary, FG II.13 commentary (Xenophon) |

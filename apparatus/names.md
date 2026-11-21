@@ -272,3 +272,11 @@ the original.
 | `Filippo re di Macedonia`; `Antioco` | Philip, king of Macedonia; Antiochus | FG II.12 .02; Philip V and Antiochus III (the editor's identifications); kept apart from NM I.26's Philip of Macedon |
 | `Spagna`, `Africa` / `Affrica` | Spain, Africa | FG II.12 .02; NM II.12 .02 `l'Affrica` |
 | `Livio` | Livy | FG II.12 .02 |
+| `Senofonte` (NM); `Zenofonte` (FG); `vita di Ciro` | Xenophon; the life of Cyrus | NM II.13 .02; FG II.13; the *Cyropaedia* (the editor's identification) |
+| `Ciassare Re dei Medi`; `Re di Armenia` | Cyaxares, king of the Medes; the king of Armenia | NM II.13 .02; in the *Cyropaedia* |
+| `Filippo di Macedonia`; `Agatocle siciliano` | Philip of Macedon; Agathocles the Sicilian | NM II.13 .01, as NM I.26 and NM II.12 |
+| `Giovanni Galeazzo`; `messer Bernabò` | Giovanni Galeazzo; messer Bernabò | NM II.13 .02, as printed; Giangaleazzo and Bernabò Visconti (the editor's identifications, as NM II.12); the 1554 `M.Bernardo` |
+| `Latini`; `Lazio` | the Latins; Latium | NM II.13 .03, .04; FG II.13 `Latini` |
+| `Annio Setino Pretore latino` | Annius Setinus, Latin praetor | NM II.13 .04; Annius of Setia (Livy 8.3.9, the editor's note) |
+| `Tito Livio` | Livy | NM II.13 .04, as NM I.47 |
+| `Alessandro Magno`; `Cesare` | Alexander the Great; Caesar | FG II.13, as NM I.58, NM I.10 |

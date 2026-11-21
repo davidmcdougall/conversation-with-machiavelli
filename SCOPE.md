@@ -109,7 +109,7 @@ exist. See §7.
 | 29 | NM-DISC.2.proem | FG-CONS.2.proem | FG-CONS-DR-029 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 30 | NM-DISC.2.10 | FG-CONS.2.10 | FG-CONS-DR-030 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 31 | NM-DISC.2.12 | FG-CONS.2.12 | FG-CONS-DR-031 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
-| 32 | NM-DISC.2.13 | FG-CONS.2.13 | FG-CONS-DR-032 | — | — | — | — | — |
+| 32 | NM-DISC.2.13 | FG-CONS.2.13 | FG-CONS-DR-032 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 33 | NM-DISC.2.14 | FG-CONS.2.14 | FG-CONS-DR-033 | — | — | — | — | — |
 | 34 | NM-DISC.2.15 | FG-CONS.2.15 | FG-CONS-DR-034 | — | — | — | — | — |
 | 35 | NM-DISC.2.19 | FG-CONS.2.19 | FG-CONS-DR-035 | — | — | — | — | — |
@@ -220,12 +220,12 @@ than inside the first paragraph.
 | Stage | Done | Remaining | Of |
 |---|---|---|---|
 | Link records | 39 | 0 | 39 |
-| NM source established | 31 | 8 | 39 |
-| FG source established | 31 | 8 | 39 |
-| Collated against the comparison witness | 62 units | 16 | 78 |
-| Translated (draft, cold-reviewed) | 62 | 16 | 78 |
-| Annotated | 62 | 16 | 78 |
-| Published | 62 | 16 | 78 |
+| NM source established | 32 | 7 | 39 |
+| FG source established | 32 | 7 | 39 |
+| Collated against the comparison witness | 64 units | 14 | 78 |
+| Translated (draft, cold-reviewed) | 64 | 14 | 78 |
+| Annotated | 64 | 14 | 78 |
+| Published | 64 | 14 | 78 |
 <!-- /state:stages -->
 
 The table is written by `scripts/state` from the files. The paragraphs below
@@ -365,6 +365,7 @@ clock; David's own time is the rulings, counted separately.
 | II.proem (1,250 + 361 words) | 40 | 15 | 25 | 25 | 15 | 10 | ~130 (stages approximate) | 1 batch at establishment (D415-D421), the ninth under D302: NM sample of p. 208 (of two eligible pages, the denser per word in word-level 1554 differences) with nineteen crops, and, where the 1554 fol. 84v has lost about 62 words, those lines read whole by pass B (D415), all clean; three D203(b) differences and the sense-bearing 1554 words kept (D420); FG one split (`a'`) and two common doubts read with the 1933 edition (D416, D417), `[È] adunque` by D114 (D418), pointing by D110; no rubric in any witness, the page headed by the witnesses' own headings and `build.py` changed to carry them (D421); O40 ruled first (D414, "must not"), applied at I.60 .02; no open item at translation; NM collated against 1554; commentary cold-reviewed; the cold reviews stopped by a usage limit and resumed after five hours |
 | II.10 (1,139 + 245 words) | 30 | 10 | 20 | 25 | 15 | 5 | ~105 (stages approximate) | the unit-thirty review of the sampling rule first: D302 made standing, no further scheduled review (D426); no new establishment question, every locus ruled by precedent (D427-D430), the tenth chapter under D302: NM sample of p. 251 (the densest of three eligible pages in word-level 1554 differences) with thirteen crops, clean; the 1824 kept against 1554 readings that omit money from the false measures, reverse the Romans' condition and make Pericles advise against money (D428); FG one split, `impossibil[e]` emended, `furno` kept against the 1933 `siano` (D429); Canestrini's rubric agrees with the 1824's (D430); the first readers' top and bottom image crops duplicated the whole page, recorded; 2 open items at translation (O41 `fortezza`, O42 `ferro`), ruled the same day as D432, D433; the six commits of I.60 and II.proem found unpushed, and this session cannot push; NM collated against 1554; commentary cold-reviewed |
 | II.12 (1,371 + 919 words) | 40 | 15 | 30 | 25 | 20 | 10 | ~140 (stages approximate) | images cut in pixels and checked by size and checksum before dispatch, after II.10's crop fault; no page holds a fifth of the chapter (the fullest 271 of 274), so NM pass B read it all (D437), and the passes agree on every word; seven D203(b) differences and the sense-bearing 1554 words kept, among them `fonte` and the omitted `discostandoti`, and `aspetta[s]se` emended (D438); FG one split (`lont[a]no`), six common doubts read with the 1933 edition, pointing by D110 (D439); 1 batch at establishment, O43-O45, ruled the same day as D441-D443 (`[temi]`, `[o]`, the heading without `del libro II`, narrowing D421); `scripts/validate` taught to rejoin hyphens before a reader's indented line numbers; no open item at translation; NM collated against 1554; commentary cold-reviewed; the II.10 commits found unpushed, and push still blocked from the session |
+| II.13 (605 + 318 words) | 35 | 20 | 20 | 30 | 15 | 10 | ~130 (stages approximate) | 1 batch at establishment, open (O46 `fraudolent[o]`, O47 whether the fifth crop triggers D426); every other locus ruled by precedent (D448-D451): NM sample of p. 262 (the densest of three eligible pages in word-level 1554 differences) with five crops of p. 261, the sample and four crops clean, the fifth a common doubt with the other preference, so pp. 260-261 read whole by a second pass B, clean (D448); `e` and `etiam` read, the 1554's whole words and its gloss of Livy not taken (D449); FG two splits and six printed non-words emended, `anche` kept, the comma before `equale` kept (D450); Canestrini's rubric with the 1824's (D451); NM collated against 1554; commentary cold-reviewed; `build.py` renders the summary's italics (separate commit) |
 
 ---
 

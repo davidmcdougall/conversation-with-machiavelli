@@ -831,3 +831,38 @@ last sentence answers Machiavelli's first move.
 | `residuo`, `residui` | residue, residues | D444. NM I.23, NM II.12 .06. |
 | `condurre` (forces) | conduct | D444. NM II.12 .06. "Lead" stays `menare`'s (D313). |
 | `distinzione` | distinction | NM II.12 .05; FG II.12 .01, .02 (`per distinzione`), the hinge of the reply. |
+
+## Added from the II.13 pair (2026-11-21)
+
+| Italian | English | Note |
+|---|---|---|
+| `fraude`; `fraudolento` | fraud; fraudulent | D452. NM II.13 rubric and ×6; FG II.13 ×8. Kept although the English word now names a crime: Guicciardini's reply turns on what `fraude` covers, every craft or dissimulation or only `quella che è proprio fraude`. Kept apart from `inganno` deceit (D374) and `dolo` guile. |
+| `forza` (singular) | force | D452. NM II.13 rubric, ×5; FG II.13 `la forza sola`. `forza aperta`, open force. With `forze` (above). |
+| `fortuna` (estate, condition) | fortune | D452. NM II.13 rubric, .01 ×2, .02; FG II.13 ×3. `piccola` / `bassa` / `infima` small / low / lowest; `gran`, `grande` / `alta` great / high. |
+| `venire` / `pervenire` / `salire` | come / arrive at / climb | D452. NM II.13 rubric, .01, .02, .05; FG II.13 `salga`, `pervenire alla grandezza`. Kept apart in both authors. |
+| `aperto` / `coperto`; `scoprire` | open / covered; uncover | D452. NM II.13 .02, .05; FG II.13 `scoprendo`, `ebbono scoperto`. One root across the pair. |
+| `stimare` | esteem | D452. NM II.13 .01 `Io stimo`. With `riputare` deem (D259) and `giudicare` judge. |
+| `astuzia` | craft | D452, with `astutamente` craftily (D52). NM II.12 .03; FG II.13. |
+| `simulazione` / `dissimulazione` | simulation / dissimulation | D452. FG II.13: pretending against concealing, kept apart. |
+| `dolo`; `doloso` | guile; guileful | D452. FG II.13. Kept apart from `fraude` and `inganno`. |
+| `industria`, `industrie` | industry, industries | D452. FG II.13 ×2: diligence and contrivance. |
+| `avvedersi` (NM) / `accorgersi` (FG) | perceive / perceive | D452, a recorded collapse. NM II.13 .03, FG II.13: the collapse carries Guicciardini's contradiction. |
+| `compagni` (Rome's allies) | companions | D452. NM II.13 .03 `farsi compagni`; the Latin *socii*. |
+| `sorte` | lot | D452. NM II.13 .03 `per sorte o per elezione`. |
+| `costringere` | constrain | D452. NM II.13 .03; kept apart from `necessitare`. |
+| `domare` | subdue | D452. NM II.13 .03 ×2. |
+| `sentire` (a name, arms) | feel | D452. NM II.13 .04 ×2: the far-off princes hear of the name, the near peoples feel the arms; one verb kept for the echo. |
+| `muovere` (war) | move | D452. NM II.13 .04 ×3. |
+| `congiurare`; `accordo` | conspire; accord | D452. NM II.13 .03, .04. |
+| `Consiglio` (a body) | council | D452. NM II.13 .04, the Latins'; a sense split from `consiglio` counsel (D444). |
+| `vituperevole` | vituperable | D452. NM II.13 .05; a recorded collapse with `vituperabile` (D186); `vituperoso` stays "disgraceful" (D373). |
+| `confederazione`; `patto` | confederation; pact | D452. FG II.13. |
+| `tollerare` | tolerate | D452. FG II.13. |
+| `impotente` | impotent | D452. FG II.13: without power, against `potente` (D06). |
+| `condurre`, `condursi` (of men) | conduct, conduct oneself | D452, extending D444 beyond forces. FG II.13 ×2. "Lead" stays `menare`'s (D313). |
+| `difficilmente` | with difficulty | D452. FG II.13; kept apart from `facilmente` readily (D27). |
+| `rarissime volte` | most rarely | D452. FG II.13 ×2, the superlative kept, against Machiavelli's `rado`, seldom. |
+| `non dico` (FG) | I do not say | D452. FG II.13 ×2: a refusal of a word, not of a claim. |
+| `insino dal principio` / `da principio` | from the very beginning / from the beginning | D454. FG II.13. |
+| `tratto`; `intento`; `disputabile`; `instrumento` | stroke; intent; disputable; instrument | D452. FG II.13 .01. |
+| `etiam` | even | FG I.3, I.16, II.12; NM II.13 .05 and FG II.13 (D453): one English word in both authors; "also" considered at NM .05. |
