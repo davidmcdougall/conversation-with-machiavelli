@@ -1,0 +1,44 @@
+source_unit_id: FG-CONS.2.13
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-II13-D001
+    locator: FG-CONS.2.13.01
+    class: emendation
+    witness_1857: "che si usa eltam sanza dolo; molti cha hanno; acquistato ragni; la ambizione sna; se e Romani feciona; ai Latini cha potettono; insino a tonto; speranza potera contendere"
+    witness_1933: "etiam; che; regni; sua; feciono; che; tanto; potere"
+    established: "e[ti]am; ch[e]; r[e]gni; s[u]a; fecion[o]; ch[e]; t[a]nto; poter[e]"
+    publish_as_variant_note: true
+    rationale: "Letters the scan breaks (e/a, o/a, u/n, and the t and i of `etiam`), seen printed by both readers; none of the printed forms construes. Emended from the 1933 edition and bracketed (D68, D450)."
+  - id: FG-CONS-II13-D002
+    locator: FG-CONS.2.13.01
+    class: emendation
+    witness_1857: "l'avere nome di fraudolenta"
+    witness_1933: "l'avere nome di fraudulento"
+    established: "fraudolent[o]"
+    publish_as_variant_note: true
+    rationale: "Read by both readers, one doubting it against `fraudolento`. The feminine agrees with nothing; the name is of the one who deceives. Emended in Canestrini's spelling on the recommendation, open for David (O46)."
+  - id: FG-CONS-II13-D003
+    locator: FG-CONS.2.13.01
+    class: ruled_reading
+    witness_1857: "Fu anche prudenza quella de' Romani, non fraude"
+    witness_1933: "Fu adunche prudenzia quella de' romani, non fraude"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "`anche`, also, against `adunche`, therefore: the 1933 makes the sentence a conclusion from the Latins' case, Canestrini an addition to it. Read by both readers without doubt; Canestrini construes. Kept (D38, D450)."
+  - id: FG-CONS-II13-D004
+    locator: FG-CONS.2.13.01
+    class: pointing
+    witness_1857: "grandissimi Di questi; fortuna⟨.|∅⟩ Ma; servitu⟨,|;⟩ ma; romano⟨.|∅⟩ Fu"
+    witness_1933: "grandissimi. Di questi; fortuna. Ma; servitù; ma; romano. Fu"
+    established: "grandissimi. (C001, D67); fortuna.; servitù;; romano."
+    publish_as_variant_note: false
+    rationale: "Pointing doubtful to both or missing before a capital, read with the 1933 edition (D110, D67, D450); no stop at the unit's end (D40)."
+  - id: FG-CONS-II13-D005
+    locator: FG-CONS.2.13.01
+    class: heading
+    witness_1857: "CONSIDERAZIONE SUL CAPITOLO XIII / Che si viena di bassa a gran fortuna piu con la fraude. / che con la forza"
+    witness_1933: "CAPITOLO XIII / [Che si viene di bassa a gran fortuna più con la fraude che con la forza.]"
+    established: "Considerazione sul capitolo XIII / Che si viene di bassa a gran fortuna più con la fraude, che con la forza"
+    publish_as_variant_note: true
+    rationale: "Canestrini's heading without `del libro II`, as printed (D443). His rubric's `viena` and the stop after `fraude`, which both readers see and prefer, read with Machiavelli's 1824 rubric and the 1933 edition; `piu` accented by DEC-009; no stop (D451, as D430, D440)."

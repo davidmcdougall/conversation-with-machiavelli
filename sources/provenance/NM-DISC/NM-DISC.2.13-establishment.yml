@@ -1,0 +1,32 @@
+source_unit_id: NM-DISC.2.13
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-032
+passes:
+  - {id: A, performed: 2026-11-21, file: sources/coldpass/NM-DISC.2.13-passA.md, note: "subagent; page images only (350 ppi, whole page and thirds cut in pixels, sizes and checksums verified before dispatch), own image, work and output folders, forbidden every other path (D370); full chapter"}
+  - {id: B-sample, performed: 2026-11-21, file: sources/coldpass/NM-DISC.2.13-passB-sample.md, note: "subagent; separate folders; the D302 sample page, p. 262, chosen and recorded after pass A and the Giglio read, with five line crops of p. 261 (the four 1554 differences there and pass A's one doubt between words), not told which word"}
+  - {id: B, performed: 2026-11-21, file: sources/coldpass/NM-DISC.2.13-passB.md, note: "subagent; separate folders; pp. 260-261 whole, after the fifth crop came back preferring the other alternative at a mark all its readers doubted (D448)"}
+collation: sources/coldpass/COLLATION-2026-11-21-II13.md
+collation_result: "605 words in pass A (p. 260 188, p. 261 259, p. 262 158); pass B read p. 262 as the D302 sample and pp. 260-261 whole, 606 by its own counts: identical word for word after Class A but the split `⟨ctiam|etiam⟩` in the Latin (p. 262 l. 13), read `etiam` (D449). The mark over `invidia ⟨e|è⟩ questo` (p. 261 l. 30) doubted by all three readers, both full readers preferring `e`: the conjunction (D449, as D303). Against the 1554: the whole words kept (D449)."
+boundaries: "printed pp. 260-262; p. 260 opens with the last three lines of II.12 (`... ciascuno nel suo grado, si difenderà meglio.`), then CAPITOLO XIII and the two-line italic rubric; enlarged initial I; one block; no notes; the Latin of Livy 8.4 in italic at p. 262 ll. 12-14; ends p. 262 l. 19 `come fu questa de'Romani.`; CAPITOLO XIV follows on p. 262"
+heading: "CAPITOLO XIII"
+rubric_check: "1824: `Che si viene di bassa a gran fortuna più con la fraude, che con la forza.` (A and B alike, without doubt). Canestrini's rubric over the reply agrees word for word but for its broken letters; the 1554 heads the chapter `CHE SI VIENE DI BASSA A gran fortuna piu con la fraude, che con la forza. Cap. XIII.` (D451)"
+interventions: []
+emendations: []
+procedure:
+  - {id: D448, note: "Sample page p. 262 (158 words; every page eligible, a fifth of 605 being 121), with the most word-level 1554 differences per word (p. 260 none, p. 261 four, p. 262 six); five line crops of p. 261. Sample and four crops agree with pass A; the fifth, a common doubt, came back with the other preference, and pp. 260-261 were read whole by pass B."}
+readings:
+  - {locus: "NM-DISC.2.13.04 `invidia e questo timore`", passes: "doubtful to A, B and the crop reader (a dot over the e, not a grave); A and B prefer `e`, the crop reader `è`", witness_1554: "inuidia,et queſto timore", disposition: "e, D449 (2026-11-21, by precedent: D303): only the conjunction construes; the 1554 prints `et`"}
+  - {locus: "NM-DISC.2.13.04 `Nam si etiam nunc`", passes: "A ⟨ctiam|etiam⟩ (a c-shaped first letter), B `etiam` without doubt", witness_1554: "Nã ſi etiã nunc", disposition: "etiam, D449 (2026-11-21, by precedent: D406): a split at a damaged sort, two forms of one word"}
+  - {locus: "NM-DISC.2.13.02-.05 the whole-word differences: `constituito` (.02), `messer Bernabò` (.02), `all'intorno` (.03), `longinqui` (.04), `essi` (.04), `stati innanzi difesi` (.04), `questa guerra` (.04), `etiam della fraude` (.05), `come fu questa` (.05); the 1554's Italian gloss after the Latin (.04)", passes: "A and B, without doubt", witness_1554: "`poſto`; `M.Bernardo`; `a l'incontro`; `lontani`; `eße`; `ſtati poco inanzi difeſi`; `quella guerra`; `etiãdio`; `come fu di queſta`; `Cioè Percioche ſe hora etiãdio ſotto ombra di pace poßiamo ſopportar la ſeruitu.`", disposition: "kept, D449 (2026-11-21, by precedent: D38): the 1824 construes at each; variant notes, translator's notes where the sense moves"}
+comparison_collation: >
+  Done 2026-11-21 against the 1554 extract (fol. 107v-108v). A cold reader
+  transcribed the Giglio leaves from the page images
+  (sources/coldpass/NM-DISC.2.13-1554.md); no damage, no text lost (D415
+  not needed). The transcript was collated by word against both 1824
+  passes after spelling normalisation. Differences are in
+  sources/comparisons/NM-DISC/NM-DISC.2.13-witness-disagreements.yml.
+normalisation_notes: "Class A only: accents (`purchè` → `purché`, `nè` → `né`, `perchè` → `perché`, `potè` → `poté`); elision closed up (`d' infima`, `all' intorno`, `dell' armi`, `l' armi`); the space restored after the apocopated `ne'`, `de'` where the impression closes it (`ne'principj`, `de'Romani`); the gaps inside `Camp ani`, `n ome`, `Ro mani` read as spacing; spaces before punctuation removed; line-end hyphens removed. `Imperj`, `principj`, `necessarj`, `tutt'i` as printed."

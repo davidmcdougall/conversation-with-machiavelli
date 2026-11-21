@@ -1,0 +1,45 @@
+source_unit_id: FG-CONS.2.13
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-032
+responds_to: NM-DISC.2.13
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. Canestrini's note on p. 66 (keyed after `fraude.`, on Xenophon's Cyropaedia, Cyaxares, and Giovanni Galeazzo and Bernabò) is his commentary and is not carried."
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38); errors are emended from Palmarocchi and bracketed (D68, D126)."
+passes:
+  - {id: A, performed: 2026-11-21, file: sources/coldpass/FG-CONS.2.13-passA.md, note: "subagent; page images only (native 600 ppi rendered at 1200, the whole page and halves cut in pixels, sizes and checksums verified before dispatch), own image, work and output folders, forbidden every other path (D370)"}
+  - {id: B, performed: 2026-11-21, file: sources/coldpass/FG-CONS.2.13-passB.md, note: "subagent; same images, separate folders"}
+collation: sources/coldpass/COLLATION-2026-11-21-II13.md
+collation_result: >
+  318 and 319 words (A: p. 66 187, p. 67 130; B: 188, 131; the difference
+  is A counting the unspaced `d'in-dustria` as one), the body tokens
+  identical after preferred readings but two splits, `⟨eltam|etiam⟩`
+  (p. 66 l. 2) and `⟨sna|sua⟩` (p. 66 l. 11), where both readers see the
+  printed letters: emended `e[ti]am`, `s[u]a` (D450, as D439). Six non-words
+  both readers prefer as printed, emended (D450, as D381, D396).
+  `fraudolenta` emended `fraudolent[o]` on the recommendation (O46, open).
+  Pointing doubtful to both read with the 1933 edition (D110); one stop
+  supplied (D67); no stop at the unit's end (D40).
+witness_independence_check: "SCOPE §7. Neither pass carries a Palmarocchi word-reading where Canestrini differs: both have `il mancamento`, `trovino`, `e imperii`, `arti`, `prudenza` (twice), `ai Latini`, `il trovarsi`, `il fine`, `il quale`, `populo`, `anche`, `fraudolenta`, against the 1933 `el mancamento`, `truovino`, `ed imperi`, `arte`, `prudenzia`, `a' latini`, `el trovarsi`, `el fine`, `el quale`, `popolo`, `adunche`, `fraudulento`. At both splits the reader preferring the word saw and reported the printed letters. The passes read Canestrini."
+boundaries: "printed pp. 66-67; heading CONSIDERAZIONE SUL CAPITOLO XIII at the head of p. 66, without `del libro II` (the L of CAPITOLO broken), then a two-line rubric in smaller type; one indented paragraph; ends p. 67 l. 14 `di conseguire gli intenti suoi`, only a faint trace after it; CONSIDERAZIONE SUL CAPITOLO XIV follows on p. 67"
+heading: "CONSIDERAZIONE SUL CAPITOLO XIII, without `del libro II`, set in the unit's `heading` front-matter (D443)"
+rubric: "Che si ⟨viena|viene⟩ di bassa a gran fortuna ⟨piu|più⟩ con la fraude⟨.|,⟩ / che con la forza⟨.|∅⟩ (A and B alike, each preferring the printed `viena` and the stop after `fraude`): read `viene`, `fraude,` with the 1824 rubric and the 1933 edition; `più` by DEC-009; no stop (D451, as D430, D440)"
+corrections:
+  - {id: FG-CONS-II13-C001, locator: FG-CONS.2.13.01, was: "acquistato regni e imperii grandissimi Di questi", now: "acquistato r[e]gni e imperii grandissimi. Di questi", evidence: "No stop visible to either reader (both ⟨∅|.⟩, preferring none); a capital follows; the 1933 edition prints one. D67."}
+emendations:
+  - {id: FG-CONS-II13-E001, rule: D450, status: ruled_D450, locator: FG-CONS.2.13.01, printed: "che si usa eltam sanza dolo", established: "che si usa e[ti]am sanza dolo", witness_1933: "che si usa etiam sanza dolo", note: "A split: pass A prefers the printed `eltam`, naming `etiam`; pass B prefers `etiam`, seeing e-l-t-a-m printed. Not a word. Emended under D68, as D439."}
+  - {id: FG-CONS-II13-E002, rule: D450, status: ruled_D450, locator: FG-CONS.2.13.01, printed: "credo si trovino molti cha hanno; ai Latini cha potettono", established: "molti ch[e] hanno; ai Latini ch[e] potettono", witness_1933: "che; che", note: "Both readers read the printed a in each and give `che` as the alternative. Emended under D68, as D381."}
+  - {id: FG-CONS-II13-E003, rule: D450, status: ruled_D450, locator: FG-CONS.2.13.01, printed: "acquistato ragni e imperii", established: "acquistato r[e]gni e imperii", witness_1933: "regni ed imperi", note: "Both readers prefer the printed a, naming `regni`. Does not construe. Emended under D68, as D381, D396."}
+  - {id: FG-CONS-II13-E004, rule: D450, status: ruled_D450, locator: FG-CONS.2.13.01, printed: "la ambizione sna", established: "la ambizione s[u]a", witness_1933: "sua", note: "A split: pass A prefers the printed n-shaped letter, pass B `sua`, seeing an n. Emended under D68, as D439."}
+  - {id: FG-CONS-II13-E005, rule: D450, status: ruled_D450, locator: FG-CONS.2.13.01, printed: "se e Romani feciona tali patti", established: "se e' Romani fecion[o] tali patti", witness_1933: "feciono", note: "Both readers prefer the printed a, naming `feciono`, Canestrini's form (II.12 `feciono` ×2). Emended under D68, as D381."}
+  - {id: FG-CONS-II13-E006, rule: D450, status: ruled_D450, locator: FG-CONS.2.13.01, printed: "aspettare insino a tonto", established: "aspettare insino a t[a]nto", witness_1933: "insino a tanto", note: "Both readers prefer the printed o, naming `tanto`. Does not construe. Emended under D68, as D439."}
+  - {id: FG-CONS-II13-E007, rule: D450, status: ruled_D450, locator: FG-CONS.2.13.01, printed: "ebbono speranza potera contendere", established: "ebbono speranza poter[e] contendere", witness_1933: "potere", note: "Both readers prefer the printed a, naming `potere`. Does not construe. Emended under D68, as D381."}
+  - {id: FG-CONS-II13-E008, rule: O46, status: open_O46, locator: FG-CONS.2.13.01, printed: "l'avere nome di fraudolenta", established: "l'avere nome di fraudolent[o]", witness_1933: "fraudulento", note: "Read `fraudolenta` by both, A without doubt, B doubting it against `fraudolento`. The feminine agrees with nothing in the clause; the scan breaks o/a throughout. Emended under D68 on the recommendation, in Canestrini's spelling; open for David (O46). Not checked on the page image."}
+readings:
+  - {locus: "FG-CONS.2.13.01 `Fu anche prudenza`", passes: "both, without doubt", witness_1933: "Fu adunche prudenzia", disposition: "kept, D450 (2026-11-21, by precedent: D38): Canestrini construes; variant note"}
+  - {locus: "FG-CONS.2.13.01 `cognosciuto`, `può`, `buono`, `toglie`, `instruisca`, `imperii`, `essere`, `bassa`, `si`, `sia`, `instrumento`", passes: "doubtful to one or both, both preferring the word at the scan's s/a, u/n, li/h breaks", witness_1933: "the same words", disposition: "readings, as printed (D450)"}
+  - {locus: "FG-CONS.2.13.01 pointing: `fortuna.`, `servitù;`, `romano.`", passes: "doubtful to both", witness_1933: "fortuna.; servitù;; romano.", disposition: "D450: read with the 1933 edition (D110); `grandissimi.` supplied (C001, D67); no stop at the unit's end (D40)"}
+not_supplied: ["the terminal stop after `suoi` (D40)"]
+normalisation_notes: "Class A: accents (`nè` → `né`, `perchè` → `perché`, `servitu` → `servitù`, rubric `piu` → `più`); the apostrophe of the apocopated article supplied (`e Romani` → `e' Romani`, `e Latini` → `e' Latini`); `de'Ro-mani` spaced, `l' avere` closed; `d'in-dustria` with the elision apostrophe (one reader sees none, the other a trace); line-end hyphens removed; Canestrini's note call removed with his note."

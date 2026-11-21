@@ -1,0 +1,60 @@
+source_unit_id: NM-DISC.2.13
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-II13-D001
+    locator: NM-DISC.2.13.02
+    class: ruled_reading
+    witness_1824: "Né credo che si trovi mai alcuno constituito in bassa fortuna (.02) ... a messer Bernabò suo zio (.02)"
+    witness_1554: "Ne credo,che ſi truoui mai alcuno poſto in baſſa fortuna ... a M.Bernardo ſuo zio"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "`constituito`, constituted, against `posto`, placed; the 1554 names Galeazzo's uncle `Bernardo`, the 1824 Bernabò, Bernabò Visconti, whom Gian Galeazzo seized in 1385. Read by both 1824 readers without doubt. Kept (D38, D449)."
+  - id: NM-DISC-II13-D002
+    locator: NM-DISC.2.13.03
+    class: ruled_reading
+    witness_1824: "come furono i Latini, ed altri Popoli all'intorno (.03) ... ai Romani con i Principi longinqui (.04)"
+    witness_1554: "come furono i Latini , et altri popoli a l'incontro ... a i Romani co i Prencipi lontani"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "`all'intorno`, round about, the peoples near Rome, against `a l'incontro`, on the contrary or over against; `longinqui` against the plainer `lontani`, as at II.12 (NM-DISC-II12-D003). Read by both 1824 readers without doubt. Kept (D38, D449)."
+  - id: NM-DISC-II13-D003
+    locator: NM-DISC.2.13.04
+    class: ruled_reading
+    witness_1824: "le colonie che essi avevano in Lazio, insieme con i Campani stati innanzi difesi ... E mossero questa guerra i Latini"
+    witness_1554: "le Colonie, che eße haueuano in Latio inſieme co i Cãpani ſtati poco inanzi difeſi ... Et moſſono quella guerra i Latini"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "`essi`, the Latins' colonies, against `esse`, the colonies' own holding; the 1554 adds `poco`, a little before; `questa` against `quella` guerra. Read by both 1824 readers without doubt. Kept (D38, D449)."
+  - id: NM-DISC-II13-D004
+    locator: NM-DISC.2.13.04
+    class: ruled_reading
+    witness_1824: "*Nam si etiam nunc sub umbra foederis aequi servitutem pati possumus, etc.* Vedesi pertanto"
+    witness_1554: "Nã ſi etiã nunc ſub umbra fœderis æqui ſeruitutẽ pati poſſumus ,etc. Cioè Percioche ſe hora etiãdio ſotto ombra di pace poßiamo ſopportar la ſeruitu. Vedeſi ꝑ tãto"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The 1554 follows the Latin with an Italian rendering, `that is: for if even now under the shadow of peace we can bear servitude`; the 1824 prints the Latin alone. Not carried. In the Latin, pass A saw a c-shaped first letter in `etiam` (⟨ctiam|etiam⟩), pass B `etiam`; the 1554 prints `etiã`: read `etiam` (D449, as D406)."
+  - id: NM-DISC-II13-D005
+    locator: NM-DISC.2.13.05
+    class: ruled_reading
+    witness_1824: "non essere mancati etiam della fraude (.05) ... come fu questa de' Romani (.05)"
+    witness_1554: "non eſſere mãcati etiãdio della fraude ... come fu di queſta de Romani"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The 1824's Latin `etiam` against the 1554's Italian `etiandio`, the word Guicciardini's reply takes up (`etiam sanza dolo`); the 1554 adds `di`. Read by both 1824 readers without doubt. Kept (D38, D449)."
+  - id: NM-DISC-II13-D006
+    locator: NM-DISC.2.13.04
+    class: ruled_reading
+    witness_1824: "tanto poté questa invidia e questo timore"
+    witness_1554: "tanto potè queſta inuidia,et queſto timore"
+    established: witness_1824
+    publish_as_variant_note: false
+    rationale: "A dot over the e doubted by all three 1824 readers, both full readers preferring `e`; only the conjunction construes, and the 1554 prints `et`. The conjunction (D449, as D303)."
+  - id: NM-DISC-II13-D007
+    locator: NM-DISC.2.13.01
+    class: heading
+    witness_1824: "CAPITOLO XIII / Che si viene di bassa a gran fortuna più con la / fraude, che con la forza."
+    witness_1554: "CHE SI VIENE DI BASSA A / gran fortuna piu con la fraude , che con la / forza. Cap. XIII."
+    established: witness_1824
+    publish_as_variant_note: false
+    rationale: "The same sentence but for spelling. Canestrini's rubric over the reply agrees with the 1824 but for broken letters (D451)."
