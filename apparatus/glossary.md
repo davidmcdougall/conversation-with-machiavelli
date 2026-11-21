@@ -866,3 +866,44 @@ last sentence answers Machiavelli's first move.
 | `insino dal principio` / `da principio` | from the very beginning / from the beginning | D454. FG II.13. |
 | `tratto`; `intento`; `disputabile`; `instrumento` | stroke; intent; disputable; instrument | D452. FG II.13 .01. |
 | `etiam` | even | FG I.3, I.16, II.12; NM II.13 .05 and FG II.13 (D453): one English word in both authors; "also" considered at NM .05. |
+
+## Added from the II.14 pair (2026-11-21)
+
+| Italian | English | Note |
+|---|---|---|
+| `umiltà` / `superbia`; `pazienza` / `arroganza` | humility / pride; patience / arrogance | D464. NM II.14 rubric and .01; FG II.14 rubric. `superbia` as NM I.40. The chapter carries the rubric's pair as the case's pair. |
+| `fare fede` | bear witness | D464. NM II.14 .01 ×2. |
+| `Istorico` (Livy) | Historian | D464. NM II.14 .01, capitalised as printed; names.md. |
+| `prefato` | aforesaid | D464. NM II.14 .01. |
+| `Concilio` / `Consiglio` (a body) | council / council | D464, a recorded collapse. NM II.14 .01; NM II.13 .04 (D452). |
+| `dolersi` | complain | D464. NM II.14 .01. |
+| `irritare` | irritate | D464. NM II.14 .01 ×2. |
+| `animoso` | spirited | D464. NM II.14 .01, with `animosamente` (NM I.30) and `animo`. |
+| `scoprire`, `scoprirsi`, `scoperto` | uncover, uncover oneself, uncovered | D464, extending D452. NM II.14 .01, .02, .03, .04: of men, of baseness, of a longing, of a war. |
+| `più presto` (without `che`) | sooner | D464. NM II.14 .01. D135's "rather ... than" stays for the comparison (FG II.14). |
+| `termine` (a point reached: `in termine che`) | term | D464. NM II.14 .02. A third sense beside D325's bearings (of conduct) and D401's terms (of a comparison). |
+| `condursi` (of a thing) | be conducted | D464, extending D444, D452. NM II.14 .02 `sendosi condotta la cosa`. |
+| `lasciare` (a thing, a place) | leave | D464. NM II.14 .02 ×4; FG II.14 `etiam lasciando`. |
+| `d'accordo`; `accordare` | by accord; come to [an] accord | D464. NM II.14 .02; FG II.14. With `accordo` accord (D452); kept apart from `concordare`, accord (D422). |
+| `onorevolmente` | honourably | D464. NM II.14 .02. |
+| `meglio` | better | D464. NM II.14 .02 `egli è meglio ... che`; FG II.14 `meglio sia ... che`, the echo. |
+| `il più delle volte` | most times | D464. NM II.14 .02. |
+| `saldo` | firm | D464. NM II.14 .02. |
+| `accendersi` | be kindled | D464. NM II.14 .02, as Livy's *exarsisse*. |
+| `vile` | base | D464. NM II.14 .02; FG II.14 `fare vile te`. The adjective of `viltà`, baseness (D444). |
+| `insolente` | insolent | D464. NM II.14 .01; FG II.14 `insolente lo inimico`. With `insolenza` (NM I.2). |
+| `debole` | weak | D464. NM II.14 .02. |
+| `difensore` | defender | D464. NM II.14 .02. |
+| `cominciare` | begin | D464. NM II.14 .03 `ti comincia a stimare`; FG II.14 `il cominciare`, the echo. |
+| `rendere` (a thing held) | render | D464. NM II.14 .04: give back. |
+| `riguadagnare` | regain | D464. NM II.14 .04, of `guadagnare` gain (FG I.26). |
+| `smembrare` | dismember | D464. NM II.14 .04. |
+| `confederato` | confederate | D464. NM II.14 .04, with `confederazione` (D452). |
+| `importare` (impersonal) | matter | D464. FG II.14. |
+| `distinguere` | distinguish | D464. FG II.14 `bisogna distinguere`, with `distinzione` (D444). |
+| `tirarsi addosso` | pull upon oneself | D464. FG II.14. |
+| `portare` (of time) | bring | D464. FG II.14 `il tempo può portare degli accidenti`. D374's "bear" stays for danger borne. |
+| `difficultà` | difficulty | D464. FG II.14, with `difficilmente` (D452). |
+| `largamente` | at large | D464. FG II.14. |
+| `nella persona di` | in the person of | D464. FG II.14 (Thucydides, Pericles). |
+| `mal volentieri` | unwillingly | D464. FG II.14 `che mal volentieri si debbe cedere`: it governs the obligation, one must be loath to yield; set first in the English, as in the Italian, to read over "must". |

@@ -29,7 +29,7 @@ first time it is italicised.
 | `Periochae` | notes (Livy) |
 | `spectare` | FG I.9 note (D175) |
 | `patres` | NM I.9 commentary |
-| `etiam` | FG I.3, FG I.16 note, FG II.12 .02, NM II.13 .05, FG II.13 .01 |
+| `etiam` | FG I.3, FG I.16 note, FG II.12 .02, NM II.13 .05, FG II.13 .01, FG II.14 .01 |
 | `latebrae` | NM I.16 note |
 | `verbi gratia` | FG I.23 |
 | `virtus` | NM I.24 note and commentary (Livy 1.26) |
@@ -90,3 +90,10 @@ first time it is italicised.
 | `socii` | NM II.13 note |
 | `ingenuus` | NM II.13 note |
 | `Cyropaedia` | NM II.13 notes and commentary, FG II.13 commentary (Xenophon) |
+| `Tentastis patientiam negando militem: quis dubitat exarsisse eos? Pertulerunt tamen hunc dolorem. Exercitus nos parare adversus Samnites foederatos suos audierunt, nec moverunt se ab urbe. Unde haec illis tanta modestia, nisi a conscientia virium, et nostrarum, et suarum?` | NM II.14 .01 (Livy 8.4.6-7) |
+| `Tentastis patientiam ... et nostrarum, et suarum?` | NM II.14 note |
+| `exarsisse` | NM II.14 notes |
+| `foederatos` | NM II.14 note |
+| `patientia` | NM II.14 note |
+| `modestia` | NM II.14 note |
+| `conscientia virium` | NM II.14 note |

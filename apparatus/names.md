@@ -280,3 +280,7 @@ the original.
 | `Annio Setino Pretore latino` | Annius Setinus, Latin praetor | NM II.13 .04; Annius of Setia (Livy 8.3.9, the editor's note) |
 | `Tito Livio` | Livy | NM II.13 .04, as NM I.47 |
 | `Alessandro Magno`; `Cesare` | Alexander the Great; Caesar | FG II.13, as NM I.58, NM I.10 |
+| `lo Istorico nostro` | our Historian | NM II.14 .01: Livy; capitalised as printed |
+| `Annio Pretore Latino` | Annius, Latin praetor | NM II.14 .01, `il prefato`, as NM II.13 .04 |
+| `Tucidide` | Thucydides | FG II.14 |
+| `Pericle`; `Ateniesi`; `Lacedemonii` | Pericles; the Athenians; the Lacedaemonians | FG II.14, as NM II.10, NM I.28, FG I.2 |
