@@ -356,6 +356,18 @@ def emphasized(text, notes_raw):
     return out
 
 
+def summary_html(text):
+    """The editor's summary: escaped, with markdown *emphasis* as italic
+    (Latin where apparatus/latin.md lists it, otherwise Italian)."""
+    out = html.escape(text)
+    return re.sub(r'\*([^*]+)\*', lambda m: f'<i lang="{term_lang(m.group(1))}">{m.group(1)}</i>', out)
+
+
+def summary_plain(text):
+    """The editor's summary as plain text, for the meta description."""
+    return re.sub(r'\*([^*]+)\*', r'\1', text)
+
+
 XREF = re.compile(r'\[\[((?:NM-DISC|FG-CONS)\.[0-9a-z]+\.[0-9a-z]+\.\d+)\]\]')
 
 
@@ -837,7 +849,7 @@ def build_pair(pair, published):
     <p class="eyebrow">A Conversation with Machiavelli · {eyebrow}</p>
     <h1>{html.escape(title)}
       <span class="sub">{html.escape(sub_label(pair))}</span></h1>
-    <p class="standfirst"><span class="sf-label">Editor's summary</span> {html.escape(standfirst)}</p>
+    <p class="standfirst"><span class="sf-label">Editor's summary</span> {summary_html(standfirst)}</p>
 
     <div class="pairing">
       <div class="nm-side">
@@ -916,7 +928,7 @@ def build_pair(pair, published):
     pairs_dir = ROOT / "site/pairs"
     pairs_dir.mkdir(parents=True, exist_ok=True)
     (pairs_dir / f"{pair}-content.html").write_text(CONTENT, encoding="utf-8")
-    (pairs_dir / f"{pair}.html").write_text(wrap(CONTENT, standfirst or title), encoding="utf-8")
+    (pairs_dir / f"{pair}.html").write_text(wrap(CONTENT, summary_plain(standfirst) or title), encoding="utf-8")
     print(f"site/pairs/{pair}.html", (pairs_dir / f"{pair}.html").stat().st_size, "bytes")
     print("paragraphs:", len(nm_it), "NM /", len(fg_it), "FG — alignment check passed")
 
