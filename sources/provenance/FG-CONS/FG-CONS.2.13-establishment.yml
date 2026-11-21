@@ -19,7 +19,7 @@ collation_result: >
   (p. 66 l. 2) and `⟨sna|sua⟩` (p. 66 l. 11), where both readers see the
   printed letters: emended `e[ti]am`, `s[u]a` (D450, as D439). Six non-words
   both readers prefer as printed, emended (D450, as D381, D396).
-  `fraudolenta` emended `fraudolent[o]` on the recommendation (O46, open).
+  `fraudolenta` emended `fraudolent[o]` (D456, ruling O46).
   Pointing doubtful to both read with the 1933 edition (D110); one stop
   supplied (D67); no stop at the unit's end (D40).
 witness_independence_check: "SCOPE §7. Neither pass carries a Palmarocchi word-reading where Canestrini differs: both have `il mancamento`, `trovino`, `e imperii`, `arti`, `prudenza` (twice), `ai Latini`, `il trovarsi`, `il fine`, `il quale`, `populo`, `anche`, `fraudolenta`, against the 1933 `el mancamento`, `truovino`, `ed imperi`, `arte`, `prudenzia`, `a' latini`, `el trovarsi`, `el fine`, `el quale`, `popolo`, `adunche`, `fraudulento`. At both splits the reader preferring the word saw and reported the printed letters. The passes read Canestrini."
@@ -36,7 +36,7 @@ emendations:
   - {id: FG-CONS-II13-E005, rule: D450, status: ruled_D450, locator: FG-CONS.2.13.01, printed: "se e Romani feciona tali patti", established: "se e' Romani fecion[o] tali patti", witness_1933: "feciono", note: "Both readers prefer the printed a, naming `feciono`, Canestrini's form (II.12 `feciono` ×2). Emended under D68, as D381."}
   - {id: FG-CONS-II13-E006, rule: D450, status: ruled_D450, locator: FG-CONS.2.13.01, printed: "aspettare insino a tonto", established: "aspettare insino a t[a]nto", witness_1933: "insino a tanto", note: "Both readers prefer the printed o, naming `tanto`. Does not construe. Emended under D68, as D439."}
   - {id: FG-CONS-II13-E007, rule: D450, status: ruled_D450, locator: FG-CONS.2.13.01, printed: "ebbono speranza potera contendere", established: "ebbono speranza poter[e] contendere", witness_1933: "potere", note: "Both readers prefer the printed a, naming `potere`. Does not construe. Emended under D68, as D381."}
-  - {id: FG-CONS-II13-E008, rule: O46, status: open_O46, locator: FG-CONS.2.13.01, printed: "l'avere nome di fraudolenta", established: "l'avere nome di fraudolent[o]", witness_1933: "fraudulento", note: "Read `fraudolenta` by both, A without doubt, B doubting it against `fraudolento`. The feminine agrees with nothing in the clause; the scan breaks o/a throughout. Emended under D68 on the recommendation, in Canestrini's spelling; open for David (O46). Not checked on the page image."}
+  - {id: FG-CONS-II13-E008, rule: D456, status: ruled_D456, locator: FG-CONS.2.13.01, printed: "l'avere nome di fraudolenta", established: "l'avere nome di fraudolent[o]", witness_1933: "fraudulento", note: "Read `fraudolenta` by both, A without doubt, B doubting it against `fraudolento`. The feminine agrees with nothing in the clause; the scan breaks o/a throughout. Emended under D68, in Canestrini's spelling: D456 (David, 2026-11-21, ruling O46). Not checked on the page image."}
 readings:
   - {locus: "FG-CONS.2.13.01 `Fu anche prudenza`", passes: "both, without doubt", witness_1933: "Fu adunche prudenzia", disposition: "kept, D450 (2026-11-21, by precedent: D38): Canestrini construes; variant note"}
   - {locus: "FG-CONS.2.13.01 `cognosciuto`, `può`, `buono`, `toglie`, `instruisca`, `imperii`, `essere`, `bassa`, `si`, `sia`, `instrumento`", passes: "doubtful to one or both, both preferring the word at the scan's s/a, u/n, li/h breaks", witness_1933: "the same words", disposition: "readings, as printed (D450)"}

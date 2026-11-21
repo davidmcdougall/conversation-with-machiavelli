@@ -1,0 +1,29 @@
+source_unit_id: NM-DISC.2.14
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-033
+passes:
+  - {id: A, performed: 2026-11-21, file: sources/coldpass/NM-DISC.2.14-passA.md, note: "subagent; page images only (350 ppi, whole page and thirds cut in pixels, sizes and checksums verified before dispatch), own image, work and output folders, forbidden every other path (D370); full chapter"}
+  - {id: B-sample, performed: 2026-11-21, file: sources/coldpass/NM-DISC.2.14-passB-sample.md, note: "subagent; separate folders; the D302 sample page, p. 264, chosen and recorded after pass A and the Giglio read, with eight line crops of p. 263 (the seven 1554 differences there), not told which word"}
+collation: sources/coldpass/COLLATION-2026-11-21-II14.md
+collation_result: "404 words in pass A (p. 262 41, p. 263 254, p. 264 109); pass B read p. 264 as the D302 sample and eight lines of p. 263: identical word for word after Class A (107 tokens on p. 264; every crop line as pass A). Pass B's four doubts are faint e crossbars, each read `e` (forze, pertanto, volere, detto). Against the 1554: the whole words kept (D459)."
+boundaries: "printed pp. 262-264; p. 262 opens with the end of II.13 (`... come fu questa de'Romani.`), then CAPITOLO XIV and the two-line italic rubric; enlarged initial V; one block; no notes; the Latin of Livy 8.4 in italic at p. 263 ll. 9-15; ends p. 264 l. 13 `fia sempre partito prudente.`; CAPITOLO XV follows on p. 264"
+heading: "CAPITOLO XIV"
+rubric_check: "1824: `Ingannansi molte volte gli uomini, credendo con la umiltà vincere la superbia.` (pass A, without doubt). Canestrini's rubric over the reply agrees word for word but for its broken letters; the 1554 heads the chapter `INGANNONSI MOLTE VOLte gli huomini,credendo con la humilità uincere la ſuperbia. Cap. XIIII.` (D463)"
+interventions: []
+emendations: []
+procedure:
+  - {id: D458, note: "Sample page p. 264 (109 words; a fifth of 404 is 81, so p. 263 and p. 264 eligible, p. 262 holding 41), with the most word-level 1554 differences per word (p. 262 none, p. 263 seven in 254, p. 264 four in 109); eight line crops of p. 263. Sample and crops agree with pass A word for word."}
+readings:
+  - {locus: "NM-DISC.2.14.01-.04 the whole-word differences: `Annio Pretore Latino` (.01), `nisi a conscientia` (.01), `mai un Principe debbe volere` (.02), `che tu non la possa lasciare` (.02), `che con la paura delle forze` (.02), `concesso quella` (.02), `quando ne avessi più` (.04), `per riguadagnarselo` (.04), `ancora che fusse già scoperta` (.04), `fia sempre partito prudente` (.04); the 1554's Italian rendering after the Latin (.01)", passes: "A and B (sample page or crop), without doubt", witness_1554: "`Pretorio`; `niſi conſciētia`; `mai uno prencipe non debbe uolere`; `che tu nō poſſa laſciare`; `che con paura delle forze`; `conceſſo quello`; `ne haueſſe piu`; `per riſguardarſelo`; `di gia ſcoperta`; `ſia ſempre`; `Voi col negar di dar loro ſoldati ... & le loro forze?`", disposition: "kept, D459 (2026-11-21, by precedent: D38): the 1824 construes at each; variant notes, translator's notes where the sense moves"}
+comparison_collation: >
+  Done 2026-11-21 against the 1554 extract (fol. 108v-109r). A cold reader
+  transcribed the Giglio leaves from the page images
+  (sources/coldpass/NM-DISC.2.14-1554.md); no damage, no text lost (D415
+  not needed). The transcript was collated by word against both 1824
+  passes after spelling normalisation. Differences are in
+  sources/comparisons/NM-DISC/NM-DISC.2.14-witness-disagreements.yml.
+normalisation_notes: "Class A only: accents (`Perchè` → `Perché`, `perchè` → `perché`); elision closed up (`gl’irritò`, `l’ arroganza`, `d’ accordo`, `dall’ altra`, `s’ intende`); the space restored after the apocopated `de'` (`de'Latini`); the space before `ai` (`a i`, at a line end) read as spacing; spaces before punctuation removed; line-end hyphens removed. `ajutarti`, `ajuterebbe`, `Istorico` as printed."

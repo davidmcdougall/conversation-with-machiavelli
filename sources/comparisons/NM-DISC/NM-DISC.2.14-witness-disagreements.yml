@@ -1,0 +1,44 @@
+source_unit_id: NM-DISC.2.14
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-II14-D001
+    locator: NM-DISC.2.14.01
+    class: ruled_reading
+    witness_1824: "le parole usate dal prefato Annio Pretore Latino nel medesimo Concilio"
+    witness_1554: "le parole uſate dal prefato Annio Pretorio Latino nel medeſimo concilio"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "`Pretore`, praetor, Annius' office as II.13 gives it, against `Pretorio`. Read by both 1824 readers without doubt. Kept (D38, D459)."
+  - id: NM-DISC-II14-D002
+    locator: NM-DISC.2.14.01
+    class: ruled_reading
+    witness_1824: "*Unde haec illis tanta modestia, nisi a conscientia virium, et nostrarum, et suarum?* Conoscesi pertanto"
+    witness_1554: "unde hæc illis tāta modeſtia,niſi conſciētia uirium et noſtrarū, & ſuarum? Voi col negar di dar loro ſoldati hauete tentato la pacienza de Romani, chi dubita, che eglino non ſi ſiano ſdegnati ? nondimeno hanno ſofferita la doglia. eßi hanno inteſo,che uoi apparecchiate le arme contra i Sanniti loro confederati. Ne ſi ſono moßi della citta.Perche ſtimate uoi che eßi ſiano diuenuti tanto modeſti,ſe non perche hanno conoſciute le noſtre & le loro forze? Conoſceſi per tanto"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The 1554 omits `a` in the Latin (Livy 8.4.6 has it) and follows the quotation with an Italian rendering, as at II.13 (NM-DISC-II13-D004); the 1824 prints the Latin alone. Read by both 1824 readers without doubt. The rendering is not carried (D38, D459)."
+  - id: NM-DISC-II14-D003
+    locator: NM-DISC.2.14.02
+    class: ruled_reading
+    witness_1824: "E però mai un Principe debbe volere mancare del grado suo (.02) ... che tu non la possa lasciare nel modo detto ... che con la paura delle forze ... concesso quella"
+    witness_1554: "Et pero mai uno prencipe non debbe uolere mācare del grado ſuo ... che tu nō poſſa laſciare nel modo detto ... che con paura delle forze ... conceſſo quello"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The 1554 doubles the negative (`mai ... non`, the same sense), omits the object `la` and the article before `paura`, and has `quello`, the thing conceded in general, for the 1824's `quella`, the thing (`la cosa`) the passage has been speaking of. Read by both 1824 readers without doubt. Kept (D38, D459)."
+  - id: NM-DISC-II14-D004
+    locator: NM-DISC.2.14.04
+    class: ruled_reading
+    witness_1824: "ma quando ne avessi più ... per riguadagnarselo, ancora che fusse già scoperta la guerra ... fia sempre partito prudente"
+    witness_1554: "ma quando ne haueſſe piu ... per riſguardarſelo, anhora che fuſſe di gia ſcoperta la guerra ... ſia ſempre partito prudente"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "`avessi`, second person, held with the chapter's `tu`, against `havesse`, third; `riguadagnarselo`, to win him back, against `risguardarselo`, which barely construes; the 1554 adds `di`; `fia`, will be, against `sia`, be (the long s and f). Read by both 1824 readers without doubt. Kept (D38, D459)."
+  - id: NM-DISC-II14-D005
+    locator: NM-DISC.2.14.01
+    class: heading
+    witness_1824: "CAPITOLO XIV / Ingannansi molte volte gli uomini, credendo / con la umiltà vincere la superbia."
+    witness_1554: "INGANNONSI MOLTE VOL- / te gli huomini,credendo con la humilità uince- / re la ſuperbia. Cap. XIIII."
+    established: witness_1824
+    publish_as_variant_note: false
+    rationale: "The same sentence but for spelling. Canestrini's rubric over the reply agrees with the 1824 but for broken letters (D463)."

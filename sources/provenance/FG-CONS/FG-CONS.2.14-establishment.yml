@@ -1,0 +1,36 @@
+source_unit_id: FG-CONS.2.14
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-033
+responds_to: NM-DISC.2.14
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. Canestrini's note on p. 67 (keyed after `in altro luogo,`: `Nel capitolo xxxiii del libro i`) is his commentary and is not carried; the cross-reference to Discourses I.33 is the editor's, in the commentary."
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38); errors are emended from Palmarocchi and bracketed (D68, D126)."
+passes:
+  - {id: A, performed: 2026-11-21, file: sources/coldpass/FG-CONS.2.14-passA.md, note: "subagent; page images only (native 600 ppi rendered at 1200, the whole page and halves cut in pixels, sizes and checksums verified before dispatch), own image, work and output folders, forbidden every other path (D370)"}
+  - {id: B, performed: 2026-11-21, file: sources/coldpass/FG-CONS.2.14-passB.md, note: "subagent; same images, separate folders"}
+collation: sources/coldpass/COLLATION-2026-11-21-II14.md
+collation_result: >
+  157 words each (p. 67 110, p. 68 47), the body tokens identical after
+  preferred readings but one split, `⟨periculosi|pericolosi⟩` (p. 67 l. 3),
+  both readers seeing an n-shaped letter after the c: read `periculosi`
+  (D462). `quello dello inimico` emended `quell[e]` (D461). Pointing read
+  alike kept against the 1933 (D110); the stop after `cedere` supplied
+  (D67); the printed stop at the end kept (D460).
+witness_independence_check: "SCOPE §7. Neither pass carries a Palmarocchi word-reading where Canestrini differs: both have `quello` (1933 `quelle`), `il tempo`, `periculo` ×2, `periculosa`, `il cominciare`, `il pigliare`, `Lacedemonii`, `condizioni`, against the 1933 `el tempo`, `pericolo`, `pericolosa`, `el cominciare`, `el pigliare`, `lacedemòni`, `condizione`; at the one split each reader reported the printed n-shape. The passes read Canestrini."
+boundaries: "printed pp. 67-68; heading CONSIDERAZIONE SUL CAPITOLO XIV at the middle of p. 67, below the end of the II.13 reply, without `del libro II`; a two-line rubric in smaller type; one indented paragraph; Canestrini's note (1) keyed after `luogo,`, at the foot of p. 67; ends p. 68 l. 6 `di poco momento.`; CONSIDERAZIONE SUL CAPITOLO XV follows on p. 68"
+heading: "CONSIDERAZIONE SUL CAPITOLO XIV, without `del libro II` (both readers), set in the unit's `heading` front-matter (D443, D463)"
+rubric: "Ingannansi molte volte gli uomini, credendo con la ⟨umiltà|umilità|umilta⟩ ⟨vincere|vineere⟩ la superbia⟨∅|.⟩ (A and B, both preferring `umiltà`, `vincere`, no stop; B also doubts `Ingannansi`, `gli`, `uomini` at broken sorts): read with the 1824 rubric; the 1933 `umilitá` in the variant note; no stop (D463, as D451)"
+corrections:
+  - {id: FG-CONS-II14-C001, locator: FG-CONS.2.14.01, was: "che mal volentieri si debbe cedere La quale ragione", now: "si debbe cedere. La quale ragione", evidence: "No stop visible to either reader (both ⟨cedere.|cedere⟩ with a wide space only); a capital follows; the 1933 edition prints one. D67."}
+emendations:
+  - {id: FG-CONS-II14-E001, rule: D461, status: ruled_D461, locator: FG-CONS.2.14.01, printed: "non sono pari a quello dello inimico", established: "non sono pari a quell[e] dello inimico", witness_1933: "pari a quelle dello inimico", note: "Read `quello` by both, the vowel without doubt (B doubting only u/n). The referent is `le forze tue`; the masculine agrees with nothing; the scan breaks e/o throughout. Emended under D68: D461 (David, 2026-11-21), as D456, D200. Not checked on the page image."}
+readings:
+  - {locus: "FG-CONS.2.14.01 `ne' casi periculosi`", passes: "a split: A ⟨periculosi|pericolosi|pericnlosi⟩, B ⟨pericolosi|pericnlosi⟩, both seeing an n-shaped letter after the c", witness_1933: "pericolosi", disposition: "periculosi, D462 (David, 2026-11-21): two forms of one word; the scan's u/n break; Canestrini's spelling three times in the reply (`periculo` ×2, `periculosa`), the 1933 normalising each; variant note"}
+  - {locus: "FG-CONS.2.14.01 `hai`, `distinguere`, `tanto`, `consigliò`, `quando`, and B's `quello` (u/n)", passes: "doubtful to one or both, both preferring the word at the scan's h/b, u/n, t/i breaks", witness_1933: "the same words", disposition: "readings, as printed (D460)"}
+  - {locus: "FG-CONS.2.14.01 `tôrti`", passes: "both, the accent doubtful between circumflex and grave", witness_1933: "tôrti", disposition: "`tòrti` by DEC-009 clause 1, as `tòrre` at FG I.10"}
+  - {locus: "FG-CONS.2.14.01 pointing: `urtare,`, `ruina;`", passes: "both alike, without doubt", witness_1933: "urtare; ruina,", disposition: "kept against the 1933 (D110); `cedere.` supplied (C001, D67); the stop after `momento`, printed and seen by both, kept (D460)"}
+not_supplied: []
+normalisation_notes: "Class A: accents (`perchè` → `perché`, `benchè` → `benché`, `sè` → `sé`, `tôrti` → `tòrti`); `ne'casi` spaced; spaces before punctuation removed; line-end hyphens removed; Canestrini's note call removed with his note."

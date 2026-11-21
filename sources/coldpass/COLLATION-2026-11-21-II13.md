@@ -165,3 +165,7 @@ stop, as Canestrini's rubrics are carried (**D451**, as D430, D440).
 
 Accents; elision and apocope spacing (DEC-009 clause 2, `e Romani` → `e'
 Romani`); thin spaces before punctuation; line-end hyphens; note calls.
+
+## Rulings
+
+O46 and O47 ruled by David, 2026-11-21, on the recommendations: `fraudolent[o]` (**D456**); the fifth crop not a D302 disagreement, D302 standing (**D457**).

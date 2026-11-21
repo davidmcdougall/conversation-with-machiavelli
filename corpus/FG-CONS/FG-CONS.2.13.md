@@ -14,7 +14,7 @@ integrity_note: >
   `feciona`, `tonto`, `potera`), emended `ch[e]`, `r[e]gni`, `fecion[o]`,
   `t[a]nto`, `poter[e]` (D450, by precedent). `fraudolenta`, read by both
   (B doubting it against `fraudolento`), agrees with nothing in its clause:
-  emended `fraudolent[o]` on the recommendation, open for David (O46).
+  emended `fraudolent[o]` (D456, ruling O46).
   `anche` kept against the 1933 `adunche` (D38). Pointing by D110; the stop
   after `grandissimi`, which neither reader sees, supplied (D67);
   no stop at the unit's end (D40).
@@ -27,7 +27,7 @@ responds_to: NM-DISC.2.13
 unresolved_source_findings: []
 witness_corrections: 1  # the stop after `grandissimi` (C001, D67)
 editorial_supplies: 0
-emendations: 8  # e[ti]am, ch[e] ×2, r[e]gni, s[u]a, fecion[o], t[a]nto, poter[e] (D450); fraudolent[o] (O46, provisional)
+emendations: 8  # e[ti]am, ch[e] ×2, r[e]gni, s[u]a, fecion[o], t[a]nto, poter[e] (D450); fraudolent[o] (D456)
 heading: "Considerazione sul capitolo XIII"  # as Canestrini prints it, without `del libro II` (D443)
 rubric: "Che si viene di bassa a gran fortuna più con la fraude, che con la forza"  # Canestrini's setting, broken letters read with the 1824 rubric; no stop; heading apparatus (D451)
 ---

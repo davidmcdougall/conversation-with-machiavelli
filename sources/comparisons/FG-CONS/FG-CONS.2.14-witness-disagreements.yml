@@ -1,0 +1,36 @@
+source_unit_id: FG-CONS.2.14
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-II14-D001
+    locator: FG-CONS.2.14.01
+    class: emendation
+    witness_1857: "quando le forze tue non sono pari a quello dello inimico"
+    witness_1933: "quando le forze tue non sono pari a quelle dello inimico"
+    established: "quell[e]"
+    publish_as_variant_note: true
+    rationale: "Read by both readers, the vowel without doubt. The masculine agrees with nothing; the referent is `le forze tue`, and the scan breaks e/o throughout. Emended from the 1933 edition (D461)."
+  - id: FG-CONS-II14-D002
+    locator: FG-CONS.2.14.01
+    class: ruled_reading
+    witness_1857: "temporeggiarsi ne' casi periculosi (an n-shaped letter after the c, read `periculosi` by one reader, `pericolosi` by the other)"
+    witness_1933: "temporeggiarsi ne' casi pericolosi"
+    established: "periculosi"
+    publish_as_variant_note: true
+    rationale: "Two forms of one word. The scan breaks u/n; the reply spells the root with u three times (`periculo` ×2, `periculosa`), where the 1933 edition prints `pericolo`, `pericolosa`. Read in Canestrini's spelling (D462)."
+  - id: FG-CONS-II14-D003
+    locator: FG-CONS.2.14.01
+    class: pointing
+    witness_1857: "che urtare, e però; la ruina; perché; si debbe cedere La quale; di poco momento."
+    witness_1933: "che urtare; e però; la ruina, perché; si debbe cedere. La; di poco momento."
+    established: "urtare,; ruina;; cedere. (C001, D67); momento."
+    publish_as_variant_note: false
+    rationale: "Marks read alike by both readers kept against the 1933 (D110); the stop before the capital, which neither reader sees, supplied (D67); Canestrini's printed stop at the end kept (D460)."
+  - id: FG-CONS-II14-D004
+    locator: FG-CONS.2.14.01
+    class: heading
+    witness_1857: "CONSIDERAZIONE SUL CAPITOLO XIV / Ingannansi molte volte gli uomini, credendo con la umiltà / vincere la superbia"
+    witness_1933: "CAPITOLO XIV / [Ingannansi molte volte gli uomini, credendo con la umilitá vincere la superbia.]"
+    established: "Considerazione sul capitolo XIV / Ingannansi molte volte gli uomini, credendo con la umiltà vincere la superbia"
+    publish_as_variant_note: true
+    rationale: "Canestrini's heading without `del libro II`, as printed (D443). His rubric, its broken letters read with Machiavelli's 1824 rubric, `umiltà`, where the 1933 edition prints `umilitá`; no stop (D463, as D451)."
