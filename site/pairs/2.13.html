@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Machiavelli holds that men of small fortune seldom or never rise high without force and without fraud, unless their rank is given or inherited; he does not believe force alone is ever enough, says fraud alone will be, and calls fraud, which Rome used in its first growth, always necessary to those rising from small beginnings. Guicciardini grants that, if fraud means any craft or dissimulation even without guile, it can be true that force alone most rarely raises men from low fortune, though he will not say never; but if fraud is properly breaking faith or other guileful dealing, he believes many have won kingdoms and empires without it. Rome&#x27;s good treatment of the Latins was, he says, prudence, not fraud. Whether fraud is always a good instrument for greatness he leaves open: deceit often brings off fine strokes, and a name for fraud often spoils one&#x27;s chances.">
+<style>*{box-sizing:border-box}body{margin:0;font:14px system-ui}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>A Conversation with Machiavelli — That one comes from low to great fortune more with fraud than with force</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root {
+  --paper:      #EDEEEC;
+  --paper-sunk: #E4E6E3;
+  --ink:        #1B1E1C;
+  --ink-muted:  #5C625E;
+  --ink-faint:  #868C87;
+  --rule:       #C9CDC8;
+  --rule-faint: #DCDFDB;
+  --nm:         #3A5A6B;
+  --fg:         #6E5A3C;
+  --serif: "EB Garamond", "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  --sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --mono:  "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:      #161917;
+    --paper-sunk: #1D211E;
+    --ink:        #E3E6E1;
+    --ink-muted:  #A0A6A0;
+    --ink-faint:  #767C77;
+    --rule:       #343934;
+    --rule-faint: #262B27;
+    --nm:         #8FB4C6;
+    --fg:         #C4A97C;
+  }
+}
+:root[data-theme="dark"] {
+  --paper:      #161917;
+  --paper-sunk: #1D211E;
+  --ink:        #E3E6E1;
+  --ink-muted:  #A0A6A0;
+  --ink-faint:  #767C77;
+  --rule:       #343934;
+  --rule-faint: #262B27;
+  --nm:         #8FB4C6;
+  --fg:         #C4A97C;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 1160px; margin: 0 auto; padding-inline: 20px; padding-block: 0 0; }
+
+/* ---- masthead ---- */
+.masthead { padding-block: 56px 32px; border-bottom: 1px solid var(--rule); }
+.eyebrow {
+  font-family: var(--sans); font-size: 11px; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint);
+  margin: 0 0 18px;
+}
+h1 {
+  font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 5vw, 44px);
+  line-height: 1.12; margin: 0 0 14px; text-wrap: balance; letter-spacing: -0.01em;
+}
+h1 .sub { display: block; font-style: italic; color: var(--ink-muted); font-size: .52em; margin-top: 12px; letter-spacing: 0; }
+.standfirst {
+  font-family: var(--sans); font-size: 14.5px; line-height: 1.6;
+  color: var(--ink-muted); max-width: 62ch; margin: 0;
+}
+.sf-label {
+  font-weight: 600; font-size: 11px; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--ink-faint); margin-right: .6em;
+}
+
+/* ---- the pairing device ---- */
+.pairing {
+  display: flex; align-items: stretch; gap: 0; margin: 30px 0 0;
+  border: 1px solid var(--rule); border-radius: 2px; overflow: hidden;
+  font-family: var(--sans); background: var(--paper-sunk);
+}
+.pairing > div { flex: 1 1 0; padding: 13px 16px; min-width: 0; }
+.pairing .who { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
+.pairing .nm-side .who { color: var(--nm); }
+.pairing .fg-side .who { color: var(--fg); }
+.pairing .what { font-size: 13.5px; color: var(--ink-muted); }
+.pairing .arrow {
+  flex: 0 0 auto; display: flex; align-items: center; justify-content: center;
+  padding-inline: 14px; color: var(--ink-faint); font-size: 15px;
+  border-inline: 1px solid var(--rule);
+}
+
+/* ---- pair-to-pair navigation ---- */
+.pairnav {
+  display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+  margin-top: 18px; font-family: var(--sans); font-size: 12.5px;
+  color: var(--ink-muted);
+}
+.pairnav a { text-decoration: none; color: var(--ink-muted); }
+.pairnav a:hover, .pairnav a:focus { color: var(--ink); text-decoration: underline; }
+
+/* ---- work sections ---- */
+.work { padding-block: 52px 0; }
+.work-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
+.work-head .tag {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .04em;
+  padding: 3px 7px; border-radius: 2px; color: var(--paper);
+}
+.work.nm .tag { background: var(--nm); }
+.work.fg .tag { background: var(--fg); }
+h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; letter-spacing: -0.005em; }
+.rubric {
+  font-style: italic; color: var(--ink-muted); max-width: 70ch;
+  margin: 10px 0 0; font-size: 16.5px; line-height: 1.5;
+}
+.rubric-note {
+  font-family: var(--sans); font-style: normal; font-size: 12px;
+  color: var(--ink-faint); margin-top: 7px;
+}
+.colheads {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  margin-top: 30px; padding-bottom: 7px; border-bottom: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint);
+}
+
+/* ---- the facing pair ---- */
+.pair {
+  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  padding-block: 22px; border-bottom: 1px solid var(--rule-faint);
+  scroll-margin-top: 20px;
+}
+.pair:target { background: var(--paper-sunk); }
+.annot { grid-column: 2 / -1; margin-top: 14px; font-family: var(--sans); font-size: 13.5px;
+  line-height: 1.55; color: var(--ink-muted); }
+.annot summary { cursor: pointer; font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); list-style: none; }
+.annot summary::-webkit-details-marker { display: none; }
+.annot summary::before { content: "+ "; }
+.annot[open] summary::before { content: "− "; }
+.annot p { margin: 8px 0 0; max-width: 72ch; }
+.annot .xref { color: inherit; text-decoration: underline; text-decoration-color: var(--rule);
+  text-underline-offset: 2px; white-space: nowrap; }
+.gutter { padding-top: 4px; }
+.uid {
+  font-family: var(--mono); font-size: 10.5px; color: var(--ink-faint);
+  text-decoration: none; letter-spacing: -0.02em;
+}
+.uid:hover, .uid:focus { color: var(--ink); text-decoration: underline; }
+.col { min-width: 0; }
+.col.it { hyphens: auto; }
+.col.en { }
+.supplied { color: var(--ink-muted); }
+
+/* ---- apparatus ---- */
+.apparatus {
+  margin-top: 34px; padding-top: 22px; border-top: 2px solid var(--rule);
+  font-family: var(--sans); font-size: 13.5px; line-height: 1.58;
+  color: var(--ink-muted);
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 26px 34px;
+}
+.apparatus h3 {
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); margin: 0 0 9px;
+}
+.apparatus p { margin: 0 0 9px; }
+.apparatus p:last-child { margin-bottom: 0; }
+.apparatus .lem { font-family: var(--serif); font-size: 15px; color: var(--ink); font-style: italic; }
+.sig { font-family: var(--mono); font-size: 12px; color: var(--ink); }
+
+/* ---- colophon ---- */
+.colophon {
+  margin-top: 60px; padding-block: 28px 60px; border-top: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 13px; line-height: 1.6; color: var(--ink-muted);
+}
+.colophon .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 34px; }
+.colophon h3 {
+  font-size: 10.5px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--ink-faint); margin: 0 0 8px;
+}
+.colophon p { margin: 0 0 8px; }
+.colophon ul { margin: 0; padding-left: 16px; }
+.colophon li { margin-bottom: 5px; }
+.state {
+  margin-top: 26px; padding: 14px 16px; background: var(--paper-sunk);
+  border-left: 2px solid var(--ink-faint); border-radius: 0 2px 2px 0;
+  font-size: 12.5px;
+}
+.state strong { color: var(--ink); font-weight: 600; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--nm); outline-offset: 2px; }
+
+/* ---- contents / index page ---- */
+.toc { margin-top: 30px; }
+.toc-row {
+  display: grid; grid-template-columns: 40px 1fr 1fr; gap: 0 20px;
+  padding-block: 14px; border-bottom: 1px solid var(--rule-faint);
+  font-family: var(--sans); align-items: baseline;
+}
+.toc-row .n { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
+.toc-row a { text-decoration: none; color: var(--ink); font-family: var(--serif); font-size: 16px; }
+.toc-row a:hover, .toc-row a:focus { text-decoration: underline; }
+.toc-row .unpublished { color: var(--ink-faint); font-style: italic; font-size: 14px; }
+.toc-row .ids { color: var(--ink-faint); font-size: 11.5px; font-family: var(--mono); }
+.toc-row .dated { color: var(--ink-faint); font-size: 12px; text-align: right; }
+
+@media (max-width: 760px) {
+  body { font-size: 16.5px; }
+  .colheads { display: none; }
+  .pair { grid-template-columns: 1fr; gap: 0; padding-block: 20px; }
+  .gutter { padding-top: 0; margin-bottom: 8px; }
+  .annot { grid-column: 1; }
+  .col.it { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px dotted var(--rule); }
+  .col.it::before, .col.en::before {
+    display: block; font-family: var(--sans); font-size: 10px; font-weight: 600;
+    letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px;
+  }
+  .col.it::before { content: "Italian"; }
+  .col.en::before { content: "English"; }
+  .pairing { flex-direction: column; }
+  .pairing .arrow { border-inline: 0; border-block: 1px solid var(--rule); padding-block: 6px; }
+  .toc-row { grid-template-columns: 1fr; gap: 4px; }
+  .toc-row .dated { text-align: left; }
+}
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow">A Conversation with Machiavelli · Pair 32 of 39</p>
+    <h1>That one comes from low to great fortune more with fraud than with force
+      <span class="sub">Discourses II.13, and Guicciardini&#x27;s reply</span></h1>
+    <p class="standfirst"><span class="sf-label">Editor's summary</span> Machiavelli holds that men of small fortune seldom or never rise high without force and without fraud, unless their rank is given or inherited; he does not believe force alone is ever enough, says fraud alone will be, and calls fraud, which Rome used in its first growth, always necessary to those rising from small beginnings. Guicciardini grants that, if fraud means any craft or dissimulation even without guile, it can be true that force alone most rarely raises men from low fortune, though he will not say never; but if fraud is properly breaking faith or other guileful dealing, he believes many have won kingdoms and empires without it. Rome&#x27;s good treatment of the Latins was, he says, prudence, not fraud. Whether fraud is always a good instrument for greatness he leaves open: deceit often brings off fine strokes, and a name for fraud often spoils one&#x27;s chances.</p>
+
+    <div class="pairing">
+      <div class="nm-side">
+        <div class="who">Niccolò Machiavelli</div>
+        <div class="what">Discorsi sopra la prima Deca di Tito Livio · written c. 1513–19, printed 1531</div>
+      </div>
+      <div class="arrow" aria-hidden="true">answered by</div>
+      <div class="fg-side">
+        <div class="who">Francesco Guicciardini</div>
+        <div class="what">Considerazioni intorno ai Discorsi del Machiavelli · written 1529–30, printed 1857</div>
+      </div>
+    </div>
+    <nav class="pairnav"><a href="2.12.html">← Pair 2.12</a><a href="../index.html">All 39 pairs</a><span></span></nav>
+  </header>
+
+  <section class="work nm">
+    <div class="work-head">
+      <span class="tag">NM-DISC.2.13</span>
+      <h2>Capitolo XIII</h2>
+    </div>
+    <p class="rubric">Che si viene di bassa a gran fortuna più con la fraude, che con la forza.</p>
+    <p class="rubric">That one comes from low to great fortune more with fraud than with force.
+      </p>
+
+    <div class="colheads"><div></div><div>Italian · 1824</div><div>English</div></div>
+      <div class="pair" id="NM-DISC.2.13.01">
+        <div class="gutter"><a class="uid" href="#NM-DISC.2.13.01">2.13.01</a></div>
+        <div class="col it" lang="it">Io stimo essere cosa verissima che rado o non mai intervenga, che gli uomini di piccola fortuna vengano a gradi grandi, senza la forza e senza la fraude, purché quel grado, al quale altri è pervenuto, non ti sia o donato o lasciato per eredità. Né credo si trovi mai che la forza sola basti, ma si troverà bene che la fraude sola basterà; come chiaro vedrà colui che leggerà la vita di Filippo di Macedonia, quella di Agatocle siciliano, e di molti altri simili, che d&#x27;infima ovvero di bassa fortuna sono pervenuti o a Regno o ad Imperj grandissimi.</div>
+        <div class="col en" lang="en">I esteem it to be a most true thing that it seldom or never befalls that men of small fortune come to great degrees without force and without fraud, provided that that degree at which one has arrived is not either donated or left to you by inheritance. Nor do I believe it is ever found that force alone is enough, but it will indeed be found that fraud alone will be enough; as he will clearly see who reads the life of Philip of Macedon, that of Agathocles the Sicilian, and of many others like them, who from lowest or else from low fortune have arrived either at <span class="supplied">[a]</span> kingdom or at most great empires.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> Machiavelli opens on his own judgment, &quot;I esteem it to be a most true thing&quot;: men of small fortune seldom or never come to great degrees without force and without fraud, provided the degree was not donated or left to them by inheritance. The proviso sets aside the degree that is donated or inherited; the claim is about rising. He then separates the two means. He does not believe it is ever found that force alone is enough; it will indeed be found, he says, that fraud alone will be enough. The proof is offered as reading, &quot;as he will clearly see who reads&quot;, in the lives of Philip of Macedon, Agathocles the Sicilian and many like them, who came from lowest or else from low fortune to a kingdom or to most great empires.</p>
+<p><span class="lem">History.</span> Philip II of Macedon (r. 359-336 BC), a younger son of King Amyntas III, spent part of his youth as a hostage at Thebes before he came to the throne; Agathocles, a Syracusan of humble birth, made himself tyrant of Syracuse about 316 BC. Machiavelli names them without telling their stories here; he tells Agathocles&#x27; in <i lang="it">The Prince</i>, chapter 8. The identifications and dates are the editor&#x27;s.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini answers the conclusion under a condition: if fraud means every craft or dissimulation used even without guile, it can be true, but he will not say &quot;never&quot;, a word too resolute, only that force alone most rarely conducts men from low to great fortune; if fraud is what is properly fraud, he believes many are found who have acquired kingdoms and most great empires without it <a class="xref" href="#FG-CONS.2.13.01">Guicciardini .01</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.2.13.02">
+        <div class="gutter"><a class="uid" href="#NM-DISC.2.13.02">2.13.02</a></div>
+        <div class="col it" lang="it">Mostra Senofonte nella sua vita di Ciro questa necessità dello ingannare, considerato che la prima ispedizione che fa fare a Ciro contro il Re di Armenia è piena di fraude, e come con inganno e non con forza gli fa occupare il suo Regno. E non conchiude altro per tale azione, se non che ad un Principe che voglia fare gran cose, è necessario imparare a ingannare. Fagli oltra di questo ingannare Ciassare Re dei Medi, suo zio materno, in più modi, senza la quale fraude mostra che Ciro non poteva pervenire a quella grandezza che venne. Né credo che si trovi mai alcuno constituito in bassa fortuna, pervenuto a grande Imperio solo con la forza aperta e ingenuamente, ma sì bene solo con la fraude, come fece Giovanni Galeazzo per tor lo Stato e lo Imperio di Lombardia a messer Bernabò suo zio.</div>
+        <div class="col en" lang="en">Xenophon in his life of Cyrus shows this necessity of deceiving, considering that the first expedition that he makes Cyrus make against the king of Armenia is full of fraud, and how with deceit and not with force he makes him occupy his kingdom. And he concludes nothing else from such a deed, except that for a prince who wishes to do great things it is necessary to learn to deceive. He makes him, beyond this, deceive Cyaxares, king of the Medes, his maternal uncle, in several ways, without which fraud he shows that Cyrus could not arrive at that greatness to which he came. Nor do I believe that anyone is ever found, constituted in low fortune, <span class="supplied">[who has]</span> arrived at great empire only with open force and ingenuously, but indeed only with fraud, as Giovanni Galeazzo did, to take away the state and the rule of Lombardy from messer Bernabò his uncle.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> The first authority is Xenophon, who, Machiavelli says, shows this necessity of deceiving. Machiavelli reports two things in the life of Cyrus. The first expedition, against the king of Armenia, is full of fraud and takes the kingdom by deceit and not by force; and from that deed, as Machiavelli gives it, Xenophon concludes nothing else than that for a prince who wishes to do great things it is necessary to learn to deceive. Beyond this, Cyrus deceives his maternal uncle Cyaxares in several ways, without which fraud, Machiavelli says Xenophon shows, Cyrus could not have arrived at his greatness. He then restates his own claim in the negative: he does not believe that anyone is ever found, constituted in low fortune, who has arrived at great empire only with open force and ingenuously, but indeed only with fraud; Giovanni Galeazzo, who took the state of Lombardy from his uncle Bernabò, is the modern example.</p>
+<p><span class="lem">History.</span> The <i lang="la">Cyropaedia</i> tells the Armenian expedition, which Cyrus disguises as a hunt, at the turn of its second and third books, and his dealings with Cyaxares in its fourth and fifth. Giangaleazzo Visconti, who had held the western half of the Visconti dominions from Pavia since his father&#x27;s death in 1378, seized his uncle Bernabò in May 1385 and held him prisoner until his death that December, uniting the Visconti lordship of Milan. The identifications and dates are the editor&#x27;s; Machiavelli says only &quot;the life of Cyrus&quot;.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini does not now have the memory of Xenophon fresh, but believes that Xenophon instructs Cyrus in prudence, industry and just simulation or dissimulation, not in fraud <a class="xref" href="#FG-CONS.2.13.01">Guicciardini .01</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.2.13.03">
+        <div class="gutter"><a class="uid" href="#NM-DISC.2.13.03">2.13.03</a></div>
+        <div class="col it" lang="it">E quel che sono necessitati fare i Principi ne&#x27; principj degli augumenti loro, sono ancora necessitate a fare le Repubbliche, infino che le sieno diventate potenti, e che basti la forza sola. E perché Roma tenne in ogni parte, o per sorte o per elezione, tutt&#x27;i modi necessarj a venire a grandezza, non mancò ancora di questo. Né poté usare nel principio il maggior inganno, che pigliare il modo di sopra discorso da noi, di farsi compagni; perché sotto questo nome se gli fece servi, come furono i Latini, ed altri Popoli all&#x27;intorno. Perché prima si valse dell&#x27;armi loro in domare i Popoli convicini, e pigliare la riputazione dello Stato; dipoi domatili, venne in tanto augumento, che la poteva battere ciascuno. Ed i Latini non si avvidero mai di essere al tutto servi, se non poi che videro dare due rotte ai Sanniti, e costrettili ad accordo.</div>
+        <div class="col en" lang="en">And what princes are necessitated to do in the beginnings of their augmentations, republics are also necessitated to do, until they have become powerful and force alone is enough. And because Rome held in every part, either by lot or by choice, all the ways necessary to come to greatness, it did not lack this either. Nor could it use in the beginning a greater deceit than to take the way discoursed of above by us, of making companions for itself; because under this name it made them its servants, as were the Latins, and other peoples round about. Because first it availed itself of their arms in subduing the neighbouring peoples, and taking the reputation of the state; afterwards, having subdued them, it came into such augmentation that it could beat each one. And the Latins never perceived that they were wholly servants, except after they saw two routs given to the Samnites, and them constrained to an accord.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> What princes are necessitated to do in the beginnings of their augmentations, republics are necessitated to do too, until they are powerful and force alone is enough. Because Rome held in every part, by lot or by choice, all the ways necessary to come to greatness, it did not lack this one either, and it could use no greater deceit in its beginning than the way already discoursed of, making companions: under that name it made others its servants, the Latins and other peoples round about. The mechanism is told in order. Rome first availed itself of their arms to subdue the neighbouring peoples and take the reputation of the state; then, having subdued them, it grew so great that it could beat each one. The Latins did not perceive that they were wholly servants until they saw the Samnites given two routs and constrained to an accord.</p>
+<p><span class="lem">History.</span> The &quot;way discoursed of above&quot; is the way of companions that Machiavelli gives to Rome among the three ways of expanding in Discourses II.4. The routs are those of the First Samnite War (343-341 BC), in which Livy tells of three Roman victories (7.32-37), after which the Samnites made peace with Rome (8.1-2). The identifications and dates are the editor&#x27;s.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini does not call it fraud if the Romans made such pacts with the Latins that they could patiently tolerate the Roman empire; their patience, he says, was not because they did not perceive from the very beginning that, under the shadow of confederation, what was equal was servitude <a class="xref" href="#FG-CONS.2.13.01">Guicciardini .01</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.2.13.04">
+        <div class="gutter"><a class="uid" href="#NM-DISC.2.13.04">2.13.04</a></div>
+        <div class="col it" lang="it">La qual vittoria, come ella accrebbe gran riputazione ai Romani con i Principi longinqui, che mediante quella sentirono il nome romano e non l&#x27;armi, così generò invidia e sospetto in quelli che vedevano e sentivano l&#x27;armi, intra i quali furono i Latini. E tanto poté questa invidia e questo timore, che non solo i Latini, ma le colonie che essi avevano in Lazio, insieme con i Campani stati innanzi difesi, congiurarono contro al nome romano. E mossero questa guerra i Latini nel modo che si dice di sopra che si muovono la maggior parte delle guerre, assaltando non i Romani, ma difendendo i Sidicini contro ai Sanniti, a&#x27; quali i Sanniti facevano guerra con licenza de&#x27; Romani. E che sia vero che i Latini si movessero per avere conosciuto questo inganno, lo dimostra Tito Livio nella bocca di Annio Setino Pretore latino, il quale nel Consiglio loro disse queste parole: <i lang="la">Nam si etiam nunc sub umbra foederis aequi servitutem pati possumus, etc.</i></div>
+        <div class="col en" lang="en">Which victory, as it increased great reputation for the Romans with the far-off princes, who by means of it felt the Roman name and not the arms, so generated envy and suspicion in those who saw and felt the arms, among whom were the Latins. And so much could this envy and this fear do, that not only the Latins, but the colonies which they had in Latium, together with the Campanians, before defended <span class="supplied">[by the Romans]</span>, conspired against the Roman name. And the Latins moved this war in the way that is said above that most wars are moved, assailing not the Romans, but defending the Sidicini against the Samnites, on whom the Samnites were making war with licence of the Romans. And that it is true that the Latins moved for having known this deceit, Livy demonstrates it in the mouth of Annius Setinus, Latin praetor, who in their council said these words: <i lang="la">Nam si etiam nunc sub umbra foederis aequi servitutem pati possumus, etc.</i></div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> The victory had two effects, set as and so: with far-off princes, who felt the Roman name and not the arms, it increased Rome&#x27;s reputation; in those who saw and felt the arms, the Latins among them, it generated envy and suspicion. Envy and fear moved the Latins, the colonies &quot;they&quot; had in Latium (the Italian does not say whose) and the Campanians, whom Rome had defended before, to conspire against the Roman name. They moved the war in the way Machiavelli says most wars are moved, not by assailing the Romans but by defending the Sidicini against the Samnites, who were making war on them with Roman licence. That the Latins moved for having known this deceit, Livy, Machiavelli says, demonstrates in the mouth of Annius Setinus, Latin praetor, in the Latins&#x27; council: &quot;For if even now, under the shadow of an equal treaty, we can bear servitude&quot;.</p>
+<p><span class="lem">History.</span> Rome defended Capua against the Samnites in 343 BC (Livy 7.29-31); the Sidicini were attacked by the Samnites after Rome renewed its treaty with the Samnites, and the Latins and Campanians took up the Sidicini&#x27;s cause (Livy 8.1-2). Annius of Setia, one of the two Latin praetors, both men of Roman colonies (Livy 8.3.9), spoke at the council of the Latins before the war of 340-338 BC (8.4); the sentence is Livy 8.4.2. The &quot;way said above&quot; in which wars are moved is the subject of Discourses II.9. The identifications and dates are the editor&#x27;s.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini takes up Annius&#x27; &quot;shadow&quot; in his own &quot;under the shadow of confederation&quot;, and gives the Latins&#x27; waiting other causes, their impotence and a treatment that gave them no cause to despair; they waited, he does not say until they had uncovered the Romans&#x27; end, which they would have been very gross not to have known from the beginning, but until, grown in number of men and well expert in military discipline, they had hope of contending on even terms with the Roman people <a class="xref" href="#FG-CONS.2.13.01">Guicciardini .01</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.2.13.05">
+        <div class="gutter"><a class="uid" href="#NM-DISC.2.13.05">2.13.05</a></div>
+        <div class="col it" lang="it">Vedesi pertanto i Romani nei primi augumenti loro non essere mancati etiam della fraude; la quale fu sempre necessaria ad usare a coloro che di piccoli principj vogliono a sublimi gradi salire, la quale è meno vituperevole quanto è più coperta, come fu questa de&#x27; Romani.</div>
+        <div class="col en" lang="en">One sees, on that account, that the Romans in their first augmentations did not lack even fraud; which was always necessary to use for those who from small beginnings wish to climb to sublime degrees, which is the less vituperable the more it is covered, as was this of the Romans.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The conclusion is drawn &quot;on that account&quot;: the Romans in their first augmentations did not lack even fraud. Two general claims close the chapter, each attached by &quot;which&quot; to fraud. It was always necessary for those to use who from small beginnings wish to climb to sublime degrees; and it is the less vituperable the more it is covered, as Rome&#x27;s was. The second is a claim about blame, not about success, and it is limited by the comparative: covered fraud is less vituperable, not blameless.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini&#x27;s last sentence answers &quot;always necessary&quot; with a question he leaves open: it can be disputable whether fraud is always a good instrument for arriving at greatness, because often with deceit many fine strokes are made, and often also having the name of fraudulent takes away the occasion of attaining one&#x27;s intents. Against fraud that is less vituperable the more it is covered, his Caesar rises always uncovering his ambition <a class="xref" href="#FG-CONS.2.13.01">Guicciardini .01</a>.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from the 1824 edition (<span class="sig">WIT-NM-DISC-1824-IA</span>), page-image-backed, which governs. Collated against the 1554 Giglio printing, Venice (<span class="sig">WIT-NM-DISC-1554-IA</span>), which is comparison evidence only.</p>
+<p>Paragraph divisions are editorial. The witness prints the chapter as one unbroken block.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem">Né credo che si trovi mai alcuno constituito in bassa fortuna (.02) ... a messer Bernabò suo zio (.02)</span> — 1824. The 1554 witness reads <i lang="it">Ne credo,che ſi truoui mai alcuno poſto in baſſa fortuna ... a M.Bernardo ſuo zio</i>. <i lang="it">constituito</i>, constituted, against <i lang="it">posto</i>, placed; the 1554 names Galeazzo&#x27;s uncle <i lang="it">Bernardo</i>, the 1824 Bernabò, Bernabò Visconti, whom Gian Galeazzo seized in 1385. Read by both 1824 readers without doubt. Kept (D38, D449).</p>
+<p><span class="lem">come furono i Latini, ed altri Popoli all&#x27;intorno (.03) ... ai Romani con i Principi longinqui (.04)</span> — 1824. The 1554 witness reads <i lang="it">come furono i Latini , et altri popoli a l&#x27;incontro ... a i Romani co i Prencipi lontani</i>. <i lang="it">all&#x27;intorno</i>, round about, the peoples near Rome, against <i lang="it">a l&#x27;incontro</i>, on the contrary or over against; <i lang="it">longinqui</i> against the plainer <i lang="it">lontani</i>, as at II.12 (NM-DISC-II12-D003). Read by both 1824 readers without doubt. Kept (D38, D449).</p>
+<p><span class="lem">le colonie che essi avevano in Lazio, insieme con i Campani stati innanzi difesi ... E mossero questa guerra i Latini</span> — 1824. The 1554 witness reads <i lang="it">le Colonie, che eße haueuano in Latio inſieme co i Cãpani ſtati poco inanzi difeſi ... Et moſſono quella guerra i Latini</i>. <i lang="it">essi</i>, the Latins&#x27; colonies, against <i lang="it">esse</i>, the colonies&#x27; own holding; the 1554 adds <i lang="it">poco</i>, a little before; <i lang="it">questa</i> against <i lang="it">quella</i> guerra. Read by both 1824 readers without doubt. Kept (D38, D449).</p>
+<p><span class="lem"><i lang="la">Nam si etiam nunc sub umbra foederis aequi servitutem pati possumus, etc.</i> Vedesi pertanto</span> — 1824. The 1554 witness reads <i lang="it">Nã ſi etiã nunc ſub umbra fœderis æqui ſeruitutẽ pati poſſumus ,etc. Cioè Percioche ſe hora etiãdio ſotto ombra di pace poßiamo ſopportar la ſeruitu. Vedeſi ꝑ tãto</i>. The 1554 follows the Latin with an Italian rendering, <i lang="it">that is: for if even now under the shadow of peace we can bear servitude</i>; the 1824 prints the Latin alone. Not carried. In the Latin, pass A saw a c-shaped first letter in <i lang="la">etiam</i> (⟨ctiam|etiam⟩), pass B <i lang="la">etiam</i>; the 1554 prints <i lang="it">etiã</i>: read <i lang="la">etiam</i> (D449, as D406).</p>
+<p><span class="lem">non essere mancati etiam della fraude (.05) ... come fu questa de&#x27; Romani (.05)</span> — 1824. The 1554 witness reads <i lang="it">non eſſere mãcati etiãdio della fraude ... come fu di queſta de Romani</i>. The 1824&#x27;s Latin <i lang="la">etiam</i> against the 1554&#x27;s Italian <i lang="it">etiandio</i>, the word Guicciardini&#x27;s reply takes up (<i lang="it">etiam sanza dolo</i>); the 1554 adds <i lang="it">di</i>. Read by both 1824 readers without doubt. Kept (D38, D449).</p>
+<p><span class="lem">tanto poté questa invidia e questo timore</span> — 1824. The 1554 witness reads <i lang="it">tanto potè queſta inuidia,et queſto timore</i>. A dot over the e doubted by all three 1824 readers, both full readers preferring <i lang="it">e</i>; only the conjunction construes, and the 1554 prints <i lang="it">et</i>. The conjunction (D449, as D303).</p>
+<p><span class="lem">CAPITOLO XIII / Che si viene di bassa a gran fortuna più con la / fraude, che con la forza.</span> — 1824. The 1554 witness reads <i lang="it">CHE SI VIENE DI BASSA A / gran fortuna piu con la fraude , che con la / forza. Cap. XIII.</i>. The same sentence but for spelling. Canestrini&#x27;s rubric over the reply agrees with the 1824 but for broken letters (D451).</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem"><i lang="it">Io stimo essere cosa verissima</i>.</span> &quot;I esteem it to be a most true thing&quot;: <i lang="it">stimare</i>, esteem; kept apart from <i lang="it">riputare</i>, deem (D259), and <i lang="it">giudicare</i>, judge. <i lang="it">verissimo</i>, most true, the superlative kept, as Guicciardini&#x27;s <i lang="it">credo sia verissimo</i> (Guicciardini .01).</p>
+<p><span class="lem"><i lang="it">rado o non mai intervenga</i>.</span> &quot;It seldom or never befalls&quot;: <i lang="it">intervenire</i>, befall (D298). <i lang="it">non mai</i>, never, is the word Guicciardini declines to say (<i lang="it">non dico mai</i>, Guicciardini .01), with the second <i lang="it">mai</i> of <i lang="it">Né credo si trovi mai</i>.</p>
+<p><span class="lem"><i lang="it">gli uomini di piccola fortuna vengano a gradi grandi</i>.</span> &quot;Men of small fortune come to great degrees&quot;: <i lang="it">grado</i>, degree (glossary), rank here, held at <i lang="it">quel grado</i> and <i lang="it">sublimi gradi</i> (.05). <i lang="it">piccola</i>, small; <i lang="it">bassa</i>, low; <i lang="it">infima</i>, lowest: three words for the starting point, kept apart.</p>
+<p><span class="lem"><i lang="it">senza la forza e senza la fraude</i>.</span> &quot;Without force and without fraud&quot;: <i lang="it">forza</i>, force, and <i lang="it">fraude</i>, fraud, through the chapter. &quot;Fraud&quot; is kept although the English word now names a crime: Guicciardini&#x27;s reply turns on how narrowly <i lang="it">fraude</i> is to be taken, setting <i lang="it">quella che è proprio fraude</i> apart from every craft or dissimulation (Guicciardini .01).</p>
+<p><span class="lem"><i lang="it">quel grado, al quale altri è pervenuto, non ti sia o donato o lasciato per eredità</i>.</span> &quot;That degree at which one has arrived is not either donated or left to you by inheritance&quot;: the Italian moves from the indefinite <i lang="it">altri</i> to <i lang="it">ti</i>, and the English keeps both. <i lang="it">donare</i>, donate (D253); <i lang="it">eredità</i>, inheritance (glossary).</p>
+<p><span class="lem"><i lang="it">basti</i>, <i lang="it">basterà</i>.</span> &quot;Is enough&quot;, &quot;will be enough&quot;: the present under <i lang="it">Né credo</i> (<i lang="it">si trovi</i>, <i lang="it">basti</i>) against the confident future (<i lang="it">si troverà bene</i>, <i lang="it">basterà</i>), kept as the Italian has them, here and at <i lang="it">Né credo che si trovi mai alcuno</i> (.02); <i lang="it">bastare</i>, be enough (D205), here and at <i lang="it">che basti la forza sola</i> (.03).</p>
+<p><span class="lem"><i lang="it">d&#x27;infima ovvero di bassa fortuna</i>.</span> &quot;From lowest or else from low fortune&quot;: <i lang="it">ovvero</i>, or else; whether the second member corrects the first or is an alternative to it, the English does not choose.</p>
+<p><span class="lem"><i lang="it">o a Regno o ad Imperj grandissimi</i>.</span> &quot;Either at [a] kingdom or at most great empires&quot;: <i lang="it">regno</i>, kingdom; <i lang="it">Imperio</i>, empire (D124), dominion over other peoples, here and at <i lang="it">a grande Imperio</i> (.02); <i lang="it">lo Imperio di Lombardia</i> (.02) is rule, the lordship of a province (D124). <i lang="it">grandissimi</i>, most great, the superlative kept (D411).</p>
+<p><span class="lem"><i lang="it">Mostra Senofonte nella sua vita di Ciro</i>.</span> &quot;Xenophon in his life of Cyrus shows&quot;: the <i lang="la">Cyropaedia</i>, the editor&#x27;s identification; Machiavelli calls it a life. The expedition against the king of Armenia is told at the turn of its second and third books, the dealings with Cyaxares in its fourth and fifth (the editor&#x27;s references). <i lang="it">mostrare</i>, show, here and at <i lang="it">mostra che Ciro non poteva</i>.</p>
+<p><span class="lem"><i lang="it">questa necessità dello ingannare</i>.</span> &quot;This necessity of deceiving&quot;: <i lang="it">ingannare</i>, deceive; <i lang="it">inganno</i>, deceit (D374), through the chapter: <i lang="it">con inganno</i> (.02), <i lang="it">il maggior inganno</i> (.03), <i lang="it">questo inganno</i> (.04). <i lang="it">necessità</i>, necessity; <i lang="it">necessario</i>, necessary; <i lang="it">necessitare</i>, necessitate: one root held (glossary), as at <i lang="it">sono necessitati</i>, <i lang="it">sono ancora necessitate</i> (.03).</p>
+<p><span class="lem"><i lang="it">considerato che</i>.</span> &quot;Considering that&quot;: the participle as Machiavelli uses it, introducing the ground.</p>
+<p><span class="lem"><i lang="it">ispedizione</i>.</span> &quot;Expedition&quot;: glossary, <i lang="it">espedizione</i>.</p>
+<p><span class="lem"><i lang="it">E non conchiude altro per tale azione</i>.</span> &quot;And he concludes nothing else from such a deed&quot;: <i lang="it">conchiudere</i>, conclude; <i lang="it">azione</i> of a single deed done, &quot;deed&quot; (D410).</p>
+<p><span class="lem"><i lang="it">ad un Principe che voglia fare gran cose, è necessario imparare a ingannare</i>.</span> &quot;For a prince who wishes to do great things it is necessary to learn to deceive&quot;: the maxim is Xenophon&#x27;s conclusion as Machiavelli reports it, and stays inside <i lang="it">non conchiude altro ... se non che</i>.</p>
+<p><span class="lem"><i lang="it">Fagli oltra di questo ingannare Ciassare</i>.</span> &quot;He makes him, beyond this, deceive Cyaxares&quot;: <i lang="it">oltra di questo</i>, beyond this, as NM II.proem and II.12; <i lang="it">in più modi</i>, in several ways. <i lang="it">Ciassare</i>, Cyaxares, king of the Medes, Cyrus&#x27; maternal uncle in the <i lang="la">Cyropaedia</i>.</p>
+<p><span class="lem"><i lang="it">senza la quale fraude mostra che Ciro non poteva pervenire a quella grandezza che venne</i>.</span> &quot;Without which fraud he shows that Cyrus could not arrive at that greatness to which he came&quot;: <i lang="it">pervenire</i>, arrive at, against <i lang="it">venire</i>, come, in the same clause, as the rubric&#x27;s <i lang="it">si viene</i>; <i lang="it">grandezza</i>, greatness (glossary).</p>
+<p><span class="lem"><i lang="it">alcuno constituito in bassa fortuna, pervenuto a grande Imperio</i>.</span> &quot;Anyone ... constituted in low fortune, [who has] arrived at great empire&quot;: <i lang="it">si trovi</i>, present, as in .01; <i lang="it">constituire</i>, constitute (glossary). The 1554 reads <i lang="it">poſto</i>, placed (NM-DISC-II13-D001, D449).</p>
+<p><span class="lem"><i lang="it">solo con la forza aperta e ingenuamente</i>.</span> &quot;Only with open force and ingenuously&quot;: <i lang="it">solo</i>, adverb, only (D298), here and at <i lang="it">solo con la fraude</i>, &quot;alone&quot; staying for the adjective (<i lang="it">la forza sola</i>); <i lang="it">aperto</i>, open, against the <i lang="it">coperta</i>, covered, of the close (.05); <i lang="it">ingenuamente</i>, ingenuously, in its older sense, frankly, as a free-born man (Latin <i lang="la">ingenuus</i>) acts, without guile. The two members, a noun and an adverb, are kept unlike.</p>
+<p><span class="lem"><i lang="it">ma sì bene solo con la fraude</i>.</span> &quot;But indeed only with fraud&quot;: <i lang="it">sì bene</i>, indeed, answering <i lang="it">Né credo</i>.</p>
+<p><span class="lem"><i lang="it">come fece Giovanni Galeazzo per tor lo Stato e lo Imperio di Lombardia a messer Bernabò suo zio</i>.</span> &quot;As Giovanni Galeazzo did, to take away the state and the rule of Lombardy from messer Bernabò his uncle&quot;: Giangaleazzo Visconti, who seized his uncle Bernabò in 1385 (the editor&#x27;s note). <i lang="it">tor</i>, take away (D131). <i lang="it">Stato</i>, state (D265); <i lang="it">Imperio</i>, rule (D124). The 1554 names the uncle <i lang="it">M.Bernardo</i> (NM-DISC-II13-D001, D449).</p>
+<p><span class="lem"><i lang="it">ne&#x27; principj degli augumenti loro</i>.</span> &quot;In the beginnings of their augmentations&quot;: <i lang="it">principio</i>, beginning (glossary), here and at <i lang="it">nel principio</i> (.03) and <i lang="it">di piccoli principj</i> (.05); <i lang="it">augumento</i>, augmentation (D69), here, at <i lang="it">in tanto augumento</i> (.03) and <i lang="it">nei primi augumenti loro</i> (.05), kept apart from <i lang="it">accrescere</i>, increase (.04).</p>
+<p><span class="lem"><i lang="it">sono ancora necessitate a fare le Repubbliche</i>.</span> &quot;Republics are also necessitated to do&quot;: <i lang="it">ancora</i>, also. The participle agrees with <i lang="it">Repubbliche</i>.</p>
+<p><span class="lem"><i lang="it">o per sorte o per elezione</i>.</span> &quot;Either by lot or by choice&quot;: <i lang="it">sorte</i>, lot, what falls to one; <i lang="it">elezione</i>, choice (glossary).</p>
+<p><span class="lem"><i lang="it">il modo di sopra discorso da noi, di farsi compagni</i>.</span> &quot;The way discoursed of above by us, of making companions for itself&quot;: the Roman way among the three ways of expanding that Machiavelli sets out in Discourses II.4 (the editor&#x27;s reference); <i lang="it">compagni</i>, companions, the Latin <i lang="la">socii</i>, allies in name. &quot;For itself&quot; resolves the reflexive <i lang="it">farsi</i>, which the Italian leaves to the context: Rome makes others its companions. <i lang="it">discorrere</i>, discourse (glossary).</p>
+<p><span class="lem"><i lang="it">sotto questo nome se gli fece servi</i>.</span> &quot;Under this name it made them its servants&quot;: &quot;its&quot; renders the <i lang="it">se</i>, which answers <i lang="it">farsi</i>; <i lang="it">servo</i>, servant (glossary), here and at <i lang="it">al tutto servi</i>. <i lang="it">nome</i>, name, the name of companion against the thing, as <i lang="it">il nome romano</i> (.04) against the arms.</p>
+<p><span class="lem"><i lang="it">ed altri Popoli all&#x27;intorno</i>.</span> &quot;And other peoples round about&quot;: <i lang="it">all&#x27;intorno</i>, round about, of place. The 1554 reads <i lang="it">a l&#x27;incontro</i> (NM-DISC-II13-D002, D449).</p>
+<p><span class="lem"><i lang="it">si valse dell&#x27;armi loro in domare i Popoli convicini</i>.</span> &quot;It availed itself of their arms in subduing the neighbouring peoples, and taking the reputation of the state&quot;: the one <i lang="it">in</i> governs both infinitives; <i lang="it">valersi di</i>, avail oneself of (D162); <i lang="it">domare</i>, subdue, here and at <i lang="it">domatili</i>; <i lang="it">convicino</i>, neighbouring.</p>
+<p><span class="lem"><i lang="it">pigliare la riputazione dello Stato</i>.</span> &quot;Taking the reputation of the state&quot;: <i lang="it">pigliare</i>, take (glossary); <i lang="it">riputazione</i>, reputation (glossary), here and at <i lang="it">gran riputazione</i> (.04).</p>
+<p><span class="lem"><i lang="it">dipoi domatili</i>.</span> &quot;Afterwards, having subdued them&quot;: <i lang="it">dipoi</i>, afterwards (D187).</p>
+<p><span class="lem"><i lang="it">che la poteva battere ciascuno</i>.</span> &quot;That it could beat each one&quot;: <i lang="it">battere</i>, beat (D120); <i lang="it">la</i> is Rome, the subject (the old subject pronoun, as <i lang="it">le</i>, the republics, at <i lang="it">le sieno diventate</i>), and <i lang="it">ciascuno</i> the object.</p>
+<p><span class="lem"><i lang="it">al tutto servi</i>.</span> &quot;Wholly servants&quot;: <i lang="it">al tutto</i>, wholly.</p>
+<p><span class="lem"><i lang="it">due rotte ai Sanniti, e costrettili ad accordo</i>.</span> &quot;Two routs given to the Samnites, and them constrained to an accord&quot;: <i lang="it">rotta</i>, rout (D431); <i lang="it">costringere</i>, constrain, kept apart from <i lang="it">necessitare</i>; <i lang="it">accordo</i>, accord. <i lang="it">costrettili</i> carries its object, the Samnites, in <i lang="it">li</i>; its agent, like that of <i lang="it">dare</i>, is left implicit, and the English leaves it so. The figures are Machiavelli&#x27;s (Livy tells of three Roman victories) and are not corrected.</p>
+<p><span class="lem"><i lang="it">come ella accrebbe gran riputazione ai Romani ... così generò invidia e sospetto</i>.</span> &quot;As it increased great reputation for the Romans ... so generated envy and suspicion&quot;: <i lang="it">come ... così</i>, as ... so, kept, with <i lang="it">ella</i> in the first member and no pronoun in the second; <i lang="it">accrescere</i>, increase (D69); <i lang="it">generare</i>, generate (glossary); <i lang="it">invidia</i>, envy; <i lang="it">sospetto</i>, suspicion (glossary).</p>
+<p><span class="lem"><i lang="it">con i Principi longinqui</i>.</span> &quot;With the far-off princes&quot;: <i lang="it">longinquo</i>, far-off (D444). The 1554 reads <i lang="it">lontani</i> (NM-DISC-II13-D002, D449).</p>
+<p><span class="lem"><i lang="it">sentirono il nome romano e non l&#x27;armi</i>; <i lang="it">vedevano e sentivano l&#x27;armi</i>.</span> &quot;Felt the Roman name and not the arms&quot;; &quot;saw and felt the arms&quot;: <i lang="it">sentire</i>, hear and feel: the far-off princes hear of the name, the near peoples feel the arms; one English verb is kept for the echo, and &quot;felt the Roman name&quot; means heard it.</p>
+<p><span class="lem"><i lang="it">E tanto poté questa invidia e questo timore</i>.</span> &quot;And so much could this envy and this fear do&quot;: <i lang="it">timore</i>, fear (glossary). A mark over <i lang="it">e</i> doubted by all three 1824 readers; read as the conjunction, which alone construes and which the 1554 prints (D449, as D303).</p>
+<p><span class="lem"><i lang="it">le colonie che essi avevano in Lazio</i>.</span> &quot;The colonies which they had in Latium&quot;: <i lang="it">essi</i>, the Latins or the Romans; the Italian does not say, and the English &quot;they&quot; leaves it as open. Livy names both Latin praetors as men of Roman colonies (8.3.9). The 1554 reads <i lang="it">eße</i>, the colonies themselves (NM-DISC-II13-D003, D449).</p>
+<p><span class="lem"><i lang="it">insieme con i Campani stati innanzi difesi</i>.</span> &quot;Together with the Campanians, before defended [by the Romans]&quot;: <i lang="it">innanzi</i>, before (D334); the agent supplied in brackets. The 1554 reads <i lang="it">poco inanzi</i>, a little before (NM-DISC-II13-D003).</p>
+<p><span class="lem"><i lang="it">congiurarono</i>.</span> &quot;Conspired&quot;: <i lang="it">congiurare</i>, conspire.</p>
+<p><span class="lem"><i lang="it">E mossero questa guerra i Latini nel modo che si dice di sopra che si muovono la maggior parte delle guerre</i>.</span> &quot;And the Latins moved this war in the way that is said above that most wars are moved&quot;: <i lang="it">muovere</i>, move, held across the three uses (<i lang="it">mossero</i>, <i lang="it">si muovono</i>, <i lang="it">si movessero</i>); the reference is to Discourses II.9 (the editor&#x27;s). The 1554 reads <i lang="it">quella guerra</i> (NM-DISC-II13-D003, D449).</p>
+<p><span class="lem"><i lang="it">con licenza de&#x27; Romani</i>.</span> &quot;With licence of the Romans&quot;: <i lang="it">licenza</i>, licence (glossary).</p>
+<p><span class="lem"><i lang="it">lo dimostra Tito Livio nella bocca di Annio Setino Pretore latino</i>.</span> &quot;Livy demonstrates it in the mouth of Annius Setinus, Latin praetor&quot;: Livy 8.4, where Annius of Setia, one of the two Latin praetors (8.3.9), speaks to the council of the Latins in 340 BC; 8.5 is his speech at Rome (the editor&#x27;s references). <i lang="it">dimostrare</i>, demonstrate. <i lang="it">Consiglio</i>, council, of a body of persons: a sense split from <i lang="it">consiglio</i>, counsel, which stays for advice (D444).</p>
+<p><span class="lem"><i lang="la">Nam si etiam nunc sub umbra foederis aequi servitutem pati possumus, etc.</i>.</span> Livy 8.4.2, as Machiavelli quotes it: &quot;For if even now, under the shadow of an equal treaty, we can bear servitude&quot;. The Latin is left untranslated in the text, as Machiavelli leaves it; the 1554 follows it with an Italian rendering, which the 1824 does not print (NM-DISC-II13-D004). In the 1824 the first letter of <i lang="la">etiam</i> is damaged; read <i lang="la">etiam</i> (D449, as D406). Guicciardini answers the phrase with his own <i lang="it">sotto ombra di confederazione</i> (Guicciardini .01).</p>
+<p><span class="lem"><i lang="it">Vedesi pertanto</i>.</span> &quot;One sees, on that account&quot;: <i lang="it">pertanto</i>, on that account (D98), kept apart from <i lang="it">però</i>, therefore.</p>
+<p><span class="lem"><i lang="it">non essere mancati etiam della fraude</i>.</span> &quot;Did not lack even fraud&quot;: <i lang="it">mancare di</i> with a noun, lack (D312); <i lang="la">etiam</i>, Latin, even, in the Italian, as FG I.3, I.16 and II.12, and the word of Guicciardini&#x27;s first sentence (<i lang="it">e[ti]am sanza dolo</i>, Guicciardini .01). It may also be read &quot;also&quot;, answering <i lang="it">non mancò ancora di questo</i> (.03); the English holds &quot;even&quot; with Guicciardini&#x27;s. The 1554 reads <i lang="it">etiãdio</i> (NM-DISC-II13-D005, D449).</p>
+<p><span class="lem"><i lang="it">la quale fu sempre necessaria ad usare a coloro che di piccoli principj vogliono a sublimi gradi salire</i>.</span> &quot;Which was always necessary to use for those who from small beginnings wish to climb to sublime degrees&quot;: fraud is the subject of <i lang="it">fu necessaria</i>, as of the second <i lang="it">la quale</i>, and the two relatives are joined by a comma, as printed. <i lang="it">usare</i>, use (D313); <i lang="it">salire</i>, climb; <i lang="it">sublime</i>, sublime, the height against <i lang="it">infima</i> (.01).</p>
+<p><span class="lem"><i lang="it">la quale è meno vituperevole quanto è più coperta</i>.</span> &quot;Which is the less vituperable the more it is covered&quot;: <i lang="it">vituperevole</i>, vituperable, a recorded collapse with <i lang="it">vituperabile</i> (D186); <i lang="it">coperto</i>, covered, against <i lang="it">forza aperta</i> (.02). Guicciardini&#x27;s Caesar is always <i lang="it">scoprendo</i>, uncovering, his ambition (Guicciardini .01).</p>
+<p><span class="lem"><i lang="it">come fu questa de&#x27; Romani</i>.</span> &quot;As was this of the Romans&quot;: the 1554 reads <i lang="it">come fu di queſta</i> (NM-DISC-II13-D005).</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work fg">
+    <div class="work-head">
+      <span class="tag">FG-CONS.2.13</span>
+      <h2>Considerazione sul capitolo XIII</h2>
+    </div>
+    <p class="rubric">Che si viene di bassa a gran fortuna più con la fraude, che con la forza</p>
+    <p class="rubric">That one comes from low to great fortune more with fraud than with force
+      </p>
+
+    <div class="colheads"><div></div><div>Italian · 1857</div><div>English</div></div>
+      <div class="pair" id="FG-CONS.2.13.01">
+        <div class="gutter"><a class="uid" href="#FG-CONS.2.13.01">2.13.01</a></div>
+        <div class="col it" lang="it">Se lo Scrittore chiama fraude ogni astuzia o dissimulazione che si usa e<span class="supplied">[ti]</span>am sanza dolo, può essere vera la conclusione sua, che la forza sola, non dico mai, che è vocabolo troppo resoluto, ma rarissime volte conduca gli uomini da bassa a grande fortuna. Ma se chiama fraude quella che è proprio fraude, cioè il mancamento di fede, o altro procedere doloso, credo si trovino molti ch<span class="supplied">[e]</span> hanno sanza fraude acquistato r<span class="supplied">[e]</span>gni e imperii grandissimi. Di questi fu Alessandro Magno, di questi Cesare, che di cittadino privato con altre arti che di fraude si condusse a tanta grandezza, scoprendo sempre la ambizione s<span class="supplied">[u]</span>a o lo appetito del dominare. Non ho ora fresca la memoria di Zenofonte, ma credo che instruisca Ciro di prudenza, d&#x27;industria, di simulazione o dissimulazione giuste, non di fraude. Né chiamo fraude se e&#x27; Romani fecion<span class="supplied">[o]</span> tali patti ai Latini ch<span class="supplied">[e]</span> potettono pazientemente tollerare lo imperio loro, il che non fu perché non si accorgessino insino dal principio, che, sotto ombra di confederazione, equale era servitù; ma il trovarsi impotenti, né essere trattati in modo che non avessino causa di desperarsi, gli fece aspettare insino a t<span class="supplied">[a]</span>nto, non dico che ebbono scoperto il fine de&#x27; Romani, il quale sarebbono stati bene grossi se non avessino cognosciuto da principio, ma che cresciuti di numero di uomini, e bene esperti di disciplina militare, ebbono speranza poter<span class="supplied">[e]</span> contendere del pari col populo romano. Fu anche prudenza quella de&#x27; Romani, non fraude, a trattare bene e&#x27; Latini; e credo sia verissimo che sanza simili industrie e prudenti modi di governarsi non solo rarissime volte si salga da bassa fortuna a alta, ma ancora difficilmente si conservi la grandezza. Ma, quanto alla fraude, può essere disputabile se sia sempre buono instrumento di pervenire alla grandezza; perché spesso con lo inganno si fanno di molti belli tratti, spesso anche l&#x27;avere nome di fraudolent<span class="supplied">[o]</span> toglie occasione di conseguire gli intenti suoi</div>
+        <div class="col en" lang="en">If the Writer calls fraud every craft or dissimulation that is used even without guile, his conclusion can be true, that force alone, I do not say never, which is too resolute a word, but most rarely conducts men from low to great fortune. But if he calls fraud that which is properly fraud, that is, the failing of faith, or other guileful proceeding, I believe many are found who have without fraud acquired kingdoms and most great empires. Of these was Alexander the Great, of these Caesar, who from private citizen, with other arts than <span class="supplied">[those]</span> of fraud, conducted himself to such greatness, always uncovering his ambition or the appetite for dominating. I do not now have the memory of Xenophon fresh, but I believe that he instructs Cyrus in prudence, in industry, in just simulation or dissimulation, not in fraud. Nor do I call it fraud if the Romans made such pacts with the Latins that they could patiently tolerate their empire, which was not because they did not perceive from the very beginning that, under the shadow of confederation, <span class="supplied">[what was]</span> equal was servitude; but finding themselves impotent, and not being treated in such a way that they had cause to despair, made them wait until such time, I do not say that they had uncovered the end of the Romans, which they would have been very gross <span class="supplied">[men]</span> if they had not known from the beginning, but that, grown in number of men, and well expert in military discipline, they had hope to be able to contend on even <span class="supplied">[terms]</span> with the Roman people. It was also prudence, that of the Romans, not fraud, to treat the Latins well; and I believe it is most true that without like industries and prudent ways of governing oneself not only does one most rarely climb from low fortune to high, but also greatness is conserved with difficulty. But, as to fraud, it can be disputable whether it is always a good instrument for arriving at greatness; because often with deceit many fine strokes are made, often also having the name of <span class="supplied">[being]</span> fraudulent takes away the occasion of attaining his intents</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> The reply is one paragraph, and it turns on a definition. If the Writer calls fraud every craft or dissimulation that is used even without guile, Machiavelli&#x27;s conclusion can be true, with one correction: Guicciardini will not say that force alone never conducts men from low to great fortune, &quot;never&quot; being a word too resolute, only that it does so most rarely. If fraud is what is properly fraud, the failing of faith or other guileful proceeding, then he believes many are found who have acquired kingdoms and most great empires without it. Of these, he says, was Alexander the Great, of these Caesar, who rose from private citizen with other arts than those of fraud, always uncovering his ambition or the appetite for dominating. He goes through Machiavelli&#x27;s authorities in turn. Of Xenophon he says that he does not now have the memory fresh, but believes that Xenophon instructs Cyrus in prudence, in industry, in just simulation or dissimulation, not in fraud. Of Rome and the Latins he says that he does not call it fraud if the Romans made pacts the Latins could patiently tolerate. Their patience, he says, was not because they did not perceive from the very beginning that, under the shadow of confederation, what was equal was servitude; what made them wait was finding themselves impotent and not being treated so as to have cause to despair, and they waited, he does not say until they had uncovered Rome&#x27;s end, which they would have been very gross not to have known from the beginning, but until, grown in number of men and well expert in military discipline, they had hope of contending on even terms with the Roman people. The Romans&#x27; good treatment of the Latins was also prudence, not fraud. He then believes it most true that without like industries and prudent ways of governing oneself not only does one most rarely climb from low fortune to high, but also greatness is conserved with difficulty. On fraud itself he leaves the question open: it can be disputable whether it is always a good instrument for arriving at greatness, since deceit often makes fine strokes and the name of fraudulent often takes away the occasion of attaining one&#x27;s intents. The reply ends there, without a stop.</p>
+<p><span class="lem">History.</span> Alexander came to a kingdom his father Philip left him, the case Machiavelli&#x27;s proviso sets aside, before he acquired an empire; Caesar rose through the offices of the republic to the dictatorship. These are the editor&#x27;s observations; Guicciardini gives the two names without their histories. Annius&#x27; sentence in Livy speaks of an equal treaty (<i lang="la">foederis aequi</i>), the treaty that bound the Latins to Rome; Guicciardini&#x27;s &quot;confederation&quot; answers it, and Canestrini&#x27;s comma, which this edition keeps (D110), sets <i lang="it">equale</i> with &quot;servitude&quot; rather than with the confederation, where the 1933 edition, without the comma, has it.</p>
+<p><span class="lem">Cross-reference.</span> The condition at the head answers Machiavelli&#x27;s rubric and his opening judgment <a class="xref" href="#NM-DISC.2.13.01">Machiavelli .01</a>, and &quot;I do not say never&quot; answers his &quot;seldom or never&quot; and &quot;Nor do I believe it is ever found&quot;. Xenophon and Cyrus are Machiavelli&#x27;s first authority <a class="xref" href="#NM-DISC.2.13.02">Machiavelli .02</a>; the Romans&#x27; pacts with the Latins, the Latins&#x27; perceiving, and &quot;the shadow of confederation&quot; answer his account of the companions and Annius&#x27; words <a class="xref" href="#NM-DISC.2.13.03">Machiavelli .03</a> <a class="xref" href="#NM-DISC.2.13.04">Machiavelli .04</a>. Read beside Machiavelli&#x27;s close, Caesar&#x27;s uncovered ambition stands against fraud that is less vituperable the more it is covered, the climb from low fortune takes up his &quot;climb to sublime degrees&quot;, and &quot;always a good instrument&quot; takes up &quot;always necessary&quot; <a class="xref" href="#NM-DISC.2.13.05">Machiavelli .05</a>. The <i lang="la">etiam</i> of the first sentence is the word of that close.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div>
+        <h3>Source</h3>
+        <p>Established from Canestrini 1857, <i>Opere inedite</i> vol. 1, pp. 1–65 (<span class="sig">WIT-FG-CONS-1857-CANESTRINI</span>) — the <i>editio princeps</i>, which governs. Collated against Palmarocchi 1933 (<span class="sig">WIT-FG-CONS-1933-PALMAROCCHI</span>): page images and the Wikisource transcription consulted as collation evidence, not reproduced (LICENSE §5).</p>
+<p><span class="lem">acquistato regni e imperii grandissimi Di questi</span> → <span class="lem">acquistato r[e]gni e imperii grandissimi. Di questi</span> (FG-CONS.2.13.01). No stop visible to either reader (both ⟨∅|.⟩, preferring none); a capital follows; the 1933 edition prints one. D67.</p>
+      </div>
+      <div>
+        <h3>Variants</h3>
+        <p><span class="lem">e[ti]am; ch[e]; r[e]gni; s[u]a; fecion[o]; ch[e]; t[a]nto; poter[e]</span>. The 1857 witness reads <i lang="it">che si usa eltam sanza dolo; molti cha hanno; acquistato ragni; la ambizione sna; se e Romani feciona; ai Latini cha potettono; insino a tonto; speranza potera contendere</i>. The 1933 witness reads <i lang="it">etiam; che; regni; sua; feciono; che; tanto; potere</i>. Letters the scan breaks (e/a, o/a, u/n, and the t and i of <i lang="la">etiam</i>), seen printed by both readers; none of the printed forms construes. Emended from the 1933 edition and bracketed (D68, D450).</p>
+<p><span class="lem">fraudolent[o]</span>. The 1857 witness reads <i lang="it">l&#x27;avere nome di fraudolenta</i>. The 1933 witness reads <i lang="it">l&#x27;avere nome di fraudulento</i>. Read by both readers, one doubting it against <i lang="it">fraudolento</i>. The feminine agrees with nothing; the name is of the one who deceives. Emended in Canestrini&#x27;s spelling on the recommendation, open for David (O46).</p>
+<p><span class="lem">Fu anche prudenza quella de&#x27; Romani, non fraude</span> — 1857. The 1933 witness reads <i lang="it">Fu adunche prudenzia quella de&#x27; romani, non fraude</i>. <i lang="it">anche</i>, also, against <i lang="it">adunche</i>, therefore: the 1933 makes the sentence a conclusion from the Latins&#x27; case, Canestrini an addition to it. Read by both readers without doubt; Canestrini construes. Kept (D38, D450).</p>
+<p><span class="lem">grandissimi. (C001, D67); fortuna.; servitù;; romano.</span>. The 1857 witness reads <i lang="it">grandissimi Di questi; fortuna⟨.|∅⟩ Ma; servitu⟨,|;⟩ ma; romano⟨.|∅⟩ Fu</i>. The 1933 witness reads <i lang="it">grandissimi. Di questi; fortuna. Ma; servitù; ma; romano. Fu</i>. Pointing doubtful to both or missing before a capital, read with the 1933 edition (D110, D67, D450); no stop at the unit&#x27;s end (D40).</p>
+<p><span class="lem">Considerazione sul capitolo XIII / Che si viene di bassa a gran fortuna più con la fraude, che con la forza</span>. The 1857 witness reads <i lang="it">CONSIDERAZIONE SUL CAPITOLO XIII / Che si viena di bassa a gran fortuna piu con la fraude. / che con la forza</i>. The 1933 witness reads <i lang="it">CAPITOLO XIII / [Che si viene di bassa a gran fortuna più con la fraude che con la forza.]</i>. Canestrini&#x27;s heading without <i lang="it">del libro II</i>, as printed (D443). His rubric&#x27;s <i lang="it">viena</i> and the stop after <i lang="it">fraude</i>, which both readers see and prefer, read with Machiavelli&#x27;s 1824 rubric and the 1933 edition; <i lang="it">piu</i> accented by DEC-009; no stop (D451, as D430, D440).</p>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><span class="lem">The heading and the rubric.</span> Canestrini&#x27;s heading, CONSIDERAZIONE SUL CAPITOLO XIII, without <i lang="it">del libro II</i>, as both readers saw it; the column is headed as the page is (D443). His rubric is Machiavelli&#x27;s sentence (Machiavelli, rubric), printed with broken letters, <i lang="it">viena</i> and <i lang="it">piu</i>, and a stop after <i lang="it">fraude</i> where Machiavelli has a comma: read with the 1824 rubric and the 1933 edition, with no stop after it (D451; FG-CONS-II13-D005). His note on Xenophon and on Giovanni Galeazzo and Bernabò is his commentary and is not carried.</p>
+<p><span class="lem"><i lang="it">Se lo Scrittore chiama fraude ogni astuzia o dissimulazione che si usa e[ti]am sanza dolo</i>.</span> &quot;If the Writer calls fraud every craft or dissimulation that is used even without guile&quot;: <i lang="it">Scrittore</i>, the Writer (glossary), Machiavelli. <i lang="it">fraude</i>, fraud, as in Machiavelli; the reply is about what the word covers, and the English holds one word for it through both columns. <i lang="it">astuzia</i>, craft, with <i lang="it">astutamente</i>, craftily (D52): the cognate &quot;astuteness&quot; now praises. <i lang="it">dissimulazione</i>, dissimulation; <i lang="it">simulazione</i> (below), simulation, in its older sense of pretending. <i lang="it">dolo</i>, guile; <i lang="it">doloso</i>, guileful (below): the root held, kept apart from <i lang="it">inganno</i>, deceit (D374), and from <i lang="it">fraude</i>. <i lang="la">etiam</i>, Latin, even, as FG I.3, I.16 and II.12, and as in Machiavelli&#x27;s <i lang="it">non essere mancati etiam della fraude</i> (Machiavelli .05). The two readers divide between the printed <i lang="it">eltam</i> and <i lang="la">etiam</i>; emended <i lang="it">e[ti]am</i> (D450; FG-CONS-II13-E001). &quot;Every craft&quot; keeps <i lang="it">ogni</i> &quot;every&quot;; <i lang="it">astuzia</i> is the faculty, not a trade.</p>
+<p><span class="lem"><i lang="it">può essere vera la conclusione sua</i>.</span> &quot;His conclusion can be true&quot;: a concession, under the condition of the <i lang="it">Se</i>, of the conclusion of the rubric and of Machiavelli .01; <i lang="it">vero</i>, true, as Machiavelli&#x27;s <i lang="it">verissima</i> (Machiavelli .01) and his own <i lang="it">verissimo</i> below.</p>
+<p><span class="lem"><i lang="it">che la forza sola, non dico mai, che è vocabolo troppo resoluto, ma rarissime volte conduca gli uomini da bassa a grande fortuna</i>.</span> &quot;That force alone, I do not say never, which is too resolute a word, but most rarely conducts men from low to great fortune&quot;: <i lang="it">non dico mai</i> answers Machiavelli&#x27;s <i lang="it">rado o non mai</i> and <i lang="it">Né credo si trovi mai</i> (Machiavelli .01); <i lang="it">vocabolo</i>, word; <i lang="it">resoluto</i>, resolute, the root of <i lang="it">resoluzione</i>, resolution (FG II.12). <i lang="it">rarissime volte</i>, most rarely, the superlative kept, here and below. <i lang="it">condurre</i>, conduct (D444), here and at <i lang="it">si condusse</i>, held across men and the man who conducts himself. <i lang="it">bassa</i>, low; <i lang="it">grande fortuna</i>, great fortune, Machiavelli&#x27;s rubric.</p>
+<p><span class="lem"><i lang="it">quella che è proprio fraude, cioè il mancamento di fede, o altro procedere doloso</i>.</span> &quot;That which is properly fraud, that is, the failing of faith, or other guileful proceeding&quot;: <i lang="it">proprio</i>, properly; <i lang="it">mancamento</i>, failing, the noun of <i lang="it">mancare</i>, fail (D206); <i lang="it">fede</i>, faith (glossary); <i lang="it">procedere</i>, proceeding.</p>
+<p><span class="lem"><i lang="it">credo si trovino molti ch[e] hanno sanza fraude acquistato r[e]gni e imperii grandissimi</i>.</span> &quot;I believe many are found who have without fraud acquired kingdoms and most great empires&quot;: no &quot;that&quot; is supplied, here or at <i lang="it">credo sia verissimo</i>, where the Italian has no <i lang="it">che</i>; <i lang="it">credo</i>, I believe, the first of three, each an act of assent to a claim of his own, not a hedge on Machiavelli&#x27;s. <i lang="it">si trovino</i> answers Machiavelli&#x27;s <i lang="it">Né credo si trovi mai</i> (Machiavelli .01, .02). <i lang="it">acquistare</i>, acquire (glossary); <i lang="it">imperio</i>, empire (D124), as Machiavelli&#x27;s <i lang="it">Imperj grandissimi</i>. The scan prints <i lang="it">cha</i> and <i lang="it">ragni</i>, emended <i lang="it">ch[e]</i> and <i lang="it">r[e]gni</i> (D450; FG-CONS-II13-E002, E003).</p>
+<p><span class="lem"><i lang="it">Di questi fu Alessandro Magno, di questi Cesare</i>.</span> &quot;Of these was Alexander the Great, of these Caesar&quot;: Alexander, son of Machiavelli&#x27;s Philip of Macedon (Machiavelli .01), the editor&#x27;s observation; Caesar, Julius Caesar.</p>
+<p><span class="lem"><i lang="it">che di cittadino privato con altre arti che di fraude si condusse a tanta grandezza</i>.</span> &quot;Who from private citizen, with other arts than [those] of fraud, conducted himself to such greatness&quot;: <i lang="it">arte</i>, art; <i lang="la">tanto</i>, such, as Machiavelli&#x27;s <i lang="it">in tanto augumento</i> (Machiavelli .03). <i lang="it">grandezza</i>, greatness, Machiavelli&#x27;s word (Machiavelli .02, .03).</p>
+<p><span class="lem"><i lang="it">scoprendo sempre la ambizione s[u]a o lo appetito del dominare</i>.</span> &quot;Always uncovering his ambition or the appetite for dominating&quot;: <i lang="it">scoprire</i>, uncover, here and at <i lang="it">ebbono scoperto il fine de&#x27; Romani</i>, against Machiavelli&#x27;s fraud that is less vituperable <i lang="it">quanto è più coperta</i> (Machiavelli .05): Caesar&#x27;s ambition was not covered. <i lang="it">appetito</i>, appetite (D117); <i lang="it">dominare</i>, dominate (glossary). The two readers divide between the printed <i lang="it">sna</i> and <i lang="it">sua</i>; emended <i lang="it">s[u]a</i> (D450; FG-CONS-II13-E004).</p>
+<p><span class="lem"><i lang="it">Non ho ora fresca la memoria di Zenofonte</i>.</span> &quot;I do not now have the memory of Xenophon fresh&quot;: Machiavelli&#x27;s <i lang="it">Senofonte</i> (Machiavelli .02); the reply&#x27;s one admission that its ground is memory, before <i lang="it">credo</i>.</p>
+<p><span class="lem"><i lang="it">credo che instruisca Ciro di prudenza, d&#x27;industria, di simulazione o dissimulazione giuste, non di fraude</i>.</span> &quot;I believe that he instructs Cyrus in prudence, in industry, in just simulation or dissimulation, not in fraud&quot;: <i lang="it">instruire</i>, instruct; <i lang="it">prudenza</i>, prudence (glossary); <i lang="it">industria</i>, industry, diligence and contrivance, with <i lang="it">industrie</i> below; <i lang="it">giuste</i>, just, plural, so that it qualifies both simulation and dissimulation. Under the second <i lang="it">se</i>, the proper sense, just simulation or dissimulation is not fraud; under the first it would be.</p>
+<p><span class="lem"><i lang="it">Né chiamo fraude se e&#x27; Romani fecion[o] tali patti ai Latini ch[e] potettono pazientemente tollerare lo imperio loro</i>.</span> &quot;Nor do I call it fraud if the Romans made such pacts with the Latins that they could patiently tolerate their empire&quot;: <i lang="it">patto</i>, pact; <i lang="it">tollerare</i>, tolerate; <i lang="it">imperio</i>, empire (D124), the Romans&#x27; dominion over the Latins. <i lang="it">potettono</i> has the Latins for subject and <i lang="it">loro</i> the Romans, as the sense requires; the English keeps the pronouns. The scan prints <i lang="it">feciona</i> and <i lang="it">cha</i>, emended <i lang="it">fecion[o]</i>, <i lang="it">ch[e]</i> (D450; FG-CONS-II13-E002, E005).</p>
+<p><span class="lem"><i lang="it">il che non fu perché non si accorgessino insino dal principio, che, sotto ombra di confederazione, equale era servitù</i>.</span> &quot;Which was not because they did not perceive from the very beginning that, under the shadow of confederation, [what was] equal was servitude&quot;: <i lang="it">insino dal principio</i>, from the very beginning, against Machiavelli&#x27;s Latins, who <i lang="it">non si avvidero mai ... se non poi che</i> (Machiavelli .03); <i lang="it">accorgersi</i> and Machiavelli&#x27;s <i lang="it">avvedersi</i>, perceive, a recorded collapse. <i lang="it">sotto ombra di confederazione</i> answers Annius&#x27; <i lang="la">sub umbra foederis</i>, which Machiavelli quotes (Machiavelli .04); <i lang="it">confederazione</i>, confederation. Canestrini&#x27;s comma, which both readers read without doubt, is kept (D110), and with it <i lang="it">equale</i> stands as the subject, [what was] equal, and <i lang="it">servitù</i> as the predicate; the 1933 edition, without the comma, reads <i lang="it">confederazione equale</i>, an equal confederation, Livy&#x27;s <i lang="la">foederis aequi</i>.</p>
+<p><span class="lem"><i lang="it">ma il trovarsi impotenti, né essere trattati in modo che non avessino causa di desperarsi, gli fece aspettare insino a t[a]nto</i>.</span> &quot;But finding themselves impotent, and not being treated in such a way that they had cause to despair, made them wait until such time&quot;: the two infinitives are the subject of <i lang="it">fece</i>. <i lang="it">né</i> after an affirmative member is <i lang="it">e non</i>, and the <i lang="it">non</i> of <i lang="it">che non avessino</i> is concord with it and idle; the English renders <i lang="it">né</i> &quot;and not&quot; and drops the <i lang="it">non</i> (as D412): the Latins were not treated so ill as to despair. <i lang="it">desperarsi</i>, despair; <i lang="it">impotente</i>, impotent, without power. The scan prints <i lang="it">tonto</i>, emended <i lang="it">t[a]nto</i> (D450; FG-CONS-II13-E006).</p>
+<p><span class="lem"><i lang="it">insino a t[a]nto, non dico che ebbono scoperto il fine de&#x27; Romani</i>; <i lang="it">ma che ... ebbono speranza</i>.</span> &quot;I do not say that they had uncovered the end of the Romans ... but that ... they had hope&quot;: the second <i lang="it">non dico</i> of the reply, correcting what <i lang="it">insino a tanto</i> might be taken to mean; <i lang="it">fine</i>, end, aim.</p>
+<p><span class="lem"><i lang="it">il quale sarebbono stati bene grossi se non avessino cognosciuto da principio</i>.</span> &quot;Which they would have been very gross [men] if they had not known from the beginning&quot;: <i lang="it">grosso</i>, gross, dull of wit; <i lang="it">bene</i> an intensifier, &quot;very&quot; here, &quot;well&quot; at <i lang="it">bene esperti</i>. <i lang="it">cognoscere</i>, know (D374). He has just said that they perceived it <i lang="it">insino dal principio</i>.</p>
+<p><span class="lem"><i lang="it">cresciuti di numero di uomini, e bene esperti di disciplina militare</i>.</span> &quot;Grown in number of men, and well expert in military discipline&quot;: <i lang="it">esperto</i>, expert (D444, <i lang="it">espertissimo</i>); <i lang="it">disciplina militare</i>, military discipline (FG II.proem).</p>
+<p><span class="lem"><i lang="it">speranza poter[e] contendere del pari col populo romano</i>.</span> &quot;Hope to be able to contend on even [terms] with the Roman people&quot;: <i lang="it">del pari</i>, on even [terms], <i lang="it">pari</i> even (D262); <i lang="it">populo</i>, people. The scan prints <i lang="it">potera</i>, emended <i lang="it">poter[e]</i> (D450; FG-CONS-II13-E007).</p>
+<p><span class="lem"><i lang="it">Fu anche prudenza quella de&#x27; Romani, non fraude, a trattare bene e&#x27; Latini</i>.</span> &quot;It was also prudence, that of the Romans, not fraud, to treat the Latins well&quot;: <i lang="it">anche</i>, also; the 1933 edition reads <i lang="it">adunche</i>, then (D74), which would make it a conclusion from the Latins&#x27; case; <i lang="it">anche</i> kept (D38, D450; FG-CONS-II13-D003).</p>
+<p><span class="lem"><i lang="it">credo sia verissimo</i>.</span> &quot;I believe it is most true&quot;: the third <i lang="it">credo</i>, assent to a claim of his own, in Machiavelli&#x27;s superlative (Machiavelli .01 <i lang="it">cosa verissima</i>).</p>
+<p><span class="lem"><i lang="it">sanza simili industrie e prudenti modi di governarsi</i>.</span> &quot;Without like industries and prudent ways of governing oneself&quot;: <i lang="it">simile</i>, like (glossary); <i lang="it">modo</i>, way (glossary); <i lang="it">governarsi</i>, govern oneself.</p>
+<p><span class="lem"><i lang="it">non solo rarissime volte si salga da bassa fortuna a alta, ma ancora difficilmente si conservi la grandezza</i>.</span> &quot;Not only does one most rarely climb from low fortune to high, but also greatness is conserved with difficulty&quot;: <i lang="it">salire</i>, climb, Machiavelli&#x27;s verb (Machiavelli .05 <i lang="it">a sublimi gradi salire</i>); <i lang="it">conservare</i>, conserve (glossary), the question Machiavelli does not ask; <i lang="it">difficilmente</i>, with difficulty, kept apart from <i lang="it">facilmente</i>, readily (D27).</p>
+<p><span class="lem"><i lang="it">Ma, quanto alla fraude, può essere disputabile se sia sempre buono instrumento di pervenire alla grandezza</i>.</span> &quot;But, as to fraud, it can be disputable whether it is always a good instrument for arriving at greatness&quot;: not a judgment but a question left open; <i lang="it">sempre</i> answers Machiavelli&#x27;s <i lang="it">fu sempre necessaria</i> (Machiavelli .05); <i lang="it">pervenire</i>, arrive at (Machiavelli .01, .02); <i lang="it">instrumento</i>, instrument.</p>
+<p><span class="lem"><i lang="it">perché spesso con lo inganno si fanno di molti belli tratti, spesso anche l&#x27;avere nome di fraudolent[o] toglie occasione di conseguire gli intenti suoi</i>.</span> &quot;Because often with deceit many fine strokes are made, often also having the name of [being] fraudulent takes away the occasion of attaining his intents&quot;: <i lang="it">inganno</i>, deceit (D374), Machiavelli&#x27;s word (Machiavelli .02, .03, .04); <i lang="it">tratto</i>, stroke, a move well played; <i lang="it">togliere</i>, take away (D131, D313); <i lang="it">occasione</i>, occasion (glossary); <i lang="it">conseguire</i>, attain (glossary); <i lang="it">intento</i>, intent. The two <i lang="it">spesso</i> are set side by side without a conjunction, and the English keeps the asyndeton. The scan prints <i lang="it">fraudolenta</i>, which agrees with nothing; emended <i lang="it">fraudolent[o]</i> on the recommendation, open for David (O46; FG-CONS-II13-E008, FG-CONS-II13-D002). The reply ends without a stop, and so does the English (D40).</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="colophon">
+    <div class="row">
+      <div>
+        <h3>What this is</h3>
+        <p>A free, openly licensed, bilingual edition of Guicciardini's 39 <i>Considerazioni</i> and the
+          <i>Discorsi</i> chapters they answer — 78 text units, Italian and English facing, every reading
+          traceable to a named public-domain witness.</p>
+        <p>It is a reading edition with a transparent apparatus, not a text of record. It does not adjudicate
+          the critical text against Bausi 2001 or the manuscript tradition, and does not claim to.</p>
+      </div>
+      <div>
+        <h3>On the title</h3>
+        <p>Machiavelli had been dead two years when Guicciardini wrote; the <i>Discorsi</i> were unpublished,
+          and the <i>Considerazioni</i> stayed unprinted until 1857. Machiavelli never answers.</p>
+        <p>“Conversation” is a quotation, not a description. It invokes Machiavelli's letter to Francesco Vettori of
+          10 December 1513: at evening he puts on royal and curial garments (<i>panni reali e curiali</i>),
+          enters the ancient courts of ancient men (<i>le antiche corti degli antichi uomini</i>), asks them the
+          reason for their actions, and <i>quelli per loro umanità mi rispondono</i>, “they, for their humanity,
+          answer me”. Guicciardini does to Machiavelli what Machiavelli did to Livy — and is denied the reply
+          Machiavelli claimed. The letter is quoted from the 1813 <i>Opere</i>, vol. 8, p. 96, read twice from
+          the page image.</p>
+      </div>
+      <div>
+        <h3>Method</h3>
+        <p>No image-derived reading enters the text on a single reading. Each unit is transcribed twice,
+          independently, by readers who have not seen each other's work; disagreements are adjudicated against
+          the page images and recorded.</p>
+        <p>Existing English translations of the <i>Considerazioni</i> — Grayson (1965), Atkinson &amp; Sices
+          (2002) — are never used as translation inputs.</p>
+      </div>
+      <div>
+        <h3>Licence</h3>
+        <p>The established Italian text and the apparatus data are dedicated to the public domain under
+          <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>. They are Machiavelli's and
+          Guicciardini's sentences, and this edition adds no condition to them.</p>
+        <p>The English translation, the notes and the editorial apparatus are licensed
+          <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: reuse them anywhere, including
+          commercially, with attribution to David McDougall and this edition. The build tooling is MIT.</p>
+        <p>The witness scans are other people's digitisations, included as evidence under their own terms; no
+          grant is made over them, and no page image of Palmarocchi 1933 is reproduced here. Full terms,
+          layer by layer, are in the <span class="sig">LICENSE</span> file in the repository.</p>
+      </div>
+    </div>
+
+    <div class="state">
+      <p><strong>Version 0.3 · 32 of 39 pairs published.</strong>
+        Published 21 November 2026. This edition is versioned, not frozen. Some translation questions on this pair are still open.</p>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
