@@ -907,3 +907,29 @@ last sentence answers Machiavelli's first move.
 | `largamente` | at large | D464. FG II.14. |
 | `nella persona di` | in the person of | D464. FG II.14 (Thucydides, Pericles). |
 | `mal volentieri` | unwillingly | D464. FG II.14 `che mal volentieri si debbe cedere`: it governs the obligation, one must be loath to yield; set first in the English, as in the Italian, to read over "must". |
+
+## Added from the II.15 pair (2026-11-22)
+
+| Italian | English | Note |
+|---|---|---|
+| `stare in ambiguo`, `stare sospeso`, `stare neutrale` | stand in the ambiguous, stand suspended, stand neutral | D472. NM II.15 .01, .04, .06; FG II.15 `stai sospeso`, `lo stare neutrale`. One verb for the posture across the pair. |
+| `sospensione` / `suspensione`; `sospeso` | suspension; suspended | D472. FG II.15 ×3, one word in two spellings, Guicciardini's noun for Machiavelli's `lo stare sospeso` (NM II.15 .04). In an editor's summary the act `non so` stays "does not know whether". |
+| `risolvere` / `resolvere`, `risolversi` / `resolversi`; `resoluzione`; `irresoluzione` | resolve, resolve oneself; resolution; irresolution | D472, with the FG II.12 row. NM II.15 rubric; FG II.15 throughout, one root in both spellings. |
+| `deliberare`, `deliberarsi`; `deliberatamente` | deliberate; deliberately | D472. NM II.15 ×8; FG II.12, II.15. With `deliberazione` (I.39). FG II.15's adverb keeps the root. |
+| `debolezza` | weakness | D472. NM II.15 .03, .07; FG II.15 ×4. With `debole` (D464). |
+| `lento`, `lentezza`; `tardo`, `tardità`; `tardare` | slow, slowness; tardy, tardiness; delay | D472. NM II.15 rubric, .03, .04; FG II.15. Kept apart from `differire`, defer (D334). |
+| `dannabile` | damnable | D472. NM II.15 .06; FG II.15. |
+| `consulta`, `consultare` | consultation, consult | D472. NM II.15 .01 ×2, ×1. |
+| `neutrale`, `neutralità` | neutral, neutrality | D472. NM II.15 .06; FG II.15 ×2. |
+| `communemente` | commonly | D472. FG II.15 ×3. |
+| `utilità` | utility | D472. FG II.15. Kept apart from `utile`, useful (D135) and advantage (D283). |
+| `reprensibile` | reprehensible | D472. FG II.15. A recorded split from D173's `riprendere`, `reprensione`, reprove, reproof: the adjective takes the cognate. |
+| `caso`; `per caso` | case; by chance | D472. FG II.15, a sense split. |
+| `parte` (a direction) | side | D472. NM II.15 .03 `alla parte perniciosa`; the faction stays "party" (D389), NM II.15 .04. |
+| `prendere` / `pigliare` (a course) | take / take | D472, a recorded collapse. NM II.15 .04. |
+| `ancora` (NM II.15 .06) | even | D472, a sense split from "also" (.03, .05), the editor's reading. |
+| `ricercare d'accordo` | seek for accord | D472. NM II.15 .06, as `ricerchi d'ajuto` (.05); beside D464's adverbial `d'accordo`, by accord. |
+| `ingegno` | mind | D178, D472. NM I.9, I.40; FG II.15 `debolezza di prudenza e di ingegno`, kept apart from `animo`, spirit. |
+| `individuo` | the individual [point] | D472. NM II.15 .01. |
+| `incertitudine` / `incerto` (noun) | incertitude / the uncertain | D472. NM II.15 .01, .02. |
+| `coscienza` | conscience | D472. NM II.15 .01, the old sense of inward knowledge. |

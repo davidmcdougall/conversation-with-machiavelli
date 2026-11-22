@@ -29,7 +29,7 @@ first time it is italicised.
 | `Periochae` | notes (Livy) |
 | `spectare` | FG I.9 note (D175) |
 | `patres` | NM I.9 commentary |
-| `etiam` | FG I.3, FG I.16 note, FG II.12 .02, NM II.13 .05, FG II.13 .01, FG II.14 .01 |
+| `etiam` | FG I.3, FG I.16 note, FG II.12 .02, NM II.13 .05, FG II.13 .01, FG II.14 .01, FG II.15 .01 |
 | `latebrae` | NM I.16 note |
 | `verbi gratia` | FG I.23 |
 | `virtus` | NM I.24 note and commentary (Livy 1.26) |
@@ -97,3 +97,5 @@ first time it is italicised.
 | `patientia` | NM II.14 note |
 | `modestia` | NM II.14 note |
 | `conscientia virium` | NM II.14 note |
+| `Ad summam rerum nostrarum pertinere arbitror, ut cogitetis magis, quid agendum nobis, quam quid loquendum sit. Facile erit, explicatis consiliis, accomodare rebus verba.` | NM II.15 .01 (Livy 8.4.1; `accomodare` as the 1824 prints it) |
+| `Ad summam rerum nostrarum ... accomodare rebus verba.` | NM II.15 note |

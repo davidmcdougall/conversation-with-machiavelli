@@ -284,3 +284,11 @@ the original.
 | `Annio Pretore Latino` | Annius, Latin praetor | NM II.14 .01, `il prefato`, as NM II.13 .04 |
 | `Tucidide` | Thucydides | FG II.14 |
 | `Pericle`; `Ateniesi`; `Lacedemonii` | Pericles; the Athenians; the Lacedaemonians | FG II.14, as NM II.10, NM I.28, FG I.2 |
+| `Girolamo Tiranno` | Hieronymus the tyrant | NM II.15 .04; as `Girolamo`, NM I.58 |
+| `Apollonide` | Apollonides | NM II.15 .04; a leading Syracusan (Livy 24.28, the editor's note) |
+| `Lavinj` / `Lavinii` | the Lavinians | NM II.15 .05 / FG II.15; Livy's Lanuvini, of Lanuvium (Livy 8.11.3-4; the editor's identification) |
+| `Milonio` | Milionius | NM II.15 .05; praetor of the Lavinians (Livy 8.11.4) |
+| `Tito Livio` | Livy | NM II.15 .04, as NM I.47 |
+| `Annio loro Pretore` | Annius, their praetor | NM II.15 .01, as NM II.13 .04 |
+| `Luigi di Francia XII`; `Lodovico Duca di Milano` | Louis XII of France; Lodovico, Duke of Milan | NM II.15 .06; Lodovico Sforza; the passage of 1499 (the editor's date) |
+| `Fiorentini`; `Francesi` | the Florentines; the French | NM II.15 .06, as NM I.39, NM I.7 |
