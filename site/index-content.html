@@ -70,13 +70,14 @@ h1 {
 }
 h1 .sub { display: block; font-style: italic; color: var(--ink-muted); font-size: .52em; margin-top: 12px; letter-spacing: 0; }
 .standfirst {
-  font-family: var(--sans); font-size: 14.5px; line-height: 1.6;
-  color: var(--ink-muted); max-width: 62ch; margin: 0;
+  font-family: var(--serif); font-size: 18px; line-height: 1.55;
+  color: var(--ink); max-width: 60ch; margin: 22px 0 0;
 }
 .sf-label {
-  font-weight: 600; font-size: 11px; letter-spacing: .12em; text-transform: uppercase;
-  color: var(--ink-faint); margin-right: .6em;
+  display: block; font-family: var(--sans); font-weight: 600; font-size: 10.5px;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px;
 }
+.index .standfirst { font-size: 17px; color: var(--ink-muted); }
 
 /* ---- the pairing device ---- */
 .pairing {
@@ -222,6 +223,13 @@ a { color: inherit; }
 
 /* ---- contents / index page ---- */
 .toc { margin-top: -22px; }
+.toc .book {
+  font-family: var(--serif); font-weight: 500; font-size: 22px; margin: 0;
+  padding: 34px 0 10px; border-bottom: 1px solid var(--rule);
+  display: flex; align-items: baseline; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+}
+.toc .book:first-child { padding-top: 0; }
+.toc .book span { font-family: var(--sans); font-size: 12px; font-weight: 400; color: var(--ink-faint); }
 .toc-row {
   display: grid; grid-template-columns: 40px minmax(0, 70ch) 1fr; gap: 0 20px;
   padding-block: 14px; border-bottom: 1px solid var(--rule-faint);
@@ -235,6 +243,28 @@ a { color: inherit; }
 .toc-row .ids { color: var(--ink-faint); font-size: 12px; font-family: var(--sans); margin-top: 3px; }
 .toc-row .dated { color: var(--ink-faint); font-size: 12px; text-align: right; }
 
+/* ---- language toggle: on phones the facing columns stack, so the reader picks
+   one language (English by default), or both; desktop always shows both ---- */
+.langbar { display: none; }
+@media (max-width: 760px) {
+  .langbar {
+    display: flex; align-items: center; gap: 6px; position: sticky; top: 0; z-index: 5;
+    margin: 0 -20px; padding: 10px 20px; background: var(--paper);
+    border-bottom: 1px solid var(--rule); font-family: var(--sans); font-size: 12.5px;
+  }
+  .langbar .lb-label { color: var(--ink-faint); margin-right: 4px; font-size: 11px;
+    font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+  .langbar button {
+    font: inherit; color: var(--ink-muted); background: transparent; cursor: pointer;
+    border: 1px solid var(--rule); border-radius: 2px; padding: 5px 11px;
+  }
+  .langbar button[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  html[data-lang="en"] .col.it, html[data-lang="it"] .col.en { display: none; }
+  html[data-lang="en"] .col.en::before, html[data-lang="it"] .col.it::before { display: none; }
+  html[data-lang="it"] .col.it { margin-bottom: 0; padding-bottom: 0; border-bottom: 0; }
+  .pair { scroll-margin-top: 56px; }
+  .apparatus p { scroll-margin-top: 56px; }
+}
 @media (max-width: 760px) {
   body { font-size: 16.5px; }
   .colheads { display: none; }
@@ -259,7 +289,7 @@ a { color: inherit; }
 
 <div class="wrap">
 
-  <header class="masthead">
+  <header class="masthead index">
     <p class="eyebrow">A Conversation with Machiavelli · 33 of 39 pairs published</p>
     <h1>Guicciardini's <i>Considerazioni</i> on the <i>Discorsi</i>
       <span class="sub">A free, bilingual, hyperlinked edition</span></h1>
@@ -269,6 +299,7 @@ a { color: inherit; }
 
   <section class="work">
     <div class="toc">
+      <h2 class="book" id="book-1">Book I <span>28 of 28 pairs published</span></h2>
       <div class="toc-row">
         <div class="n">01</div>
         <div><a href="pairs/1.1.html">What have universally been the beginnings of any city whatever, and what was that of Rome</a>
@@ -437,6 +468,7 @@ a { color: inherit; }
           <div class="ids"><i>Discorsi</i> I.60 · <i>Considerazioni</i> I.60</div></div>
         <div class="dated">20 November 2026</div>
       </div>
+      <h2 class="book" id="book-2">Book II <span>5 of 8 pairs published</span></h2>
       <div class="toc-row">
         <div class="n">29</div>
         <div><a href="pairs/2.proem.html">Book Two</a>
@@ -485,6 +517,7 @@ a { color: inherit; }
           <div class="ids"><i>Discorsi</i> II.24 · <i>Considerazioni</i> II.24</div></div>
         <div></div>
       </div>
+      <h2 class="book" id="book-3">Book III <span>0 of 3 pairs published</span></h2>
       <div class="toc-row">
         <div class="n">37</div>
         <div><span class="unpublished">Not yet published</span>

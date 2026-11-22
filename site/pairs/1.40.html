@@ -2,6 +2,23 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<script>
+(function () {
+  var KEY = "cwm-lang", d = document.documentElement, v = "en";
+  try { v = localStorage.getItem(KEY) || "en"; } catch (e) {}
+  d.setAttribute("data-lang", v);
+  document.addEventListener("DOMContentLoaded", function () {
+    var bs = document.querySelectorAll("[data-set-lang]");
+    function sync() { bs.forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.setLang === d.getAttribute("data-lang"))); }); }
+    bs.forEach(function (b) { b.addEventListener("click", function () {
+      d.setAttribute("data-lang", b.dataset.setLang);
+      try { localStorage.setItem(KEY, b.dataset.setLang); } catch (e) {}
+      sync();
+    }); });
+    sync();
+  });
+})();
+</script>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="description" content="Machiavelli holds that when a people gives a wise man reputation to beat those it hates, he becomes tyrant; Appius erred in leaving the people, whose favour keeps a tyrant more secure, for the nobles. Guicciardini is persuaded that the decemvirs&#x27; principal error was their persuasion that a tyranny could be founded in the Rome of those times, so well ordered and so ardent for liberty. He does not believe it would have been more stable had they beaten the nobility with the plebs&#x27; favour, because that people was too great a friend of the name of liberty. Between people and nobility the examples differ and each side has its reasons; no firm rule decides, and the conclusion is to be drawn from the city&#x27;s humours and the condition of the times.">
 <link rel="canonical" href="https://davidmcdougall.github.io/conversation-with-machiavelli/pairs/1.40.html">
@@ -84,13 +101,14 @@ h1 {
 }
 h1 .sub { display: block; font-style: italic; color: var(--ink-muted); font-size: .52em; margin-top: 12px; letter-spacing: 0; }
 .standfirst {
-  font-family: var(--sans); font-size: 14.5px; line-height: 1.6;
-  color: var(--ink-muted); max-width: 62ch; margin: 0;
+  font-family: var(--serif); font-size: 18px; line-height: 1.55;
+  color: var(--ink); max-width: 60ch; margin: 22px 0 0;
 }
 .sf-label {
-  font-weight: 600; font-size: 11px; letter-spacing: .12em; text-transform: uppercase;
-  color: var(--ink-faint); margin-right: .6em;
+  display: block; font-family: var(--sans); font-weight: 600; font-size: 10.5px;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px;
 }
+.index .standfirst { font-size: 17px; color: var(--ink-muted); }
 
 /* ---- the pairing device ---- */
 .pairing {
@@ -236,6 +254,13 @@ a { color: inherit; }
 
 /* ---- contents / index page ---- */
 .toc { margin-top: -22px; }
+.toc .book {
+  font-family: var(--serif); font-weight: 500; font-size: 22px; margin: 0;
+  padding: 34px 0 10px; border-bottom: 1px solid var(--rule);
+  display: flex; align-items: baseline; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+}
+.toc .book:first-child { padding-top: 0; }
+.toc .book span { font-family: var(--sans); font-size: 12px; font-weight: 400; color: var(--ink-faint); }
 .toc-row {
   display: grid; grid-template-columns: 40px minmax(0, 70ch) 1fr; gap: 0 20px;
   padding-block: 14px; border-bottom: 1px solid var(--rule-faint);
@@ -249,6 +274,28 @@ a { color: inherit; }
 .toc-row .ids { color: var(--ink-faint); font-size: 12px; font-family: var(--sans); margin-top: 3px; }
 .toc-row .dated { color: var(--ink-faint); font-size: 12px; text-align: right; }
 
+/* ---- language toggle: on phones the facing columns stack, so the reader picks
+   one language (English by default), or both; desktop always shows both ---- */
+.langbar { display: none; }
+@media (max-width: 760px) {
+  .langbar {
+    display: flex; align-items: center; gap: 6px; position: sticky; top: 0; z-index: 5;
+    margin: 0 -20px; padding: 10px 20px; background: var(--paper);
+    border-bottom: 1px solid var(--rule); font-family: var(--sans); font-size: 12.5px;
+  }
+  .langbar .lb-label { color: var(--ink-faint); margin-right: 4px; font-size: 11px;
+    font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+  .langbar button {
+    font: inherit; color: var(--ink-muted); background: transparent; cursor: pointer;
+    border: 1px solid var(--rule); border-radius: 2px; padding: 5px 11px;
+  }
+  .langbar button[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  html[data-lang="en"] .col.it, html[data-lang="it"] .col.en { display: none; }
+  html[data-lang="en"] .col.en::before, html[data-lang="it"] .col.it::before { display: none; }
+  html[data-lang="it"] .col.it { margin-bottom: 0; padding-bottom: 0; border-bottom: 0; }
+  .pair { scroll-margin-top: 56px; }
+  .apparatus p { scroll-margin-top: 56px; }
+}
 @media (max-width: 760px) {
   body { font-size: 16.5px; }
   .colheads { display: none; }
@@ -293,6 +340,13 @@ a { color: inherit; }
     </div>
     <nav class="pairnav"><a href="1.39.html">← Pair 1.39</a><a href="../index.html">All 39 pairs</a><a href="1.47.html">Pair 1.47 →</a></nav>
   </header>
+
+  <div class="langbar" role="group" aria-label="Show which language">
+    <span class="lb-label">Show</span>
+    <button type="button" data-set-lang="en">English</button>
+    <button type="button" data-set-lang="it">Italian</button>
+    <button type="button" data-set-lang="both">Both</button>
+  </div>
 
   <section class="work nm">
     <div class="work-head">
