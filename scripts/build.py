@@ -13,6 +13,9 @@ translations/FG-CONS.<pair>.md exist. Building a pair emits:
 and always refreshes, across every published pair:
   site/index-content.html          contents page, content only
   site/index.html                  contents page, full document — GitHub Pages home
+  site/about.html                  what the edition is, title, method, licence (once,
+                                   not repeated in every page's footer)
+Fonts are self-hosted from site/fonts/ (fonts.css plus woff2 files, SIL OFL).
 
 Nothing here is hand-typed from the texts or about a specific pair:
   - paragraph text comes from corpus/ (Italian) and translations/ (English)
@@ -287,6 +290,13 @@ def page_title(nm_en_m, fg_en_m):
             or nm_en_m.get("heading_en", ""))
 
 
+def reader_ref(unit_id):
+    """A unit as a reader cites it: Discorsi II.14, Considerazioni I.1."""
+    work, book, ch = unit_id.split(".", 2)
+    name = "Discorsi" if work == "NM-DISC" else "Considerazioni"
+    return f"<i>{name}</i> {roman(int(book))}" + (f".{ch}" if ch.isdigit() else f", {ch}")
+
+
 def sub_label(pair):
     book, ch = pair.split(".", 1)
     sep = ", " if not ch.isdigit() else "."
@@ -336,8 +346,40 @@ def parse_notes(notes_raw):
         if lemma and lemma.strip().rstrip(".").lower() == "the rubric":
             rubric_note = notes_esc(text)
             continue
-        entries.append((notes_esc(lemma.rstrip(".")) if lemma else None, notes_esc(text)))
+        entries.append((notes_esc(lemma.rstrip(".")) if lemma else None, notes_esc(text), lemma or ""))
     return entries, rubric_note
+
+
+def _norm(s):
+    """Lower-case letters only, for matching a lemma against paragraph text."""
+    s = html.unescape(re.sub(r'[*`]', '', s)).lower()
+    return re.sub(r'[^a-zàèéìíòóùúç]+', '', s)
+
+
+def locate_lemma(lemma_raw, it_paras):
+    """The paragraph a note's lemma quotes. An explicit "(.02)" wins; otherwise
+    the longest "..."-separated stretch of the lemma is looked for in the
+    Italian. None when the lemma quotes no paragraph (the heading, say)."""
+    m = re.search(r'\(\.(\d+)\)', lemma_raw)
+    if m:
+        for pid in it_paras:
+            if pid.rsplit(".", 1)[1] == m.group(1):
+                return pid
+    segs = [_norm(x) for x in re.split(r'\.\.\.|…|\(\.\d+\)', lemma_raw)]
+    segs = sorted((x for x in segs if len(x) >= 8), key=len, reverse=True)
+    for seg in segs:
+        hits = [pid for pid, t in it_paras.items() if seg in _norm(t)]
+        if len(hits) == 1:
+            return hits[0]
+    # A word-list lemma ("sfogare, sfogarsi"): located only if every word it
+    # names falls in the same single paragraph; a chapter-wide word stays unlocated.
+    words = [w.strip().lower() for w in re.split(r',|/|\band\b|\.\.\.|…', re.sub(r'[*`]', '', html.unescape(lemma_raw)))]
+    words = [w for w in words if len(w) >= 4 and " " not in w]
+    hits = set()
+    for w in words:
+        pat = re.compile(r'(?<![\w])' + re.escape(w) + r'(?![\w])', re.I)
+        hits |= {pid for pid, t in it_paras.items() if pat.search(html.unescape(re.sub(r'[*`]', '', t)))}
+    return next(iter(hits)) if len(hits) == 1 else None
 
 
 def emphasized(text, notes_raw):
@@ -413,28 +455,50 @@ def annot_html(notes):
             f'          {body}\n        </details>')
 
 
-def rows_html(it_paras, en_paras, notes_raw, annots=None):
+def marks_html(m):
+    """Margin links from a paragraph to its notes and variants in the apparatus."""
+    if not m:
+        return ""
+    out = []
+    for key, one, many in (("notes", "note", "notes"), ("variants", "variant", "variants")):
+        ids = m.get(key) or []
+        if ids:
+            out.append(f'<a href="#{ids[0]}">{len(ids)} {one if len(ids) == 1 else many}</a>')
+    return f'<span class="marks">{"".join(out)}</span>' if out else ""
+
+
+def rows_html(it_paras, en_paras, notes_raw, annots=None, marks=None):
     annots = annots or {}
+    marks = marks or {}
     out = []
     for i in para_order(it_paras):
         out.append(
             f'''      <div class="pair" id="{i}">
-        <div class="gutter"><a class="uid" href="#{i}">{i.split(".", 1)[1]}</a></div>
+        <div class="gutter"><a class="uid" href="#{i}">{i.split(".", 1)[1]}</a>{marks_html(marks.get(i))}</div>
         <div class="col it" lang="it">{emphasized(it_paras[i], notes_raw)}</div>
         <div class="col en" lang="en">{emphasized(en_paras[i], notes_raw)}</div>{annot_html(annots.get(i))}
       </div>''')
     return "\n".join(out)
 
 
-def notes_html(entries):
+def backlink(pid):
+    return (f'<a class="loc" href="#{pid}" title="Back to the paragraph">'
+            f'¶\u202f{pid.rsplit(".", 1)[1]}</a> ') if pid else ""
+
+
+def notes_html(entries, unit_id, it_paras, marks):
+    """Translator's notes, each anchored, linked back to the paragraph its lemma
+    quotes, and counted in that paragraph's margin."""
     if not entries:
         return "<p>No translator's notes recorded for this pair.</p>"
     out = []
-    for lemma, text in entries:
-        if lemma:
-            out.append(f'<p><span class="lem">{lemma}.</span> {text}</p>')
-        else:
-            out.append(f"<p>{text}</p>")
+    for k, (lemma, text, raw) in enumerate(entries, 1):
+        nid = f"n-{unit_id}-{k}"
+        pid = locate_lemma(raw, it_paras) if raw else None
+        if pid:
+            marks.setdefault(pid, {}).setdefault("notes", []).append(nid)
+        lem = f'<span class="lem">{lemma}.</span> ' if lemma else ""
+        out.append(f'<p id="{nid}">{backlink(pid)}{lem}{text}</p>')
     return "\n".join(out)
 
 
@@ -456,7 +520,7 @@ def source_html(work_id, unit_id, corpus_meta):
     return "\n".join(lines)
 
 
-def variants_html(work_id, unit_id):
+def variants_html(work_id, unit_id, it_paras, marks):
     data = load_yaml(f"sources/comparisons/{work_id}/{unit_id}-witness-disagreements.yml")
     if not data:
         return "<p>No collation record for this pair yet.</p>"
@@ -481,7 +545,12 @@ def variants_html(work_id, unit_id):
                 )
         if r.get("rationale"):
             parts.append(notes_esc(str(r["rationale"]).strip()))
-        out.append("<p>" + " ".join(parts) + "</p>")
+        # A heading record is located at the unit, not at its first paragraph.
+        pid = r.get("locator") if r.get("locator") in it_paras and r.get("class") != "heading" else None
+        vid = "v-" + str(r.get("id") or f"{unit_id}-{len(out) + 1}")
+        if pid:
+            marks.setdefault(pid, {}).setdefault("variants", []).append(vid)
+        out.append(f'<p id="{vid}">{backlink(pid)}' + " ".join(parts) + "</p>")
     if saw_systematic:
         out.append(
             "<p>Orthography, capitalization, word division and punctuation follow "
@@ -507,10 +576,16 @@ def open_items_note(nm_meta, fg_meta):
 # Shared look
 # ---------------------------------------------------------------------------
 
-STYLE = '''<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+# Fonts are self-hosted from site/fonts/ (SIL OFL; licences alongside), so no
+# reader's request goes to a third party and a blocked font host cannot drop the
+# page to Times. {root} is the path from the page to the site root.
+STYLE = '''<link rel="stylesheet" href="{root}fonts/fonts.css">
 <style>
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
 :root {
   --paper:      #EDEEEC;
   --paper-sunk: #E4E6E3;
@@ -565,8 +640,10 @@ body {
 .eyebrow {
   font-family: var(--sans); font-size: 11px; font-weight: 600;
   letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint);
-  margin: 0 0 18px;
+  margin: 0 0 18px; text-wrap: balance;
 }
+.eyebrow a { color: inherit; text-decoration: none; }
+.eyebrow a:hover, .eyebrow a:focus { color: var(--ink); }
 h1 {
   font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 5vw, 44px);
   line-height: 1.12; margin: 0 0 14px; text-wrap: balance; letter-spacing: -0.01em;
@@ -611,9 +688,11 @@ h1 .sub { display: block; font-style: italic; color: var(--ink-muted); font-size
 .work { padding-block: 52px 0; }
 .work-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
 .work-head .tag {
-  font-family: var(--mono); font-size: 11px; letter-spacing: .04em;
-  padding: 3px 7px; border-radius: 2px; color: var(--paper);
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .12em;
+  text-transform: uppercase; padding: 4px 8px 3px; border-radius: 2px; color: var(--paper);
+  align-self: center;
 }
+.work-head .cite { font-family: var(--sans); font-size: 13px; color: var(--ink-faint); }
 .work.nm .tag { background: var(--nm); }
 .work.fg .tag { background: var(--fg); }
 h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; letter-spacing: -0.005em; }
@@ -626,7 +705,7 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
   color: var(--ink-faint); margin-top: 7px;
 }
 .colheads {
-  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  display: grid; grid-template-columns: 66px 1fr 1fr; gap: 0 28px;
   margin-top: 30px; padding-bottom: 7px; border-bottom: 1px solid var(--rule);
   font-family: var(--sans); font-size: 10.5px; font-weight: 600;
   letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint);
@@ -634,7 +713,7 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
 
 /* ---- the facing pair ---- */
 .pair {
-  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  display: grid; grid-template-columns: 66px 1fr 1fr; gap: 0 28px;
   padding-block: 22px; border-bottom: 1px solid var(--rule-faint);
   scroll-margin-top: 20px;
 }
@@ -647,9 +726,13 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
 .annot summary::before { content: "+ "; }
 .annot[open] summary::before { content: "− "; }
 .annot p { margin: 8px 0 0; max-width: 72ch; }
+.annot .lem { font-weight: 600; color: var(--ink); }
 .annot .xref { color: inherit; text-decoration: underline; text-decoration-color: var(--rule);
   text-underline-offset: 2px; white-space: nowrap; }
 .gutter { padding-top: 4px; }
+.marks { display: block; margin-top: 10px; font-family: var(--sans); font-size: 11px; line-height: 1.45; }
+.marks a { display: block; color: var(--ink-faint); text-decoration: none; white-space: nowrap; }
+.marks a:hover, .marks a:focus { color: var(--ink); text-decoration: underline; }
 .uid {
   font-family: var(--mono); font-size: 10.5px; color: var(--ink-faint);
   text-decoration: none; letter-spacing: -0.02em;
@@ -657,7 +740,7 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
 .uid:hover, .uid:focus { color: var(--ink); text-decoration: underline; }
 .col { min-width: 0; }
 .col.it { hyphens: auto; }
-.col.en { }
+.col.en { hyphens: auto; }
 .supplied { color: var(--ink-muted); }
 
 /* ---- apparatus ---- */
@@ -665,8 +748,20 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
   margin-top: 34px; padding-top: 22px; border-top: 2px solid var(--rule);
   font-family: var(--sans); font-size: 13.5px; line-height: 1.58;
   color: var(--ink-muted);
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 26px 34px;
 }
+/* Source is a short paragraph; variants and notes run long, so they flow in
+   two balanced columns across the full width rather than in one narrow strip. */
+.apparatus > div + div { margin-top: 30px; }
+.app-source p { max-width: 78ch; }
+.app-variants, .app-notes { columns: 2 340px; column-gap: 40px; }
+.app-variants h3, .app-notes h3 { column-span: all; }
+.apparatus p { break-inside: avoid; scroll-margin-top: 20px; }
+.apparatus p:target { background: var(--paper-sunk); box-shadow: 0 0 0 6px var(--paper-sunk); }
+.apparatus .loc {
+  font-family: var(--mono); font-size: 11px; color: var(--ink-faint); text-decoration: none;
+  white-space: nowrap; margin-right: .2em;
+}
+.apparatus .loc:hover, .apparatus .loc:focus { color: var(--ink); text-decoration: underline; }
 .apparatus h3 {
   font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
   text-transform: uppercase; color: var(--ink-faint); margin: 0 0 9px;
@@ -677,8 +772,9 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
 .sig { font-family: var(--mono); font-size: 12px; color: var(--ink); }
 
 /* ---- colophon ---- */
+.pairnav-foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--rule); }
 .colophon {
-  margin-top: 60px; padding-block: 28px 60px; border-top: 1px solid var(--rule);
+  margin-top: 40px; padding-block: 0 60px;
   font-family: var(--sans); font-size: 13px; line-height: 1.6; color: var(--ink-muted);
 }
 .colophon .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 34px; }
@@ -689,8 +785,14 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
 .colophon p { margin: 0 0 8px; }
 .colophon ul { margin: 0; padding-left: 16px; }
 .colophon li { margin-bottom: 5px; }
+.colophon .links { margin: 18px 0 0; display: flex; gap: 6px 22px; flex-wrap: wrap; }
+.colophon .links a { color: var(--ink-muted); }
+.about { max-width: 68ch; padding-block: 44px 0; font-family: var(--serif); font-size: 17px; }
+.about h2 { margin: 38px 0 10px; }
+.about h2:first-child { margin-top: 0; }
+.about p { margin: 0 0 12px; }
 .state {
-  margin-top: 26px; padding: 14px 16px; background: var(--paper-sunk);
+  margin-top: 0; padding: 14px 16px; background: var(--paper-sunk);
   border-left: 2px solid var(--ink-faint); border-radius: 0 2px 2px 0;
   font-size: 12.5px;
 }
@@ -699,24 +801,26 @@ a { color: inherit; }
 :focus-visible { outline: 2px solid var(--nm); outline-offset: 2px; }
 
 /* ---- contents / index page ---- */
-.toc { margin-top: 30px; }
+.toc { margin-top: -22px; }
 .toc-row {
-  display: grid; grid-template-columns: 40px 1fr 1fr; gap: 0 20px;
+  display: grid; grid-template-columns: 40px minmax(0, 70ch) 1fr; gap: 0 20px;
   padding-block: 14px; border-bottom: 1px solid var(--rule-faint);
   font-family: var(--sans); align-items: baseline;
 }
 .toc-row .n { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
-.toc-row a { text-decoration: none; color: var(--ink); font-family: var(--serif); font-size: 16px; }
+.toc-row > div:nth-child(2) { line-height: 1.32; }
+.toc-row a { text-decoration: none; color: var(--ink); font-family: var(--serif); font-size: 17px; }
 .toc-row a:hover, .toc-row a:focus { text-decoration: underline; }
 .toc-row .unpublished { color: var(--ink-faint); font-style: italic; font-size: 14px; }
-.toc-row .ids { color: var(--ink-faint); font-size: 11.5px; font-family: var(--mono); }
+.toc-row .ids { color: var(--ink-faint); font-size: 12px; font-family: var(--sans); margin-top: 3px; }
 .toc-row .dated { color: var(--ink-faint); font-size: 12px; text-align: right; }
 
 @media (max-width: 760px) {
   body { font-size: 16.5px; }
   .colheads { display: none; }
   .pair { grid-template-columns: 1fr; gap: 0; padding-block: 20px; }
-  .gutter { padding-top: 0; margin-bottom: 8px; }
+  .gutter { padding-top: 0; margin-bottom: 8px; display: flex; gap: 14px; align-items: baseline; }
+  .marks { display: inline-flex; gap: 12px; margin-top: 0; }
   .annot { grid-column: 1; }
   .col.it { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px dotted var(--rule); }
   .col.it::before, .col.en::before {
@@ -729,21 +833,19 @@ a { color: inherit; }
   .pairing .arrow { border-inline: 0; border-block: 1px solid var(--rule); padding-block: 6px; }
   .toc-row { grid-template-columns: 1fr; gap: 4px; }
   .toc-row .dated { text-align: left; }
+  .app-variants, .app-notes { columns: 1; }
 }
 </style>'''
 
-COLOPHON = '''  <footer class="colophon">
-    <div class="row">
-      <div>
-        <h3>What this is</h3>
+# The edition's standing statement (what it is, the title, method, licence) is
+# written once, on site/about.html; every page carries a short footer pointing there.
+ABOUT = '''    <h2>What this is</h2>
         <p>A free, openly licensed, bilingual edition of Guicciardini's 39 <i>Considerazioni</i> and the
           <i>Discorsi</i> chapters they answer — 78 text units, Italian and English facing, every reading
           traceable to a named public-domain witness.</p>
         <p>It is a reading edition with a transparent apparatus, not a text of record. It does not adjudicate
           the critical text against Bausi 2001 or the manuscript tradition, and does not claim to.</p>
-      </div>
-      <div>
-        <h3>On the title</h3>
+    <h2>On the title</h2>
         <p>Machiavelli had been dead two years when Guicciardini wrote; the <i>Discorsi</i> were unpublished,
           and the <i>Considerazioni</i> stayed unprinted until 1857. Machiavelli never answers.</p>
         <p>“Conversation” is a quotation, not a description. It invokes Machiavelli's letter to Francesco Vettori of
@@ -753,17 +855,13 @@ COLOPHON = '''  <footer class="colophon">
           answer me”. Guicciardini does to Machiavelli what Machiavelli did to Livy — and is denied the reply
           Machiavelli claimed. The letter is quoted from the 1813 <i>Opere</i>, vol. 8, p. 96, read twice from
           the page image.</p>
-      </div>
-      <div>
-        <h3>Method</h3>
+    <h2 id="method">Method</h2>
         <p>No image-derived reading enters the text on a single reading. Each unit is transcribed twice,
           independently, by readers who have not seen each other's work; disagreements are adjudicated against
           the page images and recorded.</p>
         <p>Existing English translations of the <i>Considerazioni</i> — Grayson (1965), Atkinson &amp; Sices
           (2002) — are never used as translation inputs.</p>
-      </div>
-      <div>
-        <h3>Licence</h3>
+    <h2 id="licence">Licence</h2>
         <p>The established Italian text and the apparatus data are dedicated to the public domain under
           <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>. They are Machiavelli's and
           Guicciardini's sentences, and this edition adds no condition to them.</p>
@@ -772,21 +870,49 @@ COLOPHON = '''  <footer class="colophon">
           commercially, with attribution to David McDougall and this edition. The build tooling is MIT.</p>
         <p>The witness scans are other people's digitisations, included as evidence under their own terms; no
           grant is made over them, and no page image of Palmarocchi 1933 is reproduced here. Full terms,
-          layer by layer, are in the <span class="sig">LICENSE</span> file in the repository.</p>
-      </div>
-    </div>
+          layer by layer, are in the <span class="sig">LICENSE</span> file in the repository.</p>'''
+
+COLOPHON = '''  <footer class="colophon">
 {state}
+    <p class="links"><a href="{about}">About this edition</a><a href="{about}#licence">Licence</a><a href="{about}#method">Method</a><a href="https://github.com/davidmcdougall/conversation-with-machiavelli">Source and data on GitHub</a></p>
   </footer>'''
 
 
-def wrap(content, description):
+def style(root):
+    return STYLE.replace("{root}", root)
+
+
+SITE_URL = "https://davidmcdougall.github.io/conversation-with-machiavelli/"
+SITE_NAME = "A Conversation with Machiavelli"
+
+# Two facing leaves in the two authors' colours: the pairing device, as a tab icon.
+FAVICON = ("data:image/svg+xml," + "%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E"
+           "%3Crect x='3' y='5' width='12' height='22' rx='1.5' fill='%233A5A6B'/%3E"
+           "%3Crect x='17' y='5' width='12' height='22' rx='1.5' fill='%236E5A3C'/%3E%3C/svg%3E")
+
+
+def wrap(content, description, path, title):
+    """A full document: the content's <title> and style go in <head>, the rest in
+    <body>. `path` is the page's path under the site root, for its canonical URL."""
+    head, sep, body = content.partition('\n<div class="wrap">')
+    assert sep, "page content must open its body with <div class=\"wrap\">"
+    url = SITE_URL + path
+    esc = html.escape
+    meta = (
+        f'<meta name="description" content="{esc(description)}">\n'
+        f'<link rel="canonical" href="{url}">\n'
+        f'<link rel="icon" href="{FAVICON}">\n'
+        f'<meta property="og:type" content="article">\n'
+        f'<meta property="og:site_name" content="{SITE_NAME}">\n'
+        f'<meta property="og:title" content="{esc(title)}">\n'
+        f'<meta property="og:description" content="{esc(description)}">\n'
+        f'<meta property="og:url" content="{url}">\n'
+        f'<meta name="twitter:card" content="summary">\n'
+    )
     return (
         '<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
         '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">\n'
-        f'<meta name="description" content="{html.escape(description)}">\n'
-        '<style>*{box-sizing:border-box}body{margin:0;font:14px system-ui}img{max-width:100%}'
-        '[hidden]{display:none!important}</style>\n'
-        + content + "\n</body>\n</html>\n"
+        + meta + head.strip() + "\n</head>\n<body>" + sep + body + "\n</body>\n</html>\n"
     )
 
 
@@ -829,6 +955,13 @@ def build_pair(pair, published):
     nm_entries, _ = parse_notes(nm_notes_raw)
     fg_entries, fg_rubric_note = parse_notes(fg_notes_raw)
 
+    # Apparatus first: it decides which notes and variants each paragraph's margin points to.
+    nm_marks, fg_marks = {}, {}
+    nm_variants = variants_html("NM-DISC", nm_id, nm_it, nm_marks)
+    nm_notes = notes_html(nm_entries, nm_id, nm_it, nm_marks)
+    fg_variants = variants_html("FG-CONS", fg_id, fg_it, fg_marks)
+    fg_notes = notes_html(fg_entries, fg_id, fg_it, fg_marks)
+
     rows = pairing_map()
     row = next((r for r in rows if r["nm"] == nm_id), None)
     eyebrow = f"Pair {row['n']} of {len(rows)}" if row else pair
@@ -841,12 +974,12 @@ def build_pair(pair, published):
     )
 
     CONTENT = f'''<title>A Conversation with Machiavelli — {html.escape(title)}</title>
-{STYLE}
+{style("../")}
 
 <div class="wrap">
 
   <header class="masthead">
-    <p class="eyebrow">A Conversation with Machiavelli · {eyebrow}</p>
+    <p class="eyebrow"><a href="../index.html">A Conversation with Machiavelli</a> · {eyebrow}</p>
     <h1>{html.escape(title)}
       <span class="sub">{html.escape(sub_label(pair))}</span></h1>
     <p class="standfirst"><span class="sf-label">Editor's summary</span> {summary_html(standfirst)}</p>
@@ -867,57 +1000,61 @@ def build_pair(pair, published):
 
   <section class="work nm">
     <div class="work-head">
-      <span class="tag">{nm_id}</span>
+      <span class="tag" title="{nm_id}">Machiavelli</span>
       <h2>{nm_heading(pair, nm_it_m)}</h2>
+      <span class="cite">{reader_ref(nm_id)}</span>
     </div>
 {rubric_lines(nm_it_m, nm_en_m)}
 
     <div class="colheads"><div></div><div>Italian · {WORKS['NM-DISC']['edition_year']}</div><div>English</div></div>
-{rows_html(nm_it, nm_en, nm_notes_raw, nm_ann)}
+{rows_html(nm_it, nm_en, nm_notes_raw, nm_ann, nm_marks)}
 
     <div class="apparatus">
-      <div>
+      <div class="app-source">
         <h3>Source</h3>
         {source_html("NM-DISC", nm_id, nm_it_m)}
       </div>
-      <div>
+      <div class="app-variants">
         <h3>Variants</h3>
-        {variants_html("NM-DISC", nm_id)}
+        {nm_variants}
       </div>
-      <div>
+      <div class="app-notes">
         <h3>Notes</h3>
-        {notes_html(nm_entries)}
+        {nm_notes}
       </div>
     </div>
   </section>
 
   <section class="work fg">
     <div class="work-head">
-      <span class="tag">{fg_id}</span>
+      <span class="tag" title="{fg_id}">Guicciardini</span>
       <h2>{fg_heading(pair, fg_it_m)}</h2>
+      <span class="cite">{reader_ref(fg_id)}</span>
     </div>
 {rubric_lines(fg_it_m, fg_en_m, fg_rubric_note_html)}
 
     <div class="colheads"><div></div><div>Italian · {WORKS['FG-CONS']['edition_year']}</div><div>English</div></div>
-{rows_html(fg_it, fg_en, fg_notes_raw, fg_ann)}
+{rows_html(fg_it, fg_en, fg_notes_raw, fg_ann, fg_marks)}
 
     <div class="apparatus">
-      <div>
+      <div class="app-source">
         <h3>Source</h3>
         {source_html("FG-CONS", fg_id, fg_it_m)}
       </div>
-      <div>
+      <div class="app-variants">
         <h3>Variants</h3>
-        {variants_html("FG-CONS", fg_id)}
+        {fg_variants}
       </div>
-      <div>
+      <div class="app-notes">
         <h3>Notes</h3>
-        {notes_html(fg_entries)}
+        {fg_notes}
       </div>
     </div>
   </section>
 
-{COLOPHON.format(state=f"""
+{pairnav_html(published, pair).replace('class="pairnav"', 'class="pairnav pairnav-foot"')}
+
+{COLOPHON.format(about="../about.html", state=f"""
     <div class="state">
       <p><strong>Version {edition_version()} · {len(published)} of {len(rows)} pairs published.</strong>
         {dates_line(pair)} This edition is versioned, not frozen. {open_items_note(nm_en_m, fg_en_m)}</p>
@@ -928,7 +1065,8 @@ def build_pair(pair, published):
     pairs_dir = ROOT / "site/pairs"
     pairs_dir.mkdir(parents=True, exist_ok=True)
     (pairs_dir / f"{pair}-content.html").write_text(CONTENT, encoding="utf-8")
-    (pairs_dir / f"{pair}.html").write_text(wrap(CONTENT, summary_plain(standfirst) or title), encoding="utf-8")
+    (pairs_dir / f"{pair}.html").write_text(
+        wrap(CONTENT, summary_plain(standfirst) or title, f"pairs/{pair}.html", title), encoding="utf-8")
     print(f"site/pairs/{pair}.html", (pairs_dir / f"{pair}.html").stat().st_size, "bytes")
     print("paragraphs:", len(nm_it), "NM /", len(fg_it), "FG — alignment check passed")
 
@@ -955,7 +1093,7 @@ def build_index(published):
                 f'''      <div class="toc-row">
         <div class="n">{r['n']:02d}</div>
         <div><a href="pairs/{pub['pair']}.html">{html.escape(title)}</a>
-          <div class="ids">{r['nm']} · {r['fg']}</div></div>
+          <div class="ids">{reader_ref(r['nm'])} · {reader_ref(r['fg'])}</div></div>
         <div class="dated">{long_date(rev_d)}</div>
       </div>''')
         else:
@@ -963,12 +1101,12 @@ def build_index(published):
                 f'''      <div class="toc-row">
         <div class="n">{r['n']:02d}</div>
         <div><span class="unpublished">Not yet published</span>
-          <div class="ids">{r['nm']} · {r['fg']}</div></div>
+          <div class="ids">{reader_ref(r['nm'])} · {reader_ref(r['fg'])}</div></div>
         <div></div>
       </div>''')
 
     CONTENT = f'''<title>A Conversation with Machiavelli</title>
-{STYLE}
+{style("")}
 
 <div class="wrap">
 
@@ -986,7 +1124,7 @@ def build_index(published):
     </div>
   </section>
 
-{COLOPHON.format(state=f"""
+{COLOPHON.format(about="about.html", state=f"""
     <div class="state">
       <p><strong>Version {edition_version()} · {len(published)} of {len(rows)} pairs published.</strong>
         Last updated {long_date(max(revised_dates)) if revised_dates else "—"}. Each pair is dated on its page and above, by its last revision.
@@ -999,11 +1137,44 @@ def build_index(published):
     (site / "index-content.html").write_text(CONTENT, encoding="utf-8")
     (site / "index.html").write_text(
         wrap(CONTENT, "A free, bilingual, hyperlinked edition of Guicciardini's Considerazioni "
-                      "and the Discorsi chapters they answer."),
+                      "and the Discorsi chapters they answer.", "", SITE_NAME),
         encoding="utf-8",
     )
     print("site/index.html", (site / "index.html").stat().st_size, "bytes —",
           len(published), "of", len(rows), "pairs listed")
+    build_about(published)
+
+
+def build_about(published):
+    rows = pairing_map()
+    CONTENT = f'''<title>About — A Conversation with Machiavelli</title>
+{style("")}
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow"><a href="index.html">A Conversation with Machiavelli</a> · About this edition</p>
+    <h1>About this edition</h1>
+  </header>
+
+  <section class="about">
+{ABOUT}
+  </section>
+
+  <nav class="pairnav pairnav-foot"><a href="index.html">← All {len(rows)} pairs</a></nav>
+
+{COLOPHON.format(about="about.html", state=f"""
+    <div class="state">
+      <p><strong>Version {edition_version()} · {len(published)} of {len(rows)} pairs published.</strong>
+        This edition is versioned, not frozen.</p>
+    </div>""")}
+
+</div>'''
+    site = ROOT / "site"
+    (site / "about.html").write_text(
+        wrap(CONTENT, "What this edition is, its title, its method and its licence.",
+             "about.html", "About — " + SITE_NAME), encoding="utf-8")
+    print("site/about.html", (site / "about.html").stat().st_size, "bytes")
 
 
 # ---------------------------------------------------------------------------

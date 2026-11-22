@@ -1,8 +1,11 @@
 <title>A Conversation with Machiavelli — How much the founders of a republic or of a kingdom are laudable, so much those of a tyranny are vituperable</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../fonts/fonts.css">
 <style>
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
 :root {
   --paper:      #EDEEEC;
   --paper-sunk: #E4E6E3;
@@ -57,8 +60,10 @@ body {
 .eyebrow {
   font-family: var(--sans); font-size: 11px; font-weight: 600;
   letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint);
-  margin: 0 0 18px;
+  margin: 0 0 18px; text-wrap: balance;
 }
+.eyebrow a { color: inherit; text-decoration: none; }
+.eyebrow a:hover, .eyebrow a:focus { color: var(--ink); }
 h1 {
   font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 5vw, 44px);
   line-height: 1.12; margin: 0 0 14px; text-wrap: balance; letter-spacing: -0.01em;
@@ -103,9 +108,11 @@ h1 .sub { display: block; font-style: italic; color: var(--ink-muted); font-size
 .work { padding-block: 52px 0; }
 .work-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
 .work-head .tag {
-  font-family: var(--mono); font-size: 11px; letter-spacing: .04em;
-  padding: 3px 7px; border-radius: 2px; color: var(--paper);
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .12em;
+  text-transform: uppercase; padding: 4px 8px 3px; border-radius: 2px; color: var(--paper);
+  align-self: center;
 }
+.work-head .cite { font-family: var(--sans); font-size: 13px; color: var(--ink-faint); }
 .work.nm .tag { background: var(--nm); }
 .work.fg .tag { background: var(--fg); }
 h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; letter-spacing: -0.005em; }
@@ -118,7 +125,7 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
   color: var(--ink-faint); margin-top: 7px;
 }
 .colheads {
-  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  display: grid; grid-template-columns: 66px 1fr 1fr; gap: 0 28px;
   margin-top: 30px; padding-bottom: 7px; border-bottom: 1px solid var(--rule);
   font-family: var(--sans); font-size: 10.5px; font-weight: 600;
   letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint);
@@ -126,7 +133,7 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
 
 /* ---- the facing pair ---- */
 .pair {
-  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  display: grid; grid-template-columns: 66px 1fr 1fr; gap: 0 28px;
   padding-block: 22px; border-bottom: 1px solid var(--rule-faint);
   scroll-margin-top: 20px;
 }
@@ -139,9 +146,13 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
 .annot summary::before { content: "+ "; }
 .annot[open] summary::before { content: "− "; }
 .annot p { margin: 8px 0 0; max-width: 72ch; }
+.annot .lem { font-weight: 600; color: var(--ink); }
 .annot .xref { color: inherit; text-decoration: underline; text-decoration-color: var(--rule);
   text-underline-offset: 2px; white-space: nowrap; }
 .gutter { padding-top: 4px; }
+.marks { display: block; margin-top: 10px; font-family: var(--sans); font-size: 11px; line-height: 1.45; }
+.marks a { display: block; color: var(--ink-faint); text-decoration: none; white-space: nowrap; }
+.marks a:hover, .marks a:focus { color: var(--ink); text-decoration: underline; }
 .uid {
   font-family: var(--mono); font-size: 10.5px; color: var(--ink-faint);
   text-decoration: none; letter-spacing: -0.02em;
@@ -149,7 +160,7 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
 .uid:hover, .uid:focus { color: var(--ink); text-decoration: underline; }
 .col { min-width: 0; }
 .col.it { hyphens: auto; }
-.col.en { }
+.col.en { hyphens: auto; }
 .supplied { color: var(--ink-muted); }
 
 /* ---- apparatus ---- */
@@ -157,8 +168,20 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
   margin-top: 34px; padding-top: 22px; border-top: 2px solid var(--rule);
   font-family: var(--sans); font-size: 13.5px; line-height: 1.58;
   color: var(--ink-muted);
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 26px 34px;
 }
+/* Source is a short paragraph; variants and notes run long, so they flow in
+   two balanced columns across the full width rather than in one narrow strip. */
+.apparatus > div + div { margin-top: 30px; }
+.app-source p { max-width: 78ch; }
+.app-variants, .app-notes { columns: 2 340px; column-gap: 40px; }
+.app-variants h3, .app-notes h3 { column-span: all; }
+.apparatus p { break-inside: avoid; scroll-margin-top: 20px; }
+.apparatus p:target { background: var(--paper-sunk); box-shadow: 0 0 0 6px var(--paper-sunk); }
+.apparatus .loc {
+  font-family: var(--mono); font-size: 11px; color: var(--ink-faint); text-decoration: none;
+  white-space: nowrap; margin-right: .2em;
+}
+.apparatus .loc:hover, .apparatus .loc:focus { color: var(--ink); text-decoration: underline; }
 .apparatus h3 {
   font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
   text-transform: uppercase; color: var(--ink-faint); margin: 0 0 9px;
@@ -169,8 +192,9 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
 .sig { font-family: var(--mono); font-size: 12px; color: var(--ink); }
 
 /* ---- colophon ---- */
+.pairnav-foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--rule); }
 .colophon {
-  margin-top: 60px; padding-block: 28px 60px; border-top: 1px solid var(--rule);
+  margin-top: 40px; padding-block: 0 60px;
   font-family: var(--sans); font-size: 13px; line-height: 1.6; color: var(--ink-muted);
 }
 .colophon .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 34px; }
@@ -181,8 +205,14 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
 .colophon p { margin: 0 0 8px; }
 .colophon ul { margin: 0; padding-left: 16px; }
 .colophon li { margin-bottom: 5px; }
+.colophon .links { margin: 18px 0 0; display: flex; gap: 6px 22px; flex-wrap: wrap; }
+.colophon .links a { color: var(--ink-muted); }
+.about { max-width: 68ch; padding-block: 44px 0; font-family: var(--serif); font-size: 17px; }
+.about h2 { margin: 38px 0 10px; }
+.about h2:first-child { margin-top: 0; }
+.about p { margin: 0 0 12px; }
 .state {
-  margin-top: 26px; padding: 14px 16px; background: var(--paper-sunk);
+  margin-top: 0; padding: 14px 16px; background: var(--paper-sunk);
   border-left: 2px solid var(--ink-faint); border-radius: 0 2px 2px 0;
   font-size: 12.5px;
 }
@@ -191,24 +221,26 @@ a { color: inherit; }
 :focus-visible { outline: 2px solid var(--nm); outline-offset: 2px; }
 
 /* ---- contents / index page ---- */
-.toc { margin-top: 30px; }
+.toc { margin-top: -22px; }
 .toc-row {
-  display: grid; grid-template-columns: 40px 1fr 1fr; gap: 0 20px;
+  display: grid; grid-template-columns: 40px minmax(0, 70ch) 1fr; gap: 0 20px;
   padding-block: 14px; border-bottom: 1px solid var(--rule-faint);
   font-family: var(--sans); align-items: baseline;
 }
 .toc-row .n { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
-.toc-row a { text-decoration: none; color: var(--ink); font-family: var(--serif); font-size: 16px; }
+.toc-row > div:nth-child(2) { line-height: 1.32; }
+.toc-row a { text-decoration: none; color: var(--ink); font-family: var(--serif); font-size: 17px; }
 .toc-row a:hover, .toc-row a:focus { text-decoration: underline; }
 .toc-row .unpublished { color: var(--ink-faint); font-style: italic; font-size: 14px; }
-.toc-row .ids { color: var(--ink-faint); font-size: 11.5px; font-family: var(--mono); }
+.toc-row .ids { color: var(--ink-faint); font-size: 12px; font-family: var(--sans); margin-top: 3px; }
 .toc-row .dated { color: var(--ink-faint); font-size: 12px; text-align: right; }
 
 @media (max-width: 760px) {
   body { font-size: 16.5px; }
   .colheads { display: none; }
   .pair { grid-template-columns: 1fr; gap: 0; padding-block: 20px; }
-  .gutter { padding-top: 0; margin-bottom: 8px; }
+  .gutter { padding-top: 0; margin-bottom: 8px; display: flex; gap: 14px; align-items: baseline; }
+  .marks { display: inline-flex; gap: 12px; margin-top: 0; }
   .annot { grid-column: 1; }
   .col.it { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px dotted var(--rule); }
   .col.it::before, .col.en::before {
@@ -221,13 +253,14 @@ a { color: inherit; }
   .pairing .arrow { border-inline: 0; border-block: 1px solid var(--rule); padding-block: 6px; }
   .toc-row { grid-template-columns: 1fr; gap: 4px; }
   .toc-row .dated { text-align: left; }
+  .app-variants, .app-notes { columns: 1; }
 }
 </style>
 
 <div class="wrap">
 
   <header class="masthead">
-    <p class="eyebrow">A Conversation with Machiavelli · Pair 10 of 39</p>
+    <p class="eyebrow"><a href="../index.html">A Conversation with Machiavelli</a> · Pair 10 of 39</p>
     <h1>How much the founders of a republic or of a kingdom are laudable, so much those of a tyranny are vituperable
       <span class="sub">Discourses I.10, and Guicciardini&#x27;s reply</span></h1>
     <p class="standfirst"><span class="sf-label">Editor's summary</span> Machiavelli ranks founders of religions and states highest and holds that a prince able to reform a corrupt city while keeping power merits no excuse if he does not. Guicciardini calls the title most true, but cases vary, and the author confounds the examples: whoever founds a tyranny from appetite to rule, like Caesar, merits utmost reproach, while a citizen driven to it to save himself merits much excuse, the more so where what is called liberty is not. Heirs to a tyranny merit less blame, and very few or perhaps none have left it without necessity; some legitimate kings govern justly, but he does not know which have made succession elective. Such things are painted more easily in books than done, and therefore those who do not do them merit less reproof.</p>
@@ -248,15 +281,17 @@ a { color: inherit; }
 
   <section class="work nm">
     <div class="work-head">
-      <span class="tag">NM-DISC.1.10</span>
+      <span class="tag" title="NM-DISC.1.10">Machiavelli</span>
       <h2>Capitolo X</h2>
+      <span class="cite"><i>Discorsi</i> I.10</span>
     </div>
     <p class="rubric">Quanto sono laudabili i fondatori d&#x27;una Repubblica o d&#x27;un Regno, tanto quelli d&#x27;una tirannide sono vituperabili.</p>
-    <p class="rubric">How much the founders of a republic or of a kingdom are laudable, so much those of a tyranny are vituperable.</p>
+    <p class="rubric">How much the founders of a republic or of a kingdom are laudable, so much those of a tyranny are vituperable.
+      </p>
 
     <div class="colheads"><div></div><div>Italian · 1824</div><div>English</div></div>
       <div class="pair" id="NM-DISC.1.10.01">
-        <div class="gutter"><a class="uid" href="#NM-DISC.1.10.01">1.10.01</a></div>
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.10.01">1.10.01</a><span class="marks"><a href="#n-NM-DISC.1.10-1">4 notes</a><a href="#v-NM-DISC-I10-D001">2 variants</a></span></div>
         <div class="col it" lang="it">Tra tutti gli uomini laudati, sono laudatissimi quelli che sono stati Capi e ordinatori delle Religioni. Appresso dipoi quelli che hanno fondato o Repubbliche o Regni. Dopo costoro sono celebri quelli che, preposti agli eserciti, hanno ampliato o il Regno loro, o quello della patria. A questi si aggiungono gli uomini litterati; e perché questi sono di più ragioni, sono celebrati ciascuno d&#x27;essi secondo il grado suo. A qualunque altro uomo, il numero dei quali è infinito, si attribuisce qualche parte di laude, la quale gli arreca l&#x27;arte e l&#x27;esercizio suo. Sono per lo contrario infami e detestabili gli uomini destruttori delle Religioni, dissipatori de&#x27; Regni e delle Repubbliche, inimici delle virtù, delle lettere, e d&#x27;ogni altra arte, che arrechi utilità e onore alla umana generazione, come sono gli empj, e violenti, gl&#x27;ignoranti, gli oziosi, i vili, e i da pochi. E nessuno sarà mai sì pazzo, o sì savio, sì tristo, o sì buono, che propostagli la elezione delle due qualità d&#x27;uomini, non laudi quella che è da laudare, e biasimi quella che è da biasimare.</div>
         <div class="col en" lang="en">Among all men praised, the most praised are those who have been heads and orderers of religions. Next, afterwards, those who have founded either republics or kingdoms. After these are renowned those who, appointed to armies, have expanded either their kingdom, or that of the fatherland. To these are added men of letters; and because these are of several kinds, each of them is celebrated according to his degree. To any other man, the number of whom is infinite, some part of praise is attributed, which his art and his exercise bring him. On the contrary, infamous and detestable are the men <span class="supplied">[who are]</span> destroyers of religions, dissipaters of kingdoms and of republics, enemies of <i lang="it">virtù</i>, of letters, and of every other art that brings utility and honour to the human generation, such as the impious, and violent, the ignorant, the idle, the vile, and the men of little account. And no one will ever be so mad, or so wise, so wicked, or so good, that, the choice of the two qualities of men being proposed to him, he will not praise that which is to be praised, and blame that which is to be blamed.</div>
         <details class="annot"><summary>Commentary · 2</summary>
@@ -265,7 +300,7 @@ a { color: inherit; }
         </details>
       </div>
       <div class="pair" id="NM-DISC.1.10.02">
-        <div class="gutter"><a class="uid" href="#NM-DISC.1.10.02">1.10.02</a></div>
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.10.02">1.10.02</a><span class="marks"><a href="#n-NM-DISC.1.10-6">2 notes</a></span></div>
         <div class="col it" lang="it">Nientedimeno dipoi quasi tutti, ingannati da un falso bene, e da una falsa gloria, si lasciano andare, o volontariamente o ignorantemente, nei gradi di coloro che meritano più biasimo che laude. E potendo fare con perpetuo loro onore o una Repubblica o un Regno, si volgono alla tirannide, né si avveggono per questo partito quanta fama, quanta gloria, quanto onore, sicurtà, quiete, con satisfazione d&#x27;animo e&#x27; fuggono, e in quanta infamia, vituperio, biasimo, pericolo e inquietudine incorrono.</div>
         <div class="col en" lang="en">Nevertheless afterwards almost all, deceived by a false good and by a false glory, let themselves go, either voluntarily or ignorantly, into the degrees of those who merit more blame than praise. And being able to make, with perpetual honour to themselves, either a republic or a kingdom, they turn to tyranny, nor do they perceive by this course how much fame, how much glory, how much honour, security, quiet, with satisfaction of spirit, they flee, and how much infamy, disgrace, blame, danger and disquiet they incur.</div>
         <details class="annot"><summary>Commentary · 1</summary>
@@ -273,7 +308,7 @@ a { color: inherit; }
         </details>
       </div>
       <div class="pair" id="NM-DISC.1.10.03">
-        <div class="gutter"><a class="uid" href="#NM-DISC.1.10.03">1.10.03</a></div>
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.10.03">1.10.03</a><span class="marks"><a href="#n-NM-DISC.1.10-9">2 notes</a><a href="#v-NM-DISC-I10-D003">1 variant</a></span></div>
         <div class="col it" lang="it">Ed è impossibile che quelli che in istato privato vivono in una Repubblica, o per fortuna o virtù ne diventano Principi, se leggessero l&#x27;Istorie, e delle memorie delle antiche cose facessero capitale, che non volessero quelli tali privati vivere nella lor patria piuttosto Scipioni che Cesari; e quelli che sono Principi, piuttosto Agesilai, Timoleoni e Dioni, che Nabidi, Falari e Dionisj; perché vedrebbero questi essere sommamente vituperati, e quelli eccessivamente laudati. Vedrebbero ancora come Timoleone e gli altri non ebbero nella patria loro meno autorità che si avessero Dionisio e Falari; ma vedrebbero di lunga avervi avuto più sicurtà.</div>
         <div class="col en" lang="en">And it is impossible that those who live in private station in a republic, or by fortune or <i lang="it">virtù</i> become princes of it, if they read the histories, and set store by the memories of ancient things, that they should not wish, those private men, to live in their fatherland rather as Scipios than as Caesars; and those who are princes, rather as Agesilauses, Timoleons and Dions than as Nabises, Phalarises and Dionysiuses; because they would see these supremely vituperated, and those excessively praised. They would see also how Timoleon and the others had in their fatherland no less authority than Dionysius and Phalaris had; but they would see <span class="supplied">[them]</span> to have had far more security there.</div>
         <details class="annot"><summary>Commentary · 3</summary>
@@ -283,7 +318,7 @@ a { color: inherit; }
         </details>
       </div>
       <div class="pair" id="NM-DISC.1.10.04">
-        <div class="gutter"><a class="uid" href="#NM-DISC.1.10.04">1.10.04</a></div>
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.10.04">1.10.04</a><span class="marks"><a href="#n-NM-DISC.1.10-12">2 notes</a><a href="#v-NM-DISC-I10-D004">2 variants</a></span></div>
         <div class="col it" lang="it">Né sia alcuno che s&#x27;inganni per la gloria di Cesare, sentendolo massime celebrare dagli scrittori: perché questi che lo laudano, sono corrotti dalla fortuna sua, e spauriti dalla lunghezza dell&#x27;Imperio, il quale reggendosi sotto quel nome, non permetteva che gli scrittori parlassero liberamente di lui. Ma chi vuole conoscere quello che gli scrittori liberi ne direbbero, vegga quello che dicono di Catilina. E tanto è più detestabile Cesare, quanto più è da biasimare quello che ha fatto, che quello che ha voluto fare un male. Vegga ancora con quante laudi celebrano Bruto; talché non potendo biasimare quello per la sua potenza, e&#x27; celebrano il nimico suo.</div>
         <div class="col en" lang="en">Nor let there be anyone who deceives himself through the glory of Caesar, hearing him above all celebrated by the writers: because those who praise him are corrupted by his fortune, and frightened by the length of the rule, which, governing itself under that name, did not permit the writers to speak freely of him. But whoever wishes to know what free writers would say of him, let him see what they say of Catiline. And by so much is Caesar the more detestable, by how much more he who has done an ill is to be blamed than he who has wished to do it. Let him see also with how many praises they celebrate Brutus; so that, not being able to blame that man because of his power, they celebrate his enemy.</div>
         <details class="annot"><summary>Commentary · 3</summary>
@@ -293,7 +328,7 @@ a { color: inherit; }
         </details>
       </div>
       <div class="pair" id="NM-DISC.1.10.05">
-        <div class="gutter"><a class="uid" href="#NM-DISC.1.10.05">1.10.05</a></div>
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.10.05">1.10.05</a><span class="marks"><a href="#n-NM-DISC.1.10-16">2 notes</a></span></div>
         <div class="col it" lang="it">Consideri ancora quello ch&#x27;è diventato Principe in una Repubblica quante laudi, poi che Roma fu diventata Imperio, meritarono più quelli Imperadori che vissero sotto le leggi, e come Principi buoni, che quelli che vissero al contrario; e vedrà come a Tito, Nerva, Trajano, Adriano, Antonino e Marco, non erano necessarj i soldati pretoriani, né la moltitudine delle legioni a difenderli, perché i costumi loro, la benevolenza del Popolo, lo amore del Senato li difendeva. Vedrà ancora come a Caligola, Nerone, Vitellio, ed a tanti altri scellerati Imperadori non bastarono gli eserciti orientali e occidentali a salvarli contro a quelli nimici, che i loro rei costumi, la loro malvagia vita aveva loro generati. E se la Istoria di costoro fusse ben considerata, sarebbe assai buono ammaestramento a qualunque Principe a mostrargli la via della gloria o del biasimo, e della sicurtà o del timore suo. Perché di ventisei Imperadori che furono da Cesare a Massimino, sedici ne furono ammazzati, dieci morirono ordinariamente; e se di quelli che furono morti ve ne fu alcuno buono, come Galba e Pertinace, fu morto da quella corruzione che lo antecessore suo aveva lasciata ne&#x27; soldati. E se intra quelli che morirono ordinariamente ve ne fu alcuno scellerato come Severo, nacque da una sua grandissima fortuna e virtù, le quali due cose pochi uomini accompagnano.</div>
         <div class="col en" lang="en">Let him who has become prince in a republic consider also how many more praises, after Rome had become an empire, those emperors merited who lived under the laws, and as good princes, than those who lived to the contrary; and he will see how to Titus, Nerva, Trajan, Hadrian, Antoninus and Marcus the praetorian soldiers were not necessary, nor the multitude of the legions to defend them, because their customs, the benevolence of the people, the love of the senate defended them. He will see also how to Caligula, Nero, Vitellius, and to so many other villainous emperors the eastern and western armies did not suffice to save them against those enemies whom their evil customs, their vicious life had generated for them. And if the history of these were well considered, it would be very good instruction to any prince, to show him the path of glory or of blame, and of his security or of his fear. For of twenty-six emperors who were from Caesar to Maximinus, sixteen were killed, ten died ordinarily; and if of those who were slain there was some good one, like Galba and Pertinax, he was slain by that corruption that his predecessor had left in the soldiers. And if among those who died ordinarily there was some villainous one, like Severus, it arose from a very great fortune and <i lang="it">virtù</i> of his, which two things few men accompany.</div>
         <details class="annot"><summary>Commentary · 2</summary>
@@ -302,7 +337,7 @@ a { color: inherit; }
         </details>
       </div>
       <div class="pair" id="NM-DISC.1.10.06">
-        <div class="gutter"><a class="uid" href="#NM-DISC.1.10.06">1.10.06</a></div>
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.10.06">1.10.06</a><span class="marks"><a href="#v-NM-DISC-I10-D006">1 variant</a></span></div>
         <div class="col it" lang="it">Vedrà ancora per la lezione di questa Istoria come si può ordinare un Regno buono; perché tutti gl&#x27;Imperadori, che succederono all&#x27;Imperio per eredità, eccetto Tito, furono cattivi; quelli che per adozione, furono tutti buoni, come furono quei cinque da Nerva a Marco. E come l&#x27;Imperio cadde negli eredi, ei ritornò nella sua rovina. Pongasi adunque innanzi un Principe i tempi da Nerva a Marco, e conferiscali con quelli che erano stati prima, e che furono poi; e dipoi elegga in quali volesse esser nato, o a quali volesse essere preposto.</div>
         <div class="col en" lang="en">He will see also, by the reading of this history, how a good kingdom can be ordered; for all the emperors who succeeded to the rule by inheritance, except Titus, were bad; those who by adoption, were all good, as were those five from Nerva to Marcus. And when the rule fell to the heirs, it returned into its ruin. Let a prince, then, set before himself the times from Nerva to Marcus, and compare them with those that had been before, and that were after; and afterwards let him choose in which he would wish to have been born, or to which he would wish to be appointed.</div>
         <details class="annot"><summary>Commentary · 3</summary>
@@ -312,7 +347,7 @@ a { color: inherit; }
         </details>
       </div>
       <div class="pair" id="NM-DISC.1.10.07">
-        <div class="gutter"><a class="uid" href="#NM-DISC.1.10.07">1.10.07</a></div>
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.10.07">1.10.07</a><span class="marks"><a href="#n-NM-DISC.1.10-18">5 notes</a><a href="#v-NM-DISC-I10-D007">1 variant</a></span></div>
         <div class="col it" lang="it">Perché in quelli governati da&#x27; buoni, vedrà un Principe sicuro in mezzo de&#x27; suoi sicuri cittadini, ripieno di pace e di giustizia il Mondo; vedrà il Senato con la sua autorità, i Magistrati coi suoi onori, godersi i cittadini ricchi le loro ricchezze, la nobiltà e la virtù esaltata; vedrà ogni quiete, ed ogni bene; e dall&#x27;altra parte, ogni rancore, ogni licenza, corruzione e ambizione spenta; vedrà i tempi aurei, dove ciascuno può tenere e difendere quella opinione che vuole. Vedrà in fine trionfare il Mondo; pieno di riverenza e di gloria il Principe; d&#x27;amore e di sicurtà i Popoli. Se considererà dipoi tritamente i tempi degli altri Imperadori, gli vedrà atroci per le guerre, discordi per le sedizioni, nella pace e nella guerra crudeli, tanti Principi morti col ferro, tante guerre civili, tante esterne, l&#x27;Italia afflitta, e piena di nuovi infortunj, rovinate e saccheggiate le città di quella. Vedrà Roma arsa, il Campidoglio dai suoi cittadini disfatto, desolati gli antichi templi, corrotte le cerimonie, ripiene le città di adulterj; vedrà il mare pieno di esilj, gli scogli pieni di sangue. Vedrà in Roma seguire innumerabili crudeltadi; e la Nobiltà, le ricchezze, gli onori, e sopra tutto la virtù essere imputata a peccato capitale. Vedrà premiare gli accusatori, essere corrotti i servi contro al Signore, i liberti contro al padrone, e quelli a chi fussero mancati i nimici, essere oppressi dagli amici. E conoscerà allora benissimo quanti obblighi Roma, Italia, e il Mondo abbia con Cesare.</div>
         <div class="col en" lang="en">For in those governed by the good he will see a prince secure in the middle of his secure citizens, filled with peace and with justice the world; he will see the senate with its authority, the magistracies with their honours, the rich citizens enjoying their riches, nobility and <i lang="it">virtù</i> exalted; he will see every quiet and every good; and on the other hand every rancour, every licence, corruption and ambition extinguished; he will see the golden times, where each can hold and defend that opinion which he wishes. He will see, in the end, the world triumph; full of reverence and of glory the prince; of love and of security the peoples. If he afterwards considers minutely the times of the other emperors, he will see them atrocious through wars, discordant through seditions, in peace and in war cruel, so many princes slain by the sword, so many civil wars, so many external, Italy afflicted, and full of new misfortunes, ruined and sacked the cities of it. He will see Rome burned, the Capitol undone by its citizens, desolate the ancient temples, corrupted the ceremonies, filled with adulteries the cities; he will see the sea full of exiles, the rocks full of blood. He will see in Rome innumerable cruelties follow; and nobility, riches, honours, and above all <i lang="it">virtù</i> imputed as a capital sin. He will see accusers rewarded, servants corrupted against their lord, freedmen against their master, and those who had lacked enemies oppressed by their friends. And he will know then very well how many debts Rome, Italy, and the world have to Caesar.</div>
         <details class="annot"><summary>Commentary · 3</summary>
@@ -322,7 +357,7 @@ a { color: inherit; }
         </details>
       </div>
       <div class="pair" id="NM-DISC.1.10.08">
-        <div class="gutter"><a class="uid" href="#NM-DISC.1.10.08">1.10.08</a></div>
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.10.08">1.10.08</a><span class="marks"><a href="#n-NM-DISC.1.10-25">4 notes</a><a href="#v-NM-DISC-I10-D008">2 variants</a></span></div>
         <div class="col it" lang="it">E senza dubbio se e&#x27; sarà nato d&#x27;uomo si sbigottirà da ogni imitazione dei tempi cattivi, e accenderassi d&#x27;uno immenso desiderio di seguire i buoni. E veramente cercando un Principe la gloria del Mondo, dovrebbe desiderare di possedere una città corrotta, non per guastarla in tutto come Cesare, ma per riordinarla come Romolo. E veramente i cieli non possono dare agli uomini maggiore occasione di gloria, né gli uomini la possono maggiore desiderare. E se a volere ordinare bene una città, si avesse di necessità a deporre il Principato, meriterebbe quello che non la ordinasse, per non cadere di quel grado, qualche scusa. Ma potendosi tenere il Principato e ordinarla, non si merita scusa alcuna. E in somma considerino quelli a chi i cieli danno tale occasione, come sono loro proposte due vie; l&#x27;una, che li fa vivere sicuri, e dopo la morte li rende gloriosi; l&#x27;altra li fa vivere in continue angustie, e dopo la morte lasciare di sé una sempiterna infamia.</div>
         <div class="col en" lang="en">And without doubt, if he be born of man, he will be frightened away from every imitation of the bad times, and will be kindled with an immense desire to follow the good. And truly, a prince seeking the glory of the world ought to desire to possess a corrupt city, not to spoil it wholly like Caesar, but to reorder it like Romulus. And truly the heavens cannot give men greater occasion of glory, nor can men desire a greater. And if, to wish to order a city well, one were of necessity to lay down the principate, he who did not order it, so as not to fall from that degree, would merit some excuse. But, it being possible to keep the principate and order <span class="supplied">[the city]</span>, no excuse whatever is merited. And in sum, let those to whom the heavens give such occasion consider how two paths are proposed to them: the one, which makes them live secure, and after death renders them glorious; the other makes them live in continual straits, and after death leave behind them an everlasting infamy.</div>
         <details class="annot"><summary>Commentary · 2</summary>
@@ -332,62 +367,63 @@ a { color: inherit; }
       </div>
 
     <div class="apparatus">
-      <div>
+      <div class="app-source">
         <h3>Source</h3>
         <p>Established from the 1824 edition (<span class="sig">WIT-NM-DISC-1824-IA</span>), page-image-backed, which governs. Collated against the 1554 Giglio printing, Venice (<span class="sig">WIT-NM-DISC-1554-IA</span>), which is comparison evidence only.</p>
 <p>Paragraph divisions are editorial. The witness prints the chapter as one unbroken block.</p>
       </div>
-      <div>
+      <div class="app-variants">
         <h3>Variants</h3>
-        <p><span class="lem">infami e detestabili gli uomini destruttori delle Religioni ... utilità e onore alla umana generazione</span> — 1824. The 1554 witness reads <i lang="it">infami, &amp; degni di maladitione gli huomini destruttori delle religioni ... utilita, &amp; honore alle genti humane</i>. Giglio&#x27;s destroyers are &#x27;worthy of malediction&#x27; rather than detestable, and the arts serve &#x27;the human peoples&#x27; rather than the human generation. Same sense.</p>
-<p><span class="lem">gli oziosi, i vili, e i da pochi</span> — 1824. The 1554 witness reads <i lang="it">gli otiosi, et uili</i>. Giglio has no <i lang="it">e i da pochi</i>, the men of little account, and joins the idle and the vile in one class.</p>
-<p><span class="lem">ma vedrebbero di lunga avervi avuto più sicurtà</span> — 1824. The 1554 witness reads <i lang="it">ma uedrebbono di gran lunga hauerui hauuto piu sicurta</i>. Same sense: far more, by far more.</p>
-<p><span class="lem">spauriti dalla lunghezza dell&#x27;Imperio ... E tanto è più detestabile Cesare</span> — 1824. The 1554 witness reads <i lang="it">spauentati dalla lunghezza dello imperio ... &amp; tanto è piu uitupereuole Cesare</i>. Giglio makes Caesar &#x27;more vituperable&#x27;, the rubric&#x27;s word, where the 1824 has detestable, the word of .01.</p>
-<p><span class="lem">talché non potendo biasimare quello per la sua potenza, e&#x27; celebrano il nimico suo</span> — 1824. The 1554 witness reads <i lang="it">tal che non potendo biasimare quello per la sua potenza, e celebrarono il nemico suo</i>. Giglio puts the writers&#x27; praise of Brutus in the past (<i lang="it">celebrarono</i>), against the present of <i lang="it">celebrono</i> in the clause before.</p>
-<p><span class="lem">Pongasi adunque innanzi un Principe i tempi da Nerva a Marco ... e che furono poi; e dipoi elegga</span> — 1824. The 1554 witness reads <i lang="it">Purgasi adunque inanzi un Prencipe è tempi da Nerua a Marco ... &amp; che furono poi, elegga</i>. <i lang="it">Purgasi</i> is almost certainly a misprint for <i lang="it">Pongasi</i> (the page&#x27;s catchword reads <i lang="it">è tempo</i>); Giglio has no <i lang="it">e dipoi</i>.</p>
-<p><span class="lem">Se considererà dipoi tritamente i tempi</span> — 1824. The 1554 witness reads <i lang="it">Se considera dipoi minutamente i tempi</i>. Same sense: minutely; Giglio&#x27;s verb is present.</p>
-<p><span class="lem">come sono loro proposte due vie</span> — 1824. The 1554 witness reads <i lang="it">come sono loro preposte due uie</i>. Proposed to them, set before them: the same sense.</p>
-<p><span class="lem">l&#x27;altra li fa vivere in continue angustie</span> — 1824. The 1554 witness reads <i lang="it">l&#x27;altra gli fa uiuere in continoue molestie</i>. Giglio&#x27;s second path is one of continual vexations, the 1824&#x27;s of continual straits.</p>
+        <p id="v-NM-DISC-I10-D001"><a class="loc" href="#NM-DISC.1.10.01" title="Back to the paragraph">¶ 01</a> <span class="lem">infami e detestabili gli uomini destruttori delle Religioni ... utilità e onore alla umana generazione</span> — 1824. The 1554 witness reads <i lang="it">infami, &amp; degni di maladitione gli huomini destruttori delle religioni ... utilita, &amp; honore alle genti humane</i>. Giglio&#x27;s destroyers are &#x27;worthy of malediction&#x27; rather than detestable, and the arts serve &#x27;the human peoples&#x27; rather than the human generation. Same sense.</p>
+<p id="v-NM-DISC-I10-D002"><a class="loc" href="#NM-DISC.1.10.01" title="Back to the paragraph">¶ 01</a> <span class="lem">gli oziosi, i vili, e i da pochi</span> — 1824. The 1554 witness reads <i lang="it">gli otiosi, et uili</i>. Giglio has no <i lang="it">e i da pochi</i>, the men of little account, and joins the idle and the vile in one class.</p>
+<p id="v-NM-DISC-I10-D003"><a class="loc" href="#NM-DISC.1.10.03" title="Back to the paragraph">¶ 03</a> <span class="lem">ma vedrebbero di lunga avervi avuto più sicurtà</span> — 1824. The 1554 witness reads <i lang="it">ma uedrebbono di gran lunga hauerui hauuto piu sicurta</i>. Same sense: far more, by far more.</p>
+<p id="v-NM-DISC-I10-D004"><a class="loc" href="#NM-DISC.1.10.04" title="Back to the paragraph">¶ 04</a> <span class="lem">spauriti dalla lunghezza dell&#x27;Imperio ... E tanto è più detestabile Cesare</span> — 1824. The 1554 witness reads <i lang="it">spauentati dalla lunghezza dello imperio ... &amp; tanto è piu uitupereuole Cesare</i>. Giglio makes Caesar &#x27;more vituperable&#x27;, the rubric&#x27;s word, where the 1824 has detestable, the word of .01.</p>
+<p id="v-NM-DISC-I10-D005"><a class="loc" href="#NM-DISC.1.10.04" title="Back to the paragraph">¶ 04</a> <span class="lem">talché non potendo biasimare quello per la sua potenza, e&#x27; celebrano il nimico suo</span> — 1824. The 1554 witness reads <i lang="it">tal che non potendo biasimare quello per la sua potenza, e celebrarono il nemico suo</i>. Giglio puts the writers&#x27; praise of Brutus in the past (<i lang="it">celebrarono</i>), against the present of <i lang="it">celebrono</i> in the clause before.</p>
+<p id="v-NM-DISC-I10-D006"><a class="loc" href="#NM-DISC.1.10.06" title="Back to the paragraph">¶ 06</a> <span class="lem">Pongasi adunque innanzi un Principe i tempi da Nerva a Marco ... e che furono poi; e dipoi elegga</span> — 1824. The 1554 witness reads <i lang="it">Purgasi adunque inanzi un Prencipe è tempi da Nerua a Marco ... &amp; che furono poi, elegga</i>. <i lang="it">Purgasi</i> is almost certainly a misprint for <i lang="it">Pongasi</i> (the page&#x27;s catchword reads <i lang="it">è tempo</i>); Giglio has no <i lang="it">e dipoi</i>.</p>
+<p id="v-NM-DISC-I10-D007"><a class="loc" href="#NM-DISC.1.10.07" title="Back to the paragraph">¶ 07</a> <span class="lem">Se considererà dipoi tritamente i tempi</span> — 1824. The 1554 witness reads <i lang="it">Se considera dipoi minutamente i tempi</i>. Same sense: minutely; Giglio&#x27;s verb is present.</p>
+<p id="v-NM-DISC-I10-D008"><a class="loc" href="#NM-DISC.1.10.08" title="Back to the paragraph">¶ 08</a> <span class="lem">come sono loro proposte due vie</span> — 1824. The 1554 witness reads <i lang="it">come sono loro preposte due uie</i>. Proposed to them, set before them: the same sense.</p>
+<p id="v-NM-DISC-I10-D009"><a class="loc" href="#NM-DISC.1.10.08" title="Back to the paragraph">¶ 08</a> <span class="lem">l&#x27;altra li fa vivere in continue angustie</span> — 1824. The 1554 witness reads <i lang="it">l&#x27;altra gli fa uiuere in continoue molestie</i>. Giglio&#x27;s second path is one of continual vexations, the 1824&#x27;s of continual straits.</p>
 <p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
       </div>
-      <div>
+      <div class="app-notes">
         <h3>Notes</h3>
-        <p><span class="lem"><i lang="it">Capi e ordinatori delle Religioni</i>.</span> &quot;Heads and orderers of religions&quot;: <i lang="it">capo</i> and <i lang="it">ordinatore</i> as the glossary has them. The ranking runs founders of religions, of republics and kingdoms, captains, men of letters, and then everyone else, each praised for his art. <i lang="it">Sono celebri</i> (captains) is &quot;renowned&quot;, <i lang="it">sono celebrati</i> (men of letters) &quot;celebrated&quot;.</p>
-<p><span class="lem"><i lang="it">delle virtù</i>.</span> <i lang="it">Virtù</i> in the plural, the capacities that the destroyers are enemies of, set beside letters and the arts; the loan-word cannot show the number. Elsewhere in the chapter <i lang="it">virtù</i> is a quality of men: the private man who becomes prince <i lang="it">per fortuna o virtù</i> (.03), Severus&#x27; <i lang="it">fortuna e virtù</i> (.05), and the <i lang="it">virtù</i> honoured in the good age and imputed as a capital sin in the bad (.07).</p>
-<p><span class="lem"><i lang="it">i vili, e i da pochi</i>.</span> &quot;The vile, and the men of little account&quot;: <i lang="it">vile</i> in its older sense, base, wanting in spirit; men <i lang="it">da poco</i>, of little worth. The 1554 edition has no <i lang="it">e i da pochi</i> (NM-DISC-I10-D002).</p>
-<p><span class="lem"><i lang="it">sì tristo, o sì buono</i>.</span> &quot;So wicked, or so good&quot;: <i lang="it">tristo</i> is &quot;wicked&quot; (D03). <i lang="it">Scellerati</i>, twice of emperors (.05), is &quot;villainous&quot;, and <i lang="it">malvagia vita</i> &quot;vicious life&quot;, so that the three words stay apart from <i lang="it">rei costumi</i>, &quot;evil customs&quot;.</p>
-<p><span class="lem"><i lang="it">dipoi</i>.</span> &quot;Afterwards&quot;, in all four places (.01, .02, .06, .07), so that &quot;then&quot; stays <i lang="it">adunque</i>&#x27;s (D74).</p>
-<p><span class="lem"><i lang="it">incorrono</i>.</span> &quot;They incur&quot;: a <i lang="la">currere</i> compound, the running-into that answers <i lang="it">fuggono</i>, &quot;they flee&quot;, in the same period (D01, D171).</p>
-<p><span class="lem"><i lang="it">vituperio</i>.</span> &quot;Disgrace&quot; (D26). The adjective and the verb keep the root: <i lang="it">vituperabili</i> &quot;vituperable&quot; in the rubric, <i lang="it">vituperati</i> &quot;vituperated&quot; (.03).</p>
-<p><span class="lem"><i lang="it">gradi</i>.</span> &quot;Degrees&quot; (glossary <i lang="it">grado</i>): each man of letters according to his degree (.01), the degrees of the praised and the blamed (.02), and the principate&#x27;s height (<i lang="it">cadere di quel grado</i>, &quot;fall from that degree&quot;, .08).</p>
-<p><span class="lem"><i lang="it">quelli tali privati</i>.</span> &quot;Those private men&quot;: the subject is resumed after the long conditional, as Machiavelli resumes it, with a second &quot;that&quot; (D136).</p>
-<p><span class="lem"><i lang="it">facessero capitale</i>.</span> &quot;Set store by&quot;: <i lang="it">fare capitale di</i>, to count on, to treat as a stock. &quot;Make capital of&quot; now means to exploit.</p>
-<p><span class="lem">Scipios and Caesars.</span> Scipio Africanus, who held no power beyond the republic&#x27;s, against Julius Caesar; among princes, Agesilaus II of Sparta, Timoleon of Corinth (who freed Syracuse and laid down his command) and Dion of Syracuse, against Nabis, tyrant of Sparta, Phalaris of Acragas and Dionysius of Syracuse. The plurals are Machiavelli&#x27;s (<i lang="it">Agesilai</i>, <i lang="it">Nabidi</i>).</p>
-<p><span class="lem"><i lang="it">Né sia alcuno che s&#x27;inganni</i>.</span> &quot;Nor let there be anyone who deceives himself&quot;: reflexive, against the true passive of .02 (<i lang="it">ingannati da</i>).</p>
-<p><span class="lem"><i lang="it">quanto più è da biasimare quello che ha fatto, che quello che ha voluto fare un male</i>.</span> He who has done an ill is more to be blamed than he who wished to do it: Caesar did what Catiline only attempted. The English moves &quot;an ill&quot; to the first clause, where it is understood; the Italian sets it at the end, after the second verb. Brutus is Marcus Junius Brutus.</p>
-<p><span class="lem"><i lang="it">Imperio</i>.</span> D124 occurrence by occurrence. &quot;Rule&quot; for the sovereignty of the Caesars (<i lang="it">la lunghezza dell&#x27;Imperio, il quale reggendosi sotto quel nome</i>, .04) and for what passes by inheritance (<i lang="it">succederono all&#x27;Imperio</i>, <i lang="it">l&#x27;Imperio cadde negli eredi</i>, .06); &quot;empire&quot; where Rome changes its form (<i lang="it">poi che Roma fu diventata Imperio</i>, .05), as I.5 <i lang="it">fare uno Imperio</i>.</p>
-<p><span class="lem">The emperors.</span> The good: Titus, Nerva, Trajan, Hadrian, Antoninus Pius and Marcus Aurelius; &quot;those five from Nerva to Marcus&quot; are the adoptive emperors, and Titus the one good heir. The bad: Caligula, Nero, Vitellius. Galba and Pertinax were killed by the soldiery; Severus is Septimius Severus. The count of twenty-six from Caesar to Maximinus (Maximinus Thrax, 235–238) is Machiavelli&#x27;s own; the 1554 edition prints it in numerals.</p>
-<p><span class="lem"><i lang="it">morirono ordinariamente</i>.</span> &quot;Died ordinarily&quot;: by the ordinary way, not by the sword, as <i lang="it">ordinariamente</i> in I.7 (D151).</p>
-<p><span class="lem"><i lang="it">le quali due cose pochi uomini accompagnano</i>.</span> &quot;Which two things few men accompany&quot;. The Italian can be construed either way: few men join great fortune to great <i lang="it">virtù</i>, or the two things accompany few men. The English keeps the order and with it the first construction; the sense is close.</p>
-<p><span class="lem"><i lang="it">in quelli governati da&#x27; buoni</i>.</span> &quot;In those governed by the good&quot;: the times governed by good emperors.</p>
-<p><span class="lem">The two ages.</span> Machiavelli sets the vision out as absolutes with the predicate first (<i lang="it">ripieno di pace e di giustizia il Mondo</i>, <i lang="it">desolati gli antichi templi</i>); the English keeps that order throughout .07.</p>
-<p><span class="lem"><i lang="it">i Magistrati coi suoi onori</i>.</span> &quot;The magistracies with their honours&quot;: the offices, as D93.</p>
-<p><span class="lem"><i lang="it">spenta</i>.</span> &quot;Extinguished&quot;: rancour, licence, corruption and ambition put out, as a fire.</p>
-<p><span class="lem"><i lang="it">dove ciascuno può tenere e difendere quella opinione che vuole</i>.</span> &quot;Where each can hold and defend that opinion which he wishes&quot;. Cf. Tacitus, <i lang="it">Histories</i> 1.1, of the times of Nerva and Trajan: <i lang="it">ubi sentire quae velis et quae sentias dicere licet</i>, &quot;when one may think what one wishes and say what one thinks&quot;.</p>
-<p><span class="lem"><i lang="it">peccato capitale</i>.</span> &quot;A capital sin&quot;: a crime punishable by death, in the word for sin.</p>
-<p><span class="lem"><i lang="it">quanti obblighi Roma, Italia, e il Mondo abbia con Cesare</i>.</span> &quot;How many debts&quot;: <i lang="it">obbligo</i> is &quot;debt&quot; (D17), and ironic, as in I.12.</p>
-<p><span class="lem"><i lang="it">se e&#x27; sarà nato d&#x27;uomo</i>.</span> &quot;If he be born of man&quot;: if he is a human being at all. The future perfect is conjectural.</p>
-<p><span class="lem"><i lang="it">si sbigottirà da</i>.</span> &quot;Will be frightened away from&quot;: the <i lang="it">da</i> separates.</p>
-<p><span class="lem"><i lang="it">ordinarla</i>.</span> The city, not the principate, which is masculine; the English supplies &quot;[the city]&quot; in .08, where the verbs are impersonal.</p>
-<p><span class="lem"><i lang="it">continue angustie</i>.</span> &quot;Continual straits&quot;. The 1554 edition reads <i lang="it">continoue molestie</i>, &quot;continual vexations&quot; (NM-DISC-I10-D009).</p>
+        <p id="n-NM-DISC.1.10-1"><a class="loc" href="#NM-DISC.1.10.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">Capi e ordinatori delle Religioni</i>.</span> &quot;Heads and orderers of religions&quot;: <i lang="it">capo</i> and <i lang="it">ordinatore</i> as the glossary has them. The ranking runs founders of religions, of republics and kingdoms, captains, men of letters, and then everyone else, each praised for his art. <i lang="it">Sono celebri</i> (captains) is &quot;renowned&quot;, <i lang="it">sono celebrati</i> (men of letters) &quot;celebrated&quot;.</p>
+<p id="n-NM-DISC.1.10-2"><a class="loc" href="#NM-DISC.1.10.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">delle virtù</i>.</span> <i lang="it">Virtù</i> in the plural, the capacities that the destroyers are enemies of, set beside letters and the arts; the loan-word cannot show the number. Elsewhere in the chapter <i lang="it">virtù</i> is a quality of men: the private man who becomes prince <i lang="it">per fortuna o virtù</i> (.03), Severus&#x27; <i lang="it">fortuna e virtù</i> (.05), and the <i lang="it">virtù</i> honoured in the good age and imputed as a capital sin in the bad (.07).</p>
+<p id="n-NM-DISC.1.10-3"><a class="loc" href="#NM-DISC.1.10.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">i vili, e i da pochi</i>.</span> &quot;The vile, and the men of little account&quot;: <i lang="it">vile</i> in its older sense, base, wanting in spirit; men <i lang="it">da poco</i>, of little worth. The 1554 edition has no <i lang="it">e i da pochi</i> (NM-DISC-I10-D002).</p>
+<p id="n-NM-DISC.1.10-4"><a class="loc" href="#NM-DISC.1.10.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">sì tristo, o sì buono</i>.</span> &quot;So wicked, or so good&quot;: <i lang="it">tristo</i> is &quot;wicked&quot; (D03). <i lang="it">Scellerati</i>, twice of emperors (.05), is &quot;villainous&quot;, and <i lang="it">malvagia vita</i> &quot;vicious life&quot;, so that the three words stay apart from <i lang="it">rei costumi</i>, &quot;evil customs&quot;.</p>
+<p id="n-NM-DISC.1.10-5"><span class="lem"><i lang="it">dipoi</i>.</span> &quot;Afterwards&quot;, in all four places (.01, .02, .06, .07), so that &quot;then&quot; stays <i lang="it">adunque</i>&#x27;s (D74).</p>
+<p id="n-NM-DISC.1.10-6"><a class="loc" href="#NM-DISC.1.10.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">incorrono</i>.</span> &quot;They incur&quot;: a <i lang="la">currere</i> compound, the running-into that answers <i lang="it">fuggono</i>, &quot;they flee&quot;, in the same period (D01, D171).</p>
+<p id="n-NM-DISC.1.10-7"><a class="loc" href="#NM-DISC.1.10.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">vituperio</i>.</span> &quot;Disgrace&quot; (D26). The adjective and the verb keep the root: <i lang="it">vituperabili</i> &quot;vituperable&quot; in the rubric, <i lang="it">vituperati</i> &quot;vituperated&quot; (.03).</p>
+<p id="n-NM-DISC.1.10-8"><span class="lem"><i lang="it">gradi</i>.</span> &quot;Degrees&quot; (glossary <i lang="it">grado</i>): each man of letters according to his degree (.01), the degrees of the praised and the blamed (.02), and the principate&#x27;s height (<i lang="it">cadere di quel grado</i>, &quot;fall from that degree&quot;, .08).</p>
+<p id="n-NM-DISC.1.10-9"><a class="loc" href="#NM-DISC.1.10.03" title="Back to the paragraph">¶ 03</a> <span class="lem"><i lang="it">quelli tali privati</i>.</span> &quot;Those private men&quot;: the subject is resumed after the long conditional, as Machiavelli resumes it, with a second &quot;that&quot; (D136).</p>
+<p id="n-NM-DISC.1.10-10"><a class="loc" href="#NM-DISC.1.10.03" title="Back to the paragraph">¶ 03</a> <span class="lem"><i lang="it">facessero capitale</i>.</span> &quot;Set store by&quot;: <i lang="it">fare capitale di</i>, to count on, to treat as a stock. &quot;Make capital of&quot; now means to exploit.</p>
+<p id="n-NM-DISC.1.10-11"><span class="lem">Scipios and Caesars.</span> Scipio Africanus, who held no power beyond the republic&#x27;s, against Julius Caesar; among princes, Agesilaus II of Sparta, Timoleon of Corinth (who freed Syracuse and laid down his command) and Dion of Syracuse, against Nabis, tyrant of Sparta, Phalaris of Acragas and Dionysius of Syracuse. The plurals are Machiavelli&#x27;s (<i lang="it">Agesilai</i>, <i lang="it">Nabidi</i>).</p>
+<p id="n-NM-DISC.1.10-12"><a class="loc" href="#NM-DISC.1.10.04" title="Back to the paragraph">¶ 04</a> <span class="lem"><i lang="it">Né sia alcuno che s&#x27;inganni</i>.</span> &quot;Nor let there be anyone who deceives himself&quot;: reflexive, against the true passive of .02 (<i lang="it">ingannati da</i>).</p>
+<p id="n-NM-DISC.1.10-13"><a class="loc" href="#NM-DISC.1.10.04" title="Back to the paragraph">¶ 04</a> <span class="lem"><i lang="it">quanto più è da biasimare quello che ha fatto, che quello che ha voluto fare un male</i>.</span> He who has done an ill is more to be blamed than he who wished to do it: Caesar did what Catiline only attempted. The English moves &quot;an ill&quot; to the first clause, where it is understood; the Italian sets it at the end, after the second verb. Brutus is Marcus Junius Brutus.</p>
+<p id="n-NM-DISC.1.10-14"><span class="lem"><i lang="it">Imperio</i>.</span> D124 occurrence by occurrence. &quot;Rule&quot; for the sovereignty of the Caesars (<i lang="it">la lunghezza dell&#x27;Imperio, il quale reggendosi sotto quel nome</i>, .04) and for what passes by inheritance (<i lang="it">succederono all&#x27;Imperio</i>, <i lang="it">l&#x27;Imperio cadde negli eredi</i>, .06); &quot;empire&quot; where Rome changes its form (<i lang="it">poi che Roma fu diventata Imperio</i>, .05), as I.5 <i lang="it">fare uno Imperio</i>.</p>
+<p id="n-NM-DISC.1.10-15"><span class="lem">The emperors.</span> The good: Titus, Nerva, Trajan, Hadrian, Antoninus Pius and Marcus Aurelius; &quot;those five from Nerva to Marcus&quot; are the adoptive emperors, and Titus the one good heir. The bad: Caligula, Nero, Vitellius. Galba and Pertinax were killed by the soldiery; Severus is Septimius Severus. The count of twenty-six from Caesar to Maximinus (Maximinus Thrax, 235–238) is Machiavelli&#x27;s own; the 1554 edition prints it in numerals.</p>
+<p id="n-NM-DISC.1.10-16"><a class="loc" href="#NM-DISC.1.10.05" title="Back to the paragraph">¶ 05</a> <span class="lem"><i lang="it">morirono ordinariamente</i>.</span> &quot;Died ordinarily&quot;: by the ordinary way, not by the sword, as <i lang="it">ordinariamente</i> in I.7 (D151).</p>
+<p id="n-NM-DISC.1.10-17"><a class="loc" href="#NM-DISC.1.10.05" title="Back to the paragraph">¶ 05</a> <span class="lem"><i lang="it">le quali due cose pochi uomini accompagnano</i>.</span> &quot;Which two things few men accompany&quot;. The Italian can be construed either way: few men join great fortune to great <i lang="it">virtù</i>, or the two things accompany few men. The English keeps the order and with it the first construction; the sense is close.</p>
+<p id="n-NM-DISC.1.10-18"><a class="loc" href="#NM-DISC.1.10.07" title="Back to the paragraph">¶ 07</a> <span class="lem"><i lang="it">in quelli governati da&#x27; buoni</i>.</span> &quot;In those governed by the good&quot;: the times governed by good emperors.</p>
+<p id="n-NM-DISC.1.10-19"><span class="lem">The two ages.</span> Machiavelli sets the vision out as absolutes with the predicate first (<i lang="it">ripieno di pace e di giustizia il Mondo</i>, <i lang="it">desolati gli antichi templi</i>); the English keeps that order throughout .07.</p>
+<p id="n-NM-DISC.1.10-20"><a class="loc" href="#NM-DISC.1.10.07" title="Back to the paragraph">¶ 07</a> <span class="lem"><i lang="it">i Magistrati coi suoi onori</i>.</span> &quot;The magistracies with their honours&quot;: the offices, as D93.</p>
+<p id="n-NM-DISC.1.10-21"><span class="lem"><i lang="it">spenta</i>.</span> &quot;Extinguished&quot;: rancour, licence, corruption and ambition put out, as a fire.</p>
+<p id="n-NM-DISC.1.10-22"><a class="loc" href="#NM-DISC.1.10.07" title="Back to the paragraph">¶ 07</a> <span class="lem"><i lang="it">dove ciascuno può tenere e difendere quella opinione che vuole</i>.</span> &quot;Where each can hold and defend that opinion which he wishes&quot;. Cf. Tacitus, <i lang="it">Histories</i> 1.1, of the times of Nerva and Trajan: <i lang="it">ubi sentire quae velis et quae sentias dicere licet</i>, &quot;when one may think what one wishes and say what one thinks&quot;.</p>
+<p id="n-NM-DISC.1.10-23"><a class="loc" href="#NM-DISC.1.10.07" title="Back to the paragraph">¶ 07</a> <span class="lem"><i lang="it">peccato capitale</i>.</span> &quot;A capital sin&quot;: a crime punishable by death, in the word for sin.</p>
+<p id="n-NM-DISC.1.10-24"><a class="loc" href="#NM-DISC.1.10.07" title="Back to the paragraph">¶ 07</a> <span class="lem"><i lang="it">quanti obblighi Roma, Italia, e il Mondo abbia con Cesare</i>.</span> &quot;How many debts&quot;: <i lang="it">obbligo</i> is &quot;debt&quot; (D17), and ironic, as in I.12.</p>
+<p id="n-NM-DISC.1.10-25"><a class="loc" href="#NM-DISC.1.10.08" title="Back to the paragraph">¶ 08</a> <span class="lem"><i lang="it">se e&#x27; sarà nato d&#x27;uomo</i>.</span> &quot;If he be born of man&quot;: if he is a human being at all. The future perfect is conjectural.</p>
+<p id="n-NM-DISC.1.10-26"><a class="loc" href="#NM-DISC.1.10.08" title="Back to the paragraph">¶ 08</a> <span class="lem"><i lang="it">si sbigottirà da</i>.</span> &quot;Will be frightened away from&quot;: the <i lang="it">da</i> separates.</p>
+<p id="n-NM-DISC.1.10-27"><a class="loc" href="#NM-DISC.1.10.08" title="Back to the paragraph">¶ 08</a> <span class="lem"><i lang="it">ordinarla</i>.</span> The city, not the principate, which is masculine; the English supplies &quot;[the city]&quot; in .08, where the verbs are impersonal.</p>
+<p id="n-NM-DISC.1.10-28"><a class="loc" href="#NM-DISC.1.10.08" title="Back to the paragraph">¶ 08</a> <span class="lem"><i lang="it">continue angustie</i>.</span> &quot;Continual straits&quot;. The 1554 edition reads <i lang="it">continoue molestie</i>, &quot;continual vexations&quot; (NM-DISC-I10-D009).</p>
       </div>
     </div>
   </section>
 
   <section class="work fg">
     <div class="work-head">
-      <span class="tag">FG-CONS.1.10</span>
+      <span class="tag" title="FG-CONS.1.10">Guicciardini</span>
       <h2>Considerazione sul capitolo X</h2>
+      <span class="cite"><i>Considerazioni</i> I.10</span>
     </div>
     <p class="rubric">Quanto sono laudabili i fondatori d&#x27;una repubblica o d&#x27;uno regno, tanto quelli d&#x27;una tirannide sono vituperabili</p>
     <p class="rubric">How much the founders of a republic or of a kingdom are laudable, so much those of a tyranny are vituperable
@@ -395,7 +431,7 @@ a { color: inherit; }
 
     <div class="colheads"><div></div><div>Italian · 1857</div><div>English</div></div>
       <div class="pair" id="FG-CONS.1.10.01">
-        <div class="gutter"><a class="uid" href="#FG-CONS.1.10.01">1.10.01</a></div>
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.10.01">1.10.01</a><span class="marks"><a href="#n-FG-CONS.1.10-1">18 notes</a><a href="#v-FG-CONS-I10-D002">3 variants</a></span></div>
         <div class="col it" lang="it">Il titulo di questo Discorso è verissimo, perché somma laude meritano e&#x27; fondatori de&#x27; regni e delle republiche, sommo biasimo e&#x27; fondatori della tirannide. Ma perché e&#x27; casi sono varii, e lo autore confonde gli esempli, bisogna considerare che rare volte occorre che chi occupa la tirannide nella patria libera abbia tale necessità di farlo, o se ha necessità, che sia causata sanza colpa sua, talmente che gli resti colore alcuno di giustificazione. E questa sorte di uomini, tra&#x27; quali fu Cesare, pieno di molte altre virtù, ma oppresso dalla ambizione del dominare, sono certo inumanissimi e detestabili. <span class="supplied">[È]</span> vero che qualche volta le forme delle libertà sono sì disordinate, e le città ripiene tanto di discordie civili, che la necessità conduce qualche cittadino, non potendo salvarsi altrimenti, a cercare la tirannide, o a aderire a chi la cerca. Nel quale caso sarebbe molto laudabile chi preponessi l&#x27;amore della patria alla salute sua particulare, ma perché questo amore o questa fortezza si desidera negli uomini più presto che la si truovi, merita essere assai scusato chi è mosso da tale cagione, e tanto più se il governo, contro al quale va, è disordinato, perché molte sono chiamate spesso libertà che non sono. Lo esemplo si può porre nella nostra città, dove, doppo la mutazione dello Stato del 26, sono stati perseguitati e conculcati alcuni cittadini buoni e bene qualificati, e in ultimo, nella venuta del principe di Oranges, necessitati o disubidire a&#x27; comandamenti fatti dalli Otto di fermarsi in Firenze sotto pena di rebellione, o restare con periculo di essere ammazzati, e almanco con certezza di essere sostenuti come sospetti. I quali la necessità ha condotti o a desiderare la mutazione di uno Stato che sotto nome di libertà è tirannico e distruttore della patria, o tacitamente lasciarsi con somma ingiustizia tòrre la patria e le facultà. Chi adunque è autore nella patria libera di una tirannide, e lo fa per appetito di dominare, merita somma reprensione; e di questi fu Cesare, Falari, Pisistrato e simili, de&#x27; quali è più infame l&#x27;uno che l&#x27;altro, secondo che più o manco crudelmente la usorono, e secondo che furono più o meno ornati di altre virtù.</div>
         <div class="col en" lang="en">The title of this Discourse is most true, for supreme praise the founders of kingdoms and of republics merit, supreme blame the founders of tyranny. But because the cases are various, and the author confounds the examples, it is required to consider that it seldom occurs that whoever occupies the tyranny in a free fatherland has such necessity to do it, or, if he has necessity, that it be caused without fault of his, so that there remain to him any colour of justification. And this sort of men, among whom was Caesar, full of many other <i lang="it">virtù</i>, but oppressed by the ambition of dominating, are certainly most inhuman and detestable. It is true that at times the forms of the liberties are so disordered, and the cities so full of civil discords, that necessity leads some citizen, not being able to save himself otherwise, to seek the tyranny, or to adhere to whoever seeks it. In which case he would be very laudable who should put the love of the fatherland before his particular safety, but because this love or this fortitude is desired in men rather than it is found, he merits to be much excused who is moved by such a cause, and so much the more if the government, against which he goes, is disordered, for many are often called liberties that are not. The example can be set in our city, where, after the change of the state of &#x27;26, some good and well-qualified citizens have been persecuted and trampled, and at the last, at the coming of the prince of Orange, necessitated either to disobey the commands made by the Eight to stay in Florence under pain of rebellion, or to remain in danger of being killed, and at the least with certainty of being detained as suspects. Whom necessity has led either to desire the change of a state that under the name of liberty is tyrannical and destroyer of the fatherland, or tacitly to let themselves, with supreme injustice, have the fatherland and their substance taken away. Whoever, then, is author in a free fatherland of a tyranny, and does it from appetite of dominating, merits supreme reproof; and of these was Caesar, Phalaris, Pisistratus and the like, of whom one is more infamous than the other, according as they used it more or less cruelly, and according as they were more or less adorned with other <i lang="it">virtù</i>.</div>
         <details class="annot"><summary>Commentary · 3</summary>
@@ -405,7 +441,7 @@ a { color: inherit; }
         </details>
       </div>
       <div class="pair" id="FG-CONS.1.10.02">
-        <div class="gutter"><a class="uid" href="#FG-CONS.1.10.02">1.10.02</a></div>
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.10.02">1.10.02</a><span class="marks"><a href="#n-FG-CONS.1.10-21">6 notes</a><a href="#v-FG-CONS-I10-D004">1 variant</a></span></div>
         <div class="col it" lang="it">L&#x27;altro caso è di quegli a chi la tirannide è lasciata ereditaria, che meritano manco biasimo continuando in essa, che non fanno quegli che da principio l&#x27;hanno fondata, e lasciandola meriterebbono tanto più laude, quanto manco sono debitori di cancellare il peccato d&#x27;averla usurpata. Di questi si truova pochissimi o forse nessuno che sanza necessità l&#x27;abbino lasciata, né è meraviglia, perché chi è nutrito in una tirannide, non ha occhi da cognoscere quella gloria che si acquista di mettere la patria in libertà, né considera questo caso con quello gusto che fanno gli uomini privati, perché, assuefatto a quello modo di vivere, giudica che il sommo bene sia nella potenza; e non cognoscendo il frutto di quella gloria, nessuna altra ragione gli può persuadere a lasciare la tirannide. Sanza che il periculo lo può ritenere, quando bene n&#x27;avessi volontà, perché difficile è che una tirannide si sia potuta acquistare e conservare sanza molte inimicizie e sanza offesa di molti; però ridursi privato, o lasciare doppo sé e&#x27; figliuoli privati, pare cosa periculosa, massime che e&#x27; populi sono ingrati, e le libertà nuove sono communemente piene di disordini. E se lo fece Silla, è esemplo rarissimo, e lo potette fare più sicuramente, perché el governo restò in mano degli uomini della sua fazione, in modo che, non solo fu sicuro mentre visse, ma ancora, morto lui, furono conservati gli atti suoi ed avuto reverenza alla sua memoria.</div>
         <div class="col en" lang="en">The other case is of those to whom the tyranny is left hereditary, who merit less blame continuing in it than do those who have founded it from the beginning, and leaving it would merit so much the more praise, as they are less debtors to cancel the sin of having usurped it. Of these there are found very few or perhaps none that without necessity have left it, nor is it a marvel, for whoever is nourished in a tyranny has not eyes to know that glory that is acquired by putting the fatherland in liberty, nor does he consider this case with that taste that private men do, for, accustomed to that way of living, he judges that the supreme good is in power; and not knowing the fruit of that glory, no other reason can persuade him to leave the tyranny. Besides that the danger can hold him back, even if he had the will to it, for it is difficult that a tyranny should have been able to be acquired and conserved without many enmities and without offence to many; therefore to reduce oneself to private <span class="supplied">[station]</span>, or to leave after oneself one&#x27;s sons private, seems a dangerous thing, above all since peoples are ungrateful, and new liberties are commonly full of disorders. And if Sulla did it, it is a most rare example, and he was able to do it more securely, for the government remained in the hands of the men of his faction, in such a way that not only was he secure while he lived, but also, he being dead, his acts were conserved and reverence had for his memory.</div>
         <details class="annot"><summary>Commentary · 3</summary>
@@ -415,7 +451,7 @@ a { color: inherit; }
         </details>
       </div>
       <div class="pair" id="FG-CONS.1.10.03">
-        <div class="gutter"><a class="uid" href="#FG-CONS.1.10.03">1.10.03</a></div>
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.10.03">1.10.03</a><span class="marks"><a href="#n-FG-CONS.1.10-29">5 notes</a><a href="#v-FG-CONS-I10-D005">2 variants</a></span></div>
         <div class="col it" lang="it"><span class="supplied">[È]</span> altro il caso di quelli che sono re e principi, o creati legittimamente, come erano e&#x27; re di Lacedemone, come furono e&#x27; primi re romani, o che per la lunghezza del tempo sono tenuti legittimi. Di questi tali, se hanno la autorità sciolta, si truova pure qualcuno che governa giustamente in modo che merita il nome di essere buono principe, ma io non so quali che riduchino il regno a quella perfezione di ordini che meritamente doverrebbe essere, cioè a ordinarlo in modo che non e&#x27; figliuoli o e&#x27; più prossimi abbino il regno per eredità, ma che si succeda per elezione. E se in alcuno regno è stata questa instituzione, credo ve l&#x27;abbia conservata più qualche necessità che la voluntà di chi ha regnato, perché troppo grande è lo amore che e&#x27; padri portano a&#x27; figliuoli, né piccolo è quello che li porta a lasciare illustre la memoria della sua casa.</div>
         <div class="col en" lang="en">Other is the case of those who are kings and princes, either created legitimately, as were the kings of Lacedaemon, as were the first Roman kings, or who through the length of time are held legitimate. Of these, if they have the authority unbound, there is found yet some one who governs justly in such a way that he merits the name of being a good prince, but I do not know which <span class="supplied">[of them]</span> reduce the kingdom to that perfection of orders which deservedly ought to be, that is, to order it in such a way that not the sons or the nearest have the kingdom by inheritance, but that one succeed by choice. And if in any kingdom there has been this institution, I believe some necessity has conserved it there more than the will of those who have reigned, for too great is the love that fathers bear to their sons, nor is that small which bears them on to leave the memory of their house illustrious.</div>
         <details class="annot"><summary>Commentary · 3</summary>
@@ -425,7 +461,7 @@ a { color: inherit; }
         </details>
       </div>
       <div class="pair" id="FG-CONS.1.10.04">
-        <div class="gutter"><a class="uid" href="#FG-CONS.1.10.04">1.10.04</a></div>
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.10.04">1.10.04</a><span class="marks"><a href="#n-FG-CONS.1.10-36">1 note</a><a href="#v-FG-CONS-I10-D007">1 variant</a></span></div>
         <div class="col it" lang="it">Però questi pensieri, che e&#x27; tiranni deponghino le tirannidi, e che e&#x27; re ordinino bene e&#x27; regni, privando la sua posterità della successione, si dipingono più facilmente in su&#x27; libri e nelle immaginazioni degli uomini, che non se ne eseguiscono in fatto; anzi, quanto e&#x27; ragionamenti de&#x27; privati ne sono spessi, tanto ne sono rari gli esempli, e però meritano minore reprensione coloro che non fanno le cose, simili alle quali si truovano pochissimi e forse nessuno che abbia fatto.</div>
         <div class="col en" lang="en">Therefore these thoughts, that tyrants should lay down tyrannies, and that kings should order kingdoms well, depriving their posterity of the succession, are painted more readily in books and in the imaginations of men than they are executed in fact; indeed, as much as the reasonings of private men about them are frequent, so much are the examples of them rare, and therefore those merit lesser reproof who do not do the things, the like of which there are found very few and perhaps none that has done <span class="supplied">[them]</span>.</div>
         <details class="annot"><summary>Commentary · 2</summary>
@@ -435,7 +471,7 @@ a { color: inherit; }
       </div>
 
     <div class="apparatus">
-      <div>
+      <div class="app-source">
         <h3>Source</h3>
         <p>Established from Canestrini 1857, <i>Opere inedite</i> vol. 1, pp. 1–65 (<span class="sig">WIT-FG-CONS-1857-CANESTRINI</span>) — the <i>editio princeps</i>, which governs. Collated against Palmarocchi 1933 (<span class="sig">WIT-FG-CONS-1933-PALMAROCCHI</span>): page images and the Wikisource transcription consulted as collation evidence, not reproduced (LICENSE §5).</p>
 <p><span class="lem">fondatori della tirannide Ma perché</span> → <span class="lem">fondatori della tirannide. Ma perché</span> (FG-CONS.1.10.01). No stop in the impression (A doubtful, B none); a capital follows; the 1933 edition prints it. D67.</p>
@@ -444,109 +480,70 @@ a { color: inherit; }
 <p><span class="lem">piene di disordini E se</span> → <span class="lem">piene di disordini. E se</span> (FG-CONS.1.10.02). As C003. D67.</p>
 <p><span class="lem">per elezione E se in alcuno regno</span> → <span class="lem">per elezione. E se in alcuno regno</span> (FG-CONS.1.10.03). Nothing at line end, both readers; the 1933 edition prints it. D67.</p>
       </div>
-      <div>
+      <div class="app-variants">
         <h3>Variants</h3>
-        <p><span class="lem">[È] vero che qualche volta ... [È] altro il caso di quelli</span>. The 1857 witness reads <i lang="it">E vero che qualche volta ... E altro il caso di quelli</i>. The 1933 witness reads <i lang="it">È vero che qualche volta ... È altro el caso di quelli</i>. Canestrini prints the verb without its accent at both, and as printed neither period has a finite verb. Emended as his I.3, I.7, I.8 and I.9 were (D114, D144, D157, D167; D181).</p>
-<p><span class="lem">sono certo inumanissimi e detestabili</span> — 1857. The 1933 witness reads <i lang="it">sono certo immanissimi e detestabili</i>. Most inhuman, against most monstrous. Both readers read Canestrini&#x27;s <i lang="it">inumanissimi</i>; it construes, so D38.</p>
-<p><span class="lem">come sospetti. I quali la necessità ha condotti</span> — 1857. The 1933 witness reads <i lang="it">come sospetti. E&#x27; quali la necessitá ha condotti</i>. The relative with Canestrini&#x27;s article, against Palmarocchi&#x27;s Florentine plural <i lang="it">e&#x27;</i>. Same sense.</p>
-<p><span class="lem">che meritano manco biasimo continuando in essa</span> — 1857. The 1933 witness reads <i lang="it">che meritano manco biasimo continuando in esso</i>. Canestrini&#x27;s feminine takes the tyranny; Palmarocchi&#x27;s masculine can take the case or the state. The English follows Canestrini: &#x27;continuing in it&#x27;.</p>
-<p><span class="lem">credo ve l&#x27;abbia conservata</span> — 1857. The 1933 witness reads <i lang="it">credo che ve l&#x27;abbia conservata</i>. Palmarocchi has the complementiser; same sense.</p>
-<p><span class="lem">né piccolo è quello che li porta a lasciare illustre la memoria</span> — 1857. The 1933 witness reads <i lang="it">né piccolo è quello che si porta a lasciare illustre la memoria</i>. In Canestrini the love bears the fathers on; in Palmarocchi it is the love one bears to leaving the memory illustrious. Both construe; D38.</p>
-<p><span class="lem">che e&#x27; tiranni deponghino le tirannidi ... e nelle immaginazioni degli uomini</span> — 1857. The 1933 witness reads <i lang="it">che e&#x27; tiranni deponghino le tirannide ... e nelle immaginazione degli uomini</i>. Palmarocchi keeps the old plurals in -e. Same sense.</p>
-<p><span class="lem">sotto pena di rebellione</span> — 1857. The 1933 witness reads <i lang="it">sotto pena [di] rebellione</i>. Palmarocchi brackets the preposition as his supply; Canestrini prints it.</p>
+        <p id="v-FG-CONS-I10-D001"><span class="lem">[È] vero che qualche volta ... [È] altro il caso di quelli</span>. The 1857 witness reads <i lang="it">E vero che qualche volta ... E altro il caso di quelli</i>. The 1933 witness reads <i lang="it">È vero che qualche volta ... È altro el caso di quelli</i>. Canestrini prints the verb without its accent at both, and as printed neither period has a finite verb. Emended as his I.3, I.7, I.8 and I.9 were (D114, D144, D157, D167; D181).</p>
+<p id="v-FG-CONS-I10-D002"><a class="loc" href="#FG-CONS.1.10.01" title="Back to the paragraph">¶ 01</a> <span class="lem">sono certo inumanissimi e detestabili</span> — 1857. The 1933 witness reads <i lang="it">sono certo immanissimi e detestabili</i>. Most inhuman, against most monstrous. Both readers read Canestrini&#x27;s <i lang="it">inumanissimi</i>; it construes, so D38.</p>
+<p id="v-FG-CONS-I10-D003"><a class="loc" href="#FG-CONS.1.10.01" title="Back to the paragraph">¶ 01</a> <span class="lem">come sospetti. I quali la necessità ha condotti</span> — 1857. The 1933 witness reads <i lang="it">come sospetti. E&#x27; quali la necessitá ha condotti</i>. The relative with Canestrini&#x27;s article, against Palmarocchi&#x27;s Florentine plural <i lang="it">e&#x27;</i>. Same sense.</p>
+<p id="v-FG-CONS-I10-D004"><a class="loc" href="#FG-CONS.1.10.02" title="Back to the paragraph">¶ 02</a> <span class="lem">che meritano manco biasimo continuando in essa</span> — 1857. The 1933 witness reads <i lang="it">che meritano manco biasimo continuando in esso</i>. Canestrini&#x27;s feminine takes the tyranny; Palmarocchi&#x27;s masculine can take the case or the state. The English follows Canestrini: &#x27;continuing in it&#x27;.</p>
+<p id="v-FG-CONS-I10-D005"><a class="loc" href="#FG-CONS.1.10.03" title="Back to the paragraph">¶ 03</a> <span class="lem">credo ve l&#x27;abbia conservata</span> — 1857. The 1933 witness reads <i lang="it">credo che ve l&#x27;abbia conservata</i>. Palmarocchi has the complementiser; same sense.</p>
+<p id="v-FG-CONS-I10-D006"><a class="loc" href="#FG-CONS.1.10.03" title="Back to the paragraph">¶ 03</a> <span class="lem">né piccolo è quello che li porta a lasciare illustre la memoria</span> — 1857. The 1933 witness reads <i lang="it">né piccolo è quello che si porta a lasciare illustre la memoria</i>. In Canestrini the love bears the fathers on; in Palmarocchi it is the love one bears to leaving the memory illustrious. Both construe; D38.</p>
+<p id="v-FG-CONS-I10-D007"><a class="loc" href="#FG-CONS.1.10.04" title="Back to the paragraph">¶ 04</a> <span class="lem">che e&#x27; tiranni deponghino le tirannidi ... e nelle immaginazioni degli uomini</span> — 1857. The 1933 witness reads <i lang="it">che e&#x27; tiranni deponghino le tirannide ... e nelle immaginazione degli uomini</i>. Palmarocchi keeps the old plurals in -e. Same sense.</p>
+<p id="v-FG-CONS-I10-D008"><a class="loc" href="#FG-CONS.1.10.01" title="Back to the paragraph">¶ 01</a> <span class="lem">sotto pena di rebellione</span> — 1857. The 1933 witness reads <i lang="it">sotto pena [di] rebellione</i>. Palmarocchi brackets the preposition as his supply; Canestrini prints it.</p>
 <p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
       </div>
-      <div>
+      <div class="app-notes">
         <h3>Notes</h3>
-        <p><span class="lem"><i lang="it">Il titulo di questo Discorso</i>.</span> &quot;The title of this Discourse&quot;: Machiavelli&#x27;s rubric, which the reply names, grants and restates in its own words, with kingdoms now before republics, and <i lang="it">biasimo</i>, blame, for <i lang="it">vituperabili</i> (Machiavelli .01). The order matters, because .03 turns to kings. <i lang="it">Titulo</i> is Guicciardini&#x27;s Latin form; the 1933 edition prints <i lang="it">titolo</i>.</p>
-<p><span class="lem"><i lang="it">somma</i>, <i lang="it">sommo</i>.</span> &quot;Supreme&quot;: supreme praise, blame, injustice, reproof, the supreme good, as Machiavelli&#x27;s <i lang="it">sommamente vituperati</i>, &quot;supremely vituperated&quot; (Machiavelli .03).</p>
-<p><span class="lem"><i lang="it">e lo autore confonde gli esempli</i>.</span> &quot;And the author confounds the examples&quot;: the reply&#x27;s charge. Machiavelli draws his examples indifferently from a citizen who made a tyranny in a free city (Caesar), from tyrants (Nabis, Phalaris, Dionysius), and from emperors who came to rule by inheritance or by adoption. Guicciardini separates the man who makes a tyranny, the man who inherits one, and the legitimate king.</p>
-<p><span class="lem"><i lang="it">rare volte occorre</i>.</span> &quot;It seldom occurs&quot;: <i lang="it">rare volte</i> as D97, and <i lang="it">occorrere</i> as D01.</p>
-<p><span class="lem"><i lang="it">talmente che gli resti colore alcuno</i>.</span> &quot;So that there remain to him any colour&quot;: <i lang="it">alcuno</i> under the <i lang="it">rare volte</i> of the governing clause, any colour at all. Both readers were unsure of a letter in <i lang="it">resti</i>; it is read with the 1933 edition (D182).</p>
-<p><span class="lem"><i lang="it">inumanissimi</i>.</span> &quot;Most inhuman&quot;. The 1933 edition reads <i lang="it">immanissimi</i>, &quot;most monstrous&quot; (FG-CONS-I10-D002).</p>
-<p><span class="lem"><i lang="it">le forme delle libertà</i>.</span> &quot;The forms of the liberties&quot;: the plural, of free governments.</p>
-<p><span class="lem"><i lang="it">la salute sua particulare</i>.</span> &quot;His particular safety&quot;: his own good against the fatherland&#x27;s, as FG I.8 <i lang="it">sdegni particulari</i>, &quot;particular indignations&quot; (D93).</p>
-<p><span class="lem"><i lang="it">si desidera negli uomini più presto che la si truovi</i>.</span> &quot;Is desired in men rather than it is found&quot;: <i lang="it">più presto ... che</i> as D135.</p>
-<p><span class="lem"><i lang="it">merita essere assai scusato</i>.</span> &quot;He merits to be much excused&quot;: excuse, Machiavelli&#x27;s word for the founder in I.9 and for the prince in the last lines of I.10 (Machiavelli .08).</p>
-<p><span class="lem"><i lang="it">perché molte sono chiamate spesso libertà che non sono</i>.</span> &quot;For many are often called liberties that are not&quot;: governments called free.</p>
-<p><span class="lem">The example of Florence.</span> The Medici were driven out in May 1527 and the popular government restored. &quot;Of &#x27;26&quot; is as both editions print it, and the reading stands; Canestrini&#x27;s note, which is his and is not carried, dates the change to 1527. In 1529, after the peace between the pope and the emperor, the prince of Orange (Philibert of Chalon) led the imperial army against the city. The order to stay, Guicciardini says, was made by the Eight (the Otto di Guardia, the magistracy of police and security). Guicciardini himself left Florence in 1529 and was afterwards declared a rebel.</p>
-<p><span class="lem"><i lang="it">sotto pena di rebellione</i>.</span> &quot;Under pain of rebellion&quot;: of being declared rebels, which carried the confiscation of goods.</p>
-<p><span class="lem"><i lang="it">sostenuti come sospetti</i>.</span> &quot;Detained as suspects&quot;: <i lang="it">sostenere</i> in its period sense, to hold in custody.</p>
-<p><span class="lem"><i lang="it">e almanco con certezza</i>.</span> &quot;And at the least with certainty&quot;: both readers were unsure of the letter; it is read <i lang="it">e</i> with the 1933 edition (D183).</p>
-<p><span class="lem"><i lang="it">uno Stato che sotto nome di libertà è tirannico</i>.</span> The popular government is the tyranny: the citizens are led to desire its change, not drawn towards tyranny.</p>
-<p><span class="lem"><i lang="it">lasciarsi ... tòrre la patria e le facultà</i>.</span> &quot;Let themselves ... have the fatherland and their substance taken away&quot;: <i lang="it">tòrre</i>, take away (D131). <i lang="it">Facultà</i> is here what one owns: &quot;substance&quot;, not &quot;capacity&quot;, which is the word&#x27;s other sense (D198).</p>
-<p><span class="lem"><i lang="it">[È] vero</i>, <i lang="it">[È] altro</i>.</span> Canestrini prints <i lang="it">E</i> without the accent at both; as printed neither period has a finite verb, and the 1933 edition prints <i lang="it">È</i>. Emended (D181); the English follows the emended text.</p>
-<p><span class="lem"><i lang="it">Pisistrato</i>.</span> Pisistratus, tyrant of Athens, whom Machiavelli does not name here. Guicciardini adds him to Caesar and Phalaris.</p>
-<p><span class="lem"><i lang="it">la usorono</i>.</span> &quot;Used it&quot;: the tyranny.</p>
-<p><span class="lem"><i lang="it">quanto manco sono debitori di cancellare il peccato d&#x27;averla usurpata</i>.</span> &quot;As they are less debtors to cancel the sin of having usurped it&quot;: the heir did not commit the usurpation, so laying the tyranny down is more freely given. &quot;Debtors&quot; has no Italian echo of Machiavelli&#x27;s <i lang="it">obblighi</i>, &quot;debts&quot; (D17).</p>
-<p><span class="lem"><i lang="it">pochissimi o forse nessuno</i>.</span> &quot;Very few or perhaps none&quot;: returns as <i lang="it">pochissimi e forse nessuno</i> in the reply&#x27;s last line, with <i lang="it">o</i> become <i lang="it">e</i>.</p>
-<p><span class="lem"><i lang="it">nessuna altra ragione</i>.</span> Read <i lang="it">nessuna</i> with the 1933 edition (D184).</p>
-<p><span class="lem"><i lang="it">Sanza che</i>.</span> &quot;Besides that&quot;: a further cause, in a period left without a main clause.</p>
-<p><span class="lem"><i lang="it">n&#x27;avessi volontà</i>.</span> &quot;Had the will to it&quot;: <i lang="it">volontà</i>, will (D117). The reply spells it <i lang="it">voluntà</i> in .03; both are kept as printed.</p>
-<p><span class="lem"><i lang="it">ridursi privato</i>.</span> &quot;To reduce oneself to private [station]&quot;: Machiavelli&#x27;s <i lang="it">in istato privato</i>, &quot;in private station&quot; (Machiavelli .03).</p>
-<p><span class="lem">Sulla.</span> Lucius Cornelius Sulla, dictator from 82/81 BC, gave up the dictatorship and retired to private life by 79 BC, and died in 78. Much of his legislation outlived him; the tribunes&#x27; powers he had cut were restored in 70 BC.</p>
-<p><span class="lem"><i lang="it">e&#x27; re di Lacedemone</i>, <i lang="it">e&#x27; primi re romani</i>.</span> &quot;The kings of Lacedaemon&quot;: Sparta&#x27;s two hereditary kings. &quot;Lacedaemon&quot; as FG I.2. The first Roman kings were chosen, not born to the throne: of his two examples of kings created legitimately, one is hereditary and one elective.</p>
-<p><span class="lem"><i lang="it">la autorità sciolta</i>.</span> &quot;The authority unbound&quot;: not bound by laws or other magistrates.</p>
-<p><span class="lem"><i lang="it">si truova pure qualcuno</i>.</span> &quot;There is found yet some one&quot;: <i lang="it">pure</i> concessive, granting before the <i lang="it">ma</i>.</p>
-<p><span class="lem"><i lang="it">ma io non so quali che riduchino</i>.</span> &quot;But I do not know which [of them] reduce&quot;: <i lang="it">non so</i>, the suspension of the four acts (problematic.md). He does not know which kings do it, and the next period allows that some kingdom may have had the institution.</p>
-<p><span class="lem"><i lang="it">per elezione</i>.</span> &quot;By choice&quot;: <i lang="it">elezione</i> is &quot;choice&quot; throughout the edition, including the choice of kings (glossary). It answers Machiavelli&#x27;s emperors <i lang="it">per adozione</i> (Machiavelli .06).</p>
-<p><span class="lem"><i lang="it">portano</i>, <i lang="it">porta</i>.</span> &quot;Bear&quot;, &quot;bears them on&quot;: the love fathers bear their sons, and the love that bears them on to leave their house&#x27;s memory illustrious. The 1933 edition reads <i lang="it">che si porta</i> (FG-CONS-I10-D006).</p>
-<p><span class="lem"><i lang="it">anzi</i>.</span> &quot;Indeed&quot;: correcting upward after an affirmative (D147).</p>
-<p><span class="lem"><i lang="it">quanto ... tanto</i>.</span> The rubric&#x27;s proportion, turned to measure how often private men reason about these things against how rarely they are done.</p>
-<p><span class="lem"><i lang="it">minore reprensione</i>.</span> &quot;Lesser reproof&quot;: not excuse, and not praise. It falls on those who do not lay down a tyranny or disinherit their posterity, the case to which Machiavelli granted &quot;some excuse&quot;; his &quot;no excuse whatever&quot; was for the prince who could keep the principate and order the city (Machiavelli .08).</p>
-<p><span class="lem"><i lang="it">bisogna</i>.</span> &quot;It is required&quot;: the edition&#x27;s rendering of the impersonal <i lang="it">bisognare</i>, in every tense (D260); the reasons are in the note on <i lang="it">bisogni</i> at Machiavelli I.2.</p>
+        <p id="n-FG-CONS.1.10-1"><a class="loc" href="#FG-CONS.1.10.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">Il titulo di questo Discorso</i>.</span> &quot;The title of this Discourse&quot;: Machiavelli&#x27;s rubric, which the reply names, grants and restates in its own words, with kingdoms now before republics, and <i lang="it">biasimo</i>, blame, for <i lang="it">vituperabili</i> (Machiavelli .01). The order matters, because .03 turns to kings. <i lang="it">Titulo</i> is Guicciardini&#x27;s Latin form; the 1933 edition prints <i lang="it">titolo</i>.</p>
+<p id="n-FG-CONS.1.10-2"><a class="loc" href="#FG-CONS.1.10.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">somma</i>, <i lang="it">sommo</i>.</span> &quot;Supreme&quot;: supreme praise, blame, injustice, reproof, the supreme good, as Machiavelli&#x27;s <i lang="it">sommamente vituperati</i>, &quot;supremely vituperated&quot; (Machiavelli .03).</p>
+<p id="n-FG-CONS.1.10-3"><a class="loc" href="#FG-CONS.1.10.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">e lo autore confonde gli esempli</i>.</span> &quot;And the author confounds the examples&quot;: the reply&#x27;s charge. Machiavelli draws his examples indifferently from a citizen who made a tyranny in a free city (Caesar), from tyrants (Nabis, Phalaris, Dionysius), and from emperors who came to rule by inheritance or by adoption. Guicciardini separates the man who makes a tyranny, the man who inherits one, and the legitimate king.</p>
+<p id="n-FG-CONS.1.10-4"><a class="loc" href="#FG-CONS.1.10.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">rare volte occorre</i>.</span> &quot;It seldom occurs&quot;: <i lang="it">rare volte</i> as D97, and <i lang="it">occorrere</i> as D01.</p>
+<p id="n-FG-CONS.1.10-5"><a class="loc" href="#FG-CONS.1.10.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">talmente che gli resti colore alcuno</i>.</span> &quot;So that there remain to him any colour&quot;: <i lang="it">alcuno</i> under the <i lang="it">rare volte</i> of the governing clause, any colour at all. Both readers were unsure of a letter in <i lang="it">resti</i>; it is read with the 1933 edition (D182).</p>
+<p id="n-FG-CONS.1.10-6"><a class="loc" href="#FG-CONS.1.10.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">inumanissimi</i>.</span> &quot;Most inhuman&quot;. The 1933 edition reads <i lang="it">immanissimi</i>, &quot;most monstrous&quot; (FG-CONS-I10-D002).</p>
+<p id="n-FG-CONS.1.10-7"><a class="loc" href="#FG-CONS.1.10.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">le forme delle libertà</i>.</span> &quot;The forms of the liberties&quot;: the plural, of free governments.</p>
+<p id="n-FG-CONS.1.10-8"><a class="loc" href="#FG-CONS.1.10.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">la salute sua particulare</i>.</span> &quot;His particular safety&quot;: his own good against the fatherland&#x27;s, as FG I.8 <i lang="it">sdegni particulari</i>, &quot;particular indignations&quot; (D93).</p>
+<p id="n-FG-CONS.1.10-9"><a class="loc" href="#FG-CONS.1.10.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">si desidera negli uomini più presto che la si truovi</i>.</span> &quot;Is desired in men rather than it is found&quot;: <i lang="it">più presto ... che</i> as D135.</p>
+<p id="n-FG-CONS.1.10-10"><a class="loc" href="#FG-CONS.1.10.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">merita essere assai scusato</i>.</span> &quot;He merits to be much excused&quot;: excuse, Machiavelli&#x27;s word for the founder in I.9 and for the prince in the last lines of I.10 (Machiavelli .08).</p>
+<p id="n-FG-CONS.1.10-11"><a class="loc" href="#FG-CONS.1.10.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">perché molte sono chiamate spesso libertà che non sono</i>.</span> &quot;For many are often called liberties that are not&quot;: governments called free.</p>
+<p id="n-FG-CONS.1.10-12"><span class="lem">The example of Florence.</span> The Medici were driven out in May 1527 and the popular government restored. &quot;Of &#x27;26&quot; is as both editions print it, and the reading stands; Canestrini&#x27;s note, which is his and is not carried, dates the change to 1527. In 1529, after the peace between the pope and the emperor, the prince of Orange (Philibert of Chalon) led the imperial army against the city. The order to stay, Guicciardini says, was made by the Eight (the Otto di Guardia, the magistracy of police and security). Guicciardini himself left Florence in 1529 and was afterwards declared a rebel.</p>
+<p id="n-FG-CONS.1.10-13"><a class="loc" href="#FG-CONS.1.10.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">sotto pena di rebellione</i>.</span> &quot;Under pain of rebellion&quot;: of being declared rebels, which carried the confiscation of goods.</p>
+<p id="n-FG-CONS.1.10-14"><a class="loc" href="#FG-CONS.1.10.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">sostenuti come sospetti</i>.</span> &quot;Detained as suspects&quot;: <i lang="it">sostenere</i> in its period sense, to hold in custody.</p>
+<p id="n-FG-CONS.1.10-15"><a class="loc" href="#FG-CONS.1.10.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">e almanco con certezza</i>.</span> &quot;And at the least with certainty&quot;: both readers were unsure of the letter; it is read <i lang="it">e</i> with the 1933 edition (D183).</p>
+<p id="n-FG-CONS.1.10-16"><a class="loc" href="#FG-CONS.1.10.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">uno Stato che sotto nome di libertà è tirannico</i>.</span> The popular government is the tyranny: the citizens are led to desire its change, not drawn towards tyranny.</p>
+<p id="n-FG-CONS.1.10-17"><a class="loc" href="#FG-CONS.1.10.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">lasciarsi ... tòrre la patria e le facultà</i>.</span> &quot;Let themselves ... have the fatherland and their substance taken away&quot;: <i lang="it">tòrre</i>, take away (D131). <i lang="it">Facultà</i> is here what one owns: &quot;substance&quot;, not &quot;capacity&quot;, which is the word&#x27;s other sense (D198).</p>
+<p id="n-FG-CONS.1.10-18"><span class="lem"><i lang="it">[È] vero</i>, <i lang="it">[È] altro</i>.</span> Canestrini prints <i lang="it">E</i> without the accent at both; as printed neither period has a finite verb, and the 1933 edition prints <i lang="it">È</i>. Emended (D181); the English follows the emended text.</p>
+<p id="n-FG-CONS.1.10-19"><a class="loc" href="#FG-CONS.1.10.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">Pisistrato</i>.</span> Pisistratus, tyrant of Athens, whom Machiavelli does not name here. Guicciardini adds him to Caesar and Phalaris.</p>
+<p id="n-FG-CONS.1.10-20"><a class="loc" href="#FG-CONS.1.10.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">la usorono</i>.</span> &quot;Used it&quot;: the tyranny.</p>
+<p id="n-FG-CONS.1.10-21"><a class="loc" href="#FG-CONS.1.10.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">quanto manco sono debitori di cancellare il peccato d&#x27;averla usurpata</i>.</span> &quot;As they are less debtors to cancel the sin of having usurped it&quot;: the heir did not commit the usurpation, so laying the tyranny down is more freely given. &quot;Debtors&quot; has no Italian echo of Machiavelli&#x27;s <i lang="it">obblighi</i>, &quot;debts&quot; (D17).</p>
+<p id="n-FG-CONS.1.10-22"><a class="loc" href="#FG-CONS.1.10.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">pochissimi o forse nessuno</i>.</span> &quot;Very few or perhaps none&quot;: returns as <i lang="it">pochissimi e forse nessuno</i> in the reply&#x27;s last line, with <i lang="it">o</i> become <i lang="it">e</i>.</p>
+<p id="n-FG-CONS.1.10-23"><a class="loc" href="#FG-CONS.1.10.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">nessuna altra ragione</i>.</span> Read <i lang="it">nessuna</i> with the 1933 edition (D184).</p>
+<p id="n-FG-CONS.1.10-24"><a class="loc" href="#FG-CONS.1.10.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">Sanza che</i>.</span> &quot;Besides that&quot;: a further cause, in a period left without a main clause.</p>
+<p id="n-FG-CONS.1.10-25"><a class="loc" href="#FG-CONS.1.10.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">n&#x27;avessi volontà</i>.</span> &quot;Had the will to it&quot;: <i lang="it">volontà</i>, will (D117). The reply spells it <i lang="it">voluntà</i> in .03; both are kept as printed.</p>
+<p id="n-FG-CONS.1.10-26"><a class="loc" href="#FG-CONS.1.10.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">ridursi privato</i>.</span> &quot;To reduce oneself to private [station]&quot;: Machiavelli&#x27;s <i lang="it">in istato privato</i>, &quot;in private station&quot; (Machiavelli .03).</p>
+<p id="n-FG-CONS.1.10-27"><span class="lem">Sulla.</span> Lucius Cornelius Sulla, dictator from 82/81 BC, gave up the dictatorship and retired to private life by 79 BC, and died in 78. Much of his legislation outlived him; the tribunes&#x27; powers he had cut were restored in 70 BC.</p>
+<p id="n-FG-CONS.1.10-28"><span class="lem"><i lang="it">e&#x27; re di Lacedemone</i>, <i lang="it">e&#x27; primi re romani</i>.</span> &quot;The kings of Lacedaemon&quot;: Sparta&#x27;s two hereditary kings. &quot;Lacedaemon&quot; as FG I.2. The first Roman kings were chosen, not born to the throne: of his two examples of kings created legitimately, one is hereditary and one elective.</p>
+<p id="n-FG-CONS.1.10-29"><a class="loc" href="#FG-CONS.1.10.03" title="Back to the paragraph">¶ 03</a> <span class="lem"><i lang="it">la autorità sciolta</i>.</span> &quot;The authority unbound&quot;: not bound by laws or other magistrates.</p>
+<p id="n-FG-CONS.1.10-30"><a class="loc" href="#FG-CONS.1.10.03" title="Back to the paragraph">¶ 03</a> <span class="lem"><i lang="it">si truova pure qualcuno</i>.</span> &quot;There is found yet some one&quot;: <i lang="it">pure</i> concessive, granting before the <i lang="it">ma</i>.</p>
+<p id="n-FG-CONS.1.10-31"><a class="loc" href="#FG-CONS.1.10.03" title="Back to the paragraph">¶ 03</a> <span class="lem"><i lang="it">ma io non so quali che riduchino</i>.</span> &quot;But I do not know which [of them] reduce&quot;: <i lang="it">non so</i>, the suspension of the four acts (problematic.md). He does not know which kings do it, and the next period allows that some kingdom may have had the institution.</p>
+<p id="n-FG-CONS.1.10-32"><a class="loc" href="#FG-CONS.1.10.03" title="Back to the paragraph">¶ 03</a> <span class="lem"><i lang="it">per elezione</i>.</span> &quot;By choice&quot;: <i lang="it">elezione</i> is &quot;choice&quot; throughout the edition, including the choice of kings (glossary). It answers Machiavelli&#x27;s emperors <i lang="it">per adozione</i> (Machiavelli .06).</p>
+<p id="n-FG-CONS.1.10-33"><a class="loc" href="#FG-CONS.1.10.03" title="Back to the paragraph">¶ 03</a> <span class="lem"><i lang="it">portano</i>, <i lang="it">porta</i>.</span> &quot;Bear&quot;, &quot;bears them on&quot;: the love fathers bear their sons, and the love that bears them on to leave their house&#x27;s memory illustrious. The 1933 edition reads <i lang="it">che si porta</i> (FG-CONS-I10-D006).</p>
+<p id="n-FG-CONS.1.10-34"><span class="lem"><i lang="it">anzi</i>.</span> &quot;Indeed&quot;: correcting upward after an affirmative (D147).</p>
+<p id="n-FG-CONS.1.10-35"><span class="lem"><i lang="it">quanto ... tanto</i>.</span> The rubric&#x27;s proportion, turned to measure how often private men reason about these things against how rarely they are done.</p>
+<p id="n-FG-CONS.1.10-36"><a class="loc" href="#FG-CONS.1.10.04" title="Back to the paragraph">¶ 04</a> <span class="lem"><i lang="it">minore reprensione</i>.</span> &quot;Lesser reproof&quot;: not excuse, and not praise. It falls on those who do not lay down a tyranny or disinherit their posterity, the case to which Machiavelli granted &quot;some excuse&quot;; his &quot;no excuse whatever&quot; was for the prince who could keep the principate and order the city (Machiavelli .08).</p>
+<p id="n-FG-CONS.1.10-37"><span class="lem"><i lang="it">bisogna</i>.</span> &quot;It is required&quot;: the edition&#x27;s rendering of the impersonal <i lang="it">bisognare</i>, in every tense (D260); the reasons are in the note on <i lang="it">bisogni</i> at Machiavelli I.2.</p>
       </div>
     </div>
   </section>
 
+    <nav class="pairnav pairnav-foot"><a href="1.9.html">← Pair 1.9</a><a href="../index.html">All 39 pairs</a><a href="1.11.html">Pair 1.11 →</a></nav>
+
   <footer class="colophon">
-    <div class="row">
-      <div>
-        <h3>What this is</h3>
-        <p>A free, openly licensed, bilingual edition of Guicciardini's 39 <i>Considerazioni</i> and the
-          <i>Discorsi</i> chapters they answer — 78 text units, Italian and English facing, every reading
-          traceable to a named public-domain witness.</p>
-        <p>It is a reading edition with a transparent apparatus, not a text of record. It does not adjudicate
-          the critical text against Bausi 2001 or the manuscript tradition, and does not claim to.</p>
-      </div>
-      <div>
-        <h3>On the title</h3>
-        <p>Machiavelli had been dead two years when Guicciardini wrote; the <i>Discorsi</i> were unpublished,
-          and the <i>Considerazioni</i> stayed unprinted until 1857. Machiavelli never answers.</p>
-        <p>“Conversation” is a quotation, not a description. It invokes Machiavelli's letter to Francesco Vettori of
-          10 December 1513: at evening he puts on royal and curial garments (<i>panni reali e curiali</i>),
-          enters the ancient courts of ancient men (<i>le antiche corti degli antichi uomini</i>), asks them the
-          reason for their actions, and <i>quelli per loro umanità mi rispondono</i>, “they, for their humanity,
-          answer me”. Guicciardini does to Machiavelli what Machiavelli did to Livy — and is denied the reply
-          Machiavelli claimed. The letter is quoted from the 1813 <i>Opere</i>, vol. 8, p. 96, read twice from
-          the page image.</p>
-      </div>
-      <div>
-        <h3>Method</h3>
-        <p>No image-derived reading enters the text on a single reading. Each unit is transcribed twice,
-          independently, by readers who have not seen each other's work; disagreements are adjudicated against
-          the page images and recorded.</p>
-        <p>Existing English translations of the <i>Considerazioni</i> — Grayson (1965), Atkinson &amp; Sices
-          (2002) — are never used as translation inputs.</p>
-      </div>
-      <div>
-        <h3>Licence</h3>
-        <p>The established Italian text and the apparatus data are dedicated to the public domain under
-          <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>. They are Machiavelli's and
-          Guicciardini's sentences, and this edition adds no condition to them.</p>
-        <p>The English translation, the notes and the editorial apparatus are licensed
-          <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: reuse them anywhere, including
-          commercially, with attribution to David McDougall and this edition. The build tooling is MIT.</p>
-        <p>The witness scans are other people's digitisations, included as evidence under their own terms; no
-          grant is made over them, and no page image of Palmarocchi 1933 is reproduced here. Full terms,
-          layer by layer, are in the <span class="sig">LICENSE</span> file in the repository.</p>
-      </div>
-    </div>
 
     <div class="state">
-      <p><strong>Version 0.3 · 22 of 39 pairs published.</strong>
+      <p><strong>Version 0.3 · 33 of 39 pairs published.</strong>
         Published 8 October 2026; last revised 16 October 2026. This edition is versioned, not frozen. No open questions on this pair.</p>
     </div>
+    <p class="links"><a href="../about.html">About this edition</a><a href="../about.html#licence">Licence</a><a href="../about.html#method">Method</a><a href="https://github.com/davidmcdougall/conversation-with-machiavelli">Source and data on GitHub</a></p>
   </footer>
 
 </div>

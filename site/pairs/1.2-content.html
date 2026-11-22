@@ -1,8 +1,11 @@
 <title>A Conversation with Machiavelli — Of how many species republics are, and of which was the Roman republic</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../fonts/fonts.css">
 <style>
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
 :root {
   --paper:      #EDEEEC;
   --paper-sunk: #E4E6E3;
@@ -57,8 +60,10 @@ body {
 .eyebrow {
   font-family: var(--sans); font-size: 11px; font-weight: 600;
   letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint);
-  margin: 0 0 18px;
+  margin: 0 0 18px; text-wrap: balance;
 }
+.eyebrow a { color: inherit; text-decoration: none; }
+.eyebrow a:hover, .eyebrow a:focus { color: var(--ink); }
 h1 {
   font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 5vw, 44px);
   line-height: 1.12; margin: 0 0 14px; text-wrap: balance; letter-spacing: -0.01em;
@@ -103,9 +108,11 @@ h1 .sub { display: block; font-style: italic; color: var(--ink-muted); font-size
 .work { padding-block: 52px 0; }
 .work-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
 .work-head .tag {
-  font-family: var(--mono); font-size: 11px; letter-spacing: .04em;
-  padding: 3px 7px; border-radius: 2px; color: var(--paper);
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .12em;
+  text-transform: uppercase; padding: 4px 8px 3px; border-radius: 2px; color: var(--paper);
+  align-self: center;
 }
+.work-head .cite { font-family: var(--sans); font-size: 13px; color: var(--ink-faint); }
 .work.nm .tag { background: var(--nm); }
 .work.fg .tag { background: var(--fg); }
 h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; letter-spacing: -0.005em; }
@@ -118,7 +125,7 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
   color: var(--ink-faint); margin-top: 7px;
 }
 .colheads {
-  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  display: grid; grid-template-columns: 66px 1fr 1fr; gap: 0 28px;
   margin-top: 30px; padding-bottom: 7px; border-bottom: 1px solid var(--rule);
   font-family: var(--sans); font-size: 10.5px; font-weight: 600;
   letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint);
@@ -126,7 +133,7 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
 
 /* ---- the facing pair ---- */
 .pair {
-  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  display: grid; grid-template-columns: 66px 1fr 1fr; gap: 0 28px;
   padding-block: 22px; border-bottom: 1px solid var(--rule-faint);
   scroll-margin-top: 20px;
 }
@@ -139,9 +146,13 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
 .annot summary::before { content: "+ "; }
 .annot[open] summary::before { content: "− "; }
 .annot p { margin: 8px 0 0; max-width: 72ch; }
+.annot .lem { font-weight: 600; color: var(--ink); }
 .annot .xref { color: inherit; text-decoration: underline; text-decoration-color: var(--rule);
   text-underline-offset: 2px; white-space: nowrap; }
 .gutter { padding-top: 4px; }
+.marks { display: block; margin-top: 10px; font-family: var(--sans); font-size: 11px; line-height: 1.45; }
+.marks a { display: block; color: var(--ink-faint); text-decoration: none; white-space: nowrap; }
+.marks a:hover, .marks a:focus { color: var(--ink); text-decoration: underline; }
 .uid {
   font-family: var(--mono); font-size: 10.5px; color: var(--ink-faint);
   text-decoration: none; letter-spacing: -0.02em;
@@ -149,7 +160,7 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
 .uid:hover, .uid:focus { color: var(--ink); text-decoration: underline; }
 .col { min-width: 0; }
 .col.it { hyphens: auto; }
-.col.en { }
+.col.en { hyphens: auto; }
 .supplied { color: var(--ink-muted); }
 
 /* ---- apparatus ---- */
@@ -157,8 +168,20 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
   margin-top: 34px; padding-top: 22px; border-top: 2px solid var(--rule);
   font-family: var(--sans); font-size: 13.5px; line-height: 1.58;
   color: var(--ink-muted);
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 26px 34px;
 }
+/* Source is a short paragraph; variants and notes run long, so they flow in
+   two balanced columns across the full width rather than in one narrow strip. */
+.apparatus > div + div { margin-top: 30px; }
+.app-source p { max-width: 78ch; }
+.app-variants, .app-notes { columns: 2 340px; column-gap: 40px; }
+.app-variants h3, .app-notes h3 { column-span: all; }
+.apparatus p { break-inside: avoid; scroll-margin-top: 20px; }
+.apparatus p:target { background: var(--paper-sunk); box-shadow: 0 0 0 6px var(--paper-sunk); }
+.apparatus .loc {
+  font-family: var(--mono); font-size: 11px; color: var(--ink-faint); text-decoration: none;
+  white-space: nowrap; margin-right: .2em;
+}
+.apparatus .loc:hover, .apparatus .loc:focus { color: var(--ink); text-decoration: underline; }
 .apparatus h3 {
   font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
   text-transform: uppercase; color: var(--ink-faint); margin: 0 0 9px;
@@ -169,8 +192,9 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
 .sig { font-family: var(--mono); font-size: 12px; color: var(--ink); }
 
 /* ---- colophon ---- */
+.pairnav-foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--rule); }
 .colophon {
-  margin-top: 60px; padding-block: 28px 60px; border-top: 1px solid var(--rule);
+  margin-top: 40px; padding-block: 0 60px;
   font-family: var(--sans); font-size: 13px; line-height: 1.6; color: var(--ink-muted);
 }
 .colophon .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 34px; }
@@ -181,8 +205,14 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
 .colophon p { margin: 0 0 8px; }
 .colophon ul { margin: 0; padding-left: 16px; }
 .colophon li { margin-bottom: 5px; }
+.colophon .links { margin: 18px 0 0; display: flex; gap: 6px 22px; flex-wrap: wrap; }
+.colophon .links a { color: var(--ink-muted); }
+.about { max-width: 68ch; padding-block: 44px 0; font-family: var(--serif); font-size: 17px; }
+.about h2 { margin: 38px 0 10px; }
+.about h2:first-child { margin-top: 0; }
+.about p { margin: 0 0 12px; }
 .state {
-  margin-top: 26px; padding: 14px 16px; background: var(--paper-sunk);
+  margin-top: 0; padding: 14px 16px; background: var(--paper-sunk);
   border-left: 2px solid var(--ink-faint); border-radius: 0 2px 2px 0;
   font-size: 12.5px;
 }
@@ -191,24 +221,26 @@ a { color: inherit; }
 :focus-visible { outline: 2px solid var(--nm); outline-offset: 2px; }
 
 /* ---- contents / index page ---- */
-.toc { margin-top: 30px; }
+.toc { margin-top: -22px; }
 .toc-row {
-  display: grid; grid-template-columns: 40px 1fr 1fr; gap: 0 20px;
+  display: grid; grid-template-columns: 40px minmax(0, 70ch) 1fr; gap: 0 20px;
   padding-block: 14px; border-bottom: 1px solid var(--rule-faint);
   font-family: var(--sans); align-items: baseline;
 }
 .toc-row .n { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
-.toc-row a { text-decoration: none; color: var(--ink); font-family: var(--serif); font-size: 16px; }
+.toc-row > div:nth-child(2) { line-height: 1.32; }
+.toc-row a { text-decoration: none; color: var(--ink); font-family: var(--serif); font-size: 17px; }
 .toc-row a:hover, .toc-row a:focus { text-decoration: underline; }
 .toc-row .unpublished { color: var(--ink-faint); font-style: italic; font-size: 14px; }
-.toc-row .ids { color: var(--ink-faint); font-size: 11.5px; font-family: var(--mono); }
+.toc-row .ids { color: var(--ink-faint); font-size: 12px; font-family: var(--sans); margin-top: 3px; }
 .toc-row .dated { color: var(--ink-faint); font-size: 12px; text-align: right; }
 
 @media (max-width: 760px) {
   body { font-size: 16.5px; }
   .colheads { display: none; }
   .pair { grid-template-columns: 1fr; gap: 0; padding-block: 20px; }
-  .gutter { padding-top: 0; margin-bottom: 8px; }
+  .gutter { padding-top: 0; margin-bottom: 8px; display: flex; gap: 14px; align-items: baseline; }
+  .marks { display: inline-flex; gap: 12px; margin-top: 0; }
   .annot { grid-column: 1; }
   .col.it { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px dotted var(--rule); }
   .col.it::before, .col.en::before {
@@ -221,13 +253,14 @@ a { color: inherit; }
   .pairing .arrow { border-inline: 0; border-block: 1px solid var(--rule); padding-block: 6px; }
   .toc-row { grid-template-columns: 1fr; gap: 4px; }
   .toc-row .dated { text-align: left; }
+  .app-variants, .app-notes { columns: 1; }
 }
 </style>
 
 <div class="wrap">
 
   <header class="masthead">
-    <p class="eyebrow">A Conversation with Machiavelli · Pair 2 of 39</p>
+    <p class="eyebrow"><a href="../index.html">A Conversation with Machiavelli</a> · Pair 2 of 39</p>
     <h1>Of how many species republics are, and of which was the Roman republic
       <span class="sub">Discourses I.2, and Guicciardini&#x27;s reply</span></h1>
     <p class="standfirst"><span class="sf-label">Editor's summary</span> Machiavelli holds, with the wiser writers, that each simple form of government slides into its corrupt twin, so prudent lawgivers mix all three, as Rome did by chance through the disunion of plebs and senate. Guicciardini has no doubt the mixture is better and more stable, above all when it takes the good of each form and leaves the bad. Since one man&#x27;s rule cannot give all its good without its ill, he would rather have less good and safe: an elective head for life with tightly limited authority, as at Venice. He adds a large senate drawn from all eligible citizens to handle war and peace, and a people given nothing important except electing magistrates and confirming laws.</p>
@@ -248,11 +281,13 @@ a { color: inherit; }
 
   <section class="work nm">
     <div class="work-head">
-      <span class="tag">NM-DISC.1.2</span>
+      <span class="tag" title="NM-DISC.1.2">Machiavelli</span>
       <h2>Capitolo II</h2>
+      <span class="cite"><i>Discorsi</i> I.2</span>
     </div>
     <p class="rubric">Di quante specie sono le Repubbliche, e di quale fu la Repubblica romana.</p>
-    <p class="rubric">Of how many species republics are, and of which was the Roman republic.</p>
+    <p class="rubric">Of how many species republics are, and of which was the Roman republic.
+      </p>
 
     <div class="colheads"><div></div><div>Italian · 1824</div><div>English</div></div>
       <div class="pair" id="NM-DISC.1.2.01">
@@ -264,7 +299,7 @@ a { color: inherit; }
         </details>
       </div>
       <div class="pair" id="NM-DISC.1.2.02">
-        <div class="gutter"><a class="uid" href="#NM-DISC.1.2.02">1.2.02</a></div>
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.2.02">1.2.02</a><span class="marks"><a href="#n-NM-DISC.1.2-8">2 notes</a></span></div>
         <div class="col it" lang="it">Talché felice si può chiamare quella Repubblica, la quale sortisce uno uomo sì prudente, che le dia leggi ordinate in modo, che, senza bisogno di correggerle, possa vivere sicuramente sotto quelle. E si vede che Sparta le osservò più che ottocento anni senza corromperle, e senza alcuno tumulto pericoloso; e per il contrario tiene qualche grado d&#x27;infelicità quella città, che non si essendo abbattuta ad uno ordinatore prudente, è necessitata da sé medesima riordinarsi; e di queste ancora è più infelice quella, che è più discosto dall&#x27;ordine; e quella è più discosto, che con i suoi ordini è al tutto fuori del diritto cammino, che la possa condurre al perfetto e vero fine; perché quelle che sono in questo grado, è quasi impossibile che per qualche accidente si rassettino. Quelle altre, che, se le non hanno l&#x27;ordine perfetto, hanno preso il principio buono e atto a diventare migliori, possono per la occorrenza degli accidenti diventar perfette. Ma fia ben vero questo, che mai non si ordineranno senza pericoli, perché gli assai uomini non si accordano mai ad una legge nuova, che riguardi un nuovo ordine nella città, se non è mostro loro da una necessità che bisogni farlo; e non potendo venire questa necessità senza pericolo, è facil cosa che quella Repubblica rovini, avanti che la si sia condotta a una perfezione di ordine. Di che ne fa fede appieno la Repubblica di Firenze, la quale fu dall&#x27;accidente d&#x27;Arezzo nel II riordinata, e da quel di Prato nel XII disordinata.</div>
         <div class="col en" lang="en">So that that republic can be called happy which is allotted a man so prudent that he gives it laws ordered in such a way that, without need of correcting them, it can live securely under them. And one sees that Sparta observed them more than eight hundred years without corrupting them, and without any dangerous tumult; and on the contrary that city holds some degree of unhappiness which, not having chanced upon a prudent orderer, is necessitated to reorder itself by itself; and of these, again, that one is more unhappy which is more distant from order; and that one is more distant which with its orders is altogether outside the right road that could lead it to the perfect and true end; for those that are in this degree, it is almost impossible that they should set themselves right by some accident. Those others which, if they do not have the perfect order, have taken a beginning good and apt for becoming better, can through the occurrence of accidents become perfect. But this will indeed be true, that they will never order themselves without dangers, for most men never agree to a new law that concerns a new order in the city unless it is shown them by a necessity that it is required to do it; and since this necessity cannot come without danger, it is an easy thing for that republic to be ruined before it has brought itself to a perfection of order. Of which the republic of Florence bears full witness, which was reordered by the accident of Arezzo in <span class="supplied">[15]</span>02, and disordered by that of Prato in <span class="supplied">[15]</span>12.</div>
         <details class="annot"><summary>Commentary · 2</summary>
@@ -273,7 +308,7 @@ a { color: inherit; }
         </details>
       </div>
       <div class="pair" id="NM-DISC.1.2.03">
-        <div class="gutter"><a class="uid" href="#NM-DISC.1.2.03">1.2.03</a></div>
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.2.03">1.2.03</a><span class="marks"><a href="#n-NM-DISC.1.2-6">2 notes</a></span></div>
         <div class="col it" lang="it">Volendo adunque discorrere quali furono gli ordini della città di Roma, e quali accidenti alla sua perfezione la condussero, dico, come alcuni, che hanno scritto delle Repubbliche, dicono essere in quelle uno de&#x27; tre Stati, chiamato da loro Principato, di Ottimati, e Popolare, e come coloro, ch&#x27;ordinano una città, debbano volgersi ad uno di questi, secondo pare loro più a proposito. Alcuni altri, e secondo l&#x27;opinione di molti più savj, hanno opinione che siano di sei ragioni Governi, delle quali tre ne siano pessimi, tre altri siano buoni in loro medesimi, ma sì facili a corrompersi, che vengono ancora essi ad essere perniciosi. Quelli che sono buoni, sono i soprascritti tre; quelli che sono rei, sono tre altri, i quali da questi tre dipendono, e ciascuno di essi è in modo simile a quello che gli è propinquo, che facilmente saltano dall&#x27;uno all&#x27;altro; perché il Principato facilmente diventa tirannico; gli Ottimati con facilità diventano Stato di pochi; il Popolare senza difficultà in licenzioso si converte. Talmente che se uno ordinatore di Repubblica ordina in una città uno di quelli tre Stati, ve lo ordina per poco tempo; perché nissuno rimedio può farvi, a far che non sdruccioli nel suo contrario, per la similitudine che ha in questo caso la virtù ed il vizio.</div>
         <div class="col en" lang="en">Wishing then to discourse what the orders of the city of Rome were, and what accidents led it to its perfection, I say how some who have written of republics say that there is in them one of the three states, called by them principate, of optimates, and popular, and how those who order a city must turn to one of these, according as seems to them more to the purpose. Some others, and according to the opinion of many wiser, are of the opinion that there are six sorts of governments, of which three are very bad, three others are good in themselves, but so easy to be corrupted that they too come to be pernicious. Those that are good are the three written above; those that are evil are three others, which depend on these three, and each of them is in such a way similar to the one that is near it, that they readily leap from the one to the other; for the principate readily becomes tyrannical; the optimates with facility become a state of few; the popular without difficulty converts itself into the licentious. So much so that if an orderer of a republic orders in a city one of those three states, he orders it there for little time; for he can make no remedy there, to make it not slide into its contrary, through the likeness that <i lang="it">virtù</i> and vice have in this case.</div>
         <details class="annot"><summary>Commentary · 2</summary>
@@ -290,7 +325,7 @@ a { color: inherit; }
         </details>
       </div>
       <div class="pair" id="NM-DISC.1.2.05">
-        <div class="gutter"><a class="uid" href="#NM-DISC.1.2.05">1.2.05</a></div>
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.2.05">1.2.05</a><span class="marks"><a href="#n-NM-DISC.1.2-12">1 note</a><a href="#v-NM-DISC-I2-D001">2 variants</a></span></div>
         <div class="col it" lang="it">Ma come dipoi si cominciò a fare il Principe per successione, e non per elezione, subito cominciarono gli eredi a degenerare dai loro antichi, e lasciando l&#x27;opere virtuose, pensavano che i Principi non avessero a fare altro che superare gli altri di sontuosità, e di lascivia, e d&#x27;ogni altra qualità deliziosa. In modo che cominciando il Principe ad essere odiato, e per tale odio a temere, e passando tosto dal timore alle offese, ne nasceva presto una tirannide. Da questo nacquero appresso i principj delle rovine, e delle conspirazioni e congiure contra i Principi, non fatte da coloro che fussero o timidi, o deboli, ma da coloro che per generosità, grandezza d&#x27;animo, ricchezza e nobiltà avanzavano gli altri, i quali non potevano sopportare la inonesta vita di quel Principe. La moltitudine adunque seguendo l&#x27;autorità di questi potenti, si armava contro al Principe, e quello spento, ubbidiva loro come a&#x27; suoi liberatori. E quelli avendo in odio il nome di un solo Capo, constituivano di loro medesimi un Governo, e nel principio, avendo rispetto alla passata tirannide, si governavano secondo le leggi ordinate da loro, posponendo ogni loro comodo alla comune utilità, e le cose private e le pubbliche con somma diligenza governavano e conservavano. Venuta dipoi questa amministrazione ai loro figliuoli, i quali non conoscendo la variazione della fortuna, non avendo mai provato il male, e non volendo stare contenti alla civile egualità, ma rivoltisi alla avarizia, alla ambizione, alla usurpazione delle donne, fecero che d&#x27;un Governo d&#x27;Ottimati diventasse un Governo di pochi, senza avere rispetto ad alcuna civiltà; talché in breve tempo, intervenne loro come al Tiranno, perché infastidita da&#x27; loro governi la moltitudine, si fe&#x27; ministra di qualunque disegnasse in alcun modo offendere quelli governatori, e così si levò presto alcuno, che con l&#x27;aiuto della moltitudine gli spense.</div>
         <div class="col en" lang="en">But as afterwards they began to make the prince by succession, and not by choice, at once the heirs began to degenerate from their forebears, and, leaving virtuous works, they thought that princes were to do nothing else but surpass the others in sumptuousness, and in lasciviousness, and in every other delightful quality. In such a way that, the prince beginning to be hated, and through such hatred to fear, and passing quickly from fear to offences, there presently arose a tyranny. From this arose next the beginnings of ruins, and of conspiracies and plots against princes, made not by those who were either timid or weak, but by those who through generosity, greatness of spirit, riches and nobility exceeded the others, <span class="supplied">[and]</span> who could not bear the dishonourable life of that prince. The multitude, then, following the authority of these powerful ones, armed itself against the prince, and, he being extinguished, obeyed them as its liberators. And they, holding in hatred the name of a single head, constituted a government of themselves, and in the beginning, having respect to the past tyranny, governed themselves according to the laws ordered by them, putting every convenience of their own after the common utility, and things private and public with the utmost diligence they governed and conserved. This administration having come afterwards to their sons, who, not knowing the variation of fortune, never having tried ill, and not wishing to stay content with civil equality, but having turned to avarice, to ambition, to the usurpation of women, made it so that from a government of optimates it became a government of few, without having respect to any civility; so that in a short time, it happened to them as to the tyrant, for the multitude, wearied of their governments, made itself the minister of whoever designed in any way to offend those governors, and so someone presently rose who with the help of the multitude extinguished them.</div>
         <details class="annot"><summary>Commentary · 1</summary>
@@ -298,7 +333,7 @@ a { color: inherit; }
         </details>
       </div>
       <div class="pair" id="NM-DISC.1.2.06">
-        <div class="gutter"><a class="uid" href="#NM-DISC.1.2.06">1.2.06</a></div>
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.2.06">1.2.06</a><span class="marks"><a href="#v-NM-DISC-I2-D003">2 variants</a></span></div>
         <div class="col it" lang="it">Ed essendo ancora fresca la memoria del Principe, e delle ingiurie ricevute da quello, avendo disfatto lo Stato de&#x27; pochi, e non volendo rifare quel del Principe, si volsero allo Stato popolare, e quello ordinarono in modo, che né i pochi potenti, né un Principe vi avesse alcuna autorità. E perché tutti gli Stati nel principio hanno qualche riverenza, si mantenne questo Stato popolare un poco, ma non molto, massime spenta che fu quella generazione, che l&#x27;aveva ordinato; perché subito si venne alla licenza, dove non si temevano né gli uomini privati, né i pubblici; di qualità che vivendo ciascuno a suo modo, si facevano ogni dì mille ingiurie: talché costretti per necessità, o per suggestione d&#x27;alcuno buono uomo, o per fuggire tale licenza, si ritorna di nuovo al Principato, e da quello di grado in grado si riviene verso la licenza, ne&#x27; modi e per le cagioni dette. E questo è il cerchio, nel quale girando tutte le Repubbliche si sono governate, e si governano; ma rade volte ritornano ne&#x27; governi medesimi, perché quasi nessuna Repubblica può essere di tanta vita, che possa passare molte volte per queste mutazioni, e rimanere in piedi. Ma bene interviene che nel travagliare una Repubblica, mancandole sempre consiglio e forze, diventa suddita d&#x27;uno Stato propinquo che sia meglio ordinato di lei; ma dato che questo non fusse, sarebbe atta una Repubblica a rigirarsi infinito tempo in questi governi.</div>
         <div class="col en" lang="en">And the memory of the prince, and of the injuries received from him, being still fresh, having undone the state of the few, and not wishing to remake that of the prince, they turned to the popular state, and ordered it in such a way that neither the powerful few nor a prince should have any authority in it. And because all states in the beginning have some reverence, this popular state was maintained a little, but not much, especially once that generation which had ordered it was extinguished; for at once they came to licence, where neither private men nor public were feared; of such quality that, each living in his own way, a thousand injuries were done every day: so that, constrained by necessity, or by the suggestion of some good man, or to flee such licence, they return anew to the principate, and from that, from degree to degree, they come back towards licence, in the ways and for the causes said. And this is the circle in which, turning, all republics have governed themselves, and govern themselves; but rarely do they return into the same governments, for almost no republic can be of so much life that it can pass many times through these mutations and remain on its feet. But it indeed happens that, in the travail of a republic, lacking always counsel and forces, it becomes subject to a near state that is better ordered than it; but granted that this were not so, a republic would be apt to turn round again for an infinite time in these governments.</div>
         <details class="annot"><summary>Commentary · 1</summary>
@@ -306,7 +341,7 @@ a { color: inherit; }
         </details>
       </div>
       <div class="pair" id="NM-DISC.1.2.07">
-        <div class="gutter"><a class="uid" href="#NM-DISC.1.2.07">1.2.07</a></div>
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.2.07">1.2.07</a><span class="marks"><a href="#n-NM-DISC.1.2-15">1 note</a><a href="#v-NM-DISC-I2-D005">1 variant</a></span></div>
         <div class="col it" lang="it">Dico adunque che tutti i detti modi sono pestiferi, per la brevità della vita che è ne&#x27; tre buoni, e per la malignità che è ne&#x27; tre rei. Talché avendo quelli che prudentemente ordinano leggi, conosciuto questo difetto, fuggendo ciascuno di questi modi per sé stesso, n&#x27;elessero uno che partecipasse di tutti, giudicandolo più fermo e più stabile, perché l&#x27;uno guarda l&#x27;altro, sendo in una medesima città il Principato, gli Ottimati, ed il Governo popolare. Intra quelli che hanno per simili costituzioni meritato più laude è Licurgo, il quale ordinò in modo le sue leggi in Sparta, che dando le parti sue ai Re, agli Ottimati, e al Popolo, fece uno Stato che durò più che ottocento anni, con somma laude sua, e quiete di quella città. Al contrario intervenne a Solone, il quale ordinò le leggi in Atene, che per ordinarvi solo lo Stato popolare, lo fece di sì breve vita, che avanti morisse si vide nata la tirannide di Pisistrato: e benché dipoi quaranta anni ne fussero cacciati gli suoi eredi, e ritornasse Atene in libertà, perché la riprese lo Stato popolare, secondo gli ordini di Solone, non lo tenne più che cento anni, ancora che per mantenerlo facesse molte Costituzioni, per le quali si reprimeva la insolenza de&#x27; Grandi, e la licenza dell&#x27;universale, le quali non furon da Solone considerate; nientedimeno perché la non le mescolò con la potenza del Principato, e con quello degli Ottimati, visse Atene a rispetto di Sparta brevissimo tempo.</div>
         <div class="col en" lang="en">I say then that all the said ways are pestiferous, through the brevity of the life that is in the three good ones, and through the malignity that is in the three evil. So that, those who prudently order laws having known this defect, fleeing each of these ways by itself, they chose one that should partake of all, judging it firmer and more stable, because the one guards the other, there being in one and the same city the principate, the optimates, and the popular government. Among those who have for like constitutions merited most praise is Lycurgus, who ordered his laws in Sparta in such a way that, giving their parts to the kings, to the optimates, and to the people, he made a state that lasted more than eight hundred years, with the utmost praise to himself, and quiet to that city. The contrary happened to Solon, who ordered the laws in Athens, who, through ordering there only the popular state, made it of such short life that before he died he saw born the tyranny of Pisistratus: and albeit forty years afterwards his heirs were driven out of it, and Athens returned to liberty, because it took up again the popular state, according to the orders of Solon, it did not hold it more than a hundred years, even though to maintain it it made many constitutions, by which the insolence of the great and the licence of the generality were repressed, which had not been considered by Solon; nevertheless, because it did not mix them with the power of the principate and with that of the optimates, Athens lived, in respect of Sparta, a very short time.</div>
         <details class="annot"><summary>Commentary · 2</summary>
@@ -315,7 +350,7 @@ a { color: inherit; }
         </details>
       </div>
       <div class="pair" id="NM-DISC.1.2.08">
-        <div class="gutter"><a class="uid" href="#NM-DISC.1.2.08">1.2.08</a></div>
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.2.08">1.2.08</a><span class="marks"><a href="#n-NM-DISC.1.2-13">2 notes</a></span></div>
         <div class="col it" lang="it">Ma vegniamo a Roma, la quale nonostante che non avesse un Licurgo, che l&#x27;ordinasse in modo nel principio, che la potesse vivere lungo tempo libera, nondimeno furono tanti gli accidenti che in quella nacquero, per la disunione che era intra la Plebe e il Senato, che quello che non aveva fatto uno ordinatore, lo fece il caso. Perché se Roma non sortì la prima fortuna, sortì la seconda; perché i primi ordini se furono difettivi, nondimeno non deviarono dalla diritta via che li potesse condurre alla perfezione. Perché Romolo e tutti gli altri Re fecero molte e buone leggi, conformi ancora al vivere libero; ma perché il fine loro fu fondare un Regno e non una Repubblica, quando quella città rimase libera, vi mancavano molte cose che era necessario ordinare in favore della libertà, le quali non erano state da quelli Re ordinate. E avvegnaché quelli suoi Re perdessero l&#x27;Imperio per le cagioni e modi discorsi, nondimeno quelli che li cacciarono, ordinandovi subito duoi Consoli, che stessero nel luogo del Re, vennero a cacciare di Roma il nome, e non la potestà regia; talché essendo in quella Repubblica i Consoli e il Senato, veniva solo ad esser mista di due qualità delle tre soprascritte, cioè di Principato e di Ottimati.</div>
         <div class="col en" lang="en">But let us come to Rome, which, notwithstanding that it did not have a Lycurgus to order it in such a way in the beginning that it could live free a long time, nonetheless so many were the accidents that arose in it, through the disunion there was between the plebs and the senate, that what an orderer had not done, chance did. For if Rome was not allotted the first fortune, it was allotted the second; for the first orders, if they were defective, nonetheless did not deviate from the right path that could lead them to perfection. For Romulus and all the other kings made many and good laws, conformable also to free living; but because their end was to found a kingdom and not a republic, when that city remained free there were lacking in it many things that it was necessary to order in favour of liberty, which had not been ordered by those kings. And though those kings of its lost their rule for the causes and ways discoursed, nonetheless those who drove them out, ordering there at once two consuls to stand in the place of the king, came to drive out of Rome the name, and not the royal power; so that, there being in that republic the consuls and the senate, it came to be mixed only of two qualities of the three written above, that is, of principate and of optimates.</div>
         <details class="annot"><summary>Commentary · 1</summary>
@@ -323,7 +358,7 @@ a { color: inherit; }
         </details>
       </div>
       <div class="pair" id="NM-DISC.1.2.09">
-        <div class="gutter"><a class="uid" href="#NM-DISC.1.2.09">1.2.09</a></div>
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.2.09">1.2.09</a><span class="marks"><a href="#n-NM-DISC.1.2-16">1 note</a></span></div>
         <div class="col it" lang="it">Restavagli solo a dare luogo al Governo popolare; onde essendo diventata la Nobiltà romana insolente per le cagioni che di sotto si diranno, si levò il popolo contro di quella; talché, per non perdere il tutto, fu costretta concedere al Popolo la sua parte; e dall&#x27;altra parte il Senato e i Consoli restassero con tanta autorità, che potessero tenere in quella Repubblica il grado loro. E così nacque la creazione de&#x27; Tribuni della plebe, dopo la quale creazione venne a essere stabilito lo stato di quella Repubblica, avendovi tutte le tre qualità di governo la parte sua. E tanto gli fu favorevole la fortuna, che benché si passasse dal governo dei Re e degli Ottimati al Popolo, per quelli medesimi gradi e per quelle medesime cagioni che di sopra si sono discorse, nondimeno non si tolse mai per dare autorità agli Ottimati, tutta l&#x27;autorità alle qualità regie, né si diminuì l&#x27;autorità in tutto agli Ottimati, per darla al Popolo; ma rimanendo mista, fece una Repubblica perfetta, alla quale perfezione venne per la disunione della Plebe e del Senato, come nei duoi prossimi seguenti capitoli largamente si dimostrerà.</div>
         <div class="col en" lang="en">There remained to it only to give place to the popular government; whence, the Roman nobility having become insolent for the causes that will be said below, the people rose against it; so that, not to lose the whole, it was constrained to concede to the people its part; and, on the other hand, <span class="supplied">[that]</span> the senate and the consuls should remain with so much authority that they could hold their degree in that republic. And so arose the creation of the tribunes of the plebs, after which creation the state of that republic came to be established, all three qualities of government having there their part. And so favourable was fortune to it that, albeit one passed from the government of the kings and of the optimates to the people, by those same degrees and for those same causes that have been discoursed above, nonetheless there was never taken, to give authority to the optimates, all the authority from the royal qualities, nor was the authority altogether diminished for the optimates, to give it to the people; but, remaining mixed, it made a perfect republic, to which perfection it came through the disunion of the plebs and the senate, as will be amply demonstrated in the two next following chapters.</div>
         <details class="annot"><summary>Commentary · 2</summary>
@@ -333,49 +368,50 @@ a { color: inherit; }
       </div>
 
     <div class="apparatus">
-      <div>
+      <div class="app-source">
         <h3>Source</h3>
         <p>Established from the 1824 edition (<span class="sig">WIT-NM-DISC-1824-IA</span>), page-image-backed, which governs. Collated against the 1554 Giglio printing, Venice (<span class="sig">WIT-NM-DISC-1554-IA</span>), which is comparison evidence only.</p>
 <p>Paragraph divisions are editorial. The witness prints the chapter as one unbroken block.</p>
       </div>
-      <div>
+      <div class="app-variants">
         <h3>Variants</h3>
-        <p><span class="lem">a degenerare dai loro antichi ... superare gli altri di sontuosità, e di lascivia</span> — 1824. The 1554 witness reads <i lang="it">a tralignare da loro antichi ... superare gl&#x27;altri di thesori, et di lasciuia</i>. Giglio&#x27;s princes outdo the rest in treasure, the 1824&#x27;s in sumptuousness: wealth held rather than wealth displayed.</p>
-<p><span class="lem">rivoltisi alla avarizia, alla ambizione, alla usurpazione delle donne</span> — 1824. The 1554 witness reads <i lang="it">riuoltisi alla auaritia, alla ambitione, &amp; alla lussuria</i>. Giglio has lust, an abstract vice, where the 1824 has the seizing of women, a concrete wrong done to the governed. The 1824 makes the third term an injury, which is what turns the multitude.</p>
-<p><span class="lem">massime spenta che fu quella generazione, che l&#x27;aveva ordinato</span> — 1824. The 1554 witness reads <i lang="it">massime spenti che furono coloro, che l&#x27;haueua ordinato</i>. Same sense: those who had ordered it, or that generation, once dead.</p>
-<p><span class="lem">o per suggestione d&#x27;alcuno buono uomo</span> — 1824. The 1554 witness reads <i lang="it">o per opera d&#x27;alcun buono</i>. Giglio&#x27;s good man acts (<i lang="it">opera</i>) where the 1824&#x27;s prompts (<i lang="it">suggestione</i>).</p>
-<p><span class="lem">la insolenza de&#x27; Grandi, e la licenza dell&#x27;universale</span> — 1824. The 1554 witness reads <i lang="it">la insolentia de grandi, et la licentia di ciascuna</i>. Giglio&#x27;s <i lang="it">di ciascuna</i> (of each, feminine, with no noun) is hard to construe; the 1824 <i lang="it">dell&#x27;universale</i>, the generality, pairs with the great.</p>
+        <p id="v-NM-DISC-I2-D001"><a class="loc" href="#NM-DISC.1.2.05" title="Back to the paragraph">¶ 05</a> <span class="lem">a degenerare dai loro antichi ... superare gli altri di sontuosità, e di lascivia</span> — 1824. The 1554 witness reads <i lang="it">a tralignare da loro antichi ... superare gl&#x27;altri di thesori, et di lasciuia</i>. Giglio&#x27;s princes outdo the rest in treasure, the 1824&#x27;s in sumptuousness: wealth held rather than wealth displayed.</p>
+<p id="v-NM-DISC-I2-D002"><a class="loc" href="#NM-DISC.1.2.05" title="Back to the paragraph">¶ 05</a> <span class="lem">rivoltisi alla avarizia, alla ambizione, alla usurpazione delle donne</span> — 1824. The 1554 witness reads <i lang="it">riuoltisi alla auaritia, alla ambitione, &amp; alla lussuria</i>. Giglio has lust, an abstract vice, where the 1824 has the seizing of women, a concrete wrong done to the governed. The 1824 makes the third term an injury, which is what turns the multitude.</p>
+<p id="v-NM-DISC-I2-D003"><a class="loc" href="#NM-DISC.1.2.06" title="Back to the paragraph">¶ 06</a> <span class="lem">massime spenta che fu quella generazione, che l&#x27;aveva ordinato</span> — 1824. The 1554 witness reads <i lang="it">massime spenti che furono coloro, che l&#x27;haueua ordinato</i>. Same sense: those who had ordered it, or that generation, once dead.</p>
+<p id="v-NM-DISC-I2-D004"><a class="loc" href="#NM-DISC.1.2.06" title="Back to the paragraph">¶ 06</a> <span class="lem">o per suggestione d&#x27;alcuno buono uomo</span> — 1824. The 1554 witness reads <i lang="it">o per opera d&#x27;alcun buono</i>. Giglio&#x27;s good man acts (<i lang="it">opera</i>) where the 1824&#x27;s prompts (<i lang="it">suggestione</i>).</p>
+<p id="v-NM-DISC-I2-D005"><a class="loc" href="#NM-DISC.1.2.07" title="Back to the paragraph">¶ 07</a> <span class="lem">la insolenza de&#x27; Grandi, e la licenza dell&#x27;universale</span> — 1824. The 1554 witness reads <i lang="it">la insolentia de grandi, et la licentia di ciascuna</i>. Giglio&#x27;s <i lang="it">di ciascuna</i> (of each, feminine, with no noun) is hard to construe; the 1824 <i lang="it">dell&#x27;universale</i>, the generality, pairs with the great.</p>
 <p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
       </div>
-      <div>
+      <div class="app-notes">
         <h3>Notes</h3>
-        <p><span class="lem">The <i lang="la">currere</i> family.</span> Machiavelli will &quot;discourse&quot; what Rome&#x27;s orders were, and twice refers back to causes &quot;discoursed&quot; above; &quot;the occurrence of accidents&quot; (.02) is the one <i lang="it">occorrere</i> form. The English keeps both, because Guicciardini&#x27;s reply takes up the verb: &quot;to discourse this article minutely&quot;.</p>
-<p><span class="lem"><i lang="it">specie</i>.</span> &quot;Species&quot;, as Guicciardini&#x27;s <i lang="it">spezie</i> in the reply and in I.1: the kinds of republic, not a biological term.</p>
-<p><span class="lem"><i lang="it">Principato</i>, <i lang="it">Ottimati</i>, <i lang="it">Popolare</i>.</span> The three good states are named, as the Italian names them, by the one, the best men and the people: principate, optimates, popular. Their corruptions are the tyrannical, the &quot;state of the few&quot;, and the licentious. &quot;Aristocracy&quot; and &quot;democracy&quot; are the Greek names this chapter does not use.</p>
-<p><span class="lem"><i lang="it">Stato</i>.</span> &quot;State&quot; throughout, as the constitution or condition a city is in: one of the three states, a state of few, the popular state, and at the end the state of the Roman republic &quot;came to be established&quot;. Not the modern nation-state; a &quot;near state&quot; in .06 is a neighbouring power.</p>
-<p><span class="lem"><i lang="it">modo</i>, <i lang="it">modi</i>.</span> &quot;Way&quot;, &quot;ways&quot;, as in I.12 (&quot;this way has been observed&quot;): the six forms are &quot;all the said ways&quot;, and the cycle runs &quot;in the ways and for the causes said&quot;.</p>
-<p><span class="lem"><i lang="it">virtù ed il vizio</i>.</span> <i lang="it">Virtù</i> is left in Italian throughout this edition. Here it stands against vice, and so has its moral sense: the good form slides into its corruption because the two resemble each other. &quot;Virtuous works&quot; in .05 is its adjective.</p>
-<p><span class="lem"><i lang="it">sortire</i>.</span> &quot;To be allotted&quot;: to receive by lot. A republic that draws a prudent founder is happy; Rome drew the second fortune, not the first.</p>
-<p><span class="lem"><i lang="it">gli assai uomini</i>.</span> &quot;Most men&quot;: <i lang="it">assai</i> as an adjective, many.</p>
-<p><span class="lem">Arezzo and Prato.</span> The print gives the years as roman numerals, <i lang="it">II</i> and <i lang="it">XII</i>: 1502, when the revolt of Arezzo led Florence to make Piero Soderini gonfaloniere for life, and 1512, when the sack of Prato brought the Medici back and ended the republic Machiavelli served.</p>
-<p><span class="lem"><i lang="it">e secondo l&#x27;opinione di molti più savj</i>.</span> &quot;And according to the opinion of many wiser&quot;: &quot;wiser&quot; may belong to the &quot;some others&quot; (wiser, in many people&#x27;s opinion) or to the &quot;many&quot; (the opinion of many wiser men), and <i lang="it">molti più</i> can also be old Tuscan for &quot;much&quot; (much wiser). The English leans to the second reading; the Italian does not decide.</p>
-<p><span class="lem"><i lang="it">civiltà</i>.</span> &quot;Civility&quot;: the civil way of living together under laws, not politeness.</p>
-<p><span class="lem"><i lang="it">generosità</i>.</span> Largeness of spirit, beside &quot;greatness of spirit&quot;.</p>
-<p><span class="lem"><i lang="it">vivere libero</i>.</span> &quot;Free living&quot;: the infinitive as a noun, living as a free city.</p>
-<p><span class="lem"><i lang="it">potestà</i>, <i lang="it">potenza</i>.</span> Both &quot;power&quot;. Recorded so it does not read as an oversight: <i lang="it">potestà</i> is the power held by an office, <i lang="it">potenza</i> the might a form of government carries.</p>
-<p><span class="lem"><i lang="it">Costituzioni</i>.</span> &quot;Constitutions&quot; in the older sense: enactments, ordinances. Solon&#x27;s successors made many.</p>
-<p><span class="lem"><i lang="it">restassero</i>.</span> The senate and consuls &quot;should remain&quot;: the subjunctive hangs on what the nobility was constrained to concede, and the English supplies &quot;[that]&quot;.</p>
-<p><span class="lem"><i lang="it">simile</i>, <i lang="it">grado</i>, <i lang="it">rispetto</i>.</span> Held as &quot;like&quot; (or &quot;similar&quot;), &quot;degree&quot; and &quot;respect&quot; throughout the chapter, so that <i lang="it">di grado in grado</i> (.06) and <i lang="it">per quelli medesimi gradi</i> (.09) are visibly the same steps, and a city can &quot;hold its degree&quot;.</p>
-<p><span class="lem">The sources.</span> The six forms and their cycle are Polybius, <i lang="it">Histories</i> book 6, which Machiavelli follows closely without naming him.</p>
-<p><span class="lem"><i lang="it">bisogni</i>.</span> &quot;It is required&quot;: <i lang="it">bisognare</i>, impersonal, is rendered &quot;it is required&quot; throughout the edition, in every tense: &quot;it was required&quot;, &quot;it would be required&quot; (D260). The edition first used &quot;it is needful&quot; (D75). &quot;There is need&quot; was also weighed, since it keeps the root of the noun <i lang="it">bisogno</i>, &quot;need&quot;; &quot;it is required&quot; is the more natural English. It carries Guicciardini&#x27;s long chains of <i lang="it">che</i> with a subjunctive (&quot;it is required that the captain be expert&quot;, Guicciardini I.23), which &quot;one must&quot; cannot, and it stays apart from <i lang="it">è necessario</i>, &quot;it is necessary&quot;, and <i lang="it">conviene</i>, &quot;it is fitting&quot; (D85). The noun <i lang="it">bisogno</i> remains &quot;need&quot;.</p>
+        <p id="n-NM-DISC.1.2-1"><span class="lem">The <i lang="la">currere</i> family.</span> Machiavelli will &quot;discourse&quot; what Rome&#x27;s orders were, and twice refers back to causes &quot;discoursed&quot; above; &quot;the occurrence of accidents&quot; (.02) is the one <i lang="it">occorrere</i> form. The English keeps both, because Guicciardini&#x27;s reply takes up the verb: &quot;to discourse this article minutely&quot;.</p>
+<p id="n-NM-DISC.1.2-2"><span class="lem"><i lang="it">specie</i>.</span> &quot;Species&quot;, as Guicciardini&#x27;s <i lang="it">spezie</i> in the reply and in I.1: the kinds of republic, not a biological term.</p>
+<p id="n-NM-DISC.1.2-3"><span class="lem"><i lang="it">Principato</i>, <i lang="it">Ottimati</i>, <i lang="it">Popolare</i>.</span> The three good states are named, as the Italian names them, by the one, the best men and the people: principate, optimates, popular. Their corruptions are the tyrannical, the &quot;state of the few&quot;, and the licentious. &quot;Aristocracy&quot; and &quot;democracy&quot; are the Greek names this chapter does not use.</p>
+<p id="n-NM-DISC.1.2-4"><span class="lem"><i lang="it">Stato</i>.</span> &quot;State&quot; throughout, as the constitution or condition a city is in: one of the three states, a state of few, the popular state, and at the end the state of the Roman republic &quot;came to be established&quot;. Not the modern nation-state; a &quot;near state&quot; in .06 is a neighbouring power.</p>
+<p id="n-NM-DISC.1.2-5"><span class="lem"><i lang="it">modo</i>, <i lang="it">modi</i>.</span> &quot;Way&quot;, &quot;ways&quot;, as in I.12 (&quot;this way has been observed&quot;): the six forms are &quot;all the said ways&quot;, and the cycle runs &quot;in the ways and for the causes said&quot;.</p>
+<p id="n-NM-DISC.1.2-6"><a class="loc" href="#NM-DISC.1.2.03" title="Back to the paragraph">¶ 03</a> <span class="lem"><i lang="it">virtù ed il vizio</i>.</span> <i lang="it">Virtù</i> is left in Italian throughout this edition. Here it stands against vice, and so has its moral sense: the good form slides into its corruption because the two resemble each other. &quot;Virtuous works&quot; in .05 is its adjective.</p>
+<p id="n-NM-DISC.1.2-7"><span class="lem"><i lang="it">sortire</i>.</span> &quot;To be allotted&quot;: to receive by lot. A republic that draws a prudent founder is happy; Rome drew the second fortune, not the first.</p>
+<p id="n-NM-DISC.1.2-8"><a class="loc" href="#NM-DISC.1.2.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">gli assai uomini</i>.</span> &quot;Most men&quot;: <i lang="it">assai</i> as an adjective, many.</p>
+<p id="n-NM-DISC.1.2-9"><a class="loc" href="#NM-DISC.1.2.02" title="Back to the paragraph">¶ 02</a> <span class="lem">Arezzo and Prato.</span> The print gives the years as roman numerals, <i lang="it">II</i> and <i lang="it">XII</i>: 1502, when the revolt of Arezzo led Florence to make Piero Soderini gonfaloniere for life, and 1512, when the sack of Prato brought the Medici back and ended the republic Machiavelli served.</p>
+<p id="n-NM-DISC.1.2-10"><a class="loc" href="#NM-DISC.1.2.03" title="Back to the paragraph">¶ 03</a> <span class="lem"><i lang="it">e secondo l&#x27;opinione di molti più savj</i>.</span> &quot;And according to the opinion of many wiser&quot;: &quot;wiser&quot; may belong to the &quot;some others&quot; (wiser, in many people&#x27;s opinion) or to the &quot;many&quot; (the opinion of many wiser men), and <i lang="it">molti più</i> can also be old Tuscan for &quot;much&quot; (much wiser). The English leans to the second reading; the Italian does not decide.</p>
+<p id="n-NM-DISC.1.2-11"><span class="lem"><i lang="it">civiltà</i>.</span> &quot;Civility&quot;: the civil way of living together under laws, not politeness.</p>
+<p id="n-NM-DISC.1.2-12"><a class="loc" href="#NM-DISC.1.2.05" title="Back to the paragraph">¶ 05</a> <span class="lem"><i lang="it">generosità</i>.</span> Largeness of spirit, beside &quot;greatness of spirit&quot;.</p>
+<p id="n-NM-DISC.1.2-13"><a class="loc" href="#NM-DISC.1.2.08" title="Back to the paragraph">¶ 08</a> <span class="lem"><i lang="it">vivere libero</i>.</span> &quot;Free living&quot;: the infinitive as a noun, living as a free city.</p>
+<p id="n-NM-DISC.1.2-14"><a class="loc" href="#NM-DISC.1.2.08" title="Back to the paragraph">¶ 08</a> <span class="lem"><i lang="it">potestà</i>, <i lang="it">potenza</i>.</span> Both &quot;power&quot;. Recorded so it does not read as an oversight: <i lang="it">potestà</i> is the power held by an office, <i lang="it">potenza</i> the might a form of government carries.</p>
+<p id="n-NM-DISC.1.2-15"><a class="loc" href="#NM-DISC.1.2.07" title="Back to the paragraph">¶ 07</a> <span class="lem"><i lang="it">Costituzioni</i>.</span> &quot;Constitutions&quot; in the older sense: enactments, ordinances. Solon&#x27;s successors made many.</p>
+<p id="n-NM-DISC.1.2-16"><a class="loc" href="#NM-DISC.1.2.09" title="Back to the paragraph">¶ 09</a> <span class="lem"><i lang="it">restassero</i>.</span> The senate and consuls &quot;should remain&quot;: the subjunctive hangs on what the nobility was constrained to concede, and the English supplies &quot;[that]&quot;.</p>
+<p id="n-NM-DISC.1.2-17"><span class="lem"><i lang="it">simile</i>, <i lang="it">grado</i>, <i lang="it">rispetto</i>.</span> Held as &quot;like&quot; (or &quot;similar&quot;), &quot;degree&quot; and &quot;respect&quot; throughout the chapter, so that <i lang="it">di grado in grado</i> (.06) and <i lang="it">per quelli medesimi gradi</i> (.09) are visibly the same steps, and a city can &quot;hold its degree&quot;.</p>
+<p id="n-NM-DISC.1.2-18"><span class="lem">The sources.</span> The six forms and their cycle are Polybius, <i lang="it">Histories</i> book 6, which Machiavelli follows closely without naming him.</p>
+<p id="n-NM-DISC.1.2-19"><span class="lem"><i lang="it">bisogni</i>.</span> &quot;It is required&quot;: <i lang="it">bisognare</i>, impersonal, is rendered &quot;it is required&quot; throughout the edition, in every tense: &quot;it was required&quot;, &quot;it would be required&quot; (D260). The edition first used &quot;it is needful&quot; (D75). &quot;There is need&quot; was also weighed, since it keeps the root of the noun <i lang="it">bisogno</i>, &quot;need&quot;; &quot;it is required&quot; is the more natural English. It carries Guicciardini&#x27;s long chains of <i lang="it">che</i> with a subjunctive (&quot;it is required that the captain be expert&quot;, Guicciardini I.23), which &quot;one must&quot; cannot, and it stays apart from <i lang="it">è necessario</i>, &quot;it is necessary&quot;, and <i lang="it">conviene</i>, &quot;it is fitting&quot; (D85). The noun <i lang="it">bisogno</i> remains &quot;need&quot;.</p>
       </div>
     </div>
   </section>
 
   <section class="work fg">
     <div class="work-head">
-      <span class="tag">FG-CONS.1.2</span>
+      <span class="tag" title="FG-CONS.1.2">Guicciardini</span>
       <h2>Considerazione sul capitolo II</h2>
+      <span class="cite"><i>Considerazioni</i> I.2</span>
     </div>
     <p class="rubric">Di quante spezie sono le repubbliche, e di quale fu la repubblica romana</p>
     <p class="rubric">Of how many species republics are, and of which was the Roman republic
@@ -383,7 +419,7 @@ a { color: inherit; }
 
     <div class="colheads"><div></div><div>Italian · 1857</div><div>English</div></div>
       <div class="pair" id="FG-CONS.1.2.01">
-        <div class="gutter"><a class="uid" href="#FG-CONS.1.2.01">1.2.01</a></div>
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.2.01">1.2.01</a><span class="marks"><a href="#n-FG-CONS.1.2-3">3 notes</a><a href="#v-FG-CONS-I2-D001">3 variants</a></span></div>
         <div class="col it" lang="it">E non è dubio che il governo misto delle tre spezie, principi, ottimati e popolo, è migliore e più stabile che uno governo semplice di qualunque delle tre spezie, e massime quando è misto in modo che di qualunque spezie è tolto il buono e lasciato indietro il cattivo; che è il punto a che bisogna avvertire, o dove può consistere la fallacia di chi gli ordina. E per discorrere tritamente questo articulo, dico che il frutto del governo regio è, che molto meglio, con più ordine, con più celerità, con più segreto, con più resoluzione si governano le cose publiche quando dependono dalla voluntà di uno solo, che quando sono nello arbitrio di più. Il male che ha, è che se si cade in una persona cattiva, avendo la potestà sciolta di fare male, tutta quella autorità che gli è data per fare buoni effetti gli fa pessimi; così se è buono, ma insufficiente, nascono per la ignavia sua infiniti disordini. E ancora che il re si facessi per elezione, non per successione, non è la sicurtà intera di questi pericoli, perché chi elegge può molte volte ingannarsi, riputando buono o prudente chi sia di altra sorte, e la grandezza della potestà e della licenza muta spesso la natura di chi è eletto, e massime se ha figliuoli, è difficile non desideri avergli successori, il che, quando è re con potestà assoluta, difficilmente gli può essere proibito, ancora che sia contro alle constituzioni del regno, ma non lo può già conducere se non con arte e mezzi non laudabili.</div>
         <div class="col en" lang="en">And there is no doubt that the mixed government of the three species, princes, optimates and people, is better and more stable than a simple government of any of the three species, and especially when it is mixed in such a way that from each species the good is taken and the bad left behind; which is the point it is required to take heed of, or where the fallacy of whoever orders them can lie. And to discourse this article minutely, I say that the fruit of royal government is that much better, with more order, with more celerity, with more secrecy, with more resolution, the public things are governed when they depend on the will of one alone than when they are at the discretion of several. The ill it has is that if it falls upon a bad person, he having the power loosed to do ill, all that authority which is given him to do good effects makes them very bad; likewise, if he is good but insufficient, infinite disorders arise through his sloth. And even though the king were made by choice, not by succession, there is not entire security against these dangers, for whoever chooses can many times deceive himself, deeming good or prudent one who is of another sort, and the greatness of the power and of the licence often changes the nature of whoever is chosen, and especially if he has sons, it is difficult for him not to desire to have them as successors, which, when he is king with absolute power, can with difficulty be forbidden him, even though it be against the constitutions of the kingdom, but he cannot indeed bring it about except with art and means not laudable.</div>
         <details class="annot"><summary>Commentary · 2</summary>
@@ -392,7 +428,7 @@ a { color: inherit; }
         </details>
       </div>
       <div class="pair" id="FG-CONS.1.2.02">
-        <div class="gutter"><a class="uid" href="#FG-CONS.1.2.02">1.2.02</a></div>
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.2.02">1.2.02</a><span class="marks"><a href="#n-FG-CONS.1.2-9">3 notes</a></span></div>
         <div class="col it" lang="it">Volendo adunque ordinare uno governo che partecipi il più che si può del bene del governo regio, e non partecipi del male, è impossibile partecipi tutto il bene e fugga tutto il male, e bisogna contentarsi che più presto abbia manco del bene, che, per volerne troppo, partecipi anche del male. E però è necessario farlo perpetuo, ma limitargli la autorità, con fare che per sé solo non possa disporre di cosa alcuna, o almanco di quelle solo che sono di minore importanza, e ordinandolo così, se ne caverebbe il bene di avere uno occhio che vigilassi continuamente le cose publiche, uno capo a chi le si potessino referire, uno procuratore che le proponessi, sollecitassi e ricordassi. Mancherebbesi di quello bene che ha con seco il potere uno solo deliberare e eseguire, ma perché questo non si può avere sanza il pericolo che non sia in potestà sua voltare il regno a tirannide, minore male è avere poco bene e sicuro, che molto e con sì grave pericolo. Sia adunque il re, cioè il capo che rappresenti quello principe, con la autorità limitata in modo che per sé solo non possi deliberare le cose importanti, e sia per elezione, non per successione, quando sia così, meglio è sia perpetuo che temporale, e se pure temporale, meglio per lungo tempo che per breve. In che hanno fatto meglio e&#x27; Viniziani che non feciono e&#x27; Romani e i Lacedemonii, perché e&#x27; re de&#x27; Lacedemonii erano sempre di una famiglia medesima e per successione, e&#x27; re romani se bene avevano il senato e qualche immagine di republica, pure ebbono tanta autorità che fu loro facile voltare il regno a tirannide, come si vede qualche principio in Servio Tullio, e poi apertamente in Tarquinio Superbo. E se vogliamo la autorità de&#x27; consoli chiamarla regia non fu perpetua ma annua dove il principe viniziano è perpetuo, eleggesi, e ha la autorità limitatissima.</div>
         <div class="col en" lang="en">Wishing then to order a government that should partake as much as can be of the good of royal government, and should not partake of the ill, it is impossible that it partake of all the good and flee all the ill, and it is required to be content that it should rather have less of the good than, through wanting too much of it, partake also of the ill. And therefore it is necessary to make it perpetual, but to limit its authority, by making it so that by itself alone it cannot dispose of anything, or at least only of those things that are of lesser importance, and, ordering it so, one would get from it the good of having an eye that should watch continually over the public things, a head to whom they might be reported, a procurator who should propose them, press them and put them in mind. One would lack that good which one alone&#x27;s being able to deliberate and execute carries with it, but because this cannot be had without the danger that it be in his power to turn the kingdom to tyranny, it is a lesser ill to have little good and secure than much and with so grave a danger. Let the king then, that is, the head that is to represent that prince, be with authority limited in such a way that by himself alone he cannot deliberate the important things, and let him be by choice, not by succession, and when it is so, it is better that he be perpetual than temporary, and if temporary all the same, better for a long time than for a short. In which the Venetians have done better than did the Romans and the Lacedaemonians, for the kings of the Lacedaemonians were always of one same family and by succession, the Roman kings, although they had the senate and some image of a republic, yet had so much authority that it was easy for them to turn the kingdom to tyranny, as one sees some beginning in Servius Tullius, and then openly in Tarquinius Superbus. And if we wish to call the authority of the consuls royal, it was not perpetual but annual, whereas the Venetian prince is perpetual, is chosen, and has a most limited authority.</div>
         <details class="annot"><summary>Commentary · 3</summary>
@@ -402,7 +438,7 @@ a { color: inherit; }
         </details>
       </div>
       <div class="pair" id="FG-CONS.1.2.03">
-        <div class="gutter"><a class="uid" href="#FG-CONS.1.2.03">1.2.03</a></div>
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.2.03">1.2.03</a><span class="marks"><a href="#v-FG-CONS-I2-D004">2 variants</a></span></div>
         <div class="col it" lang="it">Nel governo degli ottimati è questo bene, che, essendo più, non possono così facilmente fare una tirannide come uno solo, essendo e&#x27; più qualificati uomini della città, la governano con più intelletto e con più prudenza che non farebbe una moltitudine; ed essendo onorati, hanno manco causa di travagliarla, come essendo male contenti potrebbono fare facilmente. Il male è che, trovandosi la autorità grande, favoriscono quelle cose che sono utili a loro e che opprimono il popolo, e non avendo termine la ambizione degli uomini per accrescere la condizione loro, si rompono insieme e fanno sedizione d&#x27;onde nasce o per via della tirannide o per altro modo la ruina delle città, e se sono ottimati per successione e non per elezione, di prudenti e buoni vengono presto le cose in mano di imprudenti e cattivi.</div>
         <div class="col en" lang="en">In the government of the optimates there is this good, that, being several, they cannot so readily make a tyranny as one alone, being the most qualified men of the city, they govern it with more intellect and with more prudence than a multitude would, and being honoured, they have less cause to trouble it, as, being discontented, they could readily do. The ill is that, finding themselves with great authority, they favour those things that are useful to them and that oppress the people, and, the ambition of men having no bound for increasing their condition, they break with one another and make sedition, whence arises, either by way of tyranny or in another way, the ruin of cities; and if they are optimates by succession and not by choice, from prudent and good men things soon come into the hands of imprudent and bad.</div>
         <details class="annot"><summary>Commentary · 1</summary>
@@ -410,7 +446,7 @@ a { color: inherit; }
         </details>
       </div>
       <div class="pair" id="FG-CONS.1.2.04">
-        <div class="gutter"><a class="uid" href="#FG-CONS.1.2.04">1.2.04</a></div>
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.2.04">1.2.04</a><span class="marks"><a href="#n-FG-CONS.1.2-13">3 notes</a><a href="#v-FG-CONS-I2-D006">2 variants</a></span></div>
         <div class="col it" lang="it">Bisogna attrarre di questa spezie di governo quel che si può di bene, e fuggire il male che gli ottimati non siano sempre le medesime linee e famiglie, ma che di tutto il corpo della città, cioè di tutti quegli che secondo le leggi sono abili a partecipare de&#x27; magistrati, si elegga uno senato che abbia a trattare le cose ardue, cioè che sia il fiore degli uomini prudenti, nobili o ricchi della città, sia perpetuo, o almanco durino per lunghissimo tempo, siano molti in numero, acciocché più facilmente siano tollerati dagli altri, e&#x27; quali aranno continua speranza che loro o case loro succedino in luogo di quelli che alla giornata mancassino, e anche perché, essendo il numero largo, si potrà sperare vi entri ciascuno che lo meriti, e se bene vi entrerà qualcuno non idoneo, è manco inconveniente che se ne fussi escluso qualche sufficiente, non abbino la potestà assoluta di tutte le cose publiche, acciocché non si arroghino troppa autorità, massime di creare magistrati, specialmente quelli che hanno mero e misto imperio, o che sono magistrati di utilità, non di fare legge sanza il consenso del populo, acciocché non possino o alterare la forma del governo, o ridurre gli ordini della città a beneficio de&#x27; potenti e diminuzione de&#x27; minori, ma appartenga a loro il consultare e deliberare di quelle cose a che è più necessaria la prudenza degli uomini, cioè le guerre, le paci, le pratiche co&#x27; principi, e tutte le cose sustanziali alla conservazione e augumento del dominio. Ebbono e&#x27; Lacedemonii gli ottimati in questo modo, cioè non di particulare sorte di uomini, ma di tutto il corpo della città, ebbongli e&#x27; Romani, ma con distinzione, perché appresso a loro e&#x27; patrizii da&#x27; principii erano gli ottimati, gli altri erano plebei, che fu causa di tutte le loro sedizioni.</div>
         <div class="col en" lang="en">It is required to draw from this species of government what good one can, and to flee the ill, that the optimates be not always the same lines and families, but that from the whole body of the city, that is, from all those who according to the laws are able to partake of the magistracies, a senate be chosen that is to treat the arduous things, that is, that it be the flower of the prudent, noble or rich men of the city, that it be perpetual, or at least that they last for a very long time, that they be many in number, so that they may be more readily tolerated by the others, who will have continual hope that they or their houses may succeed in place of those who from day to day should fail, and also because, the number being large, one will be able to hope that everyone who merits it may enter it, and although some unfit man will enter it, it is a lesser inconvenience than if some sufficient one were excluded from it, that they have not absolute power over all the public things, so that they do not arrogate too much authority to themselves, especially of creating magistrates, specially those that have mere and mixed <i lang="la">imperium</i>, or that are magistrates of utility, nor of making law without the consent of the people, so that they cannot either alter the form of the government, or bring the orders of the city to the benefit of the powerful and the diminution of the lesser, but that to them belong the consulting and deliberating of those things for which the prudence of men is most necessary, that is, wars, peaces, dealings with princes, and all the things substantial to the conservation and augmentation of the dominion. The Lacedaemonians had the optimates in this way, that is, not of a particular sort of men, but of the whole body of the city; the Romans had them, but with a distinction, for among them the patricians were from the beginnings the optimates, the others were plebeians, which was the cause of all their seditions.</div>
         <details class="annot"><summary>Commentary · 3</summary>
@@ -420,7 +456,7 @@ a { color: inherit; }
         </details>
       </div>
       <div class="pair" id="FG-CONS.1.2.05">
-        <div class="gutter"><a class="uid" href="#FG-CONS.1.2.05">1.2.05</a></div>
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.2.05">1.2.05</a><span class="marks"><a href="#n-FG-CONS.1.2-16">2 notes</a><a href="#v-FG-CONS-I2-D008">2 variants</a></span></div>
         <div class="col it" lang="it">Nel governo del populo è di buono, che mentre dura non vi è tirannide, possono più le leggi che gli uomini, e il fine di tutte le deliberazioni è riguardare al bene universale. Di male vi è, che il populo per la ignoranza sua non è capace di deliberare le cose importanti; e però presto periclita una republica che rimette le cose a consulta del populo; è instabile e desideroso sempre di cose nuove, e però facile a essere mosso e ingannato dagli uomini ambiziosi e sediziosi, batte volentieri e&#x27; cittadini qualificati, che gli necessita a cercare novità e turbazione. A fuggire queste cose, bisogna non rimettere al populo alcuna cosa importante, eccetto quelle che, se fussino in mano di altri, non sarebbe la libertà sicura come è la elezione de&#x27; magistrati, la creazione delle leggi, le quali non è bene venghino al populo, se non prima digestite e approvate da&#x27; magistrati supremi e dal senato, ma quelle ordinate da loro non abbino già vigore se non sono confermate dal populo, non lasciare le concioni libere, il che è grande instrumento delle sedizioni, ma che nel consiglio del populo non possa parlare se non chi gli è commesso da&#x27; magistrati, e sopra quella materia che gli è commessa. E ordinando così questo governo, s&#x27;arà la mistizia della quale si fa menzione nel Discorso</div>
         <div class="col en" lang="en">In the government of the people there is, of good, that while it lasts there is no tyranny, the laws can do more than men, and the end of all deliberations is to look to the universal good. Of ill there is that the people through its ignorance is not capable of deliberating the important things; and therefore a republic that remits things to the consultation of the people is soon in peril; it is unstable and ever desirous of new things, and therefore easy to be moved and deceived by ambitious and seditious men; it willingly strikes at the qualified citizens, which necessitates them to seek novelty and disturbance. To flee these things, it is required not to remit to the people any important thing, except those which, if they were in the hands of others, liberty would not be secure, as is the choice of magistrates, the creation of laws, which it is not well should come to the people unless first digested and approved by the supreme magistrates and by the senate, but those ordered by them should not indeed have force unless they are confirmed by the people, not to leave the harangues free, which is a great instrument of seditions, but that in the council of the people none may speak except him to whom it is committed by the magistrates, and on that matter which is committed to him. And ordering this government so, one will have the mixture of which mention is made in the Discourse</div>
         <details class="annot"><summary>Commentary · 1</summary>
@@ -429,7 +465,7 @@ a { color: inherit; }
       </div>
 
     <div class="apparatus">
-      <div>
+      <div class="app-source">
         <h3>Source</h3>
         <p>Established from Canestrini 1857, <i>Opere inedite</i> vol. 1, pp. 1–65 (<span class="sig">WIT-FG-CONS-1857-CANESTRINI</span>) — the <i>editio princeps</i>, which governs. Collated against Palmarocchi 1933 (<span class="sig">WIT-FG-CONS-1933-PALMAROCCHI</span>): page images and the Wikisource transcription consulted as collation evidence, not reproduced (LICENSE §5).</p>
 <p><span class="lem">del male E</span> → <span class="lem">del male. E</span> (FG-CONS.1.2.02). Sentence break with a capital; neither pass sees a point; the 1933 edition prints one. D67.</p>
@@ -444,94 +480,55 @@ a { color: inherit; }
 <p><span class="lem">e turbazione A</span> → <span class="lem">e turbazione. A</span> (FG-CONS.1.2.05). Sentence break with a capital; neither pass sees a point; the 1933 edition prints one. D67.</p>
 <p><span class="lem">è commessa E</span> → <span class="lem">è commessa. E</span> (FG-CONS.1.2.05). Sentence break with a capital; neither pass sees a point; the 1933 edition prints one. D67.</p>
       </div>
-      <div>
+      <div class="app-variants">
         <h3>Variants</h3>
-        <p><span class="lem">E non è dubio</span> — 1857. The 1933 witness reads <i lang="it">E&#x27; non è dubio</i>. Palmarocchi prints the impersonal pronoun <i lang="it">E&#x27;</i>, &quot;It is not doubtful&quot;. Canestrini&#x27;s bare <i lang="it">E</i> reads as the conjunction, so the reply opens as if continuing a conversation: &quot;And there is no doubt&quot;. The English follows Canestrini.</p>
-<p><span class="lem">delle tre spezie, principi, ottimati e popolo</span> — 1857. The 1933 witness reads <i lang="it">delle tre spezie, principe, ottimati e popolo</i>. Canestrini names the first species by its holders, princes; the 1933 edition by the office, prince.</p>
-<p><span class="lem">a che bisogna avvertire, o dove può consistere la fallacia</span> — 1857. The 1933 witness reads <i lang="it">a che bisogna avvertire, e dove può consistere la fallacia</i>. Canestrini&#x27;s <i lang="it">o</i> makes sense (the point to take heed of, or where the fallacy can lie), so it stands; Palmarocchi&#x27;s <i lang="it">e</i> joins the two clauses instead of offering the second as a restatement.</p>
-<p><span class="lem">sono utili a loro e che opprimono il popolo</span> — 1857. The 1933 witness reads <i lang="it">sono utile a loro e deprimono el populo</i>. In Canestrini the optimates favour things that oppress the people; in the 1933 edition they favour what is useful to themselves and put the people down. Two verbs, and a different construction.</p>
-<p><span class="lem">Bisogna attrarre di questa spezie di governo</span> — 1857. The 1933 witness reads <i lang="it">Bisogna, a trarre di questa spezie di governo</i>. Canestrini: it is needful to draw from this species what good one can, and to flee the ill. Palmarocchi: to draw what good one can, it is needful that the optimates not always be the same lines. Either way the rules that follow depend on <i lang="it">Bisogna</i>. The English follows Canestrini.</p>
-<p><span class="lem">nobili o ricchi</span> — 1857. The 1933 witness reads <i lang="it">nobili e ricchi</i>. Canestrini&#x27;s senate is drawn from men prudent, noble or rich; Palmarocchi&#x27;s from men prudent, noble and rich. The scan of Canestrini often loses the crossbar of e, so his <i lang="it">o</i> is less certain than most readings.</p>
-<p><span class="lem">ingannato dagli uomini ambiziosi</span> — 1857. The 1933 witness reads <i lang="it">ingannato agli uomini ambiziosi</i>. The same sense, deceived by; Palmarocchi&#x27;s <i lang="it">a</i> is the older construction.</p>
-<p><span class="lem">s&#x27;arà la mistizia</span> — 1857. The 1933 witness reads <i lang="it">s&#x27;ará la mistura</i>. Canestrini prints <i lang="it">s arà</i>, with a space where the apostrophe of <i lang="it">s&#x27;arà</i> (si avrà, one will have) fell out; the apostrophe is supplied. The noun differs: Canestrini&#x27;s <i lang="it">mistizia</i>, Palmarocchi&#x27;s <i lang="it">mistura</i>. Both are the mixture.</p>
-<p><span class="lem">la ruina delle città</span>. The 1857 witness reads <i lang="it">la ruina d[e/o]lle città (a damaged letter)</i>. The 1933 witness reads <i lang="it">la ruina delle città</i>. The two cold readers split: one read <i lang="it">della</i>, the other doubted <i lang="it">dello</i>. The scan drops the crossbar of e throughout this page (one reader read <i lang="it">lo cose</i> for <i lang="it">le cose</i>), so the letter is a barless e; <i lang="it">delle</i> agrees with <i lang="it">città</i> and is what the 1933 edition prints. A reading, not an emendation (D71).</p>
+        <p id="v-FG-CONS-I2-D001"><a class="loc" href="#FG-CONS.1.2.01" title="Back to the paragraph">¶ 01</a> <span class="lem">E non è dubio</span> — 1857. The 1933 witness reads <i lang="it">E&#x27; non è dubio</i>. Palmarocchi prints the impersonal pronoun <i lang="it">E&#x27;</i>, &quot;It is not doubtful&quot;. Canestrini&#x27;s bare <i lang="it">E</i> reads as the conjunction, so the reply opens as if continuing a conversation: &quot;And there is no doubt&quot;. The English follows Canestrini.</p>
+<p id="v-FG-CONS-I2-D002"><a class="loc" href="#FG-CONS.1.2.01" title="Back to the paragraph">¶ 01</a> <span class="lem">delle tre spezie, principi, ottimati e popolo</span> — 1857. The 1933 witness reads <i lang="it">delle tre spezie, principe, ottimati e popolo</i>. Canestrini names the first species by its holders, princes; the 1933 edition by the office, prince.</p>
+<p id="v-FG-CONS-I2-D003"><a class="loc" href="#FG-CONS.1.2.01" title="Back to the paragraph">¶ 01</a> <span class="lem">a che bisogna avvertire, o dove può consistere la fallacia</span> — 1857. The 1933 witness reads <i lang="it">a che bisogna avvertire, e dove può consistere la fallacia</i>. Canestrini&#x27;s <i lang="it">o</i> makes sense (the point to take heed of, or where the fallacy can lie), so it stands; Palmarocchi&#x27;s <i lang="it">e</i> joins the two clauses instead of offering the second as a restatement.</p>
+<p id="v-FG-CONS-I2-D004"><a class="loc" href="#FG-CONS.1.2.03" title="Back to the paragraph">¶ 03</a> <span class="lem">sono utili a loro e che opprimono il popolo</span> — 1857. The 1933 witness reads <i lang="it">sono utile a loro e deprimono el populo</i>. In Canestrini the optimates favour things that oppress the people; in the 1933 edition they favour what is useful to themselves and put the people down. Two verbs, and a different construction.</p>
+<p id="v-FG-CONS-I2-D006"><a class="loc" href="#FG-CONS.1.2.04" title="Back to the paragraph">¶ 04</a> <span class="lem">Bisogna attrarre di questa spezie di governo</span> — 1857. The 1933 witness reads <i lang="it">Bisogna, a trarre di questa spezie di governo</i>. Canestrini: it is needful to draw from this species what good one can, and to flee the ill. Palmarocchi: to draw what good one can, it is needful that the optimates not always be the same lines. Either way the rules that follow depend on <i lang="it">Bisogna</i>. The English follows Canestrini.</p>
+<p id="v-FG-CONS-I2-D007"><a class="loc" href="#FG-CONS.1.2.04" title="Back to the paragraph">¶ 04</a> <span class="lem">nobili o ricchi</span> — 1857. The 1933 witness reads <i lang="it">nobili e ricchi</i>. Canestrini&#x27;s senate is drawn from men prudent, noble or rich; Palmarocchi&#x27;s from men prudent, noble and rich. The scan of Canestrini often loses the crossbar of e, so his <i lang="it">o</i> is less certain than most readings.</p>
+<p id="v-FG-CONS-I2-D008"><a class="loc" href="#FG-CONS.1.2.05" title="Back to the paragraph">¶ 05</a> <span class="lem">ingannato dagli uomini ambiziosi</span> — 1857. The 1933 witness reads <i lang="it">ingannato agli uomini ambiziosi</i>. The same sense, deceived by; Palmarocchi&#x27;s <i lang="it">a</i> is the older construction.</p>
+<p id="v-FG-CONS-I2-D009"><a class="loc" href="#FG-CONS.1.2.05" title="Back to the paragraph">¶ 05</a> <span class="lem">s&#x27;arà la mistizia</span> — 1857. The 1933 witness reads <i lang="it">s&#x27;ará la mistura</i>. Canestrini prints <i lang="it">s arà</i>, with a space where the apostrophe of <i lang="it">s&#x27;arà</i> (si avrà, one will have) fell out; the apostrophe is supplied. The noun differs: Canestrini&#x27;s <i lang="it">mistizia</i>, Palmarocchi&#x27;s <i lang="it">mistura</i>. Both are the mixture.</p>
+<p id="v-FG-CONS-I2-D011"><a class="loc" href="#FG-CONS.1.2.03" title="Back to the paragraph">¶ 03</a> <span class="lem">la ruina delle città</span>. The 1857 witness reads <i lang="it">la ruina d[e/o]lle città (a damaged letter)</i>. The 1933 witness reads <i lang="it">la ruina delle città</i>. The two cold readers split: one read <i lang="it">della</i>, the other doubted <i lang="it">dello</i>. The scan drops the crossbar of e throughout this page (one reader read <i lang="it">lo cose</i> for <i lang="it">le cose</i>), so the letter is a barless e; <i lang="it">delle</i> agrees with <i lang="it">città</i> and is what the 1933 edition prints. A reading, not an emendation (D71).</p>
 <p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
       </div>
-      <div>
+      <div class="app-notes">
         <h3>Notes</h3>
-        <p><span class="lem">The two editions.</span> This edition prints the text of the first edition of the <i lang="it">Considerazioni</i>, Giuseppe Canestrini&#x27;s (Florence, 1857), and compares it with Roberto Palmarocchi&#x27;s of 1933. Where they differ, the variants list gives Palmarocchi&#x27;s reading.</p>
-<p><span class="lem">The paragraphs.</span> Canestrini prints this reply in five paragraphs, and they are kept: one on the mixture and royal government, one on how to limit the head, one each on the good and ill of the optimates and on how to build a senate, and one on the people.</p>
-<p><span class="lem"><i lang="it">E non è dubio</i>.</span> The reply opens on &quot;And&quot;, as if continuing a conversation: Canestrini&#x27;s <i lang="it">E</i>. Palmarocchi prints the pronoun <i lang="it">E&#x27;</i>, &quot;It is not doubtful&quot;, which is no conjunction.</p>
-<p><span class="lem"><i lang="it">discorrere</i>, <i lang="it">Volendo adunque</i>.</span> &quot;To discourse this article minutely&quot;: Machiavelli&#x27;s verb, from his turn to Rome (NM .03, <i lang="it">Volendo adunque discorrere</i>). The reply&#x27;s next paragraph opens on the same construction, <i lang="it">Volendo adunque ordinare</i>, and both are &quot;Wishing then to ...&quot;.</p>
-<p><span class="lem"><i lang="it">principi</i>, <i lang="it">ottimati</i>, <i lang="it">popolo</i>.</span> The three species named by their holders, princes, optimates and people, where Machiavelli names the states (principate, optimates, popular). &quot;Optimates&quot; is kept for both.</p>
-<p><span class="lem"><i lang="it">bene</i> and <i lang="it">male</i>.</span> &quot;Good&quot; and &quot;ill&quot;: the reply is built on them, the good and ill of each simple government, the good to draw and the ill to flee. &quot;Ill&quot; keeps <i lang="it">male</i> apart from <i lang="it">cattivo</i>, &quot;bad&quot;, and <i lang="it">reo</i>, &quot;evil&quot;. <i lang="it">Il buono</i> (.01) and <i lang="it">di buono</i> (.05) are also &quot;good&quot;: English cannot keep <i lang="it">buono</i> apart from <i lang="it">bene</i> as it keeps <i lang="it">cattivo</i> from <i lang="it">male</i>.</p>
-<p><span class="lem"><i lang="it">riputando</i>.</span> &quot;Deeming&quot; good or prudent: the verb of Guicciardini&#x27;s <i lang="it">reputo</i>, &quot;I deem&quot; (D259), used here of the voter who deems wrongly.</p>
-<p><span class="lem"><i lang="it">potestà</i>.</span> &quot;Power&quot;: the power an office carries, <i lang="it">potestà sciolta</i> (loosed), <i lang="it">assoluta</i>. <i lang="it">Potenza</i>, power as might, does not occur in the reply.</p>
-<p><span class="lem"><i lang="it">il potere uno solo deliberare e eseguire</i>.</span> &quot;One alone&#x27;s being able to deliberate and execute&quot;: <i lang="it">potere</i> here is the verb as a noun, a capacity, not the power of an office.</p>
-<p><span class="lem"><i lang="it">uno procuratore</i>.</span> The head as the public business&#x27;s agent: one who puts matters forward (<i lang="it">proponessi</i>), presses them (<i lang="it">sollecitassi</i>) and keeps them before the others&#x27; minds (<i lang="it">ricordassi</i>). Matters are &quot;reported&quot; to him (<i lang="it">referire</i>), the edition&#x27;s word for <i lang="it">riferire</i> in both authors.</p>
-<p><span class="lem">The Venetian doge.</span> Elected for life and bound by the councils. Canestrini&#x27;s note adds that the doge could undertake nothing without the Great Council, the <i lang="it">Pregadi</i> (the senate) and the <i lang="it">Collegio</i>.</p>
-<p><span class="lem"><i lang="it">Bisogna ... che</i>.</span> &quot;It is required&quot; (D260; see the note on <i lang="it">bisogni</i>, Machiavelli .02): <i lang="it">bisogna</i> governs the two infinitives and then every <i lang="it">che</i> with a subjunctive in the long .04 period (that the optimates be not always the same families, that a senate be chosen, that it be perpetual, that they be many, that they have not absolute power, that to them belong ...), and again in .05. Canestrini prints no mark after <i lang="it">male</i>, and a reader could take <i lang="it">che gli ottimati</i> as a relative on it; the English reads it as depending on <i lang="it">Bisogna</i>. Palmarocchi&#x27;s <i lang="it">Bisogna, a trarre ...</i> makes that explicit; see the variants. <i lang="it">È necessario</i> (.02) keeps &quot;it is necessary&quot;.</p>
-<p><span class="lem"><i lang="it">abili a partecipare de&#x27; magistrati</i>.</span> &quot;Able to partake of the magistracies&quot;: eligible for office. The English keeps &quot;partake&quot;, the verb of the mixed government in .02 and of Machiavelli&#x27;s mixed state (&quot;one that should partake of all&quot;). <i lang="it">Partecipi tutto il bene</i> in .02 is transitive but means to share in, not to impart, as <i lang="it">participare</i> does in I.12.</p>
-<p><span class="lem"><i lang="it">mero e misto imperio</i>.</span> &quot;Mere and mixed <i lang="la">imperium</i>&quot;: the jurists&#x27; <i lang="la">merum et mixtum imperium</i>, from Roman law (Ulpian, <i lang="it">Digest</i> 2.1.3), kept in Latin as a term of art, as English writers on Italian law keep it. <i lang="la">Merum</i>, &quot;pure&quot;, is the power of the sword, criminal jurisdiction to death or exile; <i lang="la">mixtum</i> is civil jurisdiction joined to a lesser power of coercion. Together, full criminal and civil jurisdiction: the senate is not to appoint those who judge and punish. Elsewhere <i lang="it">imperio</i> is &quot;empire&quot;, &quot;rule&quot; or &quot;command&quot; by sense (D124).</p>
-<p><span class="lem"><i lang="it">magistrati di utilità</i>.</span> &quot;Magistrates of utility&quot;: Canestrini&#x27;s note glosses them as the offices that apportioned taxes and administered the public revenues and debt.</p>
-<p><span class="lem"><i lang="it">concioni</i>.</span> &quot;Harangues&quot;: speeches to the assembled people, from the Latin <i lang="la">contio</i>. Guicciardini would have no one speak in the council unless commissioned, and only on the matter commissioned.</p>
-<p><span class="lem"><i lang="it">ridurre</i>.</span> &quot;Bring&quot;: to bring into a state, not to diminish, which is <i lang="it">diminuzione</i> in the same clause.</p>
-<p><span class="lem"><i lang="it">temporale</i>.</span> &quot;Temporary&quot;, of a head&#x27;s tenure; in I.12 the same word is &quot;temporal&quot;, of the Church&#x27;s rule.</p>
-<p><span class="lem"><i lang="it">s&#x27;arà la mistizia</i>.</span> &quot;One will have the mixture&quot;: <i lang="it">s&#x27;arà</i> is <i lang="it">si avrà</i>. Canestrini prints a space where the apostrophe fell out; the apostrophe is supplied. Palmarocchi reads <i lang="it">mistura</i> for <i lang="it">mistizia</i>, the same thing.</p>
-<p><span class="lem">The Romans.</span> Guicciardini&#x27;s Lacedaemonian senate was drawn from the whole city, Rome&#x27;s from the patricians alone, and that, he says, was the cause of all its seditions. Machiavelli&#x27;s next chapters argue that Rome&#x27;s perfection came through the same disunion.</p>
-<p><span class="lem">The close.</span> The reply ends without a full stop in Canestrini&#x27;s printing, and the English ends without one.</p>
+        <p id="n-FG-CONS.1.2-1"><span class="lem">The two editions.</span> This edition prints the text of the first edition of the <i lang="it">Considerazioni</i>, Giuseppe Canestrini&#x27;s (Florence, 1857), and compares it with Roberto Palmarocchi&#x27;s of 1933. Where they differ, the variants list gives Palmarocchi&#x27;s reading.</p>
+<p id="n-FG-CONS.1.2-2"><span class="lem">The paragraphs.</span> Canestrini prints this reply in five paragraphs, and they are kept: one on the mixture and royal government, one on how to limit the head, one each on the good and ill of the optimates and on how to build a senate, and one on the people.</p>
+<p id="n-FG-CONS.1.2-3"><a class="loc" href="#FG-CONS.1.2.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">E non è dubio</i>.</span> The reply opens on &quot;And&quot;, as if continuing a conversation: Canestrini&#x27;s <i lang="it">E</i>. Palmarocchi prints the pronoun <i lang="it">E&#x27;</i>, &quot;It is not doubtful&quot;, which is no conjunction.</p>
+<p id="n-FG-CONS.1.2-4"><a class="loc" href="#FG-CONS.1.2.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">discorrere</i>, <i lang="it">Volendo adunque</i>.</span> &quot;To discourse this article minutely&quot;: Machiavelli&#x27;s verb, from his turn to Rome (NM .03, <i lang="it">Volendo adunque discorrere</i>). The reply&#x27;s next paragraph opens on the same construction, <i lang="it">Volendo adunque ordinare</i>, and both are &quot;Wishing then to ...&quot;.</p>
+<p id="n-FG-CONS.1.2-5"><span class="lem"><i lang="it">principi</i>, <i lang="it">ottimati</i>, <i lang="it">popolo</i>.</span> The three species named by their holders, princes, optimates and people, where Machiavelli names the states (principate, optimates, popular). &quot;Optimates&quot; is kept for both.</p>
+<p id="n-FG-CONS.1.2-6"><span class="lem"><i lang="it">bene</i> and <i lang="it">male</i>.</span> &quot;Good&quot; and &quot;ill&quot;: the reply is built on them, the good and ill of each simple government, the good to draw and the ill to flee. &quot;Ill&quot; keeps <i lang="it">male</i> apart from <i lang="it">cattivo</i>, &quot;bad&quot;, and <i lang="it">reo</i>, &quot;evil&quot;. <i lang="it">Il buono</i> (.01) and <i lang="it">di buono</i> (.05) are also &quot;good&quot;: English cannot keep <i lang="it">buono</i> apart from <i lang="it">bene</i> as it keeps <i lang="it">cattivo</i> from <i lang="it">male</i>.</p>
+<p id="n-FG-CONS.1.2-7"><a class="loc" href="#FG-CONS.1.2.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">riputando</i>.</span> &quot;Deeming&quot; good or prudent: the verb of Guicciardini&#x27;s <i lang="it">reputo</i>, &quot;I deem&quot; (D259), used here of the voter who deems wrongly.</p>
+<p id="n-FG-CONS.1.2-8"><span class="lem"><i lang="it">potestà</i>.</span> &quot;Power&quot;: the power an office carries, <i lang="it">potestà sciolta</i> (loosed), <i lang="it">assoluta</i>. <i lang="it">Potenza</i>, power as might, does not occur in the reply.</p>
+<p id="n-FG-CONS.1.2-9"><a class="loc" href="#FG-CONS.1.2.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">il potere uno solo deliberare e eseguire</i>.</span> &quot;One alone&#x27;s being able to deliberate and execute&quot;: <i lang="it">potere</i> here is the verb as a noun, a capacity, not the power of an office.</p>
+<p id="n-FG-CONS.1.2-10"><a class="loc" href="#FG-CONS.1.2.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">uno procuratore</i>.</span> The head as the public business&#x27;s agent: one who puts matters forward (<i lang="it">proponessi</i>), presses them (<i lang="it">sollecitassi</i>) and keeps them before the others&#x27; minds (<i lang="it">ricordassi</i>). Matters are &quot;reported&quot; to him (<i lang="it">referire</i>), the edition&#x27;s word for <i lang="it">riferire</i> in both authors.</p>
+<p id="n-FG-CONS.1.2-11"><span class="lem">The Venetian doge.</span> Elected for life and bound by the councils. Canestrini&#x27;s note adds that the doge could undertake nothing without the Great Council, the <i lang="it">Pregadi</i> (the senate) and the <i lang="it">Collegio</i>.</p>
+<p id="n-FG-CONS.1.2-12"><span class="lem"><i lang="it">Bisogna ... che</i>.</span> &quot;It is required&quot; (D260; see the note on <i lang="it">bisogni</i>, Machiavelli .02): <i lang="it">bisogna</i> governs the two infinitives and then every <i lang="it">che</i> with a subjunctive in the long .04 period (that the optimates be not always the same families, that a senate be chosen, that it be perpetual, that they be many, that they have not absolute power, that to them belong ...), and again in .05. Canestrini prints no mark after <i lang="it">male</i>, and a reader could take <i lang="it">che gli ottimati</i> as a relative on it; the English reads it as depending on <i lang="it">Bisogna</i>. Palmarocchi&#x27;s <i lang="it">Bisogna, a trarre ...</i> makes that explicit; see the variants. <i lang="it">È necessario</i> (.02) keeps &quot;it is necessary&quot;.</p>
+<p id="n-FG-CONS.1.2-13"><a class="loc" href="#FG-CONS.1.2.04" title="Back to the paragraph">¶ 04</a> <span class="lem"><i lang="it">abili a partecipare de&#x27; magistrati</i>.</span> &quot;Able to partake of the magistracies&quot;: eligible for office. The English keeps &quot;partake&quot;, the verb of the mixed government in .02 and of Machiavelli&#x27;s mixed state (&quot;one that should partake of all&quot;). <i lang="it">Partecipi tutto il bene</i> in .02 is transitive but means to share in, not to impart, as <i lang="it">participare</i> does in I.12.</p>
+<p id="n-FG-CONS.1.2-14"><a class="loc" href="#FG-CONS.1.2.04" title="Back to the paragraph">¶ 04</a> <span class="lem"><i lang="it">mero e misto imperio</i>.</span> &quot;Mere and mixed <i lang="la">imperium</i>&quot;: the jurists&#x27; <i lang="la">merum et mixtum imperium</i>, from Roman law (Ulpian, <i lang="it">Digest</i> 2.1.3), kept in Latin as a term of art, as English writers on Italian law keep it. <i lang="la">Merum</i>, &quot;pure&quot;, is the power of the sword, criminal jurisdiction to death or exile; <i lang="la">mixtum</i> is civil jurisdiction joined to a lesser power of coercion. Together, full criminal and civil jurisdiction: the senate is not to appoint those who judge and punish. Elsewhere <i lang="it">imperio</i> is &quot;empire&quot;, &quot;rule&quot; or &quot;command&quot; by sense (D124).</p>
+<p id="n-FG-CONS.1.2-15"><a class="loc" href="#FG-CONS.1.2.04" title="Back to the paragraph">¶ 04</a> <span class="lem"><i lang="it">magistrati di utilità</i>.</span> &quot;Magistrates of utility&quot;: Canestrini&#x27;s note glosses them as the offices that apportioned taxes and administered the public revenues and debt.</p>
+<p id="n-FG-CONS.1.2-16"><a class="loc" href="#FG-CONS.1.2.05" title="Back to the paragraph">¶ 05</a> <span class="lem"><i lang="it">concioni</i>.</span> &quot;Harangues&quot;: speeches to the assembled people, from the Latin <i lang="la">contio</i>. Guicciardini would have no one speak in the council unless commissioned, and only on the matter commissioned.</p>
+<p id="n-FG-CONS.1.2-17"><span class="lem"><i lang="it">ridurre</i>.</span> &quot;Bring&quot;: to bring into a state, not to diminish, which is <i lang="it">diminuzione</i> in the same clause.</p>
+<p id="n-FG-CONS.1.2-18"><a class="loc" href="#FG-CONS.1.2.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">temporale</i>.</span> &quot;Temporary&quot;, of a head&#x27;s tenure; in I.12 the same word is &quot;temporal&quot;, of the Church&#x27;s rule.</p>
+<p id="n-FG-CONS.1.2-19"><a class="loc" href="#FG-CONS.1.2.05" title="Back to the paragraph">¶ 05</a> <span class="lem"><i lang="it">s&#x27;arà la mistizia</i>.</span> &quot;One will have the mixture&quot;: <i lang="it">s&#x27;arà</i> is <i lang="it">si avrà</i>. Canestrini prints a space where the apostrophe fell out; the apostrophe is supplied. Palmarocchi reads <i lang="it">mistura</i> for <i lang="it">mistizia</i>, the same thing.</p>
+<p id="n-FG-CONS.1.2-20"><span class="lem">The Romans.</span> Guicciardini&#x27;s Lacedaemonian senate was drawn from the whole city, Rome&#x27;s from the patricians alone, and that, he says, was the cause of all its seditions. Machiavelli&#x27;s next chapters argue that Rome&#x27;s perfection came through the same disunion.</p>
+<p id="n-FG-CONS.1.2-21"><span class="lem">The close.</span> The reply ends without a full stop in Canestrini&#x27;s printing, and the English ends without one.</p>
       </div>
     </div>
   </section>
 
+    <nav class="pairnav pairnav-foot"><a href="1.1.html">← Pair 1.1</a><a href="../index.html">All 39 pairs</a><a href="1.3.html">Pair 1.3 →</a></nav>
+
   <footer class="colophon">
-    <div class="row">
-      <div>
-        <h3>What this is</h3>
-        <p>A free, openly licensed, bilingual edition of Guicciardini's 39 <i>Considerazioni</i> and the
-          <i>Discorsi</i> chapters they answer — 78 text units, Italian and English facing, every reading
-          traceable to a named public-domain witness.</p>
-        <p>It is a reading edition with a transparent apparatus, not a text of record. It does not adjudicate
-          the critical text against Bausi 2001 or the manuscript tradition, and does not claim to.</p>
-      </div>
-      <div>
-        <h3>On the title</h3>
-        <p>Machiavelli had been dead two years when Guicciardini wrote; the <i>Discorsi</i> were unpublished,
-          and the <i>Considerazioni</i> stayed unprinted until 1857. Machiavelli never answers.</p>
-        <p>“Conversation” is a quotation, not a description. It invokes Machiavelli's letter to Francesco Vettori of
-          10 December 1513: at evening he puts on royal and curial garments (<i>panni reali e curiali</i>),
-          enters the ancient courts of ancient men (<i>le antiche corti degli antichi uomini</i>), asks them the
-          reason for their actions, and <i>quelli per loro umanità mi rispondono</i>, “they, for their humanity,
-          answer me”. Guicciardini does to Machiavelli what Machiavelli did to Livy — and is denied the reply
-          Machiavelli claimed. The letter is quoted from the 1813 <i>Opere</i>, vol. 8, p. 96, read twice from
-          the page image.</p>
-      </div>
-      <div>
-        <h3>Method</h3>
-        <p>No image-derived reading enters the text on a single reading. Each unit is transcribed twice,
-          independently, by readers who have not seen each other's work; disagreements are adjudicated against
-          the page images and recorded.</p>
-        <p>Existing English translations of the <i>Considerazioni</i> — Grayson (1965), Atkinson &amp; Sices
-          (2002) — are never used as translation inputs.</p>
-      </div>
-      <div>
-        <h3>Licence</h3>
-        <p>The established Italian text and the apparatus data are dedicated to the public domain under
-          <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>. They are Machiavelli's and
-          Guicciardini's sentences, and this edition adds no condition to them.</p>
-        <p>The English translation, the notes and the editorial apparatus are licensed
-          <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: reuse them anywhere, including
-          commercially, with attribution to David McDougall and this edition. The build tooling is MIT.</p>
-        <p>The witness scans are other people's digitisations, included as evidence under their own terms; no
-          grant is made over them, and no page image of Palmarocchi 1933 is reproduced here. Full terms,
-          layer by layer, are in the <span class="sig">LICENSE</span> file in the repository.</p>
-      </div>
-    </div>
 
     <div class="state">
-      <p><strong>Version 0.3 · 22 of 39 pairs published.</strong>
+      <p><strong>Version 0.3 · 33 of 39 pairs published.</strong>
         Published 29 September 2026; last revised 16 October 2026. This edition is versioned, not frozen. No open questions on this pair.</p>
     </div>
+    <p class="links"><a href="../about.html">About this edition</a><a href="../about.html#licence">Licence</a><a href="../about.html#method">Method</a><a href="https://github.com/davidmcdougall/conversation-with-machiavelli">Source and data on GitHub</a></p>
   </footer>
 
 </div>

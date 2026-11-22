@@ -4,12 +4,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="description" content="A free, bilingual, hyperlinked edition of Guicciardini&#x27;s Considerazioni and the Discorsi chapters they answer.">
-<style>*{box-sizing:border-box}body{margin:0;font:14px system-ui}img{max-width:100%}[hidden]{display:none!important}</style>
+<link rel="canonical" href="https://davidmcdougall.github.io/conversation-with-machiavelli/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='5' width='12' height='22' rx='1.5' fill='%233A5A6B'/%3E%3Crect x='17' y='5' width='12' height='22' rx='1.5' fill='%236E5A3C'/%3E%3C/svg%3E">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="A Conversation with Machiavelli">
+<meta property="og:title" content="A Conversation with Machiavelli">
+<meta property="og:description" content="A free, bilingual, hyperlinked edition of Guicciardini&#x27;s Considerazioni and the Discorsi chapters they answer.">
+<meta property="og:url" content="https://davidmcdougall.github.io/conversation-with-machiavelli/">
+<meta name="twitter:card" content="summary">
 <title>A Conversation with Machiavelli</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="fonts/fonts.css">
 <style>
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
 :root {
   --paper:      #EDEEEC;
   --paper-sunk: #E4E6E3;
@@ -64,8 +74,10 @@ body {
 .eyebrow {
   font-family: var(--sans); font-size: 11px; font-weight: 600;
   letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint);
-  margin: 0 0 18px;
+  margin: 0 0 18px; text-wrap: balance;
 }
+.eyebrow a { color: inherit; text-decoration: none; }
+.eyebrow a:hover, .eyebrow a:focus { color: var(--ink); }
 h1 {
   font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 5vw, 44px);
   line-height: 1.12; margin: 0 0 14px; text-wrap: balance; letter-spacing: -0.01em;
@@ -110,9 +122,11 @@ h1 .sub { display: block; font-style: italic; color: var(--ink-muted); font-size
 .work { padding-block: 52px 0; }
 .work-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
 .work-head .tag {
-  font-family: var(--mono); font-size: 11px; letter-spacing: .04em;
-  padding: 3px 7px; border-radius: 2px; color: var(--paper);
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .12em;
+  text-transform: uppercase; padding: 4px 8px 3px; border-radius: 2px; color: var(--paper);
+  align-self: center;
 }
+.work-head .cite { font-family: var(--sans); font-size: 13px; color: var(--ink-faint); }
 .work.nm .tag { background: var(--nm); }
 .work.fg .tag { background: var(--fg); }
 h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; letter-spacing: -0.005em; }
@@ -125,7 +139,7 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
   color: var(--ink-faint); margin-top: 7px;
 }
 .colheads {
-  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  display: grid; grid-template-columns: 66px 1fr 1fr; gap: 0 28px;
   margin-top: 30px; padding-bottom: 7px; border-bottom: 1px solid var(--rule);
   font-family: var(--sans); font-size: 10.5px; font-weight: 600;
   letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint);
@@ -133,7 +147,7 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
 
 /* ---- the facing pair ---- */
 .pair {
-  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  display: grid; grid-template-columns: 66px 1fr 1fr; gap: 0 28px;
   padding-block: 22px; border-bottom: 1px solid var(--rule-faint);
   scroll-margin-top: 20px;
 }
@@ -146,9 +160,13 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
 .annot summary::before { content: "+ "; }
 .annot[open] summary::before { content: "− "; }
 .annot p { margin: 8px 0 0; max-width: 72ch; }
+.annot .lem { font-weight: 600; color: var(--ink); }
 .annot .xref { color: inherit; text-decoration: underline; text-decoration-color: var(--rule);
   text-underline-offset: 2px; white-space: nowrap; }
 .gutter { padding-top: 4px; }
+.marks { display: block; margin-top: 10px; font-family: var(--sans); font-size: 11px; line-height: 1.45; }
+.marks a { display: block; color: var(--ink-faint); text-decoration: none; white-space: nowrap; }
+.marks a:hover, .marks a:focus { color: var(--ink); text-decoration: underline; }
 .uid {
   font-family: var(--mono); font-size: 10.5px; color: var(--ink-faint);
   text-decoration: none; letter-spacing: -0.02em;
@@ -156,7 +174,7 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
 .uid:hover, .uid:focus { color: var(--ink); text-decoration: underline; }
 .col { min-width: 0; }
 .col.it { hyphens: auto; }
-.col.en { }
+.col.en { hyphens: auto; }
 .supplied { color: var(--ink-muted); }
 
 /* ---- apparatus ---- */
@@ -164,8 +182,20 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
   margin-top: 34px; padding-top: 22px; border-top: 2px solid var(--rule);
   font-family: var(--sans); font-size: 13.5px; line-height: 1.58;
   color: var(--ink-muted);
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 26px 34px;
 }
+/* Source is a short paragraph; variants and notes run long, so they flow in
+   two balanced columns across the full width rather than in one narrow strip. */
+.apparatus > div + div { margin-top: 30px; }
+.app-source p { max-width: 78ch; }
+.app-variants, .app-notes { columns: 2 340px; column-gap: 40px; }
+.app-variants h3, .app-notes h3 { column-span: all; }
+.apparatus p { break-inside: avoid; scroll-margin-top: 20px; }
+.apparatus p:target { background: var(--paper-sunk); box-shadow: 0 0 0 6px var(--paper-sunk); }
+.apparatus .loc {
+  font-family: var(--mono); font-size: 11px; color: var(--ink-faint); text-decoration: none;
+  white-space: nowrap; margin-right: .2em;
+}
+.apparatus .loc:hover, .apparatus .loc:focus { color: var(--ink); text-decoration: underline; }
 .apparatus h3 {
   font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
   text-transform: uppercase; color: var(--ink-faint); margin: 0 0 9px;
@@ -176,8 +206,9 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
 .sig { font-family: var(--mono); font-size: 12px; color: var(--ink); }
 
 /* ---- colophon ---- */
+.pairnav-foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--rule); }
 .colophon {
-  margin-top: 60px; padding-block: 28px 60px; border-top: 1px solid var(--rule);
+  margin-top: 40px; padding-block: 0 60px;
   font-family: var(--sans); font-size: 13px; line-height: 1.6; color: var(--ink-muted);
 }
 .colophon .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 34px; }
@@ -188,8 +219,14 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
 .colophon p { margin: 0 0 8px; }
 .colophon ul { margin: 0; padding-left: 16px; }
 .colophon li { margin-bottom: 5px; }
+.colophon .links { margin: 18px 0 0; display: flex; gap: 6px 22px; flex-wrap: wrap; }
+.colophon .links a { color: var(--ink-muted); }
+.about { max-width: 68ch; padding-block: 44px 0; font-family: var(--serif); font-size: 17px; }
+.about h2 { margin: 38px 0 10px; }
+.about h2:first-child { margin-top: 0; }
+.about p { margin: 0 0 12px; }
 .state {
-  margin-top: 26px; padding: 14px 16px; background: var(--paper-sunk);
+  margin-top: 0; padding: 14px 16px; background: var(--paper-sunk);
   border-left: 2px solid var(--ink-faint); border-radius: 0 2px 2px 0;
   font-size: 12.5px;
 }
@@ -198,24 +235,26 @@ a { color: inherit; }
 :focus-visible { outline: 2px solid var(--nm); outline-offset: 2px; }
 
 /* ---- contents / index page ---- */
-.toc { margin-top: 30px; }
+.toc { margin-top: -22px; }
 .toc-row {
-  display: grid; grid-template-columns: 40px 1fr 1fr; gap: 0 20px;
+  display: grid; grid-template-columns: 40px minmax(0, 70ch) 1fr; gap: 0 20px;
   padding-block: 14px; border-bottom: 1px solid var(--rule-faint);
   font-family: var(--sans); align-items: baseline;
 }
 .toc-row .n { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
-.toc-row a { text-decoration: none; color: var(--ink); font-family: var(--serif); font-size: 16px; }
+.toc-row > div:nth-child(2) { line-height: 1.32; }
+.toc-row a { text-decoration: none; color: var(--ink); font-family: var(--serif); font-size: 17px; }
 .toc-row a:hover, .toc-row a:focus { text-decoration: underline; }
 .toc-row .unpublished { color: var(--ink-faint); font-style: italic; font-size: 14px; }
-.toc-row .ids { color: var(--ink-faint); font-size: 11.5px; font-family: var(--mono); }
+.toc-row .ids { color: var(--ink-faint); font-size: 12px; font-family: var(--sans); margin-top: 3px; }
 .toc-row .dated { color: var(--ink-faint); font-size: 12px; text-align: right; }
 
 @media (max-width: 760px) {
   body { font-size: 16.5px; }
   .colheads { display: none; }
   .pair { grid-template-columns: 1fr; gap: 0; padding-block: 20px; }
-  .gutter { padding-top: 0; margin-bottom: 8px; }
+  .gutter { padding-top: 0; margin-bottom: 8px; display: flex; gap: 14px; align-items: baseline; }
+  .marks { display: inline-flex; gap: 12px; margin-top: 0; }
   .annot { grid-column: 1; }
   .col.it { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px dotted var(--rule); }
   .col.it::before, .col.en::before {
@@ -228,9 +267,11 @@ a { color: inherit; }
   .pairing .arrow { border-inline: 0; border-block: 1px solid var(--rule); padding-block: 6px; }
   .toc-row { grid-template-columns: 1fr; gap: 4px; }
   .toc-row .dated { text-align: left; }
+  .app-variants, .app-notes { columns: 1; }
 }
 </style>
-
+</head>
+<body>
 <div class="wrap">
 
   <header class="masthead">
@@ -246,289 +287,248 @@ a { color: inherit; }
       <div class="toc-row">
         <div class="n">01</div>
         <div><a href="pairs/1.1.html">What have universally been the beginnings of any city whatever, and what was that of Rome</a>
-          <div class="ids">NM-DISC.1.1 · FG-CONS.1.1</div></div>
+          <div class="ids"><i>Discorsi</i> I.1 · <i>Considerazioni</i> I.1</div></div>
         <div class="dated">17 October 2026</div>
       </div>
       <div class="toc-row">
         <div class="n">02</div>
         <div><a href="pairs/1.2.html">Of how many species republics are, and of which was the Roman republic</a>
-          <div class="ids">NM-DISC.1.2 · FG-CONS.1.2</div></div>
+          <div class="ids"><i>Discorsi</i> I.2 · <i>Considerazioni</i> I.2</div></div>
         <div class="dated">16 October 2026</div>
       </div>
       <div class="toc-row">
         <div class="n">03</div>
         <div><a href="pairs/1.3.html">What accidents made the tribunes of the plebs be created in Rome, which made the republic more perfect</a>
-          <div class="ids">NM-DISC.1.3 · FG-CONS.1.3</div></div>
+          <div class="ids"><i>Discorsi</i> I.3 · <i>Considerazioni</i> I.3</div></div>
         <div class="dated">16 October 2026</div>
       </div>
       <div class="toc-row">
         <div class="n">04</div>
         <div><a href="pairs/1.4.html">That the disunion of the plebs and of the Roman senate made that republic free and powerful</a>
-          <div class="ids">NM-DISC.1.4 · FG-CONS.1.4</div></div>
+          <div class="ids"><i>Discorsi</i> I.4 · <i>Considerazioni</i> I.4</div></div>
         <div class="dated">16 October 2026</div>
       </div>
       <div class="toc-row">
         <div class="n">05</div>
         <div><a href="pairs/1.5.html">Where the guard of liberty is more securely set, whether in the people or in the great; and which have greater cause to make tumult, whoever wishes to acquire or whoever wishes to maintain</a>
-          <div class="ids">NM-DISC.1.5 · FG-CONS.1.5</div></div>
+          <div class="ids"><i>Discorsi</i> I.5 · <i>Considerazioni</i> I.5</div></div>
         <div class="dated">16 October 2026</div>
       </div>
       <div class="toc-row">
         <div class="n">06</div>
         <div><a href="pairs/1.6.html">Whether in Rome a state could be ordered that should take away the enmities between the people and the senate</a>
-          <div class="ids">NM-DISC.1.6 · FG-CONS.1.6</div></div>
+          <div class="ids"><i>Discorsi</i> I.6 · <i>Considerazioni</i> I.6</div></div>
         <div class="dated">16 October 2026</div>
       </div>
       <div class="toc-row">
         <div class="n">07</div>
         <div><a href="pairs/1.7.html">How necessary in a republic accusations are for maintaining liberty</a>
-          <div class="ids">NM-DISC.1.7 · FG-CONS.1.7</div></div>
+          <div class="ids"><i>Discorsi</i> I.7 · <i>Considerazioni</i> I.7</div></div>
         <div class="dated">16 October 2026</div>
       </div>
       <div class="toc-row">
         <div class="n">08</div>
         <div><a href="pairs/1.8.html">As much as accusations are useful to republics, so much are calumnies pernicious</a>
-          <div class="ids">NM-DISC.1.8 · FG-CONS.1.8</div></div>
+          <div class="ids"><i>Discorsi</i> I.8 · <i>Considerazioni</i> I.8</div></div>
         <div class="dated">16 October 2026</div>
       </div>
       <div class="toc-row">
         <div class="n">09</div>
         <div><a href="pairs/1.9.html">How it is necessary to be alone in wishing to order a republic anew, or to reform it wholly outside its ancient orders</a>
-          <div class="ids">NM-DISC.1.9 · FG-CONS.1.9</div></div>
+          <div class="ids"><i>Discorsi</i> I.9 · <i>Considerazioni</i> I.9</div></div>
         <div class="dated">16 October 2026</div>
       </div>
       <div class="toc-row">
         <div class="n">10</div>
         <div><a href="pairs/1.10.html">How much the founders of a republic or of a kingdom are laudable, so much those of a tyranny are vituperable</a>
-          <div class="ids">NM-DISC.1.10 · FG-CONS.1.10</div></div>
+          <div class="ids"><i>Discorsi</i> I.10 · <i>Considerazioni</i> I.10</div></div>
         <div class="dated">16 October 2026</div>
       </div>
       <div class="toc-row">
         <div class="n">11</div>
         <div><a href="pairs/1.11.html">Of the religion of the Romans</a>
-          <div class="ids">NM-DISC.1.11 · FG-CONS.1.11</div></div>
+          <div class="ids"><i>Discorsi</i> I.11 · <i>Considerazioni</i> I.11</div></div>
         <div class="dated">16 October 2026</div>
       </div>
       <div class="toc-row">
         <div class="n">12</div>
         <div><a href="pairs/1.12.html">Of how much importance it is to take account of religion, and how Italy, for having been wanting in it through the Roman Church, is ruined</a>
-          <div class="ids">NM-DISC.1.12 · FG-CONS.1.12</div></div>
+          <div class="ids"><i>Discorsi</i> I.12 · <i>Considerazioni</i> I.12</div></div>
         <div class="dated">16 October 2026</div>
       </div>
       <div class="toc-row">
         <div class="n">13</div>
         <div><a href="pairs/1.14.html">The Romans interpreted the auspices according to necessity, and with prudence made a show of observing religion when, forced, they did not observe it, and if anyone rashly despised it, they punished him</a>
-          <div class="ids">NM-DISC.1.14 · FG-CONS.1.14</div></div>
+          <div class="ids"><i>Discorsi</i> I.14 · <i>Considerazioni</i> I.14</div></div>
         <div class="dated">16 October 2026</div>
       </div>
       <div class="toc-row">
         <div class="n">14</div>
         <div><a href="pairs/1.16.html">A people used to living under a prince, if by some accident it becomes free, maintains liberty with difficulty</a>
-          <div class="ids">NM-DISC.1.16 · FG-CONS.1.16</div></div>
+          <div class="ids"><i>Discorsi</i> I.16 · <i>Considerazioni</i> I.16</div></div>
         <div class="dated">16 October 2026</div>
       </div>
       <div class="toc-row">
         <div class="n">15</div>
         <div><a href="pairs/1.23.html">That one must not put in danger all the fortune, and not all the forces; and for this often the guarding of the passes is damaging</a>
-          <div class="ids">NM-DISC.1.23 · FG-CONS.1.23</div></div>
+          <div class="ids"><i>Discorsi</i> I.23 · <i>Considerazioni</i> I.23</div></div>
         <div class="dated">16 October 2026</div>
       </div>
       <div class="toc-row">
         <div class="n">16</div>
         <div><a href="pairs/1.24.html">Well-ordered republics constitute rewards and penalties for their citizens, nor do they ever compensate the one with the other</a>
-          <div class="ids">NM-DISC.1.24 · FG-CONS.1.24</div></div>
+          <div class="ids"><i>Discorsi</i> I.24 · <i>Considerazioni</i> I.24</div></div>
         <div class="dated">17 October 2026</div>
       </div>
       <div class="toc-row">
         <div class="n">17</div>
         <div><a href="pairs/1.25.html">Whoever wishes to reform an ancient state in a free city, let him retain at least the shadow of the ancient ways</a>
-          <div class="ids">NM-DISC.1.25 · FG-CONS.1.25</div></div>
+          <div class="ids"><i>Discorsi</i> I.25 · <i>Considerazioni</i> I.25</div></div>
         <div class="dated">17 October 2026</div>
       </div>
       <div class="toc-row">
         <div class="n">18</div>
         <div><a href="pairs/1.26.html">A new prince, in a city or province taken by him, must make every thing new</a>
-          <div class="ids">NM-DISC.1.26 · FG-CONS.1.26</div></div>
+          <div class="ids"><i>Discorsi</i> I.26 · <i>Considerazioni</i> I.26</div></div>
         <div class="dated">17 October 2026</div>
       </div>
       <div class="toc-row">
         <div class="n">19</div>
         <div><a href="pairs/1.28.html">For what cause the Romans were less ungrateful to their citizens than the Athenians</a>
-          <div class="ids">NM-DISC.1.28 · FG-CONS.1.28</div></div>
+          <div class="ids"><i>Discorsi</i> I.28 · <i>Considerazioni</i> I.28</div></div>
         <div class="dated">17 October 2026</div>
       </div>
       <div class="toc-row">
         <div class="n">20</div>
         <div><a href="pairs/1.29.html">Which is more ungrateful, either a people or a prince</a>
-          <div class="ids">NM-DISC.1.29 · FG-CONS.1.29</div></div>
+          <div class="ids"><i>Discorsi</i> I.29 · <i>Considerazioni</i> I.29</div></div>
         <div class="dated">20 October 2026</div>
       </div>
       <div class="toc-row">
         <div class="n">21</div>
         <div><a href="pairs/1.30.html">Which ways a prince or a republic must use to flee this vice of ingratitude, and which that captain or that citizen [must use] so as not to be oppressed by it</a>
-          <div class="ids">NM-DISC.1.30 · FG-CONS.1.30</div></div>
+          <div class="ids"><i>Discorsi</i> I.30 · <i>Considerazioni</i> I.30</div></div>
         <div class="dated">20 October 2026</div>
       </div>
       <div class="toc-row">
         <div class="n">22</div>
         <div><a href="pairs/1.32.html">A republic or a prince must not defer benefiting men until their necessities</a>
-          <div class="ids">NM-DISC.1.32 · FG-CONS.1.32</div></div>
+          <div class="ids"><i>Discorsi</i> I.32 · <i>Considerazioni</i> I.32</div></div>
         <div class="dated">20 October 2026</div>
       </div>
       <div class="toc-row">
         <div class="n">23</div>
         <div><a href="pairs/1.39.html">In different peoples the same accidents are often seen</a>
-          <div class="ids">NM-DISC.1.39 · FG-CONS.1.39</div></div>
+          <div class="ids"><i>Discorsi</i> I.39 · <i>Considerazioni</i> I.39</div></div>
         <div class="dated">20 October 2026</div>
       </div>
       <div class="toc-row">
         <div class="n">24</div>
         <div><a href="pairs/1.40.html">The creation of the decemvirate in Rome, and what is to be noted in it; where there is considered, among many other things, how one can save, by a like accident, or oppress a republic</a>
-          <div class="ids">NM-DISC.1.40 · FG-CONS.1.40</div></div>
+          <div class="ids"><i>Discorsi</i> I.40 · <i>Considerazioni</i> I.40</div></div>
         <div class="dated">21 October 2026</div>
       </div>
       <div class="toc-row">
         <div class="n">25</div>
         <div><a href="pairs/1.47.html">Men, even though they deceive themselves in generals, in particulars do not deceive themselves</a>
-          <div class="ids">NM-DISC.1.47 · FG-CONS.1.47</div></div>
+          <div class="ids"><i>Discorsi</i> I.47 · <i>Considerazioni</i> I.47</div></div>
         <div class="dated">22 October 2026</div>
       </div>
       <div class="toc-row">
         <div class="n">26</div>
         <div><a href="pairs/1.49.html">If those cities that have had a free beginning, like Rome, have difficulty in finding laws that may maintain them, those that have it immediately servile have almost an impossibility of it</a>
-          <div class="ids">NM-DISC.1.49 · FG-CONS.1.49</div></div>
+          <div class="ids"><i>Discorsi</i> I.49 · <i>Considerazioni</i> I.49</div></div>
         <div class="dated">3 November 2026</div>
       </div>
       <div class="toc-row">
         <div class="n">27</div>
         <div><a href="pairs/1.58.html">The multitude is wiser and more constant than a prince</a>
-          <div class="ids">NM-DISC.1.58 · FG-CONS.1.58</div></div>
+          <div class="ids"><i>Discorsi</i> I.58 · <i>Considerazioni</i> I.58</div></div>
         <div class="dated">13 November 2026</div>
       </div>
       <div class="toc-row">
         <div class="n">28</div>
         <div><a href="pairs/1.60.html">How the consulship and any other magistracy in Rome was given without respect of age</a>
-          <div class="ids">NM-DISC.1.60 · FG-CONS.1.60</div></div>
+          <div class="ids"><i>Discorsi</i> I.60 · <i>Considerazioni</i> I.60</div></div>
         <div class="dated">20 November 2026</div>
       </div>
       <div class="toc-row">
         <div class="n">29</div>
         <div><a href="pairs/2.proem.html">Book Two</a>
-          <div class="ids">NM-DISC.2.proem · FG-CONS.2.proem</div></div>
+          <div class="ids"><i>Discorsi</i> II, proem · <i>Considerazioni</i> II, proem</div></div>
         <div class="dated">20 November 2026</div>
       </div>
       <div class="toc-row">
         <div class="n">30</div>
         <div><a href="pairs/2.10.html">Money is not the sinew of war, as is the common opinion</a>
-          <div class="ids">NM-DISC.2.10 · FG-CONS.2.10</div></div>
+          <div class="ids"><i>Discorsi</i> II.10 · <i>Considerazioni</i> II.10</div></div>
         <div class="dated">20 November 2026</div>
       </div>
       <div class="toc-row">
         <div class="n">31</div>
         <div><a href="pairs/2.12.html">Whether it is better, fearing to be assailed, to bring, or to await, war</a>
-          <div class="ids">NM-DISC.2.12 · FG-CONS.2.12</div></div>
+          <div class="ids"><i>Discorsi</i> II.12 · <i>Considerazioni</i> II.12</div></div>
         <div class="dated">20 November 2026</div>
       </div>
       <div class="toc-row">
         <div class="n">32</div>
         <div><a href="pairs/2.13.html">That one comes from low to great fortune more with fraud than with force</a>
-          <div class="ids">NM-DISC.2.13 · FG-CONS.2.13</div></div>
+          <div class="ids"><i>Discorsi</i> II.13 · <i>Considerazioni</i> II.13</div></div>
         <div class="dated">21 November 2026</div>
       </div>
       <div class="toc-row">
         <div class="n">33</div>
         <div><a href="pairs/2.14.html">Men deceive themselves many times, believing with humility to vanquish pride</a>
-          <div class="ids">NM-DISC.2.14 · FG-CONS.2.14</div></div>
+          <div class="ids"><i>Discorsi</i> II.14 · <i>Considerazioni</i> II.14</div></div>
         <div class="dated">21 November 2026</div>
       </div>
       <div class="toc-row">
         <div class="n">34</div>
         <div><span class="unpublished">Not yet published</span>
-          <div class="ids">NM-DISC.2.15 · FG-CONS.2.15</div></div>
+          <div class="ids"><i>Discorsi</i> II.15 · <i>Considerazioni</i> II.15</div></div>
         <div></div>
       </div>
       <div class="toc-row">
         <div class="n">35</div>
         <div><span class="unpublished">Not yet published</span>
-          <div class="ids">NM-DISC.2.19 · FG-CONS.2.19</div></div>
+          <div class="ids"><i>Discorsi</i> II.19 · <i>Considerazioni</i> II.19</div></div>
         <div></div>
       </div>
       <div class="toc-row">
         <div class="n">36</div>
         <div><span class="unpublished">Not yet published</span>
-          <div class="ids">NM-DISC.2.24 · FG-CONS.2.24</div></div>
+          <div class="ids"><i>Discorsi</i> II.24 · <i>Considerazioni</i> II.24</div></div>
         <div></div>
       </div>
       <div class="toc-row">
         <div class="n">37</div>
         <div><span class="unpublished">Not yet published</span>
-          <div class="ids">NM-DISC.3.17 · FG-CONS.3.17</div></div>
+          <div class="ids"><i>Discorsi</i> III.17 · <i>Considerazioni</i> III.17</div></div>
         <div></div>
       </div>
       <div class="toc-row">
         <div class="n">38</div>
         <div><span class="unpublished">Not yet published</span>
-          <div class="ids">NM-DISC.3.19 · FG-CONS.3.19</div></div>
+          <div class="ids"><i>Discorsi</i> III.19 · <i>Considerazioni</i> III.19</div></div>
         <div></div>
       </div>
       <div class="toc-row">
         <div class="n">39</div>
         <div><span class="unpublished">Not yet published</span>
-          <div class="ids">NM-DISC.3.24 · FG-CONS.3.24</div></div>
+          <div class="ids"><i>Discorsi</i> III.24 · <i>Considerazioni</i> III.24</div></div>
         <div></div>
       </div>
     </div>
   </section>
 
   <footer class="colophon">
-    <div class="row">
-      <div>
-        <h3>What this is</h3>
-        <p>A free, openly licensed, bilingual edition of Guicciardini's 39 <i>Considerazioni</i> and the
-          <i>Discorsi</i> chapters they answer — 78 text units, Italian and English facing, every reading
-          traceable to a named public-domain witness.</p>
-        <p>It is a reading edition with a transparent apparatus, not a text of record. It does not adjudicate
-          the critical text against Bausi 2001 or the manuscript tradition, and does not claim to.</p>
-      </div>
-      <div>
-        <h3>On the title</h3>
-        <p>Machiavelli had been dead two years when Guicciardini wrote; the <i>Discorsi</i> were unpublished,
-          and the <i>Considerazioni</i> stayed unprinted until 1857. Machiavelli never answers.</p>
-        <p>“Conversation” is a quotation, not a description. It invokes Machiavelli's letter to Francesco Vettori of
-          10 December 1513: at evening he puts on royal and curial garments (<i>panni reali e curiali</i>),
-          enters the ancient courts of ancient men (<i>le antiche corti degli antichi uomini</i>), asks them the
-          reason for their actions, and <i>quelli per loro umanità mi rispondono</i>, “they, for their humanity,
-          answer me”. Guicciardini does to Machiavelli what Machiavelli did to Livy — and is denied the reply
-          Machiavelli claimed. The letter is quoted from the 1813 <i>Opere</i>, vol. 8, p. 96, read twice from
-          the page image.</p>
-      </div>
-      <div>
-        <h3>Method</h3>
-        <p>No image-derived reading enters the text on a single reading. Each unit is transcribed twice,
-          independently, by readers who have not seen each other's work; disagreements are adjudicated against
-          the page images and recorded.</p>
-        <p>Existing English translations of the <i>Considerazioni</i> — Grayson (1965), Atkinson &amp; Sices
-          (2002) — are never used as translation inputs.</p>
-      </div>
-      <div>
-        <h3>Licence</h3>
-        <p>The established Italian text and the apparatus data are dedicated to the public domain under
-          <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>. They are Machiavelli's and
-          Guicciardini's sentences, and this edition adds no condition to them.</p>
-        <p>The English translation, the notes and the editorial apparatus are licensed
-          <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: reuse them anywhere, including
-          commercially, with attribution to David McDougall and this edition. The build tooling is MIT.</p>
-        <p>The witness scans are other people's digitisations, included as evidence under their own terms; no
-          grant is made over them, and no page image of Palmarocchi 1933 is reproduced here. Full terms,
-          layer by layer, are in the <span class="sig">LICENSE</span> file in the repository.</p>
-      </div>
-    </div>
 
     <div class="state">
       <p><strong>Version 0.3 · 33 of 39 pairs published.</strong>
         Last updated 21 November 2026. Each pair is dated on its page and above, by its last revision.
         This edition is versioned, not frozen. Publish, be wrong, fix it, publish again, and date every page.</p>
     </div>
+    <p class="links"><a href="about.html">About this edition</a><a href="about.html#licence">Licence</a><a href="about.html#method">Method</a><a href="https://github.com/davidmcdougall/conversation-with-machiavelli">Source and data on GitHub</a></p>
   </footer>
 
 </div>

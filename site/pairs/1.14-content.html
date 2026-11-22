@@ -1,8 +1,11 @@
 <title>A Conversation with Machiavelli — The Romans interpreted the auspices according to necessity, and with prudence made a show of observing religion when, forced, they did not observe it, and if anyone rashly despised it, they punished him</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../fonts/fonts.css">
 <style>
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
 :root {
   --paper:      #EDEEEC;
   --paper-sunk: #E4E6E3;
@@ -57,8 +60,10 @@ body {
 .eyebrow {
   font-family: var(--sans); font-size: 11px; font-weight: 600;
   letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint);
-  margin: 0 0 18px;
+  margin: 0 0 18px; text-wrap: balance;
 }
+.eyebrow a { color: inherit; text-decoration: none; }
+.eyebrow a:hover, .eyebrow a:focus { color: var(--ink); }
 h1 {
   font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 5vw, 44px);
   line-height: 1.12; margin: 0 0 14px; text-wrap: balance; letter-spacing: -0.01em;
@@ -103,9 +108,11 @@ h1 .sub { display: block; font-style: italic; color: var(--ink-muted); font-size
 .work { padding-block: 52px 0; }
 .work-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
 .work-head .tag {
-  font-family: var(--mono); font-size: 11px; letter-spacing: .04em;
-  padding: 3px 7px; border-radius: 2px; color: var(--paper);
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .12em;
+  text-transform: uppercase; padding: 4px 8px 3px; border-radius: 2px; color: var(--paper);
+  align-self: center;
 }
+.work-head .cite { font-family: var(--sans); font-size: 13px; color: var(--ink-faint); }
 .work.nm .tag { background: var(--nm); }
 .work.fg .tag { background: var(--fg); }
 h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; letter-spacing: -0.005em; }
@@ -118,7 +125,7 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
   color: var(--ink-faint); margin-top: 7px;
 }
 .colheads {
-  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  display: grid; grid-template-columns: 66px 1fr 1fr; gap: 0 28px;
   margin-top: 30px; padding-bottom: 7px; border-bottom: 1px solid var(--rule);
   font-family: var(--sans); font-size: 10.5px; font-weight: 600;
   letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint);
@@ -126,7 +133,7 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
 
 /* ---- the facing pair ---- */
 .pair {
-  display: grid; grid-template-columns: 54px 1fr 1fr; gap: 0 30px;
+  display: grid; grid-template-columns: 66px 1fr 1fr; gap: 0 28px;
   padding-block: 22px; border-bottom: 1px solid var(--rule-faint);
   scroll-margin-top: 20px;
 }
@@ -139,9 +146,13 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
 .annot summary::before { content: "+ "; }
 .annot[open] summary::before { content: "− "; }
 .annot p { margin: 8px 0 0; max-width: 72ch; }
+.annot .lem { font-weight: 600; color: var(--ink); }
 .annot .xref { color: inherit; text-decoration: underline; text-decoration-color: var(--rule);
   text-underline-offset: 2px; white-space: nowrap; }
 .gutter { padding-top: 4px; }
+.marks { display: block; margin-top: 10px; font-family: var(--sans); font-size: 11px; line-height: 1.45; }
+.marks a { display: block; color: var(--ink-faint); text-decoration: none; white-space: nowrap; }
+.marks a:hover, .marks a:focus { color: var(--ink); text-decoration: underline; }
 .uid {
   font-family: var(--mono); font-size: 10.5px; color: var(--ink-faint);
   text-decoration: none; letter-spacing: -0.02em;
@@ -149,7 +160,7 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
 .uid:hover, .uid:focus { color: var(--ink); text-decoration: underline; }
 .col { min-width: 0; }
 .col.it { hyphens: auto; }
-.col.en { }
+.col.en { hyphens: auto; }
 .supplied { color: var(--ink-muted); }
 
 /* ---- apparatus ---- */
@@ -157,8 +168,20 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
   margin-top: 34px; padding-top: 22px; border-top: 2px solid var(--rule);
   font-family: var(--sans); font-size: 13.5px; line-height: 1.58;
   color: var(--ink-muted);
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 26px 34px;
 }
+/* Source is a short paragraph; variants and notes run long, so they flow in
+   two balanced columns across the full width rather than in one narrow strip. */
+.apparatus > div + div { margin-top: 30px; }
+.app-source p { max-width: 78ch; }
+.app-variants, .app-notes { columns: 2 340px; column-gap: 40px; }
+.app-variants h3, .app-notes h3 { column-span: all; }
+.apparatus p { break-inside: avoid; scroll-margin-top: 20px; }
+.apparatus p:target { background: var(--paper-sunk); box-shadow: 0 0 0 6px var(--paper-sunk); }
+.apparatus .loc {
+  font-family: var(--mono); font-size: 11px; color: var(--ink-faint); text-decoration: none;
+  white-space: nowrap; margin-right: .2em;
+}
+.apparatus .loc:hover, .apparatus .loc:focus { color: var(--ink); text-decoration: underline; }
 .apparatus h3 {
   font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
   text-transform: uppercase; color: var(--ink-faint); margin: 0 0 9px;
@@ -169,8 +192,9 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
 .sig { font-family: var(--mono); font-size: 12px; color: var(--ink); }
 
 /* ---- colophon ---- */
+.pairnav-foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--rule); }
 .colophon {
-  margin-top: 60px; padding-block: 28px 60px; border-top: 1px solid var(--rule);
+  margin-top: 40px; padding-block: 0 60px;
   font-family: var(--sans); font-size: 13px; line-height: 1.6; color: var(--ink-muted);
 }
 .colophon .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 34px; }
@@ -181,8 +205,14 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
 .colophon p { margin: 0 0 8px; }
 .colophon ul { margin: 0; padding-left: 16px; }
 .colophon li { margin-bottom: 5px; }
+.colophon .links { margin: 18px 0 0; display: flex; gap: 6px 22px; flex-wrap: wrap; }
+.colophon .links a { color: var(--ink-muted); }
+.about { max-width: 68ch; padding-block: 44px 0; font-family: var(--serif); font-size: 17px; }
+.about h2 { margin: 38px 0 10px; }
+.about h2:first-child { margin-top: 0; }
+.about p { margin: 0 0 12px; }
 .state {
-  margin-top: 26px; padding: 14px 16px; background: var(--paper-sunk);
+  margin-top: 0; padding: 14px 16px; background: var(--paper-sunk);
   border-left: 2px solid var(--ink-faint); border-radius: 0 2px 2px 0;
   font-size: 12.5px;
 }
@@ -191,24 +221,26 @@ a { color: inherit; }
 :focus-visible { outline: 2px solid var(--nm); outline-offset: 2px; }
 
 /* ---- contents / index page ---- */
-.toc { margin-top: 30px; }
+.toc { margin-top: -22px; }
 .toc-row {
-  display: grid; grid-template-columns: 40px 1fr 1fr; gap: 0 20px;
+  display: grid; grid-template-columns: 40px minmax(0, 70ch) 1fr; gap: 0 20px;
   padding-block: 14px; border-bottom: 1px solid var(--rule-faint);
   font-family: var(--sans); align-items: baseline;
 }
 .toc-row .n { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
-.toc-row a { text-decoration: none; color: var(--ink); font-family: var(--serif); font-size: 16px; }
+.toc-row > div:nth-child(2) { line-height: 1.32; }
+.toc-row a { text-decoration: none; color: var(--ink); font-family: var(--serif); font-size: 17px; }
 .toc-row a:hover, .toc-row a:focus { text-decoration: underline; }
 .toc-row .unpublished { color: var(--ink-faint); font-style: italic; font-size: 14px; }
-.toc-row .ids { color: var(--ink-faint); font-size: 11.5px; font-family: var(--mono); }
+.toc-row .ids { color: var(--ink-faint); font-size: 12px; font-family: var(--sans); margin-top: 3px; }
 .toc-row .dated { color: var(--ink-faint); font-size: 12px; text-align: right; }
 
 @media (max-width: 760px) {
   body { font-size: 16.5px; }
   .colheads { display: none; }
   .pair { grid-template-columns: 1fr; gap: 0; padding-block: 20px; }
-  .gutter { padding-top: 0; margin-bottom: 8px; }
+  .gutter { padding-top: 0; margin-bottom: 8px; display: flex; gap: 14px; align-items: baseline; }
+  .marks { display: inline-flex; gap: 12px; margin-top: 0; }
   .annot { grid-column: 1; }
   .col.it { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px dotted var(--rule); }
   .col.it::before, .col.en::before {
@@ -221,13 +253,14 @@ a { color: inherit; }
   .pairing .arrow { border-inline: 0; border-block: 1px solid var(--rule); padding-block: 6px; }
   .toc-row { grid-template-columns: 1fr; gap: 4px; }
   .toc-row .dated { text-align: left; }
+  .app-variants, .app-notes { columns: 1; }
 }
 </style>
 
 <div class="wrap">
 
   <header class="masthead">
-    <p class="eyebrow">A Conversation with Machiavelli · Pair 13 of 39</p>
+    <p class="eyebrow"><a href="../index.html">A Conversation with Machiavelli</a> · Pair 13 of 39</p>
     <h1>The Romans interpreted the auspices according to necessity, and with prudence made a show of observing religion when, forced, they did not observe it, and if anyone rashly despised it, they punished him
       <span class="sub">Discourses I.14, and Guicciardini&#x27;s reply</span></h1>
     <p class="standfirst"><span class="sf-label">Editor's summary</span> Machiavelli holds that the Romans, who used the auspices in every important action, nonetheless acted against them when reason required, but so artfully that they did not seem to scorn religion; the consul Papirius, who fought though the sacred chickens had not fed, is his proof. Guicciardini does not hold it certain that the captains used the authority of auspices and augury craftily, and believes that, above all in the earliest times, their minds were taken up with this religion. Nor does Papirius tell against him: the consul had his report from the keepers of the chickens, whose office it was, and had no need to heed what third persons told him.</p>
@@ -248,15 +281,17 @@ a { color: inherit; }
 
   <section class="work nm">
     <div class="work-head">
-      <span class="tag">NM-DISC.1.14</span>
+      <span class="tag" title="NM-DISC.1.14">Machiavelli</span>
       <h2>Capitolo XIV</h2>
+      <span class="cite"><i>Discorsi</i> I.14</span>
     </div>
     <p class="rubric">I Romani interpretavano gli auspizj secondo la necessità, e con la prudenza mostravano di osservare la Religione, quando forzati non l&#x27;osservavano, e se alcuno temerariamente la dispregiava, lo punivano.</p>
-    <p class="rubric">The Romans interpreted the auspices according to necessity, and with prudence made a show of observing religion when, forced, they did not observe it, and if anyone rashly despised it, they punished him.</p>
+    <p class="rubric">The Romans interpreted the auspices according to necessity, and with prudence made a show of observing religion when, forced, they did not observe it, and if anyone rashly despised it, they punished him.
+      </p>
 
     <div class="colheads"><div></div><div>Italian · 1824</div><div>English</div></div>
       <div class="pair" id="NM-DISC.1.14.01">
-        <div class="gutter"><a class="uid" href="#NM-DISC.1.14.01">1.14.01</a></div>
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.14.01">1.14.01</a><span class="marks"><a href="#v-NM-DISC-I14-D001">1 variant</a></span></div>
         <div class="col it" lang="it">Non solamente gli augurj, come di sopra si è discorso, erano il fondamento in buona parte dell&#x27;antica Religione de&#x27; Gentili, ma ancora erano quelli, ch&#x27;erano cagione del bene essere della Repubblica romana. Donde i Romani ne avevano più cura che di alcuno altro ordine di quella, ed usavangli ne&#x27; Comizj consolari, nel principiare le imprese, nel trar fuori gli eserciti, nel fare le giornate, e in ogni azione loro importante o civile o militare; né mai sarebbono iti ad una espedizione, che non avessero persuaso ai soldati che gli Dii promettevano loro la vittoria. E fra gli altri aruspizj, avevano negli eserciti certi ordini di auspizj che e&#x27; chiamavano Pollarj. E qualunque volta eglino ordinavano di fare la giornata col nimico, volevano che i Pollarj facessero i loro auspizj; e beccando i polli, combattevano con buono augurio, non beccando, si astenevano dalla zuffa.</div>
         <div class="col en" lang="en">Not only were the auguries, as has been discoursed above, in good part the foundation of the ancient religion of the Gentiles, but they were also those that were the cause of the well-being of the Roman republic. Whence the Romans had more care of them than of any other order of it, and used them in the consular comitia, in beginning enterprises, in leading out the armies, in giving battle, and in every important action of theirs, whether civil or military; nor would they ever have gone on an expedition without having persuaded the soldiers that the gods promised them the victory. And among the other haruspicies they had in the armies certain orders of auspices, which they called <i lang="la">pullarii</i>. And whenever they ordered battle to be given with the enemy, they wished the <i lang="la">pullarii</i> to make their auspices; and, the chickens pecking, they fought with good augury; not pecking, they abstained from the engagement.</div>
         <details class="annot"><summary>Commentary · 2</summary>
@@ -265,7 +300,7 @@ a { color: inherit; }
         </details>
       </div>
       <div class="pair" id="NM-DISC.1.14.02">
-        <div class="gutter"><a class="uid" href="#NM-DISC.1.14.02">1.14.02</a></div>
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.14.02">1.14.02</a><span class="marks"><a href="#v-NM-DISC-I14-D002">1 variant</a></span></div>
         <div class="col it" lang="it">Nondimeno quando la ragione mostrava loro una cosa doversi fare, non ostante che gli auspizj fussero avversi, la facevano in ogni modo; ma rivoltavanla con termini e modi tanto attentamente, che non paresse che la facessero con dispregio della Religione: il quale termine fu usato da Papirio Consolo in una zuffa che fece importantissima coi Sanniti, dopo la quale restorno in tutto deboli ed afflitti.</div>
         <div class="col en" lang="en">Nonetheless, when reason showed them a thing ought to be done, notwithstanding that the auspices were adverse, they did it in any case; but they turned it about with terms and modes so attentively that it should not appear they did it in contempt of religion: which term was used by Papirius the consul in a most important engagement that he had with the Samnites, after which they remained altogether weak and afflicted.</div>
         <details class="annot"><summary>Commentary · 1</summary>
@@ -273,7 +308,7 @@ a { color: inherit; }
         </details>
       </div>
       <div class="pair" id="NM-DISC.1.14.03">
-        <div class="gutter"><a class="uid" href="#NM-DISC.1.14.03">1.14.03</a></div>
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.14.03">1.14.03</a><span class="marks"><a href="#n-NM-DISC.1.14-3">3 notes</a><a href="#v-NM-DISC-I14-D003">1 variant</a></span></div>
         <div class="col it" lang="it">Perché sendo Papirio in su i campi rincontro ai Sanniti, e parendogli avere nella zuffa la vittoria certa, e volendo per questo fare la giornata, comandò ai Pollarj che facessero i loro auspizj; ma non beccando i polli, e veggendo il Principe de&#x27; Pollarj la gran disposizione dello esercito di combattere, e la opinione ch&#x27;era nel Capitano e in tutt&#x27; i soldati di vincere, per non torre occasione di bene operare a quello esercito, riferì al Consolo come gli auspizj procedevano bene; talché Papirio ordinando le squadre, ed essendo da alcuno de&#x27; Pollarj detto a certi soldati i polli non avere beccato, quelli lo dissono a Spurio Papirio nipote del Consolo, e quello riferendolo al Consolo, rispose subito ch&#x27;egli attendesse a fare l&#x27;ufficio suo bene, e che quanto a lui e allo esercito gli auspizj erano retti, e se il Pollario aveva detto le bugie, ritornerebbono in pregiudizio suo. E perché lo effetto corrispondesse al pronostico, comandò ai Legati che costituissero i Pollarj nella prima fronte della zuffa. Onde nacque che andando contro ai nemici, sendo da un soldato romano tratto un dardo, a caso ammazzò il Principe de&#x27; Pollarj; la qual cosa udita il Consolo, disse come ogni cosa procedeva bene, e col favore degli Dii, perché lo esercito con la morte di quel bugiardo si era purgato da ogni colpa, e da ogni ira che quelli avessero preso contro di lui. E così col sapere bene accomodare i disegni suoi agli auspizj, prese partito di azzuffarsi, senza che quello esercito si avvedesse, che in alcuna parte quello avesse negletti gli ordini della loro Religione.</div>
         <div class="col en" lang="en">For, Papirius being in the field over against the Samnites, and it seeming to him that victory in the engagement was certain, and wishing for this reason to give battle, he commanded the <i lang="la">pullarii</i> to make their auspices; but, the chickens not pecking, and the prince of the <i lang="la">pullarii</i> seeing the great disposition of the army to fight, and the opinion that was in the captain and in all the soldiers of winning, so as not to take from that army the occasion of acting well, he reported to the consul that the auspices were proceeding well; so that, Papirius ordering the squadrons, and it being said by some of the <i lang="la">pullarii</i> to certain soldiers that the chickens had not pecked, they told it to Spurius Papirius, nephew of the consul, and he reporting it to the consul, <span class="supplied">[the consul]</span> answered at once that he should attend to doing his office well, and that as for himself and the army the auspices were right, and if the <i lang="la">pullarius</i> had told lies, they would turn back to his prejudice. And so that the effect should correspond to the prognostic, he commanded the legates to station the <i lang="la">pullarii</i> in the front line of the engagement. Whence it arose that, as they went against the enemy, a dart thrown by a Roman soldier by chance killed the prince of the <i lang="la">pullarii</i>; which thing being heard, the consul said that everything was proceeding well, and with the favour of the gods, for the army by the death of that liar had purged itself of every fault, and of every anger that they might have taken against it. And so, by knowing well how to accommodate his designs to the auspices, he took the decision to engage, without that army perceiving that in any part he had neglected the orders of their religion.</div>
         <details class="annot"><summary>Commentary · 2</summary>
@@ -282,7 +317,7 @@ a { color: inherit; }
         </details>
       </div>
       <div class="pair" id="NM-DISC.1.14.04">
-        <div class="gutter"><a class="uid" href="#NM-DISC.1.14.04">1.14.04</a></div>
+        <div class="gutter"><a class="uid" href="#NM-DISC.1.14.04">1.14.04</a><span class="marks"><a href="#v-NM-DISC-I14-D004">1 variant</a></span></div>
         <div class="col it" lang="it">Al contrario fece Appio Pulcro in Sicilia nella prima guerra Punica, che volendo azzuffarsi con l&#x27;esercito Cartaginese, fece fare gli auspizj a&#x27; Pollarj, e riferendogli quelli come i Polli non beccavano, disse, veggiamo se volessero bere, e gli fece gittare in mare, dondeché azzuffandosi perdette la giornata, di che egli ne fu a Roma condannato, e Papirio onorato, non tanto per aver l&#x27;uno perduto e l&#x27;altro vinto, quanto per aver l&#x27;uno fatto contro agli auspizj prudentemente, e l&#x27;altro temerariamente.</div>
         <div class="col en" lang="en">Appius Pulcher did the contrary in Sicily in the first Punic war, who, wishing to engage the Carthaginian army, had the auspices made by the <i lang="la">pullarii</i>, and, they reporting to him that the chickens were not pecking, said, let us see whether they would drink, and had them thrown into the sea; whereupon, engaging, he lost the battle, for which he was condemned at Rome, and Papirius honoured, not so much for the one having lost and the other won, as for the one having acted against the auspices prudently, and the other rashly.</div>
         <details class="annot"><summary>Commentary · 2</summary>
@@ -300,38 +335,39 @@ a { color: inherit; }
       </div>
 
     <div class="apparatus">
-      <div>
+      <div class="app-source">
         <h3>Source</h3>
         <p>Established from the 1824 edition (<span class="sig">WIT-NM-DISC-1824-IA</span>), page-image-backed, which governs. Collated against the 1554 Giglio printing, Venice (<span class="sig">WIT-NM-DISC-1554-IA</span>), which is comparison evidence only.</p>
 <p>Paragraph divisions are editorial. The witness prints the chapter as one unbroken block.</p>
       </div>
-      <div>
+      <div class="app-variants">
         <h3>Variants</h3>
-        <p><span class="lem">E fra gli altri aruspizj</span> — 1824. The 1554 witness reads <i lang="it">Et tra gli altri auspici</i>. The 1824 text names haruspicy, the reading of entrails, where the 1554 has auspices, the reading of birds. The chickens that follow are auspices in either case.</p>
-<p><span class="lem">tanto attentamente</span> — 1824. The 1554 witness reads <i lang="it">tanto attamente</i>. 1824: so carefully. 1554: so aptly. Either way the Romans dressed up the decision so that it did not look like contempt of religion.</p>
-<p><span class="lem">che costituissero i Pollarj</span> — 1824. The 1554 witness reads <i lang="it">che ponessero i Pollarj</i>. Same sense: the keepers of the chickens were to be stationed in the front line.</p>
-<p><span class="lem">nella prima guerra Punica, che volendo azzuffarsi con l&#x27;esercito Cartaginese</span> — 1824. The 1554 witness reads <i lang="it">nella prima guerra Carthaginese, che uolendo azzuffarsi con l&#x27;essercito de nemici</i>. The 1554 calls the war Carthaginian and the army simply the enemy&#x27;s. Same war, same battle.</p>
+        <p id="v-NM-DISC-I14-D001"><a class="loc" href="#NM-DISC.1.14.01" title="Back to the paragraph">¶ 01</a> <span class="lem">E fra gli altri aruspizj</span> — 1824. The 1554 witness reads <i lang="it">Et tra gli altri auspici</i>. The 1824 text names haruspicy, the reading of entrails, where the 1554 has auspices, the reading of birds. The chickens that follow are auspices in either case.</p>
+<p id="v-NM-DISC-I14-D002"><a class="loc" href="#NM-DISC.1.14.02" title="Back to the paragraph">¶ 02</a> <span class="lem">tanto attentamente</span> — 1824. The 1554 witness reads <i lang="it">tanto attamente</i>. 1824: so carefully. 1554: so aptly. Either way the Romans dressed up the decision so that it did not look like contempt of religion.</p>
+<p id="v-NM-DISC-I14-D003"><a class="loc" href="#NM-DISC.1.14.03" title="Back to the paragraph">¶ 03</a> <span class="lem">che costituissero i Pollarj</span> — 1824. The 1554 witness reads <i lang="it">che ponessero i Pollarj</i>. Same sense: the keepers of the chickens were to be stationed in the front line.</p>
+<p id="v-NM-DISC-I14-D004"><a class="loc" href="#NM-DISC.1.14.04" title="Back to the paragraph">¶ 04</a> <span class="lem">nella prima guerra Punica, che volendo azzuffarsi con l&#x27;esercito Cartaginese</span> — 1824. The 1554 witness reads <i lang="it">nella prima guerra Carthaginese, che uolendo azzuffarsi con l&#x27;essercito de nemici</i>. The 1554 calls the war Carthaginian and the army simply the enemy&#x27;s. Same war, same battle.</p>
 <p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
       </div>
-      <div>
+      <div class="app-notes">
         <h3>Notes</h3>
-        <p><span class="lem"><i lang="it">auspizj</i>, <i lang="it">augurj</i>, <i lang="it">aruspizj</i>.</span> Three different words, kept as three: auspices, the taking of signs from birds; auguries, the art and its readings; haruspicies, properly the reading of entrails. Machiavelli uses them loosely: he counts the chicken-auspices among the &quot;haruspicies&quot; in .01, and calls the whole practice &quot;haruspicating&quot; in .05. The English keeps his words rather than correcting his Roman antiquities.</p>
-<p><span class="lem"><i lang="la">pullarii</i>.</span> The keepers of the sacred chickens, whose feeding was read as an auspice: if the birds ate eagerly, the gods approved. Left in Latin, as the Italian keeps the office&#x27;s name (<i lang="it">Pollarj</i>); Guicciardini calls them <i lang="la">Pullarii</i>.</p>
-<p><span class="lem"><i lang="it">il Principe de&#x27; Pollarj</i>.</span> &quot;The prince of the <i lang="la">pullarii</i>&quot;: the chief of the college. The word is kept because it is the word Machiavelli uses of rulers; here it has its Latin sense of first man.</p>
-<p><span class="lem"><i lang="it">termine</i>.</span> &quot;Term&quot; in the older sense of a manner of proceeding, not a word: <i lang="it">termini e modi</i> is close to &quot;ways and means&quot;, and &quot;which term&quot; picks up the device Papirius used, not anything he said.</p>
-<p><span class="lem">.03, <i lang="it">rispose</i>.</span> The Italian gives the verb no subject, and the last man named is the nephew. It is the consul who answers; the English supplies him in brackets.</p>
-<p><span class="lem">.03, <i lang="it">contro di lui</i>.</span> &quot;Against him&quot; could be the liar, but the sense is the anger the gods might have taken against the army, which by the liar&#x27;s death has purged itself of it. The English says &quot;it&quot;, for the army.</p>
-<p><span class="lem"><i lang="it">zuffa</i>, <i lang="it">azzuffarsi</i>, <i lang="it">combattere</i>, <i lang="it">giornata</i>.</span> Engagement, engage, fight, battle: four words, kept apart. <i lang="it">Zuffa</i> is used of Aquilonia, a pitched battle, so it is not a skirmish.</p>
-<p><span class="lem">.03, <i lang="it">in pregiudizio suo</i>.</span> &quot;To his prejudice&quot;, in the old sense of harm: if the chicken-keeper lied, the lie falls on his own head, as it does.</p>
-<p><span class="lem">The sources.</span> Livy 10.40, for Lucius Papirius Cursor, son of the dictator of the same name, before Aquilonia (293 BC). The chickens thrown into the sea belong to Publius Claudius Pulcher, before the sea-fight off Drepana in Sicily (249 BC), in Cicero, <i lang="la">De natura deorum</i> 2.7, and Livy, <i lang="la">Periochae</i> 19. Machiavelli calls him Appius, his father&#x27;s name.</p>
+        <p id="n-NM-DISC.1.14-1"><span class="lem"><i lang="it">auspizj</i>, <i lang="it">augurj</i>, <i lang="it">aruspizj</i>.</span> Three different words, kept as three: auspices, the taking of signs from birds; auguries, the art and its readings; haruspicies, properly the reading of entrails. Machiavelli uses them loosely: he counts the chicken-auspices among the &quot;haruspicies&quot; in .01, and calls the whole practice &quot;haruspicating&quot; in .05. The English keeps his words rather than correcting his Roman antiquities.</p>
+<p id="n-NM-DISC.1.14-2"><span class="lem"><i lang="la">pullarii</i>.</span> The keepers of the sacred chickens, whose feeding was read as an auspice: if the birds ate eagerly, the gods approved. Left in Latin, as the Italian keeps the office&#x27;s name (<i lang="it">Pollarj</i>); Guicciardini calls them <i lang="la">Pullarii</i>.</p>
+<p id="n-NM-DISC.1.14-3"><a class="loc" href="#NM-DISC.1.14.03" title="Back to the paragraph">¶ 03</a> <span class="lem"><i lang="it">il Principe de&#x27; Pollarj</i>.</span> &quot;The prince of the <i lang="la">pullarii</i>&quot;: the chief of the college. The word is kept because it is the word Machiavelli uses of rulers; here it has its Latin sense of first man.</p>
+<p id="n-NM-DISC.1.14-4"><span class="lem"><i lang="it">termine</i>.</span> &quot;Term&quot; in the older sense of a manner of proceeding, not a word: <i lang="it">termini e modi</i> is close to &quot;ways and means&quot;, and &quot;which term&quot; picks up the device Papirius used, not anything he said.</p>
+<p id="n-NM-DISC.1.14-5"><span class="lem">.03, <i lang="it">rispose</i>.</span> The Italian gives the verb no subject, and the last man named is the nephew. It is the consul who answers; the English supplies him in brackets.</p>
+<p id="n-NM-DISC.1.14-6"><a class="loc" href="#NM-DISC.1.14.03" title="Back to the paragraph">¶ 03</a> <span class="lem">.03, <i lang="it">contro di lui</i>.</span> &quot;Against him&quot; could be the liar, but the sense is the anger the gods might have taken against the army, which by the liar&#x27;s death has purged itself of it. The English says &quot;it&quot;, for the army.</p>
+<p id="n-NM-DISC.1.14-7"><span class="lem"><i lang="it">zuffa</i>, <i lang="it">azzuffarsi</i>, <i lang="it">combattere</i>, <i lang="it">giornata</i>.</span> Engagement, engage, fight, battle: four words, kept apart. <i lang="it">Zuffa</i> is used of Aquilonia, a pitched battle, so it is not a skirmish.</p>
+<p id="n-NM-DISC.1.14-8"><a class="loc" href="#NM-DISC.1.14.03" title="Back to the paragraph">¶ 03</a> <span class="lem">.03, <i lang="it">in pregiudizio suo</i>.</span> &quot;To his prejudice&quot;, in the old sense of harm: if the chicken-keeper lied, the lie falls on his own head, as it does.</p>
+<p id="n-NM-DISC.1.14-9"><span class="lem">The sources.</span> Livy 10.40, for Lucius Papirius Cursor, son of the dictator of the same name, before Aquilonia (293 BC). The chickens thrown into the sea belong to Publius Claudius Pulcher, before the sea-fight off Drepana in Sicily (249 BC), in Cicero, <i lang="la">De natura deorum</i> 2.7, and Livy, <i lang="la">Periochae</i> 19. Machiavelli calls him Appius, his father&#x27;s name.</p>
       </div>
     </div>
   </section>
 
   <section class="work fg">
     <div class="work-head">
-      <span class="tag">FG-CONS.1.14</span>
+      <span class="tag" title="FG-CONS.1.14">Guicciardini</span>
       <h2>Considerazione sul capitolo XIV</h2>
+      <span class="cite"><i>Considerazioni</i> I.14</span>
     </div>
     <p class="rubric">I Romani interpretavano gli auspicii secondo la necessità, e con la prudenza mostravano di osservare la religione, quando forzati non l&#x27;osservavano, e se alcuno temerariamente la dispregiava, lo punivano</p>
     <p class="rubric">The Romans interpreted the auspices according to necessity, and with prudence made a show of observing religion when, forced, they did not observe it, and if anyone rashly despised it, they punished him
@@ -339,7 +375,7 @@ a { color: inherit; }
 
     <div class="colheads"><div></div><div>Italian · 1857</div><div>English</div></div>
       <div class="pair" id="FG-CONS.1.14.01">
-        <div class="gutter"><a class="uid" href="#FG-CONS.1.14.01">1.14.01</a></div>
+        <div class="gutter"><a class="uid" href="#FG-CONS.1.14.01">1.14.01</a><span class="marks"><a href="#n-FG-CONS.1.14-1">5 notes</a><a href="#v-FG-CONS-I14-D001">2 variants</a></span></div>
         <div class="col it" lang="it">Non ho per certo che e&#x27; capitani degli eserciti usassino astutamente la autorità degli auspicii e degli augurii, ma credo che massime ne&#x27; primi tempi fussino gli animi loro occupati da questa religione, né mi repugna lo esemplo di Papirio, il quale, avendo avuto la relazione da Pullarii di chi <span class="supplied">[e]</span>ra lo officio, non aveva a attendere a quello che gli fussi referito da terze persone.</div>
         <div class="col en" lang="en">I do not hold it for certain that the captains of the armies used the authority of the auspices and of the auguries craftily, but I believe that, especially in the first times, their minds were occupied by this religion; nor is repugnant to me the example of Papirius, who, having had the report from the <i lang="la">pullarii</i> whose office it was, did not have to attend to what was reported to him by third persons.</div>
         <details class="annot"><summary>Commentary · 3</summary>
@@ -350,76 +386,37 @@ a { color: inherit; }
       </div>
 
     <div class="apparatus">
-      <div>
+      <div class="app-source">
         <h3>Source</h3>
         <p>Established from Canestrini 1857, <i>Opere inedite</i> vol. 1, pp. 1–65 (<span class="sig">WIT-FG-CONS-1857-CANESTRINI</span>) — the <i>editio princeps</i>, which governs. Collated against Palmarocchi 1933 (<span class="sig">WIT-FG-CONS-1933-PALMAROCCHI</span>): page images and the Wikisource transcription consulted as collation evidence, not reproduced (LICENSE §5).</p>
 <p>Paragraph divisions are editorial. The witness prints the chapter as one unbroken block.</p>
       </div>
-      <div>
+      <div class="app-variants">
         <h3>Variants</h3>
-        <p><span class="lem">di chi era lo officio</span> — 1933. The 1857 witness reads <i lang="it">di chi ora lo officio</i>. Canestrini&#x27;s page, at the resolution of the only scan available, prints &quot;ora&quot;, now, which leaves the clause without a verb. This edition emends from the 1933 edition&#x27;s &quot;era&quot;, whose office it was, and brackets the emended letter.</p>
-<p><span class="lem">il quale</span> — 1857. The 1933 witness reads <i lang="it">el quale</i>. The 1933 edition has the Florentine form of the article. No difference in sense.</p>
+        <p id="v-FG-CONS-I14-D001"><a class="loc" href="#FG-CONS.1.14.01" title="Back to the paragraph">¶ 01</a> <span class="lem">di chi era lo officio</span> — 1933. The 1857 witness reads <i lang="it">di chi ora lo officio</i>. Canestrini&#x27;s page, at the resolution of the only scan available, prints &quot;ora&quot;, now, which leaves the clause without a verb. This edition emends from the 1933 edition&#x27;s &quot;era&quot;, whose office it was, and brackets the emended letter.</p>
+<p id="v-FG-CONS-I14-D002"><a class="loc" href="#FG-CONS.1.14.01" title="Back to the paragraph">¶ 01</a> <span class="lem">il quale</span> — 1857. The 1933 witness reads <i lang="it">el quale</i>. The 1933 edition has the Florentine form of the article. No difference in sense.</p>
 <p>Orthography, capitalization, word division and punctuation follow the governing witness throughout; no reading is hybridized between witnesses.</p>
       </div>
-      <div>
+      <div class="app-notes">
         <h3>Notes</h3>
-        <p><span class="lem"><i lang="it">di chi [e]ra lo officio</i>.</span> Canestrini&#x27;s page, in the only scan of it available, prints <i lang="it">ora</i>, &quot;now&quot;, which leaves the clause without a verb. The Italian here is emended from Palmarocchi&#x27;s 1933 edition, <i lang="it">era</i>, &quot;whose office it was&quot;, and the bracket marks the emended letter.</p>
-<p><span class="lem"><i lang="it">astutamente</i>.</span> &quot;Craftily&quot;, not &quot;astutely&quot;, which in modern English praises. Guicciardini&#x27;s question is whether the captains worked a religion they did not believe in.</p>
-<p><span class="lem"><i lang="it">né mi repugna</i>.</span> &quot;Repugnant&quot; in its older sense: contrary, inconsistent. The example of Papirius does not tell against Guicciardini&#x27;s view. Machiavelli uses the noun two chapters earlier, of his two reasons against the Church, which &quot;have no repugnance&quot;.</p>
-<p><span class="lem"><i lang="it">relazione</i> ... <i lang="it">referito</i>.</span> &quot;Report ... reported&quot;. The <i lang="la">pullarii</i>&#x27;s report is the one Papirius had to act on; what the soldiers told his nephew, who told him, came from third persons. Machiavelli&#x27;s <i lang="it">riferì</i>, <i lang="it">riferendolo</i>, <i lang="it">riferendogli</i> are the same verb and take the same English.</p>
-<p><span class="lem"><i lang="it">attendere</i>.</span> &quot;Attend to&quot;: Machiavelli&#x27;s consul tells the nephew to attend to his own office, and Guicciardini says the consul did not have to attend to hearsay.</p>
+        <p id="n-FG-CONS.1.14-1"><a class="loc" href="#FG-CONS.1.14.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">di chi [e]ra lo officio</i>.</span> Canestrini&#x27;s page, in the only scan of it available, prints <i lang="it">ora</i>, &quot;now&quot;, which leaves the clause without a verb. The Italian here is emended from Palmarocchi&#x27;s 1933 edition, <i lang="it">era</i>, &quot;whose office it was&quot;, and the bracket marks the emended letter.</p>
+<p id="n-FG-CONS.1.14-2"><a class="loc" href="#FG-CONS.1.14.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">astutamente</i>.</span> &quot;Craftily&quot;, not &quot;astutely&quot;, which in modern English praises. Guicciardini&#x27;s question is whether the captains worked a religion they did not believe in.</p>
+<p id="n-FG-CONS.1.14-3"><a class="loc" href="#FG-CONS.1.14.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">né mi repugna</i>.</span> &quot;Repugnant&quot; in its older sense: contrary, inconsistent. The example of Papirius does not tell against Guicciardini&#x27;s view. Machiavelli uses the noun two chapters earlier, of his two reasons against the Church, which &quot;have no repugnance&quot;.</p>
+<p id="n-FG-CONS.1.14-4"><a class="loc" href="#FG-CONS.1.14.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">relazione</i> ... <i lang="it">referito</i>.</span> &quot;Report ... reported&quot;. The <i lang="la">pullarii</i>&#x27;s report is the one Papirius had to act on; what the soldiers told his nephew, who told him, came from third persons. Machiavelli&#x27;s <i lang="it">riferì</i>, <i lang="it">riferendolo</i>, <i lang="it">riferendogli</i> are the same verb and take the same English.</p>
+<p id="n-FG-CONS.1.14-5"><a class="loc" href="#FG-CONS.1.14.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">attendere</i>.</span> &quot;Attend to&quot;: Machiavelli&#x27;s consul tells the nephew to attend to his own office, and Guicciardini says the consul did not have to attend to hearsay.</p>
       </div>
     </div>
   </section>
 
+    <nav class="pairnav pairnav-foot"><a href="1.12.html">← Pair 1.12</a><a href="../index.html">All 39 pairs</a><a href="1.16.html">Pair 1.16 →</a></nav>
+
   <footer class="colophon">
-    <div class="row">
-      <div>
-        <h3>What this is</h3>
-        <p>A free, openly licensed, bilingual edition of Guicciardini's 39 <i>Considerazioni</i> and the
-          <i>Discorsi</i> chapters they answer — 78 text units, Italian and English facing, every reading
-          traceable to a named public-domain witness.</p>
-        <p>It is a reading edition with a transparent apparatus, not a text of record. It does not adjudicate
-          the critical text against Bausi 2001 or the manuscript tradition, and does not claim to.</p>
-      </div>
-      <div>
-        <h3>On the title</h3>
-        <p>Machiavelli had been dead two years when Guicciardini wrote; the <i>Discorsi</i> were unpublished,
-          and the <i>Considerazioni</i> stayed unprinted until 1857. Machiavelli never answers.</p>
-        <p>“Conversation” is a quotation, not a description. It invokes Machiavelli's letter to Francesco Vettori of
-          10 December 1513: at evening he puts on royal and curial garments (<i>panni reali e curiali</i>),
-          enters the ancient courts of ancient men (<i>le antiche corti degli antichi uomini</i>), asks them the
-          reason for their actions, and <i>quelli per loro umanità mi rispondono</i>, “they, for their humanity,
-          answer me”. Guicciardini does to Machiavelli what Machiavelli did to Livy — and is denied the reply
-          Machiavelli claimed. The letter is quoted from the 1813 <i>Opere</i>, vol. 8, p. 96, read twice from
-          the page image.</p>
-      </div>
-      <div>
-        <h3>Method</h3>
-        <p>No image-derived reading enters the text on a single reading. Each unit is transcribed twice,
-          independently, by readers who have not seen each other's work; disagreements are adjudicated against
-          the page images and recorded.</p>
-        <p>Existing English translations of the <i>Considerazioni</i> — Grayson (1965), Atkinson &amp; Sices
-          (2002) — are never used as translation inputs.</p>
-      </div>
-      <div>
-        <h3>Licence</h3>
-        <p>The established Italian text and the apparatus data are dedicated to the public domain under
-          <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>. They are Machiavelli's and
-          Guicciardini's sentences, and this edition adds no condition to them.</p>
-        <p>The English translation, the notes and the editorial apparatus are licensed
-          <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: reuse them anywhere, including
-          commercially, with attribution to David McDougall and this edition. The build tooling is MIT.</p>
-        <p>The witness scans are other people's digitisations, included as evidence under their own terms; no
-          grant is made over them, and no page image of Palmarocchi 1933 is reproduced here. Full terms,
-          layer by layer, are in the <span class="sig">LICENSE</span> file in the repository.</p>
-      </div>
-    </div>
 
     <div class="state">
-      <p><strong>Version 0.3 · 22 of 39 pairs published.</strong>
+      <p><strong>Version 0.3 · 33 of 39 pairs published.</strong>
         Published 26 September 2026; last revised 16 October 2026. This edition is versioned, not frozen. No open questions on this pair.</p>
     </div>
+    <p class="links"><a href="../about.html">About this edition</a><a href="../about.html#licence">Licence</a><a href="../about.html#method">Method</a><a href="https://github.com/davidmcdougall/conversation-with-machiavelli">Source and data on GitHub</a></p>
   </footer>
 
 </div>
