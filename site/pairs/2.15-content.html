@@ -1,0 +1,551 @@
+<title>A Conversation with Machiavelli — Weak states will always be ambiguous in resolving themselves, and always slow deliberations are harmful</title>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+:root {
+  --paper:      #EDEEEC;
+  --paper-sunk: #E4E6E3;
+  --ink:        #1B1E1C;
+  --ink-muted:  #5C625E;
+  --ink-faint:  #868C87;
+  --rule:       #C9CDC8;
+  --rule-faint: #DCDFDB;
+  --nm:         #3A5A6B;
+  --fg:         #6E5A3C;
+  --serif: "EB Garamond", "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  --sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --mono:  "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:      #161917;
+    --paper-sunk: #1D211E;
+    --ink:        #E3E6E1;
+    --ink-muted:  #A0A6A0;
+    --ink-faint:  #767C77;
+    --rule:       #343934;
+    --rule-faint: #262B27;
+    --nm:         #8FB4C6;
+    --fg:         #C4A97C;
+  }
+}
+:root[data-theme="dark"] {
+  --paper:      #161917;
+  --paper-sunk: #1D211E;
+  --ink:        #E3E6E1;
+  --ink-muted:  #A0A6A0;
+  --ink-faint:  #767C77;
+  --rule:       #343934;
+  --rule-faint: #262B27;
+  --nm:         #8FB4C6;
+  --fg:         #C4A97C;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 1160px; margin: 0 auto; padding-inline: 20px; padding-block: 0 0; }
+
+/* ---- masthead ---- */
+.masthead { padding-block: 56px 32px; border-bottom: 1px solid var(--rule); }
+.eyebrow {
+  font-family: var(--sans); font-size: 11px; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint);
+  margin: 0 0 18px; text-wrap: balance;
+}
+.eyebrow a { color: inherit; text-decoration: none; }
+.eyebrow a:hover, .eyebrow a:focus { color: var(--ink); }
+h1 {
+  font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 5vw, 44px);
+  line-height: 1.12; margin: 0 0 14px; text-wrap: balance; letter-spacing: -0.01em;
+}
+h1 .sub { display: block; font-style: italic; color: var(--ink-muted); font-size: .52em; margin-top: 12px; letter-spacing: 0; }
+.standfirst {
+  font-family: var(--serif); font-size: 18px; line-height: 1.55;
+  color: var(--ink); max-width: 60ch; margin: 22px 0 0;
+}
+.sf-label {
+  display: block; font-family: var(--sans); font-weight: 600; font-size: 10.5px;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px;
+}
+.index .standfirst { font-size: 17px; color: var(--ink-muted); }
+
+/* ---- the pairing device ---- */
+.pairing {
+  display: flex; align-items: stretch; gap: 0; margin: 30px 0 0;
+  border: 1px solid var(--rule); border-radius: 2px; overflow: hidden;
+  font-family: var(--sans); background: var(--paper-sunk);
+}
+.pairing > div { flex: 1 1 0; padding: 13px 16px; min-width: 0; }
+.pairing .who { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
+.pairing .nm-side .who { color: var(--nm); }
+.pairing .fg-side .who { color: var(--fg); }
+.pairing .what { font-size: 13.5px; color: var(--ink-muted); }
+.pairing .arrow {
+  flex: 0 0 auto; display: flex; align-items: center; justify-content: center;
+  padding-inline: 14px; color: var(--ink-faint); font-size: 15px;
+  border-inline: 1px solid var(--rule);
+}
+
+/* ---- pair-to-pair navigation ---- */
+.pairnav {
+  display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+  margin-top: 18px; font-family: var(--sans); font-size: 12.5px;
+  color: var(--ink-muted);
+}
+.pairnav a { text-decoration: none; color: var(--ink-muted); }
+.pairnav a:hover, .pairnav a:focus { color: var(--ink); text-decoration: underline; }
+
+/* ---- work sections ---- */
+.work { padding-block: 52px 0; }
+.work-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
+.work-head .tag {
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .12em;
+  text-transform: uppercase; padding: 4px 8px 3px; border-radius: 2px; color: var(--paper);
+  align-self: center;
+}
+.work-head .cite { font-family: var(--sans); font-size: 13px; color: var(--ink-faint); }
+.work.nm .tag { background: var(--nm); }
+.work.fg .tag { background: var(--fg); }
+h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; letter-spacing: -0.005em; }
+.rubric {
+  font-style: italic; color: var(--ink-muted); max-width: 70ch;
+  margin: 10px 0 0; font-size: 16.5px; line-height: 1.5;
+}
+.rubric-note {
+  font-family: var(--sans); font-style: normal; font-size: 12px;
+  color: var(--ink-faint); margin-top: 7px;
+}
+.colheads {
+  display: grid; grid-template-columns: 66px 1fr 1fr; gap: 0 28px;
+  margin-top: 30px; padding-bottom: 7px; border-bottom: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint);
+}
+
+/* ---- the facing pair ---- */
+.pair {
+  display: grid; grid-template-columns: 66px 1fr 1fr; gap: 0 28px;
+  padding-block: 22px; border-bottom: 1px solid var(--rule-faint);
+  scroll-margin-top: 20px;
+}
+.pair:target { background: var(--paper-sunk); }
+.annot { grid-column: 2 / -1; margin-top: 14px; font-family: var(--sans); font-size: 13.5px;
+  line-height: 1.55; color: var(--ink-muted); }
+.annot summary { cursor: pointer; font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); list-style: none; }
+.annot summary::-webkit-details-marker { display: none; }
+.annot summary::before { content: "+ "; }
+.annot[open] summary::before { content: "− "; }
+.annot p { margin: 8px 0 0; max-width: 72ch; }
+.annot .lem { font-weight: 600; color: var(--ink); }
+.annot .xref { color: inherit; text-decoration: underline; text-decoration-color: var(--rule);
+  text-underline-offset: 2px; white-space: nowrap; }
+.gutter { padding-top: 4px; }
+.marks { display: block; margin-top: 10px; font-family: var(--sans); font-size: 11px; line-height: 1.45; }
+.marks a { display: block; color: var(--ink-faint); text-decoration: none; white-space: nowrap; }
+.marks a:hover, .marks a:focus { color: var(--ink); text-decoration: underline; }
+.uid {
+  font-family: var(--mono); font-size: 10.5px; color: var(--ink-faint);
+  text-decoration: none; letter-spacing: -0.02em;
+}
+.uid:hover, .uid:focus { color: var(--ink); text-decoration: underline; }
+.col { min-width: 0; }
+.col.it { hyphens: auto; }
+.col.en { hyphens: auto; }
+.supplied { color: var(--ink-muted); }
+
+/* ---- apparatus ---- */
+.apparatus {
+  margin-top: 34px; padding-top: 22px; border-top: 2px solid var(--rule);
+  font-family: var(--sans); font-size: 13.5px; line-height: 1.58;
+  color: var(--ink-muted);
+}
+/* Source is a short paragraph; variants and notes run long, so they flow in
+   two balanced columns across the full width rather than in one narrow strip. */
+.apparatus > div + div { margin-top: 30px; }
+.app-source p { max-width: 78ch; }
+.app-variants, .app-notes { columns: 2 340px; column-gap: 40px; }
+.app-variants h3, .app-notes h3 { column-span: all; }
+.apparatus p { break-inside: avoid; scroll-margin-top: 20px; }
+.apparatus p:target { background: var(--paper-sunk); box-shadow: 0 0 0 6px var(--paper-sunk); }
+.apparatus .loc {
+  font-family: var(--mono); font-size: 11px; color: var(--ink-faint); text-decoration: none;
+  white-space: nowrap; margin-right: .2em;
+}
+.apparatus .loc:hover, .apparatus .loc:focus { color: var(--ink); text-decoration: underline; }
+.apparatus h3 {
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); margin: 0 0 9px;
+}
+.apparatus p { margin: 0 0 9px; }
+.apparatus p:last-child { margin-bottom: 0; }
+.apparatus .lem { font-family: var(--serif); font-size: 15px; color: var(--ink); font-style: italic; }
+.sig { font-family: var(--mono); font-size: 12px; color: var(--ink); }
+
+/* ---- colophon ---- */
+.pairnav-foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--rule); }
+.colophon {
+  margin-top: 40px; padding-block: 0 60px;
+  font-family: var(--sans); font-size: 13px; line-height: 1.6; color: var(--ink-muted);
+}
+.colophon .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 34px; }
+.colophon h3 {
+  font-size: 10.5px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--ink-faint); margin: 0 0 8px;
+}
+.colophon p { margin: 0 0 8px; }
+.colophon ul { margin: 0; padding-left: 16px; }
+.colophon li { margin-bottom: 5px; }
+.colophon .links { margin: 18px 0 0; display: flex; gap: 6px 22px; flex-wrap: wrap; }
+.colophon .links a { color: var(--ink-muted); }
+.about { max-width: 68ch; padding-block: 44px 0; font-family: var(--serif); font-size: 17px; }
+.about h2 { margin: 38px 0 10px; }
+.about h2:first-child { margin-top: 0; }
+.about p { margin: 0 0 12px; }
+.state {
+  margin-top: 0; padding: 14px 16px; background: var(--paper-sunk);
+  border-left: 2px solid var(--ink-faint); border-radius: 0 2px 2px 0;
+  font-size: 12.5px;
+}
+.state strong { color: var(--ink); font-weight: 600; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--nm); outline-offset: 2px; }
+
+/* ---- contents / index page ---- */
+.toc { margin-top: -22px; }
+.toc .book {
+  font-family: var(--serif); font-weight: 500; font-size: 22px; margin: 0;
+  padding: 34px 0 10px; border-bottom: 1px solid var(--rule);
+  display: flex; align-items: baseline; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+}
+.toc .book:first-child { padding-top: 0; }
+.toc .book span { font-family: var(--sans); font-size: 12px; font-weight: 400; color: var(--ink-faint); }
+.toc-row {
+  display: grid; grid-template-columns: 40px minmax(0, 70ch) 1fr; gap: 0 20px;
+  padding-block: 14px; border-bottom: 1px solid var(--rule-faint);
+  font-family: var(--sans); align-items: baseline;
+}
+.toc-row .n { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
+.toc-row > div:nth-child(2) { line-height: 1.32; }
+.toc-row a { text-decoration: none; color: var(--ink); font-family: var(--serif); font-size: 17px; }
+.toc-row a:hover, .toc-row a:focus { text-decoration: underline; }
+.toc-row .unpublished { color: var(--ink-faint); font-style: italic; font-size: 14px; }
+.toc-row .ids { color: var(--ink-faint); font-size: 12px; font-family: var(--sans); margin-top: 3px; }
+.toc-row .dated { color: var(--ink-faint); font-size: 12px; text-align: right; }
+
+/* ---- language toggle: on phones the facing columns stack, so the reader picks
+   one language (English by default), or both; desktop always shows both ---- */
+.langbar { display: none; }
+@media (max-width: 760px) {
+  .langbar {
+    display: flex; align-items: center; gap: 6px; position: sticky; top: 0; z-index: 5;
+    margin: 0 -20px; padding: 10px 20px; background: var(--paper);
+    border-bottom: 1px solid var(--rule); font-family: var(--sans); font-size: 12.5px;
+  }
+  .langbar .lb-label { color: var(--ink-faint); margin-right: 4px; font-size: 11px;
+    font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+  .langbar button {
+    font: inherit; color: var(--ink-muted); background: transparent; cursor: pointer;
+    border: 1px solid var(--rule); border-radius: 2px; padding: 5px 11px;
+  }
+  .langbar button[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  html[data-lang="en"] .col.it, html[data-lang="it"] .col.en { display: none; }
+  html[data-lang="en"] .col.en::before, html[data-lang="it"] .col.it::before { display: none; }
+  html[data-lang="it"] .col.it { margin-bottom: 0; padding-bottom: 0; border-bottom: 0; }
+  .pair { scroll-margin-top: 56px; }
+  .apparatus p { scroll-margin-top: 56px; }
+}
+@media (max-width: 760px) {
+  body { font-size: 16.5px; }
+  .colheads { display: none; }
+  .pair { grid-template-columns: 1fr; gap: 0; padding-block: 20px; }
+  .gutter { padding-top: 0; margin-bottom: 8px; display: flex; gap: 14px; align-items: baseline; }
+  .marks { display: inline-flex; gap: 12px; margin-top: 0; }
+  .annot { grid-column: 1; }
+  .col.it { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px dotted var(--rule); }
+  .col.it::before, .col.en::before {
+    display: block; font-family: var(--sans); font-size: 10px; font-weight: 600;
+    letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px;
+  }
+  .col.it::before { content: "Italian"; }
+  .col.en::before { content: "English"; }
+  .pairing { flex-direction: column; }
+  .pairing .arrow { border-inline: 0; border-block: 1px solid var(--rule); padding-block: 6px; }
+  .toc-row { grid-template-columns: 1fr; gap: 4px; }
+  .toc-row .dated { text-align: left; }
+  .app-variants, .app-notes { columns: 1; }
+}
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow"><a href="../index.html">A Conversation with Machiavelli</a> · Pair 34 of 39</p>
+    <h1>Weak states will always be ambiguous in resolving themselves, and always slow deliberations are harmful
+      <span class="sub">Discourses II.15, and Guicciardini&#x27;s reply</span></h1>
+    <p class="standfirst"><span class="sf-label">Editor's summary</span> Machiavelli holds that weak states will always be ambiguous in resolving and that slow deliberations are always harmful, since slowness helps no one and harms oneself; it comes from weakness of spirit and forces or from the malice of those who deliberate. Guicciardini finds two causes of ambiguity: weakness of prudence and mind, which he believes is what the chapter meant by weak states, though weak forces can in part add to irresolution; and, in republics alone, varied opinions, from malice or honest difference. He grants that suspension is commonly harmful, its occasional use more by chance than otherwise. But neutrality and delay can come from resolution: neutrality is then useful or harmful by the case, and deliberate delay can be laudable; delay from irresolution is always to be condemned.</p>
+
+    <div class="pairing">
+      <div class="nm-side">
+        <div class="who">Niccolò Machiavelli</div>
+        <div class="what">Discorsi sopra la prima Deca di Tito Livio · written c. 1513–19, printed 1531</div>
+      </div>
+      <div class="arrow" aria-hidden="true">answered by</div>
+      <div class="fg-side">
+        <div class="who">Francesco Guicciardini</div>
+        <div class="what">Considerazioni intorno ai Discorsi del Machiavelli · written 1529–30, printed 1857</div>
+      </div>
+    </div>
+    <nav class="pairnav"><a href="2.14.html">← Pair 2.14</a><a href="../index.html">All 39 pairs</a><span></span></nav>
+  </header>
+
+  <div class="langbar" role="group" aria-label="Show which language">
+    <span class="lb-label">Show</span>
+    <button type="button" data-set-lang="en">English</button>
+    <button type="button" data-set-lang="it">Italian</button>
+    <button type="button" data-set-lang="both">Both</button>
+  </div>
+
+  <section class="work nm">
+    <div class="work-head">
+      <span class="tag" title="NM-DISC.2.15">Machiavelli</span>
+      <h2>Capitolo XV</h2>
+      <span class="cite"><i>Discorsi</i> II.15</span>
+    </div>
+    <p class="rubric">Gli Stati deboli sempre fieno ambigui nel risolversi, e sempre le deliberazioni lente sono nocive.</p>
+    <p class="rubric">Weak states will always be ambiguous in resolving themselves, and always slow deliberations are harmful.
+      </p>
+
+    <div class="colheads"><div></div><div>Italian · 1824</div><div>English</div></div>
+      <div class="pair" id="NM-DISC.2.15.01">
+        <div class="gutter"><a class="uid" href="#NM-DISC.2.15.01">2.15.01</a><span class="marks"><a href="#n-NM-DISC.2.15-1">11 notes</a><a href="#v-NM-DISC-II15-D001">1 variant</a></span></div>
+        <div class="col it" lang="it">In questa medesima materia, e in questi medesimi principj di guerra tra i Latini e i Romani, si può notare, come in ogni consulta è bene venire allo individuo di quello che si ha a deliberare, e non stare sempre in ambiguo, né in su lo incerto della cosa. Il che si vede manifesto nella consulta che fecero i Latini, quando e&#x27; pensavano alienarsi da&#x27; Romani. Perché avendo presentito questo cattivo umore che ne&#x27; Popoli latini era entrato, i Romani per certificarsi della cosa, e per vedere se potevano senza mettere mano all&#x27;arme riguadagnarsi quelli Popoli, fecero loro intendere, come e&#x27; mandassero a Roma otto cittadini, perché avevano a consultare con loro. I Latini inteso questo, ed avendo coscienza di molte cose fatte contro alla voglia de&#x27; Romani, fecero consiglio per ordinare chi dovesse ire a Roma, e dargli commissione di quello ch&#x27;egli avesse a dire. E stando nel consiglio di questa disputa, Annio loro Pretore disse queste parole. <i lang="la">Ad summam rerum nostrarum pertinere arbitror, ut cogitetis magis, quid agendum nobis, quam quid loquendum sit. Facile erit, explicatis consiliis, accomodare rebus verba.</i></div>
+        <div class="col en" lang="en">In this same matter, and in these same beginnings of war between the Latins and the Romans, one can note that in every consultation it is good to come to the individual <span class="supplied">[point]</span> of that which is to be deliberated, and not to stand always in the ambiguous, nor upon the uncertain of the thing. Which is seen manifest in the consultation that the Latins made when they were thinking to alienate themselves from the Romans. Because, the Romans having had a presentiment of this bad humour that had entered into the Latin peoples, to certify themselves of the thing, and to see whether they could, without putting hand to arms, regain those peoples, made them understand that they send to Rome eight citizens, because they were to consult with them. The Latins, having understood this, and having conscience of many things done against the will of the Romans, made council to order who must go to Rome, and to give him commission of that which he was to say. And, being in the council on this dispute, Annius, their praetor, said these words. <i lang="la">Ad summam rerum nostrarum pertinere arbitror, ut cogitetis magis, quid agendum nobis, quam quid loquendum sit. Facile erit, explicatis consiliis, accomodare rebus verba.</i></div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> The chapter stays with the beginnings of the Latin war that II.13 and II.14 treated, and draws from them a rule for counsel: in every consultation it is good to come to the individual point of what is to be deliberated, and not to stand always in the ambiguous or on the uncertain of the thing. The Latins&#x27; consultation shows it. The Romans, sensing the Latins&#x27; bad humour and wishing to regain them without arms if they could, asked for eight citizens to consult with; the Latins, conscious of much done against Rome&#x27;s will, met in council to choose who must go and settle what they were to say, and Annius, their praetor, told them to think more of what was to be done than of what was to be said: once counsels are unfolded, words are easily fitted to things.</p>
+<p><span class="lem">History.</span> Livy tells of the Roman summons of the leading Latins, and of Annius&#x27; speech in the Latin council, at 8.3-8.4 (the editor&#x27;s references).</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini does not mention the Latin council. His reply opens on the word this paragraph sets against coming to the point, the ambiguity of deliberations <a class="xref" href="#FG-CONS.2.15.01">Guicciardini .01</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.2.15.02">
+        <div class="gutter"><a class="uid" href="#NM-DISC.2.15.02">2.15.02</a><span class="marks"><a href="#n-NM-DISC.2.15-12">7 notes</a></span></div>
+        <div class="col it" lang="it">Sono senza dubbio queste parole verissime, e debbono essere da ogni Principe e da ogni Repubblica gustate; perché nella ambiguità e nella incertitudine di quello che altri voglia fare, non si sanno accomodare le parole; ma fermo una volta l&#x27;animo, e deliberato quello sia da eseguire, è facil cosa trovarvi le parole. Io ho notato questa parte più volentieri, quanto io ho molte volte conosciuto tale ambiguità avere nociuto alle pubbliche azioni, con danno e con vergogna della Repubblica nostra. E sempre mai avverrà che ne&#x27; partiti dubbj, e dove bisogni animo a deliberarli, sarà questa ambiguità, quando abbiano ad esser consigliati e deliberati da uomini deboli.</div>
+        <div class="col en" lang="en">These words are without doubt most true, and must be relished by every prince and by every republic; because in the ambiguity and in the incertitude of that which one wishes to do, one does not know how to accommodate the words; but the spirit once fixed, and deliberated what is to be executed, it is an easy thing to find the words for it. I have noted this part the more willingly, inasmuch as I have many times known such ambiguity to have harmed public business, with damage and with shame to our republic. And it will always ever happen that in doubtful courses, and where spirit is required to deliberate them, there will be this ambiguity, when they are to be counselled and deliberated by weak men.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> Machiavelli calls Annius&#x27; words most true, words that must be relished by every prince and every republic: in ambiguity and incertitude about what one wishes to do, one does not know how to accommodate the words; once the spirit is fixed and the thing to be executed deliberated, it is easy to find them. He has noted this part the more willingly because he has many times known such ambiguity harm public business, with damage and shame to &quot;our republic&quot;, Florence. And it will always happen, in doubtful courses and where spirit is required to deliberate them, that this ambiguity arises when they are to be counselled and deliberated by weak men. &quot;Weak&quot;, the rubric&#x27;s word, first appears in the body of the chapter of men; the next paragraph gives weakness of spirit and of forces <a class="xref" href="#NM-DISC.2.15.03">Machiavelli .03</a>.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini takes the weakness to be of prudence and mind, not of forces, and believes that is what the Discourse meant, though weakness of forces, he allows, can in part increase irresolution <a class="xref" href="#FG-CONS.2.15.01">Guicciardini .01</a>. Machiavelli&#x27;s &quot;spirit&quot; is not Guicciardini&#x27;s &quot;mind&quot;, and Machiavelli keeps forces beside it.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.2.15.03">
+        <div class="gutter"><a class="uid" href="#NM-DISC.2.15.03">2.15.03</a><span class="marks"><a href="#n-NM-DISC.2.15-19">7 notes</a><a href="#v-NM-DISC-II15-D002">1 variant</a></span></div>
+        <div class="col it" lang="it">Non sono meno nocive ancora le deliberazioni lente e tarde, che ambigue, massime quelle che si hanno a deliberare in favore di alcuno amico; perché con la lentezza loro non si ajuta persona, e nuocesi a sé medesimo. Queste deliberazioni così fatte procedono o da debolezza di animo e di forze, o da malignità di coloro che hanno a deliberare; i quali mossi dalla passione propria di volere rovinare lo Stato, o adempire qualche suo desiderio, non lasciano seguire la deliberazione, ma la impediscono e l&#x27;attraversano. Perché i buoni Cittadini, ancora che veggano una foga popolare voltarsi alla parte perniciosa, mai impediranno il deliberare, massime di quelle cose che non aspettano tempo.</div>
+        <div class="col en" lang="en">No less harmful also are slow and tardy deliberations than ambiguous <span class="supplied">[ones]</span>, above all those that are to be deliberated in favour of some friend; because with their slowness one aids no person, and one harms oneself. These deliberations so made proceed either from weakness of spirit and of forces, or from the malignity of those who are to deliberate; who, moved by their own passion of wishing to ruin the state, or to fulfil some desire of theirs, do not let the deliberation follow, but impede it and cross it. Because good citizens, even though they see a popular rush turning toward the pernicious side, will never impede deliberating, above all on those things that do not wait for time.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> Slow and tardy deliberations are no less harmful than ambiguous ones, above all those to be taken in favour of a friend: slowness aids no one and harms oneself. Machiavelli gives them two sources, weakness of spirit and of forces, or the malignity of those who are to deliberate, who, from a passion to ruin the state or to fulfil a desire of their own, impede and cross the deliberation. Good citizens, even when they see a popular rush turning to the pernicious side, will never impede deliberating, above all on things that do not wait for time. The last sentence is the ground of the charge of malignity: obstruction is what good citizens do not do.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini keeps malignity as one ground of varied opinion in republics, beside a difference of judgments without malignity, as happens often even among the prudent <a class="xref" href="#FG-CONS.2.15.01">Guicciardini .01</a>; he does not take up the friend in need, and he answers slowness in the Lavinians&#x27; case and directly at the end, by distinguishing tardiness from irresolution from tardiness done deliberately.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.2.15.04">
+        <div class="gutter"><a class="uid" href="#NM-DISC.2.15.04">2.15.04</a><span class="marks"><a href="#n-NM-DISC.2.15-26">8 notes</a><a href="#v-NM-DISC-II15-D003">1 variant</a></span></div>
+        <div class="col it" lang="it">Morto che fu Girolamo Tiranno in Siracusa, essendo la guerra grande tra i Cartaginesi e i Romani, vennero i Siracusani in disputa se dovevano seguire l&#x27;amicizia romana o la cartaginese. E tanto era l&#x27;ardor delle parti, che la cosa stava ambigua, né se ne prendeva alcun partito, infino a tanto che Apollonide, uno dei primi in Siracusa, con una sua Orazione piena di prudenza mostrò, come non era da biasimare chi teneva l&#x27;opinione di aderirsi ai Romani, né quelli che volevano seguire la parte cartaginese; ma che era ben da detestare quella ambiguità e tardità di pigliare il partito, perché vedeva al tutto in tale ambiguità la rovina della Repubblica; ma preso che si fusse il partito, qualunque e&#x27; si fusse, si poteva sperare qualche bene. Né potrebbe mostrare più Tito Livio, che si faccia in questa parte, il danno che si tira dietro lo stare sospeso.</div>
+        <div class="col en" lang="en">Hieronymus the tyrant being dead in Syracuse, and the war being great between the Carthaginians and the Romans, the Syracusans came into dispute whether they must follow the Roman friendship or the Carthaginian. And so great was the ardour of the parties that the thing stood ambiguous, nor was any course taken on it, until Apollonides, one of the first <span class="supplied">[men]</span> in Syracuse, with an oration of his full of prudence, showed that he who held the opinion of adhering to the Romans was not to be blamed, nor those who wished to follow the Carthaginian party; but that that ambiguity and tardiness in taking the course was indeed to be detested, because he saw in such ambiguity altogether the ruin of the republic; but, the course once taken, whatever it might be, one could hope for some good. Nor could Livy show more than he does in this part the damage that standing suspended draws behind it.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> The first example. After the death of Hieronymus, with the war great between the Carthaginians and the Romans, the Syracusans were divided whether to follow Rome or Carthage, and the ardour of the parties left the thing ambiguous and no course taken, until Apollonides showed that neither party was to be blamed, but the ambiguity and tardiness in taking a course was to be detested, since he saw in such ambiguity altogether the ruin of the republic, while any course taken offered some hope of good. Machiavelli judges that Livy could not show more than he does here the damage that &quot;standing suspended&quot; draws behind it.</p>
+<p><span class="lem">History.</span> Hieronymus was killed in 214 BC; the debate in the Syracusan assembly and Apollonides&#x27; speech are in Livy 24.28 (the editor&#x27;s references). Machiavelli gives the gist of the speech, not its words.</p>
+<p><span class="lem">Cross-reference.</span> &quot;Standing suspended&quot; is the phrase Guicciardini turns into &quot;stand suspended&quot; and the noun &quot;suspension&quot;: &quot;these suspensions are commonly pernicious, because while you stand suspended you cannot provide for either the one case or the other&quot; <a class="xref" href="#FG-CONS.2.15.01">Guicciardini .01</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.2.15.05">
+        <div class="gutter"><a class="uid" href="#NM-DISC.2.15.05">2.15.05</a><span class="marks"><a href="#n-NM-DISC.2.15-34">9 notes</a><a href="#v-NM-DISC-II15-D004">1 variant</a></span></div>
+        <div class="col it" lang="it">Dimostralo ancora in questo caso de&#x27; Latini; perché sendo i Lavinj ricerchi da loro d&#x27;ajuto contro ai Romani, differirono tanto a deliberarlo, che quando eglino erano usciti appunto fuori della porta con la gente per dare loro soccorso, venne la nuova i Latini essere rotti. Donde Milonio loro Pretore disse: Questo poco della via ci costerà assai col Popolo romano. Perché se si deliberavano prima o di ajutare o di non ajutare i Latini, non gli ajutando ei non irritavano i Romani; ajutandoli, essendo l&#x27;ajuto in tempo, potevano con l&#x27;aggiunta delle loro forze farli vincere; ma differendo, venivano a perdere in ogni modo, come intervenne loro.</div>
+        <div class="col en" lang="en">He demonstrates it also in this case of the Latins; because the Lavinians, being sought by them for aid against the Romans, deferred so long in deliberating it that, when they had just gone out of the gate with the troops to give them succour, the news came that the Latins were routed. Whence Milionius, their praetor, said: This little of the path will cost us much with the Roman people. Because, if they had deliberated earlier either to aid or not to aid the Latins, not aiding them they would not have irritated the Romans; aiding them, the aid being in time, they could with the addition of their forces have made them win; but deferring, they came to lose in any case, as befell them.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> The second example, from the same Latin war. The Lavinians, asked by the Latins for aid against Rome, deferred so long that their troops were just out of the gate when news came of the Latin rout; their praetor Milionius said that this little of the path would cost them much with the Roman people. Had they deliberated earlier, either way, they would have been better placed: not aiding, they would not have irritated Rome; aiding in time, they could have helped the Latins win; deferring, they lost in any case.</p>
+<p><span class="lem">History.</span> Livy 8.11.3-4 (the editor&#x27;s reference). In modern texts of Livy the people are the Lanuvini, of Lanuvium (the editor&#x27;s identification); Machiavelli and Guicciardini both write Lavinians.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini grants that suspensions are commonly pernicious and takes up the Lavinians inside that concession: if suspensions are sometimes useful, as they would have been to the Lavinians had they delayed three or four days more, that utility comes rather by chance than otherwise <a class="xref" href="#FG-CONS.2.15.01">Guicciardini .01</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.2.15.06">
+        <div class="gutter"><a class="uid" href="#NM-DISC.2.15.06">2.15.06</a><span class="marks"><a href="#n-NM-DISC.2.15-43">13 notes</a><a href="#v-NM-DISC-II15-D005">1 variant</a></span></div>
+        <div class="col it" lang="it">E se i Fiorentini avessero notato questo testo, non arebbono avuto con i Francesi né tanti danni, né tante noje, quante ebbero nella passata del re Luigi di Francia XII, che fece in Italia contro a Lodovico Duca di Milano. Perché trattando il Re tale passata, ricercò i Fiorentini d&#x27;accordo, e gli Oratori ch&#x27;erano appresso al Re accordarono con lui ch&#x27;egli stessero neutrali, e che il Re venendo in Italia gli avesse a mantenere nello Stato e ricevere in protezione, e dette tempo un mese alla città a ratificarlo. Fu differita tale ratificazione da chi per poca prudenza favoriva le cose di Lodovico, intantoché il Re già sendo in su la vittoria, e volendo poi i Fiorentini ratificare, non fu la ratificazione accettata, come quello che conobbe i Fiorentini essere venuti forzati, e non volontarj nella amicizia sua. Il che costò alla Città di Firenze assai danari, e fu per perdere lo Stato, come poi altra volta per simile causa le intervenne. E tanto più fu dannabile quel partito, perché non si servì ancora il Duca Lodovico; il quale se avesse vinto, arebbe mostri molti più segni di inimicizia contro ai Fiorentini, che non fece il Re.</div>
+        <div class="col en" lang="en">And if the Florentines had noted this text, they would not have had with the French either so many damages or so many vexations as they had in the passage that King Louis XII of France made into Italy against Lodovico, Duke of Milan. Because, the King treating of such a passage, <span class="supplied">[he]</span> sought the Florentines for accord, and the orators who were near the King came to <span class="supplied">[an]</span> accord with him that they stand neutral, and that the King, coming into Italy, was to maintain them in the state and receive them into protection, and <span class="supplied">[he]</span> gave the city a month&#x27;s time to ratify it. Such ratification was deferred by whoever through little prudence favoured the things of Lodovico, insomuch that, the King being already upon the victory, and the Florentines later wishing to ratify, the ratification was not accepted, as <span class="supplied">[by]</span> one who knew the Florentines to have come forced, and not voluntary, into his friendship. Which cost the city of Florence much money, and it was about to lose the state, as later, another time, befell it for a similar cause. And that course was all the more damnable because one did not serve even Duke Lodovico <span class="supplied">[by it]</span>; who, if he had won, would have shown many more signs of enmity against the Florentines than the King did.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> Machiavelli turns to Florence. Had the Florentines noted this text, they would have been spared many damages and vexations at the passage of Louis XII against Lodovico of Milan. Louis sought an accord; the Florentine orators agreed with him that Florence stand neutral and that he was to maintain the city in its state and take it into protection, with a month to ratify. Whoever, through little prudence, favoured Lodovico deferred the ratification until Louis was on the point of victory, and then he refused it, as one who knew the Florentines had come to his friendship forced, not of their will. It cost Florence much money, and it was about to lose its state, as later, another time, befell it for a similar cause. The course was the more damnable because it did not even serve Lodovico (<i lang="it">ancora</i>, &quot;even&quot;; the editor&#x27;s reading, &quot;yet&quot; being possible), who, had he won, would have shown many more signs of enmity to the Florentines than the King did. In the editor&#x27;s reading, the case shows the rubric&#x27;s second half, harmful slowness, which .07 assigns to &quot;this weakness&quot;; the delay is laid on whoever favoured Lodovico, not on the city as a whole.</p>
+<p><span class="lem">History.</span> Louis XII&#x27;s descent on Milan was in 1499; Florence&#x27;s agreement with him and its delayed ratification belong to the same year, when Machiavelli was secretary of the Second Chancery (the editor&#x27;s account). The &quot;other time&quot; is very probably 1512 (the editor&#x27;s identification): the republic, which had not joined the Holy League, fell to the League&#x27;s Spanish army, and the Medici returned. Machiavelli does not name it.</p>
+<p><span class="lem">Cross-reference.</span> In the editor&#x27;s reading, this neutrality is a case for Guicciardini&#x27;s distinction: standing neutral can also proceed from resolution, not from suspension; from suspension it is reprehensible, from resolution it can be both useful and pernicious, according to the quality of the cases, which he says is not now his matter <a class="xref" href="#FG-CONS.2.15.01">Guicciardini .01</a>. He does not name the Florentine case.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.2.15.07">
+        <div class="gutter"><a class="uid" href="#NM-DISC.2.15.07">2.15.07</a><span class="marks"><a href="#n-NM-DISC.2.15-56">2 notes</a><a href="#v-NM-DISC-II15-D006">1 variant</a></span></div>
+        <div class="col it" lang="it">E benché del male che nasce alle Repubbliche di questa debolezza se ne sia di sopra in uno altro capitolo discorso, nondimeno avendone di nuovo occasione per uno nuovo accidente, ho voluto replicarne, parendomi massime materia che debba essere dalle Repubbliche simili alla nostra notata.</div>
+        <div class="col en" lang="en">And albeit it has been discoursed above, in another chapter, of the ill that arises to republics from this weakness, nonetheless, having occasion for it anew through a new accident, I have wished to repeat it, it seeming to me above all a matter that must be noted by republics similar to ours.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> Machiavelli acknowledges that it has been discoursed in another chapter of the ill that arises to republics from this weakness, and repeats it because a new accident gave him occasion, and because it seems to him above all a matter to be noted by republics similar to ours. &quot;This weakness&quot; brings the last paragraph back to the rubric&#x27;s weak states.</p>
+<p><span class="lem">History.</span> The other chapter is not named; the editor takes it to be Discourses I.38, on weak republics that are badly resolved and cannot take a course.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini&#x27;s reply ends where Machiavelli&#x27;s chapter does not go: on deferral done deliberately, which can be laudable <a class="xref" href="#FG-CONS.2.15.01">Guicciardini .01</a>.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div class="app-source">
+        <h3>Source</h3>
+        <p>Established from the 1824 edition (<span class="sig">WIT-NM-DISC-1824-IA</span>), page-image-backed, which governs. Collated against the 1554 Giglio printing, Venice (<span class="sig">WIT-NM-DISC-1554-IA</span>), which is comparison evidence only.</p>
+<p>Paragraph divisions are editorial. The witness prints the chapter as one unbroken block.</p>
+      </div>
+      <div class="app-variants">
+        <h3>Variants</h3>
+        <p id="v-NM-DISC-II15-D001"><a class="loc" href="#NM-DISC.2.15.01" title="Back to the paragraph">¶ 01</a> <span class="lem">E stando nel consiglio di questa disputa ... <i lang="it">Facile erit, explicatis consiliis, accomodare rebus verba.</i> Sono senza dubbio</span> — 1824. The 1554 witness reads <i lang="it">Et ſtando nel conſiglio in queſta diſputa ... facile erit,explicatis conſilijs, accommodare re bus uerba . Cioè,la ſomma de le coſe noſtre ſtimo io che ſia, che penſiate piu a quello che dobbiamo fare,che a quello che dobbiamo parlare,perche ageuole coſe ſia inteſo che haurete i noſtri conſigli, accommodar le parole alle coſe.Sono ſenza dubbio</i>. The 1554 has <i lang="it">in</i> for <i lang="it">di</i> (the same sense, the council held on this dispute) and follows the quotation with an Italian rendering, as at II.13 and II.14 (NM-DISC-II13-D004, NM-DISC-II14-D002); the 1824 prints the Latin alone. Read by both 1824 readers without doubt (crops b, c). Kept (D38, D469).</p>
+<p id="v-NM-DISC-II15-D002"><a class="loc" href="#NM-DISC.2.15.03" title="Back to the paragraph">¶ 03</a> <span class="lem">perché con la lentezza loro ... Queste deliberazioni così fatte procedono ... o adempire qualche suo desiderio ... ancora che veggano una foga popolare ... mai impediranno il deliberare</span> — 1824. The 1554 witness reads <i lang="it">perche con lentezza loro ... Queſte deliberationi coſi fatte procedano ... e adempire qualche ſuo deſiderio ... anchora che uegghino una fuga popolare ... mai non impediranno il deliberare</i>. <i lang="it">foga</i>, a popular rush (the heat of the crowd), against <i lang="it">fuga</i>, a flight; <i lang="it">o adempire</i>, the second of two motives (to ruin the state or to fulfil a desire), against <i lang="it">e</i>, both together; <i lang="it">procedono</i> against the subjunctive <i lang="it">procedano</i>; the 1554 omits the article before <i lang="it">lentezza</i> and doubles the negative after <i lang="it">mai</i> (the same sense). <i lang="it">procedono</i>, <i lang="it">o</i>, <i lang="it">foga</i> at the D203(b) letter classes, on the sample page, read by both 1824 readers without doubt. Kept (D38, D469).</p>
+<p id="v-NM-DISC-II15-D003"><a class="loc" href="#NM-DISC.2.15.04" title="Back to the paragraph">¶ 04</a> <span class="lem">vennero i Siracusani in disputa ... ma che era ben da detestare quella ambiguità</span> — 1824. The 1554 witness reads <i lang="it">uennono in Siracuſani in diſputa ... ma era bene da detteſtare quella ambiguita</i>. The 1554&#x27;s <i lang="it">in Siracuſani</i> does not construe; its <i lang="it">ma era</i> drops the <i lang="it">che</i> that keeps the clause in Apollonides&#x27; demonstration. Read by both 1824 readers without doubt (sample page). Kept (D38, D469).</p>
+<p id="v-NM-DISC-II15-D004"><a class="loc" href="#NM-DISC.2.15.05" title="Back to the paragraph">¶ 05</a> <span class="lem">perché sendo i Lavinj ricerchi da loro d&#x27;ajuto contro ai Romani</span> — 1824. The 1554 witness reads <i lang="it">perche eſſendo i Latini ricerchi da loro d&#x27;aiuto contra i Romani</i>. The 1554 has the Latins sought for aid by the Latins. The people are the Lanuvini of Livy 8.11.3, whom Machiavelli calls <i lang="it">Lavinj</i> and Guicciardini <i lang="it">Lavinii</i> (FG-CONS.2.15.01). Read by both 1824 readers without doubt (sample page). Kept (D38, D469).</p>
+<p id="v-NM-DISC-II15-D005"><a class="loc" href="#NM-DISC.2.15.06" title="Back to the paragraph">¶ 06</a> <span class="lem">e gli Oratori ch&#x27;erano appresso al Re accordarono con lui ... per simile causa le intervenne ... arebbe mostri molti più segni di inimicizia ... che non fece il Re. E benché</span> — 1824. The 1554 witness reads <i lang="it">&amp; gli oratori , che erano appreſſo al Re,s&#x27;accordarono con lui ... per ſimile cagione le interuenne ... harebbe moſtri piu ſegni di inimicitia ... che non fece il Re.Et benche</i>. The reflexive <i lang="it">s&#x27;accordarono</i> for <i lang="it">accordarono</i> (the same sense), <i lang="it">cagione</i> for <i lang="it">causa</i> (one English word, the glossary&#x27;s recorded collapse), and no <i lang="it">molti</i>. Read by both 1824 readers without doubt (crops e, f, g, h). Kept (D38, D469). The stop after <i lang="it">Re</i>, a mark pass A doubts against a comma before the capital, read with the 1554 (C001, D67).</p>
+<p id="v-NM-DISC-II15-D006"><a class="loc" href="#NM-DISC.2.15.07" title="Back to the paragraph">¶ 07</a> <span class="lem">del male che nasce alle Repubbliche di questa debolezza ... ho voluto replicarne</span> — 1824. The 1554 witness reads <i lang="it">del male,che naſce alla Republica di queſta debolezza ... ho uoluto replicare</i>. The 1554&#x27;s singular <i lang="it">alla Republica</i> narrows the ill to one republic, as Machiavelli&#x27;s <i lang="it">Repubblica nostra</i> (.02) would; the 1824&#x27;s plural keeps it general, answering <i lang="it">dalle Repubbliche simili alla nostra</i> at the close. <i lang="it">replicare</i> drops the partitive <i lang="it">ne</i>. Read by both 1824 readers without doubt (crops i, j). Kept (D38, D469).</p>
+<p id="v-NM-DISC-II15-D007"><span class="lem">CAPITOLO XV / Gli Stati deboli sempre fieno ambigui nel risolversi, / e sempre le deliberazioni lente sono nocive.</span> — 1824. The 1554 witness reads <i lang="it">GLI STATI DEBBOLI SEMPRE / ſieno ambigui nel riſoluerſi,et ſempre le deli- / berationi lente ſono nociue. Ca. XV.</i>. The same sentence but for spelling and one word: the 1824&#x27;s <i lang="it">fieno</i>, will be, doubtful to both 1824 readers at a ligature (<i lang="it">fieno</i> or <i lang="it">sieno</i>), both preferring <i lang="it">fieno</i>, against the 1554&#x27;s <i lang="it">ſieno</i>, be. Canestrini&#x27;s rubric over the reply reads <i lang="it">fieno</i> without doubt to either reader, and the 1933 edition <i lang="it">fiano</i>. <i lang="it">fieno</i> applied provisionally on the recommendation, O48 (D471).</p>
+      </div>
+      <div class="app-notes">
+        <h3>Notes</h3>
+        <p id="n-NM-DISC.2.15-1"><a class="loc" href="#NM-DISC.2.15.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">In questa medesima materia, e in questi medesimi principj di guerra</i>.</span> &quot;In this same matter, and in these same beginnings of war&quot;: <i lang="it">materia</i>, matter, again at the close (.07); <i lang="it">principio</i>, beginning (glossary), the outbreak of the Latin war, which II.13 and II.14 have been treating. The chapter continues II.14 from Livy&#x27;s eighth book.</p>
+<p id="n-NM-DISC.2.15-2"><a class="loc" href="#NM-DISC.2.15.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">si può notare, come in ogni consulta è bene venire allo individuo di quello che si ha a deliberare</i>.</span> &quot;One can note that in every consultation it is good to come to the individual [point] of that which is to be deliberated&quot;: <i lang="it">come</i> after a verb of noting, &quot;that&quot; (D334), as at <i lang="it">mostrò, come</i> (.04); <i lang="it">individuo</i>, the indivisible, the particular in which a question can be settled, kept as the cognate with the supplied noun, since &quot;the individual&quot; alone would read as a person. The phrase is the chapter&#x27;s positive term; everything after it is its opposite. <i lang="it">avere a</i> destinative, &quot;is to be&quot; (D261).</p>
+<p id="n-NM-DISC.2.15-3"><a class="loc" href="#NM-DISC.2.15.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">non stare sempre in ambiguo, né in su lo incerto della cosa</i>.</span> &quot;Not to stand always in the ambiguous, nor upon the uncertain of the thing&quot;: two adjectives used as nouns, <i lang="it">ambiguo</i> and <i lang="it">incerto</i>, kept as English substantives. <i lang="it">stare</i>, stand, the verb of <i lang="it">la cosa stava ambigua</i> (.04), <i lang="it">lo stare sospeso</i> &quot;standing suspended&quot; (.04) and <i lang="it">stessero neutrali</i> (.06), and of Guicciardini&#x27;s <i lang="it">stai sospeso</i> and <i lang="it">lo stare neutrale</i> (Guicciardini .01): one English verb for the posture throughout.</p>
+<p id="n-NM-DISC.2.15-4"><a class="loc" href="#NM-DISC.2.15.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">quando e&#x27; pensavano alienarsi da&#x27; Romani</i>.</span> &quot;When they were thinking to alienate themselves from the Romans&quot;: <i lang="it">e&#x27;</i>, they, the old subject pronoun.</p>
+<p id="n-NM-DISC.2.15-5"><a class="loc" href="#NM-DISC.2.15.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">avendo presentito questo cattivo umore</i>.</span> &quot;Having had a presentiment of this bad humour&quot;: <i lang="it">presentire</i>, to sense beforehand; <i lang="it">cattivo</i>, bad (D03); <i lang="it">umore</i>, humour (glossary). The participle has the Romans as its subject; the English names them first.</p>
+<p id="n-NM-DISC.2.15-6"><a class="loc" href="#NM-DISC.2.15.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">fecero loro intendere, come e&#x27; mandassero a Roma otto cittadini, perché avevano a consultare con loro</i>.</span> &quot;Made them understand that they send to Rome eight citizens, because they were to consult with them&quot;: the reported request without &quot;should&quot; (D348, D445); <i lang="it">avere a</i>, were to (D261); <i lang="it">consultare</i>, consult, with <i lang="it">consulta</i>, consultation.</p>
+<p id="n-NM-DISC.2.15-7"><a class="loc" href="#NM-DISC.2.15.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">avendo coscienza di molte cose fatte contro alla voglia de&#x27; Romani</i>.</span> &quot;Having conscience of many things done against the will of the Romans&quot;: <i lang="it">coscienza</i>, conscience, in its old sense of inward knowledge, kept as the cognate because the knowledge is of their own wrongs and the facing Italian shows the word; <i lang="it">voglia</i>, will, in this construction (D240).</p>
+<p id="n-NM-DISC.2.15-8"><a class="loc" href="#NM-DISC.2.15.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">fecero consiglio per ordinare chi dovesse ire a Roma</i>.</span> &quot;Made council to order who must go to Rome&quot;: <i lang="it">fare consiglio</i>, make council, the Latins&#x27; council in session, D452&#x27;s <i lang="it">Consiglio</i>, council, extended to the sitting; <i lang="it">ordinare</i>, order (glossary); <i lang="it">dovere</i>, must (D274), as <i lang="it">dovevano</i> (.04); <i lang="it">ire</i>, go.</p>
+<p id="n-NM-DISC.2.15-9"><a class="loc" href="#NM-DISC.2.15.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">E stando nel consiglio di questa disputa</i>.</span> &quot;And, being in the council on this dispute&quot;: the gerund has the Latins as its subject. The 1554 reads <i lang="it">in questa disputa</i> (NM-DISC-II15-D001).</p>
+<p id="n-NM-DISC.2.15-10"><a class="loc" href="#NM-DISC.2.15.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">Annio loro Pretore</i>.</span> &quot;Annius, their praetor&quot;: names.md, as II.13 and II.14.</p>
+<p id="n-NM-DISC.2.15-11"><a class="loc" href="#NM-DISC.2.15.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">Ad summam rerum nostrarum ... accomodare rebus verba</i>.</span> Livy 8.4.1 (the opening of Annius&#x27; speech; the editor&#x27;s reference): &quot;I judge that it pertains to the sum of our affairs that you think more what is to be done by us than what is to be said. It will be easy, counsels once unfolded, to accommodate words to things.&quot; The 1824 spells <i lang="it">accomodare</i> with one m; the 1554 follows the Latin with an Italian rendering, not carried (NM-DISC-II15-D001). Machiavelli&#x27;s own sentence takes up <i lang="it">accomodare</i> (.02).</p>
+<p id="n-NM-DISC.2.15-12"><a class="loc" href="#NM-DISC.2.15.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">debbono essere da ogni Principe e da ogni Repubblica gustate</i>.</span> &quot;Must be relished by every prince and by every republic&quot;: <i lang="it">dovere</i>, must (D274); <i lang="it">gustare</i>, relish, to taste and take to heart.</p>
+<p id="n-NM-DISC.2.15-13"><a class="loc" href="#NM-DISC.2.15.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">nella ambiguità e nella incertitudine di quello che altri voglia fare</i>.</span> &quot;In the ambiguity and in the incertitude of that which one wishes to do&quot;: <i lang="it">incertitudine</i>, incertitude, kept apart from <i lang="it">incerto</i> (.01); <i lang="it">altri</i>, one, the indefinite pronoun: the uncertainty is of one&#x27;s own purpose. <i lang="it">non si sanno accomodare</i>, &quot;one does not know how to accommodate&quot;, <i lang="it">sapere</i> with the infinitive.</p>
+<p id="n-NM-DISC.2.15-14"><a class="loc" href="#NM-DISC.2.15.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">ma fermo una volta l&#x27;animo, e deliberato quello sia da eseguire</i>.</span> &quot;But the spirit once fixed, and deliberated what is to be executed&quot;: two absolute participles, kept; <i lang="it">animo</i>, spirit (glossary); <i lang="it">eseguire</i>, execute (glossary).</p>
+<p id="n-NM-DISC.2.15-15"><a class="loc" href="#NM-DISC.2.15.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">Io ho notato questa parte più volentieri, quanto io ho molte volte conosciuto</i>.</span> &quot;I have noted this part the more willingly, inasmuch as I have many times known&quot;: <i lang="it">quanto</i>, inasmuch as, after the comparative; <i lang="it">conoscere</i>, know (D374). The first person of Machiavelli&#x27;s own experience, which .06 makes concrete.</p>
+<p id="n-NM-DISC.2.15-16"><a class="loc" href="#NM-DISC.2.15.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">tale ambiguità avere nociuto alle pubbliche azioni, con danno e con vergogna della Repubblica nostra</i>.</span> &quot;Such ambiguity to have harmed public business, with damage and with shame to our republic&quot;: <i lang="it">azioni publiche</i>, public business (D389); <i lang="it">danno</i>, damage (D106); <i lang="it">vergogna</i>, shame; <i lang="it">Repubblica nostra</i>, Florence, as the close&#x27;s <i lang="it">simili alla nostra</i>.</p>
+<p id="n-NM-DISC.2.15-17"><a class="loc" href="#NM-DISC.2.15.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">E sempre mai avverrà ... dove bisogni animo a deliberarli</i>.</span> &quot;And it will always ever happen ... where spirit is required to deliberate them&quot;: <i lang="it">sempre mai</i>, always ever, the doubled adverb kept; <i lang="it">bisogna</i>, it is required (D260; see the note on <i lang="it">bisogni</i> at Machiavelli I.2), here subjunctive; <i lang="it">partiti dubbj</i>, doubtful courses (<i lang="it">partito</i>, course, D236).</p>
+<p id="n-NM-DISC.2.15-18"><a class="loc" href="#NM-DISC.2.15.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">quando abbiano ad esser consigliati e deliberati da uomini deboli</i>.</span> &quot;When they are to be counselled and deliberated by weak men&quot;: <i lang="it">avere a</i>, are to (D261); <i lang="it">consigliare</i>, counsel, D444&#x27;s <i lang="it">consiglio</i> extended to the verb; <i lang="it">deboli</i>, weak, the rubric&#x27;s word, now of men.</p>
+<p id="n-NM-DISC.2.15-19"><a class="loc" href="#NM-DISC.2.15.03" title="Back to the paragraph">¶ 03</a> <span class="lem"><i lang="it">Non sono meno nocive ancora le deliberazioni lente e tarde, che ambigue</i>.</span> &quot;No less harmful also are slow and tardy deliberations than ambiguous [ones]&quot;: the fronted predicate kept, as a contrast answering the ambiguity just treated (D263); <i lang="it">ancora</i>, also; <i lang="it">tardo</i>, tardy, with <i lang="it">tardità</i>, tardiness (.04), and Guicciardini&#x27;s <i lang="it">tardità</i> (Guicciardini .01); the bracket supplies the noun the comparison leaves to <i lang="it">che ambigue</i> (D53).</p>
+<p id="n-NM-DISC.2.15-20"><a class="loc" href="#NM-DISC.2.15.03" title="Back to the paragraph">¶ 03</a> <span class="lem"><i lang="it">massime quelle che si hanno a deliberare in favore di alcuno amico</i>.</span> &quot;Above all those that are to be deliberated in favour of some friend&quot;: <i lang="it">massime</i>, above all (glossary), here and twice more (.03, .07); <i lang="it">amico</i>, friend (glossary).</p>
+<p id="n-NM-DISC.2.15-21"><a class="loc" href="#NM-DISC.2.15.03" title="Back to the paragraph">¶ 03</a> <span class="lem"><i lang="it">con la lentezza loro non si ajuta persona, e nuocesi a sé medesimo</i>.</span> &quot;With their slowness one aids no person, and one harms oneself&quot;: <i lang="it">aiutare</i>, aid (D348); <i lang="it">persona</i>, no person, with the negative; <i lang="it">nuocere</i>, harm (D106). The 1554 omits the article before <i lang="it">lentezza</i> (NM-DISC-II15-D002).</p>
+<p id="n-NM-DISC.2.15-22"><a class="loc" href="#NM-DISC.2.15.03" title="Back to the paragraph">¶ 03</a> <span class="lem"><i lang="it">procedono o da debolezza di animo e di forze, o da malignità di coloro che hanno a deliberare</i>.</span> &quot;Proceed either from weakness of spirit and of forces, or from the malignity of those who are to deliberate&quot;: <i lang="it">debolezza</i>, weakness, with <i lang="it">debole</i>; <i lang="it">forze</i>, forces (glossary); <i lang="it">malignità</i>, malignity (glossary). Guicciardini takes the two sources, weakness and malignity, and redistributes them (Guicciardini .01). The 1554 reads <i lang="it">procedano</i> (NM-DISC-II15-D002).</p>
+<p id="n-NM-DISC.2.15-23"><a class="loc" href="#NM-DISC.2.15.03" title="Back to the paragraph">¶ 03</a> <span class="lem"><i lang="it">di volere rovinare lo Stato, o adempire qualche suo desiderio</i>.</span> &quot;Of wishing to ruin the state, or to fulfil some desire of theirs&quot;: <i lang="it">o</i>, or, two motives; the 1554&#x27;s <i lang="it">e</i>, and, would join them (NM-DISC-II15-D002). <i lang="it">suo</i>, his, the singular after the plural <i lang="it">i quali</i>, rendered &quot;theirs&quot;.</p>
+<p id="n-NM-DISC.2.15-24"><a class="loc" href="#NM-DISC.2.15.03" title="Back to the paragraph">¶ 03</a> <span class="lem"><i lang="it">non lasciano seguire la deliberazione, ma la impediscono e l&#x27;attraversano</i>.</span> &quot;Do not let the deliberation follow, but impede it and cross it&quot;: <i lang="it">seguire</i>, follow, of a decision taking effect; <i lang="it">attraversare</i>, cross, to set oneself across its path.</p>
+<p id="n-NM-DISC.2.15-25"><a class="loc" href="#NM-DISC.2.15.03" title="Back to the paragraph">¶ 03</a> <span class="lem"><i lang="it">Perché i buoni Cittadini ... mai impediranno il deliberare</i>.</span> &quot;Because good citizens ... will never impede deliberating&quot;: the <i lang="it">perché</i> gives the ground for calling the delayers malignant, not a further claim. <i lang="it">foga</i>, rush, the heat and onrush of the people; the 1554 reads <i lang="it">fuga</i>, flight, which hardly construes with <i lang="it">voltarsi</i> (NM-DISC-II15-D002). <i lang="it">pernicioso</i>, pernicious (glossary); <i lang="it">parte</i>, side, of a direction, a sense split from <i lang="it">parte</i>, party (D389), which the faction keeps at .04 (D472). <i lang="it">che non aspettano tempo</i>, that do not wait for time.</p>
+<p id="n-NM-DISC.2.15-26"><a class="loc" href="#NM-DISC.2.15.04" title="Back to the paragraph">¶ 04</a> <span class="lem"><i lang="it">Morto che fu Girolamo Tiranno in Siracusa</i>.</span> &quot;Hieronymus the tyrant being dead in Syracuse&quot;: names.md, as Machiavelli I.58; Hieronymus was killed in 214 BC (Livy 24.7; the debate is Livy 24.28; the editor&#x27;s references). <i lang="it">Tiranno</i>, tyrant, capitalised as printed.</p>
+<p id="n-NM-DISC.2.15-27"><a class="loc" href="#NM-DISC.2.15.04" title="Back to the paragraph">¶ 04</a> <span class="lem"><i lang="it">vennero i Siracusani in disputa se dovevano seguire l&#x27;amicizia romana o la cartaginese</i>.</span> &quot;The Syracusans came into dispute whether they must follow the Roman friendship or the Carthaginian&quot;: <i lang="it">amicizia</i>, friendship, alliance in the period&#x27;s word, kept; <i lang="it">dovere</i>, must (D274), in the indirect question as at <i lang="it">chi dovesse ire</i> (.01).</p>
+<p id="n-NM-DISC.2.15-28"><a class="loc" href="#NM-DISC.2.15.04" title="Back to the paragraph">¶ 04</a> <span class="lem"><i lang="it">E tanto era l&#x27;ardor delle parti</i>.</span> &quot;And so great was the ardour of the parties&quot;: the order of the correlative, which English keeps; <i lang="it">parte</i>, party (D389), the faction, and so &quot;the Carthaginian party&quot; below.</p>
+<p id="n-NM-DISC.2.15-29"><a class="loc" href="#NM-DISC.2.15.04" title="Back to the paragraph">¶ 04</a> <span class="lem"><i lang="it">Apollonide, uno dei primi in Siracusa, con una sua Orazione piena di prudenza mostrò, come</i>.</span> &quot;Apollonides, one of the first [men] in Syracuse, with an oration of his full of prudence, showed that&quot;: <i lang="it">Apollonide</i>, Apollonides (names.md); <i lang="it">Orazione</i>, oration, capitalised as printed; <i lang="it">prudenza</i>, prudence (glossary), the quality Guicciardini names as what the weak lack (Guicciardini .01); <i lang="it">mostrare, come</i>, show that (D334). Apollonides&#x27; argument stays in indirect speech.</p>
+<p id="n-NM-DISC.2.15-30"><a class="loc" href="#NM-DISC.2.15.04" title="Back to the paragraph">¶ 04</a> <span class="lem"><i lang="it">ma che era ben da detestare quella ambiguità e tardità di pigliare il partito</i>.</span> &quot;But that that ambiguity and tardiness in taking the course was indeed to be detested&quot;: <i lang="it">ben</i>, indeed; <i lang="it">che</i> keeps the clause in Apollonides&#x27; demonstration (the 1554 drops it, NM-DISC-II15-D003); <i lang="it">pigliare</i>, take (glossary), and <i lang="it">prendere</i> (<i lang="it">né se ne prendeva alcun partito</i>, <i lang="it">preso che si fusse il partito</i>) take too, a recorded collapse (D472).</p>
+<p id="n-NM-DISC.2.15-31"><a class="loc" href="#NM-DISC.2.15.04" title="Back to the paragraph">¶ 04</a> <span class="lem"><i lang="it">perché vedeva al tutto in tale ambiguità la rovina della Repubblica</i>.</span> &quot;Because he saw in such ambiguity altogether the ruin of the republic&quot;: <i lang="it">al tutto</i>, altogether, wholly; <i lang="it">rovina</i>, ruin (glossary).</p>
+<p id="n-NM-DISC.2.15-32"><a class="loc" href="#NM-DISC.2.15.04" title="Back to the paragraph">¶ 04</a> <span class="lem"><i lang="it">ma preso che si fusse il partito, qualunque e&#x27; si fusse, si poteva sperare qualche bene</i>.</span> &quot;But, the course once taken, whatever it might be, one could hope for some good&quot;: the whole of Apollonides&#x27; teaching, and the chapter&#x27;s: any resolution over none.</p>
+<p id="n-NM-DISC.2.15-33"><a class="loc" href="#NM-DISC.2.15.04" title="Back to the paragraph">¶ 04</a> <span class="lem"><i lang="it">Né potrebbe mostrare più Tito Livio ... il danno che si tira dietro lo stare sospeso</i>.</span> &quot;Nor could Livy show more than he does in this part the damage that standing suspended draws behind it&quot;: plain order (D263); <i lang="it">Tito Livio</i>, Livy (names.md); <i lang="it">sospeso</i>, suspended, the word Guicciardini takes up in <i lang="it">stai sospeso</i> and turns into his noun <i lang="it">suspensione</i>, suspension (Guicciardini .01).</p>
+<p id="n-NM-DISC.2.15-34"><a class="loc" href="#NM-DISC.2.15.05" title="Back to the paragraph">¶ 05</a> <span class="lem"><i lang="it">Dimostralo ancora in questo caso de&#x27; Latini</i>.</span> &quot;He demonstrates it also in this case of the Latins&quot;: Livy is the subject. The story is Livy 8.11.3-4 (the editor&#x27;s reference).</p>
+<p id="n-NM-DISC.2.15-35"><a class="loc" href="#NM-DISC.2.15.05" title="Back to the paragraph">¶ 05</a> <span class="lem"><i lang="it">sendo i Lavinj ricerchi da loro d&#x27;ajuto</i>.</span> &quot;The Lavinians, being sought by them for aid&quot;: <i lang="it">Lavinj</i>, the Lavinians, as printed (names.md); in modern texts of Livy the people are the Lanuvini, of Lanuvium (the editor&#x27;s identification), and Guicciardini also writes <i lang="it">Lavinii</i> (Guicciardini .01). The 1554 reads <i lang="it">i Latini</i>, which has the Latins sought by themselves (NM-DISC-II15-D004). <i lang="it">ricercare</i>, seek.</p>
+<p id="n-NM-DISC.2.15-36"><a class="loc" href="#NM-DISC.2.15.05" title="Back to the paragraph">¶ 05</a> <span class="lem"><i lang="it">differirono tanto a deliberarlo</i>.</span> &quot;Deferred so long in deliberating it&quot;: <i lang="it">differire</i>, defer (D334).</p>
+<p id="n-NM-DISC.2.15-37"><a class="loc" href="#NM-DISC.2.15.05" title="Back to the paragraph">¶ 05</a> <span class="lem"><i lang="it">quando eglino erano usciti appunto fuori della porta con la gente</i>.</span> &quot;When they had just gone out of the gate with the troops&quot;: <i lang="it">appunto</i>, just; <i lang="it">gente</i>, troops (glossary), with the article and no possessive.</p>
+<p id="n-NM-DISC.2.15-38"><a class="loc" href="#NM-DISC.2.15.05" title="Back to the paragraph">¶ 05</a> <span class="lem"><i lang="it">venne la nuova i Latini essere rotti</i>.</span> &quot;The news came that the Latins were routed&quot;: <i lang="it">nuova</i>, news; the accusative with infinitive, which English cannot keep; <i lang="it">rotto</i>, routed (D431).</p>
+<p id="n-NM-DISC.2.15-39"><a class="loc" href="#NM-DISC.2.15.05" title="Back to the paragraph">¶ 05</a> <span class="lem"><i lang="it">Donde Milonio loro Pretore disse: Questo poco della via ci costerà assai col Popolo romano</i>.</span> &quot;Whence Milionius, their praetor, said: This little of the path will cost us much with the Roman people&quot;: <i lang="it">Milonio</i>, Milionius (names.md); the words unquoted, as printed; <i lang="it">via</i>, path (D131), here the short march they had made; <i lang="it">assai</i>, much. Guicciardini answers with <i lang="it">quello poco viaggio</i>, &quot;that little journey&quot; (Guicciardini .01).</p>
+<p id="n-NM-DISC.2.15-40"><a class="loc" href="#NM-DISC.2.15.05" title="Back to the paragraph">¶ 05</a> <span class="lem"><i lang="it">Perché se si deliberavano prima ... ei non irritavano i Romani ... potevano ... farli vincere</i>.</span> &quot;Because, if they had deliberated earlier ... they would not have irritated the Romans ... they could ... have made them win&quot;: the imperfects of the unreal past condition, in protasis and apodoses alike, which English gives as pluperfect and &quot;would have&quot;, &quot;could have&quot;; <i lang="it">deliberarsi</i>, reflexive, to make up one&#x27;s mind, rendered &quot;deliberated&quot; to hold the chapter&#x27;s verb; <i lang="it">prima</i>, earlier (D334); <i lang="it">ei</i>, they; <i lang="it">irritare</i>, irritate (D464); <i lang="it">vincere</i>, win (D431).</p>
+<p id="n-NM-DISC.2.15-41"><a class="loc" href="#NM-DISC.2.15.05" title="Back to the paragraph">¶ 05</a> <span class="lem"><i lang="it">con l&#x27;aggiunta delle loro forze</i>.</span> &quot;With the addition of their forces&quot;: <i lang="it">aggiunta</i>, addition; <i lang="it">forze</i>, forces (glossary).</p>
+<p id="n-NM-DISC.2.15-42"><a class="loc" href="#NM-DISC.2.15.05" title="Back to the paragraph">¶ 05</a> <span class="lem"><i lang="it">ma differendo, venivano a perdere in ogni modo, come intervenne loro</i>.</span> &quot;But deferring, they came to lose in any case, as befell them&quot;: <i lang="it">in ogni modo</i>, in any case (D431); <i lang="it">intervenire</i>, befall (D298).</p>
+<p id="n-NM-DISC.2.15-43"><a class="loc" href="#NM-DISC.2.15.06" title="Back to the paragraph">¶ 06</a> <span class="lem"><i lang="it">E se i Fiorentini avessero notato questo testo</i>.</span> &quot;And if the Florentines had noted this text&quot;: <i lang="it">testo</i>, text, Livy&#x27;s, as II.14&#x27;s <i lang="it">questo testo</i>; <i lang="it">notare</i>, note, Machiavelli&#x27;s verb at .02 and .07.</p>
+<p id="n-NM-DISC.2.15-44"><a class="loc" href="#NM-DISC.2.15.06" title="Back to the paragraph">¶ 06</a> <span class="lem"><i lang="it">né tanti danni, né tante noje</i>.</span> &quot;Either so many damages or so many vexations&quot;: <i lang="it">danno</i>, damage (D106), here plural; <i lang="it">noia</i>, vexation.</p>
+<p id="n-NM-DISC.2.15-45"><a class="loc" href="#NM-DISC.2.15.06" title="Back to the paragraph">¶ 06</a> <span class="lem"><i lang="it">nella passata del re Luigi di Francia XII</i>.</span> &quot;In the passage that King Louis XII of France made into Italy&quot;: <i lang="it">passata</i>, passage, the descent of 1499 (the editor&#x27;s date); the numeral after <i lang="it">di Francia</i>, as printed, moved after the name in English.</p>
+<p id="n-NM-DISC.2.15-46"><a class="loc" href="#NM-DISC.2.15.06" title="Back to the paragraph">¶ 06</a> <span class="lem"><i lang="it">trattando il Re tale passata, ricercò i Fiorentini d&#x27;accordo</i>.</span> &quot;The King treating of such a passage, [he] sought the Florentines for accord&quot;: <i lang="it">trattare</i>, treat (glossary), of negotiating; the subject of <i lang="it">ricercò</i> is not repeated in the Italian, and the bracket supplies it after the absolute (D53); <i lang="it">ricercare d&#x27;accordo</i>, seek for accord, as <i lang="it">ricerchi ... d&#x27;ajuto</i> (.05), a sense split from D464&#x27;s adverbial <i lang="it">d&#x27;accordo</i>, by accord (D472).</p>
+<p id="n-NM-DISC.2.15-47"><a class="loc" href="#NM-DISC.2.15.06" title="Back to the paragraph">¶ 06</a> <span class="lem"><i lang="it">accordarono con lui ch&#x27;egli stessero neutrali</i>.</span> &quot;Came to [an] accord with him that they stand neutral&quot;: <i lang="it">accordare</i>, come to [an] accord (D464); <i lang="it">egli</i>, they, the plural subject pronoun; the reported agreement without &quot;should&quot; (D348); <i lang="it">neutrale</i>, neutral, Guicciardini&#x27;s <i lang="it">lo stare neutrale</i> (Guicciardini .01). The 1554 has the reflexive <i lang="it">s&#x27;accordarono</i> (NM-DISC-II15-D005).</p>
+<p id="n-NM-DISC.2.15-48"><a class="loc" href="#NM-DISC.2.15.06" title="Back to the paragraph">¶ 06</a> <span class="lem"><i lang="it">gli avesse a mantenere nello Stato e ricevere in protezione</i>.</span> &quot;Was to maintain them in the state and receive them into protection&quot;: <i lang="it">avere a</i>, was to (D261); <i lang="it">Stato</i>, the state, Florence&#x27;s regime.</p>
+<p id="n-NM-DISC.2.15-49"><a class="loc" href="#NM-DISC.2.15.06" title="Back to the paragraph">¶ 06</a> <span class="lem"><i lang="it">Fu differita tale ratificazione da chi per poca prudenza favoriva le cose di Lodovico, intantoché il Re già sendo in su la vittoria, e volendo poi i Fiorentini ratificare</i>.</span> &quot;Such ratification was deferred by whoever through little prudence favoured the things of Lodovico, insomuch that, the King being already upon the victory, and the Florentines later wishing to ratify&quot;: <i lang="it">chi</i>, whoever, singular and indefinite, as <i lang="it">chi teneva</i> (.04), not a named faction; <i lang="it">cose</i>, things, as at .01 and .03; <i lang="it">poi</i>, later (D250); <i lang="it">in su</i>, upon, on the point of it.</p>
+<p id="n-NM-DISC.2.15-50"><a class="loc" href="#NM-DISC.2.15.06" title="Back to the paragraph">¶ 06</a> <span class="lem"><i lang="it">come quello che conobbe i Fiorentini essere venuti forzati, e non volontarj nella amicizia sua</i>.</span> &quot;As [by] one who knew the Florentines to have come forced, and not voluntary, into his friendship&quot;: the bracket supplies the agent of <i lang="it">non fu accettata</i> (D53); the two adjectives kept as adjectives.</p>
+<p id="n-NM-DISC.2.15-51"><a class="loc" href="#NM-DISC.2.15.06" title="Back to the paragraph">¶ 06</a> <span class="lem"><i lang="it">Il che costò alla Città di Firenze assai danari, e fu per perdere lo Stato</i>.</span> &quot;Which cost the city of Florence much money, and it was about to lose the state&quot;: <i lang="it">danari</i>, money (D431); <i lang="it">essere per</i>, be about to (D45).</p>
+<p id="n-NM-DISC.2.15-52"><a class="loc" href="#NM-DISC.2.15.06" title="Back to the paragraph">¶ 06</a> <span class="lem"><i lang="it">come poi altra volta per simile causa le intervenne</i>.</span> &quot;As later, another time, befell it for a similar cause&quot;: <i lang="it">poi</i>, later (D250); <i lang="it">causa</i>, cause (glossary, a recorded collapse with <i lang="it">cagione</i>, which the 1554 prints here, NM-DISC-II15-D005). The other time is very probably 1512 (the editor&#x27;s identification), when the republic, which had not joined the Holy League, fell to the League&#x27;s Spanish army and the Medici returned.</p>
+<p id="n-NM-DISC.2.15-53"><a class="loc" href="#NM-DISC.2.15.06" title="Back to the paragraph">¶ 06</a> <span class="lem"><i lang="it">E tanto più fu dannabile quel partito</i>.</span> &quot;And that course was all the more damnable&quot;: plain order (D263); <i lang="it">dannabile</i>, damnable, the word Guicciardini uses for irresolute tardiness (Guicciardini .01).</p>
+<p id="n-NM-DISC.2.15-54"><a class="loc" href="#NM-DISC.2.15.06" title="Back to the paragraph">¶ 06</a> <span class="lem"><i lang="it">perché non si servì ancora il Duca Lodovico</i>.</span> &quot;Because one did not serve even Duke Lodovico [by it]&quot;: <i lang="it">servire</i>, serve, impersonal; <i lang="it">ancora</i>, even, a sense split from <i lang="it">ancora</i>, also (.03, .05), recorded (D472); the delay did not even help the man it was meant to favour. &quot;Yet&quot; is the other possible reading of <i lang="it">ancora</i>, and &quot;even&quot; is the editor&#x27;s.</p>
+<p id="n-NM-DISC.2.15-55"><a class="loc" href="#NM-DISC.2.15.06" title="Back to the paragraph">¶ 06</a> <span class="lem"><i lang="it">arebbe mostri molti più segni di inimicizia</i>.</span> &quot;Would have shown many more signs of enmity&quot;: <i lang="it">mostri</i>, the old participle of <i lang="it">mostrare</i>; <i lang="it">inimicizia</i>, enmity (D128). The 1554 omits <i lang="it">molti</i> (NM-DISC-II15-D005).</p>
+<p id="n-NM-DISC.2.15-56"><a class="loc" href="#NM-DISC.2.15.07" title="Back to the paragraph">¶ 07</a> <span class="lem"><i lang="it">E benché del male che nasce alle Repubbliche di questa debolezza se ne sia di sopra in uno altro capitolo discorso, nondimeno</i>.</span> &quot;And albeit it has been discoursed above, in another chapter, of the ill that arises to republics from this weakness, nonetheless&quot;: <i lang="it">benché</i>, albeit, with <i lang="it">nondimeno</i>, nonetheless (D31, D45); <i lang="it">male</i>, ill (glossary); <i lang="it">nascere</i>, arise (D04); <i lang="it">discorrere</i>, discourse (glossary, SCOPE §3); <i lang="it">questa debolezza</i>, this weakness, the weakness of the rubric. The other chapter is not named; the editor takes it to be Discourses I.38. The 1554 reads <i lang="it">alla Republica</i>, singular (NM-DISC-II15-D006).</p>
+<p id="n-NM-DISC.2.15-57"><a class="loc" href="#NM-DISC.2.15.07" title="Back to the paragraph">¶ 07</a> <span class="lem"><i lang="it">ho voluto replicarne, parendomi massime materia che debba essere dalle Repubbliche simili alla nostra notata</i>.</span> &quot;I have wished to repeat it, it seeming to me above all a matter that must be noted by republics similar to ours&quot;: <i lang="it">replicare</i>, repeat (D423); <i lang="it">massime</i>, above all, qualifying <i lang="it">materia</i>, before which it stands; <i lang="it">dovere</i>, must (D274). The 1554 reads <i lang="it">replicare</i> without <i lang="it">ne</i> (NM-DISC-II15-D006).</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work fg">
+    <div class="work-head">
+      <span class="tag" title="FG-CONS.2.15">Guicciardini</span>
+      <h2>Considerazione sul capitolo XV</h2>
+      <span class="cite"><i>Considerazioni</i> II.15</span>
+    </div>
+    <p class="rubric">Gli Stati deboli sempre fieno ambigui nel risolversi e sempre le deliberazioni lente sono nocive</p>
+    <p class="rubric">Weak states will always be ambiguous in resolving themselves and always slow deliberations are harmful
+      </p>
+
+    <div class="colheads"><div></div><div>Italian · 1857</div><div>English</div></div>
+      <div class="pair" id="FG-CONS.2.15.01">
+        <div class="gutter"><a class="uid" href="#FG-CONS.2.15.01">2.15.01</a><span class="marks"><a href="#n-FG-CONS.2.15-2">22 notes</a><a href="#v-FG-CONS-II15-D001">1 variant</a></span></div>
+        <div class="col it" lang="it">Da due cagioni procedono le ambiguità delle deliberazioni: l&#x27;una da debolezza di quelli che hanno a risolvere, non dico debolezza di forze e di potenza, ma debolezza di prudenza e di ingegno, e questa cagione può cadere così in uno principe come in una republica; e credo che quando il Discorso disse gli Stati deboli, intese deboli di prudenza, benché la debolezza delle forze può in parte accrescere la irresoluzione; perché communemente e&#x27; partiti che hanno a pigliare gli Stati deboli, sono communemente più pieni di difficultà e di periculi. L&#x27;altra cagione, che è propria delle republiche, è quando sono più uomini che hanno a resolvere, e tra questi sono le opinioni varie; il che può procedere o da malignità, perché abbino diversi fini, o pure sanza malignità, perché e&#x27; giudicii degli uomini non si conformino, come accade spesso etiam tra prudenti. E è vero che queste sospensioni communemente sono perniziose, perché mentre stai sospeso non puoi provedere né all&#x27;uno caso né all&#x27;altro; e se qualche volta sono utili, come sarebbe accaduto a&#x27; Lavinii, e&#x27; quali se fussino tardati ancora tre o quattro dì più a resolversi, non arebbono patito pena di quello poco viaggio, nondimeno questa è una utilità che risulta più presto per caso che altrimenti. La suspensione è adunque da aborrire, la resoluzione sommamente da laudare, ma s&#x27;ha da avvertire che lo stare neutrale può anche procedere per resoluzione, non per suspensione; nel secondo caso la neutralità è reprensibile, nel primo può essere e utile e perniziosa, secondo la qualità de&#x27; casi, di che trattare non è ora materia nostra. Il medesimo dico del differire qualche altra azione o esecuzione; ché se la tardità procede da irresoluzione è sempre dannabile, ma se si fa deliberatamente può essere laudabile.</div>
+        <div class="col en" lang="en">From two causes the ambiguities of deliberations proceed: the one from weakness of those who are to resolve, I do not say weakness of forces and of power, but weakness of prudence and of mind, and this cause can fall as well in a prince as in a republic; and I believe that when the Discourse said weak states, it understood weak in prudence, albeit weakness of forces can in part increase irresolution; because commonly the courses that weak states are to take are commonly more full of difficulties and of dangers. The other cause, which is proper to republics, is when there are several men who are to resolve, and among these the opinions are various; which can proceed either from malignity, because they have diverse ends, or else without malignity, because the judgments of men do not conform <span class="supplied">[with one another]</span>, as happens often even among prudent <span class="supplied">[men]</span>. And it is true that these suspensions are commonly pernicious, because while you stand suspended you cannot provide for either the one case or the other; and if sometimes they are useful, as would have happened to the Lavinians, who, if they had delayed yet three or four days more in resolving themselves, would not have suffered penalty for that little journey, nevertheless this is a utility that results rather by chance than otherwise. Suspension is then to be abhorred, resolution supremely to be praised, but one has to take heed that standing neutral can also proceed from resolution, not from suspension; in the second case neutrality is reprehensible, in the first it can be both useful and pernicious, according to the quality of the cases, of which to treat is not now our matter. I say the same of deferring some other action or execution; for if the tardiness proceeds from irresolution it is always damnable, but if it is done deliberately it can be laudable.</div>
+        <details class="annot"><summary>Commentary · 4</summary>
+          <p><span class="lem">Argument.</span> The reply is one paragraph and works by division. It begins not with a judgment of the Discourse but with an account of where the ambiguities of deliberations come from, and there are two causes. The first is the weakness of those who are to resolve: not weakness of forces and power, Guicciardini says, but of prudence and mind; it can fall as well in a prince as in a republic; and he believes that when the Discourse said &quot;weak states&quot; it understood weak in prudence. He allows, with <i lang="it">benché</i>, that weakness of forces can in part increase irresolution, because the courses weak states are to take are commonly fuller of difficulties and dangers. The second cause is proper to republics: when several men are to resolve and their opinions vary; and the variety can proceed either from malignity, because they have diverse ends, or else without malignity, because men&#x27;s judgments do not conform with one another, as happens often even among the prudent.</p>
+<p><span class="lem">Note.</span> Then the judgment, in two steps. &quot;It is true&quot; that these suspensions are commonly pernicious, since while you stand suspended you can provide for neither case; and if they are sometimes useful, as they would have been to the Lavinians had they delayed three or four days more, that utility comes rather by chance than otherwise. Suspension is then to be abhorred, resolution supremely praised, &quot;but&quot; one has to take heed that standing neutral can also proceed from resolution, not from suspension: from suspension it is reprehensible, from resolution it can be both useful and pernicious according to the quality of the cases, a question he says is not now his matter. He says the same of deferring some other action or execution: tardiness from irresolution is always damnable, tardiness done deliberately can be laudable.</p>
+<p><span class="lem">Note.</span> In the editor&#x27;s reading, the reply limits the chapter&#x27;s conclusion rather than contradicting it: where Machiavelli says slow deliberations are always harmful, Guicciardini says tardiness from irresolution is always damnable, and tardiness done deliberately can be laudable. Whether that contradicts the rubric&#x27;s second &quot;always&quot; depends on whether a deliberate delay counts as a slow deliberation. The word he chooses for the good case, &quot;deliberately&quot;, is the chapter&#x27;s own word for deciding.</p>
+<p><span class="lem">Cross-reference.</span> In the editor&#x27;s reading, the two causes take up Machiavelli&#x27;s two sources of slow deliberations, &quot;weakness of spirit and of forces&quot; and &quot;the malignity of those who are to deliberate&quot; <a class="xref" href="#NM-DISC.2.15.03">Machiavelli .03</a>, applied now to ambiguity: Guicciardini moves the weakness from forces to prudence and mind, keeping a part for forces, and Machiavelli&#x27;s &quot;spirit&quot; is not his &quot;mind&quot;; and he sets beside malignity a difference of judgments without it. &quot;Standing suspended&quot; is Machiavelli&#x27;s phrase for what Livy shows the damage of at Syracuse <a class="xref" href="#NM-DISC.2.15.04">Machiavelli .04</a>, made by Guicciardini into &quot;stand suspended&quot; and the noun &quot;suspension&quot;. The Lavinians are Machiavelli&#x27;s second example <a class="xref" href="#NM-DISC.2.15.05">Machiavelli .05</a>, taken up inside Guicciardini&#x27;s concession; his &quot;little journey&quot; answers Milionius&#x27; &quot;this little of the path&quot;. Standing neutral is what the Florentine orators agreed with Louis XII <a class="xref" href="#NM-DISC.2.15.06">Machiavelli .06</a>; in the editor&#x27;s reading, Guicciardini&#x27;s distinction falls across that case, the course resolved by the orators and suspended by the delay to ratify it, but he does not mention it. &quot;Tardiness&quot; is Machiavelli&#x27;s word, beside ambiguity, for what Apollonides held was to be detested <a class="xref" href="#NM-DISC.2.15.04">Machiavelli .04</a>, and &quot;damnable&quot; his word for the Florentine course <a class="xref" href="#NM-DISC.2.15.06">Machiavelli .06</a>.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div class="app-source">
+        <h3>Source</h3>
+        <p>Established from Canestrini 1857, <i>Opere inedite</i> vol. 1, pp. 1–65 (<span class="sig">WIT-FG-CONS-1857-CANESTRINI</span>) — the <i>editio princeps</i>, which governs. Collated against Palmarocchi 1933 (<span class="sig">WIT-FG-CONS-1933-PALMAROCCHI</span>): page images and the Wikisource transcription consulted as collation evidence, not reproduced (LICENSE §5).</p>
+      </div>
+      <div class="app-variants">
+        <h3>Variants</h3>
+        <p id="v-FG-CONS-II15-D001"><a class="loc" href="#FG-CONS.2.15.01" title="Back to the paragraph">¶ 01</a> <span class="lem">deliberazioni:; ingegno,; all&#x27;altro;; viaggio,; altrimenti.; laudare,; suspensione;; nostra.; laudabile.</span>. The 1857 witness reads <i lang="it">delle deliberazioni⟨:|;⟩ l&#x27;una; ma debolezza di prudenza e di ingegno , e questa; né all altro⟨:|;⟩ e se; poco viaggio , nondimeno; altrimenti⟨.⟩ La; da laudare , ma; non per suspensione ⟨,|;⟩ nel secondo; materia nostra⟨.⟩ Il medesimo; può essere laudabile.</i>. The 1933 witness reads <i lang="it">deliberazione: l&#x27;una; prudenzia e di ingegno; e questa; né all&#x27;altro; e se; poco viaggio; nondimeno; altrimenti. La; da laudare; ma; non per suspensione: nel secondo; materia nostra. El medesimo; può essere laudabile.</i>. Where both readers see a mark and doubt its weight, the 1933 edition breaks the tie (D110); at <i lang="it">suspensione</i>, where it prints a colon, the heavier of the two marks the readers see. Marks read alike by both without doubt kept against the 1933 (D110). Canestrini&#x27;s printed stop at the end kept (D460). D470.</p>
+<p id="v-FG-CONS-II15-D002"><span class="lem">Considerazione sul capitolo XV / Gli Stati deboli sempre fieno ambigui nel risolversi e sempre le deliberazioni lente sono nocive</span>. The 1857 witness reads <i lang="it">CONSIDERAZIONE SUL CAPITOLO XV / Gli Stati deboli sempre fieno ambigui nel risolversi / e sempre le deliberazioni lente sono nocive</i>. The 1933 witness reads <i lang="it">CAPITOLO XV / [Gli stati deboli sempre fiano ambigui nel risolversi: e sempre le diliberazioni lente sono nocive.]</i>. Canestrini&#x27;s heading without <i lang="it">del libro II</i>, as printed (D443). His rubric, its broken <i lang="it">e</i> read with Machiavelli&#x27;s 1824 rubric; <i lang="it">fieno</i>, read by both readers without doubt, where the 1933 edition prints <i lang="it">fiano</i> and <i lang="it">diliberazioni</i>; no stop (D471, as D463). Canestrini&#x27;s footnote to the reply, his summary of the chapter, not carried (D463).</p>
+      </div>
+      <div class="app-notes">
+        <h3>Notes</h3>
+        <p id="n-FG-CONS.2.15-1"><span class="lem">The heading and the rubric.</span> Canestrini&#x27;s heading, CONSIDERAZIONE SUL CAPITOLO XV, without <i lang="it">del libro II</i>, as both readers saw it; the column is headed as the page is (D443, D471). His rubric is Machiavelli&#x27;s sentence (Machiavelli, rubric), <i lang="it">fieno</i> included, without the comma; the 1933 edition prints <i lang="it">fiano</i> and <i lang="it">diliberazioni</i> (FG-CONS-II15-D002). Canestrini prints no reply to chapters XVI to XVIII; his next is to chapter XIX.</p>
+<p id="n-FG-CONS.2.15-2"><a class="loc" href="#FG-CONS.2.15.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">Da due cagioni procedono le ambiguità delle deliberazioni</i>.</span> &quot;From two causes the ambiguities of deliberations proceed&quot;: the count set first, as printed, the verb in plain order (D263); <i lang="it">cagione</i>, cause (glossary); <i lang="it">procedere</i>, proceed, Machiavelli&#x27;s verb for the sources of slow deliberations (Machiavelli .03), held four times in the reply; <i lang="it">ambiguità</i>, ambiguity, plural as printed; <i lang="it">deliberazione</i>, deliberation (glossary). Guicciardini opens on the first half of the rubric, ambiguity; slowness comes in the Lavinians&#x27; case and directly at the end.</p>
+<p id="n-FG-CONS.2.15-3"><a class="loc" href="#FG-CONS.2.15.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">l&#x27;una da debolezza di quelli che hanno a risolvere</i>.</span> &quot;The one from weakness of those who are to resolve&quot;: <i lang="it">avere a</i>, destinative, &quot;are to&quot; (D261), whose part it is to decide; <i lang="it">risolvere</i>, resolve (glossary), with <i lang="it">resolvere</i>, <i lang="it">resolversi</i>, <i lang="it">resoluzione</i>, <i lang="it">irresoluzione</i> below, one root in five forms.</p>
+<p id="n-FG-CONS.2.15-4"><a class="loc" href="#FG-CONS.2.15.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">non dico debolezza di forze e di potenza, ma debolezza di prudenza e di ingegno</i>.</span> &quot;I do not say weakness of forces and of power, but weakness of prudence and of mind&quot;: <i lang="it">forze</i>, forces, and <i lang="it">potenza</i>, power (glossary, D06); <i lang="it">prudenza</i>, prudence (glossary); <i lang="it">ingegno</i>, mind (D178). The correction takes Machiavelli&#x27;s own pair, <i lang="it">debolezza di animo e di forze</i> (Machiavelli .03), and moves the weakness from forces to judgment; Machiavelli&#x27;s <i lang="it">animo</i>, spirit, is not Guicciardini&#x27;s <i lang="it">ingegno</i>, mind.</p>
+<p id="n-FG-CONS.2.15-5"><a class="loc" href="#FG-CONS.2.15.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">e questa cagione può cadere così in uno principe come in una republica</i>.</span> &quot;And this cause can fall as well in a prince as in a republic&quot;: <i lang="it">cadere</i>, fall, of a defect that befalls; <i lang="it">così ... come</i>, as well ... as (D334): both are open to it, not equally.</p>
+<p id="n-FG-CONS.2.15-6"><a class="loc" href="#FG-CONS.2.15.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">e credo che quando il Discorso disse gli Stati deboli, intese deboli di prudenza</i>.</span> &quot;And I believe that when the Discourse said weak states, it understood weak in prudence&quot;: <i lang="it">credo</i>, I believe (glossary): assent to a reading of Machiavelli, not a certainty; <i lang="it">il Discorso</i>, the Discourse, the chapter, through its rubric; <i lang="it">intendere</i>, understand (D374), in the period&#x27;s sense of what a sentence is taken to mean, as at FG II.10.</p>
+<p id="n-FG-CONS.2.15-7"><a class="loc" href="#FG-CONS.2.15.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">benché la debolezza delle forze può in parte accrescere la irresoluzione</i>.</span> &quot;Albeit weakness of forces can in part increase irresolution&quot;: <i lang="it">benché</i>, albeit (D31), with the indicative, as printed; <i lang="it">in parte</i>, in part, the measure of the concession; <i lang="it">irresoluzione</i>, irresolution.</p>
+<p id="n-FG-CONS.2.15-8"><a class="loc" href="#FG-CONS.2.15.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">perché communemente e&#x27; partiti che hanno a pigliare gli Stati deboli, sono communemente più pieni di difficultà e di periculi</i>.</span> &quot;Because commonly the courses that weak states are to take are commonly more full of difficulties and of dangers&quot;: <i lang="it">communemente</i> twice, kept twice; <i lang="it">partito</i>, course (D236); <i lang="it">pigliare</i>, take (glossary); <i lang="it">difficultà</i>, difficulty (D464), plural here with <i lang="it">periculi</i>; <i lang="it">periculo</i>, danger (glossary), in Canestrini&#x27;s spelling, as at II.14 (D462). The <i lang="it">perché</i> gives the reason for the concession, not a new claim.</p>
+<p id="n-FG-CONS.2.15-9"><a class="loc" href="#FG-CONS.2.15.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">L&#x27;altra cagione, che è propria delle republiche, è quando sono più uomini che hanno a resolvere</i>.</span> &quot;The other cause, which is proper to republics, is when there are several men who are to resolve&quot;: <i lang="it">proprio</i>, proper, belonging to republics alone; <i lang="it">più uomini</i>, several men; <i lang="it">resolvere</i>, resolve, in Guicciardini&#x27;s other spelling.</p>
+<p id="n-FG-CONS.2.15-10"><a class="loc" href="#FG-CONS.2.15.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">e tra questi sono le opinioni varie</i>.</span> &quot;And among these the opinions are various&quot;: <i lang="it">opinione</i>, opinion (D02); <i lang="it">vario</i>, various.</p>
+<p id="n-FG-CONS.2.15-11"><a class="loc" href="#FG-CONS.2.15.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">il che può procedere o da malignità, perché abbino diversi fini, o pure sanza malignità, perché e&#x27; giudicii degli uomini non si conformino</i>.</span> &quot;Which can proceed either from malignity, because they have diverse ends, or else without malignity, because the judgments of men do not conform [with one another]&quot;: <i lang="it">malignità</i>, malignity (glossary), Machiavelli&#x27;s word for those who block deliberation (Machiavelli .03), here one of two grounds of variety only; <i lang="it">o pure</i>, or else; <i lang="it">fine</i>, end; <i lang="it">giudicio</i>, judgment; <i lang="it">conformarsi</i>, conform, reflexive and reciprocal, with the bracket (D53). The two <i lang="it">perché</i> give the two grounds; the subjunctives (<i lang="it">abbino</i>, <i lang="it">conformino</i>) are rendered as indicatives, the possibility being carried by <i lang="it">può procedere</i>.</p>
+<p id="n-FG-CONS.2.15-12"><a class="loc" href="#FG-CONS.2.15.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">come accade spesso etiam tra prudenti</i>.</span> &quot;As happens often even among prudent [men]&quot;: <i lang="it">accadere</i>, happen (D298); <i lang="la">etiam</i>, even (latin.md; glossary, D453); <i lang="it">prudenti</i>, prudent, the adjective as a noun, with &quot;men&quot; supplied (D53).</p>
+<p id="n-FG-CONS.2.15-13"><a class="loc" href="#FG-CONS.2.15.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">E è vero che queste sospensioni communemente sono perniziose</i>.</span> &quot;And it is true that these suspensions are commonly pernicious&quot;: <i lang="it">E è</i>, as printed (the 1933 edition <i lang="it">Ed è</i>); <i lang="it">sospensione</i>, suspension, Guicciardini&#x27;s noun for Machiavelli&#x27;s <i lang="it">stare sospeso</i> (Machiavelli .04) and for both his ambiguity and his slowness: the reply&#x27;s key word, spelled <i lang="it">sospensioni</i> here and <i lang="it">suspensione</i> twice below, one word; <i lang="it">pernizioso</i>, pernicious (glossary), answering Machiavelli&#x27;s <i lang="it">nocive</i>, harmful (rubric, .03), in a stronger word (his <i lang="it">perniciosa</i>, .03, is of the side a popular rush turns to). <i lang="it">è vero che</i>, it is true that, opens a concession that <i lang="it">nondimeno</i> will limit.</p>
+<p id="n-FG-CONS.2.15-14"><a class="loc" href="#FG-CONS.2.15.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">perché mentre stai sospeso non puoi provedere né all&#x27;uno caso né all&#x27;altro</i>.</span> &quot;Because while you stand suspended you cannot provide for either the one case or the other&quot;: <i lang="it">stare sospeso</i>, stand suspended, Machiavelli&#x27;s phrase (Machiavelli .04) turned to the second person; <i lang="it">provedere</i>, provide (glossary), here with <i lang="it">a</i>, for; <i lang="it">caso</i>, case.</p>
+<p id="n-FG-CONS.2.15-15"><a class="loc" href="#FG-CONS.2.15.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">e se qualche volta sono utili, come sarebbe accaduto a&#x27; Lavinii</i>.</span> &quot;And if sometimes they are useful, as would have happened to the Lavinians&quot;: <i lang="it">qualche volta</i>, sometimes (D431); <i lang="it">utile</i>, useful (the adjective, D135); <i lang="it">Lavinii</i>, the Lavinians, Machiavelli&#x27;s <i lang="it">Lavinj</i> (Machiavelli .05; names.md).</p>
+<p id="n-FG-CONS.2.15-16"><a class="loc" href="#FG-CONS.2.15.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">e&#x27; quali se fussino tardati ancora tre o quattro dì più a resolversi, non arebbono patito pena di quello poco viaggio</i>.</span> &quot;Who, if they had delayed yet three or four days more in resolving themselves, would not have suffered penalty for that little journey&quot;: <i lang="it">tardare</i>, delay, the root of <i lang="it">tardità</i>; <i lang="it">ancora</i>, yet; <i lang="it">resolversi</i>, resolve themselves, the rubric&#x27;s reflexive; <i lang="it">patire pena</i>, suffer penalty; <i lang="it">viaggio</i>, journey, answering Milionius&#x27; <i lang="it">Questo poco della via</i> (Machiavelli .05). The editor&#x27;s reading: three or four days more, and the news of the rout would have come before they marched.</p>
+<p id="n-FG-CONS.2.15-17"><a class="loc" href="#FG-CONS.2.15.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">nondimeno questa è una utilità che risulta più presto per caso che altrimenti</i>.</span> &quot;Nevertheless this is a utility that results rather by chance than otherwise&quot;: <i lang="it">nondimeno</i>, nevertheless (glossary), limiting the concession; <i lang="it">utilità</i>, utility (D472), kept apart from the adjective <i lang="it">utile</i>, useful (D135), and the noun <i lang="it">utile</i>, advantage (D283); <i lang="it">risultare</i>, result; <i lang="it">più presto ... che</i>, rather ... than (D135); <i lang="it">per caso</i>, by chance, a sense split from <i lang="it">caso</i>, case (D472).</p>
+<p id="n-FG-CONS.2.15-18"><a class="loc" href="#FG-CONS.2.15.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">La suspensione è adunque da aborrire, la resoluzione sommamente da laudare</i>.</span> &quot;Suspension is then to be abhorred, resolution supremely to be praised&quot;: <i lang="it">adunque</i>, then (D74), the conclusion drawn from what precedes; the second member without a verb, kept so; <i lang="it">aborrire</i>, abhor; <i lang="it">sommamente</i>, supremely; <i lang="it">laudare</i>, praise (D422).</p>
+<p id="n-FG-CONS.2.15-19"><a class="loc" href="#FG-CONS.2.15.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">ma s&#x27;ha da avvertire che lo stare neutrale può anche procedere per resoluzione, non per suspensione</i>.</span> &quot;But one has to take heed that standing neutral can also proceed from resolution, not from suspension&quot;: the comma before <i lang="it">ma</i> kept, so that the qualification stays in the movement of the conclusion; <i lang="it">avere da</i>, has to (D261, the sense necessity); <i lang="it">avvertire</i>, take heed; <i lang="it">stare neutrale</i>, standing neutral, the orators&#x27; accord that the Florentines <i lang="it">stessero neutrali</i>, &quot;stand neutral&quot; (Machiavelli .06), with <i lang="it">stare</i> held; <i lang="it">per</i>, from, of the source.</p>
+<p id="n-FG-CONS.2.15-20"><a class="loc" href="#FG-CONS.2.15.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">nel secondo caso la neutralità è reprensibile, nel primo può essere e utile e perniziosa</i>.</span> &quot;In the second case neutrality is reprehensible, in the first it can be both useful and pernicious&quot;: the second case is neutrality from suspension, the first neutrality from resolution: the order is reversed, as printed. <i lang="it">reprensibile</i>, reprehensible, a recorded split from D173&#x27;s <i lang="it">riprendere</i>, <i lang="it">reprensione</i>, reprove, reproof: the adjective takes the cognate (D472).</p>
+<p id="n-FG-CONS.2.15-21"><a class="loc" href="#FG-CONS.2.15.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">secondo la qualità de&#x27; casi, di che trattare non è ora materia nostra</i>.</span> &quot;According to the quality of the cases, of which to treat is not now our matter&quot;: <i lang="it">qualità</i>, quality (glossary); <i lang="it">trattare</i>, treat (glossary); <i lang="it">materia</i>, matter, as Machiavelli&#x27;s <i lang="it">materia</i> (Machiavelli .01, .07). Guicciardini declines the question of neutrality here.</p>
+<p id="n-FG-CONS.2.15-22"><a class="loc" href="#FG-CONS.2.15.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">Il medesimo dico del differire qualche altra azione o esecuzione</i>.</span> &quot;I say the same of deferring some other action or execution&quot;: plain order (D263); <i lang="it">differire</i>, defer (D334), Machiavelli&#x27;s verb for the Florentines and the Lavinians; <i lang="it">azione</i>, action; <i lang="it">esecuzione</i>, execution (glossary).</p>
+<p id="n-FG-CONS.2.15-23"><a class="loc" href="#FG-CONS.2.15.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">ché se la tardità procede da irresoluzione è sempre dannabile, ma se si fa deliberatamente può essere laudabile</i>.</span> &quot;For if the tardiness proceeds from irresolution it is always damnable, but if it is done deliberately it can be laudable&quot;: <i lang="it">ché</i>, for; <i lang="it">tardità</i>, tardiness, Machiavelli&#x27;s word (Machiavelli .04); <i lang="it">dannabile</i>, damnable, Machiavelli&#x27;s word for the Florentine course (Machiavelli .06); <i lang="it">deliberatamente</i>, deliberately, the adverb of <i lang="it">deliberazione</i>: delay that is itself a deliberation; <i lang="it">laudabile</i>, laudable (glossary). <i lang="it">sempre</i> answers the rubric&#x27;s <i lang="it">sempre</i> twice over: what is always harmful is only the tardiness of irresolution. Canestrini&#x27;s note on p. 69, keyed after the last word, his summary of Machiavelli&#x27;s chapter, is not carried (by precedent, D463; D470). The reply ends with Canestrini&#x27;s stop.</p>
+      </div>
+    </div>
+  </section>
+
+    <nav class="pairnav pairnav-foot"><a href="2.14.html">← Pair 2.14</a><a href="../index.html">All 39 pairs</a><span></span></nav>
+
+  <footer class="colophon">
+
+    <div class="state">
+      <p><strong>Version 0.3 · 34 of 39 pairs published.</strong>
+        Published 22 November 2026. This edition is versioned, not frozen. No open questions on this pair.</p>
+    </div>
+    <p class="links"><a href="../about.html">About this edition</a><a href="../about.html#licence">Licence</a><a href="../about.html#method">Method</a><a href="https://github.com/davidmcdougall/conversation-with-machiavelli">Source and data on GitHub</a></p>
+  </footer>
+
+</div>
