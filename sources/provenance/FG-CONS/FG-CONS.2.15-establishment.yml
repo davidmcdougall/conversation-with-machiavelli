@@ -1,0 +1,33 @@
+source_unit_id: FG-CONS.2.15
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-034
+responds_to: NM-DISC.2.15
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. Canestrini's note on p. 69 (keyed after the last word, `laudabile.`: `Danna il Machiavelli le deliberazioni ambigue, lente e tarde, perchè ...`) is his summary of the chapter and is not carried (D463)."
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38); errors are emended from Palmarocchi and bracketed (D68, D126)."
+passes:
+  - {id: A, performed: 2026-11-22, file: sources/coldpass/FG-CONS.2.15-passA.md, note: "subagent; page images only (native 600 ppi rendered at 1200, the whole page and halves cut in pixels, sizes and checksums verified before dispatch), own image, work and output folders, forbidden every other path (D370)"}
+  - {id: B, performed: 2026-11-22, file: sources/coldpass/FG-CONS.2.15-passB.md, note: "subagent; same images, separate folders"}
+collation: sources/coldpass/COLLATION-2026-11-22-II15.md
+collation_result: >
+  296 words each (p. 68 204, p. 69 92), the body tokens identical after
+  preferred readings, with no split. Doubts where both readers, or one,
+  prefer the word read as printed (D470). The plural article set `e'`
+  (D35); pointing by D110; the printed stop at the end kept (D460).
+witness_independence_check: "SCOPE §7. Neither pass carries a Palmarocchi word-reading where Canestrini differs: both have `cagioni`, `deliberazioni`, `prudenza` ×2, `potenza`, `il Discorso`, `periculi`, `opinioni`, `giudicii`, `E è vero`, `sospensioni`, `utili`, `Lavinii`, `resolversi`, `Il medesimo`, `chè`, `e utile`, against the 1933 `cagione`, `deliberazione`, `prudenzia`, `potenzia`, `el Discorso`, `pericoli`, `opinione`, `giudici`, `Ed è vero`, `sospensione`, `utile`, `lavini`, `risolversi`, `El medesimo`, `che`, `ed utile`. The passes read Canestrini."
+boundaries: "printed pp. 68-69; heading CONSIDERAZIONE SUL CAPITOLO XV on p. 68 below the end of the II.14 reply, without `del libro II`; a two-line rubric in smaller type; one indented paragraph; ends p. 69 l. 10 `può essere laudabile.`, with Canestrini's note (1) keyed after it, at the foot of p. 69; CONSIDERAZIONE SUL CAPITOLO XIX follows on p. 69"
+heading: "CONSIDERAZIONE SUL CAPITOLO XV, without `del libro II` (both readers), set in the unit's `heading` front-matter (D443, D471)"
+rubric: "Gli Stati deboli sempre fieno ambigui nel risolversi / ⟨e|o⟩ sempre le deliberazioni ⟨lente|iente⟩ sono nocive (A; B the same without the doubt at `lente`), both preferring `e` and `lente`: read with the 1824 rubric; the 1933 `fiano`, `diliberazioni` in the variant note; no stop (D471, as D463)"
+corrections: []
+emendations: []
+readings:
+  - {locus: "FG-CONS.2.15.01 `uno`, `questi`, `abbino`, `giudicii`, `Lavinii`, `che è propria`, `questa è una`", passes: "doubtful to both, both preferring the word at the scan's u/n, h/b, ii/u and e/o breaks (`è` against an accented `ò`, no word here)", witness_1933: "the same words (`giudici`, `lavini` in its spelling)", disposition: "readings, as printed (D470)"}
+  - {locus: "FG-CONS.2.15.01 `hanno` ×2, `etiam`, `sospensioni`, `utili`, `altrimenti`, `sommamente`, `utile`, `s'ha`", passes: "doubtful to one reader, the other reading the word without doubt", witness_1933: "the same words", disposition: "readings, as printed (D470)"}
+  - {locus: "FG-CONS.2.15.01 `e' partiti`, `e' giudicii`, `e' quali`", passes: "both `e`, without doubt", witness_1933: "e' partiti, e' giudici, e' quali", disposition: "the apostrophe supplied on the plural article, DEC-009 clause 2 (D35)"}
+  - {locus: "FG-CONS.2.15.01 pointing: `deliberazioni:`, `all'altro;`, `suspensione;`, `altrimenti.`, `nostra.`", passes: "both see a mark and doubt its weight", witness_1933: "deliberazione: / altro; / suspensione: / altrimenti. / nostra.", disposition: "the 1933 breaks the tie (D110); at `suspensione`, where the 1933 prints a colon, the heavier of the two marks the readers see, `;` (D470)"}
+  - {locus: "FG-CONS.2.15.01 pointing: `ingegno,`, `viaggio,`, `laudare,`; `republica;`, `irresoluzione;`, `esecuzione;`", passes: "the commas both alike without doubt; the semicolons A without doubt, B preferring `;`", witness_1933: "ingegno; viaggio; laudare; / republica; irresoluzione, esecuzione;", disposition: "kept (D110); the stop after `laudabile`, printed and seen by both, kept (D460)"}
+not_supplied: []
+normalisation_notes: "Class A: accents (`perchè` → `perché`, `benchè` → `benché`, `nè` → `né`, `chè` → `ché`); `all altro` closed as elision; spaces after elision and before punctuation removed (`l' una`, `L' altra`, `all' uno`, `s' ha`, `ingegno ,`); line-end hyphens removed; Canestrini's note call removed with his note."

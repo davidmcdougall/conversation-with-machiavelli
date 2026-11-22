@@ -1,0 +1,60 @@
+source_unit_id: NM-DISC.2.15
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-II15-D001
+    locator: NM-DISC.2.15.01
+    class: ruled_reading
+    witness_1824: "E stando nel consiglio di questa disputa ... *Facile erit, explicatis consiliis, accomodare rebus verba.* Sono senza dubbio"
+    witness_1554: "Et ſtando nel conſiglio in queſta diſputa ... facile erit,explicatis conſilijs, accommodare re bus uerba . Cioè,la ſomma de le coſe noſtre ſtimo io che ſia, che penſiate piu a quello che dobbiamo fare,che a quello che dobbiamo parlare,perche ageuole coſe ſia inteſo che haurete i noſtri conſigli, accommodar le parole alle coſe.Sono ſenza dubbio"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The 1554 has `in` for `di` (the same sense, the council held on this dispute) and follows the quotation with an Italian rendering, as at II.13 and II.14 (NM-DISC-II13-D004, NM-DISC-II14-D002); the 1824 prints the Latin alone. Read by both 1824 readers without doubt (crops b, c). Kept (D38, D469)."
+  - id: NM-DISC-II15-D002
+    locator: NM-DISC.2.15.03
+    class: ruled_reading
+    witness_1824: "perché con la lentezza loro ... Queste deliberazioni così fatte procedono ... o adempire qualche suo desiderio ... ancora che veggano una foga popolare ... mai impediranno il deliberare"
+    witness_1554: "perche con lentezza loro ... Queſte deliberationi coſi fatte procedano ... e adempire qualche ſuo deſiderio ... anchora che uegghino una fuga popolare ... mai non impediranno il deliberare"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "`foga`, a popular rush (the heat of the crowd), against `fuga`, a flight; `o adempire`, the second of two motives (to ruin the state or to fulfil a desire), against `e`, both together; `procedono` against the subjunctive `procedano`; the 1554 omits the article before `lentezza` and doubles the negative after `mai` (the same sense). `procedono`, `o`, `foga` at the D203(b) letter classes, on the sample page, read by both 1824 readers without doubt. Kept (D38, D469)."
+  - id: NM-DISC-II15-D003
+    locator: NM-DISC.2.15.04
+    class: ruled_reading
+    witness_1824: "vennero i Siracusani in disputa ... ma che era ben da detestare quella ambiguità"
+    witness_1554: "uennono in Siracuſani in diſputa ... ma era bene da detteſtare quella ambiguita"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The 1554's `in Siracuſani` does not construe; its `ma era` drops the `che` that keeps the clause in Apollonides' demonstration. Read by both 1824 readers without doubt (sample page). Kept (D38, D469)."
+  - id: NM-DISC-II15-D004
+    locator: NM-DISC.2.15.05
+    class: ruled_reading
+    witness_1824: "perché sendo i Lavinj ricerchi da loro d'ajuto contro ai Romani"
+    witness_1554: "perche eſſendo i Latini ricerchi da loro d'aiuto contra i Romani"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The 1554 has the Latins sought for aid by the Latins. The people are the Lanuvini of Livy 8.11.3, whom Machiavelli calls `Lavinj` and Guicciardini `Lavinii` (FG-CONS.2.15.01). Read by both 1824 readers without doubt (sample page). Kept (D38, D469)."
+  - id: NM-DISC-II15-D005
+    locator: NM-DISC.2.15.06
+    class: ruled_reading
+    witness_1824: "e gli Oratori ch'erano appresso al Re accordarono con lui ... per simile causa le intervenne ... arebbe mostri molti più segni di inimicizia ... che non fece il Re. E benché"
+    witness_1554: "& gli oratori , che erano appreſſo al Re,s'accordarono con lui ... per ſimile cagione le interuenne ... harebbe moſtri piu ſegni di inimicitia ... che non fece il Re.Et benche"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The reflexive `s'accordarono` for `accordarono` (the same sense), `cagione` for `causa` (one English word, the glossary's recorded collapse), and no `molti`. Read by both 1824 readers without doubt (crops e, f, g, h). Kept (D38, D469). The stop after `Re`, a mark pass A doubts against a comma before the capital, read with the 1554 (C001, D67)."
+  - id: NM-DISC-II15-D006
+    locator: NM-DISC.2.15.07
+    class: ruled_reading
+    witness_1824: "del male che nasce alle Repubbliche di questa debolezza ... ho voluto replicarne"
+    witness_1554: "del male,che naſce alla Republica di queſta debolezza ... ho uoluto replicare"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The 1554's singular `alla Republica` narrows the ill to one republic, as Machiavelli's `Repubblica nostra` (.02) would; the 1824's plural keeps it general, answering `dalle Repubbliche simili alla nostra` at the close. `replicare` drops the partitive `ne`. Read by both 1824 readers without doubt (crops i, j). Kept (D38, D469)."
+  - id: NM-DISC-II15-D007
+    locator: NM-DISC.2.15.01
+    class: heading
+    witness_1824: "CAPITOLO XV / Gli Stati deboli sempre fieno ambigui nel risolversi, / e sempre le deliberazioni lente sono nocive."
+    witness_1554: "GLI STATI DEBBOLI SEMPRE / ſieno ambigui nel riſoluerſi,et ſempre le deli- / berationi lente ſono nociue. Ca. XV."
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The same sentence but for spelling and one word: the 1824's `fieno`, will be, doubtful to both 1824 readers at a ligature (`fieno` or `sieno`), both preferring `fieno`, against the 1554's `ſieno`, be. Canestrini's rubric over the reply reads `fieno` without doubt to either reader, and the 1933 edition `fiano`. `fieno` applied provisionally on the recommendation, O48 (D471)."

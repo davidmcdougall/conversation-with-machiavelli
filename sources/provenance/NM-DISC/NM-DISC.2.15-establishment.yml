@@ -1,0 +1,32 @@
+source_unit_id: NM-DISC.2.15
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-034
+passes:
+  - {id: A, performed: 2026-11-22, file: sources/coldpass/NM-DISC.2.15-passA.md, note: "subagent; page images only (350 ppi, whole page and thirds cut in pixels, sizes and checksums verified before dispatch), own image, work and output folders, forbidden every other path (D370); full chapter"}
+  - {id: B-sample, performed: 2026-11-22, file: sources/coldpass/NM-DISC.2.15-passB-sample.md, note: "subagent; separate folders; the D302 sample page, p. 266, chosen and recorded after pass A and the Giglio read, with ten line crops (the eight 1554 differences outside it and pass A's one doubt between words, the rubric's `fieno`), not told which word"}
+collation: sources/coldpass/COLLATION-2026-11-22-II15.md
+collation_result: "909 words in pass A (p. 264 95, p. 265 228, p. 266 250, p. 267 254, p. 268 82); pass B read p. 266 as the D302 sample and ten lines of pp. 264, 265, 267, 268: identical word for word after Class A (248 tokens on p. 266; every crop line as pass A). Pass B's doubts are the rubric's `⟨fieno|sieno⟩` (as pass A) and `⟨lo|le⟩ Stato` at a damaged sort pass A also describes, read `lo` with sense and the 1554 (D457). Against the 1554: the whole words kept (D469)."
+boundaries: "printed pp. 264-268; p. 264 opens with the end of II.14 (`... fia sempre partito prudente.`), then CAPITOLO XV and the two-line italic rubric; enlarged initial I; one block; no notes; the Latin of Annius' speech (Livy 8.4) in italic at p. 265 ll. 9-13; ends p. 268 l. 11 `stra notata.`; CAPITOLO XVI follows on p. 268"
+heading: "CAPITOLO XV"
+rubric_check: "1824: `Gli Stati deboli sempre ⟨fieno|sieno⟩ ambigui nel risolversi, e sempre le deliberazioni lente sono nocive.` (pass A and the crop reader both doubting the first letter of `fieno`, both preferring it). Canestrini's rubric over the reply agrees word for word, `fieno` read by both FG readers without doubt; the 1554 heads the chapter `GLI STATI DEBBOLI SEMPRE ſieno ambigui nel riſoluerſi,et ſempre le deliberationi lente ſono nociue. Ca. XV.`; the 1933 edition's bracketed title has `fiano`. `fieno` applied provisionally, O48 (D471)"
+interventions:
+  - {id: NM-DISC-II15-C001, locator: NM-DISC.2.15.06, was: "che non fece il Re, E benchè", now: "che non fece il Re. E benché", evidence: "Pass A sees a comma-shaped mark and doubts it against a stop; a capital follows; the 1554 prints `Re.Et`. Pointing; read as a stop as D67 supplies the stops the impression lacks."}
+emendations: []
+procedure:
+  - {id: D468, note: "Sample page p. 266 (250 words; a fifth of 909 is 182, so pp. 265-267 eligible, p. 264 holding 95 and p. 268 82), with the most word-level 1554 differences per word (p. 264 none, p. 265 three in 228, p. 266 seven in 250, p. 267 two in 254, p. 268 three in 82); ten line crops. Sample and crops agree with pass A word for word."}
+readings:
+  - {locus: "NM-DISC.2.15 rubric `sempre fieno ambigui`", passes: "A and the crop reader, both ⟨fieno|sieno⟩, preferring `fieno`", witness_1554: "ſieno", disposition: "`fieno` applied provisionally on the recommendation, O48 (D471): the future, as Canestrini's rubric (both FG readers, without doubt) and the 1933 `fiano`"}
+  - {locus: "NM-DISC.2.15.03 `procedono`, `o adempire`, `foga popolare` (the D203(b) letter classes, on the sample page)", passes: "A and B, without doubt", witness_1554: "procedano; e adempire; fuga popolare", disposition: "kept, D469 (2026-11-22, by precedent: D38); variant notes; translator's notes on `foga` and `o adempire`"}
+  - {locus: "NM-DISC.2.15.01-.07 the whole-word differences: `nel consiglio di questa disputa` (.01), `con la lentezza loro` (.03), `mai impediranno` (.03), `vennero i Siracusani` (.04), `ma che era ben` (.04), `sendo i Lavinj` (.05), `accordarono` (.06), `per simile causa` (.06), `mostri molti più segni` (.06), `alle Repubbliche` (.07), `replicarne` (.07); the 1554's Italian rendering after the Latin (.01)", passes: "A and B (sample page or crop), without doubt", witness_1554: "`in queſta diſputa`; `con lentezza loro`; `mai non impediranno`; `uennono in Siracuſani`; `ma era bene`; `eſſendo i Latini`; `s'accordarono`; `per ſimile cagione`; `moſtri piu ſegni`; `alla Republica`; `replicare`; `Cioè,la ſomma de le coſe noſtre ... alle coſe.`", disposition: "kept, D469 (2026-11-22, by precedent: D38): the 1824 construes at each; variant notes, translator's notes where the sense moves (`Lavinj`, `alle Repubbliche`)"}
+comparison_collation: >
+  Done 2026-11-22 against the 1554 extract (fol. 109r-111r). A cold reader
+  transcribed the Giglio leaves from the page images
+  (sources/coldpass/NM-DISC.2.15-1554.md); no damage but three small stains,
+  each word legible (D415 not needed). The transcript was collated by word
+  against both 1824 passes after spelling normalisation. Differences are in
+  sources/comparisons/NM-DISC/NM-DISC.2.15-witness-disagreements.yml.
+normalisation_notes: "Class A only: accents (`Perchè` → `Perché`, `perchè` → `perché`, `benchè` → `benché`, `nè`/`Nè` → `né`/`Né`, `sè` → `sé`, `intantochè` → `intantoché`); elision closed up (`all' arme`, `ch' egli`, `l' animo`, `l' amicizia`, `l' attraversano`, `d' ajuto`); the space restored after the apocopated `da'`, `ne'`, `de'` (`da'Romani`, `ne'Popoli`); spaces before punctuation removed; line-end hyphens removed; the italic Latin kept in italic, `accomodare` as printed. `principj`, `dubbj`, `Lavinj`, `noje`, `volontarj`, `ajuta`, `ajuto`, `ajutare` as printed."

@@ -1,0 +1,20 @@
+source_unit_id: FG-CONS.2.15
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-II15-D001
+    locator: FG-CONS.2.15.01
+    class: pointing
+    witness_1857: "delle deliberazioni⟨:|;⟩ l'una; ma debolezza di prudenza e di ingegno , e questa; né all altro⟨:|;⟩ e se; poco viaggio , nondimeno; altrimenti⟨.⟩ La; da laudare , ma; non per suspensione ⟨,|;⟩ nel secondo; materia nostra⟨.⟩ Il medesimo; può essere laudabile."
+    witness_1933: "deliberazione: l'una; prudenzia e di ingegno; e questa; né all'altro; e se; poco viaggio; nondimeno; altrimenti. La; da laudare; ma; non per suspensione: nel secondo; materia nostra. El medesimo; può essere laudabile."
+    established: "deliberazioni:; ingegno,; all'altro;; viaggio,; altrimenti.; laudare,; suspensione;; nostra.; laudabile."
+    publish_as_variant_note: false
+    rationale: "Where both readers see a mark and doubt its weight, the 1933 edition breaks the tie (D110); at `suspensione`, where it prints a colon, the heavier of the two marks the readers see. Marks read alike by both without doubt kept against the 1933 (D110). Canestrini's printed stop at the end kept (D460). D470."
+  - id: FG-CONS-II15-D002
+    locator: FG-CONS.2.15.01
+    class: heading
+    witness_1857: "CONSIDERAZIONE SUL CAPITOLO XV / Gli Stati deboli sempre fieno ambigui nel risolversi / e sempre le deliberazioni lente sono nocive"
+    witness_1933: "CAPITOLO XV / [Gli stati deboli sempre fiano ambigui nel risolversi: e sempre le diliberazioni lente sono nocive.]"
+    established: "Considerazione sul capitolo XV / Gli Stati deboli sempre fieno ambigui nel risolversi e sempre le deliberazioni lente sono nocive"
+    publish_as_variant_note: true
+    rationale: "Canestrini's heading without `del libro II`, as printed (D443). His rubric, its broken `e` read with Machiavelli's 1824 rubric; `fieno`, read by both readers without doubt, where the 1933 edition prints `fiano` and `diliberazioni`; no stop (D471, as D463). Canestrini's footnote to the reply, his summary of the chapter, not carried (D463)."
