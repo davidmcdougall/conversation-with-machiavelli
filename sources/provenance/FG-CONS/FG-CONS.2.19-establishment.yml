@@ -1,0 +1,33 @@
+source_unit_id: FG-CONS.2.19
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-035
+responds_to: NM-DISC.2.19
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. Canestrini prints no note to this reply; the note at the foot of p. 69 is keyed to the II.15 reply."
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38); errors are emended from Palmarocchi and bracketed (D68, D126)."
+passes:
+  - {id: A, performed: 2026-11-22, file: sources/coldpass/FG-CONS.2.19-passA.md, note: "subagent; page images only (native 600 ppi rendered at 1200, the whole page and halves cut in pixels, sizes and checksums verified before dispatch), own image, work and output folders, forbidden every other path (D370)"}
+  - {id: B, performed: 2026-11-22, file: sources/coldpass/FG-CONS.2.19-passB.md, note: "subagent; same images, separate folders"}
+collation: sources/coldpass/COLLATION-2026-11-22-II19.md
+collation_result: >
+  234 words each (p. 69 120, p. 70 114), the body tokens identical after
+  preferred readings, with no split. Doubts where both readers, or one,
+  prefer the word read as printed (D478). `armi proprio` emended
+  `propri[e]` (E001, D478). The apocope set `Co'`, `de'` (DEC-009);
+  pointing by D110; no stop supplied at the end (D40).
+witness_independence_check: "SCOPE §7. Neither pass carries a Palmarocchi word-reading where Canestrini differs: both have `potenza` ×2, `il territorio`, `e allargato`, `jurisdizione`, `maggiori`, `proprii`, `armi` ×2, `se sanza dominio`, `e in mare`, `imperatori`, `il Discorso`, `cagioni`, `le ragioni`, `esperienza`, against the 1933 `potenzia`, `el territorio`, `ed allargato`, `iurisdizione`, `maggiore`, `propri`, `arme`, `se fussi sanza dominio`, `ed in mare`, `imperadori`, `el Discorso`, `cagione`, `le ragione`, `esperienzia`. The passes read Canestrini."
+boundaries: "printed pp. 69-70; heading CONSIDERAZIONE SUL CAPITOLO XIX on p. 69 below the end of the II.15 reply (`... può essere laudabile.`), without `del libro II`; a three-line rubric in smaller type with a hanging indent; one indented paragraph; ends p. 70 l. 12 `e le ragioni e la esperienza`, a faint trace after it; CONSIDERAZIONE SUL CAPITOLO XXIV follows on p. 70 (no replies to XVI-XVIII or XX-XXIII)"
+heading: "CONSIDERAZIONE SUL CAPITOLO XIX, without `del libro II` (both readers), set in the unit's `heading` front-matter (D443, D479)"
+rubric: "Che gli acquisti ⟨nelle|uelle⟩ repubbliche non ⟨bene|belle⟩ ⟨ordinate|ordinale⟩, e che ⟨secondo|secoıkfo⟩ la / romana ⟨virtù|virtu⟩ non procedono, sono a rovina, non a ⟨esaltazione|esallazione⟩ di / esse⟨.|⟩ (A; B the same, doubting only the accent and the stop): read with the 1824 rubric; no stop (D479, as D440, D463)"
+corrections: []
+emendations:
+  - {id: FG-CONS-II19-E001, locator: FG-CONS.2.19.01, printed: "una republica che ha armi proprio", established: "una republica che ha armi propri[e]", evidence: "Both readers read `proprio`, both doubting the vowel against `proprie`; the masculine singular agrees with nothing (`armi` is feminine plural), the scan breaks e/o throughout, Canestrini prints `armi proprie` four lines below, and the 1933 edition reads `arme proprie`. Emended under D68, by precedent (D461, D456): D478."}
+readings:
+  - {locus: "FG-CONS.2.19.01 `che` ×3, `Vinegia`, `allargato`, `accosta`, `sudditi`, `armate`, `fussi`, `ristringa`, `uno`, `esperienza`, `debole`, `tengono`, `alle`, `rinchiuso`, `ampliazione`", passes: "doubtful to both or to one reader, both preferring the word at the scan's h/b, u/n, t/l, e/c, i/t and a/u breaks", witness_1933: "the same words", disposition: "readings, as printed (D478)"}
+  - {locus: "FG-CONS.2.19.01 `se sanza dominio in terra e in mare, fussi più sicura`", passes: "both, without doubt", witness_1933: "se fussi sanza dominio in terra ed in mare, fussi più sicura", disposition: "kept, D478 (2026-11-22, by precedent: D38): the protasis without its verb construes; variant note"}
+  - {locus: "FG-CONS.2.19.01 pointing: `Stato;`, `maggiori,`, `ricca.`, `alcuno.`, `acquisti,`, `acquista,`, `republiche,`; `assaltarle;`, `travagliano;`, `mura;`", passes: "both see a mark and doubt its weight (at `Stato`, A doubting `;` against `,`, B reading `,`)", witness_1933: "stato; / maggiore, / ricca. / alcuno. / acquisti, / acquista, / republiche, / assaltarle; travagliano; mura;", disposition: "the 1933 breaks the tie (D110)"}
+not_supplied: ["the stop after `esperienza`, a faint trace both readers doubt, at the unit's end (D40, DEC-009 clause 10)"]
+normalisation_notes: "Class A: accents (`perchè` → `perché`, `nè` → `né`, `piu` → `più`, `citta` → `città`); apocope `Co'`, `de'` given the apostrophe (DEC-009 clause 2); spaces after elision and before punctuation removed (`dell' ampliazione`, `sono ?`, `potenza ,`); line-end hyphens removed."

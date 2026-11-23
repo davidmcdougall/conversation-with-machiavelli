@@ -1,0 +1,29 @@
+source_unit_id: NM-DISC.2.19
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-035
+passes:
+  - {id: A, performed: 2026-11-22, file: sources/coldpass/NM-DISC.2.19-passA.md, note: "subagent; page images only (350 ppi native, whole page and thirds cut in pixels, sizes and checksums verified before dispatch), own image, work and output folders, forbidden every other path (D370); full chapter"}
+  - {id: B, performed: 2026-11-22, file: sources/coldpass/NM-DISC.2.19-passB.md, note: "subagent; the same images in separate folders; full chapter, no page being eligible for the D302 sample (D476)"}
+collation: sources/coldpass/COLLATION-2026-11-22-II19.md
+collation_result: "1,392 words in each pass (p. 5 72, p. 6 253, p. 7 245, p. 8 254, p. 9 241, p. 10 235, p. 11 92): identical in every word and every mark after Class A. Neither reader has a doubt between words; the doubts are marks (an acute-like stroke over `ma`, specks over `meglio,`, `così`, `chi`, `dove`, apostrophe gaps). Against the 1554: the whole words kept (D477)."
+boundaries: "printed pp. 5-11 of vol. 2; the chapter opens the volume's text on p. 5 under the half-title DISCORSI / SOPRA / LA PRIMA DECA DI T. LIVIO / LIBRO SECONDO, no page number printed; CAPITOLO XIX and a four-line italic rubric; enlarged initial Q; one block; no notes; the Latin of Livy (p. 10 ll. 20-23) and of Juvenal (p. 11 ll. 2-3) in italic; ends p. 11 l. 11 `si farà menzione.`; CAPITOLO XX follows on p. 11"
+heading: "CAPITOLO XIX"
+rubric_check: "1824: `Che gli acquisti nelle Repubbliche non bene ordinate, e che secondo la romana virtù non procedono, sono a rovina, non a esaltazione di esse.` (both readers, without doubt). Canestrini's rubric over the reply agrees word for word, `repubbliche` lower case, with no stop; the 1554 heads the chapter `CHE GLI ACQVISTI NELLE REP. NON bene ordinate,et che ſecõdo la Ro.uertu non procedano,ſono a ruina,nõ a eſſaltatiõe d'eſſe. Ca.19`; the 1933 edition's bracketed title has `procedano`, `ruina`, `ad esaltazione` (D479)"
+interventions: []
+emendations: []
+procedure:
+  - {id: D476, note: "No page eligible for the D302 sample: a fifth of 1,392 is 279, and the fullest page (p. 8) holds 254. Pass B read the whole chapter, as D352, D391, D437. The passes agree in every word and every mark."}
+readings:
+  - {locus: "NM-DISC.2.19.02-.10 the whole-word differences: `tamen` (.02), `ed utili`, `esercizj` (.03), `co' costumi`, `proibendogli`, `altrui`, `e dall'essere molestata gli`, `Cittadi`, `vivere loro` (.04), `quella parte`, `dallo Imperio`, `annuario` (.05), `e i Svizzeri`, `furono seguite`, `come loro`, `vogliono`, `potenza sua` (.06), `propinquo` (.07), `da loro medesimi` (.08), `longinqua`, `e che`, `propinquo`, `de' suoi`, `assalta` (.09); the 1554's Italian renderings after the Latin of Livy and of Juvenal (.09)", passes: "A and B, both full, without doubt", witness_1554: "`nondimeno`; `et inutili`, `eſſerciti`; `et coſtumi`, `uietandole`, `altri`, `ella le naſcera`, `cittadini`, `eſſe`; `queſta parte`, `dell'Imperio`, `annuale`; `& Suizeri`, `ſono ſeguite`, `eſsi`, `uogliano`, `potenza loro`; `uicino`; `medeſimi`; `lontana`, `che`, `uicino`, `de lor`, `eſſalta`; `Cioe. Subito Capoua ... ſcordar la patria.`, `La Gola et la luſſuria ... del uinto mondo.`", disposition: "kept, D477 (2026-11-22, by precedent: D38): the 1824 construes at each; variant notes, translator's notes where the sense moves (`ed utili`, `esercizj`, `e dall'essere molestata`, `Cittadi`, `potenza sua`)"}
+comparison_collation: >
+  Done 2026-11-22 against the 1554 extract (fol. 120r-122v). A cold reader
+  transcribed the Giglio leaves from the page images
+  (sources/coldpass/NM-DISC.2.19-1554.md); no word lost, the leaves sound
+  but for weak impression at `ſuperare` (fol. 121r) and an ink blot under
+  `queſte` (fol. 122r), each word legible (D415 not needed). The transcript
+  was collated by word against both 1824 passes after spelling
+  normalisation. Differences are in sources/comparisons/NM-DISC/NM-DISC.2.19-witness-disagreements.yml.

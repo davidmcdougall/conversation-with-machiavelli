@@ -1,0 +1,36 @@
+source_unit_id: FG-CONS.2.19
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-II19-E001
+    locator: FG-CONS.2.19.01
+    class: emendation
+    witness_1857: "Confesso che una republica che ha armi proprio, è più potente"
+    witness_1933: "Confesso che una republica che ha arme proprie è più potente"
+    established: "Confesso che una republica che ha armi propri[e], è più potente"
+    publish_as_variant_note: true
+    rationale: "Canestrini prints `proprio`, read by both readers with the vowel doubted; the masculine singular agrees with nothing. Emended `propri[e]` in Canestrini's spelling, as he prints `armi proprie` four lines below (D68; D478, as D461)."
+  - id: FG-CONS-II19-D001
+    locator: FG-CONS.2.19.01
+    class: pointing
+    witness_1857: "assaltarle⟨;|,⟩ non per; travagliano⟨;|,⟩ tengono; suo Stato⟨;|,⟩ non; mura⟨;|,⟩ lo avere; maggiori⟨;|,⟩ fa la; ricca⟨.⟩ Co quali; da alcuno⟨.⟩ Confesso; degli acqui-sti⟨;|,⟩ ma; quanto più acquista⟨;|,⟩ né; alle republiche⟨;|,⟩ perché; la esperienza⟨.⟩"
+    witness_1933: "assaltarle; travagliano; stato; mura; maggiore, ricca. alcuno. acquisti, acquista, republiche, esperienzia."
+    established: "assaltarle; travagliano; Stato; mura; maggiori, ricca. alcuno. acquisti, acquista, republiche, esperienza"
+    publish_as_variant_note: false
+    rationale: "Where both readers see a mark and doubt its weight, the 1933 edition breaks the tie (D110). At the unit's end, a faint trace both readers doubt is not supplied as a stop (D40, DEC-009 clause 10). Marks read alike by both without doubt kept against the 1933 (`armi propri[e],`, `più debole,`)."
+  - id: FG-CONS-II19-D002
+    locator: FG-CONS.2.19.01
+    class: heading
+    witness_1857: "CONSIDERAZIONE SUL CAPITOLO XIX / Che gli acquisti nelle repubbliche non bene ordinate, e che secondo la / romana virtù non procedono, sono a rovina, non a esaltazione di / esse."
+    witness_1933: "CAPITOLO XIX / [Che gli acquisti nelle republiche non bene ordinate, e che secondo la romana virtú non procedano, sono a ruina, non ad esaltazione di esse.]"
+    established: "Considerazione sul capitolo XIX / Che gli acquisti nelle repubbliche non bene ordinate, e che secondo la romana virtù non procedono, sono a rovina, non a esaltazione di esse"
+    publish_as_variant_note: true
+    rationale: "Canestrini's heading without `del libro II`, as printed (D443). His rubric, its broken letters (A doubting `nelle`, `bene`, `ordinate`, `secondo`, `esaltazione`) read with Machiavelli's 1824 rubric, which it matches word for word; the 1933 edition prints `procedano`, `ruina`, `ad esaltazione`; no stop (D479, as D463). Canestrini prints no note to this reply."
+  - id: FG-CONS-II19-D003
+    locator: FG-CONS.2.19.01
+    class: ruled_reading
+    witness_1857: "né che Vinegia che ora non teme de' re né degli imperatori, se sanza dominio in terra e in mare, fussi più sicura"
+    witness_1933: "né che Vinegia, che ora non teme de' re né degli imperadori, se fussi sanza dominio in terra ed in mare, fussi più sicura"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "The 1933 edition supplies the verb of the protasis, `se fussi sanza dominio`; Canestrini's verbless protasis construes, `fussi` understood from the apodosis. Read by both readers without doubt. Kept (D38; D478)."

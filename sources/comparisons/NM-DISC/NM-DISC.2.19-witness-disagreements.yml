@@ -1,0 +1,76 @@
+source_unit_id: NM-DISC.2.19
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-II19-D001
+    locator: NM-DISC.2.19.02
+    class: ruled_reading
+    witness_1824: "E benché le Istorie ne siano piene, *tamen* non ci arebbero prestato fede"
+    witness_1554: "Et benche l'hiſtorie ne ſiano piene,nondimeno non ci harebbero preſtato fede"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The 1554 has the Italian `nondimeno` where the 1824 prints the Latin `tamen`, italic: the same sense. Read by both 1824 readers without doubt. Kept (D38, D477)."
+  - id: NM-DISC-II19-D002
+    locator: NM-DISC.2.19.03
+    class: ruled_reading
+    witness_1824: "così doverebbero credere essere veri ed utili tutti gli altri ordini antichi ... mantenere con sommo studio gli esercizj militari"
+    witness_1554: "coſi dourebbero credere eſſer ueri,et inutili tutti gli altri ordini antichi ... mãtenere con ſommo ſtudio gli eſſerciti militari"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The 1554's `inutili`, useless, reverses the sense: the argument is that the other ancient orders should be believed true and useful, as the infantry's has been shown. Its `eſſerciti`, armies, for `esercizj`, exercises, makes the list's item the armies rather than their training. Both read by both 1824 readers without doubt; the 1824 construes at each. Kept (D38, D477)."
+  - id: NM-DISC-II19-D003
+    locator: NM-DISC.2.19.04
+    class: ruled_reading
+    witness_1824: "con le leggi e co' costumi, proibendogli l'acquistare ... se lei non molesterà altrui, sarà molestata ella; e dall'essere molestata gli nascerà la voglia ... come pare necessario intervenga a tutte le grandi Cittadi. E se le Repubbliche della Magna possono vivere loro in quel modo"
+    witness_1554: "con le leggi,et coſtumi, uietandole d'acquiſtare ... ſe lei non moleſtera altri,ſara moleſtata ella le naſcera la uoglia ... come pare neceſſario che interuenga a tutti li grandi cittadini . Et ſe le Republiche della Magna poſſono uiuere eſſe in quel modo"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The 1554 omits `e dall'essere molestata`, so that the longing to acquire arises without the cause the 1824 gives it, and reads `cittadini`, citizens, for `Cittadi`, cities, in the claim that the enemy is found at home in all great cities; with `uietandole` for `proibendogli` and `altri`, `eſſe` (the same sense). Each read by both 1824 readers without doubt; the 1824 construes at each. Kept (D38, D477)."
+  - id: NM-DISC-II19-D004
+    locator: NM-DISC.2.19.05
+    class: ruled_reading
+    witness_1824: "Era quella parte della Magna ... ricomperandosi dallo Imperio con riservargli un piccolo censo annuario"
+    witness_1554: "Era queſta parte della Magna ... ricomperandoſi dell'Imperio con reſeruargli un picciolo cenſo annuale"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "`queſta` for `quella`, `dell'` for `dallo`, `annuale` for `annuario`: the same sense. Read by both 1824 readers without doubt. Kept (D38, D477)."
+  - id: NM-DISC-II19-D005
+    locator: NM-DISC.2.19.06
+    class: ruled_reading
+    witness_1824: "tra le quali fu Filiburgo e i Svizzeri e simili ... sono quelle che furono seguite tra i Svizzeri ... chi vuole vivere libero come loro ... parte non vogliono per aver invidia alla potenza sua"
+    witness_1554: "tra le quali fu Filiborg, & Suizeri,et ſimili ... ſono quelle che ſono ſeguite tra gli Suizeri ... chi uuole uiuere libero,come eſsi ... parte nõ uogliano, per hauer inuidia alla potenza loro"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "`Filiborg` for `Filiburgo` (the 1554 reader doubting `Friborg`), no article before the Swiss, `ſono` for `furono`, `eſsi` for `loro`, the subjunctive `uogliano` for `vogliono` (o/a, D203(b)), and `potenza loro`, the Swiss' power, for `potenza sua`, the emperor's. Each read by both 1824 readers without doubt; the 1824 construes at each. Kept (D38, D477)."
+  - id: NM-DISC-II19-D006
+    locator: NM-DISC.2.19.07
+    class: ruled_reading
+    witness_1824: "per aver il nimico propinquo"
+    witness_1554: "per hauere il nemico uicino"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "`uicino` for `propinquo`: the same sense in the common word. Read by both 1824 readers without doubt. Kept (D38, D477)."
+  - id: NM-DISC-II19-D007
+    locator: NM-DISC.2.19.08
+    class: ruled_reading
+    witness_1824: "quando i Romani senz'alcuno esempio, per la prudenza loro, da loro medesimi lo seppero trovare"
+    witness_1554: "quando i Romani ſenza alcuno eſſempio per la prudenza loro medeſimi lo ſeppono trouare"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The 1554 omits `da loro`. Read by both 1824 readers without doubt. Kept (D38, D477)."
+  - id: NM-DISC-II19-D008
+    locator: NM-DISC.2.19.09
+    class: ruled_reading
+    witness_1824: "E se Capova fusse stata più longinqua dalla Città, e che lo errore de' soldati non avesse avuto il rimedio propinquo ... *animos avertit a memoria patriae.* E veramente ... riempiendoli de' suoi tristi costumi, gli espongono ad esser vinti da qualunque gli assalta. ... *gula, et luxuria incubuit, victumque ulciscitur orbem.*"
+    witness_1554: "& ſe Capoua fuſſe ſtata piu lontana dalla città,che l'errore de ſoldati non haueſſe hauuto il rimedio uicino ... animos auertit a memoria patriæ. Cioe. Subito Capoua,ſi come citta dannoſa alla militare diſciplina, & ſtrumento di tutte le maniere di diletti,in modo inuaghi gli animi de ſoldati,che lor fece ſcordar la patria. Et ueramente ... riempiendogli de lor triſti coſtumi,gli eſpongono ad eſſere uinti da qualunque gli eſſalta ... uictumq; ulciſcitur orbem . La Gola et la luſſuria hauendo fatto la loro habitatione in lei , faceuano uendetta del uinto mondo."
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "`lontana`, `uicino` for `longinqua`, `propinquo`, no `e` before `che`, `lor` for `suoi` (the same sense); `eſſalta`, exalts, for `assalta`, assails (a/e, D203(b)), which does not construe; and Italian renderings after the Livy and the Juvenal, which the 1824 does not print, as at II.13-II.15. Each read by both 1824 readers without doubt. Kept (D38, D477)."
+  - id: NM-DISC-II19-D009
+    locator: NM-DISC.2.19.01
+    class: heading
+    witness_1824: "CAPITOLO XIX / Che gli acquisti nelle Repubbliche non bene ordinate, e che secondo la romana virtù non procedono, sono a rovina, non a esaltazione di esse."
+    witness_1554: "CHE GLI ACQVISTI NELLE REP. NON bene ordinate,et che ſecõdo la Ro.uertu non procedano,ſono a ruina,nõ a eſſaltatiõe d'eſſe. Ca.19"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The same sentence but for spelling, abbreviation and `procedano`, subjunctive, for `procedono`. The 1824 rubric read by both readers without doubt (D479)."
