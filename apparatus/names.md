@@ -292,3 +292,13 @@ the original.
 | `Annio loro Pretore` | Annius, their praetor | NM II.15 .01, as NM II.13 .04 |
 | `Luigi di Francia XII`; `Lodovico Duca di Milano` | Louis XII of France; Lodovico, Duke of Milan | NM II.15 .06; Lodovico Sforza; the passage of 1499 (the editor's date) |
 | `Fiorentini`; `Francesi` | the Florentines; the French | NM II.15 .06, as NM I.39, NM I.7 |
+| `Novara` | Novara | NM II.19 .01; the battle of 1513 (the editor's identification) |
+| `Lucullo`; `Tigrane` | Lucullus; Tigranes | NM II.19 .02; Tigranocerta, 69 BC (the editor's identification) |
+| `Filiburgo` | Filiburgo (left as printed) | NM II.19 .06; usually taken for Fribourg (the editor's identification); the 1554 `Filiborg` |
+| `Duca d'Austria` | the Duke of Austria | NM II.19 .06 ×3 |
+| `Svizzeri` | the Swiss | NM II.19 .06 ×4, as earlier |
+| `Imperatore`, `Imperio` | the emperor, the empire | NM II.19 .05-.06, lower case in English (D124) |
+| `Terre franche` | Free Lands | NM II.19 .06; the free imperial cities (the editor's identification) |
+| `Juvenale` | Juvenal | NM II.19 .09; Satires 6.292-293 |
+| `Capova` | Capua | NM II.19 .09 ×2, as earlier |
+

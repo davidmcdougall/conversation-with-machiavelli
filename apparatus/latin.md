@@ -99,3 +99,11 @@ first time it is italicised.
 | `conscientia virium` | NM II.14 note |
 | `Ad summam rerum nostrarum pertinere arbitror, ut cogitetis magis, quid agendum nobis, quam quid loquendum sit. Facile erit, explicatis consiliis, accomodare rebus verba.` | NM II.15 .01 (Livy 8.4.1; `accomodare` as the 1824 prints it) |
 | `Ad summam rerum nostrarum ... accomodare rebus verba.` | NM II.15 note |
+| `tamen` | NM II.19 .02; notes |
+| `Jam tunc minime salubris militari disciplinae Capua, instrumentum omnium voluptatum, delinitos militum animos avertit a memoria patriae.` | NM II.19 .09 (Livy 7.38.5, as the 1824 prints it) |
+| `Jam tunc minime salubris militari disciplinae Capua, instrumentum omnium voluptatum, delinitos militum animos avertit a memoria patriae` | NM II.19 note |
+| `gula, et luxuria incubuit, victumque ulciscitur orbem.` | NM II.19 .09 (after Juvenal 6.292-293) |
+| `gula, et luxuria incubuit, victumque ulciscitur orbem` | NM II.19 note |
+| `saevior armis` | NM II.19 note (Juvenal's words) |
+| `gula` | NM II.19 note |
+

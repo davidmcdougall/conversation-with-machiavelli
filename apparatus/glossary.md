@@ -933,3 +933,45 @@ last sentence answers Machiavelli's first move.
 | `individuo` | the individual [point] | D472. NM II.15 .01. |
 | `incertitudine` / `incerto` (noun) | incertitude / the uncertain | D472. NM II.15 .01, .02. |
 | `coscienza` | conscience | D472. NM II.15 .01, the old sense of inward knowledge. |
+
+## Added from the II.19 pair (2026-11-22)
+
+| Italian | English | Note |
+|---|---|---|
+| `esaltazione` | exaltation | D480. NM II.19 rubric, FG II.19 rubric; against `rovina`, ruin. |
+| `far capitale`, `fare capitale` | make capital | D480. NM II.19 .03 `far capitale delle prede`; FG II.19 `fa più capitale degli acquisti`, Guicciardini's echo. |
+| `ricomperarsi` | buy oneself back | D480. NM II.19 .05 ×2, .06. |
+| `Comunità` | communities | D480. NM II.19 .06 ×2, .07; lower case in English. |
+| `molestare` | molest | D480. NM II.19 .04 ×3, of active harassment; a recorded split from `molesto`, irksome (FG I.29). |
+| `rompere` (a state of things) / `rompere` (an army) | break / rout | D480, D431. NM II.19 .07 `rompere quella loro quiete` / .02 `ruppe`; a sense split. |
+| `peregrino` | peregrine | D480. NM II.19 .09 ×2 (`Terre peregrine`, `costumi peregrini`); kept apart from `forestiere`, foreign. |
+| `mali` (adjective) | ill | D480. NM II.19 .01 `mali esempj`; apart from `tristo`, wicked, and `cattivo`, bad (D03). |
+| `sorte` (a kind) | sort | D480. NM II.19 .02 `una sorte di cavalleria`; a sense split from D452's "lot". |
+| `non che` (opening a clause denied and surpassed) | not that | D480. NM II.19 .06 `non che e' sieno tornati sotto il giogo ... sono in timore`; a third use beside D410's additive "nor that" and D226's scalar "let alone". |
+| `dovere` (conditional) | should | D480. NM II.19 .03 `doverebbero`; extends D348; `debbe` stays "must" (D274). |
+| `ristringersi a` | restrict oneself to | D480. FG II.19 `si ristringa solo alle republiche`; D58's "draw together" stays for the reflexive without `a`. |
+| `mezzi` (resources) | means | D480. FG II.19 `Co' quali mezzi`; D84's "intermediaries" stays for persons. |
+| `cavare` | derive | D480. FG II.19 `caverebbe ... debolezza`; kept apart from `trarre`, draw (D444). |
+| `ampliazione` | expansion | D480. FG II.19; the noun of `ampliare`, expand (D132). |
+| `allargare` | enlarge | D480. FG II.19 `allargato la loro jurisdizione`; apart from `ampliare`, expand. |
+| `impoverire` | grow poor | D480. NM II.19 .08. |
+| `stare bene insieme` | go well together | D480. NM II.19 .08: the two can easily be had at once. |
+| `fallacia` | fallacy | D480. NM II.19 .02. |
+| `conversazione` | conversation | D480. NM II.19 .09, the old sense of dealings and living together. |
+| `delizie` | delights | D480. NM II.19 .09. |
+| `segno` (of the emperor) | sign | D480. NM II.19 .06 `quel segno dell'Imperatore`. |
+| `mezzano` / `conciliatore` | mediator / conciliator | D480. NM II.19 .06. |
+| `scandalo` | scandal | D480. NM II.19 .06, the old sense of a quarrel that gives offence. |
+| `tuorlo` | yolk | D480. FG II.19 `fuora del tuorlo del suo Stato`, Guicciardini's image, kept. |
+| `moto` | motion | D480. FG II.19 `se non viene moto grande`. |
+| `travagliarsi` | be troubled | D480. FG II.19. |
+| `dominante` | dominant | D480. FG II.19 `la città dominante`. |
+| `disarmato` | disarmed | D480. FG II.19. |
+| `ossidione` / `scorreria` | siege / raid | D480. NM II.19 .03. |
+| `esercizio` / `studio` | exercise / study | D480. NM II.19 .03 `con sommo studio gli esercizj militari`. |
+| `censo` / `annuario` | tax / annual | D480. NM II.19 .05. |
+| `declinazione` | declination | D480. NM II.19 .05. |
+| `compartire` | partition | D480. NM II.19 .06. |
+| `porgere` | hold out | D480. NM II.19 .06 `porti molti ajuti`. |
+| `vendicarsi` | avenge oneself | D480. NM II.19 .09. |
+| `prestare fede` | lend faith | D480. NM II.19 .02 ×2. |

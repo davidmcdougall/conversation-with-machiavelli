@@ -112,7 +112,7 @@ exist. See §7.
 | 32 | NM-DISC.2.13 | FG-CONS.2.13 | FG-CONS-DR-032 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 33 | NM-DISC.2.14 | FG-CONS.2.14 | FG-CONS-DR-033 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 34 | NM-DISC.2.15 | FG-CONS.2.15 | FG-CONS-DR-034 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
-| 35 | NM-DISC.2.19 | FG-CONS.2.19 | FG-CONS-DR-035 | — | — | — | — | — |
+| 35 | NM-DISC.2.19 | FG-CONS.2.19 | FG-CONS-DR-035 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 36 | NM-DISC.2.24 | FG-CONS.2.24 | FG-CONS-DR-036 | — | — | — | — | — |
 | 37 | NM-DISC.3.17 | FG-CONS.3.17 | FG-CONS-DR-037 | — | — | — | — | — |
 | 38 | NM-DISC.3.19 | FG-CONS.3.19 | FG-CONS-DR-038 | — | — | — | — | — |
@@ -220,12 +220,12 @@ than inside the first paragraph.
 | Stage | Done | Remaining | Of |
 |---|---|---|---|
 | Link records | 39 | 0 | 39 |
-| NM source established | 34 | 5 | 39 |
-| FG source established | 34 | 5 | 39 |
-| Collated against the comparison witness | 68 units | 10 | 78 |
-| Translated (draft, cold-reviewed) | 68 | 10 | 78 |
-| Annotated | 68 | 10 | 78 |
-| Published | 68 | 10 | 78 |
+| NM source established | 35 | 4 | 39 |
+| FG source established | 35 | 4 | 39 |
+| Collated against the comparison witness | 70 units | 8 | 78 |
+| Translated (draft, cold-reviewed) | 70 | 8 | 78 |
+| Annotated | 70 | 8 | 78 |
+| Published | 70 | 8 | 78 |
 <!-- /state:stages -->
 
 The table is written by `scripts/state` from the files. The paragraphs below
@@ -368,6 +368,7 @@ clock; David's own time is the rulings, counted separately.
 | II.13 (605 + 318 words) | 35 | 20 | 20 | 30 | 15 | 10 | ~130 (stages approximate) | 1 batch at establishment, O46 `fraudolent[o]` and O47 (the fifth crop not a D302 disagreement), ruled the same day as D456, D457; every other locus ruled by precedent (D448-D451): NM sample of p. 262 (the densest of three eligible pages in word-level 1554 differences) with five crops of p. 261, the sample and four crops clean, the fifth a common doubt with the other preference, so pp. 260-261 read whole by a second pass B, clean (D448); `e` and `etiam` read, the 1554's whole words and its gloss of Livy not taken (D449); FG two splits and six printed non-words emended, `anche` kept, the comma before `equale` kept (D450); Canestrini's rubric with the 1824's (D451); NM collated against 1554; commentary cold-reviewed; `build.py` renders the summary's italics (separate commit) |
 | II.14 (404 + 157 words) | 30 | 10 | 15 | 25 | 15 | 10 | ~105 (stages approximate) | O46 and O47 ruled first (D456, D457); 1 batch at establishment, `quell[e]` and `periculosi`, ruled the same day as D461, D462; every other locus by precedent (D458-D460, D463): NM sample of p. 264 (the denser of two eligible pages in word-level 1554 differences) with eight crops of p. 263, clean; the 1824 kept at every 1554 whole word, among them `riguadagnarselo` and `fia`, and the 1554's Italian rendering of Livy not taken; FG one split read in Canestrini's spelling, one emendation, the stop after `cedere` supplied; Canestrini's heading without `del libro II` and his footnote on I.33 not carried; cold reviews applied (D465-D467), among them `mal volentieri` set to govern the obligation; `fazione`, `ferro` and `fortezza` in neither unit |
 | II.15 (909 + 296 words) | 35 | 10 | 20 | 30 | 20 | 10 | ~125 (stages approximate) | 1 batch at establishment, O48 (the 1824 rubric's `fieno`, doubtful to both 1824 readers, against the 1554's `ſieno`; applied provisionally); every other locus by precedent (D468-D471): NM sample of p. 266 (the densest of three eligible pages in word-level 1554 differences) with ten crops, clean; the 1824 kept at every 1554 whole word, among them `foga`, `Lavinj` and `replicarne`, and the 1554's Italian rendering of Livy not taken; FG the two passes identical in every token, pointing by D110, Canestrini's footnote not carried; cold reviews applied (D473-D475), the first commentary review dispatched with the wrong files and rerun; `fazione`, `ferro` and `fortezza` in neither unit; the II.13 and II.14 commits found pushed |
+| II.19 (1,392 + 234 words) | 35 | 10 | 20 | 30 | 25 | 10 | ~130 (stages approximate) | no page holds a fifth of the chapter (the fullest 254 of 279), so NM pass B read it all (D476), and the passes agree in every word and mark; no new establishment question, every locus by precedent (D476-D479): the 1824 kept at every 1554 whole word, among them `ed utili` (the 1554 `inutili`), `esercizj`, `Cittadi` and the clause the 1554 omits, and the 1554's Italian renderings of Livy and Juvenal not taken; FG the two passes identical in every token, `propri[e]` emended by precedent, the 1933's `se fussi` not taken, no stop at the end; cold reviews applied (D481-D483); `fazione`, `ferro` and `fortezza` in neither unit; the II.15 commits found pushed |
 
 ---
 
