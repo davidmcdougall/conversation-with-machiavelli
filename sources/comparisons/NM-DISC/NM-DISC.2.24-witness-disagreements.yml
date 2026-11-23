@@ -1,0 +1,108 @@
+source_unit_id: NM-DISC.2.24
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-II24-D001
+    locator: NM-DISC.2.24.01
+    class: ruled_reading
+    witness_1824: "Parrà forse a questi savj de' nostri tempi cosa non bene considerata ... se i Romani fussero stati fatti come loro ... E mentre che Roma visse libera, e che la seguì gli ordini suoi ... ma salvò bene alcune delle edificate"
+    witness_1554: "Parra forſe a queſti ſaui de noſtri tempi coſi non ben cõſiderata ... ſe i Romani fuſsino ſtati fatti come queſti ... Et mentre che Roma uiſſe libera, & ſegui gli ordini ſuoi ... ma ſaluò bene alcuna delle edificate"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "`coſi` for `cosa` (the 1824's noun is the subject of `Parrà`); `queſti`, these, for `loro`, them, the wise men of our times either way; the 1554 omits `che la`; `alcuna`, a difference at a/e (D203(b)). Each read by both 1824 readers without doubt; the 1824 construes at each. Kept (D38, D485)."
+  - id: NM-DISC-II24-D002
+    locator: NM-DISC.2.24.02
+    class: ruled_reading
+    witness_1824: "se gli è bene edificare Fortezze, e se le fanno danno o utile"
+    witness_1554: "ſe gliè buon edificar fortezze,o ſe è le fanno danno,o utile"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "`buon` for `bene`, the same sense; `o ſe` for `e se`, a difference at e/o (D203(b)), the two questions joined in the 1824 and set as alternatives in the 1554. Read by both 1824 readers without doubt. Kept (D38, D485)."
+  - id: NM-DISC-II24-D003
+    locator: NM-DISC.2.24.03
+    class: ruled_reading
+    witness_1824: "dipoi non ci è quella sicurtà dentro che tu ti persuadi"
+    witness_1554: "dipoi ci è quella ſicurta dentro che tu ti perſuadi"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The 1554 omits `non` and so reverses the sense: the security inside that you persuade yourself of would be there. The second of Machiavelli's two reasons needs the negative; the next clause says why it is not there. Read by both 1824 readers without doubt. Kept (D38, D485); translator's note."
+  - id: NM-DISC-II24-D004
+    locator: NM-DISC.2.24.03
+    class: ruled_reading
+    witness_1824: "Se tu fai le Fortezze, le sono utili nei tempi di pace, perchè ti danno più animo a far loro male; ma ne' tempi di guerra sono inutilissime, perchè le sono assaltate"
+    witness_1554: "Se tu fai le fortezze , elle ſono inutili ne tempi di pace : perche ti danno piu animo a far loro male , ma ne tempi di guerra ſono inutiliſsime, perche ſono aſſaltate"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The 1554's `inutili`, useless, against the 1824's `utili`, useful: in the 1824 the usefulness in peace is the spirit to do the subjects ill, an ironic use set against `inutilissime` in war; in the 1554 the fortresses are useless in peace too, the reason given being their harm. Both construe; read by both 1824 readers without doubt. Kept (D38, D485); translator's note. The 1554 also omits the second `le`."
+  - id: NM-DISC-II24-D005
+    locator: NM-DISC.2.24.04
+    class: ruled_reading
+    witness_1824: "non può essere più inutile di quello ch'ella è ... e men rispettivo ad oppressarli ... non in su la Fortezza"
+    witness_1554: "non puo eſſere piu inutile ... & men riſpettoſo ad oppreſſargli ... nõ in ſu le forteZze"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The 1554 omits `di quello ch'ella è`, so that the fortress cannot be more useless; `riſpettoſo` for `rispettivo`, the same sense; `le forteZze` for `la Fortezza`, a difference at a/e (D203(b)). Each read by both 1824 readers without doubt; the 1824 construes at each. Kept (D38, D485)."
+  - id: NM-DISC-II24-D006
+    locator: NM-DISC.2.24.05
+    class: ruled_reading
+    witness_1824: "non perdonarono ad alcuna generazione di violenza ... o le si perdono per fraude di chi le guarda"
+    witness_1554: "non perdonarono ad alcuna ⟨ſarte|ſorte⟩ di uiolenza ... o elle ſi perdono per fraude di chi la guarda"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "`ſorte`, sort, for `generazione`, the same sense; `la guarda` for `le guarda`, a difference at a/e (D203(b)), the singular fortress for the plural. Read by both 1824 readers without doubt. Kept (D38, D485)."
+  - id: NM-DISC-II24-D007
+    locator: NM-DISC.2.24.07
+    class: ruled_reading
+    witness_1824: "che fu nei suoi tempi tanto stimato Capitano ... e dipoi faceva assassinare quel Popolo essendo maltrattato da un suo Governatore"
+    witness_1554: "che fu ne ſuoi tempi ſtimato tanto Capitano ... et dipoi faceua aſſaſsinare quel popolo da un ſuo gouernadore"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The order `ſtimato tanto`, the same sense. The 1554 omits `essendo maltrattato`, so that the governor is the agent of `assassinare`; in the 1824 the people is ill-treated by a governor of the pope's and the participle hangs loose. Both construe; read by both 1824 readers without doubt. Kept (D38, D485); translator's note."
+  - id: NM-DISC-II24-D008
+    locator: NM-DISC.2.24.08
+    class: ruled_reading
+    witness_1824: "delle quali al presente si abbia notizia ... chiamato da' Genovesi Codefa ... Fu adunque di spesa al Re il farla, e vergognoso il perderla; a Ottaviano glorioso il riacquistarla, ed utile il rovinarla"
+    witness_1554: "de le quali al preſente ſi haueſſe notitia ... chiamato da Genoueſi ⟨Godeſa|Codeſa⟩ ... Fu adunque di ſpeſa al Re di farla , & uergognoſo il perderla:a Ottauiano glorioſo il racquiſtarla."
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "`ſi haueſſe`, the imperfect, for `si abbia`; `di farla` for `il farla`; the hill `Codeſa` (the reader doubting the first letter) for `Codefa`, the 1554's long s against the 1824's f; the 1554 omits `ed utile il rovinarla`, the last member of the chiasmus. Each read by both 1824 readers without doubt; the 1824 construes at each. Kept (D38, D485)."
+  - id: NM-DISC-II24-D009
+    locator: NM-DISC.2.24.09
+    class: ruled_reading
+    witness_1824: "Ma vegnamo alle Repubbliche che fanno le Fortezze"
+    witness_1554: "Ma uegnamo alla Repub. che fanno le fortezze"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The singular against a plural verb, a difference at a/e (D203(b)). Read by both 1824 readers without doubt; the 1824 construes. Kept (D38, D485)."
+  - id: NM-DISC-II24-D010
+    locator: NM-DISC.2.24.12
+    class: ruled_reading
+    witness_1824: "prese e riprese con la medesima fortuna che si è ripresa e presa la campagna"
+    witness_1554: "preſe, & ripreſe con la medeſima fortuna, che ſi e preſa & ripreſa la campagna"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The 1824 reverses the second pair, a chiasmus; the 1554 repeats the order. Read by both 1824 readers without doubt. Kept (D38, D485); translator's note."
+  - id: NM-DISC-II24-D011
+    locator: NM-DISC.2.24.13
+    class: ruled_reading
+    witness_1824: "dico che le non sono necessarie a quelli Popoli, nè a quelli Regni che hanno buoni eserciti, ed a quelli che non hanno buoni eserciti sono inutili ... non permettevano d'avere mura alla loro Città"
+    witness_1554: "dico,che elle nõ ſono neceſſarie a quei popoli,ne a quelli regni, che hãno buoni eſserciti ſono inutili ... non permetteuano di hauer mura alle loro citta"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The 1554 omits `ed a quelli che non hanno buoni eserciti`, an eye-skip from `buoni eserciti` to `buoni eserciti`, so that it calls fortresses useless to those who have good armies; `alle` for `alla`, a difference at a/e (D203(b)). Read by both 1824 readers without doubt; the 1824 construes, the 1554 does not. Kept (D38, D485); translator's note."
+  - id: NM-DISC-II24-D012
+    locator: NM-DISC.2.24.14
+    class: ruled_reading
+    witness_1824: "in sulle marine alla fronte dello Stato suo ... sarebbe qualche volta cosa utile, ma la non è necessaria ... può fare senza edificare Fortezze"
+    witness_1554: "in, ſu le marine alle fronte dello ſtato ſuo ... ſarebbe qualche uolta coſa utile , ma non neceſsaria ... puo fare ſenza edificare fortezza"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "`alle` for `alla` and `fortezza` for `Fortezze`, differences at a/e (D203(b)); the 1554 omits `la ... è`. Read by both 1824 readers without doubt; the 1824 construes at each. Kept (D38, D485)."
+  - id: NM-DISC-II24-D013
+    locator: NM-DISC.2.24.01
+    class: rubric
+    witness_1824: "Le Fortezze generalmente sono molto più dannose che utili."
+    witness_1554: "LE FORTEZZE GENERALMENTE SOno molto piu dannoſe, che utili. Ca. XXIIII."
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The same sentence but for spelling and a comma. Canestrini's rubric over the reply agrees (D487)."

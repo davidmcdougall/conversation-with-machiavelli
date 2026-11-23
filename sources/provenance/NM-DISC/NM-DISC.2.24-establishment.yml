@@ -1,0 +1,30 @@
+source_unit_id: NM-DISC.2.24
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-036
+passes:
+  - {id: A, performed: 2026-11-23, file: sources/coldpass/NM-DISC.2.24-passA.md, note: "subagent; page images only (350 ppi native, whole page and thirds cut in pixels, sizes and checksums verified before dispatch), own image, work and output folders, forbidden every other path (D370); full chapter"}
+  - {id: B, performed: 2026-11-23, file: sources/coldpass/NM-DISC.2.24-passB.md, note: "subagent; the same images in separate folders; full chapter, no page being eligible for the D302 sample (D484)"}
+collation: sources/coldpass/COLLATION-2026-11-23-II24.md
+collation_result: "2,449 words in each pass (p. 26 114, p. 27 259, p. 28 263, p. 29 255, p. 30 247, p. 31 265, p. 32 256, p. 33 253, p. 34 256, p. 35 254, p. 36 27): identical in every word and every mark after Class A. Pass A's one doubt between words, `⟨voglio|voglia⟩ mi basti` (p. 32 l. 15), pass B reads `voglio` without doubt and the 1554 prints `uoglio`: a doubt of one reader at a damaged sort, settled by sense and the 1554, not a disagreement (D457, D468). The other doubts are marks or broken letters with no word for an alternative (`altro`, `eziandio`, `e'`, a stray mark after `poter`). Against the 1554: the whole words kept (D485)."
+boundaries: "printed pp. 26-36 of vol. 2; CAPITOLO XXIV on p. 26 below the end of II.23 (`come nel suo luogo più appieno si discorrerà.`); a two-line italic rubric; enlarged initial P; one block; no notes; the Latin of Juvenal and Virgil (p. 28 ll. 1-2) in italic; ends p. 36 l. 4 `se ne assicurarono.`; CAPITOLO XXV follows on p. 36. The 1824 extract NM-DISC-II24-pages.pdf ends at p. 35; p. 36 is the supplementary extract NM-DISC-II24-p36.pdf from the same recorded scan (D484)"
+heading: "CAPITOLO XXIV"
+rubric_check: "1824: `Le Fortezze generalmente sono molto più dannose che utili.` (both readers, without doubt). Canestrini's rubric over the reply agrees word for word, `fortezze` lower case, with no stop; the 1554 heads the chapter `LE FORTEZZE GENERALMENTE SOno molto piu dannoſe, che utili. Ca. XXIIII.`; the 1933 edition's bracketed title is the same sentence (D487)"
+interventions: []
+emendations: []
+procedure:
+  - {id: D484, note: "No page eligible for the D302 sample: a fifth of 2,449 is 490, and the fullest page (p. 31) holds 265. Pass B read the whole chapter, as D352, D391, D437, D476. The passes agree in every word and every mark. The extract was extended by p. 36 from the source scan, whose sha256 matches the recorded db7f7e05...; pp. 26-35 re-rendered from it are pixel-identical to the extract."}
+readings:
+  - {locus: "NM-DISC.2.24.01-.14 the whole-word differences: `cosa`, `come loro`, `e che la seguì` (.01); `bene edificare` (.02); `non ci è`, `utili nei tempi di pace`, `perché le sono` (.03); `di quello ch'ella è`, `rispettivo` (.04); `generazione` (.05); `tanto stimato Capitano`, `essendo maltrattato` (.07); `si abbia notizia`, `il farla`, `ed utile il rovinarla` (.08); `alle Repubbliche` (.09); `prese e riprese ... ripresa e presa` (.12); `che hanno buoni eserciti, ed a quelli che non hanno buoni eserciti`, `ma la non è necessaria` (.13, .14)", passes: "A and B, both full, without doubt", witness_1554: "`coſi`, `come queſti`, `& ſegui`; `buon edificar`; `dipoi ci è`, `inutili ne tempi di pace`, `perche ſono`, omitted; `riſpettoſo`; `ſorte`; `ſtimato tanto Capitano`, omitted; `ſi haueſſe notitia`, `di farla`, omitted; `alla Repub.`; `preſe, & ripreſe ... preſa & ripreſa`; `che hãno buoni eſserciti ſono inutili`, `ma non neceſsaria`", disposition: "kept, D485 (2026-11-23, by precedent: D38): the 1824 construes at each; variant notes, translator's notes where the sense moves (`non ci è`, `utili nei tempi di pace`, `essendo maltrattato`, `ripresa e presa`, the clause on good armies)"}
+  - {locus: "NM-DISC.2.24.01, .02, .04, .05, .13, .14 differences at the D203(b) letter classes: `alcune delle edificate` (.01), `e se le fanno` (.02), `in su la Fortezza` (.04), `chi le guarda` (.05), `alla loro Città`, `alla fronte`, `edificare Fortezze` (.13, .14)", passes: "A and B, both full, without doubt", witness_1554: "`alcuna`, `o ſe`, `chi la guarda`, `in ſu le forteZze`, `alle loro citta`, `alle fronte`, `edificare fortezza`", disposition: "kept, D485 (2026-11-23, by precedent: D38): read by both full 1824 readers without doubt; the 1824 construes at each"}
+comparison_collation: >
+  Done 2026-11-23 against the 1554 extract (fol. 129r-133r). A cold reader
+  transcribed the Giglio leaves from the page images
+  (sources/coldpass/NM-DISC.2.24-1554.md); no word lost, the leaves sound
+  but for weak impression and blotting at some line ends, each word
+  legible (D415 not needed). The transcript was collated by word against
+  both 1824 passes after spelling normalisation. Differences are in
+  sources/comparisons/NM-DISC/NM-DISC.2.24-witness-disagreements.yml.

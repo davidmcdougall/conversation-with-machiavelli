@@ -1,0 +1,35 @@
+source_unit_id: FG-CONS.2.24
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-036
+responds_to: NM-DISC.2.24
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. Canestrini's two notes to this reply (p. 72, call after `Brescia`; p. 73, call after `Ottaviano`) are his historical glosses and are not carried (D463, D487)."
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38); errors are emended from Palmarocchi and bracketed (D68, D126)."
+passes:
+  - {id: A, performed: 2026-11-23, file: sources/coldpass/FG-CONS.2.24-passA.md, note: "subagent; page images only (native 600 ppi rendered at 1200, the whole page and halves cut in pixels, sizes and checksums verified before dispatch), own image, work and output folders, forbidden every other path (D370)"}
+  - {id: B, performed: 2026-11-23, file: sources/coldpass/FG-CONS.2.24-passB.md, note: "subagent; same images, separate folders"}
+collation: sources/coldpass/COLLATION-2026-11-23-II24.md
+collation_result: >
+  999 words each (p. 70 162, p. 71 327, p. 72 235, p. 73 189, p. 74 86),
+  the body tokens identical after preferred readings but at one split,
+  `le adoperano` (D486). `tenere a populi` emended `[e]'` (E001, D486).
+  Doubts where both readers, or one, prefer the word read as printed;
+  `o a ogni principe` kept against the 1933 (D486). The plural article set
+  `e'` (DEC-009, D35); pointing by D110; Canestrini's printed stop at the
+  end kept (D460).
+witness_independence_check: "SCOPE §7. Neither pass carries a Palmarocchi word-reading where Canestrini differs: both have `o a ogni principe`, `imperii`, `inutili` ×2, `utili`, `armi`, `cagioni`, `nè il populo`, `e i soccorsi`, `genti nuove`, `Stati`, `rebellione` ×2, `remedii`, `nondimeno`, `adunque`, `verbi gratia`, against the 1933 `ed a ogni principe`, `imperi`, `inutile` ×2, `utile`, `arme`, `cagione`, `né el popolo`, `ed e' soccorsi`, `gente nuove`, `stati`, `ribellione` ×2, `remedi`, `nondimanco`, `adunche`, `verbigrazia`. The passes read Canestrini."
+boundaries: "printed pp. 70-74; heading CONSIDERAZIONE SUL CAPITOLO XXIV on p. 70 below the end of the II.19 reply (`e le ragioni e la esperienza`, no stop), without `del libro II`, a faint speck after XXIV doubted by both; a one-line rubric in smaller type with no stop; three indented paragraphs (p. 70 l. 15, p. 71 l. 31, p. 73 l. 4); ends p. 74 l. 9 `non le smurorono.`; CONSIDERAZIONE SUL CAPITOLO XVII DEL LIBRO III follows on p. 74 (no replies to II.25-II.33 or III.1-III.16). Canestrini's notes on pp. 72-73 are keyed to this reply"
+heading: "CONSIDERAZIONE SUL CAPITOLO XXIV, without `del libro II` (both readers), set in the unit's `heading` front-matter (D443, D487)"
+rubric: "Le fortezze generalmente sono molto ⟨più|piu⟩ dannose che utili (A and B alike, both doubting the accent): read with the 1824 rubric; no stop (D487, as D440, D463)"
+corrections: []
+emendations:
+  - {id: FG-CONS-II24-E001, locator: FG-CONS.2.24.01, printed: "in sul tenere a populi suoi in qualche terrore", established: "in sul tenere [e]' populi suoi in qualche terrore", evidence: "Both readers read `a`, both doubting the letter against `e` (A: the glyph matches this fount's a, the article expected; B: grey, a-shaped, `e populi` equally possible). The preposition construes nothing: `tenere` wants its object, `populi suoi`, with the plural article Canestrini prints `e` throughout the reply (`e populi`, `e sudditi`, `e cittadini`). The scan breaks e/a on every page; the 1933 edition reads `e' popoli`. Emended under D68, by precedent (D442, D450): D486."}
+readings:
+  - {locus: "FG-CONS.2.24.03 `Però non sanza cagione e' tempi nostri ⟨le|la⟩ adoperano`", passes: "split: A `le` without doubt; B `la`, doubting `le`", witness_1933: "le adoperano", disposition: "`le`, a reading, with the 1933 edition, D486 (2026-11-23, by precedent): the object is the fortresses; `la` agrees with nothing"}
+  - {locus: "FG-CONS.2.24.02 `di una città, o a ogni principe`", passes: "both, without doubt", witness_1933: "ed a ogni principe", disposition: "kept, D486 (2026-11-23, by precedent: D38): a word-level difference at e/o under D203(b); it construes, the tyrant of a city or any prince"}
+  - {locus: "FG-CONS.2.24.01-.03 `bene`, `imperio`, `se`, `spesso`, `per`, `qualche`, `s'`, `stare`, `fussi`, `hassi`, `imperii`, `de'`, `debbe`, `vola`, `arebbe`; `edificato`, `principii`, `usorono`, `servitù`, `trovandosi`, `e in molti luoghi`, `giudicorono`, `sicurtà`, `così`; `casi e in molti tempi`", passes: "doubtful to both or to one reader, both preferring the word at the scan's e/o, e/a, s/a, u/a, h/b, l/i, ii/u and accent breaks; `e in molti tempi` a common doubt e/o where both construe, both preferring `e`", witness_1933: "the same words (`ed in molti tempi`)", disposition: "readings, as printed (D486); the common doubt settled by the comparison witness"}
+  - {locus: "FG-CONS.2.24.01-.03 pointing: `nuove,`, `cattivo:`, `dico;`, `progenie;`, `allega,`, `Stati,`, `recuperarne,`, `fortezze; l'altra`, `inimicissime;`, `edificate,`, `fortezze; ma`, and the stops after `altre`, `no`, `fortezza`, `provincia`, `Brescia`, `te`, `perdute`", passes: "both see a mark and doubt its weight, or split", witness_1933: "nuove, / cattivo; / dico che / progenie; / allega, / stati, / recuperarne, / fortezze; / inimicissime; / edificate, / fortezze; / altre. no. fortezza. provincia. Brescia. te. perdute.", disposition: "the 1933 breaks the tie (D110); where it prints none (`dico che`) the lighter of the marks read stands; where both readers read the mark alike (`cattivo:`, `edifica;`, `fortezze;` at p. 71, `terrore;`, `potente,`, `adoperano;`) it is kept against the 1933"}
+normalisation_notes: "Class A: accents (`perchè` → `perché`, `nè` → `né`, `sè` → `sé`, `benchè` → `benché`); the plural article `e` given the apostrophe (DEC-009 clause 2, D35); spaces after elision and before punctuation removed (`l' uomo`, `Romani ;`, `frivola ,`); line-end hyphens removed; note calls removed."

@@ -7,10 +7,14 @@ files:
   - path: sources/witnesses/NM-DISC/WIT-NM-DISC-1824-IA/NM-DISC-II24-pages.pdf
     role: immutable_bounded_scan_extract
     sha256: a4e78036350c6608808c7028518f9abf33ed96bfdadf4166bcc08e866d99ee8a
+  - path: sources/witnesses/NM-DISC/WIT-NM-DISC-1824-IA/NM-DISC-II24-p36.pdf
+    role: immutable_bounded_scan_extract_supplement
+    sha256: b72390d207843b82db7170d277685e021df17c8807cbad56c77901cbfb8a0844
+    note: "Added 2026-11-23 (D484): the first extract ends at p. 35, mid-period; the chapter ends at p. 36 l. 4. pypdf extraction of zero-based page 39 from the source PDF, re-downloaded from source_pdf_url, its sha256 matching source_pdf_sha256; pp. 26-35 rendered from it are pixel-identical to the first extract."
   - path: sources/witnesses/NM-DISC/WIT-NM-DISC-1824-IA/internet-archive-metadata-v2.json
     role: acquisition_and_rights_metadata
     sha256: 4bb6c7b3614a1d8403860c5b92dee2387a7cf5eedf95fc5eefeb216f394ee0fc
-chapter_locator: {source_pdf_zero_based_pages: [29, 30, 31, 32, 33, 34, 35, 36, 37, 38], volume: 2, note: "extraction range runs from this chapter's Wikisource-aligned start through the next chapter's start; acquisition stage only, boundaries not yet hand-verified beyond the Wikisource transclusion alignment"}
+chapter_locator: {source_pdf_zero_based_pages: [29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39], volume: 2, verified: "2026-11-23 from the rendered page images: CAPITOLO XXIV opens p. 26 (zero-based 29) and ends p. 36 l. 4 (zero-based 39), CAPITOLO XXV following on p. 36 (D484)", note: "extraction range runs from this chapter's Wikisource-aligned start through the next chapter's start; acquisition stage only, boundaries not yet hand-verified beyond the Wikisource transclusion alignment"}
 acquisition:
   acquired_at: 2026-09-20
   acquired_by: "Claude (Cowork acquisition pass)"

@@ -1,0 +1,36 @@
+source_unit_id: FG-CONS.2.24
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-II24-E001
+    locator: FG-CONS.2.24.01
+    class: emendation
+    witness_1857: "in sul tenere a populi suoi in qualche terrore"
+    witness_1933: "in sul tenere e' popoli suoi in qualche terrore"
+    established: "in sul tenere [e]' populi suoi in qualche terrore"
+    publish_as_variant_note: true
+    rationale: "Both cold readers read `a`, doubting it against `e`; the preposition construes nothing. Emended from the 1933 edition under D68 (D442, D450): D486."
+  - id: FG-CONS-II24-D001
+    locator: FG-CONS.2.24.02
+    class: ruled_reading
+    witness_1857: "dico; che a uno tiranno di una città, o a ogni principe sono utilissime le fortezze"
+    witness_1933: "dico che a uno tiranno di una città, ed a ogni principe, sono utilissime le fortezze"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "Read `o` by both readers without doubt, a difference at e/o under D203(b). It construes: to the tyrant of a city, or to any prince. Kept (D38, D231, D308): D486. The mark after `dico`, doubted by both and absent in the 1933, is set as the lighter of the two read (D110)."
+  - id: FG-CONS-II24-D002
+    locator: FG-CONS.2.24.03
+    class: ruled_reading
+    witness_1857: "Però non sanza cagione e' tempi nostri ⟨le|la⟩ adoperano"
+    witness_1933: "Però non sanza cagione e' tempi nostri le adoperano"
+    established: "le adoperano"
+    publish_as_variant_note: true
+    rationale: "A split: A `le` without doubt, B `la` doubting `le`. Only `le`, the fortresses, construes. Read with the 1933 edition (D215, D234, D406): D486."
+  - id: FG-CONS-II24-D003
+    locator: FG-CONS.2.24.01
+    class: rubric
+    witness_1857: "Le fortezze generalmente sono molto più dannose che utili"
+    witness_1933: "[Le fortezze generalmente sono molto più dannose che utili.]"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "Canestrini's rubric over the reply: Machiavelli's sentence (the 1824 rubric), `fortezze` lower case, no stop; the accent on `più`, unseen by both readers, read with the 1824 rubric. The 1933 sets the same sentence as a bracketed title. Heading apparatus (D487)."
