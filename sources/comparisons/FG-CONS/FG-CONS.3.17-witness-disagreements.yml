@@ -1,0 +1,44 @@
+source_unit_id: FG-CONS.3.17
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-III17-C001
+    locator: FG-CONS.3.17.01
+    class: witness_correction
+    witness_1857: "può essere più pronto a entrare in questo pensiero Però io"
+    witness_1933: "può essere più pronto a entrare in questo pensiero. Però io"
+    established: "in questo pensiero. Però io"
+    publish_as_variant_note: true
+    rationale: "Neither reader sees a stop before the capital of `Però`, both doubting one. Supplied from the 1933 edition as a witness correction (D40, D67): D494."
+  - id: FG-CONS-III17-D001
+    locator: FG-CONS.3.17.01
+    class: ruled_reading
+    witness_1857: "e lo mostrano le azioni ⟨suo|sue⟩ prima"
+    witness_1933: "e lo mostrano le azione sue, prima"
+    established: "le azioni sue prima"
+    publish_as_variant_note: true
+    rationale: "A common doubt at the scan's o/e: both readers prefer `suo` and name `sue`. Only `sue` agrees with `azioni`. Read with the 1933 edition (D303, D398): D494. The 1933's `azione` is a form of the same plural."
+  - id: FG-CONS-III17-D002
+    locator: FG-CONS.3.17.01
+    class: ruled_reading
+    witness_1857: "chi cerca la rovina della patria⟨.|,⟩ fa male a' parenti"
+    witness_1933: "chi cerca la rovina della patria fa male a' parenti"
+    established: "la rovina della patria, fa male"
+    publish_as_variant_note: false
+    rationale: "Both readers see a mark and prefer a stop; the following word is lower case and the 1933 prints none. The lighter of the marks read, as D110, D486. Canestrini's printed stop at the end of the reply, seen by both, kept (D460): D494."
+  - id: FG-CONS-III17-D004
+    locator: FG-CONS.3.17.01
+    class: ruled_reading
+    witness_1857: "lia|ha, inginria|ingiuria, particularo|particulare, u|n|a, aue|sue, repnblica|repablica, chn|che, qnesto, sin|sia, cra|era, easere, talo, ignominta, meravigha, risentisai, adegno, natnre, banno gh, cho, ostinatamento, archbe, consnle, c|e, Asdruhale"
+    witness_1933: "ha, ingiuria, particulare, a, sue, republica, che, questo, sia, era, essere, tale, ignominia, maraviglia, risentissi, sdegno, nature, hanno gli, che, ostinatamente, arebbe, consule, ed, Asdrubale"
+    established: "the word at each"
+    publish_as_variant_note: false
+    rationale: "At the scan's broken letters (n/u, h/li, e/c/o, a/s, h/b) the readers gave the shape as the preferred reading and named the word, or one read the word without doubt; only the word is Italian, and the 1933 edition prints it. Readings, the word, as D398, D406: D494."
+  - id: FG-CONS-III17-D003
+    locator: FG-CONS.3.17.01
+    class: rubric
+    witness_1857: "Che non si offenda uno, e poi quel medesimo si mandi in amministrazione e governo d'importanza"
+    witness_1933: "[Che non si offenda uno, e poi quel medesimo si mandi in amministrazione e governo d'importanza.]"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "Canestrini's rubric over the reply: Machiavelli's sentence (the 1824 rubric) without the stop; pass A's broken letters read with the 1824 rubric and pass B. The 1933 sets the same sentence as a bracketed title. Heading apparatus (D495)."

@@ -1,0 +1,52 @@
+source_unit_id: NM-DISC.3.17
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-III17-D001
+    locator: NM-DISC.3.17.02
+    class: ruled_reading
+    witness_1824: "il quale si partì dallo esercito che lui aveva a fronte ad Annibale"
+    witness_1554: "ilquale ſi parti dall'eſſercito, che haueua a fronte ad Annibale"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The 1554 omits `lui`; the sense is the same. Read by both 1824 readers (pass B on the sample page) without doubt. Kept (D38, D493)."
+  - id: NM-DISC-III17-D002
+    locator: NM-DISC.3.17.02
+    class: ruled_reading
+    witness_1824: "avendolo serrato in luogo con lo esercito che bisognava"
+    witness_1554: "hauendolo ſerrato in luogo con lo eſſercito, che biſogna"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "`bisognava`, the past of the narrative, against the 1554's present `biſogna`. Read by both 1824 readers without doubt. Kept (D38, D493)."
+  - id: NM-DISC-III17-D003
+    locator: NM-DISC.3.17.02
+    class: ruled_reading
+    witness_1824: "fu da Asdrubale astutamente tanto intrattenuto con certe pratiche d'accordo, che egli uscì di sotto"
+    witness_1554: "fu Aſdrubale aſtutamente tanto intrattenuto con certe prattiche di accordo, che gli uſci di ſotto"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The 1554 omits `da`, so that Hasdrubal is the one held in talk, and Nero, the subject of the period, drops out of the clause. The 1824 keeps Nero the one held and Hasdrubal the agent, who then slips out (`egli uscì`). Read by both 1824 readers without doubt. Kept (D38, D493); translator's note."
+  - id: NM-DISC-III17-D004
+    locator: NM-DISC.3.17.02
+    class: ruled_reading
+    witness_1824: "e di lui fu parlato inonestamente per tutta quella Città, non senza suo grande disonore"
+    witness_1554: "et di lui fu parlato dishoneſtamẽte per tutta quella città,non ſenza ſuo grãde dishonore"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "`inonestamente` against `dishoneſtamente`: two adverbs of one sense, dishonourably, the 1824's formed with `in-`. Read by both 1824 readers without doubt. Kept (D38, D493)."
+  - id: NM-DISC-III17-D005
+    locator: NM-DISC.3.17.03
+    class: ruled_reading
+    witness_1824: "E quando queste passioni di tali offese possono tanto in un cittadino romano, e in quelli tempi che Roma era ancora incorrotta"
+    witness_1554: "Et quãdo queſte paſsioni di tale offeſe poſſono tanto in un cittadino Ro.et in quei tempi che Roma anchora era incorrotta"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "`tali offese`, plural in agreement, against the 1554's `tale offeſe`; `era ancora` against `anchora era`, order only. Read by pass A and by pass B on the line crops, without doubt. Kept (D38, D493)."
+  - id: NM-DISC-III17-D006
+    locator: NM-DISC.3.17.01
+    class: rubric
+    witness_1824: "Che non si offenda uno, e poi quel medesimo si mandi in amministrazione e governo d'importanza."
+    witness_1554: "CHE NON SI OFFENDA VNO ET poi quel medeſimo ſi mãdi in amminiſtratione, et gouerno d'importanza. Cap. XVII."
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The 1554 sets the title as its heading: the same sentence but for spelling and the comma after `amministratione`. The 1824 rubric read alike by both readers without doubt (D495)."

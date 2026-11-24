@@ -1,0 +1,29 @@
+source_unit_id: NM-DISC.3.17
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-037
+passes:
+  - {id: A, performed: 2026-11-24, file: sources/coldpass/NM-DISC.3.17-passA.md, note: "subagent; page images only (350 ppi, whole page and thirds cut in pixels, sizes and checksums verified before dispatch), own image, work and output folders, forbidden every other path (D370); full chapter, with p. 150 as boundary evidence (D492)"}
+  - {id: B, performed: 2026-11-24, file: sources/coldpass/NM-DISC.3.17-passB.md, note: "subagent; separate folders; the D302 sample page p. 148, chosen and recorded before dispatch, with line crops of p. 149 l. 11 and l. 13, checked on a contact strip (D492)"}
+collation: sources/coldpass/COLLATION-2026-11-24-III17.md
+collation_result: "347 words in pass A (p. 148 187, p. 149 160). The sample page agrees with pass A in every word and mark, heading and rubric included (187 to 187), and both crops agree word for word. Pass B's doubts `⟨cd|ed⟩` ×2 and `⟨nuovc|nuove⟩` are worn sorts that pass A reads without doubt and the 1554 prints (`et`, `et`, `nuoue`): not a disagreement (D457, D468). Pass A's doubts are apostrophe spacing and a stray point before `offese`, which pass B on the crop also takes for a stray mark. D302 stands (D492). Against the 1554: the whole words kept (D493)."
+boundaries: "printed pp. 148-149 of vol. 2; CAPITOLO XVII at the head of p. 148; a three-line italic rubric with a stop; enlarged initial D; one block; no notes; ends p. 149 l. 20 `la sua rovina.` at the foot of the page; CAPITOLO XVIII opens p. 150, the supplementary extract NM-DISC-III17-p150.pdf from the same recorded scan (D492)"
+heading: "CAPITOLO XVII"
+rubric_check: "1824: `Che non si offenda uno, e poi quel medesimo si mandi in amministrazione e governo d'importanza.` (both readers, without doubt). Canestrini's rubric over the reply agrees word for word, with no stop; the 1554 heads the chapter `CHE NON SI OFFENDA VNO ET poi quel medeſimo ſi mãdi in amminiſtratione, et gouerno d'importanza. Cap. XVII.`; the 1933 edition's bracketed title is the same sentence (D495)"
+interventions: []
+emendations: []
+procedure:
+  - {id: D492, note: "Both pages eligible for the D302 sample (a fifth of 347 is 70). Word-level 1554 differences: p. 148 four in 187 words, p. 149 two in 160; p. 148 chosen, with crops of the two differences on p. 149. Sample and crops agree with pass A word for word. The extract ends at the foot of p. 149 with no following heading; the volume scan, fetched again, matches the recorded sha256 db7f7e05..., pp. 148-149 re-rendered from it are pixel-identical to the extract, and p. 150 (zero-based 153), which opens CAPITOLO XVIII, was extracted as boundary evidence."}
+readings:
+  - {locus: "NM-DISC.3.17.02-.03 the whole-word differences: `fu da Asdrubale`, `che bisognava`, `che lui aveva`, `inonestamente` (.02); `di tali offese`, `era ancora incorrotta` (.03)", passes: "A full and B on the sample page or a crop, without doubt", witness_1554: "`fu Aſdrubale`, `che biſogna`, `che haueua`, `dishoneſtamẽte`; `di tale offeſe`, `anchora era incorrotta`", disposition: "kept, D493 (2026-11-24, by precedent: D38): the 1824 construes at each; variant notes, a translator's note at `da`, where the 1554 makes Hasdrubal the one held"}
+comparison_collation: >
+  Done 2026-11-24 against the 1554 extract (fol. 178v-179r). A cold reader
+  transcribed the Giglio leaves from the page images
+  (sources/coldpass/NM-DISC.3.17-1554.md); no word lost, the leaves sound
+  but for a lost folio number on 178v, gutter shadow and worn type, every
+  word legible (D415 not needed). The transcript was collated by word
+  against both 1824 passes after spelling normalisation. Differences are in
+  sources/comparisons/NM-DISC/NM-DISC.3.17-witness-disagreements.yml.

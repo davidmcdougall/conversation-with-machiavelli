@@ -1,0 +1,34 @@
+source_unit_id: FG-CONS.3.17
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-037
+responds_to: NM-DISC.3.17
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. Canestrini's note to this reply (p. 75, call after `Salinatore,`) is his historical gloss and is not carried (D463, D487, D495)."
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38); errors are emended from Palmarocchi and bracketed (D68, D126)."
+passes:
+  - {id: A, performed: 2026-11-24, file: sources/coldpass/FG-CONS.3.17-passA.md, note: "subagent; page images only (native 600 ppi rendered at 1200, the whole page and halves cut in pixels, sizes and checksums verified before dispatch), own image, work and output folders, forbidden every other path (D370)"}
+  - {id: B, performed: 2026-11-24, file: sources/coldpass/FG-CONS.3.17-passB.md, note: "subagent; same images, separate folders"}
+collation: sources/coldpass/COLLATION-2026-11-24-III17.md
+collation_result: >
+  330 words each (p. 74 183, p. 75 147). Both readers gave a broken
+  letter's shape as the preferred reading and the word as the alternative;
+  each such doubt read as the word, which alone is Italian and which the
+  1933 prints, the token streams then identical (D494). The common doubt
+  `le azioni ⟨suo|sue⟩` read `sue` with the 1933 (D494). Pointing by D110;
+  the stop after `pensiero` supplied (C001, D67); Canestrini's printed
+  stop at the end kept (D460).
+witness_independence_check: "SCOPE §7. Neither pass carries a Palmarocchi word-reading where Canestrini differs: both have `populo`, `il quale` ×2, `Il quale`, `e anche`, `e a sè proprio`, `e andò`, `meraviglia`, `azioni`, `fece il possibile`, `doppo il consulato`, `Il che`, against the 1933 `popolo`, `el quale`, `El quale`, `ed anche`, `ed a sé proprio`, `ed andò`, `maraviglia`, `azione`, `fece el`, `doppo el`, `il che`. The passes read Canestrini."
+boundaries: "printed pp. 74-75; heading CONSIDERAZIONE SUL CAPITOLO XVII DEL LIBRO III. on p. 74 below the end of the II.24 reply (`non le smurorono.`), with a printed stop; a two-line rubric in smaller roman type with no stop; one paragraph, indented at p. 74 l. 1; ends p. 75 l. 15 `volerla sollecitare.`; CONSIDERAZIONE SUL CAPITOLO XIX follows on p. 75 (no reply to III.18). Canestrini's note on p. 75 is keyed to this reply"
+heading: "CONSIDERAZIONE SUL CAPITOLO XVII DEL LIBRO III., with `del libro III` and a stop (both readers), set in the unit's `heading` front-matter (D443, D495)"
+rubric: "Che non si offenda uno, e poi quel medesimo si mandi in amministrazione e governo d' importanza (B without doubt; A doubting `in` and a broken t in `amministrazione`): read with the 1824 rubric; no stop (D495, as D463, D487)"
+corrections:
+  - {id: FG-CONS-III17-C001, locator: FG-CONS.3.17.01, was: "può essere più pronto a entrare in questo pensiero Però io non sarei facile", now: "in questo pensiero. Però io non sarei facile", evidence: "Neither reader sees a stop (both ⟨∅|.⟩, B noting faint grey dropout below the ink threshold) before the capital of `Però`; the 1933 edition prints `pensiero. Però`. Supplied as a witness correction (D40, D67), by precedent: D494."}
+emendations: []
+readings:
+  - {locus: "FG-CONS.3.17.01 `e lo mostrano le azioni ⟨suo|sue⟩ prima`", passes: "a common doubt: both prefer `suo`, both naming `sue`", witness_1933: "le azione sue", disposition: "`sue`, a reading, with the 1933 edition, D494 (2026-11-24, by precedent: D303, D398): only `sue` agrees with `azioni`"}
+  - {locus: "FG-CONS.3.17.01 `ha`, `ingiuria`, `particulare`, `a tutte`, `sue`, `republica` ×2, `uno che`, `questo`, `sia`, `era`, `essere`, `tale ignominia`, `meraviglia`, `risentissi`, `sdegno`, `nature`, `hanno gli`, `che`, `ostinatamente`, `arebbe`, `consule`, `e andò`, `Asdrubale`", passes: "doubtful to both or to one reader at the scan's broken letters (n/u, h/li, e/c/o, a/s, h/b), the shape preferred and the word named, or the word read by the other", witness_1933: "the same words", disposition: "readings, the word (D494, as D398, D406): only the word is Italian"}
+  - {locus: "FG-CONS.3.17.01 pointing: `republica,` (l. 2), `vendicarsi.`, `patria,`, `medesimo;`, `principe.`, `altrimenti;`", passes: "both see a mark and doubt its weight, or split", witness_1933: "republica, / vendicarsi. / patria fa / medesimo; / principe. / altrimenti;", disposition: "the 1933 breaks the tie (D110); at `patria`, where it prints none, the lighter of the marks read stands; marks read alike kept against the 1933 (`republica;` l. 12, `ingiuriato,`, `rispetto,`, `Discorso,`, `rotto,`, `parole,`, `cittadini.`, `vendicarsi,`); the printed stop at the end kept (D460)"}
+normalisation_notes: "Class A: accents (`perchè` → `perché`, `sè` → `sé`); elisions printed without an apostrophe set with one (`s ha`, `l ha` → `s'ha`, `l'ha`; both readers); the plural article `a'`; spaces after elision and before punctuation removed (`d' importanza`); line-end hyphens removed; the note call removed."
