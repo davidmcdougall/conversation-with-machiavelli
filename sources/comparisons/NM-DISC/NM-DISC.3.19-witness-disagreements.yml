@@ -1,0 +1,60 @@
+source_unit_id: NM-DISC.3.19
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-III19-D001
+    locator: NM-DISC.3.19.02
+    class: ruled_reading
+    witness_1824: "Donde e' pare che sia meglio a governare una moltitudine essere umano che superbo"
+    witness_1554: "Onde e pare che ſia meglio, a gouernare una moltitudine,eſſere humano,che ſoperbo"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "`Donde` against `Onde`: two adverbs of one sense, whence. Read by both 1824 readers (pass B on the sample page) without doubt. Kept (D38, D501)."
+  - id: NM-DISC-III19-D002
+    locator: NM-DISC.3.19.02
+    class: ruled_reading
+    witness_1824: "Cornelio Tacito, al quale molti altri Scrittori acconsentono, in una sua sentenza conchiude il contrario, quando dice: In multitudine regenda plus poena, quam obsequium valet."
+    witness_1554: "Cornelio Tacito(alquale molti altri ſcrittori conſentono)in una ſua ſentenza conchiude il contrario , Quando ait , in multitudine regenda plus pœna , quam obſequium ualet. Cioe, Per regger molti ual piu la ſeuerita,che l'eſſer benigno."
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "`acconsentono` against `conſentono`, two verbs of one sense; `quando dice:` against `Quando ait`, the 1554 keeping a Latin verb; the 1554 follows the Latin with an Italian rendering, `Per regger molti val più la severità, che l'esser benigno`, which the 1824 does not print, not carried (as II.15, NM-DISC-II15-D001). Read by both 1824 readers on the sample page without doubt. Kept (D38, D501)."
+  - id: NM-DISC-III19-D003
+    locator: NM-DISC.3.19.03
+    class: ruled_reading
+    witness_1824: "non poteva uno che ne diventava Principe a tempo, con crudeltà e rozzezza maneggiarla"
+    witness_1554: "non poteua uno,che diuentaua Prencipe a tempo,con crudelta,& rozzezza maneggiarla"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The 1554 omits `ne`, of it, the plebs whose prince for a time the man became. Read by both 1824 readers on the sample page without doubt. Kept (D38, D501)."
+  - id: NM-DISC-III19-D004
+    locator: NM-DISC.3.19.04
+    class: ruled_reading
+    witness_1824: "acciocché non diventino insolenti, e che per troppa tua facilità non ti calpestino"
+    witness_1554: "accioche non diuentino inſolenti, & che per troppa tua felicità non ti calpeſtino"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "`facilità`, the ease (indulgence) of the commander, against `felicità`, his good fortune. Read by pass A and by pass B on a crop without doubt. Both construe; the 1824 kept (D38, D501); translator's note."
+  - id: NM-DISC-III19-D005
+    locator: NM-DISC.3.19.04
+    class: ruled_reading
+    witness_1824: "nessun Principe ne è desideroso se non necessitato"
+    witness_1554: "neſſuno Prencipe ne è diſideroſo,non neceſsitato"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "`se non necessitato`, unless necessitated, against the 1554's `non neceſsitato`, not being necessitated. Read by pass A and by pass B on a crop without doubt. Kept (D38, D501); translator's note."
+  - id: NM-DISC-III19-D006
+    locator: NM-DISC.3.19.04
+    class: ruled_reading
+    witness_1824: "né mancano mai le cagioni e il desiderio di spargerlo"
+    witness_1554: "ne mancano mai le cagioni, & il diſiderio di ſpargerla"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "`spargerlo`, to shed it, the blood (`sangue`), against the 1554's feminine `ſpargerla`, which has no noun to take but `rapina`. Read by pass A and by pass B on a crop without doubt. Kept (D38, D501); translator's note."
+  - id: NM-DISC-III19-D007
+    locator: NM-DISC.3.19.01
+    class: rubric
+    witness_1824: "Se a reggere una moltitudine è più necessario l'ossequio che la pena."
+    witness_1554: "SE A REGGERE VNA MOLTITVDINE e piu neceſſario l'oſſequio,che la pena. Ca.XIX."
+    established: witness_1824
+    publish_as_variant_note: false
+    rationale: "The same sentence but for spelling and a comma. Read alike by both 1824 readers without doubt (D503)."

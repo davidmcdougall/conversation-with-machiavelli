@@ -1,0 +1,29 @@
+source_unit_id: NM-DISC.3.19
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-038
+passes:
+  - {id: A, performed: 2026-11-24, file: sources/coldpass/NM-DISC.3.19-passA.md, note: "subagent; page images only (350 ppi, whole page and thirds cut in pixels, sizes and checksums verified before dispatch), own image, work and output folders, forbidden every other path (D370); full chapter, with p. 156 as boundary evidence (D500)"}
+  - {id: B, performed: 2026-11-24, file: sources/coldpass/NM-DISC.3.19-passB.md, note: "subagent; separate folders; the D302 sample page p. 154, chosen and recorded before dispatch, with line crops of p. 155 ll. 8, 15, 19 and 20, checked on a contact strip (D500)"}
+collation: sources/coldpass/COLLATION-2026-11-24-III19.md
+collation_result: "407 words in pass A (p. 154 195, p. 155 212). The sample page agrees with pass A in every word and mark, heading and rubric included (195 to 195), and all four crops agree word for word. Pass B's doubt `⟨e|c⟩d` is a worn sort that pass A reads without doubt and the 1554 prints (`&`): not a disagreement (D457, D468). Pass A's doubts are apostrophe spacing, a speck after `E` both readers take for no mark, a reversed-c sort in `dentro`, and a tail under `armi`. D302 stands (D500). Against the 1554: the whole words kept (D501)."
+boundaries: "printed pp. 154-155 of vol. 2; CAPITOLO XIX at the head of p. 154; a two-line italic rubric with a stop; raised initial E; one block; no notes; the Latin of Tacitus in italic; ends p. 155 l. 26 `più che l'armi.` at the foot of the page; CAPITOLO XX opens p. 156, the supplementary extract NM-DISC-III19-p156.pdf from the same recorded scan (D500)"
+heading: "CAPITOLO XIX"
+rubric_check: "1824: `Se a reggere una moltitudine è più necessario l'ossequio che la pena.` (both readers, without doubt). Canestrini's rubric over the reply has `lo ossequio`, otherwise the same words, with no stop; the 1554 heads the chapter `SE A REGGERE VNA MOLTITVDINE e piu neceſſario l'oſſequio, che la pena. Ca. XIX.`; the 1933 edition's bracketed title is the 1824's sentence (D503)"
+interventions: []
+emendations: []
+procedure:
+  - {id: D500, note: "Both pages eligible for the D302 sample (a fifth of 407 is 82). Word-level 1554 differences: p. 154 five in 195 words, p. 155 three in 212; p. 154 chosen, with crops of the three differences on p. 155 and of l. 20 (`dunque`/`adunque`, a form). Sample and crops agree with pass A word for word. The extract ends at the foot of p. 155 with no following heading; the volume scan, fetched again, matches the recorded sha256 db7f7e05..., pp. 154-155 re-rendered from it are pixel-identical to the extract, and p. 156 (zero-based 159), which opens CAPITOLO XX, was extracted as boundary evidence."}
+readings:
+  - {locus: "NM-DISC.3.19.02-.04 the whole-word differences: `Donde`, `acconsentono`, `quando dice:` (.02); `ne diventava` (.03); `facilità`, `se non necessitato`, `spargerlo` (.04)", passes: "A full and B on the sample page or a crop, without doubt", witness_1554: "`Onde`, `conſentono`, `Quando ait,` with an added Italian rendering of the Latin; `che diuentaua`; `felicità`, `non neceſsitato`, `ſpargerla`", disposition: "kept, D501 (2026-11-24, by precedent: D38): the 1824 construes at each; variant notes, translator's notes at `facilità`, `se non` and `spargerlo`; the 1554's rendering not carried"}
+comparison_collation: >
+  Done 2026-11-24 against the 1554 extract (fol. 181r-181v). A cold reader
+  transcribed the Giglio leaves from the page images
+  (sources/coldpass/NM-DISC.3.19-1554.md); no word lost, the leaves sound
+  but for show-through and worn sorts, every word legible (D415 not
+  needed). The transcript was collated by word against both 1824 passes
+  after spelling normalisation. Differences are in
+  sources/comparisons/NM-DISC/NM-DISC.3.19-witness-disagreements.yml.

@@ -1,0 +1,39 @@
+source_unit_id: FG-CONS.3.19
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-038
+responds_to: NM-DISC.3.19
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. Canestrini's note to this reply (p. 76, call after `il timore.`, summarising Machiavelli's chapter) is his gloss and is not carried (D463, D487, D495, D503)."
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38); errors are emended from Palmarocchi and bracketed (D68, D126)."
+passes:
+  - {id: A, performed: 2026-11-24, file: sources/coldpass/FG-CONS.3.19-passA.md, note: "subagent; page images only (native 600 ppi rendered at 1200, the whole page and halves cut in pixels, sizes and checksums verified before dispatch), own image, work and output folders, forbidden every other path (D370)"}
+  - {id: B, performed: 2026-11-24, file: sources/coldpass/FG-CONS.3.19-passB.md, note: "subagent; same images, separate folders"}
+collation: sources/coldpass/COLLATION-2026-11-24-III19.md
+collation_result: >
+  641 words each (p. 75 93, p. 76 251, p. 77 297). Both readers gave a
+  broken letter's shape as the preferred reading and the word as the
+  alternative; each such doubt read as the word, which alone is Italian and
+  which the 1933 prints (D502). `suavissima` read with A, the shape and the
+  1933 where the readers named two forms (D406, D502). The token streams
+  then identical but at one split, `pericolose` (A) / `periculose` (B),
+  both without doubt: `periculose` applied provisionally (O49). `sarebbe`,
+  `città` and `genti` kept against the 1933 (D38, D502). Pointing by D110;
+  the stop after `ammirabile` supplied (C001, D67); Canestrini's printed
+  stop at the end kept (D460).
+witness_independence_check: "SCOPE §7. Neither pass carries a Palmarocchi word-reading where Canestrini differs: both have `il medesimo`, `il timore`, `il signore`, `il quale`, `il principe`, `populi`, `benevolenza`, `e a questo`, `e allora`, `condizioni`, `nazioni`, `gl' Italiani`, `ufficio`, `ordinarii`, `o vero`, `abbondare`, `sarebbe`, `città`, `genti`, against the 1933 `el ...`, `popoli`, `benevolenzia`, `ed a`, `ed allora`, `condizione`, `nazione`, `gli italiani`, `uficio`, `ordinari`, `overo`, `abondare`, `farebbe`, `vita`, `grazie`. Pass A's `pericolose` agrees with the 1933 at the one split, a single form. The passes read Canestrini."
+boundaries: "printed pp. 75-77; heading CONSIDERAZIONE SUL CAPITOLO XIX on p. 75 below the end of the III.17 reply (`volerla sollecitare.`), without `del libro III`, a pale dot after XIX that both readers doubt; a two-line rubric in smaller roman type with no stop; two paragraphs, indented at p. 75 l. 1 and p. 77 l. 1 (`L' altra distinzione`); ends p. 77 l. 29 `non può fare che non sia temuto.`; CONSIDERAZIONE SUL CAPITOLO XXIV opens p. 78. Canestrini's note on p. 76 is keyed to this reply"
+heading: "CONSIDERAZIONE SUL CAPITOLO XIX, without `del libro III` (both readers); the pale dot after XIX, doubted by both, not read as a stop, the 1933 printing none (D110); set in the unit's `heading` front-matter (D443, D503)"
+rubric: "Se a reggere una moltitudine è più necessario lo ossequio che la pena (A doubting `moltitudine`, B `una` and `moltitudine`, at broken letters): read with the 1824 rubric but for Canestrini's `lo ossequio`; no stop (D503, as D463, D487, D495)"
+corrections:
+  - {id: FG-CONS-III19-C001, locator: FG-CONS.3.19.01, was: "che è suavissima e ammirabile Ma perché questo condimento", now: "che è suavissima e ammirabile. Ma perché questo condimento", evidence: "Neither reader sees a stop (both ⟨∅|.⟩) before the capital of `Ma`; the 1933 edition prints `ammirabile. Ma`. Supplied as a witness correction (D40, D67), by precedent: D502."}
+emendations: []
+readings:
+  - {locus: "FG-CONS.3.19.02 `condurre a fazioni ⟨pericolose|periculose⟩`", passes: "a split, A `pericolose`, B `periculose`, both without doubt", witness_1933: "pericolose", disposition: "`periculose`, applied provisionally on the recommendation, O49: two forms of one word; the 1933 normalises the root (D462); the reply spells it nowhere else; Canestrini's prevailing spelling in the established replies"}
+  - {locus: "FG-CONS.3.19.01 `e sarebbe quella armonia`; .02 `per la città loro`, `le genti dependono`", passes: "both, without doubt", witness_1933: "e farebbe / per la vita loro / le grazie dependono", disposition: "kept, D38, D502 (2026-11-24, by precedent): each construes; variant notes and translator's notes"}
+  - {locus: "FG-CONS.3.19.01-.02 `che`, `chi`, `questo`, `quale`, `si`, `uomo`, `tutte`, `abbino`, `abbia` ×2, `manchi` ×2, `distinzione`, `pieni`, `bisogna`, `pel`, `principe` ×2, `autorità`, `sia`, `distinguerei`, `quello`, `tenuti`, `restare`, `fare`, `quali`, `giustizia`, `sarebbe`, `qualche`, `rebbe`, `temperata`, `vogliamo`, `piacevolezza`, `equalmente`", passes: "doubtful to both or to one reader at the scan's broken letters (n/u, h/b, h/li, e/c/o, s/a, t/f), the shape preferred and the word named, or the word read by the other", witness_1933: "the same words", disposition: "readings, the word (D502, as D398, D406, D494): only the word is Italian"}
+  - {locus: "FG-CONS.3.19.01 `è ⟨anaviasima|suavissima⟩` (A) / `⟨snaviasima|soavissima⟩` (B)", passes: "both doubt the same broken letters and name two forms", witness_1933: "suavissima", disposition: "`suavissima`, with A, the shape (`s-n-a-v`, the scan's u/n) and the 1933 (D406, D502)"}
+  - {locus: "FG-CONS.3.19 pointing: `col timore,` (p. 76 l. 10), `anche amore,` (p. 77 l. 23), `insolenti.` (p. 76 l. 27); `reggi;`, `benignità;`, `vivere;`", passes: "both see a mark and doubt its weight, or split", witness_1933: "timore, / amore, / insolenti. / reggi; / benignità; / vivere;", disposition: "the 1933 breaks the tie (D110); marks read alike kept against the 1933; the printed stop at the end kept (D460)"}
+normalisation_notes: "Class A: accents (`perchè` → `perché`); elisions printed without an apostrophe set with one (`dell al-`, `l amore`, `gl Italiani`; D39); the plural article `e` set `e'` (`e' Germani`, `e' Tedeschi`, `e' delitti`, `e' populi` ×2, `e' principi`, `per e' quali`; D35); spaces after elision and before punctuation removed; line-end hyphens removed; the note call removed."

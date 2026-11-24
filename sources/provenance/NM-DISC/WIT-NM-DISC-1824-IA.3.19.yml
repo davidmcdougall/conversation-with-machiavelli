@@ -7,6 +7,10 @@ files:
   - path: sources/witnesses/NM-DISC/WIT-NM-DISC-1824-IA/NM-DISC-III19-pages.pdf
     role: immutable_bounded_scan_extract
     sha256: 6523eedacd6106348abd05ba802e642dfe740d350e228d0ebb36fff6dacc7f47
+  - path: sources/witnesses/NM-DISC/WIT-NM-DISC-1824-IA/NM-DISC-III19-p156.pdf
+    role: immutable_bounded_scan_extract_supplement
+    sha256: 5716ee9bb1137ec9333bba59413278dc8915940b19a1c550760c58a467a372d7
+    note: "Added 2026-11-24 (D500): the first extract ends at the foot of p. 155 with the chapter's last words and no following heading, so the end could not be proved from it; p. 156, which opens CAPITOLO XX, is boundary evidence only. pypdf extraction of zero-based page 159 from the source PDF, re-downloaded from source_pdf_url, its sha256 matching source_pdf_sha256; pp. 154-155 rendered from it are pixel-identical to the first extract."
   - path: sources/witnesses/NM-DISC/WIT-NM-DISC-1824-IA/internet-archive-metadata-v2.json
     role: acquisition_and_rights_metadata
     sha256: 4bb6c7b3614a1d8403860c5b92dee2387a7cf5eedf95fc5eefeb216f394ee0fc

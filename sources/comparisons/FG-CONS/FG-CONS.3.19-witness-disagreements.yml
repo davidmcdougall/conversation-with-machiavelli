@@ -1,0 +1,68 @@
+source_unit_id: FG-CONS.3.19
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-III19-C001
+    locator: FG-CONS.3.19.01
+    class: witness_correction
+    witness_1857: "che è suavissima e ammirabile Ma perché questo condimento"
+    witness_1933: "che è suavissima ed ammirabile. Ma perché questo condimento"
+    established: "e ammirabile. Ma perché"
+    publish_as_variant_note: true
+    rationale: "Neither reader sees a stop before the capital of `Ma`, both doubting one. Supplied from the 1933 edition as a witness correction (D40, D67): D502."
+  - id: FG-CONS-III19-D001
+    locator: FG-CONS.3.19.01
+    class: ruled_reading
+    witness_1857: "l'una condita equalmente con l'altra sarebbe preziosissima, e sarebbe quella armonia temperata"
+    witness_1933: "l'una condita equalmente con l'altra sarebbe preziosissima, e farebbe quella armonia temperata"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "`sarebbe`, would be, against the 1933's `farebbe`, would make. Read by both readers (B doubting a broken first letter that prints like `a`, and naming `sarebbe`) as the word. Both construe; Canestrini kept (D38, D502)."
+  - id: FG-CONS-III19-D002
+    locator: FG-CONS.3.19.02
+    class: ruled_reading
+    witness_1857: "perché avendoli a condurre a fazioni periculose per la città loro, vi si conducono assai con lo amore"
+    witness_1933: "perché avendoli a condurre a fazioni pericolose per la vita loro, vi si conducono assai con lo amore"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "`per la città loro`, for their city, against the 1933's `per la vita loro`, for their life. Read alike by both readers without doubt. Canestrini's construes, the actions dangerous for (or on behalf of) their city; the 1933's is the readier sense, and `città` recurs in the next clause (`in chi governa città`). Kept (D38, D502); translator's note."
+  - id: FG-CONS-III19-D003
+    locator: FG-CONS.3.19.02
+    class: ruled_reading
+    witness_1857: "condurre a fazioni ⟨pericolose|periculose⟩ per la città loro"
+    witness_1933: "condurre a fazioni pericolose per la vita loro"
+    established: "periculose (provisional, O49)"
+    publish_as_variant_note: true
+    rationale: "A split between the passes, A `pericolose`, B `periculose`, both without doubt: two forms of one word. The 1933 normalises Canestrini's `periculo-` throughout (D462), so its form is no evidence; the reply spells the root nowhere else. `periculose`, Canestrini's prevailing spelling in the established replies, applied provisionally on the recommendation (O49). English `dangerous` either way."
+  - id: FG-CONS-III19-D004
+    locator: FG-CONS.3.19.02
+    class: ruled_reading
+    witness_1857: "perché sapendo e' populi che le genti dependono da altri"
+    witness_1933: "perché sapendo e' popoli che le grazie dependono da altri"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "`le genti`, the men, against the 1933's `le grazie`, the favours. Read alike by both readers without doubt. Canestrini's construes, weaker: the governed know that men depend on others, not on the governor; the 1933's agrees with `inclinazione a fare grazie` at the close. Kept (D38, D502); translator's note."
+  - id: FG-CONS-III19-D005
+    locator: FG-CONS.3.19.01-.02
+    class: ruled_reading
+    witness_1857: "vogliamo|voghamo, piacevolezza|piacevolczza, qualche|qualchc, rebbe|rehbe, temperata|temporata, che|chc|cbe|cbo, uomo|nomo, tutte|tntte, abbino|ahhino, abbia|ahbia|abhia, si|sl, quale|qualc, chi|cbi, manchi|mancbi, distinzione|disfinzione|diatinzione, pieni|piem, bisogna|bisogns, questo|qnesto, pel|pei, principe|principo, autorità|antorità, sia|aia, distinguerei|distingnerei, quello|qnello, tenuti|tennti, restare|restaro, fare|faro, quali|qnali, giustizia|giuatizia, sarebbe|aarebbe, equalmente|equalmentc"
+    witness_1933: "the same words"
+    established: "the word at each"
+    publish_as_variant_note: false
+    rationale: "At the scan's broken letters (n/u, h/b, h/li, e/c/o, s/a, t/f) the readers gave the shape as the preferred reading and named the word, or one read the word without doubt; only the word is Italian, and the 1933 edition prints it. Readings, the word, as D398, D406, D494: D502. At `suavissima` (A `⟨anaviasima|suavissima⟩`, B `⟨snaviasima|soavissima⟩`) the shape, the 1933 and A agree (D406)."
+  - id: FG-CONS-III19-D006
+    locator: FG-CONS.3.19.01-.02
+    class: ruled_reading
+    witness_1857: "col timore⟨;|,⟩ altri / anche amore⟨;|,⟩ perché / insolenti⟨∅|.⟩ (A) / ⟨.|∅⟩ (B)"
+    witness_1933: "col timore, altri / anche amore, perché / insolenti."
+    established: "timore, / amore, / insolenti."
+    publish_as_variant_note: false
+    rationale: "Both readers see a mark and doubt its weight, or split; the 1933 breaks the tie (D110). Marks read alike by both kept against the 1933; Canestrini's printed stop at the end of the reply kept (D460): D502."
+  - id: FG-CONS-III19-D007
+    locator: FG-CONS.3.19.01
+    class: rubric
+    witness_1857: "Se a reggere una moltitudine è più necessario lo ossequio che la pena"
+    witness_1933: "[Se a reggere una moltitudine è più necessario l'ossequio che la pena.]"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "Canestrini's rubric over the reply: Machiavelli's sentence (the 1824 rubric) with `lo ossequio` for `l'ossequio` and without the stop; the readers' broken letters (`una`, `moltitudine`) read with the 1824 rubric. The 1933 sets the 1824's sentence as a bracketed title. Canestrini's heading, without `del libro III`, carried as printed (D443). Heading apparatus (D503)."
