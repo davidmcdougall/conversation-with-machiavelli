@@ -290,15 +290,17 @@ scan position, provenance naming and licensing pointer amended 2026-09-26:
   seventy-six years before Palmarocchi.
 - **Palmarocchi 1933 is collation evidence only.** Scan images are consulted,
   not republished: the Commons PD tag keys on Guicciardini, not the 1933
-  editorial layer, which is in copyright in Italy to 31 Dec 2026 and in the US
-  (URAA) to 31 Dec 2028. The Wikisource transcription is CC BY-SA/GFDL and
-  Palmarocchi's editorial expression is consultation-only under LICENSE §5.
+  editorial layer, assessed as in copyright in Italy to 31 Dec 2026 and in the
+  US (URAA) to 31 Dec 2028, pending legal review. The Wikisource transcription is CC BY-SA/GFDL and
+  Palmarocchi's editorial expression is consultation-only (`RIGHTS_AND_SOURCES.md` §1).
   Readings may inform collation; the expression is never copied.
 - The witness inventory records that this route requires **no
   relationship-map change**.
 - Per-unit provenance files are named `WIT-<witness-id>.<unit-id>.yml`. The
   legacy flat 1.12 files stay as they are.
-- Licensing: LICENSE at repo root is the grant and supersedes DEC-010.
+- Licensing: LICENSE at repo root is the grant; DEC-011 revises DEC-010 points
+  2–3. Source rights are in `RIGHTS_AND_SOURCES.md`; the translation credit and
+  model provenance are in `TRANSLATION_METHOD.md`.
 
 The census layer contradicts all of it. `register/guicciardini/FG-CONS.md`
 still says Palmarocchi "supplies the openly inspectable page-image-backed

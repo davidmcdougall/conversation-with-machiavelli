@@ -22,3 +22,7 @@ SCOPE §2 from unit front-matter. If a fact about a unit is not in that unit's
 file, it does not exist.
 
 `sources/register/` is bibliography, not policy. It states no project decision.
+
+Credit the English as "AI-assisted translation edited by David McDougall",
+never as David McDougall's translation alone. Record the model identifier for
+every drafting and review step, or "unknown" (DEC-011, `TRANSLATION_METHOD.md`).

@@ -1,72 +1,155 @@
-# LICENSE — A Conversation with Machiavelli
+# LICENSE
 
+**A Conversation with Machiavelli**
 Guicciardini's *Considerazioni* on the *Discorsi*
-Edited and translated by David McDougall.
 
-This edition is free. Different layers of it carry different terms, because
-they are different kinds of thing: a dead man's words, a living editor's
-English, a table of facts, and a build script. The grants below are made
-layer by layer and are stated in full here. Anything not listed is not
-granted.
+Edited by David McDougall
+AI-assisted English translation edited by David McDougall
 
-The terms of each licence are the terms of the canonical text at the URL
-given; the descriptions in this file are summaries and do not modify them.
+This edition is freely available for use, reproduction, modification, and
+redistribution, including commercial use, subject to the licences applicable
+to its components.
+
+| Component | Licence |
+|---|---|
+| Established Italian text | CC0 1.0 Universal |
+| English translation | CC BY 4.0, where applicable |
+| Original editorial commentary and apparatus | CC BY 4.0 |
+| Research and apparatus data | CC0 1.0 Universal |
+| Software and build scripts | MIT |
+| Third-party source materials | No licence granted by this project |
+
+The applicable licence instruments govern their respective components.
 
 ---
 
-## 1. The established Italian text — CC0 1.0 Universal
+## 1. Established Italian text
 
-`corpus/` · `sources/normalized/`
+Licence: CC0 1.0 Universal
 
-Dedicated to the public domain under CC0 1.0 Universal
-(https://creativecommons.org/publicdomain/zero/1.0/). To the extent any
-copyright, database right or related right — including the exclusive right
-in critical and scientific editions of public-domain works under art.
-85-*quater* of Italian law 633/1941 — subsists in the established text,
-it is waived.
+Directories:
 
-These are Machiavelli's and Guicciardini's sentences, reconstructed from
-public-domain witnesses. This project exists because that text is harder to
-reach than it should be, and it would be incoherent to add a fresh condition
-to it on the way past. Attribution is asked for as a courtesy and is not a
-condition of use.
+- `corpus/`
+- `sources/normalized/`
 
-The editorial judgement that produced the text is not thereby given away
-unrecorded: it is documented in the apparatus, which is licensed under
-section 2.
+The underlying works of Machiavelli and Guicciardini are in the public domain.
 
-## 2. The English translation and the editorial apparatus — CC BY 4.0
+To the extent that the editor holds copyright, database rights, or related
+rights in the transcription, establishment, correction, or arrangement of the
+Italian text, those rights are dedicated to the public domain under CC0 1.0
+Universal.
 
-`translations/` · `apparatus/` · the notes, introductions, headnotes and
-source notes rendered into `site/` · the editorial prose in `SCOPE.md`,
-`decisions/` and `AGENTS.md`
+This includes, where applicable, rights arising under Article 85-*quater* of
+Italian Law 633/1941 concerning critical and scientific editions of
+public-domain works.
 
-Licensed under a Creative Commons Attribution 4.0 International licence
-(https://creativecommons.org/licenses/by/4.0/). You may copy, redistribute,
-adapt and build upon this material for any purpose, including commercially,
-provided you give attribution.
+The established text may be used, modified, and redistributed without
+permission or attribution.
 
-Attribute as:
+Attribution is appreciated but not required.
+
+Licence: https://creativecommons.org/publicdomain/zero/1.0/
+
+## 2. English translation
+
+Licence: Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Directory:
+
+- `translations/`
+
+The English translation was produced with substantial assistance from
+generative AI and edited by David McDougall.
+
+The translation is released under CC BY 4.0 to the extent that copyright or
+related rights subsist in the published material and are held or controlled
+by the licensor.
+
+This licence does not assert copyright over material that is ineligible for
+protection.
+
+Users may reproduce, redistribute, adapt, and use the licensed material
+commercially, subject to CC BY 4.0.
+
+Suggested attribution:
+
+> *A Conversation with Machiavelli: Guicciardini's Considerazioni on the
+> Discorsi*. AI-assisted English translation edited by David McDougall.
+> Version [number]. CC BY 4.0.
+
+Attribution must comply with CC BY 4.0. The suggested wording is not
+mandatory.
+
+The AI models and translation workflow are documented in
+`TRANSLATION_METHOD.md`.
+
+Licence: https://creativecommons.org/licenses/by/4.0/
+
+## 3. Editorial commentary and apparatus
+
+Licence: Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Directories and materials:
+
+- `apparatus/`
+- `annotations/`
+- `decisions.md` (the translation decision log)
+- `translation-drafts/`
+- Original introductions, headnotes, commentary, and source notes, including
+  the translator's notes in the `## Notes` sections of `translations/`
+- Original editorial prose in project documentation, where expressly
+  designated: `SCOPE.md` §1
+- Corresponding editorial material published on the website (`site/`)
+
+Original editorial expression is licensed under CC BY 4.0.
+
+This licence does not restrict the independent use of historical facts,
+textual variants, bibliographical information, or editorial methods.
+
+Suggested attribution:
 
 > David McDougall, *A Conversation with Machiavelli: Guicciardini's
-> Considerazioni on the Discorsi*, version <n>, licensed CC BY 4.0.
+> Considerazioni on the Discorsi*, version [number], CC BY 4.0.
 
-Indicate whether you changed the material, and do not suggest the licensor
-endorses you or your use.
+Licence: https://creativecommons.org/licenses/by/4.0/
 
-## 3. The apparatus data — CC0 1.0 Universal
+## 4. Research and apparatus data
 
-`sources/provenance/` · `sources/comparisons/` · `sources/findings/` ·
-`sources/coldpass/` · `links/` · `qc/`
+Licence: CC0 1.0 Universal
 
-Dedicated to the public domain under CC0 1.0 Universal, including any
-sui generis database right. These records exist to be checked and
-recomputed. Requiring a licence notice in order to verify a claim would
-defeat the purpose of making the claim checkable.
+Directories:
 
-## 4. The tooling — MIT
+- `sources/provenance/`
+- `sources/comparisons/`
+- `sources/findings/`
+- `sources/coldpass/`
+- `sources/register/`
+- `links/`
 
-`scripts/`
+These materials include provenance records, collation results, source
+comparisons, cross-references, and quality-control data.
+
+Project specifications and operational documentation are dedicated on the
+same terms: `AGENTS.md`, `PORT-NOTES.md`, `CONTRIBUTING.md`,
+`TRANSLATION_METHOD.md`, `RIGHTS_AND_SOURCES.md`, `decisions/`, and `SCOPE.md`
+except §1.
+
+To the extent that the editor holds copyright, database rights, or related
+rights in these materials, those rights are dedicated to the public domain
+under CC0 1.0 Universal.
+
+This includes applicable sui generis database rights.
+
+Licence: https://creativecommons.org/publicdomain/zero/1.0/
+
+## 5. Software
+
+Licence: MIT
+
+Directories:
+
+- `scripts/`
+- `.github/workflows/`
 
 MIT License
 
@@ -90,72 +173,74 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+## 6. Third-party materials
+
+Directories:
+
+- `sources/witnesses/`
+- `site/fonts/` (EB Garamond and IBM Plex, SIL Open Font License 1.1; the
+  licence texts are alongside)
+
+Third-party scans, reproductions, editions, and other source materials are
+excluded from the licences granted by this project.
+
+Their copyright status, provenance, and applicable source-provider conditions
+are documented in `RIGHTS_AND_SOURCES.md` and the relevant provenance records.
+
+Exclusion from this project's licence grants does not imply that the material
+is copyrighted.
+
+No rights are granted over third-party materials beyond those the project is
+authorised to grant.
+
+## 7. Mixed-content files and generated editions
+
+Licences apply to individual components rather than necessarily to entire
+files or directories.
+
+Where a file or generated edition combines materials under different
+licences, each component retains its applicable licence.
+
+This includes website pages, HTML, PDF, EPUB, structured exports, and other
+publication formats.
+
+Directory references identify the principal locations of licensed material
+but do not override explicit component-level licence designations.
+
+## 8. Contributions
+
+Contributions accepted into the project must be compatible with the licence
+applicable to the relevant component.
+
+Contributors retain copyright in their original contributions unless they
+expressly waive it.
+
+Contributions to CC0 components must be submitted on terms permitting their
+dedication under CC0 1.0 Universal.
+
+Contributions to CC BY components must be submitted on terms permitting
+distribution under CC BY 4.0.
+
+Contributions to software components must be submitted on terms permitting
+distribution under the MIT licence.
+
+See `CONTRIBUTING.md` for submission requirements.
+
+## 9. Limitations
+
+The licences granted by this project apply only to rights held or controlled
+by the relevant licensors.
+
+Nothing in this document restricts rights available independently under
+applicable law, including public-domain status and copyright exceptions.
+
+The applicable CC0, CC BY 4.0, and MIT instruments govern their respective
+components.
+
+The project makes no warranty concerning the copyright status or licensing
+conditions of third-party materials.
+
 ---
 
-## 5. Third-party material — no grant made
-
-`sources/witnesses/`
-
-The bounded scan extracts under `sources/witnesses/` are reproductions of
-other people's digitisations of historical books. They are included as
-evidence, under their own terms, and this project grants no rights over
-them. Their terms are recorded per witness in `sources/provenance/`:
-
-- **Discorsi, 1824** — Internet Archive `discorsisopralap01mach` /
-  `discorsisopralap02mach`. Underlying work and edition public domain by age;
-  no copyright page found.
-- **Discorsi, 1554** (Giglio, Venice) — Internet Archive
-  `discorsidinicolo00mach`, from the Boston Public Library. Public domain by
-  age.
-- **Considerazioni, Canestrini 1857** — Internet Archive `bub_gb_F_YZsP2XjO8C`,
-  scan layer marked Public Domain Mark 1.0. Public domain by age; Canestrini
-  died in 1891.
-- **Considerazioni, Palmarocchi 1933** — Wikimedia Commons, BEIC 1844634.
-  Tagged `PD-old-100-expired` on Commons **on the basis of Guicciardini's
-  death in 1540**, not of the 1933 edition's own editorial layer. Roberto
-  Palmarocchi died in 1956; his editorial expression is in copyright in Italy
-  on the ordinary seventy-years-*post-mortem* reckoning until 31 December
-  2026, and in the United States, as a work restored under the URAA, until
-  31 December 2028. **No Palmarocchi page image is republished by this
-  project, and none should be before 2029.**
-
-Under art. 14 of Directive (EU) 2019/790, transposed in Italy as art.
-32-*quater* of law 633/1941, a faithful reproduction of a public-domain work
-attracts no new copyright or related right. Nothing here relies on that: the
-witness scans are cited and located, not redistributed as a corpus.
-
-## 6. What is not in this repository
-
-Under DEC-010, licence-encumbered layers are consulted and credited, never
-copied. Accordingly, no part of the following appears anywhere in this
-repository or on the published site, in whole or in part:
-
-- The Italian Wikisource transcriptions of the 1824 *Discorsi* and of
-  Palmarocchi's *Scritti politici e ricordi* (CC BY-SA 3.0 / GFDL). They were
-  consulted for chapter boundaries, page correspondences and collation
-  readings — which are facts — and are credited in provenance. Their wording
-  is not reproduced.
-- Palmarocchi's editorial expression: his preface, notes and apparatus. His
-  *readings* are reported as collation evidence, which is a statement of
-  fact about what a book prints.
-- Margaret Grayson, *Considerations on the Discourses of Machiavelli* (in
-  *Francesco Guicciardini: Selected Writings*, OUP, 1965), and James B.
-  Atkinson & David Sices, *The Sweetness of Power* (NIU Press, 2002). Both
-  are in copyright. Neither is ever used as a translation input; both are
-  consulted privately as a calibration check after a draft is finished, and
-  nothing else.
-- Any modern critical edition, including Bausi 2001.
-
-If you find anything in this repository that contradicts this section, that is
-a defect. Report it and it will be removed.
-
----
-
-## 7. Standing
-
-This is a statement of the terms on which this edition is released. It is not
-legal advice, and no warranty is given that the third-party assessments in
-section 5 are correct. Corrections are welcome.
-
-Ratifies DEC-010 points 2 and 3 for the layers named above.
-Version 0.3 — 2026-09-21.
+Version: 0.3 (licence text revised 2026-11-24)
+Editorial decision: DEC-010, points 2 and 3; revised by DEC-011
