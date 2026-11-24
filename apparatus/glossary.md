@@ -1009,3 +1009,35 @@ last sentence answers Machiavelli's first move.
 | `grato` | pleasing | D488. FG II.24 .01, the old sense. |
 | `discrezione` | discretion | D488. FG II.24 .01: a recorded collapse with `arbitrio`. |
 
+
+## Added from the III.17 pair (2026-11-24)
+
+| Italian | English | Note |
+|---|---|---|
+| `amministrazione` | administration | D496. NM III.17 rubric and .01; kept apart from `governo`, government (D262), which the rubric sets beside it. |
+| `a fronte a` | facing | D496. NM III.17 .02 ×2, of an army set against another. |
+| `intrattenere` | entertain | D496. NM III.17 .02, the older sense, hold in play. |
+| `pratiche` (of a treaty) | practices | D496. NM III.17 .02 `pratiche d'accordo`, practices of accord, with `accordo` (D452). |
+| `oppressare` | oppress | D496. NM III.17 .02, to crush. |
+| `inonestamente` | shamefully | D496. NM III.17 .02; the root of `onesto` kept apart from `disonore`, dishonour, beside it. |
+| `all'incontro di` (of a march) | to meet | D496. NM III.17 .02 `mandato all'incontro d'Annibale`; a third sense beside D313's "in return" and D401's "over against". |
+| `sollevato` (of a city) | stirred up | D496. NM III.17 .02. |
+| `giuocare` | gamble | D496. NM III.17 .02, to play at hazard. |
+| `riacquistare` | reacquire | D496. NM III.17 .02, with `acquistare` acquire. |
+| `ingratamente`; `indiscretamente` | ungratefully; indiscreetly | D496. NM III.17 .02, the second without discretion. |
+| `passioni`; `offese` (noun) | passions; offences | D496. NM III.17 .03; `offese` the noun of the rubric's `offendere`, kept apart from `ingiuria`, injury. |
+| `ancora` (of time) | still | D496. NM III.17 .03 `era ancora incorrotta`; a sense split from "also" and "even" (D472). |
+| `certo` (of a remedy) | sure | D496. NM III.17 .03 `certo rimedio`; "a certain remedy" would read as some particular one. |
+| `inopinato` | unlooked-for | D496. NM III.17 .03, with `vie` paths (D131). |
+| `commettersi in` | commit oneself to | D496. FG III.17, entrust oneself to. |
+| `facile a` (of a man's disposition) | easy to | D496, with D27. FG III.17 `non sarei facile a fuggire`, the older sense, disposed to; not "easily fled". |
+| `ragione` (ground) | reason | D496. FG III.17 `con qualche ragione`; FG II.14 `La quale ragione`. |
+| `natura`, `nature` | nature, natures | D496. FG III.17 `certe nature o fantasie`, dispositions. |
+| `fantasie` | fantasies | D496. FG III.17. |
+| `ignominia` | ignominy | D496. FG III.17. |
+| `risentirsi di` | resent | D496. FG III.17 `se ne risentissi più`. |
+| `recusare` | refuse | D496. FG III.17. |
+| `renitente` | reluctant | D496. FG III.17. |
+| `sollecitare` (a battle) | hasten | D496. FG III.17. |
+| `sforzare` | force | D496. FG III.17 `quasi sforzato`; kept apart from `costringere`, constrain (D452), and `necessitare`, necessitate. |
+| `prima` (enumerative, answered by `di poi`) | first | D496. FG III.17 `le azioni sue prima`; a sense split from D334's "earlier", which the reply's last `prima` keeps. |

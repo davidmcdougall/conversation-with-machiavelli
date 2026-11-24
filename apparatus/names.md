@@ -330,3 +330,14 @@ the original.
 | `Idra` | the Hydra | NM II.24 .03 |
 | `Juvenale`; `Virgilio` (not named) | Juvenal; Virgil | NM II.24 .03, the two tags, unattributed in the text |
 
+
+## Added from the III.17 pair (2026-11-24)
+
+| Italian | English | Where |
+|---|---|---|
+| `Claudio Nerone`, `Claudio` | Claudius Nero, Claudius | NM III.17 .02, FG III.17; Gaius Claudius Nero, consul 207 BC, as NM II.10 |
+| `Asdrubale`; `Annibale` | Hasdrubal; Hannibal | NM III.17 .02, FG III.17, as NM II.10, I.11 |
+| `la Marca` | the Marches | NM III.17 .02, as NM II.10 |
+| `Ispagna`, `Spagna` | Spain | NM III.17 .02 ×2; FG III.17 |
+| `il Salinatore` | Salinator | FG III.17; Marcus Livius Salinator, consul with Nero in 207 BC, unnamed in Machiavelli's chapter (D496); the article dropped in English; "Livius" in the notes, as Livy names him |
+| `Senato`; `Popolo` | the Senate; the people | NM III.17 .02 (D118) |
