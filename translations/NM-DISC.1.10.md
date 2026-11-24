@@ -11,6 +11,7 @@ paragraph_divisions: editorial  # inherited from the source unit; see SCOPE §3
 rubric_en: "How much the founders of a republic or of a kingdom are laudable, so much those of a tyranny are vituperable."
 translated: 2026-10-07
 open_for_david: none
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Discourses I.10

@@ -4,6 +4,7 @@ annotated: 2026-09-27
 cold_review: 2026-09-27, subagent with no access to the drafting work; web allowed for facts, published translations barred
 kinds: argument · history · cross-reference
 format: as annotations/NM-DISC.1.12.md
+model: {drafting: "Claude Opus 5.5 (model of the session that first committed this file, 201eb14; drafting step not separately recorded)", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 ## NM-DISC.1.1.01

@@ -14,6 +14,7 @@ rubric_source: Canestrini 1857, printed p. 27 — his own setting of the chapter
 translated: 2026-09-18; revised 2026-09-25 against the Canestrini re-establishment (FG-CONS-I12-F001)
 open_for_david: none — O06, O07, O12, O13, F002 ruled 2026-09-25 (decisions.md D40–D42, D47)
 standfirst: "Machiavelli holds that a state must keep its religion uncorrupted, and charges the Roman Church with destroying Italy's devotion by its court's wicked examples and, too weak to rule Italy yet strong enough to keep it divided, with causing its ruin. Guicciardini says no ill can be spoken of the Roman court that it does not deserve worse, and believes the Church has kept Italy from becoming a monarchy, but he does not know whether that was felicity or infelicity. Under a republic, one city's rule would have been calamity for the rest; divided Italy, though it has suffered, has had flourishing cities a republic would have denied it, so he judges such a monarchy more unhappy than happy. Nor has Italy ever been easily brought under one rule. Therefore, if the Church has opposed monarchies, he does not readily concur that this has been Italy's misfortune."
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Consideration on chapter XII

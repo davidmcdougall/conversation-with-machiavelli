@@ -12,6 +12,7 @@ heading_en: "Book Two"  # the 1824 half-title, LIBRO SECONDO, in English (D421)
 rubric_en: ""  # no rubric in the witness (D421)
 translated: 2026-11-19
 open_for_david: none
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Discourses II, proem

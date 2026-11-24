@@ -14,6 +14,7 @@ rubric_source: Canestrini 1857, printed p. 66 — his setting of the chapter tit
 translated: 2026-11-21
 open_for_david: none
 standfirst: "Machiavelli holds that men of small fortune seldom or never rise high without force and without fraud, unless their rank is given or inherited; he does not believe force alone is ever enough, says fraud alone will be, and calls fraud, which Rome used in its first growth, always necessary to those rising from small beginnings. Guicciardini grants that, if fraud means any craft or dissimulation even without guile, it can be true that force alone most rarely raises men from low fortune, though he will not say never; but if fraud is properly breaking faith or other guileful dealing, he believes many have won kingdoms and empires without it. Rome's good treatment of the Latins was, he says, prudence, not fraud. Whether fraud is always a good instrument for greatness he leaves open: deceit often brings off fine strokes, and a name for fraud often spoils one's chances."
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Consideration on chapter XIII

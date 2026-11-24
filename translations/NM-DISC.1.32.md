@@ -11,6 +11,7 @@ paragraph_divisions: editorial  # inherited from the source unit; see SCOPE §3
 rubric_en: "A republic or a prince must not defer benefiting men until their necessities."
 translated: 2026-10-20
 open_for_david: none
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Discourses I.32

@@ -7,7 +7,7 @@ decided_by: David McDougall
 supersedes: null
 superseded_by: null
 revises: DEC-010 points 2 and 3
-review_horizon: "legal review of RIGHTS_AND_SOURCES.md §6, when obtained"
+review_horizon: "if republication of witness images or Palmarocchi expression is proposed, or when the Canestrini usage question is taken up"
 ---
 
 # DEC-011 — Component-based licensing, AI-assisted translation credit, model provenance
@@ -24,9 +24,9 @@ English, and it combined licence grants with third-party rights assessments.
 ## Decision
 
 1. **Component-based licensing.** Established Italian text: CC0 1.0. English
-   translation: CC BY 4.0, to the extent protectable rights subsist and are
-   held or controlled by the licensor. Original editorial commentary and
-   apparatus: CC BY 4.0. Research, provenance and apparatus data, and
+   translation, and original editorial commentary and apparatus: CC BY 4.0,
+   to the extent protectable rights subsist and are held or controlled by
+   the licensor. Research, provenance and apparatus data, and
    operational specifications: CC0 1.0. Software and build scripts: MIT.
    Third-party materials: no grant. Each component keeps its licence inside
    mixed files and generated editions. Stated in `LICENSE`.
@@ -47,13 +47,21 @@ English, and it combined licence grants with third-party rights assessments.
    responsibility does not by itself establish copyright ownership. Licences
    apply only to rights that exist and are held or controlled by the licensor.
 
+6. **Release is not conditional on counsel review.** DEC-010 point 3's
+   gate is removed. The open rights questions were assessed by Claude
+   (`claude-opus-5-5`) on David McDougall's instruction; the assessment is
+   recorded in `RIGHTS_AND_SOURCES.md` §6. It is not advice from a lawyer.
+7. **Front-matter provenance.** Translation and annotation front-matter
+   carry a `model:` field (drafting and cold-review models). Commits that
+   change front-matter only take the subject prefix `Metadata:`; the build
+   does not count them as revisions of a pair.
+
 ## Relation to DEC-010
 
 DEC-010 point 1 (clean inbound) stands unchanged. Points 2 and 3 are revised
 by this record. DEC-010's text is not edited. The counsel review DEC-010 point
-3 contemplated has not taken place; open questions are listed in
-`RIGHTS_AND_SOURCES.md` §6. This record is not legal advice and does not
-record legal approval.
+3 contemplated has not taken place and is no longer required (point 6). This
+record does not record legal approval.
 
 ## Adoption
 

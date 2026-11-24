@@ -11,6 +11,7 @@ paragraph_divisions: editorial  # inherited from the source unit; see SCOPE §3
 rubric_en: "What accidents made the tribunes of the plebs be created in Rome, which made the republic more perfect."
 translated: 2026-09-29
 open_for_david: none
+model: {drafting: "Claude Opus 5.5 (model of the session that first committed this file, f31aee7; drafting step not separately recorded)", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Discourses I.3

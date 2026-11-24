@@ -14,6 +14,7 @@ rubric_source: Canestrini 1857, printed p. 42 — his setting of the chapter tit
 translated: 2026-10-17
 open_for_david: none
 standfirst: "Machiavelli believes the Romans were less ungrateful than the Athenians because they had less cause to suspect their citizens: no citizen took Rome's liberty before Sulla and Marius, while Athens lost its liberty to Pisistratus; had Rome lost it, it would have been no kinder. Guicciardini says the reason could perhaps be approved had Rome never lost its liberty after the kings; but the Ten seized a tyranny, and even after liberty was recovered, when peoples are usually harshest, Rome proceeded against them most humanely. Therefore either the Romans lacked the Greeks' levity or, as he believes, government made the difference: in Rome greatness needed the senate's consent, so there was less cause to suspect citizens, and a mixed government is less inclined and less able to strike the powerful than a purely popular one."
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Consideration on chapter XXVIII of Book I

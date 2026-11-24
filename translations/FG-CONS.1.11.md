@@ -14,6 +14,7 @@ rubric_source: Canestrini 1857, printed p. 26 — his setting of the chapter tit
 translated: 2026-10-11
 open_for_david: none
 standfirst: "Machiavelli holds that Rome owed more to Numa than to Romulus, since where there is religion arms are easily introduced, while where there are arms without religion, religion comes hard. Guicciardini has no doubt that arms and religion are principal foundations, but does not know whether Numa deserves the first praise or faced the greater difficulties, and would incline rather to the contrary, which it seems to him can be shown: had Numa come first, the city would surely have been crushed by its neighbours, nor would he have left Romulus room for arms as Romulus left him room for religion. Therefore at the beginnings Romulus was more necessary; and the people, still fierce, chose of themselves a king known for religion, so Numa found minds already disposed."
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Consideration on chapter XI of Book I

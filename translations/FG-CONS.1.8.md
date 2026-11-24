@@ -14,6 +14,7 @@ rubric_source: Canestrini 1857, printed p. 20 — his setting of the chapter tit
 translated: 2026-10-02
 open_for_david: none
 standfirst: "Machiavelli draws from Manlius Capitolinus, who spread calumnies among the plebs, the rule that calumnies are detestable and must be met by opening many places for accusation and punishing calumniators; Florence lacked the order: calumnies helped a certain citizen rise, and the calumny against Giovanni Guicciardini fed the indignation that ruined the republic. Guicciardini grants they are detestable, but finds them so natural in a free city that removing them is difficult and perhaps impossible; false ones often die of themselves, and in a city otherwise well regulated they do no serious harm. The example of Cosimo, left unnamed, is a dream: prudence and above all excessive wealth, not calumnies, opened his way. Giovanni was unjustly calumniated, but the city's division did not spring from that calumny; rather, its discords magnified his case."
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Consideration on chapter VIII of Book I

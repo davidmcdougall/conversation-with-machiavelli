@@ -14,6 +14,7 @@ rubric_source: Canestrini 1857, printed p. 51 — his setting of the chapter tit
 translated: 2026-10-21
 open_for_david: none
 standfirst: "Machiavelli holds that when a people gives a wise man reputation to beat those it hates, he becomes tyrant; Appius erred in leaving the people, whose favour keeps a tyrant more secure, for the nobles. Guicciardini is persuaded that the decemvirs' principal error was their persuasion that a tyranny could be founded in the Rome of those times, so well ordered and so ardent for liberty. He does not believe it would have been more stable had they beaten the nobility with the plebs' favour, because that people was too great a friend of the name of liberty. Between people and nobility the examples differ and each side has its reasons; no firm rule decides, and the conclusion is to be drawn from the city's humours and the condition of the times."
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Consideration on chapter XL of Book I

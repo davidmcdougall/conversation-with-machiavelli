@@ -11,6 +11,7 @@ paragraph_divisions: editorial  # inherited from the source unit; see SCOPE §3
 rubric_en: "That the disunion of the plebs and of the Roman senate made that republic free and powerful."
 translated: 2026-09-29
 open_for_david: none
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Discourses I.4

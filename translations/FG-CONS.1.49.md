@@ -14,6 +14,7 @@ rubric_source: Canestrini 1857, printed p. 54 — his setting of the chapter tit
 translated: 2026-11-02
 open_for_david: none  # O36-O38 ruled 2026-11-02 as D388-D390
 standfirst: "Machiavelli argues that if even Rome, with a free beginning, kept needing new orders such as the censors, cities with a servile beginning, like Florence, can never order themselves to live civilly. Guicciardini says this chapter and many others show what he has said elsewhere against Machiavelli: military discipline aside, the Roman government was in many parts defective, since one man alone could stop public business, and though the tribune checked the consuls, nothing checked a tribune who wished such disorder. It was also an error that the censors, indeed one alone, could remove Mamercus from the senate for so good a work. He does not believe Mamercus had any remedy but an unrecorded law of the people or restoration by later censors, and is not certain they could restore him, though he believes it."
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Consideration on chapter XLIX of Book I

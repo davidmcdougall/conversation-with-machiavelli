@@ -14,6 +14,7 @@ rubric_source: Canestrini 1857, printed p. 12 — his setting of the chapter tit
 translated: 2026-09-29
 open_for_david: none
 standfirst: "Machiavelli defends Rome's tumults against those who say only fortune and military virtue made up for its disorder: they seldom cost exile or blood, and every law made for liberty, the tribunes among them, arose from the disunion of people and nobles. Guicciardini traces the disunions to a removable cause, the patricians' hold on every magistracy; had the honours been shared from the start, there would have been neither divisions nor tribunes. He allows that the seditions did less harm than in many cities, but the remedy was useful, not the cause, and praising the disunions is praising a sick man's sickness for the goodness of his cure. He does not believe Rome's orders of government a model: its military discipline sustained all the other defects of its government."
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Consideration on chapter IV of Book I

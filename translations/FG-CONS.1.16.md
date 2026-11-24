@@ -14,6 +14,7 @@ rubric_source: Canestrini 1857, printed p. 31 — his setting of the chapter tit
 translated: 2026-10-11
 open_for_david: none
 standfirst: "Machiavelli holds that a people used to a prince keeps a liberty won by accident only with difficulty, since the new free state makes enemies of the tyranny's beneficiaries and no friends, and its strongest remedy is to kill the sons of Brutus. Guicciardini makes a very great difference between a people that has never known liberty and one that has lost it, and prescribes a tempered government: rigid against plotters, persecuting none on mere suspicion, and ready to receive the tyranny's friends when their conduct or condition gives hope they will not be liberty's enemies. In such cases, he grants, blood must be shed, but it would have been better had Brutus had no sons than to have them and have to kill them."
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Consideration on chapter XVI of Book I

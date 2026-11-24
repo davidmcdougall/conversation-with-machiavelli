@@ -14,6 +14,7 @@ rubric_source: Canestrini 1857, printed p. 48 — his setting of the chapter tit
 translated: 2026-10-20
 open_for_david: none
 standfirst: "Machiavelli holds that a prince, to escape having either to live in suspicion or to be ungrateful, must go on his expeditions in person, because victory then leaves the glory and the acquisition all his; for the prince who stays at home through negligence or little prudence he has no precept. Guicciardini answers only the prince. He praises a prince's going in person, because the expeditions then carry more reputation and the prince is better served than through captains. He believes the advice perhaps necessary to a tyrant or to whoever does not hold his state well secured, but of little use to a great and natural king: although our princes commonly make war through captains, these mishaps do not therefore happen to them, or very seldom."
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Consideration on chapter XXX of Book I

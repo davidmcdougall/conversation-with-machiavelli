@@ -14,6 +14,7 @@ rubric_source: Canestrini 1857, printed p. 68 — his setting of the chapter tit
 translated: 2026-11-22
 open_for_david: none
 standfirst: "Machiavelli holds that weak states will always be ambiguous in resolving and that slow deliberations are always harmful, since slowness helps no one and harms oneself; it comes from weakness of spirit and forces or from the malice of those who deliberate. Guicciardini finds two causes of ambiguity: weakness of prudence and mind, which he believes is what the chapter meant by weak states, though weak forces can in part add to irresolution; and, in republics alone, varied opinions, from malice or honest difference. He grants that suspension is commonly harmful, its occasional use more by chance than otherwise. But neutrality and delay can come from resolution: neutrality is then useful or harmful by the case, and deliberate delay can be laudable; delay from irresolution is always to be condemned."
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Consideration on chapter XV

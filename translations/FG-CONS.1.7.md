@@ -14,6 +14,7 @@ rubric_source: Canestrini 1857, printed p. 18 — his setting of the chapter tit
 translated: 2026-10-02
 open_for_david: none
 standfirst: "Machiavelli holds that the power to accuse citizens before the people or a magistracy is the most useful a republic can give the guardians of its liberty: it deters, and gives a city's humours an ordinary outlet, as the tribunes' summons of Coriolanus did. Guicciardini grants that this is most true, but the innocent must not be easily harassed, since unjust condemnations frighten others and make the powerful discontented. In his opinion the people is too dangerous a judge, moved by rumour and led into servitude by whoever courts it, as with the Gracchi and Manlius Capitolinus; nor does the power sit well with a few, and the judges should be many, more than fifty, choice men nearer the mean than either extreme."
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Consideration on chapter VII of Book I

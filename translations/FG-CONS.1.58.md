@@ -14,6 +14,7 @@ rubric_source: Canestrini 1857, printed p. 54 — his setting of the chapter tit
 translated: 2026-11-12
 open_for_david: none  # O39 ruled 2026-11-13 as D401
 standfirst: "Machiavelli argues that a people regulated by the laws is more prudent, more stable and of better judgment than a prince, and errs less when both are unbound. Guicciardini answers that the Roman example is not to the purpose, since Rome's most important deliberations were made by the senate, consuls and principal magistrates, and believes without doubt that a prince matched in virtù would proceed with more prudence and constancy. Between the unbound, he grants the prince perhaps more vices of other kinds, but commonly more prudence and constancy. He grants that popular growth goes on more continuously, since successors are not always alike, and that popular government can well be a city's better fortune, a point outside the dispute; yet ordinarily, he says, a people has more imprudence and inconstancy."
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Consideration on chapter LVIII of Book I

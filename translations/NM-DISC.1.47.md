@@ -11,6 +11,7 @@ paragraph_divisions: editorial  # inherited from the source unit; see SCOPE §3
 rubric_en: "Men, even though they deceive themselves in generals, in particulars do not deceive themselves."
 translated: 2026-10-22
 open_for_david: none  # O33-O35 ruled 2026-10-22 as D371-D373
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Discourses I.47

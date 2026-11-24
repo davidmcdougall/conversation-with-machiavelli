@@ -14,6 +14,7 @@ rubric_source: Canestrini 1857, printed p. 40 — his setting of the chapter tit
 translated: 2026-10-17
 open_for_david: none — O29 ruled 2026-10-17 as D287
 standfirst: "Machiavelli holds that a new prince who does not turn to civil life does best to make everything new: the methods are most cruel, but whoever rejects the good path and would keep his state should take the other. Guicciardini sorts the cases by the people: where a change of prince matters little and lawful rule is unfamiliar, strong remedies are unnecessary; where the inclination is contrary, a kingdom long under one line one could hope to win by good treatment, but a people inclined to liberty requires them. Therefore what benefits can win should be won, since violent remedies, though they secure, weaken, above all a prince without his own arms; therefore the prince needs the spirit for extraordinary remedies when necessary, and the prudence to miss no chance for humanity and benefits, not taking as an absolute rule what Machiavelli says, who always liked such remedies beyond measure."
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Consideration on chapter XXVI of Book I

@@ -14,7 +14,7 @@ to its components.
 |---|---|
 | Established Italian text | CC0 1.0 Universal |
 | English translation | CC BY 4.0, where applicable |
-| Original editorial commentary and apparatus | CC BY 4.0 |
+| Original editorial commentary and apparatus | CC BY 4.0, where applicable |
 | Research and apparatus data | CC0 1.0 Universal |
 | Software and build scripts | MIT |
 | Third-party source materials | No licence granted by this project |
@@ -101,7 +101,15 @@ Directories and materials:
   designated: `SCOPE.md` §1
 - Corresponding editorial material published on the website (`site/`)
 
-Original editorial expression is licensed under CC BY 4.0.
+The commentary was produced with substantial assistance from generative AI
+and edited by David McDougall.
+
+Original editorial expression is released under CC BY 4.0 to the extent that
+copyright or related rights subsist in it and are held or controlled by the
+licensor.
+
+This licence does not assert copyright over material that is ineligible for
+protection.
 
 This licence does not restrict the independent use of historical facts,
 textual variants, bibliographical information, or editorial methods.

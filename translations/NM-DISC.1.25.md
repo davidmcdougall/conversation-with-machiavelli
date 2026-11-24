@@ -11,6 +11,7 @@ paragraph_divisions: editorial  # inherited from the source unit; see SCOPE §3
 rubric_en: "Whoever wishes to reform an ancient state in a free city, let him retain at least the shadow of the ancient ways."
 translated: 2026-10-17
 open_for_david: none — O28 ruled 2026-10-17 as D278
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Discourses I.25

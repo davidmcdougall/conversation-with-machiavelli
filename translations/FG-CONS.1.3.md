@@ -14,6 +14,7 @@ rubric_source: Canestrini 1857, printed p. 10 — his setting of the chapter tit
 translated: 2026-09-29
 open_for_david: none
 standfirst: "Machiavelli holds that whoever orders a republic must presuppose all men bad, since they do good only from necessity: Rome's nobles were humane while the Tarquins lived and venomous after, and the tribunes did what fear of the Tarquins had done. Guicciardini finds this laid down too absolutely: many do good who could do ill, and all men incline by nature to the good, though their nature is fragile and occasions of ill are everywhere. He grants the rule of ordering things so that whoever would do ill cannot, but only to provide against those who may be bad; and he grants Machiavelli's cause for the tribunes, though their powers came later and tempered the nobles without checking the plebs."
+model: {drafting: "Claude Opus 5.5 (model of the session that first committed this file, f31aee7; drafting step not separately recorded)", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Consideration on chapter III of Book I

@@ -11,6 +11,7 @@ paragraph_divisions: editorial  # inherited from the source unit; see SCOPE §3
 rubric_en: "A people used to living under a prince, if by some accident it becomes free, maintains liberty with difficulty."
 translated: 2026-10-11
 open_for_david: none — O26 ruled 2026-10-15 as D229
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Discourses I.16

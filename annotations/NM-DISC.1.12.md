@@ -4,6 +4,7 @@ annotated: 2026-09-25
 cold_review: 2026-09-25, subagent with no access to the drafting work; web allowed for facts, published translations barred
 kinds: argument · term · history · cross-reference
 format: one "## <paragraph id>" section per paragraph; each note a "**Label.**" block; [[UNIT.ID]] renders as a link to that paragraph on the pair page
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 ## NM-DISC.1.12.01

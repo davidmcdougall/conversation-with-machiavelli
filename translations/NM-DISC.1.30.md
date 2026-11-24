@@ -11,6 +11,7 @@ paragraph_divisions: editorial  # inherited from the source unit; see SCOPE §3
 rubric_en: "Which ways a prince or a republic must use to flee this vice of ingratitude, and which that captain or that citizen [must use] so as not to be oppressed by it."
 translated: 2026-10-20
 open_for_david: none
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Discourses I.30

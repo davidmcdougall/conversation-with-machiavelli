@@ -3,6 +3,8 @@ unit: FG-CONS.2.10
 annotated: 2026-11-20
 kinds: argument · cross-reference
 format: as annotations/NM-DISC.1.12.md
+cold_review: "2026-11-20, commentary reviewed by a separate reviewer (backfilled 2026-11-24 from decisions.md D436, SCOPE §5 actuals)"
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 ## FG-CONS.2.10.01

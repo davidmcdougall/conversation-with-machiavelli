@@ -14,6 +14,7 @@ rubric_source: Canestrini 1857, printed p. 67 — his setting of the chapter tit
 translated: 2026-11-21
 open_for_david: none
 standfirst: "Machiavelli holds that humility often harms; therefore a prince with one enemy must never yield a thing by agreement unless he can, or believes he can, hold it, since yielding from fear usually does not avert the war, and should arm at once even when weaker. Guicciardini finds this in part contrary to Machiavelli's own counsel to temporize in dangers, and therefore distinguishes. With forces not equal to the enemy's, it is better to come to terms, even giving something up, than to court ruin at once, since time can bring events that meet the danger. When they are equal or almost equal, even though war is dangerous and difficult, the first loss of reputation matters so much that one should be loath to yield, as Thucydides' Pericles argues."
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Consideration on chapter XIV

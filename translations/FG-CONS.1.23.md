@@ -14,6 +14,7 @@ rubric_source: Canestrini 1857, printed p. 35 — his setting of the chapter tit
 translated: 2026-10-16
 open_for_david: none
 standfirst: "Machiavelli holds it never wise to risk all one's fortune without all one's forces, as Tullus and Mettius did by staking their cities on three champions, and as those almost always do who guard passes where they cannot keep all their forces. Guicciardini does not believe the conclusion, most true though it is, condemns the Albans and Romans: what each took from itself it took from the other, and it is credible they knew themselves equal; presupposing that equality, he does not see that the choice can be blamed. Guarding passes, he believes, needs a good eye, weighing whether the pass can be held, whether costing the enemy time matters, and whether one trusts one's forces in open country; few captains have tried it, not for fear of the risk, but because it is difficult."
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Consideration on chapter XXIII of Book I

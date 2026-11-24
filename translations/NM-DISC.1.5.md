@@ -11,6 +11,7 @@ paragraph_divisions: editorial  # inherited from the source unit; see SCOPE §3
 rubric_en: "Where the guard of liberty is more securely set, whether in the people or in the great; and which have greater cause to make tumult, whoever wishes to acquire or whoever wishes to maintain."
 translated: 2026-10-01
 open_for_david: none
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Discourses I.5

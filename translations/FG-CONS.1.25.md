@@ -14,6 +14,7 @@ rubric_source: Canestrini 1857, printed p. 40 — his setting of the chapter tit
 translated: 2026-10-17
 open_for_david: none — O28 ruled 2026-10-17 as D278
 standfirst: "Machiavelli holds that whoever reforms the state of a free city must, to have it accepted, keep at least the shadow of the ancient ways, because men feed as much on what seems as on what is; so Rome kept the kings' number of lictors and a king for the sacrifices, whereas whoever makes a tyranny must renew everything. Guicciardini says the conclusion is more necessary where a government is reformed than where its kind is changed: when a kingdom is made free, as at Rome, men already think the old way of living not good, and the ancient orders need not be kept so exactly. The Roman examples, he says, matter little: one allowed for superstition, and in the other greater insignia would not have been tolerable."
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Consideration on chapter XXV of Book I

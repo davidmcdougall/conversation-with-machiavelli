@@ -11,6 +11,7 @@ paragraph_divisions: editorial  # inherited from the source unit; see SCOPE §3
 rubric_en: "The Romans interpreted the auspices according to necessity, and with prudence made a show of observing religion when, forced, they did not observe it, and if anyone rashly despised it, they punished him."
 translated: 2026-09-26
 open_for_david: none
+model: {drafting: "Claude Opus 5.5 (model of the session that first committed this file, 4f23a1b; drafting step not separately recorded)", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Discourses I.14

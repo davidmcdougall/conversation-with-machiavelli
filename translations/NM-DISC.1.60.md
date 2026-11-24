@@ -11,6 +11,7 @@ paragraph_divisions: editorial  # inherited from the source unit; see SCOPE §3
 rubric_en: "How the consulship and any other magistracy in Rome was given without respect of age."
 translated: 2026-11-19
 open_for_david: none  # O40 ruled 2026-11-19 as D414, "must not"
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Discourses I.60

@@ -4,6 +4,7 @@ annotated: 2026-09-25
 cold_review: 2026-09-25, subagent with no access to the drafting work; web allowed for facts, published translations barred
 kinds: argument · term · history · cross-reference
 format: as annotations/NM-DISC.1.12.md
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 ## FG-CONS.1.12.01

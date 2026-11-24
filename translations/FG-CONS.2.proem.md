@@ -14,6 +14,7 @@ rubric_en: ""  # Canestrini prints none (D421)
 translated: 2026-11-19
 open_for_david: none
 standfirst: "Machiavelli argues that men praise past times, mostly wrongly, since the past's faults are hidden and the present's known; but, judging the world always equal in good and bad, its virtù moving between provinces, he holds that one born in Italy or Greece may rightly blame his times. Guicciardini grants that past times are often praised beyond their due, but does not agree that every age has as much good as another: by the heavens or some other hidden cause, certain ages at times have more virtù or vice the world over, or at least an art or discipline flourishes more. The past, he concludes, is not always to be preferred, but it is not true to deny that one age is sometimes more corrupt or more virtuous than others."
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Consideration on the proem of Book II

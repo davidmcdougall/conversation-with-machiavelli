@@ -14,6 +14,7 @@ rubric_source: Canestrini 1857, printed p. 70 — his setting of the chapter tit
 translated: 2026-11-23
 open_for_david: none
 standfirst: "Machiavelli holds that fortresses are generally much more damaging than useful: against subjects they invite hatred through ill treatment and fail in war; against outside enemies they are unnecessary with good armies and useless without them. Guicciardini warns against praising antiquity so far as to blame every modern practice Rome lacked. Since peoples, even well treated, are often not very reasonable and eager for change, every ruler, loved or not, needs, he says, some foundation in force; the charge that fortresses make princes insolent he calls very frivolous. He grants that in many cases fortresses do not help and other remedies are perhaps sometimes more useful, but holds them often useful against conspiracies and rebellions and for recovering lost towns; therefore our times use them not without cause."
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Consideration on chapter XXIV

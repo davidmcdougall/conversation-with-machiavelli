@@ -11,6 +11,7 @@ paragraph_divisions: editorial  # inherited from the source unit; see SCOPE §3
 rubric_en: "The multitude is wiser and more constant than a prince."
 translated: 2026-11-12
 open_for_david: none  # O39 ruled 2026-11-13 as D401
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Discourses I.58

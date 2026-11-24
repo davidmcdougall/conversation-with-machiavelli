@@ -14,6 +14,7 @@ rubric_source: Canestrini 1857, printed p. 43 — his setting of the chapter tit
 translated: 2026-10-18
 open_for_david: none
 standfirst: "Machiavelli argues that ingratitude arises from avarice, which has no excuse, or from suspicion, which merits some, and that peoples, having less cause to suspect, are less ungrateful than princes. Guicciardini adds ignorance and envy, and does not believe a people the less ungrateful. He believes that a people, as a rule, suspects more lightly, though he grants that princes strike harder, and that through ignorance and envy it is beyond comparison more ungrateful. He says Rome erred much more than the Discourse allows, marvels that Scipio's case is excused as suspicion, and calls very far from the truth the claim that ingratitude is useful to liberty in a republic not yet corrupted: distrusting the good is a lesser error, he grants, but no good where there is no need to choose."
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Consideration on chapter XXIX of Book I

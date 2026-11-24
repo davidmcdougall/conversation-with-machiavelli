@@ -3,6 +3,7 @@ unit: NM-DISC.1.3
 annotated: 2026-09-29
 kinds: argument · history · cross-reference
 format: as annotations/NM-DISC.1.12.md
+model: {drafting: "Claude Opus 5.5 (model of the session that first committed this file, f31aee7; drafting step not separately recorded)", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 ## NM-DISC.1.3.01

@@ -14,6 +14,7 @@ rubric_source: Canestrini 1857, printed p. 16 — his setting of the chapter tit
 translated: 2026-10-02
 open_for_david: none
 standfirst: "Machiavelli holds that Rome could not have been ordered without the enmities of people and senate if it was to grow great: a numerous, armed people made both its empire and its tumults, a necessary inconvenience. Guicciardini believes that a Rome which used its plebs in war had to keep them content, and that the patricians caused the tumults by neither admitting the plebs to government nor stopping the injuries that made them want it; without the distinction of orders, or with honours shared from the start, there would have been no such tumults. He does not see that Rome could not have been ordered without them; rather, he judges it very easy, and since it could be done, Rome's defects cannot be praised, nor the tribunes, more harmful than useful once peace came."
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Consideration on chapter VI of Book I

@@ -14,6 +14,7 @@ rubric_source: Canestrini 1857, printed p. 14 — his setting of the chapter tit
 translated: 2026-10-01
 open_for_david: none
 standfirst: "Machiavelli asks whether liberty is better guarded by the nobles, as at Sparta and Venice, or by the plebs, as at Rome, and answers that it depends on whether a republic means to build an empire or only to maintain itself. Guicciardini does not understand the question, since who governs is one thing and who holds a charge of defending liberty another; at Rome the guard was no less with the patricians, through consuls and dictators, and the tribunes defended only the plebs. In a mixed government he would have the guard belong to all; forced to choose a government purely of nobles or of plebs, he believes the nobles the lesser error, and he rejects Machiavelli's distinction: government by the plebs is fit neither to acquire nor to conserve."
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Consideration on chapter V of Book I

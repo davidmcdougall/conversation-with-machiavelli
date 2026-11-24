@@ -14,6 +14,7 @@ rubric_source: Canestrini 1857, printed p. 61 — his setting of the chapter tit
 translated: 2026-11-20
 open_for_david: none
 standfirst: "Machiavelli argues that good soldiers, not money as the common opinion holds, are the sinew of war, since good soldiers can find gold and gold cannot find good soldiers; money is necessary in the second place. Guicciardini answers that the sentence's author did not mean money alone is enough, or more necessary than soldiers, but that without it war cannot be sustained; armies that sometimes find it by *virtù* and victory are very rare, above all in our times. He grants that soldiers of one's own make war with less money, but money is still required, not everyone has such soldiers, and it is much easier to find soldiers with money than money with soldiers; read as meant, and as commonly understood, the sentence is not to be condemned."
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Consideration on chapter X of Book II

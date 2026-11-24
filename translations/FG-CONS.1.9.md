@@ -14,6 +14,7 @@ rubric_source: Canestrini 1857, printed p. 22 — his setting of the chapter tit
 translated: 2026-10-04
 open_for_david: none
 standfirst: "Machiavelli holds that a state is seldom if ever well ordered except by one man holding authority alone, and that Romulus, acting for the common good, merits excuse for killing his brother. Guicciardini has no doubt that one man orders better than many, and that he deserves praise who reorders a disordered city by violence and fraud when there is no other way; but one must pray republics never need it, since the founder must hold power until the laws settle, and its sweetness may turn a good intention bad. It is a medicine to be wished for when there is no other hope, but dangerous and of ill example; of one who keeps such power for life, though he governs rightly, he does not know how far he is to be praised."
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Consideration on chapter IX of Book I

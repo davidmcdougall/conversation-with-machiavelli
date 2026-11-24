@@ -14,6 +14,7 @@ rubric_source: Canestrini 1857, printed p. 39 — his setting of the chapter tit
 translated: 2026-10-16
 open_for_david: none
 standfirst: "Machiavelli holds that Rome's trial of Horatius for killing his sister shows no ingratitude: a well-ordered republic never cancels demerits with merits, and the people deserves more blame for absolving him than for wishing to condemn him. Guicciardini says it can perhaps be said he was absolved less for his merits than so that killing a sister who lamented the city's deliverance should not seem an error; yet it seems the truth is that the killing was a crime, since, if she had done wrong, punishing her was for the magistrates, not private men, and that the memory of his merits caused it. In such a case, condemning him would have been more reprehensible than absolving him: not that offsetting crimes with merits should be a rule, which, as the Discourse says, would be pernicious, but where so many circumstances concur it is very fitting to depart from the rule."
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Consideration on chapter XXIV of Book I

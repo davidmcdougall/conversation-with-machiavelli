@@ -14,6 +14,7 @@ rubric_source: Canestrini 1857, printed p. 49 — his setting of the chapter tit
 translated: 2026-10-20
 open_for_david: none
 standfirst: "Machiavelli holds that the same humours recur in all peoples, so that whoever diligently examines the past can foresee the future: Florence let its Ten of War lapse, blaming them for the war, and Rome turned against the consuls' name, until each saw its error. Guicciardini does not believe the Florentine complaint was wholly without reason: the Ten had more authority than a well-ordered liberty allows, and were re-created with limits once experience showed that lacking them in difficult times was most damaging. The Roman example is not similar: outside campaigns the consuls' authority was subject to appeal and the tribunes, and therefore there was less cause to moderate it. Terentilius' movement was seditious, and that moderate authority, though the plebs was strong, more readily defended the patrician magistrates."
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Consideration on chapter XXXIX of Book I

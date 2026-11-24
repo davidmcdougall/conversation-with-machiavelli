@@ -11,6 +11,7 @@ paragraph_divisions: editorial  # inherited from the source unit; see SCOPE §3
 rubric_en: "That acquisitions in republics not well ordered, and that do not proceed according to Roman *virtù*, are to their ruin, not to their exaltation."
 translated: 2026-11-22
 open_for_david: none
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Discourses II.19

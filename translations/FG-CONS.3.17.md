@@ -14,6 +14,7 @@ rubric_source: Canestrini 1857, printed p. 74 — his setting of the chapter tit
 translated: 2026-11-24
 open_for_david: none
 standfirst: "Machiavelli holds that a republic must take care not to put anyone notably injured by others in an important office, since Claudius Nero, disgraced at Rome, as consul almost gambled its liberty, saying that had he failed he would avenge himself on the city. Guicciardini holds that a prince must beware of trusting a man he has injured much more than a republic, whose injured citizen blames some particular man more than the city and would harm himself by its ruin; therefore he would not be quick to shun such a citizen, above all where the injury was not very atrocious. He calls it ridiculous to believe that Nero, calumniated with some reason, could wish for defeat: the words were Salinator's, and it is to be believed that Salinator meant otherwise."
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Consideration on chapter XVII of book III

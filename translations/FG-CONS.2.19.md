@@ -14,6 +14,7 @@ rubric_source: Canestrini 1857, printed p. 69 — his setting of the chapter tit
 translated: 2026-11-22
 open_for_david: none
 standfirst: "Machiavelli holds that acquisitions ruin republics not well ordered and not proceeding by Roman *virtù*, since one can acquire empire without forces: Venice and Florence grew weaker as they acquired. Guicciardini asks who doubts that the two would be weaker within small borders: dominion makes them harder to assail, richer, and able to hire foreign soldiers, better than no defence. He grants that a republic with its own arms is more powerful and gains more from acquiring, but will not grant that a disarmed one grows weaker the more it acquires, or that Venice would be safer without dominion. If so, he does not know why the Discourse speaks only of republics: an unarmed prince would grow weaker by acquiring, which reasons and experience show to be most false."
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Consideration on chapter XIX

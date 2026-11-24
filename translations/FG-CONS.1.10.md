@@ -14,6 +14,7 @@ rubric_source: Canestrini 1857, printed p. 23 — his setting of the chapter tit
 translated: 2026-10-07
 open_for_david: none
 standfirst: "Machiavelli ranks founders of religions and states highest and holds that a prince able to reform a corrupt city while keeping power merits no excuse if he does not. Guicciardini calls the title most true, but cases vary, and the author confounds the examples: whoever founds a tyranny from appetite to rule, like Caesar, merits utmost reproach, while a citizen driven to it to save himself merits much excuse, the more so where what is called liberty is not. Heirs to a tyranny merit less blame, and very few or perhaps none have left it without necessity; some legitimate kings govern justly, but he does not know which have made succession elective. Such things are painted more easily in books than done, and therefore those who do not do them merit less reproof."
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Consideration on chapter X of Book I

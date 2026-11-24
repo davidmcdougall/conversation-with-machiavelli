@@ -11,6 +11,7 @@ paragraph_divisions: editorial  # inherited from the source unit; see SCOPE §3
 rubric_en: "The creation of the decemvirate in Rome, and what is to be noted in it; where there is considered, among many other things, how one can save, by a like accident, or oppress a republic."
 translated: 2026-10-21
 open_for_david: none
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Discourses I.40

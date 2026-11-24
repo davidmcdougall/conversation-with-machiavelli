@@ -14,6 +14,7 @@ rubric_source: Canestrini 1857, printed p. 52 — his setting of the chapter tit
 translated: 2026-10-22
 open_for_david: none  # O35 ruled 2026-10-22 as D373
 standfirst: "Machiavelli believes men deceive themselves much in general things, not so much in particulars, and that one can conclude a prudent man must never flee popular judgment in distributing degrees and dignities, where alone it is not deceived, or more rarely than the few. Guicciardini says this can be said otherwise: experience many times corrects what men had imagined beforehand; and one can also consider that the Roman plebs fought only to remove an infamy and, partly appeased, abstained from choosing the unfit. He believes the people is deceived less here than elsewhere, trusting long common opinion, but does not accept that in this it is deceived more rarely than the few: that opinion, not knowledge, governs it, and as to ignorance it is much more dangerous than the few."
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Consideration on chapter XLVII of Book I

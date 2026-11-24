@@ -14,6 +14,7 @@ rubric_source: Canestrini 1857, printed p. 48 — his setting of the chapter tit
 translated: 2026-10-20
 open_for_david: none
 standfirst: "Machiavelli holds that a republic or a prince must not wait for danger to win the people, because benefits given then are credited to the enemy, create no debt, and hasten the giver's ruin; Rome succeeded for causes that seldom recur. Guicciardini distinguishes. With new benefits in a time of necessity, it is much easier to bind closer a man ordinarily your friend, as with the Romans, than to gain one wholly your enemy, which is very hard; yet even in the easier case it is incomparably more useful to have done it before the need. In either case he does not blame the man who was imprudent not to provide beforehand if, brought to necessity, he tries this late remedy: it has little hope of helping, but no danger of harm."
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Consideration on chapter XXXII of Book I

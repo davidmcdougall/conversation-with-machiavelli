@@ -14,6 +14,7 @@ rubric_source: Canestrini 1857, printed p. 30 — his setting of the chapter tit
 translated: 2026-09-26
 open_for_david: none
 standfirst: "Machiavelli holds that the Romans, who used the auspices in every important action, nonetheless acted against them when reason required, but so artfully that they did not seem to scorn religion; the consul Papirius, who fought though the sacred chickens had not fed, is his proof. Guicciardini does not hold it certain that the captains used the authority of auspices and augury craftily, and believes that, above all in the earliest times, their minds were taken up with this religion. Nor does Papirius tell against him: the consul had his report from the keepers of the chickens, whose office it was, and had no need to heed what third persons told him."
+model: {drafting: "Claude Opus 5.5 (model of the session that first committed this file, 4f23a1b; drafting step not separately recorded)", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Consideration on chapter XIV

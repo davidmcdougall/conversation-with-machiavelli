@@ -11,6 +11,7 @@ paragraph_divisions: editorial  # inherited from the source unit; see SCOPE §3
 rubric_en: "If those cities that have had a free beginning, like Rome, have difficulty in finding laws that may maintain them, those that have it immediately servile have almost an impossibility of it."
 translated: 2026-11-02
 open_for_david: none  # O36-O38 ruled 2026-11-02 as D388-D390
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Discourses I.49

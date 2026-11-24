@@ -3,6 +3,8 @@ unit: NM-DISC.2.proem
 annotated: 2026-11-20
 kinds: argument · history · cross-reference
 format: as annotations/NM-DISC.1.12.md
+cold_review: "2026-11-20, commentary reviewed by a separate reviewer (backfilled 2026-11-24 from decisions.md D425, SCOPE §5 actuals)"
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 ## NM-DISC.2.proem.01

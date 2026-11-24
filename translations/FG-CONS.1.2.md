@@ -14,6 +14,7 @@ rubric_source: Canestrini 1857, printed p. 6 — his setting of the chapter titl
 translated: 2026-09-28
 open_for_david: none
 standfirst: "Machiavelli holds, with the wiser writers, that each simple form of government slides into its corrupt twin, so prudent lawgivers mix all three, as Rome did by chance through the disunion of plebs and senate. Guicciardini has no doubt the mixture is better and more stable, above all when it takes the good of each form and leaves the bad. Since one man's rule cannot give all its good without its ill, he would rather have less good and safe: an elective head for life with tightly limited authority, as at Venice. He adds a large senate drawn from all eligible citizens to handle war and peace, and a people given nothing important except electing magistrates and confirming laws."
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Consideration on chapter II of Book I

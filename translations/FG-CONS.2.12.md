@@ -14,6 +14,7 @@ rubric_source: Canestrini 1857, printed p. 62 — his setting of the chapter tit
 translated: 2026-11-20
 open_for_david: none
 standfirst: "Machiavelli argues that a prince with armed peoples should await a powerful war at home, and one with disarmed subjects keep it away, because his *virtù* lies in money, which war at home impedes most. Guicciardini finds the case too doubtful to resolve easily: Machiavelli's distinction, armed or disarmed subjects, is not enough; the subjects' faith, the towns' strength, revenues and the enemy's condition also matter. He judges that whoever has war at home should, given the chance, begin it in the enemy's country too; against a stronger enemy, he says, one cannot think of attacking abroad, and with even means and the forces needed he would be inclined to counsel not awaiting war at home. He is not moved by the Roman counterfactual, which he calls an impossible case."
+model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 
 # Consideration on chapter XII
