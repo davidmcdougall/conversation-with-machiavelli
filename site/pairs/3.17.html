@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>
+(function () {
+  var KEY = "cwm-lang", d = document.documentElement, v = "en";
+  try { v = localStorage.getItem(KEY) || "en"; } catch (e) {}
+  d.setAttribute("data-lang", v);
+  document.addEventListener("DOMContentLoaded", function () {
+    var bs = document.querySelectorAll("[data-set-lang]");
+    function sync() { bs.forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.setLang === d.getAttribute("data-lang"))); }); }
+    bs.forEach(function (b) { b.addEventListener("click", function () {
+      d.setAttribute("data-lang", b.dataset.setLang);
+      try { localStorage.setItem(KEY, b.dataset.setLang); } catch (e) {}
+      sync();
+    }); });
+    sync();
+  });
+})();
+</script>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Machiavelli holds that a republic must take care not to put anyone notably injured by others in an important office, since Claudius Nero, disgraced at Rome, as consul almost gambled its liberty, saying that had he failed he would avenge himself on the city. Guicciardini holds that a prince must beware of trusting a man he has injured much more than a republic, whose injured citizen blames some particular man more than the city and would harm himself by its ruin; therefore he would not be quick to shun such a citizen, above all where the injury was not very atrocious. He calls it ridiculous to believe that Nero, calumniated with some reason, could wish for defeat: the words were Salinator&#x27;s, and it is to be believed that Salinator meant otherwise.">
+<link rel="canonical" href="https://davidmcdougall.github.io/conversation-with-machiavelli/pairs/3.17.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='5' width='12' height='22' rx='1.5' fill='%233A5A6B'/%3E%3Crect x='17' y='5' width='12' height='22' rx='1.5' fill='%236E5A3C'/%3E%3C/svg%3E">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="A Conversation with Machiavelli">
+<meta property="og:title" content="That one not offend someone, and then send that same [one] into administration and government of importance">
+<meta property="og:description" content="Machiavelli holds that a republic must take care not to put anyone notably injured by others in an important office, since Claudius Nero, disgraced at Rome, as consul almost gambled its liberty, saying that had he failed he would avenge himself on the city. Guicciardini holds that a prince must beware of trusting a man he has injured much more than a republic, whose injured citizen blames some particular man more than the city and would harm himself by its ruin; therefore he would not be quick to shun such a citizen, above all where the injury was not very atrocious. He calls it ridiculous to believe that Nero, calumniated with some reason, could wish for defeat: the words were Salinator&#x27;s, and it is to be believed that Salinator meant otherwise.">
+<meta property="og:url" content="https://davidmcdougall.github.io/conversation-with-machiavelli/pairs/3.17.html">
+<meta name="twitter:card" content="summary">
+<title>A Conversation with Machiavelli — That one not offend someone, and then send that same [one] into administration and government of importance</title>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+:root {
+  --paper:      #EDEEEC;
+  --paper-sunk: #E4E6E3;
+  --ink:        #1B1E1C;
+  --ink-muted:  #5C625E;
+  --ink-faint:  #868C87;
+  --rule:       #C9CDC8;
+  --rule-faint: #DCDFDB;
+  --nm:         #3A5A6B;
+  --fg:         #6E5A3C;
+  --serif: "EB Garamond", "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  --sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --mono:  "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:      #161917;
+    --paper-sunk: #1D211E;
+    --ink:        #E3E6E1;
+    --ink-muted:  #A0A6A0;
+    --ink-faint:  #767C77;
+    --rule:       #343934;
+    --rule-faint: #262B27;
+    --nm:         #8FB4C6;
+    --fg:         #C4A97C;
+  }
+}
+:root[data-theme="dark"] {
+  --paper:      #161917;
+  --paper-sunk: #1D211E;
+  --ink:        #E3E6E1;
+  --ink-muted:  #A0A6A0;
+  --ink-faint:  #767C77;
+  --rule:       #343934;
+  --rule-faint: #262B27;
+  --nm:         #8FB4C6;
+  --fg:         #C4A97C;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 1160px; margin: 0 auto; padding-inline: 20px; padding-block: 0 0; }
+
+/* ---- masthead ---- */
+.masthead { padding-block: 56px 32px; border-bottom: 1px solid var(--rule); }
+.eyebrow {
+  font-family: var(--sans); font-size: 11px; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint);
+  margin: 0 0 18px; text-wrap: balance;
+}
+.eyebrow a { color: inherit; text-decoration: none; }
+.eyebrow a:hover, .eyebrow a:focus { color: var(--ink); }
+h1 {
+  font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 5vw, 44px);
+  line-height: 1.12; margin: 0 0 14px; text-wrap: balance; letter-spacing: -0.01em;
+}
+h1 .sub { display: block; font-style: italic; color: var(--ink-muted); font-size: .52em; margin-top: 12px; letter-spacing: 0; }
+.standfirst {
+  font-family: var(--serif); font-size: 18px; line-height: 1.55;
+  color: var(--ink); max-width: 60ch; margin: 22px 0 0;
+}
+.sf-label {
+  display: block; font-family: var(--sans); font-weight: 600; font-size: 10.5px;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px;
+}
+.index .standfirst { font-size: 17px; color: var(--ink-muted); }
+
+/* ---- the pairing device ---- */
+.pairing {
+  display: flex; align-items: stretch; gap: 0; margin: 30px 0 0;
+  border: 1px solid var(--rule); border-radius: 2px; overflow: hidden;
+  font-family: var(--sans); background: var(--paper-sunk);
+}
+.pairing > div { flex: 1 1 0; padding: 13px 16px; min-width: 0; }
+.pairing .who { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
+.pairing .nm-side .who { color: var(--nm); }
+.pairing .fg-side .who { color: var(--fg); }
+.pairing .what { font-size: 13.5px; color: var(--ink-muted); }
+.pairing .arrow {
+  flex: 0 0 auto; display: flex; align-items: center; justify-content: center;
+  padding-inline: 14px; color: var(--ink-faint); font-size: 15px;
+  border-inline: 1px solid var(--rule);
+}
+
+/* ---- pair-to-pair navigation ---- */
+.pairnav {
+  display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+  margin-top: 18px; font-family: var(--sans); font-size: 12.5px;
+  color: var(--ink-muted);
+}
+.pairnav a { text-decoration: none; color: var(--ink-muted); }
+.pairnav a:hover, .pairnav a:focus { color: var(--ink); text-decoration: underline; }
+
+/* ---- work sections ---- */
+.work { padding-block: 52px 0; }
+.work-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
+.work-head .tag {
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .12em;
+  text-transform: uppercase; padding: 4px 8px 3px; border-radius: 2px; color: var(--paper);
+  align-self: center;
+}
+.work-head .cite { font-family: var(--sans); font-size: 13px; color: var(--ink-faint); }
+.work.nm .tag { background: var(--nm); }
+.work.fg .tag { background: var(--fg); }
+h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; letter-spacing: -0.005em; }
+.rubric {
+  font-style: italic; color: var(--ink-muted); max-width: 70ch;
+  margin: 10px 0 0; font-size: 16.5px; line-height: 1.5;
+}
+.rubric-note {
+  font-family: var(--sans); font-style: normal; font-size: 12px;
+  color: var(--ink-faint); margin-top: 7px;
+}
+.colheads {
+  display: grid; grid-template-columns: 66px 1fr 1fr; gap: 0 28px;
+  margin-top: 30px; padding-bottom: 7px; border-bottom: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint);
+}
+
+/* ---- the facing pair ---- */
+.pair {
+  display: grid; grid-template-columns: 66px 1fr 1fr; gap: 0 28px;
+  padding-block: 22px; border-bottom: 1px solid var(--rule-faint);
+  scroll-margin-top: 20px;
+}
+.pair:target { background: var(--paper-sunk); }
+.annot { grid-column: 2 / -1; margin-top: 14px; font-family: var(--sans); font-size: 13.5px;
+  line-height: 1.55; color: var(--ink-muted); }
+.annot summary { cursor: pointer; font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); list-style: none; }
+.annot summary::-webkit-details-marker { display: none; }
+.annot summary::before { content: "+ "; }
+.annot[open] summary::before { content: "− "; }
+.annot p { margin: 8px 0 0; max-width: 72ch; }
+.annot .lem { font-weight: 600; color: var(--ink); }
+.annot .xref { color: inherit; text-decoration: underline; text-decoration-color: var(--rule);
+  text-underline-offset: 2px; white-space: nowrap; }
+.gutter { padding-top: 4px; }
+.marks { display: block; margin-top: 10px; font-family: var(--sans); font-size: 11px; line-height: 1.45; }
+.marks a { display: block; color: var(--ink-faint); text-decoration: none; white-space: nowrap; }
+.marks a:hover, .marks a:focus { color: var(--ink); text-decoration: underline; }
+.uid {
+  font-family: var(--mono); font-size: 10.5px; color: var(--ink-faint);
+  text-decoration: none; letter-spacing: -0.02em;
+}
+.uid:hover, .uid:focus { color: var(--ink); text-decoration: underline; }
+.col { min-width: 0; }
+.col.it { hyphens: auto; }
+.col.en { hyphens: auto; }
+.supplied { color: var(--ink-muted); }
+
+/* ---- apparatus ---- */
+.apparatus {
+  margin-top: 34px; padding-top: 22px; border-top: 2px solid var(--rule);
+  font-family: var(--sans); font-size: 13.5px; line-height: 1.58;
+  color: var(--ink-muted);
+}
+/* Source is a short paragraph; variants and notes run long, so they flow in
+   two balanced columns across the full width rather than in one narrow strip. */
+.apparatus > div + div { margin-top: 30px; }
+.app-source p { max-width: 78ch; }
+.app-variants, .app-notes { columns: 2 340px; column-gap: 40px; }
+.app-variants h3, .app-notes h3 { column-span: all; }
+.apparatus p { break-inside: avoid; scroll-margin-top: 20px; }
+.apparatus p:target { background: var(--paper-sunk); box-shadow: 0 0 0 6px var(--paper-sunk); }
+.apparatus .loc {
+  font-family: var(--mono); font-size: 11px; color: var(--ink-faint); text-decoration: none;
+  white-space: nowrap; margin-right: .2em;
+}
+.apparatus .loc:hover, .apparatus .loc:focus { color: var(--ink); text-decoration: underline; }
+.apparatus h3 {
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); margin: 0 0 9px;
+}
+.apparatus p { margin: 0 0 9px; }
+.apparatus p:last-child { margin-bottom: 0; }
+.apparatus .lem { font-family: var(--serif); font-size: 15px; color: var(--ink); font-style: italic; }
+.sig { font-family: var(--mono); font-size: 12px; color: var(--ink); }
+
+/* ---- colophon ---- */
+.pairnav-foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--rule); }
+.colophon {
+  margin-top: 40px; padding-block: 0 60px;
+  font-family: var(--sans); font-size: 13px; line-height: 1.6; color: var(--ink-muted);
+}
+.colophon .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 34px; }
+.colophon h3 {
+  font-size: 10.5px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--ink-faint); margin: 0 0 8px;
+}
+.colophon p { margin: 0 0 8px; }
+.colophon ul { margin: 0; padding-left: 16px; }
+.colophon li { margin-bottom: 5px; }
+.colophon .links { margin: 18px 0 0; display: flex; gap: 6px 22px; flex-wrap: wrap; }
+.colophon .links a { color: var(--ink-muted); }
+.about { max-width: 68ch; padding-block: 44px 0; font-family: var(--serif); font-size: 17px; }
+.about h2 { margin: 38px 0 10px; }
+.about h2:first-child { margin-top: 0; }
+.about p { margin: 0 0 12px; }
+.state {
+  margin-top: 0; padding: 14px 16px; background: var(--paper-sunk);
+  border-left: 2px solid var(--ink-faint); border-radius: 0 2px 2px 0;
+  font-size: 12.5px;
+}
+.state strong { color: var(--ink); font-weight: 600; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--nm); outline-offset: 2px; }
+
+/* ---- contents / index page ---- */
+.toc { margin-top: -22px; }
+.toc .book {
+  font-family: var(--serif); font-weight: 500; font-size: 22px; margin: 0;
+  padding: 34px 0 10px; border-bottom: 1px solid var(--rule);
+  display: flex; align-items: baseline; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+}
+.toc .book:first-child { padding-top: 0; }
+.toc .book span { font-family: var(--sans); font-size: 12px; font-weight: 400; color: var(--ink-faint); }
+.toc-row {
+  display: grid; grid-template-columns: 40px minmax(0, 70ch) 1fr; gap: 0 20px;
+  padding-block: 14px; border-bottom: 1px solid var(--rule-faint);
+  font-family: var(--sans); align-items: baseline;
+}
+.toc-row .n { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
+.toc-row > div:nth-child(2) { line-height: 1.32; }
+.toc-row a { text-decoration: none; color: var(--ink); font-family: var(--serif); font-size: 17px; }
+.toc-row a:hover, .toc-row a:focus { text-decoration: underline; }
+.toc-row .unpublished { color: var(--ink-faint); font-style: italic; font-size: 14px; }
+.toc-row .ids { color: var(--ink-faint); font-size: 12px; font-family: var(--sans); margin-top: 3px; }
+.toc-row .dated { color: var(--ink-faint); font-size: 12px; text-align: right; }
+
+/* ---- language toggle: on phones the facing columns stack, so the reader picks
+   one language (English by default), or both; desktop always shows both ---- */
+.langbar { display: none; }
+@media (max-width: 760px) {
+  .langbar {
+    display: flex; align-items: center; gap: 6px; position: sticky; top: 0; z-index: 5;
+    margin: 0 -20px; padding: 10px 20px; background: var(--paper);
+    border-bottom: 1px solid var(--rule); font-family: var(--sans); font-size: 12.5px;
+  }
+  .langbar .lb-label { color: var(--ink-faint); margin-right: 4px; font-size: 11px;
+    font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+  .langbar button {
+    font: inherit; color: var(--ink-muted); background: transparent; cursor: pointer;
+    border: 1px solid var(--rule); border-radius: 2px; padding: 5px 11px;
+  }
+  .langbar button[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  html[data-lang="en"] .col.it, html[data-lang="it"] .col.en { display: none; }
+  html[data-lang="en"] .col.en::before, html[data-lang="it"] .col.it::before { display: none; }
+  html[data-lang="it"] .col.it { margin-bottom: 0; padding-bottom: 0; border-bottom: 0; }
+  .pair { scroll-margin-top: 56px; }
+  .apparatus p { scroll-margin-top: 56px; }
+}
+@media (max-width: 760px) {
+  body { font-size: 16.5px; }
+  .colheads { display: none; }
+  .pair { grid-template-columns: 1fr; gap: 0; padding-block: 20px; }
+  .gutter { padding-top: 0; margin-bottom: 8px; display: flex; gap: 14px; align-items: baseline; }
+  .marks { display: inline-flex; gap: 12px; margin-top: 0; }
+  .annot { grid-column: 1; }
+  .col.it { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px dotted var(--rule); }
+  .col.it::before, .col.en::before {
+    display: block; font-family: var(--sans); font-size: 10px; font-weight: 600;
+    letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px;
+  }
+  .col.it::before { content: "Italian"; }
+  .col.en::before { content: "English"; }
+  .pairing { flex-direction: column; }
+  .pairing .arrow { border-inline: 0; border-block: 1px solid var(--rule); padding-block: 6px; }
+  .toc-row { grid-template-columns: 1fr; gap: 4px; }
+  .toc-row .dated { text-align: left; }
+  .app-variants, .app-notes { columns: 1; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow"><a href="../index.html">A Conversation with Machiavelli</a> · Pair 37 of 39</p>
+    <h1>That one not offend someone, and then send that same [one] into administration and government of importance
+      <span class="sub">Discourses III.17, and Guicciardini&#x27;s reply</span></h1>
+    <p class="standfirst"><span class="sf-label">Editor's summary</span> Machiavelli holds that a republic must take care not to put anyone notably injured by others in an important office, since Claudius Nero, disgraced at Rome, as consul almost gambled its liberty, saying that had he failed he would avenge himself on the city. Guicciardini holds that a prince must beware of trusting a man he has injured much more than a republic, whose injured citizen blames some particular man more than the city and would harm himself by its ruin; therefore he would not be quick to shun such a citizen, above all where the injury was not very atrocious. He calls it ridiculous to believe that Nero, calumniated with some reason, could wish for defeat: the words were Salinator&#x27;s, and it is to be believed that Salinator meant otherwise.</p>
+
+    <div class="pairing">
+      <div class="nm-side">
+        <div class="who">Niccolò Machiavelli</div>
+        <div class="what">Discorsi sopra la prima Deca di Tito Livio · written c. 1513–19, printed 1531</div>
+      </div>
+      <div class="arrow" aria-hidden="true">answered by</div>
+      <div class="fg-side">
+        <div class="who">Francesco Guicciardini</div>
+        <div class="what">Considerazioni intorno ai Discorsi del Machiavelli · written 1529–30, printed 1857</div>
+      </div>
+    </div>
+    <nav class="pairnav"><a href="2.24.html">← Pair 2.24</a><a href="../index.html">All 39 pairs</a><span></span></nav>
+  </header>
+
+  <div class="langbar" role="group" aria-label="Show which language">
+    <span class="lb-label">Show</span>
+    <button type="button" data-set-lang="en">English</button>
+    <button type="button" data-set-lang="it">Italian</button>
+    <button type="button" data-set-lang="both">Both</button>
+  </div>
+
+  <section class="work nm">
+    <div class="work-head">
+      <span class="tag" title="NM-DISC.3.17">Machiavelli</span>
+      <h2>Capitolo XVII</h2>
+      <span class="cite"><i>Discorsi</i> III.17</span>
+    </div>
+    <p class="rubric">Che non si offenda uno, e poi quel medesimo si mandi in amministrazione e governo d&#x27;importanza.</p>
+    <p class="rubric">That one not offend someone, and then send that same [one] into administration and government of importance.
+      </p>
+
+    <div class="colheads"><div></div><div>Italian · 1824</div><div>English</div></div>
+      <div class="pair" id="NM-DISC.3.17.01">
+        <div class="gutter"><a class="uid" href="#NM-DISC.3.17.01">3.17.01</a><span class="marks"><a href="#n-NM-DISC.3.17-1">2 notes</a><a href="#v-NM-DISC-III17-D006">1 variant</a></span></div>
+        <div class="col it" lang="it">Debbe una Repubblica assai considerare di non preporre alcuno ad alcuna importante amministrazione, al quale sia stato fatto da altri alcuna notabile ingiuria.</div>
+        <div class="col en" lang="en">A republic must much consider not to appoint anyone to any important administration to whom any notable injury has been done by others.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The chapter opens on its precept: a republic must much consider not to appoint to any important administration a man to whom any notable injury has been done by others. The rubric, with its impersonal <i lang="it">si</i>, has one agent offend a man and then send that same man into government; the body names the injurer only as <i lang="it">da altri</i>, by others, not the republic itself. The danger lies in the injured man; who injured him is the point on which Guicciardini replies (the editor&#x27;s reading).</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini&#x27;s reply begins with a comparison: a prince must abstain much more than a republic, because the man a prince injures acknowledges the injury as wholly the prince&#x27;s, while the man a republic injures acknowledges it more as from some particular man <a class="xref" href="#FG-CONS.3.17.01">Guicciardini .01</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.3.17.02">
+        <div class="gutter"><a class="uid" href="#NM-DISC.3.17.02">3.17.02</a><span class="marks"><a href="#n-NM-DISC.3.17-3">15 notes</a><a href="#v-NM-DISC-III17-D001">4 variants</a></span></div>
+        <div class="col it" lang="it">Claudio Nerone, il quale si partì dallo esercito che lui aveva a fronte ad Annibale, e con parte di esso n&#x27;andò nella Marca a trovare l&#x27;altro Consolo per combattere con Asdrubale avanti che si congiungesse con Annibale, s&#x27;era trovato per l&#x27;addietro in Ispagna a fronte d&#x27;Asdrubale, ed avendolo serrato in luogo con lo esercito che bisognava, o che Asdrubale combattesse con suo disavvantaggio, o si morisse di fame, fu da Asdrubale astutamente tanto intrattenuto con certe pratiche d&#x27;accordo, che egli uscì di sotto, e tolsegli quella occasione d&#x27;oppressarlo. La qual cosa saputa a Roma gli dette carico grande appresso al Senato ed al Popolo: e di lui fu parlato inonestamente per tutta quella Città, non senza suo grande disonore ed isdegno. Ma sendo poi fatto Consolo, e mandato all&#x27;incontro d&#x27;Annibale, prese il soprascritto partito, il quale fu pericolosissimo; talmente che Roma stette tutta dubbia e sollevata, infino a tanto che vennero le nuove della rotta d&#x27;Asdrubale. Ed essendo domandato poi Claudio per qual cagione avesse preso sì pericoloso partito, dove senza una estrema necessità egli aveva giuocata quasi la libertà di Roma, rispose che l&#x27;aveva fatto perché sapeva che se gli riusciva, riacquistava quella gloria che s&#x27;aveva perduta in Ispagna; e se non gli riusciva, e che questo suo partito avesse avuto contrario fine, sapeva come ei si vendicava contro a quella Città ed a quelli cittadini che lo avevano tanto ingratamente e indiscretamente offeso.</div>
+        <div class="col en" lang="en">Claudius Nero, who departed from the army that he had facing Hannibal, and with part of it went into the Marches to find the other consul, so as to fight with Hasdrubal before he joined with Hannibal, had found himself formerly in Spain facing Hasdrubal, and having shut him in a place with the army, <span class="supplied">[so]</span> that it was required either that Hasdrubal fight to his disadvantage, or die of hunger, was craftily so entertained by Hasdrubal with certain practices of accord that he got out from under, and took from him that occasion of oppressing him. Which thing, known at Rome, gave him great charge with the Senate and with the people; and he was spoken of shamefully through all that city, not without his great dishonour and indignation. But being made consul later, and sent to meet Hannibal, he took the above-written course, which was most dangerous; so that Rome stood all doubtful and stirred up, until the news came of the rout of Hasdrubal. And Claudius, being asked later for what cause he had taken so dangerous a course, where without an extreme necessity he had gambled almost the liberty of Rome, answered that he had done it because he knew that if it succeeded for him, he would reacquire that glory which he had lost in Spain; and if it did not succeed for him, and this course of his had had a contrary end, he knew how he would avenge himself against that city and against those citizens who had so ungratefully and indiscreetly offended him.</div>
+        <details class="annot"><summary>Commentary · 4</summary>
+          <p><span class="lem">Argument.</span> The example is Claudius Nero, told out of order. First the act: he left the army facing Hannibal and went with part of it into the Marches to find the other consul, so as to fight Hasdrubal before he joined with Hannibal. Then the earlier episode that explains it: in Spain he had shut Hasdrubal in a place where it was required either that Hasdrubal fight at a disadvantage or die of hunger, and Hasdrubal, holding him in talk with practices of accord, got out from under. Which thing, known at Rome, brought him great charge with the Senate and the people, and he was spoken of shamefully through all the city, not without his great dishonour and indignation.</p>
+<p><span class="lem">Note.</span> The march was most dangerous, and Rome stood in suspense until the news of Hasdrubal&#x27;s rout. Asked why he had taken so dangerous a course, where without an extreme necessity he had gambled almost the liberty of Rome, Nero answered that if it succeeded he would reacquire the glory lost in Spain, and if it did not succeed, he knew how he would avenge himself against the city and the citizens who had so ungratefully and indiscreetly offended him. The answer is the chapter&#x27;s evidence (the editor&#x27;s reading): an injured man given command may reckon a failure that harms the city as the means of his revenge.</p>
+<p><span class="lem">History.</span> Hasdrubal&#x27;s escape from Nero in Spain, under cover of talks, is Livy 26.17; the defeat of Hasdrubal at the Metaurus, 207 BC, is Livy 27.48-49 (the editor&#x27;s references). Livy 26.17 reports the escape but not any blame at Rome; 27.34 introduces Nero, when the consuls were chosen, as far above the other candidates, but too prompt and fierce for the times, to be tempered by a moderate colleague (the editor&#x27;s references). Where Machiavelli found the disgrace is not traced here. Livy gives words of this kind not to Nero but to his colleague, Marcus Livius Salinator, condemned by the people after his consulship (27.34): setting out still full of anger against the citizens, warned by Fabius not to engage rashly, he said he would fight as soon as he saw the enemy, and, asked why the haste, that he would take either outstanding glory from the enemy or a joy, deserved if not honourable, from his defeated fellow citizens (27.40) (the editor&#x27;s references). The same campaign, seen from Hasdrubal&#x27;s side, is mentioned in II.10.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini calls the case a thing ridiculous to believe: that through having been calumniated for the time he was in Spain, &quot;and also with some reason&quot;, Nero should have had so much indignation that he could desire to be routed; and he gives the words to Salinator, whose proceedings he reads against them <a class="xref" href="#FG-CONS.3.17.01">Guicciardini .01</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.3.17.03">
+        <div class="gutter"><a class="uid" href="#NM-DISC.3.17.03">3.17.03</a><span class="marks"><a href="#n-NM-DISC.3.17-18">4 notes</a><a href="#v-NM-DISC-III17-D005">1 variant</a></span></div>
+        <div class="col it" lang="it">E quando queste passioni di tali offese possono tanto in un cittadino romano, e in quelli tempi che Roma era ancora incorrotta, si debbe pensare quanto elle possano in un cittadino d&#x27;una Città che non sia fatta com&#x27;era allora quella. E perché a simili disordini che nascono nelle Repubbliche non si può dare certo rimedio, ne seguita che gli è impossibile ordinare una Repubblica perpetua, perché per mille inopinate vie si causa la sua rovina.</div>
+        <div class="col en" lang="en">And when these passions of such offences can <span class="supplied">[do]</span> so much in a Roman citizen, and in those times when Rome was still uncorrupted, one must think how much they can <span class="supplied">[do]</span> in a citizen of a city which is not made as that one was then. And because one cannot give a sure remedy to similar disorders that arise in republics, it follows that it is impossible to order a perpetual republic, because by a thousand unlooked-for paths is caused its ruin.</div>
+        <details class="annot"><summary>Commentary · 2</summary>
+          <p><span class="lem">Argument.</span> The conclusion widens the example. When the passions of such offences can do so much in a Roman citizen, and in times when Rome was still uncorrupted, one must think how much they can do in a citizen of a city not made as Rome then was. And because one cannot give a sure remedy to similar disorders that arise in republics, it follows that it is impossible to order a perpetual republic, since by a thousand unlooked-for paths its ruin is caused. The impossibility rests on the want of a sure remedy; the precept of .01 stands against one of the thousand paths, not as a cure for them (the editor&#x27;s reading).</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini does not take up the conclusion; he answers the precept and the example <a class="xref" href="#FG-CONS.3.17.01">Guicciardini .01</a>.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div class="app-source">
+        <h3>Source</h3>
+        <p>Established from the 1824 edition (<span class="sig">WIT-NM-DISC-1824-IA</span>), page-image-backed, which governs. Collated against the 1554 Giglio printing, Venice (<span class="sig">WIT-NM-DISC-1554-IA</span>), which is comparison evidence only.</p>
+<p>Paragraph divisions are editorial. The witness prints the chapter as one unbroken block.</p>
+      </div>
+      <div class="app-variants">
+        <h3>Variants</h3>
+        <p id="v-NM-DISC-III17-D001"><a class="loc" href="#NM-DISC.3.17.02" title="Back to the paragraph">¶ 02</a> <span class="lem">il quale si partì dallo esercito che lui aveva a fronte ad Annibale</span> — 1824. The 1554 witness reads <i lang="it">ilquale ſi parti dall&#x27;eſſercito, che haueua a fronte ad Annibale</i>. The 1554 omits <i lang="it">lui</i>; the sense is the same. Read by both 1824 readers (pass B on the sample page) without doubt. Kept (D38, D493).</p>
+<p id="v-NM-DISC-III17-D002"><a class="loc" href="#NM-DISC.3.17.02" title="Back to the paragraph">¶ 02</a> <span class="lem">avendolo serrato in luogo con lo esercito che bisognava</span> — 1824. The 1554 witness reads <i lang="it">hauendolo ſerrato in luogo con lo eſſercito, che biſogna</i>. <i lang="it">bisognava</i>, the past of the narrative, against the 1554&#x27;s present <i lang="it">biſogna</i>. Read by both 1824 readers without doubt. Kept (D38, D493).</p>
+<p id="v-NM-DISC-III17-D003"><a class="loc" href="#NM-DISC.3.17.02" title="Back to the paragraph">¶ 02</a> <span class="lem">fu da Asdrubale astutamente tanto intrattenuto con certe pratiche d&#x27;accordo, che egli uscì di sotto</span> — 1824. The 1554 witness reads <i lang="it">fu Aſdrubale aſtutamente tanto intrattenuto con certe prattiche di accordo, che gli uſci di ſotto</i>. The 1554 omits <i lang="it">da</i>, so that Hasdrubal is the one held in talk, and Nero, the subject of the period, drops out of the clause. The 1824 keeps Nero the one held and Hasdrubal the agent, who then slips out (<i lang="it">egli uscì</i>). Read by both 1824 readers without doubt. Kept (D38, D493); translator&#x27;s note.</p>
+<p id="v-NM-DISC-III17-D004"><a class="loc" href="#NM-DISC.3.17.02" title="Back to the paragraph">¶ 02</a> <span class="lem">e di lui fu parlato inonestamente per tutta quella Città, non senza suo grande disonore</span> — 1824. The 1554 witness reads <i lang="it">et di lui fu parlato dishoneſtamẽte per tutta quella città,non ſenza ſuo grãde dishonore</i>. <i lang="it">inonestamente</i> against <i lang="it">dishoneſtamente</i>: two adverbs of one sense, dishonourably, the 1824&#x27;s formed with <i lang="it">in-</i>. Read by both 1824 readers without doubt. Kept (D38, D493).</p>
+<p id="v-NM-DISC-III17-D005"><a class="loc" href="#NM-DISC.3.17.03" title="Back to the paragraph">¶ 03</a> <span class="lem">E quando queste passioni di tali offese possono tanto in un cittadino romano, e in quelli tempi che Roma era ancora incorrotta</span> — 1824. The 1554 witness reads <i lang="it">Et quãdo queſte paſsioni di tale offeſe poſſono tanto in un cittadino Ro.et in quei tempi che Roma anchora era incorrotta</i>. <i lang="it">tali offese</i>, plural in agreement, against the 1554&#x27;s <i lang="it">tale offeſe</i>; <i lang="it">era ancora</i> against <i lang="it">anchora era</i>, order only. Read by pass A and by pass B on the line crops, without doubt. Kept (D38, D493).</p>
+<p id="v-NM-DISC-III17-D006"><a class="loc" href="#NM-DISC.3.17.01" title="Back to the paragraph">¶ 01</a> <span class="lem">Che non si offenda uno, e poi quel medesimo si mandi in amministrazione e governo d&#x27;importanza.</span> — 1824. The 1554 witness reads <i lang="it">CHE NON SI OFFENDA VNO ET poi quel medeſimo ſi mãdi in amminiſtratione, et gouerno d&#x27;importanza. Cap. XVII.</i>. The 1554 sets the title as its heading: the same sentence but for spelling and the comma after <i lang="it">amministratione</i>. The 1824 rubric read alike by both readers without doubt (D495).</p>
+      </div>
+      <div class="app-notes">
+        <h3>Notes</h3>
+        <p id="n-NM-DISC.3.17-1"><a class="loc" href="#NM-DISC.3.17.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">Debbe una Repubblica assai considerare di non preporre alcuno ad alcuna importante amministrazione</i>.</span> &quot;A republic must much consider not to appoint anyone to any important administration&quot;: <i lang="it">debbe</i>, must (D274); <i lang="it">assai</i> with the verb, much (D348); <i lang="it">considerare</i>, consider (glossary); <i lang="it">preporre</i>, appoint (glossary); <i lang="it">alcuno ... alcuna ... alcuna</i>, anyone, any, any, the indefinite three times under the negative, as printed.</p>
+<p id="n-NM-DISC.3.17-2"><a class="loc" href="#NM-DISC.3.17.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">al quale sia stato fatto da altri alcuna notabile ingiuria</i>.</span> &quot;To whom any notable injury has been done by others&quot;: <i lang="it">ingiuria</i>, injury (glossary); <i lang="it">da altri</i>, by others, not by the republic itself; the subjunctive of a class of men. Guicciardini&#x27;s reply turns on who the injurer is.</p>
+<p id="n-NM-DISC.3.17-3"><a class="loc" href="#NM-DISC.3.17.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">Claudio Nerone, il quale si partì dallo esercito che lui aveva a fronte ad Annibale</i>.</span> &quot;Claudius Nero, who departed from the army that he had facing Hannibal&quot;: <i lang="it">a fronte a</i>, facing (D496); Gaius Claudius Nero, consul in 207 BC (names.md, as at II.10). The 1554 omits <i lang="it">lui</i> (NM-DISC-III17-D001; D493). The long relative that follows, through <i lang="it">con Annibale</i>, is the march to the Metaurus, told before the earlier disgrace that explains it; the order is kept.</p>
+<p id="n-NM-DISC.3.17-4"><a class="loc" href="#NM-DISC.3.17.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">n&#x27;andò nella Marca a trovare l&#x27;altro Consolo</i>.</span> &quot;Went into the Marches to find the other consul&quot;: <i lang="it">la Marca</i>, the Marches (names.md); <i lang="it">Consolo</i>, consul (D410). The other consul, Marcus Livius Salinator, is not named; Guicciardini names him.</p>
+<p id="n-NM-DISC.3.17-5"><a class="loc" href="#NM-DISC.3.17.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">s&#x27;era trovato per l&#x27;addietro in Ispagna a fronte d&#x27;Asdrubale</i>.</span> &quot;Had found himself formerly in Spain facing Hasdrubal&quot;: the main verb of the period, after the relative; Nero in Spain in 211 BC is Livy 26.17 (the editor&#x27;s reference).</p>
+<p id="n-NM-DISC.3.17-6"><a class="loc" href="#NM-DISC.3.17.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">con lo esercito che bisognava</i>.</span> &quot;With the army, [so] that it was required&quot;: <i lang="it">che</i> consecutive and <i lang="it">bisognava</i> impersonal, governing the two <i lang="it">che</i> clauses that follow, in the editor&#x27;s reading (D497); <i lang="it">che</i> could also be relative, &quot;the army that was required&quot;. <i lang="it">bisognava</i>, it was required, the edition&#x27;s rendering of the impersonal <i lang="it">bisognare</i>, in every tense (D260); the reasons are in the note on <i lang="it">bisogni</i> at Machiavelli I.2. The 1554 has the present, <i lang="it">biſogna</i> (NM-DISC-III17-D002; D493).</p>
+<p id="n-NM-DISC.3.17-7"><a class="loc" href="#NM-DISC.3.17.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">o che Asdrubale combattesse con suo disavvantaggio, o si morisse di fame</i>.</span> &quot;Either that Hasdrubal fight to his disadvantage, or die of hunger&quot;: <i lang="it">combattere</i>, fight (D49); <i lang="it">o che ... o</i>, either that ... or, under <i lang="it">bisognava</i>; the subjunctives without &quot;should&quot; (D348).</p>
+<p id="n-NM-DISC.3.17-8"><a class="loc" href="#NM-DISC.3.17.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">fu da Asdrubale astutamente tanto intrattenuto con certe pratiche d&#x27;accordo</i>.</span> &quot;Was craftily so entertained by Hasdrubal with certain practices of accord&quot;: the subject is still Nero, from the head of the period; <i lang="la">tanto</i> with the verb, answered by <i lang="it">che</i>; <i lang="it">astutamente</i>, craftily (D52); <i lang="it">intrattenere</i>, entertain, in the older sense, hold in play (D496); <i lang="it">pratiche</i>, practices, the negotiations of a treaty (D496); <i lang="it">accordo</i>, accord (D452), here a noun after <i lang="it">di</i>, not D464&#x27;s adverbial &quot;by accord&quot;. The 1554 omits <i lang="it">da</i>, so that Hasdrubal becomes the one entertained and Nero drops out of the clause; the 1824, read without doubt by both readers, keeps Nero the one held and Hasdrubal the agent (NM-DISC-III17-D003; D493).</p>
+<p id="n-NM-DISC.3.17-9"><a class="loc" href="#NM-DISC.3.17.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">che egli uscì di sotto, e tolsegli quella occasione d&#x27;oppressarlo</i>.</span> &quot;That he got out from under, and took from him that occasion of oppressing him&quot;: <i lang="it">egli</i> is now Hasdrubal, the subject changing without notice, as printed; <i lang="it">occasione</i>, occasion (glossary); <i lang="it">oppressare</i>, oppress, to crush (D496).</p>
+<p id="n-NM-DISC.3.17-10"><a class="loc" href="#NM-DISC.3.17.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">La qual cosa saputa a Roma gli dette carico grande appresso al Senato ed al Popolo</i>.</span> &quot;Which thing, known at Rome, gave him great charge with the Senate and with the people&quot;: <i lang="it">carico</i>, charge, here blame laid on him (glossary); <i lang="it">Popolo</i>, people (D118).</p>
+<p id="n-NM-DISC.3.17-11"><a class="loc" href="#NM-DISC.3.17.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">e di lui fu parlato inonestamente per tutta quella Città, non senza suo grande disonore ed isdegno</i>.</span> &quot;And he was spoken of shamefully through all that city, not without his great dishonour and indignation&quot;: the impersonal passive in plain order (D263); <i lang="it">inonestamente</i>, shamefully (D496), the root of <i lang="it">onesto</i> kept apart from <i lang="it">disonore</i>, dishonour, beside it; against the 1554&#x27;s <i lang="it">dishoneſtamente</i>, the same sense (NM-DISC-III17-D004; D493); <i lang="it">disonore</i>, dishonour (glossary <i lang="it">disonorare</i>); <i lang="it">sdegno</i>, indignation (glossary), here printed <i lang="it">isdegno</i>. <i lang="it">suo</i> governs both nouns: the dishonour done him and the indignation he felt.</p>
+<p id="n-NM-DISC.3.17-12"><a class="loc" href="#NM-DISC.3.17.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">Ma sendo poi fatto Consolo, e mandato all&#x27;incontro d&#x27;Annibale, prese il soprascritto partito, il quale fu pericolosissimo</i>.</span> &quot;But being made consul later, and sent to meet Hannibal, he took the above-written course, which was most dangerous&quot;: <i lang="it">poi</i>, later (D250); <i lang="it">all&#x27;incontro di</i>, of a march, to meet (D496), kept apart from <i lang="it">contro a</i>, against (.02); <i lang="it">partito</i>, course (D236); <i lang="it">soprascritto</i>, above-written (glossary), the march of the first sentence.</p>
+<p id="n-NM-DISC.3.17-13"><a class="loc" href="#NM-DISC.3.17.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">talmente che Roma stette tutta dubbia e sollevata</i>.</span> &quot;So that Rome stood all doubtful and stirred up&quot;: <i lang="it">talmente che</i>, so that (glossary); <i lang="it">sollevato</i>, stirred up (D496), the city&#x27;s suspense.</p>
+<p id="n-NM-DISC.3.17-14"><a class="loc" href="#NM-DISC.3.17.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">dove senza una estrema necessità egli aveva giuocata quasi la libertà di Roma</i>.</span> &quot;Where without an extreme necessity he had gambled almost the liberty of Rome&quot;: <i lang="it">giuocare</i>, gamble, to play at hazard (D496); <i lang="it">libertà</i>, liberty (glossary); <i lang="it">quasi</i>, almost, kept on <i lang="it">la libertà</i>.</p>
+<p id="n-NM-DISC.3.17-15"><a class="loc" href="#NM-DISC.3.17.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">se gli riusciva, riacquistava quella gloria che s&#x27;aveva perduta in Ispagna</i>.</span> &quot;If it succeeded for him, he would reacquire that glory which he had lost in Spain&quot;: <i lang="it">riuscire</i>, succeed, of a thing that comes off (D332); &quot;Claudius, being asked&quot;, the absolute construction given its subject in plain order; <i lang="it">riacquistare</i>, reacquire (D496), the root of <i lang="it">acquistare</i>, acquire; the imperfects <i lang="it">riusciva</i>, <i lang="it">riacquistava</i>, <i lang="it">vendicava</i> stand in the reported answer for what would follow, and the English says &quot;would&quot; in the apodosis only.</p>
+<p id="n-NM-DISC.3.17-16"><a class="loc" href="#NM-DISC.3.17.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">sapeva come ei si vendicava contro a quella Città</i>.</span> &quot;He knew how he would avenge himself against that city&quot;: <i lang="it">vendicarsi</i>, avenge oneself (D480). The words are put in Nero&#x27;s mouth; Guicciardini answers that they were Livius Salinator&#x27;s (Guicciardini .01).</p>
+<p id="n-NM-DISC.3.17-17"><a class="loc" href="#NM-DISC.3.17.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">che lo avevano tanto ingratamente e indiscretamente offeso</i>.</span> &quot;Who had so ungratefully and indiscreetly offended him&quot;: <i lang="it">ingratamente</i>, ungratefully (glossary <i lang="it">ingrato</i>); <i lang="it">indiscretamente</i>, indiscreetly, without discretion (D496); <i lang="it">offendere</i>, offend, the rubric&#x27;s verb.</p>
+<p id="n-NM-DISC.3.17-18"><a class="loc" href="#NM-DISC.3.17.03" title="Back to the paragraph">¶ 03</a> <span class="lem"><i lang="it">E quando queste passioni di tali offese possono tanto in un cittadino romano</i>.</span> &quot;And when these passions of such offences can [do] so much in a Roman citizen&quot;: <i lang="it">quando</i>, when, with the force of &quot;if&quot; left to the reader; <i lang="it">passioni</i>, passions (D496); <i lang="it">offese</i>, offences, the noun of the rubric&#x27;s <i lang="it">offendere</i>; <i lang="it">potere tanto</i>, can so much, as <i lang="it">quanto elle possano</i>. The 1554 reads <i lang="it">tale offeſe</i> and <i lang="it">anchora era</i> (NM-DISC-III17-D005; D493).</p>
+<p id="n-NM-DISC.3.17-19"><a class="loc" href="#NM-DISC.3.17.03" title="Back to the paragraph">¶ 03</a> <span class="lem"><i lang="it">e in quelli tempi che Roma era ancora incorrotta</i>.</span> &quot;And in those times when Rome was still uncorrupted&quot;: <i lang="it">ancora</i>, still, of time, a sense split from &quot;also&quot; and &quot;even&quot; (D472, D496); <i lang="it">incorrotto</i>, uncorrupted (glossary <i lang="it">corrotto</i>).</p>
+<p id="n-NM-DISC.3.17-20"><a class="loc" href="#NM-DISC.3.17.03" title="Back to the paragraph">¶ 03</a> <span class="lem"><i lang="it">E perché a simili disordini che nascono nelle Repubbliche non si può dare certo rimedio</i>.</span> &quot;And because one cannot give a sure remedy to similar disorders that arise in republics&quot;: the fronted dative set in plain order (D263); <i lang="it">disordini</i>, disorders (glossary); <i lang="it">nascere</i>, arise (D04); <i lang="it">simile</i>, similar (glossary); <i lang="it">certo</i>, sure (D496), since &quot;a certain remedy&quot; would read as some particular one; <i lang="it">rimedio</i>, remedy (glossary).</p>
+<p id="n-NM-DISC.3.17-21"><a class="loc" href="#NM-DISC.3.17.03" title="Back to the paragraph">¶ 03</a> <span class="lem"><i lang="it">ne seguita che gli è impossibile ordinare una Repubblica perpetua, perché per mille inopinate vie si causa la sua rovina</i>.</span> &quot;It follows that it is impossible to order a perpetual republic, because by a thousand unlooked-for paths is caused its ruin&quot;: <i lang="it">ordinare</i>, order (glossary <i lang="it">ordine</i>); <i lang="it">perpetuo</i>, perpetual; <i lang="it">vie</i>, paths (D131); <i lang="it">inopinato</i>, unlooked-for (D496); <i lang="it">causare</i>, cause; <i lang="it">rovina</i>, ruin (glossary). The conclusion rests on the <i lang="it">perché</i> before it: no sure remedy. The ruin is the chapter&#x27;s last word and its landing, and the English keeps it last (D263).</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work fg">
+    <div class="work-head">
+      <span class="tag" title="FG-CONS.3.17">Guicciardini</span>
+      <h2>Considerazione sul capitolo XVII del libro III.</h2>
+      <span class="cite"><i>Considerazioni</i> III.17</span>
+    </div>
+    <p class="rubric">Che non si offenda uno, e poi quel medesimo si mandi in amministrazione e governo d&#x27;importanza</p>
+    <p class="rubric">That one not offend someone, and then send that same [one] into administration and government of importance
+      </p>
+
+    <div class="colheads"><div></div><div>Italian · 1857</div><div>English</div></div>
+      <div class="pair" id="FG-CONS.3.17.01">
+        <div class="gutter"><a class="uid" href="#FG-CONS.3.17.01">3.17.01</a><span class="marks"><a href="#n-FG-CONS.3.17-2">23 notes</a><a href="#v-FG-CONS-III17-C001">5 variants</a></span></div>
+        <div class="col it" lang="it">Molto più s&#x27;ha a astenere uno principe in non si commettere in chi ha ingiuriato, che una republica, perché lo ingiuriato dal principe ricognosce la ingiuria tutta da lui, ma uno ingiuriato da una republica ricognosce più la ingiuria da qualche particulare che l&#x27;ha perseguitato o si è trovato in magistrato, che dal nome della città, e però offendendo la città non gli pare vendicarsi. Di poi chi cerca la rovina della patria, fa male a&#x27; parenti, agli amici, a tutte le cose sue medesime, e a sé proprio, e con infamia di sé medesimo; che non interviene a chi fa contro a uno principe. È ancora più facile spegnere uno principe che una republica; e per questo uno che sia ingiuriato, può essere più pronto a entrare in questo pensiero. Però io non sarei facile a fuggire uno cittadino ingiuriato dalla sua republica, e massime quando la ingiuria non sia stata molto atroce, nel quale caso si potria avergli rispetto, ma quella di Claudio Nerone allegato nel Discorso, è cosa ridicula a credere, che per essere stato calunniato nel tempo era in Spagna, e anche con qualche ragione, avessi avuto tanto sdegno che potessi desiderare di essere rotto, e le parole, che lo Scrittore dice che lui usò, non furono parole sue, ma del Salinatore, il quale doppo il consulato era stato condannato dal populo, e avendo ricevuta una tale ignominia, non è meraviglia se ne risentissi più. Il quale se bene parlassi così o per sdegno o per certe nature o fantasie che hanno gli uomini, è da credere che in fatto la intendessi altrimenti; e lo mostrano le azioni sue prima, innanzi alla elezione del consulato, che lo recusò ostinatamente insino non fu quasi sforzato da&#x27; principali cittadini. Il che arebbe desiderato se avessi avuto cupidità di vendicarsi, di poi che eletto consule fece il possibile per vincere, e andò molto renitente a fare la giornata con Asdrubale, ancora che avessi detto prima volerla sollecitare.</div>
+        <div class="col en" lang="en">A prince is much more to abstain from committing himself to one <span class="supplied">[whom he]</span> has injured, than a republic, because the <span class="supplied">[man]</span> injured by the prince acknowledges the injury <span class="supplied">[as]</span> wholly from him, but one injured by a republic acknowledges the injury more <span class="supplied">[as]</span> from some particular <span class="supplied">[man]</span> who has persecuted him or has found himself in the magistracy, than from the name of the city, and therefore, offending the city, it does not seem to him <span class="supplied">[that he]</span> avenges himself. Afterwards, whoever seeks the ruin of the fatherland does ill to his kinsmen, to his friends, to all his things themselves, and to his own self, and with infamy of himself; which does not befall whoever acts against a prince. It is also easier to extinguish a prince than a republic; and for this, one who is injured can be more prompt to enter into this thought. Therefore I would not be easy to flee a citizen injured by his republic, and above all when the injury has not been very atrocious, in which case one could have respect to it, but that of Claudius Nero, cited in the Discourse, is a thing ridiculous to believe, that through having been calumniated in the time <span class="supplied">[he]</span> was in Spain, and also with some reason, he should have had so much indignation that he could desire to be routed, and the words, which the Writer says that he used, were not his words, but Salinator&#x27;s, who after the consulship had been condemned by the people, and having received such an ignominy, it is no marvel if he resented it more. Who, although he spoke so, either from indignation or from certain natures or fantasies that men have, it is to be believed that in fact he understood it otherwise; and his proceedings show it, first, before the choice for the consulship, that he refused it obstinately until he was almost forced by the principal citizens. Which he would have desired if he had had cupidity to avenge himself; afterwards, that, chosen consul, he did what was possible to win, and went very reluctant to give battle with Hasdrubal, even though he had said earlier that he wished to hasten it.</div>
+        <details class="annot"><summary>Commentary · 5</summary>
+          <p><span class="lem">Argument.</span> The reply sets the precept against the prince before it answers the example. A prince is to abstain from committing himself to a man he has injured much more than a republic, for three reasons. The man injured by a prince acknowledges the injury as wholly the prince&#x27;s; the man injured by a republic acknowledges the injury more as from some particular man who persecuted him or held the magistracy than from the name of the city, and therefore, offending the city, it does not seem to him that he avenges himself. Whoever seeks the ruin of the fatherland does ill to his kinsmen, his friends, all his own things and himself, with infamy, which does not befall whoever acts against a prince. And a prince is easier to extinguish than a republic, and for this one who is injured can be more prompt to enter into this thought.</p>
+<p><span class="lem">Note.</span> Therefore Guicciardini would not be quick to shun (<i lang="it">non sarei facile a fuggire</i>) a citizen injured by his republic, above all when the injury has not been very atrocious, &quot;in which case one could have respect to it&quot;. As printed the case follows the not-atrocious clause; the sense seems to require the atrocious injury the negation implies, where the injury would be taken into account (the editor&#x27;s reading; the translation leaves it unresolved). On that reading the conclusion, conditional and personal, leaves the atrocious injury where Machiavelli put every notable injury.</p>
+<p><span class="lem">Note.</span> Nero&#x27;s case he calls a thing ridiculous to believe: that through having been calumniated for the time he was in Spain, &quot;and also with some reason&quot; (the calumny not baseless, in the editor&#x27;s reading; it could be the indignation that had reason), he should have had so much indignation that he could desire to be routed. The words, he says, were not Nero&#x27;s but Salinator&#x27;s, who after his consulship had been condemned by the people, and, having received such an ignominy, it is no marvel if he resented it more. Of Salinator himself, although he spoke so from indignation or from certain natures or fantasies that men have, it is to be believed that in fact he meant otherwise, and his proceedings show it: first, he refused the consulship obstinately until he was almost forced by the principal citizens, which he would have desired had he had cupidity to avenge himself; afterwards, chosen consul, he did what was possible to win, and went very reluctant to give battle with Hasdrubal, even though he had said earlier that he wished to hasten it.</p>
+<p><span class="lem">History.</span> Marcus Livius Salinator, Nero&#x27;s colleague in the consulship of 207 BC. Livy tells of his condemnation by the people after his consulship and retirement to the country, his recall to the city by the consuls and his restoration to the Senate by the censors (27.34), where he alone refuses the consulship offered, accusing the city&#x27;s levity and complaining that the white gown is forced on an unwilling man, until the senators rebuke him and all together make him consul with Nero; his answer to Fabius that he would fight as soon as he saw the enemy, and, asked why the haste, that he would take either outstanding glory from the enemy or a joy, deserved if not honourable, from his defeated fellow citizens, with Livy&#x27;s note that he set out still full of anger against the citizens (27.40); and, before the Metaurus, a council in which many favoured delay so that Nero&#x27;s men could rest, without naming Livius among them (27.46) (the editor&#x27;s references). Canestrini&#x27;s note identifying Salinator is not carried.</p>
+<p><span class="lem">Cross-reference.</span> The prince is Guicciardini&#x27;s: Machiavelli&#x27;s precept is for a republic <a class="xref" href="#NM-DISC.3.17.01">Machiavelli .01</a>, and the comparison leaves it in force there, less strongly. &quot;Avenge himself&quot;, &quot;calumniated&quot; and &quot;indignation&quot; take up Machiavelli&#x27;s account of the charge at Rome, the talk in the city and Nero&#x27;s answer <a class="xref" href="#NM-DISC.3.17.02">Machiavelli .02</a>; &quot;ridiculous to believe&quot; refuses the answer as evidence, and the giving of the words to Salinator follows Livy, who puts words of like sense in Salinator&#x27;s mouth (27.40, the editor&#x27;s reference). That Salinator went very reluctant to give battle is Guicciardini&#x27;s account, not Livy&#x27;s in so many words. Machiavelli&#x27;s conclusion, that because a sure remedy cannot be given to such disorders it is impossible to order a perpetual republic <a class="xref" href="#NM-DISC.3.17.03">Machiavelli .03</a>, is not answered.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div class="app-source">
+        <h3>Source</h3>
+        <p>Established from Canestrini 1857, <i>Opere inedite</i> vol. 1, pp. 1–65 (<span class="sig">WIT-FG-CONS-1857-CANESTRINI</span>) — the <i>editio princeps</i>, which governs. Collated against Palmarocchi 1933 (<span class="sig">WIT-FG-CONS-1933-PALMAROCCHI</span>): page images and the Wikisource transcription consulted as collation evidence, not reproduced (LICENSE §5).</p>
+<p><span class="lem">può essere più pronto a entrare in questo pensiero Però io non sarei facile</span> → <span class="lem">in questo pensiero. Però io non sarei facile</span> (FG-CONS.3.17.01). Neither reader sees a stop (both ⟨∅|.⟩, B noting faint grey dropout below the ink threshold) before the capital of <i lang="it">Però</i>; the 1933 edition prints <i lang="it">pensiero. Però</i>. Supplied as a witness correction (D40, D67), by precedent: D494.</p>
+      </div>
+      <div class="app-variants">
+        <h3>Variants</h3>
+        <p id="v-FG-CONS-III17-C001"><a class="loc" href="#FG-CONS.3.17.01" title="Back to the paragraph">¶ 01</a> <span class="lem">in questo pensiero. Però io</span>. The 1857 witness reads <i lang="it">può essere più pronto a entrare in questo pensiero Però io</i>. The 1933 witness reads <i lang="it">può essere più pronto a entrare in questo pensiero. Però io</i>. Neither reader sees a stop before the capital of <i lang="it">Però</i>, both doubting one. Supplied from the 1933 edition as a witness correction (D40, D67): D494.</p>
+<p id="v-FG-CONS-III17-D001"><a class="loc" href="#FG-CONS.3.17.01" title="Back to the paragraph">¶ 01</a> <span class="lem">le azioni sue prima</span>. The 1857 witness reads <i lang="it">e lo mostrano le azioni ⟨suo|sue⟩ prima</i>. The 1933 witness reads <i lang="it">e lo mostrano le azione sue, prima</i>. A common doubt at the scan&#x27;s o/e: both readers prefer <i lang="it">suo</i> and name <i lang="it">sue</i>. Only <i lang="it">sue</i> agrees with <i lang="it">azioni</i>. Read with the 1933 edition (D303, D398): D494. The 1933&#x27;s <i lang="it">azione</i> is a form of the same plural.</p>
+<p id="v-FG-CONS-III17-D002"><a class="loc" href="#FG-CONS.3.17.01" title="Back to the paragraph">¶ 01</a> <span class="lem">la rovina della patria, fa male</span>. The 1857 witness reads <i lang="it">chi cerca la rovina della patria⟨.|,⟩ fa male a&#x27; parenti</i>. The 1933 witness reads <i lang="it">chi cerca la rovina della patria fa male a&#x27; parenti</i>. Both readers see a mark and prefer a stop; the following word is lower case and the 1933 prints none. The lighter of the marks read, as D110, D486. Canestrini&#x27;s printed stop at the end of the reply, seen by both, kept (D460): D494.</p>
+<p id="v-FG-CONS-III17-D004"><a class="loc" href="#FG-CONS.3.17.01" title="Back to the paragraph">¶ 01</a> <span class="lem">the word at each</span>. The 1857 witness reads <i lang="it">lia|ha, inginria|ingiuria, particularo|particulare, u|n|a, aue|sue, repnblica|repablica, chn|che, qnesto, sin|sia, cra|era, easere, talo, ignominta, meravigha, risentisai, adegno, natnre, banno gh, cho, ostinatamento, archbe, consnle, c|e, Asdruhale</i>. The 1933 witness reads <i lang="it">ha, ingiuria, particulare, a, sue, republica, che, questo, sia, era, essere, tale, ignominia, maraviglia, risentissi, sdegno, nature, hanno gli, che, ostinatamente, arebbe, consule, ed, Asdrubale</i>. At the scan&#x27;s broken letters (n/u, h/li, e/c/o, a/s, h/b) the readers gave the shape as the preferred reading and named the word, or one read the word without doubt; only the word is Italian, and the 1933 edition prints it. Readings, the word, as D398, D406: D494.</p>
+<p id="v-FG-CONS-III17-D003"><a class="loc" href="#FG-CONS.3.17.01" title="Back to the paragraph">¶ 01</a> <span class="lem">Che non si offenda uno, e poi quel medesimo si mandi in amministrazione e governo d&#x27;importanza</span> — 1857. The 1933 witness reads <i lang="it">[Che non si offenda uno, e poi quel medesimo si mandi in amministrazione e governo d&#x27;importanza.]</i>. Canestrini&#x27;s rubric over the reply: Machiavelli&#x27;s sentence (the 1824 rubric) without the stop; pass A&#x27;s broken letters read with the 1824 rubric and pass B. The 1933 sets the same sentence as a bracketed title. Heading apparatus (D495).</p>
+      </div>
+      <div class="app-notes">
+        <h3>Notes</h3>
+        <p id="n-FG-CONS.3.17-1"><span class="lem">The heading and the rubric.</span> Canestrini&#x27;s heading, CONSIDERAZIONE SUL CAPITOLO XVII DEL LIBRO III., with <i lang="it">del libro III</i> and a stop, as both readers saw it; the column is headed as the page is (D443, D495). His rubric is Machiavelli&#x27;s sentence (Machiavelli, rubric) without the stop (FG-CONS-III17-D003). Canestrini prints no reply to chapters XXV to XXXIII of Book II, nor to chapters I to XVI of Book III, nor to XVIII; his next is to chapter XIX. His note to this reply, identifying Salinator, is not carried (D495); the person is identified below and in the commentary.</p>
+<p id="n-FG-CONS.3.17-2"><a class="loc" href="#FG-CONS.3.17.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">Molto più s&#x27;ha a astenere uno principe in non si commettere in chi ha ingiuriato, che una republica</i>.</span> &quot;A prince is much more to abstain from committing himself to one [whom he] has injured, than a republic&quot;: the fronted comparative set in plain order (D263); <i lang="it">avere a</i>, be to, destinative (D261); <i lang="it">astenersi</i>, abstain; <i lang="it">in non si commettere</i>, literally &quot;in not committing himself&quot;, the negative pleonastic after a verb of abstaining, not rendered; <i lang="it">commettersi in</i>, commit oneself to, entrust oneself to (D496); <i lang="it">chi ha ingiuriato</i>, one [whom he] has injured, the subject of <i lang="it">ingiuriato</i> being the prince, as the next clause shows, and supplied (D53); <i lang="it">ingiuriare</i>, injure (glossary <i lang="it">ingiuria</i>). Machiavelli&#x27;s chapter speaks only of a republic (Machiavelli .01); the prince is Guicciardini&#x27;s.</p>
+<p id="n-FG-CONS.3.17-3"><a class="loc" href="#FG-CONS.3.17.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">perché lo ingiuriato dal principe ricognosce la ingiuria tutta da lui</i>.</span> &quot;Because the [man] injured by the prince acknowledges the injury [as] wholly from him&quot;: <i lang="it">ricognoscere ... da</i>, acknowledge [as] from (D283); <i lang="it">tutta</i>, wholly.</p>
+<p id="n-FG-CONS.3.17-4"><a class="loc" href="#FG-CONS.3.17.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">ricognosce più la ingiuria da qualche particulare che l&#x27;ha perseguitato o si è trovato in magistrato, che dal nome della città</i>.</span> &quot;Acknowledges the injury more [as] from some particular [man] who has persecuted him or has found himself in the magistracy, than from the name of the city&quot;: <i lang="it">particulare</i>, particular [man] (D93), the private citizen against the city; <i lang="it">perseguitare</i>, persecute (glossary); <i lang="it">magistrato</i>, magistracy (D93). Both readers doubted <i lang="it">particulare</i> at a broken letter, and the other loci where the scan breaks a letter are read as the word they name (FG-CONS-III17-D004; D494).</p>
+<p id="n-FG-CONS.3.17-5"><a class="loc" href="#FG-CONS.3.17.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">e però offendendo la città non gli pare vendicarsi</i>.</span> &quot;And therefore, offending the city, it does not seem to him [that he] avenges himself&quot;: <i lang="it">però</i>, therefore (D22); <i lang="it">vendicarsi</i>, avenge oneself (D480), Machiavelli&#x27;s verb (Machiavelli .02); <i lang="it">pare</i>, it seems.</p>
+<p id="n-FG-CONS.3.17-6"><a class="loc" href="#FG-CONS.3.17.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">Di poi chi cerca la rovina della patria, fa male a&#x27; parenti, agli amici, a tutte le cose sue medesime, e a sé proprio</i>.</span> &quot;Afterwards, whoever seeks the ruin of the fatherland does ill to his kinsmen, to his friends, to all his things themselves, and to his own self&quot;: <i lang="it">Di poi</i>, afterwards (D187), the second reason; <i lang="it">rovina</i>, ruin, Machiavelli&#x27;s last word (Machiavelli .03); <i lang="it">patria</i>, fatherland (glossary); <i lang="it">male</i>, ill (glossary); <i lang="it">medesime</i>, postposed and intensive, &quot;themselves&quot; (D488); <i lang="it">a sé proprio</i>, to his own self. The comma after <i lang="it">patria</i>, the lighter of two marks the readers saw, where the 1933 edition prints none (FG-CONS-III17-D002; D494).</p>
+<p id="n-FG-CONS.3.17-7"><a class="loc" href="#FG-CONS.3.17.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">e con infamia di sé medesimo; che non interviene a chi fa contro a uno principe</i>.</span> &quot;And with infamy of himself; which does not befall whoever acts against a prince&quot;: <i lang="it">infamia</i>, infamy (glossary); <i lang="it">intervenire</i>, befall (D298); <i lang="it">fare contro a</i>, act against.</p>
+<p id="n-FG-CONS.3.17-8"><a class="loc" href="#FG-CONS.3.17.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">È ancora più facile spegnere uno principe che una republica</i>.</span> &quot;It is also easier to extinguish a prince than a republic&quot;: <i lang="it">ancora</i>, also, the third reason; <i lang="it">facile</i>, easy (D27); <i lang="it">spegnere</i>, extinguish (glossary), of a prince as of a republic, the man and the republic under one verb.</p>
+<p id="n-FG-CONS.3.17-9"><a class="loc" href="#FG-CONS.3.17.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">e per questo uno che sia ingiuriato, può essere più pronto a entrare in questo pensiero</i>.</span> &quot;And for this, one who is injured can be more prompt to enter into this thought&quot;: <i lang="it">pronto</i>, prompt (D298); <i lang="it">pensiero</i>, thought, the thought of extinguishing. Neither reader prefers a stop after <i lang="it">pensiero</i>, both doubting one (one sees a faint grey mark), before the capital of <i lang="it">Però</i>; it is supplied from the 1933 edition (FG-CONS-III17-C001; D67, D494).</p>
+<p id="n-FG-CONS.3.17-10"><a class="loc" href="#FG-CONS.3.17.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">Però io non sarei facile a fuggire uno cittadino ingiuriato dalla sua republica</i>.</span> &quot;Therefore I would not be easy to flee a citizen injured by his republic&quot;: <i lang="it">però</i>, therefore (D22), the conclusion drawn from the three reasons; <i lang="it">facile a</i>, easy to, in the older sense of disposed or inclined to (D27, D496), not &quot;easily fled&quot;; <i lang="it">fuggire</i>, flee (D325), here to avoid employing him. The conditional <i lang="it">sarei</i> is his own judgment, not a rule.</p>
+<p id="n-FG-CONS.3.17-11"><a class="loc" href="#FG-CONS.3.17.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">e massime quando la ingiuria non sia stata molto atroce, nel quale caso si potria avergli rispetto</i>.</span> &quot;And above all when the injury has not been very atrocious, in which case one could have respect to it&quot;: <i lang="it">massime</i>, above all (glossary); <i lang="it">atroce</i>, atrocious; <i lang="it">avere rispetto a</i>, have respect to (glossary <i lang="it">rispetto</i>); <i lang="it">gli</i>, to it, or to him: the injury, or the citizen (the form is the masculine dative, used also for the feminine); the English &quot;it&quot; takes the injury, in the editor&#x27;s reading. <i lang="it">nel quale caso</i> follows the not-atrocious clause, but the sense seems to require the case of an atrocious injury, which the negation implies: there, in the editor&#x27;s reading, one could take the injury into account, and Machiavelli&#x27;s rule holds. The English keeps &quot;in which case&quot; as printed and does not resolve it.</p>
+<p id="n-FG-CONS.3.17-12"><a class="loc" href="#FG-CONS.3.17.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">ma quella di Claudio Nerone allegato nel Discorso, è cosa ridicula a credere</i>.</span> &quot;But that of Claudius Nero, cited in the Discourse, is a thing ridiculous to believe&quot;: <i lang="it">quella</i>, that [injury], feminine, taking up <i lang="it">la ingiuria</i>; the English leaves it unsupplied, &quot;that of Claudius Nero&quot;, as the Italian does; <i lang="it">allegare</i>, cite (D431), the participle agreeing with Nero; <i lang="it">il Discorso</i>, the Discourse, the chapter (as FG II.24); <i lang="it">ridiculo</i>, ridiculous, in Guicciardini&#x27;s spelling.</p>
+<p id="n-FG-CONS.3.17-13"><a class="loc" href="#FG-CONS.3.17.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">che per essere stato calunniato nel tempo era in Spagna, e anche con qualche ragione</i>.</span> &quot;That through having been calumniated in the time [he] was in Spain, and also with some reason&quot;: <i lang="it">calunniare</i>, calumniate (D159), the private charge without proof (Machiavelli&#x27;s <i lang="it">fu parlato inonestamente</i>, .02); <i lang="it">nel tempo era</i>, in the time [he] was, the relative and the subject unexpressed, as printed (D53); <i lang="it">e anche con qualche ragione</i>, and also with some reason, a concession that the charge was not baseless, in the editor&#x27;s reading; it could also grant that his indignation had some reason; kept where it stands.</p>
+<p id="n-FG-CONS.3.17-14"><a class="loc" href="#FG-CONS.3.17.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">avessi avuto tanto sdegno che potessi desiderare di essere rotto</i>.</span> &quot;He should have had so much indignation that he could desire to be routed&quot;: <i lang="it">sdegno</i>, indignation, Machiavelli&#x27;s <i lang="it">isdegno</i> (Machiavelli .02); <i lang="it">rompere</i>, rout, of an army (D431, D480), as Machiavelli&#x27;s <i lang="it">rotta</i> (Machiavelli .02). The reductio is Guicciardini&#x27;s: on Machiavelli&#x27;s account, as he reads it, Nero&#x27;s indignation would have to reach a desire to be routed (Machiavelli .02 says only that, failing, Nero knew how he would avenge himself); Guicciardini finds that ridiculous to believe.</p>
+<p id="n-FG-CONS.3.17-15"><a class="loc" href="#FG-CONS.3.17.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">e le parole, che lo Scrittore dice che lui usò, non furono parole sue, ma del Salinatore</i>.</span> &quot;And the words, which the Writer says that he used, were not his words, but Salinator&#x27;s&quot;: <i lang="it">lo Scrittore</i>, the Writer (glossary), Machiavelli; <i lang="it">del Salinatore</i>, Salinator&#x27;s, with the article, Marcus Livius Salinator, Nero&#x27;s colleague in the consulship of 207 BC (names.md; D496). Livy puts words of like sense in Livius&#x27; mouth (27.40, the editor&#x27;s reference): asked by Fabius why the haste, he would take either outstanding glory from the enemy or a joy, deserved if not honourable, from his defeated fellow citizens.</p>
+<p id="n-FG-CONS.3.17-16"><a class="loc" href="#FG-CONS.3.17.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">il quale doppo il consulato era stato condannato dal populo</i>.</span> &quot;Who after the consulship had been condemned by the people&quot;: <i lang="it">doppo</i>, after; <i lang="it">consulato</i>, consulship (D410); <i lang="it">condannare</i>, condemn (glossary <i lang="it">dannare</i>); <i lang="it">populo</i>, people, in Guicciardini&#x27;s spelling. Livy 27.34 (the editor&#x27;s reference).</p>
+<p id="n-FG-CONS.3.17-17"><a class="loc" href="#FG-CONS.3.17.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">e avendo ricevuta una tale ignominia, non è meraviglia se ne risentissi più</i>.</span> &quot;And having received such an ignominy, it is no marvel if he resented it more&quot;: <i lang="it">ignominia</i>, ignominy (D496); <i lang="it">meraviglia</i>, marvel (glossary <i lang="it">maraviglia</i>); <i lang="it">risentirsi di</i>, resent (D496); <i lang="it">più</i>, more, the comparison unexpressed: than Nero, in the editor&#x27;s reading. The gerund&#x27;s subject is Salinator and the main clause impersonal, as printed.</p>
+<p id="n-FG-CONS.3.17-18"><a class="loc" href="#FG-CONS.3.17.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">Il quale se bene parlassi così o per sdegno o per certe nature o fantasie che hanno gli uomini</i>.</span> &quot;Who, although he spoke so, either from indignation or from certain natures or fantasies that men have&quot;: <i lang="it">Il quale</i>, who, Salinator, opening a new period; <i lang="it">se bene</i>, although (D31); <i lang="it">nature</i>, natures, dispositions (D496); <i lang="it">fantasie</i>, fantasies, fancies (D496). The relative is left without its verb: the period turns at <i lang="it">è da credere</i>, and the English keeps the break.</p>
+<p id="n-FG-CONS.3.17-19"><a class="loc" href="#FG-CONS.3.17.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">è da credere che in fatto la intendessi altrimenti</i>.</span> &quot;It is to be believed that in fact he understood it otherwise&quot;: <i lang="it">è da credere</i>, it is to be believed, impersonal, not <i lang="it">credo</i>; <i lang="it">in fatto</i>, in fact, in his deeds against his words; <i lang="it">intendere</i>, understand (D374), here what he meant; <i lang="it">la</i>, it, the matter, its referent unexpressed in the Italian.</p>
+<p id="n-FG-CONS.3.17-20"><a class="loc" href="#FG-CONS.3.17.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">e lo mostrano le azioni sue prima, innanzi alla elezione del consulato</i>.</span> &quot;And his proceedings show it, first, before the choice for the consulship&quot;: <i lang="it">azioni</i>, proceedings, narrated doings (D358); <i lang="it">sue</i>, a common doubt of both readers, read with the 1933 edition (FG-CONS-III17-D001; D494); <i lang="it">prima</i>, first, answered by <i lang="it">di poi</i> below, in the editor&#x27;s reading, since <i lang="it">innanzi</i> already says &quot;before&quot;: a sense split from D334&#x27;s &quot;earlier&quot;, which the last <i lang="it">prima</i> keeps (D496); <i lang="it">elezione</i>, choice (glossary).</p>
+<p id="n-FG-CONS.3.17-21"><a class="loc" href="#FG-CONS.3.17.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">che lo recusò ostinatamente insino non fu quasi sforzato da&#x27; principali cittadini</i>.</span> &quot;That he refused it obstinately until he was almost forced by the principal citizens&quot;: <i lang="it">recusare</i>, refuse (D496); <i lang="it">ostinatamente</i>, obstinately; <i lang="it">insino non</i>, until, the negative pleonastic; <i lang="it">sforzare</i>, force (D496), kept apart from <i lang="it">costringere</i>, constrain (D452); <i lang="it">principali</i>, principal (glossary). Livy has the consuls bring him back to the city and the censors restore him to the Senate, and makes him complain that the white gown was forced on him (27.34, the editor&#x27;s reference).</p>
+<p id="n-FG-CONS.3.17-22"><a class="loc" href="#FG-CONS.3.17.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">Il che arebbe desiderato se avessi avuto cupidità di vendicarsi</i>.</span> &quot;Which he would have desired if he had had cupidity to avenge himself&quot;: <i lang="it">cupidità</i>, cupidity (glossary); <i lang="it">vendicarsi</i>, avenge oneself (D480). The consulship is what he would have desired; the reductio is Guicciardini&#x27;s, as at <i lang="it">potessi desiderare</i>.</p>
+<p id="n-FG-CONS.3.17-23"><a class="loc" href="#FG-CONS.3.17.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">di poi che eletto consule fece il possibile per vincere, e andò molto renitente a fare la giornata con Asdrubale</i>.</span> &quot;Afterwards, that, chosen consul, he did what was possible to win, and went very reluctant to give battle with Hasdrubal&quot;: <i lang="it">di poi</i>, afterwards (D187), the second proof; <i lang="it">consule</i>, consul (D410); <i lang="it">renitente</i>, reluctant (D496); <i lang="it">fare la giornata</i>, give battle (D49). Livy reports that many favoured deferring the battle, without naming Livius among them (27.46, the editor&#x27;s reference); the reluctance is Guicciardini&#x27;s account.</p>
+<p id="n-FG-CONS.3.17-24"><a class="loc" href="#FG-CONS.3.17.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">ancora che avessi detto prima volerla sollecitare</i>.</span> &quot;Even though he had said earlier that he wished to hasten it&quot;: <i lang="it">ancora che</i>, even though (D31); <i lang="it">prima</i>, earlier (D334); <i lang="it">sollecitare</i>, hasten (D496). Canestrini&#x27;s printed stop ends the reply.</p>
+      </div>
+    </div>
+  </section>
+
+    <nav class="pairnav pairnav-foot"><a href="2.24.html">← Pair 2.24</a><a href="../index.html">All 39 pairs</a><span></span></nav>
+
+  <footer class="colophon">
+
+    <div class="state">
+      <p><strong>Version 0.3 · 37 of 39 pairs published.</strong>
+        Published 24 November 2026. This edition is versioned, not frozen. No open questions on this pair.</p>
+    </div>
+    <p class="links"><a href="../about.html">About this edition</a><a href="../about.html#licence">Licence</a><a href="../about.html#method">Method</a><a href="https://github.com/davidmcdougall/conversation-with-machiavelli">Source and data on GitHub</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
