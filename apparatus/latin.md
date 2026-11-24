@@ -106,4 +106,9 @@ first time it is italicised.
 | `gula, et luxuria incubuit, victumque ulciscitur orbem` | NM II.19 note |
 | `saevior armis` | NM II.19 note (Juvenal's words) |
 | `gula` | NM II.19 note |
+| `spoliatis arma supersunt` | NM II.24 .03 (Juvenal 8.124); notes |
+| `spoliatis arma supersunt:` | NM II.24 .03, as the 1824 prints it |
+| `furor arma ministrat` | NM II.24 .03 (Virgil, Aeneid 1.150); notes |
+| `furor arma ministrat.` | NM II.24 .03, as the 1824 prints it |
+| `verbi gratia` | FG II.24 .01 (English) |
 

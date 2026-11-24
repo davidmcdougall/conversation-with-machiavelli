@@ -975,3 +975,37 @@ last sentence answers Machiavelli's first move.
 | `porgere` | hold out | D480. NM II.19 .06 `porti molti ajuti`. |
 | `vendicarsi` | avenge oneself | D480. NM II.19 .09. |
 | `prestare fede` | lend faith | D480. NM II.19 .02 ×2. |
+
+## Added from the II.24 pair (2026-11-23)
+
+| Italian | English | Note |
+|---|---|---|
+| `Fortezza`, `fortezza` | fortress | D312, D488. Every instance in NM II.24 and FG II.24 is the stronghold; neither "fortitude" (FG I.10) nor "the strength of the country" (D432) occurs. Lower case in English. |
+| `tenere in freno` | hold reined in | D488. NM II.24 .04 ×2, as D389's `tenere a freno`; `freno` rein, `frenare` rein in, both authors. |
+| `portamenti` | carriages | D488. NM II.24 .03 `mali portamenti`, FG II.24 `fare mali portamenti`: conduct, of the root of `portarsi` carry oneself (D325). |
+| `trattamenti`; `trattare` | treatments; treat | D488. NM `mali trattamenti`, FG `bene trattati`. |
+| `disutile` / `inutile` / `inutilità` | unuseful / useless / inutility | D488. NM II.24 .03, .08; kept apart. |
+| `ripari` | ramparts | D488. NM II.24 .03, earthworks behind a breach. |
+| `generazione` (kind) | generation | D488. NM II.24 .05 `alcuna generazione di violenza`, the old sense; not "producing". |
+| `orgoglio` | haughtiness | D488. NM II.24 .06; apart from `superbia` pride (D464). |
+| `assassinare` | despoil | D488. NM II.24 .07, the old sense, to rob or ruin; not "murder". |
+| `intanto che` (adversative) | whereas | D488. NM II.24 .07, by sense; consecutive `intanto che` stays "insomuch that". |
+| `Terra`, `terra` (a walled place) | town | D488. Both authors, II.24; D480's "lands" stays for `Terre peregrine`, names.md's "Free Lands" for `Terre franche`. |
+| `espugnare` / `inespugnabile` | expugn / inexpugnable | D488. NM II.24 .08, one root kept in the cognate. |
+| `riscontro` (opposition met) | encounter | D488. NM II.24 .14 `gagliardissimo riscontro`; D160's "corroboration" stays for the evidential sense. |
+| `smurare` / `murare` | unwall / wall | D488. NM II.24 .10 `smuravano e non muravano`, FG II.24 `non le smurorono`. |
+| `rovinare` | ruin | D488. NM II.24 .07, .08, the verb of `rovina`. |
+| `afforzare`; `munito` | fortify; furnished | D488. NM II.24 .14. |
+| `impoverire` (transitive) | impoverish | D488. NM II.24 .03; D480's "grow poor" stays for the intransitive. |
+| `termine` (a span of time) | term | D488. NM II.24 .08 `in termine di sedici mesi`, beside D464's point reached. |
+| `seguire` (of an event) | ensue | D488. NM II.24 .08 `seguìto nei prossimi tempi`. |
+| `soggetti` / `sudditi` | subjects | D488. NM II.24 .02 against .03 ff.: a recorded collapse (with D388's `soggetto`). |
+| `eziandio` / `eziamdio` / `etiamdio` | even | D488. NM II.24 .06, .11; FG II.24 .01, .02; with `etiam` (D453). |
+| `valere` | be worth | D488. FG II.24 .01; "avail" stays `valersi`'s (D162). |
+| `antico` (former) | old | D488. FG II.24 `dello antico principe`; `antichi` the ancients stays apart. |
+| `medesimo` (postposed, intensive) | themselves | D488. FG II.24 `co' cittadini medesimi`; the pronoun stays "same" (`Il medesimo dico`). |
+| `fidanza` | trust | D488. FG II.24 .01. |
+| `instituto` | institute | D488. FG II.24 .03; apart from `instituzione` institution (FG I.10). |
+| `grato` | pleasing | D488. FG II.24 .01, the old sense. |
+| `discrezione` | discretion | D488. FG II.24 .01: a recorded collapse with `arbitrio`. |
+

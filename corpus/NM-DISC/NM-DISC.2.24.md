@@ -16,7 +16,7 @@ integrity_note: >
   (D484). Against the 1554, the 1824 kept at every whole word, among them
   `non ci è` (the 1554 omits `non`), `utili nei tempi di pace` (1554
   `inutili`), `generazione` (1554 `sorte`), `ed utile il rovinarla` and
-  the clause on peoples with good armies, both of which the 1554 omits
+  the clause on peoples without good armies, both of which the 1554 omits
   (D485).
 paragraph_divisions: editorial  # witness prints one block; see SCOPE §3
 governing_witness: WIT-NM-DISC-1824-IA

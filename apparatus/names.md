@@ -302,3 +302,31 @@ the original.
 | `Juvenale` | Juvenal | NM II.19 .09; Satires 6.292-293 |
 | `Capova` | Capua | NM II.19 .09 ×2, as earlier |
 
+## Added from the II.24 pair (2026-11-23)
+
+| Italian | English | Where |
+|---|---|---|
+| `Priverno`; `Privernati` | Privernum; the Privernates | NM II.24 .01, .14; Livy 8.19-21 (the editor's reference) |
+| `Lazio`; `Latini` | Latium; the Latins | NM II.24 .01, .14, as NM II.13 |
+| `Pisa`; `Firenze`, `Fiorentini` | Pisa; Florence, the Florentines | NM II.24 .01, .09 |
+| `Conte Francesco Sforza`, `Duca di Milano` | Count Francesco Sforza, Duke of Milan | NM II.24 .05; duke from 1450 |
+| `Sforzeschi` | the Sforza | NM II.24 .06; the Sforza house and its party |
+| `Guido Ubaldo Duca d'Urbino`; FG `duca Guido` | Guido Ubaldo, Duke of Urbino; Duke Guido | NM II.24 .07, FG II.24 .03; Guidobaldo da Montefeltro (the editor's identification) |
+| `Federigo` | Federigo | NM II.24 .07; Federico da Montefeltro |
+| `Cesare Borgia`; `Papa Alessandro VI` | Cesare Borgia; Pope Alexander VI | NM II.24 .07 |
+| `Papa Giulio`; `Bentivogli`; `Bologna` | Pope Julius; the Bentivogli; Bologna | NM II.24 .07; Julius II |
+| `Niccolò da Castello`, `padre de' Vitelli` | Niccolò da Castello, father of the Vitelli | NM II.24 .07; Niccolò Vitelli of Città di Castello |
+| `Papa Sisto IV` | Pope Sixtus IV | NM II.24 .07 |
+| `Genova`, `Genovesi` | Genoa, the Genoese | NM II.24 .08 |
+| `Luigi XII Re di Francia` | Louis XII, King of France | NM II.24 .08 |
+| `Codefa` | Codefa (left as printed) | NM II.24 .08; the hill of the Briglia, on the Capo di Faro (the editor's identification); the 1554 `Codeſa` |
+| `Ottaviano Fregoso`; FG `Ottaviano` | Ottaviano Fregoso; Ottaviano | NM II.24 .08, FG II.24 .03; kept apart from NM I.1's `Ottaviano`, Octavian |
+| `Re Carlo` | King Charles | NM II.24 .09; Charles VIII, 1494 |
+| `Taranto` | Tarentum | NM II.24 .11, FG II.24 .03 |
+| `Brescia` | Brescia | NM II.24 .11-.12, FG II.24 .02 |
+| `Monsignor di Fois`; FG `monsignore di Fois` | Monsignor de Foix | NM II.24 .12, FG II.24 .02; the title kept, the name in its French form; Gaston de Foix (D488) |
+| `Lombardia`, `Romagna`, `Regno di Napoli` | Lombardy, Romagna, the Kingdom of Naples | NM II.24 .12 |
+| `Spartani`, `uno Spartano`; `uno Ateniese`, `Atene` | the Spartans, a Spartan; an Athenian, Athens | NM II.24 .13, as earlier |
+| `Idra` | the Hydra | NM II.24 .03 |
+| `Juvenale`; `Virgilio` (not named) | Juvenal; Virgil | NM II.24 .03, the two tags, unattributed in the text |
+
