@@ -18,8 +18,7 @@ from the files by `scripts/state`.
 | `corpus/` | The established Italian, one file per unit |
 | `translations/` | The English, one file per unit, with translator's notes |
 | `annotations/` | Variant, source and commentary notes |
-| `apparatus/` | Glossary, register, names, Latin, open problems |
-| `decisions.md` | Translation decision log (D-numbers) |
+| `apparatus/` | Glossary, register, names, Latin, open problems, and the translation decision log (`decision-log.md`, D-numbers) |
 | `decisions/` | Project decision records (DEC-numbers) |
 | `sources/` | Witness extracts, cold passes, collations, provenance |
 | `links/` | Which *Considerazione* answers which *Discorsi* chapter |

@@ -13,7 +13,7 @@ commercially, under the licences of its components:
 |---|---|---|
 | Established Italian text | CC0 1.0 Universal | `corpus/`, `sources/normalized/` |
 | English translation | CC BY 4.0, where rights subsist | `translations/` |
-| Editorial commentary and apparatus | CC BY 4.0, where rights subsist | `annotations/`, `apparatus/`, `decisions.md`, `translation-drafts/` |
+| Editorial commentary and apparatus | CC BY 4.0, where rights subsist | `annotations/`, `apparatus/` (including the decision log), `translation-drafts/` |
 | Research and provenance data; documentation | CC0 1.0 Universal | `sources/` (except witnesses), `links/`, `decisions/`, root documents |
 | Software and build scripts | MIT | `scripts/`, `.github/`, `requirements.txt` |
 | Website | Each component as above | `site/` |

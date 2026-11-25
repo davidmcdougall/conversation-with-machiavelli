@@ -38,14 +38,14 @@ English.
    reviewer that has not seen the drafting work ("subagent with no access to
    the drafting work", `cold_review:` field in `translations/` and
    all 74 units in `translations/`). Reviewers propose corrections and
-   alternative renderings. 153 rows of `decisions.md` mention a cold review.
+   alternative renderings. 153 rows of `apparatus/decision-log.md` mention a cold review.
 
 3. **Comparison with the Italian.** Reviewers are given the established
    Italian with the draft (workflow specification). `scripts/build.py` asserts that every Italian
    paragraph has an English paragraph with the same identifier.
 
 4. **Review, correction and selection.** Non-obvious choices are logged in
-   `decisions.md` (499 D-numbered rows to date). Judgement calls are routed to
+   `apparatus/decision-log.md` (499 D-numbered rows to date). Judgement calls are routed to
    David McDougall as numbered open items (O-numbers) with a recommendation,
    and his rulings are recorded with their dates. 169 D-rows name him. The
    repository does not distinguish, for every row, whether a ruling was made
@@ -57,7 +57,7 @@ English.
    cross-link assertions in `scripts/build.py`. AI review: the cold reviews in
    step 2, and cold review of the commentary, recorded in the `cold_review:`
    field of 70 of 74 files in `annotations/` (62 of them backfilled on
-   2026-11-24 from `decisions.md` and SCOPE §5). Pairs I.3 and I.4 have no
+   2026-11-24 from `apparatus/decision-log.md` and SCOPE §5). Pairs I.3 and I.4 have no
    recorded commentary review. Human review: the rulings in step 4, and
    the cold rereading of a published unit three months later (SCOPE §7). No
    such rereading is yet recorded.
@@ -85,7 +85,7 @@ repository. See `RIGHTS_AND_SOURCES.md`.
 | Unidentified ("subagent") | Not recorded | Not recorded | Cold review of translation and commentary (alternative readings, linguistic verification); cold-pass transcription readers | `cold_review:` fields in `translations/`; `sources/coldpass/COLLATION-*.md` `passes:` fields |
 | Codex | Not recorded | Not recorded | Acquisition and normalisation of NM-DISC.1.12 and the witness-level records, in the predecessor repository | `sources/normalized/NM-DISC/NM-DISC.1.12.md`; `sources/provenance/*/*-transformation-log.yml`; `sources/provenance/*/WIT-*.yml` |
 | None | — | — | Automated quality control | `scripts/validate`, `scripts/state`, `scripts/build.py` |
-| None (human) | — | — | Editorial review and rulings | `decisions.md` |
+| None (human) | — | — | Editorial review and rulings | `apparatus/decision-log.md` |
 
 A commit trailer names the model of the session that made the commit. It
 does not establish which model performed each step inside that session, or
@@ -111,7 +111,7 @@ model a co-author or copyright holder of the edition.
   (`translate-machiavelli-guicciardini`), held in David McDougall's Claude
   account. It is not in the repository and is not versioned with it.
 - Apparatus supplied to drafters and reviewers: `apparatus/`,
-  `translation-drafts/`, `SCOPE.md`, `decisions.md`.
+  `translation-drafts/`, `SCOPE.md`, `apparatus/decision-log.md`.
 - Prompts: not recorded.
 - Model identifiers and versions: product names in git trailers for 24
   commits up to 2026-09-29; not recorded after that; no API identifiers.

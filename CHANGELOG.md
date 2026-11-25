@@ -67,3 +67,8 @@ to `RIGHTS_AND_SOURCES.md`:
   (about a fifth smaller); the content-only duplicates of every page (Claude
   artifact input) are no longer published; `404.html`, `sitemap.xml` and
   `robots.txt` added.
+- 2026-11-25: the translation decision log moved from `decisions.md` to
+  `apparatus/decision-log.md`, so it no longer sits beside `decisions/` (the
+  DEC records) under a near-identical name and a different licence. D-numbers
+  are unchanged. References were updated everywhere except the historical
+  records (`decisions/`, `PORT-NOTES.md`); the move does not redate any pair.

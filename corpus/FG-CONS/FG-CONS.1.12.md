@@ -26,8 +26,8 @@ witness_notes:
       Pass C read the third letter as a plain vertical without the crossbar
       and curled foot of this fount's t, i.e. a foul sort printing
       `viluperii`. Pass B read `vituperii`. The scan (685 px, ~5 px x-height)
-      cannot settle it. Printed as `vituperii`; see F002, decisions.md D42.
-editorial_supplies: 2  # two sentence-final stops displaced by note references; see decisions.md D40
+      cannot settle it. Printed as `vituperii`; see F002, apparatus/decision-log.md D42.
+editorial_supplies: 2  # two sentence-final stops displaced by note references; see apparatus/decision-log.md D40
 witness_corrections: 1  # dropped point at `re; pure`, Palmarocchi p. 23
 rubric: "Di quanta importanza sia tenere conto della religione, e come la Italia, per esserne mancata mediante la Chiesa romana, è rovinata"  # Canestrini's wording; heading apparatus, not body. See SCOPE §3.
 rubric_note: >

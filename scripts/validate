@@ -9,7 +9,7 @@ Usage:
    sources/witnesses/, holds the unit's page extract, and agrees with the
    unit's establishment record; a built page cites it.
 2. Footnote references resolve. In translator's notes, commentary and the
-   variant/correction records: decision numbers (D…) exist in decisions.md;
+   variant/correction records: decision numbers (D…) exist in apparatus/decision-log.md;
    record ids (FG-CONS-I11-D003) exist under sources/; "(Machiavelli .03)" and
    [[ID]] point at paragraphs of the same pair; a note's `lemma` occurs in
    the unit's Italian; a record's locator is a paragraph of the unit.
@@ -70,7 +70,7 @@ def roman(n):
         while n >= v: out, n = out + r, n - v
     return out
 
-DECISIONS = set(re.findall(r'^\| (D\d+) \|', (ROOT / "decisions.md").read_text(encoding="utf-8"), re.M))
+DECISIONS = set(re.findall(r'^\| (D\d+) \|', (ROOT / "apparatus/decision-log.md").read_text(encoding="utf-8"), re.M))
 SOURCES_TEXT = "\n".join(p.read_text(encoding="utf-8", errors="replace")
                          for p in (ROOT / "sources").rglob("*") if p.suffix in (".yml", ".md"))
 PAIRS = {m[2]: m[1] for m in re.finditer(r'^\|\s*\d+\s*\|\s*(NM-DISC\.\S+?)\s*\|\s*(FG-CONS\.\S+?)\s*\|',
@@ -98,7 +98,7 @@ def in_unit(loc, paras):
 def check_refs(unit, where, text, pair_paras, it_flat):
     for d in set(re.findall(r'\bD(\d{1,3})\b', text)):
         if f"D{int(d):02d}" not in DECISIONS and f"D{d}" not in DECISIONS:
-            bad(unit, 2, f"{where}: D{d} is not in decisions.md")
+            bad(unit, 2, f"{where}: D{d} is not in apparatus/decision-log.md")
     for rid in set(re.findall(r'\b(?:FG-CONS|NM-DISC)-I+\d+-[A-Z]\d{3}\b', text)):
         if not re.search(rf'id:\s*{re.escape(rid)}\b', SOURCES_TEXT):
             bad(unit, 2, f"{where}: record {rid} not found under sources/")

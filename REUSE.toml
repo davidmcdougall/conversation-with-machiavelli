@@ -19,9 +19,9 @@ SPDX-FileCopyrightText = "2026 David McDougall"
 SPDX-License-Identifier = "CC0-1.0"
 
 # The English translation, editorial commentary and apparatus, and the
-# translation decision log.
+# translation decision log (apparatus/decision-log.md).
 [[annotations]]
-path = ["translations/**", "annotations/**", "apparatus/**", "translation-drafts/**", "decisions.md"]
+path = ["translations/**", "annotations/**", "apparatus/**", "translation-drafts/**"]
 precedence = "override"
 SPDX-FileCopyrightText = "2026 David McDougall"
 SPDX-License-Identifier = "CC-BY-4.0"

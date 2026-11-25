@@ -10,7 +10,7 @@ cold_review: 2026-09-18, reviewer with no access to the drafting work
 paragraph_divisions: editorial  # inherited from the source unit; see SCOPE §3
 rubric_en: "Of how much importance it is to take account of religion, and how Italy, for having been wanting in it through the Roman Church, is ruined."
 translated: 2026-09-18
-open_for_david: 0 — O14 ruled 2026-09-28 as D69; O01-O05 settled 2026-09-18 (decisions.md D16-D21)
+open_for_david: 0 — O14 ruled 2026-09-28 as D69; O01-O05 settled 2026-09-18 (apparatus/decision-log.md D16-D21)
 model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 

@@ -3,7 +3,7 @@ unit: FG-CONS.2.24
 annotated: 2026-11-23
 kinds: argument · history · cross-reference
 format: as annotations/NM-DISC.1.12.md
-cold_review: "2026-11-23, commentary reviewed by a separate reviewer (backfilled 2026-11-24 from decisions.md D491)"
+cold_review: "2026-11-23, commentary reviewed by a separate reviewer (backfilled 2026-11-24 from apparatus/decision-log.md D491)"
 model: {drafting: "unknown", cold_review: "unknown"}  # DEC-011; backfilled 2026-11-24 from git history
 ---
 

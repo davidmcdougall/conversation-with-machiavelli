@@ -196,17 +196,35 @@ def pair_sources(pair):
 # revision of anything a reader sees, and does not move the pair's "last revised" date.
 METADATA_KEYS = ("model:", "cold_review:")
 
+# Repository files that have moved. A commit that only rewrites references to an
+# old path as the new one is housekeeping, not a revision, and does not redate.
+RENAMED_PATHS = {"decisions.md": "apparatus/decision-log.md"}
+
+
+def _renamed(line):
+    for old, new in RENAMED_PATHS.items():
+        line = line.replace(new, "\0").replace(old, new).replace("\0", new)
+    return line
+
 
 def last_text_revision(paths):
-    """Date of the last commit touching paths that changed more than metadata lines."""
+    """Date of the last commit touching paths that changed more than metadata lines
+    (or more than references to renamed paths)."""
     log = _git("log", "--format=%H %cs", "--", *paths) or ""
     for line in log.splitlines():
         sha, date = line.split()
         diff = _git("show", "--format=", "--unified=0", sha, "--", *paths) or ""
-        changed = [l[1:] for l in diff.splitlines()
-                   if l[:1] in "+-" and not l.startswith(("+++ ", "--- "))]
-        if any(not c.startswith(METADATA_KEYS) for c in changed):
+        lines = [l for l in diff.splitlines()
+                 if l[:1] in "+-" and not l.startswith(("+++ ", "--- "))]
+        removed = sorted(l[1:] for l in lines if l[0] == "-" and not l[1:].startswith(METADATA_KEYS))
+        added = sorted(l[1:] for l in lines if l[0] == "+" and not l[1:].startswith(METADATA_KEYS))
+        if not removed and not added:
+            continue  # metadata only
+        if removed == added:
+            return date  # lines moved: a revision
+        if sorted(map(_renamed, removed)) != sorted(map(_renamed, added)):
             return date
+        # otherwise only references to renamed paths changed
     return None
 
 
