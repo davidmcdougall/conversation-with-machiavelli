@@ -3,6 +3,13 @@
 Corrections and contributions are welcome through issues and pull requests at
 https://github.com/davidmcdougall/conversation-with-machiavelli.
 
+## Reporting an error
+
+Most useful is an error in the Italian or the English. Open an issue giving the
+unit and paragraph (e.g. `FG-CONS.1.12.03`, shown beside every paragraph on the
+site), what it says, what you think it should say, and — for the Italian — the
+witness and page that supports the correction.
+
 ## Licence of contributions
 
 Each contribution is licensed under the licence of the component it changes

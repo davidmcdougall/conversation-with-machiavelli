@@ -6,7 +6,8 @@ status: adopted
 decided_by: David McDougall
 supersedes: null
 superseded_by: null
-review_horizon: "first public release — outbound commitment ratified or revised then, with counsel review of the concrete rights table (ARCHITECTURE §4)"
+revised_by: "DEC-011 (points 2 and 3; counsel-review condition withdrawn by DEC-011 point 6)"
+review_horizon: "closed by DEC-011 — originally: first public release, with counsel review of the concrete rights table (ARCHITECTURE §4, not ported)"
 ---
 
 # DEC-010 — Licensing posture: clean inbound, CC BY intent outbound

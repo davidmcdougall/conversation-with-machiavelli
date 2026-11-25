@@ -138,7 +138,7 @@ These materials include provenance records, collation results, source
 comparisons, cross-references, and quality-control data.
 
 Project specifications and operational documentation are dedicated on the
-same terms: `AGENTS.md`, `PORT-NOTES.md`, `CONTRIBUTING.md`,
+same terms: `README.md`, `AGENTS.md`, `PORT-NOTES.md`, `CONTRIBUTING.md`,
 `TRANSLATION_METHOD.md`, `RIGHTS_AND_SOURCES.md`, `decisions/`, and `SCOPE.md`
 except §1.
 
@@ -158,6 +158,7 @@ Directories:
 
 - `scripts/`
 - `.github/workflows/`
+- `requirements.txt`
 
 MIT License
 

@@ -1,19 +1,41 @@
-# Publish site/ to GitHub Pages on every push to master.
+# Check, then publish site/ to GitHub Pages on every push to master.
 name: Publish site
 on:
   push:
     branches: [master]
+  pull_request:
   workflow_dispatch:
 permissions:
   contents: read
-  pages: write
-  id-token: write
-concurrency:
-  group: pages
-  cancel-in-progress: true
 jobs:
-  deploy:
+  check:
     runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # build.py dates pages from git history
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Validate (SCOPE §7)
+        run: python3 scripts/validate
+      - name: SCOPE tables match the files
+        run: python3 scripts/state --check
+      - name: site/ matches a fresh build
+        run: |
+          python3 scripts/build.py --all > /dev/null
+          git diff --exit-code --stat -- site SCOPE.md
+  deploy:
+    needs: check
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    concurrency:
+      group: pages
+      cancel-in-progress: true
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
