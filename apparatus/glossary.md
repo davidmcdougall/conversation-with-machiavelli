@@ -1079,3 +1079,31 @@ last sentence answers Machiavelli's first move.
 | `cura` (of office) | care | D504. FG III.19 .02 `la cura temporale`; a sense split from D402's cure, the physician's figure. |
 | `compagni` (fellow citizens) | companions | D504. NM III.19 .02, .03; D452's ruling for Rome's allies extended to equals in the city. |
 | `Germani` / `Tedeschi` | Germans | D504. FG III.19 .01: the learned and the vernacular names, a recorded collapse. |
+
+## Added from the III.24 pair (2026-11-25)
+
+| Italian | English | Note |
+|---|---|---|
+| `prolungare`, `prolungazione` / `prorogare`, `prorogazione` | prolong, prolongation / prorogue, prorogation | D512. NM III.24 rubric, .01-.03, .06 / .02, .04, .05; FG III.24 `prorogazione` ×4, `prorogato`, the reply's word. Kept apart: "prorogue" in the older English sense of the Latin *prorogare*, to extend a term. |
+| `risoluzione` (of a state) | dissolution | D512. NM III.24 .01; a sense split from `resoluzione`, resolution (FG II.12, D472), the decision. |
+| `contenzione`, `contenzioni` | contention(s) | D512. NM III.24 .01. |
+| `bontà` | goodness | D512. NM III.24 .03 ×2, with `buoni`, good (.02). |
+| `convenzione` | convention | D512. NM III.24 .03 `convenzione d'accordo`, with `accordo` (D452). |
+| `atto a` | apt to | D512. NM III.24 .03. |
+| `per gara di` | out of rivalry with | D512. NM III.24 .03, causal. |
+| `negare` | deny | D512. NM III.24 .03; kept apart from `recusare`, refuse (D496). |
+| `Proconsolo` | proconsul | D512. NM III.24 .04 ×2; lower case, an office. |
+| `esercitarsi` (in an office) | be exercised | D512. NM III.24 .05 `si esercitarono negl'Imperj`. |
+| `ristringere ... in` | restrict ... to | D512. NM III.24 .05; with D480's `ristringersi a`; D58's "draw together" stays for the bare reflexive. |
+| `Comandatore` | commander | D512. NM III.24 .05; lower case. |
+| `per avventura` | it may be | D512. NM III.24 .01; kept apart from `forse`, perhaps. |
+| `degenerare` | degenerate | D512. FG III.24 `era ... degenerata`, had degenerated. |
+| `sanguinoso` | sanguinary | D512. FG III.24 `divisioni sanguinose`. |
+| `conjurazione` | conspiracy | D512. FG III.24 ×2; with `congiurare`, conspire (D452). |
+| `tenere basso` | hold low | D512. FG III.24. |
+| `travagliare` | trouble | D512. FG III.24, transitive; with `travagliarsi`, be troubled (D480). |
+| `forzare` | force | D512. FG III.24 `fu forzata`; as `sforzare` (D496). |
+| `séguito` (noun) | following | D512. FG III.24, as FG I.29 `ség[u]ito`. |
+| `di quivi` / `di qui` | from there / from here | D512. FG III.24, the anaphora's first and following members, kept apart. |
+| `conchiudere` | conclude | FG III.24 ×2 (`conchiuggo`, `si può conchiudere`); NM III.19 .02. |
+| `decemvirale` | decemviral | D512, O50. FG III.24, as both readers read Canestrini; the 1933 `decennale`, decennial, in the variant note. |

@@ -116,7 +116,7 @@ exist. See §7.
 | 36 | NM-DISC.2.24 | FG-CONS.2.24 | FG-CONS-DR-036 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 37 | NM-DISC.3.17 | FG-CONS.3.17 | FG-CONS-DR-037 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 38 | NM-DISC.3.19 | FG-CONS.3.19 | FG-CONS-DR-038 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
-| 39 | NM-DISC.3.24 | FG-CONS.3.24 | FG-CONS-DR-039 | — | — | — | — | — |
+| 39 | NM-DISC.3.24 | FG-CONS.3.24 | FG-CONS-DR-039 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 <!-- /state:pairs -->
 
 **Distribution:** Book I — 28 pairs (ch. 1–12, 14, 16, 23–26, 28–30, 32, 39,
@@ -220,12 +220,12 @@ than inside the first paragraph.
 | Stage | Done | Remaining | Of |
 |---|---|---|---|
 | Link records | 39 | 0 | 39 |
-| NM source established | 38 | 1 | 39 |
-| FG source established | 38 | 1 | 39 |
-| Collated against the comparison witness | 76 units | 2 | 78 |
-| Translated (draft, cold-reviewed) | 76 | 2 | 78 |
-| Annotated | 76 | 2 | 78 |
-| Published | 76 | 2 | 78 |
+| NM source established | 39 | 0 | 39 |
+| FG source established | 39 | 0 | 39 |
+| Collated against the comparison witness | 78 units | 0 | 78 |
+| Translated (draft, cold-reviewed) | 78 | 0 | 78 |
+| Annotated | 78 | 0 | 78 |
+| Published | 78 | 0 | 78 |
 <!-- /state:stages -->
 
 The table is written by `scripts/state` from the files; nothing else here
@@ -239,10 +239,10 @@ v1.0 ships when every row below is done. The table is written by
 <!-- state:v1 -->
 | Criterion | Done | State |
 |---|---|---|
-| All 39 pairs published | — | 38 of 39 |
-| No open items | — | 2 open (O48, O49) |
+| All 39 pairs published | ✓ | 39 of 39 |
+| No open items | — | 3 open (O48, O49, O50) |
 | Sample read of the English | — | 0 of 8 read |
-| Introduction (1,500–2,500 words) | — | not written |
+| Introduction (1,500–2,500 words) | — | 2,503 words |
 | PDF and EPUB | — | not built |
 | Zenodo DOI | — | none |
 <!-- /state:v1 -->

@@ -354,3 +354,12 @@ the original.
 | `Federico Barbarossa` | Frederick Barbarossa | FG III.19 .01; Frederick I, emperor 1155-1190; kept apart from `Federigo` (Montefeltro, NM II.24) |
 | `Germania`; `Germani`, `Tedeschi` | Germany; Germans | FG III.19 .01; `Germania` as `la Magna` (NM II.proem, II.12); the two names for the people one English word (D504) |
 | `Italia`; `Italiani` | Italy; Italians | FG III.19 .01 |
+| `L. Quinzio` | L. Quinctius | NM III.24 .02, .03; Lucius Quinctius Cincinnatus, consul 460 BC (Livy 3.19-21, the editor's reference); not III.19's Titus Quinctius Capitolinus |
+| `Tribuni` | tribunes | NM III.24 .03; the tribunes of the plebs |
+| `Senato` | the Senate | NM III.24 .03, .04, .05, as NM III.17 (D118) |
+| `P. Filone` | P. Philo | NM III.24 .04; Quintus Publilius Philo, consul 327 BC, the first proconsul (Livy 8.23, 8.26, the editor's reference); the `P.` as printed in the 1824 and the 1554 |
+| `Palepoli` | Palaeopolis | NM III.24 .04; the Greek city beside Neapolis (Livy 8.22-23) |
+| `Silla`, `Mario`, `Cesare` | Sulla, Marius, Caesar | NM III.24 .05, FG III.24 .01; as NM I.1, I.5, I.10 |
+| `Catilina` | Catiline | FG III.24 .01, as FG I.5 |
+| `Pompeo`, `Crasso` | Pompey, Crassus | FG III.24 .01; Pompey as NM I.60; Marcus Licinius Crassus (D512) |
+| `Gallia` | Gaul | FG III.24 .01 |
