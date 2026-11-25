@@ -56,8 +56,9 @@ English.
    checks; SCOPE §7), `scripts/state --check`, and the alignment and
    cross-link assertions in `scripts/build.py`. AI review: the cold reviews in
    step 2, and cold review of the commentary, recorded in the `cold_review:`
-   field of 8 of 74 files in `annotations/` (pairs I.1, I.2, I.12, I.14) and
-   otherwise only in `decisions.md`. Human review: the rulings in step 4, and
+   field of 70 of 74 files in `annotations/` (62 of them backfilled on
+   2026-11-24 from `decisions.md` and SCOPE §5). Pairs I.3 and I.4 have no
+   recorded commentary review. Human review: the rulings in step 4, and
    the cold rereading of a published unit three months later (SCOPE §7). No
    such rereading is yet recorded.
 
@@ -93,7 +94,11 @@ was performed by the drafting session (`sources/coldpass/COLLATION-*.md`
 `passes:` fields); from I.10 on, by subagents
 (`sources/coldpass/COLLATION-2026-10-07-I10.md`).
 
-Exact API model identifiers are not recorded for any role.
+Each file in `translations/` and `annotations/` now carries a `model:` field
+(`drafting`, `cold_review`). The backfill records Claude Opus 5.5 as drafting
+model for twelve files (pairs I.1, I.3, I.14), where the file was first
+committed by an Opus 5.5 session on the day it was drafted, and `unknown`
+everywhere else. Exact API model identifiers are not recorded for any role.
 `claude-opus-5-5` prepared this document and the licensing changes of DEC-011;
 it did no translation work.
 
@@ -116,7 +121,7 @@ The translation cannot be reproduced exactly. Each published unit can be
 checked against the established Italian and the logged rulings.
 
 DEC-011 requires future units to record the model identifier for drafting and
-review.
+review in the `model:` field.
 
 ## Editorial responsibility
 

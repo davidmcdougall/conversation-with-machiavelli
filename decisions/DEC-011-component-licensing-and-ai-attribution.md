@@ -52,9 +52,11 @@ English, and it combined licence grants with third-party rights assessments.
    (`claude-opus-5-5`) on David McDougall's instruction; the assessment is
    recorded in `RIGHTS_AND_SOURCES.md` §6. It is not advice from a lawyer.
 7. **Front-matter provenance.** Translation and annotation front-matter
-   carry a `model:` field (drafting and cold-review models). Commits that
-   change front-matter only take the subject prefix `Metadata:`; the build
-   does not count them as revisions of a pair.
+   carry a `model:` field (drafting and cold-review models), backfilled on
+   2026-11-24 from git history, unknown where not recorded. `cold_review:` is
+   backfilled for commentary from `decisions.md` and SCOPE §5. A commit that
+   changes only `model:` or `cold_review:` lines does not move a pair's
+   "last revised" date (`scripts/build.py`, `METADATA_KEYS`).
 
 ## Relation to DEC-010
 

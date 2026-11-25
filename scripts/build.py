@@ -184,6 +184,25 @@ def pair_sources(pair):
             f"sources/comparisons/FG-CONS/{fg}-witness-disagreements.yml"]
 
 
+# Front-matter fields that record provenance, not text. A commit whose changes to a
+# pair's files only add, remove or alter lines starting with these keys is not a
+# revision of anything a reader sees, and does not move the pair's "last revised" date.
+METADATA_KEYS = ("model:", "cold_review:")
+
+
+def last_text_revision(paths):
+    """Date of the last commit touching paths that changed more than metadata lines."""
+    log = _git("log", "--format=%H %cs", "--", *paths) or ""
+    for line in log.splitlines():
+        sha, date = line.split()
+        diff = _git("show", "--format=", "--unified=0", sha, "--", *paths) or ""
+        changed = [l[1:] for l in diff.splitlines()
+                   if l[:1] in "+-" and not l.startswith(("+++ ", "--- "))]
+        if any(not c.startswith(METADATA_KEYS) for c in changed):
+            return date
+    return None
+
+
 def pair_dates(pair):
     """(published, revised) as ISO dates.
 
@@ -200,10 +219,7 @@ def pair_dates(pair):
     if dirty is None or dirty:
         revised = today
     else:
-        # Commits whose subject starts "Metadata:" change front-matter only (provenance,
-        # review records) and are not revisions of the text a reader sees.
-        revised = _git("log", "-1", "--format=%cs", "--invert-grep", "--grep=^Metadata:",
-                       "--", *paths) or today
+        revised = last_text_revision(paths) or today
     return published, max(published, revised)
 
 

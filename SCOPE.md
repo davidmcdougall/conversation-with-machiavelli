@@ -115,7 +115,7 @@ exist. See §7.
 | 35 | NM-DISC.2.19 | FG-CONS.2.19 | FG-CONS-DR-035 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 36 | NM-DISC.2.24 | FG-CONS.2.24 | FG-CONS-DR-036 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
 | 37 | NM-DISC.3.17 | FG-CONS.3.17 | FG-CONS-DR-037 | S2 established | S2 established | cold-reviewed | ✓ | ✓ |
-| 38 | NM-DISC.3.19 | FG-CONS.3.19 | FG-CONS-DR-038 | — | — | — | — | — |
+| 38 | NM-DISC.3.19 | FG-CONS.3.19 | FG-CONS-DR-038 | S2 established | S2 established | — | — | — |
 | 39 | NM-DISC.3.24 | FG-CONS.3.24 | FG-CONS-DR-039 | — | — | — | — | — |
 <!-- /state:pairs -->
 
@@ -220,9 +220,9 @@ than inside the first paragraph.
 | Stage | Done | Remaining | Of |
 |---|---|---|---|
 | Link records | 39 | 0 | 39 |
-| NM source established | 37 | 2 | 39 |
-| FG source established | 37 | 2 | 39 |
-| Collated against the comparison witness | 74 units | 4 | 78 |
+| NM source established | 38 | 1 | 39 |
+| FG source established | 38 | 1 | 39 |
+| Collated against the comparison witness | 76 units | 2 | 78 |
 | Translated (draft, cold-reviewed) | 74 | 4 | 78 |
 | Annotated | 74 | 4 | 78 |
 | Published | 74 | 4 | 78 |
