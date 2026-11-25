@@ -1,7 +1,9 @@
 Three scripts.
 
 - `build.py` — generates `site/` from `corpus/`, `translations/`,
-  `annotations/` and `sources/`. Every build ends by running `state --write`.
+  `annotations/` and `sources/`. `build.py <pair>` reports on that pair and
+  refreshes every other page; `--all` rebuilds everything. Every build ends
+  by running `state --write`.
 - `state` — walks `corpus/`, `translations/`, `annotations/`, `sources/` and
   `site/`, and writes the SCOPE §2 pairs table and the §4 stage table from the
   files, between their `<!-- state:... -->` markers. The only derived view in

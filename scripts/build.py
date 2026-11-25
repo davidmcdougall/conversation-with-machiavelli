@@ -2,7 +2,10 @@
 """Build the reading page for one pair of A Conversation with Machiavelli.
 
 Usage:
-  scripts/build.py <pair>     build one pair, e.g. "1.12" or "2.proem"
+  scripts/build.py <pair>     build one pair, e.g. "1.12" or "2.proem", reporting
+                              on it, then quietly refresh every other published
+                              pair (footers and pair navigation change on every
+                              page when a pair is added; CI rejects a stale site/)
   scripts/build.py --all      rebuild every published pair, then the index
   scripts/build.py --index    rebuild only the index (site/index.html)
 
@@ -1303,6 +1306,12 @@ def main():
                 f"Published pairs: {available}"
             )
         build_pair(args.pair, published)
+        import contextlib, io
+        with contextlib.redirect_stdout(io.StringIO()):
+            for row in published:
+                if row["pair"] != args.pair:
+                    build_pair(row["pair"], published)
+        print(f"refreshed the other {len(published) - 1} published pairs")
     else:
         ap.error('give a pair id (e.g. "1.12"), or --all')
 
