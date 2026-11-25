@@ -10,7 +10,7 @@
   "details": "LICENSE and REUSE.toml in the repository"
  },
  "conventions": "Text keeps the edition's inline marks: *asterisks* for italics; [square brackets] for words supplied by the editor (Italian) or the translator (English). Notes, variants and commentary are on the site and in the repository, not in this file.",
- "pairs_published": 38,
+ "pairs_published": 39,
  "pairs_total": 39,
  "pairs": [
   {
@@ -3356,6 +3356,87 @@
        "it": "L'altra distinzione che mi occorre è che sia da fare differenza da uno che regga come principe e con autorità propria, da chi regge come ministro e in nome di altri; perché io credo che uno principe abbia a avere rispetto assai di cercare la benevolenza de' populi, potendo occorrere molti casi che a conservare lo Stato gli sia bisogno amore estraordinario de' populi. Ma in chi comanda in nome di altri distinguerei: o in uno esercito, e allora fussi più necessario abbondare nello amore che nel timore, perché avendoli a condurre a fazioni periculose per la città loro, vi si conducono assai con lo amore; ma in chi governa città o provincie in nome di altri, non gli toccando altro che la cura temporale, e non essendo lui il signore supremo per il quale e' populi s'abbino a muovere a più di quello che ordinariamente sono tenuti, credo conduca meglio le cose sue con qualche più terrore che e' principi ordinarii: perché sapendo e' populi che le genti dependono da altri, e che di qui a qualche tempo lui non ha a restare in ufficio, non può la benevolenza, che loro gli portassino, fare fondamento notabile a quelli effetti per e' quali si desidera tanto lo amore verso il principe. Dico però che parlando noi de' governi buoni e legittimi, si può male presupporre che dove è timore non sia anche amore, perché la severità della giustizia, che è quella che reca il timore, non può essere che non sia amata da chi vuole bene vivere; ed e converso lo amore che nasce da umanità, da facilità di natura, e da inclinazione a fare grazie, accompagnato dalla giustizia, come in uno governo buono s'ha a presupporre, non può fare che non sia temuto.",
        "en": "The other distinction that occurs to me is that a difference is to be made between one who governs as a prince and with his own authority, and one who governs as a minister and in the name of others; because I believe that a prince is to have much respect to seeking the benevolence of the peoples, since many cases can occur in which, to conserve the state, he has need of extraordinary love of the peoples. But in one who commands in the name of others I would distinguish: either in an army, and then it would be more necessary to abound in love than in fear, because, having to conduct them to actions dangerous for their city, they are conducted there much with love; but in one who governs cities or provinces in the name of others, nothing touching him but the temporary care, and he not being the supreme lord for whom the peoples are to move themselves to more than they are ordinarily held to, I believe he conducts his affairs better with somewhat more terror than ordinary princes [do]: because, the peoples knowing that the troops depend on others, and that some time hence he is not to remain in office, the benevolence that they might bear him cannot make a notable foundation for those effects for which love towards the prince is so much desired. I say therefore that, we speaking of good and legitimate governments, one can ill presuppose that where there is fear there is not also love, because the severity of justice, which is that which brings fear, cannot be that it is not loved by whoever wishes to live well; and *e converso* the love that arises from humanity, from facility of nature, and from inclination to do graces, accompanied by justice, as is to be presupposed in a good government, cannot make that it is not feared.",
        "url": "https://davidmcdougall.github.io/conversation-with-machiavelli/pairs/3.19.html#FG-CONS.3.19.02"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "pair": "3.24",
+   "number": 39,
+   "url": "https://davidmcdougall.github.io/conversation-with-machiavelli/pairs/3.24.html",
+   "published": "2026-11-25",
+   "revised": "2026-11-25",
+   "units": [
+    {
+     "unit": "NM-DISC.3.24",
+     "author": "Niccolò Machiavelli",
+     "work": "Discorsi sopra la prima Deca di Tito Livio",
+     "responds_to": null,
+     "rubric_it": "La prolungazione degli Imperj fece serva Roma.",
+     "rubric_en": "The prolongation of commands made Rome servile.",
+     "governing_witness": "WIT-NM-DISC-1824-IA",
+     "source_version": "0.1.0",
+     "integrity_class": "S2",
+     "translation_version": "0.1.0-draft",
+     "translation_status": "draft_cold_reviewed",
+     "paragraphs": [
+      {
+       "id": "NM-DISC.3.24.01",
+       "it": "Se si considera bene il procedere della Repubblica romana, si vedrà due cose essere state cagione della risoluzione di quella Repubblica; l'una furono le contenzioni che nacquero dalla legge Agraria; l'altra la prolungazione degl'Imperj: le quali cose se fussero state conosciute bene da principio, e fattivi debiti rimedj, sarebbe stato il vivere libero più lungo, e per avventura più quieto.",
+       "en": "If one considers well the proceeding of the Roman republic, one will see two things to have been the cause of the dissolution of that republic; the one was the contentions that arose from the Agrarian law; the other the prolongation of commands: which things, if they had been known well from the beginning, and due remedies made for them, free living would have been longer, and, it may be, more quiet.",
+       "url": "https://davidmcdougall.github.io/conversation-with-machiavelli/pairs/3.24.html#NM-DISC.3.24.01"
+      },
+      {
+       "id": "NM-DISC.3.24.02",
+       "it": "E benché quanto alla prolungazione dell'Imperio, non si vegga che in Roma nascesse mai alcuno tumulto, nondimeno si vede in fatto, quanto nuocé alla Città quella autorità che i cittadini per tali deliberazioni presero. E se gli altri cittadini, a chi era prorogato il Magistrato, fussero stati savj e buoni, come fu L. Quinzio, non si sarebbe incorso in questo inconveniente.",
+       "en": "And albeit, as to the prolongation of command, one does not see that any tumult ever arose in Rome, nonetheless one sees in fact how much that authority which the citizens took through such deliberations did harm to the city. And if the other citizens to whom the magistracy was prorogued had been wise and good, as L. Quinctius was, one would not have incurred this inconvenience.",
+       "url": "https://davidmcdougall.github.io/conversation-with-machiavelli/pairs/3.24.html#NM-DISC.3.24.02"
+      },
+      {
+       "id": "NM-DISC.3.24.03",
+       "it": "La bontà del quale è d'uno esempio notabile, perché sendosi fatto tra la Plebe ed il Senato convenzione d'accordo, ed avendo la Plebe prolungato in un anno l'Imperio ai Tribuni, giudicandogli atti a poter resistere all'ambizione dei Nobili, volle il Senato per gara della Plebe, e per non parere da meno di lei, prolungare il Consolato a L. Quinzio; il quale al tutto negò questa deliberazione, dicendo che i cattivi esempj si volevano cercare di spegnerli, non di accrescerli con un altro più cattivo esempio; e volle si facessero nuovi Consoli. La qual bontà e prudenza se fusse stata in tutt'i cittadini romani, non arebbe lasciata introdurre quella consuetudine di prolungare i Magistrati, e da quella non si sarebbe venuto alla prolungazione degl'Imperj: la qual cosa col tempo rovinò quella Repubblica.",
+       "en": "His goodness is of a notable example, because, a convention of accord having been made between the plebs and the Senate, and the plebs having prolonged the command to the tribunes for a year, judging them apt to be able to resist the ambition of the nobles, the Senate, out of rivalry with the plebs, and so as not to seem less than it, wished to prolong the consulship to L. Quinctius; who wholly denied this deliberation, saying that bad examples wanted [one] to seek to extinguish them, not to increase them with another worse example; and he wished that new consuls be made. Which goodness and prudence, if it had been in all the Roman citizens, would not have let that usage of prolonging the magistracies be introduced, and from that one would not have come to the prolongation of commands: which thing in time ruined that republic.",
+       "url": "https://davidmcdougall.github.io/conversation-with-machiavelli/pairs/3.24.html#NM-DISC.3.24.03"
+      },
+      {
+       "id": "NM-DISC.3.24.04",
+       "it": "Il primo a chi fu prorogato l'Imperio fu P. Filone, il quale essendo a campo alla Città di Palepoli, e venendo la fine del suo Consolato, e parendo al Senato ch'egli avesse in mano quella vittoria, non gli mandarono il successore, ma lo fecero Proconsolo; talché fu il primo Proconsolo. La qual cosa, ancora che mossa dal Senato per utilità pubblica, fu quella che con il tempo fece serva Roma.",
+       "en": "The first to whom command was prorogued was P. Philo, who, being in camp at the city of Palaeopolis, and the end of his consulship coming, and it seeming to the Senate that he had that victory in hand, they did not send him the successor, but made him proconsul; so that he was the first proconsul. Which thing, even though moved by the Senate for public utility, was that which in time made Rome servile.",
+       "url": "https://davidmcdougall.github.io/conversation-with-machiavelli/pairs/3.24.html#NM-DISC.3.24.04"
+      },
+      {
+       "id": "NM-DISC.3.24.05",
+       "it": "Perché quanto più i Romani si discostarono con le armi, tanto più pareva loro tale prorogazione necessaria, e più l'usarono. La qual cosa fece due inconvenienti. L'uno, che meno numero di uomini si esercitarono negl'Imperj, e si venne per questo a ristringere la riputazione in pochi; l'altro, che stando un cittadino assai tempo Comandatore d'uno esercito, se lo guadagnava, e facevaselo partigiano; perché quello esercito col tempo dimenticava il Senato, e riconosceva quello Capo. Per questo Silla e Mario poterono trovare soldati che contro al bene pubblico li seguitassero; per questo Cesare potette occupare la patria.",
+       "en": "For the more the Romans went to a distance with arms, the more such prorogation seemed necessary to them, and the more they used it. Which thing made two inconveniences. The one, that a lesser number of men were exercised in commands, and one came through this to restrict reputation to few; the other, that a citizen, staying much time commander of an army, gained it for himself, and made it his partisan; because that army in time forgot the Senate, and acknowledged that head. Through this Sulla and Marius could find soldiers who would follow them against the public good; through this Caesar could occupy the fatherland.",
+       "url": "https://davidmcdougall.github.io/conversation-with-machiavelli/pairs/3.24.html#NM-DISC.3.24.05"
+      },
+      {
+       "id": "NM-DISC.3.24.06",
+       "it": "Che se mai i Romani non avessero prolungati li Magistrati e gl'Imperj, se non venivano sì tosto a tanta potenza, e se fussero stati più tardi gli acquisti loro, sarebbero ancora venuti più tardi nella servitù.",
+       "en": "That if the Romans had never prolonged the magistracies and the commands, if they had not come so soon to so much power, and if their acquisitions had been later, they would also have come later into servitude.",
+       "url": "https://davidmcdougall.github.io/conversation-with-machiavelli/pairs/3.24.html#NM-DISC.3.24.06"
+      }
+     ]
+    },
+    {
+     "unit": "FG-CONS.3.24",
+     "author": "Francesco Guicciardini",
+     "work": "Considerazioni intorno ai Discorsi del Machiavelli",
+     "responds_to": "NM-DISC.3.24",
+     "rubric_it": "La prolungazione degl'imperii fece serva Roma.",
+     "rubric_en": "The prolongation of commands made Rome servile.",
+     "governing_witness": "WIT-FG-CONS-1857-CANESTRINI",
+     "source_version": "0.1.0",
+     "integrity_class": "S2",
+     "translation_version": "0.1.0-draft",
+     "translation_status": "draft_cold_reviewed",
+     "paragraphs": [
+      {
+       "id": "FG-CONS.3.24.01",
+       "it": "Non è dubio che la prorogazione degli imperii fu occasione grande a chi volle occupare la republica; perché era instrumento da farsi amici i soldati e séguito co' re, e nelle nazioni o provincie forestiere, e a' capitani accresceva ricchezza con la quale potevano corrompere gli uomini, come fece a Cesare il lungo imperio di Gallia. Ma il fondamento principale de' mali fu la corruzione della città, la quale datasi alla avarizia, alle delizie, era in modo degenerata dagli antichi costumi, che ne nacquono le divisioni sanguinose della città, dalle quali sempre ne' populi liberi si viene alle tirannidi. Di quivi nacque la facilità di corrompere e' cittadini e' soldati, di qui potette sperare uno Catilina sanza imperio e sanza eserciti occupare la republica, di qui conjurazione di più potenti di dividersi fra loro gli imperii e gli eserciti, e con queste forze tenere bassi gli altri; di qui le prorogazioni estraordinarie degli imperii, come fu quella di Cesare, al quale non la utilità della republica, non la necessità della guerra, non la ammirazione della sua virtù, ma la conjurazione con Pompeo e Crasso di occupare la republica, fece imperio decemvirale. Non era stato prorogato lo imperio a Silla, quando la prima volta venne alle mani con Mario, ma ne fu causa la divisione tra la nobilità e la plebe, e avendo la plebe per capo Mario, fu forzata la nobilità cercarsi uno capo. Però conchiuggo che quando Roma non fu corrotta, le prorogazioni degli imperii e la continuazione del consulato, la quale ne' tempi difficili usorono molte volte, furono cosa utile e santa; ma corrotta la città, sursono le battaglie civili, e i semi delle tirannidi, etiam sanza la prorogazione degli imperii. E però si può conchiudere, che se non fussino state anche le prorogazioni, non sarebbe mancato né a Cesare né agli altri che occuporono la republica, né pensiero né facultà di travagliarla per altra via.",
+       "en": "There is no doubt that the prorogation of commands was a great occasion to whoever wished to occupy the republic; because it was an instrument for making friends of the soldiers, and a following with kings and in foreign nations or provinces, and for the captains it increased wealth, with which they could corrupt men, as the long command of Gaul did for Caesar. But the principal foundation of the ills was the corruption of the city, which, having given itself to avarice, to delights, had degenerated from the ancient customs in such a way that there arose from it the sanguinary divisions of the city, from which in free peoples one always comes to tyrannies. From there arose the facility of corrupting the citizens, the soldiers; from here one Catiline could hope, without command and without armies, to occupy the republic; from here [a] conspiracy of several powerful [men] to divide among themselves the commands and the armies, and with these forces to hold the others low; from here the extraordinary prorogations of commands, as was that of Caesar, for whom not the utility of the republic, not the necessity of war, not the admiration of his *virtù*, but the conspiracy with Pompey and Crassus to occupy the republic, made [a] decemviral command. The command had not been prorogued to Sulla when he came to blows with Marius the first time, but the cause of it was the division between the nobility and the plebs, and, the plebs having Marius for head, the nobility was forced to seek a head for itself. Therefore I conclude that when Rome was not corrupted, the prorogations of commands and the continuation of the consulship, which in difficult times they used many times, were a useful and holy thing; but, the city corrupted, there rose the civil battles and the seeds of tyrannies, even without the prorogation of commands. And therefore one can conclude that, if there had not been the prorogations as well, there would not have failed, either to Caesar or to the others who occupied the republic, either the thought or the capacity to trouble it by another path.",
+       "url": "https://davidmcdougall.github.io/conversation-with-machiavelli/pairs/3.24.html#FG-CONS.3.24.01"
       }
      ]
     }
