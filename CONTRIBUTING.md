@@ -6,9 +6,10 @@ https://github.com/davidmcdougall/conversation-with-machiavelli.
 ## Reporting an error
 
 Most useful is an error in the Italian or the English. Open an issue giving the
-unit and paragraph (e.g. `FG-CONS.1.12.03`, shown beside every paragraph on the
-site), what it says, what you think it should say, and — for the Italian — the
-witness and page that supports the correction.
+paragraph — click the number beside it on the site (e.g. `1.12.03`) and paste
+the address, which ends in its full ID (`#FG-CONS.1.12.03`) — what it says,
+what you think it should say, and, for the Italian, the witness and page that
+support the correction.
 
 ## Licence of contributions
 

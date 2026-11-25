@@ -24,7 +24,7 @@ frozen; every page is dated. Per-pair progress is the table in `SCOPE.md` §2.
 | `sources/` | Witness extracts, cold passes, collations, provenance |
 | `links/` | Which *Considerazione* answers which *Discorsi* chapter |
 | `site/` | The published website — build output, never edited by hand |
-| `scripts/` | `build.py`, `state`, `validate` |
+| `scripts/` | `build.py`, `state`, `validate`, `checklinks` |
 
 Method and policy: `SCOPE.md` (the project's doctrine),
 `TRANSLATION_METHOD.md`, `RIGHTS_AND_SOURCES.md`.
@@ -68,5 +68,5 @@ Errors in the Italian or the English are the most useful thing to report. See
 ```
 pip install -r requirements.txt
 scripts/validate && scripts/state --check
-python3 scripts/build.py --all
+python3 scripts/build.py --all && scripts/checklinks
 ```

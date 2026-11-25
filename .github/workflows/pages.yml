@@ -27,7 +27,9 @@ jobs:
       - name: site/ matches a fresh build
         run: |
           python3 scripts/build.py --all > /dev/null
-          git diff --exit-code --stat -- site SCOPE.md
+          git diff --exit-code --stat -- site SCOPE.md README.md
+      - name: Internal links resolve
+        run: python3 scripts/checklinks
   deploy:
     needs: check
     if: github.event_name != 'pull_request'

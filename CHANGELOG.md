@@ -72,3 +72,6 @@ to `RIGHTS_AND_SOURCES.md`:
   DEC records) under a near-identical name and a different licence. D-numbers
   are unchanged. References were updated everywhere except the historical
   records (`decisions/`, `PORT-NOTES.md`); the move does not redate any pair.
+- 2026-11-25: CI also checks that every internal link and anchor on the site
+  resolves (`scripts/checklinks`), and that the README's status line,
+  citation and `CITATION.cff` agree with `SCOPE.md`.

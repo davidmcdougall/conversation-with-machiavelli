@@ -1,4 +1,4 @@
-Three scripts.
+Four scripts.
 
 - `build.py` — generates `site/` from `corpus/`, `translations/`,
   `annotations/` and `sources/`. `build.py <pair>` reports on that pair and
@@ -22,3 +22,6 @@ Three scripts.
   editorial reading is in the unit's establishment or collation record.
   Written from scratch, 2026-10-11; the predecessor's 1,155-line validator was
   not ported (SCOPE §6).
+- `checklinks` — every internal link and `#anchor` in `site/` resolves to a
+  file and an id that exist. External links are not fetched. Silent when
+  clean; run in CI after the build.

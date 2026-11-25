@@ -1,0 +1,72 @@
+#!/usr/bin/env python3
+"""Check that every internal link in site/ resolves: the target file exists and,
+for a #fragment, the target page has that id. External links (http, mailto,
+data) are not fetched. Silent when clean; exit 1 and one line per broken link.
+
+Usage: scripts/checklinks
+"""
+import re
+import sys
+from html.parser import HTMLParser
+from pathlib import Path
+from urllib.parse import unquote, urlsplit
+
+SITE = Path(__file__).resolve().parent.parent / "site"
+BASE = "/conversation-with-machiavelli/"   # absolute paths used by 404.html
+
+
+class Page(HTMLParser):
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.ids, self.links = set(), []
+
+    def handle_starttag(self, tag, attrs):
+        a = dict(attrs)
+        if a.get("id"):
+            self.ids.add(a["id"])
+        if tag == "a" and a.get("name"):
+            self.ids.add(a["name"])
+        for k in ("href", "src"):
+            if a.get(k) and not (tag == "link" and a.get("rel") == "canonical"):
+                self.links.append(a[k])
+
+
+def parse(path, cache={}):
+    if path not in cache:
+        p = Page()
+        p.feed(path.read_text(encoding="utf-8"))
+        cache[path] = p
+    return cache[path]
+
+
+def main():
+    bad = []
+    pages = sorted(SITE.rglob("*.html"))
+    for page in pages:
+        for link in parse(page).links:
+            u = urlsplit(link)
+            if u.scheme or link.startswith("//"):
+                continue  # external, mailto:, data:
+            path = unquote(u.path)
+            if path.startswith(BASE):
+                target = SITE / path[len(BASE):]
+            elif path.startswith("/"):
+                bad.append(f"{page.relative_to(SITE)}: {link} (absolute path outside the site)")
+                continue
+            else:
+                target = (page.parent / path) if path else page
+            if target.is_dir() or path.endswith("/"):
+                target = target / "index.html"
+            if not target.exists():
+                bad.append(f"{page.relative_to(SITE)}: {link} (no such file)")
+                continue
+            if u.fragment and target.suffix == ".html":
+                if unquote(u.fragment) not in parse(target).ids:
+                    bad.append(f"{page.relative_to(SITE)}: {link} (no #{u.fragment} on that page)")
+    if bad:
+        print("\n".join(dict.fromkeys(bad)))
+        sys.exit(1)
+
+
+if __name__ == "__main__":
+    main()
