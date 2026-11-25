@@ -17,7 +17,8 @@ Items marked **For legal review** were open when this document was written;
 §6 records the assessment of each.
 
 Moved from `LICENSE` §§5–6 (version 0.3, 2026-09-21) by DEC-011. Nothing in
-those sections has been dropped; corrections are noted where made.
+those sections has been dropped; the corrections made in moving them are
+listed in `CHANGELOG.md`.
 
 ---
 
@@ -68,9 +69,6 @@ contains no image files other than fonts).
 - Underlying work and edition: public domain by age. **Fact.** Canestrini
   (1807–1870) died more than seventy years ago; his dates are taken from
   external authority records and are not recorded in the repository.
-
-*Correction:* `LICENSE` §5 (v0.3) gave Canestrini's death as 1891. The
-authority records give 1870. The conclusion is unchanged.
 - `corpus_reuse: reproducible_in_corpus`. **Interpretation.**
 - **For legal review:** Google-digitised volumes commonly carry usage
   guidelines. The repository does not record whether this scan does, or what
@@ -104,10 +102,6 @@ authority records give 1870. The conclusion is unchanged.
 - Readings are reported as collation evidence: statements of fact about what
   the book prints. Palmarocchi's editorial expression is never copied.
   **Policy.**
-
-*Correction:* `LICENSE` §5 (v0.3) stated the Italian and US expiry dates as
-settled. They are restated here as an assessment, with the component question
-flagged.
 
 ### Machiavelli to Vettori, *Opere* (1813), vol. 8
 
@@ -143,10 +137,6 @@ Directive's text.**
 The project does not rely on Article 14. Whether it, or any other rule,
 removes rights in a scan of a printed book depends on the jurisdiction and
 the reproduction. **For legal review.**
-
-*Correction:* `LICENSE` §5 (v0.3) stated that a faithful reproduction of a
-public-domain work "attracts no new copyright or related right" under art.
-14. That statement was broader than the provision. It is withdrawn.
 
 ---
 

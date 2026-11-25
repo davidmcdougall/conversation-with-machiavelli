@@ -1,0 +1,49 @@
+# Changelog
+
+The edition is versioned, not frozen. The version is set in `SCOPE.md` and
+shown on every page; each page also carries its own published and revised
+dates. Per-unit text versions are in each unit's front matter.
+
+## 0.3 — 2026
+
+Released as `v0.3.0`: 38 of 39 pairs published (76 of 78 units). III.24 is
+not yet established.
+
+### Published
+
+- September 2026: I.1, I.2, I.3, I.4, I.12, I.14. Site launched on GitHub
+  Pages, 2026-09-26.
+- October 2026: I.5–I.11, I.16, I.23–I.26, I.28–I.30, I.32, I.39, I.40, I.47.
+- November 2026: I.49, I.58, I.60, II.proem, II.10, II.12–II.15, II.19,
+  II.24, III.17, III.19.
+
+### Licensing and attribution (DEC-011, 2026-11-24)
+
+- Component licensing: CC0 for the Italian text and research data, CC BY 4.0
+  for the translation and editorial apparatus (where rights subsist), MIT for
+  scripts.
+- The English is credited as "AI-assisted translation edited by David
+  McDougall"; the model used for each drafting and review step is recorded.
+- Rights assessments moved from `LICENSE` to `RIGHTS_AND_SOURCES.md`.
+
+### Corrections
+
+Made to the rights statements of `LICENSE` v0.3 (2026-09-21) when they moved
+to `RIGHTS_AND_SOURCES.md`:
+
+- Canestrini's death was given as 1891; the authority records give 1870. The
+  conclusion (public domain by age) is unchanged.
+- The Italian and US expiry dates for Palmarocchi's 1933 editorial
+  contributions were stated as settled. They are now an assessment, with the
+  question of which components are protected flagged.
+- `LICENSE` stated that a faithful reproduction of a public-domain work
+  "attracts no new copyright or related right" under Article 14 of Directive
+  (EU) 2019/790. That was broader than the provision, and is withdrawn. The
+  project does not rely on Article 14.
+
+### Site
+
+- 2026-11-25: 36 pages built before later pairs were added showed an
+  out-of-date count of pairs published; all pages rebuilt. Building one pair
+  now refreshes every page, and CI rejects a site that differs from a fresh
+  build.
