@@ -28,7 +28,8 @@ frozen; every page is dated. Per-pair progress is the table in `SCOPE.md` §2.
 | `scripts/` | `build.py`, `state`, `validate`, `checklinks` |
 
 Method and policy: `SCOPE.md` (the project's doctrine),
-`TRANSLATION_METHOD.md`, `RIGHTS_AND_SOURCES.md`.
+`TRANSLATION_METHOD.md`, `RIGHTS_AND_SOURCES.md`. Logs and records that are not
+doctrine are in `docs/` (per-pair effort, the port manifest).
 
 ## Witnesses
 

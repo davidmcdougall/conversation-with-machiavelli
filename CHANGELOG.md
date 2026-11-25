@@ -78,3 +78,7 @@ to `RIGHTS_AND_SOURCES.md`:
 - 2026-11-25: the whole published text is available as data, Italian and
   English aligned by paragraph: `data/edition.json` and `data/paragraphs.csv`,
   linked from the About page.
+- 2026-11-25: `SCOPE.md` §5 (effort estimates and per-pair actuals) and §6
+  (port manifest) moved to `docs/effort.md` and `docs/port-manifest.md`.
+  They are logs, not doctrine; the section numbers stay, as pointers, so
+  every "SCOPE §N" reference still resolves.
