@@ -11,11 +11,15 @@ Usage:
 
 A pair is "published" when both translations/NM-DISC.<pair>.md and
 translations/FG-CONS.<pair>.md exist. Building a pair emits:
-  site/pairs/<pair>-content.html   page content only — Artifact input
-  site/pairs/<pair>.html           the same content wrapped as a full document
+  site/pairs/<pair>.html           the reading page, a full document
+  build/artifact-input/pairs/<pair>-content.html
+                                   page content with inline style — Artifact
+                                   input; build/ is not committed or published
 and always refreshes, across every published pair:
-  site/index-content.html          contents page, content only
   site/index.html                  contents page, full document — GitHub Pages home
+  build/artifact-input/index-content.html
+  site/style.css                   the shared stylesheet every page links
+  site/404.html, site/sitemap.xml, site/robots.txt
   site/about.html                  what the edition is, title, method, licence (once,
                                    not repeated in every page's footer)
 Fonts are self-hosted from site/fonts/ (fonts.css plus woff2 files, SIL OFL).
@@ -967,6 +971,64 @@ def style(root):
     return STYLE.replace("{root}", root)
 
 
+# Content-only pages (inline style) for use as Claude artifacts. Not part of the
+# published site: build/ is gitignored.
+ARTIFACT_INPUT = ROOT / "build/artifact-input"
+
+
+def artifact_input(rel, text):
+    out = ARTIFACT_INPUT / rel
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(text, encoding="utf-8")
+
+
+def build_shared(published):
+    """site/style.css, 404.html, sitemap.xml and robots.txt."""
+    site = ROOT / "site"
+    css = re.search(r"<style>\n(.*?)</style>", STYLE, re.S).group(1)
+    (site / "style.css").write_text(css, encoding="utf-8")
+
+    base = "/conversation-with-machiavelli/"
+    content = f'''<title>Page not found — A Conversation with Machiavelli</title>
+{style(base)}
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow"><a href="{base}">A Conversation with Machiavelli</a></p>
+    <h1>Page not found</h1>
+  </header>
+
+  <section class="about">
+    <p>There is no page at this address. The edition's pages are listed on the
+      <a href="{base}">contents page</a>; what the edition is, and how it was made, is in
+      <a href="{base}about.html">About this edition</a>.</p>
+  </section>
+
+</div>'''
+    (site / "404.html").write_text(
+        wrap(content, "Page not found.", "404.html", "Page not found — " + SITE_NAME, root=base),
+        encoding="utf-8")
+
+    entries = [(SITE_URL, None), (SITE_URL + "about.html", None)]
+    revised = []
+    for row in published:
+        _, rev = pair_dates(row["pair"])
+        revised.append(rev)
+        entries.append((SITE_URL + f"pairs/{row['pair']}.html", rev))
+    if revised:
+        entries[0] = (SITE_URL, max(revised))
+    urls = "".join(
+        f"  <url><loc>{html.escape(loc)}</loc>" + (f"<lastmod>{mod}</lastmod>" if mod else "") + "</url>\n"
+        for loc, mod in entries)
+    (site / "sitemap.xml").write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + urls + "</urlset>\n",
+        encoding="utf-8")
+    (site / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}sitemap.xml\n",
+                                     encoding="utf-8")
+
+
 SITE_URL = "https://davidmcdougall.github.io/conversation-with-machiavelli/"
 SITE_NAME = "A Conversation with Machiavelli"
 
@@ -976,11 +1038,18 @@ FAVICON = ("data:image/svg+xml," + "%3Csvg xmlns='http://www.w3.org/2000/svg' vi
            "%3Crect x='17' y='5' width='12' height='22' rx='1.5' fill='%236E5A3C'/%3E%3C/svg%3E")
 
 
-def wrap(content, description, path, title):
+def wrap(content, description, path, title, root=None):
     """A full document: the content's <title> and style go in <head>, the rest in
-    <body>. `path` is the page's path under the site root, for its canonical URL."""
+    <body>. `path` is the page's path under the site root, for its canonical URL.
+    The inline <style> of the content is replaced by a link to site/style.css;
+    `root` (default: relative, from `path`) is the path from the page to the site root."""
     head, sep, body = content.partition('\n<div class="wrap">')
     assert sep, "page content must open its body with <div class=\"wrap\">"
+    if root is None:
+        root = "../" * path.count("/")
+    head, n = re.subn(r"<style>.*?</style>", f'<link rel="stylesheet" href="{root}style.css">',
+                      head, count=1, flags=re.S)
+    assert n == 1, "page content must carry the shared <style> block"
     url = SITE_URL + path
     esc = html.escape
     meta = (
@@ -1157,7 +1226,7 @@ def build_pair(pair, published):
 
     pairs_dir = ROOT / "site/pairs"
     pairs_dir.mkdir(parents=True, exist_ok=True)
-    (pairs_dir / f"{pair}-content.html").write_text(CONTENT, encoding="utf-8")
+    artifact_input(f"pairs/{pair}-content.html", CONTENT)
     (pairs_dir / f"{pair}.html").write_text(
         wrap(CONTENT, summary_plain(standfirst) or title, f"pairs/{pair}.html", title), encoding="utf-8")
     print(f"site/pairs/{pair}.html", (pairs_dir / f"{pair}.html").stat().st_size, "bytes")
@@ -1236,7 +1305,7 @@ def build_index(published):
 </div>'''
 
     site = ROOT / "site"
-    (site / "index-content.html").write_text(CONTENT, encoding="utf-8")
+    artifact_input("index-content.html", CONTENT)
     (site / "index.html").write_text(
         wrap(CONTENT, "A free, bilingual, hyperlinked edition of Guicciardini's Considerazioni "
                       "and the Discorsi chapters they answer.", "", SITE_NAME),
@@ -1245,6 +1314,7 @@ def build_index(published):
     print("site/index.html", (site / "index.html").stat().st_size, "bytes —",
           len(published), "of", len(rows), "pairs listed")
     build_about(published)
+    build_shared(published)
 
 
 def build_about(published):

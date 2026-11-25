@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://davidmcdougall.github.io/conversation-with-machiavelli/sitemap.xml

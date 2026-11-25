@@ -8,3 +8,6 @@ sources/witnesses/FG-CONS/WIT-FG-CONS-1933-PALMAROCCHI/*.jpg
 
 # Created by the Claude desktop app; not part of the edition
 Claude outputs/
+
+# Build by-products not published (Artifact input pages)
+build/

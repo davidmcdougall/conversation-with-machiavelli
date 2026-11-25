@@ -63,3 +63,7 @@ to `RIGHTS_AND_SOURCES.md`:
   out-of-date count of pairs published; all pages rebuilt. Building one pair
   now refreshes every page, and CI rejects a site that differs from a fresh
   build.
+- 2026-11-25: pages link one shared stylesheet instead of carrying it inline
+  (about a fifth smaller); the content-only duplicates of every page (Claude
+  artifact input) are no longer published; `404.html`, `sitemap.xml` and
+  `robots.txt` added.
