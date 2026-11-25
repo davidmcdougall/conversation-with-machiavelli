@@ -1,0 +1,528 @@
+<title>A Conversation with Machiavelli — Whether, to govern a multitude, compliance is more necessary than penalty</title>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+:root {
+  --paper:      #EDEEEC;
+  --paper-sunk: #E4E6E3;
+  --ink:        #1B1E1C;
+  --ink-muted:  #5C625E;
+  --ink-faint:  #868C87;
+  --rule:       #C9CDC8;
+  --rule-faint: #DCDFDB;
+  --nm:         #3A5A6B;
+  --fg:         #6E5A3C;
+  --serif: "EB Garamond", "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  --sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --mono:  "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:      #161917;
+    --paper-sunk: #1D211E;
+    --ink:        #E3E6E1;
+    --ink-muted:  #A0A6A0;
+    --ink-faint:  #767C77;
+    --rule:       #343934;
+    --rule-faint: #262B27;
+    --nm:         #8FB4C6;
+    --fg:         #C4A97C;
+  }
+}
+:root[data-theme="dark"] {
+  --paper:      #161917;
+  --paper-sunk: #1D211E;
+  --ink:        #E3E6E1;
+  --ink-muted:  #A0A6A0;
+  --ink-faint:  #767C77;
+  --rule:       #343934;
+  --rule-faint: #262B27;
+  --nm:         #8FB4C6;
+  --fg:         #C4A97C;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 1160px; margin: 0 auto; padding-inline: 20px; padding-block: 0 0; }
+
+/* ---- masthead ---- */
+.masthead { padding-block: 56px 32px; border-bottom: 1px solid var(--rule); }
+.eyebrow {
+  font-family: var(--sans); font-size: 11px; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint);
+  margin: 0 0 18px; text-wrap: balance;
+}
+.eyebrow a { color: inherit; text-decoration: none; }
+.eyebrow a:hover, .eyebrow a:focus { color: var(--ink); }
+h1 {
+  font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 5vw, 44px);
+  line-height: 1.12; margin: 0 0 14px; text-wrap: balance; letter-spacing: -0.01em;
+}
+h1 .sub { display: block; font-style: italic; color: var(--ink-muted); font-size: .52em; margin-top: 12px; letter-spacing: 0; }
+.standfirst {
+  font-family: var(--serif); font-size: 18px; line-height: 1.55;
+  color: var(--ink); max-width: 60ch; margin: 22px 0 0;
+}
+.sf-label {
+  display: block; font-family: var(--sans); font-weight: 600; font-size: 10.5px;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px;
+}
+.index .standfirst { font-size: 17px; color: var(--ink-muted); }
+
+/* ---- the pairing device ---- */
+.pairing {
+  display: flex; align-items: stretch; gap: 0; margin: 30px 0 0;
+  border: 1px solid var(--rule); border-radius: 2px; overflow: hidden;
+  font-family: var(--sans); background: var(--paper-sunk);
+}
+.pairing > div { flex: 1 1 0; padding: 13px 16px; min-width: 0; }
+.pairing .who { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
+.pairing .nm-side .who { color: var(--nm); }
+.pairing .fg-side .who { color: var(--fg); }
+.pairing .what { font-size: 13.5px; color: var(--ink-muted); }
+.pairing .arrow {
+  flex: 0 0 auto; display: flex; align-items: center; justify-content: center;
+  padding-inline: 14px; color: var(--ink-faint); font-size: 15px;
+  border-inline: 1px solid var(--rule);
+}
+
+/* ---- pair-to-pair navigation ---- */
+.pairnav {
+  display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+  margin-top: 18px; font-family: var(--sans); font-size: 12.5px;
+  color: var(--ink-muted);
+}
+.pairnav a { text-decoration: none; color: var(--ink-muted); }
+.pairnav a:hover, .pairnav a:focus { color: var(--ink); text-decoration: underline; }
+
+/* ---- work sections ---- */
+.work { padding-block: 52px 0; }
+.work-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
+.work-head .tag {
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .12em;
+  text-transform: uppercase; padding: 4px 8px 3px; border-radius: 2px; color: var(--paper);
+  align-self: center;
+}
+.work-head .cite { font-family: var(--sans); font-size: 13px; color: var(--ink-faint); }
+.work.nm .tag { background: var(--nm); }
+.work.fg .tag { background: var(--fg); }
+h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; letter-spacing: -0.005em; }
+.rubric {
+  font-style: italic; color: var(--ink-muted); max-width: 70ch;
+  margin: 10px 0 0; font-size: 16.5px; line-height: 1.5;
+}
+.rubric-note {
+  font-family: var(--sans); font-style: normal; font-size: 12px;
+  color: var(--ink-faint); margin-top: 7px;
+}
+.colheads {
+  display: grid; grid-template-columns: 66px 1fr 1fr; gap: 0 28px;
+  margin-top: 30px; padding-bottom: 7px; border-bottom: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint);
+}
+
+/* ---- the facing pair ---- */
+.pair {
+  display: grid; grid-template-columns: 66px 1fr 1fr; gap: 0 28px;
+  padding-block: 22px; border-bottom: 1px solid var(--rule-faint);
+  scroll-margin-top: 20px;
+}
+.pair:target { background: var(--paper-sunk); }
+.annot { grid-column: 2 / -1; margin-top: 14px; font-family: var(--sans); font-size: 13.5px;
+  line-height: 1.55; color: var(--ink-muted); }
+.annot summary { cursor: pointer; font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); list-style: none; }
+.annot summary::-webkit-details-marker { display: none; }
+.annot summary::before { content: "+ "; }
+.annot[open] summary::before { content: "− "; }
+.annot p { margin: 8px 0 0; max-width: 72ch; }
+.annot .lem { font-weight: 600; color: var(--ink); }
+.annot .xref { color: inherit; text-decoration: underline; text-decoration-color: var(--rule);
+  text-underline-offset: 2px; white-space: nowrap; }
+.gutter { padding-top: 4px; }
+.marks { display: block; margin-top: 10px; font-family: var(--sans); font-size: 11px; line-height: 1.45; }
+.marks a { display: block; color: var(--ink-faint); text-decoration: none; white-space: nowrap; }
+.marks a:hover, .marks a:focus { color: var(--ink); text-decoration: underline; }
+.uid {
+  font-family: var(--mono); font-size: 10.5px; color: var(--ink-faint);
+  text-decoration: none; letter-spacing: -0.02em;
+}
+.uid:hover, .uid:focus { color: var(--ink); text-decoration: underline; }
+.col { min-width: 0; }
+.col.it { hyphens: auto; }
+.col.en { hyphens: auto; }
+.supplied { color: var(--ink-muted); }
+
+/* ---- apparatus ---- */
+.apparatus {
+  margin-top: 34px; padding-top: 22px; border-top: 2px solid var(--rule);
+  font-family: var(--sans); font-size: 13.5px; line-height: 1.58;
+  color: var(--ink-muted);
+}
+/* Source is a short paragraph; variants and notes run long, so they flow in
+   two balanced columns across the full width rather than in one narrow strip. */
+.apparatus > div + div { margin-top: 30px; }
+.app-source p { max-width: 78ch; }
+.app-variants, .app-notes { columns: 2 340px; column-gap: 40px; }
+.app-variants h3, .app-notes h3 { column-span: all; }
+.apparatus p { break-inside: avoid; scroll-margin-top: 20px; }
+.apparatus p:target { background: var(--paper-sunk); box-shadow: 0 0 0 6px var(--paper-sunk); }
+.apparatus .loc {
+  font-family: var(--mono); font-size: 11px; color: var(--ink-faint); text-decoration: none;
+  white-space: nowrap; margin-right: .2em;
+}
+.apparatus .loc:hover, .apparatus .loc:focus { color: var(--ink); text-decoration: underline; }
+.apparatus h3 {
+  font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint); margin: 0 0 9px;
+}
+.apparatus p { margin: 0 0 9px; }
+.apparatus p:last-child { margin-bottom: 0; }
+.apparatus .lem { font-family: var(--serif); font-size: 15px; color: var(--ink); font-style: italic; }
+.sig { font-family: var(--mono); font-size: 12px; color: var(--ink); }
+
+/* ---- colophon ---- */
+.pairnav-foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--rule); }
+.colophon {
+  margin-top: 40px; padding-block: 0 60px;
+  font-family: var(--sans); font-size: 13px; line-height: 1.6; color: var(--ink-muted);
+}
+.colophon .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 34px; }
+.colophon h3 {
+  font-size: 10.5px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--ink-faint); margin: 0 0 8px;
+}
+.colophon p { margin: 0 0 8px; }
+.colophon ul { margin: 0; padding-left: 16px; }
+.colophon li { margin-bottom: 5px; }
+.colophon .links { margin: 18px 0 0; display: flex; gap: 6px 22px; flex-wrap: wrap; }
+.colophon .links a { color: var(--ink-muted); }
+.about { max-width: 68ch; padding-block: 44px 0; font-family: var(--serif); font-size: 17px; }
+.about h2 { margin: 38px 0 10px; }
+.about h2:first-child { margin-top: 0; }
+.about p { margin: 0 0 12px; }
+.state {
+  margin-top: 0; padding: 14px 16px; background: var(--paper-sunk);
+  border-left: 2px solid var(--ink-faint); border-radius: 0 2px 2px 0;
+  font-size: 12.5px;
+}
+.state strong { color: var(--ink); font-weight: 600; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--nm); outline-offset: 2px; }
+
+/* ---- contents / index page ---- */
+.toc { margin-top: -22px; }
+.toc .book {
+  font-family: var(--serif); font-weight: 500; font-size: 22px; margin: 0;
+  padding: 34px 0 10px; border-bottom: 1px solid var(--rule);
+  display: flex; align-items: baseline; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+}
+.toc .book:first-child { padding-top: 0; }
+.toc .book span { font-family: var(--sans); font-size: 12px; font-weight: 400; color: var(--ink-faint); }
+.toc-row {
+  display: grid; grid-template-columns: 40px minmax(0, 70ch) 1fr; gap: 0 20px;
+  padding-block: 14px; border-bottom: 1px solid var(--rule-faint);
+  font-family: var(--sans); align-items: baseline;
+}
+.toc-row .n { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
+.toc-row > div:nth-child(2) { line-height: 1.32; }
+.toc-row a { text-decoration: none; color: var(--ink); font-family: var(--serif); font-size: 17px; }
+.toc-row a:hover, .toc-row a:focus { text-decoration: underline; }
+.toc-row .unpublished { color: var(--ink-faint); font-style: italic; font-size: 14px; }
+.toc-row .ids { color: var(--ink-faint); font-size: 12px; font-family: var(--sans); margin-top: 3px; }
+.toc-row .dated { color: var(--ink-faint); font-size: 12px; text-align: right; }
+
+/* ---- language toggle: on phones the facing columns stack, so the reader picks
+   one language (English by default), or both; desktop always shows both ---- */
+.langbar { display: none; }
+@media (max-width: 760px) {
+  .langbar {
+    display: flex; align-items: center; gap: 6px; position: sticky; top: 0; z-index: 5;
+    margin: 0 -20px; padding: 10px 20px; background: var(--paper);
+    border-bottom: 1px solid var(--rule); font-family: var(--sans); font-size: 12.5px;
+  }
+  .langbar .lb-label { color: var(--ink-faint); margin-right: 4px; font-size: 11px;
+    font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+  .langbar button {
+    font: inherit; color: var(--ink-muted); background: transparent; cursor: pointer;
+    border: 1px solid var(--rule); border-radius: 2px; padding: 5px 11px;
+  }
+  .langbar button[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  html[data-lang="en"] .col.it, html[data-lang="it"] .col.en { display: none; }
+  html[data-lang="en"] .col.en::before, html[data-lang="it"] .col.it::before { display: none; }
+  html[data-lang="it"] .col.it { margin-bottom: 0; padding-bottom: 0; border-bottom: 0; }
+  .pair { scroll-margin-top: 56px; }
+  .apparatus p { scroll-margin-top: 56px; }
+}
+@media (max-width: 760px) {
+  body { font-size: 16.5px; }
+  .colheads { display: none; }
+  .pair { grid-template-columns: 1fr; gap: 0; padding-block: 20px; }
+  .gutter { padding-top: 0; margin-bottom: 8px; display: flex; gap: 14px; align-items: baseline; }
+  .marks { display: inline-flex; gap: 12px; margin-top: 0; }
+  .annot { grid-column: 1; }
+  .col.it { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px dotted var(--rule); }
+  .col.it::before, .col.en::before {
+    display: block; font-family: var(--sans); font-size: 10px; font-weight: 600;
+    letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px;
+  }
+  .col.it::before { content: "Italian"; }
+  .col.en::before { content: "English"; }
+  .pairing { flex-direction: column; }
+  .pairing .arrow { border-inline: 0; border-block: 1px solid var(--rule); padding-block: 6px; }
+  .toc-row { grid-template-columns: 1fr; gap: 4px; }
+  .toc-row .dated { text-align: left; }
+  .app-variants, .app-notes { columns: 1; }
+}
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow"><a href="../index.html">A Conversation with Machiavelli</a> · Pair 38 of 39</p>
+    <h1>Whether, to govern a multitude, compliance is more necessary than penalty
+      <span class="sub">Discourses III.19, and Guicciardini&#x27;s reply</span></h1>
+    <p class="standfirst"><span class="sf-label">Editor's summary</span> Machiavelli holds that one&#x27;s ordinary companions cannot be governed wholly by penalty, but that whoever commands subjects must turn rather to penalty than to compliance, moderating it to avoid hatred. Guicciardini holds that severity and humanity, each alone, are useless in a governor, and the two equally mixed, seldom if ever found, most precious; the doubt which should prevail concerns only men with enough of both. He has no doubt that one must suit the nature of the governed, and distinguishes the prince, who he believes should seek his peoples&#x27; goodwill, from a minister: in an army love would be more necessary; in cities, he believes, somewhat more terror than ordinary princes use. He says therefore that in good and legitimate governments fear and love can hardly be supposed apart.</p>
+
+    <div class="pairing">
+      <div class="nm-side">
+        <div class="who">Niccolò Machiavelli</div>
+        <div class="what">Discorsi sopra la prima Deca di Tito Livio · written c. 1513–19, printed 1531</div>
+      </div>
+      <div class="arrow" aria-hidden="true">answered by</div>
+      <div class="fg-side">
+        <div class="who">Francesco Guicciardini</div>
+        <div class="what">Considerazioni intorno ai Discorsi del Machiavelli · written 1529–30, printed 1857</div>
+      </div>
+    </div>
+    <nav class="pairnav"><a href="3.17.html">← Pair 3.17</a><a href="../index.html">All 39 pairs</a><span></span></nav>
+  </header>
+
+  <div class="langbar" role="group" aria-label="Show which language">
+    <span class="lb-label">Show</span>
+    <button type="button" data-set-lang="en">English</button>
+    <button type="button" data-set-lang="it">Italian</button>
+    <button type="button" data-set-lang="both">Both</button>
+  </div>
+
+  <section class="work nm">
+    <div class="work-head">
+      <span class="tag" title="NM-DISC.3.19">Machiavelli</span>
+      <h2>Capitolo XIX</h2>
+      <span class="cite"><i>Discorsi</i> III.19</span>
+    </div>
+    <p class="rubric">Se a reggere una moltitudine è più necessario l&#x27;ossequio che la pena.</p>
+    <p class="rubric">Whether, to govern a multitude, compliance is more necessary than penalty.
+      </p>
+
+    <div class="colheads"><div></div><div>Italian · 1824</div><div>English</div></div>
+      <div class="pair" id="NM-DISC.3.19.01">
+        <div class="gutter"><a class="uid" href="#NM-DISC.3.19.01">3.19.01</a><span class="marks"><a href="#n-NM-DISC.3.19-1">3 notes</a><a href="#v-NM-DISC-III19-D007">1 variant</a></span></div>
+        <div class="col it" lang="it">Era la Repubblica romana sollevata per le inimicizie de&#x27; Nobili e de&#x27; Plebei, nondimeno soprastando loro la guerra, mandarono fuori con gli eserciti Quinzio ed Appio Claudio. Appio per essere crudele e rozzo nel comandare, fu male ubbidito dai suoi, tanto che quasi rotto si fuggì della sua Provincia. Quinzio per essere benigno e di umano ingegno, ebbe i suoi soldati ubbidienti, e riportonne la vittoria.</div>
+        <div class="col en" lang="en">The Roman republic was stirred up by the enmities of the nobles and of the plebeians, nonetheless, war impending over them, they sent out with the armies Quinctius and Appius Claudius. Appius, through being cruel and rude in commanding, was ill obeyed by his own, so that, almost routed, he fled from his province. Quinctius, through being benign and of humane mind, had his soldiers obedient, and carried away the victory from it.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> The chapter opens on a case, not a precept. The Roman republic was stirred up by the enmities of the nobles and the plebeians; nonetheless, with war impending, Quinctius and Appius Claudius were sent out with the armies. Appius, through being cruel and rude in commanding, was ill obeyed by his own, so that, almost routed, he fled from his province; Quinctius, through being benign and of humane mind, had his soldiers obedient and carried away the victory. The pair is set up as a contrast of two ways of commanding Roman armies sent out at the same time (the editor&#x27;s reading).</p>
+<p><span class="lem">History.</span> The consuls are Appius Claudius and Titus Quinctius, in the year Livy places after the tribune Volero&#x27;s law on the election of plebeian magistrates in the tribal assembly, which the patricians answered by making Appius consul (Livy 2.56; traditionally 471 BC). Appius was sent against the Volsci and Quinctius drew the Aequi (2.58). Livy has Appius hate the plebs more than his father had; his army, hostile to him, did everything slowly and obstinately (2.58), broke before the Volsci and fled to camp; he had the men who had lost their arms, the standard-bearers who had lost their standards and the centurions who had left the ranks beaten and beheaded, and decimated the rest (2.59). Quinctius, milder by nature, lived in concord with his soldiers and gave them the whole of the booty (2.60) (the editor&#x27;s references, checked against the Latin Library text). Machiavelli&#x27;s &quot;almost routed, he fled from his province&quot; compresses Livy&#x27;s flight and the withdrawal to friendly ground (2.59) (the editor&#x27;s reading).</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini does not take up the case of Appius and Quinctius; he begins from the qualities themselves, severity and humanity, and holds that each alone is useless in one who governs <a class="xref" href="#FG-CONS.3.19.01">Guicciardini .01</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.3.19.02">
+        <div class="gutter"><a class="uid" href="#NM-DISC.3.19.02">3.19.02</a><span class="marks"><a href="#n-NM-DISC.3.19-4">5 notes</a><a href="#v-NM-DISC-III19-D001">2 variants</a></span></div>
+        <div class="col it" lang="it">Donde e&#x27; pare che sia meglio a governare una moltitudine essere umano che superbo, pietoso che crudele. Nondimeno Cornelio Tacito, al quale molti altri Scrittori acconsentono, in una sua sentenza conchiude il contrario, quando dice: <i lang="la">In multitudine regenda plus poena, quam obsequium valet.</i> E considerando come si possa salvare l&#x27;una e l&#x27;altra di queste opinioni, dico: o che tu hai a reggere uomini che ti sono per l&#x27;ordinario compagni, o uomini che ti sono sempre soggetti.</div>
+        <div class="col en" lang="en">Whence it seems that, to govern a multitude, it is better to be humane than proud, merciful than cruel. Nonetheless Cornelius Tacitus, to whom many other writers consent, in a sentence of his concludes the contrary, when he says: <i lang="la">In multitudine regenda plus poena, quam obsequium valet.</i> And considering how one can save the one and the other of these opinions, I say: either you are to govern men who are, by the ordinary, companions to you, or men who are always subject to you.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> From the case Machiavelli draws an appearance, not a rule: &quot;it seems&quot; better, in governing a multitude, to be humane than proud, merciful than cruel. Against it he sets the authority of Tacitus, with whom many other writers consent: in governing a multitude, penalty avails more than compliance. Rather than choose, he looks for a way to save both opinions, and finds it in a distinction of the governed: either men who are by the ordinary one&#x27;s companions, or men who are always one&#x27;s subjects. The rest of the chapter applies the distinction, companions first (.03), subjects second (.04).</p>
+<p><span class="lem">History.</span> No sentence in these words has been found in Tacitus (the editor&#x27;s reference). The nearest is <i lang="it">Annals</i> 3.55, on the decline of extravagance at table at Rome after Actium, of which Tacitus makes Vespasian the chief author, where Tacitus says that compliance towards the prince and the love of emulating him availed more than the penalty of the laws and fear: the same two nouns, <i lang="la">obsequium</i> and <i lang="la">poena</i>, with the comparison reversed (the editor&#x27;s reference, checked against the Latin text at thelatinlibrary.com). Whether Machiavelli misremembered the sentence, inverted it, or took it from an intermediary is not settled here. The 1554 edition prints a Latin verb, <i lang="it">ait</i>, and adds an Italian rendering of the sentence that the 1824 does not have.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini answers with two distinctions of his own: first the nature of those governed, then whether one governs as a prince or as a minister <a class="xref" href="#FG-CONS.3.19.01">Guicciardini .01</a>, <a class="xref" href="#FG-CONS.3.19.02">Guicciardini .02</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.3.19.03">
+        <div class="gutter"><a class="uid" href="#NM-DISC.3.19.03">3.19.03</a><span class="marks"><a href="#n-NM-DISC.3.19-9">4 notes</a><a href="#v-NM-DISC-III19-D003">1 variant</a></span></div>
+        <div class="col it" lang="it">Quando ti sono compagni, non si può interamente usare la pena, né quella severità di che ragiona Cornelio; e perché la Plebe romana aveva in Roma eguale imperio con la Nobiltà, non poteva uno che ne diventava Principe a tempo, con crudeltà e rozzezza maneggiarla. E molte volte si vide che miglior frutto fecero i Capitani romani, che si facevano amare dagli eserciti, e che con ossequio li maneggiavano, che quelli che si facevano straordinariamente temere, se già e&#x27; non erano accompagnati da una eccessiva virtù, come fu Manlio Torquato.</div>
+        <div class="col en" lang="en">When they are companions to you, one cannot wholly use penalty, nor that severity of which Cornelius reasons; and because the Roman plebs had in Rome equal rule with the nobility, one who became prince of it for a time could not handle it with cruelty and rudeness. And many times it was seen that the Roman captains who made themselves loved by the armies, and who handled them with compliance, made better fruit than those who made themselves extraordinarily feared, unless they were accompanied by an excessive <i lang="it">virtù</i>, as was Manlius Torquatus.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> Companions. When those governed are companions to one, penalty cannot be wholly used, nor the severity Tacitus speaks of. Rome is the example: the plebs had equal rule with the nobility, so that a man who became its prince for a time, a magistrate with a term (the editor&#x27;s reading), could not handle it with cruelty and rudeness. Many times it was seen that the Roman captains who made themselves loved by the armies and handled them with compliance made better fruit than those who made themselves extraordinarily feared, unless these were accompanied by an excessive <i lang="it">virtù</i>, as was Manlius Torquatus. The exception is kept as a condition: the comparison goes against the captains who made themselves extraordinarily feared, unless they were accompanied by an excessive <i lang="it">virtù</i>; how such captains fared against the loved ones is not said (the editor&#x27;s reading).</p>
+<p><span class="lem">History.</span> Titus Manlius Torquatus, consul in 340 BC, who had his own son executed for fighting against orders; Machiavelli sets his harshness beside the humanity of Valerius Corvinus in III.22, a chapter to which Canestrini prints no reply (the editor&#x27;s cross-reference).</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini&#x27;s case of the army is the nearest to this one (the editor&#x27;s reading): in one who commands an army in the name of others, it would be more necessary to abound in love than in fear, because soldiers are conducted to dangerous actions much with love <a class="xref" href="#FG-CONS.3.19.02">Guicciardini .02</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.3.19.04">
+        <div class="gutter"><a class="uid" href="#NM-DISC.3.19.04">3.19.04</a><span class="marks"><a href="#n-NM-DISC.3.19-13">8 notes</a><a href="#v-NM-DISC-III19-D004">3 variants</a></span></div>
+        <div class="col it" lang="it">Ma chi comanda ai sudditi, de&#x27; quali ragiona Cornelio, acciocché non diventino insolenti, e che per troppa tua facilità non ti calpestino, debbe volgersi piuttosto alla pena che all&#x27;ossequio. Ma questa ancora debbe essere in modo moderata, che si fugga l&#x27;odio; perché farsi odiare non torna mai bene ad alcun Principe. Il modo del fuggirlo è lasciare stare la roba de&#x27; sudditi, perché del sangue, quando non vi sia sotto ascosa la rapina, nessun Principe ne è desideroso se non necessitato, e questa necessità viene rare volte; ma sendovi mescolata la rapina, viene sempre, né mancano mai le cagioni e il desiderio di spargerlo, come in altro Trattato sopra questa materia s&#x27;è largamente discorso.</div>
+        <div class="col en" lang="en">But whoever commands the subjects, of whom Cornelius reasons, must, in order that they not become insolent, and that through your too great facility they not trample on you, turn rather to penalty than to compliance. But this also must be moderated in such a way that one flee hatred; because to make oneself hated never turns out well for any prince. The way of fleeing it is to leave alone the property of the subjects, because, of blood, when rapine is not hidden under it, no prince is desirous unless necessitated, and this necessity comes seldom; but rapine being mixed in, it comes always, nor do the causes and the desire to shed it ever fail, as has been discoursed at large on this matter in another treatise.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> Subjects. Whoever commands subjects, the case Tacitus speaks of, must turn rather to penalty than to compliance, in order that they not become insolent nor trample on him for his too great facility. But this also must be moderated in such a way that one flee hatred, because to make oneself hated never turns out well for any prince. The way to flee hatred is to leave alone the property of the subjects. Of blood, when rapine is not hidden under it, no prince is desirous unless necessitated, and this necessity comes seldom; but where rapine is mixed in, it comes always, nor do the causes and the desire to shed it ever fail. The argument rests on a distinction (the editor&#x27;s reading): bloodshed with no rapine under it is seldom necessary; with rapine mixed in, the necessity comes always.</p>
+<p><span class="lem">History.</span> The &quot;other Treatise&quot; is <i lang="it">The Prince</i>, chapter 17, where a prince is to make himself feared in such a way that, if he does not gain love, he flees hatred, which he does by abstaining from the property of his citizens and subjects, and where pretexts for taking property are said never to fail (the editor&#x27;s reference). The 1554 edition&#x27;s <i lang="it">felicità</i>, happiness, for <i lang="it">facilità</i>, and its <i lang="it">non necessitato</i> for <i lang="it">se non necessitato</i>, are recorded in the variant notes.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini&#x27;s governor of cities in another&#x27;s name is the nearest to Machiavelli&#x27;s commander of subjects (the editor&#x27;s reading): he believes such a man conducts his affairs better with somewhat more terror than ordinary princes <a class="xref" href="#FG-CONS.3.19.02">Guicciardini .02</a>. Guicciardini does not take up the property of subjects.</p>
+        </details>
+      </div>
+      <div class="pair" id="NM-DISC.3.19.05">
+        <div class="gutter"><a class="uid" href="#NM-DISC.3.19.05">3.19.05</a><span class="marks"><a href="#n-NM-DISC.3.19-21">3 notes</a></span></div>
+        <div class="col it" lang="it">Meritò dunque più laude Quinzio che Appio; e la sentenza di Cornelio dentro ai termini suoi, e non ne&#x27; casi osservati da Appio, merita d&#x27;essere approvata. E perché noi abbiamo parlato della pena e dell&#x27;ossequio, non mi pare superfluo mostrare, come un esempio d&#x27;umanità poté appresso ai Falisci più che l&#x27;armi.</div>
+        <div class="col en" lang="en">Quinctius, then, merited more praise than Appius; and the sentence of Cornelius, within its terms, and not in the cases observed by Appius, merits being approved. And because we have spoken of penalty and of compliance, it does not seem to me superfluous to show how an example of humanity could <span class="supplied">[do]</span> more with the Faliscans than arms.</div>
+        <details class="annot"><summary>Commentary · 3</summary>
+          <p><span class="lem">Argument.</span> The conclusion: Quinctius, then, merited more praise than Appius; and Tacitus&#x27; sentence, within its terms, and not in the cases observed by Appius, merits being approved. On the distinction of .02 its terms are subjects and Appius&#x27; cases are of companions, so that both opinions are saved, each in its own field (the editor&#x27;s reading). The last sentence turns to the next chapter, where an example of humanity, Camillus and the Falisci, could do more than arms.</p>
+<p><span class="lem">History.</span> III.20 tells how Camillus, besieging Falerii, refused the schoolmaster who brought him the children of its leading men, and how the Falisci, moved by his good faith, gave themselves up (Livy 5.27; the editor&#x27;s reference to the next chapter&#x27;s source). Canestrini prints no reply to III.20-23; his next is to III.24.</p>
+<p><span class="lem">Cross-reference.</span> Guicciardini ends on a claim Machiavelli does not make: he says therefore that, speaking of good and legitimate governments, one can ill presuppose that where there is fear there is not also love, because the severity of justice cannot be that it is not loved by whoever wishes to live well, and the love that arises from humanity, accompanied by justice, cannot make that it is not feared <a class="xref" href="#FG-CONS.3.19.02">Guicciardini .02</a>.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div class="app-source">
+        <h3>Source</h3>
+        <p>Established from the 1824 edition (<span class="sig">WIT-NM-DISC-1824-IA</span>), page-image-backed, which governs. Collated against the 1554 Giglio printing, Venice (<span class="sig">WIT-NM-DISC-1554-IA</span>), which is comparison evidence only.</p>
+<p>Paragraph divisions are editorial. The witness prints the chapter as one unbroken block.</p>
+      </div>
+      <div class="app-variants">
+        <h3>Variants</h3>
+        <p id="v-NM-DISC-III19-D001"><a class="loc" href="#NM-DISC.3.19.02" title="Back to the paragraph">¶ 02</a> <span class="lem">Donde e&#x27; pare che sia meglio a governare una moltitudine essere umano che superbo</span> — 1824. The 1554 witness reads <i lang="it">Onde e pare che ſia meglio, a gouernare una moltitudine,eſſere humano,che ſoperbo</i>. <i lang="it">Donde</i> against <i lang="it">Onde</i>: two adverbs of one sense, whence. Read by both 1824 readers (pass B on the sample page) without doubt. Kept (D38, D501).</p>
+<p id="v-NM-DISC-III19-D002"><a class="loc" href="#NM-DISC.3.19.02" title="Back to the paragraph">¶ 02</a> <span class="lem">Cornelio Tacito, al quale molti altri Scrittori acconsentono, in una sua sentenza conchiude il contrario, quando dice: In multitudine regenda plus poena, quam obsequium valet.</span> — 1824. The 1554 witness reads <i lang="it">Cornelio Tacito(alquale molti altri ſcrittori conſentono)in una ſua ſentenza conchiude il contrario , Quando ait , in multitudine regenda plus pœna , quam obſequium ualet. Cioe, Per regger molti ual piu la ſeuerita,che l&#x27;eſſer benigno.</i>. <i lang="it">acconsentono</i> against <i lang="it">conſentono</i>, two verbs of one sense; <i lang="it">quando dice:</i> against <i lang="it">Quando ait</i>, the 1554 keeping a Latin verb; the 1554 follows the Latin with an Italian rendering, <i lang="it">Per regger molti val più la severità, che l&#x27;esser benigno</i>, which the 1824 does not print, not carried (as II.15, NM-DISC-II15-D001). Read by both 1824 readers on the sample page without doubt. Kept (D38, D501).</p>
+<p id="v-NM-DISC-III19-D003"><a class="loc" href="#NM-DISC.3.19.03" title="Back to the paragraph">¶ 03</a> <span class="lem">non poteva uno che ne diventava Principe a tempo, con crudeltà e rozzezza maneggiarla</span> — 1824. The 1554 witness reads <i lang="it">non poteua uno,che diuentaua Prencipe a tempo,con crudelta,&amp; rozzezza maneggiarla</i>. The 1554 omits <i lang="it">ne</i>, of it, the plebs whose prince for a time the man became. Read by both 1824 readers on the sample page without doubt. Kept (D38, D501).</p>
+<p id="v-NM-DISC-III19-D004"><a class="loc" href="#NM-DISC.3.19.04" title="Back to the paragraph">¶ 04</a> <span class="lem">acciocché non diventino insolenti, e che per troppa tua facilità non ti calpestino</span> — 1824. The 1554 witness reads <i lang="it">accioche non diuentino inſolenti, &amp; che per troppa tua felicità non ti calpeſtino</i>. <i lang="it">facilità</i>, the ease (indulgence) of the commander, against <i lang="it">felicità</i>, his good fortune. Read by pass A and by pass B on a crop without doubt. Both construe; the 1824 kept (D38, D501); translator&#x27;s note.</p>
+<p id="v-NM-DISC-III19-D005"><a class="loc" href="#NM-DISC.3.19.04" title="Back to the paragraph">¶ 04</a> <span class="lem">nessun Principe ne è desideroso se non necessitato</span> — 1824. The 1554 witness reads <i lang="it">neſſuno Prencipe ne è diſideroſo,non neceſsitato</i>. <i lang="it">se non necessitato</i>, unless necessitated, against the 1554&#x27;s <i lang="it">non neceſsitato</i>, not being necessitated. Read by pass A and by pass B on a crop without doubt. Kept (D38, D501); translator&#x27;s note.</p>
+<p id="v-NM-DISC-III19-D006"><a class="loc" href="#NM-DISC.3.19.04" title="Back to the paragraph">¶ 04</a> <span class="lem">né mancano mai le cagioni e il desiderio di spargerlo</span> — 1824. The 1554 witness reads <i lang="it">ne mancano mai le cagioni, &amp; il diſiderio di ſpargerla</i>. <i lang="it">spargerlo</i>, to shed it, the blood (<i lang="it">sangue</i>), against the 1554&#x27;s feminine <i lang="it">ſpargerla</i>, which has no noun to take but <i lang="it">rapina</i>. Read by pass A and by pass B on a crop without doubt. Kept (D38, D501); translator&#x27;s note.</p>
+<p id="v-NM-DISC-III19-D007"><a class="loc" href="#NM-DISC.3.19.01" title="Back to the paragraph">¶ 01</a> <span class="lem">Se a reggere una moltitudine è più necessario l&#x27;ossequio che la pena.</span> — 1824. The 1554 witness reads <i lang="it">SE A REGGERE VNA MOLTITVDINE e piu neceſſario l&#x27;oſſequio,che la pena. Ca.XIX.</i>. The same sentence but for spelling and a comma. Read alike by both 1824 readers without doubt (D503).</p>
+      </div>
+      <div class="app-notes">
+        <h3>Notes</h3>
+        <p id="n-NM-DISC.3.19-1"><a class="loc" href="#NM-DISC.3.19.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">Era la Repubblica romana sollevata per le inimicizie de&#x27; Nobili e de&#x27; Plebei, nondimeno soprastando loro la guerra, mandarono fuori con gli eserciti Quinzio ed Appio Claudio</i>.</span> &quot;The Roman republic was stirred up by the enmities of the nobles and of the plebeians, nonetheless, war impending over them, they sent out with the armies Quinctius and Appius Claudius&quot;: the fronted verb of the first clause set in plain order (D263); <i lang="it">sollevato</i>, stirred up (D496); <i lang="it">inimicizie</i>, enmities (D128); <i lang="it">Nobili</i>, nobles, <i lang="it">Plebei</i>, plebeians (glossary), lower case as the glossary sets them; <i lang="it">nondimeno</i>, nonetheless (D45); <i lang="it">soprastare</i>, impend over (D504); the subject passes without notice from the republic to an unnamed &quot;they&quot;, as printed, and the comma before <i lang="it">nondimeno</i> is kept. Titus Quinctius Capitolinus and Appius Claudius, consuls in 471 BC (names.md; Livy 2.56-60, the editor&#x27;s reference); this Appius is neither the decemvir of I.40 nor the Attus Clausus of FG I.4.</p>
+<p id="n-NM-DISC.3.19-2"><a class="loc" href="#NM-DISC.3.19.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">Appio per essere crudele e rozzo nel comandare, fu male ubbidito dai suoi, tanto che quasi rotto si fuggì della sua Provincia</i>.</span> &quot;Appius, through being cruel and rude in commanding, was ill obeyed by his own, so that, almost routed, he fled from his province&quot;: <i lang="it">per essere</i>, through being, causal, as <i lang="it">per essere stato</i> (FG III.17); <i lang="it">crudele</i>, cruel, with <i lang="it">crudeltà</i> cruelty (.03); <i lang="it">rozzo</i>, rude (D207), with <i lang="it">rozzezza</i> rudeness (.03); <i lang="it">ubbidire</i>, obey (D504); <i lang="it">rotto</i>, routed (D431); <i lang="it">Provincia</i>, province (glossary), here in the Roman sense, the field of war assigned to a consul.</p>
+<p id="n-NM-DISC.3.19-3"><a class="loc" href="#NM-DISC.3.19.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">Quinzio per essere benigno e di umano ingegno, ebbe i suoi soldati ubbidienti, e riportonne la vittoria</i>.</span> &quot;Quinctius, through being benign and of humane mind, had his soldiers obedient, and carried away the victory from it&quot;: <i lang="it">benigno</i>, benign (D504); <i lang="it">umano</i>, humane, of disposition, kept apart from <i lang="it">umanità</i>, humanity (.05); <i lang="it">ingegno</i>, mind (D178); <i lang="it">riportare</i>, carry away (glossary), <i lang="it">ne</i> &quot;from it&quot;, the war.</p>
+<p id="n-NM-DISC.3.19-4"><a class="loc" href="#NM-DISC.3.19.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">Donde e&#x27; pare che sia meglio a governare una moltitudine essere umano che superbo, pietoso che crudele</i>.</span> &quot;Whence it seems that, to govern a multitude, it is better to be humane than proud, merciful than cruel&quot;: <i lang="it">Donde</i>, whence; the 1554 reads <i lang="it">Onde</i>, the same sense (NM-DISC-III19-D001; D501); <i lang="it">pare</i>, it seems, the appearance the next sentence contests; <i lang="it">governare</i>, govern (D64); <i lang="it">superbo</i>, proud (glossary <i lang="it">superbia</i>); <i lang="it">pietoso</i>, merciful (D504), not &quot;pitiful&quot;.</p>
+<p id="n-NM-DISC.3.19-5"><a class="loc" href="#NM-DISC.3.19.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">Nondimeno Cornelio Tacito, al quale molti altri Scrittori acconsentono</i>.</span> &quot;Nonetheless Cornelius Tacitus, to whom many other writers consent&quot;: <i lang="it">nondimeno</i>, nonetheless (D45); <i lang="it">al quale</i>, to whom, the dative kept; <i lang="it">acconsentire</i>, consent (D504), not &quot;concur&quot;, which is <i lang="it">concorrere</i>&#x27;s (SCOPE §3); <i lang="it">Scrittori</i>, writers. The 1554 reads <i lang="it">conſentono</i> (NM-DISC-III19-D002; D501).</p>
+<p id="n-NM-DISC.3.19-6"><a class="loc" href="#NM-DISC.3.19.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">in una sua sentenza conchiude il contrario, quando dice: <i lang="la">In multitudine regenda plus poena, quam obsequium valet.</i></i>.</span> &quot;In a sentence of his concludes the contrary, when he says&quot;: <i lang="it">sentenza</i>, sentence (glossary); <i lang="it">conchiudere</i>, conclude. The Latin, as the 1824 prints it, means &quot;in governing a multitude, penalty avails more than compliance&quot;. No sentence in these words has been found in Tacitus (the editor&#x27;s reference); the nearest is <i lang="it">Annals</i> 3.55, where Tacitus says the reverse, that compliance towards the prince and the love of emulating him availed more than the penalty of the laws and fear (<i lang="la">obsequium inde in principem et aemulandi amor validior quam poena ex legibus et metus</i>; checked against the Latin text at thelatinlibrary.com). The 1554 has <i lang="it">Quando ait</i> and adds an Italian rendering, which the 1824 does not print and the edition does not carry (NM-DISC-III19-D002; D501).</p>
+<p id="n-NM-DISC.3.19-7"><a class="loc" href="#NM-DISC.3.19.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">E considerando come si possa salvare l&#x27;una e l&#x27;altra di queste opinioni, dico</i>.</span> &quot;And considering how one can save the one and the other of these opinions, I say&quot;: <i lang="it">salvare</i>, save, to keep both opinions true; <i lang="it">opinioni</i>, opinions (D02); <i lang="it">dico</i>, I say, Machiavelli&#x27;s own distinction.</p>
+<p id="n-NM-DISC.3.19-8"><a class="loc" href="#NM-DISC.3.19.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">o che tu hai a reggere uomini che ti sono per l&#x27;ordinario compagni, o uomini che ti sono sempre soggetti</i>.</span> &quot;Either you are to govern men who are, by the ordinary, companions to you, or men who are always subject to you&quot;: <i lang="it">avere a</i>, be to (D261), of the case one has in hand; <i lang="it">per l&#x27;ordinario</i>, by the ordinary (D151), set against <i lang="it">sempre</i>, always, in the second member, which is why the prince of .03 is only <i lang="it">a tempo</i>; <i lang="it">compagni</i>, companions (D452), extended here from Rome&#x27;s allies to equals in the city (D504); <i lang="it">soggetti</i>, subject (D488, a recorded collapse with <i lang="it">sudditi</i>, subjects, .04).</p>
+<p id="n-NM-DISC.3.19-9"><a class="loc" href="#NM-DISC.3.19.03" title="Back to the paragraph">¶ 03</a> <span class="lem"><i lang="it">Quando ti sono compagni, non si può interamente usare la pena, né quella severità di che ragiona Cornelio</i>.</span> &quot;When they are companions to you, one cannot wholly use penalty, nor that severity of which Cornelius reasons&quot;: <i lang="it">interamente</i>, wholly; <i lang="it">severità</i>, severity (D504), the word Guicciardini opens with; <i lang="it">ragionare di</i>, reason of (D504), to treat of.</p>
+<p id="n-NM-DISC.3.19-10"><a class="loc" href="#NM-DISC.3.19.03" title="Back to the paragraph">¶ 03</a> <span class="lem"><i lang="it">e perché la Plebe romana aveva in Roma eguale imperio con la Nobiltà, non poteva uno che ne diventava Principe a tempo, con crudeltà e rozzezza maneggiarla</i>.</span> &quot;And because the Roman plebs had in Rome equal rule with the nobility, one who became prince of it for a time could not handle it with cruelty and rudeness&quot;: <i lang="it">Plebe</i>, plebs, <i lang="it">Nobiltà</i>, nobility (glossary); <i lang="it">imperio</i>, rule (D124), sovereignty shared, not empire over others; <i lang="it">Principe a tempo</i>, prince for a time, a consul or other magistrate set over the plebs for a term (the editor&#x27;s reading); <i lang="it">ne</i>, of it, Rome or the plebs, left open as in the Italian, the editor reading the plebs; the 1554 omits it (NM-DISC-III19-D003; D501); <i lang="it">maneggiare</i>, handle (glossary).</p>
+<p id="n-NM-DISC.3.19-11"><a class="loc" href="#NM-DISC.3.19.03" title="Back to the paragraph">¶ 03</a> <span class="lem"><i lang="it">E molte volte si vide che miglior frutto fecero i Capitani romani, che si facevano amare dagli eserciti, e che con ossequio li maneggiavano, che quelli che si facevano straordinariamente temere</i>.</span> &quot;And many times it was seen that the Roman captains who made themselves loved by the armies, and who handled them with compliance, made better fruit than those who made themselves extraordinarily feared&quot;: the fronted object <i lang="it">miglior frutto</i> set in plain order (D263); <i lang="it">frutto</i>, fruit (D504), with <i lang="it">fare</i>, make (D410); <i lang="it">Capitani</i>, captains (glossary); <i lang="it">con ossequio</i>, with compliance, here the commander&#x27;s towards his soldiers; <i lang="it">amare</i>, love, and <i lang="it">temere</i>, fear (glossary <i lang="it">timore</i>); <i lang="it">straordinariamente</i>, extraordinarily (D151), beyond the ordinary.</p>
+<p id="n-NM-DISC.3.19-12"><a class="loc" href="#NM-DISC.3.19.03" title="Back to the paragraph">¶ 03</a> <span class="lem"><i lang="it">se già e&#x27; non erano accompagnati da una eccessiva virtù, come fu Manlio Torquato</i>.</span> &quot;Unless they were accompanied by an excessive <i lang="it">virtù</i>, as was Manlius Torquatus&quot;: <i lang="it">se già ... non</i>, unless, the exception; <i lang="it">già</i> with the negative is not rendered (D374, D423), &quot;indeed&quot; staying <i lang="it">anzi</i>&#x27;s (D147); <i lang="it">eccessivo</i>, excessive (D504); <i lang="it">virtù</i> untranslated (glossary). Titus Manlius Torquatus (names.md, as I.11), whose severity is the subject of III.22 (the editor&#x27;s cross-reference).</p>
+<p id="n-NM-DISC.3.19-13"><a class="loc" href="#NM-DISC.3.19.04" title="Back to the paragraph">¶ 04</a> <span class="lem"><i lang="it">Ma chi comanda ai sudditi, de&#x27; quali ragiona Cornelio, acciocché non diventino insolenti, e che per troppa tua facilità non ti calpestino, debbe volgersi piuttosto alla pena che all&#x27;ossequio</i>.</span> &quot;But whoever commands the subjects, of whom Cornelius reasons, must, in order that they not become insolent, and that through your too great facility they not trample on you, turn rather to penalty than to compliance&quot;: in the Italian the two purposes stand between the subject and <i lang="it">debbe</i>; the English moves &quot;must&quot; before them, so that they attach to the turning and not to the commanding, no inversion being involved; <i lang="it">ai sudditi</i>, the subjects, with the article, the second member of .02; <i lang="it">sudditi</i>, subjects (D488); <i lang="it">acciocché</i>, in order that (D423), its subjunctives without &quot;should&quot; (D348); <i lang="it">insolente</i>, insolent (D464); <i lang="it">facilità</i>, facility (glossary), ease of temper, readiness to give way; the person shifts to &quot;you&quot;, as printed; <i lang="it">calpestare</i>, trample on (D504); <i lang="it">debbe</i>, must (D274); <i lang="it">volgersi</i>, turn (glossary). The 1554 reads <i lang="it">felicità</i>, happiness or good fortune, so that the subjects trample on the commander through his too great good fortune and not through his facility (NM-DISC-III19-D004; D501).</p>
+<p id="n-NM-DISC.3.19-14"><a class="loc" href="#NM-DISC.3.19.04" title="Back to the paragraph">¶ 04</a> <span class="lem"><i lang="it">Ma questa ancora debbe essere in modo moderata, che si fugga l&#x27;odio</i>.</span> &quot;But this also must be moderated in such a way that one flee hatred&quot;: <i lang="it">ancora</i>, also (D472), a sense beside D496&#x27;s &quot;still&quot;; <i lang="it">in modo ... che</i>, in such a way that (glossary); <i lang="it">moderato</i>, moderated; <i lang="it">fuggire</i>, flee (D325); <i lang="it">odio</i>, hatred (D504).</p>
+<p id="n-NM-DISC.3.19-15"><a class="loc" href="#NM-DISC.3.19.04" title="Back to the paragraph">¶ 04</a> <span class="lem"><i lang="it">perché farsi odiare non torna mai bene ad alcun Principe</i>.</span> &quot;Because to make oneself hated never turns out well for any prince&quot;: <i lang="it">tornare bene</i>, turn out well (D504).</p>
+<p id="n-NM-DISC.3.19-16"><a class="loc" href="#NM-DISC.3.19.04" title="Back to the paragraph">¶ 04</a> <span class="lem"><i lang="it">Il modo del fuggirlo è lasciare stare la roba de&#x27; sudditi</i>.</span> &quot;The way of fleeing it is to leave alone the property of the subjects&quot;: <i lang="it">modo</i>, way (glossary); <i lang="it">lasciare stare</i>, leave alone (<i lang="it">lasciare</i>, leave, D464; &quot;let alone&quot; is D226&#x27;s); <i lang="it">roba</i>, property (D504), goods and possessions.</p>
+<p id="n-NM-DISC.3.19-17"><a class="loc" href="#NM-DISC.3.19.04" title="Back to the paragraph">¶ 04</a> <span class="lem"><i lang="it">perché del sangue, quando non vi sia sotto ascosa la rapina, nessun Principe ne è desideroso se non necessitato</i>.</span> &quot;Because, of blood, when rapine is not hidden under it, no prince is desirous unless necessitated&quot;: the fronted genitive <i lang="it">del sangue</i> kept first, answered by <i lang="it">ne</i> (D263, a contrast with <i lang="it">la roba</i>); <i lang="it">sangue</i>, blood (D410); <i lang="it">ascoso</i>, hidden; <i lang="it">rapina</i>, rapine (D504); <i lang="it">desideroso</i>, desirous (glossary <i lang="it">desiderare</i>); <i lang="it">se non necessitato</i>, unless necessitated; the 1554 reads <i lang="it">non neceſsitato</i>, not being necessitated (NM-DISC-III19-D005; D501).</p>
+<p id="n-NM-DISC.3.19-18"><a class="loc" href="#NM-DISC.3.19.04" title="Back to the paragraph">¶ 04</a> <span class="lem"><i lang="it">e questa necessità viene rare volte; ma sendovi mescolata la rapina, viene sempre</i>.</span> &quot;And this necessity comes seldom; but rapine being mixed in, it comes always&quot;: <i lang="it">rare volte</i>, seldom (D97); <i lang="it">mescolare</i>, mix.</p>
+<p id="n-NM-DISC.3.19-19"><a class="loc" href="#NM-DISC.3.19.04" title="Back to the paragraph">¶ 04</a> <span class="lem"><i lang="it">né mancano mai le cagioni e il desiderio di spargerlo</i>.</span> &quot;Nor do the causes and the desire to shed it ever fail&quot;: <i lang="it">mancare</i>, fail (D206); <i lang="it">cagioni</i>, causes (glossary, a recorded collapse with Guicciardini&#x27;s <i lang="it">causa</i>); <i lang="it">spargere</i>, shed; <i lang="it">lo</i>, it, the blood. The 1554 reads <i lang="it">ſpargerla</i>, a feminine whose only sensible antecedent is <i lang="it">rapina</i> (NM-DISC-III19-D006; D501).</p>
+<p id="n-NM-DISC.3.19-20"><a class="loc" href="#NM-DISC.3.19.04" title="Back to the paragraph">¶ 04</a> <span class="lem"><i lang="it">come in altro Trattato sopra questa materia s&#x27;è largamente discorso</i>.</span> &quot;As has been discoursed at large on this matter in another treatise&quot;: <i lang="it">discorrere</i>, discourse (SCOPE §3, the <i lang="la">currere</i> family); <i lang="it">largamente</i>, at large (D464). The other treatise is <i lang="it">The Prince</i>, chapter 17, on being feared without being hated and abstaining from the property of subjects (the editor&#x27;s reference).</p>
+<p id="n-NM-DISC.3.19-21"><a class="loc" href="#NM-DISC.3.19.05" title="Back to the paragraph">¶ 05</a> <span class="lem"><i lang="it">Meritò dunque più laude Quinzio che Appio</i>.</span> &quot;Quinctius, then, merited more praise than Appius&quot;: <i lang="it">dunque</i>, then, as <i lang="it">adunque</i> (D74), which the 1554 prints; <i lang="it">laude</i>, praise (glossary); the fronted verb set in plain order (D263).</p>
+<p id="n-NM-DISC.3.19-22"><a class="loc" href="#NM-DISC.3.19.05" title="Back to the paragraph">¶ 05</a> <span class="lem"><i lang="it">e la sentenza di Cornelio dentro ai termini suoi, e non ne&#x27; casi osservati da Appio, merita d&#x27;essere approvata</i>.</span> &quot;And the sentence of Cornelius, within its terms, and not in the cases observed by Appius, merits being approved&quot;: <i lang="it">termini</i>, terms (D401), the bounds of the sentence&#x27;s case, subjects; <i lang="it">osservare</i>, observe, here of cases met with in practice. The sentence holds within its terms; Appius&#x27; case, of companions, is outside them.</p>
+<p id="n-NM-DISC.3.19-23"><a class="loc" href="#NM-DISC.3.19.05" title="Back to the paragraph">¶ 05</a> <span class="lem"><i lang="it">E perché noi abbiamo parlato della pena e dell&#x27;ossequio, non mi pare superfluo mostrare, come un esempio d&#x27;umanità poté appresso ai Falisci più che l&#x27;armi</i>.</span> &quot;And because we have spoken of penalty and of compliance, it does not seem to me superfluous to show how an example of humanity could [do] more with the Faliscans than arms&quot;: <i lang="it">umanità</i>, humanity (D504); <i lang="it">potere più</i>, can [do] more (D53), as at III.17; <i lang="it">appresso a</i>, with, among; <i lang="it">Falisci</i>, Faliscans (names.md); <i lang="it">armi</i>, arms. The sentence announces III.20, whose rubric it anticipates.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work fg">
+    <div class="work-head">
+      <span class="tag" title="FG-CONS.3.19">Guicciardini</span>
+      <h2>Considerazione sul capitolo XIX</h2>
+      <span class="cite"><i>Considerazioni</i> III.19</span>
+    </div>
+    <p class="rubric">Se a reggere una moltitudine è più necessario lo ossequio che la pena</p>
+    <p class="rubric">Whether, to govern a multitude, compliance is more necessary than penalty
+      </p>
+
+    <div class="colheads"><div></div><div>Italian · 1857</div><div>English</div></div>
+      <div class="pair" id="FG-CONS.3.19.01">
+        <div class="gutter"><a class="uid" href="#FG-CONS.3.19.01">3.19.01</a><span class="marks"><a href="#n-FG-CONS.3.19-2">18 notes</a><a href="#v-FG-CONS-III19-C001">3 variants</a></span></div>
+        <div class="col it" lang="it">La severità, nuda di ogni umanità o vogliamo dire piacevolezza, è inutile in chi regge altri; la umanità o vero piacevolezza non accompagnata da qualche severità è il medesimo; l&#x27;una condita equalmente con l&#x27;altra sarebbe preziosissima, e sarebbe quella armonia temperata che è suavissima e ammirabile. Ma perché questo condimento o rare volte o non mai si truova in uomo alcuno; essendo così lo ordine della natura che tutte le cose nostre abbino qualche imperfezione, anzi pare che ciascuno o abbia più del severo che del piacevole, o più del piacevole che del severo; non sanza cagione si dubita quale sia più a proposito, o chi participando dell&#x27;uno e dell&#x27;altro ha più del severo, o vero chi ha più dello umano, intendendo però di coloro che hanno tanto dell&#x27;uno e dell&#x27;altro, che dove abbonda il timore non manchi l&#x27;amore, e dove abbonda l&#x27;amore non manchi il timore. Circa a che la prima distinzione che mi occorre è considerare la natura di chi tu reggi; perché alcuni sono di ingegno sì nobile e generoso che più volentieri vanno con la piacevolezza che col timore, altri pel contrario pieni di una certa durezza, che non si possono piegare con la dolcezza, ma bisogna domargli e rompergli con la asperità. Non è dubio che con questi tali bisogna accommodarsi secondo le loro condizioni; e a questo proposito diceva Federico Barbarossa, principe molto eccellente, e che nato in Germania aveva lungamente conversato in Italia, che le due prime nazioni del mondo, e secondo l&#x27;altre, piene di molte virtù, erano e&#x27; Germani e gl&#x27;Italiani; ma che bisognava diversa arte di reggergli, perché e&#x27; Tedeschi erano arroganti, insolenti, e di qualità che la dolcezza che tu usavi con loro, la attribuivano più presto a timore che a umanità, pel contrario gl&#x27;Italiani, più trattabili, più gentili, e di natura che la asperità più presto gli sdegnava che spaventava. Però a questi essere necessario perdonare talvolta e&#x27; delitti, e procedere con benignità; quelli altri punirli severamente, perché altrimenti diventerebbono più insolenti.</div>
+        <div class="col en" lang="en">Severity, naked of all humanity, or let us say pleasantness, is useless in one who governs others; humanity, or else pleasantness, not accompanied by some severity is the same; the one seasoned equally with the other would be most precious, and would be that tempered harmony which is most suave and admirable. But because this seasoning is found either seldom or never in any man; the order of nature being so, that all our things have some imperfection, indeed, it seems that each one has either more of the severe than of the pleasant, or more of the pleasant than of the severe; not without cause one doubts which is more to the purpose, either he who, partaking of the one and of the other, has more of the severe, or else he who has more of the humane, meaning therefore those who have so much of the one and of the other that where fear abounds love not fail, and where love abounds fear not fail. About which, the first distinction that occurs to me is to consider the nature of whom you govern; because some are of a mind so noble and generous that they go more willingly with pleasantness than with fear, others on the contrary full of a certain hardness, who cannot be bent with sweetness, but it is required to subdue them and break them with asperity. There is no doubt that with these such it is required to accommodate oneself according to their conditions; and to this purpose Frederick Barbarossa, a very excellent prince, and one who, born in Germany, had long conversed in Italy, used to say that the two first nations of the world, and, according to the others, full of many <i lang="it">virtù</i>, were the Germans and the Italians; but that a different art was required to govern them, because the Germans were arrogant, insolent, and of a quality that the sweetness you used with them they attributed rather to fear than to humanity; on the contrary the Italians, more tractable, more gentle, and of a nature that asperity rather made them indignant than frightened them. Therefore for these <span class="supplied">[it was]</span> necessary to pardon at times the crimes, and to proceed with benignity; those others, to punish them severely, because otherwise they would become more insolent.</div>
+        <details class="annot"><summary>Commentary · 4</summary>
+          <p><span class="lem">Argument.</span> Guicciardini changes the terms of the question. Machiavelli asked whether compliance or penalty is more necessary in governing a multitude; Guicciardini begins from the governor&#x27;s qualities, severity and humanity, &quot;or let us say pleasantness&quot;, and holds that each alone is useless in one who governs others. The two seasoned equally would be most precious, a tempered harmony; but this seasoning is found either seldom or never in any man, the order of nature being such that all our things have some imperfection; indeed, it seems that each one has more of the severe than of the pleasant, or more of the pleasant than of the severe. Hence, not without cause, the doubt: which is more to the purpose, the man who partakes of both but has more of the severe, or the one who has more of the humane. And the doubt therefore concerns those who have so much of the one and of the other that where fear abounds love not fail, and where love abounds fear not fail. The question as Guicciardini sets it is one of proportion within a mixture, not a choice between two ways (the editor&#x27;s reading).</p>
+<p><span class="lem">Note.</span> His first distinction answers Machiavelli&#x27;s (companions and subjects) with another: the nature of those governed. Some are of a mind so noble and generous that they go more willingly with pleasantness than with fear; others, full of a certain hardness, cannot be bent with sweetness, and it is required to subdue them and break them with asperity; and there is no doubt that one must accommodate oneself to these conditions. The saying of Frederick Barbarossa makes the point by nations: the Germans, arrogant and insolent, attributed sweetness rather to fear than to humanity, and must be punished severely; the Italians, more tractable and gentle, are made indignant rather than frightened by asperity, and must at times be pardoned. &quot;Insolent&quot; is Machiavelli&#x27;s word for subjects who are not kept in check; in Barbarossa&#x27;s saying, as Guicciardini reports it, insolence is a matter of nation and nature, not of station (the editor&#x27;s reading).</p>
+<p><span class="lem">History.</span> Frederick I, called Barbarossa, King of Germany and emperor (crowned 1155, died 1190), spent much of his reign in Italian campaigns against the Lombard cities and the papacy; &quot;had long conversed in Italy&quot;, lived among and dealt with Italians, may refer to these (the editor&#x27;s reading). No source for the saying attributed to him is traced here (the editor&#x27;s note). The pairing of <i lang="it">Germani</i> and <i lang="it">Tedeschi</i>, the learned and the vernacular names, is Guicciardini&#x27;s.</p>
+<p><span class="lem">Cross-reference.</span> Machiavelli had drawn his first appearance from a Roman case, Quinctius and Appius, and his distinction from the relation of governor to governed <a class="xref" href="#NM-DISC.3.19.01">Machiavelli .01</a>, <a class="xref" href="#NM-DISC.3.19.02">Machiavelli .02</a>. The word &quot;insolent&quot; in Barbarossa&#x27;s saying is Machiavelli&#x27;s for subjects, who must be kept from becoming insolent <a class="xref" href="#NM-DISC.3.19.04">Machiavelli .04</a>.</p>
+        </details>
+      </div>
+      <div class="pair" id="FG-CONS.3.19.02">
+        <div class="gutter"><a class="uid" href="#FG-CONS.3.19.02">3.19.02</a><span class="marks"><a href="#n-FG-CONS.3.19-20">15 notes</a><a href="#v-FG-CONS-III19-D002">3 variants</a></span></div>
+        <div class="col it" lang="it">L&#x27;altra distinzione che mi occorre è che sia da fare differenza da uno che regga come principe e con autorità propria, da chi regge come ministro e in nome di altri; perché io credo che uno principe abbia a avere rispetto assai di cercare la benevolenza de&#x27; populi, potendo occorrere molti casi che a conservare lo Stato gli sia bisogno amore estraordinario de&#x27; populi. Ma in chi comanda in nome di altri distinguerei: o in uno esercito, e allora fussi più necessario abbondare nello amore che nel timore, perché avendoli a condurre a fazioni periculose per la città loro, vi si conducono assai con lo amore; ma in chi governa città o provincie in nome di altri, non gli toccando altro che la cura temporale, e non essendo lui il signore supremo per il quale e&#x27; populi s&#x27;abbino a muovere a più di quello che ordinariamente sono tenuti, credo conduca meglio le cose sue con qualche più terrore che e&#x27; principi ordinarii: perché sapendo e&#x27; populi che le genti dependono da altri, e che di qui a qualche tempo lui non ha a restare in ufficio, non può la benevolenza, che loro gli portassino, fare fondamento notabile a quelli effetti per e&#x27; quali si desidera tanto lo amore verso il principe. Dico però che parlando noi de&#x27; governi buoni e legittimi, si può male presupporre che dove è timore non sia anche amore, perché la severità della giustizia, che è quella che reca il timore, non può essere che non sia amata da chi vuole bene vivere; ed e converso lo amore che nasce da umanità, da facilità di natura, e da inclinazione a fare grazie, accompagnato dalla giustizia, come in uno governo buono s&#x27;ha a presupporre, non può fare che non sia temuto.</div>
+        <div class="col en" lang="en">The other distinction that occurs to me is that a difference is to be made between one who governs as a prince and with his own authority, and one who governs as a minister and in the name of others; because I believe that a prince is to have much respect to seeking the benevolence of the peoples, since many cases can occur in which, to conserve the state, he has need of extraordinary love of the peoples. But in one who commands in the name of others I would distinguish: either in an army, and then it would be more necessary to abound in love than in fear, because, having to conduct them to actions dangerous for their city, they are conducted there much with love; but in one who governs cities or provinces in the name of others, nothing touching him but the temporary care, and he not being the supreme lord for whom the peoples are to move themselves to more than they are ordinarily held to, I believe he conducts his affairs better with somewhat more terror than ordinary princes <span class="supplied">[do]</span>: because, the peoples knowing that the troops depend on others, and that some time hence he is not to remain in office, the benevolence that they might bear him cannot make a notable foundation for those effects for which love towards the prince is so much desired. I say therefore that, we speaking of good and legitimate governments, one can ill presuppose that where there is fear there is not also love, because the severity of justice, which is that which brings fear, cannot be that it is not loved by whoever wishes to live well; and <i lang="la">e converso</i> the love that arises from humanity, from facility of nature, and from inclination to do graces, accompanied by justice, as is to be presupposed in a good government, cannot make that it is not feared.</div>
+        <details class="annot"><summary>Commentary · 4</summary>
+          <p><span class="lem">Argument.</span> The second distinction is between one who governs as a prince, with his own authority, and one who governs as a minister, in the name of others. Of the prince Guicciardini believes that he is to have much respect to seeking the peoples&#x27; benevolence, since many cases can occur in which he needs extraordinary love from them to conserve his state. The minister he divides again. In an army it would be more necessary to abound in love than in fear, because soldiers conducted to dangerous actions are conducted there much with love. In the government of cities or provinces in another&#x27;s name, where nothing falls to the governor but the temporary care, and he not being the supreme lord for whom the peoples are to move themselves to more than they are ordinarily held to, he believes such a man conducts his affairs better with somewhat more terror than ordinary princes: the peoples know that the troops depend on others, and that he is not to remain long in office, so the benevolence they might bear him cannot make a notable foundation for those effects for which love towards the prince is so much desired. The case is close to Machiavelli&#x27;s commander of subjects, but the reason is different: not that subjects grow insolent, but that goodwill borne to one who governs for another cannot found what love of a prince is wanted for (the editor&#x27;s reading).</p>
+<p><span class="lem">Note.</span> The reply ends on a conclusion introduced by <i lang="it">però</i>, therefore: speaking of good and legitimate governments, one can ill presuppose fear without love, because the severity of justice, which brings fear, cannot be that it is not loved by whoever wishes to live well; and conversely the love that arises from humanity, from facility of nature and from inclination to do graces, accompanied by justice, as in a good government is to be presupposed, cannot make that it is not feared. The opposition between the two opinions Machiavelli set out to save is, in good governments, dissolved: justice makes each quality carry the other (the editor&#x27;s reading). It applies only to good and legitimate governments, and the reply does not say how often such governments are found.</p>
+<p><span class="lem">History.</span> Canestrini&#x27;s <i lang="it">per la città loro</i> and <i lang="it">le genti</i>, read by both cold readers, stand against the 1933 edition&#x27;s <i lang="it">per la vita loro</i> and <i lang="it">le grazie</i>; the edition keeps Canestrini where his reading construes (D38), and both readings are given in the variant notes. On the 1933&#x27;s readings the soldiers are conducted to actions dangerous to their lives, and the peoples know that the favours come from another, not from the governor; the argument is close, on the editor&#x27;s reading, and more plainly put.</p>
+<p><span class="lem">Cross-reference.</span> Machiavelli divides by the relation of the governed to the governor, companions or subjects; Guicciardini by who governs, prince or minister, and by where, army or city <a class="xref" href="#NM-DISC.3.19.02">Machiavelli .02</a>. His army case stands nearest to Machiavelli&#x27;s Roman captains, who many times made better fruit by love and compliance <a class="xref" href="#NM-DISC.3.19.03">Machiavelli .03</a>; his governor of cities, to the commander of subjects who must turn rather to penalty <a class="xref" href="#NM-DISC.3.19.04">Machiavelli .04</a> (the editor&#x27;s reading). Machiavelli&#x27;s last word is an example of humanity that could do more than arms <a class="xref" href="#NM-DISC.3.19.05">Machiavelli .05</a>; Guicciardini&#x27;s is that the love arising from humanity, accompanied by justice, cannot make that it is not feared.</p>
+        </details>
+      </div>
+
+    <div class="apparatus">
+      <div class="app-source">
+        <h3>Source</h3>
+        <p>Established from Canestrini 1857, <i>Opere inedite</i> vol. 1, pp. 1–65 (<span class="sig">WIT-FG-CONS-1857-CANESTRINI</span>) — the <i>editio princeps</i>, which governs. Collated against Palmarocchi 1933 (<span class="sig">WIT-FG-CONS-1933-PALMAROCCHI</span>): page images and the Wikisource transcription consulted as collation evidence, not reproduced (RIGHTS_AND_SOURCES.md).</p>
+<p><span class="lem">che è suavissima e ammirabile Ma perché questo condimento</span> → <span class="lem">che è suavissima e ammirabile. Ma perché questo condimento</span> (FG-CONS.3.19.01). Neither reader sees a stop (both ⟨∅|.⟩) before the capital of <i lang="it">Ma</i>; the 1933 edition prints <i lang="it">ammirabile. Ma</i>. Supplied as a witness correction (D40, D67), by precedent: D502.</p>
+      </div>
+      <div class="app-variants">
+        <h3>Variants</h3>
+        <p id="v-FG-CONS-III19-C001"><a class="loc" href="#FG-CONS.3.19.01" title="Back to the paragraph">¶ 01</a> <span class="lem">e ammirabile. Ma perché</span>. The 1857 witness reads <i lang="it">che è suavissima e ammirabile Ma perché questo condimento</i>. The 1933 witness reads <i lang="it">che è suavissima ed ammirabile. Ma perché questo condimento</i>. Neither reader sees a stop before the capital of <i lang="it">Ma</i>, both doubting one. Supplied from the 1933 edition as a witness correction (D40, D67): D502.</p>
+<p id="v-FG-CONS-III19-D001"><a class="loc" href="#FG-CONS.3.19.01" title="Back to the paragraph">¶ 01</a> <span class="lem">l&#x27;una condita equalmente con l&#x27;altra sarebbe preziosissima, e sarebbe quella armonia temperata</span> — 1857. The 1933 witness reads <i lang="it">l&#x27;una condita equalmente con l&#x27;altra sarebbe preziosissima, e farebbe quella armonia temperata</i>. <i lang="it">sarebbe</i>, would be, against the 1933&#x27;s <i lang="it">farebbe</i>, would make. Read by both readers (B doubting a broken first letter that prints like <i lang="it">a</i>, and naming <i lang="it">sarebbe</i>) as the word. Both construe; Canestrini kept (D38, D502).</p>
+<p id="v-FG-CONS-III19-D002"><a class="loc" href="#FG-CONS.3.19.02" title="Back to the paragraph">¶ 02</a> <span class="lem">perché avendoli a condurre a fazioni periculose per la città loro, vi si conducono assai con lo amore</span> — 1857. The 1933 witness reads <i lang="it">perché avendoli a condurre a fazioni pericolose per la vita loro, vi si conducono assai con lo amore</i>. <i lang="it">per la città loro</i>, for their city, against the 1933&#x27;s <i lang="it">per la vita loro</i>, for their life. Read alike by both readers without doubt. Canestrini&#x27;s construes, the actions dangerous for (or on behalf of) their city; the 1933&#x27;s is the readier sense, and <i lang="it">città</i> recurs in the next clause (<i lang="it">in chi governa città</i>). Kept (D38, D502); translator&#x27;s note.</p>
+<p id="v-FG-CONS-III19-D003"><a class="loc" href="#FG-CONS.3.19.02" title="Back to the paragraph">¶ 02</a> <span class="lem">periculose (provisional, O49)</span>. The 1857 witness reads <i lang="it">condurre a fazioni ⟨pericolose|periculose⟩ per la città loro</i>. The 1933 witness reads <i lang="it">condurre a fazioni pericolose per la vita loro</i>. A split between the passes, A <i lang="it">pericolose</i>, B <i lang="it">periculose</i>, both without doubt: two forms of one word. The 1933 normalises Canestrini&#x27;s <i lang="it">periculo-</i> throughout (D462), so its form is no evidence; the reply spells the root nowhere else. <i lang="it">periculose</i>, Canestrini&#x27;s prevailing spelling in the established replies, applied provisionally on the recommendation (O49). English <i lang="it">dangerous</i> either way.</p>
+<p id="v-FG-CONS-III19-D004"><a class="loc" href="#FG-CONS.3.19.02" title="Back to the paragraph">¶ 02</a> <span class="lem">perché sapendo e&#x27; populi che le genti dependono da altri</span> — 1857. The 1933 witness reads <i lang="it">perché sapendo e&#x27; popoli che le grazie dependono da altri</i>. <i lang="it">le genti</i>, the men, against the 1933&#x27;s <i lang="it">le grazie</i>, the favours. Read alike by both readers without doubt. Canestrini&#x27;s construes, weaker: the governed know that men depend on others, not on the governor; the 1933&#x27;s agrees with <i lang="it">inclinazione a fare grazie</i> at the close. Kept (D38, D502); translator&#x27;s note.</p>
+<p id="v-FG-CONS-III19-D005"><span class="lem">the word at each</span>. The 1857 witness reads <i lang="it">vogliamo|voghamo, piacevolezza|piacevolczza, qualche|qualchc, rebbe|rehbe, temperata|temporata, che|chc|cbe|cbo, uomo|nomo, tutte|tntte, abbino|ahhino, abbia|ahbia|abhia, si|sl, quale|qualc, chi|cbi, manchi|mancbi, distinzione|disfinzione|diatinzione, pieni|piem, bisogna|bisogns, questo|qnesto, pel|pei, principe|principo, autorità|antorità, sia|aia, distinguerei|distingnerei, quello|qnello, tenuti|tennti, restare|restaro, fare|faro, quali|qnali, giustizia|giuatizia, sarebbe|aarebbe, equalmente|equalmentc</i>. The 1933 witness reads <i lang="it">the same words</i>. At the scan&#x27;s broken letters (n/u, h/b, h/li, e/c/o, s/a, t/f) the readers gave the shape as the preferred reading and named the word, or one read the word without doubt; only the word is Italian, and the 1933 edition prints it. Readings, the word, as D398, D406, D494: D502. At <i lang="it">suavissima</i> (A <i lang="it">⟨anaviasima|suavissima⟩</i>, B <i lang="it">⟨snaviasima|soavissima⟩</i>) the shape, the 1933 and A agree (D406).</p>
+<p id="v-FG-CONS-III19-D006"><span class="lem">timore, / amore, / insolenti.</span>. The 1857 witness reads <i lang="it">col timore⟨;|,⟩ altri / anche amore⟨;|,⟩ perché / insolenti⟨∅|.⟩ (A) / ⟨.|∅⟩ (B)</i>. The 1933 witness reads <i lang="it">col timore, altri / anche amore, perché / insolenti.</i>. Both readers see a mark and doubt its weight, or split; the 1933 breaks the tie (D110). Marks read alike by both kept against the 1933; Canestrini&#x27;s printed stop at the end of the reply kept (D460): D502.</p>
+<p id="v-FG-CONS-III19-D007"><a class="loc" href="#FG-CONS.3.19.01" title="Back to the paragraph">¶ 01</a> <span class="lem">Se a reggere una moltitudine è più necessario lo ossequio che la pena</span> — 1857. The 1933 witness reads <i lang="it">[Se a reggere una moltitudine è più necessario l&#x27;ossequio che la pena.]</i>. Canestrini&#x27;s rubric over the reply: Machiavelli&#x27;s sentence (the 1824 rubric) with <i lang="it">lo ossequio</i> for <i lang="it">l&#x27;ossequio</i> and without the stop; the readers&#x27; broken letters (<i lang="it">una</i>, <i lang="it">moltitudine</i>) read with the 1824 rubric. The 1933 sets the 1824&#x27;s sentence as a bracketed title. Canestrini&#x27;s heading, without <i lang="it">del libro III</i>, carried as printed (D443). Heading apparatus (D503).</p>
+      </div>
+      <div class="app-notes">
+        <h3>Notes</h3>
+        <p id="n-FG-CONS.3.19-1"><span class="lem">The heading and the rubric.</span> Canestrini&#x27;s heading, CONSIDERAZIONE SUL CAPITOLO XIX, without <i lang="it">del libro III</i>, as both readers saw it; a pale dot after XIX, doubted by both, is not read as a stop, the 1933 printing none (D443, D110, D503). His rubric is Machiavelli&#x27;s sentence (Machiavelli, rubric) with <i lang="it">lo ossequio</i> for <i lang="it">l&#x27;ossequio</i>, two forms of the article, and without the stop (FG-CONS-III19-D007). Canestrini prints no reply to chapter XVIII of Book III, and none to XX to XXIII; his next is to chapter XXIV. His note to this reply, a summary of Machiavelli&#x27;s chapter quoting Tacitus&#x27; sentence, is not carried (D503).</p>
+<p id="n-FG-CONS.3.19-2"><a class="loc" href="#FG-CONS.3.19.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">La severità, nuda di ogni umanità o vogliamo dire piacevolezza, è inutile in chi regge altri</i>.</span> &quot;Severity, naked of all humanity, or let us say pleasantness, is useless in one who governs others&quot;: <i lang="it">severità</i>, severity, Machiavelli&#x27;s word (Machiavelli .03); <i lang="it">umanità</i>, humanity (D504), the example of humanity among the Faliscans in Machiavelli&#x27;s last sentence (Machiavelli .05); <i lang="it">o vogliamo dire</i>, or let us say, the second name offered as an equivalent; <i lang="it">piacevolezza</i>, pleasantness (D504), with <i lang="it">piacevole</i> pleasant; <i lang="it">inutile</i>, useless; <i lang="it">reggere</i>, govern (D64). Guicciardini does not take up Machiavelli&#x27;s pair, <i lang="it">pena</i> and <i lang="it">ossequio</i>, penalty and compliance; he opens on severity and humanity, the qualities of the man who governs.</p>
+<p id="n-FG-CONS.3.19-3"><a class="loc" href="#FG-CONS.3.19.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">la umanità o vero piacevolezza non accompagnata da qualche severità è il medesimo</i>.</span> &quot;Humanity, or else pleasantness, not accompanied by some severity is the same&quot;: <i lang="it">o vero</i>, or else (D504), the equivalence restated; <i lang="it">il medesimo</i>, the same, that is, useless.</p>
+<p id="n-FG-CONS.3.19-4"><a class="loc" href="#FG-CONS.3.19.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">l&#x27;una condita equalmente con l&#x27;altra sarebbe preziosissima, e sarebbe quella armonia temperata che è suavissima e ammirabile</i>.</span> &quot;The one seasoned equally with the other would be most precious, and would be that tempered harmony which is most suave and admirable&quot;: <i lang="it">condito</i>, seasoned, and <i lang="it">condimento</i>, seasoning (D504), the figure of the kitchen kept; <i lang="it">equalmente</i>, equally (glossary <i lang="it">equale</i>); <i lang="it">temperato</i>, tempered (glossary); <i lang="it">suave</i>, suave (D504), kept apart from <i lang="it">dolcezza</i>, sweetness, below. The 1933 edition reads <i lang="it">farebbe</i>, would make, at the second verb; Canestrini&#x27;s <i lang="it">sarebbe</i>, read by both readers, kept (FG-CONS-III19-D001; D38, D502). The stop after <i lang="it">ammirabile</i>, seen by neither reader, is supplied from the 1933 (FG-CONS-III19-C001; D67, D502).</p>
+<p id="n-FG-CONS.3.19-5"><a class="loc" href="#FG-CONS.3.19.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">Ma perché questo condimento o rare volte o non mai si truova in uomo alcuno; essendo così lo ordine della natura</i>.</span> &quot;But because this seasoning is found either seldom or never in any man; the order of nature being so&quot;: <i lang="it">rare volte</i>, seldom (D97); <i lang="it">truovarsi</i>, be found; <i lang="it">ordine</i>, order (glossary); <i lang="it">natura</i>, nature (D496). The <i lang="it">perché</i> is answered only by <i lang="it">non sanza cagione si dubita</i>, after two clauses set off by semicolons, as printed.</p>
+<p id="n-FG-CONS.3.19-6"><a class="loc" href="#FG-CONS.3.19.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">che tutte le cose nostre abbino qualche imperfezione, anzi pare che ciascuno o abbia più del severo che del piacevole, o più del piacevole che del severo</i>.</span> &quot;That all our things have some imperfection, indeed, it seems that each one has either more of the severe than of the pleasant, or more of the pleasant than of the severe&quot;: <i lang="it">imperfezione</i>, imperfection; <i lang="it">anzi</i>, indeed (D147), correcting upward after the affirmative; <i lang="it">pare</i>, it seems; <i lang="it">del severo</i>, <i lang="it">del piacevole</i>, of the severe, of the pleasant, the adjectives as nouns, as printed.</p>
+<p id="n-FG-CONS.3.19-7"><a class="loc" href="#FG-CONS.3.19.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">non sanza cagione si dubita quale sia più a proposito, o chi participando dell&#x27;uno e dell&#x27;altro ha più del severo, o vero chi ha più dello umano</i>.</span> &quot;Not without cause one doubts which is more to the purpose, either he who, partaking of the one and of the other, has more of the severe, or else he who has more of the humane&quot;: <i lang="it">cagione</i>, cause (D64); <i lang="it">dubitare</i>, doubt; <i lang="it">a proposito</i>, to the purpose (D504); <i lang="it">participare di</i>, partake of (glossary <i lang="it">partecipare di</i>), not D28&#x27;s transitive &quot;impart&quot;; <i lang="it">dello umano</i>, of the humane, answering <i lang="it">umanità</i>.</p>
+<p id="n-FG-CONS.3.19-8"><a class="loc" href="#FG-CONS.3.19.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">intendendo però di coloro che hanno tanto dell&#x27;uno e dell&#x27;altro, che dove abbonda il timore non manchi l&#x27;amore, e dove abbonda l&#x27;amore non manchi il timore</i>.</span> &quot;Meaning therefore those who have so much of the one and of the other that where fear abounds love not fail, and where love abounds fear not fail&quot;: <i lang="it">però</i>, therefore (D22): the doubt is therefore about men who have enough of both; it may also be read as limiting, &quot;meaning, however&quot;, which D22 rules out; <i lang="it">abbondare</i>, abound (D504); <i lang="it">timore</i>, fear, and <i lang="it">amore</i>, love (glossary), Guicciardini&#x27;s second pair, set beside the first; <i lang="it">mancare</i>, fail (D206), the subjunctive without &quot;should&quot; (D348).</p>
+<p id="n-FG-CONS.3.19-9"><a class="loc" href="#FG-CONS.3.19.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">Circa a che la prima distinzione che mi occorre è considerare la natura di chi tu reggi</i>.</span> &quot;About which, the first distinction that occurs to me is to consider the nature of whom you govern&quot;: <i lang="it">distinzione</i>, distinction (glossary), his answer to the division Machiavelli draws without the word (<i lang="it">o che ... o</i>, Machiavelli .02), which his two distinctions cross rather than adopt; <i lang="it">occorrere</i>, occur (SCOPE §3, the <i lang="la">currere</i> family); <i lang="it">considerare</i>, consider (glossary); <i lang="it">chi tu reggi</i>, whom you govern, the governed, not the governor; the second person, Machiavelli&#x27;s (Machiavelli .02).</p>
+<p id="n-FG-CONS.3.19-10"><a class="loc" href="#FG-CONS.3.19.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">perché alcuni sono di ingegno sì nobile e generoso che più volentieri vanno con la piacevolezza che col timore</i>.</span> &quot;Because some are of a mind so noble and generous that they go more willingly with pleasantness than with fear&quot;: <i lang="it">ingegno</i>, mind (D178); <i lang="it">nobile</i>, noble; <i lang="it">generoso</i>, generous, in the old sense, of high spirit; <i lang="it">volentieri</i>, willingly. The comma after <i lang="it">timore</i>, where both readers doubt a semicolon, follows the 1933 (FG-CONS-III19-D006; D110).</p>
+<p id="n-FG-CONS.3.19-11"><a class="loc" href="#FG-CONS.3.19.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">altri pel contrario pieni di una certa durezza, che non si possono piegare con la dolcezza, ma bisogna domargli e rompergli con la asperità</i>.</span> &quot;Others on the contrary full of a certain hardness, who cannot be bent with sweetness, but it is required to subdue them and break them with asperity&quot;: <i lang="it">pel contrario</i>, on the contrary; <i lang="it">durezza</i>, hardness; <i lang="it">piegare</i>, bend; <i lang="it">dolcezza</i>, sweetness (D504); <i lang="it">bisogna</i>, it is required, the edition&#x27;s rendering of the impersonal <i lang="it">bisognare</i> in every tense (D260); the reasons are in the note on <i lang="it">bisogni</i> at Machiavelli I.2; <i lang="it">domare</i>, subdue (D452); <i lang="it">rompere</i>, break (D480); <i lang="it">asperità</i>, asperity (D504), the harshness answering sweetness.</p>
+<p id="n-FG-CONS.3.19-12"><a class="loc" href="#FG-CONS.3.19.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">Non è dubio che con questi tali bisogna accommodarsi secondo le loro condizioni</i>.</span> &quot;There is no doubt that with these such it is required to accommodate oneself according to their conditions&quot;: <i lang="it">non è dubio</i>, there is no doubt, the act of certainty; <i lang="it">questi tali</i>, these such; <i lang="it">accommodarsi</i>, accommodate oneself; <i lang="it">condizioni</i>, conditions (glossary), the natures just named.</p>
+<p id="n-FG-CONS.3.19-13"><a class="loc" href="#FG-CONS.3.19.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">e a questo proposito diceva Federico Barbarossa, principe molto eccellente, e che nato in Germania aveva lungamente conversato in Italia</i>.</span> &quot;And to this purpose Frederick Barbarossa, a very excellent prince, and one who, born in Germany, had long conversed in Italy, used to say&quot;: Frederick I, emperor 1155-1190 (names.md); <i lang="it">diceva</i>, used to say, the imperfect of a saying repeated; <i lang="it">conversare</i>, converse, the old sense of living among and dealing with (D480). No source for the saying is traced here.</p>
+<p id="n-FG-CONS.3.19-14"><a class="loc" href="#FG-CONS.3.19.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">che le due prime nazioni del mondo, e secondo l&#x27;altre, piene di molte virtù, erano e&#x27; Germani e gl&#x27;Italiani</i>.</span> &quot;That the two first nations of the world, and, according to the others, full of many <i lang="it">virtù</i>, were the Germans and the Italians&quot;: <i lang="it">nazioni</i>, nations; <i lang="it">secondo l&#x27;altre</i>, according to the others, either as the other nations judge or as the others go, left open; <i lang="it">virtù</i> untranslated (glossary); <i lang="it">e&#x27; Germani</i>, the Germans, <i lang="it">e&#x27;</i> the plural article, not &quot;both&quot; (D35), answered by <i lang="it">gl&#x27;</i>.</p>
+<p id="n-FG-CONS.3.19-15"><a class="loc" href="#FG-CONS.3.19.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">ma che bisognava diversa arte di reggergli, perché e&#x27; Tedeschi erano arroganti, insolenti</i>.</span> &quot;But that a different art was required to govern them, because the Germans were arrogant, insolent&quot;: <i lang="it">bisognava</i>, was required (D260); <i lang="it">arte</i>, art; <i lang="it">reggere</i>, govern (D64); <i lang="it">Tedeschi</i>, Germans, the vernacular name after the learned <i lang="it">Germani</i>, one English word for both: a recorded collapse (D504); <i lang="it">arrogante</i>, arrogant (D464); <i lang="it">insolente</i>, insolent (D464), Machiavelli&#x27;s word for subjects not kept in check (Machiavelli .04).</p>
+<p id="n-FG-CONS.3.19-16"><a class="loc" href="#FG-CONS.3.19.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">e di qualità che la dolcezza che tu usavi con loro, la attribuivano più presto a timore che a umanità</i>.</span> &quot;And of a quality that the sweetness you used with them they attributed rather to fear than to humanity&quot;: <i lang="it">qualità</i>, quality (glossary), the consecutive <i lang="it">che</i> without &quot;such&quot;; <i lang="it">la dolcezza ... la attribuivano</i>, the object fronted and resumed by <i lang="it">la</i>, the resumption dropped in English; <i lang="it">più presto</i>, rather.</p>
+<p id="n-FG-CONS.3.19-17"><a class="loc" href="#FG-CONS.3.19.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">pel contrario gl&#x27;Italiani, più trattabili, più gentili, e di natura che la asperità più presto gli sdegnava che spaventava</i>.</span> &quot;On the contrary the Italians, more tractable, more gentle, and of a nature that asperity rather made them indignant than frightened them&quot;: <i lang="it">trattabile</i>, tractable; <i lang="it">gentile</i>, gentle; <i lang="it">sdegnare</i>, make indignant (glossary <i lang="it">sdegno</i>, indignation); <i lang="it">spaventare</i>, frighten (D313). The clause has no verb of its own; <i lang="it">erano</i> is understood from the Germans&#x27; clause.</p>
+<p id="n-FG-CONS.3.19-18"><a class="loc" href="#FG-CONS.3.19.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">Però a questi essere necessario perdonare talvolta e&#x27; delitti, e procedere con benignità; quelli altri punirli severamente</i>.</span> &quot;Therefore for these [it was] necessary to pardon at times the crimes, and to proceed with benignity; those others, to punish them severely&quot;: <i lang="it">Però</i>, therefore (D22); the infinitive <i lang="it">essere</i> of reported speech, still Barbarossa&#x27;s, its tense supplied; <i lang="it">perdonare</i>, pardon; <i lang="it">delitti</i>, crimes (D252); <i lang="it">procedere</i>, proceed (glossary); <i lang="it">benignità</i>, benignity, with Machiavelli&#x27;s <i lang="it">benigno</i>, benign (Machiavelli .01); <i lang="it">punire</i>, punish, kept apart from <i lang="it">pena</i>, penalty (D504); <i lang="it">quelli altri</i>, those others, the Germans, the farther named.</p>
+<p id="n-FG-CONS.3.19-19"><a class="loc" href="#FG-CONS.3.19.01" title="Back to the paragraph">¶ 01</a> <span class="lem"><i lang="it">perché altrimenti diventerebbono più insolenti</i>.</span> &quot;Because otherwise they would become more insolent&quot;: the stop at the paragraph&#x27;s end, a split between the readers, follows the 1933 (FG-CONS-III19-D006; D110).</p>
+<p id="n-FG-CONS.3.19-20"><a class="loc" href="#FG-CONS.3.19.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">L&#x27;altra distinzione che mi occorre è che sia da fare differenza da uno che regga come principe e con autorità propria, da chi regge come ministro e in nome di altri</i>.</span> &quot;The other distinction that occurs to me is that a difference is to be made between one who governs as a prince and with his own authority, and one who governs as a minister and in the name of others&quot;: the second paragraph, as Canestrini prints it; <i lang="it">essere da</i>, be to (D261); <i lang="it">autorità</i>, authority (glossary); <i lang="it">ministro</i>, minister (D504), one who acts for another; <i lang="it">in nome di altri</i>, in the name of others.</p>
+<p id="n-FG-CONS.3.19-21"><a class="loc" href="#FG-CONS.3.19.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">perché io credo che uno principe abbia a avere rispetto assai di cercare la benevolenza de&#x27; populi</i>.</span> &quot;Because I believe that a prince is to have much respect to seeking the benevolence of the peoples&quot;: <i lang="it">credo</i>, I believe, the act of belief; <i lang="it">avere a</i>, be to (D261); <i lang="it">avere rispetto di</i>, have respect to (glossary <i lang="it">rispetto</i>); <i lang="it">assai</i>, much (D312); <i lang="it">benevolenza</i>, benevolence (D504); <i lang="it">populi</i>, peoples (D402), the plural kept.</p>
+<p id="n-FG-CONS.3.19-22"><a class="loc" href="#FG-CONS.3.19.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">potendo occorrere molti casi che a conservare lo Stato gli sia bisogno amore estraordinario de&#x27; populi</i>.</span> &quot;Since many cases can occur in which, to conserve the state, he has need of extraordinary love of the peoples&quot;: <i lang="it">occorrere</i>, occur (SCOPE §3); <i lang="it">conservare</i>, conserve (glossary); <i lang="it">Stato</i>, state (glossary), the prince&#x27;s state; <i lang="it">bisogno</i>, need (D260, kept apart from <i lang="it">bisognare</i>); <i lang="it">estraordinario</i>, extraordinary (D151).</p>
+<p id="n-FG-CONS.3.19-23"><a class="loc" href="#FG-CONS.3.19.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">Ma in chi comanda in nome di altri distinguerei: o in uno esercito, e allora fussi più necessario abbondare nello amore che nel timore</i>.</span> &quot;But in one who commands in the name of others I would distinguish: either in an army, and then it would be more necessary to abound in love than in fear&quot;: <i lang="it">distinguere</i>, distinguish (D464); <i lang="it">comandare</i>, command; <i lang="it">esercito</i>, army; <i lang="it">abbondare</i>, abound (D504). The second member of <i lang="it">o ... o</i> is the <i lang="it">ma in chi governa</i> below.</p>
+<p id="n-FG-CONS.3.19-24"><a class="loc" href="#FG-CONS.3.19.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">perché avendoli a condurre a fazioni periculose per la città loro, vi si conducono assai con lo amore</i>.</span> &quot;Because, having to conduct them to actions dangerous for their city, they are conducted there much with love&quot;: <i lang="it">avere a</i>, have to, of necessity (D261); <i lang="it">condurre</i>, conduct (D452), the soldiers, <i lang="it">li</i>, &quot;lead&quot; staying <i lang="it">menare</i>&#x27;s (D313); <i lang="it">fazioni</i>, actions, of military operations, the sense of D317 and D341, not the political &quot;factions&quot;; <i lang="it">periculose</i>, dangerous (glossary <i lang="it">periculo</i>); the form is provisional, between the two readers&#x27; <i lang="it">pericolose</i> and <i lang="it">periculose</i> (FG-CONS-III19-D003; O49); <i lang="it">assai</i>, much (D348). The 1933 edition reads <i lang="it">per la vita loro</i>, for their life; Canestrini&#x27;s <i lang="it">per la città loro</i>, read by both readers, is kept, the actions dangerous for, or on behalf of, their city (FG-CONS-III19-D002; D38, D502).</p>
+<p id="n-FG-CONS.3.19-25"><a class="loc" href="#FG-CONS.3.19.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">ma in chi governa città o provincie in nome di altri, non gli toccando altro che la cura temporale, e non essendo lui il signore supremo</i>.</span> &quot;But in one who governs cities or provinces in the name of others, nothing touching him but the temporary care, and he not being the supreme lord&quot;: <i lang="it">governare</i>, govern (D64); <i lang="it">provincie</i>, provinces (glossary); <i lang="it">toccare</i>, touch, of what falls to one&#x27;s charge; <i lang="it">cura</i>, care, the charge of office, a sense split from D402&#x27;s &quot;cure&quot;, the physician&#x27;s figure (D504); <i lang="it">temporale</i>, temporary, of tenure (glossary), not the temporal of rule, in the editor&#x27;s reading, which the term of office below supports; <i lang="it">signore</i>, lord (glossary).</p>
+<p id="n-FG-CONS.3.19-26"><a class="loc" href="#FG-CONS.3.19.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">per il quale e&#x27; populi s&#x27;abbino a muovere a più di quello che ordinariamente sono tenuti</i>.</span> &quot;For whom the peoples are to move themselves to more than they are ordinarily held to&quot;: <i lang="it">avere a</i>, be to (D261); <i lang="it">muoversi</i>, move oneself (D452); <i lang="it">ordinariamente</i>, ordinarily (D151); <i lang="it">tenuto</i>, held, bound.</p>
+<p id="n-FG-CONS.3.19-27"><a class="loc" href="#FG-CONS.3.19.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">credo conduca meglio le cose sue con qualche più terrore che e&#x27; principi ordinarii</i>.</span> &quot;I believe he conducts his affairs better with somewhat more terror than ordinary princes [do]&quot;: <i lang="it">credo</i>, I believe, the second belief; <i lang="it">condurre le cose sue</i>, conduct his affairs (D452); <i lang="it">terrore</i>, terror, kept apart from <i lang="it">timore</i>, fear (D504); <i lang="it">principi ordinarii</i>, ordinary princes, those who rule in their own name (the editor&#x27;s reading).</p>
+<p id="n-FG-CONS.3.19-28"><a class="loc" href="#FG-CONS.3.19.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">perché sapendo e&#x27; populi che le genti dependono da altri</i>.</span> &quot;Because, the peoples knowing that the troops depend on others&quot;: <i lang="it">genti</i>, troops (glossary); who the troops are, and on whom they depend, is not said: the editor reads them as the forces in the governed places, which answer to the prince and not to the governor; the 1933 edition reads <i lang="it">le grazie</i>, the favours, which agrees with <i lang="it">fare grazie</i> at the close; Canestrini&#x27;s <i lang="it">le genti</i>, read by both readers, is kept (FG-CONS-III19-D004; D38, D502); <i lang="it">dependere</i>, depend.</p>
+<p id="n-FG-CONS.3.19-29"><a class="loc" href="#FG-CONS.3.19.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">e che di qui a qualche tempo lui non ha a restare in ufficio</i>.</span> &quot;And that some time hence he is not to remain in office&quot;: <i lang="it">di qui a qualche tempo</i>, some time hence, literally &quot;from here to some time&quot;; <i lang="it">avere a</i>, be to (D261), destinative under the negative, his tenure appointed to end, neither prohibitive (D414) nor an absence of necessity; <i lang="it">ufficio</i>, office (D56).</p>
+<p id="n-FG-CONS.3.19-30"><a class="loc" href="#FG-CONS.3.19.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">non può la benevolenza, che loro gli portassino, fare fondamento notabile a quelli effetti per e&#x27; quali si desidera tanto lo amore verso il principe</i>.</span> &quot;The benevolence that they might bear him cannot make a notable foundation for those effects for which love towards the prince is so much desired&quot;: the fronted verb set in plain order (D263); <i lang="it">portassino</i>, might bear, the subjunctive of a supposed goodwill; <i lang="it">fondamento</i>, foundation (glossary); <i lang="it">notabile</i>, notable; <i lang="it">effetti</i>, effects (D410).</p>
+<p id="n-FG-CONS.3.19-31"><a class="loc" href="#FG-CONS.3.19.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">Dico però che parlando noi de&#x27; governi buoni e legittimi, si può male presupporre che dove è timore non sia anche amore</i>.</span> &quot;I say therefore that, we speaking of good and legitimate governments, one can ill presuppose that where there is fear there is not also love&quot;: <i lang="it">però</i>, therefore (D22); <i lang="it">governo</i>, government (D262); <i lang="it">legittimo</i>, legitimate; <i lang="it">presupporre</i>, presuppose (glossary); <i lang="it">male</i>, ill. The comma after <i lang="it">amore</i>, where both readers doubt a semicolon, follows the 1933 (FG-CONS-III19-D006; D110).</p>
+<p id="n-FG-CONS.3.19-32"><a class="loc" href="#FG-CONS.3.19.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">perché la severità della giustizia, che è quella che reca il timore, non può essere che non sia amata da chi vuole bene vivere</i>.</span> &quot;Because the severity of justice, which is that which brings fear, cannot be that it is not loved by whoever wishes to live well&quot;: <i lang="it">giustizia</i>, justice; <i lang="it">recare</i>, bring; <i lang="it">non può essere che non</i>, cannot be that ... not, the double negative kept; <i lang="it">bene vivere</i>, live well.</p>
+<p id="n-FG-CONS.3.19-33"><a class="loc" href="#FG-CONS.3.19.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">ed e converso lo amore che nasce da umanità, da facilità di natura, e da inclinazione a fare grazie</i>.</span> &quot;And <i lang="la">e converso</i> the love that arises from humanity, from facility of nature, and from inclination to do graces&quot;: <i lang="la">e converso</i>, Latin, conversely, as at FG I.3 (latin.md); <i lang="it">nascere</i>, arise (D04); <i lang="it">facilità</i>, facility (glossary), Machiavelli&#x27;s word for the too great facility of one who commands subjects (Machiavelli .04), here a quality of nature; <i lang="it">inclinazione</i>, inclination; <i lang="it">fare grazie</i>, do graces, grant favours (D504).</p>
+<p id="n-FG-CONS.3.19-34"><a class="loc" href="#FG-CONS.3.19.02" title="Back to the paragraph">¶ 02</a> <span class="lem"><i lang="it">accompagnato dalla giustizia, come in uno governo buono s&#x27;ha a presupporre, non può fare che non sia temuto</i>.</span> &quot;Accompanied by justice, as is to be presupposed in a good government, cannot make that it is not feared&quot;: <i lang="it">avere a</i>, be to (D261); <i lang="it">non può fare che non</i>, cannot make that ... not, the double negative kept, answering <i lang="it">non può essere che non</i> above. Canestrini&#x27;s stop at the end of the reply is printed, as both readers saw it.</p>
+      </div>
+    </div>
+  </section>
+
+    <nav class="pairnav pairnav-foot"><a href="3.17.html">← Pair 3.17</a><a href="../index.html">All 39 pairs</a><span></span></nav>
+
+  <footer class="colophon">
+
+    <div class="state">
+      <p><strong>Version 0.3 · 38 of 39 pairs published.</strong>
+        Published 25 November 2026. This edition is versioned, not frozen. Some translation questions on this pair are still open.</p>
+    </div>
+    <p class="links"><a href="../about.html">About this edition</a><a href="../about.html#licence">Licence</a><a href="../about.html#method">Method</a><a href="https://github.com/davidmcdougall/conversation-with-machiavelli">Source and data on GitHub</a></p>
+  </footer>
+
+</div>
