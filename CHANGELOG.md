@@ -84,3 +84,6 @@ to `RIGHTS_AND_SOURCES.md`:
   every "SCOPE §N" reference still resolves.
 - 2026-11-25: every page carries a link-preview image (`og.png`), so shared
   links show the edition's title card rather than bare text.
+- 2026-11-25: `SCOPE.md` §4's narrative was out of date (it said one pair was
+  published and the witness scans were not held). It now states only current
+  facts; the September history moved verbatim to `docs/history.md`.
