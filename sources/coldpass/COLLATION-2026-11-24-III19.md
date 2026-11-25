@@ -139,7 +139,7 @@ that `obsequium inde in principem et aemulandi amor validior quam poena ex
 legibus et metus`: compliance towards the prince and the love of emulating
 him were stronger than the penalty of the laws and fear, the reverse of
 the sentence Machiavelli gives him (checked against the Latin text at
-sacred-texts.com; the editor's reference). Carried as the 1824 prints it,
+thelatinlibrary.com; the editor's reference). Carried as the 1824 prints it,
 in latin.md.
 
 ## FG-CONS.3.19 — Canestrini, pp. 75-77

@@ -1041,3 +1041,41 @@ last sentence answers Machiavelli's first move.
 | `sollecitare` (a battle) | hasten | D496. FG III.17. |
 | `sforzare` | force | D496. FG III.17 `quasi sforzato`; kept apart from `costringere`, constrain (D452), and `necessitare`, necessitate. |
 | `prima` (enumerative, answered by `di poi`) | first | D496. FG III.17 `le azioni sue prima`; a sense split from D334's "earlier", which the reply's last `prima` keeps. |
+
+## Added from the III.19 pair (2026-11-24)
+
+| Italian | English | Note |
+|---|---|---|
+| `ossequio` / `pena` | compliance / penalty | D504. NM III.19 rubric, .02-.05; FG III.19 rubric `lo ossequio`; the Latin's *obsequium* and *poena* (NM .02). One pair, kept together; in the Latin the compliance is the governed's, in .03-.04 the commander's way of handling men. |
+| `punire` | punish | D504. FG III.19 .01 `punirli severamente`; kept apart from `pena`, penalty. |
+| `severità`, `severo`, `severamente` | severity, severe, severely | D504. NM III.19 .03; FG III.19 ×5 with `del severo`. |
+| `umanità`; `umano` | humanity; humane | D504. NM III.19 .01 `di umano ingegno`, .02, .05; FG III.19 ×3 and `dello umano`. |
+| `crudele`, `crudeltà` | cruel, cruelty | D504. NM III.19 .01, .02, .03. |
+| `benigno`, `benignità` | benign, benignity | D504. NM III.19 .01; FG III.19 .01. |
+| `pietoso` | merciful | D504. NM III.19 .02; not "pitiful". |
+| `piacevolezza`, `piacevole` | pleasantness, pleasant | D504. FG III.19 ×4 and ×2, offered as an equivalent of `umanità`. |
+| `o vero` (an equivalence) | or else | D504. FG III.19 ×2. |
+| `condito`, `condimento` | seasoned, seasoning | D504. FG III.19 .01, the kitchen figure kept. |
+| `suave` | suave | D504. FG III.19 `suavissima`; kept apart from `dolcezza`. |
+| `dolcezza` / `asperità` | sweetness / asperity | D504. FG III.19 ×3 and ×2, a pair. |
+| `a proposito` | to the purpose | D504. FG III.19 ×2 (`più a proposito`, `a questo proposito`). |
+| `abbondare` | abound | D504. FG III.19 ×3. |
+| `amore`, `amare` | love | D504. NM III.19 .03 `si facevano amare`; FG III.19 ×9, set against `timore`, fear. |
+| `terrore` | terror | D504. FG III.19 .02; kept apart from `timore`, fear. |
+| `odio`, `odiare` | hatred, hate | D504. NM III.19 .04 ×2. |
+| `roba` | property | D504. NM III.19 .04, the subjects' goods. |
+| `rapina` | rapine | D504. NM III.19 .04 ×2. |
+| `benevolenza` | benevolence | D504. FG III.19 .02 ×2. |
+| `ubbidire`, `ubbidiente` | obey, obedient | D504. NM III.19 .01. |
+| `acconsentire` | consent | D504. NM III.19 .02; "concur" stays `concorrere`'s (SCOPE §3). |
+| `ragionare di` | reason of | D504. NM III.19 .03, .04, of Tacitus. |
+| `frutto` | fruit | D504. NM III.19 .03 `miglior frutto fecero`, with `fare`, make (D410). |
+| `eccessivo` | excessive | D504. NM III.19 .03 `eccessiva virtù`. |
+| `calpestare` | trample on | D504. NM III.19 .04. |
+| `tornare bene` | turn out well | D504. NM III.19 .04. |
+| `soprastare` | impend over | D504. NM III.19 .01, of a war. |
+| `ministro` | minister | D504. FG III.19 .02, one who governs in another's name. |
+| `fare grazie` | do graces | D504. FG III.19 .02; the 1933's `le grazie` at `le genti` (D502). |
+| `cura` (of office) | care | D504. FG III.19 .02 `la cura temporale`; a sense split from D402's cure, the physician's figure. |
+| `compagni` (fellow citizens) | companions | D504. NM III.19 .02, .03; D452's ruling for Rome's allies extended to equals in the city. |
+| `Germani` / `Tedeschi` | Germans | D504. FG III.19 .01: the learned and the vernacular names, a recorded collapse. |

@@ -17,7 +17,7 @@ first time it is italicised.
 | `vis venire Romam?` | NM I.12 (D14) |
 | `visne Romam ire, Iuno?` | NM I.12 note |
 | `data paritate terminorum` | FG I.3 |
-| `e converso` | FG I.3 |
+| `e converso` | FG I.3, FG III.19 .02 |
 | `intercessio` | notes |
 | `contio` | notes |
 | `lex Hortensia` | notes |
@@ -111,4 +111,8 @@ first time it is italicised.
 | `furor arma ministrat` | NM II.24 .03 (Virgil, Aeneid 1.150); notes |
 | `furor arma ministrat.` | NM II.24 .03, as the 1824 prints it |
 | `verbi gratia` | FG II.24 .01 (English) |
-
+| `In multitudine regenda plus poena, quam obsequium valet.` | NM III.19 .02 (as the 1824 prints it; not found in Tacitus in these words) |
+| `In multitudine regenda plus poena, quam obsequium valet` | NM III.19 note |
+| `obsequium inde in principem et aemulandi amor validior quam poena ex legibus et metus` | NM III.19 note (Tacitus, *Annals* 3.55) |
+| `obsequium` | NM III.19 notes and commentary |
+| `poena` | NM III.19 notes |

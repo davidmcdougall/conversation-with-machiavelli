@@ -341,3 +341,16 @@ the original.
 | `Ispagna`, `Spagna` | Spain | NM III.17 .02 ×2; FG III.17 |
 | `il Salinatore` | Salinator | FG III.17; Marcus Livius Salinator, consul with Nero in 207 BC, unnamed in Machiavelli's chapter (D496); the article dropped in English; "Livius" in the notes, as Livy names him |
 | `Senato`; `Popolo` | the Senate; the people | NM III.17 .02 (D118) |
+
+## Added from the III.19 pair (2026-11-24)
+
+| Witness | English | Note |
+|---|---|---|
+| `Quinzio` | Quinctius | NM III.19 .01, .05; Titus Quinctius Capitolinus, consul in 471 BC (Livy 2.56-60, the editor's reference) |
+| `Appio Claudio`, `Appio` | Appius Claudius, Appius | NM III.19 .01, .05; consul in 471 BC (Livy 2.56-60), neither the decemvir of I.40 nor the Attus Clausus of FG I.4 |
+| `Cornelio Tacito`, `Cornelio` | Cornelius Tacitus, Cornelius | NM III.19 .02-.05, as NM I.29; the sentence quoted is not found in his works in these words (the editor's note) |
+| `Manlio Torquato` | Manlius Torquatus | NM III.19 .03, as NM I.11 |
+| `Falisci` | Faliscans | NM III.19 .05, the people of Falerii (III.20) |
+| `Federico Barbarossa` | Frederick Barbarossa | FG III.19 .01; Frederick I, emperor 1155-1190; kept apart from `Federigo` (Montefeltro, NM II.24) |
+| `Germania`; `Germani`, `Tedeschi` | Germany; Germans | FG III.19 .01; `Germania` as `la Magna` (NM II.proem, II.12); the two names for the people one English word (D504) |
+| `Italia`; `Italiani` | Italy; Italians | FG III.19 .01 |
