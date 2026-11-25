@@ -7,9 +7,10 @@ facing, every reading traceable to a named public-domain witness.
 
 **Read it:** https://davidmcdougall.github.io/conversation-with-machiavelli/
 
-Version 0.3 · 38 of 39 pairs published. The edition is versioned, not frozen;
-every page is dated. Per-pair progress is the table in `SCOPE.md` §2, generated
-from the files by `scripts/state`.
+<!-- state:status -->
+Version 0.3 · 38 of 39 pairs published. The edition is versioned, not
+frozen; every page is dated. Per-pair progress is the table in `SCOPE.md` §2.
+<!-- /state:status -->
 
 ## What is where
 
@@ -52,10 +53,12 @@ are recorded per step (`TRANSLATION_METHOD.md`). Summary in `LICENSE`; file by f
 
 ## Citing
 
+<!-- state:cite -->
 > *A Conversation with Machiavelli: Guicciardini's Considerazioni on the
 > Discorsi*. Ed. David McDougall; AI-assisted English translation edited by
-> David McDougall. Version 0.3, 2026.
+> David McDougall. Version 0.3.
 > https://davidmcdougall.github.io/conversation-with-machiavelli/
+<!-- /state:cite -->
 
 ## Corrections
 

@@ -3,8 +3,10 @@
 
 Usage:
   scripts/state            print the SCOPE §2 pairs table and the §4 stage table
-  scripts/state --write    rewrite both tables in SCOPE.md, between their markers
-  scripts/state --check    exit 1 if SCOPE.md's tables differ from what the files say
+  scripts/state --write    rewrite both tables in SCOPE.md, and the status line and
+                           citation in README.md, between their markers
+  scripts/state --check    exit 1 if any of those differ from what the files say, or
+                           if CITATION.cff's version is not SCOPE's
 
 The only derived view in the project (SCOPE §7). Every cell comes from a file:
   pairs and link records   links/pairing-map.md
@@ -13,6 +15,7 @@ The only derived view in the project (SCOPE §7). Every cell comes from a file:
   EN                       translations/<unit>.md front-matter (status)
   ANN                      annotations/<unit>.md
   WEB                      site/pairs/<pair>.html
+  version                  SCOPE.md "**Version.** Draft X"
 If a fact about a unit is not in that unit's file, it does not exist.
 """
 import re
@@ -24,6 +27,8 @@ FM_LINE = re.compile(r'^([A-Za-z_]+):\s*(.*)$')
 MARK = {
     "pairs": ("<!-- state:pairs -->", "<!-- /state:pairs -->"),
     "stages": ("<!-- state:stages -->", "<!-- /state:stages -->"),
+    "status": ("<!-- state:status -->", "<!-- /state:status -->"),
+    "cite": ("<!-- state:cite -->", "<!-- /state:cite -->"),
 }
 EN_LABEL = {"draft_cold_reviewed": "cold-reviewed", "draft": "draft"}
 
@@ -108,31 +113,65 @@ def derive():
         line("Annotated", sum(u["ann"] for u in units), n_units),
         line("Published", published, n_units),
     ]
-    return {"pairs": "\n".join(pairs), "stages": "\n".join(stages)}
+    v = version()
+    status = (f"Version {v} · {published // 2} of {n_pairs} pairs published. The edition is versioned, not\n"
+              "frozen; every page is dated. Per-pair progress is the table in `SCOPE.md` §2.")
+    cite = ("> *A Conversation with Machiavelli: Guicciardini's Considerazioni on the\n"
+            "> Discorsi*. Ed. David McDougall; AI-assisted English translation edited by\n"
+            f"> David McDougall. Version {v}.\n"
+            "> https://davidmcdougall.github.io/conversation-with-machiavelli/")
+    return {"pairs": "\n".join(pairs), "stages": "\n".join(stages), "status": status, "cite": cite}
 
 
-def splice(text, key, body):
+def version():
+    m = re.search(r'\*\*Version\.\*\*\s*Draft\s*(\S+)', (ROOT / "SCOPE.md").read_text(encoding="utf-8"))
+    if not m:
+        sys.exit('SCOPE.md has no "**Version.** Draft X" line')
+    return m.group(1)
+
+
+def citation_problem():
+    """CITATION.cff's version must be SCOPE's (0.3 → 0.3 or 0.3.N)."""
+    v = version()
+    m = re.search(r'^version:\s*"?([^"\s]+)', (ROOT / "CITATION.cff").read_text(encoding="utf-8"), re.M)
+    cv = m.group(1) if m else None
+    if cv != v and not (cv or "").startswith(v + "."):
+        return f"CITATION.cff version {cv} does not match SCOPE.md version {v}"
+    return None
+
+
+def splice(text, key, body, name="SCOPE.md"):
     start, end = MARK[key]
     pat = re.compile(re.escape(start) + r".*?" + re.escape(end), re.S)
     if not pat.search(text):
-        sys.exit(f"SCOPE.md has no {start} … {end} markers")
+        sys.exit(f"{name} has no {start} … {end} markers")
     return pat.sub(lambda _: f"{start}\n{body}\n{end}", text)
 
 
 def main():
     out = derive()
-    scope = ROOT / "SCOPE.md"
-    text = scope.read_text(encoding="utf-8")
-    new = splice(splice(text, "pairs", out["pairs"]), "stages", out["stages"])
+    targets = {"SCOPE.md": ("pairs", "stages"), "README.md": ("status", "cite")}
+    stale = []
+    for name, keys in targets.items():
+        path = ROOT / name
+        text = path.read_text(encoding="utf-8")
+        new = text
+        for k in keys:
+            new = splice(new, k, out[k], name)
+        if new != text:
+            stale.append(name)
+            if "--write" in sys.argv:
+                path.write_text(new, encoding="utf-8")
     if "--write" in sys.argv:
-        if new != text:
-            scope.write_text(new, encoding="utf-8")
-            print("SCOPE.md: tables rewritten")
-        else:
-            print("SCOPE.md: tables already current")
+        print(", ".join(stale) + ": rewritten" if stale else "SCOPE.md, README.md: already current")
+        if citation_problem():
+            print("warning:", citation_problem(), "(update CITATION.cff by hand at release)")
     elif "--check" in sys.argv:
-        if new != text:
-            print("SCOPE.md tables are stale; run scripts/state --write")
+        bad = [f"{n} is stale; run scripts/state --write" for n in stale]
+        if citation_problem():
+            bad.append(citation_problem())
+        if bad:
+            print("\n".join(bad))
             sys.exit(1)
     else:
         print(out["pairs"] + "\n\n" + out["stages"])

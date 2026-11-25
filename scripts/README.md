@@ -6,8 +6,9 @@ Three scripts.
   by running `state --write`.
 - `state` — walks `corpus/`, `translations/`, `annotations/`, `sources/` and
   `site/`, and writes the SCOPE §2 pairs table and the §4 stage table from the
-  files, between their `<!-- state:... -->` markers. The only derived view in
-  the project. `state` prints them; `state --write` rewrites SCOPE.md;
+  files, between their `<!-- state:... -->` markers, and the status line and
+  citation in README.md; `--check` also fails if CITATION.cff's version is not
+  SCOPE's. The only derived view in the project. `state` prints them; `state --write` rewrites SCOPE.md;
   `state --check` exits 1 if SCOPE.md is stale.
 - `validate` — the four checks in SCOPE §7, run before every commit, silent
   when clean (exit 1 and one line per problem otherwise). `validate` checks
