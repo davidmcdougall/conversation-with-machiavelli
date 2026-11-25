@@ -41,13 +41,15 @@ translation is used. Details in `RIGHTS_AND_SOURCES.md`.
 
 | Component | Licence |
 |---|---|
-| Established Italian text; research and provenance data | CC0 1.0 |
+| Established Italian text; research and provenance data; documentation | CC0 1.0 |
 | English translation; editorial commentary and apparatus | CC BY 4.0, where rights subsist |
 | Scripts | MIT |
-| Witness scans, fonts | Not licensed by this project |
+| Fonts | SIL OFL 1.1 |
+| Witness scans | Not licensed by this project |
 
 The English is an AI-assisted translation edited by David McDougall; models
-are recorded per step (`TRANSLATION_METHOD.md`). Full terms in `LICENSE`.
+are recorded per step (`TRANSLATION_METHOD.md`). Summary in `LICENSE`; file by file in `REUSE.toml`; licence texts in
+`LICENSES/`.
 
 ## Citing
 

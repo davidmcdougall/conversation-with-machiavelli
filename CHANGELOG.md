@@ -26,6 +26,15 @@ not yet established.
   McDougall"; the model used for each drafting and review step is recorded.
 - Rights assessments moved from `LICENSE` to `RIGHTS_AND_SOURCES.md`.
 
+### Licensing restructured (2026-11-25)
+
+- Per-file licensing in `REUSE.toml`, checked in CI; licence texts in
+  `LICENSES/`; `LICENSE` reduced to a summary (v0.4).
+- "Apparatus data" renamed "research and provenance data", so that
+  "apparatus" means only the CC BY editorial apparatus. No file changed
+  licence by this.
+- `SCOPE.md` is wholly CC0; §1 was CC BY.
+
 ### Corrections
 
 Made to the rights statements of `LICENSE` v0.3 (2026-09-21) when they moved

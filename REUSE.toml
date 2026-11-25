@@ -1,0 +1,74 @@
+# Machine-readable licensing for every file in the repository
+# (REUSE specification 3.3, https://reuse.software). Checked in CI by
+# `reuse lint`. Later entries override earlier ones for the same file.
+# LICENSE summarises these terms for readers; this file governs per file.
+version = 1
+
+# Default: project documentation, specifications, research and provenance data.
+[[annotations]]
+path = "**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 David McDougall"
+SPDX-License-Identifier = "CC0-1.0"
+
+# The established Italian text.
+[[annotations]]
+path = ["corpus/**", "sources/normalized/**"]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 David McDougall"
+SPDX-License-Identifier = "CC0-1.0"
+
+# The English translation, editorial commentary and apparatus, and the
+# translation decision log.
+[[annotations]]
+path = ["translations/**", "annotations/**", "apparatus/**", "translation-drafts/**", "decisions.md"]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 David McDougall"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+# Folder READMEs describe the repository, and stay CC0.
+[[annotations]]
+path = ["translations/README.md", "site/README.md", "scripts/README.md"]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 David McDougall"
+SPDX-License-Identifier = "CC0-1.0"
+
+# Software and build configuration.
+[[annotations]]
+path = ["scripts/**", ".github/**", "requirements.txt"]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 David McDougall"
+SPDX-License-Identifier = "MIT"
+
+# The website: Italian text (CC0) and English and apparatus (CC BY) together.
+[[annotations]]
+path = ["site/*.html", "site/pairs/**"]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 David McDougall"
+SPDX-License-Identifier = "CC0-1.0 AND CC-BY-4.0"
+
+# Self-hosted fonts.
+[[annotations]]
+path = ["site/fonts/eb-garamond-*", "site/fonts/OFL-EB-Garamond.txt"]
+precedence = "override"
+SPDX-FileCopyrightText = "2017 The EB Garamond Project Authors"
+SPDX-License-Identifier = "OFL-1.1"
+
+[[annotations]]
+path = ["site/fonts/ibm-plex-*", "site/fonts/OFL-IBM-Plex.txt"]
+precedence = "override"
+SPDX-FileCopyrightText = "2019 IBM Corp."
+SPDX-License-Identifier = "OFL-1.1"
+
+[[annotations]]
+path = "site/fonts/fonts.css"
+precedence = "override"
+SPDX-FileCopyrightText = "2026 David McDougall"
+SPDX-License-Identifier = "MIT"
+
+# Third-party witness extracts and acquisition metadata: no grant.
+[[annotations]]
+path = "sources/witnesses/**"
+precedence = "override"
+SPDX-FileCopyrightText = "Third-party digitisations; see RIGHTS_AND_SOURCES.md"
+SPDX-License-Identifier = "LicenseRef-Witness"

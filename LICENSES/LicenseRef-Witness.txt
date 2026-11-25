@@ -1,0 +1,11 @@
+Third-party witness material: not licensed by this project.
+
+These files are page extracts from, and acquisition metadata for, historical
+editions digitised by third parties (Internet Archive, Google, Wikimedia
+Commons). The underlying works and editions are in the public domain by age.
+This project grants no rights over the reproductions or metadata, and makes
+no warranty about their status or the conditions of the providers who
+published them. They are held as evidence for the established text.
+
+Their status, provenance and provider conditions are documented in
+RIGHTS_AND_SOURCES.md and sources/provenance/.

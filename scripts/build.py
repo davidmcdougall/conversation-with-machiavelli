@@ -920,7 +920,7 @@ ABOUT = '''    <h2>What this is</h2>
         <p>Existing English translations of the <i>Considerazioni</i> — Grayson (1965), Atkinson &amp; Sices
           (2002) — are never used as translation inputs.</p>
     <h2 id="licence">Licence</h2>
-        <p>The established Italian text and the apparatus data are dedicated to the public domain under
+        <p>The established Italian text and the research and provenance data are dedicated to the public domain under
           <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>. They are Machiavelli's and
           Guicciardini's sentences, and this edition adds no condition to them.</p>
         <p>The English translation, the notes and the editorial apparatus are licensed
@@ -930,8 +930,9 @@ ABOUT = '''    <h2>What this is</h2>
           attribution, for example: <i>A Conversation with Machiavelli</i>, AI-assisted English translation edited
           by David McDougall, CC BY 4.0. The build tooling is MIT.</p>
         <p>The witness scans are other people's digitisations, included as evidence under their own terms; no
-          grant is made over them, and no page image of Palmarocchi 1933 is reproduced here. Full terms,
-          component by component, are in the <span class="sig">LICENSE</span> file in the repository; source
+          grant is made over them, and no page image of Palmarocchi 1933 is reproduced here. Full terms
+          are in the <span class="sig">LICENSE</span> file in the repository, and file by file in
+          <span class="sig">REUSE.toml</span>; source
           rights are in <span class="sig">RIGHTS_AND_SOURCES.md</span>.</p>'''
 
 COLOPHON = '''  <footer class="colophon">

@@ -12,12 +12,12 @@ witness and page that supports the correction.
 
 ## Licence of contributions
 
-Each contribution is licensed under the licence of the component it changes
-(`LICENSE`):
+Each contribution is licensed under the licence of the file it changes, as
+stated in `REUSE.toml` (summarised in `LICENSE`):
 
 | Component | Contribution licence |
 |---|---|
-| Established Italian text; research, provenance and apparatus data; operational documentation | CC0 1.0 Universal |
+| Established Italian text; research and provenance data; documentation | CC0 1.0 Universal |
 | English translation; editorial commentary and apparatus | CC BY 4.0 |
 | Software and build scripts | MIT |
 
