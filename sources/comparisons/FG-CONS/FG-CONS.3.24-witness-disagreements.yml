@@ -1,0 +1,68 @@
+source_unit_id: FG-CONS.3.24
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+comparison_witness: WIT-FG-CONS-1933-PALMAROCCHI
+records:
+  - id: FG-CONS-III24-D001
+    locator: FG-CONS.3.24.01
+    class: ruled_reading
+    witness_1857: "e séguito co' re, e nelle nazioni o provincie forestiere"
+    witness_1933: "e séguito co' re e nelle nazione e provincie forestiere"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "`o`, or, against the 1933's `e`, and. Read alike by both readers without doubt; at the D203(b) e/o class, ruled as D486 (`o a ogni principe`). Both construe. Kept (D38, D510)."
+  - id: FG-CONS-III24-D002
+    locator: FG-CONS.3.24.01
+    class: ruled_reading
+    witness_1857: "come fece a Cesare il lungo imperio di Gallia"
+    witness_1933: "come fece a Cesare el lungo imperio in Gallia"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "`di Gallia`, the command of Gaul, against the 1933's `in Gallia`, in Gaul. Read alike by both readers without doubt. Both construe. Kept (D38, D510)."
+  - id: FG-CONS-III24-D003
+    locator: FG-CONS.3.24.01
+    class: ruled_reading
+    witness_1857: "ma la conjurazione con Pompeo ⟨e|o⟩ Crasso"
+    witness_1933: "ma la coniurazione con Pompeo e Crasso"
+    established: "e"
+    publish_as_variant_note: false
+    rationale: "A common doubt: both readers prefer `e`, naming `o`; pass A sees the shape as `o`. Only `e` gives the conspiracy of the three. Read with the 1933 (D510, as D486)."
+  - id: FG-CONS-III24-D004
+    locator: FG-CONS.3.24.01
+    class: ruled_reading
+    witness_1857: "di occupare la republica, fece imperio decemvirale"
+    witness_1933: "di occupare la republica, fece imperio decennale"
+    established: "decemvirale (provisional, O50)"
+    publish_as_variant_note: true
+    rationale: "`decemvirale`, decemviral, of the decemvirs, against the 1933's `decennale`, decennial, of ten years. Read alike by both readers without doubt. Caesar's Gallic command ran ten years (the editor's reference); `decemvirale` construes in grammar and fails in fact. Kept provisionally under D38 on the recommendation (O50); translator's note."
+  - id: FG-CONS-III24-D005
+    locator: FG-CONS.3.24.01
+    class: ruled_reading
+    witness_1857: "Però conchiuggo che quando Roma non fu corrotta, le prorogazioni degli imperii"
+    witness_1933: "Però conchiuggo che quando Roma non fu corrotta, che le prorogazione degli imperi"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "The 1933 repeats `che` after the temporal clause; Canestrini has none. Read alike by both readers without doubt. Both construe. Kept (D38, D510)."
+  - id: FG-CONS-III24-D006
+    locator: FG-CONS.3.24.01
+    class: ruled_reading
+    witness_1857: "imperii|imperu ×6, uomini|nomini, tirannidi|tirauuidi|tiraanidi, Catilina|Catihna, Cesare|Ceaare|Cosare, utilità|utihtà, sua|aua, stato|atato, nobilità|nobihtà, e|c ×2, e|s|o (a' capitani), si|st, nè|nc̀"
+    witness_1933: "the same words"
+    established: "the word at each"
+    publish_as_variant_note: false
+    rationale: "At the scan's broken letters the readers preferred the word and named the shape, or one read the word without doubt; only the word is Italian, and the 1933 edition prints it. Readings, the word, as D398, D406, D494, D502: D510."
+  - id: FG-CONS-III24-D007
+    locator: FG-CONS.3.24.01
+    class: ruled_reading
+    witness_1857: "Gallia⟨.|∅⟩ Ma / capo⟨.|∅⟩ Però / altri⟨;|,⟩ (A), altri; (B)"
+    witness_1933: "Gallia. Ma / capo. Però / altri,"
+    established: "Gallia. / capo. / altri;"
+    publish_as_variant_note: false
+    rationale: "Both readers see a faint mark before a capital and prefer a stop; the 1933 breaks the tie (D110). `altri;` read by pass B without doubt, kept against the 1933. Canestrini's printed stop at the end kept (D460): D510."
+  - id: FG-CONS-III24-D008
+    locator: FG-CONS.3.24.01
+    class: rubric
+    witness_1857: "La prolungazione degl' imperii fece serva Roma."
+    witness_1933: "[La prolungazione degl'imperi fece serva Roma.]"
+    established: witness_1857
+    publish_as_variant_note: true
+    rationale: "Canestrini's rubric over the reply: Machiavelli's sentence (the 1824 rubric) with `degl'imperii` for `degli Imperj`, with the printed stop; the readers' broken letters (`imperii`, `fece`) read with the 1824 rubric. The 1933 sets the 1824's sentence as a bracketed title. Canestrini's heading, without `del libro III`, carried as printed (D443). Heading apparatus (D511)."

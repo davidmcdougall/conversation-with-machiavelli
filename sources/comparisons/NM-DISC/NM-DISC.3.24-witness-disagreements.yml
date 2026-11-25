@@ -1,0 +1,44 @@
+source_unit_id: NM-DISC.3.24
+governing_witness: WIT-NM-DISC-1824-IA
+comparison_witness: WIT-NM-DISC-1554-IA
+records:
+  - id: NM-DISC-III24-D001
+    locator: NM-DISC.3.24.01
+    class: ruled_reading
+    witness_1824: "le quali cose se fussero state conosciute bene da principio, e fattivi debiti rimedj"
+    witness_1554: "Le quali coſe ſe fuſsino ſtate conoſciute bene da principio,et fattiui i debiti rimedij"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The 1554 has the article, `i debiti rimedij`, the due remedies; the 1824 none. Read by pass A and by pass B on a crop without doubt. Kept (D38, D509)."
+  - id: NM-DISC-III24-D002
+    locator: NM-DISC.3.24.02
+    class: ruled_reading
+    witness_1824: "fussero stati savj e buoni, come fu L. Quinzio"
+    witness_1554: "fuſsino ſtati ſaui, et buoni, come L. Quintio"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The 1554 omits `fu`, was. Read by both 1824 readers on the sample page without doubt. Kept (D38, D509)."
+  - id: NM-DISC-III24-D003
+    locator: NM-DISC.3.24.04
+    class: ruled_reading
+    witness_1824: "Il primo a chi fu prorogato l'Imperio fu P. Filone"
+    witness_1554: "Il primo, a chi fu allongato l'imperio, fu P. Philone"
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "`prorogato`, prorogued, against `allongato`, lengthened: two verbs of one sense; the 1824's is the chapter's own `prorogare`, beside `prolungare`. Read by both 1824 readers on the sample page without doubt. Kept (D38, D509)."
+  - id: NM-DISC-III24-D004
+    locator: NM-DISC.3.24.06
+    class: ruled_reading
+    witness_1824: "Che se mai i Romani non avessero prolungati li Magistrati e gl'Imperj, se non venivano sì tosto a tanta potenza, e se fussero stati più tardi gli acquisti loro, sarebbero ancora venuti più tardi nella servitù."
+    witness_1554: "che ſe mai i Romani non haueſsino prolungati i magiſtrati, et gli imperii, non ueniuano ſi toſto a tanta potẽza, et ſe fuſsino ſtati piu tardi gli acquiſti loro, ſarebbero anchora uenuti piu tardi nella ſeruitu."
+    established: witness_1824
+    publish_as_variant_note: true
+    rationale: "The 1554 has no second `se`: `non ueniuano` is then the apodosis of the first condition (they would not have come so soon to such power), and a second condition follows. In the 1824 the `se` makes it a second protasis, and the period runs through three conditions to one apodosis. Both construe. Read by pass A and by pass B on a crop without doubt. Kept (D38, D509); translator's note."
+  - id: NM-DISC-III24-D005
+    locator: NM-DISC.3.24.01
+    class: rubric
+    witness_1824: "La prolungazione degli Imperj fece serva Roma."
+    witness_1554: "LA PROLVNGATIONE DE GLI imperij fece ſerua Roma. Cap. XXIIII."
+    established: witness_1824
+    publish_as_variant_note: false
+    rationale: "The same sentence but for spelling. Read by pass A without doubt (D511)."

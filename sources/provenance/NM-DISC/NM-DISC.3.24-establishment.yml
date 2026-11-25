@@ -1,0 +1,31 @@
+source_unit_id: NM-DISC.3.24
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-NM-DISC-1824-IA
+collated_witness: WIT-NM-DISC-1554-IA
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-039
+passes:
+  - {id: A, performed: 2026-11-25, file: sources/coldpass/NM-DISC.3.24-passA.md, note: "subagent; page images only (350 ppi, whole page and thirds cut in pixels, sizes and checksums verified before dispatch), own image, work and output folders, forbidden every other path (D370); full chapter, with p. 173 as boundary evidence (D508)"}
+  - {id: B, performed: 2026-11-25, file: sources/coldpass/NM-DISC.3.24-passB.md, note: "subagent; separate folders; the D302 sample page p. 171, chosen and recorded before dispatch, with line crops of p. 170 ll. 6 and 7 and p. 172 l. 17, checked on a contact strip (D508)"}
+collation: sources/coldpass/COLLATION-2026-11-25-III24.md
+collation_result: "471 words in pass A (p. 170 64, p. 171 249, p. 172 158). The sample page agrees with pass A in every word and mark (284 tokens to 284), and all three crops agree word for word. Pass B's doubts are specks, the weight of a comma pass A reads without doubt, and the raised stop after `Proconsolo` that both read as a stop. The common doubt `⟨da|dà⟩ principio`, both preferring `da`, read `da` (D398, D508). D302 stands. Against the 1554: the whole words kept (D509)."
+boundaries: "printed pp. 170-172 of vol. 2; CAPITOLO XXIV on p. 170 below the end of III.23; a one-line italic rubric with a stop; raised initial S; one block; no notes; ends p. 172 l. 20 `nella servitù.`, the rest of the page blank; CAPITOLO XXV opens p. 173, the supplementary extract NM-DISC-III24-p173.pdf from the same recorded scan (D508)"
+heading: "CAPITOLO XXIV"
+rubric_check: "1824: `La prolungazione degli Imperj fece serva Roma.` (pass A, without doubt). Canestrini's rubric over the reply has `degl'imperii`, otherwise the same words, with a printed stop; the 1554 heads the chapter `LA PROLVNGATIONE DE GLI imperij fece ſerua Roma. Cap. XXIIII.`; the 1933 edition's bracketed title is the 1824's sentence (D511)"
+interventions: []
+emendations: []
+procedure:
+  - {id: D508, note: "p. 171 and p. 172 eligible for the D302 sample (a fifth of 471 is 95); word-level 1554 differences: p. 170 one, p. 171 two in 249 words, p. 172 one in 158; p. 171 chosen, with crops of the two differences outside it and of pass A's doubt between words (`⟨da|dà⟩`, D203(a)). Sample and crops agree with pass A word for word. The extract ends with the chapter's last words on p. 172 and no following heading; the volume scan, fetched again, matches the recorded sha256 db7f7e05..., pp. 170-172 re-rendered from it are pixel-identical to the extract, and p. 173 (zero-based 176), which opens CAPITOLO XXV, was extracted as boundary evidence."}
+readings:
+  - {locus: "NM-DISC.3.24.01 `conosciute bene ⟨da|dà⟩ principio`", passes: "a common doubt, A and B (on a crop) both preferring `da`, the mark a round dot", witness_1554: "da principio", disposition: "`da`, a reading (D508, as D398): only `da` construes"}
+  - {locus: "NM-DISC.3.24.01-.06 the whole-word differences: `fattivi debiti` (.01); `come fu L. Quinzio` (.02); `prorogato` (.04); the second `se` of `se non venivano` (.06)", passes: "A full and B on the sample or a crop, without doubt", witness_1554: "`fattiui i debiti`; `come L. Quintio`; `allongato`; no `se`", disposition: "kept, D509 (2026-11-25, by precedent: D38): the 1824 construes at each; variant notes, a translator's note at `se non venivano`"}
+  - {locus: "NM-DISC.3.24.02 `quanto nuocè alla Città`", passes: "A and B, the grave accent clearly printed, without doubt", witness_1554: "nuoce", disposition: "the printed accent kept, set acute by DEC-009 clause 1 (`nuocé`), a past; translator's note"}
+comparison_collation: >
+  Done 2026-11-25 against the 1554 extract (three leaves, fol. 187v-188v by
+  the acquisition record). A cold reader transcribed the Giglio leaves from
+  the page images (sources/coldpass/NM-DISC.3.24-1554.md); no word lost, the
+  leaves sound but for show-through and worn sorts, every word legible (D415
+  not needed). The transcript was collated by word against both 1824 passes
+  after spelling normalisation. Differences are in
+  sources/comparisons/NM-DISC/NM-DISC.3.24-witness-disagreements.yml.

@@ -1,0 +1,36 @@
+source_unit_id: FG-CONS.3.24
+status: accepted
+version: "0.1.0"
+governing_witness: WIT-FG-CONS-1857-CANESTRINI
+collated_witness: WIT-FG-CONS-1933-PALMAROCCHI
+integrity_class: S2
+relationship_pointer: FG-CONS-DR-039
+responds_to: NM-DISC.3.24
+rights: "Canestrini PD body only; Palmarocchi page-image readings consulted as collation evidence, not copied. Canestrini's note to this reply (p. 78, call after `tirannidi.`, summarising Machiavelli's two causes and two inconveniences) is his gloss and is not carried (D463, D487, D495, D503, D511)."
+adjudication: "Canestrini governs, including where his reading is the weaker one (D38); errors are emended from Palmarocchi and bracketed (D68, D126)."
+passes:
+  - {id: A, performed: 2026-11-25, file: sources/coldpass/FG-CONS.3.24-passA.md, note: "subagent; page images only (native 601 ppi rendered at 1200, the whole page and halves cut in pixels, sizes and checksums verified before dispatch), own image, work and output folders, forbidden every other path (D370); the half-title after the reply as boundary evidence"}
+  - {id: B, performed: 2026-11-25, file: sources/coldpass/FG-CONS.3.24-passB.md, note: "subagent; same images, separate folders"}
+collation: sources/coldpass/COLLATION-2026-11-25-III24.md
+collation_result: >
+  318 words each (p. 78 202, p. 79 116). Both readers gave the word as the
+  preferred reading at the scan's broken letters, and the token streams are
+  identical in every word and mark (D510). The common doubt `Pompeo ⟨e|o⟩
+  Crasso`, both preferring `e`, read with the 1933 (D486). `o provincie`,
+  `di Gallia` and the want of `che` kept against the 1933 (D38, D510);
+  `decemvirale` against the 1933 `decennale` kept provisionally (O50).
+  Pointing by D110; Canestrini's printed stop at the end kept (D460).
+witness_independence_check: "SCOPE §7. Neither pass carries a Palmarocchi word-reading where Canestrini differs: both have `imperii`, `nazioni o provincie`, `e a'`, `il lungo`, `di Gallia`, `il fondamento`, `divisioni`, `tirannidi`, `populi`, `conjurazione`, `decemvirale`, `e avendo`, `le prorogazioni` without `che`, `usorono`, `e i semi`, against the 1933 `imperi`, `nazione e provincie`, `ed a'`, `el lungo`, `in Gallia`, `el fondamento`, `divisione`, `tirannide`, `popoli`, `coniurazione`, `decennale`, `ed avendo`, `che le prorogazione`, `usarono`, `ed e' semi`. The passes read Canestrini."
+boundaries: "printed pp. 78-79; heading CONSIDERAZIONE SUL CAPITOLO XXIV at the head of p. 78, without `del libro III`, a faint trace after XXIV that both readers doubt; a one-line rubric in smaller roman type with a printed stop; one paragraph, indented at p. 78 l. 1; ends p. 79 l. 12 `nè facultà di travagliarla per altra via.`; a short rule, and on the next page the half-title RICORDI POLITICI E CIVILI: the last reply. Canestrini's note on p. 78 is keyed to this reply"
+heading: "CONSIDERAZIONE SUL CAPITOLO XXIV, without `del libro III` (both readers); the faint trace after XXIV, doubted by both, not read as a stop, the 1933 printing none (D110); set in the unit's `heading` front-matter (D443, D511)"
+rubric: "La prolungazione degl' imperii fece serva Roma. (both readers doubting `imperii` and `fece` at broken letters): read with the 1824 rubric but for Canestrini's `degl'imperii`; the printed stop, seen by both, carried (D511)"
+corrections: []
+emendations: []
+readings:
+  - {locus: "FG-CONS.3.24.01 `imperio decemvirale`", passes: "both, without doubt", witness_1933: "imperio decennale", disposition: "`decemvirale`, kept provisionally on the recommendation, O50: a real word that construes in the syntax and fails in fact (Caesar's command was decennial, not decemviral); D38 against the bracketing of a real word that cannot construe not settled by precedent; the 1933 in the variant note, a translator's note"}
+  - {locus: "FG-CONS.3.24.01 `nazioni o provincie`; `di Gallia`; `conchiuggo che quando Roma non fu corrotta, le prorogazioni`", passes: "both, without doubt", witness_1933: "nazione e provincie / in Gallia / che le prorogazione", disposition: "kept, D38, D510 (2026-11-25, by precedent): each construes; `o` at the D203(b) e/o class, ruled as D486; variant notes"}
+  - {locus: "FG-CONS.3.24.01 `con Pompeo ⟨e|o⟩ Crasso`", passes: "a common doubt, both preferring `e`, A seeing the shape as `o`", witness_1933: "Pompeo e Crasso", disposition: "`e`, a reading, with the 1933 (D510, as D486, D406)"}
+  - {locus: "FG-CONS.3.24.01 `forestiere, ⟨e|s⟩ (A) / ⟨e|o⟩ (B) a' capitani`", passes: "both preferring `e`", witness_1933: "ed a' capitani", disposition: "`e`, the reading of both (D398, D510)"}
+  - {locus: "FG-CONS.3.24.01 `imperii` ×6, `uomini`, `tirannidi`, `Catilina`, `Cesare`, `utilità`, `sua`, `stato`, `nobilità`, `e` ×2, `si`, `nè`", passes: "doubtful to one or both readers at the scan's broken letters (u/n, i/u, h/li, e/c/o, s/a), the word preferred and the shape named", witness_1933: "the same words", disposition: "readings, the word (D510, as D398, D406, D494, D502)"}
+  - {locus: "FG-CONS.3.24 pointing: `Gallia.` (p. 78 l. 6), `capo.` (p. 79 l. 3); `altri;` (p. 78 l. 16)", passes: "both see a faint mark and prefer a stop; `altri;` doubted by A only", witness_1933: "Gallia. / capo. / altri,", disposition: "the stops read with the 1933 (D110); `altri;` kept, read by B without doubt; Canestrini's printed stop at the end kept (D460)"}
+normalisation_notes: "Class A: accents (`perchè` → `perché`, `nè` → `né`); the plural article `e` set `e'` (`e' cittadini`, D35); spaces after elision and before punctuation removed; line-end hyphens removed; the note call removed."
