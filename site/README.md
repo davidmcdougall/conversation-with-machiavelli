@@ -1,7 +1,8 @@
 The build output, published to GitHub Pages by `.github/workflows/pages.yml`.
 Regenerate with `scripts/build.py --all`; never edit by hand.
 
-`data/` holds the whole published text as JSON and CSV. Pages share
+`og.png` is the link-preview image, a static file the build does not
+generate. `data/` holds the whole published text as JSON and CSV. Pages share
 `style.css`; `404.html`, `sitemap.xml` and `robots.txt` are
 generated with them. The content-only pages used as Claude artifacts are
 written to `build/artifact-input/`, which is not committed or published.

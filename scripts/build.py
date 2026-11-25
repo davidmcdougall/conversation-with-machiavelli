@@ -1091,7 +1091,12 @@ def wrap(content, description, path, title, root=None):
         f'<meta property="og:title" content="{esc(title)}">\n'
         f'<meta property="og:description" content="{esc(description)}">\n'
         f'<meta property="og:url" content="{url}">\n'
-        f'<meta name="twitter:card" content="summary">\n'
+        f'<meta property="og:image" content="{SITE_URL}og.png">\n'
+        f'<meta property="og:image:width" content="1200">\n'
+        f'<meta property="og:image:height" content="630">\n'
+        f'<meta property="og:image:alt" content="A Conversation with Machiavelli: Guicciardini\'s '
+        f'Considerazioni on the Discorsi. Italian and English, facing.">\n'
+        f'<meta name="twitter:card" content="summary_large_image">\n'
     )
     return (
         '<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'

@@ -82,3 +82,5 @@ to `RIGHTS_AND_SOURCES.md`:
   (port manifest) moved to `docs/effort.md` and `docs/port-manifest.md`.
   They are logs, not doctrine; the section numbers stay, as pointers, so
   every "SCOPE §N" reference still resolves.
+- 2026-11-25: every page carries a link-preview image (`og.png`), so shared
+  links show the edition's title card rather than bare text.
