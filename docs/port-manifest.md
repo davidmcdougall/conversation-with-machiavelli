@@ -44,7 +44,8 @@ scripts/validate                     → not carried; rewritten per §7
 - **`translation-system/profiles/GENRES.md`.** Built for the whole-works
   ambition.
 - **`sources/handoffs/`.** 18 old work-item records. Check once for
-  acquisition detail recorded nowhere else, then archive.
+  acquisition detail recorded nowhere else, then archive. *(Check dropped
+  2026-11-25; see `PORT-NOTES.md`, Outstanding 2.)*
 
 **Archive, do not delete:** everything else — 140 work items, 39 reviews, 17
 of 19 decision records, GENESIS, CONSTITUTION, ARCHITECTURE, EDITION-GATE,

@@ -43,8 +43,12 @@ left behind, as was root-level `TRANSLATION_PROTOCOL.md`.
    2026-09-21** — rewritten to one page (14,070 → 3,892 bytes) as three
    normalisation classes; the deferred questions N01–N03 are ruled in
    `decisions.md` as D33, D34 and D36. DEC-010 is revised by DEC-011 (2026-11-24), which leaves its text unedited by design; closed.
-2. **`sources/handoffs/` unchecked.** SCOPE §6 asks for one pass over its 18
-   records for acquisition detail recorded nowhere else, before archiving.
+2. ~~**`sources/handoffs/` unchecked.**~~ **Dropped 2026-11-25** by David
+   McDougall. Acquisition is complete for all 39 pairs, from the four
+   witnesses the handoffs concerned, and every unit carries its own
+   provenance and establishment records made since; nothing the edition
+   relies on depends on the handoffs. The records stay in the predecessor
+   repository's archive, unread.
 3. ~~FG-CONS.1.12 is still `review_pending`.~~ **Done 2026-09-18.** Both I.12
    units went through the dual cold pass and are now established at S2; see
    `sources/coldpass/`.
