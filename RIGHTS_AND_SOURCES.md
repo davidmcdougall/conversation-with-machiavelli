@@ -173,8 +173,10 @@ Distinctions:
 - **James B. Atkinson and David Sices**, *The Sweetness of Power:
   Machiavelli's Discourses and Guicciardini's Considerations* (Northern
   Illinois University Press, 2002). In copyright. **Fact.**
-- **Bausi 2001**, the modern critical edition of the *Discorsi*. Not used.
-  **Policy.**
+- **Francesco Bausi** (ed.), *Discorsi sopra la prima deca di Tito Livio*
+  (Rome: Salerno, 2001), the national edition of the *Discorsi*. In
+  copyright. **Fact.** Treated exactly as Palmarocchi 1933 (DEC-013):
+  consulted for readings, never copied. **Policy.**
 
 Policy:
 
@@ -184,8 +186,12 @@ Policy:
   draft is finished, as a calibration check only (SCOPE §1). Cold reviewers
   are instructed not to look for either. No calibration comparison is
   recorded in the repository. **Fact.**
-- No modern critical edition, including Bausi 2001, is used to establish the
-  Italian. **Policy.**
+- No modern edition governs or supplies the established Italian. Readings of
+  Palmarocchi 1933 and Bausi 2001 may be reported as facts, with a page
+  reference, at loci where the edition emends or where its witnesses split.
+  A reading is a fact about what a book prints; reporting one copies no
+  expression (§6 item 1). Their editorial expression (apparatus, notes,
+  introductions) is never copied (DEC-013). **Policy.**
 
 The project does not assert that no wording in its English overlaps with
 these translations. Two translations of the same short Italian sentence can
@@ -204,8 +210,9 @@ coincide.
   (EB Garamond, IBM Plex; SIL Open Font License 1.1) are self-hosted in
   `site/fonts/` with their licence texts. **Fact.**
 - **Not anywhere in the repository or on the site:** Wikisource wording;
-  Palmarocchi's editorial expression; any part of Grayson, Atkinson & Sices,
-  or Bausi 2001. **Policy.** Anything found that contradicts this is a defect:
+  Palmarocchi's or Bausi's editorial expression (a reading reported as a fact
+  at a locus is not expression, §4); any part of Grayson or Atkinson &
+  Sices. **Policy.** Anything found that contradicts this is a defect:
   report it and it will be removed.
 
 ---

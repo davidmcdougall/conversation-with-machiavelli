@@ -4,6 +4,30 @@ The edition is versioned, not frozen. The version is set in `SCOPE.md` and
 shown on every page; each page also carries its own published and revised
 dates. Per-unit text versions are in each unit's front matter.
 
+## Unreleased
+
+### Review pass 1: doctrine and facts (DEC-013, 2026-11-25)
+
+- The 1824 *Discorsi* governs for availability and legibility, and every
+  Machiavelli source note now says so. A future edition may rely on the 1531
+  Blado printing.
+- Bausi 2001 is now consulted as Palmarocchi 1933 is: readings reported at
+  emended or split loci, expression never copied.
+- The *Considerazioni* are described as unrevised working notes, of which 39
+  replies survive. "Did not stop early", "the set is closed" and "passed
+  over the rest" are withdrawn.
+- One dating of the *Considerazioni*, with its source, used everywhere.
+- v1.0 adds a criterion: scholarship (bibliography, further reading,
+  secondary literature), with every citation checked against a catalogue.
+- SCOPE §7 no longer cites `qc/source-integrity/`, which was never in the
+  repository; it cites FG-CONS-I12-F001, the evidence that backs the rule.
+- Word counts are now real counts of the bodies: 18,642 Italian words for
+  Guicciardini and 35,461 for Machiavelli.
+- `CITATION.cff` has a preferred citation (an edited work, with David
+  McDougall as editor), no longer says "critical edition", and maps each
+  licence to its component.
+- Per-version tags and snapshots: `docs/releasing.md`.
+
 ## 0.3 — 2026
 
 Released as `v0.3.0`: 38 of 39 pairs published (76 of 78 units). III.24 is

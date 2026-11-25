@@ -26,7 +26,7 @@ date_published: "18 October 1531, Rome, Antonio Blado; followed 10 November 1531
 genre: "political and historical discourses framed as commentary on the first decade of Livy's Ab urbe condita [TRECCANI-DISCORSI; TRECCANI-LIVIO]"
 textual_history: "No complete autograph survives. Treccani identifies British Library Harley MS 3533 as the only complete manuscript independent of the early prints and therefore useful for establishing the text; an autograph draft of the first proem survives at the Biblioteca Nazionale Centrale di Firenze, with two further partial copies. The principal 1531 printings are Blado (Rome) and Giunti (Florence). Giorgio Inglese outlined the witness stemma in his 1984 edition; Francesco Bausi supplied the Edizione Nazionale critical text and apparatus in 2001. This census does not adjudicate between individual readings. [TRECCANI-DISCORSI]"
 principal_editions:
-  - "Francesco Bausi (ed.), Discorsi sopra la prima Deca di Tito Livio, 2 tomes, Rome: Salerno Editrice, 2001, Edizione Nazionale delle Opere di Niccolò Machiavelli I/2 — national-edition critical text with apparatus. NOT used by this project: SCOPE §8 excludes adjudicating against Bausi. Listed for scholarly orientation. [TRECCANI-DISCORSI; ENM-PLAN]"
+  - "Francesco Bausi (ed.), Discorsi sopra la prima Deca di Tito Livio, 2 tomes, Rome: Salerno Editrice, 2001, Edizione Nazionale delle Opere di Niccolò Machiavelli I/2 — national-edition critical text with apparatus. Consulted for readings at emended or split loci, as Palmarocchi is for the Considerazioni (SCOPE §1, DEC-013); never copied, never governing. [TRECCANI-DISCORSI; ENM-PLAN]"
   - "Giorgio Inglese (ed.), Discorsi sopra la prima deca di Tito Livio, Milan: Rizzoli, 1984 — annotated reference edition with introduction by Gennaro Sasso; includes Inglese's account of the witness stemma. [RIZZOLI-INGLESE; TRECCANI-DISCORSI]"
   - "Gian Mario Anselmi and Carlo Varotti (eds.), Discorsi sopra la prima deca di Tito Livio, Turin: Bollati Boringhieri, 1993 — modern annotated reference edition listed by Treccani. [TRECCANI-DISCORSI]"
   - "Rinaldo Rinaldi (ed.), Discorsi sopra la prima deca di Tito Livio, Turin: UTET, 1999 — modern annotated reference edition listed by Treccani. [TRECCANI-DISCORSI]"
@@ -67,16 +67,17 @@ sources_cited:
 
 ## Witness posture — settled, see SCOPE §4
 
-The 1824 edition governs (Wikisource, page-image-backed; Commons djvu). The
+The 1824 Milan edition governs (IA `discorsisopralap01mach`,
+`discorsisopralap02mach`; `RIGHTS_AND_SOURCES.md` §1), for availability and
+legibility, not on textual grounds (DEC-013). The
 1554 Giglio Venice printing (IA `discorsidinicolo00mach`, 478 leaves) is the
 comparison witness.
 
 The predecessor census named Bausi 2001 the "governing critical-edition
-candidate." That is void here. SCOPE §8 excludes adjudicating the critical text
-against Bausi 2001 or Harley MS 3533, and SCOPE §1 disclaims any status as a
-text of record. Bausi and Inglese remain listed above for scholarly
-orientation; neither is a source for this edition. Where the 1824 text differs
-from modern critical consensus, the difference is recorded in a note.
+candidate." That is void here: nothing modern governs, and SCOPE §1
+disclaims any status as a text of record. Bausi 2001 is consulted as
+Palmarocchi is (DEC-013). Its readings are reported where we emend or where
+the 1824 and 1554 split, and its expression is never copied.
 
 The English-access failure is not a lack of complete translations. Complete English versions extend from Dacres (1636) through multiple modern scholarly translations, including Walker/Richardson, Mansfield/Tarcov, and the Bondanellas. Under DEC-003, the best translation that exists is modern but copyrighted, so the class is `modern_copyrighted_only`. Open complete English access located in this item is historical rather than modern. [MCCALLUM-DACRES; WORLDCAT-DETMOLD; PENGUIN-DISCOURSES; CHICAGO-MANSFIELD-TARCOV; FOLGER-BONDANELLA]
 

@@ -19,7 +19,8 @@ The only derived view in the project (SCOPE §7). Every cell comes from a file:
   version                  SCOPE.md "**Version.** Draft X"
   v1.0 checklist           the above, plus apparatus/decision-log.md (open items),
                            docs/sample-reads.md, apparatus/introduction.md,
-                           site/downloads/, CITATION.cff (doi) — DEC-012
+                           site/downloads/, CITATION.cff (doi) — DEC-012;
+                           apparatus/bibliography.md (catalogue checks) — DEC-013
 If a fact about a unit is not in that unit's file, it does not exist.
 """
 import re
@@ -167,6 +168,27 @@ def v1_checklist(pub_pairs, n_pairs):
 
     doi = re.search(r'^doi:\s*"?(\S+?)"?$', (ROOT / "CITATION.cff").read_text(encoding="utf-8"), re.M)
     row("Zenodo DOI", bool(doi), doi.group(1) if doi else "none")
+
+    # DEC-013: every table row in apparatus/bibliography.md whose header has a
+    # "Checked" column must carry a non-empty Checked cell (who checked it,
+    # against which catalogue, when).
+    bib = ROOT / "apparatus/bibliography.md"
+    entries, unchecked = 0, 0
+    if bib.exists():
+        col = None
+        for line in bib.read_text(encoding="utf-8").splitlines():
+            if not line.startswith("|"):
+                col = None if not line.strip() else col
+                continue
+            c = [x.strip() for x in line.strip().strip("|").split("|")]
+            if "Checked" in c:
+                col = c.index("Checked")
+            elif col is not None and not set("".join(c)) <= set("-: "):
+                entries += 1
+                unchecked += not (len(c) > col and c[col])
+    row("Bibliography, further reading, secondary literature",
+        entries > 0 and unchecked == 0,
+        (f"{entries} entries, {unchecked} not catalogue-checked" if entries else "not written"))
 
     return "\n".join(["| Criterion | Done | State |", "|---|---|---|"] + rows)
 

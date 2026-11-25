@@ -7,6 +7,7 @@ decided_by: David McDougall
 supersedes: null
 superseded_by: null
 revises: SCOPE §7 "One human check" (the three-month cold reread)
+amended_by: DEC-013 (adds criterion 7)
 review_horizon: "at the v1.0 release, or if two sample reads in a row find a real error"
 ---
 
@@ -44,6 +45,11 @@ one in SCOPE §4 from the files.
    `sources/witnesses/`, so the witness extracts stay where they can be
    withdrawn (`RIGHTS_AND_SOURCES.md` §6 item 3). The DOI is recorded in
    `CITATION.cff`.
+
+7. **Scholarship** (added by DEC-013, 2026-11-25). Secondary literature in
+   the annotations, a bibliography and a further-reading list, in
+   `apparatus/bibliography.md`. A person checks every citation against a
+   library catalogue and records the check in the file.
 
 Not in v1.0:
 

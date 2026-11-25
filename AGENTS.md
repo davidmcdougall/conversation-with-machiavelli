@@ -9,8 +9,10 @@ Four rules:
 1. No image-derived reading enters the text on a single model pass. Dual cold
    pass; disagreement escalates to David and is never resolved by rerunning.
 2. Every established reading is attested in a named witness under
-   `sources/witnesses/`. No reading from memory, and none from a modern
-   edition.
+   `sources/witnesses/`. No reading from memory. Palmarocchi 1933 and Bausi
+   2001 may be consulted, and their readings reported as facts with a page
+   reference, where we emend or where our witnesses split; neither governs,
+   and their expression is never copied (DEC-013).
 3. Never use Atkinson/Sices or Grayson as a translation input. They are a
    calibration check after a draft is finished, and nothing else.
 4. A stage whose output cannot be published to a reader does not exist.

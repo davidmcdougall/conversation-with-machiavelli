@@ -23,11 +23,17 @@ register/guicciardini/FG-CONS.md     → sources/register/, rewritten per §4
 translation-system/profiles/MACHIAVELLI.md      as draft, not doctrine
 translation-system/profiles/GUICCIARDINI.md     as draft, not doctrine
 translation-system/TERMINOLOGY-METHOD-v0.9.md   as draft, not doctrine
-qc/source-integrity/                    pilot doc + one run's results
+qc/source-integrity/                    pilot doc + one run's results  [never carried; see note]
 decisions/DEC-009, DEC-010              rewritten to one page each
 .gitignore
 scripts/validate                     → not carried; rewritten per §7
 ```
+
+*Note, 2026-11-25:* `qc/source-integrity/` was listed above but never
+arrived in this repository, though SCOPE §7 cited it as evidence until the
+2026-11-25 review. It is not restored: its runs concern works outside this
+edition's scope and do not test the rule SCOPE cited them for. See SCOPE §7
+and `docs/review-2026-11-25.md`.
 
 **Do not carry, and know why:**
 

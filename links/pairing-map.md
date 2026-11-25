@@ -12,9 +12,9 @@ status: supported
 
 # Pairing map — Guicciardini's *Considerazioni* → Machiavelli's *Discorsi*
 
-Guicciardini answered 39 of Machiavelli's chapters and stopped. The set is
-closed: 28 units address Book I, eight address Book II (including its proem),
-three address Book III. No unit in either inspected witness is headed as
+The *Considerazioni* survive as 39 replies, unrevised working notes; whether
+Guicciardini meant to answer more is not known (DEC-013). 28 units address
+Book I, eight address Book II (including its proem), three address Book III. No unit in either inspected witness is headed as
 responding jointly to more than one *Discorsi* chapter.
 
 ## Evidence
@@ -30,12 +30,12 @@ vol. 1, pp. 1–65) governs; Palmarocchi 1933, and the page-image-backed
 Wikisource transcription made from it, agree on the full sequence and serve as
 comparison only.
 
-**Provenance note.** The map was first compiled 2026-07-15 against the
+**Provenance.** The map was first compiled 2026-07-15 against the
 Palmarocchi/Wikisource contents, before Canestrini was adopted as the governing
-witness. The pairing itself is unaffected — the two witnesses carry the same 39
-headings — but the map is to be re-verified against the Canestrini page images
-as those are acquired, unit by unit, and this note removed when that is
-complete.
+witness. It has since been verified against Canestrini: all 39 units are
+established from his page images (`governing_witness:
+WIT-FG-CONS-1857-CANESTRINI` in each `corpus/FG-CONS/` file), each with its
+heading, and every heading names the chapter this map gives.
 
 ## The 39 pairs
 

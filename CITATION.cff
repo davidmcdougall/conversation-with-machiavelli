@@ -1,9 +1,9 @@
 cff-version: 1.2.0
-message: "If you use this edition, please cite it as below."
+message: "If you use this edition, please cite it as below (preferred-citation)."
 type: dataset
 title: "A Conversation with Machiavelli: Guicciardini's Considerazioni on the Discorsi"
 abstract: >-
-  A free, bilingual, hyperlinked edition of Francesco Guicciardini's
+  A free, bilingual, hyperlinked reading edition of Francesco Guicciardini's
   Considerazioni sui Discorsi del Machiavelli and the chapters of Machiavelli's
   Discorsi they answer. The Italian is established from named public-domain
   witnesses; the English is an AI-assisted translation edited by David
@@ -13,6 +13,10 @@ authors:
     given-names: David
 version: 0.3.0
 date-released: 2026-11-25
+# Licences by component (LICENSE, REUSE.toml):
+#   CC0-1.0    established Italian text; research and provenance data; documentation
+#   CC-BY-4.0  English translation; editorial commentary and apparatus (where rights subsist)
+#   MIT        software and build scripts (scripts/)
 license:
   - CC0-1.0
   - CC-BY-4.0
@@ -24,6 +28,31 @@ keywords:
   - Guicciardini
   - Discorsi
   - Considerazioni
-  - critical edition
+  - bilingual edition
+  - reading edition
   - translation
   - Italian Renaissance
+# CFF has no "edition" type; edited-work is the closest. The authors are the
+# two writers; David McDougall is the editor. The English is credited as
+# AI-assisted translation edited by him (DEC-011), so he is not listed as
+# translator.
+preferred-citation:
+  type: edited-work
+  title: "A Conversation with Machiavelli: Guicciardini's Considerazioni on the Discorsi"
+  authors:
+    - family-names: Guicciardini
+      given-names: Francesco
+    - family-names: Machiavelli
+      given-names: Niccolò
+  editors:
+    - family-names: McDougall
+      given-names: David
+  notes: "Bilingual reading edition, Italian and English. AI-assisted English translation edited by David McDougall."
+  version: 0.3.0
+  year: 2026
+  url: "https://davidmcdougall.github.io/conversation-with-machiavelli/"
+  repository-code: "https://github.com/davidmcdougall/conversation-with-machiavelli"
+  license:
+    - CC0-1.0
+    - CC-BY-4.0
+    - MIT

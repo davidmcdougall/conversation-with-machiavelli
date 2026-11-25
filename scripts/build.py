@@ -72,8 +72,10 @@ WORKS = {
         work_title="Discorsi sopra la prima Deca di Tito Livio",
         work_dates="written c. 1513–19, printed 1531",
         source_citation=(
-            'Established from the 1824 edition (<span class="sig">WIT-NM-DISC-1824-IA</span>), '
-            "page-image-backed, which governs. Collated against the 1554 Giglio printing, Venice "
+            'Established from the Milan edition of 1824 (<span class="sig">WIT-NM-DISC-1824-IA</span>), '
+            "page-image-backed, which governs. It was chosen because a complete scan is freely "
+            "available and legible, not on textual grounds; a future edition may rely on the first "
+            "printing, Blado's (Rome, 1531). Collated against the 1554 Giglio printing, Venice "
             '(<span class="sig">WIT-NM-DISC-1554-IA</span>), which is comparison evidence only.'
         ),
         edition_year="1824",
@@ -924,8 +926,15 @@ ABOUT = '''    <h2>What this is</h2>
         <p>A free, openly licensed, bilingual edition of Guicciardini's 39 <i>Considerazioni</i> and the
           <i>Discorsi</i> chapters they answer — 78 text units, Italian and English facing, every reading
           traceable to a named public-domain witness.</p>
-        <p>It is a reading edition with a transparent apparatus, not a text of record. It does not adjudicate
-          the critical text against Bausi 2001 or the manuscript tradition, and does not claim to.</p>
+        <p>It is a reading edition with a transparent apparatus, not a text of record, and it does not
+          establish a critical text. Modern editions (Palmarocchi 1933 for the <i>Considerazioni</i>, Bausi 2001
+          for the <i>Discorsi</i>) are consulted for their readings where the text is emended or the old
+          printings disagree, and those readings are reported in the notes; their wording is never copied.</p>
+        <p>Machiavelli's chapters are given from the Milan edition of 1824 because a complete scan of it is
+          freely available and legible. A future edition may rely on the first printing, Blado's (Rome, 1531).
+          Guicciardini's replies are given from their first printing, Canestrini's of 1857.</p>
+        <p>The <i>Considerazioni</i> are unrevised working notes. Thirty-nine replies survive; whether
+          Guicciardini meant to answer more is not known.</p>
         <p>Edited by David McDougall. AI-assisted English translation edited by David McDougall.</p>
     <h2>On the title</h2>
         <p>Machiavelli had been dead two years when Guicciardini wrote; the <i>Discorsi</i> were unpublished,
@@ -1319,7 +1328,7 @@ def build_index(published):
     <p class="eyebrow">A Conversation with Machiavelli · {len(published)} of {len(rows)} pairs published</p>
     <h1>Guicciardini's <i>Considerazioni</i> on the <i>Discorsi</i>
       <span class="sub">A free, bilingual, hyperlinked edition</span></h1>
-    <p class="standfirst">Guicciardini answered 39 of Machiavelli's chapters and passed over the rest. Each pair below
+    <p class="standfirst">Guicciardini's working notes on the <i>Discorsi</i> survive as 39 replies. Each pair below
       puts the chapter and the reply on one screen, Italian and English facing, with a transparent apparatus.</p>
   </header>
 

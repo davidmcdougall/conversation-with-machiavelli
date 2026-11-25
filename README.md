@@ -29,15 +29,20 @@ frozen; every page is dated. Per-pair progress is the table in `SCOPE.md` §2.
 
 Method and policy: `SCOPE.md` (the project's doctrine),
 `TRANSLATION_METHOD.md`, `RIGHTS_AND_SOURCES.md`. Logs and records that are not
-doctrine are in `docs/` (per-pair effort, the port manifest).
+doctrine are in `docs/` (per-pair effort, the port manifest, the
+2026-11-25 review and its pass plan, how to release a version).
 
 ## Witnesses
 
 The Italian is established from page images of historical editions — the
 *Discorsi* of 1824 (governing) and 1554, and the *Considerazioni* as first
 printed by Canestrini in 1857 (governing), collated against Palmarocchi 1933 —
-each transcribed by two independent readers. No modern critical edition or
-translation is used. Details in `RIGHTS_AND_SOURCES.md`.
+each transcribed by two independent readers. The 1824 *Discorsi* governs
+because a complete scan is freely available and legible; a future edition may
+rely on the first printing, Blado's of 1531. No modern edition governs, and no
+translation is used. Readings of Palmarocchi 1933 and Bausi 2001 are reported
+where the text is emended or the witnesses split. Details in
+`RIGHTS_AND_SOURCES.md`.
 
 ## Licence
 

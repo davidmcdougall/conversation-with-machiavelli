@@ -28,8 +28,11 @@ expressly waive it; contributions to CC0 components are dedicated under CC0
 1.0 Universal.
 
 Do not submit third-party material, including text from Wikisource,
-Palmarocchi 1933, Grayson 1965, Atkinson & Sices 2002, or any modern critical
-edition (`RIGHTS_AND_SOURCES.md`).
+Palmarocchi 1933, Bausi 2001, Grayson 1965, Atkinson & Sices 2002, or any
+other modern edition (`RIGHTS_AND_SOURCES.md`). A reading of Palmarocchi 1933
+or Bausi 2001 may be reported as a fact, with its page, where it bears on a
+place we emend or where our witnesses split (DEC-013); their notes,
+apparatus and introductions may not be copied.
 
 ## AI-assisted contributions
 
