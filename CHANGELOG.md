@@ -75,3 +75,6 @@ to `RIGHTS_AND_SOURCES.md`:
 - 2026-11-25: CI also checks that every internal link and anchor on the site
   resolves (`scripts/checklinks`), and that the README's status line,
   citation and `CITATION.cff` agree with `SCOPE.md`.
+- 2026-11-25: the whole published text is available as data, Italian and
+  English aligned by paragraph: `data/edition.json` and `data/paragraphs.csv`,
+  linked from the About page.

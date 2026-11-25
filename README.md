@@ -24,6 +24,7 @@ frozen; every page is dated. Per-pair progress is the table in `SCOPE.md` §2.
 | `sources/` | Witness extracts, cold passes, collations, provenance |
 | `links/` | Which *Considerazione* answers which *Discorsi* chapter |
 | `site/` | The published website — build output, never edited by hand |
+| `site/data/` | The whole published text as data: `edition.json`, `paragraphs.csv` |
 | `scripts/` | `build.py`, `state`, `validate`, `checklinks` |
 
 Method and policy: `SCOPE.md` (the project's doctrine),
@@ -59,6 +60,14 @@ are recorded per step (`TRANSLATION_METHOD.md`). Summary in `LICENSE`; file by f
 > David McDougall. Version 0.3.
 > https://davidmcdougall.github.io/conversation-with-machiavelli/
 <!-- /state:cite -->
+
+## Data
+
+Every published paragraph, Italian and English aligned, with its governing
+witness, is in [`edition.json`](https://davidmcdougall.github.io/conversation-with-machiavelli/data/edition.json)
+(by pair and unit) and [`paragraphs.csv`](https://davidmcdougall.github.io/conversation-with-machiavelli/data/paragraphs.csv)
+(one row per paragraph), regenerated with every build. The Italian is CC0; the
+English is CC BY 4.0.
 
 ## Corrections
 

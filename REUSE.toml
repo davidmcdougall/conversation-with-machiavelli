@@ -42,7 +42,7 @@ SPDX-License-Identifier = "MIT"
 
 # The website: Italian text (CC0) and English and apparatus (CC BY) together.
 [[annotations]]
-path = ["site/*.html", "site/pairs/**"]
+path = ["site/*.html", "site/pairs/**", "site/data/**"]
 precedence = "override"
 SPDX-FileCopyrightText = "2026 David McDougall"
 SPDX-License-Identifier = "CC0-1.0 AND CC-BY-4.0"

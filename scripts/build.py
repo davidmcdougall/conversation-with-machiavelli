@@ -20,6 +20,8 @@ and always refreshes, across every published pair:
   build/artifact-input/index-content.html
   site/style.css                   the shared stylesheet every page links
   site/404.html, site/sitemap.xml, site/robots.txt
+  site/data/edition.json           the whole published text, paragraph-aligned
+  site/data/paragraphs.csv         the same, one row per paragraph
   site/about.html                  what the edition is, title, method, licence (once,
                                    not repeated in every page's footer)
 Fonts are self-hosted from site/fonts/ (fonts.css plus woff2 files, SIL OFL).
@@ -44,7 +46,11 @@ import sys
 import html
 import pathlib
 import argparse
+import csv
 import datetime
+import functools
+import io
+import json
 import os
 import subprocess
 
@@ -228,6 +234,7 @@ def last_text_revision(paths):
     return None
 
 
+@functools.lru_cache(maxsize=None)
 def pair_dates(pair):
     """(published, revised) as ISO dates.
 
@@ -941,6 +948,11 @@ ABOUT = '''    <h2>What this is</h2>
           repository.</p>
         <p>Existing English translations of the <i>Considerazioni</i> — Grayson (1965), Atkinson &amp; Sices
           (2002) — are never used as translation inputs.</p>
+    <h2 id="data">The text as data</h2>
+        <p>Every published paragraph, Italian and English aligned, with its governing witness and a link to
+          its place here, is available as <a href="data/edition.json">JSON</a> (by pair and unit, with
+          rubrics and versions) and as <a href="data/paragraphs.csv">CSV</a> (one row per paragraph). Both
+          are regenerated with the site. The Italian is CC0; the English is CC BY 4.0.</p>
     <h2 id="licence">Licence</h2>
         <p>The established Italian text and the research and provenance data are dedicated to the public domain under
           <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>. They are Machiavelli's and
@@ -1333,6 +1345,73 @@ def build_index(published):
           len(published), "of", len(rows), "pairs listed")
     build_about(published)
     build_shared(published)
+    build_data(published)
+
+
+def build_data(published):
+    """site/data/: the published text as data. Italian CC0, English CC BY 4.0."""
+    units_out, rows = [], []
+    pairs_out = []
+    for row in published:
+        pair = row["pair"]
+        pub, rev = pair_dates(pair)
+        url = SITE_URL + f"pairs/{pair}.html"
+        units = []
+        for unit, work in ((row["nm"], "NM-DISC"), (row["fg"], "FG-CONS")):
+            c_meta, it = parse_corpus(unit, work)
+            t_meta, en, _ = parse_translation(unit, work)
+            assert set(it) == set(en), f"{unit}: paragraph ids differ"
+            paras = [{"id": pid, "it": it[pid], "en": en[pid], "url": f"{url}#{pid}"}
+                     for pid in para_order(it)]
+            u = {
+                "unit": unit,
+                "author": WORKS[work]["author"],
+                "work": WORKS[work]["work_title"],
+                "responds_to": c_meta.get("responds_to") or None,
+                "rubric_it": c_meta.get("rubric") or None,
+                "rubric_en": t_meta.get("rubric_en") or None,
+                "governing_witness": c_meta.get("governing_witness"),
+                "source_version": c_meta.get("version"),
+                "integrity_class": c_meta.get("integrity_class"),
+                "translation_version": t_meta.get("version"),
+                "translation_status": t_meta.get("status"),
+                "paragraphs": paras,
+            }
+            units.append(u)
+            for para in paras:
+                rows.append([pair, unit, u["author"], para["id"], para["it"], para["en"],
+                             u["governing_witness"], para["url"]])
+        pairs_out.append({"pair": pair, "number": row["n"], "url": url,
+                          "published": pub, "revised": rev, "units": units})
+    data = {
+        "title": "A Conversation with Machiavelli: Guicciardini's Considerazioni on the Discorsi",
+        "version": edition_version(),
+        "url": SITE_URL,
+        "repository": "https://github.com/davidmcdougall/conversation-with-machiavelli",
+        "credit": "Ed. David McDougall; AI-assisted English translation edited by David McDougall.",
+        "licences": {
+            "it": "CC0-1.0 (the established Italian text, rubric_it, and all metadata)",
+            "en": "CC-BY-4.0, where rights subsist (the English, rubric_en)",
+            "details": "LICENSE and REUSE.toml in the repository",
+        },
+        "conventions": ("Text keeps the edition's inline marks: *asterisks* for italics; "
+                        "[square brackets] for words supplied by the editor (Italian) or the "
+                        "translator (English). Notes, variants and commentary are on the site and "
+                        "in the repository, not in this file."),
+        "pairs_published": len(published),
+        "pairs_total": len(pairing_map()),
+        "pairs": pairs_out,
+    }
+    out = ROOT / "site/data"
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "edition.json").write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n",
+                                      encoding="utf-8")
+    buf = io.StringIO()
+    w = csv.writer(buf, lineterminator="\n")
+    w.writerow(["pair", "unit", "author", "paragraph", "italian", "english", "governing_witness", "url"])
+    w.writerows(rows)
+    (out / "paragraphs.csv").write_text(buf.getvalue(), encoding="utf-8")
+    print("site/data/edition.json and paragraphs.csv:", len(rows), "paragraphs")
 
 
 def build_about(published):
