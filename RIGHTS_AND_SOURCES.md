@@ -70,10 +70,9 @@ contains no image files other than fonts).
   (1807–1870) died more than seventy years ago; his dates are taken from
   external authority records and are not recorded in the repository.
 - `corpus_reuse: reproducible_in_corpus`. **Interpretation.**
-- **For legal review:** Google-digitised volumes commonly carry usage
-  guidelines. The repository does not record whether this scan does, or what
-  they say. Any such guidelines would be source-provider conditions, distinct
-  from copyright.
+- Google usage guidelines: the extracts carry Google's on-page
+  "Digitized by Google" watermark and do not include the guidelines leaf
+  (checked 2026-11-25, all 40 extracts). **Fact.** Assessed in §6 item 3.
 
 ### *Considerazioni*, Palmarocchi 1933 — comparison witness
 
@@ -226,9 +225,23 @@ lawyer, and not legal approval.**
    question reopens only if republishing images or expression is proposed.
 2. **Article 14 and art. 32-*quater*. Not pursued.** The project does not
    rely on either.
-3. **Canestrini usage conditions. Deferred** by David McDougall, to be
-   reviewed later. Any Google usage guidelines would be a request or a
-   contract term attached to the download, not a copyright in the 1857 text.
+3. **Canestrini usage conditions. Closed 2026-11-25; extracts kept.**
+   Google attaches usage guidelines to the PDFs it serves from Google Books.
+   Earlier versions asked users to make non-commercial use of the files and
+   keep the watermark; later versions ask them not to host the files or
+   reprint them. **Fact** (contemporary reports: eWeek, 2006; Shaftek,
+   2009). Assessment: these are requests attached to Google's own download,
+   not a copyright in the 1857 text and not a term the project accepted. The
+   scan was obtained from the Internet Archive, which marks it with the
+   Public Domain Mark 1.0, and Google's guidelines leaf is not among the
+   extracts. The project keeps the attribution Google asks for (the
+   watermark is on every extracted page), makes no commercial use of the
+   scans and grants no rights over them (`LICENSE`, `REUSE.toml`). Residual
+   risk: the project hosts bounded page extracts, which the later guidelines
+   ask users not to do. That is a request, not a legal bar; if Google or the
+   Internet Archive asks for the extracts to be removed, they will be.
+   Removing them now would not take them out of the public git history.
+   **Interpretation.**
 4. **Scan extracts in the public repository.** `sources/witnesses/` holds
    bounded PDF extracts of the 1824, 1554, Canestrini and 1813 scans, and the
    repository is public, so these are redistributed. Assessment: low risk.

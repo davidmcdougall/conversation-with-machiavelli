@@ -35,6 +35,13 @@ not yet established.
   licence by this.
 - `SCOPE.md` is wholly CC0; §1 was CC BY.
 
+### Rights
+
+- 2026-11-25: the Canestrini usage question (`RIGHTS_AND_SOURCES.md` §6
+  item 3) is closed: Google's download guidelines are requests, not a
+  copyright or an accepted term; the witness extracts stay in the
+  repository, with their watermark.
+
 ### Corrections
 
 Made to the rights statements of `LICENSE` v0.3 (2026-09-21) when they moved
