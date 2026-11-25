@@ -59,8 +59,9 @@ English.
    field of 70 of 74 files in `annotations/` (62 of them backfilled on
    2026-11-24 from `apparatus/decision-log.md` and SCOPE §5). Pairs I.3 and I.4 have no
    recorded commentary review. Human review: the rulings in step 4, and
-   the cold rereading of a published unit three months later (SCOPE §7). No
-   such rereading is yet recorded.
+   a sample read of eight randomly drawn pairs against the Italian before v1.0
+   (SCOPE §7, DEC-012), logged in `docs/sample-reads.md`. None is yet
+   recorded.
 
 6. **Publication.** `scripts/build.py` generates `site/`; GitHub Pages
    publishes it on push (`.github/workflows/pages.yml`). All 74 published

@@ -87,3 +87,7 @@ to `RIGHTS_AND_SOURCES.md`:
 - 2026-11-25: `SCOPE.md` §4's narrative was out of date (it said one pair was
   published and the witness scans were not held). It now states only current
   facts; the September history moved verbatim to `docs/history.md`.
+- 2026-11-25: v1.0 defined (DEC-012): all 39 pairs, no open items, a logged
+  sample read of eight randomly drawn pairs by the editor (replacing the
+  three-month reread), an introduction, PDF and EPUB, and a Zenodo DOI. SCOPE
+  §4 carries a checklist that `scripts/state` fills in from the files.

@@ -2,7 +2,8 @@
 """Derive the project's state from the files, and nothing else.
 
 Usage:
-  scripts/state            print the SCOPE §2 pairs table and the §4 stage table
+  scripts/state            print the SCOPE §2 pairs table, the §4 stage table and the
+                           v1.0 checklist
   scripts/state --write    rewrite both tables in SCOPE.md, and the status line and
                            citation in README.md, between their markers
   scripts/state --check    exit 1 if any of those differ from what the files say, or
@@ -16,6 +17,9 @@ The only derived view in the project (SCOPE §7). Every cell comes from a file:
   ANN                      annotations/<unit>.md
   WEB                      site/pairs/<pair>.html
   version                  SCOPE.md "**Version.** Draft X"
+  v1.0 checklist           the above, plus apparatus/decision-log.md (open items),
+                           docs/sample-reads.md, apparatus/introduction.md,
+                           site/downloads/, CITATION.cff (doi) — DEC-012
 If a fact about a unit is not in that unit's file, it does not exist.
 """
 import re
@@ -29,6 +33,7 @@ MARK = {
     "stages": ("<!-- state:stages -->", "<!-- /state:stages -->"),
     "status": ("<!-- state:status -->", "<!-- /state:status -->"),
     "cite": ("<!-- state:cite -->", "<!-- /state:cite -->"),
+    "v1": ("<!-- state:v1 -->", "<!-- /state:v1 -->"),
 }
 EN_LABEL = {"draft_cold_reviewed": "cold-reviewed", "draft": "draft"}
 
@@ -120,7 +125,50 @@ def derive():
             "> Discorsi*. Ed. David McDougall; AI-assisted English translation edited by\n"
             f"> David McDougall. Version {v}.\n"
             "> https://davidmcdougall.github.io/conversation-with-machiavelli/")
-    return {"pairs": "\n".join(pairs), "stages": "\n".join(stages), "status": status, "cite": cite}
+    return {"pairs": "\n".join(pairs), "stages": "\n".join(stages), "status": status, "cite": cite,
+            "v1": v1_checklist(published // 2, n_pairs)}
+
+
+def v1_checklist(pub_pairs, n_pairs):
+    """DEC-012's release criteria, each from a file."""
+    rows = []
+    def row(label, done, state):
+        rows.append(f"| {label} | {'✓' if done else '—'} | {state} |")
+
+    row("All 39 pairs published", pub_pairs == n_pairs, f"{pub_pairs} of {n_pairs}")
+
+    log = (ROOT / "apparatus/decision-log.md").read_text(encoding="utf-8")
+    m = re.search(r'^## Open\b.*?$(.*?)(?=^## |\Z)', log, re.S | re.M)
+    open_ids = re.findall(r'^\| (O\d+) \|', m.group(1), re.M) if m else []
+    row("No open items", not open_ids,
+        f"{len(open_ids)} open ({', '.join(open_ids)})" if open_ids else "none open")
+
+    sr = ROOT / "docs/sample-reads.md"
+    reads = []
+    if sr.exists():
+        part = sr.read_text(encoding="utf-8").split("## Log", 1)[-1]
+        for cells in re.findall(r'^\|([^\n]+)\|$', part, re.M):
+            c = [x.strip() for x in cells.split("|")]
+            if len(c) >= 3 and c[0] not in ("Pair", "") and not set(c[0]) <= set("-"):
+                reads.append(c)
+    done = [c for c in reads if c[2]]
+    failed = [c for c in done if c[2].lower().startswith("fixed")]
+    row("Sample read of the English", reads and len(done) == len(reads),
+        f"{len(done)} of {len(reads)} read" + (f", {len(failed)} with errors fixed" if failed else ""))
+
+    intro = ROOT / "apparatus/introduction.md"
+    words = len(intro.read_text(encoding="utf-8").split()) if intro.exists() else 0
+    row("Introduction (1,500–2,500 words)", 1500 <= words <= 2500,
+        f"{words:,} words" if intro.exists() else "not written")
+
+    dl = ROOT / "site/downloads"
+    have = [f for f in ("PDF", "EPUB") if any(dl.glob(f"*.{f.lower()}"))] if dl.exists() else []
+    row("PDF and EPUB", len(have) == 2, ", ".join(have) + " built" if have else "not built")
+
+    doi = re.search(r'^doi:\s*"?(\S+?)"?$', (ROOT / "CITATION.cff").read_text(encoding="utf-8"), re.M)
+    row("Zenodo DOI", bool(doi), doi.group(1) if doi else "none")
+
+    return "\n".join(["| Criterion | Done | State |", "|---|---|---|"] + rows)
 
 
 def version():
@@ -150,7 +198,7 @@ def splice(text, key, body, name="SCOPE.md"):
 
 def main():
     out = derive()
-    targets = {"SCOPE.md": ("pairs", "stages"), "README.md": ("status", "cite")}
+    targets = {"SCOPE.md": ("pairs", "stages", "v1"), "README.md": ("status", "cite")}
     stale = []
     for name, keys in targets.items():
         path = ROOT / name
@@ -174,7 +222,7 @@ def main():
             print("\n".join(bad))
             sys.exit(1)
     else:
-        print(out["pairs"] + "\n\n" + out["stages"])
+        print(out["pairs"] + "\n\n" + out["stages"] + "\n\n" + out["v1"])
 
 
 if __name__ == "__main__":
