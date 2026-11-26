@@ -1,0 +1,230 @@
+# Basis of the Palmarocchi 1933 readings this edition reports
+# SPDX-License-Identifier: CC0-1.0
+#
+# Review pass 2 (2026-11-25). Where the edition reports or follows a reading of
+# WIT-FG-CONS-1933-PALMAROCCHI, this file records what Palmarocchi's own edition
+# says about where that reading comes from: the single autograph, or his own
+# supply. Facts about the 1933 book, read from its Nota (pp. 339-342) on the
+# Wikisource transcription of the BEIC scan, 2026-11-25. Nothing of the Nota's
+# wording is reproduced beyond the readings themselves.
+
+witness: WIT-FG-CONS-1933-PALMAROCCHI
+read_from: "Scritti politici e ricordi (1933), Nota, A) I-III, pp. 339-342; https://it.wikisource.org/wiki/Scritti_politici_e_ricordi/Nota"
+
+general:
+  manuscript: "One manuscript exists, the autograph, in the Archivio Guicciardini, Carte di Francesco Guicciardini, Filza IX (Nota p. 339, p. 341). The 1933 text is edited from it."
+  body_readings: "autograph. Palmarocchi presents his body text as the autograph's; the Nota gives no list of conjectures, and none of the readings this edition reports is bracketed in his text. Where no entry below names a locus, that is the whole of what his edition says about it."
+  headings: "editorial. The bracketed Discorsi chapter titles over each reply are Palmarocchi's, supplied (as Canestrini had done) from the Mazzoni-Casella edition of the Discorsi; they are not in the autograph (Nota p. 340). Records of class `heading` report these."
+  author_variants: "Nota A.III (pp. 341-342) lists Guicciardini's own cancelled first readings in the autograph. This edition does not report them."
+  dating: "Palmarocchi dates the work between the end of 1529 and the first months of 1530, from the reference to the prince of Orange (Nota p. 339; our FG-CONS.1.10). Consistent with the edition's dating (DEC-013, Cutinelli-Rendina 2014); not used as a second dating."
+  completeness: "Palmarocchi reports that the autograph lays out further chapters Guicciardini meant to answer, numbered, each followed by blank pages: Book I 17, 18, 35, 36; Book II 2, 4, 16, 17, 18, 21, 32; Book III 6, 13, 21, 22, 27, 34, 36, 37, 38 (Nota pp. 339-340). Not yet reflected in the edition; raised with David in review pass 2."
+
+# Nota A.II (p. 340): loci where Palmarocchi names Canestrini's reading as an
+# error against the autograph. `autograph` is the reading he gives for it.
+canestrini_errors_named_by_1933:
+  - record: FG-CONS-I1-D004
+    nota_page_1933: 4
+    canestrini: "tanto"
+    autograph: "tamen"
+    in_this_edition: "Canestrini kept (D38); 1933 in the variant note"
+  - record: FG-CONS-I2-D004
+    nota_page_1933: 6
+    canestrini: "e che opprimono"
+    autograph: "e deprimono"
+    in_this_edition: "Canestrini kept (D38); 1933 in the variant note"
+  - record: FG-CONS-I2-D006
+    nota_page_1933: 7
+    canestrini: "bisogna attrarre"
+    autograph: "bisogna a trarre"
+    in_this_edition: "Canestrini kept (D38); 1933 in the variant note"
+  - record: FG-CONS-I2-D009
+    nota_page_1933: 8
+    canestrini: "mistizia"
+    autograph: "mistura"
+    in_this_edition: "Canestrini kept (D38); 1933 in the variant note"
+  - record: FG-CONS-I5-D001
+    nota_page_1933: 12
+    canestrini: "autoritá particulare"
+    autograph: "autoritá o cura particulare"
+    in_this_edition: "Canestrini kept (D38); 1933 in the variant note"
+  - record: FG-CONS-I6-D001
+    nota_page_1933: 14
+    canestrini: "sanza conciare"
+    autograph: "sanza communicare"
+    in_this_edition: "followed (emended)"
+  - record: FG-CONS-I10-D002
+    nota_page_1933: 19
+    canestrini: "inumanissimi"
+    autograph: "immanissimi"
+    in_this_edition: "Canestrini kept (D38); 1933 in the variant note"
+  - record: FG-CONS-I16-D006
+    nota_page_1933: 26
+    canestrini: "quelli della parte"
+    autograph: "quella parte"
+    in_this_edition: "Canestrini kept (D38); 1933 in the variant note"
+  - record: FG-CONS-I23-D004
+    nota_page_1933: 28
+    canestrini: "restarono così combattendo"
+    autograph: "restarono così potenti combattendo"
+    in_this_edition: "Canestrini kept (D38); 1933 in the variant note"
+  - record: FG-CONS-I23-D005
+    nota_page_1933: 29
+    canestrini: "Flaminio Quinto"
+    autograph: "Tito Quinzio"
+    in_this_edition: "Canestrini kept (D38); 1933 in the variant note"
+  - record: FG-CONS-I23-D002
+    nota_page_1933: 30
+    canestrini: "parato"
+    autograph: "partito"
+    in_this_edition: "followed (emended)"
+  - record: FG-CONS-I24-D001
+    nota_page_1933: 31
+    canestrini: "via"
+    autograph: "ira"
+    in_this_edition: "followed (emended)"
+  - record: FG-CONS-I28-D001
+    nota_page_1933: 33
+    canestrini: "discordia"
+    autograph: "differenzia"
+    in_this_edition: "Canestrini kept (D38); 1933 in the variant note"
+  - record: FG-CONS-I39-D002
+    nota_page_1933: 40
+    canestrini: "creare"
+    autograph: "servire"
+    in_this_edition: "Canestrini kept (D38); 1933 in the variant note"
+  - record: FG-CONS-I58-D003
+    nota_page_1933: 45
+    canestrini: "accuratissimi"
+    autograph: "amantissimi"
+    in_this_edition: "Canestrini kept (D38); 1933 in the variant note"
+  - record: FG-CONS-II10-D002
+    nota_page_1933: 50
+    canestrini: "siano"
+    autograph: "furno"
+    in_this_edition: "Canestrini kept (D38); 1933 in the variant note"
+    anomaly: "The Nota gives Canestrini `siano` and the autograph `furno`; both our readers read Canestrini `furno`, and the 1933 text itself prints `siano`. The Nota's entry is the reverse of both books as printed. Not resolved; Canestrini stands (D38)."
+  - record: FG-CONS-II12-D001
+    nota_page_1933: 52
+    canestrini: "tenti"
+    autograph: "temi"
+    in_this_edition: "followed (emended)"
+  - record: FG-CONS-III19-D001
+    nota_page_1933: 62
+    canestrini: "sarebbe"
+    autograph: "farebbe"
+    in_this_edition: "Canestrini kept (D38); 1933 in the variant note"
+  - record: FG-CONS-III19-D002
+    nota_page_1933: 63
+    canestrini: "cittá"
+    autograph: "vita"
+    in_this_edition: "Canestrini kept (D38); 1933 in the variant note"
+  - record: FG-CONS-III19-D004
+    nota_page_1933: 63
+    canestrini: "genti"
+    autograph: "grazie"
+    in_this_edition: "Canestrini kept (D38); 1933 in the variant note"
+  - record: FG-CONS-III24-D004
+    nota_page_1933: 64
+    canestrini: "decemvirale"
+    autograph: "decennale"
+    in_this_edition: "followed (emended)"
+    bears_on: "O50 (open). The 1933 edition states the autograph reads `decennale`."
+
+# Every record where the established text does not simply stand on Canestrini's
+# print: emendations, readings taken from the 1933, and doubtful Canestrini
+# letters resolved with the 1933's agreement. Heading records are excluded
+# (see general.headings).
+followed_from_1933:
+  - {record: FG-CONS-I1-D002, class: reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I1-D003, class: reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I1-D005, class: lexical, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I10-D001, class: emendation, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I11-D001, class: emendation, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I14-D001, class: reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I16-D001, class: emendation, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I16-D009, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I16-D010, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I2-D011, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I23-D001, class: emendation, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I23-D002, class: emendation, basis: "autograph, named in Nota A.II"}
+  - {record: FG-CONS-I23-D010, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I23-D011, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I23-D012, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I23-D013, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I23-D014, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I24-D001, class: emendation, basis: "autograph, named in Nota A.II"}
+  - {record: FG-CONS-I24-D004, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I24-D005, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I25-D001, class: emendation, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I25-D002, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I25-D003, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I25-D004, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I26-D001, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I26-D002, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I28-D002, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I28-D003, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I28-D005, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I29-D001, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I29-D002, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I29-D003, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I29-D006, class: emendation, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I3-D001, class: emendation, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I3-D002, class: punctuation, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I3-D004, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I3-D005, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I30-D001, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I30-D002, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I32-D001, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I32-D002, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I39-D001, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I4-D001, class: reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I40-D001, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I40-D002, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I47-D001, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I47-D002, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I49-D001, class: emendation, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I49-D002, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I49-D003, class: correction, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I49-D004, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I58-D001, class: emendation, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I58-D002, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I58-D004, class: reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I6-D001, class: emendation, basis: "autograph, named in Nota A.II"}
+  - {record: FG-CONS-I60-D001, class: lacuna, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I60-D002, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I60-D003, class: reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I7-D001, class: emendation, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I8-D001, class: emendation, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-I9-D001, class: emendation, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-II10-D001, class: emendation, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-II10-D003, class: reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-II12-D001, class: emendation, basis: "autograph, named in Nota A.II"}
+  - {record: FG-CONS-II12-D002, class: emendation, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-II12-D003, class: emendation, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-II13-D001, class: emendation, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-II13-D002, class: emendation, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-II13-D004, class: pointing, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-II14-D001, class: emendation, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-II14-D002, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-II14-D003, class: pointing, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-II15-D001, class: pointing, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-II19-E001, class: emendation, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-II19-D001, class: pointing, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-II24-E001, class: emendation, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-II24-D002, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-IIproem-D001, class: emendation, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-IIproem-D002, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-IIproem-D003, class: reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-III17-C001, class: witness_correction, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-III17-D001, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-III17-D002, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-III17-D004, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-III19-C001, class: witness_correction, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-III19-D003, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-III19-D005, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-III19-D006, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-III24-D003, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-III24-D004, class: ruled_reading, basis: "autograph, named in Nota A.II"}
+  - {record: FG-CONS-III24-D006, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+  - {record: FG-CONS-III24-D007, class: ruled_reading, basis: "autograph (general statement; no locus-specific note)"}
+

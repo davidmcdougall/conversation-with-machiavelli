@@ -28,6 +28,22 @@ dates. Per-unit text versions are in each unit's front matter.
   licence to its component.
 - Per-version tags and snapshots: `docs/releasing.md`.
 
+### Review pass 2: rights and licensing (2026-11-26)
+
+- The Cutinelli-Rendina dating of the *Considerazioni* is now applied
+  everywhere. It was approved in pass 1 but missing from that commit.
+- `RIGHTS_AND_SOURCES.md` §6 is marked as awaiting a second reader. It now
+  covers UK CDPA s. 9(3) and the current state of UK reform, and Palmarocchi
+  under art. 85-*quater* and the 70-year term, with his prose entering the
+  Italian public domain on 1 January 2027.
+- What Palmarocchi's own Nota says about each 1933 reading we report is
+  recorded in `sources/comparisons/FG-CONS/WIT-FG-CONS-1933-basis.yml`.
+- Source notes link to the cited pages at the Internet Archive. No new
+  witness extracts will be added.
+- Licences are machine-readable: `rel="license"` on each column head,
+  JSON-LD describing each column's licence, and a licence line in every
+  footer.
+
 ## 0.3 — 2026
 
 Released as `v0.3.0`: 38 of 39 pairs published (76 of 78 units). III.24 is

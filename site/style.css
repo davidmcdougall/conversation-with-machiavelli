@@ -122,6 +122,8 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
   font-family: var(--sans); font-style: normal; font-size: 12px;
   color: var(--ink-faint); margin-top: 7px;
 }
+.colheads a { color: inherit; text-decoration-color: var(--rule); }
+.licence-line { font-family: var(--sans); font-size: 12px; color: var(--ink-faint); }
 .colheads {
   display: grid; grid-template-columns: 66px 1fr 1fr; gap: 0 28px;
   margin-top: 30px; padding-bottom: 7px; border-bottom: 1px solid var(--rule);

@@ -83,7 +83,7 @@ WORKS = {
     "FG-CONS": dict(
         author="Francesco Guicciardini",
         work_title="Considerazioni intorno ai Discorsi del Machiavelli",
-        work_dates="written 1529–30, printed 1857",
+        work_dates="dated between late 1529 and the first half of 1530 (Cutinelli-Rendina 2014), printed 1857",
         source_citation=(
             "Established from Canestrini 1857, <i>Opere inedite</i> vol. 1, pp. 1–65 "
             '(<span class="sig">WIT-FG-CONS-1857-CANESTRINI</span>) — the <i>editio princeps</i>, '
@@ -555,8 +555,53 @@ def notes_html(entries, unit_id, it_paras, marks):
     return "\n".join(out)
 
 
+# Review pass 2: each source note links to the page of the scan it cites, at the
+# Internet Archive. The BookReader's /page/nN/ is the zero-based index of the
+# item's accessible pages, which is also the index of its derived PDF, so the
+# recorded `source_pdf_zero_based_pages` give the link (checked 2026-11-25: for the
+# 1824 against discorsisopralap01mach_page_numbers.json, n211 is printed p. 192; for
+# Canestrini by eye, n92 is printed p. 54). The two I.12
+# units predate those records; their opening pages are read off the extracts.
+GOVERNING_WIT = {"NM-DISC": "WIT-NM-DISC-1824-IA", "FG-CONS": "WIT-FG-CONS-1857-CANESTRINI"}
+LEGACY_PAGES = {  # unit: (archive identifier, zero-based index, printed page) -- extracts' first page
+    "NM-DISC.1.12": ("discorsisopralap01mach", 81, "p. 62 (where it opens)"),
+    "FG-CONS.1.12": ("bub_gb_F_YZsP2XjO8C", 65, "pp. 27\u201330"),
+}
+
+
+def ia_link(identifier, n, label):
+    return (f'<a href="https://archive.org/details/{identifier}/page/n{n}/mode/1up" '
+            f'title="The page image at the Internet Archive">{label}</a>')
+
+
+def witness_pages(work_id, unit_id):
+    """(archive identifier, zero-based index of the opening page, printed range or page, volume)."""
+    if unit_id in LEGACY_PAGES:
+        ident, n, p = LEGACY_PAGES[unit_id]
+        return ident, n, p, 1 if work_id == "NM-DISC" else None
+    suffix = unit_id.split(".", 1)[1]
+    prov = load_yaml(f"sources/provenance/{work_id}/{GOVERNING_WIT[work_id]}.{suffix}.yml") or {}
+    loc = prov.get("chapter_locator") or prov.get("unit_locator") or {}
+    pdf = loc.get("source_pdf_zero_based_pages") or []
+    ident = (prov.get("acquisition") or {}).get("archive_identifier")
+    est = load_yaml(f"sources/provenance/{work_id}/{unit_id}-establishment.yml") or {}
+    m = re.search(r"printed pp?\.\s*(\d+)(?:\s*[-\u2013]\s*(\d+))?", str(est.get("boundaries", "")))
+    if not (ident and pdf and m):
+        return None
+    first, last = m.group(1), m.group(2)
+    pages = f"pp. {first}\u2013{last}" if last and last != first else f"p. {first}"
+    return ident, pdf[0], pages, loc.get("volume")
+
+
 def source_html(work_id, unit_id, corpus_meta):
     lines = [f"<p>{WORKS[work_id]['source_citation']}</p>"]
+    wp = witness_pages(work_id, unit_id)
+    if wp:
+        ident, n, pages, vol = wp
+        where = f"vol. {vol}, " if vol else ""
+        lines.append(f"<p>This {'chapter' if work_id == 'NM-DISC' else 'reply'} is on "
+                     f"{where}{ia_link(ident, n, pages)} of the {WORKS[work_id]['edition_year']} "
+                     f"scan at the Internet Archive.</p>")
     if corpus_meta.get("paragraph_divisions") == "editorial":
         lines.append(
             "<p>Paragraph divisions are editorial. The witness prints the chapter "
@@ -758,6 +803,8 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 0; le
   font-family: var(--sans); font-style: normal; font-size: 12px;
   color: var(--ink-faint); margin-top: 7px;
 }
+.colheads a { color: inherit; text-decoration-color: var(--rule); }
+.licence-line { font-family: var(--sans); font-size: 12px; color: var(--ink-faint); }
 .colheads {
   display: grid; grid-template-columns: 66px 1fr 1fr; gap: 0 28px;
   margin-top: 30px; padding-bottom: 7px; border-bottom: 1px solid var(--rule);
@@ -937,7 +984,10 @@ ABOUT = '''    <h2>What this is</h2>
           Guicciardini meant to answer more is not known.</p>
         <p>Edited by David McDougall. AI-assisted English translation edited by David McDougall.</p>
     <h2>On the title</h2>
-        <p>Machiavelli had been dead two years when Guicciardini wrote; the <i>Discorsi</i> were unpublished,
+        <p>The <i>Considerazioni</i> are dated between late 1529 and the first half of 1530 by Emanuele Cutinelli-Rendina (“Guicciardini, Francesco”,
+          <i>Enciclopedia machiavelliana</i>, Rome: Istituto della Enciclopedia Italiana, 2014). The edition
+          adopts that dating and uses no other.</p>
+        <p>Machiavelli had been dead for more than two years when Guicciardini wrote; the <i>Discorsi</i> were unpublished,
           and the <i>Considerazioni</i> stayed unprinted until 1857. Machiavelli never answers.</p>
         <p>“Conversation” is a quotation, not a description. It invokes Machiavelli's letter to Francesco Vettori of
           10 December 1513: at evening he puts on royal and curial garments (<i>panni reali e curiali</i>),
@@ -978,8 +1028,50 @@ ABOUT = '''    <h2>What this is</h2>
           <span class="sig">REUSE.toml</span>; source
           rights are in <span class="sig">RIGHTS_AND_SOURCES.md</span>.</p>'''
 
+# Machine-readable licence marking (review pass 2). The page mixes two licences,
+# so each column carries its own: a visible rel="license" link in the column
+# heads, a schema.org description of each column in the page's JSON-LD
+# (WebPageElement by cssSelector), and a licence line in every footer.
+CC0_URL = "https://creativecommons.org/publicdomain/zero/1.0/"
+CCBY_URL = "https://creativecommons.org/licenses/by/4.0/"
+LIC_IT = f'<a rel="license" href="{CC0_URL}">CC0</a>'
+LIC_EN = f'<a rel="license" href="{CCBY_URL}">CC BY 4.0</a>'
+LICENCE_LINE = (
+    f'    <p class="licence-line">Italian text: <a rel="license" href="{CC0_URL}">CC0 1.0</a>. '
+    f'English translation, notes and apparatus: <a rel="license" href="{CCBY_URL}">CC BY 4.0</a>, '
+    f'where rights subsist. Code: MIT.</p>')
+
+
+def pair_jsonld(url, title, nm_id, fg_id):
+    import json as _json
+    def part(selector, lang, lic, name):
+        return {"@type": "WebPageElement", "cssSelector": selector, "inLanguage": lang,
+                "license": lic, "name": name}
+    data = {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "name": title,
+        "url": url,
+        "isPartOf": {"@type": "CreativeWork", "name": SITE_NAME, "url": SITE_URL},
+        "editor": {"@type": "Person", "name": "David McDougall"},
+        "author": [{"@type": "Person", "name": "Niccolò Machiavelli"},
+                   {"@type": "Person", "name": "Francesco Guicciardini"}],
+        "hasPart": [
+            part(".col.it", "it", CC0_URL, f"Italian text of {nm_id} and {fg_id}"),
+            {**part(".col.en", "en", CCBY_URL, f"English translation of {nm_id} and {fg_id}"),
+             "creditText": "AI-assisted English translation edited by David McDougall"},
+            {**part(".apparatus, .annot, .standfirst", "en", CCBY_URL, "Notes and editorial apparatus"),
+             "creditText": "David McDougall"},
+        ],
+    }
+    return ('<script type="application/ld+json">'
+            + _json.dumps(data, ensure_ascii=False).replace("</", "<\\/") + "</script>\n")
+
+
 COLOPHON = '''  <footer class="colophon">
 {state}
+'''
+COLOPHON += LICENCE_LINE + '''
     <p class="links"><a href="{about}">About this edition</a><a href="{about}#licence">Licence</a><a href="{about}#method">Method</a><a href="https://github.com/davidmcdougall/conversation-with-machiavelli">Source and data on GitHub</a></p>
   </footer>'''
 
@@ -1077,7 +1169,7 @@ FAVICON = ("data:image/svg+xml," + "%3Csvg xmlns='http://www.w3.org/2000/svg' vi
            "%3Crect x='17' y='5' width='12' height='22' rx='1.5' fill='%236E5A3C'/%3E%3C/svg%3E")
 
 
-def wrap(content, description, path, title, root=None):
+def wrap(content, description, path, title, root=None, jsonld=""):
     """A full document: the content's <title> and style go in <head>, the rest in
     <body>. `path` is the page's path under the site root, for its canonical URL.
     The inline <style> of the content is replaced by a link to site/style.css;
@@ -1111,7 +1203,7 @@ def wrap(content, description, path, title, root=None):
         '<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
         + LANG_SCRIPT +
         '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">\n'
-        + meta + head.strip() + "\n</head>\n<body>" + sep + body + "\n</body>\n</html>\n"
+        + meta + jsonld + head.strip() + "\n</head>\n<body>" + sep + body + "\n</body>\n</html>\n"
     )
 
 
@@ -1212,7 +1304,7 @@ def build_pair(pair, published):
     </div>
 {rubric_lines(nm_it_m, nm_en_m)}
 
-    <div class="colheads"><div></div><div>Italian · {WORKS['NM-DISC']['edition_year']}</div><div>English</div></div>
+    <div class="colheads"><div></div><div>Italian · {WORKS['NM-DISC']['edition_year']} · {LIC_IT}</div><div>English · {LIC_EN}</div></div>
 {rows_html(nm_it, nm_en, nm_notes_raw, nm_ann, nm_marks)}
 
     <div class="apparatus">
@@ -1239,7 +1331,7 @@ def build_pair(pair, published):
     </div>
 {rubric_lines(fg_it_m, fg_en_m, fg_rubric_note_html)}
 
-    <div class="colheads"><div></div><div>Italian · {WORKS['FG-CONS']['edition_year']}</div><div>English</div></div>
+    <div class="colheads"><div></div><div>Italian · {WORKS['FG-CONS']['edition_year']} · {LIC_IT}</div><div>English · {LIC_EN}</div></div>
 {rows_html(fg_it, fg_en, fg_notes_raw, fg_ann, fg_marks)}
 
     <div class="apparatus">
@@ -1272,7 +1364,8 @@ def build_pair(pair, published):
     pairs_dir.mkdir(parents=True, exist_ok=True)
     artifact_input(f"pairs/{pair}-content.html", CONTENT)
     (pairs_dir / f"{pair}.html").write_text(
-        wrap(CONTENT, summary_plain(standfirst) or title, f"pairs/{pair}.html", title), encoding="utf-8")
+        wrap(CONTENT, summary_plain(standfirst) or title, f"pairs/{pair}.html", title,
+             jsonld=pair_jsonld(SITE_URL + f"pairs/{pair}.html", title, nm_id, fg_id)), encoding="utf-8")
     print(f"site/pairs/{pair}.html", (pairs_dir / f"{pair}.html").stat().st_size, "bytes")
     print("paragraphs:", len(nm_it), "NM /", len(fg_it), "FG — alignment check passed")
 

@@ -31,7 +31,12 @@ bracketed, and the printed form given in a variant note (D68). That corrects a
 compositor, not the critical text; a weaker reading that still construes is
 kept as printed (D38).
 
-**On the title.** Machiavelli had been dead two years when Guicciardini wrote;
+**Date.** The *Considerazioni* are dated between late 1529 and the first half of 1530, on the authority of
+Emanuele Cutinelli-Rendina, "Guicciardini, Francesco", *Enciclopedia
+machiavelliana* (Rome, 2014). That is the edition's only dating, and every
+page that dates the work uses these words and cites him (DEC-013).
+
+**On the title.** Machiavelli had been dead more than two years when Guicciardini wrote;
 the *Discorsi* were unpublished; the *Considerazioni* stayed unprinted until
 1857. Machiavelli never answers. "Conversation" is therefore a deliberate
 quotation, not a description: it invokes Machiavelli's letter to Vettori of
@@ -245,7 +250,7 @@ v1.0 ships when every row below is done. The table is written by
 | All 39 pairs published | ✓ | 39 of 39 |
 | No open items | — | 3 open (O48, O49, O50) |
 | Sample read of the English | — | 0 of 8 read |
-| Introduction (1,500–2,500 words) | ✓ | 2,492 words |
+| Introduction (1,500–2,500 words) | ✓ | 2,498 words |
 | PDF and EPUB | — | not built |
 | Zenodo DOI | — | none |
 | Bibliography, further reading, secondary literature | — | not written |
@@ -274,7 +279,9 @@ held under `sources/witnesses/`: Canestrini 1857 and the 1824 and 1554
 *Discorsi*, with the acquisition metadata that locates each scan. Palmarocchi
 1933 page images are consulted locally and not committed. Per-unit provenance
 files are named `WIT-<witness-id>.<unit-id>.yml`; the legacy flat I.12 files
-stay as they are.
+stay as they are. **No new extracts are added** (review pass 2, 2026-11-25).
+The ones held stay, and anything new is cited by archive identifier and
+page. Every source note links to its page at the Internet Archive.
 
 **Witness posture — settled.**
 
@@ -282,7 +289,10 @@ stay as they are.
   layer under Public Domain Mark 1.0, `corpus_reuse: reproducible_in_corpus`.
   The *editio princeps*, independently typeset seventy-six years before
   Palmarocchi.
-- **Palmarocchi 1933 is collation evidence only.** Its readings may inform
+- **Palmarocchi 1933 is collation evidence only.** It is edited from the
+  single autograph. What his edition says about each reading we report or
+  follow is recorded in `sources/comparisons/FG-CONS/WIT-FG-CONS-1933-basis.yml`.
+  Its readings may inform
   collation; its editorial expression is never copied and its page images are
   not republished. The Wikisource transcription made from it is CC BY-SA/GFDL
   and consultation-only.

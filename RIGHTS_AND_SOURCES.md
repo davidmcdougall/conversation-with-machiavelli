@@ -85,15 +85,32 @@ contains no image files other than fonts).
   in 1540. It says nothing about the 1933 edition's own editorial layer.
   **Fact.**
 - Underlying text: Guicciardini's, public domain. **Fact.**
-- Palmarocchi's editorial contributions: the existing assessment is that
-  Palmarocchi died in 1956, and that qualifying original contributions (for
-  example preface, notes, apparatus) may remain protected — in Italy, on the
-  ordinary seventy-years-*post-mortem* term, until 31 December 2026; in the
-  United States, as a work restored under the URAA, until 31 December 2028.
-  **Interpretation.** These dates do not settle the status of every
-  component of the edition: which components are original contributions, and
-  whether any other right applies to the edited text, is not established.
-  **For legal review.**
+- Palmarocchi: born Florence 1887, died 1956. **Fact** (Wikidata Q61481064;
+  Università di Cagliari, Archivio Storico, "Palmarocchi Roberto"; COBISS
+  heading "Palmarocchi, Roberto, 1887-1956"; the Library of Congress/NACO
+  heading gives the birth year only).
+- His edition has two layers, with different terms. **Interpretation.**
+  - *His textual choices* (the edited text of a public-domain work):
+    in Italy, a critical or scientific edition of a public-domain work
+    attracts a related right of twenty years from first lawful publication
+    (L. 633/1941, art. 85-*quater*, para. 3). For 1933 that ran to 1953, so
+    nothing subsists now. The article was added to the law long after 1953,
+    so the right may never have arisen for this edition at all. Either way,
+    no right subsists today.
+  - *His own prose* (the Nota, notes and any preface): an ordinary
+    literary work, seventy years *post mortem auctoris*. It is protected in
+    Italy until 31 December 2026 and enters the public domain there on
+    **1 January 2027**. In the United States, as a work restored under the
+    URAA, it is protected until 31 December 2028.
+  The project copies neither layer's expression. It reports readings, which
+  are facts about what the book prints.
+- What the edition says about its readings: one autograph survives
+  (Archivio Guicciardini, Carte di Francesco Guicciardini, Filza IX), and
+  the 1933 text is edited from it. The bracketed Discorsi chapter titles are
+  Palmarocchi's, from the Mazzoni–Casella *Discorsi*. His Nota names
+  twenty-one Canestrini readings as errors against the autograph. **Fact**
+  (Nota, pp. 339–342.) Per record:
+  `sources/comparisons/FG-CONS/WIT-FG-CONS-1933-basis.yml`.
 - Scan use: page images are consulted, not republished
   (`scan_layer: consultable_not_republishable`). The images are excluded from
   version control (`.gitignore`). No Palmarocchi page image is published by
@@ -205,8 +222,14 @@ coincide.
   1813 witnesses, and acquisition metadata (Internet Archive and Commons JSON)
   for all except the 1813 witness, under `sources/witnesses/`. Palmarocchi page images are held locally and
   excluded from version control. **Fact.**
-- **Site:** no witness images. Witness identifiers, page references and
-  reported readings appear in source and variant notes. Third-party fonts
+- **No new extracts (DEC-013, review pass 2, 2026-11-25).** The extracts
+  already held stay, since git history keeps them anyway. No further scan
+  extract is added to the repository: a new witness or unit is cited by
+  archive identifier and page, and linked. **Policy.**
+- **Site:** no witness images. Each source note links to the page images
+  at the Internet Archive (page-level URLs for the 1824 and Canestrini
+  scans). Witness identifiers, page references and reported readings appear
+  in source and variant notes. Third-party fonts
   (EB Garamond, IBM Plex; SIL Open Font License 1.1) are self-hosted in
   `site/fonts/` with their licence texts. **Fact.**
 - **Not anywhere in the repository or on the site:** Wikisource wording;
@@ -218,6 +241,12 @@ coincide.
 ---
 
 ## 6. Rights assessment
+
+> **Awaiting a second reader (DEC-013, 2026-11-25).** This section was
+> written by Claude and has not been checked by anyone else. Until a second
+> reader has gone through it, treat it as a draft. Rely on it for the hosted
+> scans and the reporting of readings, and for nothing beyond that. The
+> second reader should record their name, date and findings here.
 
 Release is not conditional on counsel review (DEC-011 point 6). The
 questions below were assessed on 2026-11-24 by Claude (`claude-opus-5-5`) on
@@ -267,5 +296,32 @@ lawyer, and not legal approval.**
    this needs no change: unprotected material is free to use without
    attribution, and the CC BY condition applies to the rest. **Fact as to
    the decisions; interpretation as to their application here.**
+
+   *United Kingdom.* UK law goes the other way. For a literary work that
+   is computer-generated, with no human author, the author is taken to be
+   "the person by whom the arrangements necessary for the creation of the
+   work are undertaken" (Copyright, Designs and Patents Act 1988,
+   s. 9(3)). Protection lasts fifty years from the end of the year the work
+   was made (s. 12(7)). Any part of the English or the commentary that is
+   computer-generated is therefore probably protected in the UK, with David
+   McDougall as author, since he makes the arrangements. Whether such output
+   meets the originality the courts now require is unsettled. On either
+   view the CC BY grant covers it, so nothing in the licence changes.
+   **Interpretation.**
+
+   Status of reform, checked 2026-11-26. The government's *Report on
+   Copyright and Artificial Intelligence* (18 March 2026), made under ss.
+   135–136 of the Data (Use and Access) Act 2025 after the 2024–25
+   consultation, proposed removing protection for computer-generated works
+   under s. 9(3). It set no timetable and said it would keep the provision's
+   use under review. In its 15 May 2026 response to the House of Lords
+   Communications and Digital Committee, the government said it had no
+   current plans to amend copyright legislation. Section 9(3) remains in
+   force, and no amending bill has been introduced. **Fact** (gov.uk,
+   "Report and impact assessment on copyright and artificial intelligence";
+   UK Parliament, Communications and Digital Committee, 15 May 2026;
+   practitioner summaries, March–November 2026). If s. 9(3) is repealed,
+   the UK position moves towards the US one, and the licence still needs no
+   change.
 
 Nothing in this section has been reviewed by a lawyer.
